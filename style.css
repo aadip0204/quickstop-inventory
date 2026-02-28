@@ -217,3 +217,44 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Hero section styles */
+#hero {
+  position: relative;
+  /* Radial gradient overlay blended with a faint logo in the background */
+  background: radial-gradient(circle at center, rgba(211, 47, 47, 0.35) 0%, rgba(0, 0, 0, 0.9) 100%), url('images/logo.png') no-repeat center/25%;
+  background-blend-mode: overlay;
+  text-align: center;
+  padding: 80px 20px;
+  border-bottom: 1px solid #2c2c2c;
+}
+#hero .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#hero .hero-heading {
+  font-size: 2.4rem;
+  color: #f5f5f5;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+#hero .hero-subheading {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin: 0 0 24px;
+}
+.cta-button {
+  display: inline-block;
+  background-color: #d32f2f;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.cta-button:hover {
+  background-color: #b71c1c;
+}
