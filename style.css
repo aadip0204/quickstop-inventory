@@ -48,7 +48,7 @@ header {
 }
 /* Increase the logo size to make it more prominent */
 #logo {
-  height: 100px;
+  height: 110px;
   width: auto;
   object-fit: contain;
 }
@@ -58,13 +58,13 @@ header {
 }
 .title-area h1 {
   margin: 0;
-  font-size: 2rem;
-  color: #e3e3e3;
+  font-size: 2.2rem;
+  color: #f0f0f0;
 }
 .title-area .tagline {
   margin: 0;
-  font-size: 1.1rem;
-  color: #c62828;
+  font-size: 1.2rem;
+  color: #d32f2f;
   font-weight: 600;
 }
 .title-area .note {
@@ -161,8 +161,8 @@ section {
 /* Hero section styling */
 #hero {
   position: relative;
-  /* Lighten the red overlay and enlarge the background logo for a softer, premium feel */
-  background: linear-gradient(180deg, rgba(229,57,53,0.3) 0%, rgba(229,57,53,0) 100%), url('logo.png') no-repeat center/25%;
+  /* Lighten the red overlay and use the logo from the images folder for a subtle backdrop */
+  background: linear-gradient(180deg, rgba(229,57,53,0.15) 0%, rgba(229,57,53,0) 100%), url('images/logo.png') no-repeat center/30%;
   text-align: center;
   padding: 60px 20px;
   margin-top: 0;
