@@ -3,18 +3,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* A modern dark gradient with subtle variation */
-  background: linear-gradient(180deg, #0e0e0e 0%, #181818 100%);
+  /* Soften the dark gradient for a more inviting feel */
+  /* Soften the dark gradient and introduce a hint of texture for depth */
+  background: linear-gradient(180deg, #242424 0%, #1e1e1e 40%, #151515 100%);
   color: #f5f5f5;
   line-height: 1.4;
 }
 /* Top bar styling */
+/* Top bar styling */
 .top-bar {
-  background-color: #141414;
-  color: #ccc;
-  font-size: 0.85rem;
-  padding: 6px 0;
-  border-bottom: 1px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
 }
 .top-bar-inner {
   max-width: 1200px;
@@ -32,10 +34,10 @@ body {
 }
 
 header {
-  background: #111;
-  padding: 30px 20px 40px;
+  background: #121212;
+  padding: 36px 20px 48px;
   border-bottom: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* Layout for header: logo and text */
@@ -48,7 +50,7 @@ header {
 }
 /* Increase the logo size to make it more prominent */
 #logo {
-  height: 110px;
+  height: 120px;
   width: auto;
   object-fit: contain;
 }
@@ -63,9 +65,9 @@ header {
 }
 .title-area .tagline {
   margin: 0;
-  font-size: 1.2rem;
-  color: #d32f2f;
-  font-weight: 600;
+  font-size: 1.3rem;
+  color: #c62828;
+  font-weight: 700;
 }
 .title-area .note {
   margin-top: 6px;
@@ -73,7 +75,7 @@ header {
   color: #aaa;
 }
 section {
-  padding: 20px;
+  padding: 24px;
 }
 #controls {
   margin: 20px auto;
@@ -86,19 +88,23 @@ section {
 #search {
   flex: 1 1 350px;
   padding: 12px 16px;
-  border: 1px solid #444;
-  border-radius: 6px;
-  background-color: #222;
-  color: #f5f5f5;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #f8f8f8;
   font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
 }
 #categorySelect {
   padding: 12px 16px;
-  border: 1px solid #444;
-  border-radius: 6px;
-  background-color: #222;
-  color: #f5f5f5;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #f8f8f8;
   font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
 }
 /* Grid for product cards */
 
@@ -114,18 +120,18 @@ section {
 
 /* Product card styling */
 .product-card {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
+  background-color: #1f1f1f;
+  border: 1px solid #383838;
   border-radius: 10px;
-  padding: 16px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   height: 100%;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .product-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.8);
 }
 .product-card img {
   width: 100%;
@@ -136,9 +142,9 @@ section {
   background-color: #222;
 }
 .product-card h3 {
-  margin: 0 0 6px;
-  font-size: 1rem;
-  color: #f5f5f5;
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: #f9f9f9;
 }
 .product-card p {
   margin: 2px 0;
@@ -147,9 +153,9 @@ section {
 }
 .price {
   font-weight: bold;
-  color: #e0a800;
+  color: #ffca28;
   margin-top: 6px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .section h2 {
   color: #f0f0f0;
@@ -158,31 +164,10 @@ section {
   padding-left: 20px;
 }
 
-/* Hero section styling */
-#hero {
-  position: relative;
-  /* Lighten the red overlay and use the logo from the images folder for a subtle backdrop */
-  background: linear-gradient(180deg, rgba(229,57,53,0.15) 0%, rgba(229,57,53,0) 100%), url('images/logo.png') no-repeat center/30%;
-  text-align: center;
-  padding: 60px 20px;
-  margin-top: 0;
-  border-bottom: 1px solid #2c2c2c;
-}
-#hero .hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-#hero .hero-heading {
-  font-size: 2.4rem;
-  margin: 0 0 12px;
-  color: #ffffff;
-  font-weight: 600;
-}
-#hero .hero-subheading {
-  font-size: 1.1rem;
-  margin: 0;
-  color: #ccc;
-}
+/*
+ * Hero section styles are defined later in this file.  
+ * Removing older definitions here to avoid duplication.
+ */
 
 /* Section headings */
 section > h2 {
@@ -222,39 +207,42 @@ footer {
 #hero {
   position: relative;
   /* Radial gradient overlay blended with a faint logo in the background */
-  background: radial-gradient(circle at center, rgba(211, 47, 47, 0.35) 0%, rgba(0, 0, 0, 0.9) 100%), url('images/logo.png') no-repeat center/25%;
+  /* Hero uses a subtle red gradient blended with a faint logo watermark */
+  background: radial-gradient(circle at center, rgba(229, 57, 53, 0.25) 0%, rgba(0, 0, 0, 0.85) 80%), url('images/logo.png') no-repeat center/22%;
   background-blend-mode: overlay;
   text-align: center;
-  padding: 80px 20px;
-  border-bottom: 1px solid #2c2c2c;
+  padding: 100px 20px;
+  border-bottom: 1px solid #333;
+  box-shadow: inset 0 -10px 20px rgba(0,0,0,0.6);
 }
 #hero .hero-content {
   max-width: 800px;
   margin: 0 auto;
 }
 #hero .hero-heading {
-  font-size: 2.4rem;
-  color: #f5f5f5;
-  margin: 0 0 12px;
-  font-weight: 600;
+  font-size: 2.8rem;
+  color: #fefefe;
+  margin: 0 0 16px;
+  font-weight: 700;
 }
 #hero .hero-subheading {
-  font-size: 1.1rem;
-  color: #ccc;
-  margin: 0 0 24px;
+  font-size: 1.25rem;
+  color: #d8d8d8;
+  margin: 0 0 32px;
 }
 .cta-button {
   display: inline-block;
-  background-color: #d32f2f;
+  background-color: #c62828;
   color: #ffffff;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
   text-decoration: none;
-  transition: background-color 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45);
 }
 .cta-button:hover {
-  background-color: #b71c1c;
+  background-color: #9c1a1a;
+  transform: translateY(-2px);
 }

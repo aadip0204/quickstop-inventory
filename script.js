@@ -1,7 +1,9 @@
+// Note: products are now loaded from products.js which defines a global `products` array.
+// We no longer fetch the large JSON file; products.js is included in index.html
 async function loadProducts() {
-  const response = await fetch('products.json');
-  const data = await response.json();
-  return data;
+  // Return the globally defined products array (synchronous)
+  // Retrieve the products array from the global window scope
+  return (typeof window !== 'undefined' && window.products) ? window.products : [];
 }
 
 /**
