@@ -46,8 +46,9 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+/* Increase the logo size to make it more prominent */
 #logo {
-  height: 80px;
+  height: 100px;
   width: auto;
   object-fit: contain;
 }
@@ -160,7 +161,8 @@ section {
 /* Hero section styling */
 #hero {
   position: relative;
-  background: linear-gradient(180deg, rgba(229,57,53,0.5) 0%, rgba(229,57,53,0) 100%), url('logo.png') no-repeat center/20%;
+  /* Lighten the red overlay and enlarge the background logo for a softer, premium feel */
+  background: linear-gradient(180deg, rgba(229,57,53,0.3) 0%, rgba(229,57,53,0) 100%), url('logo.png') no-repeat center/25%;
   text-align: center;
   padding: 60px 20px;
   margin-top: 0;
