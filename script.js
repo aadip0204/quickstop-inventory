@@ -11,7 +11,10 @@ function renderProducts(products) {
   products.forEach(product => {
     const card = document.createElement('div');
     card.className = 'product-card';
+    // Only include an image element if the product has an `image` property defined. Otherwise no image will be shown.
+    const imageHtml = product.image ? `<img src="${product.image}" alt="${product.name}">` : '';
     card.innerHTML = `
+      ${imageHtml}
       <h3>${product.name}</h3>
       <p><strong>Category:</strong> ${product.department}</p>
       ${product.pack ? `<p><strong>Pack:</strong> ${product.pack}</p>` : ''}
