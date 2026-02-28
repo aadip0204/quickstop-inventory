@@ -5,58 +5,60 @@ async function loadProducts() {
   return data;
 }
 
-function renderProducts(products) {
-  const grid = document.getElementById('productGrid');
-  grid.innerHTML = '';
+function createProductCard(product) {
+  const card = document.createElement('div');
+  card.className = 'product-card';
+  const imageHtml = product.image ? `<img src="${product.image}" alt="${product.name}">` : '';
+  card.innerHTML = `
+    ${imageHtml}
+    <h3>${product.name}</h3>
+    <p><strong>Category:</strong> ${product.department}</p>
+    ${product.pack ? `<p><strong>Pack:</strong> ${product.pack}</p>` : ''}
+    ${product.price ? `<p class="price">$${product.price.toFixed(2)}</p>` : ''}
+  `;
+  return card;
+}
+
+function renderSections(products) {
+  // Containers for each tier
+  const sections = {
+    premium: document.getElementById('grid-premium'),
+    core: document.getElementById('grid-core'),
+    snack: document.getElementById('grid-snack'),
+    tobacco: document.getElementById('grid-tobacco')
+  };
+  // Clear existing content
+  Object.values(sections).forEach(el => {
+    if (el) el.innerHTML = '';
+  });
   products.forEach(product => {
-    const card = document.createElement('div');
-    card.className = 'product-card';
-    // Only include an image element if the product has an `image` property defined. Otherwise no image will be shown.
-    const imageHtml = product.image ? `<img src="${product.image}" alt="${product.name}">` : '';
-    card.innerHTML = `
-      ${imageHtml}
-      <h3>${product.name}</h3>
-      <p><strong>Category:</strong> ${product.department}</p>
-      ${product.pack ? `<p><strong>Pack:</strong> ${product.pack}</p>` : ''}
-      ${product.price ? `<p class="price">$${product.price.toFixed(2)}</p>` : ''}
-    `;
-    grid.appendChild(card);
+    const tier = product.tier || 'core';
+    const container = sections[tier] || sections['core'];
+    const card = createProductCard(product);
+    container.appendChild(card);
   });
 }
 
+// Category filter removed in this design
 function populateCategories(products) {
-  const select = document.getElementById('categoryFilter');
-  const categories = Array.from(new Set(products.map(p => p.department))).sort();
-  categories.forEach(cat => {
-    const option = document.createElement('option');
-    option.value = cat;
-    option.textContent = cat;
-    select.appendChild(option);
-  });
+  return;
 }
 
 function initSearchAndFilter(products) {
   const searchInput = document.getElementById('search');
-  const categorySelect = document.getElementById('categoryFilter');
-
   function filter() {
     const query = searchInput.value.toLowerCase();
-    const category = categorySelect.value;
     const filtered = products.filter(prod => {
-      const matchesSearch = prod.name.toLowerCase().includes(query);
-      const matchesCategory = category === '' || prod.department === category;
-      return matchesSearch && matchesCategory;
+      return prod.name.toLowerCase().includes(query) || prod.department.toLowerCase().includes(query);
     });
-    renderProducts(filtered);
+    renderSections(filtered);
   }
-
   searchInput.addEventListener('input', filter);
-  categorySelect.addEventListener('change', filter);
 }
 
 window.addEventListener('DOMContentLoaded', async () => {
   const products = await loadProducts();
   populateCategories(products);
   initSearchAndFilter(products);
-  renderProducts(products);
+  renderSections(products);
 });

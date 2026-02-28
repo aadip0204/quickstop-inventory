@@ -8,26 +8,58 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Top bar with location, phone and hours -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <span class="store-location">📍 111th St, Chicago</span>
+      <span class="store-hours">🕒 Mon–Sun: 10 AM – 11 PM</span>
+      <span class="store-phone">📞 (773) 555‑1234</span>
+    </div>
+  </div>
   <header>
     <div class="header-inner">
       <img src="logo.png" alt="Quick Stop Food & Liquor logo" id="logo">
       <div class="title-area">
         <h1>Quick Stop Food & Liquor</h1>
-        <p class="tagline">Available in‑store inventory</p>
+        <p class="tagline">Chicago’s Best Prices on Spirits</p>
         <p class="note">Inventory updated daily. If it's not listed here, it's not in stock.</p>
       </div>
     </div>
   </header>
+  <!-- Hero section for branding and call to action -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2 class="hero-heading">Discover Your Next Favorite Bottle</h2>
+      <p class="hero-subheading">Browse our curated selection of spirits, beer, wine and more. Call us to reserve your favorites today.</p>
+    </div>
+  </section>
+  <!-- Controls section: search bar (category filter removed) -->
   <section id="controls">
-    <input type="text" id="search" placeholder="Search products...">
-    <select id="categoryFilter">
-      <option value="">All Categories</option>
-    </select>
+    <input type="text" id="search" placeholder="Search products…" autocomplete="off">
   </section>
-  <section>
-    <div id="productGrid" class="grid"></div>
+  <!-- Premium / Featured products -->
+  <section id="premium">
+    <h2>Top Shelf & Premium</h2>
+    <div id="grid-premium" class="grid"></div>
+  </section>
+  <!-- Core products -->
+  <section id="core">
+    <h2>Core Selection</h2>
+    <div id="grid-core" class="grid"></div>
+  </section>
+  <!-- Snacks and beverages -->
+  <section id="snacks">
+    <h2>Snacks &amp; Beverages</h2>
+    <div id="grid-snack" class="grid"></div>
+  </section>
+  <!-- Tobacco and miscellaneous -->
+  <section id="tobacco">
+    <h2>Tobacco &amp; Misc</h2>
+    <div id="grid-tobacco" class="grid"></div>
+  </section>
+  <footer>
     <p class="note">Prices and availability are subject to change. Call store to confirm availability.</p>
-  </section>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
