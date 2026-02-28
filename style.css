@@ -206,14 +206,25 @@ footer {
 /* Hero section styles */
 #hero {
   position: relative;
-  /* Use a simplified gradient for the hero background.  
-     This avoids relying on an external image while still evoking a skyline-at-dusk feel.  
-     It transitions from a deep blue‑grey at the top to near‑black at the bottom. */
-  background: linear-gradient(180deg, rgba(28,35,49,0.85) 0%, rgba(8,10,15,0.95) 100%);
+  /* Use a skyline photo as the hero background with a dark overlay for readability.
+     The first layer is a semi‑transparent gradient overlay; the second layer is the
+     Chicago skyline photograph. The image stretches to cover the entire hero.
+     Adjust the alpha values of the gradient to ensure the text remains visible. */
+  /* Set a skyline image as the hero background. Define the properties
+     explicitly for maximum compatibility across browsers. */
+  /* Use the Chicago skyline photo as the hero background. The image is blended
+     with a semi‑transparent dark color to ensure the overlaid text remains legible. */
+  background-image: url('images/chicago2_skyline.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
   text-align: center;
-  padding: 120px 20px;
+  padding: 140px 20px;
   border-bottom: 1px solid #2a2a2a;
   box-shadow: inset 0 -8px 16px rgba(0,0,0,0.6);
+  /* Remove the debug background color now that the image is visible */
 }
 #hero .hero-content {
   max-width: 800px;
