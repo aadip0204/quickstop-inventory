@@ -23,7 +23,7 @@
       <img src="images/logo.png" alt="Quick Stop Food & Liquor logo" id="logo">
       <div class="title-area">
         <h1>Quick Stop Food & Liquor</h1>
-        <p class="tagline">Chicago’s Best Prices on Spirits</p>
+        <p class="tagline">Chicago’s Best Selection of Spirits</p>
         <p class="note">Inventory updated daily. If it's not listed here, it's not in stock.</p>
       </div>
     </div>
@@ -38,12 +38,24 @@
       <a href="#departments" class="cta-button">Explore Inventory</a>
     </div>
   </section>
+
+  <!-- Categories section: highlight popular departments for quick navigation -->
+  <section id="categories">
+    <h2>Shop by Category</h2>
+    <div id="categoryCards" class="categories-grid"></div>
+  </section>
   <!-- Controls section: search bar and category filter -->
   <section id="controls">
     <input type="text" id="search" placeholder="Search products…" autocomplete="off">
     <select id="categorySelect">
       <option value="all">All Departments</option>
     </select>
+  </section>
+
+  <!-- Weekly deals section: highlight great values -->
+  <section id="deals">
+    <h2>Weekly Deals</h2>
+    <div id="deals-grid" class="grid"></div>
   </section>
   <!-- Featured products section (premium items) -->
   <section id="featured">
@@ -55,10 +67,14 @@
     <!-- Department sections inserted here by JavaScript -->
   </section>
   <footer>
-    <p class="note">Prices and availability are subject to change. Call store to confirm availability.</p>
+    <p class="note">Call store for price and availability.</p>
   </footer>
-  <!-- Load products data before the main script -->
-  <script src="products.js"></script>
+
+  <!-- Back to top button -->
+  <button id="backToTop" title="Back to top">↑</button>
+  <!-- Load grouped products data before the main script -->
+  <!-- Load the filtered, deduplicated product data -->
+  <script src="products_grouped_filtered.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
