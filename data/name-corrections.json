@@ -4036,17 +4036,32 @@
       "sku": "530",
       "expectedUpc": "613008734008",
       "expectedNameSha256": "7de9a85d77f889c9d6594fa09c2f851b19c02a6869fac4746d9f36690b89c642",
-      "replaceTextFrom": "STRAWBERYCAN",
-      "replaceTextTo": "STRAWBERRYCAN",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "ARIZONA GOLD BEAR STRAWBERYCAN",
+      "replaceTextTo": "AriZona Jack Nicklaus Golden Bear Lite Strawberry Lemonade CAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "url": "https://www.prweb.com/releases/arizona_beverages_keeps_it_real/prweb12834268.htm",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://americansweets.co.uk/soda-and-drinks/fruit-juice-juice-drinks/arizona-golden-bear-lite-strawberry-lemonade-23fl-oz-680ml-html",
+          "kind": "exact_upc_listing",
+          "supports": "Source UPC 613008734008 and matching expression; retailer sizes do not override inventory."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/4008/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        },
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
           "kind": "english_dictionary_ordinary_word_spelling",
           "supports": "Confirms only standard spelling strawberry; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "2667",
@@ -4409,17 +4424,32 @@
       "sku": "305",
       "expectedUpc": "073390011000",
       "expectedNameSha256": "162bceb9f11a109c8124f834e584b7db12ad040faa5a9687417affd418600e4f",
-      "replaceTextFrom": "airheaos",
-      "replaceTextTo": "Airheads",
-      "scope": "brand_spelling_only",
+      "replaceTextFrom": "airheaos bites",
+      "replaceTextTo": "Airheads Bites Paradise Blends",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://perfettivanmelleus.com/airheads-paradise-blends-2/",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.nassaucandy.com/airheads-bites-paradise-blend-2oz.html",
+          "supports": "Exact source UPC 073390011000 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/339/001/1000/1.400.jpg",
+          "supports": "Airheads Bites Paradise Blends front bag. Bites and Paradise Blends readable; source unknown size remains unchanged."
+        },
         {
           "url": "https://www.airheads.com/candy/airheads/",
           "kind": "official_manufacturer_brand_or_product",
           "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "306",
@@ -4682,16 +4712,31 @@
       "expectedUpc": "040000422068",
       "expectedNameSha256": "eee66ae94d2407709a89813152a045f36c5b9f0a498051b0d34331a9d21ef165",
       "replaceTextFrom": "MILKYAY",
-      "replaceTextTo": "MILKY WAY",
-      "scope": "brand_spelling_only",
+      "replaceTextTo": "Milky Way Chocolate Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/milky-way-bar-king-size",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/milky-way-bar-id-040000422068",
+          "supports": "Exact source UPC 040000422068 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/042/2068/3.400.jpg",
+          "supports": "Milky Way original chocolate bar wrapper, 1.84oz visible. Household photo; no size imported."
+        },
         {
           "url": "https://www.milkywaybar.com/",
           "kind": "official_manufacturer_brand_or_product",
           "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "1185",
@@ -7781,33 +7826,63 @@
       "sku": "4138",
       "expectedUpc": "034000249862",
       "expectedNameSha256": "0246186af76dfcf62f205f39d498a1d1183a5fdfc369deb8c514c6414f252d70",
-      "replaceTextFrom": "hersheys",
-      "replaceTextTo": "Hershey's",
-      "scope": "brand_punctuation_only",
+      "replaceTextFrom": "hersheys milk chocolate",
+      "replaceTextTo": "Hershey's Milk Chocolate Candy Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hersheyland.com/products/hersheys-milk-chocolate-candy-bar-1-55-oz.html",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.theamericanstore.de/Hersheys-Milk-Chocolate-Bar-43g",
+          "supports": "Exact source UPC 034000249862 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/400/024/9862/1.400.jpg",
+          "supports": "Hershey's Milk Chocolate 43g wrapper on household surface. Plain milk chocolate expression readable; no size imported."
+        },
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
           "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "4137",
       "expectedUpc": "034000702152",
       "expectedNameSha256": "96d38ab9078e84e9c3e0fe94ae59d7ff264cd6e72998029354ce9cdd567896f6",
-      "replaceTextFrom": "hersheys",
-      "replaceTextTo": "Hershey's",
-      "scope": "brand_punctuation_only",
+      "replaceTextFrom": "hersheys cookies n creme",
+      "replaceTextTo": "Hershey's Cookies 'n' Creme Candy Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hersheyland.com/products/hersheys-cookies-n-creme-candy-bar-1-55-oz.html",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.aallyandsons.com/hershey-s-cookies-n-creme-bar-43g/",
+          "supports": "Exact source UPC 034000702152 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/400/070/2152/3.400.jpg",
+          "supports": "Hershey's Cookies 'n' Creme front wrapper; hand-held and partly clipped. Expression readable; no size inferred."
+        },
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
           "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "4135",
@@ -7877,17 +7952,32 @@
       "sku": "4134",
       "expectedUpc": "072250007672",
       "expectedNameSha256": "14cefe1fb346bf2db7c04d9520a925b82c2765138afdd4201cd3d84db65e833a",
-      "replaceTextFrom": "hersheys",
-      "replaceTextTo": "Hershey's",
-      "scope": "brand_punctuation_only",
+      "replaceTextFrom": "hersheys cakes 99g",
+      "replaceTextTo": "Mrs. Freshley's Deluxe Hershey's Triple Chocolate Cakes 99g",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mrsfreshleys.com/creme-filled-cakes",
+          "supports": "Primary manufacturer reference confirms the Mrs. Freshley's brand and snack-cake business only. This page does not list the licensed Deluxe expression; that wording is corroborated separately by the actual package and exact-UPC distributor listing."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.holidaywholesale.com/wp-content/uploads/02_February_HolidayHighlights_2022_LR.pdf#page=4",
+          "supports": "Page 4 was rendered and visually inspected. It pairs source UPC 072250007672 with Deluxe Hershey's Triple Chocolate Cakes and shows the branded package. No prices or distributor case counts imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/225/000/7672/2.400.jpg",
+          "supports": "Individually inspected front reads Mrs. Freshley's Deluxe Hershey's Triple Chocolate Cakes 99g. Original source measurement retained; this review does not approve the photograph for public display."
+        },
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
           "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "4136",
@@ -7909,17 +7999,32 @@
       "sku": "4139",
       "expectedUpc": "034000702343",
       "expectedNameSha256": "eee030a977189aecb4a12b48f16ca8697114739b9211cfe11bd0381f970125d8",
-      "replaceTextFrom": "hersheys",
-      "replaceTextTo": "Hershey's",
-      "scope": "brand_punctuation_only",
+      "replaceTextFrom": "hersheys milk chocolatealmonds",
+      "replaceTextTo": "Hershey's Milk Chocolate with Whole Almonds Candy Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.hersheys.com/034000241743-0050-en-US/index.html",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.aallyandsons.com/hershey-s-milk-chocolate-with-whole-almonds-bar-41g/",
+          "supports": "Exact source UPC 034000702343 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/400/070/2343/1.400.jpg",
+          "supports": "Hershey's Milk Chocolate with Whole Almonds 41g wrapper. Full expression readable; no size imported."
+        },
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
           "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "239",
@@ -9682,6 +9787,1763 @@
           "supports": "Complete light-blue Gatorade bottle with orange cap on white. The label reads Gatorade FROST THIRST QUENCHER, CRISP & COOL, GLACIER FREEZE, and 20 FL OZ (1.25 PT) 591 mL. No price, carton, hand or household setting. Single bottle; source 20 oz size retained."
         }
       ]
+    },
+    {
+      "sku": "511",
+      "expectedUpc": "613008719302",
+      "expectedNameSha256": "6ff183a4c607a1452c85b2d79197b5ab00976e21aac89ebe48bb45117699cf0f",
+      "replaceTextFrom": "ARIZONA ARN PALMER LITE 24OZ",
+      "replaceTextTo": "AriZona Arnold Palmer Lite Half & Half Iced Tea Lemonade 24OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/arnold-palmer-lite-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008719302, Arnold Palmer."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/9302/4.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "101295",
+      "expectedUpc": "613008731021",
+      "expectedNameSha256": "a34bf21b4f8b05f5f8e02497b14a6ccc0cf4a2fd14a47bacd852f78d040718ea",
+      "replaceTextFrom": "ARIZONA BLUEBERRY 20OZ",
+      "replaceTextTo": "AriZona Blueberry White Tea 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/blueberry-white-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=28",
+          "kind": "exact_upc_listing",
+          "supports": "Page 28: 613008731021, Blueberry White Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/1021/6.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "515",
+      "expectedUpc": "613008728045",
+      "expectedNameSha256": "b6c48cd716389f3644505c4a75f28a8e125f03e04132c6fdac5f211b6e03a2da",
+      "replaceTextFrom": "ARIZONA CAUT ENERGYCAN",
+      "replaceTextTo": "AriZona RX Energy Caution Extreme Performance Drink CAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/caution-performance-energy-drink",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://slasti.kz/p125324604-energeticheskij-napitok-arizona.html",
+          "kind": "exact_upc_listing",
+          "supports": "Source UPC 613008728045 and matching expression; retailer sizes do not override inventory."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/8045/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "516",
+      "expectedUpc": "613008735012",
+      "expectedNameSha256": "67c612f4a74701d77d136c6e0a7c5f6ec25aa6f46aaf8389ee7fad570d44d694",
+      "replaceTextFrom": "ARIZONA CHERRY LIME 24OZCAN",
+      "replaceTextTo": "AriZona Cherry Lime Rickey Sparkling Cherry-Lime 24OZCAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/collections/juices",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://www.kitchn.shop/arizona-22-fl-oz-cherry-lime-rickey/",
+          "kind": "exact_upc_listing",
+          "supports": "Source UPC 613008735012 and matching expression; retailer sizes do not override inventory."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/5012/8.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "518",
+      "expectedUpc": "613008745905",
+      "expectedNameSha256": "0d406cfdb25174c4c396c01782666f12672126107416cdf84fc81f058636ef18",
+      "replaceTextFrom": "ARIZONA CUCUMBER 24OZ",
+      "replaceTextTo": "AriZona Cucumber Green Tea with Citrus 24OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.prweb.com/releases/arizona_green_tea_will_have_you_feeling_cool_as_a_cucumber/prweb14158489.htm",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://www.jcsalesweb.com/Catalog/Product/0/0/585009-ARIZONA-GREEN-TEA-CUCUMBER-CITRUS-22-OZ",
+          "kind": "exact_upc_listing",
+          "supports": "Source UPC 613008745905 and matching expression; retailer sizes do not override inventory."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/874/5905/3.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "519",
+      "expectedUpc": "613008773014",
+      "expectedNameSha256": "497f2ea536f379852e78f64355fcd2b5d9a40ab227f56f253c36764a3bf2eaea",
+      "replaceTextFrom": "ARIZONA DRAGONFRUIT MANGO22 FL OZ",
+      "replaceTextTo": "AriZona Dragonfruit Mango Juice Cocktail 22 FL OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/dragonfruit-mango-juice-cocktail-20-oz-tall-boy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://jcsalesweb.com/Catalog/Product/3568/0/626300-ARIZONA-COCKTAIL-JUICE-DRAGONFRT-MANGO-22-OZ",
+          "kind": "exact_upc_listing",
+          "supports": "Source UPC 613008773014 and matching expression; retailer sizes do not override inventory."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/877/3014/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "521",
+      "expectedUpc": "613008722418",
+      "expectedNameSha256": "eae90ca9358575db169c9054ee2d27b4d1e2105ef6dfd7ab8f975b2eb8bd49f0",
+      "replaceTextFrom": "ARIZONA EX SWEET GREEN TEA",
+      "replaceTextTo": "AriZona Extra Sweet Green Tea with Ginseng & Honey",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/green-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=28",
+          "kind": "exact_upc_listing",
+          "supports": "Page 28: 613008722418, Extra Sweet Green Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/2418/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "525",
+      "expectedUpc": "613008710194",
+      "expectedNameSha256": "8a37b871946c03ba693182e9589ac59689999499cfe99065ab7aea695268f142",
+      "replaceTextFrom": "ARIZONA FRUIT PUNCH128 OZ",
+      "replaceTextTo": "AriZona Fruit Punch Fruit Juice Cocktail 128 OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/fruit-punch-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=30",
+          "kind": "exact_upc_listing",
+          "supports": "Page 30: 613008710194, Fruit Punch."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/0194/3.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "526",
+      "expectedUpc": "613008751302",
+      "expectedNameSha256": "3294022cb09da32e0b2c85da4595221d2a57f0a1bdbc821eab83c1565b1f9018",
+      "replaceTextFrom": "ARIZONA FRUIT PUNCH  20OZ",
+      "replaceTextTo": "AriZona Fruit Punch Fruit Juice Cocktail 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/fruit-punch-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=28",
+          "kind": "exact_upc_listing",
+          "supports": "Page 28: 613008751302, Fruit Punch."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/875/1302/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "527",
+      "expectedUpc": "613008718763",
+      "expectedNameSha256": "f1929c3c926661d5bc717c6780de2139f513f3f23dff18526233fe5058e95050",
+      "replaceTextFrom": "ARIZONA FRUIT PUNCH 24OZCAN",
+      "replaceTextTo": "AriZona Fruit Punch Fruit Juice Cocktail 24OZCAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/fruit-punch-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008718763, Fruit Punch."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/8763/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "532",
+      "expectedUpc": "613008719296",
+      "expectedNameSha256": "0eb385ad66869d91044bbbd5974662f1e6b2c736ffbfffa19509c06bcb000fb5",
+      "replaceTextFrom": "ARIZONA GRAPEADE 24OZCAN",
+      "replaceTextTo": "AriZona Grapeade Fruit Juice Cocktail 24OZCAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/pages/faqs",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand reference only; historical full expression is supported separately by the primary distributor catalog and actual manufacturer package label."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008719296, Grapeade."
+        },
+        {
+          "url": "https://lamonicabeverages.com/our-brands/non-alcoholic-beers/arizona/",
+          "kind": "primary_distributor",
+          "supports": "Direct distributor brand page lists this historical expression."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/9296/3.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "533",
+      "expectedUpc": "613008715120",
+      "expectedNameSha256": "2c47730f9f7359b9c22c61c387e57867183c3a07cc7af07c379d6bd3e01e42cc",
+      "replaceTextFrom": "ARIZONA GREE TEA 1G",
+      "replaceTextTo": "AriZona Green Tea with Ginseng & Honey 1G",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/green-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=30",
+          "kind": "exact_upc_listing",
+          "supports": "Page 30: 613008715120, Green Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/5120/4.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "534",
+      "expectedUpc": "613008721770",
+      "expectedNameSha256": "9d641ccb576da71f3b34db456884f60f758b950cb2eaf5f85fa5350e7137bc3e",
+      "replaceTextFrom": "ARIZONA GREEN TEA34OZ",
+      "replaceTextTo": "AriZona Green Tea with Ginseng & Honey 34OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/green-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://shop.mercaso.com/collections/arizona-teas/products/arizona-green-tea-34-oz-12-pack",
+          "kind": "exact_upc_listing",
+          "supports": "Source UPC 613008721770 and matching expression; retailer sizes do not override inventory."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/1770/13.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "535",
+      "expectedUpc": "613008751159",
+      "expectedNameSha256": "9c615b6e4ca85f38284cbbecc272a31d3d0d9f47ec0c7f3504b71f8a27ea410b",
+      "replaceTextFrom": "ARIZONA GREEN TEA  20OZ",
+      "replaceTextTo": "AriZona Green Tea with Ginseng & Honey 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/green-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=28",
+          "kind": "exact_upc_listing",
+          "supports": "Page 28: 613008751159, Green Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/875/1159/4.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "538",
+      "expectedUpc": "613008715267",
+      "expectedNameSha256": "8a378a496804138888514c51fe61f05546cdba37c5cf0be6c661fe735291b655",
+      "replaceTextFrom": "ARIZONA GREEN TEA 24OZCAN",
+      "replaceTextTo": "AriZona Green Tea with Ginseng & Honey 24OZCAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/green-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=28",
+          "kind": "exact_upc_listing",
+          "supports": "Page 28: 613008715267, Green Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/5267/17.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "542",
+      "expectedUpc": "613008730390",
+      "expectedNameSha256": "9ef7bac30a06eb5880d45ea20bc1b6ad162fc194a407711e6a843d9877976303",
+      "replaceTextFrom": "ARIZONA HALF & HALF 24OZ",
+      "replaceTextTo": "AriZona Arnold Palmer Southern Style Half & Half Sweet Tea & Pink Lemonade 24OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/southern-style-arnold-palmer-20-oz",
+          "kind": "manufacturer",
+          "supports": "Current manufacturer Southern Style family uses sweet tea and lemonade. Historical Pink Lemonade wording is established by the inspected matching-UPC package, not inferred from the current reformulated bottle."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008730390, Arnold Palmer Southern."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/0390/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "507",
+      "expectedUpc": "613008725815",
+      "expectedNameSha256": "5c567bbf838fa47722c02b3574d897abefeef10cdb421d30bcd1649100e3605c",
+      "replaceTextFrom": "ARIZONA 20OZHALF & HALF LEMONADE",
+      "replaceTextTo": "AriZona Half & Half Iced Tea & Lemonade 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/arnold-palmer-lite-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms the iced-tea/lemonade combination; the inspected historical package lacks Arnold Palmer branding, so none is added."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=28",
+          "kind": "exact_upc_listing",
+          "supports": "Page 28: 613008725815, Half & Half."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/5815/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "551",
+      "expectedUpc": "613008719524",
+      "expectedNameSha256": "60e82f96d819a2f9bf0b894458d0ab4be37bb2ed9bd0b84cd69a540b7cc8d3ed",
+      "replaceTextFrom": "ARIZONA ICED TEA",
+      "replaceTextTo": "AriZona Iced Tea with Peach Flavor",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/peach-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008719524, Peach Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/9524/9.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "553",
+      "expectedUpc": "613008727826",
+      "expectedNameSha256": "be8dd1483014dfe3375c1bfb99c35259299ec218f09573d0d1697e3a5cae53fd",
+      "replaceTextFrom": "ARIZONA ICED TEA  24OZCAN",
+      "replaceTextTo": "AriZona Iced Tea with Cranberry Juice 24OZCAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/pages/faqs",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand reference only; historical full expression is supported separately by the primary distributor catalog and actual manufacturer package label."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008727826, Cranberry Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/7826/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "557",
+      "expectedUpc": "613008742768",
+      "expectedNameSha256": "dcfd6f3962f34d9698e0c43e2f2e294c92709e4ee547ef1586bf1da99d465571",
+      "replaceTextFrom": "ARIZONA ICED TEA 1GLPEACH",
+      "replaceTextTo": "AriZona Iced Tea with Peach Flavor 1GL",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/peach-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=30",
+          "kind": "exact_upc_listing",
+          "supports": "Page 30: 613008742768, Peach Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/874/2768/6.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "555",
+      "expectedUpc": "613008724382",
+      "expectedNameSha256": "611ac5c8f9ae5d07ad65b78daae9bd7436a8c10eec47c118c119b2b959305e97",
+      "replaceTextFrom": "ARIZONA ICED TEA 1GLRASPBERRY",
+      "replaceTextTo": "AriZona Iced Tea with Raspberry Flavor 1GL",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/pages/faqs",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand reference only; historical full expression is supported separately by the primary distributor catalog and actual manufacturer package label."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=30",
+          "kind": "exact_upc_listing",
+          "supports": "Page 30: 613008724382, Raspberry Tea."
+        },
+        {
+          "url": "https://lamonicabeverages.com/our-brands/non-alcoholic-beers/arizona/",
+          "kind": "primary_distributor",
+          "supports": "Direct distributor brand page lists this historical expression."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/4382/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "556",
+      "expectedUpc": "613008735135",
+      "expectedNameSha256": "43f21b7ff27e3b525d26f5d0f51a715f978756afc0e37be11146e0703127fe1f",
+      "replaceTextFrom": "ARIZONA ICED TEA 1GLWITH LEMON",
+      "replaceTextTo": "AriZona Iced Tea with Lemon Flavor 1GL",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/lemon-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=30",
+          "kind": "exact_upc_listing",
+          "supports": "Page 30: 613008735135, Lemon Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/5135/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "560",
+      "expectedUpc": "613008725853",
+      "expectedNameSha256": "5d7bf3b639a7557babbafad4e4f78f90de73e09d8e8940d6d5476bf5ac38c4a7",
+      "replaceTextFrom": "Arizona ICED TEA AND MANGOCan",
+      "replaceTextTo": "AriZona Half & Half Iced Tea & Mango Can",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/pages/faqs",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand reference only; historical full expression is supported separately by the primary distributor catalog and actual manufacturer package label."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008725853, Half & Half Mango."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/5853/2.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "495",
+      "expectedUpc": "613008727000",
+      "expectedNameSha256": "dc583352ea8eb310ab7069a22d8cf60ac75b572fb552c88d81416a0c0b0d4fdb",
+      "replaceTextFrom": "ARIZONA  ICED TEA LEMONADE34OZ",
+      "replaceTextTo": "AriZona Arnold Palmer Lite Half & Half Iced Tea Lemonade 34OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/arnold-palmer-lite-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://osm-us.com/index.php?main_page=product_info&products_id=5302",
+          "kind": "exact_upc_listing",
+          "supports": "Source UPC 613008727000 and matching expression; retailer sizes do not override inventory."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/7000/4.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "562",
+      "expectedUpc": "613008735159",
+      "expectedNameSha256": "c7410886020923afbba865a847190a357c22ca6fe6afa9c72e3164c2d4475747",
+      "replaceTextFrom": "Arizona Iced tea LemonCan",
+      "replaceTextTo": "AriZona Iced Tea with Lemon Flavor Can",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/lemon-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008735159, Lemon Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/5159/5.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "552",
+      "expectedUpc": "613008751432",
+      "expectedNameSha256": "1476cbca04bc51b92deacbc7fa9b0b2c75846c55d0304a8d973a8ae0ff5819da",
+      "replaceTextFrom": "ARIZONA ICED TEA PEACH  20OZ B",
+      "replaceTextTo": "AriZona Iced Tea with Peach Flavor 20OZ B",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/peach-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=28",
+          "kind": "exact_upc_listing",
+          "supports": "Page 28: 613008751432, Peach Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/875/1432/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "550",
+      "expectedUpc": "613008725693",
+      "expectedNameSha256": "926da073ff38f71ea69c726dc50e07c6ed1624b24696ecc1638b483ea2971836",
+      "replaceTextFrom": "ARIZONA ICED TEAWITH LEMON FLAVOR-PLASTIC",
+      "replaceTextTo": "AriZona Iced Tea with Lemon Flavor -PLASTIC",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/lemon-tea-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=28",
+          "kind": "exact_upc_listing",
+          "supports": "Page 28: 613008725693, Lemon Tea."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/5693/2.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "566",
+      "expectedUpc": "613008735432",
+      "expectedNameSha256": "10432d23f026cf493d3dbd2cc3bcb52ab1c029720f257d841447254f471e7354",
+      "replaceTextFrom": "ARIZONA KIWI STRAW 24OZCAN",
+      "replaceTextTo": "AriZona Kiwi Strawberry Fruit Juice Cocktail 24OZCAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/kiwi-strawberry-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008735432, Kiwi Strawberry."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/5432/6.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "101210",
+      "expectedUpc": "613008758868",
+      "expectedNameSha256": "d04ad2d8a734f2c588f93e00d9c0bc8a0af9e97f5e87f59299cfeedc500501c3",
+      "replaceTextFrom": "ARIZONA KIWI STRAW 20OZ",
+      "replaceTextTo": "AriZona Kiwi Strawberry Fruit Juice Cocktail 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/kiwi-strawberry-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://pharmacybigapple.com/products/arizona-kiwi-strawberry-20-oz-bottle",
+          "kind": "exact_upc_listing",
+          "supports": "Source UPC 613008758868 and matching expression; retailer sizes do not override inventory."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/875/8868/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "567",
+      "expectedUpc": "613008719845",
+      "expectedNameSha256": "eb0b0889f65571e1662117550b4eac22905eeafcd405e12a0f410930f4c5c6d3",
+      "replaceTextFrom": "ARIZONA KIWI STRAWBERRY 1GL",
+      "replaceTextTo": "AriZona Kiwi Strawberry Fruit Juice Cocktail 1GL",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/kiwi-strawberry-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=30",
+          "kind": "exact_upc_listing",
+          "supports": "Page 30: 613008719845, Kiwi Strawberry."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/9845/6.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "572",
+      "expectedUpc": "613008726096",
+      "expectedNameSha256": "31e67e784eb90d0cd76e234bf691d581acb4eb1983f84438d4888120fcd4619e",
+      "replaceTextFrom": "ARIZONA LEMONADE 24OZCAN",
+      "replaceTextTo": "AriZona Lemonade Fruit Juice Cocktail 24OZCAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/pages/faqs",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand reference only; historical full expression is supported separately by the primary distributor catalog and actual manufacturer package label."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=29",
+          "kind": "exact_upc_listing",
+          "supports": "Page 29: 613008726096, Lemonade."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/6096/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "499",
+      "expectedUpc": "613008764784",
+      "expectedNameSha256": "effa2de1d8bea215c15c419c4d7da07f5b0e1757e95ae293971d11fd39b200ba",
+      "replaceTextFrom": "ARIZONA  MARVEL  LXR  16 OZ",
+      "replaceTextTo": "AriZona Marvel Super LXR Hero Hydration Dragon Fruit Watermelon 16 OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://tmng-al.uspto.gov/resting2/api/casedoc/cms/case/79375105/office-action/OfficeAction6192091.pdf",
+          "kind": "manufacturer",
+          "supports": "Official USPTO record preserves the manufacturer Super LXR Hero Hydration page. Individual flavor comes from the primary distributor unit UPC listing and actual package label."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=31",
+          "kind": "exact_upc_listing",
+          "supports": "Page 31: 613008764784, LXR Dragon Fruit Watermelon."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/876/4784/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "498",
+      "expectedUpc": "613008764760",
+      "expectedNameSha256": "55a22e80632f30af441042d0e3a497d7ab6fdbd1127492674eefdc7f72e726f3",
+      "replaceTextFrom": "ARIZONA  MARVEL  LXR  16 OZBLUEBERRY",
+      "replaceTextTo": "AriZona Marvel Super LXR Hero Hydration Açaí Blueberry 16 OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://tmng-al.uspto.gov/resting2/api/casedoc/cms/case/79375105/office-action/OfficeAction6192091.pdf",
+          "kind": "manufacturer",
+          "supports": "Official USPTO record preserves the manufacturer Super LXR Hero Hydration page. Individual flavor comes from the primary distributor unit UPC listing and actual package label."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=31",
+          "kind": "exact_upc_listing",
+          "supports": "Page 31: 613008764760, LXR Açaí Blueberry."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/876/4760/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "497",
+      "expectedUpc": "613008764722",
+      "expectedNameSha256": "bb52c7d456f600230838387f267465435e5524fd3c9a4c70e6dd53992d1481a2",
+      "replaceTextFrom": "ARIZONA  MARVEL  LXR  16 OZMANGO",
+      "replaceTextTo": "AriZona Marvel Super LXR Hero Hydration Peach Mango 16 OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://tmng-al.uspto.gov/resting2/api/casedoc/cms/case/79375105/office-action/OfficeAction6192091.pdf",
+          "kind": "manufacturer",
+          "supports": "Official USPTO record preserves the manufacturer Super LXR Hero Hydration page. Individual flavor comes from the primary distributor unit UPC listing and actual package label."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=31",
+          "kind": "exact_upc_listing",
+          "supports": "Page 31: 613008764722, LXR Peach Mango."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/876/4722/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "576",
+      "expectedUpc": "613008740382",
+      "expectedNameSha256": "800a7680bc18f93f5987500901642ac9e6c542a9ad937607d626bb529510b2db",
+      "replaceTextFrom": "ARIZONA MUCHO MANGO128 OZ",
+      "replaceTextTo": "AriZona Mucho Mango Fruit Juice Cocktail 128 OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/mucho-mango-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://premierbrandsus.com/wp-content/uploads/2025/09/Catalogue.pdf#page=30",
+          "kind": "exact_upc_listing",
+          "supports": "Page 30: 613008740382, Mucho Mango."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/874/0382/5.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "8908",
+      "expectedUpc": "048500008607",
+      "expectedNameSha256": "33cb39dd17c20de08417530a527f1d292f62bba89790715dc415cbfbdea5d085",
+      "replaceTextFrom": "TROPICANA ORANGE",
+      "replaceTextTo": "Tropicana 100% Orange Juice",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://smartlabel.pepsico.info/048500008607-0013-en-US/index.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://smartlabel.pepsico.info/048500008607-0013-en-US/index.html",
+          "kind": "exact_upc_listing",
+          "supports": "Manufacturer SmartLabel explicitly identifies source UPC 048500008607."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/000/8607/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "8905",
+      "expectedUpc": "048500203972",
+      "expectedNameSha256": "1001a5128ac3c4a0467c298a69019b7bef5c80abb88d54987acaa479c083b9e1",
+      "replaceTextFrom": "Tropicana caribbean sunset52oz",
+      "replaceTextTo": "Tropicana Caribbean Sunset Drink 52oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://smartlabel.pepsico.info/048500203972-0004-en-US/index.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://smartlabel.pepsico.info/048500203972-0004-en-US/index.html",
+          "kind": "exact_upc_listing",
+          "supports": "Manufacturer SmartLabel explicitly identifies source UPC 048500203972."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/020/3972/2.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "8906",
+      "expectedUpc": "048500203484",
+      "expectedNameSha256": "cb30191bb6b6e5dea1410e6bfe7a726b75414f2532da001006034071edf01459",
+      "replaceTextFrom": "Tropicana island punch 52oz",
+      "replaceTextTo": "Tropicana Island Punch Drink 52oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://smartlabel.pepsico.info/048500203484-0013-en-US/index.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://smartlabel.pepsico.info/048500203484-0013-en-US/index.html",
+          "kind": "exact_upc_listing",
+          "supports": "Manufacturer SmartLabel explicitly identifies source UPC 048500203484."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/020/3484/5.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "8909",
+      "expectedUpc": "048500204726",
+      "expectedNameSha256": "5d6cb40c8c31fb4f568e9e226fe61abdda21f436bc53f5ec3a823890cf79bee3",
+      "replaceTextFrom": "Tropicana peachy pineapple52oz",
+      "replaceTextTo": "Tropicana Peachy Pineapple Paradise Drink 52oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://smartlabel.pepsico.info/048500204726-0002-en-US/index.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer brand and expression corroboration; historical package wording additionally checked in the actual photo and independent UPC listing. Source volume and package tokens are not replaced."
+        },
+        {
+          "url": "https://smartlabel.pepsico.info/048500204726-0002-en-US/index.html",
+          "kind": "exact_upc_listing",
+          "supports": "Manufacturer SmartLabel explicitly identifies source UPC 048500204726."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/020/4726/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "8910",
+      "expectedUpc": "048500203989",
+      "expectedNameSha256": "e47a813d3ea1e46d08509ddb460d4f370d993a8424ad5ad25cdfd4f877cf37d2",
+      "replaceTextFrom": "Tropicana pina coladan 52oz",
+      "replaceTextTo": "Tropicana Piña Colada Drink 52oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://smartlabel.pepsico.info/048500204849-0001-en-US/index.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer SmartLabel corroborates Piña Colada Drink expression on another size. Source 52oz identity is separately supported by the source-UPC listing and actual label; no size is taken from this page."
+        },
+        {
+          "url": "https://www.kroger.com/p/tropicana-pi-a-colada-juice-drink/0004850020398",
+          "kind": "exact_upc_listing",
+          "supports": "Retailer product key omits the check digit; corroborated by full source UPC 048500203989 in the linked qualifying-products list and the existing exact UPC photo record."
+        },
+        {
+          "url": "https://snippdocs.blob.core.windows.net/docs/WKKC_BTS_2024/Qualifying_Products.pdf",
+          "kind": "exact_upc_listing",
+          "supports": "048500203989: Tropicana Piña Colada, 52oz."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/020/3989/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local photograph individually inspected for brand and complete expression; private name evidence only, not a professional-image approval."
+        }
+      ]
+    },
+    {
+      "sku": "148",
+      "expectedUpc": "040000422082",
+      "expectedNameSha256": "c9aa378b40bc7bc6a2cec0c09b7f99ed1e542e2768f6afd10a65b62ec10e630a",
+      "replaceTextFrom": "3 MUSKETEERS",
+      "replaceTextTo": "3 Musketeers Chocolate Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/3-musketeers-bar",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.nassaucandy.com/3-musketeers-1-92oz.html",
+          "supports": "Exact source UPC 040000422082 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/042/2082/6.400.jpg",
+          "supports": "Front wrapper reads 3 Musketeers; original silver/brown chocolate bar presentation. Household surface. Name evidence only."
+        }
+      ]
+    },
+    {
+      "sku": "295",
+      "expectedUpc": "073390002206",
+      "expectedNameSha256": "2e6641bea50deca1fd2fbe814eea39c4f9e368b4f30da3a4a4e1687b213c9c11",
+      "replaceTextFrom": "Air Heads Blue Rasp 0.55oz",
+      "replaceTextTo": "Airheads Blue Raspberry 0.55oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.airheads.com/find/",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.aaglobal.com/candy/DB61020-Blue-Raspberry-AirHeads-Display-Box-36-pcs.asp",
+          "supports": "Exact source UPC 073390002206 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/339/000/2206/5.400.jpg",
+          "supports": "Blue Airheads wrapper visibly says Blue Raspberry and 0.55 oz; wrapper edges clipped. Name evidence only."
+        }
+      ]
+    },
+    {
+      "sku": "296",
+      "expectedUpc": "073390002015",
+      "expectedNameSha256": "1f6f3c69bd60a417d0f406626ca1e53bc601bbf0bed38650693452f0c91781e4",
+      "replaceTextFrom": "Air Heads Cherry 0.55oz",
+      "replaceTextTo": "Airheads Cherry 0.55oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.airheads.com/find/",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://wholesale.albaneseconfectionery.com/airheads-bar-cherry-400230",
+          "supports": "Exact source UPC 073390002015 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/339/000/2015/8.400.jpg",
+          "supports": "Red Airheads wrapper visibly says Cherry and 0.55 oz; wrapper edges clipped. Name evidence only."
+        }
+      ]
+    },
+    {
+      "sku": "297",
+      "expectedUpc": "073390002022",
+      "expectedNameSha256": "9bf84ba2ee7a0bad7056ebe7637271066fad39eb65d7da4d3c1c61fc32cadb5f",
+      "replaceTextFrom": "Air Heads Orange 0.55oz",
+      "replaceTextTo": "Airheads Orange 0.55oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.airheads.com/find/",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://igotyourcandy.com/products/air-heads-taffy-orange-36-box",
+          "supports": "Exact source UPC 073390002022 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/339/000/2022/2.400.jpg",
+          "supports": "Airheads Orange display box plus loose bars; Orange expression clear. Source single-bar measure retained; no photographed display count imported."
+        }
+      ]
+    },
+    {
+      "sku": "301",
+      "expectedUpc": "073390008383",
+      "expectedNameSha256": "344f908547d512ce503e534f33c2c115ee115fd3b58e3fd5c377e1af27b85871",
+      "replaceTextFrom": "Air Heads Xtremes 2ozSweet Sour Belts",
+      "replaceTextTo": "Airheads Xtremes Rainbow Berry Sweetly Sour Belts 2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.airheads.com/find/",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://weinersltd.com/products/airheads-xtremes-rainbow-berry-candy-2-oz",
+          "supports": "Exact source UPC 073390008383 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/339/000/8383/2.400.jpg",
+          "supports": "Airheads Xtremes wrappers read Rainbow Berry and Sweetly Sour Candy. Source 2oz retained."
+        }
+      ]
+    },
+    {
+      "sku": "6460",
+      "expectedUpc": "022000285942",
+      "expectedNameSha256": "6d09441cc9b5511e9f450abbd3ff8326388526b2fd98bc2183e6ad503969135f",
+      "replaceTextFrom": "original skittles candy 5.80oz",
+      "replaceTextTo": "Skittles Original Gummies 5.80oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.skittles.com/gummies",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/24235092-skittles-original-gummy-candy-5-8-oz",
+          "supports": "Exact source UPC 022000285942 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/200/028/5942/1.400.jpg",
+          "supports": "Red Skittles Original Gummies 5.8oz bag. Gummies wording distinguishes this from ordinary Skittles candy; source measure retained."
+        }
+      ]
+    },
+    {
+      "sku": "7004",
+      "expectedUpc": "034000702329",
+      "expectedNameSha256": "8352c610ee6b526841ab25adfbe48b00609faf16819ffb36970bf3ffc31a815d",
+      "replaceTextFrom": "reeses candy",
+      "replaceTextTo": "Reese's Milk Chocolate Peanut Butter Cups",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hersheyfoodservice.com/products/reeses-milk-chocolate-peanut-butter-cups-6-75-lb-box-72-count.html",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getzh.de/reeses-peanut-butter-cups-42g",
+          "supports": "Exact source UPC 034000702329 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/400/070/2329/24.400.jpg",
+          "supports": "Reese's milk chocolate peanut butter cups orange wrapper; two cups/42g visible. No count or size imported."
+        }
+      ]
+    },
+    {
+      "sku": "7635",
+      "expectedUpc": "040000001638",
+      "expectedNameSha256": "e70795e70431db69d8228d16f9f3bd2dd06ad210b0b8aa712a92dabca46e3a44",
+      "replaceTextFrom": "skittles tropical",
+      "replaceTextTo": "Skittles Tropical Bite Size Candies",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/skittles-tropical-bite-size-candies",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://allcitycandy.com/collections/all/products/skittles-tropical-chewy-candy-2-17-oz-bag",
+          "supports": "Exact source UPC 040000001638 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/000/1638/7.400.jpg",
+          "supports": "Two Skittles Tropical candy wrappers, 2.17oz visible. Tropical expression clear; no size or package count imported."
+        }
+      ]
+    },
+    {
+      "sku": "7862",
+      "expectedUpc": "040000514251",
+      "expectedNameSha256": "62708057fa8cb45202db7af23362156934cbc08237057fcfac8d4cad610f5c8e",
+      "replaceTextFrom": "snickers",
+      "replaceTextTo": "Snickers Milk Chocolate Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/snickers-bar",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://cr.siman.com/snickers-barra-1x8x48ux52-7g-nvo-100618811/p",
+          "supports": "Exact source UPC 040000514251 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/051/4251/5.400.jpg",
+          "supports": "Original Snickers milk chocolate, caramel, peanut and nougat brown wrapper held in hand. Name evidence only; no size imported."
+        }
+      ]
+    },
+    {
+      "sku": "7868",
+      "expectedUpc": "040000424314",
+      "expectedNameSha256": "02cafd3972846c3695a9eed19cee62d4e0141e14d105559a5968cab662b87e9f",
+      "replaceTextFrom": "SNICKERS BAR",
+      "replaceTextTo": "Snickers Milk Chocolate Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/snickers-bar",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/snickers-candy-bar-id-040000424314",
+          "supports": "Exact source UPC 040000424314 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/042/4314/6.400.jpg",
+          "supports": "Original Snickers bar brown wrapper on household surface. Name evidence only; no size imported."
+        }
+      ]
+    },
+    {
+      "sku": "7869",
+      "expectedUpc": "040000394129",
+      "expectedNameSha256": "f288c528ff676dc2f2be0baffbda4e30e5a1af143dc1260892097cd6d2a82eed",
+      "replaceTextFrom": "Snickers Barpeanut better",
+      "replaceTextTo": "Snickers Crunchy Peanut Butter Squared",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/snickers-peanut-butter-squared",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.officedepot.com/a/products/928102/Snickers-Peanut-Butter-Squared-178-Oz/",
+          "supports": "Exact source UPC 040000394129 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/039/4129/7.400.jpg",
+          "supports": "Snickers Crunchy Peanut Butter display box and loose square-format wrapper. Peanut butter expression is clear; exact-UPC retailer and Mars corroborate Peanut Butter Squared. No size/count imported."
+        }
+      ]
+    },
+    {
+      "sku": "7871",
+      "expectedUpc": "047677482487",
+      "expectedNameSha256": "babede82015626a023f1634332873069d91dfffd8e60aae8180052ddc504b92b",
+      "replaceTextFrom": "Snickers ice cream",
+      "replaceTextTo": "Snickers Ice Cream Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/snickers-ice-cream-bar",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.marsfoodservices.com/product/snickers-ice-cream-bar",
+          "supports": "Exact source UPC 047677482487 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/767/748/2487/7.400.jpg",
+          "supports": "Snickers Ice Cream Bar wrapper in vehicle; package expression readable. No source size inferred."
+        }
+      ]
+    },
+    {
+      "sku": "7936",
+      "expectedUpc": "022000017772",
+      "expectedNameSha256": "78c72796172f93720944d242af45391da823ef197afcbb81e1c320083b8b8a02",
+      "replaceTextFrom": "sour skittles candy",
+      "replaceTextTo": "Skittles Sour Candy",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/skittles-sour-bite-size-candies",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.nassaucandy.com/sour-skittles-7-2-oz-pouch.html",
+          "supports": "Exact source UPC 022000017772 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/200/001/7772/4.400.jpg",
+          "supports": "Green Skittles Sour Original Flavors Grab N Go bag, 7.2oz visible. Sour candy expression clear; source unknown size retained."
+        }
+      ]
+    },
+    {
+      "sku": "8047",
+      "expectedUpc": "040000000518",
+      "expectedNameSha256": "bcc6581608ec398cb3a75e9535a4db448400ade071ca2d24f3aafe698b1fbc81",
+      "replaceTextFrom": "starburst original",
+      "replaceTextTo": "Starburst Original Fruit Chews",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://marsfoodservices.com/product/starburst-original-fruit-chews",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://online.flipbuilder.com/rtrp/adoq/files/basic-html/page97.html",
+          "supports": "Exact source UPC 040000000518 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/000/0518/6.400.jpg",
+          "supports": "Starburst Original Fruit Chews wrapper on papers. Name readable; no size imported."
+        }
+      ]
+    },
+    {
+      "sku": "8984",
+      "expectedUpc": "040000514206",
+      "expectedNameSha256": "acf48a0a5a48958f7d267221ac7e7ce3070fc5cab784a9a39a26ef4fa51377f2",
+      "replaceTextFrom": "twix",
+      "replaceTextTo": "Twix Caramel Cookie Bars",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/twix-caramel-cookie-bars",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.wowco.com.ar/producto-detalle.php?idcarpeta=134&idproducto=2692",
+          "supports": "Exact source UPC 040000514206 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/051/4206/4.400.jpg",
+          "supports": "Twix classic caramel cookie bar gold wrapper over laptop. Name readable; no size imported."
+        }
+      ]
+    },
+    {
+      "sku": "101468",
+      "expectedUpc": "040000004356",
+      "expectedNameSha256": "de12684f947b83f17e498ec15e6c83136688488445e0a8a70baf5a0b76ec00dc",
+      "replaceTextFrom": "TWIX COOKIE BARS",
+      "replaceTextTo": "Twix Caramel Cookie Bars",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/twix-caramel-cookie-bars",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13055569",
+          "supports": "Exact source UPC 040000004356 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/000/4356/2.400.jpg",
+          "supports": "Twix classic caramel cookie bars gold wrapper held over fabric. Name readable; no size imported."
+        }
+      ]
+    },
+    {
+      "sku": "8988",
+      "expectedUpc": "047677474208",
+      "expectedNameSha256": "dc06f98b55e23ab72aaf0f20d8aeed2b1b639eabc9b7530e185879a6eedc8be9",
+      "replaceTextFrom": "Twix ice cream",
+      "replaceTextTo": "Twix Ice Cream Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/twix-ice-cream-bar",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/242251-twix-ice-cream-bar-3-oz",
+          "supports": "Exact source UPC 047677474208 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/767/747/4208/6.400.jpg",
+          "supports": "Twix Ice Cream Bar wrapper on wood with hand. Full expression readable; no size imported."
+        }
+      ]
+    },
+    {
+      "sku": "180",
+      "expectedUpc": "022000005144",
+      "expectedNameSha256": "762fbc4b9b102e1c264128a0416556acd7651d40c816d331c87caa6a7d268fbc",
+      "replaceTextFrom": "5 SPEARMINT RAIN",
+      "replaceTextTo": "5 Gum Spearmint Rain Sugarfree Chewing Gum",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.5gum.com/products/5-gum-spearmint-rain-sugarfree-chewing-gum-15-stick-pack-5-gum",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16409960-5-gum-spearmint-rain-sugar-free-chewing-gum-15-ct",
+          "supports": "Exact source UPC 022000005144 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/200/000/5144/4.400.jpg",
+          "supports": "5 gum Spearmint Rain sugarfree chewing gum front package. Flavor readable; no photographed stick count imported."
+        }
+      ]
+    },
+    {
+      "sku": "203",
+      "expectedUpc": "048794101022",
+      "expectedNameSha256": "6417d3f23d1c29df6ee0bc0360986b0cb89d5e6893c342743b33eddbc6904e2d",
+      "replaceTextFrom": "7days soft croissant 75g",
+      "replaceTextTo": "7Days Soft Croissant with Vanilla Filling 75g",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.snackworks.com/products/7days-soft-baked-croissant-with-vanilla-filling-265oz/",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.mercaso.com/products/7-days-croissants-vanilla-2-65-oz-6-pack",
+          "supports": "Exact source UPC 048794101022 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/879/410/1022/2.400.jpg",
+          "supports": "7Days Soft Croissant with Vanilla Filling 75g front wrapper in vehicle. Vanilla text readable; source 75g retained."
+        }
+      ]
+    },
+    {
+      "sku": "272",
+      "expectedUpc": "076150232233",
+      "expectedNameSha256": "15dbf4554de939bb7d06bf12f440fc5c4caaf14607be98e8510c3ce72ce1dc18",
+      "replaceTextFrom": "ACI II butter micro popcorn",
+      "replaceTextTo": "ACT II Butter Microwave Popcorn",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.conagrafoodservice.com/products/act-ii-butter-popcorn-4-boxes-18-275ozbag",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.officedepot.com/a/products/201172/ACT-II-Microwave-Popcorn-275-Oz/",
+          "supports": "Exact source UPC 076150232233 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/615/023/2233/2.400.jpg",
+          "supports": "ACT II Butter Microwave Popcorn 2.75oz/78g package; brand and butter expression readable. Unknown source size remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "273",
+      "expectedUpc": "076150232486",
+      "expectedNameSha256": "cf83c520fdde101eb753a00c51066d5ffb4ac503020a6413d698edc34fc6c965",
+      "replaceTextFrom": "ACT BUTTER LOVERS POPCORN",
+      "replaceTextTo": "ACT II Butter Lovers Microwave Popcorn",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.conagrafoodservice.com/products/act-ii-butter-lovers-microwave-popcorn",
+          "supports": "Manufacturer corroborates the brand and named expression; this review does not replace original measures or pack facts."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://ptlone.com/act-ii-butter-lovers-popcorn-2-75oz-sn254",
+          "supports": "Exact source UPC 076150232486 is listed for this product identity. Listed size or multipack data is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/615/023/2486/8.400.jpg",
+          "supports": "ACT II Butter Lovers Microwave Popcorn wrapper on household surface. Flavor and product type readable; no size imported."
+        }
+      ]
+    },
+    {
+      "sku": "7003",
+      "expectedUpc": "072250020381",
+      "expectedNameSha256": "f11c8e794ee1bd94eb6e7f502e30ab7e170b6f97c5631dc297e9248c2afd617f",
+      "replaceTextFrom": "reeses  peanut  butter  4.5ozcup cakes",
+      "replaceTextTo": "Mrs. Freshley's Deluxe Reese's Peanut Butter Flavored Cupcakes 4.5oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mrsfreshleys.com/creme-filled-cakes",
+          "supports": "Primary manufacturer reference confirms the Mrs. Freshley's brand and snack-cake business only. This page does not list the licensed Deluxe expression; that wording is corroborated separately by the actual package and exact-UPC distributor listing."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.holidaywholesale.com/wp-content/uploads/02_February_HolidayHighlights_2022_LR.pdf#page=4",
+          "supports": "Page 4 was rendered and visually inspected. It pairs source UPC 072250020381 with Deluxe Reese's Peanut Butter Cupcakes and shows the branded package. No prices or distributor case counts imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/225/002/0381/1.400.jpg",
+          "supports": "Individually inspected front reads Mrs. Freshley's Deluxe Reese's Peanut Butter Flavored Cupcakes 4.5oz. Original source measurement retained; this review does not approve the photograph for public display."
+        }
+      ]
+    },
+    {
+      "sku": "225",
+      "expectedUpc": "089000991013",
+      "expectedNameSha256": "f44ef83c9ac42f691eccaf6276aa5505d593fc00f7a1c0e136fc43e13760115e",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "99 Melons",
+      "replaceTextTo": "99 Watermelons",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.99brandparty.com/how-to-enjoy/",
+          "supports": "Manufacturer names 99 Watermelons in its current official recipes; the former Watermelons product URL redirects. Exact package and Target UPC separately corroborate the expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-53731447",
+          "supports": "Independent listing explicitly pairs UPC 089000991013 with the inspected expression and existing source size 750 mL. No wholesale pack quantity or financial field is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/900/099/1013/1.jpg",
+          "supports": "Individually inspected front reads 99 Watermelons, watermelon liqueur, 750ML. Exact manufacturer expression and retailer UPC resolve source Melons to Watermelons. Cropped, casual photograph remains ineligible for public product imagery."
+        }
+      ]
+    },
+    {
+      "sku": "257",
+      "expectedUpc": "835229001336",
+      "expectedNameSha256": "18a4b9edb3a0a8d8da3d28b3050628b90c4cbd6cf5f0fa529fb61c13282b7021",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Absolut Pear",
+      "replaceTextTo": "Absolut Pears",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.absolut.com/en/products/absolut-pears/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=24",
+          "supports": "Historical official Iowa catalog PDF page 24 pairs UPC 835229001336 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/083/522/900/1336/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Absolut Pears, flavored vodka. Manufacturer and historical exact UPC listing confirm plural Pears. Existing 750 mL source size is retained, not inferred from the cropped image."
+        }
+      ]
+    },
+    {
+      "sku": "269",
+      "expectedUpc": "835229010611",
+      "expectedNameSha256": "30db88202428f871ee2b2280f55c810072328726b66e92156b2176e8b87f3ff9",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Absolut Vodka 750mlStrawberry",
+      "replaceTextTo": "Absolut Juice Strawberry 750ml",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.absolut.com/en-us/absolutcollaborations/absolut-juice-strawberry/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kingswineandspirits.com/products/absolut-juice-strawberry-edition-750ml",
+          "supports": "Independent listing explicitly pairs UPC 835229010611 with the inspected expression and existing source size 750 mL. No wholesale pack quantity or financial field is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/083/522/901/0611/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Absolut Juice, Strawberry Edition. Manufacturer identifies the former Absolut Juice Strawberry range; retailer exact UPC 835229010611 identifies the 750 mL Strawberry Edition. This resolves the previously omitted Juice expression without changing source size."
+        }
+      ]
+    },
+    {
+      "sku": "710",
+      "expectedUpc": "080480000257",
+      "expectedNameSha256": "3a77e71653ac92d58e51b874c1803c25a2acaf04c90589855442aeeae24458cf",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Bacardi Dragon Berry",
+      "replaceTextTo": "Bacardi Dragonberry",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bacardi.com/us/en/our-rums/dragonberry-rum/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-53691431",
+          "supports": "Independent listing explicitly pairs UPC 080480000257 with the inspected expression and existing source size 1.75 L. No wholesale pack quantity or financial field is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/000/0257/1.400.jpg",
+          "supports": "Individually inspected front reads Bacardi Dragonberry as one word. Manufacturer uses Dragonberry; retailer exact UPC identifies the 1.75 L bottle. Correct the split expression spelling only, retaining the literal source 1.75 Lit token."
+        }
+      ]
+    },
+    {
+      "sku": "713",
+      "expectedUpc": "080480000271",
+      "expectedNameSha256": "bd78d3e462546ff52065407a10835e4f10b3f5799de1d27a0fbbb91ebd52dee6",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Bacardi Dragon Berry",
+      "replaceTextTo": "Bacardi Dragonberry",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bacardi.com/us/en/our-rums/dragonberry-rum/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=33",
+          "supports": "Historical official Iowa catalog PDF page 33 pairs UPC 080480000271 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/000/0271/1.400.jpg",
+          "supports": "Individually inspected front reads Bacardi Dragonberry as one word. Manufacturer uses Dragonberry; historical exact UPC listing independently confirms the 750 mL product. Correct the split expression spelling only."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -9698,6 +11560,54 @@
         }
       ],
       "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04"
+    },
+    {
+      "sku": "541",
+      "expectedUpc": "613008749422",
+      "expectedNameSha256": "9470af60f2c3ebb3e670299136e28b0266017a23ee12d7ff0c137060f90788ec",
+      "reason": "Source product title conflicts with its exact UPC: independent retailer listing and inspected UPC-associated package identify AriZona Mucho Mango, while the original title names a different flavor. It is unresolved whether the source title or UPC is wrong; preserve both and hold this SKU for identity review without automatic flavor or size substitution.",
+      "evidence": [
+        {
+          "url": "https://www.fortunasupermarket.com/products/arizona-mucho-mango-174l",
+          "kind": "exact_upc_listing",
+          "supports": "UPC 613008749422 identifies Mucho Mango."
+        },
+        {
+          "url": "https://drinkarizona.com/products/mucho-mango-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Corroborates the conflicting expression, not which source field should be changed."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/874/9422/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual private photo shows Mucho Mango, inconsistent with the source title."
+        }
+      ],
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "543",
+      "expectedUpc": "613008749408",
+      "expectedNameSha256": "d20ee15ab522c72d57fda564269c5685e5bbf3e03d6ee98165100f758e8b4bb2",
+      "reason": "Source product title conflicts with its exact UPC: independent retailer listing and inspected UPC-associated package identify AriZona Fruit Punch, while the original title names a different flavor. It is unresolved whether the source title or UPC is wrong; preserve both and hold this SKU for identity review without automatic flavor or size substitution.",
+      "evidence": [
+        {
+          "url": "https://www.fortunasupermarket.com/products/arizona-fruit-punch-174l",
+          "kind": "exact_upc_listing",
+          "supports": "UPC 613008749408 identifies Fruit Punch."
+        },
+        {
+          "url": "https://drinkarizona.com/products/fruit-punch-20oz-tallboy",
+          "kind": "manufacturer",
+          "supports": "Corroborates the conflicting expression, not which source field should be changed."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/874/9408/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual private photo shows Fruit Punch, inconsistent with the source title."
+        }
+      ],
+      "reviewedOn": "2026-10-27"
     }
   ],
   "nameVerifications": [
@@ -10446,6 +12356,626 @@
           "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/181/700/0378/3.jpg",
           "kind": "inspected_package_photo",
           "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "88",
+      "expectedUpc": "811538010375",
+      "expectedNameSha256": "226e1d91c32f3b82cde0450d7c71e0f993cd10aa37ef5b064cb00cdd77b822bc",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "1800 COCONUT",
+      "expectedLabel": "750 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/coconut",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010375 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0375/2.400.jpg",
+          "supports": "Individually inspected green-capped bottle; front reads 1800 Coconut, infused with natural coconut flavor. Existing 750 mL source size is retained. Household photograph is identity evidence only."
+        }
+      ]
+    },
+    {
+      "sku": "99",
+      "expectedUpc": "811538010252",
+      "expectedNameSha256": "3d8f77959aa516f8a91aa7fb1f3be00016a1c0c26f44ec2e8d34b89ff13b872d",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "1800 Reposado",
+      "expectedLabel": "1.75 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010252 with this product and its existing source size 1.75 L. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0252/1.400.jpg",
+          "supports": "Individually inspected back label explicitly reads 1800 Reposado and shows barcode 811538010252. This label close-up is name evidence only; 1.75 L is independently corroborated in the historical official UPC listing."
+        }
+      ]
+    },
+    {
+      "sku": "102",
+      "expectedUpc": "811538010238",
+      "expectedNameSha256": "81856be5948e1d28a112c12b1f3d5145588278907454522345b1b3501c49d171",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "1800 Reposado",
+      "expectedLabel": "750 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010238 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0238/2.jpg",
+          "supports": "Individually inspected complete bottle; front reads 1800 Reposado and NET CONT 750ML. Household photograph is identity evidence only."
+        }
+      ]
+    },
+    {
+      "sku": "103",
+      "expectedUpc": "811538010153",
+      "expectedNameSha256": "9e6bf78d59a4ac127912522fdb89753ec69338d742c20c9356b0a950f743764e",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "1800 SILVER",
+      "expectedLabel": "1.75 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/blanco",
+          "supports": "Manufacturer documents its current 1800 Blanco tequila. The legacy Silver expression is independently established by the historical official exact UPC listing and is retained; current branding is not substituted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010153 with this product and its existing source size 1.75 L. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0153/1.400.jpg",
+          "supports": "Individually inspected newer front reading 1800 Blanco with NET CONT 1.75L. Exact historical UPC listing identifies 1800 Silver 1750 mL. Preserve the original Silver title rather than silently renaming it to the newer Blanco wording."
+        }
+      ]
+    },
+    {
+      "sku": "105",
+      "expectedUpc": "811538010146",
+      "expectedNameSha256": "0e18bde264f8ffe281058ebbce100d26baf40a226d4ab679b1a3f594d368de3f",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "1800 SILVER",
+      "expectedLabel": "1 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/blanco",
+          "supports": "Manufacturer documents its current 1800 Blanco tequila. The legacy Silver expression is independently established by the historical official exact UPC listing and is retained; current branding is not substituted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010146 with this product and its existing source size 1 L. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0146/1.jpg",
+          "supports": "Individually inspected newer front reading 1800 Blanco and NET CONT 1L. Historical exact UPC listing names 1800 Silver 1000 mL, supporting the unchanged legacy title. Current packaging wording does not replace the source name."
+        }
+      ]
+    },
+    {
+      "sku": "107",
+      "expectedUpc": "811538010122",
+      "expectedNameSha256": "7e6bb1c9247ee7fb38f99cb2a1430a7d6e259639adf2babf25d318075d3b8f61",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "1800 SILVER",
+      "expectedLabel": "375 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/blanco",
+          "supports": "Manufacturer documents its current 1800 Blanco tequila. The legacy Silver expression is independently established by the historical official exact UPC listing and is retained; current branding is not substituted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010122 with this product and its existing source size 375 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0122/3.400.jpg",
+          "supports": "Individually inspected raw image 3: 1800 Blanco tequila with NET CONT 375ML. Raw image 2 is unrelated Gallo Garbanzo pasta and was rejected; root also rejected raw image 1 as pasta. Historical exact UPC listing names 1800 Silver 375 mL. Preserve Silver and reject the unrelated metadata."
+        }
+      ]
+    },
+    {
+      "sku": "108",
+      "expectedUpc": "811538010139",
+      "expectedNameSha256": "54cce182171559e2baeb4c9efefac172df6b8cb81e8459bec1fdf5434859a3ce",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "1800 SILVER",
+      "expectedLabel": "750 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/blanco",
+          "supports": "Manufacturer documents its current 1800 Blanco tequila. The legacy Silver expression is independently established by the historical official exact UPC listing and is retained; current branding is not substituted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010139 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0139/1.jpg",
+          "supports": "Individually inspected bottle explicitly reading 1800 Silver and NET CONT 750ML. Historical UPC listing confirms that exact legacy expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "252",
+      "expectedUpc": "835229001305",
+      "expectedNameSha256": "5f062acbd6d1ba480a358734196aace895261030666cf5c712d60220bf9505ef",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Absolut Citron",
+      "expectedLabel": "750 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.absolut.com/en-us/products/absolut-citron/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=24",
+          "supports": "Historical official Iowa catalog PDF page 24 pairs UPC 835229001305 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/083/522/900/1305/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Absolut Citron, lemon flavored vodka, 750 mL. Existing name is the complete brand and expression. Current formula percentages are not substituted for the historical package."
+        }
+      ]
+    },
+    {
+      "sku": "259",
+      "expectedUpc": "835229008601",
+      "expectedNameSha256": "3bdb97930a3dd03f934257e0bb2dbec5d81705594a00c8c83d4912347e18a9de",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Absolut Raspberri",
+      "expectedLabel": "1.75 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.absolut.com/en-us/products/absolut-raspberri/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/181651",
+          "supports": "Independent listing explicitly pairs UPC 835229008601 with the inspected expression and existing source size 1.75 L. No wholesale pack quantity or financial field is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/083/522/900/8601/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Absolut Raspberri, raspberry flavored vodka. Existing 1.75 L source size is independently confirmed by official exact UPC listing. Cropped photo is name evidence only."
+        }
+      ]
+    },
+    {
+      "sku": "263",
+      "expectedUpc": "835229000605",
+      "expectedNameSha256": "235fc90025e13c2340ce3e606ec99db16eff1c9c66b863fd92887f70283aa15e",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "ABSOLUT VODKA",
+      "expectedLabel": "1.75 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.absolut.com/en-us/products/absolut-vodka/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=22",
+          "supports": "Historical official Iowa catalog PDF page 22 pairs UPC 835229000605 with this product and its existing source size 1.75 L. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/083/522/900/0605/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Absolut Vodka. Historical exact UPC listing identifies Absolut Swedish vodka 1750 mL. Existing brand, expression and 1.75 L size are preserved."
+        }
+      ]
+    },
+    {
+      "sku": "265",
+      "expectedUpc": "835229000209",
+      "expectedNameSha256": "dc22f4060decf25335cbcfecf4a10645c552289cb01f5ba88551e967dc710bce",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "ABSOLUT VODKA",
+      "expectedLabel": "375 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.absolut.com/en-us/products/absolut-vodka/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=22",
+          "supports": "Historical official Iowa catalog PDF page 22 pairs UPC 835229000209 with this product and its existing source size 375 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/083/522/900/0209/1.400.jpg",
+          "supports": "Individually inspected bottle explicitly reads Absolut Vodka. Historical exact UPC listing identifies Absolut Swedish vodka 375 mL. Existing title and size are preserved."
+        }
+      ]
+    },
+    {
+      "sku": "340",
+      "expectedUpc": "084692200948",
+      "expectedNameSha256": "950eba8edd02e3fb4c098ab44c9e619b444466cc651dd61ca2febb46552732bf",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Alize Gold Passion",
+      "expectedLabel": "750 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.alize.com/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/distributors-monthly-price-posting-reports/RNDC%20PB202307.pdf",
+          "supports": "Independent listing explicitly pairs UPC 084692200948 with the inspected expression and existing source size 750 mL. No wholesale pack quantity or financial field is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/469/220/0948/1.400.jpg",
+          "supports": "Individually inspected front reads Alize, Gold, passion fruit and French liqueur. Manufacturer names the Gold Passion expression; distributor exact UPC listing separately identifies Alize Gold Passion 750 mL. Preserve the existing Gold Passion title."
+        }
+      ]
+    },
+    {
+      "sku": "653",
+      "expectedUpc": "736040519348",
+      "expectedNameSha256": "a5094b5dd89cb6ebfd17153b83b7162af54e391069465f2e4185f171d3d6fbc8",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Avion Silver",
+      "expectedLabel": "750 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://tequilaavion.com/our-tequilas/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=13",
+          "supports": "Historical official Iowa catalog PDF page 13 pairs UPC 736040519348 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/073/604/051/9348/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Avion and Silver, single origin tequila. Manufacturer and historical exact UPC listing confirm Avion Silver 750 mL. Existing title and size are preserved."
+        }
+      ]
+    },
+    {
+      "sku": "708",
+      "expectedUpc": "080480400637",
+      "expectedNameSha256": "1577eec8bb9ce75f6f2686e47b5806a0e5ca8d870b3afbb6d1a341152a98e4be",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Bacardi COCONUT",
+      "expectedLabel": "750 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bacardi.com/us/en/our-rums/coconut-rum/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=33",
+          "supports": "Historical official Iowa catalog PDF page 33 pairs UPC 080480400637 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/040/0637/1.jpg",
+          "supports": "Individually inspected front explicitly reads Bacardi Coconut, rum with natural flavor, 750 mL. Historical UPC listing uses Coco; manufacturer and actual package corroborate the full Coconut name. Existing title is preserved."
+        }
+      ]
+    },
+    {
+      "sku": "714",
+      "expectedUpc": "080480025205",
+      "expectedNameSha256": "46694139885e3b1d6cd724bb1fed55c444bc7562bbe31eee55e31faf38b510f1",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Bacardi Gold",
+      "expectedLabel": "1.75 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bacardi.com/us/en/our-rums/gold-rum/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=32",
+          "supports": "Historical official Iowa catalog PDF page 32 pairs UPC 080480025205 with this product and its existing source size 1.75 L. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/002/5205/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Bacardi Gold. Official historical exact UPC listing confirms 1750 mL. Source name and 1.75 L size are preserved."
+        }
+      ]
+    },
+    {
+      "sku": "715",
+      "expectedUpc": "080480025304",
+      "expectedNameSha256": "6672b644386b6525e17577c116b9d2be59cc0093792d031e6f245db95b5d0725",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Bacardi Gold",
+      "expectedLabel": "1 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bacardi.com/us/en/our-rums/gold-rum/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=32",
+          "supports": "Historical official Iowa catalog PDF page 32 pairs UPC 080480025304 with this product and its existing source size 1 L. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/002/5304/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Bacardi Gold. Official historical exact UPC listing confirms 1000 mL. Source name and 1 L size are preserved."
+        }
+      ]
+    },
+    {
+      "sku": "716",
+      "expectedUpc": "080480025700",
+      "expectedNameSha256": "018f3fe75b328ed48bb56047be57912052f5fa24660589c6c95ff31a889d840d",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Bacardi Gold",
+      "expectedLabel": "200 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bacardi.com/us/en/our-rums/gold-rum/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-53693481",
+          "supports": "Independent listing explicitly pairs UPC 080480025700 with the inspected expression and existing source size 200 mL. No wholesale pack quantity or financial field is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/002/5700/1.jpg",
+          "supports": "Individually inspected front explicitly reads Bacardi Gold, rum, 200ML. Target exact UPC listing confirms the single 200 mL bottle. Source name and size are preserved; no public photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "717",
+      "expectedUpc": "080480025601",
+      "expectedNameSha256": "def2359f708d51d7bc3a215de69083b5b4ae0d15b6d517b483fab620ae17bae1",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Bacardi Gold",
+      "expectedLabel": "375 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bacardi.com/us/en/our-rums/gold-rum/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=32",
+          "supports": "Historical official Iowa catalog PDF page 32 pairs UPC 080480025601 with this product and its existing source size 375 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/002/5601/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Bacardi Gold and 375 mL. Historical exact UPC listing confirms that size. Source name and size are preserved."
+        }
+      ]
+    },
+    {
+      "sku": "718",
+      "expectedUpc": "080480025403",
+      "expectedNameSha256": "bd072c48c0bd78bc5b21f4697e98a302cf0dc9cff34c4e9457b0d6f06982af09",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Bacardi Gold",
+      "expectedLabel": "750 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bacardi.com/us/en/our-rums/gold-rum/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=32",
+          "supports": "Historical official Iowa catalog PDF page 32 pairs UPC 080480025403 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/002/5403/1.400.jpg",
+          "supports": "Individually inspected front explicitly reads Bacardi Gold. Historical exact UPC listing confirms 750 mL. Source name and size are preserved."
+        }
+      ]
+    },
+    {
+      "sku": "719",
+      "expectedUpc": "080480026219",
+      "expectedNameSha256": "2ce67c5d18acfa2b44961d2783e2aceacfe052607f15a1541b8c26be16987ed8",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Bacardi Gold Rum",
+      "expectedLabel": "50 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bacardi.com/us/en/our-rums/gold-rum/",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/3054490-bacardi-gold-rum-50-0-ml",
+          "supports": "Independent listing explicitly pairs UPC 080480026219 with the inspected expression and existing source size 50 mL. No wholesale pack quantity or financial field is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/002/6219/1.jpg",
+          "supports": "Individually inspected front explicitly reads Bacardi Gold, rum, 50ML. Cub exact UPC listing confirms the individual 50 mL bottle. No wholesale carton count is adopted."
         }
       ]
     }

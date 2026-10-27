@@ -2315,6 +2315,232 @@
           "supports": "Complete single silver-rimmed Ocean Spray Jellied Cranberry Sauce can on white. Label clearly reads Jellied Cranberry Sauce and NET WT 14 OZ (397g). Can rims and body are intact, without visible price, hands or household setting."
         }
       ]
+    },
+    {
+      "sku": "3844",
+      "expectedUpc": "041331124225",
+      "expectedNameSha256": "f0a984c7055c134265c48f454d5ae5fa2d99d56bdf8eca7fc0b360d537f63d24",
+      "expectedSourceRecordSha256": "e19c25e91f97351608086a219fde71d8ad1c473dd79edab6a56fbc4d859dd1a4",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Goya Chick Peas Garbanzos",
+      "verifiedLabel": "15.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://shop.goya.com/products/goya-chick-peas",
+          "supports": "Goya identifies Chick Peas15.5oz can; its single-can variant explicitly has barcode041331124225."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.goya.com/products/goya-chick-peas",
+          "supports": "The primary shop single-can variant GOYA-124225-1 is15.5oz, barcode041331124225. The same page also offers bulk cases; this proposal assigns only the inspected individual can."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/133/112/4225/3.jpg",
+          "supports": "Complete clean blue Goya Chick Peas Garbanzos can with top ring-pull and bottom rim visible on white. The angled lower-left label reads15.5 OZ (439g). No price, hand, shelf, household setting or multipack."
+        }
+      ]
+    },
+    {
+      "sku": "9405",
+      "expectedUpc": "041800501519",
+      "expectedNameSha256": "5a885d0ff6ea7f294a9e9986e47b3a036a70127afd3c9b16b6af842d26376415",
+      "expectedSourceRecordSha256": "f728c649db8b24d8616b9dc7ec9cb5ccb3700600775dcfb763ff92f441697f2a",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Welch's Concord Grape Jam",
+      "verifiedLabel": "30 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://welchs.com/en-us/fruit-spreads/concord-grape-jam/",
+          "supports": "Welch's manufacturer page identifies Concord Grape Jam and30OZ JAR size, distinct from its Jelly product."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16409391-welch-s-concord-grape-jam-32-oz",
+          "supports": "Retailer indexed product content explicitly lists UPC041800501519 and30oz Concord Grape Jam. URL slug says32oz but the current indexed title/body and inspected physical label both say30oz. Direct follow-up open timed out; this access limitation is retained in the private audit."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/050/1519/1.jpg",
+          "supports": "Complete dark grape-jam jar with purple lid on white. Welch's Concord Grape JAM and NET WT30 OZ (1.87LB)850g are clearly readable. No visible prices or unrelated objects; expression is Jam, not Jelly."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.theamericanstore.de/Welchs-Grape-Jam-850g",
+          "supports": "Independent retailer lists Welch's Grape Jam, GTIN 041800501519 and net contents 850 g, corroborating the inspected jar's printed 30 oz / 850 g identity. This corroboration does not import availability or price."
+        }
+      ]
+    },
+    {
+      "sku": "4205",
+      "expectedUpc": "037600223188",
+      "expectedNameSha256": "a081ca47512dcd8c25451ffc200fba1fd42819a24b9063dafa80af4974abdc77",
+      "expectedSourceRecordSha256": "f0c3f88ba6fa28ac97e1bce2625e3f6504fd45b114cca3e41479a7b433df393f",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Hormel Chili with Beans",
+      "verifiedLabel": "15 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hormel.com/brands/hormel-chili/product/chili-with-beans/",
+          "supports": "Hormel identifies the Chili with Beans expression, distinct from no-beans, hot and turkey variants."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13285438",
+          "supports": "Target identifies UPC037600223188, one15oz can, Hormel Chili with Beans; retrieved product highlights, package quantity and UPC specifications were read."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/760/022/3188/5.jpg",
+          "supports": "Complete red Hormel Chili with Beans can on white, with top pull-tab and bottom rim. Printed NET WT15 OZ (425g) is legible at lower left. No price or household objects. Mild photo grain does not obscure product identity."
+        }
+      ]
+    },
+    {
+      "sku": "6798",
+      "expectedUpc": "044000003821",
+      "expectedNameSha256": "6f153bd2c66984493b98e8ddd8de1f9bdd872fdbd6d960d8dc416feb5b73b094",
+      "expectedSourceRecordSha256": "90acb48696fcaf29fc315a476d836352117f00ff9e34634eec3d6525b7b1909b",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Nabisco Premium Original Saltine Crackers",
+      "verifiedLabel": "4 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.snackworks.com/products/premium-original-saltine-crackers-lunch-snacks-4-oz/",
+          "supports": "Mondelez Snackworks identifies Premium Original Saltine Crackers4oz in convenient individual boxes; sea-salt-topped original expression matches inspected front."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shoptheking.us/products/477059",
+          "supports": "Distributor identifies Premium Saltine Conv4oz Single Box and explicitly lists Unit UPC044000003821. Do not treat its wholesale12-box case as the single source item."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://smtlbl.app/upc/044000003821",
+          "supports": "Official Snackworks product page links this exact-UPC SmartLabel URL. The redirect target was inaccessible to the web tool, so no unseen SmartLabel body is claimed."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/400/000/3821/1.jpg",
+          "supports": "Complete long rectangular Nabisco Premium Original Saltine Crackers box on white, with blue side panel and both ends present. Front says Original topped with sea salt and NET WT4 OZ (113g). No visible price or household setting."
+        }
+      ]
+    },
+    {
+      "sku": "1278",
+      "expectedUpc": "064144043156",
+      "expectedNameSha256": "078c4ad6a68bc846b1fd03f1cfd20dc2f353c32acb11770d79bcb8f4815d6baa",
+      "expectedSourceRecordSha256": "7ec273e5c174287400d32a2fc456ab1d04019675d76b23b3487af10dd5508b11",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Chef Boyardee Beef Ravioli in Tomato & Meat Sauce",
+      "verifiedLabel": "15 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://chefboyardee.com/products/classics/beef-ravioli-can/",
+          "supports": "Manufacturer identifies Beef Ravioli Can in tomato and meat sauce with15oz among available sizes."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13130178",
+          "supports": "Target lists one15oz Chef Boyardee Beef Ravioli can and UPC064144043156; package quantity1 and exact UPC were read from retrieved specifications."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/006/414/404/3156/19.jpg",
+          "supports": "Complete single Chef Boyardee Beef Ravioli can on white, metal lid and bottom rim visible. Front says Beef Ravioli in Tomato & Meat Sauce; lower-left NET WT15 OZ (425g) readable. No prices or household objects."
+        }
+      ]
+    },
+    {
+      "sku": "1653",
+      "expectedUpc": "051000010513",
+      "expectedNameSha256": "eca2bdbdf0700ac9e093f4259893590bc3618ddf09d62373b8b31a8182102392",
+      "expectedSourceRecordSha256": "1df424a449e23370f642239a4cba23276e52a5f365e663613113340b7689fab0",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Campbell's Condensed Chicken with Rice Soup",
+      "verifiedLabel": "10.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.campbells.com/products/condensed/chicken-with-rice-soup/",
+          "supports": "Campbell's identifies its Condensed Chicken With Rice Soup expression, distinct from Healthy Request and cream soups."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-14770380",
+          "supports": "Target identifies Campbell's Condensed Chicken with Rice Soup,10.5oz, UPC051000010513. Exact UPC and unit measurement were read in retrieved specifications."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/100/001/0513/1.jpg",
+          "supports": "Complete red-and-white Campbell's Condensed Soup Chicken with Rice can on white. Front clearly prints NET WT10 1/2 OZ (298g), equivalent to canonical10.5oz. Both metallic rim boundaries visible; no prices or household objects."
+        }
+      ]
     }
   ]
 }
