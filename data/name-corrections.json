@@ -1905,17 +1905,32 @@
       "sku": "5366",
       "expectedUpc": "021131506759",
       "expectedNameSha256": "33060e9144e718d9479a649ad241a9859157dc358b40e7700605b07845a8d222",
-      "replaceTextFrom": "Marie Callender's",
-      "replaceTextTo": "Marie Callender's ",
-      "scope": "spacing_only",
+      "replaceTextFrom": "Marie Callender'ssalisbury steak",
+      "replaceTextTo": "Marie Callender's Salisbury Steak",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
           "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mariecallendersmeals.com/frozen-dinners/salisbury-steak",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-15646377",
+          "supports": "Lists source UPC 021131506759 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/113/150/6759/3.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual front reads Marie Callender's Salisbury Steak. Side-dish formulations differ across historical/current pages, so no unrequested side-dish claims are added."
         }
-      ],
-      "verifiedOn": "2026-10-26"
+      ]
     },
     {
       "sku": "5367",
@@ -2456,17 +2471,32 @@
       "sku": "1611",
       "expectedUpc": "079581184027",
       "expectedNameSha256": "ef037912d8d7990bb807bc78300d31baad31d0387fa8c860914c9ac9b57b6f69",
-      "replaceTextFrom": "STRAWBRRY",
-      "replaceTextTo": "STRAWBERRY",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "CALYPSO ORIGINAL  16OZLEMONADE   STRAWBRRY",
+      "replaceTextTo": "Calypso Strawberry Lemonade 16OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkcalypso.com/flavors/strawberry-lemonade-int/",
+          "supports": "Calypso identifies Strawberry Lemonade as its own expression, distinct from Original Lemonade in the manufacturer flavor range. Its international product page depicts the 16 fl oz bottle. This supports the exact strawberry expression on the inspected package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://redstonefoods.com/products/44402--calypso-strawberry-lemonade",
+          "supports": "Primary distributor Redstone Foods explicitly lists Calypso Strawberry Lemonade, unit size 16 OZ, UPC 079581184027 and manufacturer King Juice. The distributor case count is not assigned to the single source variant."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/958/118/4027/5.jpg",
+          "supports": "Complete professional Calypso glass bottle on white, with full yellow cap, base and margins. Front explicitly reads Strawberry Lemonade and 16 FL OZ (1 PT) (473 mL). No visible price, hand or household setting. This is one bottle; no distributor case quantity is assigned."
+        },
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
           "kind": "english_dictionary_ordinary_word_spelling",
           "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
         }
-      ],
-      "verifiedOn": "2026-10-26"
+      ]
     },
     {
       "sku": "487",
@@ -12789,6 +12819,1675 @@
           "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
         }
       ]
+    },
+    {
+      "sku": "1655",
+      "expectedUpc": "051000195715",
+      "expectedNameSha256": "9490241264662be07fcc9cdee965434a2bca954c3e9cc41b84c7c3df9a3faed5",
+      "replaceTextFrom": "Campbell's Beef 18oz",
+      "replaceTextTo": "Campbell's Chunky Healthy Request Beef with Country Vegetables Soup 18oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.campbells.com/products/chunky/beef-with-country-vegetables-soup-3/",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://groceryeshop.us/products/campbells-chunky-healthy-request-soup-beef-soup-with-country-vegetables-18-8-oz-can",
+          "supports": "Lists source UPC 051000195715 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/100/019/5715/1.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Full original additionally inspected: Campbell's Chunky, green Healthy Request heart and Beef with Country Vegetables all visible. Source18oz is retained despite exact UPC listing18.8oz; no size resolution is proposed."
+        }
+      ]
+    },
+    {
+      "sku": "1936",
+      "expectedUpc": "016000275263",
+      "expectedNameSha256": "f01f4131526762243944080d02ce91014f86e93ac2ffb11ea5f28156157d78b7",
+      "replaceTextFrom": "Cheerios",
+      "replaceTextTo": "Cheerios Original Cereal",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.cheerios.com/products/original-cheerios",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/25550-cheerios-whole-grain-oats-gluten-free-breakfast-cereal-8-900-oz",
+          "supports": "Lists source UPC 016000275263 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/600/027/5263/16.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual original Cheerios box, 100% whole grain oats. Manufacturer and exact UPC retailer distinguish Original cereal; source unknown size remains unknown."
+        }
+      ]
+    },
+    {
+      "sku": "4766",
+      "expectedUpc": "038000391347",
+      "expectedNameSha256": "3b3682f22a3bb30fd83273e333f44fbcf00cbe3cb007b3c62a1641c9418fd5d7",
+      "replaceTextFrom": "Kellogg's AppleJacks 12.2ozCereal",
+      "replaceTextTo": "Kellogg's Apple Jacks Cereal 12.2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.kelloggs.com/Product/Index/038000029615",
+          "supports": "Manufacturer corroborates the named expression in another package size/count. It is not evidence for changing this source variant; exact UPC listing and actual package establish this name."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://healthno-1.com/product/kellogg-s-apple-jacks-cereales-a-la-pomme-et-a-la-cannelle-de-345g/",
+          "supports": "Lists source UPC 038000391347 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/800/039/1347/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual front reads Kellogg's Apple Jacks and apple/cinnamon cereal. Manufacturer reference is the same expression in a different size; exact UPC retailer corroborates source12.2oz. No size imported from manufacturer."
+        }
+      ]
+    },
+    {
+      "sku": "4769",
+      "expectedUpc": "038000596551",
+      "expectedNameSha256": "7f30029bf926f456a8d19667a93f0d36db6344ed8fdf0afbb8d0e839815be8b4",
+      "replaceTextFrom": "Kellogg's frosted flake 12.2ozCereal",
+      "replaceTextTo": "Kellogg's Frosted Flakes Cereal 12.2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.wkkellogg.com/our-foods/our-brands/frosted-flakes",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.ubuy.com.ly/en/product/BHBE6AVK8-kellogg-x27-s-breakfast-cereal-frosted-flakes-fat-free-15-oz-box",
+          "supports": "Lists source UPC 038000596551 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/800/059/6551/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual front clearly reads Kellogg's Frosted Flakes. Exact UPC listing is15oz whereas source says12.2oz. Name-only repair preserves source label and records the unresolved size conflict privately."
+        }
+      ]
+    },
+    {
+      "sku": "5228",
+      "expectedUpc": "016000275348",
+      "expectedNameSha256": "3df238611e61504ed45dfa186b2fe676706eba06e265ebba157741218928f96b",
+      "replaceTextFrom": "Lucky Charmscereal",
+      "replaceTextTo": "Lucky Charms Original Cereal",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.luckycharms.com/about",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.lacolonia.com/cereal-general-mills-lucky-charms-malvaviscos-297-gr-ref016000275348/p",
+          "supports": "Lists source UPC 016000275348 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/600/027/5348/5.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual original Lucky Charms box with frosted toasted oat cereal and marshmallows. Exact UPC retailer corroborates identity; differing historical weights are not used to fill missing source size."
+        }
+      ]
+    },
+    {
+      "sku": "1519",
+      "expectedUpc": "086600750729",
+      "expectedNameSha256": "73e8e1c0b3d69788bd39d6c5483877ca2a71e97a9758ef64c966f35317047525",
+      "replaceTextFrom": "Bumble Bee sardinesin hot sauce",
+      "replaceTextTo": "Bumble Bee Sardines in Hot Sauce",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bumblebee.com/products/gluten-free/bumble-bee-sardines-in-louisiana-hot-sauce/",
+          "supports": "Manufacturer corroborates Bumble Bee sardines in the hot-sauce family. The older inspected package and exact UPC listing support the narrower Hot Sauce wording retained here."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.ftsw.us/ShopWICNM/TheLittleStore1/en/1175-SARDINESALLAUTHORIZED",
+          "supports": "Lists source UPC 086600750729 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/660/075/0729/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual package reads Bumble Bee Sardines in Hot Sauce and prints exact source barcode. Manufacturer now calls the family Louisiana Hot Sauce; retain the directly inspected older Hot Sauce wording without expanding to a new regional claim."
+        }
+      ]
+    },
+    {
+      "sku": "2057",
+      "expectedUpc": "048000001955",
+      "expectedNameSha256": "c1b20be13d8a409a3b88f9761a9b0488cd350af694bbafa0b4d9928956145625",
+      "replaceTextFrom": "Chicken sea chunktuna in oil",
+      "replaceTextTo": "Chicken of the Sea Chunk Light Tuna in Oil",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://chickenofthesea.com/products/tuna/chunk-light-tuna-in-oil/",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/chicken-of-the-sea-chunk-light-tuna-in-oil-id-048000001955",
+          "supports": "Lists source UPC 048000001955 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/800/000/1955/7.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual can reads Chicken of the Sea Chunk Light Tuna in Oil. Source brand truncation repaired; no weight added."
+        }
+      ]
+    },
+    {
+      "sku": "2282",
+      "expectedUpc": "024000322009",
+      "expectedNameSha256": "1fe9ca5b6e7be80928627d2950d371fbe524ecd4b10a1bc14dbadf5caa8d598d",
+      "replaceTextFrom": "College innchicken broth fat free",
+      "replaceTextTo": "College Inn Fat Free Lower Sodium Chicken Broth",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://collegeinn.com/product/fat-free-lower-sodium-chicken-broth/",
+          "supports": "Manufacturer corroborates College Inn lower-sodium chicken broth; current40% formula differs from older inspected50% can. Only shared lower-sodium expression is used; no numeric formula or size is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.ubuy.dk/en/product/8JT29NXG-college-inn-fat-free-and-lower-sodium-chicken-broth-14-5-oz",
+          "supports": "Lists source UPC 024000322009 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/400/032/2009/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual older can reads College Inn chicken broth,50% less sodium and fat free. Current primary product is40% less sodium. Use only shared Fat Free Lower Sodium identity corroborated by exact UPC retailer; do not substitute numeric sodium formula or infer size."
+        }
+      ]
+    },
+    {
+      "sku": "2281",
+      "expectedUpc": "024000322306",
+      "expectedNameSha256": "04b58d1c42d73bc5e816628073bf34c534b8915d04ecdb3e1f6ea36699885cc0",
+      "replaceTextFrom": "Collegechicken broth",
+      "replaceTextTo": "College Inn Chicken Broth",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://collegeinn.com/product/chicken-broth/",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://yaxa.co/products/college-inn-caldo-de-pollo-14-5-oz-paquete-de-24",
+          "supports": "Lists source UPC 024000322306 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/400/032/2306/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual can reads College Inn Chicken Broth. Exact UPC retailer confirms; source missing size unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "2791",
+      "expectedUpc": "024000163084",
+      "expectedNameSha256": "a3237c26fd7f7155eb35837fab7990ad9636deca286330fd2268aeb313302f8d",
+      "replaceTextFrom": "del monte sweet peas",
+      "replaceTextTo": "Del Monte Sweet Peas",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.delmonte.com/products/vegetables/peas/sweet-peas",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16380115-del-monte-sweet-peas-15-oz",
+          "supports": "Lists source UPC 024000163084 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/400/016/3084/11.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "2800",
+      "expectedUpc": "024000162995",
+      "expectedNameSha256": "ecc09e2701b839e4953f6b8921130fd980e8e1b43360652257aeb94c0a29ee12",
+      "replaceTextFrom": "DelMontesliced carrots",
+      "replaceTextTo": "Del Monte Sliced Carrots",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.delmonte.com/products/vegetables/carrots/sliced-carrots",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16410128-del-monte-carrots-sliced-14-5-oz",
+          "supports": "Lists source UPC 024000162995 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/400/016/2995/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "3746",
+      "expectedUpc": "736393106325",
+      "expectedNameSha256": "02d66a11743e77fa64d7b1af1f041a055e638fc0f3e5dcd79205b81cee823630",
+      "replaceTextFrom": "Glory Seasoned Spinach",
+      "replaceTextTo": "Glory Foods Seasoned Southern Style Spinach",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://gloryfoods.com/frequently-asked-questions/",
+          "supports": "Official Glory Foods page corroborates the brand and seasoned canned vegetable family only. Exact Spinach expression is supplied by the inspected package and exact UPC retailer."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.herbspro.com/products/greens-spinach-186963",
+          "supports": "Lists source UPC 736393106325 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/073/639/310/6325/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual store-shelf can reads Glory Foods Seasoned Southern Style Spinach. Primary FAQ corroborates brand and seasoned canned vegetables only; exact expression comes from inspected can plus exact UPC retailer. Visible shelf prices remain only in private evidence; no photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "3747",
+      "expectedUpc": "736393104000",
+      "expectedNameSha256": "4b414c23f450810c3a46721d8b66b78bb5375da0375413b511eb8e6e7a75dd6f",
+      "replaceTextFrom": "Glory Turnip greens 27OZ",
+      "replaceTextTo": "Glory Foods Seasoned Southern Style Turnip Greens 27OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://gloryfoods.com/products/greens-and-spinach/seasoned-turnip-greens/",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.faire.com/product/p_j7wvd823uz",
+          "supports": "Lists source UPC 736393104000 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/073/639/310/4000/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual front reads Glory Foods Seasoned Southern Style Turnip Greens27oz, matching source measure."
+        }
+      ]
+    },
+    {
+      "sku": "4206",
+      "expectedUpc": "037600241939",
+      "expectedNameSha256": "29c7ceeb7d1c2df5fa4384476491eafc906caa7a0970316cd54a966981d93152",
+      "replaceTextFrom": "Hormel chilino beans",
+      "replaceTextTo": "Hormel Chili No Beans",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hormel.com/brands/hormel-chili/product/chili-no-beans/",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/hormel-chili-with-no-beans-037600241939",
+          "supports": "Lists source UPC 037600241939 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/760/024/1939/7.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "4037",
+      "expectedUpc": "048001265042",
+      "expectedNameSha256": "76cb949045d2758b7a07e187dfd8706926400838d8267ae2cbb40780397c0e23",
+      "replaceTextFrom": "Hellmann's Mayonnaise",
+      "replaceTextTo": "Hellmann's Real Mayonnaise",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.unileverusa.com/048001265042-0001-en-US/index.html",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/96432-hellmann-s-real-mayonnaise-real-mayo-8-oz",
+          "supports": "Lists source UPC 048001265042 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/800/126/5042/2.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual jar reads Hellmann's Real Mayonnaise; manufacturer SmartLabel prints exact UPC. Retired page status retained as historical package evidence; unknown source size not changed."
+        }
+      ]
+    },
+    {
+      "sku": "5530",
+      "expectedUpc": "717854105156",
+      "expectedNameSha256": "0a1b372c979d41c4227967926a2e857e8d53eb3257ad32699c7f790998939539",
+      "replaceTextFrom": "Michelina'smacaroni cheese",
+      "replaceTextTo": "Michelina's Macaroni & Cheese",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.michelinas.com/macaroni-cheese",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/103601-michelina-s-macaroni-cheese-8-oz",
+          "supports": "Lists source UPC 717854105156 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/071/785/410/5156/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "5531",
+      "expectedUpc": "717854105576",
+      "expectedNameSha256": "e4a7f564035cc235e5fe95212aebbf59d9e781b4f71538d7962014ba9f28c6cf",
+      "replaceTextFrom": "Michelina'ssalisbury Steak",
+      "replaceTextTo": "Michelina's Salisbury Steak with Mashed Potatoes & Gravy",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.michelinas.com/salisbury-steak",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/42060-michelina-s-salisbury-steak-8-oz",
+          "supports": "Lists source UPC 717854105576 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/071/785/410/5576/4.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "5533",
+      "expectedUpc": "717854305013",
+      "expectedNameSha256": "823850a699c8e16dea0d6f1bf889e9ef5b117bf9740a6d02c2cce9ca7e6001b7",
+      "replaceTextFrom": "Michelina'ssweet sour chicken",
+      "replaceTextTo": "Michelina's Sweet & Sour Sauce with White Chicken & Rice",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.michelinas.com/sweet-sour-chicken-rice",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/42143-michelina-s-sweet-sour-sauce-with-white-chicken-rice-8-oz",
+          "supports": "Lists source UPC 717854305013 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/071/785/430/5013/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "6326",
+      "expectedUpc": "046000820118",
+      "expectedNameSha256": "bf7d6c8a09f4cbfffd0daa71c98a4cbb6a5d5b9fcf3ae9c05cc6c544c4ce3c6c",
+      "replaceTextFrom": "Old el pasobeans",
+      "replaceTextTo": "Old El Paso Fat Free Refried Beans",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.oldelpaso.com/products/fat-free-refried-beans-16-oz",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/78463-old-el-paso-fat-free-refried-beans-16-000-oz",
+          "supports": "Lists source UPC 046000820118 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/600/082/0118/15.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "6325",
+      "expectedUpc": "046000811017",
+      "expectedNameSha256": "66b9f236fcd9fce3cee79267c1d81d002967bb9bb1a1c4d58c7c23720aeeec87",
+      "replaceTextFrom": "Old EL PasoTaco shells",
+      "replaceTextTo": "Old El Paso Crunchy Taco Shells",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.oldelpaso.com/products/crunchy-shells-18-ct-6-oz",
+          "supports": "Manufacturer corroborates the named expression in another package size/count. It is not evidence for changing this source variant; exact UPC listing and actual package establish this name."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13043721",
+          "supports": "Lists source UPC 046000811017 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/600/081/1017/8.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual12-shell box and exact UPC retailer establish Crunchy Taco Shells. Primary page is the same expression in another count. Count and weight are not added to source unknown variant."
+        }
+      ]
+    },
+    {
+      "sku": "6485",
+      "expectedUpc": "041565141166",
+      "expectedNameSha256": "b6e6ee2eb5e6e487cda46a062b673e88041b76947247a5989dabf51bf8b3e5f7",
+      "replaceTextFrom": "Pace Chunky salsa",
+      "replaceTextTo": "Pace Medium Chunky Salsa",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.campbells.com/pace/products/salsa/chunky-salsa-medium/",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/pace-medium-chunky-salsa-041565141166",
+          "supports": "Lists source UPC 041565141166 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/156/514/1166/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "6466",
+      "expectedUpc": "044700009888",
+      "expectedNameSha256": "841a53a6cdbc3caf6e5d2eda56d4c259eba58c61f4451da5768d6d115ab32245",
+      "replaceTextFrom": "Oscar Mayer cotto salami12OZ",
+      "replaceTextTo": "Oscar Mayer Cotto Salami 12OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kraftheinz.com/philadelphia/recipes/576950-easy-cream-cheese-roll-ups",
+          "supports": "Manufacturer recipe explicitly names Oscar Mayer Cotto Salami; it is expression evidence only. The exact UPC retailer and actual package establish this source identity."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/42762-oscar-mayer-cotto-salami-12-oz",
+          "supports": "Lists source UPC 044700009888 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/470/000/9888/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual front reads Oscar Mayer Cotto Salami Original12oz. Primary manufacturer recipe explicitly names Oscar Mayer Cotto Salami, without making an exact-pack claim. Exact UPC retailer and photo corroborate complete name."
+        }
+      ]
+    },
+    {
+      "sku": "4346",
+      "expectedUpc": "011115871324",
+      "expectedNameSha256": "70d11e1b53cc9c1d08f702483e36e315caa951c2ef972f07461bf9a1c0a3ae14",
+      "replaceTextFrom": "Imperial butter16OZ",
+      "replaceTextTo": "Imperial Vegetable Oil Spread 16OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.floraprofessional.com/en-us/products/imperial-sticks",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-14732096",
+          "supports": "Lists source UPC 011115871324 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/111/587/1324/4.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual package clearly says Imperial Vegetable Oil Spread, not butter. Source16OZ retained. Current formula percentage differs from historical photo, so no percentage or formulation claim is added."
+        }
+      ]
+    },
+    {
+      "sku": "4897",
+      "expectedUpc": "076397032009",
+      "expectedNameSha256": "131bbc60e0607b62e98ce00bdfd2b70591f991c8ddda8fad221680d303d85af9",
+      "replaceTextFrom": "La Costenawhole black beans",
+      "replaceTextTo": "La Costeña Whole Black Beans",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.vilore.com/brands/lacostena/",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.umamishop.com/products/whole-black-beans",
+          "supports": "Lists source UPC 076397032009 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/639/703/2009/3.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual La Costeña Whole Black Beans can matches official brand family and exact UPC retailer. No package volume added."
+        }
+      ]
+    },
+    {
+      "sku": "4896",
+      "expectedUpc": "076397031002",
+      "expectedNameSha256": "717570a791f848454ab68b8397c5df7d68aae270eb8bbb6492cc3562947bce65",
+      "replaceTextFrom": "La Costenawhole pinto beans",
+      "replaceTextTo": "La Costeña Whole Pinto Beans",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.vilore.com/brands/lacostena/",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.mexgrocer.com/products/la-costena-whole-pinto-beans",
+          "supports": "Lists source UPC 076397031002 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/639/703/1002/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual La Costeña Whole Pinto Beans can matches official brand family and exact UPC retailer. No package weight added."
+        }
+      ]
+    },
+    {
+      "sku": "4950",
+      "expectedUpc": "071524017676",
+      "expectedNameSha256": "7ae9bbed10330c5808556026fe7337d92eb887eec9cd858dce37c5b7a5225058",
+      "replaceTextFrom": "La PreferidaFrijoles Negros",
+      "replaceTextTo": "La Preferida Black Beans (Frijoles Negros)",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://shop.lapreferida.com/collections/beans-grains/products/black-beans-15-oz",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/55865-la-preferida-black-beans-frijoles-negros-15-0-oz",
+          "supports": "Lists source UPC 071524017676 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/152/401/7676/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "4952",
+      "expectedUpc": "071524020034",
+      "expectedNameSha256": "de13d23ce9cae96cd5a2ec7161d2c10cfd05c8aa9aaa63d4faf147f680281b40",
+      "replaceTextFrom": "La PreferidaFrijoles pintos",
+      "replaceTextTo": "La Preferida Pinto Beans (Frijoles Pintos)",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://shop.lapreferida.com/products/pinto-beans-15-oz",
+          "supports": "Manufacturer corroborates the named expression in another package size/count. It is not evidence for changing this source variant; exact UPC listing and actual package establish this name."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/69735-la-preferida-pinto-beans-frijoles-pintos-29-0-oz",
+          "supports": "Lists source UPC 071524020034 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/152/402/0034/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "4951",
+      "expectedUpc": "071524018130",
+      "expectedNameSha256": "56bae296b27013aa33eb5a44ef0b6c876e73224d5f45d1b7d9fac8a4d07c6b6f",
+      "replaceTextFrom": "La Preferidapinto beans",
+      "replaceTextTo": "La Preferida Pinto Beans",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://shop.lapreferida.com/products/pinto-beans-15-oz",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/94082-la-preferida-pinto-beans-frijoles-pintos-15-0-oz",
+          "supports": "Lists source UPC 071524018130 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/152/401/8130/2.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Visible brand and expression agree with the proposed name; no public photo use is approved."
+        }
+      ]
+    },
+    {
+      "sku": "5017",
+      "expectedUpc": "071524094233",
+      "expectedNameSha256": "6774b0418f022669e32ac160bfa8844a0ae0e495b24d32ba56f4665b007653bc",
+      "replaceTextFrom": "LaPreferida Sardinas",
+      "replaceTextTo": "La Preferida Sardines in Tomato Sauce",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://shop.lapreferida.com/products/sardines-15-oz",
+          "supports": "Official La Preferida storefront identifies Sardines in Tomato Sauce and embeds source UPC071524094233 in its order SKU. This page serves both manufacturer and exact-item evidence roles, not two independent publishers."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.lapreferida.com/products/sardines-15-oz",
+          "supports": "Lists source UPC 071524094233 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/152/409/4233/1.400.jpg",
+          "supports": "Actual package image individually inspected for brand and complete expression. Actual can reads La Preferida Sardines In Tomato Sauce. Official storefront item identifiers use source UPC071524094233 plus order-count suffix. Same manufacturer page supplies primary and exact-item evidence; these are two evidence roles, not independent publishers. Source unknown size remains unknown."
+        }
+      ]
+    },
+    {
+      "sku": "3646",
+      "expectedUpc": "052000010282",
+      "expectedNameSha256": "14ab62a8cbb3c2202cbd8e692fee82f8960e5696abcc9bb9d35be5345cfa4406",
+      "replaceTextFrom": "Gatorade 28ozIce Charge",
+      "replaceTextTo": "Gatorade Frost Icy Charge Thirst Quencher 28oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/052000010282-0016-en-US/index.html",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16973742-gatorade-frost-icy-charge-tq-28floz-28-0-fl-oz",
+          "supports": "Independent merchant or distributor lists exact source UPC 052000010282 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/001/0282/2.400.jpg",
+          "supports": "Blue Gatorade bottle. Full original inspected after preview: Icy Charge wording is small above COOL; 28 fl oz label. Manufacturer exact UPC independently confirms Frost Icy Charge. Hand, shop and price sticker make it private evidence only. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "3664",
+      "expectedUpc": "052000204087",
+      "expectedNameSha256": "01906c9b6ca59c6da7c5c61b3b2e3728a16521cc55f94a187f309ef943aec6d9",
+      "replaceTextFrom": "Gatorade Fruit punch 20oz",
+      "replaceTextTo": "Gatorade Fruit Punch Thirst Quencher 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Sports-Drinks/Gatorade-Fruit-Punch/p/1-4WG82-4",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.ubuy.ca/en/product/QKTZQ96-gatorade-sports-drink-fruit-punch-20oz-4pk-bottles",
+          "supports": "Independent merchant or distributor lists exact source UPC 052000204087 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/020/4087/1.400.jpg",
+          "supports": "Red Gatorade bottle; Fruit Punch and Thirst Quencher label visible despite blurred background. Retail multipack count is not imported. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "3671",
+      "expectedUpc": "052000204056",
+      "expectedNameSha256": "c29eb2c49445f357e12e46079254c859e5b4c69b4e89541ff5f8198389d5912d",
+      "replaceTextFrom": "Gatorade G2 Fruit Punch 20oz",
+      "replaceTextTo": "Gatorade G2 Fruit Punch Thirst Quencher 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/PEPSICO-BRANDS/GATORADE%C2%AE/G2/c/brand_gatoradeBeverage_subbrand_g2?fromSubbrand=Y&root=beverages&selectedBrand=brand-gatoradeBeverage&showProductListing=true&source=brand-pepsicobrands",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.zoro.com/gatorade-g2-low-calorie-sports-drink-20-oz-ready-to-drink-fruit-punch-pk24-20405/i/G5129923/",
+          "supports": "Independent merchant or distributor lists exact source UPC 052000204056 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/020/4056/1.400.jpg",
+          "supports": "G2 Gatorade bottle with red Fruit Punch lower label, outdoor beach background. Manufacturer G2 family and exact merchant UPC agree. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "3674",
+      "expectedUpc": "052000204063",
+      "expectedNameSha256": "2a4be60c554e3e379d369b3394de42592e9099764c630ad412dc5f780a10b8f2",
+      "replaceTextFrom": "Gatorade G2 Grape 20oz",
+      "replaceTextTo": "Gatorade G2 Grape Thirst Quencher 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/PEPSICO-BRANDS/GATORADE%C2%AE/G2/c/brand_gatoradeBeverage_subbrand_g2?fromSubbrand=Y&root=beverages&selectedBrand=brand-gatoradeBeverage&showProductListing=true&source=brand-pepsicobrands",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://denvertruevalue.com/p/gatorade-grape-sports-drink-bottle-052000204063",
+          "supports": "Independent merchant or distributor lists exact source UPC 052000204063 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/020/4063/3.400.jpg",
+          "supports": "G2 Lower Sugar Gatorade Thirst Quencher Grape wording visible on purple bottle label. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "3688",
+      "expectedUpc": "052000010534",
+      "expectedNameSha256": "cd53ca5badfc3870b69f19e08d3f43df95bdfb6fce1bc061e9ef08a209e741de",
+      "replaceTextFrom": "Gatorade green apple 20OZ",
+      "replaceTextTo": "Gatorade Fierce Green Apple Thirst Quencher 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/052000010534-0011-en-US/index.html",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://assets-of-websites.s3.amazonaws.com/media/934593/ea9ec16005b6b01eb3e7307a44dcf275c1361fed/original/7201%20Online%20Inv%201.21.24%20%281%29%20-%207201%20Online%20Inv%201.21.24%20%281%29.csv.pdf",
+          "supports": "Independent merchant or distributor lists exact source UPC 052000010534 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/001/0534/2.400.jpg",
+          "supports": "Gatorade Fierce Thirst Quencher Green Apple front visible; handheld bottle. Public merchant inventory lists exact UPC and Fierce Green Apple 20 oz; historical primary SmartLabel independently confirms. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "4313",
+      "expectedUpc": "083046005994",
+      "expectedNameSha256": "bdfc5c925d9986f7a8f1bb3de781ff3ef1957e94b1cbb665b26e87a3c6e5c16c",
+      "replaceTextFrom": "ICE MOUNTAIN 16.9OZ32PK WATER",
+      "replaceTextTo": "Ice Mountain Spring Water 16.9OZ32PK",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.icemountainwater.com/products/spring-water/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-84793262",
+          "supports": "Independent merchant or distributor lists exact source UPC 083046005994 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/304/600/5994/1.400.jpg",
+          "supports": "Ice Mountain 100% Natural Spring Water shrinkwrapped pack with 32 count visible. Source 32-pack and16.9oz retained. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "4315",
+      "expectedUpc": "083046008537",
+      "expectedNameSha256": "1422b0f470d90d84f373c4a18d3a3743fe08b6bfd442ba428905020817bebbc8",
+      "replaceTextFrom": "ICE MOUNTAIN 20OZ",
+      "replaceTextTo": "Ice Mountain Spring Water 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.icemountainwater.com/products/spring-water/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.dkhardware.com/nestle-waters-9024816-spring-water-ice-mountain-20-oz-product-5551757.html",
+          "supports": "Independent merchant or distributor lists exact source UPC 083046008537 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/304/600/8537/1.400.jpg",
+          "supports": "Ice Mountain 100% Natural Spring Water bottle;20fl oz label. Canonical product expression uses Spring Water without new claims. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "4316",
+      "expectedUpc": "083046000128",
+      "expectedNameSha256": "9c1365baa405633c2029abbc27ec426bf0f2eeb0d7a4d0c64836fd7f4864d005",
+      "replaceTextFrom": "ICE MOUNTAIN WATER 1.5L",
+      "replaceTextTo": "Ice Mountain Spring Water 1.5L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.icemountainwater.com/products/spring-water/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://imperiallubes.com/products/ice-mountain-100-natural-spring-water-12-1-5l",
+          "supports": "Independent merchant or distributor lists exact source UPC 083046000128 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/304/600/0128/3.400.jpg",
+          "supports": "Ice Mountain 100% Natural Spring Water front and1.5L. Distributor case quantity is not imported. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "4318",
+      "expectedUpc": "083046453375",
+      "expectedNameSha256": "b8f1077e43a8aef77582d74f69ecf802cdded1c61d85d6d024d1ccfa3e504974",
+      "replaceTextFrom": "ICE MOUNTAIN WATER 23.7OZ",
+      "replaceTextTo": "Ice Mountain Spring Water 23.7OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.icemountainwater.com/products/spring-water/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://imperiallubes.com/products/ice-mountain-water-24-23-7oz",
+          "supports": "Independent merchant or distributor lists exact source UPC 083046453375 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/304/645/3375/2.400.jpg",
+          "supports": "Ice Mountain Spring Water bottle on lap. Label23.7fl oz/700mL visible; original23.7oz retained. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5007",
+      "expectedUpc": "041755000501",
+      "expectedNameSha256": "0791ef42cc8c9d4335cad45bcb988d500c106cc143dc171272b9ed580988e16e",
+      "replaceTextFrom": "LANGERS Apple 16oz",
+      "replaceTextTo": "Langers 100% Apple Juice 16oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://langer-juice-company.myshopify.com/products/copy-of-15-2oz-5-calories-mongo-mango",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://amtatmall.mn/product/302349",
+          "supports": "Independent merchant or distributor lists exact source UPC 041755000501 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/175/500/0501/4.400.jpg",
+          "supports": "Langers Apple Juice front explicitly100% Pure Apple Juice From Concentrate. Source16oz retained despite current15.2oz listings. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5008",
+      "expectedUpc": "041755000556",
+      "expectedNameSha256": "70579a0c3a626ddc16a24321530bd581f82008d3448f92788e6850cb70d26b5f",
+      "replaceTextFrom": "Langers Cranberry 16oz",
+      "replaceTextTo": "Langers Cranberry Juice Cocktail 16oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://langer-juice-company.myshopify.com/products/copy-of-15-2oz-100-orange-juice",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.mercaso.com/collections/juices/products/langers-cranberry-juice-16-oz-12-pack",
+          "supports": "Independent merchant or distributor lists exact source UPC 041755000556 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/175/500/0556/1.400.jpg",
+          "supports": "Langers Cranberry Juice Cocktail From Concentrate front visible. Official product page title is Cranberry Juice Cocktail despite old Orange text in URL slug. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5010",
+      "expectedUpc": "041755000709",
+      "expectedNameSha256": "2ec8ff094bc90186a3ff7cd873b76fe7432316aa0cabbfa2ed2243cdf29fad1f",
+      "replaceTextFrom": "Langers Grape 16oz",
+      "replaceTextTo": "Langers Grape Juice Cocktail 16oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://langer-juice-company.myshopify.com/products/12pk-15-2oz-grape-juice-cocktail",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://amtatmall.mn/product/422212",
+          "supports": "Independent merchant or distributor lists exact source UPC 041755000709 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/175/500/0709/1.400.jpg",
+          "supports": "Langers Grape Juice Cocktail From Concentrate; Made with Concord Grapes printed. No100% claim inferred. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5011",
+      "expectedUpc": "041755000761",
+      "expectedNameSha256": "1739975a31d27a0b79c882a36d710a988f69d5a0585a706715af5446c6b83a3e",
+      "replaceTextFrom": "Langers Mango 16oz",
+      "replaceTextTo": "Langers Mango Nectar 16oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://langer-juice-company.myshopify.com/products/12pk-15-2oz-mango-nectar",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/products/langers-mango-nectar",
+          "supports": "Independent merchant or distributor lists exact source UPC 041755000761 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/175/500/0761/3.400.jpg",
+          "supports": "Langers Mango Nectar front with Alphonso Mangos statement. Canonical name preserves Mango Nectar only. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5012",
+      "expectedUpc": "041755000518",
+      "expectedNameSha256": "2973c863ed47a9a124a749909b48bc95f1f991a1d6f011dbc2c9a3c9b58c33dd",
+      "replaceTextFrom": "Langers Orange 16oz",
+      "replaceTextTo": "Langers 100% Orange Juice 16oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://langer-juice-company.myshopify.com/products/12pk-10oz-variety-pack",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.sfnaturals.net/_files/ugd/3c532f_98aea65a90f8490a91b46bdc7c6628f6.pdf",
+          "supports": "Independent merchant or distributor lists exact source UPC 041755000518 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/175/500/0518/1.400.jpg",
+          "supports": "Langers Orange Juice front explicitly100% Pure Orange Juice From Concentrate. Official variety-pack page corroborates100% Orange expression only; its10oz/12-pack is not imported. Independent distributor exact UPC lists Orange. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5426",
+      "expectedUpc": "070491212824",
+      "expectedNameSha256": "e456387c6be8e4473ad806794954ddb8c61a845e78cf7d70e0fc2f94b3ace3ff",
+      "replaceTextFrom": "Master of Mixes Pina Colada 1L",
+      "replaceTextTo": "Master of Mixes Piña Colada Mixer 1L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.masterofmixes.com/products/pina-colada-mixer",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/collections/master-of-mixes/products/master-of-mixes-pina-colada-mix-1l",
+          "supports": "Independent merchant or distributor lists exact source UPC 070491212824 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/049/121/2824/1.400.jpg",
+          "supports": "Tiny full-bottle image still shows Master of Mixes Piña Colada. No size claim from small photo; source1L is preserved and exact retailer identifies1L. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5429",
+      "expectedUpc": "070491213227",
+      "expectedNameSha256": "67f8dea50d106bb5d83e2041383e68e2ce082e86b8e8be8b6b0f5a04b544d19d",
+      "replaceTextFrom": "MASTER STRAWBERRY DAQUIRI 1LIT",
+      "replaceTextTo": "Master of Mixes Strawberry Daiquiri/Margarita Mixer 1LIT",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.masterofmixes.com/products/strawberry-daiquiri-margarita-mixer",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://morewines.com/master-of-mixes-strawberry-daiquiri-margarita-mix-1l/",
+          "supports": "Independent merchant or distributor lists exact source UPC 070491213227 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/049/121/3227/1.400.jpg",
+          "supports": "Front clearly reads Master of Mixes Strawberry Daiquiri/Margarita Mixer. Corrects source DAQUIRI and abbreviated brand; original1LIT retained. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5706",
+      "expectedUpc": "025000058196",
+      "expectedNameSha256": "9afc9b5c2a8ee559674735a78f5e25d87d8bd7b9ef961e621e4b0af8493695d6",
+      "replaceTextFrom": "Minute Maid Fruit Punch 12pkPack",
+      "replaceTextTo": "Minute Maid Fruit Punch 12pk",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/minute-maid/products/lemonades-and-fruit-drinks",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/93532-minute-maid-fruit-punch-made-w-real-fruit-juice-12-oza",
+          "supports": "Independent merchant or distributor lists exact source UPC 025000058196 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/500/005/8196/1.400.jpg",
+          "supports": "Actual single can reads Minute Maid Fruit Punch. Name evidence only; this is not a verified12-pack photo. Redundant Pack after12pk removed from display title without removing count. No per-unit measure added. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5713",
+      "expectedUpc": "025000058868",
+      "expectedNameSha256": "aeac7ebdb402c78d9ac88f86f6507ca2fb7cfa8efc1e7cdb9034958d020588c1",
+      "replaceTextFrom": "Minute Maid Pink Lem 20oz",
+      "replaceTextTo": "Minute Maid Pink Lemonade 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/minute-maid/products/lemonades-and-fruit-drinks",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.murraycashandcarry.com/shop/minute-maid-bottle-pink-lemonade-591ml-u-38853",
+          "supports": "Independent merchant or distributor lists exact source UPC 025000058868 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/500/005/8868/3.400.jpg",
+          "supports": "Minute Maid Pink Lemonade front visible on outdoor bottle. Expands source Pink Lem only. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5839",
+      "expectedUpc": "5060166692483",
+      "expectedNameSha256": "2d616dc096401f0439aa3e8d385be208e87a29d5ea99db4ad5f1727ab933963e",
+      "replaceTextFrom": "Monster energy16 oz",
+      "replaceTextTo": "Monster Energy 16 oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.monsterenergy.com/en-us/energy-drinks/monster-energy/original-green/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://catalog.bb-g.pl/beverages/350-monster-energy-drink-energy-500ml-5060166692483.html",
+          "supports": "Independent merchant or distributor lists exact source UPC 5060166692483 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/506/016/669/2483/8.400.jpg",
+          "supports": "Polish black/green Monster Energy can front. Exact EAN confirms original Monster Energy expression. Foreign500mL listing is not proof of original16oz size: name-only scope; package discrepancy remains unresolved. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5840",
+      "expectedUpc": "070847811268",
+      "expectedNameSha256": "269e1e92f46e20ea3c40deba8cdd39cfaec39cec9ca6b416c845ab9b12fdcad4",
+      "replaceTextFrom": "Monster Lo-Carb 16oz",
+      "replaceTextTo": "Monster Energy Lo-Carb 16oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.monsterenergy.com/en-us/energy-drinks/monster-energy/lo-carb/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.maxwarehouse.com/products/monster-energy-lo-carb-original-energy-drink-16-fl-oz-pack-of-24",
+          "supports": "Independent merchant or distributor lists exact source UPC 070847811268 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/084/781/1268/4.400.jpg",
+          "supports": "Blue claw Monster Energy Lo-Carb can; expression clear and16fl oz at edge. Wholesale count not imported. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5841",
+      "expectedUpc": "070847003229",
+      "expectedNameSha256": "94182a963bb6d4a5484cbd447b3d7676a49ddaf921f94592fbce3eb606c42207",
+      "replaceTextFrom": "Monster Rehab 16oz",
+      "replaceTextTo": "Monster Rehab Tea + Lemonade 16oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.monsterenergy.com/en-us/energy-drinks/rehab-monster/tea-lemonade/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.dollargeneral.com/p/monster-rehab-lemonade-energy-iced-tea-oz-/70847003229",
+          "supports": "Independent merchant or distributor lists exact source UPC 070847003229 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/084/700/3229/8.400.jpg",
+          "supports": "Yellow Monster Rehab can explicitly Tea+Lemonade. ExactUPC merchant uses15.5oz; source16oz retained. Product name verification does not resolve variant size. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5847",
+      "expectedUpc": "070847811244",
+      "expectedNameSha256": "924f338f61fe6a71f32042df8f05174e754f7246294a59ef701825e45af6bc48",
+      "replaceTextFrom": "Monster XL 24oz",
+      "replaceTextTo": "Monster Mega Energy 24oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.monsterenergy.com/en-us/energy-drinks/monster-energy/original-green/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/35057-monster-energy-original-24-0-fl-oz",
+          "supports": "Independent merchant or distributor lists exact source UPC 070847811244 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/084/781/1244/7.400.jpg",
+          "supports": "Full original individually viewed after preview: tall resealable black/green can explicitly MEGA MONSTER ENERGY and24FL OZ. ExactUPC retailer corroborates Mega; primary original-green family lists24oz. Source generic XL replaced with package Mega expression. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6009",
+      "expectedUpc": "012000418969",
+      "expectedNameSha256": "476f7c9552a3fd9c36a18aa3577efc7e3d5976010f9064eea7206265f6ed649e",
+      "replaceTextFrom": "Mtn Dew voltage 1L",
+      "replaceTextTo": "Mountain Dew Voltage 1L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/012000418969-0014-en-US/index.html",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/mountain%20dew%C2%AE/mountain-dew-voltage-raspberry-citrus/p/1-CZ645-33",
+          "supports": "Manufacturer-owned PepsiCo distributor explicitly lists exact UPC012000418969 as Mountain Dew Voltage Raspberry Citrus1L. This is an external exact-UPC check against the private source, but is not represented as an independent merchant."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/200/041/8969/1.400.jpg",
+          "supports": "Actual front individually viewed: blue liquid bottle reads Mtn Dew VOLTAGE with raspberry/citrus descriptor. Primary exact UPC SmartLabel and PepsiCo distributor independently corroborate the source record; both web references are manufacturer-owned, not independent merchants. Original1L retained. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6002",
+      "expectedUpc": "012000027215",
+      "expectedNameSha256": "063aa80cba325b84cab55f52e931741359f572de101881b475c7272838dcee7b",
+      "replaceTextFrom": "Mtn DEW16OZ can",
+      "replaceTextTo": "Mountain Dew 16OZ can",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/012000027215-0012-en-US/index.html",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.mercaso.com/collections/soda-16-oz/products/mountain-dew-16-oz-12-pack-d",
+          "supports": "Independent merchant or distributor lists exact source UPC 012000027215 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/200/002/7215/1.400.jpg",
+          "supports": "Green Mtn Dew can front individually inspected. Primary exactUPC confirms unabbreviated brand Mountain Dew; source16OZ can retained. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6271",
+      "expectedUpc": "031200259004",
+      "expectedNameSha256": "b2c4cbdd335b321bb630be2cb60455a850d4be196d1cf86696a24fe862d34ec7",
+      "replaceTextFrom": "Ocean Spray 32ozCranberry",
+      "replaceTextTo": "Ocean Spray Original Cranberry Juice Cocktail 32oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.oceanspray.com/products/cranberry-juice-cocktail-25-oz",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.mercaso.com/collections/juices/products/ocean-spray-cranberry-32-oz-12-pack-a",
+          "supports": "Independent merchant or distributor lists exact source UPC 031200259004 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/120/025/9004/1.400.jpg",
+          "supports": "Front explicitly Ocean Spray Cranberry Juice Cocktail ORIGINAL. Primary25oz page used for expression only; source32oz preserved and merchant exactUPC matches32oz. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6273",
+      "expectedUpc": "031200220073",
+      "expectedNameSha256": "5a6ca45b030094432f05cac2d77b0fbca4ba2af23e5d07c7faa1ac75f6e54cfb",
+      "replaceTextFrom": "Ocean Spray Cran-Grape 64oz",
+      "replaceTextTo": "Ocean Spray Cran-Grape Juice Drink 64oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.oceanspray.com/products/cran-grape-grape-cranberry-juice-drink-64-oz",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-12935969",
+          "supports": "Independent merchant or distributor lists exact source UPC 031200220073 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/120/022/0073/3.400.jpg",
+          "supports": "Actual front uses Cran x Grape current artwork. Primary text also explicitly says Cran-Grape Cranberry Grape Juice Drink. Keep recognized source Cran-Grape expression and64oz. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6274",
+      "expectedUpc": "012000021381",
+      "expectedNameSha256": "79b68be38bf7ad55902d5914ca75cb272f16b2e27a08412b2059ed43666cbc88",
+      "replaceTextFrom": "Oceans Spray Cran Grape 15.2oz",
+      "replaceTextTo": "Ocean Spray Cran-Grape Juice Drink 15.2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/012000021381-0014-en-US/index.html",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.officedepot.com/a/products/305774/Ocean-Spray-Cran-Grape-Juice-Drink/",
+          "supports": "Independent merchant or distributor lists exact source UPC 012000021381 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://media.officedepot.com/images/f_auto%2Cq_auto%2Ce_sharpen%2Ch_450/products/305774/305774",
+          "supports": "Existing OFF photo shows only nutrition. Separately viewed Office Depot front clearly Ocean Spray Cran-Grape. Exact retailer UPC and primary SmartLabel confirm expression; correct Oceans typo. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6276",
+      "expectedUpc": "031200204530",
+      "expectedNameSha256": "8f49348f9b23795a08b90b65ba90d089b5b1a66465020506829efe710d15a6b0",
+      "replaceTextFrom": "OceanSpray Orange 5.5oz100%",
+      "replaceTextTo": "Ocean Spray 100% Orange Juice 5.5oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://paperzz.com/doc/9349214/100%25-orange-juice-5.5-oz.-cans",
+          "supports": "Historical Ocean Spray-authored product specification, dated2017-06-14 and mirrored on Paperzz, explicitly identifies100%Orange Juice5.5oz with eachGTIN00031200204530. This is a hosted copy, not a current manufacturer endpoint."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.proxibid.com/asp/CatalogPrint.asp?aid=110145",
+          "supports": "Independent merchant or distributor lists exact source UPC 031200204530 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/120/020/4530/2.400.jpg",
+          "supports": "Actual can reads Ocean Spray100%Orange Juice From Concentrate and5.5fl oz. Historical Ocean Spray-authored2017 spec mirrored by Paperzz explicitly eachGTIN00031200204530; independent historical merchant auction inventory matchesUPC. No current availability or license claim. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6731",
+      "expectedUpc": "071537060201",
+      "expectedNameSha256": "a64fb83cd2e193d9c62d14ebda8cd2e864ad87f29e54024a270bb24448e713d2",
+      "replaceTextFrom": "Polar 20oz",
+      "replaceTextTo": "Polar Original Seltzer 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://polarseltzer.com/seltzers/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.bakerdistributing.com/wp-content/uploads/2026/01/BNAP-jan26-WEB.pdf",
+          "supports": "Independent merchant or distributor lists exact source UPC 071537060201 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/153/706/0201/1.400.jpg",
+          "supports": "Actual Polar100%Natural Seltzer ORIGINAL front visible. Distributor exactUPC row is plain Seltzer; primary flavor list explicitly Original. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6732",
+      "expectedUpc": "071537060287",
+      "expectedNameSha256": "9183ee9d44299b48b6f84d4e43fd457c7a48d126ff742e923d56d8fb314d4337",
+      "replaceTextFrom": "Polar 20ozblack cherry",
+      "replaceTextTo": "Polar Black Cherry Seltzer 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://polarseltzer.com/seltzers/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-88684645",
+          "supports": "Independent merchant or distributor lists exact source UPC 071537060287 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/153/706/0287/1.400.jpg",
+          "supports": "Actual Polar Seltzer Black Cherry front visible; held bottle. ExactUPC retailer and primary flavor agree. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6734",
+      "expectedUpc": "071537060324",
+      "expectedNameSha256": "2294674d40d588b944c9bdc23dc8ea7762c5688ec91b3941feaad494e7ed08ae",
+      "replaceTextFrom": "Polar 20ozCranberry Lime",
+      "replaceTextTo": "Polar Cranberry Lime Seltzer 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://polarseltzer.com/seltzers/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47417421",
+          "supports": "Independent merchant or distributor lists exact source UPC 071537060324 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/153/706/0324/1.400.jpg",
+          "supports": "Actual Polar Seltzer Cranberry Lime front visible. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6735",
+      "expectedUpc": "071537060348",
+      "expectedNameSha256": "74f5f3aeacdfd42283e0eda1b5dea2da7d9d859126973c4097ac2da8ceeece3b",
+      "replaceTextFrom": "Polar 20ozLemon",
+      "replaceTextTo": "Polar Lemon Seltzer 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://polarseltzer.com/seltzers/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47417424",
+          "supports": "Independent merchant or distributor lists exact source UPC 071537060348 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/153/706/0348/1.400.jpg",
+          "supports": "Actual Polar Seltzer Lemon front and20floz visible. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6737",
+      "expectedUpc": "071537060614",
+      "expectedNameSha256": "53266f6f06040ca655b2b76f7d82f700fe2ecde69fc68b0acef9620b2b191b9a",
+      "replaceTextFrom": "Polar 20ozOrange Vanilla",
+      "replaceTextTo": "Polar Orange Vanilla Seltzer 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://polarseltzer.com/seltzers/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.bakerdistributing.com/wp-content/uploads/2026/01/BNAP-jan26-WEB.pdf",
+          "supports": "Independent merchant or distributor lists exact source UPC 071537060614 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/153/706/0614/1.400.jpg",
+          "supports": "Actual Polar Seltzer Orange Vanilla front visible. Distributor exactUPC row says Orange Vanilla20oz; no wholesale count imported. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "6733",
+      "expectedUpc": "071537060300",
+      "expectedNameSha256": "dc31627e5859ca3e0a5b283e6b561b9634960bf886e2ea056d7db1e493c4f094",
+      "replaceTextFrom": "Polar 20ozRaspberry Lime",
+      "replaceTextTo": "Polar Raspberry Lime Seltzer 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://polarseltzer.com/seltzers/",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47417423",
+          "supports": "Independent merchant or distributor lists exact source UPC 071537060300 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/153/706/0300/1.400.jpg",
+          "supports": "Actual Polar Seltzer Raspberry Lime front visible. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "3553",
+      "expectedUpc": "732494000524",
+      "expectedNameSha256": "691727683d75e61d5d5ad99a3d47907a237b138b7eb4b623cb894da951842db3",
+      "replaceTextFrom": "G.H.Cretors Popped corn",
+      "replaceTextTo": "G.H. Cretors Cheese & Caramel Mix Popcorn",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.cretorspopcorn.com/cheese-caramel-mix",
+          "supports": "Manufacturer explicitly identifies Cretors Cheese & Caramel Mix popcorn. This confirms brand and expression only; source package size remains unspecified."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cfcjapan.co.jp/merchandise/g_h_cretors_mix_213g.html",
+          "supports": "Primary importer/distributor lists Cheese & Caramel Mix with exact source UPC 732494000524. Used only to corroborate brand and expression; competing weight metadata remains unresolved and no measurement or pack count is imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/gh-cretors-chicago-mix-732494000524",
+          "supports": "Primary retailer lists GH Cretors Chicago Mix with exact source UPC 732494000524. Manufacturer and inspected label confirm Cheese & Caramel. Source package size remains unspecified; this listing does not approve an image or resolve weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/073/249/400/0524/2.jpg",
+          "supports": "Individually inspected Cretors package explicitly reads Cheese & Caramel Mix and Handcrafted Small-Batch Popcorn. Brand and expression are corroborated. Its 7.5 oz measurement is not assigned to the unspecified-size source variant, and this photo remains withheld."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -14701,6 +16400,161 @@
           "kind": "inspected_package_photo",
           "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/005/0271/1.400.jpg",
           "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "2113",
+      "expectedUpc": "016000434721",
+      "expectedNameSha256": "77b2d52c6cde0b117327eb8de1504fa53b9f7d32169d6c63d486e3bdb3a263cd",
+      "expectedPublicName": "Cinnamon Toast Crunch Cereal",
+      "expectedLabel": "12.2 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.cinnamontoastcrunch.com/products/cereal",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16408967-cinnamon-toast-crunch-cereal-12-2-oz",
+          "supports": "Lists source UPC 016000434721 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/assets/domains/product-image/file/large_0c54c6e7-6e5d-4fd6-8f60-6d579678c0c5.png",
+          "supports": "Actual package image individually inspected for brand and complete expression. Original OFF assets are nutrition/ingredients only. Independently inspected exact UPC Cub product front reads Cinnamon Toast Crunch and12.2oz. Current complete public name retained unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "6465",
+      "expectedUpc": "044700008676",
+      "expectedNameSha256": "1b75ba894410de9ad0471335d970fa4b4013098ae3cbf9fbc4ff4e5fb68e7fbd",
+      "expectedPublicName": "Oscar Mayer Bologna",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kraftheinz.com/oscar-mayer/products/00044700008676-bologna-sliced-lunch-meat",
+          "supports": "Manufacturer corroborates the brand and named expression; exact source UPC is separately corroborated by the listing and inspected package. No source measurement is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/42840-oscar-mayer-meat-bologna-12-oz",
+          "supports": "Lists source UPC 044700008676 for the matching product identity. Package quantities and weights are evidence context only; existing source measurements remain unchanged."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/image/upload/f_auto/q_auto/r_8/c_limit%2Cw_3840/v1/dxp-images/oscarmayer/products/00044700008676-bologna-sliced-deli-mea/marketing-view-color-front_content-hub-12395858_c94efea48f02cf775457b01fbbac054c?_a=BAVMn6ID0",
+          "supports": "Actual package image individually inspected for brand and complete expression. Prior OFF images are side/back only, including visible original UPC. Additional exact manufacturer product image actually inspected: Oscar Mayer Bologna Original12oz. Current name Oscar Mayer Bologna is retained; no image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5009",
+      "expectedUpc": "041755000587",
+      "expectedNameSha256": "c2c0dfb9454af38dbdbedc5900a8048c3025f9178d184880a861f02338578e75",
+      "expectedPublicName": "Langers Fruit Punch",
+      "expectedLabel": "16 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://langer-juice-company.myshopify.com/collections/12pk-15-2oz",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.mercaso.com/collections/other-juices/products/langers-fruit-punch-16-oz-12-pack",
+          "supports": "Independent merchant or distributor lists exact source UPC 041755000587 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/175/500/0587/1.400.jpg",
+          "supports": "Langers Fruit Punch front reads blend of three juices from concentrate. Existing product name is complete; no100% claim added. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5707",
+      "expectedUpc": "025000053924",
+      "expectedNameSha256": "c5f8d68ebfb2ae4941c24a91bcf70024228fc2ea701b8ca4756c8e17ef674880",
+      "expectedPublicName": "Minute Maid Fruit Punch",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/minute-maid/products/lemonades-and-fruit-drinks",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16930562-minute-maid-fruit-punch-made-w-real-fruit-juice-2-ltr",
+          "supports": "Independent merchant or distributor lists exact source UPC 025000053924 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/500/005/3924/1.400.jpg",
+          "supports": "Minute Maid Fruit Punch bottle front. Existing expression complete; source2L unchanged. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5710",
+      "expectedUpc": "025000058011",
+      "expectedNameSha256": "a1503a931a030fe5d978855467a1f5e2373ead031c1b7398ddb728dd0a60778e",
+      "expectedPublicName": "Minute Maid Lemonade",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/minute-maid/products/lemonades-and-fruit-drinks",
+          "supports": "Primary brand and expression corroboration only. Source measurements, package counts and strength tokens are not replaced from this page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/210651-minute-maid-lemonade-made-w-real-lemons-20-fl-oz",
+          "supports": "Independent merchant or distributor lists exact source UPC 025000058011 with matching brand/expression. Wholesale pack quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_04d41192-9440-4b69-ad54-833b58bf48d7.jpg",
+          "supports": "Existing OFF candidate is nutrition panel only and cannot verify front wording. Separately downloaded and actually viewed Cub front shows Minute Maid Lemonade20fl oz. Retailer image is private reference only. Private name evidence only; no public image approval."
         }
       ]
     }

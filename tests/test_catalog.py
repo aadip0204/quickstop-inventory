@@ -99,6 +99,30 @@ def category_review(source, category='food', row=1, name_manifest=None):
 
 
 class ImportTests(unittest.TestCase):
+    def test_terminal_bottle_abbreviations_preserve_variant_packages(self):
+        catalog, _ = builder.build(export(
+            {'ItemName': '1800 Coconut 750ML BTL', 'PackName': '750 ml'},
+            {'ItemName': '1800 Coconut 50ML BTLS', 'PackName': '10pk'},
+            {'ItemName': '1800 Silver 750ML BTL', 'PackName': '750 ml'},
+            {'ItemName': 'Example BTL Edition 12oz'},
+        ))
+        variants = {v['sku']: (p['name'], v['label']) for p in catalog['products'] for v in p['variants']}
+        self.assertEqual(variants['1'], ('1800 Coconut', '750 mL · bottles'))
+        self.assertEqual(variants['2'], ('1800 Coconut', '10-pack · 50 mL · bottles'))
+        self.assertEqual(variants['3'], ('1800 Silver', '750 mL · bottles'))
+        self.assertEqual(variants['4'], ('Example BTL Edition', '12 oz'))
+        self.assertEqual(catalog['counts']['publicVariants'], 4)
+        self.assertEqual(catalog['counts']['products'], 3)
+
+    def test_bottle_abbreviation_survives_unresolved_size_conflict(self):
+        source = export({'ItemName': 'Example Sangria 355ML BTL', 'PackName': '375 ml'})
+        catalog, audit = builder.build(source)
+        product = catalog['products'][0]
+        self.assertEqual(product['name'], 'Example Sangria BTL')
+        self.assertEqual(product['variants'][0]['label'], 'Size needs confirmation')
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'Example Sangria 355ML BTL')
+        self.assertEqual(audit['records'][0]['source']['PackName'], '375 ml')
+
     def test_category_override_splits_only_reviewed_sku_and_preserves_source_department(self):
         source = export({'ItemName': 'Example Crackers 4oz', 'DEPNAME': 'MISC'},
                         {'ItemName': 'Example Crackers 8oz', 'DEPNAME': 'MISC'},
