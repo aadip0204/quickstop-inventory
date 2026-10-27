@@ -1,0 +1,1646 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "sku": "101535",
+      "name": "KEY CHAIN BOTTLE OPENER",
+      "pack": "",
+      "department": "NONE",
+      "kind": "merchandise",
+      "sourceNameSha256": "8d85ccb2f6439d3ae8089733e07f749ec272c7121d5c9b59be5d6e96c3412445",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 165
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 165
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 188
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101536",
+      "name": "RED BULL PINK 12OZ",
+      "pack": "12 oz Sugar Tax",
+      "department": "Soda",
+      "kind": "merchandise",
+      "sourceNameSha256": "91a7593d8711a4faa35d01c45079682cb5822e7182772ccf7223a1c604b5bec6",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 958
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 21
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 27
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101537",
+      "name": "RANCHO HARD MARG LIME 19.2OZ C",
+      "pack": "",
+      "department": "Domestic",
+      "kind": "merchandise",
+      "sourceNameSha256": "491a1764b03b9634a1e22fe3cac33a05d2e2341662575a8a38709aeab877ea9f",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 958
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 21
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 7
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance. Tax-only single qualifier withheld; explicit title dimensions retained."
+    },
+    {
+      "sku": "101538",
+      "name": "RANCHO HARD MARG STRA 19.2OZ C",
+      "pack": "",
+      "department": "Domestic",
+      "kind": "merchandise",
+      "sourceNameSha256": "2fa5111824d615424eb4056d7a3a38a94b3e85aea4652858245a6fee8638efb3",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 65
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 65
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 71
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101539",
+      "name": "PATRON CRISTALINO 750ML",
+      "pack": "",
+      "department": "Tequila",
+      "kind": "merchandise",
+      "sourceNameSha256": "d311acfd3d06e23740291735beb5902521acfe0d51563d4507b711c5af6aa646",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 378
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 378
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 427
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101540",
+      "name": "PATRON SILVER 1LTR",
+      "pack": "1 Liter Liquor",
+      "department": "Tequila",
+      "kind": "merchandise",
+      "sourceNameSha256": "5f1158ce6017a6483ef7a36fdc765a0518908498153e9edf56af281824965b6b",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 958
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 20
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 33
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101541",
+      "name": "MXD BLUE HAWAIIAN 12OZ 4PKCANS",
+      "pack": "4 PK BEER TAX",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "ff7c1b3669f645e8dc946e70b9060e83d92a1cd9042ffe71a3c5deebdd2ca009",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 958
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 18
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101542",
+      "name": "MXD LONG ISLAND 12OZ 4PKCANS",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "faefb53785f9892d64b83e4a1dd0ae303b9a2e76c96e4f05d94fad71759d289a",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 178
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 178
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 204
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101543",
+      "name": "MXD MARGARITA 12OZ 4PKCANS",
+      "pack": "4 PK BEER TAX",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "1d3995b09cb3a580a82352bf7383d9b582dc3f6761773bda7b0725eb976512c9",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 958
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 18
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101544",
+      "name": "BUZZBALL PINK LEMON 1.75L",
+      "pack": "",
+      "department": "Tequila",
+      "kind": "merchandise",
+      "sourceNameSha256": "828d9d377e9acae5305b96bda078aa7b62289300dcefb5fd32e5c4f28af55c01",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 958
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 5
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 32
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance. Truncated tax label withheld; explicit title measurement retained."
+    },
+    {
+      "sku": "101545",
+      "name": "HEINEKEN N/A NECTARIN JUNE 6PK",
+      "pack": "6pk Beer Tax",
+      "department": "Imports",
+      "kind": "merchandise",
+      "sourceNameSha256": "3a2fc9dd32971b73be6d147499c8a057f42c4e248bb448fdad6f50d3fae0fa1e",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 959
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 12
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 10
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101546",
+      "name": "HEINEKEN N/A LIME  6PK BTLS",
+      "pack": "",
+      "department": "Imports",
+      "kind": "merchandise",
+      "sourceNameSha256": "304babc44b98b7dddf00991143b1ac193975bff491d21ed013a3292a98c3e426",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 87
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 87
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 98
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101547",
+      "name": "DUTCH HONEY 2PK",
+      "pack": "",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "5c8e6c250a4c0d1d1e834fe8c3b79ff5ebd812da7044681f5388130b6467bd42",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 959
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 10
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101548",
+      "name": "SWISHER BLK WINE 2PK CIGAR",
+      "pack": "",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "ffd97a3fe6cdf938b02ccf2e4ada1ee22caad8da9c0726ca70072ba41e6b1011",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 961
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 25
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101549",
+      "name": "SWISHER BLK SMOOTH 2PK CIGAR",
+      "pack": "",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "7aa6e83e59ba595bb5b3484480ff7d950380e5e58926a66798545a91768376ba",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 962
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 25
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101550",
+      "name": "SWISHER BLK CHERRY 2PK CIGAR",
+      "pack": "",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "1f6f8a7ceacf4715347fef29b8472bc09cf7be153de7b3b91fe45067e162e85f",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 968
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 25
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101553",
+      "name": "BLACK & MILD WINE WOOD TIP 5PK",
+      "pack": "",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "7d7cf667a308e301ec4d4d3adfd1e45b571587bedec669437e528a5c40975cd7",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 384
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 384
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 433
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101554",
+      "name": "CALYPSO CUCUM COCO LMONADE12OZ",
+      "pack": "12 oz Sugar Tax",
+      "department": "Soda",
+      "kind": "merchandise",
+      "sourceNameSha256": "df6145d96a4f8f05a112d3f9658432edd2446da66c463a0918cbfdc2ddcf32d5",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 968
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 5
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 25
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101555",
+      "name": "CALYPSO PINEAPLE PEAR LNDE12OZ",
+      "pack": "12 oz Sugar Tax",
+      "department": "Soda",
+      "kind": "merchandise",
+      "sourceNameSha256": "2c2b07d02816e0c72007c002c6ce864e76914ec5340ae9f6de1bf61aba9ee6de",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 968
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 5
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 25
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101556",
+      "name": "CALYPSO CHERRY CRAN LEMON 12OZ",
+      "pack": "",
+      "department": "Soda",
+      "kind": "merchandise",
+      "sourceNameSha256": "aa8140ddfb9acfc6609048e9d44e87e22f23dc908b2592bcc12bf8ff0abc69ec",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 294
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 294
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 331
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101557",
+      "name": "FAYGO BUBBLE POP 24OZ",
+      "pack": "24 oz Sugar Tax",
+      "department": "Soda",
+      "kind": "merchandise",
+      "sourceNameSha256": "8349bede9cf03f790cfa3b8425470aa3076491284b3a3c72c94b417fcc7c80b2",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 968
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 10
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 26
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101558",
+      "name": "GARCIA VEGA GREEN 2PK CIGAR",
+      "pack": "",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "3b638e913d3509ce61bc8c51185aa8a0d9b7e07f0348ac52049115c976109ce6",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 968
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 11
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101560",
+      "name": "MARGARITAVILLE TRIPLE SEC 1LTR",
+      "pack": "",
+      "department": "Cordials",
+      "kind": "merchandise",
+      "sourceNameSha256": "ae901004fe5b6f55d4ffb46bd12e01d49a6b93d24c4b91fa039ba126cebb3d3a",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 968
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 15
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 4
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance. Beer-tax pack metadata is inconsistent with the reported cordial; pack count withheld, explicit title measurement retained."
+    },
+    {
+      "sku": "101562",
+      "name": "CORONITA 12PK 12OZ BTLS",
+      "pack": "12pk Beer Tax",
+      "department": "Imports",
+      "kind": "merchandise",
+      "sourceNameSha256": "907cdae26335d0bd9dec0ce8e6d8174844cdaffb152fff9234daf6a6b2e68351",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 8
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 9
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101564",
+      "name": "RIP IT ENERGY ZERO SUGAR",
+      "pack": "",
+      "department": "Soda",
+      "kind": "merchandise",
+      "sourceNameSha256": "19d00663cd5df27e33474388797b8459533a430fdb49530fb5a8cc0b2246bad3",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 22
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 27
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101565",
+      "name": "SURFSIDE STRAW LEMONAD 20OZ CA",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "b9bf54ff4b5eb1af42bfbb2ebd4e490979f5adb4eff59cf5fb8fa383f0721205",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 24
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance. Tax-only single qualifier withheld; explicit title dimensions retained."
+    },
+    {
+      "sku": "101568",
+      "name": "SURFSIDE HALF & HALF 20OZ CAN",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "e5f8c7380a4f3fac3e60b57035d647727afa66de244c2df2c93e3c554b5f5e92",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 24
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance. Tax-only single qualifier withheld; explicit title dimensions retained."
+    },
+    {
+      "sku": "101569",
+      "name": "MAKERS MARK 90PF 200ML",
+      "pack": "",
+      "department": "",
+      "kind": "merchandise",
+      "sourceNameSha256": "2d15e22fc27cb2fd7ecb65ab98f481e5c5842f987f6bde522bcc9340fccfe882",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101571",
+      "name": "TORTILLA TEQUILA GOLD 1LITER",
+      "pack": "1 Liter Liquor",
+      "department": "Tequila",
+      "kind": "merchandise",
+      "sourceNameSha256": "7827c2f03cbda06ce99db2f693e96b1ffdb850fa4c2403e0f1dbd09eac643ff2",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 26
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 33
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101572",
+      "name": "TIA LINDA STRAW MARGRITA 4PK",
+      "pack": "4 PK BEER TAX",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "b9b06d31708ced461179fe35040eb1d0ae129a2e94264313b89fcf411ef9f87a",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 26
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101573",
+      "name": "TIA LINDA LIME MARGRITA 4PK",
+      "pack": "4 PK BEER TAX",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "015def3f0cd6164cce5af3545d28c1c81c6621a900d28a5435eafb9871cbd842",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 26
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101574",
+      "name": "SENORITA MANGO MARG 10MG THC",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "d4b180e1c234d28d95dee2729eeecfe530a9b05ebb618a89c7f09b69a94392ec",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 23
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101575",
+      "name": "SENORITA LIME JAMARG 10MG THC",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "9dae2a6bbbf51a7f8adb7c5316e366632d1cfc1993cac5a83e54851c174b1a9f",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 23
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101576",
+      "name": "SENORITA GRAPFRUT MAR10MG THC",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "55c3a0122889c80ea198911a6df3d38e6e5659d3c256b58e678648bb917ec06e",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 969
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 22
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101577",
+      "name": "RYTHM KUSH MANGPINE 10MG THC",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "c1e03eed8d6164c348b47c151e99e4630ba5643e8a71f51e2f43003c03130c60",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 970
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 22
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101578",
+      "name": "TIA LINDA LIME MARGA 200ML",
+      "pack": "200ml wine tax",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "9f78f597e74f66082475ed10fb5528099609fb5aa5e6d0d1cd66983d2a0b6584",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 970
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 26
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101579",
+      "name": "TIA LINDA STRAW MARGA 200ML",
+      "pack": "200ml wine tax",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "0a42b8c68c013315b0d8103a98257a520a1af497c579363a3617f850b50adcd6",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 970
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 26
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101580",
+      "name": "WOODFORD RESERVE 375ML",
+      "pack": "375 ml Liquor T",
+      "department": "Whiskey",
+      "kind": "merchandise",
+      "sourceNameSha256": "d471b1649061d47e9008376236fb11dbaef466a7425ac6fc434c084fa71693c2",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 970
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 29
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 38
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101581",
+      "name": "CHI-CHIS PINA COLADA 187ML",
+      "pack": "",
+      "department": "",
+      "kind": "merchandise",
+      "sourceNameSha256": "261c379dff2e90441ee54eb766d871fd03f80cd3b768703230da9d9f22cb18b4",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 970
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101582",
+      "name": "MARGARITAVILLE GOLD 50ML 4PK",
+      "pack": "200 ml Liquor T",
+      "department": "Tequila",
+      "kind": "merchandise",
+      "sourceNameSha256": "c14d7e54e6584e996556568294c4df073676c7c6c3d0211b6044ae2731873c97",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 970
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 15
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 33
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101583",
+      "name": "MARGARITAVILLE SILVER 50ML 4PK",
+      "pack": "200 ml Liquor T",
+      "department": "Tequila",
+      "kind": "merchandise",
+      "sourceNameSha256": "e1db471136941e491d7c53ca65a2dd04a7b48f8761b04945f05d3f31320b87aa",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 972
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 15
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 33
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101584",
+      "name": "GRAN GALA VS COGNAC 4PK 50ML",
+      "pack": "200 ml Liquor T",
+      "department": "Brandy",
+      "kind": "merchandise",
+      "sourceNameSha256": "fd98bd3cbbebeffa756cc1b6e2d03c1cd7fe63d56a65adc6a5fe0cfcd3207c05",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 974
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 12
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 1
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101586",
+      "name": "SKITTLES SOUR",
+      "pack": "",
+      "department": "Candy",
+      "kind": "merchandise",
+      "sourceNameSha256": "fb48108178644306866d1f63b57932c722e4490e2ebfbb2c47e4492741ae9a4e",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 976
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 23
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 2
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101587",
+      "name": "STARBURST FLAVEREDS",
+      "pack": "",
+      "department": "Candy",
+      "kind": "merchandise",
+      "sourceNameSha256": "b715f1117c1fb1f3085c8580d4d8b2a558c15a1a868fb420078fdb2f1e4cb0e2",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 976
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 23
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 2
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101588",
+      "name": "BACKWOOD RUSSIAN CREAM 5PK",
+      "pack": "",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "80531fd35c27cd2b226a4b4d3623867c69ff6fb0d2a97faf2683c69de3af3ece",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 976
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 3
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101589",
+      "name": "4K'S SWEET DELICIOUS 4PK",
+      "pack": "2in1 Tobacco Fo",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "90106322e8c509492ccbbcc091e58599675bb33329ff251aea75362b64370599",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 977
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 1
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101590",
+      "name": "4K'S DIAMOND 4PK",
+      "pack": "2in1 Tobacco Fo",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "ad9aaec5dbbd5c494c5afa7bf1105bfe4df14c8be4d38f44ddc9bc1b3f0aa829",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 977
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 1
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101591",
+      "name": "VICTORIA VICKY CHAMOY 24OZ CAN",
+      "pack": "",
+      "department": "Imports",
+      "kind": "merchandise",
+      "sourceNameSha256": "1693b7597ede2b388abb47aabce676f0bdbbbae44298803dd2f9ef8680d30677",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 978
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 28
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 11
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance. Tax-only single qualifier withheld; explicit title dimensions retained."
+    },
+    {
+      "sku": "101592",
+      "name": "VICTORIA VICKY MANGO 24OZ CAN",
+      "pack": "",
+      "department": "",
+      "kind": "merchandise",
+      "sourceNameSha256": "3909a8441675f7b2f565530113ee2ea1ed498e986c7098a5329055b86e0c55d4",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 978
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101593",
+      "name": "818 REPO TEQUILA 375ML",
+      "pack": "",
+      "department": "",
+      "kind": "merchandise",
+      "sourceNameSha256": "f77541353ccdf3e253a0a9d08aadfffa819929f595fe1cb7440eb4ebfa200392",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 978
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101594",
+      "name": "PORK RINDS SPICY &TANGY",
+      "pack": "",
+      "department": "Snacks",
+      "kind": "merchandise",
+      "sourceNameSha256": "c87449e04b696e6f3b7bd41d7bedc424b536996d4f2dbbd3404666a6f6701a9b",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 978
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 21
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 23
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101595",
+      "name": "MONACO SOUR APPLE CRUSH 12OZ",
+      "pack": "",
+      "department": "",
+      "kind": "merchandise",
+      "sourceNameSha256": "3feeaf6715d1cec6d3d1f74e7df60c1c6a417745e3cd6439c308c57c1147c4f4",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 979
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101596",
+      "name": "VIBE MARGARITA 500ML",
+      "pack": "500 ml wine tax",
+      "department": "MALT BEVERAGE",
+      "kind": "merchandise",
+      "sourceNameSha256": "ab5f370c37a6f999f3c633f47427654d2e37949e9e9b4a4c778a5b56b75ad326",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 979
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 27
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 15
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101597",
+      "name": "VIBE PINK LEMONADE 500ML",
+      "pack": "500 ml wine tax",
+      "department": "MALT BEVERAGE",
+      "kind": "merchandise",
+      "sourceNameSha256": "4e0ddaff1dc0650a3f862da577c35196998f96cf4d4eaa4a03a5319e1f36adf7",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 979
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 27
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 15
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101600",
+      "name": "POP CHIPS BBQ .8OZ",
+      "pack": "",
+      "department": "Snacks",
+      "kind": "merchandise",
+      "sourceNameSha256": "152b15d901814d6d67343361c5972b29c74660b1ccc1d22cd1502f96b6b1bf2a",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 979
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 21
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 23
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101601",
+      "name": "POP CHIPS SEA SALT .8OZ",
+      "pack": "",
+      "department": "Snacks",
+      "kind": "merchandise",
+      "sourceNameSha256": "c0c23c0052a8c3aee430abc34a1c83495cbac0391a83fa18463dfc9f95b81631",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 979
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 21
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 23
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101602",
+      "name": "POP CHIPS SOUR CREAM ONION.8OZ",
+      "pack": "",
+      "department": "Snacks",
+      "kind": "merchandise",
+      "sourceNameSha256": "6163151361496bcfd5f76bc370ba2504c89c6c21339dbb6f3986a2f536adf5d4",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 980
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 21
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 23
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101603",
+      "name": "BACKWOOD IRISH CREAM 5PK",
+      "pack": "",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "d67413412c2c02af8a7dc3d7196171b133f300aab4f208bd545bc045376d6a2c",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 980
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 3
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101604",
+      "name": "BACKWOOD HONEY 5PK",
+      "pack": "",
+      "department": "Tobacco",
+      "kind": "merchandise",
+      "sourceNameSha256": "80b2764f39c5e83bbb04a5ccd7e302a3aeeb1ba144f85fe57bb96993c51136e3",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 980
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 3
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 34
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101605",
+      "name": "PERONI 24OZ CAN",
+      "pack": "",
+      "department": "",
+      "kind": "merchandise",
+      "sourceNameSha256": "c92cab7f4b28de973a5b56a29dffeb30ac81425bd9eb0192c285da7c2a4e38f4",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 980
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101606",
+      "name": "RYTHM KUSH MANGPINE 12OZCAN",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "465a41039138ef91f759b4f6eacb608e3e3ae9d0e2672f0df3f2ca49e5c9b045",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 980
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 22
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101607",
+      "name": "SENORITA MANGO 12OZCAN",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "f7d21b2c4d7dd2a5c43658f8af165f94b8c3620d779598685c10d663a71c05bc",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 980
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 23
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101608",
+      "name": "SENORITA LIME JALAPENO 12OZCAN",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "44cf55c0e21e616a9a9b6e01c953b989d109c0d6253201d8a859e6c935a6c412",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 980
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 23
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101609",
+      "name": "SENORITA GRAPEFRUIT 12OZCAN",
+      "pack": "",
+      "department": "Ready To Drink",
+      "kind": "merchandise",
+      "sourceNameSha256": "28d353a4ba4ad55a0f1732ff20d1bb05c2a2d2682dfc8b3d56c20593370af2a8",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 981
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 22
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 19
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101610",
+      "name": "STELLA ARTOIS 12PK 12OZCANS",
+      "pack": "",
+      "department": "",
+      "kind": "merchandise",
+      "sourceNameSha256": "015bd2aa9f8982fa2f4c756951cb72adbe1559891c50e4497cf2bdbc9fbf5e54",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 981
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance."
+    },
+    {
+      "sku": "101611",
+      "name": "JOSE CUERVO MARG STRAW",
+      "pack": "",
+      "department": "",
+      "kind": "merchandise",
+      "sourceNameSha256": "e1eefc14b0d9d33c561b9456d08481cd21fd0fc04ac17fc7276387bb0697f2c8",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 981
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance. Unitless source amount withheld; size requires confirmation.",
+      "forceSizeNeedsConfirmation": true
+    },
+    {
+      "sku": "101612",
+      "name": "MILLER HIGH LIFE 32OZ BTL",
+      "pack": "",
+      "department": "Domestic",
+      "kind": "merchandise",
+      "sourceNameSha256": "397a42a5cca9689539ebd75f7170dfc0f59df10afe6b285fa81ef77d03fdd3d0",
+      "evidence": [
+        {
+          "reportSha256": "1d0520ff295345e8bd76e8222958cee3b0d56fe600a6913331af1586188af45b",
+          "page": 981
+        },
+        {
+          "reportSha256": "b3002d6471f4195a7c4bc112015c445a9d4542dcc4f7d033f553f013eb6787f9",
+          "page": 16
+        },
+        {
+          "reportSha256": "9cde27255e4c6526b0b93fab8f5fe8b46b33e8030dcd3966c0daba8cf6916465",
+          "page": 6
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Named merchandise corroborated by exact SKU in private store reports. Barcode and exact package identity remain unverified; separate listing retained without image inheritance. Tax-only single qualifier withheld; explicit title dimensions retained."
+    },
+    {
+      "sku": "-2000",
+      "name": "Card Void Adjustment",
+      "pack": "",
+      "department": "",
+      "kind": "pos_control",
+      "sourceNameSha256": "e484cc9be5b558aa2dd389adc0c0e071937950901e55e7c079046e6924ce3cc8",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 1
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 1
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 1
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Exact report POS control retained for reconciliation and excluded from merchandise."
+    },
+    {
+      "sku": "-3000",
+      "name": "COUPON",
+      "pack": "",
+      "department": "",
+      "kind": "pos_control",
+      "sourceNameSha256": "43c211c47ee373225709f1d2e7a617bb5cd17446aa170a0faa03b46d3db2214b",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 1
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 1
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 1
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Exact report POS control retained for reconciliation and excluded from merchandise."
+    },
+    {
+      "sku": "0",
+      "name": "Scan Group",
+      "pack": "",
+      "department": "",
+      "kind": "pos_control",
+      "sourceNameSha256": "e7339871f91afcf29ca763c464d5fc2fc4be1be590dbbfaaf6bf4629b257dfd0",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 1
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 1
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 1
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Exact report POS control retained for reconciliation and excluded from merchandise."
+    },
+    {
+      "sku": "-1000",
+      "name": "Store Credit",
+      "pack": "",
+      "department": "",
+      "kind": "pos_control",
+      "sourceNameSha256": "79f3bfca69464f06fe12b270c6bc8fc0abd205e1de5ba79168699fa645e7556d",
+      "evidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 1
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 1
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 1
+        }
+      ],
+      "reviewedOn": "2026-10-27",
+      "reason": "Exact report POS control retained for reconciliation and excluded from merchandise."
+    }
+  ]
+}

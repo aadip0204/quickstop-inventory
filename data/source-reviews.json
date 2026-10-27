@@ -770,10 +770,10 @@
       "expectedUpc": "861518002647",
       "expectedNameSha256": "271c504f4041ccf8e36150142a8831f9e7d9dac928160ad10e41b382aec320e9",
       "expectedSourceRecordSha256": "7d6b6a02f8a895316580d63932df1633478d350ed0a33da8303121ae2b71e35a",
-      "sanitizedSourceName": "ranchola gloria margarita margarita",
+      "sanitizedSourceName": "ranchola gloria margarita",
       "forceSizeNeedsConfirmation": true,
       "action": "restore_named_merchandise",
-      "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
+      "reason": "Named merchandise retained after reviewed deletion of an unresolved amount and duplicated expression suffix. The exact source SKU in the later report corroborates the retained expression. Original source metadata remains private; uncertain size requires confirmation.",
       "reviewedOn": "2026-10-27"
     },
     {
@@ -1782,6 +1782,239 @@
           "supports": "Inspected complete Banquet Salisbury Steak Meal box on white shows11.88oz337g at lower right. Single consumer box, no visible prices, exact-UPC raw image1; packaging agrees with both primary sources."
         }
       ]
+    },
+    {
+      "sku": "4823",
+      "expectedUpc": "084279997889",
+      "expectedNameSha256": "b6379e36e6c2280bbf3027bf10927768787ab6fab5e9df4fc42c15baba2c2c5b",
+      "expectedSourceRecordSha256": "9a50011c20c31b282824da18f6378fc4f781d59806eb9d938ef61c7cb1558668",
+      "expectedRejoinedNameSha256": "92c67e6cac8b6569aed44177bc23e90c2af98fc7cbcc3fd33cae0ad51d804cee",
+      "action": "repair_unquoted_name_commas",
+      "reportEvidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 54
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 54
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 58
+        }
+      ],
+      "reason": "Exact SKU and report description corroborate unquoted commas inside the original title; preserve original fields privately and restore standard classification. Packaging conflicts remain unresolved.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "4824",
+      "expectedUpc": "084279001104",
+      "expectedNameSha256": "c9e76410cd63451c8740ca5cb200a9c76ac4da842dbf1e7fb9837e799baa1d8c",
+      "expectedSourceRecordSha256": "118bf93944ca1dc5dd6e25a132e16cca79ca2b17fa8d5b065ab15278a309c079",
+      "expectedRejoinedNameSha256": "72c89f9146f5fb5fef9ae2b6d144f5c072eb8e34cc9505e184401e96c47f50d7",
+      "action": "repair_unquoted_name_commas",
+      "reportEvidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 54
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 54
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 58
+        }
+      ],
+      "reason": "Exact SKU and report description corroborate unquoted commas inside the original title; preserve original fields privately and restore standard classification. Packaging conflicts remain unresolved.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "7289",
+      "expectedUpc": "087692011033",
+      "expectedNameSha256": "1f556728302f9859a172d3498f0f5ebf5b11cb61c3495c26df4a30f6b69ca064",
+      "expectedSourceRecordSha256": "4ff2823b0a93f60ca47bf331ab657e626dcde3836e1d680c404a2ca6a9d85375",
+      "expectedRejoinedNameSha256": "80463fd6f9dae90dc569b4df5854b1cad70cbaacb323112c531693f7b264fe88",
+      "action": "repair_unquoted_name_commas",
+      "reportEvidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 66
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 66
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 73
+        }
+      ],
+      "reason": "Exact SKU and report description corroborate unquoted commas inside the original title; preserve original fields privately and restore standard classification. Packaging conflicts remain unresolved.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "9239",
+      "expectedUpc": "n080660958811",
+      "expectedNameSha256": "60ec929f1450f5c191568a3cec73a30bf6624144a18d040e8c73b294a53fd0cf",
+      "expectedSourceRecordSha256": "b4bc5524df9b3f916240ce258f0c502e519d16925c042c6141d9e7940b23acbf",
+      "expectedRejoinedNameSha256": "5b6b65c3e39d00bfec541e61a24a3ec4831f8304e1aec070b83ebcd09ffa66f3",
+      "action": "repair_unquoted_name_commas",
+      "reportEvidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 97
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 97
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 110
+        }
+      ],
+      "reason": "Exact SKU and report description corroborate unquoted commas inside the original title; preserve original fields privately and restore standard classification. Packaging conflicts remain unresolved.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "29",
+      "expectedUpc": "653443117721",
+      "expectedNameSha256": "c1b43b36df09f0bf0e0612b54e90e47df2e8722dd90821b3b0613dc8a4f7d5f4",
+      "expectedSourceRecordSha256": "1491459ff2f6feb615135f2d31c81724e5609aef970a09705ce4bf6c51caccde",
+      "expectedRejoinedNameSha256": "9c2c38250a09409fdd2741add7cf5a8bfc9088c00d5b5cc2aab5a1715af3f07a",
+      "action": "repair_unquoted_name_commas",
+      "reportEvidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 98
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 98
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 111
+        }
+      ],
+      "reason": "Exact SKU and report description corroborate unquoted commas inside the original title; preserve original fields privately and restore standard classification. Packaging conflicts remain unresolved.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "31",
+      "expectedUpc": "653443117738",
+      "expectedNameSha256": "fc4d602aa16170b89bda4c70d75d89e6183b14f994516aa7b3e032c3f18cbb4e",
+      "expectedSourceRecordSha256": "7e0907e7f73cf5bc3abb64f8c332d6a6343afdc452345bae6db36c0d198084ac",
+      "expectedRejoinedNameSha256": "cc808ecd475e77df3b1adf62106f5737032901a54df480397f94cdf0d2b3f5fa",
+      "action": "repair_unquoted_name_commas",
+      "reportEvidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 98
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 98
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 111
+        }
+      ],
+      "reason": "Exact SKU and report description corroborate unquoted commas inside the original title; preserve original fields privately and restore standard classification. Packaging conflicts remain unresolved.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "34",
+      "expectedUpc": "653443118315",
+      "expectedNameSha256": "4879e9c95387ed71c784881c6e1039027bef7552cfb5bae503e59995d2686bf2",
+      "expectedSourceRecordSha256": "0ec6285c73628a64adf4102d4e672a2c1d300cd858367fef595a81b9a7f34ed4",
+      "expectedRejoinedNameSha256": "caa1eee5b0d0d4a20feb14674116842834a3d418f85487dfacc963e4deda9402",
+      "action": "repair_unquoted_name_commas",
+      "reportEvidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 98
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 98
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 112
+        }
+      ],
+      "reason": "Exact SKU and report description corroborate unquoted commas inside the original title; preserve original fields privately and restore standard classification. Packaging conflicts remain unresolved.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "1292",
+      "expectedUpc": "077567254269",
+      "expectedNameSha256": "1f1b9c43e31975e479fa83c4cdc074d8373430d6055b5258d3b43f7c4c3ad0e8",
+      "expectedSourceRecordSha256": "933e2572a316780712580203024c0891baef55cf7a0555941c0f3980866827c7",
+      "expectedRejoinedNameSha256": "0df559e2247f0f95234621c737ae1963581f32df345cd9df76c7c22c4682b6ba",
+      "action": "repair_unquoted_name_commas",
+      "reportEvidence": [
+        {
+          "reportSha256": "c3793633fee41adfe606c2aed0118e84987b66350a86546da9ac4b049ee1d29c",
+          "page": 203
+        },
+        {
+          "reportSha256": "d349dd9177ac3925d2289768ae7d6230953356e5d2cc97f1b82806c1e76a0b7f",
+          "page": 203
+        },
+        {
+          "reportSha256": "87f59213f5103aa156915f717f05dc7cf5bf4a0418041c704107335eca08e687",
+          "page": 232
+        }
+      ],
+      "reason": "Exact SKU and report description corroborate unquoted commas inside the original title; preserve original fields privately and restore standard classification. Packaging conflicts remain unresolved.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "2847",
+      "expectedUpc": "088352126302",
+      "expectedNameSha256": "362265e784c69729522b8bea91b5424146e1af1c3f0ebbd084225cb102cccc87",
+      "expectedSourceRecordSha256": "abac7fef0391d3320d36c1d52e0046c90b7429d6d16b475e603ad2d443ef993d",
+      "action": "clarify_container_material",
+      "containerMaterial": "glass",
+      "reportEvidence": [
+        {
+          "reportSha256": "81cc85144985b3d83a6f0e1365afb63aca057ec2ed3699211a030fcaf9d3894b",
+          "page": 2
+        }
+      ],
+      "reason": "Complete exact SKU and container material are legible in the reviewed store report. Preserve the original volume and UPC; identify the two packages separately without inheriting photographs.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "2846",
+      "expectedUpc": "088352126296",
+      "expectedNameSha256": "362265e784c69729522b8bea91b5424146e1af1c3f0ebbd084225cb102cccc87",
+      "expectedSourceRecordSha256": "401e8efa8c021fbdde1c53e2981406adab3c1d34e592eca5ae41d1bd66c44e60",
+      "action": "clarify_container_material",
+      "containerMaterial": "PET",
+      "reportEvidence": [
+        {
+          "reportSha256": "81cc85144985b3d83a6f0e1365afb63aca057ec2ed3699211a030fcaf9d3894b",
+          "page": 2
+        }
+      ],
+      "reason": "Complete exact SKU and container material are legible in the reviewed store report. Preserve the original volume and UPC; identify the two packages separately without inheriting photographs.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "773",
+      "expectedUpc": "080480016210",
+      "expectedNameSha256": "7bd73a8064b6e11c98f0681ab5d3b6d3928318baeb638fd59340fe6125489128",
+      "expectedSourceRecordSha256": "69e9df456c5f58bdb0d743bfd826c97f999deafe8fef2c31f9d72f82acdcfd80",
+      "action": "size_needs_confirmation",
+      "reason": "Original export gives a unit volume while a later exact-SKU report gives a multipack without its unit volume. Package identity requires confirmation; do not combine the two descriptions.",
+      "reviewedOn": "2026-10-27"
     }
   ]
 }

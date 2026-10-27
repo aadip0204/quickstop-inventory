@@ -3,30 +3,32 @@
   "sourceDate": "2026-02",
   "sourceSha256": "822ee8b3b623548db0f2ea531aa10c340b160a47afc0d9e88398311ed7fa6882",
   "counts": {
-    "sourceRows": 9881,
-    "sourceSkus": 9881,
-    "publicVariants": 9619,
-    "products": 7928,
-    "needsReview": 113,
-    "excludedNonproducts": 149,
-    "flaggedPublicVariants": 1406
+    "sourceRows": 9952,
+    "sourceSkus": 9952,
+    "originalSourceRows": 9881,
+    "reportSourceRows": 71,
+    "publicVariants": 9691,
+    "products": 7998,
+    "needsReview": 105,
+    "excludedNonproducts": 156,
+    "flaggedPublicVariants": 1487
   },
   "sourceDispositions": {
-    "needs_review": 113,
-    "excluded_nonproduct": 149,
-    "retained_variant": 9619
+    "needs_review": 105,
+    "excluded_nonproduct": 156,
+    "retained_variant": 9691
   },
   "nameAudit": {
-    "sourceRowsScanned": 9881,
-    "rowsWithIssues": 3415,
-    "evidenceBackedCorrections": 330,
+    "sourceRowsScanned": 9952,
+    "rowsWithIssues": 3495,
+    "evidenceBackedCorrections": 355,
     "identityConflicts": 1,
     "exactIdentitiesResolved": 2,
-    "fullyVerifiedNames": 12,
+    "fullyVerifiedNames": 13,
     "scopeNote": "All rows scanned for specified risks. Only listed corrections and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified."
   },
   "imageStatus": {
     "verifiedVariants": 126,
-    "unverifiedVariants": 9493
+    "unverifiedVariants": 9565
   }
 }

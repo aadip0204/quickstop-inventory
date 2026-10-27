@@ -1,5 +1,6 @@
 """Behavioral regression tests for safe catalog import, grouping and reconciliation."""
 import csv
+import copy
 import hashlib
 import importlib.util
 import io
@@ -37,6 +38,31 @@ def restoration_review(source, sanitized, uncertain=True, row=1):
         'action': 'restore_named_merchandise', 'sanitizedSourceName': sanitized,
         'forceSizeNeedsConfirmation': uncertain, 'reason': 'Reviewed ambiguous metadata removal',
     }]}
+
+
+def comma_repair_review(source, row=1):
+    raw = list(csv.reader(io.StringIO(source.decode())))[row]
+    return {'schemaVersion': 1, 'reviews': [{
+        'sku': raw[0], 'expectedUpc': raw[1],
+        'expectedNameSha256': hashlib.sha256(raw[2].encode()).hexdigest(),
+        'expectedSourceRecordSha256': hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest(),
+        'expectedRejoinedNameSha256': hashlib.sha256(','.join(raw[2:-5]).encode()).hexdigest(),
+        'action': 'repair_unquoted_name_commas', 'reason': 'Exact SKU report corroborates comma fragments',
+        'reportEvidence': [{'reportSha256': 'a' * 64, 'page': 54}],
+    }]}
+
+
+def report_manifest(*entries):
+    result = []
+    for i, fields in enumerate(entries, 1):
+        entry = {'sku': str(1000 + i), 'name': 'Example Juice 12oz', 'pack': '',
+                 'department': 'Juice', 'kind': 'merchandise',
+                 'sourceNameSha256': hashlib.sha256(b'Example Juice 12oz').hexdigest(),
+                 'evidence': [{'reportSha256': 'b' * 64, 'page': 1}],
+                 'reviewedOn': '2026-10-27', 'reason': 'Exact report SKU and description reviewed'}
+        entry.update(fields)
+        result.append(entry)
+    return {'schemaVersion': 1, 'records': result}
 
 
 class ImportTests(unittest.TestCase):
@@ -207,6 +233,182 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(catalog['counts']['needsReview'], 1)
         self.assertEqual(len(audit['records'][1]['rawFields']), 10)
         self.assertIn('Malformed', audit['records'][1]['reason'])
+
+    def test_guarded_csv_comma_repair_preserves_original_fields_and_sku(self):
+        source = export() + b'002,000123456789,Example Mango,Lime 12oz,,Juice,4.99,-2,\n'
+        raw = list(csv.reader(io.StringIO(source.decode())))[1]
+        review = comma_repair_review(source)
+        catalog, audit = builder.build(source, source_reviews_manifest=review)
+        self.assertEqual(catalog['counts']['publicVariants'], 1)
+        variant = catalog['products'][0]['variants'][0]
+        self.assertEqual(variant['sku'], '002')
+        self.assertEqual(variant['upc'], '000123456789')
+        self.assertEqual(variant['label'], '12 oz')
+        self.assertEqual(audit['records'][0]['sourceRow'], 1)
+        self.assertEqual(audit['records'][0]['rawFields'], raw)
+        self.assertEqual(audit['records'][0]['reconstructedFields'][:2], raw[:2])
+        self.assertEqual(audit['records'][0]['reconstructedFields'][-5:], raw[-5:])
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'Example Mango,Lime 12oz')
+        self.assertNotIn('4.99', json.dumps(catalog))
+        self.assertNotIn('TotalQty', json.dumps(catalog))
+        self.assertEqual(builder.build(source)[0]['counts']['needsReview'], 1)
+
+    def test_csv_repair_rejects_stale_source_name_or_report_guards(self):
+        source = export() + b'002,000123456789,Example Mango,Lime 12oz,,Juice,4.99,-2,\n'
+        review = comma_repair_review(source)
+        for changed in (source.replace(b'Mango', b'Peach'), source.replace(b'4.99', b'5.99'),
+                        source.replace(b'000123456789', b'000123456788')):
+            with self.assertRaisesRegex(ValueError, 'identity mismatch'):
+                builder.build(changed, source_reviews_manifest=review)
+        wrong = copy.deepcopy(review)
+        wrong['reviews'][0]['expectedRejoinedNameSha256'] = '0' * 64
+        with self.assertRaisesRegex(ValueError, 'Rejoined CSV name'):
+            builder.build(source, source_reviews_manifest=wrong)
+        wrong['reviews'][0]['reportEvidence'][0]['page'] = 0
+        with self.assertRaisesRegex(ValueError, 'report hash/page'):
+            builder.build(source, source_reviews_manifest=wrong)
+        with self.assertRaisesRegex(ValueError, 'extra source fields'):
+            builder.build(export({'SKU': '002', 'ItemName': 'Ordinary item'}), source_reviews_manifest=review)
+
+    def test_csv_repair_does_not_invent_barcode_pack_or_lottery_product(self):
+        source = export() + b'9239,n080660958811,Victoria 12 Oz, 12 Pk,6pk Beer Tax,Imports,0.00,0,\n'
+        review = comma_repair_review(source)
+        catalog, audit = builder.build(source, source_reviews_manifest=review)
+        variant = catalog['products'][0]['variants'][0]
+        self.assertEqual(variant['upc'], '')
+        self.assertEqual(variant['label'], 'Size needs confirmation')
+        self.assertEqual(catalog['products'][0]['name'], 'Victoria')
+        self.assertEqual(audit['records'][0]['source']['MAINUPC'], 'n080660958811')
+        lottery = export() + b'29,653443117721,$1,000 A Week For Life $2$2,,Instant,2.00,0,\n'
+        catalog, _ = builder.build(lottery, source_reviews_manifest=comma_repair_review(lottery))
+        self.assertEqual(catalog['counts']['excludedNonproducts'], 1)
+        self.assertEqual(catalog['products'], [])
+        with self.assertRaisesRegex(ValueError, 'Image blocked'):
+            builder.build(source, source_reviews_manifest=review,
+                          image_manifest={'schemaVersion': 1, 'images': [{'sku': '9239'}]})
+
+    def test_report_additions_preserve_original_rows_and_never_merge_or_infer_upc(self):
+        source = export({'ItemName': 'Example Juice 12oz', 'DEPNAME': 'Juice'})
+        base, base_audit = builder.build(source)
+        reports = report_manifest({'sku': '01001'}, {'sku': '1002'})
+        catalog, audit = builder.build(source, report_additions_manifest=reports)
+        self.assertEqual(catalog['counts']['originalSourceRows'], 1)
+        self.assertEqual(catalog['counts']['reportSourceRows'], 2)
+        self.assertEqual(catalog['counts']['sourceRows'], 3)
+        self.assertEqual(catalog['counts']['products'], 3)
+        self.assertEqual(audit['records'][:1], base_audit['records'])
+        self.assertEqual([r['sourceRow'] for r in audit['records']], [1, 2, 3])
+        self.assertEqual([r['sourceOrigin'] for r in audit['records'][1:]], ['report', 'report'])
+        variants = {v['sku']: v for p in catalog['products'] for v in p['variants']}
+        for sku in ('01001', '1002'):
+            self.assertEqual(variants[sku]['upc'], '')
+            self.assertIsNone(variants[sku]['image'])
+        self.assertEqual(audit['originalSourceDispositions'], {'retained_variant': 1})
+        self.assertEqual(audit['reportSourceDispositions'], {'retained_variant': 2})
+        self.assertEqual(builder.build(source)[0], base)
+        with self.assertRaisesRegex(ValueError, 'Image blocked'):
+            builder.build(source, report_additions_manifest=reports,
+                          image_manifest={'schemaVersion': 1, 'images': [{'sku': '01001'}]})
+
+    def test_report_metadata_rejects_prices_private_fields_and_bad_evidence(self):
+        cases = [{'name': 'Example $1.99'}, {'name': 'Example 1.99'}, {'pack': '2 for 99c'},
+                 {'department': '$4'}, {'reason': 'cost 1.99'}, {'upc': '001234567890'},
+                 {'cost': '1.50'}, {'sourceNameSha256': 'invalid'},
+                 {'evidence': []}, {'evidence': [{'reportSha256': 'a' * 64, 'page': True}]},
+                 {'forceSizeNeedsConfirmation': 'yes'}]
+        for fields in cases:
+            with self.subTest(fields=fields), self.assertRaises(ValueError):
+                builder.build(export(), report_additions_manifest=report_manifest(fields))
+        with self.assertRaisesRegex(ValueError, 'collides'):
+            builder.build(export({'SKU': '1001', 'ItemName': 'Existing'}),
+                          report_additions_manifest=report_manifest({}))
+        with self.assertRaisesRegex(ValueError, 'unique string SKUs'):
+            builder.build(export(), report_additions_manifest=report_manifest({'sku': '1001'}, {'sku': '1001'}))
+
+    def test_report_controls_are_exact_and_unknown_size_remains_unknown(self):
+        entries = [dict(sku=sku, name=name, kind='pos_control')
+                   for sku, name in builder.REPORT_POS_CONTROLS.items()]
+        entries.append({'sku': '1005', 'name': 'Example Berry', 'forceSizeNeedsConfirmation': True})
+        catalog, _ = builder.build(export(), report_additions_manifest=report_manifest(*entries))
+        self.assertEqual(catalog['counts']['excludedNonproducts'], 4)
+        self.assertEqual(catalog['counts']['publicVariants'], 1)
+        self.assertEqual(catalog['products'][0]['variants'][0]['label'], 'Size needs confirmation')
+        for fields in ({'sku': '-2000', 'name': 'Other adjustment', 'kind': 'pos_control'},
+                       {'sku': '1006', 'name': 'Card Void Adjustment', 'kind': 'pos_control'},
+                       {'sku': '0', 'name': 'Scan Group', 'kind': 'merchandise'}):
+            with self.assertRaises(ValueError):
+                builder.build(export(), report_additions_manifest=report_manifest(fields))
+
+    def test_report_name_correction_uses_original_report_hash_without_inventing_upc(self):
+        reports = report_manifest({'name': 'Example PINEAPLE 12oz',
+                                   'sourceNameSha256': hashlib.sha256(b'Original private report title').hexdigest()})
+        correction = {'sku': '1001', 'expectedUpc': '',
+                      'expectedNameSha256': reports['records'][0]['sourceNameSha256'],
+                      'replaceTextFrom': 'PINEAPLE', 'replaceTextTo': 'PINEAPPLE',
+                      'evidence': [{'url': 'https://manufacturer.example/flavors'}]}
+        names = {'schemaVersion': 1, 'corrections': [correction]}
+        catalog, audit = builder.build(export(), report_additions_manifest=reports, name_manifest=names)
+        self.assertEqual(catalog['products'][0]['name'], 'Example PINEAPPLE')
+        self.assertEqual(catalog['products'][0]['variants'][0]['upc'], '')
+        self.assertEqual(catalog['products'][0]['variants'][0]['label'], '12 oz')
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'Example PINEAPLE 12oz')
+        self.assertEqual(audit['records'][0]['correctedSourceName'], 'Example PINEAPPLE 12oz')
+        self.assertEqual(audit['records'][0]['nameCorrection'], correction)
+        for field, value in [('expectedUpc', '001234567890'), ('expectedNameSha256', '0' * 64)]:
+            wrong = copy.deepcopy(names)
+            wrong['corrections'][0][field] = value
+            with self.assertRaisesRegex(ValueError, 'Report name override identity mismatch'):
+                builder.build(export(), report_additions_manifest=reports, name_manifest=wrong)
+        wrong = copy.deepcopy(names)
+        wrong['corrections'][0]['replaceTextFrom'] = 'MISSING'
+        with self.assertRaisesRegex(ValueError, 'fragment does not match exactly once'):
+            builder.build(export(), report_additions_manifest=reports, name_manifest=wrong)
+        with self.assertRaisesRegex(ValueError, 'Image blocked'):
+            builder.build(export(), report_additions_manifest=reports, name_manifest=names,
+                          image_manifest={'schemaVersion': 1, 'images': [{'sku': '1001'}]})
+        with self.assertRaisesRegex(ValueError, 'Report-origin identity reviews are not supported'):
+            builder.build(export(), report_additions_manifest=reports,
+                          name_manifest={'schemaVersion': 1, 'identityReviews': [correction]})
+        with self.assertRaisesRegex(ValueError, 'absent from all reviewed sources'):
+            builder.build(export(), name_manifest=names)
+
+    def test_guarded_container_material_preserves_identity_and_size(self):
+        source = export({'SKU': '2846', 'MAINUPC': '001234567890',
+                         'ItemName': 'Example Vodka 1.75L bottles', 'DEPNAME': 'Vodka'})
+        raw = list(csv.reader(io.StringIO(source.decode())))[1]
+        review = {'schemaVersion': 1, 'reviews': [{
+            'sku': '2846', 'expectedUpc': raw[1],
+            'expectedNameSha256': hashlib.sha256(raw[2].encode()).hexdigest(),
+            'expectedSourceRecordSha256': hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest(),
+            'action': 'clarify_container_material', 'containerMaterial': 'PET',
+            'reason': 'Exact SKU report explicitly identifies container material',
+            'reportEvidence': [{'reportSha256': 'c' * 64, 'page': 20}]}]}
+        base, _ = builder.build(source)
+        catalog, audit = builder.build(source, source_reviews_manifest=review)
+        variant = catalog['products'][0]['variants'][0]
+        self.assertEqual(catalog['products'][0]['name'], base['products'][0]['name'])
+        self.assertEqual(variant['label'], '1.75 L · PET bottles')
+        self.assertEqual(variant['upc'], raw[1])
+        self.assertEqual(audit['records'][0]['rawFields'], raw)
+        changed = copy.deepcopy(review)
+        changed['reviews'][0]['containerMaterial'] = 'glass'
+        self.assertEqual(builder.build(source, source_reviews_manifest=changed)[0]['products'][0]['variants'][0]['label'], '1.75 L · glass bottles')
+        changed['reviews'][0]['containerMaterial'] = 'aluminum'
+        with self.assertRaisesRegex(ValueError, 'material must be glass or PET'):
+            builder.build(source, source_reviews_manifest=changed)
+        with self.assertRaisesRegex(ValueError, 'identity mismatch'):
+            builder.build(source.replace(b'1.75L', b'1.00L'), source_reviews_manifest=review)
+        with self.assertRaisesRegex(ValueError, 'Image blocked'):
+            builder.build(source, source_reviews_manifest=review,
+                          image_manifest={'schemaVersion': 1, 'images': [{'sku': '2846'}]})
+        for title in ('Example Vodka', 'Example Vodka 4pk', 'Example Vodka 1.75L 750ml', 'Example Vodka 1.75L cans'):
+            uncertain = export({'SKU': '2846', 'MAINUPC': raw[1], 'ItemName': title, 'DEPNAME': 'Vodka'})
+            fields = list(csv.reader(io.StringIO(uncertain.decode())))[1]
+            changed = copy.deepcopy(review)
+            changed['reviews'][0]['expectedNameSha256'] = hashlib.sha256(title.encode()).hexdigest()
+            changed['reviews'][0]['expectedSourceRecordSha256'] = hashlib.sha256(json.dumps(fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+            with self.assertRaisesRegex(ValueError, 'Container clarification'):
+                builder.build(uncertain, source_reviews_manifest=changed)
 
     def test_duplicate_names_and_upcs_keep_every_sku(self):
         catalog, _ = builder.build(export({'ItemName': 'Example Vodka 750ml'}, {'ItemName': 'Example Vodka 750ml'}))
@@ -425,7 +627,8 @@ class GeneratedCatalogTests(unittest.TestCase):
         self.assertEqual(len(self.catalog['products']), self.catalog['counts']['products'])
         c = self.catalog['counts']
         self.assertEqual(c['sourceRows'], c['publicVariants'] + c['needsReview'] + c['excludedNonproducts'])
-        self.assertEqual(c['sourceRows'], 9881)
+        self.assertEqual(c.get('originalSourceRows', c['sourceRows']), 9881)
+        self.assertEqual(c['sourceRows'], c.get('originalSourceRows', c['sourceRows']) + c.get('reportSourceRows', 0))
 
     def test_strict_public_allowlist(self):
         departments = {d['id'] for c in self.catalog['categories'] for d in c['departments']}
@@ -451,11 +654,17 @@ class GeneratedCatalogTests(unittest.TestCase):
         names = json.loads(names_path.read_text()) if names_path.exists() else None
         reviews_path = ROOT / 'data/source-reviews.json'
         reviews = json.loads(reviews_path.read_text()) if reviews_path.exists() else None
-        catalog, audit = builder.build(source, image_manifest=manifest, name_manifest=names, source_reviews_manifest=reviews)
+        reports_path = ROOT / 'data/report-additions.json'
+        reports = json.loads(reports_path.read_text()) if reports_path.exists() else None
+        catalog, audit = builder.build(source, image_manifest=manifest, name_manifest=names,
+                                       source_reviews_manifest=reviews, report_additions_manifest=reports)
         self.assertEqual(audit['sourceSha256'], builder.BASELINE_HASH)
         self.assertEqual(catalog, self.catalog)
-        self.assertEqual(len(audit['records']), 9881)
-        self.assertEqual({r['sourceRow'] for r in audit['records']}, set(range(1, 9882)))
+        self.assertEqual(catalog['counts']['originalSourceRows'], 9881)
+        self.assertEqual(len(audit['records']), 9881 + catalog['counts']['reportSourceRows'])
+        originals = audit['records'][:9881]
+        self.assertEqual({r['sourceRow'] for r in originals}, set(range(1, 9882)))
+        self.assertEqual([r['rawFields'] for r in originals], list(csv.reader(io.StringIO(source.decode('utf-8-sig'))))[1:])
 
 
 if __name__ == '__main__':

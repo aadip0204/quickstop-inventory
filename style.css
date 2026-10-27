@@ -102,3 +102,9 @@ input[type="search"]:focus,select:focus{border-color:var(--red)}
 @media(max-width:480px){.variant-select{font-size:16px}}
 .image-credit{font-size:10px;line-height:1.5;color:#596150;margin:-10px 0 18px;overflow-wrap:anywhere}
 .image-credit a{text-underline-offset:2px}
+.store-address{font-style:normal;font-size:14px;line-height:1.6;color:var(--ink)}
+.footer-inner .store-contact{gap:8px;font-size:14px}
+.store-contact a{text-decoration-thickness:1px;text-underline-offset:3px}
+.store-contact a:hover{color:var(--red-dark)}
+@media(max-width:720px){.store-address{flex:1;min-width:170px}.footer-inner .store-contact{min-width:170px}.footer-inner>a{margin-left:auto}}
+@media(max-width:380px){.footer-inner>div:first-child,.store-address{flex-basis:100%}.footer-inner>a{margin-left:0}.footer-inner .store-contact{flex-basis:100%}}

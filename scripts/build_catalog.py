@@ -70,6 +70,8 @@ EXPLICIT_UTILITIES = {
     'cook county tax', 'lotto sale machine', 'machine lotto', 'misc ebt',
     'misc taxed item', 'misc taxed items',
 }
+REPORT_POS_CONTROLS = {'-2000': 'Card Void Adjustment', '-3000': 'COUPON',
+                       '0': 'Scan Group', '-1000': 'Store Credit'}
 
 
 def clean_space(value: str) -> str:
@@ -377,7 +379,8 @@ def validated_source_reviews(manifest: dict | None) -> dict:
     for entry in manifest['reviews']:
         sku = entry.get('sku')
         if not isinstance(sku, str) or sku in result or entry.get('action') not in {
-                'size_needs_confirmation', 'restore_named_merchandise', 'resolve_verified_identity'}:
+                'size_needs_confirmation', 'restore_named_merchandise', 'resolve_verified_identity',
+                'repair_unquoted_name_commas', 'clarify_container_material'}:
             raise ValueError('Source review requires unique SKU and a supported action')
         if not isinstance(entry.get('expectedUpc'), str) or not all(
                 re.fullmatch(r'[a-f0-9]{64}', entry.get(key, ''))
@@ -389,6 +392,16 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             raise ValueError(f'Source review requires a reason: {sku}')
         allowed = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
                    'action', 'reason', 'reviewedOn'}
+        if entry['action'] == 'clarify_container_material':
+            allowed |= {'containerMaterial', 'reportEvidence'}
+            if entry.get('containerMaterial') not in {'glass', 'PET'}:
+                raise ValueError(f'Container material must be glass or PET: {sku}')
+            validated_report_evidence(entry.get('reportEvidence'), sku)
+        if entry['action'] == 'repair_unquoted_name_commas':
+            allowed |= {'expectedRejoinedNameSha256', 'reportEvidence'}
+            if not re.fullmatch(r'[a-f0-9]{64}', entry.get('expectedRejoinedNameSha256', '')):
+                raise ValueError(f'CSV repair requires an exact rejoined name guard: {sku}')
+            validated_report_evidence(entry.get('reportEvidence'), sku)
         if entry['action'] == 'restore_named_merchandise':
             allowed |= {'sanitizedSourceName', 'forceSizeNeedsConfirmation'}
             name = entry.get('sanitizedSourceName')
@@ -424,6 +437,82 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             raise ValueError(f'Source review reason must not expose price annotations: {sku}')
         result[sku] = entry
     return result
+
+
+def validated_report_evidence(evidence: object, sku: str) -> None:
+    if not isinstance(evidence, list) or not evidence:
+        raise ValueError(f'Report metadata requires report evidence: {sku}')
+    for item in evidence:
+        if (not isinstance(item, dict) or set(item) != {'reportSha256', 'page'}
+                or not isinstance(item['reportSha256'], str)
+                or not re.fullmatch(r'[a-f0-9]{64}', item['reportSha256'])
+                or type(item['page']) is not int or item['page'] < 1):
+            raise ValueError(f'Invalid report hash/page evidence: {sku}')
+
+
+def validated_report_additions(manifest: dict | None) -> list[dict]:
+    if manifest is None:
+        return []
+    if (not isinstance(manifest, dict) or set(manifest) != {'schemaVersion', 'records'}
+            or manifest['schemaVersion'] != 1 or not isinstance(manifest['records'], list)):
+        raise ValueError('Invalid report additions manifest schema')
+    required = {'sku', 'name', 'pack', 'department', 'kind', 'sourceNameSha256',
+                'evidence', 'reviewedOn', 'reason'}
+    seen = set()
+    for entry in manifest['records']:
+        if (not isinstance(entry, dict) or not required.issubset(entry)
+                or set(entry) - required - {'forceSizeNeedsConfirmation'}):
+            raise ValueError('Report additions contain missing, unsupported or private fields')
+        sku = entry['sku']
+        if not isinstance(sku, str) or not re.fullmatch(r'-?\d+', sku) or sku in seen:
+            raise ValueError('Report additions require unique string SKUs')
+        seen.add(sku)
+        if entry['kind'] not in {'merchandise', 'pos_control'}:
+            raise ValueError(f'Invalid report record kind: {sku}')
+        for field in ('name', 'pack', 'department', 'reason'):
+            value = entry[field]
+            if not isinstance(value, str) or PRICE_RE.search(value) or re.search(r'[$€£]', value):
+                raise ValueError(f'Report {field} must be price-free text: {sku}')
+            if field in {'department', 'reason'} and has_ambiguous_decimal(value):
+                raise ValueError(f'Report {field} contains an ambiguous amount: {sku}')
+        if not entry['name'].strip() or not entry['reason'].strip():
+            raise ValueError(f'Report metadata requires a name and reason: {sku}')
+        if (not isinstance(entry['sourceNameSha256'], str)
+                or not re.fullmatch(r'[a-f0-9]{64}', entry['sourceNameSha256'])):
+            raise ValueError(f'Report metadata requires a source name hash: {sku}')
+        if (not isinstance(entry['reviewedOn'], str)
+                or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn'])):
+            raise ValueError(f'Report metadata requires a review date: {sku}')
+        if type(entry.get('forceSizeNeedsConfirmation', False)) is not bool:
+            raise ValueError(f'Report size confirmation must be boolean: {sku}')
+        validated_report_evidence(entry['evidence'], sku)
+        if entry['kind'] == 'pos_control':
+            if REPORT_POS_CONTROLS.get(sku) != entry['name'] or entry['pack']:
+                raise ValueError(f'Report POS control is not an approved exact pair: {sku}')
+        elif int(sku) <= 0 or sku in REPORT_POS_CONTROLS:
+            raise ValueError(f'Report merchandise cannot use a POS control code: {sku}')
+        # A reviewed measurement can contain a decimal. A bare decimal in any
+        # public description is still an unresolved amount, never a safe price.
+        for field in ('name', 'pack'):
+            if has_ambiguous_decimal(extract_dimensions(entry[field])['text']):
+                raise ValueError(f'Report {field} contains an ambiguous amount: {sku}')
+    return manifest['records']
+
+
+def repair_unquoted_name_commas(fields: list[str], review: dict) -> list[str]:
+    """Rejoin only individually corroborated CSV title fragments."""
+    sku = fields[0] if fields else ''
+    if len(fields) <= len(EXPECTED_HEADERS):
+        raise ValueError(f'CSV comma repair requires extra source fields: {sku}')
+    raw_hash = hashlib.sha256(json.dumps(fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+    if (fields[1], hashlib.sha256(fields[2].encode()).hexdigest(), raw_hash) != (
+            review['expectedUpc'], review['expectedNameSha256'], review['expectedSourceRecordSha256']):
+        raise ValueError(f'Source metadata review identity mismatch for SKU {sku}')
+    recovered = fields[:2] + [','.join(fields[2:-5])] + fields[-5:]
+    if (len(recovered) != len(EXPECTED_HEADERS)
+            or hashlib.sha256(recovered[2].encode()).hexdigest() != review['expectedRejoinedNameSha256']):
+        raise ValueError(f'Rejoined CSV name does not match reviewed report identity: {sku}')
+    return recovered
 
 
 def restored_description(source: dict, review: dict) -> str:
@@ -485,7 +574,8 @@ def isolate_unspecified_variants(groups: dict, records: list, flag_reasons: Coun
 
 
 def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dict | None = None,
-          name_manifest: dict | None = None, source_reviews_manifest: dict | None = None) -> tuple[dict, dict]:
+          name_manifest: dict | None = None, source_reviews_manifest: dict | None = None,
+          report_additions_manifest: dict | None = None) -> tuple[dict, dict]:
     reader = csv.reader(io.StringIO(source_bytes.decode('utf-8-sig'), newline=''))
     headers = next(reader)
     if headers != EXPECTED_HEADERS:
@@ -493,6 +583,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     groups = {}
     corrections, identity_reviews = validated_name_overrides(name_manifest)
     source_reviews = validated_source_reviews(source_reviews_manifest)
+    report_additions = validated_report_additions(report_additions_manifest)
     master = []
     dispositions = Counter()
     flag_reasons = Counter()
@@ -504,21 +595,28 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
         seen_skus.add(sku)
         record = {'sourceRow': row_number, 'csvLine': reader.line_num,
                   'sku': sku, 'rawFields': fields}
-        if len(fields) != len(headers):
+        review = source_reviews.get(sku)
+        repairing = bool(review and review['action'] == 'repair_unquoted_name_commas')
+        recovered_fields = repair_unquoted_name_commas(fields, review) if repairing else fields
+        if len(recovered_fields) != len(headers):
+            if review:
+                raise ValueError(f'Source review cannot apply to an unrepaired malformed record: {sku}')
             record.update(disposition='needs_review',
                           reason=f'Malformed CSV record: expected 8 columns, received {len(fields)}; no inferred repair',
                           flags=[])
         else:
-            source = dict(zip(headers, fields))
+            source = dict(zip(headers, recovered_fields))
             source['sourceRow'] = row_number
+            if repairing:
+                record['reconstructedFields'] = recovered_fields
+                record['originalMalformedNameFragments'] = fields[2:-5]
             adjusted_source = dict(source)
             override_flags = []
-            review = source_reviews.get(sku)
             restoring = bool(review and review['action'] == 'restore_named_merchandise')
             resolving = bool(review and review['action'] == 'resolve_verified_identity')
             if review:
                 raw_hash = hashlib.sha256(json.dumps(fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
-                if (source['MAINUPC'], hashlib.sha256(source['ItemName'].encode()).hexdigest(), raw_hash) != (
+                if not repairing and (source['MAINUPC'], hashlib.sha256(source['ItemName'].encode()).hexdigest(), raw_hash) != (
                         review['expectedUpc'], review['expectedNameSha256'], review['expectedSourceRecordSha256']):
                     raise ValueError(f'Source metadata review identity mismatch for SKU {sku}')
                 record['sourceReview'] = review
@@ -561,9 +659,26 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     public['name'] = review['verifiedName']
                     public['variant']['label'] = review['verifiedLabel']
                     flags.append('Exact SKU identity resolved with manufacturer, UPC listing and inspected package evidence')
+                elif repairing:
+                    if public:
+                        # Size removal can leave a dangling comma from the
+                        # corroborated CSV title; only normalize punctuation.
+                        public['name'] = re.sub(r'\s*,\s*', ', ', public['name']).strip(' ,')
+                    flags.append('Guarded unquoted CSV name commas repaired using exact SKU report evidence; raw fields preserved privately')
+                    flags.append('Repaired SKU grouping isolated and image blocked pending exact identity review')
+                elif review['action'] == 'clarify_container_material':
+                    has_measure = any(extract_dimensions(adjusted_source[field])['measures']
+                                      for field in ('ItemName', 'PackName'))
+                    if not public or public['variant']['label'].startswith('Size ') or not has_measure:
+                        raise ValueError(f'Container clarification requires a retained variant with a confirmed source size: {sku}')
+                    label = public['variant']['label']
+                    if re.search(r'\b(?:cans|kegs|glass|PET)\b', label, re.I):
+                        raise ValueError(f'Container clarification conflicts with an existing container: {sku}')
+                    public['variant']['label'] = re.sub(r'(?:^| · )bottles$', '', label) + ' · ' + review['containerMaterial'] + ' bottles'
+                    flags.append('Guarded report evidence clarifies container material; original source metadata preserved privately')
                 else:
                     flags.append('Explicit source-size review: ' + review['reason'])
-                if public and not restoring and not resolving:
+                if public and review['action'] == 'size_needs_confirmation':
                     public['variant']['label'] = 'Size needs confirmation'
             flags = override_flags + flags
             record.update(source=source, disposition=disposition, reason=reason, flags=flags)
@@ -572,7 +687,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 # Exact normalized expression and department only. No fuzzy
                 # matching, synonym mapping, or deletion of brand/age/proof.
                 key = (public['category'], public['department'], public['name'].casefold())
-                if restoring or resolving:
+                if restoring or resolving or repairing:
                     key += ('restored-source-sku', sku)
                 # Exact source title says regular Silver, but the first-100 image
                 # audit found UPC-specific evidence of an Artist Series package.
@@ -591,14 +706,72 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
         dispositions[record['disposition']] += 1
         master.append(record)
 
-    if (set(corrections) | set(identity_reviews) | set(source_reviews)) - seen_skus:
-        raise ValueError('Name manifest contains SKUs absent from this source export')
+    if set(source_reviews) - seen_skus:
+        raise ValueError('Source review contains SKUs absent from the original source export')
+    original_rows = len(master)
+    original_dispositions = dict(dispositions)
+    report_dispositions = Counter()
+    for offset, entry in enumerate(report_additions, 1):
+        sku = entry['sku']
+        if sku in seen_skus:
+            raise ValueError(f'Report addition collides with an existing source SKU: {sku}')
+        seen_skus.add(sku)
+        row_number = original_rows + offset
+        source = {'SKU': sku, 'MAINUPC': '', 'ItemName': entry['name'],
+                  'PackName': entry['pack'], 'DEPNAME': entry['department'],
+                  'sourceRow': row_number}
+        adjusted_source = dict(source)
+        correction = corrections.get(sku)
+        override_flags = []
+        if sku in identity_reviews:
+            raise ValueError(f'Report-origin identity reviews are not supported: {sku}')
+        if correction:
+            if (correction['expectedUpc'], correction['expectedNameSha256']) != ('', entry['sourceNameSha256']):
+                raise ValueError(f'Report name override identity mismatch for SKU {sku}')
+            if entry['kind'] != 'merchandise':
+                raise ValueError(f'Report POS control cannot receive a name correction: {sku}')
+            if source['ItemName'].count(correction['replaceTextFrom']) != 1:
+                raise ValueError(f'Spelling fragment does not match exactly once: {sku}')
+            adjusted_source['ItemName'] = source['ItemName'].replace(
+                correction['replaceTextFrom'], correction['replaceTextTo'], 1)
+            override_flags.append('Evidence-backed spelling/spacing correction applied; source spelling preserved privately')
+        if entry['kind'] == 'pos_control':
+            disposition, reason, public, flags = ('excluded_nonproduct',
+                'Explicit reviewed report POS control', None, [])
+        else:
+            disposition, reason, public, flags = classify_record(adjusted_source)
+            if public and entry.get('forceSizeNeedsConfirmation', False):
+                public['variant']['label'] = uncertain_size_label(adjusted_source)
+        flags = override_flags + flags
+        flags.append('Report-origin SKU retained separately; UPC unknown and image blocked pending exact review')
+        record = {'sourceRow': row_number, 'sku': sku, 'sourceOrigin': 'report',
+                  'rawFields': [], 'source': source, 'reportReferences': entry['evidence'],
+                  'reportSourceNameSha256': entry['sourceNameSha256'],
+                  'reviewedReportMetadata': entry, 'disposition': disposition,
+                  'reason': reason, 'flags': flags}
+        if correction:
+            record['nameCorrection'] = correction
+            record['correctedSourceName'] = adjusted_source['ItemName']
+        if public:
+            key = (public['category'], public['department'], public['name'].casefold(), 'report-source-sku', sku)
+            identifier = 'p-' + hashlib.sha256('\0'.join(key).encode()).hexdigest()[:16]
+            groups[key] = {'id': identifier, 'name': public['name'],
+                           'category': public['category'], 'department': public['department'],
+                           'variants': [public['variant']]}
+            record.update(productId=identifier, publicVariantSku=sku)
+        flag_reasons.update(flags)
+        dispositions[disposition] += 1
+        report_dispositions[disposition] += 1
+        master.append(record)
+    if (set(corrections) | set(identity_reviews)) - seen_skus:
+        raise ValueError('Name manifest contains SKUs absent from all reviewed sources')
     products = sorted(isolate_unspecified_variants(groups, master, flag_reasons),
                       key=lambda p: (p['name'].casefold(), p['id']))
     for product in products:
         product['variants'].sort(key=lambda v: v['sourceRow'])
     blocked_images = {sku for sku, review in source_reviews.items()
                       if review['action'] != 'resolve_verified_identity'}
+    blocked_images.update(entry['sku'] for entry in report_additions)
     verified_images = apply_verified_images(products, image_manifest, blocked_images)
     populated = {p['department'] for p in products}
     categories = []
@@ -613,6 +786,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 for d in category_departments]})
     flagged_retained = sum(r['disposition'] == 'retained_variant' and bool(r['flags']) for r in master)
     counts = {'sourceRows': len(master), 'sourceSkus': len(seen_skus),
+              'originalSourceRows': original_rows, 'reportSourceRows': len(report_additions),
               'publicVariants': dispositions['retained_variant'], 'products': len(products),
               'needsReview': dispositions['needs_review'],
               'excludedNonproducts': dispositions['excluded_nonproduct'],
@@ -621,6 +795,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                'categories': categories, 'products': products}
     audit = {'sourceSha256': hashlib.sha256(source_bytes).hexdigest(), 'counts': counts,
              'sourceDispositions': dict(dispositions), 'reviewFlagReasons': dict(flag_reasons),
+             'originalSourceDispositions': original_dispositions,
+             'reportSourceDispositions': dict(report_dispositions),
              'verifiedImages': verified_images, 'nameCorrections': len(corrections), 'records': master}
     assert sum(dispositions.values()) == len(master)
     return catalog, audit
@@ -708,6 +884,7 @@ def main() -> None:
     parser.add_argument('--images', type=Path, default=ROOT / 'data/image-manifest.json')
     parser.add_argument('--names', type=Path, default=ROOT / 'data/name-corrections.json')
     parser.add_argument('--source-reviews', type=Path, default=ROOT / 'data/source-reviews.json')
+    parser.add_argument('--report-additions', type=Path, default=ROOT / 'data/report-additions.json')
     args = parser.parse_args()
     source_path = safe_private_path(args.input)
     private_output = safe_private_path(args.private_output)
@@ -715,7 +892,8 @@ def main() -> None:
     image_manifest = json.loads(args.images.read_text()) if args.images.exists() else None
     name_manifest = json.loads(args.names.read_text()) if args.names.exists() else None
     source_reviews = json.loads(args.source_reviews.read_text()) if args.source_reviews.exists() else None
-    catalog, audit = build(source_bytes, args.source_date, image_manifest, name_manifest, source_reviews)
+    report_additions = json.loads(args.report_additions.read_text()) if args.report_additions.exists() else None
+    catalog, audit = build(source_bytes, args.source_date, image_manifest, name_manifest, source_reviews, report_additions)
     private_output.mkdir(parents=True, exist_ok=True, mode=0o700)
     (private_output / 'master-reconciliation.json').write_text(json.dumps(audit, indent=2) + '\n')
     (private_output / 'review-queue.json').write_text(json.dumps([
