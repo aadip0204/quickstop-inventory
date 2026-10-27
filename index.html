@@ -1,80 +1,63 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quick Stop Inventory</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#181b19">
+  <meta name="description" content="Explore the Quick Stop Food & Liquor catalog. Find spirits, wine, beer, drinks and everyday favorites by product, department and listed size.">
+  <title>Quick Stop Food & Liquor — Browse the Catalog</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Top bar with location, phone and hours -->
-  <div class="top-bar">
-    <div class="top-bar-inner">
-      <!-- Updated location, hours and phone to reflect actual store details -->
-      <span class="store-location">📍 409 E 111th St, Chicago, IL</span>
-      <span class="store-hours">🕒 Mon–Sun: 8 AM – 9 PM</span>
-      <span class="store-phone">📞 (773) 660‑1736</span>
-    </div>
-  </div>
-  <header>
-    <div class="header-inner">
-      <!-- Use the logo from the images folder. Keep alt text for accessibility -->
-      <img src="images/logo.png" alt="Quick Stop Food & Liquor logo" id="logo">
-      <div class="title-area">
-        <h1>Quick Stop Food & Liquor</h1>
-        <p class="tagline">Chicago’s Best Selection of Spirits</p>
-        <p class="note">Inventory updated daily. If it's not listed here, it's not in stock.</p>
-      </div>
+  <a class="skip-link" href="#catalog">Skip to catalog</a>
+  <header class="site-header">
+    <div class="header-inner shell">
+      <a class="brand" href="./" aria-label="Quick Stop Food & Liquor home">
+        <img id="logo" src="images/logo.png" alt="Quick Stop Food & Liquor" width="108" height="108">
+        <span class="brand-copy"><strong>QUICK STOP</strong><span>FOOD &amp; LIQUOR</span></span>
+      </a>
+      <a class="header-link" href="#catalog">Browse the catalog <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
-  <!-- Hero section to give the page a welcoming banner -->
-  <section id="hero">
-    <div class="hero-content">
-      <h2 class="hero-heading">Discover Your Favorites</h2>
-      <p class="hero-subheading">Browse our curated selection of spirits, wines, beers and more.</p>
-      <!-- Call‑to‑action button scrolls the page down to the departments list -->
-      <a href="#departments" class="cta-button">Explore Inventory</a>
-    </div>
-  </section>
+  <main>
+    <section class="intro shell" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span aria-hidden="true"></span> Your neighborhood stop</p>
+        <h1 id="page-title">Find your next favorite.</h1>
+        <p>From your go-to bottle to the little everyday essentials. Explore the Quick Stop catalog.</p>
+      </div>
+      <div class="intro-detail" aria-hidden="true"><span>QUICK STOP</span><strong>Good things.<br>Close to home.</strong><span class="detail-rule"></span></div>
+    </section>
 
-  <!-- Categories section: highlight popular departments for quick navigation -->
-  <section id="categories">
-    <h2>Shop by Category</h2>
-    <div id="categoryCards" class="categories-grid"></div>
-  </section>
-  <!-- Controls section: search bar and category filter -->
-  <section id="controls">
-    <input type="text" id="search" placeholder="Search products…" autocomplete="off">
-    <select id="categorySelect">
-      <option value="all">All Departments</option>
-    </select>
-  </section>
+    <section id="catalog" class="catalog shell" aria-labelledby="catalog-title" tabindex="-1">
+      <div class="catalog-heading">
+        <div><p class="eyebrow">Find it here</p><h2 id="catalog-title">Explore the catalog</h2></div>
+        <span id="catalog-total" class="catalog-total"></span>
+      </div>
+      <nav id="category-nav" class="category-nav" aria-label="Main product categories"></nav>
+      <form id="filters" class="filters" role="search" aria-label="Search the catalog">
+        <div class="search-field">
+          <label for="search">Search products</label>
+          <div class="input-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input id="search" type="search" placeholder="Name, brand, size or SKU…" autocomplete="off" enterkeyhint="search" maxlength="200"></div>
+        </div>
+        <div class="department-field"><label for="department">Department</label><select id="department"><option value="all">All departments</option></select></div>
+        <div class="sort-field"><label for="sort">Sort by</label><select id="sort"><option value="az">Name: A–Z</option><option value="za">Name: Z–A</option></select></div>
+        <button id="reset" class="reset-button" type="button">Reset filters</button>
+      </form>
+      <div class="results-toolbar"><p id="result-count" role="status" aria-live="polite" aria-atomic="true">Loading the catalog…</p><span class="page-size-note">36 products per page</span></div>
+      <div id="catalog-state" class="catalog-state" role="status"><span class="loading-dot" aria-hidden="true"></span><h3>Getting the catalog ready</h3><p>One moment while we load the product list.</p></div>
+      <div id="product-grid" class="product-grid" aria-label="Products"></div>
+      <nav id="pagination" class="pagination" aria-label="Product pages" hidden></nav>
+      <p class="catalog-note">A reference catalog from February 2026. Listed sizes and selection may differ in store.</p>
+    </section>
+  </main>
 
-  <!-- Weekly deals section: highlight great values -->
-  <section id="deals">
-    <h2>Weekly Deals</h2>
-    <div id="deals-grid" class="grid"></div>
-  </section>
-  <!-- Featured products section (premium items) -->
-  <section id="featured">
-    <h2>Featured</h2>
-    <div id="grid-featured" class="grid"></div>
-  </section>
-  <!-- Departments container will be populated dynamically -->
-  <section id="departments">
-    <!-- Department sections inserted here by JavaScript -->
-  </section>
-  <footer>
-    <p class="note">Call store for price and availability.</p>
+  <footer class="site-footer">
+    <div class="footer-inner shell"><div><strong>Quick Stop</strong><span>Food &amp; Liquor</span></div><p>A neighborhood stop for everyday favorites.</p><a href="#catalog">Back to catalog <span aria-hidden="true">↑</span></a></div>
   </footer>
-
-  <!-- Back to top button -->
-  <button id="backToTop" title="Back to top">↑</button>
-  <!-- Load grouped products data before the main script -->
-  <!-- Load the filtered, deduplicated product data -->
-  <script src="products_grouped_filtered.js"></script>
-  <script src="script.js"></script>
+  <noscript><p class="noscript">JavaScript is needed to search and browse this catalog. Please enable JavaScript and reload this page.</p></noscript>
 </body>
 </html>

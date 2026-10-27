@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "sourceDate": "2026-02",
+  "sourceSha256": "822ee8b3b623548db0f2ea531aa10c340b160a47afc0d9e88398311ed7fa6882",
+  "counts": {
+    "sourceRows": 9881,
+    "sourceSkus": 9881,
+    "publicVariants": 9466,
+    "products": 7780,
+    "needsReview": 266,
+    "excludedNonproducts": 149,
+    "flaggedPublicVariants": 1209
+  },
+  "sourceDispositions": {
+    "needs_review": 266,
+    "excluded_nonproduct": 149,
+    "retained_variant": 9466
+  },
+  "nameAudit": {
+    "sourceRowsScanned": 9881,
+    "rowsWithIssues": 3383,
+    "evidenceBackedCorrections": 287,
+    "identityConflicts": 1,
+    "fullyVerifiedNames": 2,
+    "scopeNote": "All rows scanned for specified risks. Only listed evidence-backed corrections were externally checked; remaining names are not verified."
+  },
+  "imageStatus": {
+    "verifiedVariants": 86,
+    "unverifiedVariants": 9380
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "reviews": [
+    {
+      "sku": "2954",
+      "expectedUpc": "028400421195",
+      "expectedNameSha256": "f2663caea679acce880182a66e24463285326f5099729d327a45561104499c5e",
+      "expectedSourceRecordSha256": "ba3beb1dd21851334e8ea83475807c6c186239dea173fc97b44566000970ddb3",
+      "action": "size_needs_confirmation",
+      "reason": "Source fraction is mathematically parsable but suspected incomplete package measurement; owner confirmation required. Do not substitute a size.",
+      "reviewedOn": "2026-10-26"
+    },
+    {
+      "sku": "533",
+      "expectedUpc": "613008715120",
+      "expectedNameSha256": "2c47730f9f7359b9c22c61c387e57867183c3a07cc7af07c379d6bd3e01e42cc",
+      "expectedSourceRecordSha256": "7d0ad2f739172bacfe7e5e76e5445ec2bd1015deebd8893849330c79190d5303",
+      "action": "size_needs_confirmation",
+      "reason": "Source single-letter unit is ambiguous for this beverage record; owner confirmation required. Do not infer grams or gallons.",
+      "reviewedOn": "2026-10-26"
+    },
+    {
+      "sku": "2950",
+      "expectedUpc": "028400420754",
+      "expectedNameSha256": "b33d1dda4b1ddef39168570ca163e13416c43e2efa778a2d85f1c528c4e94ffc",
+      "expectedSourceRecordSha256": "d5bdb3ab68bcb72fe1f52a51d0e5e33b812e48de8305aac7ec6e2d0b1966d7af",
+      "action": "size_needs_confirmation",
+      "reason": "Source fraction is mathematically parsable but suspected incomplete package measurement; owner confirmation required. Do not substitute a size.",
+      "reviewedOn": "2026-10-26"
+    }
+  ]
+}
