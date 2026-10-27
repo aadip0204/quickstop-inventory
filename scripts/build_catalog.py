@@ -401,6 +401,51 @@ def validated_repair_image_review(review: object, sku: str) -> None:
         raise ValueError(f'Repaired image review requires manufacturer, UPC and inspected-photo URLs: {sku}')
 
 
+def validated_name_verifications(manifest: dict | None) -> dict:
+    """Keep an unchanged-name review separate from an actual correction."""
+    entries = (manifest or {}).get('nameVerifications', [])
+    if not isinstance(entries, list):
+        raise ValueError('Name verifications must be a list')
+    result = {}
+    required = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedPublicName',
+                'expectedLabel', 'verifiedOn', 'verification', 'evidence'}
+    kinds = {'manufacturer', 'exact_upc_listing', 'inspected_package_photo'}
+    for entry in entries:
+        if not isinstance(entry, dict) or set(entry) != required:
+            raise ValueError('Name verification contains missing, unsupported or private fields')
+        sku = entry['sku']
+        if not isinstance(sku, str) or not sku or sku in result:
+            raise ValueError('Name verification requires a unique SKU')
+        if (not isinstance(entry['expectedNameSha256'], str)
+                or not re.fullmatch(r'[a-f0-9]{64}', entry['expectedNameSha256'])
+                or not isinstance(entry['expectedUpc'], str) or not entry['expectedUpc']):
+            raise ValueError(f'Name verification requires exact source identity guards: {sku}')
+        for field in ('expectedUpc', 'expectedPublicName', 'expectedLabel'):
+            value = entry[field]
+            if (not isinstance(value, str) or not value.strip() or PRICE_RE.search(value)
+                    or re.search(r'[$€£]|(?:^|\s)(?:/Users/|/home/|file:)', value)):
+                raise ValueError(f'Name verification requires safe public identity: {sku}')
+        if not isinstance(entry['verifiedOn'], str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['verifiedOn']):
+            raise ValueError(f'Name verification requires a review date: {sku}')
+        checks = entry['verification']
+        if (not isinstance(checks, dict) or set(checks) != {'brand', 'expression', 'upc', 'visual'}
+                or any(value is not True for value in checks.values())):
+            raise ValueError(f'Name verification requires every name identity check: {sku}')
+        evidence = entry['evidence']
+        if (not isinstance(evidence, list) or not evidence
+                or any(not isinstance(item, dict) or not {'kind', 'url'}.issubset(item)
+                       or set(item) - {'kind', 'url', 'supports'} or item['kind'] not in kinds
+                       or not isinstance(item['url'], str) or not re.fullmatch(r'https?://[^\s]+', item['url'])
+                       or ('supports' in item and (not isinstance(item['supports'], str)
+                           or PRICE_RE.search(item['supports'])
+                           or re.search(r'[$€£]|(?:^|\s)(?:/Users/|/home/|file:)', item['supports'])))
+                       for item in evidence)
+                or {item['kind'] for item in evidence} != kinds):
+            raise ValueError(f'Name verification requires manufacturer, UPC and inspected-photo evidence: {sku}')
+        result[sku] = entry
+    return result
+
+
 def validated_source_reviews(manifest: dict | None) -> dict:
     if not manifest:
         return {}
@@ -423,6 +468,38 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             raise ValueError(f'Source review requires a reason: {sku}')
         allowed = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
                    'action', 'reason', 'reviewedOn'}
+        if entry['action'] in {'size_needs_confirmation', 'restore_named_merchandise'}:
+            allowed.add('identityResolution')
+            if 'identityResolution' in entry:
+                resolution = entry['identityResolution']
+                fields = {'expectedName', 'expectedLabel', 'verifiedName', 'verifiedLabel',
+                          'verification', 'evidence', 'reason'}
+                if not isinstance(resolution, dict) or set(resolution) != fields:
+                    raise ValueError(f'Identity resolution contains missing, unsupported or private fields: {sku}')
+                for field in ('expectedName', 'expectedLabel', 'verifiedName', 'verifiedLabel', 'reason'):
+                    value = resolution[field]
+                    if (not isinstance(value, str) or not value.strip() or PRICE_RE.search(value)
+                            or re.search(r'[$€£]|(?:^|\s)(?:/Users/|/home/|file:)', value)):
+                        raise ValueError(f'Identity resolution requires safe previous identity and reason: {sku}')
+                if not resolution['expectedLabel'].startswith('Size needs confirmation'):
+                    raise ValueError(f'Identity resolution requires an explicitly unresolved source size: {sku}')
+                kinds = {'manufacturer', 'exact_upc_listing', 'inspected_package_photo'}
+                evidence = resolution['evidence']
+                if (not isinstance(evidence, list) or not evidence
+                        or any(not isinstance(item, dict) or set(item) != {'kind', 'url', 'supports'}
+                               or item['kind'] not in kinds or not isinstance(item['url'], str)
+                               or not re.fullmatch(r'https?://[^\s]+', item['url'])
+                               or not isinstance(item['supports'], str) or PRICE_RE.search(item['supports'])
+                               or re.search(r'[$€£]|(?:^|\s)(?:/Users/|/home/|file:)', item['supports'])
+                               for item in evidence)):
+                    raise ValueError(f'Identity resolution requires public evidence only: {sku}')
+                # Reuse the existing strict identity schema without broadening
+                # its separate unspecified-size-only application path.
+                check = {key: entry[key] for key in ('sku', 'expectedUpc', 'expectedNameSha256',
+                                                    'expectedSourceRecordSha256', 'reason')}
+                check.update(action='resolve_verified_identity', **{
+                    key: resolution[key] for key in ('verifiedName', 'verifiedLabel', 'verification', 'evidence')})
+                validated_source_reviews({'schemaVersion': 1, 'reviews': [check]})
         if entry['action'] == 'clarify_container_material':
             allowed |= {'containerMaterial', 'reportEvidence'}
             if entry.get('containerMaterial') not in {'glass', 'PET'}:
@@ -615,6 +692,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
         raise ValueError(f'Unexpected CSV schema: {headers!r}')
     groups = {}
     corrections, identity_reviews = validated_name_overrides(name_manifest)
+    name_verifications = validated_name_verifications(name_manifest)
     source_reviews = validated_source_reviews(source_reviews_manifest)
     report_additions = validated_report_additions(report_additions_manifest)
     master = []
@@ -655,7 +733,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 record['sourceReview'] = review
                 if restoring:
                     adjusted_source['ItemName'] = restored_description(source, review)
-            for overrides in (corrections, identity_reviews):
+            for overrides in (corrections, identity_reviews, name_verifications):
                 override = overrides.get(sku)
                 if override and (override['expectedNameSha256'], override['expectedUpc']) != (
                         hashlib.sha256(source['ItemName'].encode()).hexdigest(), source['MAINUPC']):
@@ -682,12 +760,14 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                         raise ValueError(f'Reviewed restoration did not produce safe merchandise: {sku}')
                     record['sanitizedSourceName'] = adjusted_source['ItemName']
                     flags.append('Guarded named merchandise restored; original metadata preserved privately')
-                    flags.append('Restored SKU grouping isolated and image blocked pending exact identity review')
+                    flags.append('Restored SKU grouping isolated; image requires its own exact identity review')
                     if review['forceSizeNeedsConfirmation']:
                         public['variant']['label'] = uncertain_size_label(adjusted_source)
                 elif resolving:
                     if not public or public['variant']['label'] != 'Size not specified':
                         raise ValueError(f'Verified identity cannot silently replace a stated source size: {sku}')
+                    if not public['variant']['upc'] or public['variant']['upc'] != review['expectedUpc']:
+                        raise ValueError(f'Verified identity requires a retained public UPC matching the source guard: {sku}')
                     record['previousPublicIdentity'] = {'name': public['name'], 'label': public['variant']['label']}
                     public['name'] = review['verifiedName']
                     public['variant']['label'] = review['verifiedLabel']
@@ -713,6 +793,18 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     flags.append('Explicit source-size review: ' + review['reason'])
                 if public and review['action'] == 'size_needs_confirmation':
                     public['variant']['label'] = 'Size needs confirmation'
+                resolution = review.get('identityResolution')
+                if resolution:
+                    if (not public
+                            or (public['name'], public['variant']['label'])
+                            != (resolution['expectedName'], resolution['expectedLabel'])):
+                        raise ValueError(f'Identity resolution previous catalog identity mismatch: {sku}')
+                    if not public['variant']['upc'] or public['variant']['upc'] != review['expectedUpc']:
+                        raise ValueError(f'Identity resolution requires a retained public UPC matching the source guard: {sku}')
+                    record['previousPublicIdentity'] = {'name': public['name'], 'label': public['variant']['label']}
+                    public['name'] = resolution['verifiedName']
+                    public['variant']['label'] = resolution['verifiedLabel']
+                    flags.append('Previously unresolved source identity explicitly reconciled using manufacturer, exact UPC and inspected-package evidence; original fields and prior review preserved')
             flags = override_flags + flags
             record.update(source=source, disposition=disposition, reason=reason, flags=flags)
             flag_reasons.update(flags)
@@ -720,7 +812,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 # Exact normalized expression and department only. No fuzzy
                 # matching, synonym mapping, or deletion of brand/age/proof.
                 key = (public['category'], public['department'], public['name'].casefold())
-                if restoring or resolving or repairing:
+                if restoring or resolving or repairing or (review and review.get('identityResolution')):
                     key += ('restored-source-sku', sku)
                 # Exact source title says regular Silver, but the first-100 image
                 # audit found UPC-specific evidence of an Artist Series package.
@@ -803,9 +895,18 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     for product in products:
         product['variants'].sort(key=lambda v: v['sourceRow'])
     blocked_images = {sku for sku, review in source_reviews.items()
-                      if review['action'] != 'resolve_verified_identity'}
+                      if review['action'] != 'resolve_verified_identity' and not review.get('identityResolution')}
     blocked_images.update(entry['sku'] for entry in report_additions)
     variants_by_sku = {v['sku']: (p, v) for p in products for v in p['variants']}
+    records_by_sku = {record['sku']: record for record in master}
+    for sku, verification in name_verifications.items():
+        product, variant = variants_by_sku.get(sku, ({}, {}))
+        record = records_by_sku.get(sku, {})
+        if (not record.get('source') or record.get('sourceOrigin') == 'report'
+                or (verification['expectedUpc'], verification['expectedPublicName'], verification['expectedLabel'])
+                != (variant.get('upc'), product.get('name'), variant.get('label'))):
+            raise ValueError(f'Name verification does not match a current original-source variant: {sku}')
+        record['nameVerification'] = verification
     for sku, source_review in source_reviews.items():
         image_review = source_review.get('imageIdentityReview')
         if image_review is None:
@@ -898,13 +999,18 @@ def name_audit(catalog: dict, audit: dict) -> dict:
         if record['disposition'] != 'retained_variant':
             issues.append(record['reason'])
         correction = record.get('nameCorrection')
+        verification = record.get('nameVerification')
         evidence = correction['evidence'] if correction else record.get('identityReview', {}).get('evidence', [])
+        if verification:
+            evidence = evidence + verification['evidence']
         resolution = record.get('sourceReview', {})
-        resolved_identity = resolution.get('action') == 'resolve_verified_identity'
+        identity_resolution = resolution.get('identityResolution')
+        resolved_identity = resolution.get('action') == 'resolve_verified_identity' or bool(identity_resolution)
         if resolved_identity:
-            evidence = evidence + resolution['evidence']
+            evidence = evidence + (identity_resolution or resolution)['evidence']
         outcome = ('evidence_backed_identity_resolved' if resolved_identity else
                    'evidence_backed_correction_applied' if correction else
+                   'evidence_backed_name_verified_unchanged' if verification else
                    'identity_conflict_needs_review' if record.get('identityReview') else
                    'scanned_not_externally_verified')
         rows.append({'sourceRow': record['sourceRow'], 'sku': record['sku'],
@@ -913,14 +1019,16 @@ def name_audit(catalog: dict, audit: dict) -> dict:
                      'issues': issues, 'suggestedCorrections': suggestions, 'evidence': evidence,
                      'outcome': outcome,
                      'verifiedScope': 'product_name_identity_and_variant' if resolved_identity else
+                        'exact_upc_name_identity' if verification else
                         (correction['scope'] if correction else None)})
     return {'schemaVersion': 1, 'sourceSha256': audit['sourceSha256'],
             'summary': {'sourceRowsScanned': len(rows), 'rowsWithIssues': sum(bool(r['issues']) for r in rows),
                         'evidenceBackedCorrections': sum(bool(r.get('nameCorrection')) for r in audit['records']),
+                        'nameVerificationRecords': sum(bool(r.get('nameVerification')) for r in audit['records']),
                         'identityConflicts': sum(r['outcome'] == 'identity_conflict_needs_review' for r in rows),
                         'exactIdentitiesResolved': sum(r['outcome'] == 'evidence_backed_identity_resolved' for r in rows),
                         'fullyVerifiedNames': sum(r['verifiedScope'] in {'product_name_spelling', 'exact_upc_name_identity', 'product_name_identity_and_variant'} for r in rows),
-                        'scopeNote': 'All rows scanned for specified risks. Only listed corrections and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified.'},
+                        'scopeNote': 'All rows scanned for specified risks. Only listed corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified.'},
             'records': rows}
 
 

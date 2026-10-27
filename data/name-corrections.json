@@ -1875,7 +1875,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -1891,7 +1891,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         },
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/roasted",
@@ -1912,7 +1912,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -1928,7 +1928,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -1944,7 +1944,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -1960,7 +1960,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -2181,17 +2181,32 @@
       "sku": "2711",
       "expectedUpc": "074806000519",
       "expectedNameSha256": "d3a4937b39380a34d537817fc777873aa73a45c89e20bd6019cb27a5c29d80b0",
-      "replaceTextFrom": "STRWABERRY",
-      "replaceTextTo": "STRAWBERRY",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "DAILYS STRWABERRY 1 LTR",
+      "replaceTextTo": "Daily's Strawberry Mix 1 LTR",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
           "kind": "english_dictionary_ordinary_word_spelling",
           "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        },
+        {
+          "url": "https://dailyscocktails.com/ready-to-mix/strawberry/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0074806000519",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 074806000519; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/480/600/0519/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
         }
-      ],
-      "verifiedOn": "2026-10-26"
+      ]
     },
     {
       "sku": "3408",
@@ -2591,17 +2606,32 @@
       "sku": "8004",
       "expectedUpc": "078000019520",
       "expectedNameSha256": "57df6a985d3ea4432c78f08f67a12a8d0caa263654e9934c91b4c4042ddebb96",
-      "replaceTextFrom": "BOTTEL",
-      "replaceTextTo": "BOTTLE",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "SQUIRT 12OZBOTTEL",
+      "replaceTextTo": "Squirt Grapefruit Soda 12oz Bottle",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/bottle",
           "kind": "english_dictionary_ordinary_word_spelling",
           "supports": "Confirms only standard English spelling bottle; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        },
+        {
+          "url": "https://www.squirtsoda.com/amp",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0078000019520",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 078000019520; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/9520/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
         }
-      ],
-      "verifiedOn": "2026-10-26"
+      ]
     },
     {
       "sku": "7194",
@@ -2623,17 +2653,32 @@
       "sku": "7195",
       "expectedUpc": "850003628493",
       "expectedNameSha256": "f59449dacd152532f950a944f54049efecf62e3ec1be9ce380be38ca6d84a0ea",
-      "replaceTextFrom": "rop snacks",
-      "replaceTextTo": "Rap Snacks",
-      "scope": "brand_spelling_only",
+      "replaceTextFrom": "rop snacks  2.5ozhoney heat",
+      "replaceTextTo": "Rap Snacks Lil Baby Bar-B-Quin With My Honey Heat Potato Chips 2.5oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
         {
           "url": "https://www.rapsnacks.net/collections/frontpage",
           "kind": "manufacturer",
           "supports": "Only the stated brand spelling or duplicated word correction. No inferred size, flavor, pack count, or availability."
+        },
+        {
+          "url": "https://www.rapsnacks.net/collections/buy-bags/products/rap-snacks-lil-baby-bar-b-quin-with-my-honey-heat-potato-chips-2-5oz-bag",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0850003628493",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 850003628493; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/000/362/8493/3.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
         }
-      ],
-      "verifiedOn": "2026-10-26"
+      ]
     },
     {
       "sku": "1629",
@@ -2894,17 +2939,32 @@
       "sku": "2882",
       "expectedUpc": "049200043509",
       "expectedNameSha256": "db6cc47ffe18c5ac8e78172caec892b83f6c532e5c9b815a2c853c7616f27207",
-      "replaceTextFrom": "suger",
-      "replaceTextTo": "sugar",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "Domino suger 32OZ",
+      "replaceTextTo": "Domino Pure Cane Granulated Sugar 32oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/sugar",
           "kind": "english_dictionary_ordinary_word_spelling",
           "supports": "Confirms only standard spelling sugar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        },
+        {
+          "url": "https://www.dominosugar.com/products/granulated-sugar-boxes",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0049200043509",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 049200043509; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/920/004/3509/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "2962",
@@ -5323,13 +5383,13 @@
       "expectedUpc": "050000300624",
       "expectedNameSha256": "249abc16eb9539b4bf9d822a09e6e9754cbcbaf73a15b1199a3194ed36048154",
       "replaceTextFrom": "Nestle coffee mateorg",
-      "replaceTextTo": "Nestl\u00e9 Coffee-mate Original",
+      "replaceTextTo": "Nestlé Coffee-mate Original",
       "scope": "exact_upc_name_identity",
       "evidence": [
         {
           "url": "https://smartlabel.nestleusa.com/050000300624-0001-en-US/index.html",
           "kind": "manufacturer_exact_upc_smartlabel",
-          "supports": "Nestl\u00e9 SmartLabel identifies UPC050000300624 as Coffee mate The Original, net6oz. Complete name clarified; existing source6oz is unchanged."
+          "supports": "Nestlé SmartLabel identifies UPC050000300624 as Coffee mate The Original, net6oz. Complete name clarified; existing source6oz is unchanged."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -5339,13 +5399,13 @@
       "expectedUpc": "050000447718",
       "expectedNameSha256": "01b2f2adf579ab2efbaa7a447f8aacc2819245e5121b73ee935094676b0c5642",
       "replaceTextFrom": "Nestle coffee mateorg",
-      "replaceTextTo": "Nestl\u00e9 Coffee-mate Original",
+      "replaceTextTo": "Nestlé Coffee-mate Original",
       "scope": "exact_upc_name_identity",
       "evidence": [
         {
           "url": "https://www.nestleprofessional.us/coffee-mate/original-powder-creamer-12-x-11-oz",
           "kind": "manufacturer_product_identity",
-          "supports": "Nestl\u00e9 Professional identifies Original powdered creamer in11oz canisters. Source11oz is unchanged; exact individual UPC is corroborated separately, and case pack is not assigned to this sourceSKU."
+          "supports": "Nestlé Professional identifies Original powdered creamer in11oz canisters. Source11oz is unchanged; exact individual UPC is corroborated separately, and case pack is not assigned to this sourceSKU."
         },
         {
           "url": "https://www.officedepot.com/a/products/919573/Nestle-Coffee-mate-Powdered-Creamer-Canister/?bvstate=pg%3A8%2Fct%3Ar",
@@ -5445,13 +5505,13 @@
       "expectedUpc": "088076186880",
       "expectedNameSha256": "469ec1177ae2666d157decd8a40e74140dde1bdace56b079dce8b8178165d4a1",
       "replaceTextFrom": "jalapen",
-      "replaceTextTo": "jalape\u00f1o",
+      "replaceTextTo": "jalapeño",
       "scope": "expression_spelling_only",
       "evidence": [
         {
           "url": "https://www.casamigos.com/cms?cocktailName=casamigas-spicy-espresso-martini&locale=en-us&slug=%2Fcocktails%2F%3AcocktailName",
           "kind": "manufacturer_expression_spelling",
-          "supports": "Official Casamigos recipe names Casamigas Jalape\u00f1o Tequila, confirming the complete jalape\u00f1o word."
+          "supports": "Official Casamigos recipe names Casamigas Jalapeño Tequila, confirming the complete jalapeño word."
         },
         {
           "url": "https://www.cub.com/store/cub-liquors/products/46124183-casamigos-jalapeno-blanco-750-ml",
@@ -6641,7 +6701,7 @@
         {
           "url": "https://goodtimestobacco.com/cigarillo/",
           "kind": "manufacturer",
-          "supports": "Manufacturer identifies 4K\u2019s as tobacco cigars/cigarillos; fix transposed letters in cigar only. Do not change flavor, infer pack count from removed promotional text, or verify complete identity."
+          "supports": "Manufacturer identifies 4K’s as tobacco cigars/cigarillos; fix transposed letters in cigar only. Do not change flavor, infer pack count from removed promotional text, or verify complete identity."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -6657,7 +6717,7 @@
         {
           "url": "https://goodtimestobacco.com/cigarillo/",
           "kind": "manufacturer",
-          "supports": "Manufacturer identifies 4K\u2019s as tobacco cigars/cigarillos; fix transposed letters in cigar only. Do not change flavor, infer pack count from removed promotional text, or verify complete identity."
+          "supports": "Manufacturer identifies 4K’s as tobacco cigars/cigarillos; fix transposed letters in cigar only. Do not change flavor, infer pack count from removed promotional text, or verify complete identity."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7664,7 +7724,7 @@
         {
           "url": "https://investors.utzsnacks.com/news/news-details/2021/Utz-Brands-to-Acquire-Vitners-Snack-Food-Brand-and-Distribution-Assets/default.aspx",
           "kind": "manufacturer",
-          "supports": "Manufacturer states VITNER\u2019S registered brand; repair missing t and possessive punctuation only. Original crunchy snack expression and UPC are retained; full flavor/package identity not verified."
+          "supports": "Manufacturer states VITNER’S registered brand; repair missing t and possessive punctuation only. Original crunchy snack expression and UPC are retained; full flavor/package identity not verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7680,7 +7740,7 @@
         {
           "url": "https://investors.utzsnacks.com/news/news-details/2021/Utz-Brands-to-Acquire-Vitners-Snack-Food-Brand-and-Distribution-Assets/default.aspx",
           "kind": "manufacturer",
-          "supports": "Manufacturer states VITNER\u2019S registered brand; repair missing t and possessive punctuation only. Original crunchy snack expression and UPC are retained; full flavor/package identity not verified."
+          "supports": "Manufacturer states VITNER’S registered brand; repair missing t and possessive punctuation only. Original crunchy snack expression and UPC are retained; full flavor/package identity not verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7696,7 +7756,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7712,7 +7772,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7728,7 +7788,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7744,7 +7804,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7760,7 +7820,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7776,7 +7836,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7792,7 +7852,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7808,7 +7868,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7824,7 +7884,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7840,7 +7900,7 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -7856,10 +7916,1772 @@
         {
           "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
         }
       ],
       "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "239",
+      "expectedUpc": "078000052169",
+      "expectedNameSha256": "ff4ef80713c542c75370a9f868d888dba6866a870c5bc285d798135620ea3fd9",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "A &W ROOT BEER",
+      "replaceTextTo": "A&W Root Beer",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.rootbeer.com/",
+          "supports": "Manufacturer identifies A&W Root Beer; ordinary root beer, not cream soda or zero sugar."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0078000052169",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 078000052169. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/005/2169/2.jpg",
+          "supports": "A&W Root Beer is readable on the can and carton; carton says 12 pack and 12 oz cans. Correct the separated A &W brand spelling only."
+        }
+      ]
+    },
+    {
+      "sku": "524",
+      "expectedUpc": "613008725754",
+      "expectedNameSha256": "4fa4bf6e5cb9e0baa15655da4f838e6dccc8cc249de6006b2773fbfcda181222",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "ARIZONA FRUIT PUNCH",
+      "replaceTextTo": "AriZona Fruit Punch Juice Cocktail",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/fruit-punch-20oz-tallboy",
+          "supports": "Manufacturer names the 20 oz bottle Fruit Punch Juice Cocktail. Its online case quantity is not adopted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0613008725754",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 613008725754. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/5754/1.jpg",
+          "supports": "AriZona Fruit Punch and Fruit Juice Cocktail are readable on the purple bottle; bottom says 20 fl oz. Preserve source BTL and 20OZ."
+        }
+      ]
+    },
+    {
+      "sku": "607",
+      "expectedUpc": "613008751210",
+      "expectedNameSha256": "b99fcb757884f41659d530f39a12da080f3d069503a725b40f7bdd7f7b0cee06",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Arizona sweet tea",
+      "replaceTextTo": "AriZona Southern Style Sweet Tea",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/sweet-tea-20oz-tallboy",
+          "supports": "Manufacturer lists Sweet Tea in 20 oz bottles; Southern Style wording is independently visible on this approved package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0613008751210",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 613008751210. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/875/1210/3.jpg",
+          "supports": "AriZona, Real Brewed Sweet Tea, Southern Style, and 20 fl oz / 591 mL are readable. No Arnold Palmer or lemonade wording."
+        }
+      ]
+    },
+    {
+      "sku": "2177",
+      "expectedUpc": "014800513240",
+      "expectedNameSha256": "de113656277858cd82a37bb2fdfcd75b1da5309892ad09f2a2fb9afc83a10821",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Clamato",
+      "replaceTextTo": "Clamato Original Tomato Cocktail",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.clamato.com/en",
+          "supports": "Manufacturer identifies Clamato Original as its tomato-juice cocktail product."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world.openfoodfacts.org/product/0014800513240",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 014800513240. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/480/051/3240/3.400.jpg",
+          "supports": "Clamato The Original is readable; Spanish upper text says tomato cocktail from concentrate. Bottle says 32 fl oz / 946 mL. Original is missing from the source title."
+        }
+      ]
+    },
+    {
+      "sku": "2270",
+      "expectedUpc": "049000042559",
+      "expectedNameSha256": "0ecee655bb51c88018291690171c9f0c7a44ba73febb6f7fa4e7b87a14151573",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Coke Zero",
+      "replaceTextTo": "Coca-Cola Zero Sugar",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/coca-cola/products/zero",
+          "supports": "Manufacturer names Coca-Cola Zero Sugar, formerly Coke Zero."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0049000042559",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 049000042559. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/004/2559/6.jpg",
+          "supports": "Red carton explicitly says Coca-Cola Zero Sugar and 12 cans; bottom gives 12 fl oz cans. No caffeine-free or flavored expression appears."
+        }
+      ]
+    },
+    {
+      "sku": "2709",
+      "expectedUpc": "074806000526",
+      "expectedNameSha256": "0916112d17461c3f52b0ac60adb1559cbf7698704101c00f75f6c066d0518c75",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Dailys Straw Daiq",
+      "replaceTextTo": "Daily's Strawberry Cocktail Mix",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://dailyscocktails.com/ready-to-mix/strawberry/",
+          "supports": "Manufacturer calls this Strawberry Mix in its non-alcoholic cocktail-mixer line and lists a half-gallon size; not its ready-to-drink Strawberry Daiquiri pouch."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0074806000526",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 074806000526. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/480/600/0526/1.jpg",
+          "supports": "Label says Daily's Cocktails, strawberry mix, NON-ALCOHOLIC, and net 64 fl oz. Expand the abbreviated source into the photographed mixer, without assigning alcohol strength."
+        }
+      ]
+    },
+    {
+      "sku": "2860",
+      "expectedUpc": "050037014501",
+      "expectedNameSha256": "6ea0a08f0da219182e6431f600d3f38f0ab2f46252d9b10b2970758b8239b013",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Disaronno",
+      "replaceTextTo": "Disaronno Originale",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://disaronno.com/en/our-story/",
+          "supports": "Manufacturer names Disaronno Originale; do not conflate with Velvet or decorated limited editions."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world.openfoodfacts.org/product/0050037014501",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 050037014501. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/003/701/4501/2.400.jpg",
+          "supports": "Plain amber bottle label reads DISARONNO ORIGINALE, 750 mL, and 28% alc/vol. Add Originale only; source has no strength token and this task does not add one."
+        }
+      ]
+    },
+    {
+      "sku": "2942",
+      "expectedUpc": "028400090896",
+      "expectedNameSha256": "35561c50ee769d1dfd3a29c424ee16ca5551bd845793f60be6ddf0eaa814396e",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "DORITOS NACHO CHEESE",
+      "replaceTextTo": "Doritos Nacho Cheese Flavored Tortilla Chips",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.doritos.com/products/doritos-nacho-cheese-flavored-tortilla-chips?hl=en-CA",
+          "supports": "Manufacturer gives the full Doritos Nacho Cheese Flavored Tortilla Chips product name; quantity remains source-specific."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0028400090896",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 028400090896. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/009/0896/11.jpg",
+          "supports": "Red bag reads Doritos Nacho Cheese Flavored, Tortilla Chips, and net wt 1 oz / 28.3 g. No Spicy Nacho or Flamin Hot qualifier."
+        }
+      ]
+    },
+    {
+      "sku": "3179",
+      "expectedUpc": "887725000054",
+      "expectedNameSha256": "25b8678c1cfccdf3441572bbc02a956b8e009776366e383cfacec6d54730c153",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "electrolit  orange",
+      "replaceTextTo": "Electrolit Orange Mandarine Electrolyte Beverage",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://electrolit.com/products/orange-ih",
+          "supports": "US manufacturer names Orange Electrolyte Beverage. Older Orange Mandarine wording comes from the inspected exact package and exact-UPC distributor evidence."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0887725000054",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 887725000054. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/772/500/0054/1.jpg",
+          "supports": "Label reads Electrolit Electrolyte Beverage, ORANGE-MANDARINE, and 21 fl oz (625 mL). Source orange is compatible but abbreviated relative to this specific label."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://openforcefield.jcsalesweb.com/Catalog/Product/0/0/534736-ELECTROLIT-ORANGEMANDARINE-CRV-21-OZ",
+          "supports": "Previously reviewed distributor evidence explicitly identifies source UPC 887725000054 as Orange/Mandarine 21 oz; retained from the approved-image audit."
+        }
+      ]
+    },
+    {
+      "sku": "3463",
+      "expectedUpc": "049000043273",
+      "expectedNameSha256": "ff5ce8125e5348601057590eb1f1114da34f2a4967a7b8344c4ef9a965529bd9",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Fresca Blk Cherry",
+      "replaceTextTo": "Fresca Black Cherry Citrus",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/fresca-sparkling-soda",
+          "supports": "Manufacturer names Fresca Black Cherry Citrus separately from Blackberry Citrus."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0049000043273",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 049000043273. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/004/3273/1.jpg",
+          "supports": "Carton can illustration explicitly says BLACK CHERRY CITRUS; 12-12 fl oz cans printed at bottom. Expand Blk and restore Citrus, not Blackberry."
+        }
+      ]
+    },
+    {
+      "sku": "3644",
+      "expectedUpc": "052000135145",
+      "expectedNameSha256": "c0624a186440d93886e3a758027681e070572c5f9ff02ab731420650179ad238",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Gatorade 28ozorange",
+      "replaceTextTo": "Gatorade Thirst Quencher 28oz Orange",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.pepsicoproductfacts.com/Home/product?gtin=00052000135145",
+          "supports": "Manufacturer exact GTIN 00052000135145 identifies Gatorade Orange, 28 fl oz; Thirst Quencher wording is present on the bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world.openfoodfacts.org/product/0052000135145",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 052000135145. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/013/5145/1.400.jpg",
+          "supports": "Gatorade Thirst Quencher ORANGE appears on the gray label, with 28 fl oz / 828 mL at base. No G Zero, G2, Fierce, or Frost line marker."
+        }
+      ]
+    },
+    {
+      "sku": "3659",
+      "expectedUpc": "052000324815",
+      "expectedNameSha256": "7d4e2365fade34a1de6fcee734871f5b5d7c9f32f67bd8164053e59fd71f72a2",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "GATORADE COOL BLUE",
+      "replaceTextTo": "Gatorade Thirst Quencher Cool Blue",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.gatorade.com/bulk-orders/gatorade-thirst-quencher/cool-blue-00052000324815",
+          "supports": "Manufacturer exact GTIN page names Gatorade Thirst Quencher Cool Blue 20 oz."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0052000324815",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 052000324815. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/032/4815/9.jpg",
+          "supports": "Bottle label reads Gatorade Thirst Quencher COOL BLUE and 20 fl oz / 591 mL. Add product line while preserving the exact flavor."
+        }
+      ]
+    },
+    {
+      "sku": "3860",
+      "expectedUpc": "028400079167",
+      "expectedNameSha256": "f15fe33efeb33d266bf9b62bec98c469084a50c3be6c5431efcc750366c67d3a",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "grandmas chocolate chip",
+      "replaceTextTo": "Grandma's Chocolate Chip Cookies ",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.pepsicoproductfacts.com/Home/Product?gtin=00028400079167",
+          "supports": "Manufacturer exact GTIN names Grandma’s Cookies Chocolate Chip 2.5 oz, equivalent to the source/photo 70.8 g; source unit remains unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0028400079167",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 028400079167. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/007/9167/2.jpg",
+          "supports": "Bag reads Grandma's Chocolate Chip, Cookies, and net wt 2.5 oz (70.8 g). Not Mini Chocolate Chip, Oatmeal Raisin, or Chocolate Brownie."
+        }
+      ]
+    },
+    {
+      "sku": "4120",
+      "expectedUpc": "072600009622",
+      "expectedNameSha256": "2dcad7d330e11eef08b923bada872bbba843fd9bcef4d7b671fb9e15fb7340fd",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Herr's Red Hot",
+      "replaceTextTo": "Herr's Red Hot Potato Chips",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://shop.herrs.com/collections/potato-chips/products/red-hot",
+          "supports": "Manufacturer calls the product Herr’s Red Hot Potato Chips and lists 1 oz bags."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0072600009622",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 072600009622. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/260/000/9622/2.jpg",
+          "supports": "Herr's red HOT POTATO CHIPS and net wt 1 oz / 28.4 g are clear. Distinct from Hot Sauce Ripple or Red Hot popcorn."
+        }
+      ]
+    },
+    {
+      "sku": "4289",
+      "expectedUpc": "075669111565",
+      "expectedNameSha256": "83cced59e501e4304d07841a4a121649d0d24594c3dba1b4a6cd16cc0c480741",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "iberia sardines jalapeno",
+      "replaceTextTo": "Iberia Sardines in Tomato Sauce with Jalapeno Slices ",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://iberiafoods.com/product/iberia-oval-sardines-in-tomato-w-jalapenos-slices-15-oz/",
+          "supports": "Manufacturer exact UPC 075669111565 names oval sardines in tomato with jalapeño slices, 15 oz; source 425g is preserved."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0075669111565",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 075669111565. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/1565/1.jpg",
+          "supports": "Oval can clearly reads Iberia Sardines In Tomato Sauce with Jalapeno Slices, net wt 15 oz (425g). Sauce and sliced jalapeño wording are missing from source."
+        }
+      ]
+    },
+    {
+      "sku": "4757",
+      "expectedUpc": "854651003640",
+      "expectedNameSha256": "8360ac281b5e36372a0f36e93d9fcc8d5d2afa65d2c04e1d19f0ccafa7ab97ce",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "KARMA BERRY CHERRY",
+      "replaceTextTo": "Karma Probiotic Water Berry Cherry ",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkkarma.com/pages/berry-cherry-probiotic-water",
+          "supports": "Manufacturer identifies Karma Probiotic Berry Cherry, a distinct product line from its other waters."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0854651003640",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 854651003640. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/465/100/3640/1.jpg",
+          "supports": "Bottle reads karma wellness water, probiotics, berry cherry, and 18 fl oz. Add Probiotic Water line; do not copy digestive-health claims."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://lp.drinkkarma.com/variety/probiotic-berry-cherry/",
+          "supports": "Older manufacturer product page confirms Berry Cherry Probiotic Water, one 18 oz bottle."
+        }
+      ]
+    },
+    {
+      "sku": "6961",
+      "expectedUpc": "611269133448",
+      "expectedNameSha256": "ae4d8a3a4bd79fb1b74089d40259e7205c038f04cf297f04f9ec1fa3397ade26",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Red Bull",
+      "replaceTextTo": "Red Bull Energy Drink",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.redbull.com/energydrink/red-bull-energy-drink",
+          "supports": "Manufacturer names original Red Bull Energy Drink and lists 20 fl oz."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0611269133448",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 611269133448. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/126/913/3448/1.jpg",
+          "supports": "Blue/silver can reads Red Bull ENERGY DRINK and 20 fl oz / 591 mL. No Sugarfree, Zero, or Edition flavor appears."
+        }
+      ]
+    },
+    {
+      "sku": "7675",
+      "expectedUpc": "786162001511",
+      "expectedNameSha256": "52226995bb8eaefcc4bd4df29ce744c5296d105baf36e06a38eb529dac98359f",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Smart Water",
+      "replaceTextTo": "smartwater Vapor-Distilled Water",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/smartwater/products",
+          "supports": "Manufacturer identifies smartwater as vapor-distilled water, distinct from alkaline and sparkling expressions."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world.openfoodfacts.org/product/0786162001511",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 786162001511. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/078/616/200/1511/3.400.jpg",
+          "supports": "Bottle reads smartwater, vapor distilled water and electrolytes for taste; bottom gives 700 mL / 23.7 fl oz. No alkaline or sparkling marker. Add product type and canonical one-word brand only."
+        }
+      ]
+    },
+    {
+      "sku": "7930",
+      "expectedUpc": "070462098501",
+      "expectedNameSha256": "d0f315123ba0fa1ab58c2225e34ae587c1c74f7a4f73369a9e43a8c3f43d96f3",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Sour Patch Kids",
+      "replaceTextTo": "Sour Patch Kids Original Soft & Chewy Candy",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.snackworks.com/products/sour-patch-kids-soft-chewy-gummy-candy-2-oz/",
+          "supports": "Manufacturer names the 2 oz Sour Patch Kids Original Soft & Chewy Candy product."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0070462098501",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 070462098501. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/046/209/8501/3.jpg",
+          "supports": "Box shows SOUR PATCH KIDS, Soft & Chewy Candy, assorted kid shapes, and net wt 2 oz (56g). Manufacturer resolves the Original line; no Watermelon, Extreme or Big Kids marker."
+        }
+      ]
+    },
+    {
+      "sku": "8002",
+      "expectedUpc": "049000050158",
+      "expectedNameSha256": "adc5d613822c596809f36ec13be3ce20256d7c0621dd7ecb9abdf2a2ffc974e2",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "SPRITE",
+      "replaceTextTo": "Sprite Lemon-Lime Soda",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/sprite/products",
+          "supports": "Manufacturer calls original Sprite lemon-lime soda and lists 2 L bottles."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world.openfoodfacts.org/product/0049000050158",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 049000050158. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://images.openfoodfacts.org/images/products/004/900/005/0158/front_en.41.400.jpg",
+          "supports": "Clear bottle reads Sprite LEMON-LIME and 2L. No Zero Sugar, Chill, tea, or additional flavor."
+        }
+      ]
+    },
+    {
+      "sku": "8009",
+      "expectedUpc": "078000016406",
+      "expectedNameSha256": "4250726744fb07ff484b345e9e27f1ae4913faac197259688ca4d4a0a98db860",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "SQUIRT",
+      "replaceTextTo": "Squirt Grapefruit Soda",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.squirtsoda.com/amp",
+          "supports": "Manufacturer names original Squirt Grapefruit Flavored Soda separately from Ruby Red."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0078000016406",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 078000016406. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/6406/2.jpg",
+          "supports": "Bottle explicitly reads Squirt Grapefruit Soda and 20 oz. Add missing grapefruit identity; not Ruby Red."
+        }
+      ]
+    },
+    {
+      "sku": "8911",
+      "expectedUpc": "048500202722",
+      "expectedNameSha256": "2be677b235a22145595dd60aa3be01f34e108c0614ff6827a324b7c7e811cf28",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Tropicana pineapple mang",
+      "replaceTextTo": "Tropicana Pineapple Mango with Lime",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.tropicana.com/products/pineapple-mango/",
+          "supports": "Manufacturer confirms Pineapple Mango brand/expression; current Refreshers wording and 46 oz size are not applied to the older 52 oz package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0048500202722",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 048500202722. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/020/2722/3.jpg",
+          "supports": "Bottle explicitly reads Tropicana PINEAPPLE MANGO WITH LIME, drink with other natural flavors, and 52 fl oz. Restore Mango spelling and missing with Lime; do not rename to current Refreshers line."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.dollargeneral.com/p/null/048500202722",
+          "supports": "Retailer exact source UPC lists Tropicana Pineapple Mango with Lime, 52 fl oz, corroborating the older photographed expression."
+        }
+      ]
+    },
+    {
+      "sku": "9266",
+      "expectedUpc": "898999010007",
+      "expectedNameSha256": "e335c9e2688aa44e6f15ac17bfa5346c92ae772f967a1cdd6ddda8ad91e3e471",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Vita Coco water",
+      "replaceTextTo": "Vita Coco Pure Coconut Water",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://vitacoco.com/products/coconut-water",
+          "supports": "Manufacturer identifies original coconut water in 16.9 oz cartons; photographed older carton names Pure Coconut Water."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0898999010007",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 898999010007. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/089/899/901/0007/10.jpg",
+          "supports": "Carton clearly reads VITA COCO pure coconut water and 500 mL / 16.9 fl oz. Source water is incomplete; no Pineapple or Pressed expression appears."
+        }
+      ]
+    },
+    {
+      "sku": "9417",
+      "expectedUpc": "041800716005",
+      "expectedNameSha256": "31b8af1054c2cde71b5a31f198d159ad8bcb95fe53a6a2a8dc502112eee568f1",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Welchs Red Grape",
+      "replaceTextTo": "Welch's Red Grape Juice Cocktail",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.welchs.com/sparkling/red-grape/",
+          "supports": "Manufacturer identifies non-alcoholic Sparkling Red Grape Juice Cocktail, 25.4 oz bottle. Source 750ml N/A Sparkling tokens are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0041800716005",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 041800716005. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/071/6005/1.jpg",
+          "supports": "Bottle says Welch's Sparkling NON-ALCOHOLIC RED GRAPE JUICE COCKTAIL and 750 mL. Add apostrophe and Juice Cocktail only; source N/A Sparkling already preserves alcohol-free/sparkling identity."
+        }
+      ]
+    },
+    {
+      "sku": "101207",
+      "expectedUpc": "076183643631",
+      "expectedNameSha256": "15b5e59f5e2052cc4e03dfd9134f601b8b91f90f0e4a91411bb9444cc0cfbe53",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "SNAPPLE KIWI STRAW",
+      "replaceTextTo": "Snapple Kiwi Strawberry Juice Drink",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://snapple.com/products/snapple-kiwi-strawberry-juice",
+          "supports": "Manufacturer names Kiwi Strawberry in its juice line and lists 64 oz."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0076183643631",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 076183643631. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/618/364/3631/2.jpg",
+          "supports": "Bottle reads Snapple kiwi strawberry FLAVORED JUICE DRINK and 64 OZ. Expand truncated Straw to Strawberry and the product type; no tea or zero-sugar marker."
+        }
+      ]
+    },
+    {
+      "sku": "101291",
+      "expectedUpc": "070491103092",
+      "expectedNameSha256": "83211a9e733a8331adacc66df8a45971b7244444feb36f743cc6d25628bd7a63",
+      "verifiedOn": "2026-10-27",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "REAL STRAWBERRY PUREE",
+      "replaceTextTo": "Real Strawberry Puree Infused Syrup",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.realingredients.com/product/strawberry-real/",
+          "supports": "Manufacturer names Strawberry Reàl as strawberry puree syrup and explicitly describes fruit infused into cane-sugar syrup."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0070491103092",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 070491103092. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/049/110/3092/1.jpg",
+          "supports": "Squeeze bottle reads Strawberry REÀL, Strawberry Puree, Infused Syrup, and 16.9 fl oz (500mL). Restore Infused Syrup so title does not suggest plain fruit puree."
+        }
+      ]
+    },
+    {
+      "sku": "426",
+      "expectedUpc": "038000198496",
+      "expectedNameSha256": "4ce3b99723980650fa8a63a62d0af76db9a7089efd6ec21ece5e263e84dbb679",
+      "replaceTextFrom": "apple jacks 10.1oz",
+      "replaceTextTo": "Kellogg's Apple Jacks Cereal 10.1oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.wkkellogg.com/products/apple-jacks-original",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0038000198496",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 038000198496; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/800/019/8496/5.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "536",
+      "expectedUpc": "613008725716",
+      "expectedNameSha256": "ab7c13ff58e2000683b2b1036dc6312cb2541d650dfea1e8fc8716058b02e6d1",
+      "replaceTextFrom": "ARIZONA GREEN TEA 20OZ BTL",
+      "replaceTextTo": "AriZona Green Tea with Ginseng & Honey 20oz Bottle",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkarizona.com/products/green-tea-20-oz",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0613008725716",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 613008725716; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/5716/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "840",
+      "expectedUpc": "031000126001",
+      "expectedNameSha256": "d6caabb3821ea5d8a57ff37c94d1e39a02aba62b25a315f3f2b48c82d2d9feaa",
+      "replaceTextFrom": "Banquet Hot&spicy Wings11oz",
+      "replaceTextTo": "Banquet Hot & Spicy Bone-In Chicken Wings 11oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/fried-chicken-and-chicken-wings/hot-spicy-wings",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0031000126001",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 031000126001; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/012/6001/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "1609",
+      "expectedUpc": "079581995241",
+      "expectedNameSha256": "f9141e47c9c8e0ca880420cccb40611e0b12a497c5b26c9e1d74b241ec5c93c5",
+      "replaceTextFrom": "Calypso Ocean Blue Lem 20oz",
+      "replaceTextTo": "Calypso Ocean Blue Lemonade 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://drinkcalypso.com/flavors/ocean-blue-lemonade/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0079581995241",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 079581995241; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/958/199/5241/4.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "1671",
+      "expectedUpc": "078000156461",
+      "expectedNameSha256": "5dee8ade65704a3541725a435cfab4114d9a833701d0466c548a6c66fe33db10",
+      "replaceTextFrom": "CANADA DRY CRANBERRY 2L",
+      "replaceTextTo": "Canada Dry Cranberry Ginger Ale 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.canadadry.com/products/ginger-ale-cranberry",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0078000156461",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 078000156461; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/015/6461/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "1983",
+      "expectedUpc": "028400435413",
+      "expectedNameSha256": "3629b684a34c9e085ff3ef3e7eb289e422b32b84466afb8840e45a564fe7f3a3",
+      "replaceTextFrom": "Cheetos puffs 3 3/8OZflamin hot",
+      "replaceTextTo": "Cheetos Puffs Flamin' Hot Cheese Flavored Snacks 3 3/8oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.cheetos.com/index.php/products/cheetos-puffs-flamin-hot-cheese-flavored-snacks",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0028400435413",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 028400435413; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/043/5413/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "2263",
+      "expectedUpc": "049000028904",
+      "expectedNameSha256": "5ad71a9ac1d1fa5057d98231ae12ca9610eda46cceda3feeaefe61c2fe2554c8",
+      "replaceTextFrom": "Coke 12pk 12ozPack",
+      "replaceTextTo": "Coca-Cola Original Taste 12pk 12oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.coca-cola.com/us/en/brands/coca-cola/products/original?redirect=true",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0049000028904",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 049000028904; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/002/8904/5.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "2439",
+      "expectedUpc": "853004004952",
+      "expectedNameSha256": "35f10915d4553e7379051627b637f5c389c1ae397ef4d4aa473fd4fdefab4e24",
+      "replaceTextFrom": "CORE WATER23.9 FL OZ",
+      "replaceTextTo": "Core Hydration Nutrient Enhanced Water 23.9 FL OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://news.keurigdrpepper.com/2018-09-27-Keurig-Dr-Pepper-to-Acquire-Core-R-a-Premium-Enhanced-Beverage-Company",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0853004004952",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 853004004952; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/300/400/4952/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "2705",
+      "expectedUpc": "074806000564",
+      "expectedNameSha256": "8f41de78d7105e4906acd8c0152e06ec40375e91af8714192f418e0ccdc27bf9",
+      "replaceTextFrom": "Dailys Peach 64oz",
+      "replaceTextTo": "Daily's Peach Mix 64oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://dailyscocktails.com/about-us/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0074806000564",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 074806000564; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/480/600/0564/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "2826",
+      "expectedUpc": "049000028911",
+      "expectedNameSha256": "abd43e4517a7ec151a9bba39e0d0b4cc7950fb4f7dbc11f26455de4868a6db17",
+      "replaceTextFrom": "Diet Coke 12pk 12ozPack",
+      "replaceTextTo": "Diet Coke 12pk 12oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.coca-cola.com/us/en/offerings/faq/whats-the-difference-between-coca-cola-zero-sugar-and-diet-coke",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0049000028911",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 049000028911; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/002/8911/6.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "3016",
+      "expectedUpc": "078000082166",
+      "expectedNameSha256": "1f03c1a50d6730d1312e80c3ca74165b54660678f8b7e470f98118b1f579f899",
+      "replaceTextFrom": "DR. PEPPER 12PK 12OZPACK",
+      "replaceTextTo": "Dr Pepper 12pk 12oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.drpepper.com/corporateinfo/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0078000082166",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 078000082166; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/008/2166/3.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "3206",
+      "expectedUpc": "721059707510",
+      "expectedNameSha256": "4273ee544db52d6f00c3a8434ea4a669aa613766f023ebeafc2ccfc6002f46e9",
+      "replaceTextFrom": "Espolon Reposado 750ml",
+      "replaceTextTo": "Espolòn Reposado Tequila 750ml",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.espolontequila.com/our-tequilas/tequila-reposado/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0721059707510",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 721059707510; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/072/105/970/7510/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "3292",
+      "expectedUpc": "049000030730",
+      "expectedNameSha256": "f9ce6ddde92ff20f1ddd491a612677989023bafc400dc94c992e1e2031ab9ce3",
+      "replaceTextFrom": "Fanta Orange 12pk 12ozPack",
+      "replaceTextTo": "Fanta Orange 12pk 12oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.coca-cola.com/us/en/brands/fanta/products?redirect=true",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0049000030730",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 049000030730; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/003/0730/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "3648",
+      "expectedUpc": "052000104110",
+      "expectedNameSha256": "c542b24b7efa86f9a076946b9be6eeb180c3df215a5a32c8318989b51930c644",
+      "replaceTextFrom": "Gatorade 28ozGreen Apple",
+      "replaceTextTo": "Gatorade Fierce Green Apple Thirst Quencher 28oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Sports-Drinks/Gatorade-Fierce-Green-Apple/p/1-95BUR-2",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0052000104110",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 052000104110; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/010/4110/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "3685",
+      "expectedUpc": "052000324822",
+      "expectedNameSha256": "27c9781e644fd8e64714612bcf61612ce915e465b3ebb797f97af6489050a775",
+      "replaceTextFrom": "Gatorade Grape 20oz",
+      "replaceTextTo": "Gatorade Fierce Grape Thirst Quencher 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.gatorade.com/sports-drinks/gatorade-thirst-quencher/fierce-grape",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0052000324822",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 052000324822; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/032/4822/3.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "4118",
+      "expectedUpc": "072600011984",
+      "expectedNameSha256": "9a53230f79df32591b757a50309db7a989e3baa279ce52f650dd9f0fdf778b78",
+      "replaceTextFrom": "Herr's ranch chips 1oz",
+      "replaceTextTo": "Herr's Ragin' Ranch Potato Chips 1oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.rrvendinginc.com/products-chips.html",
+          "kind": "distributor",
+          "supports": "Direct vending distributor lists Herr’s Ragin’ Ranch. Historical exact package wording retained; current Creamy Ranch & Habanero not substituted."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0072600011984",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 072600011984; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/260/001/1984/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.herrs.com/",
+          "supports": "Manufacturer confirms the Herr's potato-chip brand. Historical Ragin' Ranch expression is supported separately by the inspected exact-UPC package and direct distributor, not by current flavor offerings."
+        }
+      ]
+    },
+    {
+      "sku": "4272",
+      "expectedUpc": "075669080014",
+      "expectedNameSha256": "57778e364c1877f702318fac5187b65f30a32c79be95eaf523a3f7d61c658350",
+      "replaceTextFrom": "IBERIA  YELLOW RICE   227G",
+      "replaceTextTo": "Iberia Spanish Style Seasoned Yellow Rice 227g",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://iberiafoods.com/product/yellow-rice/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0075669080014",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 075669080014; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/908/0014/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "4288",
+      "expectedUpc": "075669111121",
+      "expectedNameSha256": "6d992acd2c811cce695ce742b25c0b4aa22def84a3ebda341aeeaf7d28acaa51",
+      "replaceTextFrom": "IBERIA SARDINES  TOMATO SA425G",
+      "replaceTextTo": "Iberia Sardines in Tomato Sauce 425g",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://iberiafoods.com/product/sardines/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0075669111121",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 075669111121; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/1121/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "4494",
+      "expectedUpc": "090478410616",
+      "expectedNameSha256": "bb06de1f796484abafad475c728c1394fa755cece128da4fc16774c0dd1990fc",
+      "replaceTextFrom": "Jarritos Mineragua 12.5oz",
+      "replaceTextTo": "Jarritos Mineragua Club Soda 12.5oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://mineragua.com/our-products/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0090478410616",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 090478410616; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/009/047/841/0616/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "5206",
+      "expectedUpc": "190298000254",
+      "expectedNameSha256": "27d37cf173c7f5e7e1355c128bffff24c0d4f34248a891eee58208c926b86cb3",
+      "replaceTextFrom": "LOUISIANA HOT SAUCE 12OZ",
+      "replaceTextTo": "Louisiana Original Hot Sauce 12oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://louisianahotsauce.com/hot-sauces/louisiana-hot-sauce-original/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0190298000254",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 190298000254; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/019/029/800/0254/4.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "5913",
+      "expectedUpc": "072718100266",
+      "expectedNameSha256": "b88b6393af90622be32c3bbb6af2b2e06b272f97dfc0afb8856d825f26030c9c",
+      "replaceTextFrom": "MR PURE ORANGE 16OZ",
+      "replaceTextTo": "Mr. Pure 100% Orange Juice 16oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.nationalbeverage.com/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0072718100266",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 072718100266; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/271/810/0266/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "5972",
+      "expectedUpc": "072718101522",
+      "expectedNameSha256": "f8c68c89e14418abdf25337f8fdef911ae7d6184fcf07edf08e739ae37ed4aed",
+      "replaceTextFrom": "MR. PURE ORANGE 64OZ",
+      "replaceTextTo": "Mr. Pure 100% Orange Juice 64oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.nationalbeverage.com/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0072718101522",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 072718101522; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/271/810/1522/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "6346",
+      "expectedUpc": "075355112135",
+      "expectedNameSha256": "2775cad67ce3568d188e9a95f08a0214b4e18f48d957d4def06924d8a71a4bbb",
+      "replaceTextFrom": "Old Orchard Apple 64oz",
+      "replaceTextTo": "Old Orchard 100% Apple Juice 64oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://oldorchard.com/products/entry/64oz-100-juice-apple",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0075355112135",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 075355112135; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/535/511/2135/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "7671",
+      "expectedUpc": "026200117003",
+      "expectedNameSha256": "b254c6098c8a40dc16b1c99923504e1f495ec368971eb696233a54d165a8ff57",
+      "replaceTextFrom": "Slim Jim Original 0.97oz",
+      "replaceTextTo": "Slim Jim Original Giant Smoked Snack Stick 0.97oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.slimjim.com/sticks/giant-sticks/original-giant-stick",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0026200117003",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 026200117003; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/620/011/7003/4.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "7678",
+      "expectedUpc": "028400437899",
+      "expectedNameSha256": "d1e1990039a47717cba21a2121d0a5affc0c57a74651b5e59578665c62bed930",
+      "replaceTextFrom": "Smartfood popcorn 2 1/4OZWhite cheddar",
+      "replaceTextTo": "Smartfood White Cheddar Popcorn 2 1/4oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.smartfood.com/products/smartfood-white-cheddar-popcorn",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0028400437899",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 028400437899; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/043/7899/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "7931",
+      "expectedUpc": "070462098358",
+      "expectedNameSha256": "b4f861ddcef03013c39cce484b53ac3cefcd46a6c586a999e068eb759faa467c",
+      "replaceTextFrom": "SOUR PATCH KIDS3.5OZ",
+      "replaceTextTo": "Sour Patch Kids Soft & Chewy Candy 3.5oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://snackworks.com/brands/sour-patch-kids/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0070462098358",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 070462098358; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/046/209/8358/4.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "7999",
+      "expectedUpc": "049000028928",
+      "expectedNameSha256": "602da83f36ae17adedad23b78665e9787e373f6f39f3e6c03bba6fc475e59d2c",
+      "replaceTextFrom": "SPRITE 12PK 12OZPACK",
+      "replaceTextTo": "Sprite Lemon-Lime 12pk 12oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.coca-cola.com/us/en/offerings/shop-mini-cans",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0049000028928",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 049000028928; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/002/8928/6.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "8010",
+      "expectedUpc": "078000016468",
+      "expectedNameSha256": "ce0c953b047fca181ff96b3dbc9909f174f358e1355f2ca84223535ffcacd3f6",
+      "replaceTextFrom": "SQUIRT 2L",
+      "replaceTextTo": "Squirt Grapefruit Soda 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.squirtsoda.com/amp",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0078000016468",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 078000016468; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/6468/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "8257",
+      "expectedUpc": "050200560002",
+      "expectedNameSha256": "896cffdffeb554dfbe6d39a6123bafd5a7ff63bec69bc06cff4b8286f598b310",
+      "replaceTextFrom": "Sunny D Orange 16oz",
+      "replaceTextTo": "SunnyD Tangy Original Orange Citrus Punch 16oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://sunnyd.com/flavors/tangy-original/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0050200560002",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 050200560002; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/020/056/0002/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "8815",
+      "expectedUpc": "028400070980",
+      "expectedNameSha256": "dcc6ed1d2e4341d2879b07b5681683a1fcf1bdab86d687d5baf73461f09f2fd5",
+      "replaceTextFrom": "Tostitos Queso Dip 15oz",
+      "replaceTextTo": "Tostitos Salsa Con Queso Medium Dip 15oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.tostitos.com/products/tostitos-salsa-con-queso-2",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0028400070980",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 028400070980; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/007/0980/3.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "8907",
+      "expectedUpc": "048500202678",
+      "expectedNameSha256": "10ccd0a4e1fd28824b797203abf2e1311479d32b5ccd04cc22074f4a15349a0e",
+      "replaceTextFrom": "Tropicana lively lemonade 52oz",
+      "replaceTextTo": "Tropicana Lemonade 52oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://smartlabel.pepsico.info/048500202678-0011-en-US/index.html",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0048500202678",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 048500202678; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/020/2678/3.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "8912",
+      "expectedUpc": "048500202715",
+      "expectedNameSha256": "8981fa5dcac9068028458f20e50452947a631df180042bdddda0791c52e26e49",
+      "replaceTextFrom": "Tropicana watermelon  52oz",
+      "replaceTextTo": "Tropicana Watermelon Drink 52oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://dev2.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Juices-%26-Shakes/Tropicana-Pure-Premium-Watermelon/p/1-OXGTV-1",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0048500202715",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 048500202715; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/020/2715/4.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "9148",
+      "expectedUpc": "051000138033",
+      "expectedNameSha256": "ae1519af42014446769a33188c3a498d3e1072a5e78bee1542859d8f34eb58ab",
+      "replaceTextFrom": "V8 Original 12oz",
+      "replaceTextTo": "V8 Original 100% Vegetable Juice 12oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.campbells.com/v8/products/v8-vegetable-juice/original-100-vegetable-juice/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0051000138033",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 051000138033; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/100/013/8033/3.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "9406",
+      "expectedUpc": "041800429004",
+      "expectedNameSha256": "c30a1e2a6ca14b832b51ec613992b10e36a48e7adcd4ee662bdc4705df5cf8d9",
+      "replaceTextFrom": "Welchs Cranberry 16ozBottle",
+      "replaceTextTo": "Welch's Cranberry Juice Cocktail 16oz Bottle",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.welchs.com/en-us/juices/drinks/cranberry/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0041800429004",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 041800429004; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/042/9004/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "9425",
+      "expectedUpc": "041800715008",
+      "expectedNameSha256": "5b1d9d9f55e3bdda9eb1b2ebdff7be27d45b29b9823118eede7f8face1bc7221",
+      "replaceTextFrom": "Welchs White Grape 750mlN/A Sparkling",
+      "replaceTextTo": "Welch's Sparkling White Grape Juice Cocktail N/A 750ml",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.welchs.com/sparkling/white-grape/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0041800715008",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 041800715008; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/071/5008/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "101284",
+      "expectedUpc": "889392010190",
+      "expectedNameSha256": "fe47b3391f854a558a47c86f44b7bd36f65e5e55f5cc4354aaa7f09261ea6f69",
+      "replaceTextFrom": "CELSIUS PEACH VIBE 12OZ.",
+      "replaceTextTo": "Celsius Peach Vibe Sparkling White Peach 12oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "url": "https://www.celsius.com/products/celsius/sparkling-peach-vibe/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0889392010190",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 889392010190; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/939/201/0190/3.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "5899",
+      "expectedUpc": "070655910016",
+      "expectedNameSha256": "78e69b1a03cc9c9e629b1f57f37ceb8ded9c550e8a7577eeda9345d6d5206230",
+      "replaceTextFrom": "Org Bloody mary Mix",
+      "replaceTextTo": "Original Bloody Mary Mix",
+      "scope": "product_name_spelling",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mrandmrst.com/products",
+          "supports": "Manufacturer names this exact mixer expression and the Mr & Mrs T brand; full wording independently checked against the original package photo."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/45600-distributed-consumables-mr-mrs-t-s-bloody-mary-1-75-liter-12-in",
+          "supports": "Retailer listing explicitly matches UPC 070655910016 and the mixer identity. It does not resolve conflicting source metadata or establish photo eligibility."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/065/591/0016/1.jpg",
+          "supports": "Existing full original individually viewed on 2026-10-27 to verify brand and expression. No public image approval is granted."
+        }
+      ]
+    },
+    {
+      "sku": "5926",
+      "expectedUpc": "070655910054",
+      "expectedNameSha256": "5e57b9ec1a59aa7fbe7bb111c529bc8871cb94675b8c53fe7dc76664e9173366",
+      "replaceTextFrom": "MR&MRS SWEET &SOUR",
+      "replaceTextTo": "Mr & Mrs T Sweet & Sour Mix",
+      "scope": "product_name_spelling",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mrandmrst.com/products",
+          "supports": "Manufacturer names this exact mixer expression and the Mr & Mrs T brand; full wording independently checked against the original package photo."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/mr-mrs-t-sweet-sour-mix-1-75l",
+          "supports": "Retailer listing explicitly matches UPC 070655910054 and the mixer identity. It does not resolve conflicting source metadata or establish photo eligibility."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/065/591/0054/1.jpg",
+          "supports": "Existing full original individually viewed on 2026-10-27 to verify brand and expression. No public image approval is granted."
+        }
+      ]
+    },
+    {
+      "sku": "5897",
+      "expectedUpc": "070655910092",
+      "expectedNameSha256": "32145f6e7edfafaea8a69271dbd1ea1bb95f2d9a33d0c8a14d1a7398e97efe60",
+      "replaceTextFrom": "Mr & Mrs Straw Daiq",
+      "replaceTextTo": "Mr & Mrs T Strawberry Daiquiri-Margarita Mix",
+      "scope": "product_name_spelling",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mrandmrst.com/products",
+          "supports": "Manufacturer names this exact mixer expression and the Mr & Mrs T brand; full wording independently checked against the original package photo."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/mr-mrs-t-strawberry-margarita-mix-1-75l",
+          "supports": "Retailer listing explicitly matches UPC 070655910092 and the mixer identity. It does not resolve conflicting source metadata or establish photo eligibility."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/065/591/0092/1.jpg",
+          "supports": "Existing full original individually viewed on 2026-10-27 to verify brand and expression. No public image approval is granted."
+        }
+      ]
+    },
+    {
+      "sku": "5924",
+      "expectedUpc": "070655910115",
+      "expectedNameSha256": "4a442c58440ed60ea642fdbbcbb6bdd5f4d9a78245050dc353fb3feb42a2d6e1",
+      "replaceTextFrom": "MR&MRS PINA Colada mix",
+      "replaceTextTo": "Mr & Mrs T Piña Colada Mix",
+      "scope": "product_name_spelling",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mrandmrst.com/products",
+          "supports": "Manufacturer names this exact mixer expression and the Mr & Mrs T brand; full wording independently checked against the original package photo."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.chefstore.com/p/mr-mrs-t-pina-colada-mix_4087020/",
+          "supports": "Retailer listing explicitly matches UPC 070655910115 and the mixer identity. It does not resolve conflicting source metadata or establish photo eligibility."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/065/591/0115/1.jpg",
+          "supports": "Existing full original individually viewed on 2026-10-27 to verify brand and expression. No public image approval is granted."
+        }
+      ]
+    },
+    {
+      "sku": "3655",
+      "expectedUpc": "052000324860",
+      "expectedNameSha256": "3f65373f4a1c70bb4633468b5144ca610a14d2f0d3b25afa53fef9be4b0d7bde",
+      "replaceTextFrom": "GATORADE COOL 20OZ",
+      "replaceTextTo": "Gatorade Frost Glacier Freeze Thirst Quencher 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Sports-Drinks/Gatorade-Glacier-Freeze/p/1-HYK-43434",
+          "supports": "PepsiCo identifies Gatorade Glacier Freeze 20oz wide-mouth plastic bottle, UPC 052000324860 and Case Qty 1. The original source 20OZ measurement is preserved; Frost and Thirst Quencher are visible package wording."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Sports-Drinks/Gatorade-Glacier-Freeze/p/1-HYK-43434",
+          "supports": "Manufacturer product row explicitly lists source UPC 052000324860 with Glacier Freeze, 20oz and one plastic bottle. Cool on the original source corresponds to CRISP & COOL package wording, not the full flavor name."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/032/4860/3.jpg",
+          "supports": "Complete light-blue Gatorade bottle with orange cap on white. The label reads Gatorade FROST THIRST QUENCHER, CRISP & COOL, GLACIER FREEZE, and 20 FL OZ (1.25 PT) 591 mL. No price, carton, hand or household setting. Single bottle; source 20 oz size retained."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -7876,6 +9698,756 @@
         }
       ],
       "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04"
+    }
+  ],
+  "nameVerifications": [
+    {
+      "sku": "1559",
+      "expectedUpc": "021559100027",
+      "expectedNameSha256": "2633b92d7db51e27e250f9a9fad3d2c329b3ea0d512c275b46d5ace227c8b684",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "butcher boy vegetable oil",
+      "expectedLabel": "24 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://cvoils.com/faq/",
+          "supports": "Manufacturer identifies its Butcher Boy brand; exact 24 oz vegetable-oil identity is separately supported by the distributor and photo."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0021559100027",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 021559100027. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/155/910/0027/4.jpg",
+          "supports": "Butcher Boy Vegetable Oil and net contents 24 fl oz are readable. All Natural is a marketing statement, not a missing flavor or separate product expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goldstardist.com/product/16o24v-butcher-boy-oil-veg-12ct-24oz/",
+          "supports": "Distributor lists Butcher Boy vegetable oil 24 oz, UPC 021559100027. Case quantity is not adopted."
+        }
+      ]
+    },
+    {
+      "sku": "1629",
+      "expectedUpc": "079581184072",
+      "expectedNameSha256": "e1ee0b029b15abccf5acff6d88ba194ceeafbbd59e8d78f3bf74523ae7c817f9",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "CALYPSO TRIPLE MELON LEMONADE",
+      "expectedLabel": "16 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkcalypso.com/flavors/triple-melon-lemonade-int/",
+          "supports": "Manufacturer names Triple Melon Lemonade and shows a 16 fl oz bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0079581184072",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 079581184072. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/958/118/4072/7.jpg",
+          "supports": "Calypso Triple Melon Lemonade and 16 fl oz are readable on the pink glass bottle. Existing duplicate-LEMONADE correction already produces the complete expression; preserve it."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://redstonefoods.com/products/44407--calypso-triple-melon-lemonade",
+          "supports": "Distributor explicitly lists UPC 079581184072, Triple Melon Lemonade, unit 16 oz."
+        }
+      ]
+    },
+    {
+      "sku": "1678",
+      "expectedUpc": "078000152463",
+      "expectedNameSha256": "c80011bb5fb638213e706961d438fdf34af36ce287278e532f933226282ce11a",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "CANADA DRY GINGER ALE",
+      "expectedLabel": "2 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.canadadry.com/",
+          "supports": "Manufacturer identifies Canada Dry Ginger Ale separately from flavored and zero-sugar variants."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0078000152463",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 078000152463. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/015/2463/4.jpg",
+          "supports": "Canada Dry Ginger Ale and 2 Liters are readable. Existing brand and expression are complete; no fruit flavor or zero-sugar qualifier is present."
+        }
+      ]
+    },
+    {
+      "sku": "2600",
+      "expectedUpc": "078000013566",
+      "expectedNameSha256": "660efdfb0a1c04048d59889ffc23fffa294790eaacc82a3454597068c5143210",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Crush Grape",
+      "expectedLabel": "2 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.crushsoda.com/",
+          "supports": "Manufacturer lists Crush Grape Flavored Soda."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0078000013566",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 078000013566. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/3566/1.jpg",
+          "supports": "Crush Grape and 2 Liters are readable on the purple bottle. Current brand/flavor title is complete."
+        }
+      ]
+    },
+    {
+      "sku": "2822",
+      "expectedUpc": "078000011814",
+      "expectedNameSha256": "2db900da2888cd977ab6781f13fed488257ce2305641e14255ac11163e3b8e88",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Diet 7 Up Pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.7up.com/en/our-products",
+          "supports": "Manufacturer establishes 7UP lemon-lime family; current site calls the diet line Zero Sugar. Keep the older Diet expression actually present in source and photo."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0078000011814",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 078000011814. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/1814/1.jpg",
+          "supports": "Complete older carton says DIET 7UP, Lemon Lime Flavored Soda, 12 Pack, and 12-12 fl oz cans. No change to current Diet identity; no current-packaging assertion."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-12989436",
+          "supports": "Exact source UPC 078000011814 is the 12-pack of 12 fl oz diet/zero-sugar lemon-lime soda. Modern naming does not overwrite photographed Diet packaging."
+        }
+      ]
+    },
+    {
+      "sku": "3231",
+      "expectedUpc": "076737340955",
+      "expectedNameSha256": "49b76af908c25dc58c779c8038b99c17fcfc9422cb33d49723b492257da4e5dd",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "EVERFRESH ISLAND PUNCH",
+      "expectedLabel": "24 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://everfreshjuice.com/tropicals/island-punch/",
+          "supports": "Manufacturer lists Everfresh Island Punch in 24 oz glass bottles."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0076737340955",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 076737340955. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/673/734/0955/1.jpg",
+          "supports": "Everfresh Island Punch and Big 24 are readable on blue drink glass bottle. Source already contains complete brand/expression."
+        }
+      ]
+    },
+    {
+      "sku": "3297",
+      "expectedUpc": "049000030754",
+      "expectedNameSha256": "7c725910ef3c563d595756288e6f53ecc844338faa16f73c4414ccae89212c90",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Fanta Strawberry Pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/fanta/products?redirect=true",
+          "supports": "Manufacturer lists Fanta Strawberry with 12 fl oz, 12-pack availability."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0049000030754",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 049000030754. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/003/0754/1.jpg",
+          "supports": "Carton reads Fanta Strawberry, Strawberry Flavored Soda, and 12-12 fl oz cans. Current name contains complete brand/expression; trailing Pack is source packaging text."
+        }
+      ]
+    },
+    {
+      "sku": "4284",
+      "expectedUpc": "075669113606",
+      "expectedNameSha256": "9a30c59b2462ace898733d037c76d1b665abb5528df2f5718a080b8972018b81",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "iberia Lemon Juice",
+      "expectedLabel": "32 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://iberiafoods.com/product/iberia-lemon-juice-32-oz/",
+          "supports": "Manufacturer names Iberia Lemon Juice 32 oz; source brand/expression already agrees."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0075669113606",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 075669113606. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/3606/1.jpg",
+          "supports": "Bottle reads Iberia Lemon Juice from concentrate and 32 fl oz / 946 mL. Existing name correctly identifies it; no extra nutrition or ingredient claims added."
+        }
+      ]
+    },
+    {
+      "sku": "5708",
+      "expectedUpc": "025000058073",
+      "expectedNameSha256": "bd8e9fad38558d1be7b610ad94285eba08f898f13c6dab8644571af4b0a4e98d",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Minute Maid Lemonade Single",
+      "expectedLabel": "12 oz · cans",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/minute-maid/products/lemonades-and-fruit-drinks",
+          "supports": "Manufacturer lists Minute Maid Lemonade and a 12 fl oz size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0025000058073",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 025000058073. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/500/005/8073/4.jpg",
+          "supports": "Single can clearly reads Minute Maid LEMONADE. Existing product identity is complete; Single and Can remain source packaging tokens."
+        }
+      ]
+    },
+    {
+      "sku": "5944",
+      "expectedUpc": "072718101546",
+      "expectedNameSha256": "d15bd32f940beb8ec11b4a73b0cf13c1ec3378a615eb560779312d22158e51cf",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "MR. PURE CRANBERRY",
+      "expectedLabel": "64 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.nationalbeverage.com/",
+          "supports": "Manufacturer identifies Mr. Pure juice/juice-drink line and Cranberry expression. Exact size/UPC are separately corroborated by distributor."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0072718101546",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 072718101546. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/271/810/1546/1.jpg",
+          "supports": "Mr. Pure Cranberry and 64 fl oz are visible on the red drink bottle. Existing brand/flavor title is complete; no 100-percent-juice assertion added."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://purebeverage.com/pbwp/mr-pure/",
+          "supports": "Distributor lists 64 oz Cranberry UPC 072718101546."
+        }
+      ]
+    },
+    {
+      "sku": "5979",
+      "expectedUpc": "072718101577",
+      "expectedNameSha256": "e84db2ffaee805eccbbd0d3d64f0af3bc0e533aa1949fac214c9301a67ac51df",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Mr. Pure Papaya punch",
+      "expectedLabel": "64 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.nationalbeverage.com/",
+          "supports": "Manufacturer identifies Mr. Pure and Papaya juice drinks; complete Papaya Punch wording appears on inspected package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0072718101577",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 072718101577. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/271/810/1577/1.jpg",
+          "supports": "Mr. Pure PAPAYA PUNCH and 64 fl oz are visible. Existing title already includes Punch; no replacement with Premium Papaya from another package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://purebeverage.com/pbwp/mr-pure/",
+          "supports": "Distributor lists 64 oz Papaya UPC 072718101577."
+        }
+      ]
+    },
+    {
+      "sku": "6468",
+      "expectedUpc": "071871546676",
+      "expectedNameSha256": "f4bc6752a160d95a20fb3bfd3f11485e2e7bb81158f2ea2de102508380dc9145",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Oscar Mayer turkey cotto salami",
+      "expectedLabel": "16 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.oscarmayer.com/products",
+          "supports": "Manufacturer establishes Oscar Mayer brand only; exact Turkey Cotto Salami expression is supported by the UPC-specific retailer and inspected package. Manufacturer search did not surface this exact retired/older product page."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0071871546676",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 071871546676. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/187/154/6676/3.jpg",
+          "supports": "Exact pack clearly says Oscar Mayer Turkey Cotto Salami, net wt 16 oz (1 lb). Preserve prior coto-to-cotto correction; current complete name needs no further change."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/42707-oscar-mayer-turkey-cotto-salami-16-oz",
+          "supports": "Retailer explicitly identifies UPC 071871546676 as Oscar Mayer Turkey Cotto Salami, 16 oz."
+        }
+      ]
+    },
+    {
+      "sku": "7397",
+      "expectedUpc": "078000206166",
+      "expectedNameSha256": "2da1db06f6300fe350616a5f1a05d4a49b1b42f61af1369c6356b607dc71b0b9",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Schweppes Ginger Ale Pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.schweppesus.com/",
+          "supports": "Manufacturer lists Schweppes Ginger Ale separately from zero-sugar and raspberry variants."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0078000206166",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 078000206166. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/020/6166/2.jpg",
+          "supports": "Carton reads Schweppes Ginger Ale, 12 pack, and 12-12 fl oz cans. Current brand/expression is complete; source Pack token remains packaging text."
+        }
+      ]
+    },
+    {
+      "sku": "7961",
+      "expectedUpc": "016571911256",
+      "expectedNameSha256": "53fece88ce16d001043facda53b711fcee1e1a4dffebebdcb6a67498db9d3b56",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Sparkling Ice Lemon Lime",
+      "expectedLabel": "17 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.sparklingice.com/products/classics/lemon-lime/",
+          "supports": "Manufacturer identifies Sparkling Ice Lemon Lime in 17 oz bottles. Current nutritional reformulation is not copied to older image."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0016571911256",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 016571911256. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/657/191/1256/1.jpg",
+          "supports": "Bottle clearly reads Sparkling Ice Lemon Lime. Older zero-calorie front differs from current five-calorie nutrition; brand/flavor match without any claim that current formula or packaging is identical."
+        }
+      ]
+    },
+    {
+      "sku": "8013",
+      "expectedUpc": "078000018400",
+      "expectedNameSha256": "083f882b76cc66d42a00b5110a863d83b9178e160fa5cdb69a7f0c67f36da50d",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "SQUIRT RUBY RED",
+      "expectedLabel": "20 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.squirtsoda.com/amp",
+          "supports": "Manufacturer lists Squirt Ruby Red Citrus Berry Flavored Soda."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0078000018400",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 078000018400. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/8400/1.jpg",
+          "supports": "Red beverage bottle reads Ruby Red Squirt and 20 fl oz. Existing Ruby Red expression is complete; no replacement with original grapefruit-only Squirt."
+        }
+      ]
+    },
+    {
+      "sku": "8265",
+      "expectedUpc": "050200019128",
+      "expectedNameSha256": "0978bef953015bbd6d9b3a6aed9167189ecf14b63a9a32bfdaef942dd116f06f",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Sunny D Smooth orange",
+      "expectedLabel": "16 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://sunnyd.com/flavors/smooth-orange/",
+          "supports": "Manufacturer identifies Smooth Orange citrus punch. Current page sizes are not used to change source 16 oz."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0050200019128",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 050200019128. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/020/001/9128/1.jpg",
+          "supports": "Bottle reads SUNNYD SMOOTH ORANGE, Orange Flavored Citrus Punch, and 16 fl oz / 473 mL. Source already contains the complete named expression; not Tangy Original."
+        }
+      ]
+    },
+    {
+      "sku": "8877",
+      "expectedUpc": "089087157616",
+      "expectedNameSha256": "31c3dca186b29a7cb7bbb08000b35b9e8e8b51b0254822b574ad7966c977613f",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Tropical Fantasy Pineapple",
+      "expectedLabel": "22.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://tropicalfantasy.com/about/",
+          "supports": "Manufacturer identifies Tropical Fantasy as Brooklyn Bottling’s brand; distributor separately corroborates Pineapple 22.5 oz."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0089087157616",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 089087157616. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/715/7616/1.jpg",
+          "supports": "Bottle reads Tropical Fantasy Pineapple and 22.5 fl oz / 650 mL. No aloe, pineapple-ginger, or other brand. Existing brand/flavor is complete."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.ssbeverages.com/catalog/tropical-fantasy",
+          "supports": "Distributor lists Tropical Fantasy Pineapple 22.5 oz; source-UPC linkage remains the existing approved-image source record."
+        }
+      ]
+    },
+    {
+      "sku": "9098",
+      "expectedUpc": "041780009227",
+      "expectedNameSha256": "ecfdb300db55033811aa85abe15ec3a36e333269d6b09437002db9efe52754dc",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "Utz Party mix",
+      "expectedLabel": "1 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.utzsnacks.com/products/utz-party-mix-12-oz-1",
+          "supports": "Manufacturer names Utz Party Mix and lists the single-serve 1 oz option."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0041780009227",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 041780009227. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/178/000/9227/1.jpg",
+          "supports": "Bag reads Utz PARTY MIX and net wt 1 oz (28.3g). Ingredient-component list is not a different expression. Current name is complete."
+        }
+      ]
+    },
+    {
+      "sku": "101505",
+      "expectedUpc": "039000086639",
+      "expectedNameSha256": "22f9d625c7e1a451147c5d8ebd6101817d43e8fa59d1208ada170a9c907ce20e",
+      "verifiedOn": "2026-10-27",
+      "expectedPublicName": "LIBBY'S VIENNA SAUSAGE",
+      "expectedLabel": "4.6 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.conagrafoodservice.com/products/libbys-vienna-sausage-24-x-46-oz",
+          "supports": "Manufacturer identifies Libby’s Vienna Sausage, 4.6 oz cans, separately from chicken-only, barbecue, and Hawaiian variants."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0039000086639",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 039000086639. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/900/008/6639/20.jpg",
+          "supports": "Can reads Libby's VIENNA SAUSAGE, made with chicken, beef and pork in chicken broth, net wt 4.6 oz. Source named expression is already complete; no invented Original qualifier."
+        }
+      ]
+    },
+    {
+      "sku": "3333",
+      "expectedUpc": "073800004585",
+      "expectedNameSha256": "641550890bc1127c871e3f07dc4cf8170b511ecbea1a5d0879634f4fd015c3fe",
+      "expectedPublicName": "FAYGO ORANGE",
+      "expectedLabel": "24 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "url": "https://www.faygo.com/flavors/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0073800004585",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 073800004585; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/380/000/4585/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "3522",
+      "expectedUpc": "884912129741",
+      "expectedNameSha256": "2053cb70898aa6b2207d3a4f9ac248d30b123c0099cd0fdf13818b0136499c26",
+      "expectedPublicName": "Fruity Pebbles Cereal",
+      "expectedLabel": "15 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "url": "https://www.postconsumerbrands.com/brands/pebbles/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0884912129741",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 884912129741; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/491/212/9741/4.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "6940",
+      "expectedUpc": "078000041408",
+      "expectedNameSha256": "0888949a83b99929d360ab6a8cf743630edba8f9ae80ae73d071e18e3e2a913a",
+      "expectedPublicName": "RC COLA",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "url": "https://rccolainternational.com/products/rc-cola",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0078000041408",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 078000041408; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/004/1408/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "101484",
+      "expectedUpc": "071817000378",
+      "expectedNameSha256": "b521008b5b068bc15de845f945bc0ce8aabbbd582e5f5f38a9bc8045e0bbe87c",
+      "expectedPublicName": "Big Red",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "url": "https://www.keurigdrpepper.com/brands/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0071817000378",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 071817000378; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/181/700/0378/3.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
     }
   ]
 }
