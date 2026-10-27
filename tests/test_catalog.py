@@ -98,7 +98,154 @@ def category_review(source, category='food', row=1, name_manifest=None):
             'evidence': [{'kind': 'manufacturer', 'url': 'https://example.test/reviewed-product'}]}
 
 
+def manufacturer_correction(source, replacement, public_name, label):
+    # Synthetic evidence exercises guards; it is never a real source approval
+    # and is never written to any public manifest or product catalog.
+    raw = list(csv.reader(io.StringIO(source.decode())))[1]
+    url = 'https://smartlabel.pepsico.info/synthetic-unit-test'
+    return {'sku': raw[0], 'expectedUpc': raw[1],
+            'expectedNameSha256': hashlib.sha256(raw[2].encode()).hexdigest(),
+            'replaceTextFrom': raw[2], 'replaceTextTo': replacement,
+            'scope': builder.MANUFACTURER_NAME_SCOPE, 'verifiedOn': '2026-10-27',
+            'expectedLabel': label, 'verifiedPublicName': public_name,
+            'manufacturerRecord': {
+                'publisher': 'PepsiCo', 'productUrl': url, 'publisherEvidenceUrl': url,
+                'observedUpc': raw[1], 'observedName': public_name,
+                'retrievedOn': '2026-10-27', 'sourceSha256': hashlib.sha256(b'synthetic test evidence').hexdigest(),
+                'retiredNotice': False,
+            },
+            'evidence': [{'kind': 'manufacturer_exact_upc_record', 'url': url,
+                          'supports': 'Synthetic test fixture; no real product claim.'}]}
+
+
 class ImportTests(unittest.TestCase):
+    def test_manufacturer_name_correction_preserves_size_source_and_absent_photo(self):
+        source = export({'ItemName': 'Example G2 Lem 16oz bottles', 'MAINUPC': '012345678905'})
+        entry = manufacturer_correction(source, 'Example G2 Lemon 16oz bottles', 'Example G2 Lemon', '16 oz · bottles')
+        entry['manufacturerRecord']['observedUpc'] = '00012345678905'
+        catalog, audit = builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [entry]})
+        product = catalog['products'][0]
+        self.assertEqual(product['name'], 'Example G2 Lemon')
+        self.assertEqual(product['variants'][0]['label'], '16 oz · bottles')
+        self.assertEqual(product['variants'][0]['upc'], '012345678905')
+        self.assertIsNone(product['variants'][0]['image'])
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'Example G2 Lem 16oz bottles')
+        names = builder.name_audit(catalog, audit)
+        self.assertEqual(names['records'][0]['verifiedScope'], builder.MANUFACTURER_NAME_SCOPE)
+        self.assertEqual(names['summary']['fullyVerifiedNames'], 1)
+        self.assertEqual(names['summary']['manufacturerRecordVerifiedNames'], 1)
+
+    def test_manufacturer_name_correction_cannot_change_units_packs_or_brand_numbers(self):
+        source = export({'ItemName': 'Example G2 Lem 6pk 16oz bottles', 'MAINUPC': '012345678905'})
+        entry = manufacturer_correction(source, 'Example G2 Lemon 6pk 16oz bottles', 'Example G2 Lemon', '6-pack · 16 oz · bottles')
+        for replacement in ['Example Lemon 6pk 16oz bottles', 'Example G2 Lemon 12pk 16oz bottles',
+                            'Example G2 Lemon 6pk 20oz bottles', 'Example G2 Lemon 6pk 16oz cans']:
+            bad = copy.deepcopy(entry)
+            bad['replaceTextTo'] = replacement
+            with self.subTest(replacement=replacement), self.assertRaises(ValueError):
+                builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [bad]})
+        for key, value in [('expectedLabel', '20 oz'), ('verifiedPublicName', 'Other'),
+                           ('replaceTextFrom', 'Lem'), ('scope', 'brand_spelling_only')]:
+            bad = copy.deepcopy(entry)
+            bad[key] = value
+            with self.subTest(key=key), self.assertRaises(ValueError):
+                builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [bad]})
+        pint = export({'ItemName': 'Example Lem 1pint', 'MAINUPC': '012345678905'})
+        bad = manufacturer_correction(pint, 'Example Lemon', 'Example Lemon', 'Size not specified')
+        with self.assertRaises(ValueError):
+            builder.build(pint, name_manifest={'schemaVersion': 1, 'corrections': [bad]})
+
+    def test_manufacturer_name_record_rejects_unowned_sources_or_different_gtin(self):
+        source = export({'ItemName': 'Example Lem 16oz', 'MAINUPC': '012345678905'})
+        entry = manufacturer_correction(source, 'Example Lemon 16oz', 'Example Lemon', '16 oz')
+        for field, value in [('publisher', 'Unreviewed vendor'),
+                             ('productUrl', 'https://smartlabel.pepsico.info.evil.test/product'),
+                             ('productUrl', 'https://user@smartlabel.pepsico.info/product'),
+                             ('publisherEvidenceUrl', 'https://example.test/source'),
+                             ('observedUpc', '112345678902'), ('observedUpc', '012345678906'),
+                             ('observedUpc', '123456'), ('observedName', 'Product $4'),
+                             ('observedName', 'See /Users/example/private.csv'),
+                             ('sourceSha256', ''), ('retrievedOn', 'today'), ('retiredNotice', 'false')]:
+            bad = copy.deepcopy(entry)
+            bad['manufacturerRecord'][field] = value
+            with self.subTest(field=field, value=value), self.assertRaises(ValueError):
+                builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [bad]})
+
+    def test_manufacturer_expression_number_addition_requires_primary_name_evidence(self):
+        source = export({'ItemName': 'Example Grape 16oz', 'MAINUPC': '012345678905'})
+        entry = manufacturer_correction(source, 'Example G2 Grape 16oz', 'Example G2 Grape', '16 oz')
+        catalog, _ = builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [entry]})
+        self.assertEqual(catalog['products'][0]['name'], 'Example G2 Grape')
+        entry['manufacturerRecord']['observedName'] = 'Example Grape'
+        with self.assertRaises(ValueError):
+            builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [entry]})
+
+    def test_manufacturer_name_delegation_requires_owned_evidence_url(self):
+        source = export({'ItemName': 'Example Lem 16oz', 'MAINUPC': '012345678905'})
+        entry = manufacturer_correction(source, 'Example Lemon 16oz', 'Example Lemon', '16 oz')
+        entry['manufacturerRecord']['productUrl'] = 'https://smartlabel.myproduct.info/012345678905-0001-en-US/index.html'
+        entry['manufacturerRecord']['publisherEvidenceUrl'] = 'https://smartlabel.pepsico.info/sitemap.xml'
+        entry['evidence'][0]['url'] = entry['manufacturerRecord']['productUrl']
+        builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [entry]})
+        for field, value in [('publisherEvidenceUrl', 'https://smartlabel.myproduct.info/sitemap.xml'),
+                             ('publisherEvidenceUrl', 'https://smartlabel.pepsico.info/unrelated-page'),
+                             ('publisherEvidenceUrl', 'https://smartlabel.pepsico.info/sitemap.xml?unrelated=1'),
+                             ('productUrl', 'https://smartlabel.myproduct.info/112345678902-0001-en-US/index.html')]:
+            bad = copy.deepcopy(entry)
+            bad['manufacturerRecord'][field] = value
+            bad['evidence'][0]['url'] = bad['manufacturerRecord']['productUrl']
+            with self.subTest(field=field, value=value), self.assertRaises(ValueError):
+                builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [bad]})
+
+    def test_manufacturer_name_only_cannot_change_strength_units_or_equivalent_volume_label(self):
+        for original, replacement, public_name, label in [
+            ('Example Lem 40% ABV 16oz', 'Example Lemon 40 Proof 16oz', 'Example Lemon 40 Proof', '16 oz'),
+            ('Example Lem 1000mL', 'Example Lemon 1L', 'Example Lemon', '1 L'),
+            ('Example Lem 16oz', 'Example Lemon 16 fl oz', 'Example Lemon', '16 oz'),
+        ]:
+            source = export({'ItemName': original, 'MAINUPC': '012345678905'})
+            entry = manufacturer_correction(source, replacement, public_name, label)
+            with self.subTest(original=original), self.assertRaises(ValueError):
+                builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [entry]})
+
+    def test_manufacturer_unchanged_name_is_explicitly_nonvisual_and_not_a_correction(self):
+        source = export({'ItemName': 'Example Lemon 16oz', 'MAINUPC': '012345678905'})
+        correction = manufacturer_correction(source, 'Example Lemon 16oz', 'Example Lemon', '16 oz')
+        entry = {key: correction[key] for key in ('sku', 'expectedUpc', 'expectedNameSha256',
+                 'expectedLabel', 'verifiedOn', 'evidence', 'manufacturerRecord')}
+        entry.update(expectedPublicName='Example Lemon', verificationMethod='manufacturer_exact_upc_record',
+                     verification={'brand': True, 'expression': True, 'upc': True, 'visual': False})
+        entry['manufacturerRecord']['retiredNotice'] = True
+        manifest = {'schemaVersion': 1, 'nameVerifications': [entry]}
+        catalog, audit = builder.build(source, name_manifest=manifest)
+        baseline, _ = builder.build(source)
+        self.assertEqual(catalog, baseline)
+        summary = builder.name_audit(catalog, audit)['summary']
+        self.assertEqual(summary['evidenceBackedCorrections'], 0)
+        self.assertEqual(summary['nameVerificationRecords'], 1)
+        self.assertEqual(summary['manufacturerRecordVerifiedNames'], 1)
+        for mutate in [lambda x: x['verification'].update(visual=True),
+                       lambda x: x.pop('verificationMethod'),
+                       lambda x: x.update(verificationMethod='other'),
+                       lambda x: x.update(expectedLabel='20 oz'),
+                       lambda x: x['evidence'][0].update(url='https://example.test/unrelated')]:
+            wrong = copy.deepcopy(manifest)
+            mutate(wrong['nameVerifications'][0])
+            with self.assertRaises(ValueError):
+                builder.build(source, name_manifest=wrong)
+
+    def test_manufacturer_name_review_rejects_extra_private_or_visual_fields(self):
+        source = export({'ItemName': 'Example Lem 16oz', 'MAINUPC': '012345678905'})
+        entry = manufacturer_correction(source, 'Example Lemon 16oz', 'Example Lemon', '16 oz')
+        for mutate in [lambda x: x.update(visual=True),
+                       lambda x: x['manufacturerRecord'].update(localPath='/private/raw.html'),
+                       lambda x: x['evidence'][0].update(supports='Source $2'),
+                       lambda x: x['evidence'][0].update(supports='See /home/example/private.csv')]:
+            bad = copy.deepcopy(entry)
+            mutate(bad)
+            with self.assertRaises(ValueError):
+                builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [bad]})
+
     def test_terminal_bottle_abbreviations_preserve_variant_packages(self):
         catalog, _ = builder.build(export(
             {'ItemName': '1800 Coconut 750ML BTL', 'PackName': '750 ml'},

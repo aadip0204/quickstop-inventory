@@ -680,6 +680,106 @@
           "supports": "AriZona Watermelon Fruit Juice Cocktail can held in hand. Expression is readable; original 11.5oz source measurement retained."
         }
       ]
+    },
+    {
+      "sku": "4852",
+      "expectedUpc": "043000955697",
+      "expectedNameSha256": "72c37c50cdcddffa9e98eab90046dff789412522d5c6c97a3049ef15b6582dc6",
+      "expectedSourceRecordSha256": "a43c747f99f4886eccbf41199e9c996cd59c336d3e82dc5c6c0b80645e7c0508",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
+          "supports": "Kraft Heinz names this exact unit UPC 043000955697 as Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
+        }
+      ]
+    },
+    {
+      "sku": "4853",
+      "expectedUpc": "043000955611",
+      "expectedNameSha256": "5e937c2a2d033748ca5e2c7d62ca42970c16339dd7a53350890774320817083a",
+      "expectedSourceRecordSha256": "a05816ab2dac0e1d55deed4e020fe1665312fbe655fbc8b22040a8f4c5976d47",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
+          "supports": "Kraft Heinz names this exact unit UPC 043000955611 as Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
+        }
+      ]
+    },
+    {
+      "sku": "4860",
+      "expectedUpc": "043000955628",
+      "expectedNameSha256": "50853d2d0ddd0375a6222f1be53d0debf85dc10c55ede182cf6d28a8c0713f82",
+      "expectedSourceRecordSha256": "09c94f6a9517759ff3fd1f9dc496293e34663c3f46d5b1048d75eed6228bc866",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "Kool-Aid Unsweetened Cherry Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955628",
+          "supports": "Kraft Heinz names this exact unit UPC 043000955628 as Kool-Aid Unsweetened Cherry Artificially Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
+        }
+      ]
+    },
+    {
+      "sku": "4861",
+      "expectedUpc": "043000955635",
+      "expectedNameSha256": "5569e0b9e3de0cd85a4bfd94b05b94ab6c947aad5211355416703f89b1c095f9",
+      "expectedSourceRecordSha256": "88a3bc6b2e47f6dd4909488c35d728e86f66ad87c17022ddeb0325d9af481f1c",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "Kool-Aid Unsweetened Grape Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955635",
+          "supports": "Kraft Heinz names this exact unit UPC 043000955635 as Kool-Aid Unsweetened Grape Artificially Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
+        }
+      ]
+    },
+    {
+      "sku": "4863",
+      "expectedUpc": "043000955437",
+      "expectedNameSha256": "10e38dacdb73f131558b8ea61f237100771622b79d7c9ef1aafb01a05aaff153",
+      "expectedSourceRecordSha256": "de3c43840717868325c9f2fdfc483c654f71614d14b4b8cbfee4538ada4aa5a0",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955437",
+          "supports": "Kraft Heinz names this exact unit UPC 043000955437 as Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
+        }
+      ]
     }
   ]
 }

@@ -17,6 +17,7 @@ import re
 from collections import Counter
 from decimal import Decimal
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_HEADERS = ['SKU', 'MAINUPC', 'ItemName', 'PackName', 'DEPNAME',
@@ -72,6 +73,18 @@ EXPLICIT_UTILITIES = {
 }
 REPORT_POS_CONTROLS = {'-2000': 'Card Void Adjustment', '-3000': 'COUPON',
                        '0': 'Scan Group', '-1000': 'Store Credit'}
+
+# Reviewed publisher-owned record hosts. PepsiCo's own sitemap also delegates
+# individual records to Scanbuy; that host requires a PepsiCo ownership URL.
+MANUFACTURER_NAME_HOSTS = {
+    'PepsiCo': {'smartlabel.pepsico.info', 'www.pepsicoproductfacts.com',
+                'pepsicoproductfacts.com', 'www.pepsicopartners.com', 'pepsicopartners.com'},
+    'Wells Enterprises': {'wellsfoodservice.com', 'www.wellsfoodservice.com'},
+    'Conagra Brands': {'smartlabel.conagra.com'},
+    'Kraft Heinz': {'www.kraftheinz.com', 'kraftheinz.com'},
+}
+MANUFACTURER_NAME_SCOPE = 'manufacturer_exact_upc_name_identity'
+NAME_STRENGTH_RE = re.compile(r'\d+(?:\.\d+)?\s*(?:%\s*(?:ABV\b|A/C\b)?|ABV\b|A/C\b|PROOF\b)', re.I)
 
 
 def clean_space(value: str) -> str:
@@ -351,6 +364,106 @@ def apply_verified_images(products: list, image_manifest: dict | None, blocked_s
     return len(seen)
 
 
+def safe_review_text(value: object) -> bool:
+    return (isinstance(value, str) and bool(value.strip()) and not PRICE_RE.search(value)
+            and not re.search(r'[$€£]|(?:^|\s)(?:/Users/|/home/|file:)', value))
+
+
+def review_url_host(value: object) -> str:
+    if not isinstance(value, str) or not re.fullmatch(r'https://[^\s]+', value):
+        return ''
+    parsed = urlparse(value)
+    try:
+        if parsed.username or parsed.password or parsed.port is not None:
+            return ''
+    except ValueError:
+        return ''
+    return parsed.hostname or ''
+
+
+def valid_gtin(value: object) -> bool:
+    if not isinstance(value, str) or not re.fullmatch(r'(?:\d{8}|\d{12}|\d{13}|\d{14})', value):
+        return False
+    total = sum(int(digit) * (3 if index % 2 == 0 else 1)
+                for index, digit in enumerate(reversed(value[:-1])))
+    return (10 - total % 10) % 10 == int(value[-1])
+
+
+def validate_manufacturer_name_record(entry: dict) -> None:
+    """Validate a name-only review without inferring a visual/package check."""
+    sku = entry['sku']
+    record = entry.get('manufacturerRecord')
+    required = {'publisher', 'productUrl', 'publisherEvidenceUrl', 'observedUpc',
+                'observedName', 'retrievedOn', 'sourceSha256', 'retiredNotice'}
+    if not isinstance(record, dict) or set(record) != required:
+        raise ValueError(f'Manufacturer name review requires a complete source record: {sku}')
+    publisher = record['publisher']
+    if not isinstance(publisher, str) or publisher not in MANUFACTURER_NAME_HOSTS:
+        raise ValueError(f'Manufacturer name review requires a reviewed publisher: {sku}')
+    owned_hosts = MANUFACTURER_NAME_HOSTS[publisher]
+    product_host = review_url_host(record['productUrl'])
+    ownership_host = review_url_host(record['publisherEvidenceUrl'])
+    delegated = publisher == 'PepsiCo' and product_host == 'smartlabel.myproduct.info'
+    if ownership_host not in owned_hosts or (product_host not in owned_hosts and not delegated):
+        raise ValueError(f'Manufacturer name source ownership is not established: {sku}')
+    if delegated:
+        path_gtins = re.findall(r'(?<!\d)\d{12}(?!\d)', urlparse(record['productUrl']).path)
+        if (record['publisherEvidenceUrl'] != 'https://smartlabel.pepsico.info/sitemap.xml'
+                or len(path_gtins) != 1
+                or path_gtins[0].zfill(14) != str(record['observedUpc']).zfill(14)):
+            raise ValueError(f'Delegated manufacturer record requires its exact sitemap and unit GTIN path: {sku}')
+    if (not valid_gtin(entry['expectedUpc']) or not valid_gtin(record['observedUpc'])
+            or entry['expectedUpc'].zfill(14) != record['observedUpc'].zfill(14)):
+        raise ValueError(f'Manufacturer name source must state the exact unit GTIN: {sku}')
+    if (not safe_review_text(record['observedName'])
+            or not isinstance(record['sourceSha256'], str)
+            or not re.fullmatch(r'[a-f0-9]{64}', record['sourceSha256'])
+            or not isinstance(record['retrievedOn'], str)
+            or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', record['retrievedOn'])
+            or type(record['retiredNotice']) is not bool):
+        raise ValueError(f'Manufacturer name record requires safe, dated source evidence: {sku}')
+    evidence = entry.get('evidence')
+    if (not isinstance(evidence, list) or not evidence
+            or any(not isinstance(item, dict) or not {'kind', 'url'}.issubset(item)
+                   or set(item) - {'kind', 'url', 'supports'}
+                   or not safe_review_text(item['kind']) or not review_url_host(item['url'])
+                   or ('supports' in item and not safe_review_text(item['supports']))
+                   for item in evidence)
+            or not any(item['kind'] == 'manufacturer_exact_upc_record'
+                       and item['url'] == record['productUrl'] for item in evidence)):
+        raise ValueError(f'Manufacturer name review requires its exact source URL: {sku}')
+
+
+def validate_manufacturer_name_correction(entry: dict) -> None:
+    required = {'sku', 'expectedUpc', 'expectedNameSha256', 'replaceTextFrom',
+                'replaceTextTo', 'scope', 'verifiedOn', 'evidence',
+                'manufacturerRecord', 'expectedLabel', 'verifiedPublicName'}
+    sku = entry['sku']
+    if set(entry) != required or any(not safe_review_text(entry.get(field)) for field in
+                                   ('replaceTextFrom', 'replaceTextTo', 'expectedLabel', 'verifiedPublicName')):
+        raise ValueError(f'Manufacturer correction requires guarded name-only fields: {sku}')
+    if (hashlib.sha256(entry['replaceTextFrom'].encode()).hexdigest() != entry['expectedNameSha256']
+            or not isinstance(entry['verifiedOn'], str)
+            or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['verifiedOn'])):
+        raise ValueError(f'Manufacturer correction requires the complete original name: {sku}')
+    before = extract_dimensions(entry['replaceTextFrom'])
+    after = extract_dimensions(entry['replaceTextTo'])
+    validate_manufacturer_name_record(entry)
+    before_numbers = Counter(re.findall(r'\d+(?:\.\d+)?', before['text']))
+    after_numbers = Counter(re.findall(r'\d+(?:\.\d+)?', after['text']))
+    observed_numbers = Counter(re.findall(r'\d+(?:\.\d+)?',
+        extract_dimensions(entry['manufacturerRecord']['observedName'])['text']))
+    strength_before = Counter(clean_space(match.group()).casefold() for match in NAME_STRENGTH_RE.finditer(before['text']))
+    strength_after = Counter(clean_space(match.group()).casefold() for match in NAME_STRENGTH_RE.finditer(after['text']))
+    measures_before = Counter(clean_space(match.group()).casefold() for match in MEASURE_RE.finditer(entry['replaceTextFrom']))
+    measures_after = Counter(clean_space(match.group()).casefold() for match in MEASURE_RE.finditer(entry['replaceTextTo']))
+    if (measures_before != measures_after or before['measures'] != after['measures'] or strength_before != strength_after
+            or before['packs'] != after['packs'] or before['container'] != after['container']
+            or before_numbers - after_numbers
+            or (after_numbers - before_numbers) - observed_numbers):
+        raise ValueError(f'Manufacturer name correction cannot change size, pack or distinguishing numbers: {sku}')
+
+
 def validated_name_overrides(manifest: dict | None) -> tuple[dict, dict]:
     if not manifest:
         return {}, {}
@@ -371,6 +484,10 @@ def validated_name_overrides(manifest: dict | None) -> tuple[dict, dict]:
                 if not all(isinstance(entry.get(k), str) and entry[k] and not PRICE_RE.search(entry[k])
                            for k in ('replaceTextFrom', 'replaceTextTo')):
                     raise ValueError(f'Invalid name correction: {sku}')
+                if entry.get('scope') == MANUFACTURER_NAME_SCOPE:
+                    validate_manufacturer_name_correction(entry)
+                elif 'manufacturerRecord' in entry:
+                    raise ValueError(f'Manufacturer name records require their explicit verification scope: {sku}')
             result[sku] = entry
         mappings.append(result)
     return tuple(mappings)
@@ -489,7 +606,10 @@ def validated_name_verifications(manifest: dict | None) -> dict:
                 'expectedLabel', 'verifiedOn', 'verification', 'evidence'}
     kinds = {'manufacturer', 'exact_upc_listing', 'inspected_package_photo'}
     for entry in entries:
-        if not isinstance(entry, dict) or set(entry) != required:
+        manufacturer_method = (isinstance(entry, dict)
+                               and entry.get('verificationMethod') == 'manufacturer_exact_upc_record')
+        entry_fields = required | {'verificationMethod', 'manufacturerRecord'} if manufacturer_method else required
+        if not isinstance(entry, dict) or set(entry) != entry_fields:
             raise ValueError('Name verification contains missing, unsupported or private fields')
         sku = entry['sku']
         if not isinstance(sku, str) or not sku or sku in result:
@@ -507,8 +627,13 @@ def validated_name_verifications(manifest: dict | None) -> dict:
             raise ValueError(f'Name verification requires a review date: {sku}')
         checks = entry['verification']
         if (not isinstance(checks, dict) or set(checks) != {'brand', 'expression', 'upc', 'visual'}
-                or any(value is not True for value in checks.values())):
+                or any(checks[key] is not True for key in ('brand', 'expression', 'upc'))
+                or checks['visual'] is not (False if manufacturer_method else True)):
             raise ValueError(f'Name verification requires every name identity check: {sku}')
+        if manufacturer_method:
+            validate_manufacturer_name_record(entry)
+            result[sku] = entry
+            continue
         evidence = entry['evidence']
         if (not isinstance(evidence, list) or not evidence
                 or any(not isinstance(item, dict) or not {'kind', 'url'}.issubset(item)
@@ -820,6 +945,11 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                         hashlib.sha256(source['ItemName'].encode()).hexdigest(), source['MAINUPC']):
                     raise ValueError(f'Name override identity mismatch for SKU {sku}')
             correction = corrections.get(sku)
+            manufacturer_baseline = None
+            if correction and correction.get('scope') == MANUFACTURER_NAME_SCOPE:
+                manufacturer_baseline = classify_record(adjusted_source)[2]
+                if not manufacturer_baseline:
+                    raise ValueError(f'Manufacturer name-only review cannot restore unidentified merchandise: {sku}')
             if correction:
                 if source['ItemName'].count(correction['replaceTextFrom']) != 1:
                     raise ValueError(f'Spelling fragment does not match exactly once: {sku}')
@@ -835,6 +965,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 disposition, reason, public, flags = 'needs_review', identity_review['reason'], None, []
             else:
                 disposition, reason, public, flags = classify_record(adjusted_source)
+            if manufacturer_baseline and (not public or public['variant'] != manufacturer_baseline['variant']):
+                raise ValueError(f'Manufacturer name-only review changed the original variant metadata: {sku}')
             if review:
                 if restoring:
                     if not public:
@@ -886,6 +1018,11 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     public['name'] = resolution['verifiedName']
                     public['variant']['label'] = resolution['verifiedLabel']
                     flags.append('Previously unresolved source identity explicitly reconciled using manufacturer, exact UPC and inspected-package evidence; original fields and prior review preserved')
+            if correction and correction.get('scope') == MANUFACTURER_NAME_SCOPE:
+                if (not public or (public['name'], public['variant']['label'], public['variant']['upc']) !=
+                        (correction['verifiedPublicName'], correction['expectedLabel'], correction['expectedUpc'])):
+                    raise ValueError(f'Manufacturer name correction changed a guarded variant identity: {sku}')
+                flags.append('Manufacturer exact-UPC record checked the name only; this check does not verify size, photography or current stock')
             category_review = category_reviews.get(sku)
             if category_review:
                 apply_category_review(public, source, fields, category_review)
@@ -1109,6 +1246,7 @@ def name_audit(catalog: dict, audit: dict) -> dict:
                      'issues': issues, 'suggestedCorrections': suggestions, 'evidence': evidence,
                      'outcome': outcome,
                      'verifiedScope': 'product_name_identity_and_variant' if resolved_identity else
+                        MANUFACTURER_NAME_SCOPE if verification and verification.get('verificationMethod') == 'manufacturer_exact_upc_record' else
                         'exact_upc_name_identity' if verification else
                         (correction['scope'] if correction else None)})
     return {'schemaVersion': 1, 'sourceSha256': audit['sourceSha256'],
@@ -1117,8 +1255,9 @@ def name_audit(catalog: dict, audit: dict) -> dict:
                         'nameVerificationRecords': sum(bool(r.get('nameVerification')) for r in audit['records']),
                         'identityConflicts': sum(r['outcome'] == 'identity_conflict_needs_review' for r in rows),
                         'exactIdentitiesResolved': sum(r['outcome'] == 'evidence_backed_identity_resolved' for r in rows),
-                        'fullyVerifiedNames': sum(r['verifiedScope'] in {'product_name_spelling', 'exact_upc_name_identity', 'product_name_identity_and_variant'} for r in rows),
-                        'scopeNote': 'All rows scanned for specified risks. Only listed corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified.'},
+                        'fullyVerifiedNames': sum(r['verifiedScope'] in {'product_name_spelling', 'exact_upc_name_identity', 'product_name_identity_and_variant', MANUFACTURER_NAME_SCOPE} for r in rows),
+                        'manufacturerRecordVerifiedNames': sum(r['verifiedScope'] == MANUFACTURER_NAME_SCOPE for r in rows),
+                        'scopeNote': 'All rows scanned for specified risks. Only listed corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock.'},
             'records': rows}
 
 
