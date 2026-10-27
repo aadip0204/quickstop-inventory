@@ -560,6 +560,46 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(queue['summary']['evidenceBackedCorrections'], 1)
         self.assertEqual(queue['summary']['fullyVerifiedNames'], 0)
 
+    def test_unchanged_name_verification_preserves_catalog_and_is_not_a_correction(self):
+        source = export({'ItemName': 'Example Juice 750ml'})
+        verification = {
+            'sku': '1', 'expectedUpc': '001234567890',
+            'expectedNameSha256': hashlib.sha256(b'Example Juice 750ml').hexdigest(),
+            'expectedPublicName': 'Example Juice', 'expectedLabel': '750 mL',
+            'verifiedOn': '2026-10-27',
+            'verification': dict.fromkeys(('brand', 'expression', 'upc', 'visual'), True),
+            'evidence': [{'kind': kind, 'url': 'https://example.test/' + kind}
+                         for kind in ('manufacturer', 'exact_upc_listing', 'inspected_package_photo')],
+        }
+        manifest = {'schemaVersion': 1, 'nameVerifications': [verification]}
+        catalog, audit = builder.build(source, name_manifest=manifest)
+        baseline, _ = builder.build(source)
+        self.assertEqual(catalog, baseline)
+        summary = builder.name_audit(catalog, audit)['summary']
+        self.assertEqual(summary['evidenceBackedCorrections'], 0)
+        self.assertEqual(summary['nameVerificationRecords'], 1)
+        self.assertEqual(summary['fullyVerifiedNames'], 1)
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'Example Juice 750ml')
+        for key, value in [('expectedUpc', 'other'), ('expectedNameSha256', '0' * 64),
+                           ('expectedPublicName', 'Other Juice'), ('expectedLabel', '1 L'), ('sku', '2')]:
+            wrong = copy.deepcopy(manifest)
+            wrong['nameVerifications'][0][key] = value
+            with self.subTest(key=key), self.assertRaises(ValueError):
+                builder.build(source, name_manifest=wrong)
+        duplicate = copy.deepcopy(manifest)
+        duplicate['nameVerifications'] *= 2
+        with self.assertRaisesRegex(ValueError, 'unique SKU'):
+            builder.build(source, name_manifest=duplicate)
+        for mutate in [lambda x: x.update(rawPath='/Users/private/file.csv'),
+                       lambda x: x.update(expectedPublicName='Example $4.99'),
+                       lambda x: x['verification'].update(visual=False),
+                       lambda x: x['evidence'].pop(),
+                       lambda x: x['evidence'][0].update(url='file:///private/photo.jpg')]:
+            wrong = copy.deepcopy(manifest)
+            mutate(wrong['nameVerifications'][0])
+            with self.assertRaises(ValueError):
+                builder.build(source, name_manifest=wrong)
+
     def test_guarded_source_review_suppresses_suspect_size_without_guessing(self):
         source = export({'ItemName': 'DORITOS Spicy 1/8Oz', 'SKU': '2950', 'MAINUPC': '028400420754', 'DEPNAME': 'Snacks'})
         raw = list(csv.reader(io.StringIO(source.decode())))[1]
@@ -705,6 +745,108 @@ class ImportTests(unittest.TestCase):
         }]}
         with self.assertRaisesRegex(ValueError, 'Image identity mismatch'):
             builder.build(source, name_manifest=correction, image_manifest=old_photo_identity)
+
+    def test_explicit_resolution_of_prior_uncertain_identity_keeps_source_and_isolation(self):
+        source = export({'ItemName': 'Example Berry 1.75mL', 'PackName': '1.75 L'},
+                        {'ItemName': 'Example Berry 1.75L'})
+        review = restoration_review(source, 'Example Berry')
+        review['reviews'][0]['action'] = 'size_needs_confirmation'
+        review['reviews'][0].pop('sanitizedSourceName')
+        review['reviews'][0].pop('forceSizeNeedsConfirmation')
+        resolution = {
+            'expectedName': 'Example Berry', 'expectedLabel': 'Size needs confirmation',
+            'verifiedName': 'Example Berry', 'verifiedLabel': '1.75 L',
+            'verification': dict.fromkeys(('brand', 'expression', 'size', 'packaging', 'upc', 'visual'), True),
+            'reason': 'Exact source UPC and inspected package resolve the conflicting title unit; original fields remain private.',
+            'evidence': [{'kind': kind, 'url': 'https://example.test/' + kind, 'supports': 'Exact consumer identity reviewed'}
+                         for kind in ('manufacturer', 'exact_upc_listing', 'inspected_package_photo')],
+        }
+        review['reviews'][0]['identityResolution'] = resolution
+        catalog, audit = builder.build(source, source_reviews_manifest=review)
+        self.assertEqual(len(catalog['products']), 2)
+        by_sku = {v['sku']: v for p in catalog['products'] for v in p['variants']}
+        self.assertEqual(by_sku['1']['label'], '1.75 L')
+        self.assertEqual(audit['records'][0]['previousPublicIdentity']['label'], 'Size needs confirmation')
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'Example Berry 1.75mL')
+        self.assertEqual(audit['records'][0]['source']['PackName'], '1.75 L')
+        self.assertEqual(builder.name_audit(catalog, audit)['summary']['exactIdentitiesResolved'], 1)
+        for key, value in [('expectedName', 'Other Berry'), ('expectedLabel', 'Size not specified'),
+                           ('verifiedLabel', '1.75'), ('verifiedName', 'Example $4.99')]:
+            wrong = copy.deepcopy(review)
+            wrong['reviews'][0]['identityResolution'][key] = value
+            with self.subTest(key=key), self.assertRaises(ValueError):
+                builder.build(source, source_reviews_manifest=wrong)
+        for mutate in [lambda x: x['verification'].update(size=False),
+                       lambda x: x['evidence'].pop(),
+                       lambda x: x.update(privatePath='/Users/private/source.csv'),
+                       lambda x: x['evidence'][0].update(supports='Source $4.99'),
+                       lambda x: x['evidence'][0].update(url='file:///private/source')]:
+            wrong = copy.deepcopy(review)
+            mutate(wrong['reviews'][0]['identityResolution'])
+            with self.assertRaises(ValueError):
+                builder.build(source, source_reviews_manifest=wrong)
+        with self.assertRaisesRegex(ValueError, 'identity mismatch'):
+            builder.build(source.replace(b'19.99', b'29.99', 1), source_reviews_manifest=review)
+        # Identity evidence permits only the reviewed image mapping and does
+        # not weaken the existing professional or byte-integrity requirements.
+        image = copy.deepcopy(json.loads((ROOT / 'data/image-manifest.json').read_text())['images'][0])
+        image.update(sku='1', expectedUpc='001234567890', expectedName='Example Berry', expectedLabel='1.75 L')
+        catalog, _ = builder.build(source, source_reviews_manifest=review, image_manifest={'schemaVersion': 1, 'images': [image]})
+        by_sku = {v['sku']: v for p in catalog['products'] for v in p['variants']}
+        self.assertIsNotNone(by_sku['1']['image'])
+        self.assertIsNone(by_sku['2']['image'])
+        for key, value in [('expectedLabel', '750 mL'), ('sha256', '0' * 64)]:
+            wrong = copy.deepcopy(image)
+            wrong[key] = value
+            with self.assertRaises(ValueError):
+                builder.build(source, source_reviews_manifest=review, image_manifest={'schemaVersion': 1, 'images': [wrong]})
+        image['verification']['professional'] = False
+        with self.assertRaises(ValueError):
+            builder.build(source, source_reviews_manifest=review, image_manifest={'schemaVersion': 1, 'images': [image]})
+
+    def test_identity_resolutions_require_retained_upc_matching_source_guard(self):
+        for action in ('resolve_verified_identity', 'size_needs_confirmation', 'restore_named_merchandise'):
+            for upc in ('', '   ', 'not-a-barcode', ' 001234567890 ', '78938793'):
+                fields = {'ItemName': 'Example Berry', 'MAINUPC': upc}
+                if action == 'size_needs_confirmation':
+                    fields.update(ItemName='Example Berry 1.75mL', PackName='1.75 L')
+                elif action == 'restore_named_merchandise':
+                    fields['ItemName'] = 'Example Berry 1.75'
+                source = export(fields)
+                review = restoration_review(source, 'Example Berry')
+                entry = review['reviews'][0]
+                entry['action'] = action
+                if action != 'restore_named_merchandise':
+                    entry.pop('sanitizedSourceName')
+                    entry.pop('forceSizeNeedsConfirmation')
+                identity = {
+                    'verifiedName': 'Example Berry', 'verifiedLabel': '1.75 L',
+                    'verification': dict.fromkeys(('brand', 'expression', 'size', 'packaging', 'upc', 'visual'), True),
+                    'evidence': [{'kind': kind, 'url': 'https://example.test/' + kind,
+                                  'supports': 'Exact consumer identity reviewed'}
+                                 for kind in ('manufacturer', 'exact_upc_listing', 'inspected_package_photo')],
+                }
+                if action == 'resolve_verified_identity':
+                    entry.update(identity)
+                else:
+                    entry['identityResolution'] = {
+                        **identity, 'expectedName': 'Example Berry', 'expectedLabel': 'Size needs confirmation',
+                        'reason': 'Exact source barcode and inspected package resolve this identity.',
+                    }
+                with self.subTest(action=action, upc=upc):
+                    if upc == '78938793':
+                        # A legitimate eight-digit consumer barcode remains exact.
+                        catalog, _ = builder.build(source, source_reviews_manifest=review)
+                        self.assertEqual(catalog['products'][0]['variants'][0]['upc'], upc)
+                        continue
+                    # An invalid raw code must not become a verified identity or
+                    # authorize a photo after classification withholds that code.
+                    image = copy.deepcopy(json.loads((ROOT / 'data/image-manifest.json').read_text())['images'][0])
+                    retained_upc = upc.strip() if upc.strip().isdigit() else ''
+                    image.update(sku='1', expectedUpc=retained_upc, expectedName='Example Berry', expectedLabel='1.75 L')
+                    for images in (None, {'schemaVersion': 1, 'images': [image]}):
+                        with self.assertRaisesRegex(ValueError, 'retained public UPC matching the source guard'):
+                            builder.build(source, source_reviews_manifest=review, image_manifest=images)
 
     def test_real_merchandise_in_shortcut_is_retained(self):
         catalog, _ = builder.build(export({'ItemName': 'ALKA SELTZER REG/COLD', 'DEPNAME': 'ShortCut'}))

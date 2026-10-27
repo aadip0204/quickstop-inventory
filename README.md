@@ -24,6 +24,8 @@ Reviewed photographs are installed per SKU and shown only for the exact selected
 
 A CSV comma repair stays isolated from other products. Its image remains blocked unless its source review names the exact current product, size and image hash, confirms all six identity checks, and links manufacturer, exact-UPC and inspected-photo evidence. That exception requires a matching licensed professional image record; it cannot approve another SKU or bypass file-hash validation.
 
+A previously uncertain identity can be resolved only by a guarded review matching the original row, UPC, current name and confirmation label. Manufacturer, exact-UPC and inspected-package evidence must agree on the new identity and size. Resolved records stay isolated, require a valid retained UPC, and still need their own licensed professional image approval. Unchanged names have separate verification records so reviewing a correct name does not inflate the correction count.
+
 ## Validation and deployment
 
 Run the Python tests with `python3 -m unittest discover -s tests -v`, and the frontend tests with `node --test tests/catalog-ui.test.cjs`. For full-source reconciliation, set `QUICKSTOP_PRIVATE_INPUT` to the absolute CSV path when running the Python tests. Never place the private CSV in CI.

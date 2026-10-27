@@ -411,7 +411,44 @@
       "forceSizeNeedsConfirmation": true,
       "action": "restore_named_merchandise",
       "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
-      "reviewedOn": "2026-10-27"
+      "reviewedOn": "2026-10-27",
+      "identityResolution": {
+        "verifiedName": "Jolly Rancher Chews Original Flavors",
+        "verifiedLabel": "2.06 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "reason": "Exact manufacturer UPC and independently corroborated single-box weight resolve the omitted source measurement unit. Original source description and prior review remain preserved privately.",
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.hersheys.com/010700519528-0050-en-US/index.html?cname=00010700519528-0050",
+            "supports": "Hershey SmartLabel explicitly identifies Jolly Rancher Fruit Chews Candy, net weight 2.06 oz, UPC010700519528."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.nassaucandy.com/jolly-rancher-fruit-chews-2-06oz.html",
+            "supports": "Distributor identifies UPC010700519528, 2.06 oz fruit chews with the four original flavors. Its distinct inner UPC is not assigned to this unit."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://allcitycandy.com/collections/fruity-candy/products/jolly-rancher-chews-original-3",
+            "supports": "Retailer identifies SKU010700519528 as Original Flavors, one 2.06 oz box; distinguishes single box from case of twelve."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/070/051/9528/6.jpg",
+            "supports": "Actually inspected the unchanged full original: complete clean blue Jolly Rancher Chews Original Flavors box; visible 2.06 OZ (58 g), green apple/watermelon/cherry/blue raspberry; no prices, hands, shelves, countertop, or clipped package."
+          }
+        ],
+        "expectedName": "Jolly Rancher Fruit Chews",
+        "expectedLabel": "Size needs confirmation"
+      }
     },
     {
       "sku": "4634",
@@ -671,10 +708,10 @@
       "expectedUpc": "070655910092",
       "expectedNameSha256": "32145f6e7edfafaea8a69271dbd1ea1bb95f2d9a33d0c8a14d1a7398e97efe60",
       "expectedSourceRecordSha256": "f3a7f96cd7e65527e2a07a3337b6542b520a09472fd2690a5a4493e5dabfc408",
-      "sanitizedSourceName": "Mr & Mrs Straw Daiq",
-      "forceSizeNeedsConfirmation": true,
+      "sanitizedSourceName": "Mr & Mrs Straw Daiq 1.75 L",
+      "forceSizeNeedsConfirmation": false,
       "action": "restore_named_merchandise",
-      "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
+      "reason": "Retain one explicit source measurement after deletion of duplicated unit text. Both original measurements are 1.75 L and the independent pack field is blank. No size is inferred from external metadata or photos; original source fields remain conserved.",
       "reviewedOn": "2026-10-27"
     },
     {
@@ -704,10 +741,10 @@
       "expectedUpc": "070655910115",
       "expectedNameSha256": "4a442c58440ed60ea642fdbbcbb6bdd5f4d9a78245050dc353fb3feb42a2d6e1",
       "expectedSourceRecordSha256": "c87cf5497a6784c01064686ebeb20a343b8c188da4b7a5ad0c737864fad5d464",
-      "sanitizedSourceName": "MR&MRS PINA Colada mix",
-      "forceSizeNeedsConfirmation": true,
+      "sanitizedSourceName": "MR&MRS PINA Colada mix 1.75L",
+      "forceSizeNeedsConfirmation": false,
       "action": "restore_named_merchandise",
-      "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
+      "reason": "Retain one explicit source measurement after deletion of duplicated unit text. Both original measurements are 1.75 L and the independent pack field is blank. No size is inferred from external metadata or photos; original source fields remain conserved.",
       "reviewedOn": "2026-10-27"
     },
     {
@@ -715,10 +752,10 @@
       "expectedUpc": "070655910054",
       "expectedNameSha256": "5e57b9ec1a59aa7fbe7bb111c529bc8871cb94675b8c53fe7dc76664e9173366",
       "expectedSourceRecordSha256": "ee863f9343ad975eb6f67214dfe653493faf65c0d9ecd756d8b776fdab98332d",
-      "sanitizedSourceName": "MR&MRS SWEET &SOUR",
-      "forceSizeNeedsConfirmation": true,
+      "sanitizedSourceName": "MR&MRS SWEET &SOUR 1.75 L",
+      "forceSizeNeedsConfirmation": false,
       "action": "restore_named_merchandise",
-      "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
+      "reason": "Retain one explicit source measurement after deletion of duplicated unit text. Both original measurements are 1.75 L and the independent pack field is blank. No size is inferred from external metadata or photos; original source fields remain conserved.",
       "reviewedOn": "2026-10-27"
     },
     {
@@ -818,7 +855,39 @@
       "forceSizeNeedsConfirmation": true,
       "action": "restore_named_merchandise",
       "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
-      "reviewedOn": "2026-10-27"
+      "reviewedOn": "2026-10-27",
+      "identityResolution": {
+        "verifiedName": "Ruffles Jalapeño Ranch Flavored Potato Chips",
+        "verifiedLabel": "74.4 g",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "reason": "Exact source UPC, source gram amount, independently verified retail size and inspected package agree. Resolve the previously unparsed joined measurement for this SKU without altering flavor or assigning another package.",
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.pepsicoproductfacts.com/Home/product?gtin=00028400634502",
+            "supports": "PepsiCo confirms the Ruffles Jalapeño Ranch Flavored Potato Chips expression. This page is a different 8.5 oz GTIN and is used only for expression, never as size/UPC proof."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.dollargeneral.com/p/ruffles-potato-chips-jalapeno-ranch-2-63-oz/28400634519",
+            "supports": "Retailer title and specifications identify Jalapeno Ranch, 2.625 oz. Saved page source explicitly carries salsifyUpc028400634519. Independently corroborates the inspected 74.4 g package."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/063/4519/1.jpg",
+            "supports": "Actually inspected full original: complete sealed Ruffles Jalapeño Ranch potato-chip bag, visible net weight 2 5/8 OZ (74.4 g); plain white background with no price imprint or obstruction."
+          }
+        ],
+        "expectedName": "Ruffles Jalapeno Ranch",
+        "expectedLabel": "Size needs confirmation"
+      }
     },
     {
       "sku": "7334",
@@ -1170,7 +1239,39 @@
       "forceSizeNeedsConfirmation": true,
       "action": "restore_named_merchandise",
       "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
-      "reviewedOn": "2026-10-27"
+      "reviewedOn": "2026-10-27",
+      "identityResolution": {
+        "verifiedName": "Iberia Original Aloe Vera Drink",
+        "verifiedLabel": "1.5 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "reason": "Manufacturer exact UPC, independent retailer and inspected manufacturer package confirm Original Aloe Vera Drink in a single bottle. Resolve the joined source liter notation and equivalent fluid-ounce pack metadata for this SKU only; licensed candidate image remains unapproved.",
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://iberiafoods.com/product/iberia-aloe-vera-original-1-5-lt/",
+            "supports": "Manufacturer lists Original Aloe Vera Drink,1.5 lt, and SKU0-75669-11550-1, exactly the source UPC."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.target.com/p/-/A-80835720",
+            "supports": "Retailer explicitly lists UPC075669115501, Original Aloe Vera Drink,50.8 fl oz, package quantity1, plastic bottle."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://iberiafoods.com/wp-content/uploads/2024/12/IB-Front-Aloe-Original-1.5-Lt.png",
+            "supports": "Actually inspected manufacturer image with Original Aloe Vera Drink and legible50.8 fl oz(1.5 Lts). Evidence only: this image is not authorized for public reuse."
+          }
+        ],
+        "expectedName": "IBERIA ALOE VERA DRINK ORIGINAL",
+        "expectedLabel": "Size needs confirmation"
+      }
     },
     {
       "sku": "4683",
@@ -2045,6 +2146,175 @@
       "action": "size_needs_confirmation",
       "reason": "Original export gives a unit volume while a later exact-SKU report gives a multipack without its unit volume. Package identity requires confirmation; do not combine the two descriptions.",
       "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "2750",
+      "expectedUpc": "856065002103",
+      "expectedNameSha256": "4d6e4844a1db1e0d22648d3d570c2d42c8c656dfa78457994088ba924eaf6be4",
+      "expectedSourceRecordSha256": "dc23d10c61d1c3fa94e904e1bc3c603d545633e6a9856dd2770f6740a8b8a642",
+      "action": "size_needs_confirmation",
+      "reviewedOn": "2026-10-27",
+      "reason": "Source title and pack measurement conflict; retain the prior uncertain identity until exact UPC and package evidence resolves this SKU.",
+      "identityResolution": {
+        "verifiedName": "Deep Eddy Ruby Red Grapefruit Vodka",
+        "verifiedLabel": "1.75 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "reason": "Resolve the contradictory source measurement and omitted expression only for the exact UPC corroborated by manufacturer, independent retailer and inspected bottle. Preserve both original source measurements privately; no general unit substitution is authorized.",
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://deepeddyvodka.com/deep-eddy-ruby-red-vodka",
+            "supports": "Manufacturer identifies Ruby Red Grapefruit Vodka and specifies 35 percent alcohol and 70 proof."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.winetransit.com/spirits/vodka/flavored/deep-eddy-ruby-red-grapefruit-flavored-vodka-1-75-l-44241.html",
+            "supports": "Independent retailer specifications identify exact UPC856065002103, Ruby Red, 1.75 L, 70 proof, one bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.universalfws.com/product/p-14073-deep-eddy-ruby-red-grapefruit-vodka-175l/",
+            "supports": "Second independent retailer identifies SKU856065002103 as Deep Eddy Ruby Red Grapefruit Vodka 1.75 L."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/606/500/2103/1.jpg",
+            "supports": "Actually inspected full original: complete clean studio Deep Eddy Ruby Red grapefruit-flavored vodka bottle on white; label clearly reads 35% ALC/VOL (70 PROOF) 1.75 L. No price, cropping, hand, shelf, or household setting."
+          }
+        ],
+        "expectedName": "deep eddy",
+        "expectedLabel": "Size needs confirmation"
+      }
+    },
+    {
+      "sku": "3934",
+      "expectedUpc": "78938793",
+      "expectedNameSha256": "1df17ff8c586cc233eb1acdac3f6611934b90e4333820b0463209f094a8194b4",
+      "expectedSourceRecordSha256": "985432253fccd3d4b70e588e4d4c1638159675919f83989509d9e3c8a6c4495e",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Halls Cereja Cherry Candy",
+      "verifiedLabel": "28 g",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Resolve the source brand-only entry using the exact EAN-8 unit code in a manufacturer-branded catalog, independent distributors and retailers, and the inspected single-pack image. Do not infer an outer display or multipack from distributor case quantities.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://dnovacampinas.com.br/wp-content/uploads/2025/06/Catalogo-Distribuidor-Q2.pdf",
+          "supports": "Mondelēz International branded distributor catalog, rendered and inspected cover and PDFpage47. HALLS BASE DSP CEREJA table lists28g and EAN8 unit78938793; display and case codes are separately stated. Manufacturer-authored document hosted by distributor."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://portfoliococacolafemsa.com.br/parana/produto/halls-cereja-28g-21",
+          "supports": "Coca-Cola FEMSA distribution portfolio explicitly identifies Halls Cereja28g, EAN78938793. Quantity21 is its display ordering quantity, not the source retail unit."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.stock.com.py/products/283954-caramelos-cherry-28gr-halls-plas.aspx",
+          "supports": "Independent retailer explicitly identifies cherry Halls28g and barcode78938793."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mondelezinternational.com/our-brands/halls/",
+          "supports": "Direct manufacturer site establishes the Halls brand and refreshing-candy product use; exact flavor and weight are supported by its distributor catalog and exact-code listings."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/000/007/893/8793/3.jpg",
+          "supports": "Actually inspected full original: complete single Halls Cereja/Cereza cherry stick pack with28g visible on pack and professional branded footer; plain white backdrop, no people, shelf, countertop, clipping, or price. The bottom branding is part of the existing studio composition and is unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "4097",
+      "expectedUpc": "072600008861",
+      "expectedNameSha256": "9ebc802d614ec75e3d9676221d78b23b85ddf6cb9d6031831d87565ce0e95ea9",
+      "expectedSourceRecordSha256": "61a96f848f0a6a3ed15546727588c6b2f13f229b71da5bfeb0a5adb5f6588566",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Herr's Honey BBQ Ripple Potato Chips",
+      "verifiedLabel": "1 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the visually inspected complete individual package corroborate this one SKU. Original source fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://shop.herrs.com/products/honey-bbq",
+          "supports": "Herr Foods identifies Honey BBQ Ripple Potato Chips and offers 1 OZ individual bags in wholesale cartons. This establishes the expression and individual-bag size, not a retail carton assignment."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.creveleurope.com/products/snack-herrs-28-gr-honey-bbq-chips?_fid=af7bad4b3&_pos=1&_ss=c",
+          "supports": "Distributor identifies HERRS Honey BBQ chips, unit EAN 072600008861, separate case EAN 30072600008862 and a 42-unit case. The inspected individual-bag label gives the exact 1 oz measurement."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/260/000/8861/4.jpg",
+          "supports": "Complete brown-and-red Herr's Honey BBQ Potato Chips bag on white; label NET WT. 1 OZ. (28.4g) is clearly readable. Top white circle is blank, with no visible price. Entire sealed bag is shown; no carton, hand or household objects."
+        }
+      ]
+    },
+    {
+      "sku": "6270",
+      "expectedUpc": "031200016058",
+      "expectedNameSha256": "9f4aa6ddb103b86fb6610ee8ebed82aa22441cd62fe6c733e1766097098a3e07",
+      "expectedSourceRecordSha256": "20ceea4a45f9d8a8d5714258dd84a9b1485d02bee5a67d4a4675a4c35921e784",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Ocean Spray Jellied Cranberry Sauce",
+      "verifiedLabel": "14 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the visually inspected complete individual package corroborate this one SKU. Original source fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.oceanspray.com/products/jellied-cranberry-sauce-14-oz",
+          "supports": "Manufacturer indexed product page identifies Jellied Cranberry Sauce, 14 oz, canned format. Full web open exceeded the tool content limit; the indexed primary-source product content was inspected."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://zallandsons.com/catalog/groceries/",
+          "supports": "Distributor grocery catalog identifies Ocean Spray Jellied Cranberry Sauce 14oz - 1ct, item97098, UPC031200016058. It corroborates source UPC, jellied expression, size and single-can package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.national-azabu.net/products/detail/174554",
+          "supports": "Retailer explicitly identifies Ocean Spray Jellied Cranberry Sauce, 397g and item code031200016058, corroborating the 14oz/397g inspected can."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/120/001/6058/3.jpg",
+          "supports": "Complete single silver-rimmed Ocean Spray Jellied Cranberry Sauce can on white. Label clearly reads Jellied Cranberry Sauce and NET WT 14 OZ (397g). Can rims and body are intact, without visible price, hands or household setting."
+        }
+      ]
     }
   ]
 }
