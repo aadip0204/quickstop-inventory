@@ -1,0 +1,12 @@
+private-input/
+private-output/
+private/
+*.csv
+*.zip
+.env*
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+playwright-report/
+test-results/

@@ -1,0 +1,13 @@
+# Keep build tools, test fixtures, and maintainer reports out of GitHub Pages.
+exclude:
+  - scripts
+  - tests
+  - docs
+  - README.md
+  - data-summary.json
+  - private-input
+  - private-output
+  - private
+  - node_modules
+  - package.json
+  - package-lock.json

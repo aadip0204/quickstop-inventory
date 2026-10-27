@@ -1,0 +1,4734 @@
+{
+  "schemaVersion": 1,
+  "policy": "Exact SKU + original title SHA-256 + UPC matches only. Literal spelling fragments contain no raw prices. Corrections address spelling and spacing, not inferred sizes, flavor, age, proof or packaging. Original full text remains in the private master.",
+  "corrections": [
+    {
+      "sku": "4600",
+      "expectedUpc": "088076163171",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.johnniewalker.com/en/our-whisky/core-range/johnnie-walker-black-label",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "c9d56338b1a74b24a8827743fd8ee641663da179191b76a8bff195d25db54dc8",
+      "replaceTextFrom": "JOHNNIE WALKE",
+      "replaceTextTo": "JOHNNIE WALKER"
+    },
+    {
+      "sku": "4602",
+      "expectedUpc": "088110011192",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.johnniewalker.com/en/our-whisky/core-range/johnnie-walker-black-label",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "75aac881ff50bafc84f8f28470b01b0ea508459d1fd82a05624cb883b91ece0a",
+      "replaceTextFrom": "Johny Walker",
+      "replaceTextTo": "Johnnie Walker"
+    },
+    {
+      "sku": "4603",
+      "expectedUpc": "088110011093",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.johnniewalker.com/en/our-whisky/core-range/johnnie-walker-black-label",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "75aac881ff50bafc84f8f28470b01b0ea508459d1fd82a05624cb883b91ece0a",
+      "replaceTextFrom": "Johny Walker",
+      "replaceTextTo": "Johnnie Walker"
+    },
+    {
+      "sku": "4604",
+      "expectedUpc": "088110021092",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.johnniewalker.com/en/our-whisky/core-range/johnnie-walker-black-label",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "e6ce52bd18aeaf738abb7e415a31e8323bfce71dd304de10a397c1f7fbbecf55",
+      "replaceTextFrom": "Johny Walker",
+      "replaceTextTo": "Johnnie Walker"
+    },
+    {
+      "sku": "7896",
+      "expectedUpc": "089016008194",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://sobieskivodka.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "25bb3034a38d1a9880bcd7fabcf9499c0b39af71eb0ca8a894adb781a4e5b481",
+      "replaceTextFrom": "SOBISKI",
+      "replaceTextTo": "SOBIESKI"
+    },
+    {
+      "sku": "5335",
+      "expectedUpc": "086024008086",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.margaritavillespirits.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "e4b740315b69bd9a39a2f9654ca5061984e8f96b6ebc8a0ce0e7904c18d03f17",
+      "replaceTextFrom": "MARGARITAVILE",
+      "replaceTextTo": "MARGARITAVILLE"
+    },
+    {
+      "sku": "5336",
+      "expectedUpc": "088352125442",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.margaritavillespirits.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "54dab703b2add5092439edb9c92034408864384eacacb707fb9ebb0f9eeaaa91",
+      "replaceTextFrom": "MARGARITAVILLA",
+      "replaceTextTo": "MARGARITAVILLE"
+    },
+    {
+      "sku": "5364",
+      "expectedUpc": "021131504755",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.mariecallendersmeals.com/frozen-dinners/fettuccini-chicken-broccoli",
+          "kind": "manufacturer",
+          "supports": "product_name_spelling"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "0d6fe496b40869dc58fbb7d501b71f5a00a6a139436938d48f8f811efcd25e7b",
+      "replaceTextFrom": "fettu8ccini with chicken broccoli",
+      "replaceTextTo": " Fettuccini with Chicken & Broccoli"
+    },
+    {
+      "sku": "5368",
+      "expectedUpc": "021131508029",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.mariecallendersmeals.com/frozen-dinners/honey-roasted-turkey-breast",
+          "kind": "manufacturer",
+          "supports": "product_name_spelling"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "69097bd081102b701d944d7c95cd5e91bc5ba06e89f9f580879d8f10bd8bce28",
+      "replaceTextFrom": "honey rosted turkey breast",
+      "replaceTextTo": " Honey Roasted Turkey Breast"
+    },
+    {
+      "sku": "5560",
+      "expectedUpc": "070970475498",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://bloomskosher.com/wp-content/uploads/2024/02/BLOOMS-CATALOG-2.6.2024.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5557",
+      "expectedUpc": "070970475450",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://bloomskosher.com/wp-content/uploads/2024/02/BLOOMS-CATALOG-2.6.2024.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5558",
+      "expectedUpc": "070970475467",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://bloomskosher.com/wp-content/uploads/2024/02/BLOOMS-CATALOG-2.6.2024.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5556",
+      "expectedUpc": "070970475443",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://bloomskosher.com/wp-content/uploads/2024/02/BLOOMS-CATALOG-2.6.2024.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5559",
+      "expectedUpc": "070970475474",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://bloomskosher.com/wp-content/uploads/2024/02/BLOOMS-CATALOG-2.6.2024.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5555",
+      "expectedUpc": "070970475436",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://bloomskosher.com/wp-content/uploads/2024/02/BLOOMS-CATALOG-2.6.2024.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "101230",
+      "expectedUpc": "070970475481",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://bloomskosher.com/wp-content/uploads/2024/02/BLOOMS-CATALOG-2.6.2024.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "101231",
+      "expectedUpc": "070970475504",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://goldstardist.com/wp-content/uploads/2025/12/FDA-Press-Release-for-Gold-Star-Distribution-Cross-Center-Reviewed_FINAL-2.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "101229",
+      "expectedUpc": "070970475528",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://goldstardist.com/wp-content/uploads/2025/12/FDA-Press-Release-for-Gold-Star-Distribution-Cross-Center-Reviewed_FINAL-2.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5563",
+      "expectedUpc": "070970449963",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://indianaimportllc.com/product/mikeike-jolly-joes-0-78oz-24ct/",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5566",
+      "expectedUpc": "070970449932",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://www.holidaywholesale.com/wp-content/uploads/2018_05_May_HolidayHighlights_LR_.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5564",
+      "expectedUpc": "070970449970",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://www.holidaywholesale.com/wp-content/uploads/2018_05_May_HolidayHighlights_LR_.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5562",
+      "expectedUpc": "070970449956",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.mikeandike.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        },
+        {
+          "url": "https://www.holidaywholesale.com/wp-content/uploads/2018_05_May_HolidayHighlights_LR_.pdf",
+          "kind": "distributor",
+          "supports": "exact UPC belongs to Mike and Ike; flavor and package not added by this correction"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04",
+      "replaceTextFrom": "MIKE N LIKE",
+      "replaceTextTo": "MIKE AND IKE"
+    },
+    {
+      "sku": "5447",
+      "expectedUpc": "085592106637",
+      "expectedNameSha256": "0f826aae081909785b0ad1ce3ed77547f360a72842f8bacbcbc06d86872e45ed",
+      "replaceTextFrom": "MCCORMIC",
+      "replaceTextTo": "MCCORMICK",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://mccormickdistilling.com/brands/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5448",
+      "expectedUpc": "085592137792",
+      "expectedNameSha256": "abf9aeafbcd3945241fa0910cc95f028157ba8b0574b94122b88ce1f14745c7e",
+      "replaceTextFrom": "MCCORMIC",
+      "replaceTextTo": "MCCORMICK",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://mccormickdistilling.com/brands/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5449",
+      "expectedUpc": "085592137891",
+      "expectedNameSha256": "9c3affbb01bd59e791fa021d0612f92170b94ef707dafd18fe444ab478a42524",
+      "replaceTextFrom": "MCCORMIC",
+      "replaceTextTo": "MCCORMICK",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://mccormickdistilling.com/brands/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5450",
+      "expectedUpc": "085592104534",
+      "expectedNameSha256": "2c535aa07a07c8d1ddbaadfc4f2b0c658bc26f0ac7370116375c6ac33d6b78ff",
+      "replaceTextFrom": "MCCORMIC",
+      "replaceTextTo": "MCCORMICK",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://mccormickdistilling.com/brands/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5451",
+      "expectedUpc": "085592120633",
+      "expectedNameSha256": "c04af0a35e1bc0e7c55f165c2401d5450c11eb99cf16b0838f1d9eb2638fcf7a",
+      "replaceTextFrom": "MCCORMIC",
+      "replaceTextTo": "MCCORMICK",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://mccormickdistilling.com/brands/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8560",
+      "expectedUpc": "743779204643",
+      "expectedNameSha256": "058afdade35b1de3d4ac6da9643b3eca15706d6abedfd41dd013d541fa6ce761",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8614",
+      "expectedUpc": "743779209716",
+      "expectedNameSha256": "e6fa8f13ab2b7545786e4773d74bad685dbafe7bbd5f76f941e3e89f2851189c",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8592",
+      "expectedUpc": "743779209259",
+      "expectedNameSha256": "03f3faf3d9a1e28ca1aa081976505a77383b75fc3e2e7e300cc97daff10f7e29",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8591",
+      "expectedUpc": "743779209242",
+      "expectedNameSha256": "3053b1187b5f75599d3187ade4001eed0825e498d7ceca152afb87d243cda0bd",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8559",
+      "expectedUpc": "743779206562",
+      "expectedNameSha256": "d23ae12b52ff42bc4446f6b5048b9c09f83bc0ae002c088a8ea0494e52901421",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8610",
+      "expectedUpc": "743779209198",
+      "expectedNameSha256": "4a958ae431a34d74895cfb1894599b008bfae4a80f931b7d4947b493b61d8009",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8558",
+      "expectedUpc": "743779208924",
+      "expectedNameSha256": "7488ca5a6899b5c7cf4db5fcd046a8ee640465011db3a202cf77c440b04e3d9b",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8556",
+      "expectedUpc": "743779209143",
+      "expectedNameSha256": "e40cd66390a6407de2adf4240ca792115afb2b5c77b6e9d169d76dcbbcbac967",
+      "replaceTextFrom": "candycoconut lonng",
+      "replaceTextTo": "candy coconut long",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/long",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling long; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8562",
+      "expectedUpc": "743779204735",
+      "expectedNameSha256": "e8aaa99091d457063440f4a0d1c31e5a1180050424aa3003608ac7c819683dee",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8608",
+      "expectedUpc": "743779209167",
+      "expectedNameSha256": "d4682b2d4c393d5d1cdb4cf9a2a628364f5e80756b97d3214b6b69b4c162f513",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8565",
+      "expectedUpc": "743779204841",
+      "expectedNameSha256": "2716f22d8344b359d0d86743fed843cd04bbfaa23cdc98ef544e6cf30366f1ff",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8566",
+      "expectedUpc": "743779204858",
+      "expectedNameSha256": "8ade4be9673b69ce3dcf994d8890f1a17fb3cae551f7a20542c44a6db53dcc1f",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8593",
+      "expectedUpc": "743779209273",
+      "expectedNameSha256": "0ae2ce8a79e5ad33155272e052f5d9f79f15221a40d6c855c132a1d581cd9a91",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8561",
+      "expectedUpc": "743779204728",
+      "expectedNameSha256": "a190ea4694ba1d7f2e8c43e127fac6104215840b2eb6286efa7a7272fb468d1d",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8557",
+      "expectedUpc": "743779208887",
+      "expectedNameSha256": "e417d7f5adf77a6220e224d0a333c14062318857a79c91e853369b356bba4cdd",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8618",
+      "expectedUpc": "743779209915",
+      "expectedNameSha256": "1c757402a7dac6e00c90c54d9019eb505b5ec91bd94639a9d28d5642fde2a3bb",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8609",
+      "expectedUpc": "743779209181",
+      "expectedNameSha256": "6037ac167797ab37fcb6f64ea201b04184e29cc2e3970bb4707014ba7596ffdb",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8611",
+      "expectedUpc": "743779208979",
+      "expectedNameSha256": "a34e9ca8ddb36388ddfab44deed48bf0a5ca2356d5c0a07d957f66a27ec0095e",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8555",
+      "expectedUpc": "743779209136",
+      "expectedNameSha256": "38c2615cbf13633145d889b3e0374a9b1dc303e56abe470bc623665687e125b7",
+      "replaceTextFrom": "Taylors candy",
+      "replaceTextTo": "Taylors candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9002",
+      "expectedUpc": "743779009859",
+      "expectedNameSha256": "f9dc690d2a20babcc1e38da4b963b72dd59f5de85cd11730363fdeacb7fddedd",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9004",
+      "expectedUpc": "743779005455",
+      "expectedNameSha256": "f38122af52b9cd0e9fb7404459a751651da48c128a09d658162d47591b7f22b8",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9006",
+      "expectedUpc": "743779204629",
+      "expectedNameSha256": "ef93236ab1f0be55a8c1ef7693470dec159dcc5b3195074e3d7696c3529b5e04",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9008",
+      "expectedUpc": "743779209204",
+      "expectedNameSha256": "18383fece7109613e17b5ab95b64912096b2074b10616e0005fbd0c24917afba",
+      "replaceTextFrom": "TYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "brand_and_spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_and_spacing_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9010",
+      "expectedUpc": "743779250206",
+      "expectedNameSha256": "53ffbaad2430b52f0c9e09fb2027f7b7b3d398053c6e9f1d1a21cd664d81da4f",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9011",
+      "expectedUpc": "743779250213",
+      "expectedNameSha256": "da288e4b3e1b1776726746992fc3152518f7c070700a6e145f467823358068f3",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9012",
+      "expectedUpc": "743779250169",
+      "expectedNameSha256": "4677e1ca0451b086d3014a0f72750c3eb377bd4009f9a8092d7ffcafe797007c",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9014",
+      "expectedUpc": "743779204971",
+      "expectedNameSha256": "ad8a430d216504cb30cee3dcc57f16f0b2992761164f5199671e794b7d61f293",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9015",
+      "expectedUpc": "743779209945",
+      "expectedNameSha256": "70b75c8a5c2a031690273b06138546c36c5bfe3865ae3108158173ec9df77592",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9016",
+      "expectedUpc": "743779009804",
+      "expectedNameSha256": "446faebe378b105a6c38e800ba2f5d40f80c2c16401c6271bbeae56d330d3b0c",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9018",
+      "expectedUpc": "743779208429",
+      "expectedNameSha256": "2038c8223dd5299d6a86b75905a9580f81f5db222e0f5b63dfb37619868b653a",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9020",
+      "expectedUpc": "743779006124",
+      "expectedNameSha256": "d0320af18fcfe40a3b620f6461942cff3f60053e820cb485bb5dca39e94fb767",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9021",
+      "expectedUpc": "743779208481",
+      "expectedNameSha256": "da0a075da5d59ce5e71ef3dd6f304365a421cb7dc70f7f939216c355f9b1aae0",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9022",
+      "expectedUpc": "743779004670",
+      "expectedNameSha256": "daf0422220bc807517a5d989aea86160b24478d72083308400c77bd97ce5d176",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9024",
+      "expectedUpc": "743779202939",
+      "expectedNameSha256": "c8ed74e3070a296c2cd720db8ad59e01a3730c8ae45bf50435134651382729fa",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9026",
+      "expectedUpc": "743779250114",
+      "expectedNameSha256": "612f7187643bfd2f3dfdaaf3fd88f8e48c62c2bce5ad7374097a36faaa3b458e",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9031",
+      "expectedUpc": "743779009798",
+      "expectedNameSha256": "11937f4275d712e8889e18bcd187be306c1d69852b443bacdfd8e857827964f6",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9032",
+      "expectedUpc": "743779009019",
+      "expectedNameSha256": "1c0a7820e0e02844f0122225ba5a6538bd85fcf8a75bbfd7608a4ae2c51bdf3b",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9033",
+      "expectedUpc": "743779209730",
+      "expectedNameSha256": "8a61fcb342d477de54f90574ca0ab5071752d5d111651feecb643a86d104fe73",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9036",
+      "expectedUpc": "743779204636",
+      "expectedNameSha256": "d2e6fa1856d3ccfe80f5761d8af65924cb8310190bb64253ec03278bd47ae060",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "850",
+      "expectedUpc": "085000029886",
+      "expectedNameSha256": "4a3ee8063bd1f16cedcc3f82a97383eedcd8d425d9ace34c9a47b04880d34cba",
+      "replaceTextFrom": "Barefoor",
+      "replaceTextTo": "Barefoot",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.barefootwine.com/fruitscato.html",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "851",
+      "expectedUpc": "085000029909",
+      "expectedNameSha256": "3d4ddbaa55e5052c6d9b09c06f954c2af3856ac2d356bdea2566239fc51b3eaf",
+      "replaceTextFrom": "Barefoor",
+      "replaceTextTo": "Barefoot",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.barefootwine.com/fruitscato.html",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "852",
+      "expectedUpc": "085000029916",
+      "expectedNameSha256": "616d2dea760b4c9e7faa7e86a9f03309d4949809eff8440f45c672e69aebdbd2",
+      "replaceTextFrom": "Barefoor",
+      "replaceTextTo": "Barefoot",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.barefootwine.com/fruitscato.html",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9038",
+      "expectedUpc": "743779204650",
+      "expectedNameSha256": "d156c5bcb88fcf368fe5f754b25050356d680faf1c199428b118eaf8d9633c0e",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9005",
+      "expectedUpc": "743779204988",
+      "expectedNameSha256": "dfb41a3060571b214eb778f80263275f764b88af4cbb758fda46ff3acc3251e5",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9037",
+      "expectedUpc": "743779209150",
+      "expectedNameSha256": "656ef1b7adc7d2bf65c53f0f3307ead49369c670b4c13c4072dfa0808c2ecf55",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8564",
+      "expectedUpc": "743779204810",
+      "expectedNameSha256": "d64679b0acac63362e12da051a0d81dc052052e811944b540ee60ce0f04b941a",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9017",
+      "expectedUpc": "743779204674",
+      "expectedNameSha256": "b4d88e045eaf5e307a0e1a00b1473a67c003dff24aea65f63f2188043ca0b954",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9003",
+      "expectedUpc": "743779209723",
+      "expectedNameSha256": "f9dc690d2a20babcc1e38da4b963b72dd59f5de85cd11730363fdeacb7fddedd",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "101444",
+      "expectedUpc": "743779250633",
+      "expectedNameSha256": "6137ecdb0b9046725567fb762a91e20dac2d4153c39d5ce17f745a3a293f4a87",
+      "replaceTextFrom": "TYLORS SALT & VINAGER",
+      "replaceTextTo": "TAYLORS SALT & VINEGAR",
+      "scope": "brand_and_expression_spelling",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/product-category/cracklins/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer spells brand Taylors and flavor Salt Vinegar; unchanged source cracklin wording/size."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9029",
+      "expectedUpc": "743779209754",
+      "expectedNameSha256": "5d6f8d2e7a2e25a4351e4dac5ab47027f3c1708e73b6b1a8fed28061d8d0642b",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9007",
+      "expectedUpc": "743779204902",
+      "expectedNameSha256": "abe58385de65b3da1c428007bd1a8f3fc9f1984aa5edb46bef809cffea2c4031",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9019",
+      "expectedUpc": "743779250398",
+      "expectedNameSha256": "7e98dd8a81effd4a6fb4e288a4c1566dfad61fecec75794348ed117ba37f1411",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8617",
+      "expectedUpc": "743779209914",
+      "expectedNameSha256": "1c757402a7dac6e00c90c54d9019eb505b5ec91bd94639a9d28d5642fde2a3bb",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9023",
+      "expectedUpc": "743779204612",
+      "expectedNameSha256": "1872fdfd27e1ad5eb148a62edd44ea581b9e9d3ae9c3a0ab70c1d1b06bacb35d",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8578",
+      "expectedUpc": "743779210194",
+      "expectedNameSha256": "866ab6308564224dc38168800cd799ec4ac6426387c659dda3d54f24c0dd9751",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9028",
+      "expectedUpc": "743779250411",
+      "expectedNameSha256": "6137ecdb0b9046725567fb762a91e20dac2d4153c39d5ce17f745a3a293f4a87",
+      "replaceTextFrom": "TYLORS SALT & VINAGER",
+      "replaceTextTo": "TAYLORS SALT & VINEGAR",
+      "scope": "brand_and_expression_spelling",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/product-category/cracklins/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer spells brand Taylors and flavor Salt Vinegar; unchanged source cracklin wording/size."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9034",
+      "expectedUpc": "743779204230",
+      "expectedNameSha256": "f23e59dfdb88450fa211e524defc3911dc08600bf990eb390328431bd060f49d",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9001",
+      "expectedUpc": "743779204872",
+      "expectedNameSha256": "b2237998a27bdeaa560ba5886dd8430139cdf6e9d3d3b48f061df6deec1104f6",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8615",
+      "expectedUpc": "743779209792",
+      "expectedNameSha256": "e73dd2e192ae732a770b9cb9c17ae30de7253eabf69175f6feccacbcfe72eb8c",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9009",
+      "expectedUpc": "743779204346",
+      "expectedNameSha256": "c930bf9918f0a0d7bfc10e70c23946dc36f72afb3c581e7df0be734f3031d84a",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "101445",
+      "expectedUpc": "743779250497",
+      "expectedNameSha256": "01dcbe68caee497100c6f20945a45c084bebd36eb16e0f7ead59cecc8b134f03",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9030",
+      "expectedUpc": "743779209655",
+      "expectedNameSha256": "11937f4275d712e8889e18bcd187be306c1d69852b443bacdfd8e857827964f6",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8563",
+      "expectedUpc": "743779204759",
+      "expectedNameSha256": "27a3a3dfc56b5932b3cd9fb183374b93831733803b60f4fdd75aafe5ad6f4189",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9027",
+      "expectedUpc": "743779250008",
+      "expectedNameSha256": "036cd4be33221da2a489cbccf9bfdf3576a57b1aafefd87b9afe3594604ed8f3",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9013",
+      "expectedUpc": "743779208597",
+      "expectedNameSha256": "72e5e6323ca5e39cd452e297da4540b39e424c79eb70b3b760cf3d0bc25bfa64",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9035",
+      "expectedUpc": "743779205893",
+      "expectedNameSha256": "0d892184f1663a1fc572e26d3094a2e980c6535d78f06905e20aceeba4be8107",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8554",
+      "expectedUpc": "743779203899",
+      "expectedNameSha256": "644aa60222c5c18918f8b1cb0021ece98a21458de2ccad2d88d75af066f1a2dd",
+      "replaceTextFrom": "TAYLORS candy",
+      "replaceTextTo": "TAYLORS candy ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Insert missing space after candy. No brand, flavor or expression expansion."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9025",
+      "expectedUpc": "743779208405",
+      "expectedNameSha256": "f79d4a6c71be3489882100c047d9a7b904bf584cd98a9fdde93dff226af34e9f",
+      "replaceTextFrom": "TYLORS",
+      "replaceTextTo": "TAYLORS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "101330",
+      "expectedUpc": "018000234516",
+      "expectedNameSha256": "efdcc0740897b8ca0887dfd5dcb24f1f713aac4d502debdaa631243ed6519850",
+      "replaceTextFrom": "PILSBURY",
+      "replaceTextTo": "PILLSBURY",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.pillsbury.com/products/already-baked-snacks/soft-baked-cookies",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "6562",
+      "expectedUpc": "721733000883",
+      "expectedNameSha256": "03e2466d60ebc02dc130682a595c4d0a9e8fc5d29eb224c79cb84e43d8843932",
+      "replaceTextFrom": "Sliver",
+      "replaceTextTo": "Silver",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.patrontequila.com/products/patron-silver.html",
+          "kind": "manufacturer",
+          "supports": "expression_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "4678",
+      "expectedUpc": "083960727071",
+      "expectedNameSha256": "bb4776677fac86d8487228aede1268138ef89fb7183fd204ede17935229b14c8",
+      "replaceTextFrom": "CUERVOSLIVER",
+      "replaceTextTo": "CUERVO SILVER",
+      "scope": "brand_and_expression_spelling",
+      "evidence": [
+        {
+          "url": "https://global.cuervo.com/products/tradicional-tequila-plata/",
+          "kind": "manufacturer",
+          "supports": "brand_and_expression_spelling"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7797",
+      "expectedUpc": "082000001263",
+      "expectedNameSha256": "b71f36c99c53b4fcf65e356484882cae9907e422a8e7235ad410ef4492258169",
+      "replaceTextFrom": "WATERMELEN",
+      "replaceTextTo": "WATERMELON",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.smirnoff.com/en-us-6/products/vodkas-and-flavors/watermelon",
+          "kind": "manufacturer",
+          "supports": "expression_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7798",
+      "expectedUpc": "082000001171",
+      "expectedNameSha256": "f194f1a6670674a10745c58465c6a4e3f97fd7f561eec225ef1f1c73e39fbf6e",
+      "replaceTextFrom": "WATERMELEN",
+      "replaceTextTo": "WATERMELON",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.smirnoff.com/en-us-6/products/vodkas-and-flavors/watermelon",
+          "kind": "manufacturer",
+          "supports": "expression_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "101377",
+      "expectedUpc": "082000800941",
+      "expectedNameSha256": "0db638673366a8d6c8b28353d4c1e51ce6d3a96d788e2825748ac489b06c2ed2",
+      "replaceTextFrom": "LEMNADE",
+      "replaceTextTo": "LEMONADE",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.smirnoff.com/en-us/products",
+          "kind": "manufacturer",
+          "supports": "Correct spelling Lemonade only; retain original package expression for separate size review."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "6730",
+      "expectedUpc": "071537020304",
+      "expectedNameSha256": "4ca7b01428782e5415addc362cfd6fdb381d08932f15466b9079654a577b2c98",
+      "replaceTextFrom": "rasperry",
+      "replaceTextTo": "raspberry",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://polarseltzer.com/raspberry-lime/",
+          "kind": "manufacturer",
+          "supports": "expression_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "774",
+      "expectedUpc": "080480008222",
+      "expectedNameSha256": "6848392c6189aed0a1ec94437ef81092fa2939d1a87359949c3ce25b2676f936",
+      "replaceTextFrom": "supirior",
+      "replaceTextTo": "Superior",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.bacardi.com/us/en/our-rums/superior-rum/",
+          "kind": "manufacturer",
+          "supports": "expression_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7416",
+      "expectedUpc": "080432107485",
+      "expectedNameSha256": "ec948915b2a8f0cb7ccc7a2455460272527a0706a875c51622cdfdcbe7e6bb2c",
+      "replaceTextFrom": "PINAPPLE",
+      "replaceTextTo": "PINEAPPLE",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.seagramsgin.com/wp-content/uploads/2016/09/Nutritional-Info.pdf",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Pineapple Twisted gin spelling; no expansion or proof/size changes."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7417",
+      "expectedUpc": "080432107478",
+      "expectedNameSha256": "8d384dcc5db46eabc9538a6c60245fa70a188187f02742cb6a3f6c3e5c45d252",
+      "replaceTextFrom": "PINNAPLE",
+      "replaceTextTo": "PINEAPPLE",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.seagramsgin.com/wp-content/uploads/2016/09/Nutritional-Info.pdf",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Pineapple Twisted gin spelling; no expansion or proof/size changes."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7501",
+      "expectedUpc": "080432109182",
+      "expectedNameSha256": "515d26555c55a33c9d2f37f2dd487b736662c1e4ca07fdf65ffd1c2022509b54",
+      "replaceTextFrom": "pineaaple",
+      "replaceTextTo": "pineapple",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.seagramsgin.com/wp-content/uploads/2016/09/Nutritional-Info.pdf",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Pineapple Twisted gin spelling; no expansion or proof/size changes."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7544",
+      "expectedUpc": "070310010563",
+      "expectedNameSha256": "2d6c271e4e88a6cd7320d9283d5def81eabc8673fdfab1eebddb6ea642f62c78",
+      "replaceTextFrom": "seagrem",
+      "replaceTextTo": "Seagram's",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.seagramsescapes.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7545",
+      "expectedUpc": "070310010648",
+      "expectedNameSha256": "9227eaa8c36d07764aff7ea3a884cd898f0a23a053db85b99aa81712834cd924",
+      "replaceTextFrom": "seagrems",
+      "replaceTextTo": "Seagram's",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.seagramsescapes.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7546",
+      "expectedUpc": "070310010679",
+      "expectedNameSha256": "e2bb55809f0f540adc0b66450238573b90a4b66d30e1a916d7ecb2b69e076fd6",
+      "replaceTextFrom": "seagrems",
+      "replaceTextTo": "Seagram's",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.seagramsescapes.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7547",
+      "expectedUpc": "070310010600",
+      "expectedNameSha256": "7004b4112bb4cf9ec8febb9485cd69b5c83920767194af51ca2efde5782c9ec9",
+      "replaceTextFrom": "seagrems",
+      "replaceTextTo": "Seagram's",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.seagramsescapes.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9227",
+      "expectedUpc": "081753050207",
+      "expectedNameSha256": "7e39802b9ebc784d872c439abf3760ca79af27f703e44115565c4afb1dcd10e8",
+      "replaceTextFrom": "Cliequot",
+      "replaceTextTo": "Clicquot",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.veuveclicquot.com/fr-int/la-maison/la-maison/",
+          "kind": "manufacturer",
+          "supports": "Correct Veuve Clicquot brand spelling only; source Ponsa descriptor is not expanded."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8619",
+      "expectedUpc": "743779003567",
+      "expectedNameSha256": "fd15d148e52d12b05129cbd807875e30299ae6fe55d94c6c4ace7ba1ac219a2d",
+      "replaceTextFrom": "CANY",
+      "replaceTextTo": "CANDY",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://taylorscandy.com/",
+          "kind": "manufacturer",
+          "supports": "Fix missing letter in the generic word CANDY; original lipstick expression retained."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5363",
+      "expectedUpc": "021131504694",
+      "expectedNameSha256": "6682d10149a7b17e528bff6907285f6c574fe7aee696f2e584369adac0a3ab92",
+      "replaceTextFrom": "Marie Callender's",
+      "replaceTextTo": "Marie Callender's ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.mariecallendersmeals.com/",
+          "kind": "official_manufacturer_brand",
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5365",
+      "expectedUpc": "021131506308",
+      "expectedNameSha256": "8adbee23444d7a337339f80b1f42e249632ed807f190c628cb7f773e489d0cbf",
+      "replaceTextFrom": "Marie Callender's",
+      "replaceTextTo": "Marie Callender's ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.mariecallendersmeals.com/",
+          "kind": "official_manufacturer_brand",
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5366",
+      "expectedUpc": "021131506759",
+      "expectedNameSha256": "33060e9144e718d9479a649ad241a9859157dc358b40e7700605b07845a8d222",
+      "replaceTextFrom": "Marie Callender's",
+      "replaceTextTo": "Marie Callender's ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.mariecallendersmeals.com/",
+          "kind": "official_manufacturer_brand",
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5367",
+      "expectedUpc": "021131507114",
+      "expectedNameSha256": "844d391ee877a1371a9d04cf20464ebce30e60be86d9a0eda7647fe232f82b3d",
+      "replaceTextFrom": "Marie Callender's",
+      "replaceTextTo": "Marie Callender's ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.mariecallendersmeals.com/",
+          "kind": "official_manufacturer_brand",
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5369",
+      "expectedUpc": "021131800307",
+      "expectedNameSha256": "e43448d393288d3fd0e55a980d1063944fbb63ed3da63f3e32adb5f2ed8ced4e",
+      "replaceTextFrom": "Marie Callender's",
+      "replaceTextTo": "Marie Callender's ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.mariecallendersmeals.com/",
+          "kind": "official_manufacturer_brand",
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5370",
+      "expectedUpc": "021131800352",
+      "expectedNameSha256": "82472e27287f12f639de65b5ab04be80680712848054437616b90d76a61af4db",
+      "replaceTextFrom": "Marie Callender's",
+      "replaceTextTo": "Marie Callender's ",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.mariecallendersmeals.com/",
+          "kind": "official_manufacturer_brand",
+          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8535",
+      "expectedUpc": "088076168640",
+      "expectedNameSha256": "0879ea1095d12852bc51b0db520248d1c301c047e46139351a1e6cd0171cbd4b",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.tanqueray.com/en-us/home",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Exact brand/word spelling or existing-word boundary only; all source flavor, strength, measurement and packaging tokens preserved."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/807/616/8640/1.jpg",
+          "kind": "exact_sku_package_label_visually_inspected",
+          "supports": "The previously inspected exact barcode-linked package photograph confirms the corrected letters/word boundary. Identity evidence only: this consumer photograph is not approved as a professional storefront image."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "4142",
+      "expectedUpc": "085000031377",
+      "expectedNameSha256": "66d884df9f4f7dbbdbbbc86b95c8aae382948065aa7d11fc4e20ed74212be2d9",
+      "replaceTextFrom": "vooka",
+      "replaceTextTo": "vodka",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.highnoonspirits.com/peach-vodka-seltzer.html",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Exact brand/word spelling or existing-word boundary only; all source flavor, strength, measurement and packaging tokens preserved."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/500/003/1377/1.jpg",
+          "kind": "exact_sku_package_label_visually_inspected",
+          "supports": "The previously inspected exact barcode-linked package photograph confirms the corrected letters/word boundary. Identity evidence only: this consumer photograph is not approved as a professional storefront image."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "4146",
+      "expectedUpc": "085000029251",
+      "expectedNameSha256": "bb5b86b77454d035a111b6e76cd9c9dbf1fb49fff33a39157efaea461b135806",
+      "replaceTextFrom": "sipswatermelon",
+      "replaceTextTo": "sips watermelon",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.highnoonspirits.com/our-story.html",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Exact brand/word spelling or existing-word boundary only; all source flavor, strength, measurement and packaging tokens preserved."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/500/002/9251/1.jpg",
+          "kind": "exact_sku_package_label_visually_inspected",
+          "supports": "The previously inspected exact barcode-linked package photograph confirms the corrected letters/word boundary. Identity evidence only: this consumer photograph is not approved as a professional storefront image."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "4148",
+      "expectedUpc": "085000029275",
+      "expectedNameSha256": "099ad64acb54f1526e9f137d458a5a024cb2e95061a1dfdfc93a647df60e6572",
+      "replaceTextFrom": "sipsblack cherry",
+      "replaceTextTo": "sips black cherry",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.highnoonspirits.com/our-story.html",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Exact brand/word spelling or existing-word boundary only; all source flavor, strength, measurement and packaging tokens preserved."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/500/002/9275/2.jpg",
+          "kind": "exact_sku_package_label_visually_inspected",
+          "supports": "The previously inspected exact barcode-linked package photograph confirms the corrected letters/word boundary. Identity evidence only: this consumer photograph is not approved as a professional storefront image."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "6468",
+      "expectedUpc": "071871546676",
+      "expectedNameSha256": "f4bc6752a160d95a20fb3bfd3f11485e2e7bb81158f2ea2de102508380dc9145",
+      "replaceTextFrom": "coto",
+      "replaceTextTo": "cotto",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/187/154/6676/3.jpg",
+          "kind": "exact_sku_package_label_visually_inspected",
+          "supports": "Exact barcode-linked complete package photograph explicitly reads Oscar Mayer Turkey Cotto Salami, NET WT 16 OZ (1 LB). Corrects coto spelling only; brand, turkey expression, source size, SKU and UPC are preserved."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5946",
+      "expectedUpc": "072718601282",
+      "expectedNameSha256": "a56914faa04eee4387d4e730f971cc88a99f453684165f6b76f8576c85ad38bc",
+      "replaceTextFrom": "frruit",
+      "replaceTextTo": "fruit",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fruit",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling fruit; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5950",
+      "expectedUpc": "072718100334",
+      "expectedNameSha256": "e7cc9cd9ddb01cdec6e96337d131819ead4cc59344f2815fbf515dd5cb70f037",
+      "replaceTextFrom": "FRUT",
+      "replaceTextTo": "FRUIT",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fruit",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling fruit; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "157",
+      "expectedUpc": "085592138553",
+      "expectedNameSha256": "15fa66d67098ee8597b36471e16e90e6263cf077ef6474fadcc05785613ef8ef",
+      "replaceTextFrom": "Chocolte",
+      "replaceTextTo": "Chocolate",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chocolate",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling chocolate; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "465",
+      "expectedUpc": "082100738823",
+      "expectedNameSha256": "0d520bf4923662c3d6e00cdbcf1843fa1dde6e238f7a68919732731b509b746e",
+      "replaceTextFrom": "strawbery",
+      "replaceTextTo": "strawberry",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "1187",
+      "expectedUpc": "070640310609",
+      "expectedNameSha256": "2c4a687218884e48d9b8b1d0387a2234cdb9a52e890bdb2aec8a71edb659db09",
+      "replaceTextFrom": "VANILALA",
+      "replaceTextTo": "VANILLA",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/vanilla",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling vanilla; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "1882",
+      "expectedUpc": "070980031479",
+      "expectedNameSha256": "3d5f410113a15f8a91ce8c20b13f22b738b65361c3205b2b1e0116ecee3d6c7a",
+      "replaceTextFrom": "crsnberry",
+      "replaceTextTo": "cranberry",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cranberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling cranberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "2301",
+      "expectedUpc": "031439005342",
+      "expectedNameSha256": "fdf1dc4165c0ddbfe8112cf292b9740d7726fc700c93d464c5372e6fcb20ec4c",
+      "replaceTextFrom": "Stawberry",
+      "replaceTextTo": "Strawberry",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "2711",
+      "expectedUpc": "074806000519",
+      "expectedNameSha256": "d3a4937b39380a34d537817fc777873aa73a45c89e20bd6019cb27a5c29d80b0",
+      "replaceTextFrom": "STRWABERRY",
+      "replaceTextTo": "STRAWBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "3408",
+      "expectedUpc": "895216001572",
+      "expectedNameSha256": "cce0622dd5af06db53ed973a8c9e8b4d81bf5cdd044ca168e03fe7e147ce1e3e",
+      "replaceTextFrom": "FRUT",
+      "replaceTextTo": "FRUIT",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fruit",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling fruit; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5151",
+      "expectedUpc": "085316602193",
+      "expectedNameSha256": "fb32123f55da9a747dff963b8c2678f6293e09eca1512123a3a0e11f3f6d8f67",
+      "replaceTextFrom": "Vokda",
+      "replaceTextTo": "Vodka",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/vodka",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling vodka; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5421",
+      "expectedUpc": "893778001818",
+      "expectedNameSha256": "81989dbf33f685cf44cab2e3443c55f0b62b7018be00afb1d898574a64d8afb2",
+      "replaceTextFrom": "STRABERRY",
+      "replaceTextTo": "STRAWBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5464",
+      "expectedUpc": "085904953300",
+      "expectedNameSha256": "c994d142f2f880dbe5d8b0dc4a59b3992a318816b09cf95d1d372e333039a13d",
+      "replaceTextFrom": "STRAWBERY",
+      "replaceTextTo": "STRAWBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5626",
+      "expectedUpc": "635985010722",
+      "expectedNameSha256": "ec4149b365b7d02eab495196fb68d39cf70d19b8fc23ae60981ba72375ceb527",
+      "replaceTextFrom": "Strawbery",
+      "replaceTextTo": "Strawberry",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5739",
+      "expectedUpc": "089396152944",
+      "expectedNameSha256": "a14fa60e4215a3218648d6db73e87eed75169915303aa26198d5e06d5a4e4363",
+      "replaceTextFrom": "STRAWVERRY BANNANA",
+      "replaceTextTo": "STRAWBERRY BANANA",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/banana",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling banana; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "6840",
+      "expectedUpc": "040093302179",
+      "expectedNameSha256": "e6cc08f67881f11e44f9f32221efa4b425ec863c8bb33b8855bcb9e346825cae",
+      "replaceTextFrom": "PINNEAPPLE",
+      "replaceTextTo": "PINEAPPLE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pineapple",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling pineapple; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8495",
+      "expectedUpc": "880047",
+      "expectedNameSha256": "41c54e165789863892ae246d25deb5fb7780de1222ac62503f750f9880f977f5",
+      "replaceTextFrom": "Vokda",
+      "replaceTextTo": "Vodka",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/vodka",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling vodka; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9387",
+      "expectedUpc": "875754001555",
+      "expectedNameSha256": "6065d896d81b7fe0a20b8191a45291d94fc4aabaa2a111a1ad51ef8488064d68",
+      "replaceTextFrom": "strabery",
+      "replaceTextTo": "strawberry",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "3416",
+      "expectedUpc": "895216002562",
+      "expectedNameSha256": "d64b37117b95d1ae3f53ef87ee420203b9fee699b85b265376c0a665a067cd24",
+      "replaceTextFrom": "PINNAPLE",
+      "replaceTextTo": "PINEAPPLE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pineapple",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling pineapple; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "4222",
+      "expectedUpc": "888109254926",
+      "expectedNameSha256": "1a9046d9acc94d23277d8268c7810fd2b86db19bd36b45f740dcef4a8f734ca6",
+      "replaceTextFrom": "choclate",
+      "replaceTextTo": "chocolate",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chocolate",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling chocolate; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "496",
+      "expectedUpc": "613008756864",
+      "expectedNameSha256": "cd8d3887ca5012ddb529ebe9f44ae68f2baef8088b4828282465ae3adedb8b3e",
+      "replaceTextFrom": "STRAWBERRYY",
+      "replaceTextTo": "STRAWBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8870",
+      "expectedUpc": "089087240516",
+      "expectedNameSha256": "ae626cd32d50455fb9fd6bb9a953df73b0ba00d08eb8828ace8b89d4d42c106e",
+      "replaceTextFrom": "COCNUT",
+      "replaceTextTo": "COCONUT",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/coconut",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling coconut; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "2723",
+      "expectedUpc": "085264272226",
+      "expectedNameSha256": "1d2d49285cab4dc575314c2915e9a28a24b1b4692b12931257a5687a2c05a48c",
+      "replaceTextFrom": "Straweberry",
+      "replaceTextTo": "Strawberry",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "1611",
+      "expectedUpc": "079581184027",
+      "expectedNameSha256": "ef037912d8d7990bb807bc78300d31baad31d0387fa8c860914c9ac9b57b6f69",
+      "replaceTextFrom": "STRAWBRRY",
+      "replaceTextTo": "STRAWBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "487",
+      "expectedUpc": "613008730147",
+      "expectedNameSha256": "8a241e5a1a7ac4d216516d3f5ee6fe42454f39ec4880b0039430e0ae30766d24",
+      "replaceTextFrom": "FEUIT",
+      "replaceTextTo": "FRUIT",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fruit",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling fruit; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "5625",
+      "expectedUpc": "635985132172",
+      "expectedNameSha256": "53e9441921542d80a7a60c5299971815917c647de3177c0500948e72a6cc8c56",
+      "replaceTextFrom": "pineaple",
+      "replaceTextTo": "pineapple",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pineapple",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling pineapple; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "3419",
+      "expectedUpc": "895216001497",
+      "expectedNameSha256": "8b71ee0366a52bd5c33a120832986ea2d7b3b631808f3654092951dce59f47be",
+      "replaceTextFrom": "Strawbery",
+      "replaceTextTo": "Strawberry",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "3227",
+      "expectedUpc": "076737340719",
+      "expectedNameSha256": "72be6bfb3681ac5d42783a68ecf60d35a24efaf3f7a20cd2adde40ba3f8ca53e",
+      "replaceTextFrom": "CRANBERRRY",
+      "replaceTextTo": "CRANBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cranberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling cranberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "101420",
+      "expectedUpc": "816751020606",
+      "expectedNameSha256": "730a801917df3c891c0a58ff28e1ebdfa786b6a65a7bcf7d2d551f6b38777189",
+      "replaceTextFrom": "VODLA",
+      "replaceTextTo": "VODKA",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/vodka",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling vodka; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8242",
+      "expectedUpc": "078000017298",
+      "expectedNameSha256": "b32a1c745753ccff88c6b2c35aaa43345f611eaeca97b33147ffed5e14b0b6b8",
+      "replaceTextFrom": "STRAWBERRRY",
+      "replaceTextTo": "STRAWBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "9416",
+      "expectedUpc": "041800478002",
+      "expectedNameSha256": "7fa87613af53e75404dfc7f00d978fb61fb77cb4252ec89df27fb3e6b5781c55",
+      "replaceTextFrom": "Pinnaple",
+      "replaceTextTo": "Pineapple",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pineapple",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling pineapple; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "101242",
+      "expectedUpc": "860011102823",
+      "expectedNameSha256": "da93292281bf93c5b7dce2d6eac135f7aa0d29946ba4793e83a822ca2343e2a8",
+      "replaceTextFrom": "SUGER STRAWBERY",
+      "replaceTextTo": "SUGAR STRAWBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sugar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sugar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9390",
+      "expectedUpc": "876274000790",
+      "expectedNameSha256": "4c1d0d4ad13fa5ccc68245d8d28a47be5c8ef1ee3f8721698c7a723e18d789a8",
+      "replaceTextFrom": "chocalate",
+      "replaceTextTo": "chocolate",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chocolate",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling chocolate; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "8004",
+      "expectedUpc": "078000019520",
+      "expectedNameSha256": "57df6a985d3ea4432c78f08f67a12a8d0caa263654e9934c91b4c4042ddebb96",
+      "replaceTextFrom": "BOTTEL",
+      "replaceTextTo": "BOTTLE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/bottle",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling bottle; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7194",
+      "expectedUpc": "781231000464",
+      "expectedNameSha256": "100339e6c2e5c24d16fb04c0641824bbbffbfb66cce0b31387d517c96aa6d3af",
+      "replaceTextFrom": "rop snacks",
+      "replaceTextTo": "Rap Snacks",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.rapsnacks.net/collections/frontpage",
+          "kind": "manufacturer",
+          "supports": "Only the stated brand spelling or duplicated word correction. No inferred size, flavor, pack count, or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "7195",
+      "expectedUpc": "850003628493",
+      "expectedNameSha256": "f59449dacd152532f950a944f54049efecf62e3ec1be9ce380be38ca6d84a0ea",
+      "replaceTextFrom": "rop snacks",
+      "replaceTextTo": "Rap Snacks",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.rapsnacks.net/collections/frontpage",
+          "kind": "manufacturer",
+          "supports": "Only the stated brand spelling or duplicated word correction. No inferred size, flavor, pack count, or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "1629",
+      "expectedUpc": "079581184072",
+      "expectedNameSha256": "e1ee0b029b15abccf5acff6d88ba194ceeafbbd59e8d78f3bf74523ae7c817f9",
+      "replaceTextFrom": "LEMONADELEMONADE",
+      "replaceTextTo": "LEMONADE",
+      "scope": "duplicated_word_only",
+      "evidence": [
+        {
+          "url": "https://drinkcalypso.com/flavors/triple-melon-lemonade/",
+          "kind": "manufacturer",
+          "supports": "Only the stated brand spelling or duplicated word correction. No inferred size, flavor, pack count, or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-26"
+    },
+    {
+      "sku": "501",
+      "expectedUpc": "613008746230",
+      "expectedNameSha256": "2059f7774c4a3663353c1d56412682d7a3b24622a997d25076a3e8a8804f47d7",
+      "replaceTextFrom": "SPARKLLNGSTRAWBERRY",
+      "replaceTextTo": "SPARKLING STRAWBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sparkling",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sparkling; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "596",
+      "expectedUpc": "613008746117",
+      "expectedNameSha256": "660d036e35dd4c798cf7c9faeadedfd33c079297329dd374c3201e3af611948a",
+      "replaceTextFrom": "sparkllngBlack raspaerry",
+      "replaceTextTo": "sparkling Black raspberry",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sparkling",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sparkling; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/raspberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling raspberry; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "597",
+      "expectedUpc": "613008746179",
+      "expectedNameSha256": "b280277bd7239fe8634d15020f868660aa3697271e0acd415c293e7a2938b4b5",
+      "replaceTextFrom": "sparkllngorange grapefrult",
+      "replaceTextTo": "sparkling orange grapefruit",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sparkling",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sparkling; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/grapefruit",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling grapefruit; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "598",
+      "expectedUpc": "613008746209",
+      "expectedNameSha256": "e87afc7043f8542b436162579e9335e9df584b029591e25ac5738dd86bb8ec37",
+      "replaceTextFrom": "sparkllngplneapple",
+      "replaceTextTo": "sparkling pineapple",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sparkling",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sparkling; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pineapple",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling pineapple; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "983",
+      "expectedUpc": "073854957929",
+      "expectedNameSha256": "cf3c7f4ce96608a54848da768cb64356d1202badd37e9fa9d660370deceefdf3",
+      "replaceTextFrom": "palying",
+      "replaceTextTo": "playing",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/playing",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling playing; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1031",
+      "expectedUpc": "081753821951",
+      "expectedNameSha256": "a93fd531ded5d59a5d17e6639a65bc21c0063826c9f8df4f50bdd43b2d6a1a8c",
+      "replaceTextFrom": "unfiltred",
+      "replaceTextTo": "unfiltered",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/unfiltered",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling unfiltered; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1073",
+      "expectedUpc": "018200200120",
+      "expectedNameSha256": "73e6229eba6daab30d2bb887f946840d5bf08112138fde59fd688e10f20cb968",
+      "replaceTextFrom": "12ozCreem",
+      "replaceTextTo": "12ozCream",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cream",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cream; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1199",
+      "expectedUpc": "070640002504",
+      "expectedNameSha256": "661151f946b3442893d1861fc4a606cdf8ac6c313327e1a17d65565fa1798575",
+      "replaceTextFrom": "CUNCH",
+      "replaceTextTo": "CRUNCH",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/crunch",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling crunch; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101373",
+      "expectedUpc": "10137300000",
+      "expectedNameSha256": "ab720247535a274f23daa66c85063e69196ec109fae70b3f5ab15639b8116af1",
+      "replaceTextFrom": "MAGRITA",
+      "replaceTextTo": "MARGARITA",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/margarita",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling margarita; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1924",
+      "expectedUpc": "188429000075",
+      "expectedNameSha256": "e6d0514effba1cb7af275939ab408d7416e5aa433ede8cddb34ef6274c947ca6",
+      "replaceTextFrom": "charcole",
+      "replaceTextTo": "charcoal",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/charcoal",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling charcoal; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2286",
+      "expectedUpc": "031439005496",
+      "expectedNameSha256": "c6c38769a626696149e7af9e40898cb54967701fd18dc651c8fd13a2512e754d",
+      "replaceTextFrom": "Hawaaiin",
+      "replaceTextTo": "Hawaiian",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/hawaiian",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling hawaiian; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2495",
+      "expectedUpc": "855291001645",
+      "expectedNameSha256": "5de4970ce3c5014dea6d92fa3761f631c975f4d9244e77a8bdf5a8669440608d",
+      "replaceTextFrom": "Cottan",
+      "replaceTextTo": "Cotton",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cotton",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cotton; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2596",
+      "expectedUpc": "857190002037",
+      "expectedNameSha256": "afaf4e80fc34b0a7e2ae9df698860e08a9dd72673307f3a22514c214508e9fb5",
+      "replaceTextFrom": "watermalon24ozCan",
+      "replaceTextTo": "watermelon24ozCan",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/watermelon",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling watermelon; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2652",
+      "expectedUpc": "098382351049",
+      "expectedNameSha256": "68deed8b0c328f5c21f66f714e7c5de8caa2d1beadf9ff21e38344c40b62fdbb",
+      "replaceTextFrom": "peices",
+      "replaceTextTo": "pieces",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/piece",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling piece; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2882",
+      "expectedUpc": "049200043509",
+      "expectedNameSha256": "db6cc47ffe18c5ac8e78172caec892b83f6c532e5c9b815a2c853c7616f27207",
+      "replaceTextFrom": "suger",
+      "replaceTextTo": "sugar",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sugar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sugar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2962",
+      "expectedUpc": "028400009539",
+      "expectedNameSha256": "86ee6432602a99685c787cda9c16570f2724c39085730c1ef4f203c7d42bdc19",
+      "replaceTextFrom": "SUPRIME",
+      "replaceTextTo": "SUPREME",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/supreme",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling supreme; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3220",
+      "expectedUpc": "071870111929",
+      "expectedNameSha256": "9e418bba3598d6f0190b4cc4060f79ee352e141f3660b9e0b9108417b7b49343",
+      "replaceTextFrom": "SOUCE",
+      "replaceTextTo": "SAUCE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sauce",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sauce; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3233",
+      "expectedUpc": "076737341112",
+      "expectedNameSha256": "b27e3be012c496675ee94985b09f70cd218c498927e35493f546b59631e626e8",
+      "replaceTextFrom": "24OZBANNANA",
+      "replaceTextTo": "24OZBANANA",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/banana",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling banana; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6304",
+      "expectedUpc": "073800007876",
+      "expectedNameSha256": "60e6aaa21b8934f6f5fcc6d03025c21ca868911fcb6ef5fd8ebb369b6e28acd1",
+      "replaceTextFrom": "BANNANA",
+      "replaceTextTo": "BANANA",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/banana",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling banana; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3564",
+      "expectedUpc": "085000005330",
+      "expectedNameSha256": "6a0d21aa5ff3364109672e431b883f22c9a6f81b44c598efe914af0a449a3dc9",
+      "replaceTextFrom": "chardonney",
+      "replaceTextTo": "chardonnay",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chardonnay",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling chardonnay; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3608",
+      "expectedUpc": "085000005422",
+      "expectedNameSha256": "3477c7aaef439b1c77715210c32d324670287cabbd9557a19cff3f644e20eb2d",
+      "replaceTextFrom": "Chardonney",
+      "replaceTextTo": "chardonnay",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chardonnay",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling chardonnay; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4170",
+      "expectedUpc": "076057001735",
+      "expectedNameSha256": "dc0dab38ef944fe996aa3ff756aff43165e88a7c6bd8094a890a7f6a2a081fba",
+      "replaceTextFrom": "stule3",
+      "replaceTextTo": "style3",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/style",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling style; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4169",
+      "expectedUpc": "735178000346",
+      "expectedNameSha256": "2cd16d0b1c8a1c5d207069054907b521264cf708291918c1d9c55ad6b4c92880",
+      "replaceTextFrom": "stule3oz",
+      "replaceTextTo": "style3oz",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/style",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling style; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4261",
+      "expectedUpc": "077975089736",
+      "expectedNameSha256": "60a711d2199d0c7dcc82e7a1e845b8ca7cb6e6a82cc9839bb3f14157398c18ea",
+      "replaceTextFrom": "BUFFLO",
+      "replaceTextTo": "BUFFALO",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/buffalo",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling buffalo; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4384",
+      "expectedUpc": "899919009019",
+      "expectedNameSha256": "b142d3542d081d1e1709b10a1ac5b223a7bf44f86e7e649359dac0378f39cdc0",
+      "replaceTextFrom": "balckberry",
+      "replaceTextTo": "blackberry",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/blackberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling blackberry; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4391",
+      "expectedUpc": "899919004038",
+      "expectedNameSha256": "f79eb156e54f8bb9a3e5ebd8742c6669d734d86a3c916249f65793867b499664",
+      "replaceTextFrom": "lemmon",
+      "replaceTextTo": "lemon",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/lemon",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling lemon; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5043",
+      "expectedUpc": "284563",
+      "expectedNameSha256": "32dc3c2da3e7bcd7c90931275b76b32cc69a49874eb70231da3849ad18c548b0",
+      "replaceTextFrom": "CRAMY",
+      "replaceTextTo": "CREAMY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/creamy",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling creamy; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5187",
+      "expectedUpc": "070640015573",
+      "expectedNameSha256": "ea03c707d1f607b1a8d312580cc246f33ad080b36a5dcdfb64bd61d7b01abe69",
+      "replaceTextFrom": "peacan",
+      "replaceTextTo": "pecan",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pecan",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling pecan; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5430",
+      "expectedUpc": "028400297530",
+      "expectedNameSha256": "f992627407fa1ff904bc6690be9a859971c1d2459d5ce716f32304ae049d2eb3",
+      "replaceTextFrom": "jerkyteritaki",
+      "replaceTextTo": "jerkyteriyaki",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/teriyaki",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling teriyaki; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5550",
+      "expectedUpc": "096619816927",
+      "expectedNameSha256": "77616052444bf56e438a2fda4f83242a2e373e36f10cb09fe0a7b20a0875a272",
+      "replaceTextFrom": "microwavve  popcorn 3.3 oztheater butterr",
+      "replaceTextTo": "microwave  popcorn 3.3 oztheater butter",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/microwave",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling microwave; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/butter",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling butter; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5583",
+      "expectedUpc": "635985258605",
+      "expectedNameSha256": "cee93ffbe4d9f5b280b7fe87e634cc8f452e6a31bcbb583d703b1a26a85751b6",
+      "replaceTextFrom": "Feista",
+      "replaceTextTo": "Fiesta",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fiesta",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling fiesta; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5597",
+      "expectedUpc": "635985259008",
+      "expectedNameSha256": "9513b67173a00661005896c3584a3e720c8875e1ec451aa32e94bd9b53fca83a",
+      "replaceTextFrom": "margatita",
+      "replaceTextTo": "margarita",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/margarita",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling margarita; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5649",
+      "expectedUpc": "034100088132",
+      "expectedNameSha256": "8989fe0a79171332a01c53a325e0530fbbd6e74ad33965edc39bc81338bda0fe",
+      "replaceTextFrom": "forctune",
+      "replaceTextTo": "fortune",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fortune",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling fortune; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5835",
+      "expectedUpc": "083664872541",
+      "expectedNameSha256": "70955d93a0bc7cfe4554b1368c4add81c951049cf7c3bfae6d5c0fbda8932a14",
+      "replaceTextFrom": "soctch",
+      "replaceTextTo": "scotch",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/scotch",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling scotch; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5920",
+      "expectedUpc": "070655901304",
+      "expectedNameSha256": "19b8e0fdefbc4a8e6040e8e11e063f5a11a88be252a866ff5a7d00851245df0e",
+      "replaceTextFrom": "BLODDY",
+      "replaceTextTo": "BLOODY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/bloody",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling bloody; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6035",
+      "expectedUpc": "028400036979",
+      "expectedNameSha256": "ca80feb528cb8804ec8f9371563272b1259d068779ea66c1278cdbe6256591ca",
+      "replaceTextFrom": "ULTMATE",
+      "replaceTextTo": "ULTIMATE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/ultimate",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling ultimate; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6743",
+      "expectedUpc": "073310150536",
+      "expectedNameSha256": "0d570209a063e490f355ac018c0847303d6992b7a92113827d3a9ca14ad4391a",
+      "replaceTextFrom": "TOWELLS",
+      "replaceTextTo": "TOWELS",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/towel",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling towel; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6771",
+      "expectedUpc": "078271050314",
+      "expectedNameSha256": "faed3214e88c623bbb58e760b689f63209eef86a4769b7b30f37618dd087be3f",
+      "replaceTextFrom": "SOURTHERN",
+      "replaceTextTo": "SOUTHERN",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/southern",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling southern; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6802",
+      "expectedUpc": "077975089729",
+      "expectedNameSha256": "6b22bf29c79530d64fdbeadb1c8bd02482e7a2a9cd3fd6171a51d224fb4c44a8",
+      "replaceTextFrom": "PRETZED",
+      "replaceTextTo": "PRETZEL",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pretzel",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling pretzel; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6809",
+      "expectedUpc": "858513001133",
+      "expectedNameSha256": "e436da9dde679d9d626f137d8862ad53d57a6517a763ebd502eed065073a8924",
+      "replaceTextFrom": "russion",
+      "replaceTextTo": "russian",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/russian",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling russian; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6810",
+      "expectedUpc": "042659008235",
+      "expectedNameSha256": "389a33cbc52b1274b23ba41c4e37f118b6006f1fef97d696242d21288e7bcc2b",
+      "replaceTextFrom": "tratment",
+      "replaceTextTo": "treatment",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/treatment",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling treatment; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6996",
+      "expectedUpc": "343871",
+      "expectedNameSha256": "be01c5b94e3ea037bcf5b3acc3fda30a52daa26b38cb1e517017368594c19686",
+      "replaceTextFrom": "chrerry24oz",
+      "replaceTextTo": "cherry24oz",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cherry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cherry; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7235",
+      "expectedUpc": "028400431439",
+      "expectedNameSha256": "7b3374d2c6e98299fd65e055c10c12ee426fcf3f3742acb1ff2b4b4fe299bed3",
+      "replaceTextFrom": "chedder",
+      "replaceTextTo": "cheddar",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cheddar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cheddar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7400",
+      "expectedUpc": "377140",
+      "expectedNameSha256": "9ee0517b1d50c5dbfcaefac6b1d445cd30f8c4ea0b776df8204b2a62000c87c0",
+      "replaceTextFrom": "moutwash",
+      "replaceTextTo": "mouthwash",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/mouthwash",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling mouthwash; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7403",
+      "expectedUpc": "070055018251",
+      "expectedNameSha256": "a488b27df15aa5d103876cc56de7ea2b7509a78064a04fbad01a98a2a38bc91f",
+      "replaceTextFrom": "beff",
+      "replaceTextTo": "beef",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/beef",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling beef; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7407",
+      "expectedUpc": "070055018237",
+      "expectedNameSha256": "a6b43aefb7d0d114690d73a38f61eff5ef4140c9086404e65f47dd2397f4367a",
+      "replaceTextFrom": "sausageBeff",
+      "replaceTextTo": "sausagebeef",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/beef",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling beef; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7442",
+      "expectedUpc": "070310700327",
+      "expectedNameSha256": "89e10e54c34e74f762c1fe8a65805602489723a4e7028123fe84bec2acbe483f",
+      "replaceTextFrom": "pomegrante",
+      "replaceTextTo": "pomegranate",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pomegranate",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling pomegranate; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7456",
+      "expectedUpc": "070310013205",
+      "expectedNameSha256": "238f1553371aeafed5ba7f2524ea49f5e6e80ba6a6dde63f7be53da250a204cd",
+      "replaceTextFrom": "Psaaion",
+      "replaceTextTo": "Passion",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/passion",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling passion; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7570",
+      "expectedUpc": "031146262571",
+      "expectedNameSha256": "2f1efa15288781108b86b78d1b936de411de8b0e42198f2c952f5f957b827be2",
+      "replaceTextFrom": "chiken",
+      "replaceTextTo": "chicken",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chicken",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling chicken; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8165",
+      "expectedUpc": "028400039093",
+      "expectedNameSha256": "499d8037bec079aff6dae12f090bc4a61b270f4ff9c0895d8573b8a6c646871e",
+      "replaceTextFrom": "SUFLOWER",
+      "replaceTextTo": "SUNFLOWER",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sunflower",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sunflower; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8166",
+      "expectedUpc": "028400039086",
+      "expectedNameSha256": "774640af12e11d01719edfe1138ef2c11434b52be8a5cace9c90e6c656eca0fa",
+      "replaceTextFrom": "SUFLOWER",
+      "replaceTextTo": "SUNFLOWER",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sunflower",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sunflower; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8281",
+      "expectedUpc": "722648980062",
+      "expectedNameSha256": "14c46ee4d9174ea1f52d15751bdd23dc7279555bcd60636f8b0e9f6e374eef4e",
+      "replaceTextFrom": "PUMKIN",
+      "replaceTextTo": "PUMPKIN",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pumpkin",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling pumpkin; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8296",
+      "expectedUpc": "722648978069",
+      "expectedNameSha256": "dea56dca2b0174758f604189287803033f2f144f7e398a2eb1a67805a5a74c2c",
+      "replaceTextFrom": "NEAON",
+      "replaceTextTo": "NEON",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/neon",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling neon; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8428",
+      "expectedUpc": "617768181379",
+      "expectedNameSha256": "cb5e4aad1ba9a75e0476cafdda619120a66703634553c319d10a0ff7c5113ac7",
+      "replaceTextFrom": "grapefrut",
+      "replaceTextTo": "grapefruit",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/grapefruit",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling grapefruit; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8542",
+      "expectedUpc": "057496004494",
+      "expectedNameSha256": "65090e93d6df306883de99f0d703e99ff7ee4a316b3b3463b1ae6bf27ad96d77",
+      "replaceTextFrom": "WHISHEY",
+      "replaceTextTo": "WHISKEY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/whiskey",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling whiskey; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8753",
+      "expectedUpc": "184762",
+      "expectedNameSha256": "e33c7dd209629db2aa500e8ac5b82481b539609737c5577d94786f3d4815e174",
+      "replaceTextFrom": "PURPEL",
+      "replaceTextTo": "PURPLE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/purple",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling purple; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9291",
+      "expectedUpc": "026200471341",
+      "expectedNameSha256": "f1c23dc491473c92ecfc06415193393d5b0feefbe6e5ef1ccc76948b56cdf1c3",
+      "replaceTextFrom": "FRIDES",
+      "replaceTextTo": "FRIES",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fries",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling fries; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9321",
+      "expectedUpc": "026200471617",
+      "expectedNameSha256": "c18e23efe50fed7d1eff1f00802cc541b722caed54f8013330ab9ee12e9cebd1",
+      "replaceTextFrom": "FRIDES",
+      "replaceTextTo": "FRIES",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fries",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling fries; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9305",
+      "expectedUpc": "078271050888",
+      "expectedNameSha256": "e5acfee6a81267a551ecaded10e49b3d845f9210cd2955761c1fe7eda87664e0",
+      "replaceTextFrom": "CHEDDAY",
+      "replaceTextTo": "CHEDDAR",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cheddar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cheddar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9306",
+      "expectedUpc": "078271020300",
+      "expectedNameSha256": "01bc0abf48d0913e11ed7fd322790cf8e76ed304cf36a72a729c939dfaf8b69c",
+      "replaceTextFrom": "CHEDDAY",
+      "replaceTextTo": "CHEDDAR",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cheddar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cheddar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9369",
+      "expectedUpc": "078271003723",
+      "expectedNameSha256": "798918729f3787fd287677a3e1757cbb1e642f5a608fcc40abfade52fdb24ed6",
+      "replaceTextFrom": "TRIPPLE",
+      "replaceTextTo": "TRIPLE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/triple",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling triple; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9370",
+      "expectedUpc": "078271002221",
+      "expectedNameSha256": "74626ab8df281869c05596b2d97ad27ab262d585c07667be5f1f216fe1b704f8",
+      "replaceTextFrom": "TRIPPLE",
+      "replaceTextTo": "TRIPLE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/triple",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling triple; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9534",
+      "expectedUpc": "085000014769",
+      "expectedNameSha256": "db18a4ee90524562befb6a07be9580869f1cf37e26b0eb5ebdd96d13d4a165b6",
+      "replaceTextFrom": "FRUT",
+      "replaceTextTo": "FRUIT",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/fruit",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling fruit; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8339",
+      "expectedUpc": "085200023486",
+      "expectedNameSha256": "cb85653167b9d1b95cb2cbbd17cafd90d68910586fe638549ba27117cdf09e4f",
+      "replaceTextFrom": "oange",
+      "replaceTextTo": "orange",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/orange",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling orange; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "989",
+      "expectedUpc": "020501110039",
+      "expectedNameSha256": "455b689b9a333952e4c5095a9e6bcaa2915b8e03e64a60c08525e4c35cea7c76",
+      "replaceTextFrom": "CHHESE",
+      "replaceTextTo": "CHEESE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cheese",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cheese; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1653",
+      "expectedUpc": "051000010513",
+      "expectedNameSha256": "eca2bdbdf0700ac9e093f4259893590bc3618ddf09d62373b8b31a8182102392",
+      "replaceTextFrom": "WITN",
+      "replaceTextTo": "WITH",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/with",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling with; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5728",
+      "expectedUpc": "089396000528",
+      "expectedNameSha256": "4c2a2aebbcd3b0bcac5db0f33809bed8cc98f5fff7e4f53197e3c4dcb7327ef4",
+      "replaceTextFrom": "CARRAT",
+      "replaceTextTo": "CARROT",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/carrot",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling carrot; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7736",
+      "expectedUpc": "082000786337",
+      "expectedNameSha256": "a1de479861f4e6e4356e539ea4fc5d1aef0a90fc3fca6c3eda3c2d9c85f0a06e",
+      "replaceTextFrom": "strawbeeryCan",
+      "replaceTextTo": "strawberryCan",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling strawberry; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4679",
+      "expectedUpc": "811538012324",
+      "expectedNameSha256": "927ab12a71cb85762d0dd9fe39e27a8b5280196c51319eb707414a99249117b5",
+      "replaceTextFrom": "CLAAIC",
+      "replaceTextTo": "CLASSIC",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/classic",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling classic; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8167",
+      "expectedUpc": "860011102854",
+      "expectedNameSha256": "8cb54d4f3642b18395fe4a120cee39742be2386fe5e0d3f1ab94848455c7b1e8",
+      "replaceTextFrom": "SUGER",
+      "replaceTextTo": "SUGAR",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sugar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sugar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101241",
+      "expectedUpc": "860011102830",
+      "expectedNameSha256": "2b63f23a6bfbbbbfef5c89499e6756ad23ccaf088dbb6a7b2b4dddccf3299451",
+      "replaceTextFrom": "SUGER",
+      "replaceTextTo": "SUGAR",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sugar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sugar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101243",
+      "expectedUpc": "860011102847",
+      "expectedNameSha256": "7a617b8cd3f00154b45dbbee6e1ae1ea315f974ad41aa8945551b933f0bb603c",
+      "replaceTextFrom": "SUGER",
+      "replaceTextTo": "SUGAR",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sugar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sugar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1604",
+      "expectedUpc": "079581184058",
+      "expectedNameSha256": "f508fbb8570acbb5621922d56aa68236568affc45081c4106b137c4eb8d8f1d7",
+      "replaceTextFrom": "ISLAD",
+      "replaceTextTo": "ISLAND",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/island",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling island; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4095",
+      "expectedUpc": "072600081628",
+      "expectedNameSha256": "eacf2f3e96890827ea0e0f01fa52fd7eb4080c2244094120012d4ced721bdf76",
+      "replaceTextFrom": "honeu",
+      "replaceTextTo": "honey",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/honey",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling honey; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7344",
+      "expectedUpc": "075669325863",
+      "expectedNameSha256": "f290ce8ed112c813117975855ab1c7cf14d1e6aa15dfd5a282a54fa2b60d6be7",
+      "replaceTextFrom": "sardimes",
+      "replaceTextTo": "sardines",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sardine",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sardine; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6423",
+      "expectedUpc": "080686008064",
+      "expectedNameSha256": "5732295e20f7e34fd1ad50f6dc20630abb846f9713e07e780e12af25a6bc4a8c",
+      "replaceTextFrom": "hawallan375ml",
+      "replaceTextTo": "hawaiian375ml",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/hawaiian",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling hawaiian; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "293",
+      "expectedUpc": "808829104356",
+      "expectedNameSha256": "25c92e685067c434669e713b82ebf677c28628a7e90a2109ec0b1f88a86830ef",
+      "replaceTextFrom": "hawallan",
+      "replaceTextTo": "hawaiian",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/hawaiian",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling hawaiian; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3949",
+      "expectedUpc": "748378005547",
+      "expectedNameSha256": "5b1de32dfb9d7a2c1a7b846950e1e2b58ac60ca3103e081c90910219c7bee47f",
+      "replaceTextFrom": "sannitizer",
+      "replaceTextTo": "sanitizer",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sanitizer",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sanitizer; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4150",
+      "expectedUpc": "710918",
+      "expectedNameSha256": "ce179db83c705c81e2ac90f9c471f88a133c600dc4c4bf5bd262bc7c6ad649d1",
+      "replaceTextFrom": "SPIRNG",
+      "replaceTextTo": "SPRING",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/spring",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling spring; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6799",
+      "expectedUpc": "860002508221",
+      "expectedNameSha256": "270044606e108877ae915575bb9c7a4bf95fb5dbfa15bc5a1b0e731dc4c68db5",
+      "replaceTextFrom": "premivm",
+      "replaceTextTo": "premium",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/premium",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling premium; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8596",
+      "expectedUpc": "743779209440",
+      "expectedNameSha256": "f76fe60b6bcdd7166332e8dc010a08632904da406ba7931b82c1b9cb92366980",
+      "replaceTextFrom": "KEENELS",
+      "replaceTextTo": "KERNELS",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/kernel",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling kernel; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "530",
+      "expectedUpc": "613008734008",
+      "expectedNameSha256": "7de9a85d77f889c9d6594fa09c2f851b19c02a6869fac4746d9f36690b89c642",
+      "replaceTextFrom": "STRAWBERYCAN",
+      "replaceTextTo": "STRAWBERRYCAN",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling strawberry; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2667",
+      "expectedUpc": "074806186718",
+      "expectedNameSha256": "8972fa43b7b93064d2f3eb9e44882b551c3658c005f6a4f3c0f08433e5437047",
+      "replaceTextFrom": "frosen10fl",
+      "replaceTextTo": "frozen10fl",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/frozen",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling frozen; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1994",
+      "expectedUpc": "079003840814",
+      "expectedNameSha256": "0b29d7ce39e7cc85aed34dd84e46980649a6f0cbccbe277f4a8a972de32189c3",
+      "replaceTextFrom": "CHESSY",
+      "replaceTextTo": "CHEESY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cheesy",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cheesy; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4750",
+      "expectedUpc": "040913000087",
+      "expectedNameSha256": "e8b94d20d783021e6900ae265e288781f06a6caeb438c004fd2753b992c9beba",
+      "replaceTextFrom": "JUMPO",
+      "replaceTextTo": "JUMBO",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/jumbo",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling jumbo; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8964",
+      "expectedUpc": "087692011507",
+      "expectedNameSha256": "a200b71e097eccd214af8bed987122a4f42ae75191e7b1002438ca6cecd5fc24",
+      "replaceTextFrom": "sliahtly",
+      "replaceTextTo": "slightly",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/slightly",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling slightly; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5814",
+      "expectedUpc": "MC",
+      "expectedNameSha256": "ac4ff468c0db7621ccfda23ebf2a8002afea62144d27f68792c2e525fa21d0b2",
+      "replaceTextFrom": "COGANC",
+      "replaceTextTo": "COGNAC",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cognac",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cognac; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5703",
+      "expectedUpc": "7622300761349",
+      "expectedNameSha256": "6b80b5900e93336ce826a217fb5bf149f9f2f197b880dbd4a3b20291ad395575",
+      "replaceTextFrom": "originnal",
+      "replaceTextTo": "ORIGINAL",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/original",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling original; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8715",
+      "expectedUpc": "087381051043",
+      "expectedNameSha256": "00116e1f4e9913bd8187d0fc81b16472a8f6b6f6c444663bca4ffd3a784323bd",
+      "replaceTextFrom": "ORIGINNAL",
+      "replaceTextTo": "ORIGINAL",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/original",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling original; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9229",
+      "expectedUpc": "085000035795",
+      "expectedNameSha256": "b41f1b104f6178b8da50b655b81fca4c70e9a6312007f5213c23294f2d992dd3",
+      "replaceTextFrom": "RASPBERY",
+      "replaceTextTo": "RASPBERRY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/raspberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling raspberry; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2751",
+      "expectedUpc": "079400265104",
+      "expectedNameSha256": "1f2a9c82e54d23dd461832246a656114b71ed493b9ff4b2786e1723190a3fe9d",
+      "replaceTextFrom": "extereme",
+      "replaceTextTo": "extreme",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/extreme",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling extreme; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5698",
+      "expectedUpc": "341541",
+      "expectedNameSha256": "a83f068e673053cd9cc2f1bf29a3a3aa5baec3cdaa95efc6f254ed3db112fad9",
+      "replaceTextFrom": "PERMIUM",
+      "replaceTextTo": "PREMIUM",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/premium",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling premium; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9275",
+      "expectedUpc": "078271020171",
+      "expectedNameSha256": "2be993c89fff779e3843d9be6b64e1d8771754d9e3dd342b86f87e38c1430bc0",
+      "replaceTextFrom": "CURNCHY",
+      "replaceTextTo": "CRUNCHY",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/crunchy",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling crunchy; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "370",
+      "expectedUpc": "011132000400",
+      "expectedNameSha256": "1f0661206c79b03fae0194268e49bcf46f09d892c36d356ddf33f1f13d7cfe78",
+      "replaceTextFrom": "flover",
+      "replaceTextTo": "flavor",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/flavor",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling flavor; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6344",
+      "expectedUpc": "052300000358",
+      "expectedNameSha256": "74b5e8b6b489f7a2a9ee69ff71d7883a1e60fdaacc220a48d62b8abed4753349",
+      "replaceTextFrom": "Acloholic",
+      "replaceTextTo": "Alcoholic",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/alcoholic",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling alcoholic; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101415",
+      "expectedUpc": "850016415325",
+      "expectedNameSha256": "c82aa03bca088a1c8682a8930c411adf9628b5582c4265a3ff45234544e92e0b",
+      "replaceTextFrom": "MARGRITA",
+      "replaceTextTo": "MARGARITA",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/margarita",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling margarita; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4419",
+      "expectedUpc": "082184204160",
+      "expectedNameSha256": "89361917e5dcb31a1e478ba5ba1684e1f63c30e8444ae3ae2c23aedd8a44ab76",
+      "replaceTextFrom": "southen",
+      "replaceTextTo": "southern",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/southern",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling southern; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8972",
+      "expectedUpc": "087692006718",
+      "expectedNameSha256": "1b34df9f851d3126730053c6205af7269351e9d2eed20ff7fa5a75286299a611",
+      "replaceTextFrom": "ligdt",
+      "replaceTextTo": "light",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/light",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling light; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3347",
+      "expectedUpc": "853671000097",
+      "expectedNameSha256": "5549a798de2a8d72390862e29a008b86733d19610205b60514fbc8228688b9f1",
+      "replaceTextFrom": "cheeddaarpopcorn",
+      "replaceTextTo": "cheddarpopcorn",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cheddar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling cheddar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9410",
+      "expectedUpc": "041800354504",
+      "expectedNameSha256": "8c528638bbbddd9655a107883023be86362844746812bf74abc212b3ddc54ec7",
+      "replaceTextFrom": "16ozBollte",
+      "replaceTextTo": "16ozBottle",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/bottle",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling bottle; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3990",
+      "expectedUpc": "079100003259",
+      "expectedNameSha256": "58261e42c6d4758b6efaa4c515d61ea607318cc393e399885b53e3d5fd16e256",
+      "replaceTextFrom": "LIVERCHICCKEN",
+      "replaceTextTo": "LIVERCHICKEN",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chicken",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling chicken; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "940",
+      "expectedUpc": "080686012405",
+      "expectedNameSha256": "8462530dfafdc2e9b32ca4eb3d9d22f80fc3ff594548d6176872ffa425f49abe",
+      "replaceTextFrom": "whickey",
+      "replaceTextTo": "whiskey",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/whiskey",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling whiskey; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3939",
+      "expectedUpc": "6924513906205",
+      "expectedNameSha256": "978e9e96b3b9e90a5d3298ea677fe07c3a3800e940d16c0bbe495f141288d052",
+      "replaceTextFrom": "lemonn",
+      "replaceTextTo": "lemon",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/lemon",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling lemon; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5409",
+      "expectedUpc": "041789001284",
+      "expectedNameSha256": "2e336000feabaabc9bd6ea9efa980b040dd04b47c9b57a07287545916ed5d721",
+      "replaceTextFrom": "shrip",
+      "replaceTextTo": "shrimp",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/shrimp",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling shrimp; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "305",
+      "expectedUpc": "073390011000",
+      "expectedNameSha256": "162bceb9f11a109c8124f834e584b7db12ad040faa5a9687417affd418600e4f",
+      "replaceTextFrom": "airheaos",
+      "replaceTextTo": "Airheads",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.airheads.com/candy/airheads/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "306",
+      "expectedUpc": "073390014360",
+      "expectedNameSha256": "768373353da3bc392164aa611e334b55799b4b66bb0a642d955ed568c6d0b6d1",
+      "replaceTextFrom": "airheaos",
+      "replaceTextTo": "Airheads",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.airheads.com/candy/airheads/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1245",
+      "expectedUpc": "804864",
+      "expectedNameSha256": "2e2e99a06516254f6fe9aac0f0041a8f779b98343b10781818fedbcbdb3f733d",
+      "replaceTextFrom": "Sapphirre",
+      "replaceTextTo": "Sapphire",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.bombaysapphire.com/products/bombay-sapphire/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1020",
+      "expectedUpc": "081753820206",
+      "expectedNameSha256": "47981a3dcb99c62ac4fbe6f971fd54504e296bbc6f96ec43a9a2d8a1b615432c",
+      "replaceTextFrom": "BELVEDER",
+      "replaceTextTo": "BELVEDERE",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.belvederevodka.com/en-int",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1021",
+      "expectedUpc": "081753817503",
+      "expectedNameSha256": "97a58579c4c57486824d6090df81c7baef69942eda80e7cbcbc28727d08bd948",
+      "replaceTextFrom": "BELVEDER",
+      "replaceTextTo": "BELVEDERE",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.belvederevodka.com/en-int",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1757",
+      "expectedUpc": "871930",
+      "expectedNameSha256": "44f6363e6442d3ba0d3bf556a963a89b4f06b529ff531d72c1de7d2a904cb42c",
+      "replaceTextFrom": "CAPTAION MORGEN",
+      "replaceTextTo": "CAPTAIN MORGAN",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.captainmorgan.com/en-us/products/captain-morgan-black-spiced-rum",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1758",
+      "expectedUpc": "082000757900",
+      "expectedNameSha256": "3d8f9405b897369bd9c8e782c2c0e6d7cf9661296357ad488fbf02f4c8d4936e",
+      "replaceTextFrom": "CAPTIAN MORGEN",
+      "replaceTextTo": "CAPTAIN MORGAN",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.captainmorgan.com/en-us/products/captain-morgan-black-spiced-rum",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3829",
+      "expectedUpc": "085676403752",
+      "expectedNameSha256": "47f2e13844901a2dcdab653bf33e95a2aafa8a8d82e553d417f5b920a66fb164",
+      "replaceTextFrom": "Gordan",
+      "replaceTextTo": "Gordon's",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.thebar.com/en/brands/gordons",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3830",
+      "expectedUpc": "886023",
+      "expectedNameSha256": "47f2e13844901a2dcdab653bf33e95a2aafa8a8d82e553d417f5b920a66fb164",
+      "replaceTextFrom": "Gordan",
+      "replaceTextTo": "Gordon's",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.thebar.com/en/brands/gordons",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5238",
+      "expectedUpc": "031259032849",
+      "expectedNameSha256": "a26e7eb4dd3323463ff56e1123d38508b5566e8eff160b18fc9f937f7cf7feac",
+      "replaceTextFrom": "LUKSUSOA",
+      "replaceTextTo": "LUKSUSOWA",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://luksusowavodka.com/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5185",
+      "expectedUpc": "085000018415",
+      "expectedNameSha256": "60af98eb3a8a4b2e6b04ebb0e5c2ee68a8671a717a76840a8211eb06916c323c",
+      "replaceTextFrom": "LIVINSTON",
+      "replaceTextTo": "LIVINGSTON",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.livingstoncellars.com/our-wines/white/pinot-grigio.php",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7164",
+      "expectedUpc": "746925001349",
+      "expectedNameSha256": "0298086e6e7a8cdbcdf467fe2f87e3946a30a159721593d94c2a2081a9641b80",
+      "replaceTextFrom": "RODERTSON",
+      "replaceTextTo": "ROBERTSON",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://robertsonwinery.co.za/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7165",
+      "expectedUpc": "746925001363",
+      "expectedNameSha256": "38cc175e2529d32575d9aa7b2675faa256a1778c97e1155605ffa3715f7a4c6e",
+      "replaceTextFrom": "RODERTSON",
+      "replaceTextTo": "ROBERTSON",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://robertsonwinery.co.za/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7377",
+      "expectedUpc": "078000019889",
+      "expectedNameSha256": "1cb433bd7001eaeb1637d6c9e51a9559f34f0d54485536b8f4f36840dfb08458",
+      "replaceTextFrom": "Scheppes",
+      "replaceTextTo": "Schweppes",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.schweppesus.com/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7337",
+      "expectedUpc": "087975053507",
+      "expectedNameSha256": "06fb56a44a3bc5e6560e71741c1e750a758d16bc9095297f3df7c65c809e6ac4",
+      "replaceTextFrom": "SAPORRO",
+      "replaceTextTo": "SAPPORO",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.sapporobeer.com/our-beers",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7804",
+      "expectedUpc": "082000761440",
+      "expectedNameSha256": "d5669ebc6cc1e02f27c1ec8bf4675adbe85e94fa58b988e68723413dfaa0bfa8",
+      "replaceTextFrom": "SMIROFF",
+      "replaceTextTo": "SMIRNOFF",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.smirnoff.com/en-us/products",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7809",
+      "expectedUpc": "082000782506",
+      "expectedNameSha256": "7dbecdd12c080c821a9695ea21cd0b2a377e56e7625556631dd6d44867c1c242",
+      "replaceTextFrom": "SMlRNOFF-lce red whlte",
+      "replaceTextTo": "SMIRNOFF-Ice red white",
+      "scope": "brand_and_expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.smirnoff.com/en-us/products",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5645",
+      "expectedUpc": "040000422068",
+      "expectedNameSha256": "eee66ae94d2407709a89813152a045f36c5b9f0a498051b0d34331a9d21ef165",
+      "replaceTextFrom": "MILKYAY",
+      "replaceTextTo": "MILKY WAY",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.milkywaybar.com/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1185",
+      "expectedUpc": "070640450381",
+      "expectedNameSha256": "30def43108523358a4d774022226084acd70fd4c7bce41491fbd183747ef1ef1",
+      "replaceTextFrom": "BOUBLE",
+      "replaceTextTo": "DOUBLE",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.bluebunny.com/products/sandwiches/big-double-strawberry",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6140",
+      "expectedUpc": "085000024287",
+      "expectedNameSha256": "dc5af3bf9eec4d3d4fd1311c40808038ac8c187f3788510eb770a279a9f1eede",
+      "replaceTextFrom": "375mlgrapefuit",
+      "replaceTextTo": "375mlgrapefruit",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.newamsterdamvodka.com/public/products/flavors/grapefruit/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6150",
+      "expectedUpc": "085000023563",
+      "expectedNameSha256": "3934949fed09d4de843b707e2637ba5d163c70c90a93b9672bd5ff507a253a68",
+      "replaceTextFrom": "750mlgrapefuit",
+      "replaceTextTo": "750mlgrapefruit",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.newamsterdamvodka.com/public/products/flavors/grapefruit/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4110",
+      "expectedUpc": "072600033733",
+      "expectedNameSha256": "0000b6b921108fd5638e1390079016533e43eec0792f222f8d1adb5cccff5eb0",
+      "replaceTextFrom": "kettll",
+      "replaceTextTo": "kettle",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://shop.herrs.com/collections/kettle-cooked",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4111",
+      "expectedUpc": "072600033740",
+      "expectedNameSha256": "0000b6b921108fd5638e1390079016533e43eec0792f222f8d1adb5cccff5eb0",
+      "replaceTextFrom": "kettll",
+      "replaceTextTo": "kettle",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://shop.herrs.com/collections/kettle-cooked",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4108",
+      "expectedUpc": "072600007727",
+      "expectedNameSha256": "10d6d017d527f2b523599b73d4cd42035480baa42ac954aa77afac2e60b9c6ff",
+      "replaceTextFrom": "JALOPENO",
+      "replaceTextTo": "JALAPENO",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://shop.herrs.com/collections/spicy-snacks",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    }
+  ],
+  "identityReviews": [
+    {
+      "sku": "5567",
+      "expectedUpc": "041420003875",
+      "action": "quarantine",
+      "reason": "Source title MIKE N LIKE conflicts with UPC-specific Navy assortment evidence identifying Ferrara baked beans. Identity requires owner review.",
+      "evidence": [
+        {
+          "url": "https://www.navymwr.org/modules/media/?do=download&id=d9f4b19c-d578-4879-9c82-bacdb1f94dea",
+          "kind": "institutional_assortment",
+          "supports": "UPC 041420003875 listed as FERRARA BKD BEANS"
+        }
+      ],
+      "expectedNameSha256": "880a3f0678aece4735dd5d7f625e09cbf0098395f9fc108e0b276bfc106adb04"
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+#!/usr/bin/env python3
+"""Build the public, price-free catalog from an explicitly supplied PRIVATE export.
+
+The input and detailed reconciliation must remain outside this repository. No
+quantities, source prices, or unfiltered source fields enter browser assets.
+Run: python3 scripts/build_catalog.py --input /private/Inventory.csv \
+        --private-output /private/reconciliation
+"""
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import io
+import json
+import re
+from collections import Counter
+from decimal import Decimal
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+EXPECTED_HEADERS = ['SKU', 'MAINUPC', 'ItemName', 'PackName', 'DEPNAME',
+                    'ItemPrice', 'TotalQty_Multi', 'ItemTypeDesc']
+BASELINE_HASH = '822ee8b3b623548db0f2ea531aa10c340b160a47afc0d9e88398311ed7fa6882'
+
+CATEGORY_DEPARTMENTS = {
+    'spirits': ('Spirits', ['Vodka', 'Tequila', 'Whiskey', 'Rum', 'Cognac', 'Brandy', 'Gin', 'Cordials']),
+    'wine': ('Wine', ['Standard', 'Vintage', 'Sparklin', 'wine']),
+    'beer': ('Beer', ['Domestic', 'Imports', 'Micro', 'MALT BEVERAGE']),
+    'drinks': ('Drinks & mixers', ['Ready To Drink', 'Coolers', 'Soda', 'Juice', 'N/A Mix', 'Water']),
+    'food': ('Snacks & groceries', ['Snacks', 'Candy', 'GROCERY']),
+    'essentials': ('Everyday essentials', ['MISC', 'Tobacco']),
+    'other': ('More in store', ['ShortCut', '']),
+}
+DEPARTMENT_LABELS = {'Standard': 'Standard wine', 'Vintage': 'Vintage wine',
+                     'Sparklin': 'Sparkling wine', 'wine': 'Other wine',
+                     'Domestic': 'Domestic beer', 'Imports': 'Imported beer',
+                     'Micro': 'Craft beer', 'MALT BEVERAGE': 'Malt beverages',
+                     'N/A Mix': 'Non-alcoholic mixers', 'MISC': 'General merchandise',
+                     'GROCERY': 'Groceries', 'ShortCut': 'Other listed items',
+                     '': 'Unassigned department'}
+
+# Deliberately recognize measurements and packs, never arbitrary numeric tokens.
+# Unambiguous multi-letter units can be joined to the following expression in
+# the source export. Single letters require a full word boundary: 100 GRAND
+# and 1800 LIME are brands/flavors, never 100 grams or 1800 liters.
+MEASURE_RE = re.compile(
+    r'(?<![\d./])(?P<number>\d+\s+\d+/\d+|\d+/\d+|\d+(?:\.\d+)?|\.\d+)\s*'
+    r'(?P<unit>fl\.?\s*oz\.?|millilit(?:er|re)s?|ml|lit(?:er|re)s?|lit\b|ltr?s?\b|'
+    r'l\b|ounces?|oz\.?|kilograms?|kg|grams?|g\b|'
+    r'pounds?|lbs?\b|quarts?|qts?\b|gallons?|gals?\b|sq\.?\s*ft|ft\b|m\b)', re.I)
+PACK_RE = re.compile(r'(?<![\d.])(?P<number>\d+)\s*(?:packs?|pks?|count|ct)'
+                     r'(?=$|\b|\d|(?-i:[A-Z]))', re.I)
+CONTAINER_RE = re.compile(r'\b(cans?|bottles?)\s*$', re.I)
+STALE_STATUS_RE = re.compile(r'OUT\s+OF\s+STOCK|UPC\s+NOT\s+IN\s+USE', re.I)
+PRICE_RE = re.compile(r'\$|\b\d+\s*for\s*\$?\s*\d|\b\d+(?:\.\d+)?\s*cents?\b|\b\d+\s*c\b', re.I)
+BARE_DECIMAL_RE = re.compile(r'(?<![\d.])(?:\d+\.\d+|\.\d+)(?![\d.])')
+DISTINGUISHING_NUMBER_RE = re.compile(r'\bNo\.\s*\d+(?:\.\d+)?\b|'
+                                    r'\d+\.\d+\s*(?:%|ABV\b|A/C\b|PROOF\b)', re.I)
+JOB_LINE_RE = re.compile(r'^JOB (?:1\.0|1\.25|1\.5) Rolling Papers$', re.I)
+JOINED_UNIT_RE = re.compile(r'(?<![\d.])(?P<number>\d+\.\d+)\s*(?P<unit>[LG])'
+                            r'(?=(?:Pinot|Chardonnay|Crisp|Merlot|Sunset|Lemon|Raspberry|'
+                            r'Watermelon|Moscato|Sangria|White|Regular|Pink|Premium)\b)', re.I)
+CURRENCY = r'(?:\$\s*\d*(?:\.\d+)?|\d+(?:\.\d+)?\s*\$)'
+OFFER_RE = re.compile(r'\d+\s*for\s*(?:' + CURRENCY + r'|\d+(?:\.\d+)?\s*(?:cents?|c)\b)', re.I)
+CURRENCY_RE = re.compile(CURRENCY + r'\s*(?:off\b|cents?\b)?', re.I)
+CENT_RE = re.compile(r'(?<!\w)(?:\d+(?:\.\d+)?|\.\d+)\s*cents?\b\s*(?:off\b)?', re.I)
+EXPLICIT_UTILITIES = {
+    'age check 18', 'age check 21', 'deposite', 'deposit', 'discount',
+    'cook county tax', 'lotto sale machine', 'machine lotto', 'misc ebt',
+    'misc taxed item', 'misc taxed items',
+}
+
+
+def clean_space(value: str) -> str:
+    return re.sub(r'\s+', ' ', value).strip()
+
+
+def decimal_text(value: str) -> str:
+    return format(parse_number(value).normalize(), 'f')
+
+
+def parse_number(value: str) -> Decimal:
+    if '/' not in value:
+        return Decimal(value)
+    parts = value.split()
+    whole = Decimal(parts[0]) if len(parts) == 2 else Decimal(0)
+    numerator, denominator = parts[-1].split('/')
+    return whole + Decimal(numerator) / Decimal(denominator)
+
+
+def measurement(number: str, raw_unit: str) -> tuple[str, str, Decimal]:
+    unit = re.sub(r'[\s.]', '', raw_unit.lower())
+    number_dec = parse_number(number)
+    if unit.startswith(('ml', 'millilit')):
+        return f'{decimal_text(number)} mL', 'volume-mL', number_dec
+    if unit in ('l', 'lit', 'lt', 'lts', 'ltr', 'ltrs') or unit.startswith(('liter', 'litre')):
+        return f'{decimal_text(number)} L', 'volume-mL', number_dec * 1000
+    if unit.startswith(('oz', 'ounce', 'floz')):
+        return f'{decimal_text(number)} oz', 'ounce', number_dec
+    if unit.startswith(('kg', 'kilogram')):
+        return f'{decimal_text(number)} kg', 'mass-g', number_dec * 1000
+    if unit == 'g' or unit.startswith('gram'):
+        return f'{decimal_text(number)} g', 'mass-g', number_dec
+    if unit.startswith(('lb', 'pound')):
+        return f'{decimal_text(number)} lb', 'pound', number_dec
+    if unit.startswith(('qt', 'quart')):
+        return f'{decimal_text(number)} qt', 'quart', number_dec
+    if unit.startswith(('gal', 'gallon')):
+        return f'{decimal_text(number)} gal', 'gallon', number_dec
+    if unit == 'sqft':
+        return f'{decimal_text(number)} sq ft', 'area-sq-ft', number_dec
+    return f'{decimal_text(number)} {unit}', 'length-' + unit, number_dec
+
+
+def extract_dimensions(text: str) -> dict:
+    measures = []
+    packs = []
+
+    def take_measure(match):
+        value = measurement(match['number'], match['unit'])
+        if value not in measures:
+            measures.append(value)
+        return ' '
+
+    remaining = MEASURE_RE.sub(take_measure, text)
+
+    def take_pack(match):
+        number = int(match['number'])
+        if number not in packs:
+            packs.append(number)
+        return ' '
+
+    remaining = PACK_RE.sub(take_pack, remaining)
+    container = ''
+    match = CONTAINER_RE.search(remaining)
+    if match:
+        container = 'cans' if match[1].lower().startswith('can') else 'bottles'
+        remaining = remaining[:match.start()]
+    return {'text': clean_space(remaining), 'measures': measures,
+            'packs': packs, 'container': container}
+
+
+def numeric_signature(parts: dict) -> set:
+    return {(dimension, value) for _, dimension, value in parts['measures']}
+
+
+def has_ambiguous_decimal(text: str) -> bool:
+    # These are literal product expressions/strength statements, not inferred
+    # package measurements. Preserve them in the grouping identity and title.
+    if JOB_LINE_RE.fullmatch(text):
+        return False
+    return bool(BARE_DECIMAL_RE.search(DISTINGUISHING_NUMBER_RE.sub(' ', text)))
+
+
+def separate_corroborated_joined_unit(title: str, pack_parts: dict) -> tuple[str, bool]:
+    signature = numeric_signature(pack_parts)
+    changed = False
+
+    def separate(match):
+        nonlocal changed
+        _, dimension, value = measurement(match['number'], match['unit'])
+        if (dimension, value) in signature:
+            changed = True
+            return match.group() + ' '
+        return match.group()
+
+    return JOINED_UNIT_RE.sub(separate, title), changed
+
+
+def strip_price_annotations(text: str) -> tuple[str, bool]:
+    original = text
+    text = OFFER_RE.sub(' ', text)
+    text = CURRENCY_RE.sub(' ', text)
+    text = CENT_RE.sub(' ', text)
+    return clean_space(text), text != original
+
+
+def identifiable_name(name: str) -> bool:
+    if not re.search(r'[A-Za-z]', name):
+        return False
+    # Generic POS buttons do not identify a specific product, even after a
+    # currency annotation has been removed.
+    reduced = re.sub(r'[^a-z ]', ' ', name.casefold())
+    words = set(reduced.split())
+    generic = {'for', 'candy', 'juice', 'soda', 'snack', 'snacks', 'beer',
+               'cans', 'can', 'bottle', 'bottles', 'cigar', 'cigars', 'cent',
+               'cents', 'pack', 'pk', 'what', 'kind', 'size', 'blue', 'orange',
+               'strawberry', 'frutti', 'punch', 'lemonade', 'pop'}
+    return bool(words - generic)
+
+
+def category_for(department: str) -> str:
+    for category, (_, departments) in CATEGORY_DEPARTMENTS.items():
+        if department in departments:
+            return category
+    return 'other'
+
+
+def classify_record(record: dict) -> tuple[str, str, dict | None, list[str]]:
+    title = clean_space(record['ItemName'])
+    pack = clean_space(record['PackName'])
+    department = clean_space(record['DEPNAME'])
+    upc = record['MAINUPC'].strip()
+    flags = []
+    if department == 'Tax':
+        return 'excluded_nonproduct', 'Explicit Tax department', None, flags
+    if department == 'Instant':
+        return 'excluded_nonproduct', 'Explicit lottery/Instant department', None, flags
+    if title.casefold() in EXPLICIT_UTILITIES or re.fullmatch(r'COUNTY TAX FOR .*', title, re.I):
+        return 'excluded_nonproduct', 'Explicit POS utility or tax record', None, flags
+    if re.match(r'^test [12]\b', title, re.I) and re.fullmatch(r'test [12]', upc, re.I):
+        return 'excluded_nonproduct', 'Test name corroborated by test UPC', None, flags
+    if title.casefold().startswith('machine lotto') and department == 'ShortCut':
+        return 'excluded_nonproduct', 'Explicit lottery machine record', None, flags
+    placeholder = clean_space(re.sub(r'[^a-z0-9 ]', ' ', title.casefold()))
+    if placeholder in {'your description', 'new item', 'new product', 'unknown',
+                       'unknown item', 'unknown product', 'unspecified',
+                       'enter description', 'item description'}:
+        return 'needs_review', 'Placeholder description needs a product name', None, flags
+
+    original_title = title
+    title = STALE_STATUS_RE.sub(' ', title)
+    if title != original_title:
+        flags.append('Stale availability/POS status removed; current stock is unknown')
+    title, stripped_price = strip_price_annotations(title)
+    if stripped_price:
+        flags.append('Explicit currency/price annotation removed from title')
+    if PRICE_RE.search(title):
+        return 'needs_review', 'Unresolved price/promotion text in title', None, flags
+    if PRICE_RE.search(pack):
+        return 'needs_review', 'Price-bearing or ambiguous pack field', None, flags
+    if PRICE_RE.search(upc) or BARE_DECIMAL_RE.fullmatch(upc):
+        flags.append('Non-barcode price-bearing UPC withheld from public data')
+        upc = ''
+    # Retain legitimate UPCs as exact strings, including leading zeroes.
+    # Descriptive POS codes remain private rather than becoming public search text.
+    if upc and not re.fullmatch(r'\d{6,14}', upc):
+        flags.append('Nonstandard/descriptive UPC retained privately')
+        upc = ''
+
+    pack_parts = extract_dimensions(pack)
+    title, separated_join = separate_corroborated_joined_unit(title, pack_parts)
+    if separated_join:
+        flags.append('Joined decimal unit separated using matching PackName measurement and intact descriptor')
+    title_parts = extract_dimensions(title)
+    name = title_parts['text']
+    # A unit/pack removal can reveal a token boundary in malformed joined text.
+    name, second_price_removal = strip_price_annotations(name)
+    if second_price_removal:
+        flags.append('Explicit currency/price annotation removed after unit parsing')
+    if PRICE_RE.search(name):
+        return 'needs_review', 'Unresolved price/promotion text after unit parsing', None, flags
+    if has_ambiguous_decimal(name):
+        return 'needs_review', 'Unlabelled decimal may be a price or unconfirmed measure', None, flags
+    if not identifiable_name(name):
+        return 'needs_review', 'Needs a specific product name; source record retained', None, flags
+    if re.search(r'what\s*(?:size|kind)', name, re.I):
+        return 'needs_review', 'Explicitly unidentified product/size prompt in source name', None, flags
+    if re.search(r'\?\s*$', name, re.I):
+        flags.append('Original product description needs confirmation')
+
+    title_measures = numeric_signature(title_parts)
+    pack_measures = numeric_signature(pack_parts)
+    size_conflict = bool(title_measures and pack_measures and not pack_measures.issubset(title_measures))
+    count_conflict = bool(title_parts['packs'] and pack_parts['packs'] and
+                          set(title_parts['packs']) != set(pack_parts['packs']))
+    container_conflict = bool(title_parts['container'] and pack_parts['container'] and
+                              title_parts['container'] != pack_parts['container'])
+    multiple_conflicting_sizes = any(
+        len({value for _, dim, value in parts['measures'] if dim == dimension}) > 1
+        for parts in (title_parts, pack_parts)
+        for dimension in {dim for _, dim, _ in parts['measures']})
+    multiple_conflicting_packs = len(title_parts['packs']) > 1 or len(pack_parts['packs']) > 1
+    # Conflicting fields stay in the master record; do not select either value.
+    if size_conflict or count_conflict or container_conflict or multiple_conflicting_sizes or multiple_conflicting_packs:
+        flags.append('Title and PackName size/pack conflict; neither value selected')
+        label = 'Size needs confirmation'
+    else:
+        measures = title_parts['measures'] or pack_parts['measures']
+        packs = title_parts['packs'] or pack_parts['packs']
+        pieces = [f'{number}-pack' for number in packs]
+        pieces.extend(label for label, _, _ in measures)
+        container = title_parts['container'] or pack_parts['container']
+        if container:
+            pieces.append(container)
+        # Only explicit Single metadata becomes a single, never assume it from
+        # absence of a pack count.
+        if not packs and re.match(r'^single\b', pack, re.I):
+            pieces.insert(0, 'Single')
+        label = ' · '.join(pieces) or 'Size not specified'
+
+    public = {'name': clean_space(name), 'category': category_for(department),
+              'department': department, 'variant': {
+                  'sku': record['SKU'], 'upc': upc, 'label': label,
+                  'sourceRow': record['sourceRow'], 'image': None}}
+    return 'retained_variant', 'Named merchandise retained', public, flags
+
+
+def apply_verified_images(products: list, image_manifest: dict | None, blocked_skus: set | None = None) -> int:
+    if not image_manifest:
+        return 0
+    if image_manifest.get('schemaVersion') != 1 or not isinstance(image_manifest.get('images'), list):
+        raise ValueError('Invalid image manifest schema')
+    variants = {v['sku']: (p, v) for p in products for v in p['variants']}
+    seen = set()
+    image_root = (ROOT / 'images/products').resolve()
+    verified_fields = {'brand', 'expression', 'size', 'packaging', 'visual', 'professional'}
+    for entry in image_manifest['images']:
+        sku = entry.get('sku')
+        if sku in (blocked_skus or set()):
+            raise ValueError(f'Image blocked while source size is under explicit review: {sku}')
+        if sku in seen or sku not in variants:
+            raise ValueError(f'Image manifest SKU is duplicate or absent from public catalog: {sku!r}')
+        seen.add(sku)
+        product, variant = variants[sku]
+        expected = (entry.get('expectedUpc'), entry.get('expectedName'), entry.get('expectedLabel'))
+        actual = (variant['upc'], product['name'], variant['label'])
+        if expected != actual:
+            raise ValueError(f'Image identity mismatch for SKU {sku}: expected metadata does not match catalog')
+        verification = entry.get('verification', {})
+        if set(verification) != verified_fields or any(v is not True for v in verification.values()):
+            raise ValueError(f'Image must have every exact-match, visual and professional-quality check verified: {sku}')
+        src = entry.get('src', '')
+        if not isinstance(src, str) or not re.fullmatch(r'images/products/[A-Za-z0-9_./-]+', src):
+            raise ValueError(f'Image must use a local images/products path: {sku}')
+        image_path = (ROOT / src).resolve()
+        if image_root not in image_path.parents or not image_path.is_file():
+            raise ValueError(f'Missing or unsafe product image path: {sku}')
+        data = image_path.read_bytes()
+        if not data or hashlib.sha256(data).hexdigest() != entry.get('sha256'):
+            raise ValueError(f'Product image is empty or hash does not match: {sku}')
+        for field in ('alt', 'sourcePage', 'sourceImageUrl', 'license', 'licenseUrl', 'attribution', 'verifiedOn'):
+            if not isinstance(entry.get(field), str) or not entry[field].strip():
+                raise ValueError(f'Image manifest requires {field}: {sku}')
+        for field in ('sourcePage', 'sourceImageUrl', 'licenseUrl'):
+            if not re.match(r'^https?://', entry[field]):
+                raise ValueError(f'Invalid image evidence/license URL: {sku}')
+        if PRICE_RE.search(entry['alt']):
+            raise ValueError(f'Image alt text must not contain prices: {sku}')
+        variant['image'] = {field: entry[field] for field in
+                            ('src', 'alt', 'sourcePage', 'license', 'licenseUrl', 'attribution')}
+    return len(seen)
+
+
+def validated_name_overrides(manifest: dict | None) -> tuple[dict, dict]:
+    if not manifest:
+        return {}, {}
+    if manifest.get('schemaVersion') != 1:
+        raise ValueError('Invalid name correction manifest schema')
+    mappings = []
+    for field in ('corrections', 'identityReviews'):
+        result = {}
+        for entry in manifest.get(field, []):
+            sku = entry.get('sku')
+            if not isinstance(sku, str) or sku in result:
+                raise ValueError('Name manifest has missing/duplicate SKU')
+            if not re.fullmatch(r'[a-f0-9]{64}', entry.get('expectedNameSha256', '')) or not isinstance(entry.get('expectedUpc'), str):
+                raise ValueError(f'Name manifest requires original identity fields: {sku}')
+            if not entry.get('evidence') or not all(re.match(r'^https?://', e.get('url', '')) for e in entry['evidence']):
+                raise ValueError(f'Name manifest requires inspectable evidence: {sku}')
+            if field == 'corrections':
+                if not all(isinstance(entry.get(k), str) and entry[k] and not PRICE_RE.search(entry[k])
+                           for k in ('replaceTextFrom', 'replaceTextTo')):
+                    raise ValueError(f'Invalid name correction: {sku}')
+            result[sku] = entry
+        mappings.append(result)
+    return tuple(mappings)
+
+
+def validated_source_reviews(manifest: dict | None) -> dict:
+    if not manifest:
+        return {}
+    if manifest.get('schemaVersion') != 1 or not isinstance(manifest.get('reviews'), list):
+        raise ValueError('Invalid source review manifest schema')
+    result = {}
+    for entry in manifest['reviews']:
+        sku = entry.get('sku')
+        if not isinstance(sku, str) or sku in result or entry.get('action') != 'size_needs_confirmation':
+            raise ValueError('Source review requires unique SKU and a supported action')
+        if not isinstance(entry.get('expectedUpc'), str) or not all(
+                re.fullmatch(r'[a-f0-9]{64}', entry.get(key, ''))
+                for key in ('expectedNameSha256', 'expectedSourceRecordSha256')):
+            raise ValueError(f'Source review requires exact original identity guards: {sku}')
+        if not isinstance(entry.get('reason'), str) or not entry['reason'].strip():
+            raise ValueError(f'Source review requires a reason: {sku}')
+        result[sku] = entry
+    return result
+
+
+def isolate_unspecified_variants(groups: dict, records: list, flag_reasons: Counter) -> list:
+    products = []
+    by_sku = {record['sku']: record for record in records}
+    for product in groups.values():
+        variants = product['variants']
+        unknown = [v for v in variants if v['label'] == 'Size not specified']
+        identities = {v['upc'] or v['sku'] for v in variants}
+        if unknown and len(identities) > 1:
+            specified = [v for v in variants if v['label'] != 'Size not specified']
+            if specified:
+                products.append({**product, 'variants': specified})
+            separated = {}
+            for variant in unknown:
+                identity = variant['upc'] or variant['sku']
+                identifier = 'p-' + hashlib.sha256((product['id'] + '\0unconfirmed\0' + identity).encode()).hexdigest()[:16]
+                separated.setdefault(identity, {**product, 'id': identifier, 'variants': []})['variants'].append(variant)
+                record = by_sku[variant['sku']]
+                flag = 'Same title has distinct UPCs without size/pack metadata; expression identity unresolved and grouping isolated'
+                record['flags'].append(flag)
+                record['productId'] = identifier
+                flag_reasons[flag] += 1
+            products.extend(separated.values())
+        else:
+            products.append(product)
+    return products
+
+
+def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dict | None = None,
+          name_manifest: dict | None = None, source_reviews_manifest: dict | None = None) -> tuple[dict, dict]:
+    reader = csv.reader(io.StringIO(source_bytes.decode('utf-8-sig'), newline=''))
+    headers = next(reader)
+    if headers != EXPECTED_HEADERS:
+        raise ValueError(f'Unexpected CSV schema: {headers!r}')
+    groups = {}
+    corrections, identity_reviews = validated_name_overrides(name_manifest)
+    source_reviews = validated_source_reviews(source_reviews_manifest)
+    master = []
+    dispositions = Counter()
+    flag_reasons = Counter()
+    seen_skus = set()
+    for row_number, fields in enumerate(reader, 1):
+        sku = fields[0] if fields else ''
+        if not sku or sku in seen_skus:
+            raise ValueError(f'Missing or duplicate SKU at source row {row_number}: {sku!r}')
+        seen_skus.add(sku)
+        record = {'sourceRow': row_number, 'csvLine': reader.line_num,
+                  'sku': sku, 'rawFields': fields}
+        if len(fields) != len(headers):
+            record.update(disposition='needs_review',
+                          reason=f'Malformed CSV record: expected 8 columns, received {len(fields)}; no inferred repair',
+                          flags=[])
+        else:
+            source = dict(zip(headers, fields))
+            source['sourceRow'] = row_number
+            adjusted_source = dict(source)
+            override_flags = []
+            for overrides in (corrections, identity_reviews):
+                override = overrides.get(sku)
+                if override and (override['expectedNameSha256'], override['expectedUpc']) != (
+                        hashlib.sha256(source['ItemName'].encode()).hexdigest(), source['MAINUPC']):
+                    raise ValueError(f'Name override identity mismatch for SKU {sku}')
+            correction = corrections.get(sku)
+            if correction:
+                if source['ItemName'].count(correction['replaceTextFrom']) != 1:
+                    raise ValueError(f'Spelling fragment does not match exactly once: {sku}')
+                adjusted_source['ItemName'] = source['ItemName'].replace(correction['replaceTextFrom'], correction['replaceTextTo'], 1)
+                record['nameCorrection'] = correction
+                record['correctedSourceName'] = adjusted_source['ItemName']
+                override_flags.append('Evidence-backed spelling/spacing correction applied; source spelling preserved privately')
+            if sku in identity_reviews:
+                review = identity_reviews[sku]
+                record['identityReview'] = review
+                disposition, reason, public, flags = 'needs_review', review['reason'], None, []
+            else:
+                disposition, reason, public, flags = classify_record(adjusted_source)
+            if sku in source_reviews:
+                review = source_reviews[sku]
+                raw_hash = hashlib.sha256(json.dumps(fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+                if (source['MAINUPC'], hashlib.sha256(source['ItemName'].encode()).hexdigest(), raw_hash) != (
+                        review['expectedUpc'], review['expectedNameSha256'], review['expectedSourceRecordSha256']):
+                    raise ValueError(f'Source metadata review identity mismatch for SKU {sku}')
+                record['sourceReview'] = review
+                flags.append('Explicit source-size review: ' + review['reason'])
+                if public:
+                    public['variant']['label'] = 'Size needs confirmation'
+            flags = override_flags + flags
+            record.update(source=source, disposition=disposition, reason=reason, flags=flags)
+            flag_reasons.update(flags)
+            if public:
+                # Exact normalized expression and department only. No fuzzy
+                # matching, synonym mapping, or deletion of brand/age/proof.
+                key = (public['category'], public['department'], public['name'].casefold())
+                # Exact source title says regular Silver, but the first-100 image
+                # audit found UPC-specific evidence of an Artist Series package.
+                # Isolate this source SKU without inventing a new product name.
+                if sku == '109' and source['MAINUPC'] == '811538010412':
+                    key += ('identity-review-sku-109',)
+                    identity_flag = 'UPC-specific image research suggests Artist Series packaging; grouping isolated pending identity confirmation'
+                    record['flags'].append(identity_flag)
+                    flag_reasons[identity_flag] += 1
+                identifier = 'p-' + hashlib.sha256('\0'.join(key).encode()).hexdigest()[:16]
+                product = groups.setdefault(key, {'id': identifier, 'name': public['name'],
+                    'category': public['category'], 'department': public['department'], 'variants': []})
+                product['variants'].append(public['variant'])
+                record['productId'] = identifier
+                record['publicVariantSku'] = sku
+        dispositions[record['disposition']] += 1
+        master.append(record)
+
+    if (set(corrections) | set(identity_reviews) | set(source_reviews)) - seen_skus:
+        raise ValueError('Name manifest contains SKUs absent from this source export')
+    products = sorted(isolate_unspecified_variants(groups, master, flag_reasons),
+                      key=lambda p: (p['name'].casefold(), p['id']))
+    for product in products:
+        product['variants'].sort(key=lambda v: v['sourceRow'])
+    verified_images = apply_verified_images(products, image_manifest, set(source_reviews))
+    populated = {p['department'] for p in products}
+    categories = []
+    for category_id, (label, departments) in CATEGORY_DEPARTMENTS.items():
+        category_departments = [d for d in departments if d in populated]
+        if category_id == 'other':
+            assigned = {d for _, ds in CATEGORY_DEPARTMENTS.values() for d in ds}
+            category_departments += sorted(populated - assigned)
+        if category_departments:
+            categories.append({'id': category_id, 'label': label, 'departments': [
+                {'id': d, 'label': DEPARTMENT_LABELS.get(d, d), 'sourceLabel': d}
+                for d in category_departments]})
+    flagged_retained = sum(r['disposition'] == 'retained_variant' and bool(r['flags']) for r in master)
+    counts = {'sourceRows': len(master), 'sourceSkus': len(seen_skus),
+              'publicVariants': dispositions['retained_variant'], 'products': len(products),
+              'needsReview': dispositions['needs_review'],
+              'excludedNonproducts': dispositions['excluded_nonproduct'],
+              'flaggedPublicVariants': flagged_retained}
+    catalog = {'schemaVersion': 1, 'sourceDate': source_date, 'counts': counts,
+               'categories': categories, 'products': products}
+    audit = {'sourceSha256': hashlib.sha256(source_bytes).hexdigest(), 'counts': counts,
+             'sourceDispositions': dict(dispositions), 'reviewFlagReasons': dict(flag_reasons),
+             'verifiedImages': verified_images, 'nameCorrections': len(corrections), 'records': master}
+    assert sum(dispositions.values()) == len(master)
+    return catalog, audit
+
+
+def name_audit(catalog: dict, audit: dict) -> dict:
+    """Scan every source row; an automated scan is NOT external verification."""
+    by_sku = {v['sku']: p['name'] for p in catalog['products'] for v in p['variants']}
+    candidates = {
+        'chocolte': 'chocolate', 'strawbery': 'strawberry', 'pineaple': 'pineapple',
+        'rasberry': 'raspberry', 'rosted': 'roasted', 'margatita': 'margarita',
+        'fettu8ccini': 'fettuccini', 'feista': 'fiesta', 'chiken': 'chicken',
+        'razberry': 'raspberry', 'unfiltred': 'unfiltered', 'sliver': 'silver',
+        'jalapen': 'jalapeno', 'choclate': 'chocolate', 'strawbary': 'strawberry',
+        'coocnut': 'coconut', 'vokda': 'vodka', 'orginal': 'original',
+        'passionnfruit': 'passionfruit', 'punh': 'punch', 'chesse': 'cheese',
+        'cheedar': 'cheddar', 'fuegd': 'fuego', 'ertra': 'extra', 'un sweet': 'unsweet',
+    }
+    rows = []
+    for record in audit['records']:
+        source = record.get('source', {})
+        original = source.get('ItemName')
+        if original is None:
+            original = record['rawFields'][2] if len(record['rawFields']) > 2 else ''
+        issues = []
+        suggestions = []
+        for typo, suggested in candidates.items():
+            if re.search(r'(?<![A-Za-z])' + re.escape(typo) + r'(?![A-Za-z])', original, re.I):
+                issues.append('Possible typo requires product-specific verification: ' + typo)
+                suggestions.append({'from': typo, 'to': suggested, 'status': 'candidate_only_not_applied'})
+        if re.search(r'[A-Za-z]\d+[A-Za-z]', original) and not re.search(r'\b7UP\b', original, re.I):
+            issues.append('Joined letters/numbers checked; may be a measurement or distinguishing brand token')
+        if re.search(r'[a-z][A-Z]', original):
+            issues.append('Joined words or mixed casing checked; no automatic title rewriting')
+        if re.search(r'\b(?:vod|marg|pomeg|frt|strw|rasp|blkbry|reg|mosc)\b', original, re.I):
+            issues.append('Abbreviated expression requires confirmation before expansion')
+        if re.search(r'MIKE N LIKE|TAYLORS CANDY|NOW\s*&\s*LATER', original, re.I):
+            issues.append('Brand-level description may omit flavor; different UPCs must not imply matching products')
+        if 'BELVEDERE INTENSE VOD100' in original.upper():
+            issues.append('Source combines Intense/Unfiltered/100 proof wording; exact expression unresolved')
+        issues.extend(record['flags'])
+        if record['disposition'] != 'retained_variant':
+            issues.append(record['reason'])
+        correction = record.get('nameCorrection')
+        evidence = correction['evidence'] if correction else record.get('identityReview', {}).get('evidence', [])
+        rows.append({'sourceRow': record['sourceRow'], 'sku': record['sku'],
+                     'originalName': original, 'correctedSourceName': record.get('correctedSourceName', original),
+                     'publicName': by_sku.get(record['sku']), 'publicStatus': record['disposition'],
+                     'issues': issues, 'suggestedCorrections': suggestions, 'evidence': evidence,
+                     'outcome': 'evidence_backed_correction_applied' if correction else
+                        ('identity_conflict_needs_review' if record.get('identityReview') else 'scanned_not_externally_verified'),
+                     'verifiedScope': correction['scope'] if correction else None})
+    return {'schemaVersion': 1, 'sourceSha256': audit['sourceSha256'],
+            'summary': {'sourceRowsScanned': len(rows), 'rowsWithIssues': sum(bool(r['issues']) for r in rows),
+                        'evidenceBackedCorrections': sum(r['outcome'] == 'evidence_backed_correction_applied' for r in rows),
+                        'identityConflicts': sum(r['outcome'] == 'identity_conflict_needs_review' for r in rows),
+                        'fullyVerifiedNames': sum(r['verifiedScope'] == 'product_name_spelling' for r in rows),
+                        'scopeNote': 'All rows scanned for specified risks. Only listed evidence-backed corrections were externally checked; remaining names are not verified.'},
+            'records': rows}
+
+
+def safe_private_path(path: Path) -> Path:
+    path = path.expanduser().resolve()
+    if path == ROOT or ROOT in path.parents:
+        raise ValueError('Private input and output must be OUTSIDE the public repository')
+    return path
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--input', required=True, type=Path)
+    parser.add_argument('--private-output', required=True, type=Path)
+    parser.add_argument('--source-date', default='2026-02')
+    parser.add_argument('--output', type=Path, default=ROOT / 'catalog.json')
+    parser.add_argument('--images', type=Path, default=ROOT / 'data/image-manifest.json')
+    parser.add_argument('--names', type=Path, default=ROOT / 'data/name-corrections.json')
+    parser.add_argument('--source-reviews', type=Path, default=ROOT / 'data/source-reviews.json')
+    args = parser.parse_args()
+    source_path = safe_private_path(args.input)
+    private_output = safe_private_path(args.private_output)
+    source_bytes = source_path.read_bytes()
+    image_manifest = json.loads(args.images.read_text()) if args.images.exists() else None
+    name_manifest = json.loads(args.names.read_text()) if args.names.exists() else None
+    source_reviews = json.loads(args.source_reviews.read_text()) if args.source_reviews.exists() else None
+    catalog, audit = build(source_bytes, args.source_date, image_manifest, name_manifest, source_reviews)
+    private_output.mkdir(parents=True, exist_ok=True, mode=0o700)
+    (private_output / 'master-reconciliation.json').write_text(json.dumps(audit, indent=2) + '\n')
+    (private_output / 'review-queue.json').write_text(json.dumps([
+        r for r in audit['records'] if r['disposition'] == 'needs_review' or r['flags']], indent=2) + '\n')
+    names = name_audit(catalog, audit)
+    (private_output / 'all-names-audit.json').write_text(json.dumps(names, indent=2) + '\n')
+    (private_output / 'name-audit-summary.json').write_text(json.dumps(names['summary'], indent=2) + '\n')
+    args.output.write_text(json.dumps(catalog, ensure_ascii=False, separators=(',', ':')) + '\n')
+    summary = {'schemaVersion': 1, 'sourceDate': args.source_date,
+               'sourceSha256': audit['sourceSha256'], 'counts': catalog['counts'],
+               'sourceDispositions': audit['sourceDispositions'],
+               'nameAudit': names['summary'],
+               'imageStatus': {'verifiedVariants': audit['verifiedImages'],
+                               'unverifiedVariants': catalog['counts']['publicVariants'] - audit['verifiedImages']}}
+    (args.output.parent / 'data-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
+    if source_path.read_bytes() != source_bytes:
+        raise RuntimeError('Source CSV changed while building')
+    print(json.dumps(summary, indent=2))
+
+
+if __name__ == '__main__':
+    main()
