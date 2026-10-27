@@ -20,6 +20,8 @@ Each source row has a private disposition: retained variant, retained duplicate 
 
 Grouping is conservative: only identical expressions after recognized size/pack extraction share a card. Brand numbers, ages, proof, vintage and flavor remain part of identity. Original departments are preserved under broader navigation categories. No fuzzy matching is used.
 
+Explicit trailing BTL/BTLS markers become bottle labels alongside the original measures and pack counts. When size metadata conflicts, the abbreviation stays in the product name and the size remains unconfirmed. Reviewed shopping-category corrections apply only to guarded source SKUs, preserving their original departments.
+
 Reviewed photographs are installed per SKU and shown only for the exact selected size. Photos remain absent where identity, usage rights, or professional presentation is unresolved. The builder requires an explicit professional-quality review as well as exact identity checks; handheld and household snapshots are not approved for display. A manufacturer page alone does not grant asset reuse permission. Existing photos from the earlier site were unverified and have been removed. The source-row image audit is private; aggregate status is recorded in `docs/repair-status.md`.
 
 A CSV comma repair stays isolated from other products. Its image remains blocked unless its source review names the exact current product, size and image hash, confirms all six identity checks, and links manufacturer, exact-UPC and inspected-photo evidence. That exception requires a matching licensed professional image record; it cannot approve another SKU or bypass file-hash validation.

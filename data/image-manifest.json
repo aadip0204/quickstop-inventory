@@ -1361,10 +1361,10 @@
     {
       "sku": "524",
       "expectedUpc": "613008725754",
-      "expectedName": "AriZona Fruit Punch Juice Cocktail BTL",
-      "expectedLabel": "20 oz",
+      "expectedName": "AriZona Fruit Punch Juice Cocktail",
+      "expectedLabel": "20 oz · bottles",
       "src": "images/products/sku-524.jpg",
-      "alt": "AriZona Fruit Punch Juice Cocktail BTL — 20 oz packaging",
+      "alt": "AriZona Fruit Punch Juice Cocktail — 20 oz bottle packaging",
       "sourcePage": "https://world-en.openfoodfacts.org/product/0613008725754",
       "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/5754/1.jpg",
       "license": "CC BY-SA 3.0",
@@ -3303,6 +3303,29 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "attribution": "kiliweb / Open Food Facts",
       "sha256": "e845f5105ab0df1d76044f7b3ce2c2e7e6b9c9731ce64345deaa37351475ecb8",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1611",
+      "expectedUpc": "079581184027",
+      "expectedName": "Calypso Strawberry Lemonade",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-1611.jpg",
+      "alt": "Calypso Strawberry Lemonade — 16 oz bottle packaging",
+      "sourcePage": "https://world.openfoodfacts.org/product/0079581184027",
+      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/958/118/4027/5.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "thaialagata / Open Food Facts",
+      "sha256": "72b7d6f550b50106becb029220f1d693c235905f07588317d1298dfd5b991bfa",
       "verifiedOn": "2026-10-27",
       "verification": {
         "brand": true,

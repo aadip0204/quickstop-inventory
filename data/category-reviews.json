@@ -500,6 +500,186 @@
           "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
         }
       ]
+    },
+    {
+      "sku": "528",
+      "expectedUpc": "613008722050",
+      "expectedNameSha256": "a40117754b716a41f2a6ba355a08b2570692b726cc28f66dd4f425f1d62434f3",
+      "expectedSourceRecordSha256": "564e66aacae49f0e16a0234ce7ddcd643810ae06099bc3bfce42041b699a37d7",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "AriZona Fruit Punch Fruit Juice Cocktail",
+      "expectedLabel": "11.5 oz",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/fruit-punch-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://slasti.kz/g8860971-arizona",
+          "supports": "Exact source UPC 613008722050 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/2050/1.400.jpg",
+          "supports": "AriZona Fruit Punch Fruit Juice Cocktail can. Expression is readable; original 11.5OZ source measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "540",
+      "expectedUpc": "613008714253",
+      "expectedNameSha256": "3f9d7b7753a5b1aed9db5d6b3e0dde05b9e45902903e05d7c817dde7e1c2cce3",
+      "expectedSourceRecordSha256": "e02230f51c493f8e0f04f8b9ad3200b46b7c811221d0b313875b5f188442e184",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "AriZona Green Tea with Ginseng & Honey",
+      "expectedLabel": "11.5 oz",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/green-tea-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.super99.com/10100851-arizona-tea-ginseng-and-honey-340ml-lata",
+          "supports": "Exact source UPC 613008714253 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/4253/1.400.jpg",
+          "supports": "AriZona Green Tea with Ginseng and Honey can. Expression is readable despite cropped package edges; original 11.5OZ source measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "563",
+      "expectedUpc": "613008735784",
+      "expectedNameSha256": "17089144725e7f6282ce7b266d25adeb6adda140e412d2b7cedc9d38844623f5",
+      "expectedSourceRecordSha256": "e5e97af4ebc40a9e571026841836efaff4d7d30c9aa804131ee989be817b2525",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "AriZona Iced Tea with Lemon Flavor",
+      "expectedLabel": "11.5 oz",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/lemon-tea-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.tabacariadamata.com.br/cha-arizona-lemon.html",
+          "supports": "Exact source UPC 613008735784 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/5784/1.400.jpg",
+          "supports": "AriZona Iced Tea with Lemon Flavor can. Lemon expression is readable; original 11.5oz source measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "581",
+      "expectedUpc": "613008737580",
+      "expectedNameSha256": "7101b04a0c6e76d5081314cddf063df2c4f64c238c57a0d0227d1588971f6322",
+      "expectedSourceRecordSha256": "24495568045bcb09c48482339aa99b6d2a4985fea4e294c56a18c4e192120667",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "AriZona Mucho Mango Fruit Juice Cocktail",
+      "expectedLabel": "11.5 oz",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/mucho-mango-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.lacolonia.com/bebida-arizona-mucho-mango-340-ml/p",
+          "supports": "Exact source UPC 613008737580 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/7580/1.400.jpg",
+          "supports": "AriZona Mucho Mango Fruit Juice Cocktail can. Expression is readable; original 11.5oz source measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "603",
+      "expectedUpc": "613008733261",
+      "expectedNameSha256": "7f63c0003a3cd6320dd96675646871509c78f5bb5efb32ff938f18a11bf598de",
+      "expectedSourceRecordSha256": "0aae7b5ba1c0d00d25bb1d1d4c82234b341cfc7d123e7f03557b3bab9c708ea5",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "AriZona Sweet Apple Juice Cocktail",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/pages/faqs",
+          "supports": "Primary AriZona website confirms the beverage brand only. Sweet Apple and Juice Cocktail are read from the actual label; historical distributor exact-UPC row corroborates Sweet Apple. Generic distributor category Ice Tea is not adopted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://premierbrandsus.com/wp-content/uploads/2022/05/Product-Catalogue.pdf#page=11",
+          "supports": "Exact source UPC 613008733261 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/3261/1.400.jpg",
+          "supports": "AriZona Sweet Apple Juice Cocktail bottle. Sweet Apple and Juice Cocktail are readable. Unknown source size remains unknown; photographed volume is not adopted."
+        }
+      ]
+    },
+    {
+      "sku": "615",
+      "expectedUpc": "613008740665",
+      "expectedNameSha256": "4168b4929c4623a4109dc5f7e6de94385e29135112d123ce00460eb85bf273b2",
+      "expectedSourceRecordSha256": "a17d94acee122b6669340bb08d3665e4c9922afd609170ecabd1052fc95cebb0",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "AriZona Watermelon Fruit Juice Cocktail",
+      "expectedLabel": "11.5 oz",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/watermelon-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://americansweets.co.uk/soda-and-drinks/juices-fruit-drinks/arizona-watermelon-slim-can-11-5oz-340ml",
+          "supports": "Exact source UPC 613008740665 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/874/0665/3.400.jpg",
+          "supports": "AriZona Watermelon Fruit Juice Cocktail can held in hand. Expression is readable; original 11.5oz source measurement retained."
+        }
+      ]
     }
   ]
 }

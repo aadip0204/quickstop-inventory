@@ -51,7 +51,7 @@ MEASURE_RE = re.compile(
     r'pounds?|lbs?\b|quarts?|qts?\b|gallons?|gals?\b|sq\.?\s*ft|ft\b|m\b)', re.I)
 PACK_RE = re.compile(r'(?<![\d.])(?P<number>\d+)\s*(?:packs?|pks?|count|ct)'
                      r'(?=$|\b|\d|(?-i:[A-Z]))', re.I)
-CONTAINER_RE = re.compile(r'\b(cans?|bottles?)\s*$', re.I)
+CONTAINER_RE = re.compile(r'\b(cans?|bottles?|btls?)\s*$', re.I)
 STALE_STATUS_RE = re.compile(r'OUT\s+OF\s+STOCK|UPC\s+NOT\s+IN\s+USE', re.I)
 PRICE_RE = re.compile(r'\$|\b\d+\s*for\s*\$?\s*\d|\b\d+(?:\.\d+)?\s*cents?\b|\b\d+\s*c\b', re.I)
 BARE_DECIMAL_RE = re.compile(r'(?<![\d.])(?:\d+\.\d+|\.\d+)(?![\d.])')
@@ -135,12 +135,14 @@ def extract_dimensions(text: str) -> dict:
 
     remaining = PACK_RE.sub(take_pack, remaining)
     container = ''
+    container_token = ''
     match = CONTAINER_RE.search(remaining)
     if match:
+        container_token = match[1]
         container = 'cans' if match[1].lower().startswith('can') else 'bottles'
         remaining = remaining[:match.start()]
     return {'text': clean_space(remaining), 'measures': measures,
-            'packs': packs, 'container': container}
+            'packs': packs, 'container': container, 'containerToken': container_token}
 
 
 def numeric_signature(parts: dict) -> set:
@@ -278,6 +280,10 @@ def classify_record(record: dict) -> tuple[str, str, dict | None, list[str]]:
     if size_conflict or count_conflict or container_conflict or multiple_conflicting_sizes or multiple_conflicting_packs:
         flags.append('Title and PackName size/pack conflict; neither value selected')
         label = 'Size needs confirmation'
+        # Keep newly recognized abbreviations recoverable in the public name
+        # when the conflicting variant label cannot carry package details.
+        if title_parts['containerToken'].casefold() in {'btl', 'btls'}:
+            name = clean_space(name + ' ' + title_parts['containerToken'])
     else:
         measures = title_parts['measures'] or pack_parts['measures']
         packs = title_parts['packs'] or pack_parts['packs']
