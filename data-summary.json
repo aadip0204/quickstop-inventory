@@ -5,27 +5,28 @@
   "counts": {
     "sourceRows": 9881,
     "sourceSkus": 9881,
-    "publicVariants": 9466,
-    "products": 7780,
-    "needsReview": 266,
+    "publicVariants": 9619,
+    "products": 7928,
+    "needsReview": 113,
     "excludedNonproducts": 149,
-    "flaggedPublicVariants": 1209
+    "flaggedPublicVariants": 1406
   },
   "sourceDispositions": {
-    "needs_review": 266,
+    "needs_review": 113,
     "excluded_nonproduct": 149,
-    "retained_variant": 9466
+    "retained_variant": 9619
   },
   "nameAudit": {
     "sourceRowsScanned": 9881,
-    "rowsWithIssues": 3383,
-    "evidenceBackedCorrections": 287,
+    "rowsWithIssues": 3415,
+    "evidenceBackedCorrections": 330,
     "identityConflicts": 1,
-    "fullyVerifiedNames": 2,
-    "scopeNote": "All rows scanned for specified risks. Only listed evidence-backed corrections were externally checked; remaining names are not verified."
+    "exactIdentitiesResolved": 2,
+    "fullyVerifiedNames": 12,
+    "scopeNote": "All rows scanned for specified risks. Only listed corrections and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified."
   },
   "imageStatus": {
-    "verifiedVariants": 86,
-    "unverifiedVariants": 9380
+    "verifiedVariants": 126,
+    "unverifiedVariants": 9493
   }
 }

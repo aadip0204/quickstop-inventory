@@ -1884,17 +1884,22 @@
       "sku": "5365",
       "expectedUpc": "021131506308",
       "expectedNameSha256": "8adbee23444d7a337339f80b1f42e249632ed807f190c628cb7f773e489d0cbf",
-      "replaceTextFrom": "Marie Callender's",
-      "replaceTextTo": "Marie Callender's ",
-      "scope": "spacing_only",
+      "replaceTextFrom": "sherb rosted",
+      "replaceTextTo": "s herb roasted",
+      "scope": "ordinary_word_spelling_only",
       "evidence": [
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
           "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/roasted",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
         }
       ],
-      "verifiedOn": "2026-10-26"
+      "verifiedOn": "2026-10-27"
     },
     {
       "sku": "5366",
@@ -3502,14 +3507,19 @@
       "sku": "8296",
       "expectedUpc": "722648978069",
       "expectedNameSha256": "dea56dca2b0174758f604189287803033f2f144f7e398a2eb1a67805a5a74c2c",
-      "replaceTextFrom": "NEAON",
-      "replaceTextTo": "NEON",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "SUPERIOUR SOUR NEAON",
+      "replaceTextTo": "SUPERIOR SOUR NEON",
+      "scope": "brand_spelling_only",
       "evidence": [
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/neon",
           "kind": "english_dictionary_ordinary_word_spelling",
           "supports": "Confirms only standard spelling neon; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        },
+        {
+          "url": "https://superiornutandcandy.com/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -4078,14 +4088,19 @@
       "sku": "8715",
       "expectedUpc": "087381051043",
       "expectedNameSha256": "00116e1f4e9913bd8187d0fc81b16472a8f6b6f6c444663bca4ffd3a784323bd",
-      "replaceTextFrom": "ORIGINNAL",
-      "replaceTextTo": "ORIGINAL",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "SHABANB 1.5 OZ42G  ORIGINNAL",
+      "replaceTextTo": "SHABANG 1.5 OZ42G  ORIGINAL",
+      "scope": "brand_spelling_only",
       "evidence": [
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/original",
           "kind": "english_dictionary_ordinary_word_spelling",
           "supports": "Confirms only standard spelling original; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        },
+        {
+          "url": "https://wholeshabang.com/shop-now/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -4710,6 +4725,764 @@
           "url": "https://shop.herrs.com/collections/spicy-snacks",
           "kind": "official_manufacturer_brand_or_product",
           "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "385",
+      "expectedUpc": "070038324201",
+      "expectedNameSha256": "ccc919fc0ccb519b38dba6191658457d05333141f5c1e4f8ee5b8ba9a83eee27",
+      "replaceTextFrom": "Alwuys Sqve extra wlde egg noo",
+      "replaceTextTo": "Always Save Extra Wide Egg Noodles",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://alwayssavebrand.com/product/0007003832420/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Exact manufacturer UPC070038324201 matches Always Save Extra Wide Egg Noodles. Confirms complete name spelling only; no source size is added."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "209",
+      "expectedUpc": "078000005318",
+      "expectedNameSha256": "5b4a1f6ac21cb09eda3f57eb4a411d6230feb9bc82bd6d3f91b874704177091a",
+      "replaceTextFrom": "CHEERY",
+      "replaceTextTo": "CHERRY",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.7up.com/en/recipes/7up-sunrise",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101483",
+      "expectedUpc": "078000035551",
+      "expectedNameSha256": "52840bdc6b547fb944684b52a248aecc088acbba610b3407ad528678c9673741",
+      "replaceTextFrom": "SANKIST",
+      "replaceTextTo": "SUNKIST",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.sunkistsoda.com/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3756",
+      "expectedUpc": "072080100758",
+      "expectedNameSha256": "45a7cfc28fb40d72c9d8d07940aeff00dc2299f172184775cfb941e24a060945",
+      "replaceTextFrom": "goldden flake",
+      "replaceTextTo": "Golden Flake",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.utzsnacks.com/pages/ourbrands",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8294",
+      "expectedUpc": "722648981649",
+      "expectedNameSha256": "2363fa9634e4fdcbabbf6b5c96a7bca5ef6500655b073821e61c9cf172375dba",
+      "replaceTextFrom": "SUPERIOU",
+      "replaceTextTo": "SUPERIOR",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://superiornutandcandy.com/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8295",
+      "expectedUpc": "722648981823",
+      "expectedNameSha256": "52b1d1cf76b2d71a5a0ede227a206cd34723f220498662a4efc31efbb5058816",
+      "replaceTextFrom": "SUPERIOUR",
+      "replaceTextTo": "SUPERIOR",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://superiornutandcandy.com/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7388",
+      "expectedUpc": "088474008050",
+      "expectedNameSha256": "240241a3f838d17f834608d0034d37b4475851d6ea8c264aec92acbe084b4327",
+      "replaceTextFrom": "Relex",
+      "replaceTextTo": "Relax",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.schmitt-soehne.com/products/c-relax-wines-still-and-sparkling-1046361563",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7389",
+      "expectedUpc": "088474022209",
+      "expectedNameSha256": "cfd11fdca99da958fcf14e13c3b3b131879827038a1d302844e7117b0dbab6b1",
+      "replaceTextFrom": "RELEX",
+      "replaceTextTo": "Relax",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.schmitt-soehne.com/products/c-relax-wines-still-and-sparkling-1046361563",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101344",
+      "expectedUpc": "096749001361",
+      "expectedNameSha256": "3868ec3fcdfa065d134fabfe4ebeedb6a0492043ea77ccec91fa665cf848a69d",
+      "replaceTextFrom": "BLACO",
+      "replaceTextTo": "BLANCO",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.lunazultequila.com/blanco.php",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4075",
+      "expectedUpc": "744607012607",
+      "expectedNameSha256": "72ae5ccd073112040e0d1ccf755ef4280da5d9153736a3eb068699d2393380c3",
+      "replaceTextFrom": "REPSADO",
+      "replaceTextTo": "REPOSADO",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.herradura.com/blog/product/reposado/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9092",
+      "expectedUpc": "041780001351",
+      "expectedNameSha256": "1dfa11591804f922721af6ad918cd34f8777f5bbce8b11a30bbe1c4938ed46df",
+      "replaceTextFrom": "Bavbegue",
+      "replaceTextTo": "Barbeque",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.utzsnacks.com/products/utz-honey-barbeque-potato-chips",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8352",
+      "expectedUpc": "085200118830",
+      "expectedNameSha256": "1f83cd07c74b17b6fbee2126ccb734ee810d101fb369a72e9e3b8164b95de386",
+      "replaceTextFrom": "Moscoto",
+      "replaceTextTo": "Moscato",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.sutterhome.com/wines/pink-moscato/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4491",
+      "expectedUpc": "090478410043",
+      "expectedNameSha256": "a8994e192a63bd67b1db983049bfb3bd73a2f41ad5d0516ce176d82bf6db10c7",
+      "replaceTextFrom": "JARRITOSPINEAPPNE",
+      "replaceTextTo": "JARRITOS PINEAPPLE",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://jarritos.com/flavor/pineapple/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1971",
+      "expectedUpc": "028400039161",
+      "expectedNameSha256": "d3e8a3285c92d3f276a3b60efbc8758b91b1956706d58356dda805cb22a0da2b",
+      "replaceTextFrom": "FAMIN",
+      "replaceTextTo": "FLAMIN'",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.cheetos.com/product-category/flamin-hot",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1989",
+      "expectedUpc": "028400098571",
+      "expectedNameSha256": "dc3fa67b38d4579a5b6357359ffb62458ad2f971203ac5354bbdd770446b7cc3",
+      "replaceTextFrom": "FLMIN",
+      "replaceTextTo": "FLAMIN'",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.cheetos.com/product-category/flamin-hot",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3547",
+      "expectedUpc": "028400003773",
+      "expectedNameSha256": "f8179d077c79662a1111c9609b2d183aef2da2a0e32cc0340c86583895161c2e",
+      "replaceTextFrom": "FAMIN",
+      "replaceTextTo": "FLAMIN'",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.fritolay.com/brands/funyuns?wptouch_preview_theme=enabled",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8514",
+      "expectedUpc": "757528046682",
+      "expectedNameSha256": "4fbed173833432074c8ddeae131c311d2c6a54e010e19785b7d36a69d6e74d2b",
+      "replaceTextFrom": "fuegd",
+      "replaceTextTo": "fuego",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://barcel-usa.com/takis-crisps",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5554",
+      "expectedUpc": "343041",
+      "expectedNameSha256": "6e85224153758b106a1d5b862084497e7bdfb449a95c9663229c399658f43dae",
+      "replaceTextFrom": "miiler",
+      "replaceTextTo": "Miller",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.millercoors.com/sites/millercoors/files/MC_Nutritional_Information-121818.pdf",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "825",
+      "expectedUpc": "031000007072",
+      "expectedNameSha256": "33dd07499f304cc8d0e28fb407987ad7de014e2eafa03b0ffa96e4eccb7bb19f",
+      "replaceTextFrom": "Banquetchichen",
+      "replaceTextTo": "Banquet chicken",
+      "scope": "scoped_spelling_and_spacing_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chicken",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        },
+        {
+          "url": "https://www.banquet.com/chicken-meals",
+          "kind": "brand_or_ordinary_word_boundary",
+          "supports": "Manufacturer confirms Banquet as the separate brand word. Only spacing and the already documented chicken spelling are changed."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3470",
+      "expectedUpc": "050000421947",
+      "expectedNameSha256": "eb70398e2d074190f1dcd27a4669c671c44e61e710e323c40126b1373cd154cd",
+      "replaceTextFrom": "friskieschiccken",
+      "replaceTextTo": "friskies chicken",
+      "scope": "scoped_spelling_and_spacing_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chicken",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        },
+        {
+          "url": "https://www.purina.com/friskies/products",
+          "kind": "brand_or_ordinary_word_boundary",
+          "supports": "Manufacturer confirms Friskies as the separate brand word. Only spacing and the already documented chicken spelling are changed."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4263",
+      "expectedUpc": "051000062611",
+      "expectedNameSha256": "fd1222c4b7912d59dbe81d9240a7e7c87d22fb5b29b48c5699361422da3647ea",
+      "replaceTextFrom": "manrosted",
+      "replaceTextTo": "man roasted",
+      "scope": "scoped_spelling_and_spacing_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/roasted",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        },
+        {
+          "url": "https://www.hungry-man.com/hungry-man-dinners/roasted-carved-white-meat-turkey",
+          "kind": "brand_or_ordinary_word_boundary",
+          "supports": "Manufacturer separates the Hungry-Man brand from Roasted. Only the existing source word boundary and documented roasted spelling are repaired; no added expression or size."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4990",
+      "expectedUpc": "076410900742",
+      "expectedNameSha256": "7b31532c339cd0d8f9494def1e52d497f558c9438ebc5b0a6e80020b4cc16812",
+      "replaceTextFrom": "rosted",
+      "replaceTextTo": "roasted",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/roasted",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5483",
+      "expectedUpc": "654350333303",
+      "expectedNameSha256": "392dd8eec2d0d4949e2810dddb50e8cc3bb1c0c0d7090d1fee210199c9599e47",
+      "replaceTextFrom": "ROSTED",
+      "replaceTextTo": "roasted",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/roasted",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6025",
+      "expectedUpc": "028400109147",
+      "expectedNameSha256": "1aa961e2de036d52971ef669697f8996e88c375da50abc95dd4517a7d8f16ba9",
+      "replaceTextFrom": "rosted",
+      "replaceTextTo": "roasted",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/roasted",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6524",
+      "expectedUpc": "050700294995",
+      "expectedNameSha256": "b126484a4a005bdef242d80d083c0d495de75c3eacc413130f05be37edb52a27",
+      "replaceTextFrom": "EnrlchedFlour",
+      "replaceTextTo": "Enriched Flour",
+      "scope": "scoped_spelling_and_spacing_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/enriched",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/example/english/nutritional-benefit",
+          "kind": "brand_or_ordinary_word_boundary",
+          "supports": "Dictionary usage confirms enriched flour as two ordinary words. Only spelling and spacing are repaired; no brand or complete identity verification."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6976",
+      "expectedUpc": "070195590167",
+      "expectedNameSha256": "00246452a21d63b9fb6cfc8ff700d1d3e9f2f43ea27cc7a181eb4416f6b7fefc",
+      "replaceTextFrom": "MANLOOSE CHEING",
+      "replaceTextTo": "MAN LOOSE CHEWING",
+      "scope": "scoped_spelling_and_spacing_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/chew",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        },
+        {
+          "url": "https://www.swedishmatch.com/globalassets/reports/2014/20140325-swedish-match-publishes-annual-report-for-2013-en-1-867129.pdf",
+          "kind": "brand_or_ordinary_word_boundary",
+          "supports": "Manufacturer historical report identifies the Red Man brand separately. Only the source word boundary and documented chewing spelling are repaired; no new identity or current branding is inferred."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101423",
+      "expectedUpc": "044000009298",
+      "expectedNameSha256": "c17a6e88ca65ff7f185453be95d0a0ebfb2b02f4434ab838a21e5295519f50c6",
+      "replaceTextFrom": "CRAKER",
+      "replaceTextTo": "CRACKER",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/cracker",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7431",
+      "expectedUpc": "070310016879",
+      "expectedNameSha256": "ec4c5adb266857272090f01f0cb1fa0588d303042a12fe5f4e7a693ccd315e79",
+      "replaceTextFrom": "canpassionnfruit",
+      "replaceTextTo": "canpassionfruit",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/passion-fruit",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4566",
+      "expectedUpc": "072486002205",
+      "expectedNameSha256": "d2eda26208f9566b92fc9b6f0bbbd0439cc276441fd53e222b9364a135ae46ef",
+      "replaceTextFrom": "JEFFY",
+      "replaceTextTo": "JIFFY",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.jiffymix.com/products/corn-muffin-mix/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Manufacturer Chelsea Milling Company identifies JIFFY Corn Muffin Mix. Confirms only brand spelling; source size is not inferred or changed."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6854",
+      "expectedUpc": "030000041703",
+      "expectedNameSha256": "2468b491b1a93587258b3b16a4b518e7ac80ce9755da931b4cbde8127a42f797",
+      "replaceTextFrom": "Quaker grits",
+      "replaceTextTo": "Quaker Quick 5-Minute Grits",
+      "scope": "exact_upc_name_identity",
+      "evidence": [
+        {
+          "url": "https://smartlabel.pepsico.info/030000041703-0001-en-US/index.html",
+          "kind": "manufacturer SmartLabel",
+          "supports": "Manufacturer record gives exact UPC, Quaker Quick 5-Minute Grits, 24 oz / 680 g canister."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/000/004/1703/4.jpg",
+          "kind": "inspected_exact_upc_package_photo",
+          "supports": "Complete canister, Quaker brand, Quick 5-Minute expression and 24 oz / 680 g visible; clean white presentation, no price. Independently visually reviewed by the photo reviewer; this name clarification does not alter source size."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "506",
+      "expectedUpc": "613008720858",
+      "expectedNameSha256": "ba4efa98509bd679ebb8671e74fbfa0662c228cae9ad5486178423372a43021d",
+      "replaceTextFrom": "ARIZONA 1GLHALF & HALF LEMONADE",
+      "replaceTextTo": "AriZona Arnold Palmer Lite Half & Half",
+      "scope": "exact_upc_name_identity",
+      "evidence": [
+        {
+          "url": "https://www.target.com/p/-/A-13388793",
+          "kind": "retailer Target",
+          "supports": "Retailer specification gives exact UPC, Arnold Palmer Lite iced tea/lemonade, 128 fl oz single plastic jug."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/0858/5.jpg",
+          "kind": "inspected_exact_upc_package_photo",
+          "supports": "Complete jug including handle and cap, AriZona Arnold Palmer Lite Half & Half iced tea/lemonade, 128 fl oz / 1 gallon / 3.78 L visible; white background, no price. Independently visually reviewed by the photo reviewer; this name clarification does not alter source size."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7227",
+      "expectedUpc": "028400090148",
+      "expectedNameSha256": "348997cc9bb37977399b640d7ff511fcc795b9cec563f7c7de31026a2c491f7d",
+      "replaceTextFrom": "RUFFLES",
+      "replaceTextTo": "Ruffles Original",
+      "scope": "exact_upc_name_identity",
+      "evidence": [
+        {
+          "url": "https://smartlabel.pepsico.info/028400090148-0014-en-US/index.html",
+          "kind": "manufacturer SmartLabel",
+          "supports": "Manufacturer record gives exact UPC, Ruffles Original Potato Chips, 1 oz / 28.3 g bag."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/009/0148/5.jpg",
+          "kind": "inspected_exact_upc_package_photo",
+          "supports": "Complete Ruffles Original single bag, 1 oz / 28.3 g visible; clean white background, no price. Original is only 216 by 266 pixels; no enlargement or generation performed. Independently visually reviewed by the photo reviewer; this name clarification does not alter source size."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6952",
+      "expectedUpc": "021000026326",
+      "expectedNameSha256": "6a30e4f54b6572784526015652cf096189a991721032d0e39e0713731cdac1eb",
+      "replaceTextFrom": "real mayo",
+      "replaceTextTo": "Kraft Real Mayo",
+      "scope": "exact_upc_name_identity",
+      "evidence": [
+        {
+          "url": "https://www.target.com/p/-/A-12946394",
+          "kind": "retailer Target",
+          "supports": "Retailer specification gives exact UPC, Kraft Real Mayonnaise, single 30 fl oz jar."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/100/002/6326/9.jpg",
+          "kind": "inspected_exact_upc_package_photo",
+          "supports": "Complete Kraft Real Mayo jar with blue cap, Creamy & Smooth expression, 30 fl oz / 887 mL visible; clean white background, no price. Independently visually reviewed by the photo reviewer; this name clarification does not alter source size."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2061",
+      "expectedUpc": "044000043148",
+      "expectedNameSha256": "2b4584974ba252bb4a1671473af7ff29c2b22e60ac825a78933c5fa725670930",
+      "replaceTextFrom": "chips ahoy",
+      "replaceTextTo": "Chips Ahoy! Original",
+      "scope": "exact_upc_name_identity",
+      "evidence": [
+        {
+          "url": "https://smartlabel.mondelez.info/044000043148-0003-en-US/index.html",
+          "kind": "manufacturer_exact_upc_smartlabel",
+          "supports": "Manufacturer explicitly identifies UPC044000043148, Chips Ahoy! Original Real Chocolate Chip Cookies,4cookies,1.55oz(44g). Confirms the complete brand/expression for this sourceSKU; source44g measurement is preserved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6115",
+      "expectedUpc": "050000300624",
+      "expectedNameSha256": "249abc16eb9539b4bf9d822a09e6e9754cbcbaf73a15b1199a3194ed36048154",
+      "replaceTextFrom": "Nestle coffee mateorg",
+      "replaceTextTo": "Nestlé Coffee-mate Original",
+      "scope": "exact_upc_name_identity",
+      "evidence": [
+        {
+          "url": "https://smartlabel.nestleusa.com/050000300624-0001-en-US/index.html",
+          "kind": "manufacturer_exact_upc_smartlabel",
+          "supports": "Nestlé SmartLabel identifies UPC050000300624 as Coffee mate The Original, net6oz. Complete name clarified; existing source6oz is unchanged."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6116",
+      "expectedUpc": "050000447718",
+      "expectedNameSha256": "01b2f2adf579ab2efbaa7a447f8aacc2819245e5121b73ee935094676b0c5642",
+      "replaceTextFrom": "Nestle coffee mateorg",
+      "replaceTextTo": "Nestlé Coffee-mate Original",
+      "scope": "exact_upc_name_identity",
+      "evidence": [
+        {
+          "url": "https://www.nestleprofessional.us/coffee-mate/original-powder-creamer-12-x-11-oz",
+          "kind": "manufacturer_product_identity",
+          "supports": "Nestlé Professional identifies Original powdered creamer in11oz canisters. Source11oz is unchanged; exact individual UPC is corroborated separately, and case pack is not assigned to this sourceSKU."
+        },
+        {
+          "url": "https://www.officedepot.com/a/products/919573/Nestle-Coffee-mate-Powdered-Creamer-Canister/?bvstate=pg%3A8%2Fct%3Ar",
+          "kind": "retailer_exact_upc_product_identity",
+          "supports": "Retailer specifications identify UPC050000447718, Coffee-Mate Original powdered creamer, one11oz canister."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1641",
+      "expectedUpc": "085000016800",
+      "expectedNameSha256": "ae01030b6bf43b884484ee2e8733bf759b077f9498f29a96470afaed51a77697",
+      "replaceTextFrom": "sliver",
+      "replaceTextTo": "silver",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.tequilacamarena.com/our-tequila/silver/",
+          "kind": "manufacturer_expression_spelling",
+          "supports": "Camarena explicitly names its Silver tequila. Repairs only transposed letters in the stated source expression; retains source size and wording."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3850",
+      "expectedUpc": "050428096789",
+      "expectedNameSha256": "9f84f16031682b7036bff232edae0f242b047fdd973125dc56792d35f452038e",
+      "replaceTextFrom": "ertra",
+      "replaceTextTo": "extra",
+      "scope": "ordinary_expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.doordash.com/products/gran-legacy-extra-dry-gin-bottle-175-l/urpc_fce3b7f8-c6e6-4ccf-955f-e3867bca76ef",
+          "kind": "first_party_marketplace_product_listing",
+          "supports": "The Gran Legacy product listing spells Extra Dry. Supports only ertra to extra in this manually reviewed source context. Does not add Gin or Dry, infer size, or establish the exact source UPC."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4211",
+      "expectedUpc": "080686835301",
+      "expectedNameSha256": "457b746359d1ce3187fab5077474e24c1cdb397da249b139dd54eb5b800fd06b",
+      "replaceTextFrom": "SLIVER",
+      "replaceTextTo": "SILVER",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.hornitostequila.com/tequilas",
+          "kind": "manufacturer_expression_spelling",
+          "supports": "Hornitos explicitly describes its Plata as Silver Tequila. Repairs SLIVER to SILVER only; does not substitute Plata or add an expression."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5248",
+      "expectedUpc": "096749908547",
+      "expectedNameSha256": "2baf71942e56c05eade472bb1e87dca7d10e7006095f3c84e0c2d4d896a576a5",
+      "replaceTextFrom": "SLIVER",
+      "replaceTextTo": "SILVER",
+      "scope": "descriptive_expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.badgerliquor.com/products/liquor/tequila/lunazul-blanco-tequila/",
+          "kind": "first_party_distributor_product_description",
+          "supports": "Distributor describes Lunazul Blanco as silver tequila and lists the source size among available sizes. Supports the descriptive word Silver; does not replace the source term with Blanco."
+        },
+        {
+          "url": "https://www.mainespirits.com/sites/default/files/price_books/May%202026%20Monthly%20Specials%20%28Agent%29_0.pdf",
+          "kind": "state_spirits_exact_upc_listing",
+          "supports": "Maine spirits listing identifies source UPC096749908547 as Lunazul Blanco1.75L. This corroborates context for the spelling repair; source naming and size are retained."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7429",
+      "expectedUpc": "070310017050",
+      "expectedNameSha256": "dd3c4323c24ef444b93f4812415f58b2fce66755bdba4fac261a9fc6a917c0f6",
+      "replaceTextFrom": "cantiki punh",
+      "replaceTextTo": "can tiki punch",
+      "scope": "scoped_spelling_and_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rlliptondist.com/project/seagram-spiked-cocktails/",
+          "kind": "first_party_distributor_expression_listing",
+          "supports": "Distributor lists Seagram Spiked Tiki Punch. Repairs punch spelling and separates existing can/tiki tokens only. Does not convert the unitless source24 into a measured size."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1826",
+      "expectedUpc": "088076186880",
+      "expectedNameSha256": "469ec1177ae2666d157decd8a40e74140dde1bdace56b079dce8b8178165d4a1",
+      "replaceTextFrom": "jalapen",
+      "replaceTextTo": "jalapeño",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.casamigos.com/cms?cocktailName=casamigas-spicy-espresso-martini&locale=en-us&slug=%2Fcocktails%2F%3AcocktailName",
+          "kind": "manufacturer_expression_spelling",
+          "supports": "Official Casamigos recipe names Casamigas Jalapeño Tequila, confirming the complete jalapeño word."
+        },
+        {
+          "url": "https://www.cub.com/store/cub-liquors/products/46124183-casamigos-jalapeno-blanco-750-ml",
+          "kind": "first_party_retailer_exact_upc_listing",
+          "supports": "Cub identifies source UPC088076186880 as Casamigos Jalapeno Blanco750ml. Repairs the truncated source flavor token only; preserves existing brand wording and size."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9456",
+      "expectedUpc": "031700054529",
+      "expectedNameSha256": "2489f623031ce8bb221bdece8cf9086d53b4f31911776182a438b4e486a457e3",
+      "replaceTextFrom": "white owe emerald  un sweet",
+      "replaceTextTo": "white owl emerald unsweet",
+      "scope": "brand_spelling_and_expression_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.swedishmatch.com/Media/Pressreleases-and-news/News/White-Owl-and-Game-introduce-The-New-Standard-in-Cigarillos-/",
+          "kind": "manufacturer_brand_spelling",
+          "supports": "Swedish Match identifies the White Owl cigar brand. Repairs the source owe to owl."
+        },
+        {
+          "url": "https://www.tobaccoonline.co.uk/product-category/cigars/white-owl/",
+          "kind": "first_party_retailer_expression_listing",
+          "supports": "Retailer lists White Owl Emerald Unsweet. Supports joining the already present source words un sweet, without adding a flavor or package size."
+        },
+        {
+          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
+          "kind": "first_party_distributor_exact_upc_listing",
+          "supports": "Distributor catalog associates source unit UPC031700054529 with White Owl Emerald. No printed source promotion or retail price is copied into the correction."
         }
       ],
       "verifiedOn": "2026-10-27"
