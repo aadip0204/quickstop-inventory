@@ -3059,6 +3059,144 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3844",
+      "expectedUpc": "041331124225",
+      "expectedName": "Goya Chick Peas Garbanzos",
+      "expectedLabel": "15.5 oz",
+      "src": "images/products/sku-3844.jpg",
+      "alt": "Goya Chick Peas Garbanzos — 15.5 oz packaging",
+      "sourcePage": "https://world-en.openfoodfacts.org/product/0041331124225",
+      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/133/112/4225/3.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "kiliweb / Open Food Facts",
+      "sha256": "0c640f13d01b9e09d0b99e6861f4dc9d575ddbd5af0a857b6c4c9b9f25608507",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9405",
+      "expectedUpc": "041800501519",
+      "expectedName": "Welch's Concord Grape Jam",
+      "expectedLabel": "30 oz",
+      "src": "images/products/sku-9405.jpg",
+      "alt": "Welch's Concord Grape Jam — 30 oz packaging",
+      "sourcePage": "https://world-en.openfoodfacts.org/product/0041800501519",
+      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/050/1519/1.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "kiliweb / Open Food Facts",
+      "sha256": "4072322b1a7f46e028e6ea73fc7cb1ed0525abaa4073f67c7cbcb537e729b429",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4205",
+      "expectedUpc": "037600223188",
+      "expectedName": "Hormel Chili with Beans",
+      "expectedLabel": "15 oz",
+      "src": "images/products/sku-4205.jpg",
+      "alt": "Hormel Chili with Beans — 15 oz packaging",
+      "sourcePage": "https://world-en.openfoodfacts.org/product/0037600223188",
+      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/760/022/3188/5.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "kiliweb / Open Food Facts",
+      "sha256": "5b91c57978631f9ce7ec1962905ec1fb6e27f37a56eac7d7d0e700b59a257364",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6798",
+      "expectedUpc": "044000003821",
+      "expectedName": "Nabisco Premium Original Saltine Crackers",
+      "expectedLabel": "4 oz",
+      "src": "images/products/sku-6798.jpg",
+      "alt": "Nabisco Premium Original Saltine Crackers — 4 oz packaging",
+      "sourcePage": "https://world-en.openfoodfacts.org/product/0044000003821",
+      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/400/000/3821/1.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "kiliweb / Open Food Facts",
+      "sha256": "7b720c757441a927047a583f5a860e6524c325d9c75e0d42b5d3103020f91ef6",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1278",
+      "expectedUpc": "064144043156",
+      "expectedName": "Chef Boyardee Beef Ravioli in Tomato & Meat Sauce",
+      "expectedLabel": "15 oz",
+      "src": "images/products/sku-1278.jpg",
+      "alt": "Chef Boyardee Beef Ravioli in Tomato & Meat Sauce — 15 oz packaging",
+      "sourcePage": "https://world-en.openfoodfacts.org/product/0064144043156",
+      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/006/414/404/3156/19.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "kiliweb / Open Food Facts",
+      "sha256": "3df85019915b4a3c760857b55709b8251f9e486bce7422aa606d698611d66447",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1653",
+      "expectedUpc": "051000010513",
+      "expectedName": "Campbell's Condensed Chicken with Rice Soup",
+      "expectedLabel": "10.5 oz",
+      "src": "images/products/sku-1653.jpg",
+      "alt": "Campbell's Condensed Chicken with Rice Soup — 10.5 oz packaging",
+      "sourcePage": "https://world-en.openfoodfacts.org/product/0051000010513",
+      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/100/001/0513/1.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "kiliweb / Open Food Facts",
+      "sha256": "61fb2f7277088ab3b1284774a13822d2926ad16fcb7e60fc37509d51ff54df2b",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
