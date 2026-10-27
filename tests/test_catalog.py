@@ -28,6 +28,17 @@ def export(*records):
     return stream.getvalue().encode()
 
 
+def restoration_review(source, sanitized, uncertain=True, row=1):
+    raw = list(csv.reader(io.StringIO(source.decode())))[row]
+    return {'schemaVersion': 1, 'reviews': [{
+        'sku': raw[0], 'expectedUpc': raw[1],
+        'expectedNameSha256': hashlib.sha256(raw[2].encode()).hexdigest(),
+        'expectedSourceRecordSha256': hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest(),
+        'action': 'restore_named_merchandise', 'sanitizedSourceName': sanitized,
+        'forceSizeNeedsConfirmation': uncertain, 'reason': 'Reviewed ambiguous metadata removal',
+    }]}
+
+
 class ImportTests(unittest.TestCase):
     def test_exact_grouping_preserves_brand_flavor_strength_and_age(self):
         catalog, _ = builder.build(export(
@@ -230,6 +241,22 @@ class ImportTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             builder.build(export({'ItemName': 'Different'}), name_manifest=override)
 
+    def test_name_queue_does_not_reopen_a_corrected_typo(self):
+        original = 'Example rosted peanuts 4oz'
+        names = {'schemaVersion': 1, 'corrections': [{
+            'sku': '1', 'expectedUpc': '001234567890',
+            'expectedNameSha256': hashlib.sha256(original.encode()).hexdigest(),
+            'replaceTextFrom': 'rosted', 'replaceTextTo': 'roasted',
+            'scope': 'ordinary_word_spelling_only',
+            'evidence': [{'url': 'https://dictionary.cambridge.org/us/dictionary/english/roasted'}],
+        }]}
+        catalog, audit = builder.build(export({'ItemName': original}), name_manifest=names)
+        queue = builder.name_audit(catalog, audit)
+        self.assertEqual(queue['records'][0]['originalName'], original)
+        self.assertEqual(queue['records'][0]['suggestedCorrections'], [])
+        self.assertEqual(queue['summary']['evidenceBackedCorrections'], 1)
+        self.assertEqual(queue['summary']['fullyVerifiedNames'], 0)
+
     def test_guarded_source_review_suppresses_suspect_size_without_guessing(self):
         source = export({'ItemName': 'DORITOS Spicy 1/8Oz', 'SKU': '2950', 'MAINUPC': '028400420754', 'DEPNAME': 'Snacks'})
         raw = list(csv.reader(io.StringIO(source.decode())))[1]
@@ -247,6 +274,111 @@ class ImportTests(unittest.TestCase):
             builder.build(source.replace(b'1/8Oz', b'1/4Oz'), source_reviews_manifest=review)
         with self.assertRaisesRegex(ValueError, 'Image blocked'):
             builder.build(source, source_reviews_manifest=review, image_manifest={'schemaVersion': 1, 'images': [{'sku': '2950'}]})
+
+    def test_restoration_preserves_source_and_confirmed_pack_without_guessing_size(self):
+        original = 'Example Berry 6pk 11.2Bottles'
+        source = export({'ItemName': original, 'PackName': '6pk Beer Tax'})
+        review = restoration_review(source, 'Example Berry 6pk Bottles')
+        catalog, audit = builder.build(source, source_reviews_manifest=review)
+        product = catalog['products'][0]
+        self.assertEqual(product['name'], 'Example Berry')
+        self.assertEqual(product['variants'][0]['label'], '6-pack · Size needs confirmation · bottles')
+        self.assertEqual(audit['records'][0]['source']['ItemName'], original)
+        self.assertEqual(audit['records'][0]['rawFields'], list(csv.reader(io.StringIO(source.decode())))[1])
+        # The record guard covers private metadata too, including changes outside the title.
+        for changed in (source.replace(b'11.2', b'12.2'), source.replace(b'19.99', b'20.99'),
+                        source.replace(b'001234567890', b'001234567891')):
+            with self.assertRaisesRegex(ValueError, 'identity mismatch'):
+                builder.build(changed, source_reviews_manifest=review)
+
+    def test_restored_sku_is_isolated_and_never_inherits_an_image(self):
+        source = export({'ItemName': 'Example Berry 1.5'}, {'ItemName': 'Example Berry 750ml'})
+        review = restoration_review(source, 'Example Berry')
+        catalog, _ = builder.build(source, source_reviews_manifest=review)
+        self.assertEqual(catalog['counts']['publicVariants'], 2)
+        self.assertEqual(catalog['counts']['products'], 2)
+        self.assertTrue(all(v['image'] is None for p in catalog['products'] for v in p['variants']))
+        with self.assertRaisesRegex(ValueError, 'Image blocked'):
+            builder.build(source, source_reviews_manifest=review,
+                          image_manifest={'schemaVersion': 1, 'images': [{'sku': '1'}]})
+
+    def test_restoration_applies_guarded_spelling_to_the_reviewed_description(self):
+        original = 'Johny Walker Black Label 1.75'
+        source = export({'ItemName': original})
+        review = restoration_review(source, 'Johny Walker Black Label')
+        names = {'schemaVersion': 1, 'corrections': [{
+            'sku': '1', 'expectedUpc': '001234567890',
+            'expectedNameSha256': hashlib.sha256(original.encode()).hexdigest(),
+            'replaceTextFrom': 'Johny Walker', 'replaceTextTo': 'Johnnie Walker',
+            'scope': 'brand_spelling_only', 'evidence': [{'url': 'https://www.johnniewalker.com/'}],
+        }]}
+        catalog, audit = builder.build(source, name_manifest=names, source_reviews_manifest=review)
+        self.assertEqual(catalog['products'][0]['name'], 'Johnnie Walker Black Label')
+        self.assertEqual(audit['records'][0]['source']['ItemName'], original)
+        self.assertEqual(audit['records'][0]['correctedSourceName'], 'Johnnie Walker Black Label 1.75')
+        self.assertEqual(audit['records'][0]['sanitizedSourceName'], 'Johnnie Walker Black Label')
+
+    def test_price_only_or_invented_restoration_cannot_bypass_quarantine(self):
+        for original, sanitized in (('$ 0.50', 'Example Candy'), ('0.50 juice', 'juice'),
+                                    ('Example Berry 1.5', 'Different Brand Berry')):
+            source = export({'ItemName': original})
+            with self.assertRaises(ValueError):
+                builder.build(source, source_reviews_manifest=restoration_review(source, sanitized))
+        catalog, _ = builder.build(export({'ItemName': '$ 0.50'}, {'ItemName': 'NEW ITEM'}))
+        self.assertEqual(catalog['counts']['needsReview'], 2)
+
+    def test_restoration_rejects_remaining_price_text_and_private_manifest_fields(self):
+        source = export({'ItemName': 'Example Berry 2 for 1.99'})
+        for sanitized in ('Example Berry $1.99', 'Example Berry 1.99', 'Example Berry 2 for 1.99'):
+            with self.assertRaises(ValueError):
+                builder.build(source, source_reviews_manifest=restoration_review(source, sanitized))
+        review = restoration_review(source, 'Example Berry', uncertain=False)
+        review['reviews'][0]['rawFields'] = ['private data']
+        with self.assertRaisesRegex(ValueError, 'private fields'):
+            builder.build(source, source_reviews_manifest=review)
+
+    def test_clear_price_promotion_removal_keeps_independent_size(self):
+        source = export({'ItemName': 'Example Berry 16oz 2 for 1.99'})
+        catalog, _ = builder.build(source, source_reviews_manifest=restoration_review(source, 'Example Berry 16oz', uncertain=False))
+        self.assertEqual(catalog['products'][0]['variants'][0]['label'], '16 oz')
+
+    def test_evidence_backed_identity_resolution_is_exact_and_cannot_override_stated_size(self):
+        source = export({'SKU': '7630', 'MAINUPC': '040000001607', 'ItemName': 'SKITTLES'},
+                        {'SKU': '2', 'MAINUPC': '040000001607', 'ItemName': 'SKITTLES'})
+        actual = json.loads((ROOT / 'data/source-reviews.json').read_text())
+        entry = dict(next(r for r in actual['reviews'] if r['sku'] == '7630'))
+        raw = list(csv.reader(io.StringIO(source.decode())))[1]
+        entry['expectedSourceRecordSha256'] = hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+        review = {'schemaVersion': 1, 'reviews': [entry]}
+        catalog, audit = builder.build(source, source_reviews_manifest=review)
+        by_sku = {v['sku']: (p, v) for p in catalog['products'] for v in p['variants']}
+        self.assertEqual(by_sku['7630'][0]['name'], 'Skittles Original')
+        self.assertEqual(by_sku['7630'][1]['label'], '2.17 oz')
+        self.assertEqual(by_sku['2'][0]['name'], 'SKITTLES')
+        self.assertEqual(by_sku['2'][1]['label'], 'Size not specified')
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'SKITTLES')
+        self.assertIsNone(by_sku['7630'][1]['image'])
+        names = builder.name_audit(catalog, audit)
+        self.assertEqual(names['summary']['exactIdentitiesResolved'], 1)
+        self.assertEqual(names['summary']['fullyVerifiedNames'], 1)
+        self.assertEqual(names['summary']['evidenceBackedCorrections'], 0)
+        self.assertTrue(all(isinstance(r['outcome'], str) for r in names['records']))
+        with self.assertRaisesRegex(ValueError, 'identity mismatch'):
+            builder.build(source.replace(b'040000001607', b'040000001608'), source_reviews_manifest=review)
+        with self.assertRaisesRegex(ValueError, 'Image identity mismatch'):
+            builder.build(source, source_reviews_manifest=review,
+                          image_manifest={'schemaVersion': 1, 'images': [{'sku': '7630', 'expectedName': 'Skittles Wild Berry'}]})
+        for key in ('visual', 'size', 'packaging', 'upc'):
+            incomplete = json.loads(json.dumps(review))
+            incomplete['reviews'][0]['verification'][key] = False
+            with self.assertRaisesRegex(ValueError, 'identity checks'):
+                builder.build(source, source_reviews_manifest=incomplete)
+        stated = export({'SKU': '7630', 'MAINUPC': '040000001607', 'ItemName': 'SKITTLES 3oz'})
+        raw = list(csv.reader(io.StringIO(stated.decode())))[1]
+        entry['expectedNameSha256'] = hashlib.sha256(raw[2].encode()).hexdigest()
+        entry['expectedSourceRecordSha256'] = hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+        with self.assertRaisesRegex(ValueError, 'stated source size'):
+            builder.build(stated, source_reviews_manifest=review)
 
     def test_packaging_spelling_correction_revalidates_image_identity(self):
         original_name = 'Example BOTTEL 12oz'

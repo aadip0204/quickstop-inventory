@@ -376,16 +376,85 @@ def validated_source_reviews(manifest: dict | None) -> dict:
     result = {}
     for entry in manifest['reviews']:
         sku = entry.get('sku')
-        if not isinstance(sku, str) or sku in result or entry.get('action') != 'size_needs_confirmation':
+        if not isinstance(sku, str) or sku in result or entry.get('action') not in {
+                'size_needs_confirmation', 'restore_named_merchandise', 'resolve_verified_identity'}:
             raise ValueError('Source review requires unique SKU and a supported action')
         if not isinstance(entry.get('expectedUpc'), str) or not all(
                 re.fullmatch(r'[a-f0-9]{64}', entry.get(key, ''))
                 for key in ('expectedNameSha256', 'expectedSourceRecordSha256')):
             raise ValueError(f'Source review requires exact original identity guards: {sku}')
+        if PRICE_RE.search(entry['expectedUpc']) or BARE_DECIMAL_RE.fullmatch(entry['expectedUpc']):
+            raise ValueError(f'Source review must not publish a price-bearing UPC: {sku}')
         if not isinstance(entry.get('reason'), str) or not entry['reason'].strip():
             raise ValueError(f'Source review requires a reason: {sku}')
+        allowed = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
+                   'action', 'reason', 'reviewedOn'}
+        if entry['action'] == 'restore_named_merchandise':
+            allowed |= {'sanitizedSourceName', 'forceSizeNeedsConfirmation'}
+            name = entry.get('sanitizedSourceName')
+            if (not isinstance(name, str) or not name.strip() or PRICE_RE.search(name)
+                    or re.search(r'[$€£]', name)
+                    or not isinstance(entry.get('forceSizeNeedsConfirmation'), bool)):
+                raise ValueError(f'Restoration requires a price-free reviewed description: {sku}')
+        if entry['action'] == 'resolve_verified_identity':
+            allowed |= {'verifiedName', 'verifiedLabel', 'verification', 'evidence'}
+            name, label = entry.get('verifiedName'), entry.get('verifiedLabel')
+            if (not isinstance(name, str) or not identifiable_name(name) or PRICE_RE.search(name)
+                    or has_ambiguous_decimal(name) or not isinstance(label, str)):
+                raise ValueError(f'Verified identity requires safe name and size fields: {sku}')
+            dimensions = extract_dimensions(label)
+            if (dimensions['text'] or len(dimensions['measures']) != 1
+                    or label != dimensions['measures'][0][0]):
+                raise ValueError(f'Verified identity requires one explicit canonical measurement: {sku}')
+            checks = entry.get('verification', {})
+            required_checks = {'brand', 'expression', 'size', 'packaging', 'upc', 'visual'}
+            if set(checks) != required_checks or any(value is not True for value in checks.values()):
+                raise ValueError(f'Verified identity requires all exact identity checks: {sku}')
+            evidence = entry.get('evidence', [])
+            if (not isinstance(evidence, list) or
+                    not {'manufacturer', 'exact_upc_listing', 'inspected_package_photo'}.issubset(
+                        {item.get('kind') for item in evidence if isinstance(item, dict)}) or
+                    not all(isinstance(item, dict) and re.match(r'^https?://', item.get('url', ''))
+                            and isinstance(item.get('supports'), str) and item['supports'].strip()
+                            for item in evidence)):
+                raise ValueError(f'Verified identity requires primary and inspected-package evidence: {sku}')
+        if set(entry) - allowed:
+            raise ValueError(f'Source review contains unsupported or private fields: {sku}')
+        if PRICE_RE.search(entry['reason']) or re.search(r'[$€£]', entry['reason']):
+            raise ValueError(f'Source review reason must not expose price annotations: {sku}')
         result[sku] = entry
     return result
+
+
+def restored_description(source: dict, review: dict) -> str:
+    """Allow a reviewed deletion of ambiguous metadata, never invented identity."""
+    disposition, reason, _, _ = classify_record(source)
+    eligible = {'Unlabelled decimal may be a price or unconfirmed measure',
+                'Unresolved price/promotion text in title',
+                'Unresolved price/promotion text after unit parsing'}
+    if disposition != 'needs_review' or reason not in eligible:
+        raise ValueError(f'Restoration is not eligible for the original source: {source["SKU"]}')
+    original = iter(re.sub(r'\s', '', source['ItemName']))
+    sanitized = review['sanitizedSourceName']
+    if not all(any(candidate == character for candidate in original)
+               for character in re.sub(r'\s', '', sanitized)):
+        raise ValueError(f'Restoration must only remove source text: {source["SKU"]}')
+    return sanitized
+
+
+def uncertain_size_label(source: dict) -> str:
+    """Keep independently stated, nonconflicting pack/container facts."""
+    title = extract_dimensions(source['ItemName'])
+    pack = extract_dimensions(source['PackName'])
+    packs = set(title['packs']) | set(pack['packs'])
+    containers = {value for value in (title['container'], pack['container']) if value}
+    pieces = [f'{next(iter(packs))}-pack'] if len(packs) == 1 else []
+    if not packs and re.match(r'^single\b', source['PackName'], re.I):
+        pieces.append('Single')
+    pieces.append('Size needs confirmation')
+    if len(containers) == 1:
+        pieces.append(next(iter(containers)))
+    return ' · '.join(pieces)
 
 
 def isolate_unspecified_variants(groups: dict, records: list, flag_reasons: Counter) -> list:
@@ -444,6 +513,17 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
             source['sourceRow'] = row_number
             adjusted_source = dict(source)
             override_flags = []
+            review = source_reviews.get(sku)
+            restoring = bool(review and review['action'] == 'restore_named_merchandise')
+            resolving = bool(review and review['action'] == 'resolve_verified_identity')
+            if review:
+                raw_hash = hashlib.sha256(json.dumps(fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+                if (source['MAINUPC'], hashlib.sha256(source['ItemName'].encode()).hexdigest(), raw_hash) != (
+                        review['expectedUpc'], review['expectedNameSha256'], review['expectedSourceRecordSha256']):
+                    raise ValueError(f'Source metadata review identity mismatch for SKU {sku}')
+                record['sourceReview'] = review
+                if restoring:
+                    adjusted_source['ItemName'] = restored_description(source, review)
             for overrides in (corrections, identity_reviews):
                 override = overrides.get(sku)
                 if override and (override['expectedNameSha256'], override['expectedUpc']) != (
@@ -453,25 +533,37 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
             if correction:
                 if source['ItemName'].count(correction['replaceTextFrom']) != 1:
                     raise ValueError(f'Spelling fragment does not match exactly once: {sku}')
-                adjusted_source['ItemName'] = source['ItemName'].replace(correction['replaceTextFrom'], correction['replaceTextTo'], 1)
+                if adjusted_source['ItemName'].count(correction['replaceTextFrom']) != 1:
+                    raise ValueError(f'Spelling correction and restoration must agree for SKU {sku}')
+                adjusted_source['ItemName'] = adjusted_source['ItemName'].replace(correction['replaceTextFrom'], correction['replaceTextTo'], 1)
                 record['nameCorrection'] = correction
-                record['correctedSourceName'] = adjusted_source['ItemName']
+                record['correctedSourceName'] = source['ItemName'].replace(correction['replaceTextFrom'], correction['replaceTextTo'], 1)
                 override_flags.append('Evidence-backed spelling/spacing correction applied; source spelling preserved privately')
             if sku in identity_reviews:
-                review = identity_reviews[sku]
-                record['identityReview'] = review
-                disposition, reason, public, flags = 'needs_review', review['reason'], None, []
+                identity_review = identity_reviews[sku]
+                record['identityReview'] = identity_review
+                disposition, reason, public, flags = 'needs_review', identity_review['reason'], None, []
             else:
                 disposition, reason, public, flags = classify_record(adjusted_source)
-            if sku in source_reviews:
-                review = source_reviews[sku]
-                raw_hash = hashlib.sha256(json.dumps(fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
-                if (source['MAINUPC'], hashlib.sha256(source['ItemName'].encode()).hexdigest(), raw_hash) != (
-                        review['expectedUpc'], review['expectedNameSha256'], review['expectedSourceRecordSha256']):
-                    raise ValueError(f'Source metadata review identity mismatch for SKU {sku}')
-                record['sourceReview'] = review
-                flags.append('Explicit source-size review: ' + review['reason'])
-                if public:
+            if review:
+                if restoring:
+                    if not public:
+                        raise ValueError(f'Reviewed restoration did not produce safe merchandise: {sku}')
+                    record['sanitizedSourceName'] = adjusted_source['ItemName']
+                    flags.append('Guarded named merchandise restored; original metadata preserved privately')
+                    flags.append('Restored SKU grouping isolated and image blocked pending exact identity review')
+                    if review['forceSizeNeedsConfirmation']:
+                        public['variant']['label'] = uncertain_size_label(adjusted_source)
+                elif resolving:
+                    if not public or public['variant']['label'] != 'Size not specified':
+                        raise ValueError(f'Verified identity cannot silently replace a stated source size: {sku}')
+                    record['previousPublicIdentity'] = {'name': public['name'], 'label': public['variant']['label']}
+                    public['name'] = review['verifiedName']
+                    public['variant']['label'] = review['verifiedLabel']
+                    flags.append('Exact SKU identity resolved with manufacturer, UPC listing and inspected package evidence')
+                else:
+                    flags.append('Explicit source-size review: ' + review['reason'])
+                if public and not restoring and not resolving:
                     public['variant']['label'] = 'Size needs confirmation'
             flags = override_flags + flags
             record.update(source=source, disposition=disposition, reason=reason, flags=flags)
@@ -480,6 +572,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 # Exact normalized expression and department only. No fuzzy
                 # matching, synonym mapping, or deletion of brand/age/proof.
                 key = (public['category'], public['department'], public['name'].casefold())
+                if restoring or resolving:
+                    key += ('restored-source-sku', sku)
                 # Exact source title says regular Silver, but the first-100 image
                 # audit found UPC-specific evidence of an Artist Series package.
                 # Isolate this source SKU without inventing a new product name.
@@ -503,7 +597,9 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                       key=lambda p: (p['name'].casefold(), p['id']))
     for product in products:
         product['variants'].sort(key=lambda v: v['sourceRow'])
-    verified_images = apply_verified_images(products, image_manifest, set(source_reviews))
+    blocked_images = {sku for sku, review in source_reviews.items()
+                      if review['action'] != 'resolve_verified_identity'}
+    verified_images = apply_verified_images(products, image_manifest, blocked_images)
     populated = {p['department'] for p in products}
     categories = []
     for category_id, (label, departments) in CATEGORY_DEPARTMENTS.items():
@@ -549,40 +645,50 @@ def name_audit(catalog: dict, audit: dict) -> dict:
         original = source.get('ItemName')
         if original is None:
             original = record['rawFields'][2] if len(record['rawFields']) > 2 else ''
+        scanned_name = record.get('sanitizedSourceName', record.get('correctedSourceName', original))
         issues = []
         suggestions = []
         for typo, suggested in candidates.items():
-            if re.search(r'(?<![A-Za-z])' + re.escape(typo) + r'(?![A-Za-z])', original, re.I):
+            if re.search(r'(?<![A-Za-z])' + re.escape(typo) + r'(?![A-Za-z])', scanned_name, re.I):
                 issues.append('Possible typo requires product-specific verification: ' + typo)
                 suggestions.append({'from': typo, 'to': suggested, 'status': 'candidate_only_not_applied'})
-        if re.search(r'[A-Za-z]\d+[A-Za-z]', original) and not re.search(r'\b7UP\b', original, re.I):
+        if re.search(r'[A-Za-z]\d+[A-Za-z]', scanned_name) and not re.search(r'\b7UP\b', scanned_name, re.I):
             issues.append('Joined letters/numbers checked; may be a measurement or distinguishing brand token')
-        if re.search(r'[a-z][A-Z]', original):
+        if re.search(r'[a-z][A-Z]', scanned_name):
             issues.append('Joined words or mixed casing checked; no automatic title rewriting')
-        if re.search(r'\b(?:vod|marg|pomeg|frt|strw|rasp|blkbry|reg|mosc)\b', original, re.I):
+        if re.search(r'\b(?:vod|marg|pomeg|frt|strw|rasp|blkbry|reg|mosc)\b', scanned_name, re.I):
             issues.append('Abbreviated expression requires confirmation before expansion')
-        if re.search(r'MIKE N LIKE|TAYLORS CANDY|NOW\s*&\s*LATER', original, re.I):
+        if re.search(r'MIKE N LIKE|TAYLORS CANDY|NOW\s*&\s*LATER', scanned_name, re.I):
             issues.append('Brand-level description may omit flavor; different UPCs must not imply matching products')
-        if 'BELVEDERE INTENSE VOD100' in original.upper():
+        if 'BELVEDERE INTENSE VOD100' in scanned_name.upper():
             issues.append('Source combines Intense/Unfiltered/100 proof wording; exact expression unresolved')
         issues.extend(record['flags'])
         if record['disposition'] != 'retained_variant':
             issues.append(record['reason'])
         correction = record.get('nameCorrection')
         evidence = correction['evidence'] if correction else record.get('identityReview', {}).get('evidence', [])
+        resolution = record.get('sourceReview', {})
+        resolved_identity = resolution.get('action') == 'resolve_verified_identity'
+        if resolved_identity:
+            evidence = evidence + resolution['evidence']
+        outcome = ('evidence_backed_identity_resolved' if resolved_identity else
+                   'evidence_backed_correction_applied' if correction else
+                   'identity_conflict_needs_review' if record.get('identityReview') else
+                   'scanned_not_externally_verified')
         rows.append({'sourceRow': record['sourceRow'], 'sku': record['sku'],
                      'originalName': original, 'correctedSourceName': record.get('correctedSourceName', original),
                      'publicName': by_sku.get(record['sku']), 'publicStatus': record['disposition'],
                      'issues': issues, 'suggestedCorrections': suggestions, 'evidence': evidence,
-                     'outcome': 'evidence_backed_correction_applied' if correction else
-                        ('identity_conflict_needs_review' if record.get('identityReview') else 'scanned_not_externally_verified'),
-                     'verifiedScope': correction['scope'] if correction else None})
+                     'outcome': outcome,
+                     'verifiedScope': 'product_name_identity_and_variant' if resolved_identity else
+                        (correction['scope'] if correction else None)})
     return {'schemaVersion': 1, 'sourceSha256': audit['sourceSha256'],
             'summary': {'sourceRowsScanned': len(rows), 'rowsWithIssues': sum(bool(r['issues']) for r in rows),
-                        'evidenceBackedCorrections': sum(r['outcome'] == 'evidence_backed_correction_applied' for r in rows),
+                        'evidenceBackedCorrections': sum(bool(r.get('nameCorrection')) for r in audit['records']),
                         'identityConflicts': sum(r['outcome'] == 'identity_conflict_needs_review' for r in rows),
-                        'fullyVerifiedNames': sum(r['verifiedScope'] == 'product_name_spelling' for r in rows),
-                        'scopeNote': 'All rows scanned for specified risks. Only listed evidence-backed corrections were externally checked; remaining names are not verified.'},
+                        'exactIdentitiesResolved': sum(r['outcome'] == 'evidence_backed_identity_resolved' for r in rows),
+                        'fullyVerifiedNames': sum(r['verifiedScope'] in {'product_name_spelling', 'exact_upc_name_identity', 'product_name_identity_and_variant'} for r in rows),
+                        'scopeNote': 'All rows scanned for specified risks. Only listed corrections and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified.'},
             'records': rows}
 
 

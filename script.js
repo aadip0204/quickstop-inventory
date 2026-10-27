@@ -239,7 +239,7 @@
           license.href = image.licenseUrl;
           license.target = '_blank';
           license.rel = 'noopener noreferrer';
-          credit.append('Photo: ', source, ' · ', license);
+          credit.append(/^Photo:\s/i.test(image.attribution || '') ? '' : 'Photo: ', source, ' · ', license);
           imageSlot.append(credit);
         }
         imageSlot.hidden = false;
