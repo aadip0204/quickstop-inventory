@@ -2133,17 +2133,32 @@
       "sku": "1187",
       "expectedUpc": "070640310609",
       "expectedNameSha256": "2c4a687218884e48d9b8b1d0387a2234cdb9a52e890bdb2aec8a71edb659db09",
-      "replaceTextFrom": "VANILALA",
-      "replaceTextTo": "VANILLA",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "BLUE BUNNY BIG VANILALA",
+      "replaceTextTo": "Blue Bunny BIG Vanilla Sandwich",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://wells-wellsfoodservice.azurewebsites.net/products/blue-bunny/sandwiches/big-vanilla",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.drikes.com/2869959/product/blue-bunny-1263963",
+          "supports": "Exact source UPC 070640310609 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/064/031/0609/5.400.jpg",
+          "supports": "Blue Bunny BIG Vanilla Sandwich wrapper. Vanilla expression and sandwich product type are readable. Unknown source size retained."
+        },
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/vanilla",
           "kind": "english_dictionary_ordinary_word_spelling",
           "supports": "Confirms only standard English spelling vanilla; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
         }
-      ],
-      "verifiedOn": "2026-10-26"
+      ]
     },
     {
       "sku": "1882",
@@ -4742,17 +4757,32 @@
       "sku": "1185",
       "expectedUpc": "070640450381",
       "expectedNameSha256": "30def43108523358a4d774022226084acd70fd4c7bce41491fbd183747ef1ef1",
-      "replaceTextFrom": "BOUBLE",
-      "replaceTextTo": "DOUBLE",
-      "scope": "expression_spelling_only",
+      "replaceTextFrom": "BLUE BUNNY BIG BOUBLE STRAW",
+      "replaceTextTo": "Blue Bunny BIG Double Strawberry Sandwich",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/sandwiches/big-double-strawberry-sandwich",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.navymwr.org/modules/media/?do=download&id=d9f4b19c-d578-4879-9c82-bacdb1f94dea#page=900",
+          "supports": "Exact source UPC 070640450381 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/064/045/0381/1.400.jpg",
+          "supports": "Blue Bunny BIG Double Strawberry Sandwich wrapper. Product type and Double Strawberry expression are readable. Unknown source size retained."
+        },
         {
           "url": "https://www.bluebunny.com/products/sandwiches/big-double-strawberry",
           "kind": "official_manufacturer_brand_or_product",
           "supports": "Confirms only the stated brand or expression spelling. This is a scoped correction; full product identity, source size, packaging, availability and UPC are not newly verified."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "6140",
@@ -5126,10 +5156,26 @@
       "sku": "825",
       "expectedUpc": "031000007072",
       "expectedNameSha256": "33dd07499f304cc8d0e28fb407987ad7de014e2eafa03b0ffa96e4eccb7bb19f",
-      "replaceTextFrom": "Banquetchichen",
-      "replaceTextTo": "Banquet chicken",
-      "scope": "scoped_spelling_and_spacing_only",
+      "replaceTextFrom": "Banquetchichen nuggets",
+      "replaceTextTo": "Banquet Chicken Nuggets with Mac & Cheese",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.banquet.com/basic-meals/chicken-nuggets-mac-cheese",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.smartandfinal.com/product/banquet-chicken-nuggets-with-mac-cheese-id-00031000007072",
+          "supports": "Exact source UPC 031000007072 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/000/7072/1.400.jpg",
+          "supports": "Banquet Chicken Nuggets with Mac & Cheese box. Complete expression readable. No photographed size imported."
+        },
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/chicken",
           "kind": "english_dictionary_ordinary_word_spelling",
@@ -5140,8 +5186,7 @@
           "kind": "brand_or_ordinary_word_boundary",
           "supports": "Manufacturer confirms Banquet as the separate brand word. Only spacing and the already documented chicken spelling are changed."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "3470",
@@ -7378,17 +7423,32 @@
       "sku": "827",
       "expectedUpc": "031000007201",
       "expectedNameSha256": "48ac50ac034e8dcaba687e1f4c0dbd0e2850616d9b73c8212f3cffd4d8692e08",
-      "replaceTextFrom": "Banquet",
-      "replaceTextTo": "Banquet ",
-      "scope": "brand_spacing_only",
+      "replaceTextFrom": "Banquetboneless fried chicken",
+      "replaceTextTo": "Banquet Mega Meals Boneless Fried Chicken",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.conagra.com/031000007201-0005-en-US/index.html",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.super1foods.com/product/banquet-boneless-fried-chicken-frozen-dinner-12-ounce-id-00031000007201",
+          "supports": "Exact source UPC 031000007201 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/000/7201/4.400.jpg",
+          "supports": "Banquet Mega Meals Boneless Fried Chicken box. Mega Meals and Boneless Fried Chicken are readable. No photographed size or side-dish count imported."
+        },
         {
           "url": "https://www.banquet.com/frozen-meals",
           "kind": "manufacturer",
           "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "833",
@@ -7426,17 +7486,32 @@
       "sku": "835",
       "expectedUpc": "031000109387",
       "expectedNameSha256": "47eed0f78cc30a7a30a10f2cfa54fc98b8562e7ba1ac7d5d4cc77b4fa351c744",
-      "replaceTextFrom": "Banquet",
-      "replaceTextTo": "Banquet ",
-      "scope": "brand_spacing_only",
+      "replaceTextFrom": "Banquetcountry fried beef patty",
+      "replaceTextTo": "Banquet Chicken Fried Beef Steak Meal",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.banquet.com/classic-dinners/chicken-fried-beef-steak?bvstate=pg%3A3%2Fct%3Ar",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/sm/pickup/rsid/11/product/banquet-chicken-fried-beef-steak--id-031000109387",
+          "supports": "Exact source UPC 031000109387 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/010/9387/2.400.jpg",
+          "supports": "Banquet Chicken Fried Beef Steak Meal box. The expression is readable; weight is too small to verify. Separate image reviewer also withheld size/photo resolution. Name-only review."
+        },
         {
           "url": "https://www.banquet.com/frozen-meals",
           "kind": "manufacturer",
           "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "837",
@@ -11544,6 +11619,1176 @@
           "supports": "Individually inspected front reads Bacardi Dragonberry as one word. Manufacturer uses Dragonberry; historical exact UPC listing independently confirms the 750 mL product. Correct the split expression spelling only."
         }
       ]
+    },
+    {
+      "sku": "590",
+      "expectedUpc": "613008735470",
+      "expectedNameSha256": "cbf5b43e8e4a568eb915411dddd6434b8fa8604f9c041eb9a888c7ac90aa1434",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/",
+          "supports": "Manufacturer confirms AriZona brand only. Complete historical raspberry expression is checked against the inspected package and exact-UPC retailer. Current smaller-package listings are not adopted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16753617-arizona-iced-tea-with-raspberry-flavor-23-oz",
+          "supports": "Exact source UPC 613008735470 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/5470/3.400.jpg",
+          "supports": "AriZona Iced Tea with Raspberry Flavor; complete can on white, source23oz unchanged; size not readable on this view. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Arizona Raspberry 23oz",
+      "replaceTextTo": "AriZona Iced Tea with Raspberry Flavor 23oz"
+    },
+    {
+      "sku": "605",
+      "expectedUpc": "613008725730",
+      "expectedNameSha256": "b2bb491ee082a0f94c105b6097877188180295c2d089c02ee27ca94e18523ced",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/sweet-tea-20oz-tallboy",
+          "supports": "Manufacturer confirms Sweet Tea expression; Southern Style is visible on the inspected historical package and exact-UPC retailer. Explicit source BTL is expanded to bottles, preserving its container fact in the size label."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://celebrationhardware.com/p/arizona-southern-style-sweet-tea-beverage-613008725730",
+          "supports": "Exact source UPC 613008725730 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/5730/1.400.jpg",
+          "supports": "AriZona Southern Style Real Brewed Sweet Tea; front label is tightly cropped. Original20oz BTL retained as bottle packaging. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "ARIZONA SWEET TEA 20OZ BTL",
+      "replaceTextTo": "AriZona Southern Style Sweet Tea 20OZ bottles"
+    },
+    {
+      "sku": "805",
+      "expectedUpc": "813694023640",
+      "expectedNameSha256": "6792bb950d56238f7e8d073308afe37f26d9922fe5fe6eea0c45acf827a838b2",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.drinkbai.com/products/sao-paulo-strawberry-lemonade?gclsrc=aw.ds",
+          "supports": "Manufacturer confirms Sao Paulo Strawberry Lemonade brand/expression. Historical Antioxidant wording is read from the inspected package; current formula claims and external size are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/369/402/3640/6.400.jpg",
+          "supports": "Bai Antioxidant Sao Paulo Strawberry Lemonade; real handheld/household bottle label. Unknown source size not inferred. Name review does not approve this image for public use."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://rccolawinchester.com/wp-content/uploads/2023/03/newage23.pdf#page=4",
+          "supports": "Primary RC Cola Winchester/Charles Town distributor catalog, rendered page4, lists Bai Strawberry Lemonade with UPC813694023640. This corroborates the inspected Sao Paulo Strawberry Lemonade identity; source size remains unspecified and no wholesale count is adopted."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "BAI antioxidant infusionstrawberry lemonade",
+      "replaceTextTo": "Bai Antioxidant Sao Paulo Strawberry Lemonade"
+    },
+    {
+      "sku": "824",
+      "expectedUpc": "610764863652",
+      "expectedNameSha256": "494eb9dc92c0cb172ffb9bf32b8d70b37604182cb8fa77d09086f21d6b02549a",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bangenergy.com/en-us/products/star-blast/",
+          "supports": "Manufacturer confirms Bang Star Blast. Name only; no external can volume or wholesale count is added to the unspecified source size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/20550933-bang-energy-blast-energy-drink-16-0-fl-oz",
+          "supports": "Exact source UPC 610764863652 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/076/486/3652/2.400.jpg",
+          "supports": "Bang Star Blast; real can on household table. Brand/expression clear, no size imported. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "bang star blast",
+      "replaceTextTo": "Bang Star Blast"
+    },
+    {
+      "sku": "1631",
+      "expectedUpc": "079581995203",
+      "expectedNameSha256": "0c63beb1e66b7863bb9265b138390354ea639e6eda0ce74e8837e524701513fd",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkcalypso.com/flavors/tropical-mango-lemonade/",
+          "supports": "Manufacturer confirms Tropical Mango Lemonade. Historical package directly inspected; existing exact-UPC photo record supports association. Source20oz is retained, not replaced with the current manufacturer16oz offering."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/958/199/5203/3.400.jpg",
+          "supports": "Calypso Tropical Mango Lemonade;20fl oz bottle on table. Original20oz unchanged. Name review does not approve this image for public use."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.holidaywholesale.com/wp-content/uploads/2018_05_May_HolidayHighlights_LR_.pdf#page=20",
+          "supports": "Primary Holiday Wholesale May2018 catalog, rendered PDF page20, explicitly pairs Tropical Mango lemonade with UPC079581995203. The pictured glass bottle prints20FL OZ, matching the existing source20oz. Only identity evidence is used; wholesale and financial fields are not adopted."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "CALYPSO TROPICAL MANGO 20OZ",
+      "replaceTextTo": "Calypso Tropical Mango Lemonade 20OZ"
+    },
+    {
+      "sku": "1673",
+      "expectedUpc": "078000149456",
+      "expectedNameSha256": "4b0d371c365385cdfabe6bcebee7e87866c58efd2d790e9748ccf503a6895472",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.canadadry.com/",
+          "supports": "Manufacturer confirms Canada Dry brand and tonic water line only. Diet wording comes from the inspected historical front and exact-UPC retailer; current Zero Sugar naming is not substituted. Unknown source size is unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/canada-dry-diet-tonic-water-1l",
+          "supports": "Exact source UPC 078000149456 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/014/9456/1.400.jpg",
+          "supports": "Canada Dry Diet Tonic Water; complete white-background bottle but measure not legible. Unknown source size unchanged. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "CANADA DRY DIET TONIC WATER",
+      "replaceTextTo": "Canada Dry Diet Tonic Water"
+    },
+    {
+      "sku": "2176",
+      "expectedUpc": "014800511758",
+      "expectedNameSha256": "473d7c030f808ec94eab5b6c3e1d6f1a3df91818ca7ad946f226464d0f10df49",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.clamato.com/en/products/clamato-original",
+          "supports": "Manufacturer confirms Clamato Original tomato cocktail. The inspected front reads El Original; exact-UPC retailer corroborates the existing16oz unit."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cheersondemand.com/clamato-tomato-cocktail-16-oz.html",
+          "supports": "Exact source UPC 014800511758 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/480/051/1758/2.400.jpg",
+          "supports": "Clamato El Original Tomato Cocktail from Concentrate; refrigerated shelf bottle. Original16oz unchanged. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Clamato 16 oz",
+      "replaceTextTo": "Clamato El Original Tomato Cocktail 16 oz"
+    },
+    {
+      "sku": "2246",
+      "expectedUpc": "071845098309",
+      "expectedNameSha256": "b950871ec8fe6306c43f5d59c52c664a67f65686fadb85718cd3a04ab4ea1dd3",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.cocolopez.com/",
+          "supports": "Manufacturer confirms Coco Lopez Cream of Coconut. Roland explicitly pairs UPC071845098309 with15oz. Real Cream of Coconut and exact barcode are readable on the inspected back label."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://syndigo.rolandfoods.com/product/71205-cream-of-coconut",
+          "supports": "Exact source UPC 071845098309 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/184/509/8309/1.400.jpg",
+          "supports": "Back label explicitly states Coco Lopez Real Cream of Coconut and visible exact barcode071845098309. Recipe side and household surroundings; private name evidence only. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Coco Lopez Cream of Coconut15oz",
+      "replaceTextTo": "Coco Lopez Real Cream of Coconut 15oz"
+    },
+    {
+      "sku": "2252",
+      "expectedUpc": "055270831441",
+      "expectedNameSha256": "6af6717e424adab5261881d37efe5ee75484f5c6bd279e3fb3d1df2f9c76773f",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.gracefoods.co.uk/products/coconut-water",
+          "supports": "Manufacturer confirms Grace Coconut Water with coconut pieces. Exact-GTIN retailer and inspected10.5fl oz can establish the previously omitted brand and expression; source10.5oz remains unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.shoprite.com/sm/pickup/rsid/102/product/grace-coconut-water-with-real-coconut-pieces-105-fl-oz-id-00055270831441",
+          "supports": "Exact source UPC 055270831441 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/527/083/1441/5.400.jpg",
+          "supports": "Grace Coconut Water with real coconut pieces;10.5fl oz310mL printed. Held can in kitchen. Brand and pulp expression clear. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Coconut Water 10.5oz",
+      "replaceTextTo": "Grace Coconut Water with Real Coconut Pieces 10.5oz"
+    },
+    {
+      "sku": "2271",
+      "expectedUpc": "049000050141",
+      "expectedNameSha256": "dce6826f64c15f3dee461cf1b2693200f80d0d3f2be1a3e12f6b3323c07f6cc9",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/coca-cola/products/zero",
+          "supports": "Manufacturer confirms Coca-Cola Zero Sugar and its earlier Coke Zero name. Cub explicitly pairs sourceUPC049000050141 with2L. Its actual front was inspected privately; reuse rights are not established and no photo is published."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16611250-coca-cola-cola-2-l",
+          "supports": "Exact source UPC 049000050141 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/assets/domains/product-image/file/large_2b855144-e47e-468b-8c83-e318376f5f2c.jpg",
+          "supports": "Full Coca-Cola Zero Sugar bottle on white with2L callout, standard uncaffeinated-claim-free front; inspected2026-10-27. Private identity evidence only; no public reuse rights established. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Coke Zero 2L",
+      "replaceTextTo": "Coca-Cola Zero Sugar 2L"
+    },
+    {
+      "sku": "2438",
+      "expectedUpc": "853004004891",
+      "expectedNameSha256": "b3506d7f99290dafa47b6b04d75e3dc909a7784f7a1cf0242fc2c5594a6a94dc",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.keurigdrpepper.com/keurig-dr-pepper-to-acquire-core-a-premium-enhanced-beverage-company/",
+          "supports": "Manufacturer identifies CORE Hydration nutrient-enhanced bottled water. Inspected bottle confirms Hydration wording; source44oz is retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16989155-core-hydration-nutrient-enhanced-water-1-3-l",
+          "supports": "Exact source UPC 853004004891 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/300/400/4891/1.400.jpg",
+          "supports": "Core Hydration7.4pH Perfectly Balanced Water; household bottle. Original44oz unchanged. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "CORE WATER44OZ",
+      "replaceTextTo": "Core Hydration 44OZ"
+    },
+    {
+      "sku": "2498",
+      "expectedUpc": "043000995921",
+      "expectedNameSha256": "be9d4a03a5064e7e7fff310f7a7dcbbcf6ee706cda3cfc8173c666718d672f2d",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kraftheinz.com/country-time/products/00043000077016-lemonade-naturally-flavored-drink",
+          "supports": "Manufacturer confirms Country Time Lemonade ready-to-drink expression only. Exact-UPC listing and inspected12-pack carton corroborate historical can-pack identity. Redundant trailing Pack is removed while source12pk and12oz remain."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=00043000995921",
+          "supports": "Exact source UPC 043000995921 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/300/099/5921/1.400.jpg",
+          "supports": "Country Time Lemonade12pack carton; flavor visible and explicit count12 matches source. Original12-pack12oz unchanged. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Country Time Lem 12pk 12ozPack",
+      "replaceTextTo": "Country Time Lemonade 12pk 12oz"
+    },
+    {
+      "sku": "2614",
+      "expectedUpc": "078000014143",
+      "expectedNameSha256": "3c6ff50a68341c13449cd3bab5d99570ec6423b1e60a3e46b7e4d629dbd4b502",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.crushsoda.com/",
+          "supports": "Manufacturer lists Crush Pineapple Flavored Soda. Distributor explicitly lists sourceUPC078000014143; inspected bottle confirms expression. Source20oz remains unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.murraycashandcarry.com/shop/category/beverages-17/page/24",
+          "supports": "Exact source UPC 078000014143 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/4143/1.400.jpg",
+          "supports": "Crush Pineapple; clean bottle on white, size not legible. Original20oz unchanged; no photo approval. Name review does not approve this image for public use."
+        }
+      ],
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "crush pineapple 20oz",
+      "replaceTextTo": "Crush Pineapple 20oz"
+    },
+    {
+      "sku": "384",
+      "expectedUpc": "070038347552",
+      "expectedNameSha256": "90ec814c228030ee2e4a4bc4b5e49ddfeb83eaf1e611ad516df6abc731b8c582",
+      "replaceTextFrom": "Always savemixed vege",
+      "replaceTextTo": "Always Save Mixed Vegetables",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://alwayssavebrand.com/recipes/veggie-mac-cheese/",
+          "supports": "Primary Always Save website confirms the brand only; Mixed Vegetables expression is separately established by exact-UPC retailer and inspected label."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://webstore.ftssol.com/CygnusWebStore_GroceryServices/GS01-Iowa/en/4846-FRUITSORVEGETABLES",
+          "supports": "Exact source UPC 070038347552 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/003/834/7552/2.400.jpg",
+          "supports": "Always Save Mixed Vegetables can. Brand and product type are readable. Household scene. No photographed size imported."
+        }
+      ]
+    },
+    {
+      "sku": "528",
+      "expectedUpc": "613008722050",
+      "expectedNameSha256": "a40117754b716a41f2a6ba355a08b2570692b726cc28f66dd4f425f1d62434f3",
+      "replaceTextFrom": "ARIZONA FRUITPUNCH 11.5OZ",
+      "replaceTextTo": "AriZona Fruit Punch Fruit Juice Cocktail 11.5OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/fruit-punch-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://slasti.kz/g8860971-arizona",
+          "supports": "Exact source UPC 613008722050 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/2050/1.400.jpg",
+          "supports": "AriZona Fruit Punch Fruit Juice Cocktail can. Expression is readable; original 11.5OZ source measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "540",
+      "expectedUpc": "613008714253",
+      "expectedNameSha256": "3f9d7b7753a5b1aed9db5d6b3e0dde05b9e45902903e05d7c817dde7e1c2cce3",
+      "replaceTextFrom": "ARIZONA GREENTEA 11.5OZ",
+      "replaceTextTo": "AriZona Green Tea with Ginseng & Honey 11.5OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/green-tea-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.super99.com/10100851-arizona-tea-ginseng-and-honey-340ml-lata",
+          "supports": "Exact source UPC 613008714253 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/4253/1.400.jpg",
+          "supports": "AriZona Green Tea with Ginseng and Honey can. Expression is readable despite cropped package edges; original 11.5OZ source measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "563",
+      "expectedUpc": "613008735784",
+      "expectedNameSha256": "17089144725e7f6282ce7b266d25adeb6adda140e412d2b7cedc9d38844623f5",
+      "replaceTextFrom": "Arizona IcedTea 11.5oz",
+      "replaceTextTo": "AriZona Iced Tea with Lemon Flavor 11.5oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/lemon-tea-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.tabacariadamata.com.br/cha-arizona-lemon.html",
+          "supports": "Exact source UPC 613008735784 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/5784/1.400.jpg",
+          "supports": "AriZona Iced Tea with Lemon Flavor can. Lemon expression is readable; original 11.5oz source measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "581",
+      "expectedUpc": "613008737580",
+      "expectedNameSha256": "7101b04a0c6e76d5081314cddf063df2c4f64c238c57a0d0227d1588971f6322",
+      "replaceTextFrom": "Arizona MuchoMango 11.5oz",
+      "replaceTextTo": "AriZona Mucho Mango Fruit Juice Cocktail 11.5oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/mucho-mango-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.lacolonia.com/bebida-arizona-mucho-mango-340-ml/p",
+          "supports": "Exact source UPC 613008737580 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/7580/1.400.jpg",
+          "supports": "AriZona Mucho Mango Fruit Juice Cocktail can. Expression is readable; original 11.5oz source measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "603",
+      "expectedUpc": "613008733261",
+      "expectedNameSha256": "7f63c0003a3cd6320dd96675646871509c78f5bb5efb32ff938f18a11bf598de",
+      "replaceTextFrom": "Arizona Sweet Apple",
+      "replaceTextTo": "AriZona Sweet Apple Juice Cocktail",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/pages/faqs",
+          "supports": "Primary AriZona website confirms the beverage brand only. Sweet Apple and Juice Cocktail are read from the actual label; historical distributor exact-UPC row corroborates Sweet Apple. Generic distributor category Ice Tea is not adopted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://premierbrandsus.com/wp-content/uploads/2022/05/Product-Catalogue.pdf#page=11",
+          "supports": "Exact source UPC 613008733261 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/3261/1.400.jpg",
+          "supports": "AriZona Sweet Apple Juice Cocktail bottle. Sweet Apple and Juice Cocktail are readable. Unknown source size remains unknown; photographed volume is not adopted."
+        }
+      ]
+    },
+    {
+      "sku": "615",
+      "expectedUpc": "613008740665",
+      "expectedNameSha256": "4168b4929c4623a4109dc5f7e6de94385e29135112d123ce00460eb85bf273b2",
+      "replaceTextFrom": "Arizona Watermelon 11.5oz",
+      "replaceTextTo": "AriZona Watermelon Fruit Juice Cocktail 11.5oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/products/watermelon-20oz-tallboy",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://americansweets.co.uk/soda-and-drinks/juices-fruit-drinks/arizona-watermelon-slim-can-11-5oz-340ml",
+          "supports": "Exact source UPC 613008740665 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/874/0665/3.400.jpg",
+          "supports": "AriZona Watermelon Fruit Juice Cocktail can held in hand. Expression is readable; original 11.5oz source measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "621",
+      "expectedUpc": "017000013237",
+      "expectedNameSha256": "00529c7b9b3e52c3b2a84c2a1544abbe8c80d5a4a2a6e0f0cd0bf71fea9c1171",
+      "replaceTextFrom": "Armour Treetorg",
+      "replaceTextTo": "Armour Treet Original",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.conagrabrands.com/brands",
+          "supports": "Conagra brand directory confirms Armour Star brand only. Treet Original expression is independently corroborated by exact-UPC retailer and inspected package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.dollargeneral.com/p/armour-original-treet-5g-protein-per-serving-12oz-can/017000013237",
+          "supports": "Exact source UPC 017000013237 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/700/001/3237/1.400.jpg",
+          "supports": "Armour Treet Original canned luncheon loaf. Original expression is readable. No photographed size or ingredient claim imported."
+        }
+      ]
+    },
+    {
+      "sku": "618",
+      "expectedUpc": "054100936028",
+      "expectedNameSha256": "4ae4cd852a1997d88dea6542c36beecfcb5e37673c92662a28acf8c4a0b7eccf",
+      "replaceTextFrom": "Armourbbq flavour",
+      "replaceTextTo": "Armour Vienna Sausage Barbecue Flavored",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.conagrabrands.com/brands",
+          "supports": "Conagra brand directory confirms Armour Star brand only. Vienna Sausage Barbecue Flavored expression is independently corroborated by exact-UPC distributor and inspected package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.jcsalesweb.com/Catalog/Product/3013/0/627446-ARMOUR-VIENNA-SAUSAGE-BBQ-FLAVORED-4_5-OZ",
+          "supports": "Exact source UPC 054100936028 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/410/093/6028/1.400.jpg",
+          "supports": "Armour Vienna Sausage Barbecue Flavored can held in a store. Product type and flavor are readable. Unknown source size retained."
+        }
+      ]
+    },
+    {
+      "sku": "619",
+      "expectedUpc": "054100937025",
+      "expectedNameSha256": "e246170e3eb2103e5a6232f84682ab89cbb8e4527cd1b81a54503f259f484171",
+      "replaceTextFrom": "Armourhot & spicy",
+      "replaceTextTo": "Armour Vienna Sausage Hot & Spicy",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.conagrabrands.com/brands",
+          "supports": "Conagra brand directory confirms Armour Star brand only. Vienna Sausage Hot & Spicy expression is independently corroborated by exact-UPC distributor and inspected package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shoptheking.us/products/857052",
+          "supports": "Exact source UPC 054100937025 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/410/093/7025/2.400.jpg",
+          "supports": "Armour Vienna Sausage Hot & Spicy can. Product type and flavor are readable. Unknown source size retained."
+        }
+      ]
+    },
+    {
+      "sku": "101508",
+      "expectedUpc": "044000055844",
+      "expectedNameSha256": "78547545a040cc71617c58feb7763aceb50af2f164d348226ab475f1a60db4f6",
+      "replaceTextFrom": "BELVITA SNACK PACKS 1OZ",
+      "replaceTextTo": "belVita Snack Packs Chocolate 1OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.snackworks.com/brands/belvita/products/",
+          "supports": "Manufacturer confirms the belVita brand and snack product family; Chocolate Snack Packs expression is separately corroborated by exact-UPC retailer and inspected package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://ecartgrenada.com/products/belvita-1",
+          "supports": "Exact source UPC 044000055844 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/400/005/5844/13.400.jpg",
+          "supports": "belVita Snack Packs Chocolate wrapper. Chocolate flavor and Snack Packs expression are readable; original 1OZ measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "1186",
+      "expectedUpc": "070640310708",
+      "expectedNameSha256": "be279ab5c34de39604ee7c6008336f087e3b4b3460438278ae49c849ae86602f",
+      "replaceTextFrom": "BLUE BUNNY BIG NEAPOLITAN",
+      "replaceTextTo": "Blue Bunny BIG Neapolitan Sandwich",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/sandwiches/big-neapolitan-sandwich",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://online.flipbuilder.com/rtrp/adoq/files/basic-html/page49.html",
+          "supports": "Exact source UPC 070640310708 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/064/031/0708/1.400.jpg",
+          "supports": "Blue Bunny BIG Neapolitan Sandwich wrapper. Neapolitan expression and sandwich product type are readable. Unknown source size retained."
+        }
+      ]
+    },
+    {
+      "sku": "1191",
+      "expectedUpc": "070640400720",
+      "expectedNameSha256": "849f17db83af28e00f954318bf339fb7aef5a17a0e3c82054768051c3e9c2963",
+      "replaceTextFrom": "BLUE BUNNY CHAMP VANILLA",
+      "replaceTextTo": "Blue Bunny Champ Vanilla Cone",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/cones/vanilla-cones",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.navymwr.org/modules/media/?do=download&id=d9f4b19c-d578-4879-9c82-bacdb1f94dea#page=900",
+          "supports": "Exact source UPC 070640400720 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/064/040/0720/1.400.jpg",
+          "supports": "Blue Bunny Vanilla Cone wrapper. Historical source Champ designation is separately corroborated for the exact UPC by the Navy supply table. No size or formulation imported."
+        }
+      ]
+    },
+    {
+      "sku": "1192",
+      "expectedUpc": "070640400751",
+      "expectedNameSha256": "22943116ae58df5ee8a9e2916219175281c85cb19b234f1aa79019a30ce3acbc",
+      "replaceTextFrom": "BLUE BUNNY CHAMPS CARAMEL LOVE",
+      "replaceTextTo": "Blue Bunny Champ Caramel Lovers Cone",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/cones/caramel-lovers-cones",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.navymwr.org/modules/media/?do=download&id=d9f4b19c-d578-4879-9c82-bacdb1f94dea#page=900",
+          "supports": "Exact source UPC 070640400751 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/064/040/0751/1.400.jpg",
+          "supports": "Blue Bunny Caramel Lovers Cone wrapper. Historical source Champ designation is separately corroborated for the exact UPC by the Navy supply table. Unknown source size retained."
+        }
+      ]
+    },
+    {
+      "sku": "1193",
+      "expectedUpc": "070640310838",
+      "expectedNameSha256": "8c5cfe8512c367079c8c5c823d50759ea554d9b24250ffa8d69fd86bec21b962",
+      "replaceTextFrom": "BLUE BUNNY CHIPS GALORE",
+      "replaceTextTo": "Blue Bunny Chips Galore! Sandwich",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/sandwiches/chips-galore",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://online.flipbuilder.com/rtrp/adoq/files/basic-html/page49.html",
+          "supports": "Exact source UPC 070640310838 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/064/031/0838/1.400.jpg",
+          "supports": "Blue Bunny Chips Galore! Sandwich wrapper. Product type and expression are readable. No photographed size imported."
+        }
+      ]
+    },
+    {
+      "sku": "1198",
+      "expectedUpc": "070640002481",
+      "expectedNameSha256": "dd5924874fe50b9cf51116fd14febd35e4097a90e812b2e44f6d95d5fa4352eb",
+      "replaceTextFrom": "BLUE BUNNY COOKIES N CREAM",
+      "replaceTextTo": "Blue Bunny Cookies 'n Cream Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/bars/cookies-n-cream-bar",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.drikes.com/2869942/product/Blue-Bunny-1263664",
+          "supports": "Exact source UPC 070640002481 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/064/000/2481/1.400.jpg",
+          "supports": "Blue Bunny Cookies 'n Cream Bar wrapper. Product type and expression are readable. Unknown source size retained."
+        }
+      ]
+    },
+    {
+      "sku": "1201",
+      "expectedUpc": "010700015594",
+      "expectedNameSha256": "27d9dedd7b0d00c43be1d13b849a69b3414f97d37a59b825d8fcd33cf390dbb8",
+      "replaceTextFrom": "BLUE BUNNY HEATH ICE CRM BAR",
+      "replaceTextTo": "Blue Bunny HEATH Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bluebunny.com/products/bars/heath",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.navymwr.org/modules/media/?do=download&id=d9f4b19c-d578-4879-9c82-bacdb1f94dea#page=900",
+          "supports": "Exact source UPC 010700015594 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/070/001/5594/1.400.jpg",
+          "supports": "Blue Bunny HEATH Bar wrapper. HEATH and bar identity are readable; current manufacturer identifies this retired product as frozen dairy dessert. No unsupported ice-cream formulation or size claim added."
+        }
+      ]
+    },
+    {
+      "sku": "1205",
+      "expectedUpc": "682082100535",
+      "expectedNameSha256": "e0824091b158d0c826a0f5200ded2c868c92525c1fe436fea1d6110600905c92",
+      "replaceTextFrom": "BLUE BUNNY mexico mango",
+      "replaceTextTo": "Helados Mexico Mango Cream Paleta",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://heladosmexico.com/collections/all-products",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://glacierpointenterprises.com/wp-content/uploads/2023/02/GPE-Mid-Atlantic-2023-Order-Guide.pdf#page=9",
+          "supports": "Exact source UPC 682082100535 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/068/208/210/0535/1.400.jpg",
+          "supports": "Helados Mexico Con Crema Mango premium ice cream paleta wrapper. Source Blue Bunny brand conflicts with the actual package; manufacturer Mango Cream Paleta and independent exact-UPC distributor corroborate Helados Mexico. No size imported."
+        }
+      ]
+    },
+    {
+      "sku": "1207",
+      "expectedUpc": "070640002498",
+      "expectedNameSha256": "74a848bc4d7b9a573105dd106dff8e62174e77aefa7d5a8d1cb7dc9302a837d5",
+      "replaceTextFrom": "BLUE BUNNY STAW SHRT CAKE",
+      "replaceTextTo": "Blue Bunny Strawberry Shortcake Bar",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/bars/strawberry-shortcake-bar",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://online.flipbuilder.com/rtrp/adoq/files/basic-html/page49.html",
+          "supports": "Exact source UPC 070640002498 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/064/000/2498/2.400.jpg",
+          "supports": "Blue Bunny Strawberry Shortcake Bar wrapper. Complete flavor and product type are readable. Unknown source size retained."
+        }
+      ]
+    },
+    {
+      "sku": "1269",
+      "expectedUpc": "738912022321",
+      "expectedNameSha256": "57a43513e8a332499a773c9ae88b7935c8381eef83beffe6a9638e9ed614ccf1",
+      "replaceTextFrom": "Boston marketchicken parmesan",
+      "replaceTextTo": "Boston Market Chicken Parmesan",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.bostonmarketathome.ca/product/chicken-parmesan/",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.smartandfinal.com/product/boston-market-chicken-parmesan-id-00738912022321",
+          "supports": "Exact source UPC 738912022321 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/073/891/202/2321/6.400.jpg",
+          "supports": "Boston Market Home Style Meals Chicken Parmesan box. Brand and Chicken Parmesan expression are readable. No size or marketing claims imported."
+        }
+      ]
+    },
+    {
+      "sku": "1282",
+      "expectedUpc": "077567274700",
+      "expectedNameSha256": "ccf28629b0fa7753588adaa50ee70d6cb8ec4000101680ca391c10990697413a",
+      "replaceTextFrom": "Breyer's 1pintchocolate",
+      "replaceTextTo": "Breyers Chocolate 1pint",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.breyers.com/us/en/p/chocolate.html/00077567254207",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://glacierpointenterprises.com/wp-content/uploads/2023/02/GPE-Mid-Atlantic-2023-Order-Guide.pdf#page=14",
+          "supports": "Exact source UPC 077567274700 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/756/727/4700/1.400.jpg",
+          "supports": "Breyers Chocolate container. Chocolate expression is readable. Original literal 1pint is preserved in the source title; existing builder does not parse pint, so current unknown variant-size label must remain unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "1288",
+      "expectedUpc": "077567254405",
+      "expectedNameSha256": "9b5a3ecd9cbe48bd1a918c7e6af660f7029965afd31aa5b85fe08daa11d005d7",
+      "replaceTextFrom": "Breyer's butter pecan1.5quart",
+      "replaceTextTo": "Breyers Butter Pecan 1.5quart",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.breyers.com/us/en/p/butter-pecan.html/00077567254405",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13291476",
+          "supports": "Exact source UPC 077567254405 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/756/725/4405/4.400.jpg",
+          "supports": "Breyers Butter Pecan container. Flavor is readable. Original 1.5quart measurement retained; no new formulation claim added."
+        }
+      ]
+    },
+    {
+      "sku": "1290",
+      "expectedUpc": "077567254382",
+      "expectedNameSha256": "6e510d7a5518dba8e8b103c83e43df0b05991533be77776be80bbb3a765b1861",
+      "replaceTextFrom": "Breyers ice cream",
+      "replaceTextTo": "Breyers French Vanilla",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.breyers.com/us/en/p/french-vanilla.html/00077567254382",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/40709-breyers-ice-cream-french-vanilla-48-oz",
+          "supports": "Exact source UPC 077567254382 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/756/725/4382/1.400.jpg",
+          "supports": "Breyers French Vanilla container. French Vanilla expression is readable, resolving the generic original ice cream name. Unknown source size retained."
+        }
+      ]
+    },
+    {
+      "sku": "1291",
+      "expectedUpc": "077567254238",
+      "expectedNameSha256": "3d6579151c426043742284bec6109691b0f34969a6007fb6bf0f084ca4d31f57",
+      "replaceTextFrom": "Breyer's natural vanilla1.5quart",
+      "replaceTextTo": "Breyers Natural Vanilla 1.5quart",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.breyers.com/us/en/p/natural-vanilla.html/00077567254238",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/26166-breyers-ice-cream-natural-vanilla-48-oz",
+          "supports": "Exact source UPC 077567254238 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/756/725/4238/2.400.jpg",
+          "supports": "Breyers Natural Vanilla container. Expression is readable; original 1.5quart measurement retained."
+        }
+      ]
+    },
+    {
+      "sku": "504",
+      "expectedUpc": "613008744519",
+      "expectedNameSha256": "57e771f4179f57f3d41a1c86a338770b99f71bdbc34f08c8eff48aedf5c5807e",
+      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "ARIZONA  VAPOR WATER ADVANCEPH",
+      "replaceTextTo": "AriZona Vapor Water Advanced pH ",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://drinkarizona.com/",
+          "supports": "Official manufacturer site corroborates AriZona brand identity only. Its current water collection does not document this legacy Vapor Water Advanced pH SKU; exact legacy expression and package are supported separately below."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://premierbrandsus.com/wp-content/uploads/2022/05/Product-Catalogue.pdf#page=13",
+          "supports": "Primary Premier Brands distributor catalog page 13 explicitly lists AriZona PET Vapor Water, Alkaline Vapour Water, UPC 613008744519, 25.3 oz. It separately lists ordinary Vapor Water under UPC 613008726195. The known source 750 mL measurement and individual package remain unchanged; case quantities are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/874/4519/1.jpg",
+          "supports": "Individually inspected full original label reads Vapor Water Advanced pH, ultra hydrating vapor distilled water; AriZona branding and 25.3 fl oz (750 mL) are visible. The handheld consumer photo is identity evidence only and is not approved for public imagery."
+        }
+      ]
+    },
+    {
+      "sku": "2823",
+      "expectedUpc": "078000012231",
+      "expectedNameSha256": "548c64e10c0250aa2a5f155065d5b478bd1703348d02c03ad62a9b2f729bd926",
+      "replaceTextFrom": "Diet 7 Up 16.9oz",
+      "replaceTextTo": "Diet 7UP 16.9oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.keurigdrpepper.com/wp-content/uploads/2024/03/Dr-Pepper-Snapple-Group-Sustainability-Report-2010.pdf",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.bakerdistributing.com/wp-content/uploads/2026/01/BNAP-jan26-WEB.pdf",
+          "supports": "Independent retailer or distributor lists source UPC 078000012231 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/2231/3.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "2830",
+      "expectedUpc": "078000083460",
+      "expectedNameSha256": "d2344cd7e956cc87147f98cb2a750b02813a012a86432b7391da94176a3f7a2d",
+      "replaceTextFrom": "Diet Dr. Pepper 2L",
+      "replaceTextTo": "Diet Dr Pepper 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.keurigdrpepper.com/140-years-of-flavor-dr-peppers-legacy-of-innovation/",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-12965291",
+          "supports": "Independent retailer or distributor lists source UPC 078000083460 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/008/3460/3.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "2871",
+      "expectedUpc": "038900008086",
+      "expectedNameSha256": "cb4856301d94dc52afa9128e7f2ac46084245314ff8492c5dd0527fd58e51cc7",
+      "replaceTextFrom": "DOLE PINEAPPLE 46OZ",
+      "replaceTextTo": "Dole 100% Pineapple Juice 46OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.dolesunshine.com/us/en/products/canned-pineapple-juice-46-floz/",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.webstaurantstore.com/dole-pineapple-juice-46-fl-oz/999DOLE0808.html",
+          "supports": "Independent retailer or distributor lists source UPC 038900008086 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/890/000/8086/3.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "2872",
+      "expectedUpc": "038900008185",
+      "expectedNameSha256": "cb4856301d94dc52afa9128e7f2ac46084245314ff8492c5dd0527fd58e51cc7",
+      "replaceTextFrom": "DOLE PINEAPPLE 46OZ",
+      "replaceTextTo": "Dole 100% Pineapple Juice 46OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.dolesunshine.com/us/en/products/canned-pineapple-juice-46-floz/",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-54360384",
+          "supports": "Independent retailer or distributor lists source UPC 038900008185 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/890/000/8185/4.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "2873",
+      "expectedUpc": "038900009144",
+      "expectedNameSha256": "61c89faf0d248b92ecc25bc6353d6b28c46de0b632cd9d2a1c2d7ee00c20cb28",
+      "replaceTextFrom": "Dole Pineapple 6oz",
+      "replaceTextTo": "Dole 100% Pineapple Juice 6oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.dolesunshine.com/us/en/products/canned-pineapple-juice-46-floz/",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/products/dole-100-pineapple-juice",
+          "supports": "Independent retailer or distributor lists source UPC 038900009144 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/890/000/9144/8.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "3293",
+      "expectedUpc": "049000019162",
+      "expectedNameSha256": "0024062ecd164b8aad7220460cd1d429d3ee96b40b6940e67edb349ff69141f2",
+      "replaceTextFrom": "Fanta Orange 20oz?",
+      "replaceTextTo": "Fanta Orange 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/fanta/products",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-12953481",
+          "supports": "Independent retailer or distributor lists source UPC 049000019162 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://target.scene7.com/is/image/Target/GUEST_42b260b1-ddf6-4ce7-b140-c5b955c01fac?fmt=pjpeg&hei=300&wid=300",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "3350",
+      "expectedUpc": "632565000029",
+      "expectedNameSha256": "1c782e71131c538e76415e45ef082d0aee44171d0139b9c8dd8aba7bc1bc9180",
+      "replaceTextFrom": "FIJI WATER 1LITER",
+      "replaceTextTo": "FIJI Natural Artesian Water 1LITER",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.fijiwater.com/products/fiji-water-1l-case-of-12",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-90775218",
+          "supports": "Independent retailer or distributor lists source UPC 632565000029 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/assets/domains/product-image/file/large_46a742db-d9e6-4b63-98a7-067473f9717d.png",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -12976,6 +14221,486 @@
           "kind": "inspected_package_photo",
           "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/048/002/6219/1.jpg",
           "supports": "Individually inspected front explicitly reads Bacardi Gold, rum, 50ML. Cub exact UPC listing confirms the individual 50 mL bottle. No wholesale carton count is adopted."
+        }
+      ]
+    },
+    {
+      "sku": "1091",
+      "expectedUpc": "071817000217",
+      "expectedNameSha256": "7a345784e73fccccfb42abb1f3d355d43642c4ae0299b2b03e5c2d91070d5908",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Big-Red/p/1-HYK-735",
+          "supports": "Official bottler lists Big Red and exact source UPC071817000217. Existing 2 L source label remains unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/93673-big-red-soda-2-l",
+          "supports": "Exact source UPC 071817000217 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/181/700/0217/1.400.jpg",
+          "supports": "Big Red bottle,2Liters printed; shelf photograph. Original2L unchanged. Name review does not approve this image for public use."
+        }
+      ],
+      "expectedPublicName": "Big Red",
+      "expectedLabel": "2 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      }
+    },
+    {
+      "sku": "2500",
+      "expectedUpc": "043000952719",
+      "expectedNameSha256": "2170dd6337efd2d7bcee47053cdc26b7feaacb14b385e976ae4f5873133ca30c",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kraftheinz.com/country-time/products/00043000077016-lemonade-naturally-flavored-drink",
+          "supports": "Manufacturer confirms Country Time Lemonade ready-to-drink expression only. Exact-UPC listing and inspected bottle corroborate the existing source name; source20oz remains unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=43000952719",
+          "supports": "Exact source UPC 043000952719 product association corroboration, used with manufacturer and actual package evidence; not sole proof. No external stock, price, pack count or size is adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/300/095/2719/1.400.jpg",
+          "supports": "Country Time Lemonade20fl oz bottle held in hand. Original20oz unchanged. Name review does not approve this image for public use."
+        }
+      ],
+      "expectedPublicName": "Country Time Lemonade",
+      "expectedLabel": "20 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      }
+    },
+    {
+      "sku": "834",
+      "expectedUpc": "031000101251",
+      "expectedNameSha256": "a019de6f7a6e573b5c032bef51fdae25fbcdaf64fcfa05e9dcbebbefa35cab44",
+      "expectedPublicName": "Banquet apple pie",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.conagra.com/031000101251-0001-en-US/index.html",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.freshbyreasors.com/product/banquet-apple-pie-7-ounce-id-00031000101251",
+          "supports": "Exact source UPC 031000101251 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/010/1251/1.400.jpg",
+          "supports": "Banquet Apple Pie box with readable brand and expression. Unknown source size retained."
+        },
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ]
+    },
+    {
+      "sku": "833",
+      "expectedUpc": "031000101015",
+      "expectedNameSha256": "e559abe8dfa3e5c38bbe223beca0243c9486dcd83e52d02755a9694e356b0094",
+      "expectedPublicName": "Banquet chicken pot pie",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.conagra.com/031000101015-0004-en-US/index.html",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/35355-banquet-chicken-pot-pie-7-oz",
+          "supports": "Exact source UPC 031000101015 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/010/1015/14.400.jpg",
+          "supports": "Banquet Chicken Pot Pie box. Current name already gives the complete marketed expression. Unknown source size retained."
+        },
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ]
+    },
+    {
+      "sku": "831",
+      "expectedUpc": "031000007355",
+      "expectedNameSha256": "a98562109123b2046a44959939414ee673aa74fbd984651810850938542bb0c5",
+      "expectedPublicName": "Banquet chicken strips meal",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.banquet.com/classic-dinners/chicken-strips-meal",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/2911132-banquet-classics-chicken-strips-meal-8-9-oz",
+          "supports": "Exact source UPC 031000007355 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/000/7355/1.400.jpg",
+          "supports": "Banquet Chicken Strips Meal box with macaroni and cheese pictured. Current marketed name is readable and sufficient; no side-dish claim or size added."
+        },
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ]
+    },
+    {
+      "sku": "1183",
+      "expectedUpc": "070640002955",
+      "expectedNameSha256": "7b260e5bdc28f9ea544a3e133c7acec37709dcf20ac1be37c1a86b1269a65a81",
+      "expectedPublicName": "Blue bunny banana split",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/scoopables/small-cartons/banana-split",
+          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/3182766-blue-bunny-split-ice-cream-16-fl",
+          "supports": "Exact source UPC 070640002955 is listed for this product identity. Listed weight, volume, or case count is not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/064/000/2955/1.400.jpg",
+          "supports": "Blue Bunny Banana Split tub. Banana Split expression is readable. Current name is sufficient without adding a formulation claim or size."
+        }
+      ]
+    },
+    {
+      "sku": "2828",
+      "expectedUpc": "049000050110",
+      "expectedNameSha256": "5023dabec61eb9d80124242e98bd5def864f7ec7b844c0774888647461caf621",
+      "expectedPublicName": "Diet Coke",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/diet-coke/products",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-12959566",
+          "supports": "Independent retailer or distributor lists source UPC 049000050110 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/005/0110/2.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "2829",
+      "expectedUpc": "078000083408",
+      "expectedNameSha256": "a1e889b3108fe7f7c6fbff061956f89d761608597b725698f6d8821fce647ee2",
+      "expectedPublicName": "DIET DR PEPPER",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.keurigdrpepper.com/140-years-of-flavor-dr-peppers-legacy-of-innovation/",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-12965326",
+          "supports": "Independent retailer or distributor lists source UPC 078000083408 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/008/3408/5.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "2839",
+      "expectedUpc": "078000017465",
+      "expectedNameSha256": "e56526d7c237cef381d1fcd4299656b70a03b5381afb260c896c3b3b7e147adb",
+      "expectedPublicName": "Diet Squirt",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.squirtsoda.com/",
+          "supports": "Manufacturer confirms Squirt citrus/grapefruit soda family. Current Zero Sugar wording does not replace the historical Diet wording visible in the inspected package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16927810-squirt-citrus-soda-2-l",
+          "supports": "Retailer lists exact source UPC 078000017465 as Squirt Zero Sugar grapefruit soda, 2 L. Historical Diet Squirt identity is retained from the source and actual label; no automatic rename to current packaging."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/7465/1.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "3289",
+      "expectedUpc": "049000026276",
+      "expectedNameSha256": "569fed30d07929818173172047cc04fefd62172b39c4a08c0bdc56b56d6902ef",
+      "expectedPublicName": "Fanta Grape",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/fanta/products",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://ecartgrenada.com/products/gb2003",
+          "supports": "Independent retailer or distributor lists source UPC 049000026276 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://ecartgrenada.com/cdn/shop/products/049000026276.jpg?crop=center&height=500&v=1627313596&width=600",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "3290",
+      "expectedUpc": "049000050240",
+      "expectedNameSha256": "8d3b9e2d9647ae071fade6f9a87037e5738576a10b0ad27bda2d597793bb312e",
+      "expectedPublicName": "Fanta Grape",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/fanta/products",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.super99.com/10119947-fanta-soda-uva-caffeine-free-2-lt",
+          "supports": "Independent retailer or distributor lists source UPC 049000050240 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/005/0240/1.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "3294",
+      "expectedUpc": "049000050257",
+      "expectedNameSha256": "b603f37119b3f84930362f20a145c9a38ce75ed1afe8a2c1b6364c6ca53f0135",
+      "expectedPublicName": "Fanta Orange",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/fanta/products",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16409618-fanta-orange-soda-fruit-flavored-soft-drink-2-l",
+          "supports": "Independent retailer or distributor lists source UPC 049000050257 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/assets/domains/product-image/file/large_377e2391-e9eb-4510-8f6a-727cc2a76ac9.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "3295",
+      "expectedUpc": "049000030761",
+      "expectedNameSha256": "21236e526c4779fadff82bdfa0fea0341c892ee07895b4a0cb2818d4104ba888",
+      "expectedPublicName": "Fanta Pineapple Pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/fanta/products",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/fanta-pineapple-id-049000030761",
+          "supports": "Independent retailer or distributor lists source UPC 049000030761 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/003/0761/1.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "3296",
+      "expectedUpc": "049000050264",
+      "expectedNameSha256": "306967918802b8a75ae6fdad49b7cc37f53a5eab373dfb6aa8426531aa758f43",
+      "expectedPublicName": "Fanta Pineapple",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/fanta/products",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16409634-fanta-pineapple-soda-2-l",
+          "supports": "Independent retailer or distributor lists source UPC 049000050264 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/005/0264/4.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
+        }
+      ]
+    },
+    {
+      "sku": "3298",
+      "expectedUpc": "049000050271",
+      "expectedNameSha256": "0fd648759230e0cdab60bc044fe43066903e83a2f548b45ebc809930ff906024",
+      "expectedPublicName": "Fanta Strawberry",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.coca-cola.com/us/en/brands/fanta/products",
+          "supports": "Primary brand/expression corroboration. Historical package wording is checked against the actual photographed label; source measures and pack quantities remain unchanged."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16912901-fanta-strawberry-soda-fruit-flavored-soft-drink-2-ltr",
+          "supports": "Independent retailer or distributor lists source UPC 049000050271 with the matching brand and expression. Wholesale case quantities are not imported."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/005/0271/1.400.jpg",
+          "supports": "Actual package front individually inspected for brand and expression. Private name evidence only; no new public image permission or professional-photo approval."
         }
       ]
     }

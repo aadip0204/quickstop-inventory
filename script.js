@@ -20,6 +20,10 @@
       ...product.variants.flatMap(variant => [variant.sku, variant.upc, variant.label])].join(' '));
   }
 
+  function shoppingCategoryLabel(product, categories = []) {
+    return categories.find(category => category.id === product.category)?.label || product.category;
+  }
+
   function filterProducts(products, filters = {}, categories = []) {
     const tokens = queryTokens(filters.query || '');
     const labels = new Map(categories.map(category => [category.id, category.label]));
@@ -70,7 +74,7 @@
       sourcePage: safeLink(image.sourcePage), license: image.license || '', licenseUrl: safeLink(image.licenseUrl) };
   }
 
-  const helpers = { PAGE_SIZE, normalize, productSearchText, filterProducts, paginate, matchingVariant, getVariantImage };
+  const helpers = { PAGE_SIZE, normalize, productSearchText, shoppingCategoryLabel, filterProducts, paginate, matchingVariant, getVariantImage };
   if (typeof module !== 'undefined' && module.exports) module.exports = helpers;
   if (typeof document === 'undefined') return;
   window.QuickStopCatalog = helpers;
@@ -87,7 +91,6 @@
   let state = { query: '', category: 'all', department: 'all', sort: 'az', page: 1 };
   let searchTimer;
   const selectedVariants = new Map();
-  const departmentLabels = new Map();
 
   function element(tag, className, text) {
     const node = document.createElement(tag);
@@ -177,7 +180,7 @@
   function createProductCard(product) {
     const card = element('article', 'product-card');
     card.dataset.productId = product.id;
-    const department = element('p', 'product-department', departmentLabels.get(product.department) || product.department);
+    const category = element('p', 'product-department', shoppingCategoryLabel(product, catalog.categories));
     const title = element('h3', 'product-name', product.name);
     const area = element('div', 'variant-area');
     const label = element(product.variants.length > 1 ? 'label' : 'div', 'variant-label', 'Listed sizes');
@@ -185,7 +188,7 @@
     const selected = matchingVariant(product, state.query, selectedVariants.get(product.id));
     const imageSlot = element('div', 'image-slot');
     imageSlot.hidden = true;
-    card.append(department, imageSlot, title, area);
+    card.append(category, imageSlot, title, area);
     area.append(label);
     if (product.variants.length > 1) {
       const select = element('select', 'variant-select');
@@ -356,9 +359,6 @@
         data.products.some(product => typeof product.id !== 'string' || typeof product.name !== 'string' || !Array.isArray(product.variants) || !product.variants.length || product.variants.some(variant => typeof variant.sku !== 'string' || typeof variant.label !== 'string')) ||
         data.categories.some(category => typeof category.id !== 'string' || typeof category.label !== 'string' || !Array.isArray(category.departments))) throw new Error('Catalog format is invalid');
       catalog = data;
-      catalog.categories.forEach(category => {
-          category.departments.forEach(department => departmentLabels.set(department.id, department.label));
-      });
       elements.total.textContent = `${formatNumber(catalog.products.length)} products to explore`;
       readUrl();
       buildCategories();

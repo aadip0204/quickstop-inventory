@@ -1,0 +1,505 @@
+{
+  "schemaVersion": 1,
+  "reviews": [
+    {
+      "sku": "385",
+      "expectedUpc": "070038324201",
+      "expectedNameSha256": "ccc919fc0ccb519b38dba6191658457d05333141f5c1e4f8ee5b8ba9a83eee27",
+      "expectedSourceRecordSha256": "f942f9c653aa94e913d4589d47fdd3b41619bfac0a3f536e160666164e3a78a6",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Always Save Extra Wide Egg Noodles",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified egg noodles are groceries; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://alwayssavebrand.com/product/0007003832420/",
+          "kind": "official_manufacturer_brand_or_product",
+          "supports": "Exact manufacturer UPC070038324201 matches Always Save Extra Wide Egg Noodles. Confirms complete name spelling only; no source size is added."
+        }
+      ]
+    },
+    {
+      "sku": "2061",
+      "expectedUpc": "044000043148",
+      "expectedNameSha256": "2b4584974ba252bb4a1671473af7ff29c2b22e60ac825a78933c5fa725670930",
+      "expectedSourceRecordSha256": "5997d3094ee4296aee50d08b1b0bf4d76aea2a28ea337f603cc292073108f032",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Chips Ahoy! Original",
+      "expectedLabel": "44 g",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified Chips Ahoy cookies are snacks; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://smartlabel.mondelez.info/044000043148-0003-en-US/index.html",
+          "kind": "manufacturer_exact_upc_smartlabel",
+          "supports": "Manufacturer explicitly identifies UPC044000043148, Chips Ahoy! Original Real Chocolate Chip Cookies,4cookies,1.55oz(44g). Confirms the complete brand/expression for this sourceSKU; source44g measurement is preserved."
+        }
+      ]
+    },
+    {
+      "sku": "2711",
+      "expectedUpc": "074806000519",
+      "expectedNameSha256": "d3a4937b39380a34d537817fc777873aa73a45c89e20bd6019cb27a5c29d80b0",
+      "expectedSourceRecordSha256": "7d10e75b8485099bd48ba8007aefb0ecab8ceb44cc5c3045be7c39a01bccb123",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Daily's Strawberry Mix",
+      "expectedLabel": "1 L",
+      "expectedCategory": "essentials",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified strawberry cocktail mix belongs in Drinks & mixers; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+        },
+        {
+          "url": "https://dailyscocktails.com/ready-to-mix/strawberry/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0074806000519",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 074806000519; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/480/600/0519/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "2882",
+      "expectedUpc": "049200043509",
+      "expectedNameSha256": "db6cc47ffe18c5ac8e78172caec892b83f6c532e5c9b815a2c853c7616f27207",
+      "expectedSourceRecordSha256": "0736378517594eb44b6184f5d641509f8c60c1829c8b9861cd3411e1fb21e254",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Domino Pure Cane Granulated Sugar",
+      "expectedLabel": "32 oz",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified granulated sugar is a grocery ingredient; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/sugar",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only standard spelling sugar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+        },
+        {
+          "url": "https://www.dominosugar.com/products/granulated-sugar-boxes",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0049200043509",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 049200043509; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/920/004/3509/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "3934",
+      "expectedUpc": "78938793",
+      "expectedNameSha256": "1df17ff8c586cc233eb1acdac3f6611934b90e4333820b0463209f094a8194b4",
+      "expectedSourceRecordSha256": "985432253fccd3d4b70e588e4d4c1638159675919f83989509d9e3c8a6c4495e",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Halls Cereja Cherry Candy",
+      "expectedLabel": "28 g",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Exact EAN-8 identity review establishes cherry candy, rather than a medicine inferred from the Halls brand; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://dnovacampinas.com.br/wp-content/uploads/2025/06/Catalogo-Distribuidor-Q2.pdf",
+          "supports": "Mondelēz International branded distributor catalog, rendered and inspected cover and PDFpage47. HALLS BASE DSP CEREJA table lists28g and EAN8 unit78938793; display and case codes are separately stated. Manufacturer-authored document hosted by distributor."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://portfoliococacolafemsa.com.br/parana/produto/halls-cereja-28g-21",
+          "supports": "Coca-Cola FEMSA distribution portfolio explicitly identifies Halls Cereja28g, EAN78938793. Quantity21 is its display ordering quantity, not the source retail unit."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.stock.com.py/products/283954-caramelos-cherry-28gr-halls-plas.aspx",
+          "supports": "Independent retailer explicitly identifies cherry Halls28g and barcode78938793."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mondelezinternational.com/our-brands/halls/",
+          "supports": "Direct manufacturer site establishes the Halls brand and refreshing-candy product use; exact flavor and weight are supported by its distributor catalog and exact-code listings."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/000/007/893/8793/3.jpg",
+          "supports": "Actually inspected full original: complete single Halls Cereja/Cereza cherry stick pack with28g visible on pack and professional branded footer; plain white backdrop, no people, shelf, countertop, clipping, or price. The bottom branding is part of the existing studio composition and is unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "4288",
+      "expectedUpc": "075669111121",
+      "expectedNameSha256": "6d992acd2c811cce695ce742b25c0b4aa22def84a3ebda341aeeaf7d28acaa51",
+      "expectedSourceRecordSha256": "b5c645a28bd8edffd5be193df6b08c73266b8e645a57ac698c6fd40bcf8071c3",
+      "expectedDepartment": "Juice",
+      "expectedPublicName": "Iberia Sardines in Tomato Sauce",
+      "expectedLabel": "425 g",
+      "expectedCategory": "drinks",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified sardines in tomato sauce are canned food; the source Juice department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://iberiafoods.com/product/sardines/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0075669111121",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 075669111121; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/1121/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "4289",
+      "expectedUpc": "075669111565",
+      "expectedNameSha256": "83cced59e501e4304d07841a4a121649d0d24594c3dba1b4a6cd16cc0c480741",
+      "expectedSourceRecordSha256": "93c2528ac02393585eb2a8a74557de1bbe618f2ec1efe71dd5c4a85b66fc6bc5",
+      "expectedDepartment": "Juice",
+      "expectedPublicName": "Iberia Sardines in Tomato Sauce with Jalapeno Slices",
+      "expectedLabel": "425 g",
+      "expectedCategory": "drinks",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified sardines in tomato sauce with jalapeno are canned food; the source Juice department remains unchanged.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://iberiafoods.com/product/iberia-oval-sardines-in-tomato-w-jalapenos-slices-15-oz/",
+          "supports": "Manufacturer exact UPC 075669111565 names oval sardines in tomato with jalapeño slices, 15 oz; source 425g is preserved."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0075669111565",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 075669111565. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/1565/1.jpg",
+          "supports": "Oval can clearly reads Iberia Sardines In Tomato Sauce with Jalapeno Slices, net wt 15 oz (425g). Sauce and sliced jalapeño wording are missing from source."
+        }
+      ]
+    },
+    {
+      "sku": "6115",
+      "expectedUpc": "050000300624",
+      "expectedNameSha256": "249abc16eb9539b4bf9d822a09e6e9754cbcbaf73a15b1199a3194ed36048154",
+      "expectedSourceRecordSha256": "4cc41fea117b49edceeb21e0d60c8cce7a48de95f754dfd4b223c0012afd070c",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Nestlé Coffee-mate Original",
+      "expectedLabel": "6 oz",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified Coffee-mate creamer is a grocery product; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://smartlabel.nestleusa.com/050000300624-0001-en-US/index.html",
+          "kind": "manufacturer_exact_upc_smartlabel",
+          "supports": "Nestlé SmartLabel identifies UPC050000300624 as Coffee mate The Original, net6oz. Complete name clarified; existing source6oz is unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "6116",
+      "expectedUpc": "050000447718",
+      "expectedNameSha256": "01b2f2adf579ab2efbaa7a447f8aacc2819245e5121b73ee935094676b0c5642",
+      "expectedSourceRecordSha256": "70c0bbfed5f25b8ec4dbd4ae58f7a7c6a68ea673af5bbb77fb30222c4184e24e",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Nestlé Coffee-mate Original",
+      "expectedLabel": "11 oz",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified Coffee-mate creamer is a grocery product; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://www.nestleprofessional.us/coffee-mate/original-powder-creamer-12-x-11-oz",
+          "kind": "manufacturer_product_identity",
+          "supports": "Nestlé Professional identifies Original powdered creamer in11oz canisters. Source11oz is unchanged; exact individual UPC is corroborated separately, and case pack is not assigned to this sourceSKU."
+        },
+        {
+          "url": "https://www.officedepot.com/a/products/919573/Nestle-Coffee-mate-Powdered-Creamer-Canister/?bvstate=pg%3A8%2Fct%3Ar",
+          "kind": "retailer_exact_upc_product_identity",
+          "supports": "Retailer specifications identify UPC050000447718, Coffee-Mate Original powdered creamer, one11oz canister."
+        }
+      ]
+    },
+    {
+      "sku": "6346",
+      "expectedUpc": "075355112135",
+      "expectedNameSha256": "2775cad67ce3568d188e9a95f08a0214b4e18f48d957d4def06924d8a71a4bbb",
+      "expectedSourceRecordSha256": "0d0afbf0b28c05a5372aecb4d9b8d1252fe214c0cf22744fbcd0edc917747628",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "Old Orchard 100% Apple Juice",
+      "expectedLabel": "64 oz",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified apple juice is a beverage; the source Snacks department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://oldorchard.com/products/entry/64oz-100-juice-apple",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0075355112135",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 075355112135; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/535/511/2135/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "6798",
+      "expectedUpc": "044000003821",
+      "expectedNameSha256": "6f153bd2c66984493b98e8ddd8de1f9bdd872fdbd6d960d8dc416feb5b73b094",
+      "expectedSourceRecordSha256": "90acb48696fcaf29fc315a476d836352117f00ff9e34634eec3d6525b7b1909b",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Nabisco Premium Original Saltine Crackers",
+      "expectedLabel": "4 oz",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified saltine crackers are snacks and groceries; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.snackworks.com/products/premium-original-saltine-crackers-lunch-snacks-4-oz/",
+          "supports": "Mondelez Snackworks identifies Premium Original Saltine Crackers4oz in convenient individual boxes; sea-salt-topped original expression matches inspected front."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shoptheking.us/products/477059",
+          "supports": "Distributor identifies Premium Saltine Conv4oz Single Box and explicitly lists Unit UPC044000003821. Do not treat its wholesale12-box case as the single source item."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://smtlbl.app/upc/044000003821",
+          "supports": "Official Snackworks product page links this exact-UPC SmartLabel URL. The redirect target was inaccessible to the web tool, so no unseen SmartLabel body is claimed."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/400/000/3821/1.jpg",
+          "supports": "Complete long rectangular Nabisco Premium Original Saltine Crackers box on white, with blue side panel and both ends present. Front says Original topped with sea salt and NET WT4 OZ (113g). No visible price or household setting."
+        }
+      ]
+    },
+    {
+      "sku": "6952",
+      "expectedUpc": "021000026326",
+      "expectedNameSha256": "6a30e4f54b6572784526015652cf096189a991721032d0e39e0713731cdac1eb",
+      "expectedSourceRecordSha256": "678d50659fd952b5927882688db7830e790d88660f3d3ddef659384086b78539",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Kraft Real Mayo",
+      "expectedLabel": "887 mL",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified mayonnaise is a grocery condiment; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://www.target.com/p/-/A-12946394",
+          "kind": "retailer Target",
+          "supports": "Retailer specification gives exact UPC, Kraft Real Mayonnaise, single 30 fl oz jar."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/100/002/6326/9.jpg",
+          "kind": "inspected_exact_upc_package_photo",
+          "supports": "Complete Kraft Real Mayo jar with blue cap, Creamy & Smooth expression, 30 fl oz / 887 mL visible; clean white background, no price. Independently visually reviewed by the photo reviewer; this name clarification does not alter source size."
+        }
+      ]
+    },
+    {
+      "sku": "8257",
+      "expectedUpc": "050200560002",
+      "expectedNameSha256": "896cffdffeb554dfbe6d39a6123bafd5a7ff63bec69bc06cff4b8286f598b310",
+      "expectedSourceRecordSha256": "8facd24b62d724589330e930775ede684a977b7cc0ad5a5833ac69c1e41c63e7",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "SunnyD Tangy Original Orange Citrus Punch",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified SunnyD Tangy Original Orange Citrus Punch is a beverage; the source Snacks department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://sunnyd.com/flavors/tangy-original/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0050200560002",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 050200560002; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/020/056/0002/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    },
+    {
+      "sku": "8265",
+      "expectedUpc": "050200019128",
+      "expectedNameSha256": "0978bef953015bbd6d9b3a6aed9167189ecf14b63a9a32bfdaef942dd116f06f",
+      "expectedSourceRecordSha256": "2e1cfe7dba631eb1bf1386d2928fdb7859da57071abae27566d6e0cc2d096e64",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "Sunny D Smooth orange",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified Sunny D Smooth Orange is a beverage; the source Snacks department remains unchanged.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://sunnyd.com/flavors/smooth-orange/",
+          "supports": "Manufacturer identifies Smooth Orange citrus punch. Current page sizes are not used to change source 16 oz."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0050200019128",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 050200019128. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/020/001/9128/1.jpg",
+          "supports": "Bottle reads SUNNYD SMOOTH ORANGE, Orange Flavored Citrus Punch, and 16 fl oz / 473 mL. Source already contains the complete named expression; not Tangy Original."
+        }
+      ]
+    },
+    {
+      "sku": "9405",
+      "expectedUpc": "041800501519",
+      "expectedNameSha256": "5a885d0ff6ea7f294a9e9986e47b3a036a70127afd3c9b16b6af842d26376415",
+      "expectedSourceRecordSha256": "f728c649db8b24d8616b9dc7ec9cb5ccb3700600775dcfb763ff92f441697f2a",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Welch's Concord Grape Jam",
+      "expectedLabel": "30 oz",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified Concord grape jam is a grocery spread; the source MISC department remains unchanged.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://welchs.com/en-us/fruit-spreads/concord-grape-jam/",
+          "supports": "Welch's manufacturer page identifies Concord Grape Jam and30OZ JAR size, distinct from its Jelly product."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16409391-welch-s-concord-grape-jam-32-oz",
+          "supports": "Retailer indexed product content explicitly lists UPC041800501519 and30oz Concord Grape Jam. URL slug says32oz but the current indexed title/body and inspected physical label both say30oz. Direct follow-up open timed out; this access limitation is retained in the private audit."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/050/1519/1.jpg",
+          "supports": "Complete dark grape-jam jar with purple lid on white. Welch's Concord Grape JAM and NET WT30 OZ (1.87LB)850g are clearly readable. No visible prices or unrelated objects; expression is Jam, not Jelly."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.theamericanstore.de/Welchs-Grape-Jam-850g",
+          "supports": "Independent retailer lists Welch's Grape Jam, GTIN 041800501519 and net contents 850 g, corroborating the inspected jar's printed 30 oz / 850 g identity. This corroboration does not import availability or price."
+        }
+      ]
+    },
+    {
+      "sku": "9417",
+      "expectedUpc": "041800716005",
+      "expectedNameSha256": "31b8af1054c2cde71b5a31f198d159ad8bcb95fe53a6a2a8dc502112eee568f1",
+      "expectedSourceRecordSha256": "172a02ed194b2a00e123537e5072bf20d2432f25c7dda31c6b065791a825cd3e",
+      "expectedDepartment": "Sparklin",
+      "expectedPublicName": "Welch's Red Grape Juice Cocktail N/A Sparkling",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified sparkling red grape juice cocktail is explicitly non-alcoholic; the source Sparklin department remains unchanged.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.welchs.com/sparkling/red-grape/",
+          "supports": "Manufacturer identifies non-alcoholic Sparkling Red Grape Juice Cocktail, 25.4 oz bottle. Source 750ml N/A Sparkling tokens are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://world-en.openfoodfacts.org/product/0041800716005",
+          "supports": "Existing reviewed image-source record is keyed to source UPC 041800716005. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/071/6005/1.jpg",
+          "supports": "Bottle says Welch's Sparkling NON-ALCOHOLIC RED GRAPE JUICE COCKTAIL and 750 mL. Add apostrophe and Juice Cocktail only; source N/A Sparkling already preserves alcohol-free/sparkling identity."
+        }
+      ]
+    },
+    {
+      "sku": "9425",
+      "expectedUpc": "041800715008",
+      "expectedNameSha256": "5b1d9d9f55e3bdda9eb1b2ebdff7be27d45b29b9823118eede7f8face1bc7221",
+      "expectedSourceRecordSha256": "e7bcf839d8167d585e63283a603ad4e0fbe79fc043d8a5a1249095707436bdd9",
+      "expectedDepartment": "Sparklin",
+      "expectedPublicName": "Welch's Sparkling White Grape Juice Cocktail N/A",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Verified sparkling white grape juice cocktail is explicitly non-alcoholic; the source Sparklin department remains unchanged.",
+      "evidence": [
+        {
+          "url": "https://www.welchs.com/sparkling/white-grape/",
+          "kind": "manufacturer",
+          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0041800715008",
+          "kind": "exact_upc_listing",
+          "supports": "Existing exact UPC listing for 041800715008; not sole evidence of the product name."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/071/5008/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+        }
+      ]
+    }
+  ]
+}

@@ -40,6 +40,23 @@ test('every populated category and original department is reachable without losi
   assert.equal(reached.size, catalog.products.length);
 });
 
+test('shopping badges and navigation use categories while preserving shared original departments', () => {
+  const categories = [
+    { id: 'food', label: 'Snacks & groceries', departments: [{ id: 'MISC', label: 'General merchandise', sourceLabel: 'MISC' }] },
+    { id: 'essentials', label: 'Everyday essentials', departments: [{ id: 'MISC', label: 'General merchandise', sourceLabel: 'MISC' }] }
+  ];
+  const jam = { id: 'jam', name: 'Verified Jam', category: 'food', department: 'MISC', variants: [{ sku: 'jam-1', upc: '001234567890', label: '30 oz' }] };
+  const item = { id: 'item', name: 'Other Item', category: 'essentials', department: 'MISC', variants: [{ sku: 'item-1', upc: '001234567891', label: 'Single' }] };
+  const products = [jam, item];
+  assert.equal(ui.shoppingCategoryLabel(jam, categories), 'Snacks & groceries');
+  assert.equal(jam.department, 'MISC');
+  assert.deepEqual(ui.filterProducts(products, { category: 'food', department: 'MISC' }, categories), [jam]);
+  assert.deepEqual(ui.filterProducts(products, { category: 'essentials', department: 'MISC' }, categories), [item]);
+  assert.deepEqual(ui.filterProducts(products, { department: 'MISC' }, categories), products);
+  assert.deepEqual(ui.filterProducts(products, { query: 'General merchandise' }, categories), products);
+  assert.deepEqual(ui.filterProducts(products, { query: 'Snacks groceries' }, categories), [jam]);
+});
+
 test('pagination exposes the entire catalog exactly once, bounded to 36 cards', () => {
   const ids = [];
   const pages = ui.paginate(catalog.products).totalPages;
@@ -145,6 +162,8 @@ test('a late failure from a previous size cannot hide the currently selected pho
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../script.js'), 'utf8'), context);
   await new Promise(resolve => setImmediate(resolve));
   const card = elements['product-grid'].children[0];
+  assert.equal(card.children[0].textContent, 'Drinks');
+  assert.ok(elements.department.children.some(option => option.value === 'Soda'));
   const previousImage = card.querySelector('img');
   const imageSlot = previousImage.parentNode;
   const select = card.querySelector('select');
