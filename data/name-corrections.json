@@ -5901,6 +5901,1965 @@
         }
       ],
       "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3888",
+      "expectedUpc": "078742062266",
+      "expectedNameSha256": "2a564a5eb4bdff70f88d041d43ebd2fdf60705210b09e5652e2bef3e6ffafad6",
+      "replaceTextFrom": "Great value yello mustard20OZ",
+      "replaceTextTo": "Great Value Yellow Mustard 20OZ",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.walmart.com/ip/43711099",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/874/206/2266/2.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0078742062266",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3887",
+      "expectedUpc": "078742091976",
+      "expectedNameSha256": "dd7749a4a77e21ca7c0709b54070638af76462a47acb0539e24a0199085a5c34",
+      "replaceTextFrom": "Great value yello mustard8OZ",
+      "replaceTextTo": "Great Value Yellow Mustard 8OZ",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.walmart.com/c/best-sellers/great-value-mustard-yellow",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/874/209/1976/5.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0078742091976",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1289",
+      "expectedUpc": "077567254504",
+      "expectedNameSha256": "159406ce10bc66572b6850902ae037fee1bf6043325d93db3c06dfa10ef2f020",
+      "replaceTextFrom": "Breyer's cookies & cream1.5quart",
+      "replaceTextTo": "Breyers Cookies & Cream 1.5quart",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://smartlabel.unileverusa.com/077567254504-0001-en-US/index.html",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/756/725/4504/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0077567254504",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "934",
+      "expectedUpc": "015900122554",
+      "expectedNameSha256": "e69a69f9760c83cd732bd32e576ff9202591d747fcb2a4508cc7bc677a09eea6",
+      "replaceTextFrom": "Bars Chicken jumbo franks16oz",
+      "replaceTextTo": "Bar-S Chicken Jumbo Franks 16oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.bar-s.com/products/bar-s-chicken-jumbo-franks/",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/590/012/2554/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0015900122554",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4731",
+      "expectedUpc": "015900122714",
+      "expectedNameSha256": "5968a28b930b614a643e975237344eede302903784aaab60f1dd21c1f3fcc5e9",
+      "replaceTextFrom": "Jumbo Franks turkey16OZ",
+      "replaceTextTo": "Bar-S Turkey Jumbo Franks 16OZ",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.bar-s.com/products/bar-s-turkey-jumbo-franks/",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/590/012/2714/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0015900122714",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4730",
+      "expectedUpc": "888109012182",
+      "expectedNameSha256": "d39fa5be8f431250de66d0181a68bff2a1b701f08195a9c3b6db3edf90411fd8",
+      "replaceTextFrom": "jumbo donettesglazed  blue berry 113 g",
+      "replaceTextTo": "Hostess Jumbo Donettes Glazed Blueberry 113 g",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.hostesscakes.com/everyday-snacks/jumbo-donettes-blueberry",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/810/901/2182/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0888109012182",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4729",
+      "expectedUpc": "888109012168",
+      "expectedNameSha256": "6856299eb2a8e37d60c1d70b3b0a1109f7e9c40410f43f24bcc56c4bb8ef5481",
+      "replaceTextFrom": "jumbo donettesglazed  strawberry  113 g",
+      "replaceTextTo": "Hostess Jumbo Donettes Glazed Strawberry 113 g",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.hostesscakes.com/everyday-snacks/breakfast-snacks/donettes",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/810/901/2168/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0888109012168",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4434",
+      "expectedUpc": "082184138700",
+      "expectedNameSha256": "2438b1d1cb9f2980c191cced80a492525888adde84894000ef9f5aa2ceaf9cd0",
+      "replaceTextFrom": "Jack Daniels Gentleman 50ml",
+      "replaceTextTo": "Jack Daniel's Gentleman Jack Tennessee Whiskey 50ml",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.brown-forman.com/brand/jack-daniels",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/218/413/8700/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0082184138700",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2556",
+      "expectedUpc": "082000759898",
+      "expectedNameSha256": "1e663f8808ea631f04a10a5f07ae588bbb3df94cf5147fa7430d32a691e51f13",
+      "replaceTextFrom": "CROWN MAPLE 750",
+      "replaceTextTo": "Crown Royal Maple Finished Whisky",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.crownroyal.com/canadian-whisky/crown-royal-maple",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://live.staticflickr.com/8352/8372343630_f9872e258e_o.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Crown_Royal_Maple_(8372343630).jpg",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9768",
+      "expectedUpc": "072350000115",
+      "expectedNameSha256": "7085904f0267ad21fadbf22aad4c66e2e865e7809ee3b6e171538d71c9f61b00",
+      "replaceTextFrom": "Yoohoo Chocolate 15.5 Oz",
+      "replaceTextTo": "Yoo-hoo Chocolate Drink 15.5 Oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.keurigdrpepper.com/brands/",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/235/000/0115/1.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0072350000115",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4531",
+      "expectedUpc": "041200104693",
+      "expectedNameSha256": "2e229d6947b585cee56e586fe992cefe78d9770bd9034273b2871ac484204237",
+      "replaceTextFrom": "Jay's Org 2.5oz",
+      "replaceTextTo": "Jays Original Potato Chips 2.5oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.thecampbellscompany.com/our-food/campbell-snacks/",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/120/010/4693/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0041200104693",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4525",
+      "expectedUpc": "041200104686",
+      "expectedNameSha256": "50a217860387720c28cf7eb1d0d623fbcc84a930c9c7c48059e2ab3e03716d06",
+      "replaceTextFrom": "Jay's Hot Stuff 2.5oz",
+      "replaceTextTo": "Jays Hot Stuff Potato Chips 2.5oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.thecampbellscompany.com/our-food/campbell-snacks/",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/120/010/4686/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0041200104686",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4512",
+      "expectedUpc": "041200104662",
+      "expectedNameSha256": "50e8d799d27c16a089eb06b29723a216ea33b78e69429f38803e8f337fc9c2a4",
+      "replaceTextFrom": "Jay's BBQ 2.5oz",
+      "replaceTextTo": "Jays Barbecue Potato Chips 2.5oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.thecampbellscompany.com/our-food/campbell-snacks/",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/120/010/4662/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0041200104662",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6458",
+      "expectedUpc": "078907450396",
+      "expectedNameSha256": "0deb9f0d642a879e3a6d7bbdc283ebf9d3b6d8abec657013949ee7b91a24d38b",
+      "replaceTextFrom": "ORG SALSITAS SPICY SALS 3OZ",
+      "replaceTextTo": "El Sabroso Original Salsitas Spicy Salsa 3OZ",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.snakking.com/wp-content/uploads/2018/08/Arizona-Food-January-2011-SNAK-KING-Article.pdf",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/890/745/0396/8.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0078907450396",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "3649",
+      "expectedUpc": "052000135176",
+      "expectedNameSha256": "4425946a4d5b7e590d1a5f4a6c291030f1f6cb87cd730ebccba49e50a5a5423f",
+      "replaceTextFrom": "Gatorade Blue 28oz",
+      "replaceTextTo": "Gatorade Thirst Quencher Cool Blue 28oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.gatorade.com/sports-drinks/gatorade-thirst-quencher/cool-blue-00052000135176",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/013/5176/3.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0052000135176",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6006",
+      "expectedUpc": "012000151163",
+      "expectedNameSha256": "50349bea98d6a2ecd1152750b4e5dd94d3cce04d0583feb2eda62e1bb367aa59",
+      "replaceTextFrom": "Mtn Dew Grape 16oz can",
+      "replaceTextTo": "Mtn Dew Kickstart Midnight Grape 16oz can",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.pepsico.com/newsroom/press-releases/2016/mtn-dew-kickstart-expands-product-lineup-with-introduction-of-four-bold-new-flavors",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/200/015/1163/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0012000151163",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "5837",
+      "expectedUpc": "070847811169",
+      "expectedNameSha256": "16b8c6a33315b5f397d1a7a5ee67acb6efa0352736ca0731981bba1bb553672f",
+      "replaceTextFrom": "MONSTER 16OZ GREEN",
+      "replaceTextTo": "Monster Energy Original Green 16OZ",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.monsterenergy.com/en-us/energy-drinks/monster-energy/original-green/",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/084/781/1169/4.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0070847811169",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4478",
+      "expectedUpc": "089087120221",
+      "expectedNameSha256": "ba3e4a9c14a1b36663f14f90818949f65e90db9cddc52ce3027e942c693bb39f",
+      "replaceTextFrom": "JAMAICAN PIN GINGER BEER 12 OZSODA",
+      "replaceTextTo": "D&G Jamaican Pineapple Ginger Soda 12 OZ",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://caribbeantasteinc.com/collections/d-g-sodas",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0221/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0089087120221",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4473",
+      "expectedUpc": "089087120139",
+      "expectedNameSha256": "d998cf75cf042ec46beb0ae04bb4aaa6c0ccf815bf9576b5c2d7e5aa8ed93e82",
+      "replaceTextFrom": "JAMAICAN GINGER BEER 12 OZSODA",
+      "replaceTextTo": "D&G Jamaican Ginger Beer Soda 12 OZ",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://caribbeantasteinc.com/collections/d-g-sodas",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0139/3.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0089087120139",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4474",
+      "expectedUpc": "089087120160",
+      "expectedNameSha256": "310ff98c611ba28d8655e329169b7972c26f225c3add2636c5d437397285718b",
+      "replaceTextFrom": "JAMAICAN GRAPE 12 OZSODA",
+      "replaceTextTo": "D&G Jamaican Grape Soda 12 OZ",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://caribbeantasteinc.com/collections/d-g-sodas",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0160/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0089087120160",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4479",
+      "expectedUpc": "089087120177",
+      "expectedNameSha256": "1ef2615133fb80825db71e410f6abdae9dca0565655417f070e366fb2cdd6fae",
+      "replaceTextFrom": "JAMAICAN PINEAPPLE 12 OZSODA",
+      "replaceTextTo": "D&G Jamaican Pineapple Soda 12 OZ",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://caribbeantasteinc.com/collections/d-g-sodas",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0177/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0089087120177",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4472",
+      "expectedUpc": "089087120122",
+      "expectedNameSha256": "49e27c626d776279286d0c40408af25d904c572831b06bf0eabb7cea42d3d6e0",
+      "replaceTextFrom": "jamaican  cream 12 ozSoda",
+      "replaceTextTo": "D&G Jamaican Cream Soda 12 oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://caribbeantasteinc.com/collections/d-g-sodas",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0122/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0089087120122",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4477",
+      "expectedUpc": "089087120153",
+      "expectedNameSha256": "56c3062de0b9234f88206213163be282c619ea0abc22eef389ba9f93a87fde8f",
+      "replaceTextFrom": "JAMAICAN ORANGE12 OZ BOTTLESODA",
+      "replaceTextTo": "D&G Jamaican Orange Soda 12 OZ Bottle",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://caribbeantasteinc.com/collections/d-g-sodas",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0153/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0089087120153",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4476",
+      "expectedUpc": "089087120115",
+      "expectedNameSha256": "634923ab19b8cbfb3f73de2d3d790e3d46cc0be8e93ec1c4cf8a748bef77daba",
+      "replaceTextFrom": "jamaican kola champagne 12 ozSoda",
+      "replaceTextTo": "D&G Jamaican Kola Champagne Soda 12 oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://caribbeantasteinc.com/collections/d-g-sodas",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0115/1.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0089087120115",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7008",
+      "expectedUpc": "016000122222",
+      "expectedNameSha256": "d76bbb4b6c2629e8e1edadf36cb143c26dc5307eee28a5ef8dc873072ae2eecd",
+      "replaceTextFrom": "reeses puffs 11.5oz",
+      "replaceTextTo": "Reese's Puffs Cereal 11.5oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.reesespuffs.com/products/reeses-puffs-cereal",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/600/012/2222/6.400.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world.openfoodfacts.org/product/0016000122222",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7007",
+      "expectedUpc": "034000430956",
+      "expectedNameSha256": "bb9d817b8c5a42afa0dcfc356f4a86fe14e17d774770421f91b5e9ad2a075150",
+      "replaceTextFrom": "Reeses Cup King Size 2.8ozBig Cup",
+      "replaceTextTo": "Reese's Big Cup Milk Chocolate King Size Peanut Butter Cups 2.8oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://shop.hersheys.com/our-brands/reeses/reeses-peanut-butter-cups/034000430956.html",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/400/043/0956/4.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0034000430956",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "300",
+      "expectedUpc": "073390002213",
+      "expectedNameSha256": "7af259d5fc63d00e24bf032cd1910b6da727ac17cf5deb294575ade1ff42ad06",
+      "replaceTextFrom": "Air Heads White 0.55oz",
+      "replaceTextTo": "Airheads White Mystery 0.55oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.airheads.com/candy/airheads/",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/339/000/2213/5.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0073390002213",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "299",
+      "expectedUpc": "073390002039",
+      "expectedNameSha256": "7ff2b78ab76e1197f530958b9ce21cdff55393bbcc45735087f45aa36fb3caf3",
+      "replaceTextFrom": "Air Heads Watermelon 0.55oz",
+      "replaceTextTo": "Airheads Watermelon 0.55oz",
+      "scope": "product_name_spelling",
+      "evidence": [
+        {
+          "url": "https://www.airheads.com/candy/airheads/",
+          "kind": "manufacturer_or_brand_distributor",
+          "supports": "Brand or expression corroboration; the exact original package photograph supplies the full displayed name for this SKU."
+        },
+        {
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/339/000/2039/5.jpg",
+          "kind": "inspected_package_photo",
+          "supports": "Entire product name and original package measurement visibly reviewed against this exact SKU image. No stock, size or barcode value changed."
+        },
+        {
+          "url": "https://world-en.openfoodfacts.org/product/0073390002039",
+          "kind": "exact_upc_photo_provenance",
+          "supports": "Previously approved exact-SKU image provenance retained without substituting a package or image."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "169",
+      "expectedUpc": "818892014421",
+      "expectedNameSha256": "4651312d036b6fb7a926167159b061a6504ef9e0fca1e032838df9d2df3de5b3",
+      "replaceTextFrom": "ciagr",
+      "replaceTextTo": "cigar",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://goodtimestobacco.com/cigarillo/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer identifies 4K\u2019s as tobacco cigars/cigarillos; fix transposed letters in cigar only. Do not change flavor, infer pack count from removed promotional text, or verify complete identity."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "171",
+      "expectedUpc": "818892013530",
+      "expectedNameSha256": "fd218e7c04274e14ed4ca37786de843eef19f86bbd5d724e1d57b0adccd65071",
+      "replaceTextFrom": "ciagr",
+      "replaceTextTo": "cigar",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://goodtimestobacco.com/cigarillo/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer identifies 4K\u2019s as tobacco cigars/cigarillos; fix transposed letters in cigar only. Do not change flavor, infer pack count from removed promotional text, or verify complete identity."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "140",
+      "expectedUpc": "652682004021",
+      "expectedNameSha256": "a1a4932be9e5f23ea10e46013ac6ddc77513e2c2386ec4dcaab36a26db3fa4d4",
+      "replaceTextFrom": "Robert Bruce",
+      "replaceTextTo": "Robert the Bruce",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.3floyds.com/beer/robert-the-bruce/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer explicitly names this beer Robert the Bruce. Preserve original pack, volume and packaging; no new image or full UPC verification."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "142",
+      "expectedUpc": "652682141214",
+      "expectedNameSha256": "073a418cd25b4a2738f82018ce88ad5d2c5cb16b5fa58ae02a50b8956abb654e",
+      "replaceTextFrom": "iceCan",
+      "replaceTextTo": "ice Can",
+      "scope": "spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.3floyds.com/beer/zombie-ice/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer identifies Zombie Ice expression. Separate the already present source Can token from Ice; do not invent a can volume."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6892",
+      "expectedUpc": "860001022704",
+      "expectedNameSha256": "5903fd742a97f3e4562073e69cb4a0b7d18734370ba1e9e8406560d644d4a835",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6894",
+      "expectedUpc": "850012571919",
+      "expectedNameSha256": "f3a11df4fab3953fdcfa403772fd6489433933c962d1aa39d1086d8eaa4d2855",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6900",
+      "expectedUpc": "861518002654",
+      "expectedNameSha256": "91bff095f88b4cccc408cc13adc68ce14f3cedb263a5573ebdcda27b71f8e02d",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6904",
+      "expectedUpc": "860001438420",
+      "expectedNameSha256": "1b0081c6c9d1c7874f15cd347532cb8f58095efb01c6044f0e455630ae1f9551",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6897",
+      "expectedUpc": "861518002623",
+      "expectedNameSha256": "ad9a5d28b98822f9521735683087d1a4bff01994caf8cd52cd99ae8bf5ac9f86",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6902",
+      "expectedUpc": "860001885781",
+      "expectedNameSha256": "36e6cf0c9532efd2694325ad33b22b682c7f71788a85ca717913a9c7842fbfe5",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6901",
+      "expectedUpc": "861518002630",
+      "expectedNameSha256": "5754ec564bb7f4b6a7d9d0894572bbdd6abd8d5c859b0cdd77d10c0b37f23707",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6891",
+      "expectedUpc": "860000183147",
+      "expectedNameSha256": "07563333184df5e1609177c953525c21ff9df858b564ce391cf83bd997eba400",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6899",
+      "expectedUpc": "860001022711",
+      "expectedNameSha256": "e3efe39a97dc42e6cd1728add704ea5023a49f2cc1d63adafa6e2a9d1ac099a0",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6895",
+      "expectedUpc": "850012571773",
+      "expectedNameSha256": "e6fadb9011da834002ab7bb97df0478733974ef96bfddfd1efce5b9801d8ec5e",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6896",
+      "expectedUpc": "850012571414",
+      "expectedNameSha256": "58d4d5eb0f8fafe269dfc532044e783ce6894a0884bcef5e9b87370815931b64",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6903",
+      "expectedUpc": "861518002610",
+      "expectedNameSha256": "1b0081c6c9d1c7874f15cd347532cb8f58095efb01c6044f0e455630ae1f9551",
+      "replaceTextFrom": "ranchola gloria",
+      "replaceTextTo": "Rancho La Gloria",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/bottled-cocktails/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6125",
+      "expectedUpc": "085000014332",
+      "expectedNameSha256": "ebabe8cfd01a5d26601342200074d49834206bf022ebc82390b87a8da97a9008",
+      "replaceTextFrom": "New Amst",
+      "replaceTextTo": "New Amsterdam",
+      "scope": "brand_abbreviation_only",
+      "evidence": [
+        {
+          "url": "https://www.gallo.com/portfolio/new-amsterdam-gin",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms New Amsterdam gin brand. Expand only the truncated brand, retaining Gin and source size; do not add Stratusphere expression."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6126",
+      "expectedUpc": "085000014325",
+      "expectedNameSha256": "f3893f39f2c5752fbf58bda0636021da2f9a3f0529fd4b2a34bf55dae31fd232",
+      "replaceTextFrom": "New Amst",
+      "replaceTextTo": "New Amsterdam",
+      "scope": "brand_abbreviation_only",
+      "evidence": [
+        {
+          "url": "https://www.gallo.com/portfolio/new-amsterdam-gin",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms New Amsterdam gin brand. Expand only the truncated brand, retaining Gin and source size; do not add Stratusphere expression."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6127",
+      "expectedUpc": "085000014318",
+      "expectedNameSha256": "7b0304cf1d8b2cdcd6fe5fd90b1a969faaf271f195816edb44c90fb261331f83",
+      "replaceTextFrom": "New Amst",
+      "replaceTextTo": "New Amsterdam",
+      "scope": "brand_abbreviation_only",
+      "evidence": [
+        {
+          "url": "https://www.gallo.com/portfolio/new-amsterdam-gin",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms New Amsterdam gin brand. Expand only the truncated brand, retaining Gin and source size; do not add Stratusphere expression."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6128",
+      "expectedUpc": "085000023174",
+      "expectedNameSha256": "9805930ef8fdb4cdee5b7b18c25a83cd0e88fa98326604f0426a5e440b15b5e6",
+      "replaceTextFrom": "New Amst",
+      "replaceTextTo": "New Amsterdam",
+      "scope": "brand_abbreviation_only",
+      "evidence": [
+        {
+          "url": "https://www.newamsterdamvodka.com/trademarks/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms registered New Amsterdam brand spelling. Retain mango and both original size tokens unchanged."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6123",
+      "expectedUpc": "085000021347",
+      "expectedNameSha256": "7caf3cb33568d42d450f36e18ef66b47776b443db09bb309720507a1d0fcf328",
+      "replaceTextFrom": "New Amst Coco",
+      "replaceTextTo": "New Amsterdam Coconut",
+      "scope": "brand_and_expression_clarification_only",
+      "evidence": [
+        {
+          "url": "https://www.newamsterdamvodka.com/products/flavors/coconut/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms New Amsterdam Coconut expression; exact source UPC retailer listing corroborates the abbreviation. Keep source size, no new package or image verification."
+        },
+        {
+          "url": "https://qdliquor.com/products/3774-300-8-1-0/new-amsterdam-coconut-200ml",
+          "kind": "exact_upc_listing",
+          "supports": "Lists exact original UPC085000021347 as New Amsterdam Coconut 200ml; name corroboration only."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6167",
+      "expectedUpc": "085000021699",
+      "expectedNameSha256": "2a2c5af025058a3ea4506f3bd7a60ae020741367db3e6d0578a57022959fb9fe",
+      "replaceTextFrom": "cocon",
+      "replaceTextTo": "Coconut",
+      "scope": "expression_abbreviation_only",
+      "evidence": [
+        {
+          "url": "https://www.newamsterdamvodka.com/products/flavors/coconut/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Coconut expression. Expand only abbreviated flavor with exact original UPC corroboration; source size remains unchanged."
+        },
+        {
+          "url": "https://www.universalfws.com/product/p-13919-new-amsterdam-coconut-vodka-175l/",
+          "kind": "exact_upc_listing",
+          "supports": "Lists original UPC085000021699 as New Amsterdam Coconut 1.75L."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6178",
+      "expectedUpc": "085000022337",
+      "expectedNameSha256": "385295eb881373006b7ba67da2fead047e509de6be6d4b7e433261ff2ac929ac",
+      "replaceTextFrom": "pinea",
+      "replaceTextTo": "Pineapple",
+      "scope": "expression_abbreviation_only",
+      "evidence": [
+        {
+          "url": "https://www.newamsterdamvodka.com/products/flavors/pineapple/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Pineapple expression; government exact-UPC listing corroborates. Expand only abbreviated flavor; no change to size or packaging."
+        },
+        {
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/140528",
+          "kind": "government_exact_upc_listing",
+          "supports": "Lists UPC085000022337 as New Amsterdam Pineapple Flavored 1.75L."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8528",
+      "expectedUpc": "088110110505",
+      "expectedNameSha256": "d6fea7c5effd0ee7bb10aaa69df26a72fd072c5b337e493ae935601f7c679433",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8529",
+      "expectedUpc": "088110110109",
+      "expectedNameSha256": "03421a6db8804ecf7f721c79f880feabbdfda83d38193cfb35ba15c00f633747",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8530",
+      "expectedUpc": "088110110604",
+      "expectedNameSha256": "fae2714904aa80b9985d1f3285e4db594f5a9fb064e95c54bf0e024d5bcbb3cc",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8531",
+      "expectedUpc": "088110110642",
+      "expectedNameSha256": "744c16afa70685e1c3c0e37ba6c56d46734e299e7008cddd2f609c39aeba8b61",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8532",
+      "expectedUpc": "088110110307",
+      "expectedNameSha256": "5aecfdf16067d3506e736ae577c56df6c290865c45ca18c0f6b80d9113f64d08",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8533",
+      "expectedUpc": "088076177635",
+      "expectedNameSha256": "64214f8fcc52cd54f7a53400baa109c0d6a7db29af5a6c9a831c0e4f8f42acac",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8534",
+      "expectedUpc": "088076168664",
+      "expectedNameSha256": "81153b43ad58b6fb2f308b10741f43a3353e0bf0097a4853d993d61fa188bca7",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8536",
+      "expectedUpc": "088110111038",
+      "expectedNameSha256": "863c3537b802f3fb2593b1e862bd836382427d91b3116d231dbc5bcaecb9fd37",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8537",
+      "expectedUpc": "088076163386",
+      "expectedNameSha256": "a4af3f770e93545a3d4bc60130adb902567c5179519555ff6cd5d2c716f0daa4",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8538",
+      "expectedUpc": "088110158606",
+      "expectedNameSha256": "861f0d3358e88a213197002e3713c75e4a15a71fc06d7b7a2177c71b91ee0b5d",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "8539",
+      "expectedUpc": "088110111120",
+      "expectedNameSha256": "926a9e9cc8e0d971028f423f1fbc2180aa8a6fa9d68b6f0dc9baca18fadb0030",
+      "replaceTextFrom": "Tangueray",
+      "replaceTextTo": "Tanqueray",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.diageo.com/en/our-brands/gin/tanqueray",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Tanqueray spelling. Change only the misspelled brand token; preserve Gin, Vodka, Sterling, Rangpur, Ten, gift package, age/proof and size text exactly."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2577",
+      "expectedUpc": "087000007246",
+      "expectedNameSha256": "ef4342170a6b5813fb5a9e22da27f64298a71d695a28f49d293351bcb054bbf9",
+      "replaceTextFrom": "Crown royale",
+      "replaceTextTo": "Crown Royal",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.crownroyal.com/canadian-whisky",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Crown Royal spelling. Remove spurious final e from brand only; do not infer Deluxe, Regal or other expression."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2578",
+      "expectedUpc": "082000771586",
+      "expectedNameSha256": "6859f837b9a0d22069aabadc4b7ad99eec6b35ce963d1d884307de26bbc330e5",
+      "replaceTextFrom": "Crown royale",
+      "replaceTextTo": "Crown Royal",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.crownroyal.com/canadian-whisky",
+          "kind": "manufacturer",
+          "supports": "Manufacturer confirms Crown Royal spelling. Remove spurious final e from brand only; do not infer Deluxe, Regal or other expression."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "826",
+      "expectedUpc": "031000007119",
+      "expectedNameSha256": "fb130fdda1d7578b8626805bfb80e9d41a875e9ae98004c8de38bb1740114222",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "834",
+      "expectedUpc": "031000101251",
+      "expectedNameSha256": "a019de6f7a6e573b5c032bef51fdae25fbcdaf64fcfa05e9dcbebbefa35cab44",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "836",
+      "expectedUpc": "031000223243",
+      "expectedNameSha256": "3161e4ad42b0d4cf0bad399b163a9a86f5a75b5f3e4c84a6d826f2bdcb66f965",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "827",
+      "expectedUpc": "031000007201",
+      "expectedNameSha256": "48ac50ac034e8dcaba687e1f4c0dbd0e2850616d9b73c8212f3cffd4d8692e08",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "833",
+      "expectedUpc": "031000101015",
+      "expectedNameSha256": "e559abe8dfa3e5c38bbe223beca0243c9486dcd83e52d02755a9694e356b0094",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "831",
+      "expectedUpc": "031000007355",
+      "expectedNameSha256": "a98562109123b2046a44959939414ee673aa74fbd984651810850938542bb0c5",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "835",
+      "expectedUpc": "031000109387",
+      "expectedNameSha256": "47eed0f78cc30a7a30a10f2cfa54fc98b8562e7ba1ac7d5d4cc77b4fa351c744",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "837",
+      "expectedUpc": "031000811044",
+      "expectedNameSha256": "a180442cf785db85ae05781a9ed4791e05342e43cb426cac7ed5470738aee17c",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "832",
+      "expectedUpc": "031000007492",
+      "expectedNameSha256": "3a485db8526e6b203a7439075a605e692449a6c0c99fa46f0ba5260b89fe27a3",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "828",
+      "expectedUpc": "031000007218",
+      "expectedNameSha256": "2b1f07467f4c1a1f6a270197a702d78643a365ead066ed4ca6153dfb0b677ffc",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "829",
+      "expectedUpc": "031000007256",
+      "expectedNameSha256": "f49c1aaacfa7f68220f3c6581d948c0c333e709da9a16d6131e9f7d78ff33c27",
+      "replaceTextFrom": "Banquet",
+      "replaceTextTo": "Banquet ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.banquet.com/frozen-meals",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4264",
+      "expectedUpc": "051000062833",
+      "expectedNameSha256": "4feec63bed99e2ab523d87ea3a1720980bd346b97f980ecae608fc332e16c488",
+      "replaceTextFrom": "Hungry man",
+      "replaceTextTo": "Hungry man ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.hungry-man.com/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4265",
+      "expectedUpc": "051000063205",
+      "expectedNameSha256": "dd180b1efdad97f4ad8a1cc0c6c92895b006fda492ffe9a33d63f7266de84d02",
+      "replaceTextFrom": "Hungry man",
+      "replaceTextTo": "Hungry man ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.hungry-man.com/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4266",
+      "expectedUpc": "051000118608",
+      "expectedNameSha256": "26769382cd296b3e310f44f617e5914d840b573f54f15b14bb37ddc3657d7d82",
+      "replaceTextFrom": "Hungry man",
+      "replaceTextTo": "Hungry man ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.hungry-man.com/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4267",
+      "expectedUpc": "658276202781",
+      "expectedNameSha256": "68bce9aa94877ea69171b9ff1a51b01ec0f83f4e4762b86b866332425e73fc53",
+      "replaceTextFrom": "Hungry man",
+      "replaceTextTo": "Hungry man ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.hungry-man.com/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1949",
+      "expectedUpc": "028400047913",
+      "expectedNameSha256": "d090ab6e07b4e5b6aa04d16b839e3cae3fbfaf70b2837e8c673fe6098b107c94",
+      "replaceTextFrom": "cheetos",
+      "replaceTextTo": "cheetos ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.cheetos.com/products/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1946",
+      "expectedUpc": "028400648769",
+      "expectedNameSha256": "a700076bdba020c85aac18be4e95389104bcd2bbdd90a60294ce94226f1d0bab",
+      "replaceTextFrom": "Cheetos",
+      "replaceTextTo": "Cheetos ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.cheetos.com/products/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1948",
+      "expectedUpc": "028400305907",
+      "expectedNameSha256": "a700076bdba020c85aac18be4e95389104bcd2bbdd90a60294ce94226f1d0bab",
+      "replaceTextFrom": "Cheetos",
+      "replaceTextTo": "Cheetos ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.cheetos.com/products/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1947",
+      "expectedUpc": "028400674164",
+      "expectedNameSha256": "6703abf972484863f14124f79d15474ff2693b17a12456e3a18149ac4699cd07",
+      "replaceTextFrom": "cheetos",
+      "replaceTextTo": "cheetos ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.cheetos.com/products/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2915",
+      "expectedUpc": "028400070546",
+      "expectedNameSha256": "25b41c7b4927cf68cfa633584bc52f9334c7e9a6016256b3b0b9d01e330a2a62",
+      "replaceTextFrom": "doritos",
+      "replaceTextTo": "doritos ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.doritos.com/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2961",
+      "expectedUpc": "028400009515",
+      "expectedNameSha256": "16184199b0b4c5bd056dc4d297f8b04db38a62818375f414e8a4dc94dbab079a",
+      "replaceTextFrom": "DORITOS",
+      "replaceTextTo": "DORITOS ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.doritos.com/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6808",
+      "expectedUpc": "038000848926",
+      "expectedNameSha256": "0d87bac5bbbdc9361407a9b81ea4ceaa35e660578375119f8d85167ffe2af588",
+      "replaceTextFrom": "Pringles",
+      "replaceTextTo": "Pringles ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.pringles.com/en-us/products/all.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6807",
+      "expectedUpc": "038000845536",
+      "expectedNameSha256": "db7b1a872c501159ee9b39fd1e91014760eedccd9ac13ccf4d57db8f9940da9a",
+      "replaceTextFrom": "Pringles",
+      "replaceTextTo": "Pringles ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.pringles.com/en-us/products/all.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6805",
+      "expectedUpc": "038000845512",
+      "expectedNameSha256": "f18044e3eb1174117014763429f42e8ad3721c762001ba8db14e5ac083af5c63",
+      "replaceTextFrom": "Pringles",
+      "replaceTextTo": "Pringles ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.pringles.com/en-us/products/all.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6806",
+      "expectedUpc": "038000845529",
+      "expectedNameSha256": "765735efcf00713e84ad83e5cea2ada0a5b58097c29715fc622601a67c24c490",
+      "replaceTextFrom": "Pringles",
+      "replaceTextTo": "Pringles ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.pringles.com/en-us/products/all.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7226",
+      "expectedUpc": "028400002912",
+      "expectedNameSha256": "962c5dd5649b356838a69e31557ed4e1202a2dce9571ce8e953cec652212f7c7",
+      "replaceTextFrom": "ruffles",
+      "replaceTextTo": "ruffles ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.ruffles.com/search",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "7803",
+      "expectedUpc": "082000761488",
+      "expectedNameSha256": "5727a415190b3a4b6a9fc29f90a64b2d20a55a9f15cedce325fdfe3b2195bf8f",
+      "replaceTextFrom": "SMIRNOFF",
+      "replaceTextTo": "SMIRNOFF ",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://www.smirnoff.com/en-us",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9251",
+      "expectedUpc": "078271000548",
+      "expectedNameSha256": "391c04baf98e4284076c59cfab10c1f4a300dbe92c969c04b6fbefe95f8eac13",
+      "replaceTextFrom": "VINERS",
+      "replaceTextTo": "VITNER'S",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://investors.utzsnacks.com/news/news-details/2021/Utz-Brands-to-Acquire-Vitners-Snack-Food-Brand-and-Distribution-Assets/default.aspx",
+          "kind": "manufacturer",
+          "supports": "Manufacturer states VITNER\u2019S registered brand; repair missing t and possessive punctuation only. Original crunchy snack expression and UPC are retained; full flavor/package identity not verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9252",
+      "expectedUpc": "078271002061",
+      "expectedNameSha256": "87e50d4f8d0764ae89825d8f492b382605682a2c92d8358e65bb7a718835ec74",
+      "replaceTextFrom": "VINERS",
+      "replaceTextTo": "VITNER'S",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://investors.utzsnacks.com/news/news-details/2021/Utz-Brands-to-Acquire-Vitners-Snack-Food-Brand-and-Distribution-Assets/default.aspx",
+          "kind": "manufacturer",
+          "supports": "Manufacturer states VITNER\u2019S registered brand; repair missing t and possessive punctuation only. Original crunchy snack expression and UPC are retained; full flavor/package identity not verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4130",
+      "expectedUpc": "034000013814",
+      "expectedNameSha256": "45fa35c2d6b2b1c119ccc4445d00473989ffc73f2148501539453d768c07539c",
+      "replaceTextFrom": "Hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4140",
+      "expectedUpc": "342430",
+      "expectedNameSha256": "3ffbfcd39bc2ab4827d4628c9d2c4e3fc9def6d2e045b3e31c0cbc53cb0bb52d",
+      "replaceTextFrom": "Hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4138",
+      "expectedUpc": "034000249862",
+      "expectedNameSha256": "0246186af76dfcf62f205f39d498a1d1183a5fdfc369deb8c514c6414f252d70",
+      "replaceTextFrom": "hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4137",
+      "expectedUpc": "034000702152",
+      "expectedNameSha256": "96d38ab9078e84e9c3e0fe94ae59d7ff264cd6e72998029354ce9cdd567896f6",
+      "replaceTextFrom": "hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4135",
+      "expectedUpc": "034000243105",
+      "expectedNameSha256": "e23f157682e02fce878ac0fecf4521400c9acf051dbe9b0ae5a92b525d29c843",
+      "replaceTextFrom": "hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4131",
+      "expectedUpc": "342390",
+      "expectedNameSha256": "6c35d8fcc6b777bb34f4239bc32356dae0b59b1d1794350ae5ffd43d1f6287a3",
+      "replaceTextFrom": "Hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4132",
+      "expectedUpc": "342400",
+      "expectedNameSha256": "d1781fcbb0de165cd8b1a310b9ecf1dddfb91dbec477529f371e85ee7220316a",
+      "replaceTextFrom": "Hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4133",
+      "expectedUpc": "342410",
+      "expectedNameSha256": "06de6fb11d878fcf88972b67fc75feab044ecc3215823f196ac7221aa910619b",
+      "replaceTextFrom": "Hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4134",
+      "expectedUpc": "072250007672",
+      "expectedNameSha256": "14cefe1fb346bf2db7c04d9520a925b82c2765138afdd4201cd3d84db65e833a",
+      "replaceTextFrom": "hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4136",
+      "expectedUpc": "072250916417",
+      "expectedNameSha256": "4f390b7e7515dd0c5f5c54223d968dd98c41a6b27d4853ef93cd965e2d9e5c01",
+      "replaceTextFrom": "hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "4139",
+      "expectedUpc": "034000702343",
+      "expectedNameSha256": "eee030a977189aecb4a12b48f16ca8697114739b9211cfe11bd0381f970125d8",
+      "replaceTextFrom": "hersheys",
+      "replaceTextTo": "Hershey's",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
+          "kind": "manufacturer",
+          "supports": "Manufacturer uses HERSHEY\u2019S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
     }
   ],
   "identityReviews": [

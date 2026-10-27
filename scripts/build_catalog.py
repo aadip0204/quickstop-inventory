@@ -370,6 +370,37 @@ def validated_name_overrides(manifest: dict | None) -> tuple[dict, dict]:
     return tuple(mappings)
 
 
+def validated_repair_image_review(review: object, sku: str) -> None:
+    required = {'expectedName', 'expectedLabel', 'expectedImageSha256', 'verification', 'evidence'}
+    if not isinstance(review, dict) or set(review) != required:
+        raise ValueError(f'Repaired image review contains missing, unsupported or private fields: {sku}')
+    for field in ('expectedName', 'expectedLabel'):
+        value = review[field]
+        if (not isinstance(value, str) or not value.strip() or PRICE_RE.search(value)
+                or re.search(r'[$€£]|(?:^|\s)(?:/Users/|/home/|file:)', value)):
+            raise ValueError(f'Repaired image review requires safe public identity fields: {sku}')
+    if (not isinstance(review['expectedImageSha256'], str)
+            or not re.fullmatch(r'[a-f0-9]{64}', review['expectedImageSha256'])):
+        raise ValueError(f'Repaired image review requires an exact image hash: {sku}')
+    checks = review['verification']
+    if (not isinstance(checks, dict)
+            or set(checks) != {'brand', 'expression', 'size', 'packaging', 'upc', 'visual'}
+            or any(value is not True for value in checks.values())):
+        raise ValueError(f'Repaired image review requires every identity check: {sku}')
+    evidence = review['evidence']
+    kinds = {'manufacturer', 'exact_upc_listing', 'inspected_package_photo'}
+    if (not isinstance(evidence, list) or not evidence
+            or any(not isinstance(item, dict) or not {'kind', 'url'}.issubset(item)
+                   or set(item) - {'kind', 'url', 'supports'} or item['kind'] not in kinds
+                   or not isinstance(item['url'], str) or not re.fullmatch(r'https?://[^\s]+', item['url'])
+                   or ('supports' in item and (not isinstance(item['supports'], str)
+                       or PRICE_RE.search(item['supports'])
+                       or re.search(r'[$€£]|(?:^|\s)(?:/Users/|/home/|file:)', item['supports'])))
+                   for item in evidence)
+            or {item['kind'] for item in evidence} != kinds):
+        raise ValueError(f'Repaired image review requires manufacturer, UPC and inspected-photo URLs: {sku}')
+
+
 def validated_source_reviews(manifest: dict | None) -> dict:
     if not manifest:
         return {}
@@ -398,10 +429,12 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                 raise ValueError(f'Container material must be glass or PET: {sku}')
             validated_report_evidence(entry.get('reportEvidence'), sku)
         if entry['action'] == 'repair_unquoted_name_commas':
-            allowed |= {'expectedRejoinedNameSha256', 'reportEvidence'}
+            allowed |= {'expectedRejoinedNameSha256', 'reportEvidence', 'imageIdentityReview'}
             if not re.fullmatch(r'[a-f0-9]{64}', entry.get('expectedRejoinedNameSha256', '')):
                 raise ValueError(f'CSV repair requires an exact rejoined name guard: {sku}')
             validated_report_evidence(entry.get('reportEvidence'), sku)
+            if 'imageIdentityReview' in entry:
+                validated_repair_image_review(entry['imageIdentityReview'], sku)
         if entry['action'] == 'restore_named_merchandise':
             allowed |= {'sanitizedSourceName', 'forceSizeNeedsConfirmation'}
             name = entry.get('sanitizedSourceName')
@@ -665,7 +698,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                         # corroborated CSV title; only normalize punctuation.
                         public['name'] = re.sub(r'\s*,\s*', ', ', public['name']).strip(' ,')
                     flags.append('Guarded unquoted CSV name commas repaired using exact SKU report evidence; raw fields preserved privately')
-                    flags.append('Repaired SKU grouping isolated and image blocked pending exact identity review')
+                    flags.append('Repaired SKU grouping isolated; image requires its own exact identity review')
                 elif review['action'] == 'clarify_container_material':
                     has_measure = any(extract_dimensions(adjusted_source[field])['measures']
                                       for field in ('ItemName', 'PackName'))
@@ -772,6 +805,29 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     blocked_images = {sku for sku, review in source_reviews.items()
                       if review['action'] != 'resolve_verified_identity'}
     blocked_images.update(entry['sku'] for entry in report_additions)
+    variants_by_sku = {v['sku']: (p, v) for p in products for v in p['variants']}
+    for sku, source_review in source_reviews.items():
+        image_review = source_review.get('imageIdentityReview')
+        if image_review is None:
+            continue
+        entries = image_manifest.get('images', []) if isinstance(image_manifest, dict) else []
+        if not isinstance(entries, list):
+            entries = []
+        matches = [entry for entry in entries if isinstance(entry, dict) and entry.get('sku') == sku]
+        if len(matches) != 1:
+            raise ValueError(f'Repaired image review requires exactly one corresponding image: {sku}')
+        product, variant = variants_by_sku.get(sku, ({}, {}))
+        if (not variant.get('upc') or variant.get('label', '').startswith('Size ')
+                or not extract_dimensions(variant.get('label', ''))['measures']):
+            raise ValueError(f'Repaired image review requires retained identity with known UPC and size: {sku}')
+        expected = (source_review['expectedUpc'], image_review['expectedName'], image_review['expectedLabel'])
+        if expected != (variant['upc'], product['name'], variant['label']):
+            raise ValueError(f'Repaired image review identity mismatch for SKU {sku}')
+        entry = matches[0]
+        if (entry.get('expectedUpc'), entry.get('expectedName'), entry.get('expectedLabel'), entry.get('sha256')) != (
+                *expected, image_review['expectedImageSha256']):
+            raise ValueError(f'Repaired image manifest does not match exact review: {sku}')
+        blocked_images.remove(sku)
     verified_images = apply_verified_images(products, image_manifest, blocked_images)
     populated = {p['department'] for p in products}
     categories = []

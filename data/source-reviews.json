@@ -1973,7 +1973,37 @@
         }
       ],
       "reason": "Exact SKU and report description corroborate unquoted commas inside the original title; preserve original fields privately and restore standard classification. Packaging conflicts remain unresolved.",
-      "reviewedOn": "2026-10-27"
+      "reviewedOn": "2026-10-27",
+      "imageIdentityReview": {
+        "expectedName": "Breyers Vanilla Chocolate Strawberry",
+        "expectedLabel": "1.5 qt",
+        "expectedImageSha256": "32489bd58fd54bb8ada38bcbacde28bd6b9ef472285aa2490c1dc16dd258cd2b",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.breyers.com/us/en/p/vanilla-chocolate-strawberry.html/00077567254269",
+            "supports": "Exact GTIN identifies the Vanilla Chocolate Strawberry expression and the 1.5 QT tub."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://world-en.openfoodfacts.org/product/0077567254269",
+            "supports": "Exact normalized UPC record supplies the inspected original image and actual uploader credit."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/756/725/4269/1.jpg",
+            "supports": "Inspected original depicts the Breyers three-flavor black tub; label explicitly reads 1.5 QUART (1.41 L)."
+          }
+        ]
+      }
     },
     {
       "sku": "2847",

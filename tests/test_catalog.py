@@ -65,6 +65,25 @@ def report_manifest(*entries):
     return {'schemaVersion': 1, 'records': result}
 
 
+def repaired_image_fixture(source):
+    review = comma_repair_review(source)
+    catalog, _ = builder.build(source, source_reviews_manifest=review)
+    sku = review['reviews'][0]['sku']
+    product, variant = next((p, v) for p in catalog['products'] for v in p['variants'] if v['sku'] == sku)
+    # Reuse a local approved asset to test integrity checks; the synthetic test
+    # metadata is never written to the public catalog or approval manifests.
+    image = copy.deepcopy(json.loads((ROOT / 'data/image-manifest.json').read_text())['images'][0])
+    image.update(sku=sku, expectedUpc=variant['upc'], expectedName=product['name'], expectedLabel=variant['label'])
+    review['reviews'][0]['imageIdentityReview'] = {
+        'expectedName': product['name'], 'expectedLabel': variant['label'],
+        'expectedImageSha256': image['sha256'],
+        'verification': {key: True for key in ('brand', 'expression', 'size', 'packaging', 'upc', 'visual')},
+        'evidence': [{'kind': kind, 'url': 'https://example.test/' + kind}
+                     for kind in ('manufacturer', 'exact_upc_listing', 'inspected_package_photo')],
+    }
+    return review, {'schemaVersion': 1, 'images': [image]}
+
+
 class ImportTests(unittest.TestCase):
     def test_exact_grouping_preserves_brand_flavor_strength_and_age(self):
         catalog, _ = builder.build(export(
@@ -286,6 +305,88 @@ class ImportTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Image blocked'):
             builder.build(source, source_reviews_manifest=review,
                           image_manifest={'schemaVersion': 1, 'images': [{'sku': '9239'}]})
+
+    def test_repaired_image_review_allows_only_its_exact_sku(self):
+        source = export() + b'002,000123456789,Example Mango,Lime 12oz,,Juice,4.99,-2,\n'
+        source += b'003,000123456789,Example Mango,Lime 12oz,,Juice,4.99,-2,\n'
+        review, images = repaired_image_fixture(source)
+        review['reviews'].extend(comma_repair_review(source, row=2)['reviews'])
+        catalog, audit = builder.build(source, source_reviews_manifest=review, image_manifest=images)
+        variants = {v['sku']: v for p in catalog['products'] for v in p['variants']}
+        self.assertIsNotNone(variants['002']['image'])
+        self.assertIsNone(variants['003']['image'])
+        self.assertEqual(len(catalog['products']), 2)
+        self.assertEqual(audit['verifiedImages'], 1)
+        self.assertEqual([r['rawFields'] for r in audit['records']], list(csv.reader(io.StringIO(source.decode())))[1:])
+        sibling = copy.deepcopy(images['images'][0])
+        sibling['sku'] = '003'
+        with self.assertRaisesRegex(ValueError, 'Image blocked'):
+            builder.build(source, source_reviews_manifest=review,
+                          image_manifest={'schemaVersion': 1, 'images': images['images'] + [sibling]})
+        with self.assertRaisesRegex(ValueError, 'identity mismatch'):
+            builder.build(source.replace(b'4.99', b'5.99', 1), source_reviews_manifest=review, image_manifest=images)
+
+    def test_repaired_image_review_rejects_stale_identity_hash_and_missing_image(self):
+        source = export() + b'002,000123456789,Example Mango,Lime 12oz,,Juice,4.99,-2,\n'
+        review, images = repaired_image_fixture(source)
+        for field, value in [('expectedName', 'Other Flavor'), ('expectedLabel', '16 oz'),
+                             ('expectedImageSha256', '0' * 64)]:
+            wrong = copy.deepcopy(review)
+            wrong['reviews'][0]['imageIdentityReview'][field] = value
+            with self.subTest(field=field), self.assertRaisesRegex(ValueError, 'identity mismatch|does not match exact review'):
+                builder.build(source, source_reviews_manifest=wrong, image_manifest=images)
+        for field, value in [('expectedUpc', '000123456788'), ('expectedName', 'Other Flavor'),
+                             ('expectedLabel', '16 oz'), ('sha256', '0' * 64)]:
+            wrong = copy.deepcopy(images)
+            wrong['images'][0][field] = value
+            with self.subTest(field=field), self.assertRaisesRegex(ValueError, 'does not match exact review'):
+                builder.build(source, source_reviews_manifest=review, image_manifest=wrong)
+        for absent in (None, {'schemaVersion': 1, 'images': []}, {'schemaVersion': 1, 'images': images['images'] * 2}):
+            with self.assertRaisesRegex(ValueError, 'exactly one corresponding image'):
+                builder.build(source, source_reviews_manifest=review, image_manifest=absent)
+        wrong_review, wrong_image = copy.deepcopy(review), copy.deepcopy(images)
+        wrong_review['reviews'][0]['imageIdentityReview']['expectedImageSha256'] = '0' * 64
+        wrong_image['images'][0]['sha256'] = '0' * 64
+        with self.assertRaisesRegex(ValueError, 'hash does not match'):
+            builder.build(source, source_reviews_manifest=wrong_review, image_manifest=wrong_image)
+        for field, value in [('professional', False), ('visual', False)]:
+            wrong = copy.deepcopy(images)
+            wrong['images'][0]['verification'][field] = value
+            with self.assertRaisesRegex(ValueError, 'professional-quality'):
+                builder.build(source, source_reviews_manifest=review, image_manifest=wrong)
+        wrong = copy.deepcopy(images)
+        wrong['images'][0]['license'] = ''
+        with self.assertRaisesRegex(ValueError, 'requires license'):
+            builder.build(source, source_reviews_manifest=review, image_manifest=wrong)
+
+    def test_repaired_image_review_rejects_private_data_incomplete_evidence_and_unknown_size(self):
+        source = export() + b'002,000123456789,Example Mango,Lime 12oz,,Juice,4.99,-2,\n'
+        review, images = repaired_image_fixture(source)
+        for key in ('brand', 'expression', 'size', 'packaging', 'upc', 'visual'):
+            wrong = copy.deepcopy(review)
+            wrong['reviews'][0]['imageIdentityReview']['verification'][key] = False
+            with self.assertRaisesRegex(ValueError, 'every identity check'):
+                builder.build(source, source_reviews_manifest=wrong, image_manifest=images)
+        mutations = [lambda x: x.update(rawPath='/Users/private/source.csv'),
+                     lambda x: x.update(expectedName='Example $4.99'),
+                     lambda x: x['evidence'].pop(),
+                     lambda x: x['evidence'][0].update(url='file:///Users/private/photo.jpg')]
+        for mutate in mutations:
+            wrong = copy.deepcopy(review)
+            mutate(wrong['reviews'][0]['imageIdentityReview'])
+            with self.assertRaises(ValueError):
+                builder.build(source, source_reviews_manifest=wrong, image_manifest=images)
+        wrong = copy.deepcopy(review)
+        wrong['reviews'][0]['action'] = 'size_needs_confirmation'
+        for field in ('reportEvidence', 'expectedRejoinedNameSha256'):
+            wrong['reviews'][0].pop(field)
+        with self.assertRaisesRegex(ValueError, 'unsupported or private fields'):
+            builder.build(source, source_reviews_manifest=wrong, image_manifest=images)
+        for title in (b'Example Mango,Lime', b'Example Mango,Lime 12oz 16oz'):
+            uncertain = export() + b'002,000123456789,' + title + b',,Juice,4.99,-2,\n'
+            unknown_review, unknown_image = repaired_image_fixture(uncertain)
+            with self.assertRaisesRegex(ValueError, 'known UPC and size'):
+                builder.build(uncertain, source_reviews_manifest=unknown_review, image_manifest=unknown_image)
 
     def test_report_additions_preserve_original_rows_and_never_merge_or_infer_upc(self):
         source = export({'ItemName': 'Example Juice 12oz', 'DEPNAME': 'Juice'})
