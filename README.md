@@ -28,6 +28,8 @@ A CSV comma repair stays isolated from other products. Its image remains blocked
 
 A previously uncertain identity can be resolved only by a guarded review matching the original row, UPC, current name and confirmation label. Manufacturer, exact-UPC and inspected-package evidence must agree on the new identity and size. Resolved records stay isolated, require a valid retained UPC, and still need their own licensed professional image approval. Unchanged names have separate verification records so reviewing a correct name does not inflate the correction count.
 
+Names may also be checked against a captured manufacturer record that explicitly states the exact valid UPC and product expression. This separate name-only method records the publisher, source URL and captured-page hash; it preserves original sizes, packs, containers and strength statements. Delegated SmartLabel records require the manufacturer's exact sitemap reference and matching UPC in the product path. Historical retired records are marked as such and do not establish current availability. These checks do not approve photographs or resolve package-size conflicts, and their counts remain separate in the audit.
+
 ## Validation and deployment
 
 Run the Python tests with `python3 -m unittest discover -s tests -v`, and the frontend tests with `node --test tests/catalog-ui.test.cjs`. For full-source reconciliation, set `QUICKSTOP_PRIVATE_INPUT` to the absolute CSV path when running the Python tests. Never place the private CSV in CI.

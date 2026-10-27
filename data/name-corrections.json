@@ -14488,6 +14488,2022 @@
           "supports": "Individually inspected Cretors package explicitly reads Cheese & Caramel Mix and Handcrafted Small-Batch Popcorn. Brand and expression are corroborated. Its 7.5 oz measurement is not assigned to the unspecified-size source variant, and this photo remains withheld."
         }
       ]
+    },
+    {
+      "sku": "1992",
+      "expectedUpc": "064144043064",
+      "expectedNameSha256": "56a4e2c6844ce408664d3307eed63fdb8b8ac1869de54965ff7b00e499736686",
+      "replaceTextFrom": "chef Boyardeebeef ravioli",
+      "replaceTextTo": "Chef Boyardee Mini Ravioli Beef Ravioli in Pasta Sauce",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.conagra.com/064144043064-0001-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 064144043064 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Conagra Brands",
+        "productUrl": "https://smartlabel.conagra.com/064144043064-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.conagra.com/064144043064-0001-en-US/index.html",
+        "observedUpc": "064144043064",
+        "observedName": "Chef Boyardee Mini Ravioli, Beef Ravioli In Pasta Sauce",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "bbc8993ae163f622d11ed91c9d97eb29e3bc5e2e8298aa2a7654435f76c40d14",
+        "retiredNotice": true
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Chef Boyardee Mini Ravioli Beef Ravioli in Pasta Sauce"
+    },
+    {
+      "sku": "4268",
+      "expectedUpc": "027000390054",
+      "expectedNameSha256": "9dd380db4d2263ec3b3402ce1c722b255576478adf8a8d05ba113c60577f2ec2",
+      "replaceTextFrom": "hunts tomato sauce",
+      "replaceTextTo": "Hunt's Tomato Sauce",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.conagra.com/027000390054-0001-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 027000390054 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Conagra Brands",
+        "productUrl": "https://smartlabel.conagra.com/027000390054-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.conagra.com/027000390054-0001-en-US/index.html",
+        "observedUpc": "027000390054",
+        "observedName": "Hunt's Tomato Sauce",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "f8baac392d2dc84ec2931bb688a253248aa7c15d6d8e48adefc759b900800877",
+        "retiredNotice": false
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Hunt's Tomato Sauce"
+    },
+    {
+      "sku": "7670",
+      "expectedUpc": "026200101927",
+      "expectedNameSha256": "8dc3c5369a6aa02eb10233569cd6e6a364cfcbaf7d18d29adbd88782cb2dec27",
+      "replaceTextFrom": "SLIM JIM ORIGINAL 0.28OZ",
+      "replaceTextTo": "Slim Jim Original Smoked Snack Stick 0.28OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.conagra.com/026200101927-0001-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 026200101927 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Conagra Brands",
+        "productUrl": "https://smartlabel.conagra.com/026200101927-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.conagra.com/026200101927-0001-en-US/index.html",
+        "observedUpc": "026200101927",
+        "observedName": "Slim Jim Smoked Snack Stick, Original",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "173376fc179feee871116c95630599762f20e89d22c3c468c5d34534fb7a6488",
+        "retiredNotice": false
+      },
+      "expectedLabel": "0.28 oz",
+      "verifiedPublicName": "Slim Jim Original Smoked Snack Stick"
+    },
+    {
+      "sku": "2735",
+      "expectedUpc": "026200006161",
+      "expectedNameSha256": "21a5893d8e42d27402220061eadf1f3b045063800568d718a20d00de55d80b77",
+      "replaceTextFrom": "David Sunflower Seeds 1.75oz",
+      "replaceTextTo": "DAVID Original Salted & Roasted Sunflower Seeds 1.75oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.conagra.com/026200006161-0001-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 026200006161 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Conagra Brands",
+        "productUrl": "https://smartlabel.conagra.com/026200006161-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.conagra.com/026200006161-0001-en-US/index.html",
+        "observedUpc": "026200006161",
+        "observedName": "DAVID Seeds Salted & Roasted Sunflower Seeds, Original",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "b5dbaa8ca1ed08059e6cc9c73d5af666b94f3bd3505988fa3a531a8bdc7f21aa",
+        "retiredNotice": false
+      },
+      "expectedLabel": "1.75 oz",
+      "verifiedPublicName": "DAVID Original Salted & Roasted Sunflower Seeds"
+    },
+    {
+      "sku": "1195",
+      "expectedUpc": "070640002474",
+      "expectedNameSha256": "d746a791ca2b2dfe97a499bf6defeda9b1bc1327464ed00361cbd60d7d92bc39",
+      "replaceTextFrom": "BLUE BUNNY CHOCOLATE ECLAIR BA",
+      "replaceTextTo": "Blue Bunny Chocolate Éclair Bar",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/bars/chocolate-eclair",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 070640002474 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Wells Enterprises",
+        "productUrl": "https://wellsfoodservice.com/products/blue-bunny/bars/chocolate-eclair",
+        "publisherEvidenceUrl": "https://wellsfoodservice.com/products/blue-bunny/bars/chocolate-eclair",
+        "observedUpc": "070640002474",
+        "observedName": "Blue Bunny Chocolate Éclair Bar",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "23829a19c6f5f8240ac4f38da940a0bc15c77ad019faa2feb0836c59363a9865",
+        "retiredNotice": false
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Blue Bunny Chocolate Éclair Bar"
+    },
+    {
+      "sku": "1196",
+      "expectedUpc": "070640310852",
+      "expectedNameSha256": "49ff2c182e82ec0af4d8299bcf8b19553d65423af5aae42288da3f644e096ab6",
+      "replaceTextFrom": "BLUE BUNNY cookie and cream sa",
+      "replaceTextTo": "Blue Bunny Cookies 'N Cream Sandwich",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://wellsfoodservice.com/products/blue-bunny/sandwiches/cookies-n-cream",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 070640310852 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Wells Enterprises",
+        "productUrl": "https://wellsfoodservice.com/products/blue-bunny/sandwiches/cookies-n-cream",
+        "publisherEvidenceUrl": "https://wellsfoodservice.com/products/blue-bunny/sandwiches/cookies-n-cream",
+        "observedUpc": "070640310852",
+        "observedName": "Blue Bunny Cookies 'N Cream Sandwich",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "de812942bbc3b9435e634d4990c16549389ddfb6fe69c42830cc016290682b4b",
+        "retiredNotice": false
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Blue Bunny Cookies 'N Cream Sandwich"
+    },
+    {
+      "sku": "4879",
+      "expectedUpc": "021000658930",
+      "expectedNameSha256": "8bfc43fc01582613d3896d928faf707ef734c7338168e366cef9f1ab96a68166",
+      "replaceTextFrom": "Kraft velveetashells & cheese",
+      "replaceTextTo": "Velveeta Shells & Cheese Original Shell Pasta & Cheese Sauce Meal",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/velveeta/products/00021000658930",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 021000658930 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Kraft Heinz",
+        "productUrl": "https://www.kraftheinz.com/velveeta/products/00021000658930",
+        "publisherEvidenceUrl": "https://www.kraftheinz.com/velveeta/products/00021000658930",
+        "observedUpc": "021000658930",
+        "observedName": "Velveeta Shells & Cheese Original Shell Pasta & Cheese Sauce Meal",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "fd756402efd7c2bb6714e96f1eb9c0f29b1d6662f6f7484b60ea3f05e711a640",
+        "retiredNotice": false
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Velveeta Shells & Cheese Original Shell Pasta & Cheese Sauce Meal"
+    },
+    {
+      "sku": "4852",
+      "expectedUpc": "043000955697",
+      "expectedNameSha256": "72c37c50cdcddffa9e98eab90046dff789412522d5c6c97a3049ef15b6582dc6",
+      "replaceTextFrom": "Kool Aid Lemonade",
+      "replaceTextTo": "Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 043000955697 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Kraft Heinz",
+        "productUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
+        "publisherEvidenceUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
+        "observedUpc": "043000955697",
+        "observedName": "Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "3f4f45bec4fa3f44434447f6a87f9e619a8922d25797fb86b55863cd5ffb3a7c",
+        "retiredNotice": false
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix"
+    },
+    {
+      "sku": "4853",
+      "expectedUpc": "043000955611",
+      "expectedNameSha256": "5e937c2a2d033748ca5e2c7d62ca42970c16339dd7a53350890774320817083a",
+      "replaceTextFrom": "KOOL AID STRAW",
+      "replaceTextTo": "Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 043000955611 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Kraft Heinz",
+        "productUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
+        "publisherEvidenceUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
+        "observedUpc": "043000955611",
+        "observedName": "Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "f61e2d749bc0389e7edf55363e1b99028934b47110630365efa21dd0c4090f46",
+        "retiredNotice": false
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix"
+    },
+    {
+      "sku": "4860",
+      "expectedUpc": "043000955628",
+      "expectedNameSha256": "50853d2d0ddd0375a6222f1be53d0debf85dc10c55ede182cf6d28a8c0713f82",
+      "replaceTextFrom": "KOOL-AID cherry",
+      "replaceTextTo": "Kool-Aid Unsweetened Cherry Artificially Flavored Powdered Soft Drink Mix",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955628",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 043000955628 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Kraft Heinz",
+        "productUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955628",
+        "publisherEvidenceUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955628",
+        "observedUpc": "043000955628",
+        "observedName": "Kool-Aid Unsweetened Cherry Artificially Flavored Powdered Soft Drink Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "87dd30a9018f1341696eceeaf0b33a87f967699e2bc28d3c4b378fa5c24cda95",
+        "retiredNotice": false
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Kool-Aid Unsweetened Cherry Artificially Flavored Powdered Soft Drink Mix"
+    },
+    {
+      "sku": "4861",
+      "expectedUpc": "043000955635",
+      "expectedNameSha256": "5569e0b9e3de0cd85a4bfd94b05b94ab6c947aad5211355416703f89b1c095f9",
+      "replaceTextFrom": "KOOL-AID grape",
+      "replaceTextTo": "Kool-Aid Unsweetened Grape Artificially Flavored Powdered Soft Drink Mix",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955635",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 043000955635 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Kraft Heinz",
+        "productUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955635",
+        "publisherEvidenceUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955635",
+        "observedUpc": "043000955635",
+        "observedName": "Kool-Aid Unsweetened Grape Artificially Flavored Powdered Soft Drink Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "9d8e80255c097caa523482053dfeaea59caf7b98421bf60dac8d4eafaaba5d14",
+        "retiredNotice": false
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Kool-Aid Unsweetened Grape Artificially Flavored Powdered Soft Drink Mix"
+    },
+    {
+      "sku": "4863",
+      "expectedUpc": "043000955437",
+      "expectedNameSha256": "10e38dacdb73f131558b8ea61f237100771622b79d7c9ef1aafb01a05aaff153",
+      "replaceTextFrom": "KOOL-AID TROPICL PUNCH",
+      "replaceTextTo": "Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955437",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 043000955437 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "Kraft Heinz",
+        "productUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955437",
+        "publisherEvidenceUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955437",
+        "observedUpc": "043000955437",
+        "observedName": "Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "5542539b6fa4d5980e90c99b58c5f991d6acddb0dd3f3bf829c43d90c7e2117c",
+        "retiredNotice": false
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix"
+    },
+    {
+      "sku": "1964",
+      "expectedUpc": "028400433181",
+      "expectedNameSha256": "0e7eeb97e1c1865755f76c2748c79816efe40faee7d07a1cc0107ef91f2d65df",
+      "replaceTextFrom": "Cheetos crunchy 3 1/2OZ",
+      "replaceTextTo": "Cheetos Crunchy Cheese Flavored Snacks 3 1/2OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400433181-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400433181 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400433181-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400433181-0010-en-US/index.html",
+        "observedUpc": "028400433181",
+        "observedName": "Cheetos, Crunchy, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "003d0dac75f031521c7d8f050badb1e90c6d3f7bdf1d870cdde6b4afe01da54c",
+        "retiredNotice": true
+      },
+      "expectedLabel": "3.5 oz",
+      "verifiedPublicName": "Cheetos Crunchy Cheese Flavored Snacks"
+    },
+    {
+      "sku": "1966",
+      "expectedUpc": "028400097550",
+      "expectedNameSha256": "c1d6cfd7a17f66a85fe22bd5160a6746ca0443c864e3ef81ebfb2425bddb14ab",
+      "replaceTextFrom": "Cheetos Crunchy 3 1/4oz",
+      "replaceTextTo": "Cheetos Crunchy Cheese Flavored Snacks 3 1/4oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400097550-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400097550 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400097550-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400097550-0010-en-US/index.html",
+        "observedUpc": "028400097550",
+        "observedName": "Cheetos, Crunchy, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "1fd215da32042948cfacd2d5517a4a0e1fb8279d4c8abccc99e8d664364c3075",
+        "retiredNotice": true
+      },
+      "expectedLabel": "3.25 oz",
+      "verifiedPublicName": "Cheetos Crunchy Cheese Flavored Snacks"
+    },
+    {
+      "sku": "1960",
+      "expectedUpc": "028400047906",
+      "expectedNameSha256": "79da4827d3001dc850321a1ffd557547cac00d8d8378fc559c5445016690513a",
+      "replaceTextFrom": "cheetos crunchy   56.7g",
+      "replaceTextTo": "Cheetos Crunchy Cheese Flavored Snacks 56.7g",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400047906-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400047906 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400047906-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400047906-0010-en-US/index.html",
+        "observedUpc": "028400047906",
+        "observedName": "Cheetos, Crunchy, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "1284af2cf471eef2dd09f1109dde358b91966f3309544b46da6ac496a5d912bc",
+        "retiredNotice": true
+      },
+      "expectedLabel": "56.7 g",
+      "verifiedPublicName": "Cheetos Crunchy Cheese Flavored Snacks"
+    },
+    {
+      "sku": "1963",
+      "expectedUpc": "028400040112",
+      "expectedNameSha256": "3a8b0ec6f293873181f5662a746a404b18c845cf174514580aff2c7f59ce2527",
+      "replaceTextFrom": "CHEETOS CRUNCHY 1OZ",
+      "replaceTextTo": "Cheetos Crunchy Cheese Flavored Snacks 1OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400040112-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400040112 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400040112-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400040112-0010-en-US/index.html",
+        "observedUpc": "028400040112",
+        "observedName": "Cheetos, Crunchy, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "685d970bb9afc5af7adec33142606f29245feeaa73bf581c93dce9844b5e3e42",
+        "retiredNotice": true
+      },
+      "expectedLabel": "1 oz",
+      "verifiedPublicName": "Cheetos Crunchy Cheese Flavored Snacks"
+    },
+    {
+      "sku": "1965",
+      "expectedUpc": "028400433921",
+      "expectedNameSha256": "aef7396135edbfe4c7edd4630a10f67403998f74d9ecdf8c74543c62a1d3e04d",
+      "replaceTextFrom": "Cheetos crunchy 3 1/2OZjalapeno",
+      "replaceTextTo": "Cheetos Crunchy Cheddar Jalapeno Cheese Flavored Snacks 3 1/2OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400433921-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400433921 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400433921-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400433921-0010-en-US/index.html",
+        "observedUpc": "028400433921",
+        "observedName": "Cheetos, Crunchy, Cheddar Jalapeno, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e9f9f1428d93c2e219a444ee2e2ad190bce05bd1fdce5a6702d68c5431f8722f",
+        "retiredNotice": true
+      },
+      "expectedLabel": "3.5 oz",
+      "verifiedPublicName": "Cheetos Crunchy Cheddar Jalapeno Cheese Flavored Snacks"
+    },
+    {
+      "sku": "1961",
+      "expectedUpc": "028400329460",
+      "expectedNameSha256": "d1df1a047749a292d34ce925e691b4e95b645656b1b2d38e397789a3bb9ae358",
+      "replaceTextFrom": "Cheetos crunchy  xxtra  flamin",
+      "replaceTextTo": "Cheetos Crunchy XXtra Flamin' Hot Flavored Cheese Flavored Snacks",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400329460-0001-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400329460 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400329460-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400329460-0001-en-US/index.html",
+        "observedUpc": "028400329460",
+        "observedName": "Cheetos, Crunchy, Xxtra Flamin' Hot Flavored, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "c8f3e26b80b85976941056513a2aa7fdd4c36ce6342bb5bec0eb05ad85f419d0",
+        "retiredNotice": true
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Cheetos Crunchy XXtra Flamin' Hot Flavored Cheese Flavored Snacks"
+    },
+    {
+      "sku": "2923",
+      "expectedUpc": "028400097673",
+      "expectedNameSha256": "7f8143a0b6b4222096787a5d98d036ec344926428bd4da887b66c67b7bdbe283",
+      "replaceTextFrom": "Doritos Cool Ranch 2 7/8oz",
+      "replaceTextTo": "Doritos Cool Ranch Flavored Tortilla Chips 2 7/8oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400097673-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400097673 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400097673-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400097673-0010-en-US/index.html",
+        "observedUpc": "028400097673",
+        "observedName": "Doritos, Cool Ranch Flavored, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "b3fb74b826821ffc0a66233760f325f7d77268c51bd1f56b66a9d646d2d8f830",
+        "retiredNotice": true
+      },
+      "expectedLabel": "2.875 oz",
+      "verifiedPublicName": "Doritos Cool Ranch Flavored Tortilla Chips"
+    },
+    {
+      "sku": "2924",
+      "expectedUpc": "028400420716",
+      "expectedNameSha256": "a125b7da46b05255dd5955432709fcc6a93ae06f10d5723447a038f2556fe78b",
+      "replaceTextFrom": "DORITOS cool ranch 3 1/8Oz",
+      "replaceTextTo": "Doritos Cool Ranch Flavored Tortilla Chips 3 1/8Oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400420716-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400420716 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400420716-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400420716-0010-en-US/index.html",
+        "observedUpc": "028400420716",
+        "observedName": "Doritos, Cool Ranch Flavored, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "6da9a384383e9963dd886459f239201efa441de1357acf5f69df93843dded0db",
+        "retiredNotice": true
+      },
+      "expectedLabel": "3.125 oz",
+      "verifiedPublicName": "Doritos Cool Ranch Flavored Tortilla Chips"
+    },
+    {
+      "sku": "2930",
+      "expectedUpc": "028400421157",
+      "expectedNameSha256": "acfb1aa7216f057e7f99569cac8e5e08d630f5c9b161b68d5a6054eba77082c3",
+      "replaceTextFrom": "Doritos Flamas",
+      "replaceTextTo": "Doritos Flamas Flavored Tortilla Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400421157-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400421157 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400421157-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400421157-0010-en-US/index.html",
+        "observedUpc": "028400421157",
+        "observedName": "Doritos, Flamas Flavored, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "b9ff83421dc2400968b1f331c98475604c9e0c0f0043dca77877e6ffe202a212",
+        "retiredNotice": true
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Doritos Flamas Flavored Tortilla Chips"
+    },
+    {
+      "sku": "2931",
+      "expectedUpc": "028400199575",
+      "expectedNameSha256": "8141ce0debf309e69df8e4ab049d50914c2e00974a098d72290f18a23852973f",
+      "replaceTextFrom": "Doritos FLAMIN HOT Nacho",
+      "replaceTextTo": "Doritos Flamin' Hot Nacho Flavored Tortilla Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400199575-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400199575 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400199575-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400199575-0010-en-US/index.html",
+        "observedUpc": "028400199575",
+        "observedName": "Doritos, Flamin' Hot Nacho Flavored, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "22e173d3f14b950f6e6561b4d2b6fe5f90b907524ef46cd37a062a864e1430ef",
+        "retiredNotice": true
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Doritos Flamin' Hot Nacho Flavored Tortilla Chips"
+    },
+    {
+      "sku": "2926",
+      "expectedUpc": "028400162128",
+      "expectedNameSha256": "da9cd280a9ee71c6378eb3225a0dbd8b785863397a2f89f2e49c0c66d764784a",
+      "replaceTextFrom": "Doritos Dinamita chile limon",
+      "replaceTextTo": "Doritos Dinamita Chile Limon Flavored Rolled Tortilla Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/028400162128-0010-en-US/index.html",
+          "supports": "The manufacturer record explicitly connects the exact source unit UPC 028400162128 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
+        }
+      ],
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/028400162128-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/028400162128-0010-en-US/index.html",
+        "observedUpc": "028400162128",
+        "observedName": "Doritos, Dinamita, Chile Limon Flavored, Rolled Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "de42ec8615164a5b6458e803d066c2caca2fc36648113d801c812eabc924fe75",
+        "retiredNotice": true
+      },
+      "expectedLabel": "Size not specified",
+      "verifiedPublicName": "Doritos Dinamita Chile Limon Flavored Rolled Tortilla Chips"
+    },
+    {
+      "sku": "1333",
+      "expectedUpc": "012000140211",
+      "expectedNameSha256": "6f22cb235ca10f00b7ee8558a6c57c7b3a011338b526761d7d241f15ea3a1f77",
+      "replaceTextFrom": "Brisk Blueberry 1 Liter",
+      "replaceTextTo": "Brisk Half & Half Iced Tea + Blueberry Lemonade 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedPublicName": "Brisk Half & Half Iced Tea + Blueberry Lemonade",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000140211-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000140211",
+        "observedName": "Brisk, Half & Half, Blueberry Lemonade Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e9d1c80738336383bbdb9a210f9037866c6c80e2f4c9cad10a718a779d58bb28",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000140211-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000140211 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1335",
+      "expectedUpc": "012000042669",
+      "expectedNameSha256": "7b3345b91cda257dc47af598f6ce5dffc55de1ff174e7897b6c20692ed7d5722",
+      "replaceTextFrom": "Brisk cherry lime  1 Liter",
+      "replaceTextTo": "Brisk Half & Half Iced Tea + Cherry Limeade 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1 L",
+      "verifiedPublicName": "Brisk Half & Half Iced Tea + Cherry Limeade",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000042669-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000042669",
+        "observedName": "Brisk, Half & Half, Cherry Limeade Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "f685bddf1eda05e34182962d07f4b31764c56e25e7555c6af588d089eb6579d7",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000042669-0001-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000042669 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1337",
+      "expectedUpc": "012000638404",
+      "expectedNameSha256": "c0d1a380020c22b09dc139e8ccd6cb8f2db6782ad2a7dd0832a08077b6b3481e",
+      "replaceTextFrom": "Brisk Fruit Punch 2L",
+      "replaceTextTo": "Brisk Fruit Punch Juice Drink 2L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "2 L",
+      "verifiedPublicName": "Brisk Fruit Punch Juice Drink",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000638404-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000638404",
+        "observedName": "Brisk, Fruit Punch, Juice Drink",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "52501b0c8cb5d8dd31215401b94485da2d27b50a4ab040d8e90e47f12ce4fd34",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000638404-0011-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000638404 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1339",
+      "expectedUpc": "012000042737",
+      "expectedNameSha256": "1eb70a787c05e623775ee81c7a8d68e781e2bccd16d24301bab7222327659ba8",
+      "replaceTextFrom": "Brisk Half /Half  1 Liter",
+      "replaceTextTo": "Brisk Half & Half Iced Tea + Tropical Lemonade 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1 L",
+      "verifiedPublicName": "Brisk Half & Half Iced Tea + Tropical Lemonade",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000042737-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000042737",
+        "observedName": "Brisk, Half & Half, Tropical Lemonade Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "2ecab06925cd92c08da3c784c63f4db5641a9878af6c6e2900ddd41fda82d566",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000042737-0011-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000042737 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1347",
+      "expectedUpc": "012000002731",
+      "expectedNameSha256": "2f138c39fbcb0f9307708eb8ef99899e6ffbe0e147a9a71dc36a9ae3d5c9cc05",
+      "replaceTextFrom": "BRISK LEMONADE 20OZ",
+      "replaceTextTo": "Brisk Lemonade Juice Drink 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "20 oz",
+      "verifiedPublicName": "Brisk Lemonade Juice Drink",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000002731-0002-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000002731",
+        "observedName": "Brisk, Lemonade, Juice Drink",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "0e6bba51e01af4eb320b409788955ed5592e8e1a066dc829fa89e0536617fe61",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000002731-0002-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000002731 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1349",
+      "expectedUpc": "012000528590",
+      "expectedNameSha256": "82dc16d0c325bfae232f682c9e9c17f35971a57a1e99e3f6ca5344e4be6b5c03",
+      "replaceTextFrom": "Brisk Peach 1 Liter",
+      "replaceTextTo": "Brisk Peach Iced Tea 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1 L",
+      "verifiedPublicName": "Brisk Peach Iced Tea",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/012000528590-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/012000528590-0011-en-US/index.html",
+        "observedUpc": "012000528590",
+        "observedName": "Brisk, Peach Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "9fe37f72ec14f459fb471d7bb4040de7c48897e354adc245577899bd21854ae6",
+        "retiredNotice": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/012000528590-0011-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000528590 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification. The actual page explicitly marks this historical record retired; the retained original source UPC is verified against its historical name, not asserted current availability."
+        }
+      ]
+    },
+    {
+      "sku": "1351",
+      "expectedUpc": "012000141652",
+      "expectedNameSha256": "30b8d3007f8a68f07e7c5fecb87d380478473032c623dc72aa958116eeaa81f1",
+      "replaceTextFrom": "Brisk Pineapple 1 Liter",
+      "replaceTextTo": "Brisk Pineapple Passionfruit Iced Tea 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1 L",
+      "verifiedPublicName": "Brisk Pineapple Passionfruit Iced Tea",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000141652-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000141652",
+        "observedName": "Brisk, Pineapple Passionfruit Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "b6fae13b721ce03bcaf6a89372a75996efc6d42e339e74979c9f1c477e958d1e",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000141652-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000141652 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1353",
+      "expectedUpc": "012000881107",
+      "expectedNameSha256": "95639a71bd5ab0ded5a7e961c49b82051a4081299fa7e5267097fbe87e160989",
+      "replaceTextFrom": "Brisk Pink Lemonade 1 Liter",
+      "replaceTextTo": "Brisk Pink Lemonade Juice Drink 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1 L",
+      "verifiedPublicName": "Brisk Pink Lemonade Juice Drink",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/012000881107-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/012000881107-0012-en-US/index.html",
+        "observedUpc": "012000881107",
+        "observedName": "Brisk, Pink Lemonade, Juice Drink",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "6ffee852287283ce3ae000c85aa1ccb655429a27a9423a9ebb564fbdef02b5c8",
+        "retiredNotice": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/012000881107-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000881107 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification. The actual page explicitly marks this historical record retired; the retained original source UPC is verified against its historical name, not asserted current availability."
+        }
+      ]
+    },
+    {
+      "sku": "1354",
+      "expectedUpc": "012000033995",
+      "expectedNameSha256": "1d4709f9e35bbfcf563f4aed8f18e682bd1671262e5ddfcb076a728a97f5b0a6",
+      "replaceTextFrom": "Brisk Raspberry 1 Liter",
+      "replaceTextTo": "Brisk Raspberry Iced Tea 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1 L",
+      "verifiedPublicName": "Brisk Raspberry Iced Tea",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000033995-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000033995",
+        "observedName": "Brisk, Raspberry Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "41fa0bae7e0fed2378b73319541431cb32a53b196ae77381a81fb6cfc918a9b0",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000033995-0013-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000033995 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1357",
+      "expectedUpc": "012000161261",
+      "expectedNameSha256": "f2f656dee5ad753d7c36d5ba1c166be3f73108762f2db2cd602e858b2475d3cc",
+      "replaceTextFrom": "Brisk Strawberry Melon 2L",
+      "replaceTextTo": "Brisk Strawberry Melon Iced Tea 2L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "2 L",
+      "verifiedPublicName": "Brisk Strawberry Melon Iced Tea",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/012000161261-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/012000161261-0012-en-US/index.html",
+        "observedUpc": "012000161261",
+        "observedName": "Brisk, Strawberry Melon Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "a97a6b5fb2663d136e203d2d29978cd1ae33f916196cbd9df9a9795366a2ad26",
+        "retiredNotice": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/012000161261-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000161261 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification. The actual page explicitly marks this historical record retired; the retained original source UPC is verified against its historical name, not asserted current availability."
+        }
+      ]
+    },
+    {
+      "sku": "2833",
+      "expectedUpc": "012000809958",
+      "expectedNameSha256": "3fdca584042349d7cd8ee0d33c1f7f98f7de76852fd1c862f395cefe1fe2a48a",
+      "replaceTextFrom": "Diet Pepsi 12pkPack",
+      "replaceTextTo": "Diet Pepsi 12pk",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12-pack",
+      "verifiedPublicName": "Diet Pepsi",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Diet-Pepsi-%282-12-Packs%29/p/1-HYK-45684",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Diet-Pepsi-%282-12-Packs%29/p/1-HYK-45684",
+        "observedUpc": "012000809958",
+        "observedName": "Diet Pepsi (2/12 Packs)",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "b645feea76ee822d4e582a67bdec0bc1c12ded665be24ca7cd4c29d280b84ea3",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Diet-Pepsi-%282-12-Packs%29/p/1-HYK-45684",
+          "supports": "Manufacturer record explicitly links exact UPC 012000809958 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3654",
+      "expectedUpc": "052000135299",
+      "expectedNameSha256": "866f2b10f2096cbcdfb25a30e8a5312b85a05537fb3ae2491a2d8b81c0301096",
+      "replaceTextFrom": "Gatorade CITRUS COOLER 28oz",
+      "replaceTextTo": "Gatorade Citrus Cooler Thirst Quencher 28oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "28 oz",
+      "verifiedPublicName": "Gatorade Citrus Cooler Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000135299-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000135299",
+        "observedName": "Gatorade, Citrus Cooler Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "cb5c669b2a090f2e324d369cc8880d4df3bc6aa0e2400b0d1f33751710dda37c",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000135299-0013-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000135299 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3680",
+      "expectedUpc": "052000322170",
+      "expectedNameSha256": "5be988d54973bd2ff062fd3b5bb32a2b30f36a4da1a0129d4a14691a3986e659",
+      "replaceTextFrom": "Gatorade G2 Orange 32oz",
+      "replaceTextTo": "Gatorade G2 Orange Thirst Quencher 32oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "32 oz",
+      "verifiedPublicName": "Gatorade G2 Orange Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000322170-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000322170",
+        "observedName": "Gatorade, G2, Orange Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "472a753b8f40fd28c62ad1441a8ceb00fde60925e69130c8fa44c9e5ed0d3eba",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000322170-0011-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000322170 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3686",
+      "expectedUpc": "052000208719",
+      "expectedNameSha256": "351fd815cee20f85c0f440b00ff8e02683a4c4dd19e35e78bfef625fab5875e6",
+      "replaceTextFrom": "Gatorade Grape 20OZ",
+      "replaceTextTo": "Gatorade G2 Grape Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "20 oz",
+      "verifiedPublicName": "Gatorade G2 Grape Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000208719-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000208719",
+        "observedName": "Gatorade, G2, Grape Artificially Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "dbd3eac578ef1d70f174b97fdcf686523e18f5656c6008ae6ba2f465c49ac228",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000208719-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000208719 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "5878",
+      "expectedUpc": "012000809965",
+      "expectedNameSha256": "7afd8ba8290716e93381ef4a95797b0ebec9fddf6093dc3e0e2454300defc0d5",
+      "replaceTextFrom": "Mountain Dew 12pkPack",
+      "replaceTextTo": "Mountain Dew 12pk",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12-pack",
+      "verifiedPublicName": "Mountain Dew",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000809965-0022-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000809965",
+        "observedName": "Mountain Dew",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "cf2943a671eb3f2e0edf206a5fd7f0b408dfbe41c8faf2614a50afb728c6af0d",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000809965-0022-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000809965 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "6008",
+      "expectedUpc": "012000151217",
+      "expectedNameSha256": "9c2e11b2ca14cd97961a4c54bfe2855d12270215bb4bd7e730e1eb285144a60a",
+      "replaceTextFrom": "Mtn Dew Orange 12oz can",
+      "replaceTextTo": "Mountain Dew Kickstart Recharge Blood Orange 12oz can",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12 oz · cans",
+      "verifiedPublicName": "Mountain Dew Kickstart Recharge Blood Orange",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/012000151217-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/012000151217-0010-en-US/index.html",
+        "observedUpc": "012000151217",
+        "observedName": "Mountain Dew, Kickstart Recharge, Energizing Blood Orange Flavored, Sparkling Juice Beverage Blend",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "220242a13c8d37ddaa9e220df4c5a7df1b7cbc7aab64396dc865356c14902582",
+        "retiredNotice": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/012000151217-0010-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000151217 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification. The actual page explicitly marks this historical record retired; the retained original source UPC is verified against its historical name, not asserted current availability."
+        }
+      ]
+    },
+    {
+      "sku": "6010",
+      "expectedUpc": "012000151194",
+      "expectedNameSha256": "74a5f526f994fb2827ee9d243725bdcc910e3a03ce79d4209351abcc4cbd306d",
+      "replaceTextFrom": "Mtn Dew Watermelon 12oz can",
+      "replaceTextTo": "Mountain Dew Kickstart Hydrating Boost Watermelon 12oz can",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12 oz · cans",
+      "verifiedPublicName": "Mountain Dew Kickstart Hydrating Boost Watermelon",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/012000151194-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/012000151194-0010-en-US/index.html",
+        "observedUpc": "012000151194",
+        "observedName": "Mountain Dew, Kickstart Hydrating Boost, Energizing Watermelon Naturally & Artificially Flavored, Sparkling Juice Beverage Blend",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "34a30312cd5d638c19a306ee0ca722d6f8c68f2b7d19d7b7dcafd45a132f12db",
+        "retiredNotice": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/012000151194-0010-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000151194 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification. The actual page explicitly marks this historical record retired; the retained original source UPC is verified against its historical name, not asserted current availability."
+        }
+      ]
+    },
+    {
+      "sku": "6623",
+      "expectedUpc": "012000172229",
+      "expectedNameSha256": "d92f0ca76ccd7083f3779b370a04be776cb803bfa22091c8bca9a38048cc2725",
+      "replaceTextFrom": "PEPSI  DIET 24OZBOTTLE",
+      "replaceTextTo": "Diet Pepsi 24OZBOTTLE",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "24 oz · bottles",
+      "verifiedPublicName": "Diet Pepsi",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000172229-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000172229",
+        "observedName": "Diet Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "18e3b52c828703e5145795a48644ae060e7fa6d267d0175759ef7b3b3792524f",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000172229-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000172229 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3687",
+      "expectedUpc": "052000326734",
+      "expectedNameSha256": "4b2b2245495e3f5abb4b038391a073da2328fc1abf51f3216c7c19d050823ef3",
+      "replaceTextFrom": "Gatorade Grape 32oz",
+      "replaceTextTo": "Gatorade Fierce Grape Thirst Quencher 32oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "32 oz",
+      "verifiedPublicName": "Gatorade Fierce Grape Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000326734-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000326734",
+        "observedName": "Gatorade, Fierce, Grape Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "0d0c53cac06a43bfbba6015d7459ac99be57e14fa18de044bd77fee9aeb30a11",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000326734-0013-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000326734 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3691",
+      "expectedUpc": "052000121780",
+      "expectedNameSha256": "87151b7c5b151ee13dd164a15d54a8da386052b0c7de000a75bdd4f197f2cfa6",
+      "replaceTextFrom": "Gatorade lemon lime   12fl oz",
+      "replaceTextTo": "Gatorade Lemon Lime Thirst Quencher 12fl oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12 oz",
+      "verifiedPublicName": "Gatorade Lemon Lime Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000121780-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000121780",
+        "observedName": "Gatorade, Lemon Lime Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "c7127fe20e67c83d4e3c2123989f50940fe66116889f39fd8321b32fe4900096",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000121780-0016-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000121780 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3683",
+      "expectedUpc": "052000122510",
+      "expectedNameSha256": "1700ca72ce65e8a4fbce40b864970b50bd7823a21ad8b73cac2d5f45c5ab5821",
+      "replaceTextFrom": "Gatorade glacier    12fl oz",
+      "replaceTextTo": "Gatorade Glacier Freeze Thirst Quencher 12fl oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12 oz",
+      "verifiedPublicName": "Gatorade Glacier Freeze Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000122510-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000122510",
+        "observedName": "Gatorade, Glacier Freeze, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "71513335c5c8a55d07d3d8e5f9d7554b2a39456bfd5162df3190b640a4a2261d",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000122510-0015-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000122510 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "6003",
+      "expectedUpc": "012000140945",
+      "expectedNameSha256": "b59fbb23e33b6f5688f681b17235ef534293229daa677a241bcec7cfab91cd1d",
+      "replaceTextFrom": "mtn dew 1.25 liter",
+      "replaceTextTo": "Mountain Dew 1.25 liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1.25 L",
+      "verifiedPublicName": "Mountain Dew",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000140945-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000140945",
+        "observedName": "Mountain Dew",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "87e16f8badeabf7db01256d04338f3cb45f52a87453b7782b5d75453f1dd87c4",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000140945-0015-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000140945 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3652",
+      "expectedUpc": "052000104103",
+      "expectedNameSha256": "a8ce05d71424551f67a6015647d461d4e468e7439c34a43d803c88ab8432c35a",
+      "replaceTextFrom": "Gatorade Blue Cherry 28oz",
+      "replaceTextTo": "Gatorade Fierce Blue Cherry Thirst Quencher 28oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "28 oz",
+      "verifiedPublicName": "Gatorade Fierce Blue Cherry Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000104103-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000104103",
+        "observedName": "Gatorade, Fierce Blue Cherry Artificially Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "01a12243a8fcfaab84972e2bd8fde75882be1714c843938cb489df66d425fa2b",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000104103-0016-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000104103 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "6637",
+      "expectedUpc": "012000171734",
+      "expectedNameSha256": "e449acb50214f4571c5a1227f87f3e5bbd19710c1c8cfd4a8ce283b4dd039ba3",
+      "replaceTextFrom": "PEPSI DIET  1.25 LITER",
+      "replaceTextTo": "Diet Pepsi 1.25 LITER",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1.25 L",
+      "verifiedPublicName": "Diet Pepsi",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000171734-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000171734",
+        "observedName": "Diet Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "4124f1fd940f95b09d63b30d33444bd868a2f940191adaf573991c96dff4a194",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000171734-0013-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000171734 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1340",
+      "expectedUpc": "012000210655",
+      "expectedNameSha256": "d90b1bd836bdb1ebb85362928a57503e974c0c6bb822433ca5c26772f1098139",
+      "replaceTextFrom": "Brisk iced  Tea 1 Liter",
+      "replaceTextTo": "Brisk Blood Orange Iced Tea 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1 L",
+      "verifiedPublicName": "Brisk Blood Orange Iced Tea",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000210655-0003-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000210655",
+        "observedName": "Brisk, Blood Orange Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "025dfcd2e2c3f3ea2b961de6e418b43714e8509cd6b84ea0832b4e4f19c80595",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000210655-0003-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000210655 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3653",
+      "expectedUpc": "052000102413",
+      "expectedNameSha256": "0e268ba1eea8f0eb86cb3b714e3b43a0946bd75f1ff13eb50aa1d9a275fdb8fa",
+      "replaceTextFrom": "Gatorade Cherry 28ozGlacier Cherry",
+      "replaceTextTo": "Gatorade Glacier Cherry Thirst Quencher 28oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "28 oz",
+      "verifiedPublicName": "Gatorade Glacier Cherry Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000102413-0018-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000102413",
+        "observedName": "Gatorade, Glacier Cherry Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "1d83aab579bab460455f75bf69670b8c77f53675bbab4418981234e16709b1a2",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000102413-0018-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000102413 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3647",
+      "expectedUpc": "052000010299",
+      "expectedNameSha256": "c3f838ae31b3c43e34736f82b9f63f27a5d965e353e2519b5dbfffd949b1a667",
+      "replaceTextFrom": "Gatorade 28ozArctic Blitz",
+      "replaceTextTo": "Gatorade Arctic Blitz Thirst Quencher 28oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "28 oz",
+      "verifiedPublicName": "Gatorade Arctic Blitz Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000010299-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000010299",
+        "observedName": "Gatorade, Arctic Blitz, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "3ee4ad3b7a1bccfe8c1936b97095d524a2801a6737310c83410c88b2d798edb2",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000010299-0017-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000010299 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3698",
+      "expectedUpc": "052000208078",
+      "expectedNameSha256": "92ef60d925d0ad11f328399e5fa034e4f3d4201e5c045812591d000c19670593",
+      "replaceTextFrom": "Gatorade orange   20OZ",
+      "replaceTextTo": "Gatorade Orange Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "20 oz",
+      "verifiedPublicName": "Gatorade Orange Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000208078-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000208078",
+        "observedName": "Gatorade, Orange Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "a18b7e2c160ff35f5d5e567b098d2855c871707b78a128fd1d8cb43c6caf8385",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000208078-0017-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000208078 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3693",
+      "expectedUpc": "052000135152",
+      "expectedNameSha256": "537811928f406c97dc24d031378d41c140990df3c41d5cb3eba49b071b68ed69",
+      "replaceTextFrom": "Gatorade Lemon-Lime 28oz",
+      "replaceTextTo": "Gatorade Lemon-Lime Thirst Quencher 28oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "28 oz",
+      "verifiedPublicName": "Gatorade Lemon-Lime Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000135152-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000135152",
+        "observedName": "Gatorade, Lemon Lime Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "672753061651213253e42ea9ce4fbcb194b43104e26f8e1bebb213bc830ddfa4",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000135152-0017-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000135152 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3690",
+      "expectedUpc": "052000124859",
+      "expectedNameSha256": "757cadea077545ef6be9bb33cac6871b5bb0384924dfb86716be0d95f359f54c",
+      "replaceTextFrom": "GATORADE LEMON LIM     12FL OZ",
+      "replaceTextTo": "Gatorade Lemon Lime Thirst Quencher 12FL OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12 oz",
+      "verifiedPublicName": "Gatorade Lemon Lime Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000124859-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000124859",
+        "observedName": "Gatorade, Lemon Lime Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "955621060ebfdf7f836b4cc8d47b0804fbe737e94e6676dcada1d324e4135795",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000124859-0015-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000124859 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3694",
+      "expectedUpc": "052000047660",
+      "expectedNameSha256": "ab0c3ec547b634b082923a9765b0b5e93fced33e3f956aebcb0da9ace42ae068",
+      "replaceTextFrom": "Gatorade lime cucumber  20OZ",
+      "replaceTextTo": "Gatorade Lime Cucumber Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "20 oz",
+      "verifiedPublicName": "Gatorade Lime Cucumber Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000047660-0005-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000047660",
+        "observedName": "Gatorade, Lime Cucumber Artificially Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "de9c90a8d2413d91b0ea3ac2b60023352b396f38455e3fbc388dfdc54b182ec0",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000047660-0005-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000047660 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3665",
+      "expectedUpc": "052000135138",
+      "expectedNameSha256": "6cb7344d396ec87d5d8f6c89d609ccb5e5c923488e5063fb1d3ebfef3006e3d4",
+      "replaceTextFrom": "Gatorade Fruit Punch 28oz",
+      "replaceTextTo": "Gatorade Fruit Punch Thirst Quencher 28oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "28 oz",
+      "verifiedPublicName": "Gatorade Fruit Punch Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000135138-0018-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000135138",
+        "observedName": "Gatorade, Fruit Punch Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "7999fb2645b46a9a3d18acf4f21774c1c0e92862a2d09454b9bf94b0a2034a3f",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000135138-0018-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000135138 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3675",
+      "expectedUpc": "052000321999",
+      "expectedNameSha256": "9f53bd65a563eaccbda6b3e389b113f0947f8e144f1d5ef664804d27b52813d3",
+      "replaceTextFrom": "Gatorade G2 Grape 32oz",
+      "replaceTextTo": "Gatorade G2 Grape Thirst Quencher 32oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "32 oz",
+      "verifiedPublicName": "Gatorade G2 Grape Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/052000321999-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/052000321999-0011-en-US/index.html",
+        "observedUpc": "052000321999",
+        "observedName": "Gatorade, G2, Grape Artificially Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d81e38f9404c62735e1b0ebe591aaa61c59d16faa9b15af6dcd1474dd5b49b36",
+        "retiredNotice": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/052000321999-0011-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000321999 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification. The actual page explicitly marks this historical record retired; the retained original source UPC is verified against its historical name, not asserted current availability."
+        }
+      ]
+    },
+    {
+      "sku": "6627",
+      "expectedUpc": "012000809941",
+      "expectedNameSha256": "bc56cbd12ec80e95bd0b6dba7d068502a33e4196f42ad22fc2abe2f76c0294f5",
+      "replaceTextFrom": "PEPSI 12PKPACK",
+      "replaceTextTo": "Pepsi 12PK",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12-pack",
+      "verifiedPublicName": "Pepsi",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000809941-0050-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000809941",
+        "observedName": "Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "cdaf5f0dd03463c5b5154dfb5a0a4813b9785b24115ab45b60102645938668a3",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000809941-0050-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000809941 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3657",
+      "expectedUpc": "052000122060",
+      "expectedNameSha256": "26cb5cadcd3076781397d8f41d7823dcd9f830c515248aca7c1d7f0c545df449",
+      "replaceTextFrom": "Gatorade cool blue    12fl oz",
+      "replaceTextTo": "Gatorade Cool Blue Thirst Quencher 12fl oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12 oz",
+      "verifiedPublicName": "Gatorade Cool Blue Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000122060-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000122060",
+        "observedName": "Gatorade, Cool Blue, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "a53df994182274905fa72666343eb14e84b098cebe504c2ad9a1d6d47b876f45",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000122060-0014-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000122060 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1360",
+      "expectedUpc": "012000161476",
+      "expectedNameSha256": "b443e3caa53d6140fd9cb2330e156499f3c8e0a22315d1aba2f343be6f1506d2",
+      "replaceTextFrom": "Brisk watermelon ice tea  1L",
+      "replaceTextTo": "Brisk Half & Half Iced Tea + Watermelon Lemonade 1L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedPublicName": "Brisk Half & Half Iced Tea + Watermelon Lemonade",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000161476-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000161476",
+        "observedName": "Brisk, Half & Half, Watermelon Lemonade Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "225c4b3a7c2a53a5422c873736e658ca66cd8ec6c6477585cb836061668223a4",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000161476-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000161476 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1332",
+      "expectedUpc": "012000193736",
+      "expectedNameSha256": "2bf9f9baccce170bbe76cd27a93a12903782a8f95dfd5b667bb6b374cf8d5266",
+      "replaceTextFrom": "Brisk BLACKBERRY 1L",
+      "replaceTextTo": "Brisk Blackberry Smash Iced Tea 1L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedPublicName": "Brisk Blackberry Smash Iced Tea",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000193736-0002-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000193736",
+        "observedName": "Brisk, Blackberry Smash, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "c25cd26b04015e0b36e477be4ef2f9e91cdce2576a946813cbebc53ac1fdc455",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000193736-0002-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000193736 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1342",
+      "expectedUpc": "012000202384",
+      "expectedNameSha256": "df7ca03fe8a431bf271f23078cbe6d551bc2c127c1944ba7cfbf1e08bd7b0c50",
+      "replaceTextFrom": "Brisk Lemon  1L",
+      "replaceTextTo": "Brisk Lemon Iced Tea 1L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "1 L",
+      "verifiedPublicName": "Brisk Lemon Iced Tea",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000202384-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000202384",
+        "observedName": "Brisk, Lemon Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "9aa19f609a66784bb81ebe3d236f6d000704782a21db9888ae390b964fc845a0",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000202384-0014-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000202384 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3699",
+      "expectedUpc": "052000328677",
+      "expectedNameSha256": "7cd08f4d800b9aa872da1ceb2fe7a8ce2b3efd2e7494f788f0673954a0d2829d",
+      "replaceTextFrom": "Gatorade Orange 20oz",
+      "replaceTextTo": "Gatorade Orange Thirst Quencher 20oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "20 oz",
+      "verifiedPublicName": "Gatorade Orange Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000328677-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000328677",
+        "observedName": "Gatorade, Orange Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "8d22c958349499c2ef16fa20e2cb01561f4e8e67e999c9b81d5543da1181764d",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000328677-0013-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000328677 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1330",
+      "expectedUpc": "012000034015",
+      "expectedNameSha256": "5c22f274190eef7e10f9e19aeb98ba274e3f60314687e96bf9077b706df805a8",
+      "replaceTextFrom": "Brisk  half & half  lemonad 1L",
+      "replaceTextTo": "Brisk Half & Half Iced Tea + Lemonade 1L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedPublicName": "Brisk Half & Half Iced Tea + Lemonade",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000034015-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000034015",
+        "observedName": "Brisk, Half & Half, Lemonade Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "f12c51d3e67da73f60a3c953dca23209af5920cea0547a1ab87ae886719ccdb9",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000034015-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000034015 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1359",
+      "expectedUpc": "012000031878",
+      "expectedNameSha256": "f4f65cd47d890c1e36c2b01890c99453342ca53697bc678bf8aaff7bef5ce060",
+      "replaceTextFrom": "Brisk Sweet Tea 1 Liter",
+      "replaceTextTo": "Brisk Sweet Iced Tea 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedPublicName": "Brisk Sweet Iced Tea",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000031878-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000031878",
+        "observedName": "Brisk, Sweet Tea, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e3fdd00e9b9041485fd83cfc6ebba5b613b9af169c9f041a22db60d8b0c6d254",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000031878-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000031878 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3689",
+      "expectedUpc": "052000208054",
+      "expectedNameSha256": "68f2701b52107db909101a2e155f04fdb3171bb1b290426e96c969ba408fb336",
+      "replaceTextFrom": "Gatorade lemon 20OZ",
+      "replaceTextTo": "Gatorade Lemon Lime Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "20 oz",
+      "verifiedPublicName": "Gatorade Lemon Lime Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000208054-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000208054",
+        "observedName": "Gatorade, Lemon Lime Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e7320ed9af76b1930170fdbb8d380a03c7468bdd0a1cd07714313ed55f393f42",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000208054-0015-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000208054 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3658",
+      "expectedUpc": "052000208443",
+      "expectedNameSha256": "26865d581f065bcdbb3c9210103e8a588533a3ae4c9cbac20c8cc66330a3c7e9",
+      "replaceTextFrom": "Gatorade cool blue 20OZ",
+      "replaceTextTo": "Gatorade Cool Blue Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "20 oz",
+      "verifiedPublicName": "Gatorade Cool Blue Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000208443-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000208443",
+        "observedName": "Gatorade, Cool Blue, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "5733ef6b5314ce3f3ab0b0dce1b27a23943e9b249c43aaa869927acaf8125e48",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000208443-0016-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000208443 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3663",
+      "expectedUpc": "052000208061",
+      "expectedNameSha256": "6f53646ed43a6a5f6500e113d40d5e165ae453a41cec098a40398fb406b28bf4",
+      "replaceTextFrom": "Gatorade fruit punch 20OZ",
+      "replaceTextTo": "Gatorade Fruit Punch Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "20 oz",
+      "verifiedPublicName": "Gatorade Fruit Punch Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000208061-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000208061",
+        "observedName": "Gatorade, Fruit Punch Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "131098eac01e93165e7b78c4abaea4ce7a86211e7bfe744fb8a7dcccd3c0c7bd",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000208061-0017-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000208061 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "1334",
+      "expectedUpc": "098000100127",
+      "expectedNameSha256": "5b967ce0c85094b0f5f22026a1fd94492fad7a7bdcbea5fb2389067a94d2ca0d",
+      "replaceTextFrom": "Brisk blueberry pomegranate 1L",
+      "replaceTextTo": "Brisk Blueberry Pomegranate Iced Tea 1L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedPublicName": "Brisk Blueberry Pomegranate Iced Tea",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/098000100127-0002-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "098000100127",
+        "observedName": "Brisk, Blueberry Pomegranate Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "7c733903d0505c832e0336e79db732daa34510d40c3ed2265eb38a43dd523112",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/098000100127-0002-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 098000100127 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3643",
+      "expectedUpc": "052000135169",
+      "expectedNameSha256": "c1ce53755f6dac9efed70cb95faf68f3f898f10ac190b90b232d1576845c161f",
+      "replaceTextFrom": "Gatorade    grape  28oz",
+      "replaceTextTo": "Gatorade Fierce Grape Thirst Quencher 28oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "28 oz",
+      "verifiedPublicName": "Gatorade Fierce Grape Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000135169-0019-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000135169",
+        "observedName": "Gatorade, Fierce Grape Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "5ffa9c7f87da6c268d11e4a0bb8126738c966c448f21ccef75eee177fb3e50e4",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000135169-0019-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000135169 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3650",
+      "expectedUpc": "052000104776",
+      "expectedNameSha256": "68853cd6c58f9e84b964d789119641e74dde44dcda5b3f27a0287fa69303364e",
+      "replaceTextFrom": "Gatorade blue cherry  12fl oz",
+      "replaceTextTo": "Gatorade Fierce Blue Cherry Thirst Quencher 12fl oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12 oz",
+      "verifiedPublicName": "Gatorade Fierce Blue Cherry Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000104776-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000104776",
+        "observedName": "Gatorade, Fierce Blue Cherry Artificially Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "db611f28cfdc5141a23375f8caa8c1607e48b5d24bdd0a32a65fab8fc862d601",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000104776-0014-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000104776 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "3660",
+      "expectedUpc": "052000325553",
+      "expectedNameSha256": "38214f8dc944b8a97f6ce3f5d358f8219b8c6951aa38244f0dfc6e475634e17e",
+      "replaceTextFrom": "Gatorade Cool Blue 32oz",
+      "replaceTextTo": "Gatorade Cool Blue Thirst Quencher 32oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "32 oz",
+      "verifiedPublicName": "Gatorade Cool Blue Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/052000325553-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/052000325553-0012-en-US/index.html",
+        "observedUpc": "052000325553",
+        "observedName": "Gatorade, Cool Blue, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "9de39bb1fe40e6cc25435ab57117c6b378d5c9bfa93c92b2f084e4ae9101a115",
+        "retiredNotice": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/052000325553-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000325553 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification. The actual page explicitly marks this historical record retired; the retained original source UPC is verified against its historical name, not asserted current availability."
+        }
+      ]
+    },
+    {
+      "sku": "3667",
+      "expectedUpc": "052000104783",
+      "expectedNameSha256": "fa7fe33e35a952a281ca36117dcc76f648d02bfc647ee3e633e3fe4ba630e9c5",
+      "replaceTextFrom": "Gatorade fruit punch+  berry12 fl oz",
+      "replaceTextTo": "Gatorade Fierce Fruit Punch + Berry Thirst Quencher 12 fl oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "12 oz",
+      "verifiedPublicName": "Gatorade Fierce Fruit Punch + Berry Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000104783-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000104783",
+        "observedName": "Gatorade, Fierce, Fruit Punch + Berry Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "5d2951531f2d4a3646e05adcb55569c5cc40836db332ffde620346c195b400cb",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000104783-0013-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 052000104783 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -16555,6 +18571,230 @@
           "kind": "inspected_package_photo",
           "url": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_04d41192-9440-4b69-ad54-833b58bf48d7.jpg",
           "supports": "Existing OFF candidate is nutrition panel only and cannot verify front wording. Separately downloaded and actually viewed Cub front shows Minute Maid Lemonade20fl oz. Retailer image is private reference only. Private name evidence only; no public image approval."
+        }
+      ]
+    },
+    {
+      "sku": "5880",
+      "expectedUpc": "012000567414",
+      "expectedNameSha256": "b96e15f33d8b76c9cff7ff1318241e742d3ddcb3799743f7b5703448b23baeaf",
+      "expectedPublicName": "Mountain Dew White Out",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.pepsico.info/012000567414-0010-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/012000567414-0010-en-US/index.html",
+        "observedUpc": "012000567414",
+        "observedName": "Mountain Dew, White Out, Smooth Citrus Flavor Dew",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "56e4c681b59f06cd5e79614df6a6c5a6a39fcfea872bc7ee4751573b3450ea83",
+        "retiredNotice": true
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/012000567414-0010-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000567414 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification. The actual page explicitly marks this historical record retired; the retained original source UPC is verified against its historical name, not asserted current availability."
+        }
+      ]
+    },
+    {
+      "sku": "6628",
+      "expectedUpc": "012000813320",
+      "expectedNameSha256": "3fcc1f916b25dd8bdc6876db0daee0c375315dcf5bda727d1338fbdfa2999d5e",
+      "expectedPublicName": "PEPSI",
+      "expectedLabel": "16 oz",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000813320-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000813320",
+        "observedName": "Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "91b4a9fa82c3aed423c9edeeb6bc12734a686b8ec22f33f9d2aeaa73ad52486f",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000813320-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000813320 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "6632",
+      "expectedUpc": "012000106040",
+      "expectedNameSha256": "d3ca3431d10336c18a4a715b4d469954da4f4f6b82d07d0abfa88f9d3c3228e1",
+      "expectedPublicName": "PEPSI",
+      "expectedLabel": "20-pack · cans",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000106040-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000106040",
+        "observedName": "Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "6da76073fda6da0fbbee46685139c4fe1a2d716c1a02223a20d8d108d8cde27f",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000106040-0012-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000106040 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "2870",
+      "expectedUpc": "012000064524",
+      "expectedNameSha256": "f1b99abe59d45d8063929233e1105a1033d1ad3c5f0b86b625b09bd5dcd38efe",
+      "expectedPublicName": "DOLE LEMONADE",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000064524-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000064524",
+        "observedName": "Dole, Lemonade",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "a28c76488c65d5887823af51d5b853e180c49f2e9eb2dbad2691255d9d6a3dfd",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000064524-0014-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000064524 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "2877",
+      "expectedUpc": "012000064531",
+      "expectedNameSha256": "6ff6dde1581547bd7f0d8900e8d9430ee8df6e1e304830bbf5dbb5a9fa728468",
+      "expectedPublicName": "DOLE STRAWBERRY LEMONADE",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000064531-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000064531",
+        "observedName": "Dole, Strawberry Lemonade",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "467673f858d704a02d7320129ae4678a9386b6211d9132a9c13abedcf9495ff5",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000064531-0014-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000064531 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "6629",
+      "expectedUpc": "012000504051",
+      "expectedNameSha256": "bcf2408ad9420f0da2d22b41d7ff16551443faa0a812686d0b1da48b8a61e4d1",
+      "expectedPublicName": "PEPSI",
+      "expectedLabel": "16 oz",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000504051-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000504051",
+        "observedName": "Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "f0a46ef3108bcdcca197a6ecedd71ec88e1301b21107454fe4fec7bb282430f4",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000504051-0017-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000504051 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "6619",
+      "expectedUpc": "012000002304",
+      "expectedNameSha256": "c4905029a903c8fd424c5548304e1620c38dfea3d9dfe143723044d7ab648ce7",
+      "expectedPublicName": "PEPSI",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000002304-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000002304",
+        "observedName": "Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "eb8824b441d6fe392f953c42fb3c064da6275623a25a13db296238557099e971",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000002304-0011-en-US/index.html",
+          "supports": "Manufacturer record explicitly links exact UPC 012000002304 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
         }
       ]
     }
