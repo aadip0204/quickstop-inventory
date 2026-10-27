@@ -84,7 +84,119 @@ def repaired_image_fixture(source):
     return review, {'schemaVersion': 1, 'images': [image]}
 
 
+def category_review(source, category='food', row=1, name_manifest=None):
+    raw = list(csv.reader(io.StringIO(source.decode())))[row]
+    catalog, _ = builder.build(source, name_manifest=name_manifest)
+    product, variant = next((p, v) for p in catalog['products'] for v in p['variants'] if v['sku'] == raw[0])
+    return {'sku': raw[0], 'expectedUpc': raw[1],
+            'expectedNameSha256': hashlib.sha256(raw[2].encode()).hexdigest(),
+            'expectedSourceRecordSha256': hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest(),
+            'expectedDepartment': raw[4], 'expectedPublicName': product['name'],
+            'expectedLabel': variant['label'], 'expectedCategory': product['category'],
+            'category': category, 'reviewedOn': '2026-10-27',
+            'reason': 'Exact reviewed product belongs in this shopping category.',
+            'evidence': [{'kind': 'manufacturer', 'url': 'https://example.test/reviewed-product'}]}
+
+
 class ImportTests(unittest.TestCase):
+    def test_category_override_splits_only_reviewed_sku_and_preserves_source_department(self):
+        source = export({'ItemName': 'Example Crackers 4oz', 'DEPNAME': 'MISC'},
+                        {'ItemName': 'Example Crackers 8oz', 'DEPNAME': 'MISC'},
+                        {'ItemName': 'Other Pasta 12oz', 'DEPNAME': 'GROCERY'})
+        baseline, _ = builder.build(source)
+        manifest = {'schemaVersion': 1, 'reviews': [category_review(source)]}
+        catalog, audit = builder.build(source, category_reviews_manifest=manifest)
+        by_sku = {v['sku']: (p, v) for p in catalog['products'] for v in p['variants']}
+        before = {v['sku']: (p, v) for p in baseline['products'] for v in p['variants']}
+        self.assertEqual(by_sku['1'][0]['category'], 'food')
+        self.assertEqual(by_sku['2'][0]['category'], 'essentials')
+        self.assertEqual(by_sku['2'][0]['id'], before['2'][0]['id'])
+        self.assertEqual(by_sku['3'][0], before['3'][0])
+        self.assertEqual(catalog['counts']['publicVariants'], 3)
+        self.assertEqual(catalog['counts']['products'], 3)
+        for sku in by_sku:
+            self.assertEqual(by_sku[sku][1], before[sku][1])
+            self.assertEqual(by_sku[sku][0]['department'], before[sku][0]['department'])
+        raw = list(csv.reader(io.StringIO(source.decode())))[1:]
+        self.assertEqual([r['rawFields'] for r in audit['records']], raw)
+        self.assertEqual(audit['records'][0]['source']['DEPNAME'], 'MISC')
+        self.assertEqual(audit['categoryReviews'], 1)
+        self.assertNotIn('categoryReview', audit['records'][1])
+        pairs = {(c['id'], d['id']) for c in catalog['categories'] for d in c['departments']}
+        self.assertEqual(pairs, {('food', 'MISC'), ('food', 'GROCERY'), ('essentials', 'MISC')})
+        for category in catalog['categories']:
+            for department in category['departments']:
+                self.assertEqual(department['sourceLabel'], department['id'])
+
+    def test_category_overrides_group_reviewed_siblings_without_merging_original_departments(self):
+        source = export({'ItemName': 'Example Crackers 4oz', 'DEPNAME': 'MISC'},
+                        {'ItemName': 'Example Crackers 8oz', 'DEPNAME': 'MISC'},
+                        {'ItemName': 'Example Crackers 12oz', 'DEPNAME': 'Snacks'})
+        manifest = {'schemaVersion': 1, 'reviews': [category_review(source, row=i) for i in (1, 2)]}
+        catalog, _ = builder.build(source, category_reviews_manifest=manifest)
+        self.assertEqual(catalog['counts']['products'], 2)
+        moved = next(p for p in catalog['products'] if p['department'] == 'MISC')
+        self.assertEqual([v['sku'] for v in moved['variants']], ['1', '2'])
+        self.assertTrue(all(p['category'] == 'food' for p in catalog['products']))
+
+    def test_category_reviews_reject_stale_source_public_identity_and_unretained_rows(self):
+        source = export({'ItemName': 'Example Crackers 4oz', 'DEPNAME': 'MISC'})
+        entry = category_review(source)
+        for field, value in [('expectedUpc', '001234567891'), ('expectedNameSha256', 'a' * 64),
+                             ('expectedSourceRecordSha256', 'b' * 64), ('expectedDepartment', 'Snacks'),
+                             ('expectedPublicName', 'Different Crackers'), ('expectedLabel', '8 oz'),
+                             ('expectedCategory', 'other')]:
+            with self.subTest(field=field), self.assertRaisesRegex(ValueError, 'identity mismatch'):
+                builder.build(source, category_reviews_manifest={'schemaVersion': 1, 'reviews': [{**entry, field: value}]})
+        with self.assertRaisesRegex(ValueError, 'source identity mismatch'):
+            builder.build(source.replace(b'19.99', b'29.99'),
+                          category_reviews_manifest={'schemaVersion': 1, 'reviews': [entry]})
+        with self.assertRaisesRegex(ValueError, 'applicable original-source'):
+            builder.build(source, category_reviews_manifest={'schemaVersion': 1, 'reviews': [{**entry, 'sku': '999'}]})
+        name_manifest = {'schemaVersion': 1, 'identityReviews': [{
+            'sku': entry['sku'], 'expectedUpc': entry['expectedUpc'],
+            'expectedNameSha256': entry['expectedNameSha256'], 'reason': 'Unresolved exact identity',
+            'evidence': [{'url': 'https://example.test/conflict'}]}]}
+        with self.assertRaisesRegex(ValueError, 'retained merchandise'):
+            builder.build(source, name_manifest=name_manifest,
+                          category_reviews_manifest={'schemaVersion': 1, 'reviews': [entry]})
+
+    def test_category_review_checks_corrected_public_name_but_original_source_hash(self):
+        source = export({'ItemName': 'Exampel Crackers 4oz', 'DEPNAME': 'MISC'})
+        old_review = category_review(source)
+        names = {'schemaVersion': 1, 'corrections': [{
+            'sku': '1', 'expectedUpc': old_review['expectedUpc'],
+            'expectedNameSha256': old_review['expectedNameSha256'],
+            'replaceTextFrom': 'Exampel', 'replaceTextTo': 'Example',
+            'evidence': [{'url': 'https://example.test/name'}]}]}
+        current = category_review(source, name_manifest=names)
+        catalog, _ = builder.build(source, name_manifest=names,
+                                    category_reviews_manifest={'schemaVersion': 1, 'reviews': [current]})
+        self.assertEqual(catalog['products'][0]['name'], 'Example Crackers')
+        with self.assertRaisesRegex(ValueError, 'public identity mismatch'):
+            builder.build(source, name_manifest=names,
+                          category_reviews_manifest={'schemaVersion': 1, 'reviews': [old_review]})
+
+    def test_category_review_schema_blocks_broad_rules_and_private_metadata(self):
+        source = export({'ItemName': 'Example Crackers 4oz', 'DEPNAME': 'MISC'})
+        entry = category_review(source)
+        invalid = [dict(entry, category='unknown'), dict(entry, category=['food']),
+                   dict(entry, category='essentials'), dict(entry, departmentRule='MISC'),
+                   dict(entry, rawFields=['private']), dict(entry, reason='Example $2'),
+                   dict(entry, reason='See /Users/example/private.csv'),
+                   dict(entry, reviewedOn='today'), dict(entry, expectedUpc=''),
+                   dict(entry, evidence=[{'kind': 'private', 'url': 'file:///private/source'}]),
+                   dict(entry, evidence=[{'kind': 'manufacturer', 'url': 'https://example.test/ bad'}])]
+        for value in ('Source $4.99', 'See /home/example/private.csv', 'file:///private/source'):
+            candidate = copy.deepcopy(entry)
+            candidate['evidence'][0]['supports'] = value
+            invalid.append(candidate)
+        for candidate in invalid:
+            with self.subTest(candidate=candidate), self.assertRaises(ValueError):
+                builder.build(source, category_reviews_manifest={'schemaVersion': 1, 'reviews': [candidate]})
+        with self.assertRaisesRegex(ValueError, 'unique string SKUs'):
+            builder.build(source, category_reviews_manifest={'schemaVersion': 1, 'reviews': [entry, entry]})
+
     def test_exact_grouping_preserves_brand_flavor_strength_and_age(self):
         catalog, _ = builder.build(export(
             {'ItemName': '1800 Coconut 1 Liter', 'SKU': '001'},
@@ -899,8 +1011,11 @@ class GeneratedCatalogTests(unittest.TestCase):
         reviews = json.loads(reviews_path.read_text()) if reviews_path.exists() else None
         reports_path = ROOT / 'data/report-additions.json'
         reports = json.loads(reports_path.read_text()) if reports_path.exists() else None
+        categories_path = ROOT / 'data/category-reviews.json'
+        categories = json.loads(categories_path.read_text()) if categories_path.exists() else None
         catalog, audit = builder.build(source, image_manifest=manifest, name_manifest=names,
-                                       source_reviews_manifest=reviews, report_additions_manifest=reports)
+                                       source_reviews_manifest=reviews, report_additions_manifest=reports,
+                                       category_reviews_manifest=categories)
         self.assertEqual(audit['sourceSha256'], builder.BASELINE_HASH)
         self.assertEqual(catalog, self.catalog)
         self.assertEqual(catalog['counts']['originalSourceRows'], 9881)

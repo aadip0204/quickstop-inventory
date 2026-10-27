@@ -370,6 +370,78 @@ def validated_name_overrides(manifest: dict | None) -> tuple[dict, dict]:
     return tuple(mappings)
 
 
+def validated_category_reviews(manifest: dict | None) -> dict:
+    """Accept explicit source- and identity-guarded shopping-category reviews."""
+    if manifest is None:
+        return {}
+    if (not isinstance(manifest, dict) or set(manifest) != {'schemaVersion', 'reviews'}
+            or manifest['schemaVersion'] != 1 or not isinstance(manifest['reviews'], list)):
+        raise ValueError('Invalid category review manifest schema')
+    required = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
+                'expectedDepartment', 'expectedPublicName', 'expectedLabel',
+                'expectedCategory', 'category', 'reviewedOn', 'reason', 'evidence'}
+    reviews = {}
+    for entry in manifest['reviews']:
+        if not isinstance(entry, dict) or set(entry) != required:
+            raise ValueError('Category review contains missing, unsupported or private fields')
+        sku = entry['sku']
+        if not isinstance(sku, str) or not re.fullmatch(r'\d+', sku) or sku in reviews:
+            raise ValueError('Category reviews require unique string SKUs')
+        if (not isinstance(entry['expectedUpc'], str)
+                or not re.fullmatch(r'\d{6,14}', entry['expectedUpc'])
+                or any(not isinstance(entry[key], str) or not re.fullmatch(r'[a-f0-9]{64}', entry[key])
+                       for key in ('expectedNameSha256', 'expectedSourceRecordSha256'))):
+            raise ValueError(f'Category review requires exact source identity guards: {sku}')
+        if (not isinstance(entry['expectedCategory'], str) or not isinstance(entry['category'], str)
+                or entry['expectedCategory'] not in CATEGORY_DEPARTMENTS
+                or entry['category'] not in CATEGORY_DEPARTMENTS
+                or entry['expectedCategory'] == entry['category']):
+            raise ValueError(f'Category review requires a distinct valid shopping category: {sku}')
+        for field in ('expectedDepartment', 'expectedPublicName', 'expectedLabel', 'reason'):
+            value = entry[field]
+            if (not isinstance(value, str) or (field != 'expectedDepartment' and not value.strip())
+                    or PRICE_RE.search(value)
+                    or re.search(r'[$€£]|(?:^|\s)(?:/Users/|/home/|file:)', value)):
+                raise ValueError(f'Category review requires safe public metadata: {sku}')
+        if not isinstance(entry['reviewedOn'], str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn']):
+            raise ValueError(f'Category review requires a review date: {sku}')
+        evidence = entry['evidence']
+        if (not isinstance(evidence, list) or not evidence
+                or any(not isinstance(item, dict) or not {'kind', 'url'}.issubset(item)
+                       or set(item) - {'kind', 'url', 'supports'}
+                       or not isinstance(item['kind'], str) or not item['kind'].strip()
+                       or not isinstance(item['url'], str) or not re.fullmatch(r'https://[^\s]+', item['url'])
+                       or ('supports' in item and (not isinstance(item['supports'], str)
+                           or PRICE_RE.search(item['supports'])
+                           or re.search(r'[$€£]|(?:^|\s)(?:/Users/|/home/|file:)', item['supports'])))
+                       for item in evidence)):
+            raise ValueError(f'Category review requires inspectable public evidence: {sku}')
+        reviews[sku] = entry
+    return reviews
+
+
+def apply_category_review(public: dict | None, source: dict, raw_fields: list,
+                          review: dict) -> None:
+    """Change only this variant's shopping category, before grouping."""
+    sku = source['SKU']
+    source_identity = (source['MAINUPC'], hashlib.sha256(source['ItemName'].encode()).hexdigest(),
+                       hashlib.sha256(json.dumps(raw_fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest(),
+                       source['DEPNAME'])
+    expected_source = tuple(review[key] for key in ('expectedUpc', 'expectedNameSha256',
+                                                    'expectedSourceRecordSha256', 'expectedDepartment'))
+    if source_identity != expected_source:
+        raise ValueError(f'Category review source identity mismatch: {sku}')
+    if not public:
+        raise ValueError(f'Category review requires retained merchandise: {sku}')
+    public_identity = (public['variant']['upc'], public['name'], public['variant']['label'],
+                       public['department'], public['category'])
+    expected_public = tuple(review[key] for key in ('expectedUpc', 'expectedPublicName',
+                                                    'expectedLabel', 'expectedDepartment', 'expectedCategory'))
+    if public_identity != expected_public:
+        raise ValueError(f'Category review public identity mismatch: {sku}')
+    public['category'] = review['category']
+
+
 def validated_repair_image_review(review: object, sku: str) -> None:
     required = {'expectedName', 'expectedLabel', 'expectedImageSha256', 'verification', 'evidence'}
     if not isinstance(review, dict) or set(review) != required:
@@ -685,7 +757,8 @@ def isolate_unspecified_variants(groups: dict, records: list, flag_reasons: Coun
 
 def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dict | None = None,
           name_manifest: dict | None = None, source_reviews_manifest: dict | None = None,
-          report_additions_manifest: dict | None = None) -> tuple[dict, dict]:
+          report_additions_manifest: dict | None = None,
+          category_reviews_manifest: dict | None = None) -> tuple[dict, dict]:
     reader = csv.reader(io.StringIO(source_bytes.decode('utf-8-sig'), newline=''))
     headers = next(reader)
     if headers != EXPECTED_HEADERS:
@@ -695,6 +768,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     name_verifications = validated_name_verifications(name_manifest)
     source_reviews = validated_source_reviews(source_reviews_manifest)
     report_additions = validated_report_additions(report_additions_manifest)
+    category_reviews = validated_category_reviews(category_reviews_manifest)
+    applied_category_reviews = set()
     master = []
     dispositions = Counter()
     flag_reasons = Counter()
@@ -805,6 +880,12 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     public['name'] = resolution['verifiedName']
                     public['variant']['label'] = resolution['verifiedLabel']
                     flags.append('Previously unresolved source identity explicitly reconciled using manufacturer, exact UPC and inspected-package evidence; original fields and prior review preserved')
+            category_review = category_reviews.get(sku)
+            if category_review:
+                apply_category_review(public, source, fields, category_review)
+                record['categoryReview'] = category_review
+                applied_category_reviews.add(sku)
+                flags.append('Guarded shopping category corrected; original department preserved')
             flags = override_flags + flags
             record.update(source=source, disposition=disposition, reason=reason, flags=flags)
             flag_reasons.update(flags)
@@ -833,6 +914,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
 
     if set(source_reviews) - seen_skus:
         raise ValueError('Source review contains SKUs absent from the original source export')
+    if set(category_reviews) != applied_category_reviews:
+        raise ValueError('Category review requires an applicable original-source merchandise SKU')
     original_rows = len(master)
     original_dispositions = dict(dispositions)
     report_dispositions = Counter()
@@ -930,13 +1013,13 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
             raise ValueError(f'Repaired image manifest does not match exact review: {sku}')
         blocked_images.remove(sku)
     verified_images = apply_verified_images(products, image_manifest, blocked_images)
-    populated = {p['department'] for p in products}
     categories = []
     for category_id, (label, departments) in CATEGORY_DEPARTMENTS.items():
+        # A reviewed item can shop in a different category while retaining its
+        # original department. Every actual pair must remain filterable.
+        populated = {p['department'] for p in products if p['category'] == category_id}
         category_departments = [d for d in departments if d in populated]
-        if category_id == 'other':
-            assigned = {d for _, ds in CATEGORY_DEPARTMENTS.values() for d in ds}
-            category_departments += sorted(populated - assigned)
+        category_departments += sorted(populated - set(category_departments))
         if category_departments:
             categories.append({'id': category_id, 'label': label, 'departments': [
                 {'id': d, 'label': DEPARTMENT_LABELS.get(d, d), 'sourceLabel': d}
@@ -954,7 +1037,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
              'sourceDispositions': dict(dispositions), 'reviewFlagReasons': dict(flag_reasons),
              'originalSourceDispositions': original_dispositions,
              'reportSourceDispositions': dict(report_dispositions),
-             'verifiedImages': verified_images, 'nameCorrections': len(corrections), 'records': master}
+             'verifiedImages': verified_images, 'nameCorrections': len(corrections),
+             'categoryReviews': len(applied_category_reviews), 'records': master}
     assert sum(dispositions.values()) == len(master)
     return catalog, audit
 
@@ -1049,6 +1133,7 @@ def main() -> None:
     parser.add_argument('--names', type=Path, default=ROOT / 'data/name-corrections.json')
     parser.add_argument('--source-reviews', type=Path, default=ROOT / 'data/source-reviews.json')
     parser.add_argument('--report-additions', type=Path, default=ROOT / 'data/report-additions.json')
+    parser.add_argument('--category-reviews', type=Path, default=ROOT / 'data/category-reviews.json')
     args = parser.parse_args()
     source_path = safe_private_path(args.input)
     private_output = safe_private_path(args.private_output)
@@ -1057,7 +1142,9 @@ def main() -> None:
     name_manifest = json.loads(args.names.read_text()) if args.names.exists() else None
     source_reviews = json.loads(args.source_reviews.read_text()) if args.source_reviews.exists() else None
     report_additions = json.loads(args.report_additions.read_text()) if args.report_additions.exists() else None
-    catalog, audit = build(source_bytes, args.source_date, image_manifest, name_manifest, source_reviews, report_additions)
+    category_reviews = json.loads(args.category_reviews.read_text()) if args.category_reviews.exists() else None
+    catalog, audit = build(source_bytes, args.source_date, image_manifest, name_manifest, source_reviews,
+                           report_additions, category_reviews)
     private_output.mkdir(parents=True, exist_ok=True, mode=0o700)
     (private_output / 'master-reconciliation.json').write_text(json.dumps(audit, indent=2) + '\n')
     (private_output / 'review-queue.json').write_text(json.dumps([
@@ -1069,6 +1156,7 @@ def main() -> None:
     summary = {'schemaVersion': 1, 'sourceDate': args.source_date,
                'sourceSha256': audit['sourceSha256'], 'counts': catalog['counts'],
                'sourceDispositions': audit['sourceDispositions'],
+               'categoryReviews': audit['categoryReviews'],
                'nameAudit': names['summary'],
                'imageStatus': {'verifiedVariants': audit['verifiedImages'],
                                'unverifiedVariants': catalog['counts']['publicVariants'] - audit['verifiedImages']}}

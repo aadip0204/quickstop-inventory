@@ -2541,6 +2541,273 @@
           "supports": "Complete red-and-white Campbell's Condensed Soup Chicken with Rice can on white. Front clearly prints NET WT10 1/2 OZ (298g), equivalent to canonical10.5oz. Both metallic rim boundaries visible; no prices or household objects."
         }
       ]
+    },
+    {
+      "sku": "2790",
+      "expectedUpc": "024000162865",
+      "expectedNameSha256": "4a0b6ff4d89f9bd6978c587591574357806fd2161286e2e4f3d62fcbf1bf149e",
+      "expectedSourceRecordSha256": "3634419d00341a62ee8f074a0d76416776af896a4b53401043d5700c2aba1b0b",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Del Monte Fresh Cut Blue Lake Cut Green Beans",
+      "verifiedLabel": "14.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.delmonte.com/products/vegetables/beans/blue-lake-cut-green-beans",
+          "supports": "Del Monte identifies Fresh Cut Blue Lake Cut Green Beans, with a 14.5 oz can and salt-containing ingredients. This is the regular expression, not the separately listed no-salt-added or reduced-sodium variants."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/36870-del-monte-green-beans-cut-14-5-oz",
+          "supports": "Primary retailer explicitly lists UPC 024000162865, Del Monte Fresh Cut Green Beans Canned Vegetables, 14.5 oz. The single inspected can matches; no wholesale case is assigned."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/400/016/2865/6.jpg",
+          "supports": "Complete single Del Monte can on white with top and bottom metal rims visible. Front identifies Fresh Cut Blue Lake Cut Green Beans with Natural Sea Salt, and NET WT 14.5 OZ (411g) is readable. No visible prices or household objects."
+        }
+      ]
+    },
+    {
+      "sku": "806",
+      "expectedUpc": "852311004013",
+      "expectedNameSha256": "5ef45eb626cd561a1ce948f500a406536de6eaf362efd24b1c3dee75c098fb07",
+      "expectedSourceRecordSha256": "bfbf942154add9e219395fa69f0fe74c659cfadd726cf6640fcb48c80c7abd7b",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Bai Antioxidant Infusion Brasilia Blueberry",
+      "verifiedLabel": "18 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.drinkbai.com/products/brasilia-blueberry",
+          "supports": "Bai identifies the Brasilia Blueberry expression. This corroborates brand and flavor only; current nutrition/formula details are not substituted for the inspected older Antioxidant Infusion packaging."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/87028-bai-brasilia-blueberry-antioxidant-infused-beverage-18-fl-oz",
+          "supports": "Primary retailer explicitly lists UPC 852311004013, Bai Brasilia Blueberry Antioxidant Infused Beverage, 18 fl oz. The proposal is for the pictured individual bottle, not the other multipack options on the page."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/231/100/4013/1.jpg",
+          "supports": "Complete professional Bai bottle on plain white, with full red cap and base visible. Label identifies Antioxidant Infusion Brasilia Blueberry and clearly prints 18 oz. No visible price or unrelated objects. Historical label is retained without importing current WonderWater formulation claims."
+        }
+      ]
+    },
+    {
+      "sku": "804",
+      "expectedUpc": "813694023466",
+      "expectedNameSha256": "0a6cc17d957e20ef4dec3313e205e8cdf2a12ee2c20ae97e89b76df90010145e",
+      "expectedSourceRecordSha256": "2d52c2ef745635cdc3152ae757bb6da6913bd7569efbd6cb13b096193064fe28",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Bai Antioxidant Cocofusion Puna Coconut Pineapple",
+      "verifiedLabel": "18 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.drinkbai.com/cocofusions/puna-coconut-pineapple",
+          "supports": "Bai identifies Puna Coconut Pineapple. This supports brand and flavor only; current formula claims are not imported into the older photographed package identity."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.lundsandbyerlys.com/product/bai-antioxidant-cocofusions-puna-coconut-pineapple-beverage-id-00813694023466",
+          "supports": "Primary retailer explicitly lists Bai Antioxidant Cocofusions Puna Coconut Pineapple Beverage, 18 Ounce, product number 00813694023466. Its GTIN14 is the zero-padded source UPC 813694023466; no UPC change is proposed."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/369/402/3466/4.jpg",
+          "supports": "Complete professional Bai bottle on white, full brown cap and base present. Front identifies Antioxidant Cocofusion Puna Coconut Pineapple; printed 18 fl oz (530 mL) is readable. No visible prices or household setting. Exact UPC corroborates the expression despite the source shorthand Puna Colada."
+        }
+      ]
+    },
+    {
+      "sku": "2840",
+      "expectedUpc": "078000182460",
+      "expectedNameSha256": "01586f2c7b6fbf5b906e13fbc4d23131a9e55d65e005bd0da513267414195eb9",
+      "expectedSourceRecordSha256": "bb8594f89cc033f6c65074c668358c7a76c534c4b61afc2400e2e0ce08aba48e",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Diet Vernors Ginger Soda",
+      "verifiedLabel": "2 L",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.keurigdrpepper.com/brands/",
+          "supports": "Manufacturer owner Keurig Dr Pepper lists Vernors among its brands; this corroborates brand ownership only."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://sundropbottling.com/pdf/Product-list.pdf",
+          "supports": "Official Sun Drop Bottling distributor catalog, PDF page 12, pairs item 48650 Vernors Diet Ale 2 LT with 2 LITER (PET) and UPC 0-78000-18246-0. Extracted text and rendered page were both inspected; this equals source UPC 078000182460."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/018/2460/1.jpg",
+          "supports": "Complete professional 2 L plastic bottle on white, full white cap and base visible. Front says Diet Vernors Zero Calorie Soda and Ginger Soda, with clearly printed 2 LITERS (2.1 QT). No visible prices or household objects. Legacy Diet naming is retained rather than silently replacing it with current Zero Sugar branding."
+        }
+      ]
+    },
+    {
+      "sku": "6813",
+      "expectedUpc": "041196419337",
+      "expectedNameSha256": "e11a7fca8d4e873300ae195a014ab03a19ab3754b005ede51c4edd1fefababe6",
+      "expectedSourceRecordSha256": "7f51af677b240740714db20fa9c721a7b069086c97613a8c71a80d837dd4c3ec",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Progresso Light Chicken & Dumpling Soup",
+      "verifiedLabel": "18.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.progresso.com/products/light-chicken-dumpling",
+          "supports": "Manufacturer identifies Light Chicken & Dumpling and explicitly describes one 18.5 oz can. No claim that this manufacturer page displays the UPC."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.shoprite.com/product/00041196419337",
+          "supports": "Primary grocery retailer explicitly pairs GTIN14 00041196419337 with Progresso Light Chicken & Dumpling Soup and 18.5 oz. This zero-padded code equals source UPC041196419337."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodtown.com/store/foodtown-food-circus/products/37364-progresso-light-chicken-and-dumpling-soup-18-500-oz",
+          "supports": "Second primary grocery storefront explicitly lists Progresso Light Canned Chicken and Dumpling Soup, UPC00041196419337 and18.5oz."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/119/641/9337/3.jpg",
+          "supports": "Complete Progresso Light Chicken & Dumpling can on white, full pull-top lid and lower rim visible. NET WT 18.5 OZ (1 LB 2.5 OZ) 524g is clearly readable. No visible prices, hands, household setting or multipack."
+        }
+      ]
+    },
+    {
+      "sku": "2178",
+      "expectedUpc": "014800512755",
+      "expectedNameSha256": "7707571c2d1c767293cf79bcfc506b321db21f386a07d2ab36258d621ea97eaf",
+      "expectedSourceRecordSha256": "f8b11c9030571c0074e3e8e9c8af50bc99018b1fd4d3efbdee9d989ada96d56c",
+      "action": "size_needs_confirmation",
+      "reason": "Original source measurement conflicts with the manufacturer and exact-UPC distributor package. Preserve the source row and route its measurement through explicit identity evidence rather than treating the original unit as confirmed.",
+      "reviewedOn": "2026-10-27",
+      "identityResolution": {
+        "expectedName": "Clamato Picante",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Clamato Picante Tomato Cocktail",
+        "verifiedLabel": "32 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.clamato.com/en/products/clamato-picante",
+            "supports": "Clamato manufacturer identifies Picante and explicitly lists 32 oz and 64 oz multiserve sizes. This supports the 32 oz expression, not the erroneous source 32 mL token."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.starimporters.com/product-details/clamato-32-oz-12-ct?id=7784",
+            "supports": "Primary distributor product page names its 32 oz Clamato offering and explicitly maps the Picante variant to UPC 014800512755. The separate regular variant has a different UPC; a wholesale case quantity is not assigned to this single source item."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://dnfbqhh6e48qy.cloudfront.net/product-images/OIP-8-removebg-preview17667785659922025-12-26-19-49-28P5GLQ.png",
+            "supports": "Individually inspected the exact Picante variant image linked by that distributor: complete Picante tomato cocktail bottle clearly prints 32 FL OZ (1 QT) 946 mL on the lower label. This private identity reference is not approved for public image reuse."
+          }
+        ],
+        "reason": "Manufacturer 32 oz Picante, exact source UPC distributor listing, and inspected package print 32 FL OZ / 946 mL establish a source unit typo. Original raw fields are retained; no builder size rule is broadened."
+      }
+    },
+    {
+      "sku": "3004",
+      "expectedUpc": "078000082395",
+      "expectedNameSha256": "fd1b35250905eee89a16ed137693f6629ba8c3d2d4c6e55762d64ab99ef709bb",
+      "expectedSourceRecordSha256": "51e62c4ca55603ef1405cbbd1b8cb2dc193276ad82e8e907a40e6cd467e90431",
+      "action": "size_needs_confirmation",
+      "reason": "Original title states 42.2 oz while the source pack description states 42 oz. Both original fields are preserved; the separate guarded resolution uses exact UPC and the inspected bottle label.",
+      "reviewedOn": "2026-10-27",
+      "identityResolution": {
+        "expectedName": "DR PEPPER",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Dr Pepper",
+        "verifiedLabel": "42.2 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Dr-Pepper/p/1-DLFK8-18",
+            "supports": "PepsiCo distributor identifies exact UPC 078000082395 as Dr Pepper 1.25 L plastic bottle. Case quantity is not imported."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.cub.com/store/cub/products/141817-dr-pepper-soda-1-25-l",
+            "supports": "Cub independently lists exact UPC 078000082395 as Dr Pepper 1.25 L."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/008/2395/1.400.jpg",
+            "supports": "Actual bottle front individually inspected: Dr Pepper, 23 flavors, 1.25 Liter and 42.2 FL OZ are printed. Consumer photo is private evidence only and is not approved for public use."
+          }
+        ],
+        "reason": "The exact UPC distributor and retailer identify a 1.25 L single plastic bottle. The actual front explicitly prints 42.2 FL OZ, corroborating the original title measurement rather than the conflicting pack description. No raw field is overwritten."
+      }
     }
   ]
 }
