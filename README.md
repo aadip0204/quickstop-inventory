@@ -1,6 +1,6 @@
 # Quick Stop Food & Liquor
 
-A static, searchable in-store catalog. The site does not offer checkout or report live stock. Its inventory baseline is the original February 2026 export.
+A static, searchable in-store catalog. The site does not offer checkout or report live stock. Its inventory baseline is the original February 2026 export, supplemented by individually reviewed store-report SKUs. Reports do not establish live availability.
 
 ## Local preview
 
@@ -11,6 +11,8 @@ Run `python3 -m http.server 8765 --bind 127.0.0.1` in this directory, then open 
 Keep the original CSV and all private reports **outside this repository**. Never upload the source export, raw backups, or reconciliation records: they contain private commercial fields. The builder accepts explicit paths and emits a field-allowlisted public catalog. See `python3 scripts/build_catalog.py --help` for exact options.
 
 The original export is immutable. Its SHA-256 is `822ee8b3b623548db0f2ea531aa10c340b160a47afc0d9e88398311ed7fa6882`.
+
+Reviewed, price-free report additions live in `data/report-additions.json`, with source-description hashes and PDF hash/page references. Raw reports and extracted rows stay private. Report SKUs have unknown UPCs, isolated product groups and no inherited images. Eight original malformed records are repaired only with exact original-field and report-description guards.
 
 Each source row has a private disposition: retained variant, retained duplicate reference if applicable, needs review/name, or explicitly excluded nonproduct. Source SKUs and UPCs remain strings. All retained variants participate in search; pagination only bounds rendered cards. Metadata conflicts remain private and display a neutral confirmation label.
 

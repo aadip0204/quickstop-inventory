@@ -2,6 +2,7 @@ private-input/
 private-output/
 private/
 *.csv
+*.pdf
 *.zip
 .env*
 .DS_Store

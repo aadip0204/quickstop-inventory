@@ -1875,7 +1875,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -1891,7 +1891,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         },
         {
           "url": "https://dictionary.cambridge.org/us/dictionary/english/roasted",
@@ -1912,7 +1912,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -1928,7 +1928,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -1944,7 +1944,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -1960,7 +1960,7 @@
         {
           "url": "https://www.mariecallendersmeals.com/",
           "kind": "official_manufacturer_brand",
-          "supports": "Brand boundary only: Marie Callender’s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
+          "supports": "Brand boundary only: Marie Callender\u2019s is the brand name. Insert the missing separator before the unchanged source dish text; no recipe, flavor, size or spelling beyond this space is inferred."
         }
       ],
       "verifiedOn": "2026-10-26"
@@ -5323,13 +5323,13 @@
       "expectedUpc": "050000300624",
       "expectedNameSha256": "249abc16eb9539b4bf9d822a09e6e9754cbcbaf73a15b1199a3194ed36048154",
       "replaceTextFrom": "Nestle coffee mateorg",
-      "replaceTextTo": "Nestlé Coffee-mate Original",
+      "replaceTextTo": "Nestl\u00e9 Coffee-mate Original",
       "scope": "exact_upc_name_identity",
       "evidence": [
         {
           "url": "https://smartlabel.nestleusa.com/050000300624-0001-en-US/index.html",
           "kind": "manufacturer_exact_upc_smartlabel",
-          "supports": "Nestlé SmartLabel identifies UPC050000300624 as Coffee mate The Original, net6oz. Complete name clarified; existing source6oz is unchanged."
+          "supports": "Nestl\u00e9 SmartLabel identifies UPC050000300624 as Coffee mate The Original, net6oz. Complete name clarified; existing source6oz is unchanged."
         }
       ],
       "verifiedOn": "2026-10-27"
@@ -5339,13 +5339,13 @@
       "expectedUpc": "050000447718",
       "expectedNameSha256": "01b2f2adf579ab2efbaa7a447f8aacc2819245e5121b73ee935094676b0c5642",
       "replaceTextFrom": "Nestle coffee mateorg",
-      "replaceTextTo": "Nestlé Coffee-mate Original",
+      "replaceTextTo": "Nestl\u00e9 Coffee-mate Original",
       "scope": "exact_upc_name_identity",
       "evidence": [
         {
           "url": "https://www.nestleprofessional.us/coffee-mate/original-powder-creamer-12-x-11-oz",
           "kind": "manufacturer_product_identity",
-          "supports": "Nestlé Professional identifies Original powdered creamer in11oz canisters. Source11oz is unchanged; exact individual UPC is corroborated separately, and case pack is not assigned to this sourceSKU."
+          "supports": "Nestl\u00e9 Professional identifies Original powdered creamer in11oz canisters. Source11oz is unchanged; exact individual UPC is corroborated separately, and case pack is not assigned to this sourceSKU."
         },
         {
           "url": "https://www.officedepot.com/a/products/919573/Nestle-Coffee-mate-Powdered-Creamer-Canister/?bvstate=pg%3A8%2Fct%3Ar",
@@ -5445,13 +5445,13 @@
       "expectedUpc": "088076186880",
       "expectedNameSha256": "469ec1177ae2666d157decd8a40e74140dde1bdace56b079dce8b8178165d4a1",
       "replaceTextFrom": "jalapen",
-      "replaceTextTo": "jalapeño",
+      "replaceTextTo": "jalape\u00f1o",
       "scope": "expression_spelling_only",
       "evidence": [
         {
           "url": "https://www.casamigos.com/cms?cocktailName=casamigas-spicy-espresso-martini&locale=en-us&slug=%2Fcocktails%2F%3AcocktailName",
           "kind": "manufacturer_expression_spelling",
-          "supports": "Official Casamigos recipe names Casamigas Jalapeño Tequila, confirming the complete jalapeño word."
+          "supports": "Official Casamigos recipe names Casamigas Jalape\u00f1o Tequila, confirming the complete jalape\u00f1o word."
         },
         {
           "url": "https://www.cub.com/store/cub-liquors/products/46124183-casamigos-jalapeno-blanco-750-ml",
@@ -5483,6 +5483,421 @@
           "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
           "kind": "first_party_distributor_exact_upc_listing",
           "supports": "Distributor catalog associates source unit UPC031700054529 with White Owl Emerald. No printed source promotion or retail price is copied into the correction."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2553",
+      "expectedUpc": "082000771562",
+      "expectedNameSha256": "962d418b4a8f89239584fbfaa5bc79fdfdec81d25e3345b19755dc8b02b0ed40",
+      "replaceTextFrom": "Crown Apple",
+      "replaceTextTo": "Crown Royal Apple",
+      "scope": "brand_name_clarification_only",
+      "evidence": [
+        {
+          "url": "https://www.crownroyal.com/canadian-whisky/crown-royal-regal-apple",
+          "kind": "manufacturer",
+          "supports": "brand_name_clarification_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "2557",
+      "expectedUpc": "082000782919",
+      "expectedNameSha256": "a441721bef3b04e8d2db28bf1de657be0e50a126452a6075d810f8692535d519",
+      "replaceTextFrom": "Crown Peach",
+      "replaceTextTo": "Crown Royal Peach",
+      "scope": "brand_name_clarification_only",
+      "evidence": [
+        {
+          "url": "https://www.crownroyal.com/canadian-whisky/crown-royal-peach",
+          "kind": "manufacturer",
+          "supports": "brand_name_clarification_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "1292",
+      "expectedUpc": "077567254269",
+      "expectedNameSha256": "0df559e2247f0f95234621c737ae1963581f32df345cd9df76c7c22c4682b6ba",
+      "replaceTextFrom": "Breyer's vanilla ,cho , strw1.5quart",
+      "replaceTextTo": "Breyers Vanilla Chocolate Strawberry 1.5 quart",
+      "scope": "exact_upc_name_identity",
+      "evidence": [
+        {
+          "url": "https://www.breyers.com/us/en/p/vanilla-chocolate-strawberry.html/00077567254269",
+          "kind": "manufacturer",
+          "supports": "Exact UPC product page identifies Breyers Vanilla Chocolate Strawberry in the original 1.5 quart size. Package image usage rights remain unresolved."
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101544",
+      "expectedUpc": "",
+      "expectedNameSha256": "828d9d377e9acae5305b96bda078aa7b62289300dcefb5fd32e5c4f28af55c01",
+      "replaceTextFrom": "BUZZBALL",
+      "replaceTextTo": "BUZZBALLZ",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.buzzballz.com/product/pink-lemonsqueezy/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101545",
+      "expectedUpc": "",
+      "expectedNameSha256": "3a2fc9dd32971b73be6d147499c8a057f42c4e248bb448fdad6f50d3fae0fa1e",
+      "replaceTextFrom": "NECTARIN",
+      "replaceTextTo": "NECTARINE",
+      "scope": "flavor_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://cms2.heineken.com/us/en/our-beers/heineken-0-0/",
+          "kind": "manufacturer",
+          "supports": "flavor_word_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101554",
+      "expectedUpc": "",
+      "expectedNameSha256": "df6145d96a4f8f05a112d3f9658432edd2446da66c463a0918cbfdc2ddcf32d5",
+      "replaceTextFrom": "LMONADE",
+      "replaceTextTo": "LEMONADE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://drinkcalypso.com/flavors/",
+          "kind": "manufacturer",
+          "supports": "ordinary_word_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101555",
+      "expectedUpc": "",
+      "expectedNameSha256": "2c2b07d02816e0c72007c002c6ce864e76914ec5340ae9f6de1bf61aba9ee6de",
+      "replaceTextFrom": "PINEAPLE",
+      "replaceTextTo": "PINEAPPLE",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://drinkcalypso.com/flavors/pineapple-peach-limeade/",
+          "kind": "manufacturer",
+          "supports": "ordinary_word_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101565",
+      "expectedUpc": "",
+      "expectedNameSha256": "b9bf54ff4b5eb1af42bfbb2ebd4e490979f5adb4eff59cf5fb8fa383f0721205",
+      "replaceTextFrom": "LEMONAD",
+      "replaceTextTo": "LEMONADE",
+      "scope": "flavor_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.drinksurfside.com/flavors/strawberry-lemonade-vodka/",
+          "kind": "manufacturer",
+          "supports": "flavor_word_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101569",
+      "expectedUpc": "",
+      "expectedNameSha256": "2d15e22fc27cb2fd7ecb65ab98f481e5c5842f987f6bde522bcc9340fccfe882",
+      "replaceTextFrom": "MAKERS MARK",
+      "replaceTextTo": "MAKER'S MARK",
+      "scope": "brand_punctuation_only",
+      "evidence": [
+        {
+          "url": "https://www.makersmark.com/en-us/",
+          "kind": "manufacturer",
+          "supports": "brand_punctuation_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101572",
+      "expectedUpc": "",
+      "expectedNameSha256": "b9b06d31708ced461179fe35040eb1d0ae129a2e94264313b89fcf411ef9f87a",
+      "replaceTextFrom": "MARGRITA",
+      "replaceTextTo": "MARGARITA",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://tialindas.com/her-margaritas",
+          "kind": "manufacturer",
+          "supports": "ordinary_word_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101573",
+      "expectedUpc": "",
+      "expectedNameSha256": "015def3f0cd6164cce5af3545d28c1c81c6621a900d28a5435eafb9871cbd842",
+      "replaceTextFrom": "MARGRITA",
+      "replaceTextTo": "MARGARITA",
+      "scope": "ordinary_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://tialindas.com/her-margaritas",
+          "kind": "manufacturer",
+          "supports": "ordinary_word_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101576",
+      "expectedUpc": "",
+      "expectedNameSha256": "55c3a0122889c80ea198911a6df3d38e6e5659d3c256b58e678648bb917ec06e",
+      "replaceTextFrom": "GRAPFRUT",
+      "replaceTextTo": "GRAPEFRUIT",
+      "scope": "flavor_word_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.senoritadrinks.com/",
+          "kind": "manufacturer",
+          "supports": "flavor_word_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101587",
+      "expectedUpc": "",
+      "expectedNameSha256": "b715f1117c1fb1f3085c8580d4d8b2a558c15a1a868fb420078fdb2f1e4cb0e2",
+      "replaceTextFrom": "FLAVEREDS",
+      "replaceTextTo": "FAVEREDS",
+      "scope": "expression_spelling_only",
+      "evidence": [
+        {
+          "url": "https://marsfoodservices.com/product/starbursts-favereds",
+          "kind": "manufacturer",
+          "supports": "expression_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101588",
+      "expectedUpc": "",
+      "expectedNameSha256": "80531fd35c27cd2b226a4b4d3623867c69ff6fb0d2a97faf2683c69de3af3ece",
+      "replaceTextFrom": "BACKWOOD",
+      "replaceTextTo": "BACKWOODS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.itgbrands.com/brands/backwoods/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101603",
+      "expectedUpc": "",
+      "expectedNameSha256": "d67413412c2c02af8a7dc3d7196171b133f300aab4f208bd545bc045376d6a2c",
+      "replaceTextFrom": "BACKWOOD",
+      "replaceTextTo": "BACKWOODS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.itgbrands.com/brands/backwoods/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101604",
+      "expectedUpc": "",
+      "expectedNameSha256": "80b2764f39c5e83bbb04a5ccd7e302a3aeeb1ba144f85fe57bb96993c51136e3",
+      "replaceTextFrom": "BACKWOOD",
+      "replaceTextTo": "BACKWOODS",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.itgbrands.com/brands/backwoods/",
+          "kind": "manufacturer",
+          "supports": "brand_spelling_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101600",
+      "expectedUpc": "",
+      "expectedNameSha256": "152b15d901814d6d67343361c5972b29c74660b1ccc1d22cd1502f96b6b1bf2a",
+      "replaceTextFrom": "POP CHIPS",
+      "replaceTextTo": "POPCHIPS",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://popchips.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spacing_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101601",
+      "expectedUpc": "",
+      "expectedNameSha256": "c0c23c0052a8c3aee430abc34a1c83495cbac0391a83fa18463dfc9f95b81631",
+      "replaceTextFrom": "POP CHIPS",
+      "replaceTextTo": "POPCHIPS",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://popchips.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spacing_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "101602",
+      "expectedUpc": "",
+      "expectedNameSha256": "6163151361496bcfd5f76bc370ba2504c89c6c21339dbb6f3986a2f536adf5d4",
+      "replaceTextFrom": "POP CHIPS",
+      "replaceTextTo": "POPCHIPS",
+      "scope": "brand_spacing_only",
+      "evidence": [
+        {
+          "url": "https://popchips.com/",
+          "kind": "manufacturer",
+          "supports": "brand_spacing_only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6124",
+      "expectedUpc": "085000021354",
+      "expectedNameSha256": "883f9863df4a3d94af884133bb0766686c088df9681841db9d2b292550b2197d",
+      "scope": "exact_sku_report_and_manufacturer_name_only",
+      "replaceTextFrom": "New Amst Coco",
+      "replaceTextTo": "New Amsterdam Coconut",
+      "evidence": [
+        {
+          "url": "https://www.newamsterdamvodka.com/products/flavors/coconut/",
+          "kind": "manufacturer",
+          "supports": "brand and Coconut expression spelling; no new package verification"
+        },
+        {
+          "url": "https://www.kingswineandspirits.com/products/new-amsterdam-coconut-vodka-375ml",
+          "kind": "retailer",
+          "supports": "exact source UPC 085000021354 matches New Amsterdam Coconut Vodka 375ml; name corroboration only"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6719",
+      "expectedUpc": "088004028374",
+      "expectedNameSha256": "89fb7d46c744699489b3b6e960183128e0727695d1f97f7bf8ef71d1afef9248",
+      "scope": "exact_sku_report_and_manufacturer_name_only",
+      "replaceTextFrom": "PLATINUM",
+      "replaceTextTo": "Platinum 7X Vodka",
+      "evidence": [
+        {
+          "url": "https://www.sazerac.com/news-and-media/sazerac-rums-and-vodkas-sweep-five-silver-medals-at-25th-annual-international-spirits-challenge/",
+          "kind": "manufacturer",
+          "supports": "canonical Platinum 7X Vodka name; no pack size or exact UPC evidence"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6893",
+      "expectedUpc": "861518002609",
+      "expectedNameSha256": "6c13ecb238bf4f8f80c4417e32203be7f11eb65113ff90ea8496e6ff5b45ca7a",
+      "scope": "exact_sku_report_and_manufacturer_name_only",
+      "replaceTextFrom": "ranchola gloria 750mlmargarita",
+      "replaceTextTo": "Rancho La Gloria Lime Margarita 750ml",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/lime-margarita/",
+          "kind": "manufacturer",
+          "supports": "Rancho La Gloria brand and Lime Margarita expression; new report supplies Lime for this exact source SKU; no new package verification"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "6898",
+      "expectedUpc": "861518002647",
+      "expectedNameSha256": "271c504f4041ccf8e36150142a8831f9e7d9dac928160ad10e41b382aec320e9",
+      "scope": "exact_sku_report_and_manufacturer_name_only",
+      "replaceTextFrom": "ranchola gloria margarita",
+      "replaceTextTo": "Rancho La Gloria Lime Margarita",
+      "evidence": [
+        {
+          "url": "https://rancholagloria.com/lime-margarita/",
+          "kind": "manufacturer",
+          "supports": "Rancho La Gloria brand and Lime Margarita expression; new report supplies Lime for this exact source SKU; size remains unresolved"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9722",
+      "expectedUpc": "763955010004",
+      "expectedNameSha256": "eadee902147d0175aea3cade8735a6e3697702ade474751e765fbfd89c360de3",
+      "scope": "exact_sku_report_and_manufacturer_name_only",
+      "replaceTextFrom": "XXL BLACK BERRY  750ML DEAD",
+      "replaceTextTo": "XXL Blackberry 750ML",
+      "evidence": [
+        {
+          "url": "https://drinkxxl.com/wines/blackberry/",
+          "kind": "manufacturer",
+          "supports": "canonical XXL Blackberry expression without the source DEAD marker"
+        },
+        {
+          "url": "https://www.tri-vin.com/products/brands/xxl/xxl-blackberry-750ml",
+          "kind": "importer",
+          "supports": "exact source UPC 763955010004 corresponds to XXL Blackberry 750ML; no DEAD marker in product identity"
+        }
+      ],
+      "verifiedOn": "2026-10-27"
+    },
+    {
+      "sku": "9727",
+      "expectedUpc": "763955015009",
+      "expectedNameSha256": "9a085abca5fda231ec94434fc443c740668f0c6be66719f09d09d50a64269634",
+      "scope": "exact_sku_report_and_manufacturer_name_only",
+      "replaceTextFrom": "XXL PEACH 750ML DEAD",
+      "replaceTextTo": "XXL Peach 750ML",
+      "evidence": [
+        {
+          "url": "https://drinkxxl.com/wp-content/uploads/2025/02/XXL_SellSheet_Peach_r1.pdf",
+          "kind": "manufacturer",
+          "supports": "official sell sheet names product XXL Peach without source DEAD marker"
+        },
+        {
+          "url": "https://www.tri-vin.com/products/brands/xxl/xxl-peach-750ml",
+          "kind": "importer",
+          "supports": "exact source UPC 763955015009 corresponds to XXL Peach 750ML; no DEAD marker in product identity"
         }
       ],
       "verifiedOn": "2026-10-27"
