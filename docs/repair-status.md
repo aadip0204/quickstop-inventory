@@ -6,9 +6,9 @@ Catalog repairs are implemented and tested. The first repair release was verifie
 
 - All 9,881 original rows and distinct SKUs are preserved in private reconciliation outside this repository.
 - Store reports add 67 merchandise SKUs and four explicitly excluded POS controls. Eight exact-SKU report descriptions repair unquoted CSV commas: five merchandise listings are restored and three lottery rows receive explicit exclusion. All 9,881 original rows remain, including 12 absent from later reports. The combined reconciliation covers 9,952 records. New report records do not supply UPCs or photos and stay isolated pending identity review.
-- The current catalog contains 9,689 variants in 8,000 conservative product groups.
+- The current catalog contains 9,689 variants in 7,997 conservative product groups.
 - 107 rows require identity/name review; 156 explicit nonproducts are excluded with private reasons. No source SKU is silently discarded. A guarded review restored 153 named merchandise rows by removing explicit price annotations or withholding an ambiguous size; these SKUs remain isolated and cannot inherit photos.
-- 915 exact, source-hash/UPC-guarded spelling, spacing or name clarifications are applied. Every original name remains private and unchanged. All rows were scanned for defined risks. Only 609 complete names have external identity verification; the other corrections have narrower documented scopes. There are 84 separate name-verification records, which do not count as corrections. Seventy uncertain identities were resolved using manufacturer, exact-UPC and inspected-package evidence. The final eight spelling flags received explicit review: seven scoped repairs and the intentional manufacturer spelling “Blue Razberry,” which remains unchanged.
+- 926 exact, source-hash/UPC-guarded spelling, spacing or name clarifications are applied. Every original name remains private and unchanged. All rows were scanned for defined risks. Only 621 complete names have external identity verification; the other corrections have narrower documented scopes. There are 84 separate name-verification records, which do not count as corrections. Seventy uncertain identities were resolved using manufacturer, exact-UPC and inspected-package evidence. The final eight spelling flags received explicit review: seven scoped repairs and the intentional manufacturer spelling “Blue Razberry,” which remains unchanged.
 - October report evidence distinguishes glass and PET containers for two exact Dimitri Gin SKUs without changing their original volumes or UPCs. Clipped identifiers in the narrow reports are not guessed into catalog joins.
 - Ambiguous sizes display a confirmation label. Differing flavors, strength, age, packaging and unknown identities are not guessed into one product.
 
@@ -105,3 +105,5 @@ Four Cheetos bag variants were checked against exact manufacturer UPC records an
 Two Cheetos Flamin’ Hot names were corrected from manufacturer records, and the exact 3.25 oz Crunchy bag photo was added.
 
 Sixteen additional snack packages were matched to exact manufacturer UPC, flavor, weight and inspected price-free packshots.
+
+Twelve photographed snack names were reconciled against exact manufacturer UPC records; preexisting grouped variants remain separately traceable by SKU.

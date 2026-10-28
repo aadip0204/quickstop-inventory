@@ -3449,22 +3449,6 @@
       "verifiedOn": "2026-10-27"
     },
     {
-      "sku": "7235",
-      "expectedUpc": "028400431439",
-      "expectedNameSha256": "7b3374d2c6e98299fd65e055c10c12ee426fcf3f3742acb1ff2b4b4fe299bed3",
-      "replaceTextFrom": "chedder",
-      "replaceTextTo": "cheddar",
-      "scope": "ordinary_word_spelling_only",
-      "evidence": [
-        {
-          "url": "https://dictionary.cambridge.org/us/dictionary/english/cheddar",
-          "kind": "english_dictionary_ordinary_word_spelling",
-          "supports": "Confirms only standard spelling cheddar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
-        }
-      ],
-      "verifiedOn": "2026-10-27"
-    },
-    {
       "sku": "7400",
       "expectedUpc": "377140",
       "expectedNameSha256": "9ee0517b1d50c5dbfcaefac6b1d445cd30f8c4ea0b776df8204b2a62000c87c0",
@@ -20345,6 +20329,318 @@
           "kind": "inspected_package_photo",
           "url": "https://smartlabel.pepsico.info/028400433303-0010-en-US/images/b1d7c4d7-7fd5-45ab-a0c2-6a2544300f6d.jpg",
           "supports": "Inspected package shows the brand, expression and stated size."
+        }
+      ]
+    },
+    {
+      "sku": "2009",
+      "expectedUpc": "028400436243",
+      "expectedNameSha256": "544e001dda9800dd7f4f21e0e3a64571a6bc6905ebffd249290efe1639e2bfe6",
+      "replaceTextFrom": "Chester's Popcorn Cheddar74.4G",
+      "replaceTextTo": "Chester's Cheddar Popcorn 74.4G",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400436243-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400436243-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400436243-0010-en-US/images/c438d353-b41f-4178-a72c-efdf745f84d3.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "2072",
+      "expectedUpc": "028400043144",
+      "expectedNameSha256": "f5fe9e37d25c42ce9697dbdc1436b8d9e5201ea0b2454dc678c0511da2e1ede0",
+      "replaceTextFrom": "CHOCOLATE BROWNIE 2 7/8OZGRANDMA'S",
+      "replaceTextTo": "Grandma's Chocolate Brownie Cookies 2 7/8OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400043144-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400043144-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400043144-0010-en-US/images/b0d4fd82-0255-490e-843b-17365811ed72.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "2078",
+      "expectedUpc": "028400043274",
+      "expectedNameSha256": "111930a783fb8c82dec2714c970cd0e4d4be79aa5f33df8ae56c727c7579452f",
+      "replaceTextFrom": "CHOCOLATE CHIPS COOKIE 2 7/8OZGRANDMA'S",
+      "replaceTextTo": "Grandma's Chocolate Chip Cookies 2 7/8OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400043274-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400043274-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400043274-0010-en-US/images/0a28ecb7-3350-4fa3-921b-de9c99373a5d.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "2946",
+      "expectedUpc": "028400097659",
+      "expectedNameSha256": "a6573c52acd24b8a6fb1c5d59487cd257887beca6b717b559ebe0b7106151460",
+      "replaceTextFrom": "Doritos Nachos Cheese 2 7/8oz",
+      "replaceTextTo": "Doritos Nacho Cheese 2 7/8oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400097659-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400097659-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400097659-0010-en-US/images/73df2d1b-89c3-4e5a-b4d1-5c45ec0539fe.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "3549",
+      "expectedUpc": "028400282123",
+      "expectedNameSha256": "5bdee0e75e8e5aa0763d706d22b2adede7bf81959290207e7c453e42bca0c5ff",
+      "replaceTextFrom": "Funyuns onion rings 2 3/8OZflamin hot",
+      "replaceTextTo": "Funyuns Flamin' Hot Onion Rings 2 3/8OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400282123-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400282123-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400282123-0010-en-US/images/417e0ad0-09e9-4e98-89fa-cca3dcb25123.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "7173",
+      "expectedUpc": "028400086400",
+      "expectedNameSha256": "6386c8fd6c14c5e7309835659584cff1ec0e1459993bcc8194a15c1cf31be726",
+      "replaceTextFrom": "Rold Gold Thins 4oz",
+      "replaceTextTo": "Rold Gold Original Thins Pretzels 4oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400086400-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400086400-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400086400-0010-en-US/images/9ee88687-23ed-46d7-9007-5203b0fe9f3c.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "7235",
+      "expectedUpc": "028400431439",
+      "expectedNameSha256": "7b3374d2c6e98299fd65e055c10c12ee426fcf3f3742acb1ff2b4b4fe299bed3",
+      "replaceTextFrom": "Ruffles chedder 2 5/8OZ",
+      "replaceTextTo": "Ruffles Cheddar & Sour Cream 2 5/8OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400431439-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400431439-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400431439-0010-en-US/images/cf780332-424c-433d-9b6f-0fa4c7eafe39.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "7237",
+      "expectedUpc": "028400634793",
+      "expectedNameSha256": "3b36632906a3c027511800b7b46c850389cf2e6289065829a3c6df4f24efc930",
+      "replaceTextFrom": "Ruffles Flamin Hot 2 5/8oz",
+      "replaceTextTo": "Ruffles Flamin' Hot 2 5/8oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400634793-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400634793-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400634793-0010-en-US/images/49bd211c-7d4e-4eec-9d4a-921e87ad442d.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "7242",
+      "expectedUpc": "028400432795",
+      "expectedNameSha256": "f3f889d0d52b947a5379c96f35783748a46f2a65f962d8ee3aa02a8f0d20c3b1",
+      "replaceTextFrom": "Ruffles Queso 2 5/8oz",
+      "replaceTextTo": "Ruffles Queso Cheese 2 5/8oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400432795-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400432795-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400432795-0010-en-US/images/03f1c104-52f8-4c51-91f4-a518d965b6f8.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "7245",
+      "expectedUpc": "028400004695",
+      "expectedNameSha256": "6e920a6d8fa2b16931f7829eeec577940cf5bffbd3cbafa97d206daea5dd763e",
+      "replaceTextFrom": "Ruffles Smokehouse BBQ 2 7/8oz",
+      "replaceTextTo": "Ruffles Smokehouse Barbecue 2 7/8oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400004695-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400004695-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400004695-0010-en-US/images/21ea7a0a-2404-4659-8164-aad2816e74b9.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "8173",
+      "expectedUpc": "028400097918",
+      "expectedNameSha256": "b5f68391a46bb8758b9f98f2cef98327f76a0f8e4cd7b515613be87e1633223a",
+      "replaceTextFrom": "Sun Chips 2 3/4oz",
+      "replaceTextTo": "SunChips Harvest Cheddar 2 3/4oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400097918-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400097918-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400097918-0010-en-US/images/2dd15154-73aa-4177-9e3d-63f9e47bf624.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "8816",
+      "expectedUpc": "028400063999",
+      "expectedNameSha256": "bec70ec7400242d535e26ced8c67ab3c0e0d9a48dd9fa30a3f8288b93f8edfd3",
+      "replaceTextFrom": "Tostitos Rest. Style 13oz",
+      "replaceTextTo": "Tostitos Original Restaurant Style 13oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400063999-0010-en-US/index.html",
+          "supports": "Manufacturer UPC record identifies the brand, expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400063999-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches the original SKU UPC and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400063999-0010-en-US/images/a32cb0db-147f-4e17-a0c3-446bbe6acc27.jpg",
+          "supports": "Individually inspected package shows the corresponding brand and expression."
         }
       ]
     }
