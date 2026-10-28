@@ -20825,6 +20825,32 @@
           "supports": "Inspected bottle shows the brand and flavor."
         }
       ]
+    },
+    {
+      "sku": "3701",
+      "expectedUpc": "052000013726",
+      "expectedNameSha256": "cc320643be5028dcbe0be3f46e0905fcb18b444dc3fa2b68e868ea19d0a0f698",
+      "replaceTextFrom": "Gatorade thirst quencher 28oz",
+      "replaceTextTo": "Gatorade Flow Kiwi Strawberry Thirst Quencher 28oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/052000013726-0010-en-US/index.html",
+          "supports": "Retired manufacturer record specifies the exact UPC, flavor and 28 oz bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://preprod.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Sports-Drinks/Gatorade-Flow-Kiwi-Strawberry/p/1-I7OMB-1",
+          "supports": "Manufacturer distributor record confirms the exact UPC, flavor and bottle size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/052000013726-0010-en-US/images/2a921877-df60-4869-8cc4-7528b9e346ec.jpg",
+          "supports": "Package shows Flow Kiwi Strawberry and 28 oz."
+        }
+      ]
     }
   ],
   "identityReviews": [
