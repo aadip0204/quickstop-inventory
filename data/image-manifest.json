@@ -10992,6 +10992,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "344",
+      "expectedUpc": "084692201143",
+      "expectedName": "Alize Red Passion",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-344.jpg",
+      "alt": "Alize Red Passion — 750 mL bottle",
+      "sourcePage": "https://atozbev.com/products/alize-liqueur-red-passion-750ml",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0538/2959/9426/products/855.jpg?v=1630131046",
+      "sha256": "ac039da51f8d2b0a4f972f57599f3a5ccd64ec21706774faa4ad3443a86fc4e4",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "388",
+      "expectedUpc": "083300048729",
+      "expectedName": "Amarula Cream Liqueur",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-388.png",
+      "alt": "Amarula Cream Liqueur — 750 mL bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/74315-amarula-cream-liqueur-marula-fruit-750-ml",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_330ed557-0218-4dab-b9c0-3c1ad5b34387.png",
+      "sha256": "fd5976c307c2f746b227bcfe44ce1d81a31583e6dd734860d326787434567102",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
