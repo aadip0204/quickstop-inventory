@@ -4186,6 +4186,15 @@
       "action": "size_needs_confirmation",
       "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
       "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "8000",
+      "expectedUpc": "049000024708",
+      "expectedNameSha256": "7c9b2e8d01993e71ec7c9eaa3829b13388514f63bbb2a8dc78ee8c8960b6dc10",
+      "expectedSourceRecordSha256": "3f69ca8fa51e29cdaf5acd92ab2a0e59cb076ffdf8c98c5e59ed1cc45e45116a",
+      "action": "size_needs_confirmation",
+      "reason": "The source size and package description conflict with exact UPC product records; retain original fields and request size confirmation.",
+      "reviewedOn": "2026-10-28"
     }
   ]
 }
