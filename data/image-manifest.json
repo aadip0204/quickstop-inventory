@@ -10596,6 +10596,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2830",
+      "expectedUpc": "078000083460",
+      "expectedName": "DIET DR PEPPER",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-2830.png",
+      "alt": "DIET DR PEPPER — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/16847366-diet-dr-pepper-soda-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5d2594f6-6cbc-4941-9815-208a1950b7a4.png",
+      "sha256": "46150b2c590f4fbe450f3eaf91431b6fa6caa74586c2dbcb1cf262294d0c6cfe",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3019",
+      "expectedUpc": "078000082463",
+      "expectedName": "DR. PEPPER",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-3019.jpg",
+      "alt": "DR. PEPPER — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/16657490-dr-pepper-soda-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6f612250-5efc-4226-8949-645f15f1e000.jpg",
+      "sha256": "85a574712d477a30756ef64a3f228d36bcb4c6f267a362b76940f029fdf235b5",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8222",
+      "expectedUpc": "078000116465",
+      "expectedName": "Sunkist Grape",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-8222.jpg",
+      "alt": "Sunkist Grape — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/42256-sunkist-grape-soda-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2e99e3fd-2bd2-487c-a61d-ac2587ee21b1.jpg",
+      "sha256": "74194a11c6decceae0ceaacb22e5663c1125a2d028882a5d747c8b12489dfe6e",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8231",
+      "expectedUpc": "078000113464",
+      "expectedName": "SUNKIST ORANGE",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-8231.jpg",
+      "alt": "SUNKIST ORANGE — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/16409565-sunkist-orange-soda-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9fa0cc7b-89a3-4ca1-b7f4-e0f1e51d7899.jpg",
+      "sha256": "99468db4f99e78aefb85111f23f4f71e508938af4de338544dd9d01ad84aa701",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
