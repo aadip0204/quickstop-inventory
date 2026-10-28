@@ -21002,6 +21002,32 @@
           "supports": "The inspected package shows Tahitian Treat Fruit Punch and 2 liters."
         }
       ]
+    },
+    {
+      "sku": "101485",
+      "expectedUpc": "078000039405",
+      "expectedNameSha256": "3d7eae47beee6743feeed74aae758b7eeecb65ebb2fe624b244f3fdcbb691907",
+      "replaceTextFrom": "CANADA DRY FRT SPL CHY 2L",
+      "replaceTextTo": "Canada Dry Fruit Splash Cherry Ginger Ale 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/47732210-cd-fruit-splash-2-l",
+          "supports": "Exact UPC listing identifies cherry ginger ale and a 2-liter bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=078000039405",
+          "supports": "Exact UPC record identifies Cherry Fruit Splash Ginger Ale."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5336dfa4-bdfd-4466-bb4a-7e03b94ef7e7.jpg",
+          "supports": "Inspected package shows Cherry Ginger Ale and 2 liters."
+        }
+      ]
     }
   ],
   "identityReviews": [

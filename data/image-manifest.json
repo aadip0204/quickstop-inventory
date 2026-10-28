@@ -10750,6 +10750,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "101485",
+      "expectedUpc": "078000039405",
+      "expectedName": "Canada Dry Fruit Splash Cherry Ginger Ale",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-101485.jpg",
+      "alt": "Canada Dry Fruit Splash Cherry Ginger Ale — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/47732210-cd-fruit-splash-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5336dfa4-bdfd-4466-bb4a-7e03b94ef7e7.jpg",
+      "sha256": "0736da130798f716fa94ad3f2d04ece76011a6c48ed374937c02b20705b9d50a",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
