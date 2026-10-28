@@ -9914,6 +9914,292 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2870",
+      "expectedUpc": "012000064524",
+      "expectedName": "DOLE LEMONADE",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-2870.jpg",
+      "alt": "DOLE LEMONADE — 2 L package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000064524-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000064524-0010-en-US/images/6732eea0-e452-433f-bd80-817e0d7f4fa2.tif",
+      "sha256": "0b8feef57a2bf2574751eec371366487af1e37b53199c742c7a956eb610352c7",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2869",
+      "expectedUpc": "012000064494",
+      "expectedName": "DOLE LEMONADE",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-2869.jpg",
+      "alt": "DOLE LEMONADE — 20 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000064494-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000064494-0010-en-US/images/3523f5e1-771d-4a26-b197-1200c8ff3c84.jpg",
+      "sha256": "c0406ed2e490cb23d6efd5ac9cfee9868a562c268ef2460f742a699f0cd5d0e2",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2877",
+      "expectedUpc": "012000064531",
+      "expectedName": "DOLE STRAWBERRY LEMONADE",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-2877.jpg",
+      "alt": "DOLE STRAWBERRY LEMONADE — 2 L package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000064531-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000064531-0010-en-US/images/ba49f2e7-030f-4b76-982f-3c7f014d6a97.tif",
+      "sha256": "317494a392377d6286e990b74540cf61cf8cb50a563a00ac432b0e2acbfca2d9",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2876",
+      "expectedUpc": "012000064500",
+      "expectedName": "DOLE STRAWBERRY LEMONADE",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-2876.jpg",
+      "alt": "DOLE STRAWBERRY LEMONADE — 20 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000064500-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000064500-0010-en-US/images/78a91f03-b7f1-4f85-aed9-123a6f225442.jpg",
+      "sha256": "62c4a7c87b62b29dbe9881d23f0d943b10e091b654e4cfe78f3e56678d7c3d1e",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5331",
+      "expectedUpc": "012000017513",
+      "expectedName": "Manzanita Sol Apple Soda",
+      "expectedLabel": "12 oz",
+      "src": "images/products/sku-5331.jpg",
+      "alt": "Manzanita Sol Apple Soda — 12 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000017513-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000017513-0010-en-US/images/df2e59c0-d023-4161-a164-1489fb6c005a.jpg",
+      "sha256": "1049386234b27d74e01f6f388cb4c842e7fe51a150b5f4b015be192719c76bde",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6002",
+      "expectedUpc": "012000027215",
+      "expectedName": "Mountain Dew",
+      "expectedLabel": "16 oz · cans",
+      "src": "images/products/sku-6002.jpg",
+      "alt": "Mountain Dew — 16 oz · cans package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000027215-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000027215-0010-en-US/images/40b23211-ce4d-4cee-b13b-3fd3a5925591.jpg",
+      "sha256": "368ac424dcba0b1c594d841941f9fc6492c15856daf4a9318139be3a4a531220",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6010",
+      "expectedUpc": "012000151194",
+      "expectedName": "Mountain Dew Kickstart Hydrating Boost Watermelon",
+      "expectedLabel": "12 oz · cans",
+      "src": "images/products/sku-6010.jpg",
+      "alt": "Mountain Dew Kickstart Hydrating Boost Watermelon — 12 oz · cans package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000151194-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000151194-0010-en-US/images/e9a42293-9433-4fa0-b5a5-f3ce26eed863.jpg",
+      "sha256": "e391438bdb129620e9b7d54ef6145e4feafb50947f0a5d20172f5f2212aa66c4",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6008",
+      "expectedUpc": "012000151217",
+      "expectedName": "Mountain Dew Kickstart Recharge Blood Orange",
+      "expectedLabel": "12 oz · cans",
+      "src": "images/products/sku-6008.jpg",
+      "alt": "Mountain Dew Kickstart Recharge Blood Orange — 12 oz · cans package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000151217-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000151217-0010-en-US/images/54d0b837-9b60-4efb-a79f-a26bb5b03eed.jpg",
+      "sha256": "8110eac3234b89dc9dceab7c72473afd33abf7438502779f7f8f272ddaef6045",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5880",
+      "expectedUpc": "012000567414",
+      "expectedName": "Mountain Dew White Out",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-5880.jpg",
+      "alt": "Mountain Dew White Out — 2 L package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000567414-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000567414-0010-en-US/images/3db414af-681a-40d1-8621-f63d71211e2e.jpg",
+      "sha256": "662f7e054f0380d37ee80fb3ac08db09b87ac6d89de6e9cd82fd0553fc9b3386",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6274",
+      "expectedUpc": "012000021381",
+      "expectedName": "Ocean Spray Cran-Grape Juice Drink",
+      "expectedLabel": "15.2 oz",
+      "src": "images/products/sku-6274.jpg",
+      "alt": "Ocean Spray Cran-Grape Juice Drink — 15.2 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000021381-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000021381-0010-en-US/images/43f4fe37-5707-457b-96a4-eee36e39d1f5.jpg",
+      "sha256": "6ffd55fcec007232e85d52108470338e1f4f23df04ded9b5415af400b6a3d610",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1337",
+      "expectedUpc": "012000638404",
+      "expectedName": "Brisk Fruit Punch Juice Drink",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-1337.jpg",
+      "alt": "Brisk Fruit Punch Juice Drink — 2 L package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000638404-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000638404-0010-en-US/images/1621ad04-a861-4b2f-a585-7727add47fe9.jpg",
+      "sha256": "3d69b26b9c754522ba143daf9317a2861c59489f6a6f4e5bd6a363c8e5690315",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1339",
+      "expectedUpc": "012000042737",
+      "expectedName": "Brisk Half & Half Iced Tea + Tropical Lemonade",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1339.jpg",
+      "alt": "Brisk Half & Half Iced Tea + Tropical Lemonade — 1 L package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000042737-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000042737-0010-en-US/images/1a718283-1398-4b8a-a1c5-cd196364c556.jpg",
+      "sha256": "5dcbbfa1ce5d7d6eeaaa31beccfc181788662ebd0a8ce6ea545601cb869e7367",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1348",
+      "expectedUpc": "012000101915",
+      "expectedName": "Brisk Lemonade",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-1348.jpg",
+      "alt": "Brisk Lemonade — 2 L package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000101915-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000101915-0010-en-US/images/f635fb0d-bede-4402-892e-c2355514abd9.jpg",
+      "sha256": "9de755c346e80f957438f82c728106bd4c52566dbfe2fd0e7dcc864ff4ed84f9",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
