@@ -8484,6 +8484,204 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2271",
+      "expectedUpc": "049000050141",
+      "expectedName": "Coca-Cola Zero Sugar",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-2271.jpg",
+      "alt": "Coca-Cola Zero Sugar — 2 L bottle",
+      "sourcePage": "https://www.kroger.com/p/coca-cola-zero-sugar-soda-bottle/0004900005014",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0004900005014",
+      "sha256": "0b1827490afaa51d7133d7055dc6e7a62bf801bf9f257a2703faff4af6710762",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2267",
+      "expectedUpc": "049000050103",
+      "expectedName": "Coke",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-2267.jpg",
+      "alt": "Coke — 2 L bottle",
+      "sourcePage": "https://www.kroger.com/p/coca-cola-soda-bottle/0004900005010",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0004900005010",
+      "sha256": "08309e6effd5b563f4cde7be8d6cef9a225c6bbcac34193b1f8354076d1f90e3",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2828",
+      "expectedUpc": "049000050110",
+      "expectedName": "Diet Coke",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-2828.jpg",
+      "alt": "Diet Coke — 2 L bottle",
+      "sourcePage": "https://www.kroger.com/p/diet-coke-soda-bottle/0004900005011",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0004900005011",
+      "sha256": "bf10e54c64514cd68f81c50e41440163895b3c8877139851275c189a150e93c5",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3289",
+      "expectedUpc": "049000026276",
+      "expectedName": "Fanta Grape",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-3289.jpg",
+      "alt": "Fanta Grape — 20 oz bottle",
+      "sourcePage": "https://www.kroger.com/p/fanta-grape-soda-pop-fruit-flavored-soft-drink/0004900002627",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0004900002627",
+      "sha256": "0335732c5e2d0ba70ec76b8bf9360069a0930e46fefb1b4e6f49731890ecb924",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3290",
+      "expectedUpc": "049000050240",
+      "expectedName": "Fanta Grape",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-3290.jpg",
+      "alt": "Fanta Grape — 2 L bottle",
+      "sourcePage": "https://www.kroger.com/p/fanta-grape-caffeine-free-soda-bottle/0004900005024",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0004900005024",
+      "sha256": "897c1eb72372395d14c4ac80df73d77ede88dfbcf7c90505afb12143953d3dbd",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3293",
+      "expectedUpc": "049000019162",
+      "expectedName": "Fanta Orange",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-3293.jpg",
+      "alt": "Fanta Orange — 20 oz bottle",
+      "sourcePage": "https://www.kroger.com/p/fanta-orange-soda-bottle/0004900001916",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0004900001916",
+      "sha256": "2ffb4bfb08ed2dadfb677c64f1882130bd391dc5b53e990062c6bdf6899faafc",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3294",
+      "expectedUpc": "049000050257",
+      "expectedName": "Fanta Orange",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-3294.jpg",
+      "alt": "Fanta Orange — 2 L bottle",
+      "sourcePage": "https://www.kroger.com/p/fantaa-orange-caffeine-free-soda-bottle/0004900005025",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0004900005025",
+      "sha256": "c08b1d2584e0bde90f862a3d09920afc3e53531e491876c126aef9299ddeaeb4",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3296",
+      "expectedUpc": "049000050264",
+      "expectedName": "Fanta Pineapple",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-3296.jpg",
+      "alt": "Fanta Pineapple — 2 L bottle",
+      "sourcePage": "https://www.kroger.com/p/fanta-pineapple-soda-bottle/0004900005026",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0004900005026",
+      "sha256": "4ca61be51bb47f60a173f11d658a32fc7e92bc46e09a62b7a02431de41ec95b4",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3298",
+      "expectedUpc": "049000050271",
+      "expectedName": "Fanta Strawberry",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-3298.jpg",
+      "alt": "Fanta Strawberry — 2 L bottle",
+      "sourcePage": "https://www.kroger.com/p/fanta-strawberry-soda-bottle-2-liters/0004900005027",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0004900005027",
+      "sha256": "35a60dcfada3ed29a2d1d233d10b1bdfe3efd0efae03b60b4df554a7025dfe99",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
