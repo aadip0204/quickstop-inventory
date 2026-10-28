@@ -10948,6 +10948,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "226",
+      "expectedUpc": "089000990641",
+      "expectedName": "99 Peaches",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-226.jpg",
+      "alt": "99 Peaches — 750 mL bottle",
+      "sourcePage": "https://www.delmesaliquor.com/products/99-brand-peaches",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/1277/3667/products/99-Peaches_0ca8b767-8f9e-4873-a313-59e1b36c06a9.jpg?v=1626052429",
+      "sha256": "289798e3acd9fce8e550e9019b68f851d518a98933a9f774dbfb204e95928ce9",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "225",
+      "expectedUpc": "089000991013",
+      "expectedName": "99 Watermelons",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-225.jpg",
+      "alt": "99 Watermelons — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-53731447",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_4107f95b-e569-4971-8fee-9ceecf2a991b?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "8a80c737a05be2e9c0e40bcc14c539c12354df18ab86d7354c14ae77b4334419",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
