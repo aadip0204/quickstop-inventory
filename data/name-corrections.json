@@ -21028,6 +21028,27 @@
           "supports": "Inspected package shows Cherry Ginger Ale and 2 liters."
         }
       ]
+    },
+    {
+      "sku": "109",
+      "expectedUpc": "811538010412",
+      "expectedNameSha256": "54cce182171559e2baeb4c9efefac172df6b8cb81e8459bec1fdf5434859a3ce",
+      "replaceTextFrom": "1800 Silver 750ml",
+      "replaceTextTo": "1800 Silver Okuda San Miguel Artist Series 750ml",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/172599",
+          "supports": "State alcohol commission identifies the exact UPC as the Okuda San Miguel Silver 750 mL edition."
+        },
+        {
+          "kind": "product_series",
+          "url": "https://sipwhiskey.com/collections/tequila/products/essential-1800-artists-series-okuda-san-miguel-limited-edition-bottle",
+          "supports": "The artist series uses six bottle designs; the specific design remains unconfirmed."
+        }
+      ]
     }
   ],
   "identityReviews": [
