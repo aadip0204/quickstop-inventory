@@ -9122,6 +9122,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "193",
+      "expectedUpc": "078000000344",
+      "expectedName": "7 UP",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-193.jpg",
+      "alt": "7 UP — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/16776210-7up-lemon-lime-soda-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b121b1fe-b7e2-41fb-a54a-41d7a0fa6735.jpg",
+      "sha256": "fe2e5bf33a39e3315387eedc20309d305ec38d16c0428eb613242d8a0fa36566",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "192",
+      "expectedUpc": "078000001617",
+      "expectedName": "7 UP",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-192.png",
+      "alt": "7 UP — 20 oz bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/16789291-7up-lemon-lime-soda-20-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_293d446c-6696-4a6a-9a65-04fa66b4ea74.png",
+      "sha256": "bb570da89fe03f026186dfc763ae012111512579f6a74a8906a28aabbe067f82",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "209",
+      "expectedUpc": "078000005318",
+      "expectedName": "7UP CHERRY",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-209.jpg",
+      "alt": "7UP CHERRY — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/93684-7up-cherry-flavored-soda-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_51a6c1e2-8836-481e-9a6b-fdcb2d7897d1.jpg",
+      "sha256": "5a67ffc1c5cc48838886b848a981e31ab8b3467a4b148e01022bc46c29b89e84",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "242",
+      "expectedUpc": "078000054460",
+      "expectedName": "A&W CREAM SODA",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-242.jpg",
+      "alt": "A&W CREAM SODA — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/16409556-a-w-cream-soda-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5861e13e-faf7-4fd5-ba18-2fd413f639d0.jpg",
+      "sha256": "1232fd840284bff5227679197afa7300ed3853e4e18b36219a2a51fb2102e982",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
