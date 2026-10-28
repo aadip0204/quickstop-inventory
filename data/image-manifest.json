@@ -7604,6 +7604,292 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1952",
+      "expectedUpc": "028400624442",
+      "expectedName": "Cheetos Bag of Bones White Cheddar Flavored Cheese Snacks",
+      "expectedLabel": "2.625 oz",
+      "src": "images/products/sku-1952.jpg",
+      "alt": "Cheetos Bag of Bones White Cheddar Flavored Cheese Snacks — 2.625 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400624442-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400624442-0011-en-US/images/63c77808-237c-4755-a134-14cd18384298.jpg",
+      "sha256": "c64df6eb4301e19379d0f11c7d33c5f8745bdf434c98ad656e8bf163ff2598e3",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1949",
+      "expectedUpc": "028400047913",
+      "expectedName": "Cheetos Crunchy Flamin' Hot Flavored Cheese Flavored Snacks",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-1949.jpg",
+      "alt": "Cheetos Crunchy Flamin' Hot Flavored Cheese Flavored Snacks — 2 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400047913-0015-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400047913-0015-en-US/images/c9231d51-95c9-4697-bfe1-99cd2cd11d9e.jpg",
+      "sha256": "042c26fd8e6fa218e858aba8922f197f5847589fe27479087b9f40a5a8e55bab",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1947",
+      "expectedUpc": "028400674164",
+      "expectedName": "Cheetos Crunchy XXtra Flamin' Hot Flavored Cheese Flavored Snacks",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-1947.jpg",
+      "alt": "Cheetos Crunchy XXtra Flamin' Hot Flavored Cheese Flavored Snacks — 2 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400674164-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400674164-0012-en-US/images/51c663c8-f3f0-4dab-a4cd-5808c7ac4211.jpg",
+      "sha256": "7a340c7f4218f1a2ca0c223d84d0d325567fffbfcb38877de2d516be0459d9f9",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1948",
+      "expectedUpc": "028400305907",
+      "expectedName": "Cheetos Flamin' Hot Flavored Popcorn",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-1948.jpg",
+      "alt": "Cheetos Flamin' Hot Flavored Popcorn — 2 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400305907-0013-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400305907-0013-en-US/images/410d68e2-ce98-46fc-aa07-cd948260fa1d.jpg",
+      "sha256": "94bc77172115e1495714477353bcb180c2501e1f3c4af314566b1e51940b5e4c",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1975",
+      "expectedUpc": "028400211772",
+      "expectedName": "Cheetos Flavor Shots Flamin' Hot Asteroids Flavored Corn Puffs",
+      "expectedLabel": "1.25 oz",
+      "src": "images/products/sku-1975.jpg",
+      "alt": "Cheetos Flavor Shots Flamin' Hot Asteroids Flavored Corn Puffs — 1.25 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400211772-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400211772-0011-en-US/images/bcab25d7-0fdd-4254-94c0-16aaa2478799.JPEG",
+      "sha256": "a18b32c1811ab2691b56a37906f090528afe398e19954672ef2dbc3e26dabd68",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2915",
+      "expectedUpc": "028400070546",
+      "expectedName": "Doritos Cool Ranch Flavored Tortilla Chips",
+      "expectedLabel": "1.75 oz",
+      "src": "images/products/sku-2915.jpg",
+      "alt": "Doritos Cool Ranch Flavored Tortilla Chips — 1.75 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400070546-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400070546-0012-en-US/images/505f1278-aab2-4382-a33a-1208577e48eb.jpg",
+      "sha256": "fcf3f32161a0048552b3c7973606b6ac7101ba9480c9e8573d3f0de31a825820",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2936",
+      "expectedUpc": "028400516464",
+      "expectedName": "Doritos Nacho Cheese Flavored Tortilla Chips",
+      "expectedLabel": "9.25 oz",
+      "src": "images/products/sku-2936.jpg",
+      "alt": "Doritos Nacho Cheese Flavored Tortilla Chips — 9.25 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400516464-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400516464-0012-en-US/images/a0ede8be-1b82-4cb7-b168-88df844302cf.jpg",
+      "sha256": "4bc7204c75f9b33322500fa841ff09ef5e94e728b1bc3ef32797e7c88cadf9c1",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5026",
+      "expectedUpc": "028400091565",
+      "expectedName": "Lay's Classic Potato Chips",
+      "expectedLabel": "1.5 oz",
+      "src": "images/products/sku-5026.jpg",
+      "alt": "Lay's Classic Potato Chips — 1.5 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400091565-0013-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400091565-0013-en-US/images/dde3dac2-aa49-461f-9a47-434e36c9bac6.jpg",
+      "sha256": "b06c4e75faf8d5ea93444243edfd4ccbc9d7da05794e9d66b9fd6e17296da8f1",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7226",
+      "expectedUpc": "028400002912",
+      "expectedName": "Ruffles Cheddar & Sour Cream Flavored Potato Chips",
+      "expectedLabel": "1.5 oz",
+      "src": "images/products/sku-7226.jpg",
+      "alt": "Ruffles Cheddar & Sour Cream Flavored Potato Chips — 1.5 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400002912-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400002912-0012-en-US/images/719d7a9e-049d-4975-8721-f8d5ed05b5c4.jpg",
+      "sha256": "4910b6ae228385bc42dfa4719b8e225f8bcaced1ccb563f90d5f257e382af370",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8820",
+      "expectedUpc": "028400090582",
+      "expectedName": "Tostitos Cheese Flavored Smooth & Cheesy Dip",
+      "expectedLabel": "15 oz",
+      "src": "images/products/sku-8820.jpg",
+      "alt": "Tostitos Cheese Flavored Smooth & Cheesy Dip — 15 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400090582-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400090582-0011-en-US/images/399f2eac-a0bf-41d2-8d7f-4905f57939c5.jpg",
+      "sha256": "cd98e2e939e69577c0f846ee81600eb205b52f79d29ed8c1570293fb342f6609",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8812",
+      "expectedUpc": "028400589253",
+      "expectedName": "Tostitos Habanero Hot Chunky Salsa",
+      "expectedLabel": "15.5 oz",
+      "src": "images/products/sku-8812.jpg",
+      "alt": "Tostitos Habanero Hot Chunky Salsa — 15.5 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400589253-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400589253-0012-en-US/images/8d2501da-127a-4a1e-be69-d48c48d068fc.png",
+      "sha256": "dce00ee1de51f5fcff1c9af9be16aa006e7ecf73e3e5fed2a0b5672849cd5bc2",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7305",
+      "expectedUpc": "028400005784",
+      "expectedName": "Munchies Cheetos Cheddar Cheese Flavored on Baked Golden Toast Sandwich Crackers",
+      "expectedLabel": "1.38 oz",
+      "src": "images/products/sku-7305.jpg",
+      "alt": "Munchies Cheetos Cheddar Cheese Flavored on Baked Golden Toast Sandwich Crackers — 1.38 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400005784-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400005784-0012-en-US/images/44ec9254-ef48-46e2-9f0e-6507765be1de.jpg",
+      "sha256": "34185ae045f04db882028cbb2b137703e53be6d3a5fc509a0782f93d2088eaaa",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7306",
+      "expectedUpc": "028400006200",
+      "expectedName": "Munchies Doritos Jalapeno Cheddar Artificially Flavored on Baked Golden Toast Sandwich Crackers",
+      "expectedLabel": "1.38 oz",
+      "src": "images/products/sku-7306.jpg",
+      "alt": "Munchies Doritos Jalapeno Cheddar Artificially Flavored on Baked Golden Toast Sandwich Crackers — 1.38 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400006200-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400006200-0012-en-US/images/e2fe0879-979a-47d6-b800-d9c67ecccfc5.jpg",
+      "sha256": "f18acb5428cd39f196ea3246391b29d159280cb0a4f375b8b65d9d620a0679f2",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
