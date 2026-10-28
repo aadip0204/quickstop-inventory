@@ -3335,6 +3335,29 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8439",
+      "expectedUpc": "013409351505",
+      "expectedName": "Sweet Baby Ray's Hickory & Brown Sugar Barbecue Sauce",
+      "expectedLabel": "18 oz",
+      "src": "images/products/sku-8439.jpg",
+      "alt": "Sweet Baby Ray's Hickory & Brown Sugar Barbecue Sauce — 18 oz packaging",
+      "sourcePage": "https://world.openfoodfacts.org/product/0013409351505",
+      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/340/935/1505/6.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "openfoodfacts-contributors / Open Food Facts",
+      "sha256": "422d08cc7fc7217c47e75365c36363aa9c440d6ff80fb7f95f4d3e5fe1f7c5c8",
+      "verifiedOn": "2026-10-27",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

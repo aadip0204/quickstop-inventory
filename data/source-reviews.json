@@ -2808,6 +2808,52 @@
         ],
         "reason": "The exact UPC distributor and retailer identify a 1.25 L single plastic bottle. The actual front explicitly prints 42.2 FL OZ, corroborating the original title measurement rather than the conflicting pack description. No raw field is overwritten."
       }
+    },
+    {
+      "sku": "8439",
+      "expectedUpc": "013409351505",
+      "expectedNameSha256": "c575fae1243aa346f517b2d0d6f39136aecac7e28f20bac9b6eba8fd5216a869",
+      "expectedSourceRecordSha256": "2ab50285d5e85b79f4af17c98fd9006315160e590c4708915faf139691ea668a",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Sweet Baby Ray's Hickory & Brown Sugar Barbecue Sauce",
+      "verifiedLabel": "18 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, manufacturer product and package image, exact-UPC primary retailer listings, and the individually inspected complete OFF package corroborate this one previously unspecified-size SKU. Source title and raw fields remain preserved privately; no known-size resolver broadening.",
+      "reviewedOn": "2026-10-27",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.sweetbabyrays.com/sauces/barbecue-sauces/hickory-brown-sugar-barbecue-sauce",
+          "supports": "Sweet Baby Ray's identifies Hickory & Brown Sugar Barbecue Sauce. Its linked official bottle image was individually inspected and prints NET WT18 OZ (1 LB2 OZ)510g. The manufacturer page is not claimed to print the UPC; retailer corroboration supplies that link."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-14779732",
+          "supports": "Primary retailer lists Sweet Baby Ray's Hickory & Brown Sugar Barbecue Sauce18oz, UPC013409351505 and Package Quantity1. This is one bottle, not a wholesale case or a retailer-created multipack."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.smartandfinal.com/sm/pickup/rsid/315/product/sweet-baby-rays-hickory-%26-brown-sugar-barbecue-sauce-id-00013409351505",
+          "supports": "Primary retailer identifies Hickory & Brown Sugar Barbecue Sauce18 Ounce and product number00013409351505, the zero-padded source UPC. Its separate Case Size12 is not assigned to this single-bottle SKU."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.delitea.se/sweet-baby-rays-bbq-sas-hickory-510g",
+          "supports": "Primary retailer historical listing identifies Hickory barbecue sauce510g and EAN013409351505. Listing availability is not asserted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/340/935/1505/6.jpg",
+          "supports": "Full original individually inspected: complete single Sweet Baby Ray's Hickory & Brown Sugar Barbecue Sauce bottle on white. Full cap with margin and base visible; NET WT18 OZ (1 LB2 OZ)510g readable. No visible prices or household objects. Best of three studio alternatives, conditional on exact-source guarded identity resolution and parent review; not a public assignment."
+        }
+      ]
     }
   ]
 }
