@@ -15034,7 +15034,7 @@
         "sourceSha256": "de42ec8615164a5b6458e803d066c2caca2fc36648113d801c812eabc924fe75",
         "retiredNotice": true
       },
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "1.125 oz",
       "verifiedPublicName": "Doritos Dinamita Chile Limon Flavored Rolled Tortilla Chips"
     },
     {
@@ -17754,7 +17754,7 @@
       "sku": "3491",
       "expectedUpc": "028400000222",
       "expectedNameSha256": "ddb4c31eb6435ab58847dd0167ed711458686605aaa6efefbd9ea9ac94a2affc",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "9 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17922,7 +17922,7 @@
       "sku": "3490",
       "expectedUpc": "028400000246",
       "expectedNameSha256": "85f633c7f9ac40c5f2ad7e0c5a921644f3511ce6ae8eb81721630b0202ec2bca",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "9 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -18263,7 +18263,7 @@
       "sku": "7270",
       "expectedUpc": "028400041546",
       "expectedNameSha256": "8f3dd79324a75ce6d8d498fcb002e49046cefbab0f2bd1e273346c8e42e66aa1",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "4 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -18375,7 +18375,7 @@
       "sku": "101355",
       "expectedUpc": "028400261531",
       "expectedNameSha256": "1b470068f6f77af8df7f092d3ccdf03aaa99ba7bc8f3bf89b1b26bd2c7ca6d5b",
-      "expectedLabel": "1 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -18487,7 +18487,7 @@
       "sku": "101357",
       "expectedUpc": "028400261548",
       "expectedNameSha256": "32722f221031cec6a7f76c24d771469c553753855878d21e058d507837f66abb",
-      "expectedLabel": "1 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -18543,7 +18543,7 @@
       "sku": "6595",
       "expectedUpc": "028400260725",
       "expectedNameSha256": "313a2491eb2e8db9ccd106ace330fa6fe2246b3bc0051b409fee230e8a71514b",
-      "expectedLabel": "13 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -18683,7 +18683,7 @@
       "sku": "5051",
       "expectedUpc": "028400070942",
       "expectedNameSha256": "1e0acae38f8d3265c265b57ade4f31ce88c1b7ec9ef316db8c8bf15e0f47bf5a",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "15 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -18711,7 +18711,7 @@
       "sku": "101358",
       "expectedUpc": "028400261555",
       "expectedNameSha256": "b702e77a15f44f0c25afea4c300f0a13e0e44afb4b4a363785bd08662ba149a3",
-      "expectedLabel": "1 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -20195,6 +20195,32 @@
           "kind": "inspected_package_photo",
           "url": "https://smartlabel.pepsico.info/028400420617-0012-en-US/images/7a1dfb43-652d-4679-91c5-b3bb8badf94f.jpg",
           "supports": "Manufacturer package photograph was inspected for the brand, expression and stated size."
+        }
+      ]
+    },
+    {
+      "sku": "6751",
+      "expectedUpc": "028400087735",
+      "expectedNameSha256": "62e9a4034c9b39fceb77b4528319a21c717ed4f14f8e6e329d13f3c7904c16fa",
+      "replaceTextFrom": "POPCORN WHITE CHDDAR 3/4OZ",
+      "replaceTextTo": "Smartfood White Cheddar Flavored Popcorn 3/4OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400087735-0011-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product name and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400087735-0011-en-US/index.html",
+          "supports": "The manufacturer listing connects UPC and complete product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400087735-0011-en-US/images/e389813e-0a92-4da6-a517-375c1cf3d3ca.jpg",
+          "supports": "The inspected package shows brand, expression and 3/4 oz weight."
         }
       ]
     }

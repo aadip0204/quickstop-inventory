@@ -3934,6 +3934,258 @@
       "action": "size_needs_confirmation",
       "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
       "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "3490",
+      "expectedUpc": "028400000246",
+      "expectedNameSha256": "85f633c7f9ac40c5f2ad7e0c5a921644f3511ce6ae8eb81721630b0202ec2bca",
+      "expectedSourceRecordSha256": "6143d3c93e0706e9faa098102d46077716bc815fde759d0ff017e9d3397f5b33",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Fritos Jalapeno & Cheddar Flavored Cheese Dip",
+      "verifiedLabel": "9 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400000246-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400000246-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400000246-0012-en-US/images/09f5dbac-c528-42bf-ab2d-671da2fc5eaf.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "3491",
+      "expectedUpc": "028400000222",
+      "expectedNameSha256": "ddb4c31eb6435ab58847dd0167ed711458686605aaa6efefbd9ea9ac94a2affc",
+      "expectedSourceRecordSha256": "62e1e3cb9f2451751572d811346693cbe91370f9ec48b91fd4a120e20fc27238",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Fritos Mild Cheddar Flavored Cheese Dip",
+      "verifiedLabel": "9 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400000222-0011-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400000222-0011-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400000222-0011-en-US/images/8be400ac-1bea-4e58-bf6c-2aaf7eaceeea.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "5051",
+      "expectedUpc": "028400070942",
+      "expectedNameSha256": "1e0acae38f8d3265c265b57ade4f31ce88c1b7ec9ef316db8c8bf15e0f47bf5a",
+      "expectedSourceRecordSha256": "0eb107bd989fb206564645beccec01d01661f7f4832c04cd70b27382887b32f8",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Lay's French Onion Flavored Dip",
+      "verifiedLabel": "15 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400070942-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400070942-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400070942-0012-en-US/images/25c20f22-e982-42c2-97b5-1208fb449ac7.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "7270",
+      "expectedUpc": "028400041546",
+      "expectedNameSha256": "8f3dd79324a75ce6d8d498fcb002e49046cefbab0f2bd1e273346c8e42e66aa1",
+      "expectedSourceRecordSha256": "da21012d4e3b0992ea003448bc9436c558d932d4857a8e40719fdfa2fbad990b",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Sabritones Chile & Lime Flavored Puffed Wheat Snacks",
+      "verifiedLabel": "4 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400041546-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400041546-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400041546-0012-en-US/images/bfc42ea6-c3ad-40b5-adab-4305ca808ad0.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "2926",
+      "expectedUpc": "028400162128",
+      "expectedNameSha256": "da9cd280a9ee71c6378eb3225a0dbd8b785863397a2f89f2e49c0c66d764784a",
+      "expectedSourceRecordSha256": "9017dd655c5e5320f3e1a7443533b71f76802dbe493944bd72a490e086282401",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Doritos Dinamita Chile Limon Flavored Rolled Tortilla Chips",
+      "verifiedLabel": "1.125 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400162128-0011-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400162128-0011-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400162128-0011-en-US/images/4b1023d4-9fde-4a03-b69c-3bee3ab72fd1.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "7269",
+      "expectedUpc": "028400133142",
+      "expectedNameSha256": "9e166ccd425c758fdeacf26491418a4b3526783a0e4018dccea9c10f5573af71",
+      "expectedSourceRecordSha256": "0cb5d38709674bbbfaca1ea8fcdeb79563ae96f77407032086668beb5f577291",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Doritos Dinamita Chile Limon Flavored Rolled Tortilla Chips",
+      "verifiedLabel": "1.75 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400133142-0013-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400133142-0013-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400133142-0013-en-US/images/c2dcd9eb-ad04-4e15-930f-5b6ed55e0618.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "6595",
+      "expectedUpc": "028400260725",
+      "expectedNameSha256": "313a2491eb2e8db9ccd106ace330fa6fe2246b3bc0051b409fee230e8a71514b",
+      "expectedSourceRecordSha256": "1a9eda9de6945d92173c518fd85137e65c49ece0d6105bd4fc9e267649213b75",
+      "action": "size_needs_confirmation",
+      "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
+      "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "101358",
+      "expectedUpc": "028400261555",
+      "expectedNameSha256": "b702e77a15f44f0c25afea4c300f0a13e0e44afb4b4a363785bd08662ba149a3",
+      "expectedSourceRecordSha256": "a318f21e9e72c60b8ee5d9ebb7db3df61e4d8f8fb955f3ab9e8f1ca2f3a94e4c",
+      "action": "size_needs_confirmation",
+      "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
+      "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "101355",
+      "expectedUpc": "028400261531",
+      "expectedNameSha256": "1b470068f6f77af8df7f092d3ccdf03aaa99ba7bc8f3bf89b1b26bd2c7ca6d5b",
+      "expectedSourceRecordSha256": "29b79e42749fdb53bc60cb789cddabaa32c647724315821597cdf845d6f440f7",
+      "action": "size_needs_confirmation",
+      "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
+      "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "101357",
+      "expectedUpc": "028400261548",
+      "expectedNameSha256": "32722f221031cec6a7f76c24d771469c553753855878d21e058d507837f66abb",
+      "expectedSourceRecordSha256": "4800bfe6e59934c56fd572e7a9094246c10542ef7577bb48cde116aa26ff32bf",
+      "action": "size_needs_confirmation",
+      "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
+      "reviewedOn": "2026-10-28"
     }
   ]
 }
