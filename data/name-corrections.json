@@ -19885,6 +19885,136 @@
           "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
         }
       ]
+    },
+    {
+      "sku": "1991",
+      "expectedUpc": "024100573820",
+      "expectedNameSha256": "7fcd35eb1b8dc594bafc12226a8f05f9134b9bcdacc9d92615c11727d0a17b5d",
+      "replaceTextFrom": "cheez lt  pepper jack crackers85g",
+      "replaceTextTo": "Cheez-It Pepper Jack Baked Snack Crackers 85g",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kellanovaawayfromhome.com/en-us/products/cheez-it-pepper-jack-product.00024100573790.html",
+          "supports": "Manufacturer establishes the product brand and expression. This is a name identity check, not a change to the source size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kellanovaawayfromhome.com/en-us/products/cheez-it-pepper-jack-product.00024100573790.html",
+          "supports": "Listing or manufacturer identifies the original UPC and matching product expression; source measurements remain preserved."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://s7d1.scene7.com/is/image/Kellanovaprod/00024100573790_C1NB",
+          "supports": "The product package was visually inspected for brand and expression. Where source size conflicts, this image does not resolve the original size."
+        }
+      ]
+    },
+    {
+      "sku": "3512",
+      "expectedUpc": "038000198861",
+      "expectedNameSha256": "bf6ea740e6e71896bd3ff0a9cb3072d975544d8403778fd4eae5ff2ac344c9c0",
+      "replaceTextFrom": "froot loops 10.1oz",
+      "replaceTextTo": "Kellogg's Froot Loops Cereal 10.1oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kelloggspromotions.com/content/dam/NorthAmerica/k1p/2023_holiday-bowl-offer/pdf/HolidayBowlOffer_2023_PP_List_EN.pdf",
+          "supports": "Manufacturer establishes the product brand and expression. This is a name identity check, not a change to the source size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/38000198861",
+          "supports": "Listing or manufacturer identifies the original UPC and matching product expression; source measurements remain preserved."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://target.scene7.com/is/image/Target/GUEST_60e9b9a0-e8f8-4c10-bfcd-db750cedb27b?hei=1000&wid=1000",
+          "supports": "The product package was visually inspected for brand and expression. Where source size conflicts, this image does not resolve the original size."
+        }
+      ]
+    },
+    {
+      "sku": "4767",
+      "expectedUpc": "038000391187",
+      "expectedNameSha256": "f6a5f701ee1711a002c705236538f318dd1972fd3ee774c3c10211c2fbfa3a26",
+      "replaceTextFrom": "Kellogg's froot loops 12.2ozCereal",
+      "replaceTextTo": "Kellogg's Froot Loops Cereal 12.2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kelloggspromotions.com/content/dam/NorthAmerica/k1p/2023_holiday-bowl-offer/pdf/HolidayBowlOffer_2023_PP_List_EN.pdf",
+          "supports": "Manufacturer establishes the product brand and expression. This is a name identity check, not a change to the source size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getfoodfacts.com/food/kelloggs-froot-loops-cereal-122oz-2525726",
+          "supports": "Listing or manufacturer identifies the original UPC and matching product expression; source measurements remain preserved."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.kroger.com/product/images/xlarge/front/0003800039118",
+          "supports": "The product package was visually inspected for brand and expression. Where source size conflicts, this image does not resolve the original size."
+        }
+      ]
+    },
+    {
+      "sku": "4768",
+      "expectedUpc": "038000391255",
+      "expectedNameSha256": "6e23f062998da93d572e9c07b5fb0c8ce18a0b9bf053ae5dffb721b931769f18",
+      "replaceTextFrom": "Kellogg's Froot Loops 8.7ozcereal",
+      "replaceTextTo": "Kellogg's Froot Loops Cereal 8.7oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kelloggspromotions.com/content/dam/NorthAmerica/k1p/2023_holiday-bowl-offer/pdf/HolidayBowlOffer_2023_PP_List_EN.pdf",
+          "supports": "Manufacturer establishes the product brand and expression. This is a name identity check, not a change to the source size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://upcfoodsearch.com/food-products/multi-grain-cold-cereal/038000391255/",
+          "supports": "Listing or manufacturer identifies the original UPC and matching product expression; source measurements remain preserved."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.kroger.com/product/images/xlarge/front/0003800039125",
+          "supports": "The product package was visually inspected for brand and expression. Where source size conflicts, this image does not resolve the original size."
+        }
+      ]
+    },
+    {
+      "sku": "101288",
+      "expectedUpc": "024100122615",
+      "expectedNameSha256": "c7cea890ad654af50462b7aee38ebb11c82a5ad319eb514f00b43870fcd7df2e",
+      "replaceTextFrom": "CHEEZ IT 1.25OZ",
+      "replaceTextTo": "Cheez-It Original Baked Snack Crackers 1.25OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kellanovaawayfromhome.com/en-us/products/cheez-it-original-crackers-product.00024100122349.html",
+          "supports": "Manufacturer establishes the product brand and expression. This is a name identity check, not a change to the source size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kellanovaawayfromhome.com/en-us/products/cheez-it-original-crackers-product.00024100122349.html",
+          "supports": "Listing or manufacturer identifies the original UPC and matching product expression; source measurements remain preserved."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://kellogg-h.assetsadobe.com/is/image/content/dam/kelloggs/kna/us/digital-shelf/sunshine/10024100122612_C1N1.jpg",
+          "supports": "The product package was visually inspected for brand and expression. Where source size conflicts, this image does not resolve the original size."
+        }
+      ]
     }
   ],
   "identityReviews": [
