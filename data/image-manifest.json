@@ -10266,6 +10266,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "190",
+      "expectedUpc": "078000011807",
+      "expectedName": "7 UP PACK",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-190.jpg",
+      "alt": "7 UP PACK — 12-pack · 12 oz packaging",
+      "sourcePage": "https://www.target.com/p/-/A-12989421",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_c83dd479-d265-4c9a-8d94-aae85a2afd6c?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "aba1316f9001f8a02331d197753e9815f83021dcd648de02e04265c2c331e2fb",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101478",
+      "expectedUpc": "078000054163",
+      "expectedName": "A &W CREAM SODA",
+      "expectedLabel": "12-pack · 12 oz · cans",
+      "src": "images/products/sku-101478.jpg",
+      "alt": "A &W CREAM SODA — 12-pack · 12 oz · cans packaging",
+      "sourcePage": "https://www.cub.com/store/cub/products/16879632-a-w-cream-soda-case-12-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f0b54ab6-588c-4370-8eac-c061e5e88f5b.jpg",
+      "sha256": "92503029bca58b1d3c333306ec8b6490fc2107d4de86ec85ec6fdca35344a1c8",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
