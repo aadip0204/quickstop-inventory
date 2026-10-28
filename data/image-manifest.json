@@ -9100,6 +9100,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8818",
+      "expectedUpc": "028400055970",
+      "expectedName": "Tostitos Mild Chunky Salsa",
+      "expectedLabel": "15.5 oz",
+      "src": "images/products/sku-8818.jpg",
+      "alt": "Tostitos Mild Chunky Salsa — 15.5 oz jar",
+      "sourcePage": "https://www.target.com/p/-/A-13319573",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_41722f95-5bb7-4047-8845-381224c2d596?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "f4fd744cf7c56bbcdd5b691358dbd7beadb9670b22961c0ac3bfe5d939977454",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
