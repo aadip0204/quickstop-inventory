@@ -10332,6 +10332,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1681",
+      "expectedUpc": "078000152166",
+      "expectedName": "CANADA DRY GINGER ALE PACK",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-1681.png",
+      "alt": "CANADA DRY GINGER ALE PACK — 12-pack · 12 oz packaging",
+      "sourcePage": "https://www.cub.com/store/cub/products/16786108-canada-dry-ginger-ale-12-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e4a079ee-c5d1-427a-8f76-feebc8af38ef.png",
+      "sha256": "251246cafb626aaf60ed825da93d596177b71f215b9a849a914af7995572a721",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8227",
+      "expectedUpc": "078000113167",
+      "expectedName": "SUNKIST ORANGE PACK",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-8227.jpg",
+      "alt": "SUNKIST ORANGE PACK — 12-pack · 12 oz packaging",
+      "sourcePage": "https://www.target.com/p/-/A-12965033",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_de22bbfb-395a-4084-8276-cdee9c7df71b?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "63abf11022fb8e3153d058af1524d1633de6e0a07e283251cfc21f9938d7fdb3",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101481",
+      "expectedUpc": "078000180169",
+      "expectedName": "VERNOR'S GA",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-101481.jpg",
+      "alt": "VERNOR'S GA — 12-pack · 12 oz packaging",
+      "sourcePage": "https://www.target.com/p/-/A-47101660",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_2a8b8443-41db-4787-a7cd-42ac4292e672?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "61d621c81c39b976830a294ae8edd8b854e4f197a5de59e56a4be779fa198c51",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
