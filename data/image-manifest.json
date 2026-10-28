@@ -10684,6 +10684,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2837",
+      "expectedUpc": "078000063462",
+      "expectedName": "Diet Rite",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-2837.jpg",
+      "alt": "Diet Rite — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/93672-diet-rite-pure-zero-cola-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ed1531f0-9a24-48de-bd55-47f549413e4f.jpg",
+      "sha256": "a2890ef87e2ed30033b3bee12e6eab473ed94c349ba535e69449df21053a6d53",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8175",
+      "expectedUpc": "078000230468",
+      "expectedName": "Sun Drop Citrus",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-8175.jpg",
+      "alt": "Sun Drop Citrus — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/16411846-sun-drop-citrus-soda-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c6028250-e7af-478f-ac99-c98c77eff214.jpg",
+      "sha256": "966605b2f2d8ac605f095ad8fcecf1102025b8c8bbc6ed8f91a06cb0bd6218bc",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8247",
+      "expectedUpc": "078000118469",
+      "expectedName": "SUNKIST STRAWBERRY",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-8247.jpg",
+      "alt": "SUNKIST STRAWBERRY — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/42242-sunkist-strawberry-soda-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b7a09c1b-c338-4651-93a6-f26fd6dcb2c3.jpg",
+      "sha256": "b931fdeb65b8ac20f8ab8456bac8a15bb3cf3386064cc43b7aee22e8d79a0e8d",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
