@@ -9276,6 +9276,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "213",
+      "expectedUpc": "078000037975",
+      "expectedName": "7UP TROPICAL",
+      "expectedLabel": "12 oz · cans",
+      "src": "images/products/sku-213.png",
+      "alt": "7UP TROPICAL — 12 oz can",
+      "sourcePage": "https://www.creveleurope.com/collections/drinks/products/7up-tropical-355-ml",
+      "sourceImageUrl": "https://www.creveleurope.com/cdn/shop/files/762e3642867d27dd908cadaeee3942d7_5da7da41-2f0a-4563-a0f1-ef093f75936f_1200x1200.png?v=1793169398",
+      "sha256": "f7702d9ae367ad67a16e073564996775782f987091e8b93d3787a1c6685b8785",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101482",
+      "expectedUpc": "078000037982",
+      "expectedName": "7UP TROPICAL",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-101482.jpg",
+      "alt": "7UP TROPICAL — 12-pack of 12 oz cans",
+      "sourcePage": "https://www.target.com/p/-/A-94022832",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_19d38fd3-7394-46e8-a18b-1c800ccbf8f9?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "5e8fc165762084c1936b8c9a1dd937bd9a0e45198bff14d911d8384ec3e2c88a",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
