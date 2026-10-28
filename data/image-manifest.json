@@ -10816,6 +10816,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7398",
+      "expectedUpc": "078000206463",
+      "expectedName": "Schweppes ginger ale",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-7398.png",
+      "alt": "Schweppes Ginger Ale — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/33846-schweppes-ginger-ale-2-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_66ded150-e2a9-4f66-a933-bb93285148cb.png",
+      "sha256": "d418b9455b1e152af32e863146e2211e467defbf38f487720d80e53acbd88142",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
