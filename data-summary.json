@@ -31,7 +31,7 @@
     "scopeNote": "All rows scanned for specified risks. Only listed corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock."
   },
   "imageStatus": {
-    "verifiedVariants": 290,
-    "unverifiedVariants": 9399
+    "verifiedVariants": 318,
+    "unverifiedVariants": 9371
   }
 }
