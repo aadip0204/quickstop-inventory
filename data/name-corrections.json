@@ -20015,6 +20015,188 @@
           "supports": "The product package was visually inspected for brand and expression. Where source size conflicts, this image does not resolve the original size."
         }
       ]
+    },
+    {
+      "sku": "3672",
+      "expectedUpc": "052000321982",
+      "expectedNameSha256": "ee9f2ed9434ef3da7f7eeb7070aa9f72b8c597362566fd6576b61ed1d11a49b7",
+      "replaceTextFrom": "Gatorade G2 Fruit Punch 32oz",
+      "replaceTextTo": "Gatorade G2 Fruit Punch Thirst Quencher 32oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/052000321982-0011-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and bottle size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://device.report/m/5afb89d8036d6c6abaf9cf43836e616bb9e5fa03d6beff23494162af44011047",
+          "supports": "Independent exact UPC listing corroborates the product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/052000321982-0011-en-US/images/c2d63abc-6313-428b-a13a-7608319be7b0.jpg",
+          "supports": "Inspected manufacturer package confirms G2, flavor and 32 oz bottle."
+        }
+      ]
+    },
+    {
+      "sku": "3673",
+      "expectedUpc": "052000320152",
+      "expectedNameSha256": "43105bc56767ba11fd9ef18b7e2115559d7df3f78c53f953715f69a424a81bec",
+      "replaceTextFrom": "Gatorade G2 Glacier Freez 32oz",
+      "replaceTextTo": "Gatorade G2 Glacier Freeze Thirst Quencher 32oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/052000320152-0011-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and bottle size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/35167-gatorade-lower-sugar-glacier-freeze-flavored-thirst-quencher-32-fl-oz",
+          "supports": "Independent exact UPC listing corroborates the product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/052000320152-0011-en-US/images/fbfffd83-5454-49b1-853e-e5d4b6467b25.jpg",
+          "supports": "Inspected manufacturer package confirms G2, flavor and 32 oz bottle."
+        }
+      ]
+    },
+    {
+      "sku": "5042",
+      "expectedUpc": "028400097802",
+      "expectedNameSha256": "a9b3420cfd8ff08c43c7c57e5e3361a6448100832e3204ced52b9d282411c56c",
+      "replaceTextFrom": "Lays Classic 2.5oz",
+      "replaceTextTo": "Lay's Classic Potato Chips 2.5oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400097802-0011-en-US/index.html",
+          "supports": "Manufacturer records the exact UPC, brand and expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400097802-0011-en-US/index.html",
+          "supports": "UPC and package size are specified in the manufacturer product record."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400097802-0011-en-US/images/bd4af5f5-0a54-452c-b33f-285a77eba6ad.jpg",
+          "supports": "Manufacturer package photograph was inspected for the brand, expression and stated size."
+        }
+      ]
+    },
+    {
+      "sku": "5044",
+      "expectedUpc": "028400420662",
+      "expectedNameSha256": "76a0fd40c48e2e04ed582254e7b497a505dd87e145f5839146024ad0c65a7a90",
+      "replaceTextFrom": "Lays dill pickle 2 3/4 oz",
+      "replaceTextTo": "Lay's Dill Pickle Flavored Potato Chips 2 3/4 oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400420662-0011-en-US/index.html",
+          "supports": "Manufacturer records the exact UPC, brand and expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400420662-0011-en-US/index.html",
+          "supports": "UPC and package size are specified in the manufacturer product record."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400420662-0011-en-US/images/0445c5e2-fa90-45aa-83d4-96e39acb4735.jpg",
+          "supports": "Manufacturer package photograph was inspected for the brand, expression and stated size."
+        }
+      ]
+    },
+    {
+      "sku": "5049",
+      "expectedUpc": "028400420624",
+      "expectedNameSha256": "170ce0a31be29f04b413e36e5e1a98e24a74ad117cc15592608f70d9fc5e0176",
+      "replaceTextFrom": "Lay's Flamin Hot 2 3/4 oz",
+      "replaceTextTo": "Lay's Flamin' Hot Flavored Potato Chips 2 3/4 oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400420624-0011-en-US/index.html",
+          "supports": "Manufacturer records the exact UPC, brand and expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400420624-0011-en-US/index.html",
+          "supports": "UPC and package size are specified in the manufacturer product record."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400420624-0011-en-US/images/375a7b00-d76c-4d70-8e08-6b1491ef8264.jpg",
+          "supports": "Manufacturer package photograph was inspected for the brand, expression and stated size."
+        }
+      ]
+    },
+    {
+      "sku": "5059",
+      "expectedUpc": "028400420556",
+      "expectedNameSha256": "0d91e448e18c1be4060682fea3179f35cbbc6f0bcf1c88e088faf53647914224",
+      "replaceTextFrom": "Lays salt & vinegar 2 3/4 oz",
+      "replaceTextTo": "Lay's Salt & Vinegar Flavored Potato Chips 2 3/4 oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400420556-0012-en-US/index.html",
+          "supports": "Manufacturer records the exact UPC, brand and expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400420556-0012-en-US/index.html",
+          "supports": "UPC and package size are specified in the manufacturer product record."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400420556-0012-en-US/images/419445de-7494-41bf-b504-b6516527043b.jpg",
+          "supports": "Manufacturer package photograph was inspected for the brand, expression and stated size."
+        }
+      ]
+    },
+    {
+      "sku": "5063",
+      "expectedUpc": "028400420617",
+      "expectedNameSha256": "4bf8c8e9658819ffb3da679955e4bc12b93d469f31b7bc42522146506ff72b77",
+      "replaceTextFrom": "Lays sour cream onion 2 3/4 oz",
+      "replaceTextTo": "Lay's Sour Cream & Onion Flavored Potato Chips 2 3/4 oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400420617-0012-en-US/index.html",
+          "supports": "Manufacturer records the exact UPC, brand and expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400420617-0012-en-US/index.html",
+          "supports": "UPC and package size are specified in the manufacturer product record."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400420617-0012-en-US/images/7a1dfb43-652d-4679-91c5-b3bb8badf94f.jpg",
+          "supports": "Manufacturer package photograph was inspected for the brand, expression and stated size."
+        }
+      ]
     }
   ],
   "identityReviews": [
