@@ -11300,6 +11300,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "156",
+      "expectedUpc": "085592133756",
+      "expectedName": "360* Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-156.jpg",
+      "alt": "360* Vodka — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137582",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_1462f8b2-f71a-4c51-84fc-abe2676e02ee?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "328aba4c8f49f67e6680ba99a9c8aa47f570b6855fbc98b2df512bd86bddc91a",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "164",
+      "expectedUpc": "080480284329",
+      "expectedName": "42 Below Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-164.jpg",
+      "alt": "42 Below Vodka — 750 mL bottle",
+      "sourcePage": "https://shopwinedirect.com/42-below-new-zealand-vodka-750ml.html",
+      "sourceImageUrl": "https://cdn11.bigcommerce.com/s-0ddlsmhg83/products/9744/images/10005/42-below-new-zealand-vodka-750ml__47535.1752496338.1280.1280__88700.1787069846.386.513.jpg?c=1",
+      "sha256": "04042b19358df05dd7513de1055e6d2a59b931f133c9824f245d9265a86d3494",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "269",
+      "expectedUpc": "835229010611",
+      "expectedName": "Absolut Juice Strawberry",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-269.jpg",
+      "alt": "Absolut Juice Strawberry — 750 mL bottle",
+      "sourcePage": "https://www.kingswineandspirits.com/products/absolut-juice-strawberry-edition-750ml",
+      "sourceImageUrl": "https://www.kingswineandspirits.com/cdn/shop/products/557.jpg?v=1660185895",
+      "sha256": "ad238199041641418a8bd64de13c841dfc6fa64a06a32ac2e970ef25ace42539",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
