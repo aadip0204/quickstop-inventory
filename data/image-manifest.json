@@ -11080,6 +11080,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "337",
+      "expectedUpc": "084692206148",
+      "expectedName": "Alize Bleu",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-337.jpg",
+      "alt": "Alize Bleu — 750 mL bottle",
+      "sourcePage": "https://www.thebarreltap.com/products/alize-blue-750ml",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0416/3023/6825/files/alize-blue-passion-750ml-the-barrel-tap-www-thebarreltap-com_12fadd03-a2b9-48be-8f09-970ecd98c6ca.jpg?v=1691179234",
+      "sha256": "c684e94cdfd320fc2a1781d0c699b11220c653a28db42609203dc10e09c2275f",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "341",
+      "expectedUpc": "084692213108",
+      "expectedName": "Alize Peach",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-341.jpg",
+      "alt": "Alize Peach — 750 mL bottle",
+      "sourcePage": "https://www.thebarreltap.com/products/alize-peach-750ml",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0416/3023/6825/files/alize-peach-liqueur-750ml-the-barrel-tap-www-thebarreltap-com.jpg?v=1691179238",
+      "sha256": "7d9e7495587df1ad1dcdc766a3082a454dfeddec4c4690b8926124c92964e60d",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
