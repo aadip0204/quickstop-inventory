@@ -7,7 +7,8 @@
   // These helpers also run in Node for catalog-wide search and navigation checks.
   function normalize(value) {
     return String(value ?? '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
-      .toLowerCase().replace(/(\d)\s+(ml|l|oz|pk|pack|ct)\b/g, '$1$2')
+      .toLowerCase().replace(/([a-z])['’]([a-z])/g, '$1$2')
+      .replace(/(\d)\s+(ml|l|oz|pk|pack|ct)\b/g, '$1$2')
       .replace(/[^a-z0-9.]+/g, ' ').replace(/\s+/g, ' ').trim();
   }
 

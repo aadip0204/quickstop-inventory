@@ -19560,6 +19560,331 @@
           "supports": "Individually viewed larger observed source image. Complete historical 99 Apples bottle on white, with clearly readable 750 ML and 49.5% ALC/VOL at bottom; 99 PROOF and APPLES on front. No visible price. Actual source file individually inspected; original source size/pack remains unchanged."
         }
       ]
+    },
+    {
+      "sku": "4427",
+      "expectedUpc": "082184000052",
+      "expectedNameSha256": "d7ce2c8312bb2d06136bd8ee20197f7379fc49c10194ddde8760fb4559233c16",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4430",
+      "expectedUpc": "082184004371",
+      "expectedNameSha256": "9af21e0dfa80b8bef1f6b18defd7d8efbfe268842d8e0ade4623e21555c9f015",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4433",
+      "expectedUpc": "082184202777",
+      "expectedNameSha256": "370315654439e2fd9f5ff7c854fed85a92258632a4cceca1666c5a6e162e5674",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4436",
+      "expectedUpc": "082184090107",
+      "expectedNameSha256": "260630024757a9eb2127208c2d91b592fc0bb2697861ae8d9cb726db265fe793",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4437",
+      "expectedUpc": "082184090398",
+      "expectedNameSha256": "e5cead47a7c9fca3f2a7e2b0db148d6a55ae78fe9a5faed52ae3a7b3873b295f",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4440",
+      "expectedUpc": "082184000359",
+      "expectedNameSha256": "32edc5a4e4d43a2637e22caf534c9c9921a0536c1f93e1604189d213fbddf5c3",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "101227",
+      "expectedUpc": "082184208267",
+      "expectedNameSha256": "c9ec4bda15fa4bb9f0e2dedeb6389e46006f286c29e8354298585277b489a87f",
+      "replaceTextFrom": "JACK DANIELS",
+      "replaceTextTo": "JACK DANIEL'S",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4442",
+      "expectedUpc": "082184087008",
+      "expectedNameSha256": "c29c32e34b9e52505d237ecf9ad87f668a612530bd134c236f1a95994fa87c40",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4432",
+      "expectedUpc": "082184001561",
+      "expectedNameSha256": "f3ed8c56052bcac7bb05bac47e52a6ea20cc449c42e6a08d09b429f79ee43dd9",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "101225",
+      "expectedUpc": "082184204771",
+      "expectedNameSha256": "42a1edad4728237d9ef0887f6d7f775b859c07fd134e58934d8f07fdc75cdac2",
+      "replaceTextFrom": "JACK DANIELS HONEY LEMONAD",
+      "replaceTextTo": "JACK DANIEL'S HONEY LEMONADE",
+      "scope": "brand_and_expression_spelling_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/jack-daniels-launches-new-spirit-based-canned-cocktails/",
+          "supports": "The manufacturer identifies a ready-to-drink honey and lemonade expression; this corrects the truncated spelling without changing the source pack."
+        }
+      ]
+    },
+    {
+      "sku": "4429",
+      "expectedUpc": "082184004388",
+      "expectedNameSha256": "a1f51d713af6ed0aaa5fea2c7debd81bb876befb4c77fdab475bf03bb82fe14c",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4426",
+      "expectedUpc": "082184090503",
+      "expectedNameSha256": "20018a91e0e2440f45778146b35d044704b579e5e5624684e1cdd4afee9e937d",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "101226",
+      "expectedUpc": "082184206874",
+      "expectedNameSha256": "a83d4c138a1098ec9bf8ebaae8bf9925e23a41c8fa28a60b7b7a74785fe36aff",
+      "replaceTextFrom": "JACK DANIELS",
+      "replaceTextTo": "JACK DANIEL'S",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4439",
+      "expectedUpc": "082184000342",
+      "expectedNameSha256": "53cc1b064073cd0fd32563ae1354223a57c103413a1c6cf6823c2c4b3c48b88b",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4431",
+      "expectedUpc": "082184001554",
+      "expectedNameSha256": "d0dabde5dc1ec80811652dc21e8912350425ce9bc5b33c01808f6782c8bded59",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4428",
+      "expectedUpc": "082184090466",
+      "expectedNameSha256": "db175264ac990b35484b616b1c0beef868a37dcad981f05926af042f30b1e42f",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4438",
+      "expectedUpc": "082184000625",
+      "expectedNameSha256": "14281981ccfaf12aed77c37a1919ff8ff0f15917c4960b461f163dabaa28e399",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4424",
+      "expectedUpc": "082184090428",
+      "expectedNameSha256": "24c3111ecbf2b959c13867398fbc307bee3244e3f44fa09c41cb7c6d0170d467",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4441",
+      "expectedUpc": "082184000335",
+      "expectedNameSha256": "044b8f5c394836dc9afc6b793fd87601440d25cb459893ac3b72d2da09dcdf39",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
+    },
+    {
+      "sku": "4425",
+      "expectedUpc": "082184090527",
+      "expectedNameSha256": "ed147face599e50a79aa2f010fab4771c9e782e429cea59c4cd101dae15e015b",
+      "replaceTextFrom": "Jack Daniels",
+      "replaceTextTo": "Jack Daniel's",
+      "scope": "brand_punctuation_only",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://pressroom.jackdaniels.com/background/",
+          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+        }
+      ]
     }
   ],
   "identityReviews": [

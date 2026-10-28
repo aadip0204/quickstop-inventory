@@ -115,6 +115,14 @@ test('pagination exposes the entire catalog exactly once, bounded to 36 cards', 
   assert.deepEqual(ui.paginate([], 4).items, []);
 });
 
+test('brand searches work with and without apostrophes', () => {
+  for (const query of ['Jack Daniels', "Jack Daniel's", 'Jack Daniel’s']) {
+    const matches = ui.filterProducts(catalog.products, {query}, catalog.categories);
+    assert.ok(matches.some(p => p.name === "Jack Daniel's"), query);
+    assert.ok(matches.some(p => p.name === "Jack Daniel's Honey"), query);
+  }
+});
+
 test('brand/flavor and normalized size search remains distinct', () => {
   const coconut = ui.filterProducts(catalog.products, {query: '1800 coconut 1 L'});
   assert.ok(coconut.length);
