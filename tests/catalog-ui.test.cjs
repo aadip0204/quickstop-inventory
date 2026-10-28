@@ -105,7 +105,7 @@ test('public document contains no legacy data, sale section, stock promise, or n
   }
 });
 
-test('a late failure from a previous size cannot hide the currently selected photo', async () => {
+test('photo cards stay free of source lines and a late failure cannot hide the selected image', async () => {
   const vm = require('node:vm');
   // Exercise the real card and selection handlers with asynchronous catalog loading.
   class TestElement {
@@ -146,7 +146,9 @@ test('a late failure from a previous size cannot hide the currently selected pho
     schemaVersion: 1,
     categories: [{ id: 'drinks', label: 'Drinks', departments: [{ id: 'Soda', label: 'Soda' }] }],
     products: [{ id: 'example', name: 'Example', category: 'drinks', department: 'Soda', variants: [
-      { sku: '001', upc: '001234567890', label: '12 oz', image: { src: 'images/exact-12.jpg', alt: 'Example 12 oz' } },
+      { sku: '001', upc: '001234567890', label: '12 oz', image: { src: 'images/exact-12.jpg', alt: 'Example 12 oz',
+          attribution: 'Example photographer', sourcePage: 'https://example.test/photo',
+          license: 'Example license', licenseUrl: 'https://example.test/license' } },
       { sku: '002', upc: '001234567891', label: '20 oz', image: { src: 'images/exact-20.jpg', alt: 'Example 20 oz' } }
     ] }]
   };
@@ -162,6 +164,8 @@ test('a late failure from a previous size cannot hide the currently selected pho
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../script.js'), 'utf8'), context);
   await new Promise(resolve => setImmediate(resolve));
   const card = elements['product-grid'].children[0];
+  assert.equal(card.querySelectorAll('a').length, 0);
+  assert.ok(!card.descendants().some(element => element.className === 'image-credit'));
   assert.equal(card.children[0].textContent, 'Drinks');
   assert.ok(elements.department.children.some(option => option.value === 'Soda'));
   const previousImage = card.querySelector('img');

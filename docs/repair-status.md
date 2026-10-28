@@ -23,10 +23,11 @@ Professional image sourcing is ongoing. Manufacturer/distributor feeds or studio
 ## Implementation and checks
 
 - Warm, responsive retail layout with the supplied logo, seven main categories and all 29 original departments.
+- Product cards show no photo-source lines. Required attribution and licenses remain on a separate Image credits page linked once in the footer and regenerated with the catalog.
 - Search covers every retained SKU/UPC, product name and size; pagination limits rendering to 36 cards without limiting the catalog.
 - No prices or stock quantities are emitted by the public data builder. Current legacy price-bearing files and unverified old photographs are removed. Older Git history is unchanged.
 - Loading, retry, empty results, keyboard navigation, selected sizes and filter URL state are implemented.
-- 62 Python tests and eight frontend tests pass, including original-source conservation, safe grouping, price removal, guarded restoration and image validation. The new identity checks reject absent, whitespace, descriptive and padded UPCs while accepting valid EAN-8 identifiers. Browser checks cover every category/department, size-specific photographs, narrow mobile layouts, pagination and error recovery.
+- 64 Python tests and eight frontend tests pass, including original-source conservation, safe grouping, price removal, guarded restoration and image validation. The new identity checks reject absent, whitespace, descriptive and padded UPCs while accepting valid EAN-8 identifiers. Browser checks cover every category/department, size-specific photographs, narrow mobile layouts, pagination and error recovery.
 - Local HTTP asset hashes and all approved image responses are checked using `scripts/verify_deployment.py`. Browser checks remain required after publication.
 
 ## Deployment
@@ -56,5 +57,7 @@ The current catalog adds 36 manufacturer-record name checks: 23 guarded correcti
 One previously unspecified-size Sweet Baby Ray's record is resolved to Hickory & Brown Sugar Barbecue Sauce 18 oz using manufacturer package evidence and two exact-UPC retailer listings. Its new licensed professional bottle photo is the inspected original, with attribution preserved. This adds one complete name verification and one photo; it does not infer a size for any other SKU.
 
 All 9,952 source records and all 9,689 public SKU/UPC pairs remain intact. The other 9,688 complete variant objects and all 145 prior image files are unchanged. Full name and photo coverage remain unfinished; detailed source reviews and dated deployment proofs stay outside the public repository.
+
+PR #10 was verified through Pages run 40630916330, including all 146 image files and all 37 newly verified product cases. The subsequent card-display change moves source lines to a separate credits page without changing catalog entries or image files.
 
 After authenticated publication, run `python3 scripts/verify_deployment.py https://aadip0204.github.io/quickstop-inventory/` against the exact tested checkout and repeat browser checks before declaring the release live.

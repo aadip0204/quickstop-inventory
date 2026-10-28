@@ -2,6 +2,7 @@
 import csv
 import copy
 import hashlib
+from html.parser import HTMLParser
 import importlib.util
 import io
 import json
@@ -1155,6 +1156,56 @@ class GeneratedCatalogTests(unittest.TestCase):
         self.assertEqual(c['sourceRows'], c['publicVariants'] + c['needsReview'] + c['excludedNonproducts'])
         self.assertEqual(c.get('originalSourceRows', c['sourceRows']), 9881)
         self.assertEqual(c['sourceRows'], c.get('originalSourceRows', c['sourceRows']) + c.get('reportSourceRows', 0))
+
+    def test_separate_credits_cover_every_public_photo(self):
+        class CreditsParser(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.records = {}
+                self.current = None
+            def handle_starttag(self, tag, attrs):
+                attrs = dict(attrs)
+                if tag == 'li' and 'data-sku' in attrs:
+                    self.current = {'links': [], 'text': []}
+                    self.records[attrs['data-sku']] = self.current
+                if self.current is not None and tag == 'a':
+                    self.current['links'].append(attrs.get('href'))
+            def handle_data(self, data):
+                if self.current is not None:
+                    self.current['text'].append(data)
+            def handle_endtag(self, tag):
+                if tag == 'li':
+                    self.current = None
+        parser = CreditsParser()
+        parser.feed((ROOT / 'image-credits.html').read_text())
+        photos = {v['sku']: (p, v) for p in self.catalog['products'] for v in p['variants'] if v['image']}
+        self.assertEqual(set(parser.records), set(photos))
+        for sku, (product, variant) in photos.items():
+            record = parser.records[sku]
+            image = variant['image']
+            self.assertEqual(set(record['links']), {image['src'], image['sourcePage'], image['licenseUrl']})
+            text = ''.join(record['text'])
+            for expected in (product['name'], variant['label'], image['attribution'], image['license']):
+                self.assertIn(expected, text)
+        self.assertIn('href="image-credits.html"', (ROOT / 'index.html').read_text())
+
+    def test_credit_metadata_is_escaped_and_unsafe_links_rejected(self):
+        image = {'src': 'images/products/example.jpg', 'sourcePage': 'https://example.test/product',
+                 'licenseUrl': 'https://example.test/license', 'license': 'Example license',
+                 'attribution': '<img src=x onerror=alert(1)>'}
+        catalog = {'products': [{'name': '</h2><script>alert(1)</script>',
+                    'variants': [{'sku': '1', 'label': '12 oz', 'image': image}]}]}
+        rendered = builder.render_image_credits(catalog)
+        self.assertNotIn('<script>', rendered)
+        self.assertNotIn('<img src=x', rendered)
+        self.assertIn('&lt;script&gt;', rendered)
+        for field, value in [('sourcePage', 'javascript:alert(1)'),
+                             ('licenseUrl', 'file:///private/record'),
+                             ('src', 'images/products/../secret.jpg')]:
+            changed = copy.deepcopy(catalog)
+            changed['products'][0]['variants'][0]['image'][field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                builder.render_image_credits(changed)
 
     def test_strict_public_allowlist(self):
         departments = {d['id'] for c in self.catalog['categories'] for d in c['departments']}
