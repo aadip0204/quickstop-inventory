@@ -10398,6 +10398,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8006",
+      "expectedUpc": "078000016161",
+      "expectedName": "SQUIRT PACK",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-8006.jpg",
+      "alt": "SQUIRT PACK — 12-pack · 12 oz packaging",
+      "sourcePage": "https://www.cub.com/store/cub/products/42400-squirt-soda-case-12-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ca9b0e08-3ab5-4470-afc2-4e8d074674c3.jpg",
+      "sha256": "31388ccabf167673692ab9ff4dc171a10bfa5fe85a057995cdb0920dfd6056d1",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8220",
+      "expectedUpc": "078000116168",
+      "expectedName": "SUNKIST GRAPE PACK",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-8220.png",
+      "alt": "SUNKIST GRAPE PACK — 12-pack · 12 oz packaging",
+      "sourcePage": "https://www.cub.com/store/cub/products/35039-sunkist-grape-soda-12-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d68de4ba-5fd0-40c8-9b4a-4359dbe54ac7.png",
+      "sha256": "12908f17f7ee642e6a744bdb25a37f2321a9b6367f4f572973368c30a8523999",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8245",
+      "expectedUpc": "078000118162",
+      "expectedName": "SUNKIST STRAWBERRY PACK",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-8245.jpg",
+      "alt": "SUNKIST STRAWBERRY PACK — 12-pack · 12 oz packaging",
+      "sourcePage": "https://www.cub.com/store/cub/products/35045-sunkist-strawberry-soda-12-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4fcd98a9-1acd-4654-b40e-be52f4a5e125.jpg",
+      "sha256": "998a82c01952e5963db9d3083d17f1b63787f6967ef5e0561001539953298196",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
