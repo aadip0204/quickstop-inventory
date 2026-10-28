@@ -11124,6 +11124,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "280",
+      "expectedUpc": "009016014254",
+      "expectedName": "Agavales Blanco",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-280.jpg",
+      "alt": "Agavales Blanco — 750 mL bottle",
+      "sourcePage": "https://atozbev.com/products/agavales-100-agave-silver-tequila-750ml",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0538/2959/9426/products/16771042410526_11zon.jpg?v=1665569605",
+      "sha256": "4ffb1e630b736d217575c1aaba13a458c11ea118f3f879ea741ebd1bf6167ad1",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "284",
+      "expectedUpc": "009016016357",
+      "expectedName": "Agavales Reposado",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-284.jpg",
+      "alt": "Agavales Reposado — 750 mL bottle",
+      "sourcePage": "https://atozbev.com/products/agavales-100-agave-reposado-tequila-750ml",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0538/2959/9426/products/12291698851870_11zon.jpg?v=1665488635",
+      "sha256": "6e9bd8f0773019abdccd3b325135b41b78ae376e9cbe81fdc3c8962739944d7f",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "285",
+      "expectedUpc": "811538012072",
+      "expectedName": "Agavero Liqueur",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-285.png",
+      "alt": "Agavero Liqueur — 750 mL bottle",
+      "sourcePage": "https://www.willowpark.net/products/aglc-agavero-tequila-liqueur-748183",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/2367/5965/products/Agavero_Tequila_Liqueur.png?v=1596557306",
+      "sha256": "fc1accf3cd044a63b8dc29296d1ba15716d42275c3984ee95bf2f0d945aa8f44",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
