@@ -5293,22 +5293,6 @@
       "verifiedOn": "2026-10-27"
     },
     {
-      "sku": "6025",
-      "expectedUpc": "028400109147",
-      "expectedNameSha256": "1aa961e2de036d52971ef669697f8996e88c375da50abc95dd4517a7d8f16ba9",
-      "replaceTextFrom": "rosted",
-      "replaceTextTo": "roasted",
-      "scope": "ordinary_word_spelling_only",
-      "evidence": [
-        {
-          "url": "https://dictionary.cambridge.org/us/dictionary/english/roasted",
-          "kind": "english_dictionary_ordinary_word_spelling",
-          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
-        }
-      ],
-      "verifiedOn": "2026-10-27"
-    },
-    {
       "sku": "6524",
       "expectedUpc": "050700294995",
       "expectedNameSha256": "b126484a4a005bdef242d80d083c0d495de75c3eacc413130f05be37edb52a27",
@@ -7672,22 +7656,6 @@
       "verifiedOn": "2026-10-27"
     },
     {
-      "sku": "1949",
-      "expectedUpc": "028400047913",
-      "expectedNameSha256": "d090ab6e07b4e5b6aa04d16b839e3cae3fbfaf70b2837e8c673fe6098b107c94",
-      "replaceTextFrom": "cheetos",
-      "replaceTextTo": "cheetos ",
-      "scope": "brand_spacing_only",
-      "evidence": [
-        {
-          "url": "https://www.cheetos.com/products/",
-          "kind": "manufacturer",
-          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
-        }
-      ],
-      "verifiedOn": "2026-10-27"
-    },
-    {
       "sku": "1946",
       "expectedUpc": "028400648769",
       "expectedNameSha256": "a700076bdba020c85aac18be4e95389104bcd2bbdd90a60294ce94226f1d0bab",
@@ -7697,54 +7665,6 @@
       "evidence": [
         {
           "url": "https://www.cheetos.com/products/",
-          "kind": "manufacturer",
-          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
-        }
-      ],
-      "verifiedOn": "2026-10-27"
-    },
-    {
-      "sku": "1948",
-      "expectedUpc": "028400305907",
-      "expectedNameSha256": "a700076bdba020c85aac18be4e95389104bcd2bbdd90a60294ce94226f1d0bab",
-      "replaceTextFrom": "Cheetos",
-      "replaceTextTo": "Cheetos ",
-      "scope": "brand_spacing_only",
-      "evidence": [
-        {
-          "url": "https://www.cheetos.com/products/",
-          "kind": "manufacturer",
-          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
-        }
-      ],
-      "verifiedOn": "2026-10-27"
-    },
-    {
-      "sku": "1947",
-      "expectedUpc": "028400674164",
-      "expectedNameSha256": "6703abf972484863f14124f79d15474ff2693b17a12456e3a18149ac4699cd07",
-      "replaceTextFrom": "cheetos",
-      "replaceTextTo": "cheetos ",
-      "scope": "brand_spacing_only",
-      "evidence": [
-        {
-          "url": "https://www.cheetos.com/products/",
-          "kind": "manufacturer",
-          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
-        }
-      ],
-      "verifiedOn": "2026-10-27"
-    },
-    {
-      "sku": "2915",
-      "expectedUpc": "028400070546",
-      "expectedNameSha256": "25b41c7b4927cf68cfa633584bc52f9334c7e9a6016256b3b0b9d01e330a2a62",
-      "replaceTextFrom": "doritos",
-      "replaceTextTo": "doritos ",
-      "scope": "brand_spacing_only",
-      "evidence": [
-        {
-          "url": "https://www.doritos.com/",
           "kind": "manufacturer",
           "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
         }
@@ -7825,22 +7745,6 @@
       "evidence": [
         {
           "url": "https://www.pringles.com/en-us/products/all.html",
-          "kind": "manufacturer",
-          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
-        }
-      ],
-      "verifiedOn": "2026-10-27"
-    },
-    {
-      "sku": "7226",
-      "expectedUpc": "028400002912",
-      "expectedNameSha256": "962c5dd5649b356838a69e31557ed4e1202a2dce9571ce8e953cec652212f7c7",
-      "replaceTextFrom": "ruffles",
-      "replaceTextTo": "ruffles ",
-      "scope": "brand_spacing_only",
-      "evidence": [
-        {
-          "url": "https://www.ruffles.com/search",
           "kind": "manufacturer",
           "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
         }
@@ -17148,6 +17052,2514 @@
       "replaceTextTo": "Brisk Lemonade Juice Drink 1L",
       "scope": "manufacturer_exact_upc_name_identity",
       "verifiedPublicName": "Brisk Lemonade Juice Drink"
+    },
+    {
+      "sku": "1975",
+      "expectedUpc": "028400211772",
+      "expectedNameSha256": "156d147c61dde7b10a259d0a51c4dc87d57fcfee8652809c5f83a591c068fdfa",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400211772-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400211772",
+        "observedName": "Cheetos, Flavor Shots, Flamin' Hot Asteroids, Flavored Corn Puffs",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "11bccd3a440fb3799746e2d22971056f362d470b9356f151767f8cee75541c00",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400211772-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Cheetos flavor shotsflamin hot",
+      "replaceTextTo": "Cheetos Flavor Shots Flamin' Hot Asteroids Flavored Corn Puffs",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Cheetos Flavor Shots Flamin' Hot Asteroids Flavored Corn Puffs"
+    },
+    {
+      "sku": "1948",
+      "expectedUpc": "028400305907",
+      "expectedNameSha256": "a700076bdba020c85aac18be4e95389104bcd2bbdd90a60294ce94226f1d0bab",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400305907-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400305907",
+        "observedName": "Cheetos, Flamin' Hot Flavored, Popcorn",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "5f50f09e1167fea66b83436eccfa64b9db655fa8d699c77e95804f113756703f",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400305907-0014-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        },
+        {
+          "url": "https://www.cheetos.com/products/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "replaceTextFrom": "Cheetospopcorn",
+      "replaceTextTo": "Cheetos Flamin' Hot Flavored Popcorn",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Cheetos Flamin' Hot Flavored Popcorn"
+    },
+    {
+      "sku": "1947",
+      "expectedUpc": "028400674164",
+      "expectedNameSha256": "6703abf972484863f14124f79d15474ff2693b17a12456e3a18149ac4699cd07",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400674164-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400674164",
+        "observedName": "Cheetos, Crunchy, Xxtra Flamin' Hot Flavored, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e6ecc4c5041986e7d0875cdcd25e95ec0e02cdd8b772104e9e22ebcc51d06b16",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400674164-0016-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        },
+        {
+          "url": "https://www.cheetos.com/products/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "replaceTextFrom": "cheetosxxxtra flamin hot",
+      "replaceTextTo": "Cheetos Crunchy XXtra Flamin' Hot Flavored Cheese Flavored Snacks",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Cheetos Crunchy XXtra Flamin' Hot Flavored Cheese Flavored Snacks"
+    },
+    {
+      "sku": "1997",
+      "expectedUpc": "028400242936",
+      "expectedNameSha256": "1a7529b279a87162f5ba33cdc0fbc0bf315ab70753163108d949f75d61b92b38",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400242936-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400242936",
+        "observedName": "Chester's, Fries, Flamin' Hot Flavored, Corn Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "9a2a95f52aabfe1e87e76eda920680a2832f9c7c9578663eee986fa54595045b",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400242936-0017-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "chester'sflamin hot fries",
+      "replaceTextTo": "Chester's Fries Flamin' Hot Flavored Corn Snacks",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Chester's Fries Flamin' Hot Flavored Corn Snacks"
+    },
+    {
+      "sku": "2536",
+      "expectedUpc": "028400172516",
+      "expectedNameSha256": "2cc987f5aac5710b3675220da6e11ac4145ccf9478cb67ba6f9cf3dc06bc91d5",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400172516-0019-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400172516",
+        "observedName": "Cracker Jack, The Original, Caramel Coated Popcorn & Peanuts",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "db8665562ba68e6cb421de20f7dc79d5abcc3783054122f2d450db4981654478",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400172516-0019-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Cracker Jack org",
+      "replaceTextTo": "Cracker Jack The Original Caramel Coated Popcorn & Peanuts",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Cracker Jack The Original Caramel Coated Popcorn & Peanuts"
+    },
+    {
+      "sku": "2915",
+      "expectedUpc": "028400070546",
+      "expectedNameSha256": "25b41c7b4927cf68cfa633584bc52f9334c7e9a6016256b3b0b9d01e330a2a62",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400070546-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400070546",
+        "observedName": "Doritos, Cool Ranch Flavored, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "5f5300385d4d634cd53f8958b6c50515c95ef21bff42792bce3e49bf1e9d9798",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400070546-0016-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        },
+        {
+          "url": "https://www.doritos.com/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "replaceTextFrom": "doritoscool ranch",
+      "replaceTextTo": "Doritos Cool Ranch Flavored Tortilla Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Doritos Cool Ranch Flavored Tortilla Chips"
+    },
+    {
+      "sku": "3503",
+      "expectedUpc": "028400417723",
+      "expectedNameSha256": "f122c1f7f8fd53f76ee7977b1f3cc0a333b646b577ba5e48dd6aecc4855991f5",
+      "expectedLabel": "4.25 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400417723-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400417723",
+        "observedName": "Fritos, Flavor Twists, Honey BBQ Flavored, Corn Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "de6028657bd2cb07db4e65e859e49e29bf18890440e8b7b25901077c3dcb2f9d",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400417723-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Fritos honey twists 4 1/4OZ",
+      "replaceTextTo": "Fritos Flavor Twists Honey BBQ Flavored Corn Snacks 4 1/4OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Fritos Flavor Twists Honey BBQ Flavored Corn Snacks"
+    },
+    {
+      "sku": "3548",
+      "expectedUpc": "028400282048",
+      "expectedNameSha256": "6b283704f7833a554aed188823b9f91295089f36ea36a2b8c1a74028afe85feb",
+      "expectedLabel": "2.375 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400282048-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400282048",
+        "observedName": "Funyuns, Onion Flavored Rings",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e9b022fb34c03828d4f8f2cc185880de411a3a31e62a73a8ac774f65b83ecbff",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400282048-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Funyuns onion rings 2 3/8OZ",
+      "replaceTextTo": "Funyuns Onion Flavored Rings 2 3/8OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Funyuns Onion Flavored Rings"
+    },
+    {
+      "sku": "4862",
+      "expectedUpc": "043000955314",
+      "expectedNameSha256": "f0f8806bbfc1189edd105ffedc39b6428a39935e8b9149599f8bd87796dd301b",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "Kraft Heinz",
+        "productUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955314",
+        "publisherEvidenceUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955314",
+        "observedUpc": "043000955314",
+        "observedName": "Kool-Aid Unsweetened Orange Artificially Flavored Powdered Soft Drink Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e804a510519b2707a2af3d9b992b5897adb2a1979639392366823b5293926c0f",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955314",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Product brand, name and matching GTIN are bound within the same owned-site Product structured-data record."
+        }
+      ],
+      "replaceTextFrom": "Kool-Aid orange",
+      "replaceTextTo": "Kool-Aid Unsweetened Orange Powdered Soft Drink Mix",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Kool-Aid Unsweetened Orange Powdered Soft Drink Mix"
+    },
+    {
+      "sku": "6028",
+      "expectedUpc": "028400084055",
+      "expectedNameSha256": "bb5c04497aefac3bff02a11d0772ce6267bc37878a670e253b97a0b9ed337063",
+      "expectedLabel": "8 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400084055-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400084055",
+        "observedName": "Munchies, Flamin' Hot Flavored, Snack Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "c37b86b1e7900335c0ebb082309cb93a17c4609faa4bc4e50d05e09019fd7a61",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400084055-0017-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Munchies Hot 8oz",
+      "replaceTextTo": "Munchies Flamin' Hot Flavored Snack Mix 8oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Flamin' Hot Flavored Snack Mix"
+    },
+    {
+      "sku": "6855",
+      "expectedUpc": "030000031605",
+      "expectedNameSha256": "53586566a8571e7604bf28d364f61b31ce8bec48f9b4343fb7d606cb20f9f1f9",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/030000031605-0002-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "030000031605",
+        "observedName": "Quaker, Enriched & Degerminated, White Corn Meal",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "4e60dc218c19729de30bd0c81724292402a8b73c562e63a7d37f4478d69203de",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/030000031605-0002-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Quaker white corn meal",
+      "replaceTextTo": "Quaker Enriched & Degerminated White Corn Meal",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Quaker Enriched & Degerminated White Corn Meal"
+    },
+    {
+      "sku": "6856",
+      "expectedUpc": "030000030509",
+      "expectedNameSha256": "bc9242be895ec1d7120f3262e7fdb92e59e58db4d09655babb3118b14ae634a7",
+      "expectedLabel": "24 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/030000030509-0003-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "030000030509",
+        "observedName": "Quaker, Enriched & Degerminated, Yellow Corn Meal",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "7ff98389ef9082a4315cb4fc50f469e13322c8044c70449995580193003f9fa7",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/030000030509-0003-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Quaker yellow corn meal24OZ",
+      "replaceTextTo": "Quaker Enriched & Degerminated Yellow Corn Meal 24OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Quaker Enriched & Degerminated Yellow Corn Meal"
+    },
+    {
+      "sku": "7172",
+      "expectedUpc": "028400012348",
+      "expectedNameSha256": "52f63e93b25b0a024d98564a3e27c5e168fdc44bb22e1dcea3bafd126f433447",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400012348-0018-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400012348",
+        "observedName": "Rold Gold, Rods, Original, Pretzels",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "0949bbaf548d5ee1c675340692a087f0eb82c65e16832a04c16e408eafaf7efa",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400012348-0018-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Rold Gold Rods 12oz",
+      "replaceTextTo": "Rold Gold Rods Original Pretzels 12oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Rold Gold Rods Original Pretzels"
+    },
+    {
+      "sku": "7226",
+      "expectedUpc": "028400002912",
+      "expectedNameSha256": "962c5dd5649b356838a69e31557ed4e1202a2dce9571ce8e953cec652212f7c7",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400002912-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400002912",
+        "observedName": "Ruffles, Cheddar & Sour Cream Flavored, Potato Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "eefa0293ad9707e175cbd7c2c4d51049e882c4b7bea91fb1a2817736edc21081",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400002912-0014-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        },
+        {
+          "url": "https://www.ruffles.com/search",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "replaceTextFrom": "rufflesCHEDDAR & SOUR CREAM",
+      "replaceTextTo": "Ruffles Cheddar & Sour Cream Flavored Potato Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Ruffles Cheddar & Sour Cream Flavored Potato Chips"
+    },
+    {
+      "sku": "7305",
+      "expectedUpc": "028400005784",
+      "expectedNameSha256": "a6c3ce0eaf2c21efb94195655b33d277cc339f4880c1ff2d4398f4520a30f4f3",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400005784-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400005784",
+        "observedName": "Munchies, Cheetos, Cheddar Cheese Flavored On Baked Golden Toast, Sandwich Crackers",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d86d0a9af06bcf425ec98a755e2a5dd7cf42e239364c7d66af4cee108b605b97",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400005784-0013-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "SANDWICH CRACKERS CHDDR CHEESEMUNCHIES",
+      "replaceTextTo": "Munchies Cheetos Cheddar Cheese Flavored on Baked Golden Toast Sandwich Crackers",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Cheetos Cheddar Cheese Flavored on Baked Golden Toast Sandwich Crackers"
+    },
+    {
+      "sku": "7306",
+      "expectedUpc": "028400006200",
+      "expectedNameSha256": "9455d42d8ef358694ef9c4ae197e896a21334caafb33bdef3d7c5554747f7719",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400006200-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400006200",
+        "observedName": "Munchies, Doritos, Jalapeno Cheddar Artificially Flavored On Baked Golden Toast, Sandwich Crackers",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e0f80586fc886c00444559090741567f361ea4e3f79e86b6f633a48fef66b7cc",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400006200-0017-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "SANDWICH CRACKERS JALAPENO CHEMUNCHIES FRITO LAY",
+      "replaceTextTo": "Munchies Doritos Jalapeno Cheddar Artificially Flavored on Baked Golden Toast Sandwich Crackers",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Doritos Jalapeno Cheddar Artificially Flavored on Baked Golden Toast Sandwich Crackers"
+    },
+    {
+      "sku": "7676",
+      "expectedUpc": "028400020008",
+      "expectedNameSha256": "7e503dc6f3c76717d16c0d12aa66de0013117e197d05157b79d4f381631b2c43",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400020008-0020-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400020008",
+        "observedName": "Smartfood, White Cheddar Flavored, Popcorn",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "27b1c2b4717258ac4c0c9bc4b12407bf8616950349e2e30af2e9b4089354ee94",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400020008-0020-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "smartfoodwhite cheddar",
+      "replaceTextTo": "Smartfood White Cheddar Flavored Popcorn",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Smartfood White Cheddar Flavored Popcorn"
+    },
+    {
+      "sku": "8812",
+      "expectedUpc": "028400589253",
+      "expectedNameSha256": "1f64f5bfb391697182b771540bce43cfcbfbd8f617d023eeb65292e9717e5f28",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400589253-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400589253",
+        "observedName": "Tostitos, Habanero, Hot Chunky Salsa",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "27072a152238ebf19263cffe8793f54c28b469f701df21f1046bcac4781bf9dc",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400589253-0012-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Tostitos hot salsa",
+      "replaceTextTo": "Tostitos Habanero Hot Chunky Salsa",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Tostitos Habanero Hot Chunky Salsa"
+    },
+    {
+      "sku": "8819",
+      "expectedUpc": "028400064088",
+      "expectedNameSha256": "1a52c0fabf0f5606b36cf347c39fe0ebfaf9592bb920643cffb0e94110ebd05b",
+      "expectedLabel": "10 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400064088-0033-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400064088",
+        "observedName": "Tostitos, Scoops, Original, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "badf5eea102e8c829a873479609d1f469dda958bc7d2100cb03286c90de470a7",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400064088-0033-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Tostitos Scoops 10oz",
+      "replaceTextTo": "Tostitos Scoops Original Tortilla Chips 10oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Tostitos Scoops Original Tortilla Chips"
+    },
+    {
+      "sku": "8820",
+      "expectedUpc": "028400090582",
+      "expectedNameSha256": "0a833bacfa185dc5ba185dcc4380d9f4dee36b4ff3a89483d2cd9c3bedd42821",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400090582-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400090582",
+        "observedName": "Tostitos, Cheese Flavored, Smooth & Cheesy Dip",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "209246f99da3f6d1c358c0ceab05eaf53e02d5d4f707459708c28237ae94fff1",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400090582-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "TOSTITOS SMOOTH&CHEESY DIP",
+      "replaceTextTo": "Tostitos Cheese Flavored Smooth & Cheesy Dip",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Tostitos Cheese Flavored Smooth & Cheesy Dip"
+    },
+    {
+      "sku": "5025",
+      "expectedUpc": "028400575317",
+      "expectedNameSha256": "3693cf116a12a79148fdfebf1360b6a4fc8a8fb5bf8c83e9837d25c325b1bc3c",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400575317-0004-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400575317",
+        "observedName": "Lay's, BLT Sandwich Naturally & Artificially Flavored, Potato Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "a852d9847fd834ba877d625d660a5d64170df76f8182d488dd3f54dde35d21db",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400575317-0004-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "lay  summer blt  CHIPS",
+      "replaceTextTo": "Lay's BLT Sandwich Naturally & Artificially Flavored Potato Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Lay's BLT Sandwich Naturally & Artificially Flavored Potato Chips"
+    },
+    {
+      "sku": "6025",
+      "expectedUpc": "028400109147",
+      "expectedNameSha256": "1aa961e2de036d52971ef669697f8996e88c375da50abc95dd4517a7d8f16ba9",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400109147-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400109147",
+        "observedName": "Munchies, Honey Roasted, Peanuts",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "2a084a66fdfe2d1794b7b14d5525355c0bf910037733fa812d949e51b7a6e780",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400109147-0001-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/roasted",
+          "kind": "english_dictionary_ordinary_word_spelling",
+          "supports": "Confirms only the stated ordinary word spelling; manually reviewed source context. No full product identity or size verification."
+        }
+      ],
+      "replaceTextFrom": "Munchies Honey peanut rosted",
+      "replaceTextTo": "Munchies Honey Roasted Peanuts",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Honey Roasted Peanuts"
+    },
+    {
+      "sku": "8817",
+      "expectedUpc": "028400055987",
+      "expectedNameSha256": "7f65742fdae22e09401e30dfbf873b6f06f5d61c069cbe30e42c622b421edbf8",
+      "expectedLabel": "15.5 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400055987-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400055987",
+        "observedName": "Tostitos, Medium, Chunky Salsa Dip",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "a49ab4a32e4d9d93ed56dffaa5a403c364f600f09bf7b62c536b93a936940310",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400055987-0012-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Tostitos Salsa Dip 15.5oz MEDI",
+      "replaceTextTo": "Tostitos Medium Chunky Salsa Dip 15.5oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Tostitos Medium Chunky Salsa Dip"
+    },
+    {
+      "sku": "1972",
+      "expectedUpc": "028400329507",
+      "expectedNameSha256": "2d57a08e288c42def8022d4f353009dde5c0574bccdd6f1966410cc81dcd6a1a",
+      "expectedLabel": "2.75 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400329507-0009-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400329507",
+        "observedName": "Cheetos, Crunchy, Flamin' Hot Limon Flavored, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "45e497444b095824c40c261c84d60d2f21e011795833aa0f0f40abfeb8b694da",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400329507-0009-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "cheetos flamin hot 2 3/4 oz",
+      "replaceTextTo": "Cheetos Crunchy Flamin' Hot Limon Flavored Cheese Flavored Snacks 2 3/4 oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Cheetos Crunchy Flamin' Hot Limon Flavored Cheese Flavored Snacks"
+    },
+    {
+      "sku": "3491",
+      "expectedUpc": "028400000222",
+      "expectedNameSha256": "ddb4c31eb6435ab58847dd0167ed711458686605aaa6efefbd9ea9ac94a2affc",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400000222-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400000222",
+        "observedName": "Fritos, Mild Cheddar Flavored, Cheese Dip",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "fe5d8164969e3ae1a8f96ffed2215b43bbcf6fe5dc4bb44a365b50ab077a7921",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400000222-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "FRITOLAY mild  CHDDR DIP",
+      "replaceTextTo": "Fritos Mild Cheddar Flavored Cheese Dip",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Fritos Mild Cheddar Flavored Cheese Dip"
+    },
+    {
+      "sku": "5057",
+      "expectedUpc": "028400070959",
+      "expectedNameSha256": "5b8b6046adf0481e48e5ab2cf7bf4d30acbc94d8f0f6383a6073a2302cbfabe3",
+      "expectedLabel": "15 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400070959-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400070959",
+        "observedName": "Lay's, Smooth Ranch Flavored, Dip",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "21965721b1f031bf1aaecad9d33ae96b9ceb47f7d9dc2dc10c76fc114f58c7f4",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400070959-0013-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Lay's Ranch 15OZ",
+      "replaceTextTo": "Lay's Smooth Ranch Flavored Dip 15OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Lay's Smooth Ranch Flavored Dip"
+    },
+    {
+      "sku": "1950",
+      "expectedUpc": "028400363532",
+      "expectedNameSha256": "d2831aed9f1f965c015bfc9bc6db5d624090a1b692a047d83a88b6a64496bd30",
+      "expectedLabel": "2.75 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400363532-0002-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400363532",
+        "observedName": "Cheetos, Pepper Puffs, Hottest Ever, Flamin' Hot Flavored, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "6e4d730d094c2620300e7abc24b0cc7714176aef0f87686747752474e19e6eba",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400363532-0002-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "cheetos 2 3/4 oz",
+      "replaceTextTo": "Cheetos Pepper Puffs Hottest Ever Flamin' Hot Flavored Cheese Flavored Snacks 2 3/4 oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Cheetos Pepper Puffs Hottest Ever Flamin' Hot Flavored Cheese Flavored Snacks"
+    },
+    {
+      "sku": "8811",
+      "expectedUpc": "028400071031",
+      "expectedNameSha256": "60f6b7f900baa9093f60a41efa6b7399c75b95957f566977ee8381ad00b420f0",
+      "expectedLabel": "15 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400071031-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400071031",
+        "observedName": "Tostitos, Creamy Spinach Dip",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "6a3b6fa56181c607017b0ad7768587690ea398cfa3b6e40fbf3a19ecd6a81d9c",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400071031-0013-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Tostitos creamy spinach  15OZ",
+      "replaceTextTo": "Tostitos Creamy Spinach Dip 15OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Tostitos Creamy Spinach Dip"
+    },
+    {
+      "sku": "1996",
+      "expectedUpc": "028400041898",
+      "expectedNameSha256": "24cf17b99acd24a43be956ca37cafa7ef98939d4f81bfefb8d47d45dd5a727d8",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400041898-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400041898",
+        "observedName": "Chester's, Puffcorn, Flamin' Hot Flavored, Puffed Corn Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "089d7167f4795a5f2dcb6f3ab665bcdb3a272f141dd60d94e4b39b521a45268b",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400041898-0013-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "chester'spuffcorn",
+      "replaceTextTo": "Chester's Puffcorn Flamin' Hot Flavored Puffed Corn Snacks",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Chester's Puffcorn Flamin' Hot Flavored Puffed Corn Snacks"
+    },
+    {
+      "sku": "2014",
+      "expectedUpc": "028400041560",
+      "expectedNameSha256": "a4f87321130aeec6fbfc3f6ba30a4f88ee252d5cae24be9a563b672ac18645e2",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400041560-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400041560",
+        "observedName": "Chester's, Puffcorn, Cheese Flavored, Puffed Corn Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d16bc1339da8d246d3822b537e8b44ab59e1211fd2d5bcbbe5d9abe5375e294c",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400041560-0014-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "chester's puffcorn",
+      "replaceTextTo": "Chester's Puffcorn Cheese Flavored Puffed Corn Snacks",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Chester's Puffcorn Cheese Flavored Puffed Corn Snacks"
+    },
+    {
+      "sku": "3490",
+      "expectedUpc": "028400000246",
+      "expectedNameSha256": "85f633c7f9ac40c5f2ad7e0c5a921644f3511ce6ae8eb81721630b0202ec2bca",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400000246-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400000246",
+        "observedName": "Fritos, Jalapeno & Cheddar Flavored, Cheese Dip",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "54c2ae3c3a0bc7e986c3f276f717a6822c4fa9107e3547b75cddb01978bac29e",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400000246-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "FRITOLAY JALAPENO CHDDR DIP",
+      "replaceTextTo": "Fritos Jalapeno & Cheddar Flavored Cheese Dip",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Fritos Jalapeno & Cheddar Flavored Cheese Dip"
+    },
+    {
+      "sku": "5026",
+      "expectedUpc": "028400091565",
+      "expectedNameSha256": "641ebe5c6e342b48b41787911a1d2d69036beeee092dc916b021ca5130f1307b",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400091565-0020-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400091565",
+        "observedName": "Lay's, Classic, Potato Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "99ba1d437b936d4f4e006d1a1487b432ba1a52f64ca7e247eebb95117c017983",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400091565-0020-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "lay'sclassic",
+      "replaceTextTo": "Lay's Classic Potato Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Lay's Classic Potato Chips"
+    },
+    {
+      "sku": "3863",
+      "expectedUpc": "028400259552",
+      "expectedNameSha256": "d2026c19799e054a168443e790c76fc0367a1f04d8ab40368880aee1fcfadd07",
+      "expectedLabel": "13 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400259552-0018-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400259552",
+        "observedName": "Grandma's, Peanut Butter, Cookies",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "c404cdf351ba9dca802cae27603bd4deb60cd83d1dea974b3b716e720aeb4d57",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400259552-0018-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "grandmas peanut butter13oz",
+      "replaceTextTo": "Grandma's Peanut Butter Cookies 13oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Grandma's Peanut Butter Cookies"
+    },
+    {
+      "sku": "6020",
+      "expectedUpc": "028400025287",
+      "expectedNameSha256": "c5576e7b13e6a8757f8e6548a35d94e0d4110b0f6b53163f4b62bc1d0147eb9f",
+      "expectedLabel": "1.3 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400025287-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400025287",
+        "observedName": "Munchies, Cheese Fix Flavored, Snack Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "eefab737f67515c4a3b6f92a5704397d5057f4dfdb4c2a6c1ba03c57f3b88a01",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400025287-0015-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "MUNCHIES 1.3OZ",
+      "replaceTextTo": "Munchies Cheese Fix Flavored Snack Mix 1.3OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Cheese Fix Flavored Snack Mix"
+    },
+    {
+      "sku": "1995",
+      "expectedUpc": "028400041447",
+      "expectedNameSha256": "a84a5f7987fcdf8a5841982433546c2738016c38653d01aab3ddd99d2e764872",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400041447-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400041447",
+        "observedName": "Chester's, Fries, Flamin' Hot Flavored, Corn Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "b19db1a608382e50b18d08e6a0177120b387255050e40b6954e2dec4b5e323b5",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400041447-0014-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "chester'sfries",
+      "replaceTextTo": "Chester's Fries Flamin' Hot Flavored Corn Snacks",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Chester's Fries Flamin' Hot Flavored Corn Snacks"
+    },
+    {
+      "sku": "5024",
+      "expectedUpc": "028400515016",
+      "expectedNameSha256": "3446e8e37fcc0b46a1be16b66b54c17c44771eff427263dfd4c5e75ae6fc341d",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400515016-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400515016",
+        "observedName": "Lay's, Chile Mango Flavored, Potato Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "8a7caac05a127e7579dc1ae05e7d8eca97fe1b7b960988b4cc347a24b7966136",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400515016-0001-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "lay  chile mango  CHIPS",
+      "replaceTextTo": "Lay's Chile Mango Flavored Potato Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Lay's Chile Mango Flavored Potato Chips"
+    },
+    {
+      "sku": "8814",
+      "expectedUpc": "028400517997",
+      "expectedNameSha256": "6719028381c4497107634a63ffa5130db007a10d71ef5d65e1e0c26f7d928fde",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400517997-0125-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400517997",
+        "observedName": "Tostitos, Original Restaurant Style, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "3999eca32c5c2bb6abdf6a21e17dde03cdd840c51f2d218eded4ddf55a5a4bfe",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400517997-0125-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "tostitos original    12oz",
+      "replaceTextTo": "Tostitos Original Restaurant Style Tortilla Chips 12oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Tostitos Original Restaurant Style Tortilla Chips"
+    },
+    {
+      "sku": "2917",
+      "expectedUpc": "028400470339",
+      "expectedNameSha256": "a0dc38acbffd196524f37baa6309e71df850af13010b70d30322f62eeeef4360",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400470339-0003-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400470339",
+        "observedName": "Doritos, Tangy Pickle Artificially Flavored, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "a722c8178f0ae957bb8200a7165ae386b7f6ffc6ec091f4a44ecc01a3146ebd7",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400470339-0003-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Doritos  TONCCY PICKLE",
+      "replaceTextTo": "Doritos Tangy Pickle Artificially Flavored Tortilla Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Doritos Tangy Pickle Artificially Flavored Tortilla Chips"
+    },
+    {
+      "sku": "1949",
+      "expectedUpc": "028400047913",
+      "expectedNameSha256": "d090ab6e07b4e5b6aa04d16b839e3cae3fbfaf70b2837e8c673fe6098b107c94",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400047913-0020-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400047913",
+        "observedName": "Cheetos, Crunchy, Flamin' Hot Flavored, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "0321055f645db9f664b27534665dd0e6dcb710035025588aaa782e1da344685e",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400047913-0020-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        },
+        {
+          "url": "https://www.cheetos.com/products/",
+          "kind": "manufacturer",
+          "supports": "Manufacturer establishes brand word boundary. Insert a separating space only; every source flavor/strength/size token is retained. No full identity claim."
+        }
+      ],
+      "replaceTextFrom": "cheetosflamin hot",
+      "replaceTextTo": "Cheetos Crunchy Flamin' Hot Flavored Cheese Flavored Snacks",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Cheetos Crunchy Flamin' Hot Flavored Cheese Flavored Snacks"
+    },
+    {
+      "sku": "3495",
+      "expectedUpc": "028400327299",
+      "expectedNameSha256": "9918c08be30e241523ca7584e4cb1ab5526673a9df21ef172f05d08a007ddcfb",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400327299-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400327299",
+        "observedName": "Fritos, Chili Cheese Flavored, Corn Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "231788e5876ca4e9edd28fad3168f5b8cdee153a673ea44b669f41f9f2db0d12",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400327299-0016-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "fritos brand  chili cheese",
+      "replaceTextTo": "Fritos Chili Cheese Flavored Corn Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Fritos Chili Cheese Flavored Corn Chips"
+    },
+    {
+      "sku": "6012",
+      "expectedUpc": "028400084048",
+      "expectedNameSha256": "20a43eeb147d77022898a79e588894524d50a8a1e19eefe563df8843e3f188ce",
+      "expectedLabel": "8 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400084048-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400084048",
+        "observedName": "Munchies, Cheese Fix Flavored, Snack Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "8bc3695a49a50ac16134c7e242fdddcd9ca297ab6bf49e496b1ed2fed334c55d",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400084048-0014-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "MUCHIES CHEESE FIX 8OZ",
+      "replaceTextTo": "Munchies Cheese Fix Flavored Snack Mix 8OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Cheese Fix Flavored Snack Mix"
+    },
+    {
+      "sku": "2002",
+      "expectedUpc": "028400357371",
+      "expectedNameSha256": "65380ecf48f42b54345bf15d65cf453053d3e66d16691bd50cae538a5eae9e94",
+      "expectedLabel": "74.4 g",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400357371-0009-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400357371",
+        "observedName": "Chester's, Fries, Flamin' Hot Flavored, Corn Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "bbdf6352fbe6cb788d8f50374cf8c700759e3364ee57cbc15a6e2fcbdb8a1b95",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400357371-0009-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "chesters fries flamin hot74.4g",
+      "replaceTextTo": "Chester's Fries Flamin' Hot Flavored Corn Snacks 74.4g",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Chester's Fries Flamin' Hot Flavored Corn Snacks"
+    },
+    {
+      "sku": "7270",
+      "expectedUpc": "028400041546",
+      "expectedNameSha256": "8f3dd79324a75ce6d8d498fcb002e49046cefbab0f2bd1e273346c8e42e66aa1",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400041546-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400041546",
+        "observedName": "Sabritones, Chile & Lime Flavored, Puffed Wheat Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "a501d4f4986e411516b4adeca0810cb9e942380284b3068bd170d37cf872fe88",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400041546-0015-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "sabritos wheat snackchile & lime",
+      "replaceTextTo": "Sabritones Chile & Lime Flavored Puffed Wheat Snacks",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Sabritones Chile & Lime Flavored Puffed Wheat Snacks"
+    },
+    {
+      "sku": "3858",
+      "expectedUpc": "028400259422",
+      "expectedNameSha256": "4321f85bf5362e11120ca90d1fd2fb41a2d2b3c81ef5e908a6cd6b089b3a282b",
+      "expectedLabel": "13 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400259422-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400259422",
+        "observedName": "Grandma's, Chocolate Brownie Naturally & Artificially Flavored, Cookies",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "0d38552fcd91788079e2e241dc293a27afb95511022978ac7467817e0bfea66a",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400259422-0016-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "grandmas chocolate brownie13oz",
+      "replaceTextTo": "Grandma's Chocolate Brownie Naturally & Artificially Flavored Cookies 13oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Grandma's Chocolate Brownie Naturally & Artificially Flavored Cookies"
+    },
+    {
+      "sku": "3859",
+      "expectedUpc": "028400079143",
+      "expectedNameSha256": "78fb7a634bb4f296de6e9b205bf0b455b84493e3b9319ea222c7f966d6e175d5",
+      "expectedLabel": "70.8 g",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400079143-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400079143",
+        "observedName": "Grandma's, Chocolate Brownie Naturally & Artificially Flavored, Cookies",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "15e454ea9d9b6b8a3e455c847d0d53b856033a4e0b1ec8b506da970000372da2",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400079143-0016-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "grandmas chocolate brownie70.8g",
+      "replaceTextTo": "Grandma's Chocolate Brownie Naturally & Artificially Flavored Cookies 70.8g",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Grandma's Chocolate Brownie Naturally & Artificially Flavored Cookies"
+    },
+    {
+      "sku": "3862",
+      "expectedUpc": "028400079150",
+      "expectedNameSha256": "a56bf971e7299e3541fb1e96a93ce17602831aba46da758bb8f15cf82d46b0e2",
+      "expectedLabel": "70.8 g",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400079150-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400079150",
+        "observedName": "Grandma's, Peanut Butter, Cookies",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d299bf94e38015915beae797f36ea28cd9a7bacb454fe9fe935467f5db145f8c",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400079150-0015-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "grandmas peanut butter70.8g",
+      "replaceTextTo": "Grandma's Peanut Butter Cookies 70.8g",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Grandma's Peanut Butter Cookies"
+    },
+    {
+      "sku": "101355",
+      "expectedUpc": "028400261531",
+      "expectedNameSha256": "1b470068f6f77af8df7f092d3ccdf03aaa99ba7bc8f3bf89b1b26bd2c7ca6d5b",
+      "expectedLabel": "1 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400261531-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400261531",
+        "observedName": "Sabritas, Salt & Lime Flavored, Peanuts",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "6cb97ee90cd57f0afc51dfe82fd5abfe6b85a8274e663bd36a5747ba4718b906",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400261531-0013-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "SABRITAS SALT LIME PEANUTS 1OZ",
+      "replaceTextTo": "Sabritas Salt & Lime Flavored Peanuts 1OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Sabritas Salt & Lime Flavored Peanuts"
+    },
+    {
+      "sku": "7307",
+      "expectedUpc": "028400026864",
+      "expectedNameSha256": "04bb11116e855c5456db2c0ddeb11a62e73cd866a1804c2eb8a33704a0bb5cb6",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400026864-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400026864",
+        "observedName": "Munchies, Peanut Butter On Baked Golden Toast, Sandwich Crackers",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "8aedf90b3bcf5be7cd01b71ff709d0428dfc0f7c25cd830cabd7b1915f2acd4f",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400026864-0017-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "SANDWICH CRACKERS PNUT BUTTERMUNCHIES",
+      "replaceTextTo": "Munchies Peanut Butter on Baked Golden Toast Sandwich Crackers",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Peanut Butter on Baked Golden Toast Sandwich Crackers"
+    },
+    {
+      "sku": "4859",
+      "expectedUpc": "043000955703",
+      "expectedNameSha256": "169b1fdf5753c4d6837e522e60bf2e0a92ff0129d7429390c7675a9ff4293858",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "Kraft Heinz",
+        "productUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
+        "publisherEvidenceUrl": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
+        "observedUpc": "043000955703",
+        "observedName": "Kool-Aid Unsweetened Pink Lemonade Naturally Flavored Powdered Soft Drink Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "546e007091ad897cef475ebc6acbb424618e9f1d76c26ed6948ed30e5ab1ff21",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Product brand, name and matching GTIN are bound within the same owned-site Product structured-data record."
+        }
+      ],
+      "replaceTextFrom": "KOOL-AIDpink lemonade",
+      "replaceTextTo": "Kool-Aid Unsweetened Pink Lemonade Powdered Soft Drink Mix",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Kool-Aid Unsweetened Pink Lemonade Powdered Soft Drink Mix"
+    },
+    {
+      "sku": "2916",
+      "expectedUpc": "028400070560",
+      "expectedNameSha256": "cc9d67bf6ef1d53e259c62f171d240a07ead510d6b61545010e1685858c86b51",
+      "expectedLabel": "49.6 g",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400070560-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400070560",
+        "observedName": "Doritos, Nacho Cheese Flavored, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "bfac8cd8839937357ef196384f8d3a51cdf1097802920b0848cc83b9f478a7ac",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400070560-0016-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "doritos  nacho cheese 49.6 g",
+      "replaceTextTo": "Doritos Nacho Cheese Flavored Tortilla Chips 49.6 g",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Doritos Nacho Cheese Flavored Tortilla Chips"
+    },
+    {
+      "sku": "101357",
+      "expectedUpc": "028400261548",
+      "expectedNameSha256": "32722f221031cec6a7f76c24d771469c553753855878d21e058d507837f66abb",
+      "expectedLabel": "1 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400261548-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400261548",
+        "observedName": "Sabritas, Spicy Flavored, Peanuts",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "9c2269cbbe52e9d9706289f786e7ed63375dff5df684619be95ed1fdd1d1e1e8",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400261548-0016-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "SABRITAS SPICY PEANUTS 1OZ",
+      "replaceTextTo": "Sabritas Spicy Flavored Peanuts 1OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Sabritas Spicy Flavored Peanuts"
+    },
+    {
+      "sku": "3857",
+      "expectedUpc": "028400259613",
+      "expectedNameSha256": "1013149772221397a1073ca8f72eabf19ea09b193a4b48725a2a0952ecb4b834",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400259613-0018-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400259613",
+        "observedName": "Grandma's, Chocolate Chip, Cookies",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "4b84b9005e0d34b46ebf13f0e557efb6909efc0add01c7149cfb6366f244c7f7",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400259613-0018-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "grandmas  cookies chocolate",
+      "replaceTextTo": "Grandma's Chocolate Chip Cookies",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Grandma's Chocolate Chip Cookies"
+    },
+    {
+      "sku": "6595",
+      "expectedUpc": "028400260725",
+      "expectedNameSha256": "313a2491eb2e8db9ccd106ace330fa6fe2246b3bc0051b409fee230e8a71514b",
+      "expectedLabel": "13 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400260725-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400260725",
+        "observedName": "Grandma's, Peanut Butter, Sandwich Creme Cookies",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "fc6959d2814c41e8790d40d89003819e5865c1de01fd618afefd9c78e2d3e5a7",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400260725-0014-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "peanut butter cookies13oz",
+      "replaceTextTo": "Grandma's Peanut Butter Sandwich Creme Cookies 13oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Grandma's Peanut Butter Sandwich Creme Cookies"
+    },
+    {
+      "sku": "6030",
+      "expectedUpc": "028400116831",
+      "expectedNameSha256": "0b5a95d49c6e0e4c39994c65ae531f6b2f7a7218c849aa0d6c70cf7174d033a6",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400116831-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400116831",
+        "observedName": "Munchies, Flamin' Hot Flavored, Peanuts",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "7adceda7871a816c89c1083ed1d84b169f19a75d8db68a9f001505ebd78348d9",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400116831-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Munchies Peanuts",
+      "replaceTextTo": "Munchies Flamin' Hot Flavored Peanuts",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Flamin' Hot Flavored Peanuts"
+    },
+    {
+      "sku": "3485",
+      "expectedUpc": "028400655002",
+      "expectedNameSha256": "f332649a526c02d4c6a33b3106dcf9918a7eaebf93e94f3e8d4100fdc634f3a9",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400655002-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400655002",
+        "observedName": "Frito-Lay, Original, Sunflower Seeds",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "ce701e0b7c1d088d0a427f96c69b0081da7183c46bcb80cfaa0d3c70294540a1",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400655002-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Frito Lay Sunflower SeedsORIGINAL",
+      "replaceTextTo": "Frito-Lay Original Sunflower Seeds",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Frito-Lay Original Sunflower Seeds"
+    },
+    {
+      "sku": "3486",
+      "expectedUpc": "028400655019",
+      "expectedNameSha256": "028f0466ef35377b8acb5ebc6c96e8af1ff5bc178bf0f72edd721fd56d9c6ed5",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400655019-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400655019",
+        "observedName": "Frito-Lay, Ranch Flavored, Sunflower Seeds",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "860f086b3d43629ea94d622048f1d361a2869169dfb1915aacd321f09f49864e",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400655019-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Frito Lay Sunflower SeedsRANCH",
+      "replaceTextTo": "Frito-Lay Ranch Flavored Sunflower Seeds",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Frito-Lay Ranch Flavored Sunflower Seeds"
+    },
+    {
+      "sku": "3498",
+      "expectedUpc": "028400327312",
+      "expectedNameSha256": "4a154adc54c8d50e564b75bafb6f3d4eded38b510e733807c17d9e44b607fcae",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400327312-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400327312",
+        "observedName": "Fritos, Flamin' Hot Flavored, Corn Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "652985cbea9e5c2acc7ec1a57d5ea820c464ab9f4ab4beb6fc3cb0d0dbeb00f0",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400327312-0014-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Fritos Flamin hot",
+      "replaceTextTo": "Fritos Flamin' Hot Flavored Corn Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Fritos Flamin' Hot Flavored Corn Chips"
+    },
+    {
+      "sku": "5051",
+      "expectedUpc": "028400070942",
+      "expectedNameSha256": "1e0acae38f8d3265c265b57ade4f31ce88c1b7ec9ef316db8c8bf15e0f47bf5a",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400070942-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400070942",
+        "observedName": "Lay’s, French Onion Flavored, Dip",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "384b913cdc70f7eb72c2d99cf5a611082febb1e83565c7447a232424ab73ac8f",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400070942-0013-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "LAYS FRENCH ONION DIP",
+      "replaceTextTo": "Lay's French Onion Flavored Dip",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Lay's French Onion Flavored Dip"
+    },
+    {
+      "sku": "101358",
+      "expectedUpc": "028400261555",
+      "expectedNameSha256": "b702e77a15f44f0c25afea4c300f0a13e0e44afb4b4a363785bd08662ba149a3",
+      "expectedLabel": "1 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400261555-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400261555",
+        "observedName": "Sabritas, Japanese Style, Crunchy Coated Peanuts",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "dc37434c46c312f13cbacf830d8bf90269c9275b1b13104932d2d11a9291f620",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400261555-0014-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "SABRITAS JAPANESE PEANUTS 1OZ",
+      "replaceTextTo": "Sabritas Japanese Style Crunchy Coated Peanuts 1OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Sabritas Japanese Style Crunchy Coated Peanuts"
+    },
+    {
+      "sku": "6024",
+      "expectedUpc": "028400436236",
+      "expectedNameSha256": "1a0c6b601d0cdf8145cc87546d683c4ea684643833c5efa6c0d6348297abdc2f",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400436236-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400436236",
+        "observedName": "Munchies, Flamin' Hot Flavored, Snack Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "4b2a21ac06a514cba0959e7979c2959daa6f16f70430f053639951a0cac60e34",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400436236-0015-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Munchies Flamin hot",
+      "replaceTextTo": "Munchies Flamin' Hot Flavored Snack Mix",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Flamin' Hot Flavored Snack Mix"
+    },
+    {
+      "sku": "6023",
+      "expectedUpc": "028400436182",
+      "expectedNameSha256": "a33d2c60ac22dd784ccb0c85f54155d5a17fcb04913c5ddd495ef6caac01f111",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400436182-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400436182",
+        "observedName": "Munchies, Cheese Fix Flavored, Snack Mix",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "33b0a322af6cab68c54a398d05afa1a76319a676e7105978bc922d645a9e3337",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400436182-0015-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Munchies cheese fix",
+      "replaceTextTo": "Munchies Cheese Fix Flavored Snack Mix",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Cheese Fix Flavored Snack Mix"
+    },
+    {
+      "sku": "7308",
+      "expectedUpc": "028400026734",
+      "expectedNameSha256": "e22e72d8a862ac02f1559266ac981ca2ac772431a022df7744792fe74df68146",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400026734-0021-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400026734",
+        "observedName": "Munchies, Peanut Butter On Baked Cheese, Sandwich Crackers",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "283d70a590df31619b76cf7e21046132cd1e67b20c5e29fe6cdc7b3f070711fb",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400026734-0021-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "SANDWICH CRACKERS PNUT BUTTRMUNCHIES",
+      "replaceTextTo": "Munchies Peanut Butter on Baked Cheese Sandwich Crackers",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Peanut Butter on Baked Cheese Sandwich Crackers"
+    },
+    {
+      "sku": "3861",
+      "expectedUpc": "028400004473",
+      "expectedNameSha256": "8a86f74e3c783ab991cc428a5de2c4745139580239a46eb82a37433bc1340ee7",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400004473-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400004473",
+        "observedName": "Grandma's, Vanilla Creme Naturally & Artificially Flavored, Mini Sandwich Cookies",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "72904ee2613b74daa9e92478f817af7646f9c70791190ef86cbfe4c7ea4f396c",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400004473-0015-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "GRANDMA'S MINI VANILLA COOKIE",
+      "replaceTextTo": "Grandma's Vanilla Creme Naturally & Artificially Flavored Mini Sandwich Cookies",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Grandma's Vanilla Creme Naturally & Artificially Flavored Mini Sandwich Cookies"
+    },
+    {
+      "sku": "1969",
+      "expectedUpc": "028400356169",
+      "expectedNameSha256": "a098ca60d4fa92e2f26ebfb323f19e06dee43c7bece7421b7495ecab1f854205",
+      "expectedLabel": "77.9 g",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400356169-0018-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400356169",
+        "observedName": "Cheetos, Crunchy, Flamin' Hot Flavored, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "6fb51297cc7c38a842a440c206c8d9e55b21b6dc7081924b3d8c15b078204465",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400356169-0018-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "cheetos crunchy flamin hot77.9 g",
+      "replaceTextTo": "Cheetos Crunchy Flamin' Hot Flavored Cheese Flavored Snacks 77.9 g",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Cheetos Crunchy Flamin' Hot Flavored Cheese Flavored Snacks"
+    },
+    {
+      "sku": "2936",
+      "expectedUpc": "028400516464",
+      "expectedNameSha256": "bda0996959cf9d856f07d19f4843bc1ef383b6bf386d7c50cbd2904b7024c314",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400516464-0024-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400516464",
+        "observedName": "Doritos, Nacho Cheese Flavored, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "669a03a350d1388688f79e42bb315c72514b45946a3c7b985024f0b44423197e",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400516464-0024-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "doritos nacho cheese",
+      "replaceTextTo": "Doritos Nacho Cheese Flavored Tortilla Chips",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Doritos Nacho Cheese Flavored Tortilla Chips"
+    },
+    {
+      "sku": "2945",
+      "expectedUpc": "028400357012",
+      "expectedNameSha256": "45ddf6a5cc39ab4a16f9d05bdf2f6af3a371cf04072c99ecd6b705951dbeb6d7",
+      "expectedLabel": "70.8 g",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400357012-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400357012",
+        "observedName": "Doritos, Nacho Cheese Flavored, Tortilla Chips",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d642abaca58011f52985137e121f09fe49dbd3ad0b0a2d41cebd2a9e7f19d054",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400357012-0017-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Doritos Nacho Cheese 70.8g",
+      "replaceTextTo": "Doritos Nacho Cheese Flavored Tortilla Chips 70.8g",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Doritos Nacho Cheese Flavored Tortilla Chips"
+    },
+    {
+      "sku": "3546",
+      "expectedUpc": "028400331609",
+      "expectedNameSha256": "aba75c083bfe1a3a1d33025730f874f0c299979499087276c63f80c7136def20",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400331609-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400331609",
+        "observedName": "Funyuns, Flamin' Hot Flavored, Onion Flavored Rings",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "005a477c1f552e38b85e00ea3e370ae7c2a1c5357323b33b67ea792913a4a692",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400331609-0015-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "funyuns",
+      "replaceTextTo": "Funyuns Flamin' Hot Flavored Onion Flavored Rings",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Funyuns Flamin' Hot Flavored Onion Flavored Rings"
+    },
+    {
+      "sku": "6602",
+      "expectedUpc": "028400108775",
+      "expectedNameSha256": "1cb24d9055ce3b50b311d746d0ffcf8c97381fc8ddbadd0c743fc129dc319d29",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400108775-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400108775",
+        "observedName": "Munchies, Salted, Peanuts",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "ecd9230b73317a387476be6f8f93e69cc5d4f32eb8bc4930de3df940e15d8ef8",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400108775-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "PEANUTS SALTED",
+      "replaceTextTo": "Munchies Salted Peanuts",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Salted Peanuts"
+    },
+    {
+      "sku": "101356",
+      "expectedUpc": "028400725163",
+      "expectedNameSha256": "ef8faa18dc54732d0fa4bf798251d7238784c51d4957b7296485a9b7a5d0c5da",
+      "expectedLabel": "1 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400725163-0003-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400725163",
+        "observedName": "Sabritas, Hot Flavored, Peanuts",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "c6e4ba70c4dbb0c6a4bebc3f96e72608c032f2005cb704b91d8ea8b5ca7c0923",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400725163-0003-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "SABRITAS HOT PEANUTS 1OZ",
+      "replaceTextTo": "Sabritas Hot Flavored Peanuts 1OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Sabritas Hot Flavored Peanuts"
+    },
+    {
+      "sku": "7304",
+      "expectedUpc": "028400005753",
+      "expectedNameSha256": "b92e44af579efb3a54d2dd24c3e75cdfd34d9e535d58cae4f84b73b3638a95fd",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400005753-0007-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400005753",
+        "observedName": "Munchies, Doritos, Nacho Cheese Flavored On Baked Golden Toast, Sandwich Crackers",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e97b5a40fca6b4e7275d14af37a699c8ccfaa77d38146088d4ec229c47ea93b9",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400005753-0007-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "SANDWICH CRACKER NACHO CHEESENUNCHIES",
+      "replaceTextTo": "Munchies Doritos Nacho Cheese Flavored on Baked Golden Toast Sandwich Crackers",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Munchies Doritos Nacho Cheese Flavored on Baked Golden Toast Sandwich Crackers"
+    },
+    {
+      "sku": "8818",
+      "expectedUpc": "028400055970",
+      "expectedNameSha256": "fcefac8218100d4009c5254dde95b24d5ff49c66ea3fb47ba9aaad32f80bdd11",
+      "expectedLabel": "15.5 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400055970-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400055970",
+        "observedName": "Tostitos, Mild, Chunky Salsa",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "8433952e22665acd455b8942cbdd4b84b2e08427cba0c6532ea60b406a5a037f",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400055970-0013-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "TOSTITOS SALSA MILD 15.5OZ",
+      "replaceTextTo": "Tostitos Mild Chunky Salsa 15.5OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Tostitos Mild Chunky Salsa"
+    },
+    {
+      "sku": "1981",
+      "expectedUpc": "028400329132",
+      "expectedNameSha256": "3629b684a34c9e085ff3ef3e7eb289e422b32b84466afb8840e45a564fe7f3a3",
+      "expectedLabel": "3.375 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400329132-0002-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400329132",
+        "observedName": "Cheetos, Puffs, Flamin' Hot Flavored, Cheese Flavored Snacks",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "9eafc77d41b4ed2106a1311848b1552a1ea06bc27658890af70c90a857dcfc11",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400329132-0002-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "replaceTextFrom": "Cheetos puffs 3 3/8OZflamin hot",
+      "replaceTextTo": "Cheetos Puffs Flamin' Hot Flavored Cheese Flavored Snacks 3 3/8OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Cheetos Puffs Flamin' Hot Flavored Cheese Flavored Snacks"
+    },
+    {
+      "sku": "3669",
+      "expectedUpc": "052000200065",
+      "expectedNameSha256": "2a1e137edd55ed8affab22751ac523edfca83822057222adec7d3d8b1e3156c7",
+      "replaceTextFrom": "Gatorade G2 Frost 20oz",
+      "replaceTextTo": "Gatorade G2 Glacier Freeze Thirst Quencher 20oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "expectedLabel": "20 oz",
+      "verifiedPublicName": "Gatorade G2 Glacier Freeze Thirst Quencher",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000200065-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000200065",
+        "observedName": "Gatorade, G2, Glacier Freeze, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "4ae8c846ca29e9de1863f42d1a9363fa0e50d5a963d586d7617dad9c96f1ff8f",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000200065-0012-en-US/index.html",
+          "supports": "Exact source UPC052000200065 is explicitly bound to Gatorade G2 Glacier Freeze Thirst Quencher on the manufacturer record, resolving the previous missing independent UPC evidence. Name-only text verification; no new photo, package or availability verification. Exact delegated URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ]
+    },
+    {
+      "sku": "84",
+      "expectedUpc": "811538010405",
+      "expectedNameSha256": "3d5657f022e984d563770fc96e569879aba0bf4553446725e3c200b461cb16fa",
+      "replaceTextFrom": "1800 COCO",
+      "replaceTextTo": "1800 Coconut Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/coconut/",
+          "supports": "Manufacturer identifies1800 Coconut tequila. This is brand/expression evidence; the existing source volume is independently confirmed by the exactUPC record and inspected size-specific bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/product/p-14278-1800-coconut-tequila-175l/",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010405; listing and individually inspected bottle/package corroborate brand, expression and existing 1.75 L. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.universalfws.com/wp-content/uploads/2024/08/image-product-811538010405.jpg",
+          "supports": "Complete studio 1800 Coconut bottle on white; actual lower label reads 35% ALC BY VOL NET CONT 1.75 L. No visible price. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "85",
+      "expectedUpc": "811538010382",
+      "expectedNameSha256": "ea2fe3818d6f60cdea87e59e2c70eb10ffc44169bd098193fb7a24e92aae0c93",
+      "replaceTextFrom": "1800 COCONUT",
+      "replaceTextTo": "1800 Coconut Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/coconut/",
+          "supports": "Manufacturer identifies1800 Coconut tequila. This is brand/expression evidence; the existing source volume is independently confirmed by the exactUPC record and inspected size-specific bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.mainespirits.com/sites/default/files/price_books/May%202026%20Quarterly%20Price%20Book.pdf",
+          "supports": "Official catalog connectsCoconut1L70proof toUPC811538010382; name/size/UPC only."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Coconut-Tequila-1L-Vintage-Wine-and-Spirit-61.jpg?v=1788760810",
+          "supports": "Complete white-background 1800 Coconut bottle; NET CONT 1 L readable on lower label, 35% ABV. No visible price; professional studio presentation. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "86",
+      "expectedUpc": "811538010306",
+      "expectedNameSha256": "eb808ea784dd2061b94ac71f693b04c0622aaa64edb7aa16450faff3460d7bea",
+      "replaceTextFrom": "1800 Coconut",
+      "replaceTextTo": "1800 Coconut Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/coconut/",
+          "supports": "Manufacturer identifies1800 Coconut tequila. This is brand/expression evidence; the existing source volume is independently confirmed by the exactUPC record and inspected size-specific bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.mainespirits.com/sites/default/files/price_books/February%202026%20Price%20Book_0.pdf",
+          "supports": "Official catalog connectsCoconut200mL70proof toUPC811538010306; name/size/UPC only."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://d3vhjaqtopcj6b.cloudfront.net/library/00011538010300-eOFEBEPfnKDPZZ5u4hbDCaU4LWi0t4.jpg",
+          "supports": "Complete professional Coconut 200 mL bottle on white with added side marketing text. Actual lower bottle label clearly reads 35% ALC BY VOL NET CONT 200 ML. Bottle has very tight left margin but outline is complete. No price. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "136",
+      "expectedUpc": "078250003829",
+      "expectedNameSha256": "69fde316f4461483257a4797e01f35e9c6cddacbb0099c3ebe2afaac82c03867",
+      "replaceTextFrom": "211 steel reserve",
+      "replaceTextTo": "Steel Reserve 211 High Gravity Lager",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.molsoncoors.com/sites/millercoors/files/MC_Nutritional_Information-121818.pdf",
+          "supports": "Manufacturer document identifiesSteel Reserve High Gravity as an American-style specialty lager. Inspected package and primary distributor separately show the211 identifier; no ABV is added."
+        },
+        {
+          "kind": "distributor",
+          "url": "https://az.crescentcrown.com/product/steel-reserve/",
+          "supports": "Primary distributor identifiesSteel Reserve as high-gravity lager and explains the red211 packaging logo. Exact retail pack/UPC remains separately verified."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/45127-steel-reserve-malt-liquor-12-fl-oz",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 078250003829; listing and individually inspected bottle/package corroborate brand, expression and existing 12-pack · 12 oz · cans. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/assets/domains/product-image/file/large_c52a1ceb-9035-4861-852e-dcb0fd8f2ef4.jpg",
+          "supports": "Complete professional image of a Steel Reserve 211 High Gravity Lager carton and single can. Image explicitly labels 12 12 FL. OZ. CANS, and exact retailer listing matches twelve 12 fl oz cans. No visible price. Quantity text is in image beside package, not readable on carton itself. Package count comes from explicit composite text and exactUPC retailer listing; actual carton itself does not visibly print12 in this view. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "83",
+      "expectedUpc": "811538010030",
+      "expectedNameSha256": "42e83bf55c522204537d926a34659471aa534315882d91d01d37b5390161b71b",
+      "replaceTextFrom": "1800 Anejo",
+      "replaceTextTo": "1800 Añejo Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/anejo/",
+          "supports": "Manufacturer confirms1800 Añejo tequila and accented expression spelling. No source volume, packaging or strength token is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.haskells.com/1800-anejo-tequila-750ml/",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010030; listing and individually inspected bottle/package corroborate brand, expression and existing 750 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://cdn11.bigcommerce.com/s-taixn69rog/images/stencil/500x659/products/25919/810052/100104__30205.1637733944.jpg?c=1",
+          "supports": "Individually viewed larger observed source image. Complete historical Añejo bottle on white. Lower label reads 40% ALC/VOL NET CONT 750 ML. Top and base have very tight but visible margins; parent may prefer a cleaner alternate. No price. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "82",
+      "expectedUpc": "818844020852",
+      "expectedNameSha256": "64bd2b1a3efbe4ca6f389081ed1c2c8a77f2ceb2d42c02911cac28a7feea5c4c",
+      "replaceTextFrom": "1800 anejo",
+      "replaceTextTo": "1800 Añejo Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/anejo/",
+          "supports": "Manufacturer confirms1800 Añejo tequila and accented expression spelling. No source volume, packaging or strength token is changed."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/1800-anejo-tequila-375ml",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 818844020852; listing and individually inspected bottle/package corroborate brand, expression and existing 375 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Anejo-Tequila-375ml-Vintage-Wine-and-Spiri-97.jpg?v=1788760772",
+          "supports": "Complete legacy Añejo bottle on white; lower label 40% ALC BY VOL and NET CONT 375 ML clearly readable. No visible price; professional studio presentation. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "87",
+      "expectedUpc": "811538010368",
+      "expectedNameSha256": "daf658ab886f68bdaeb4e5329077953330b35d80ddb16a35896469ec68108e65",
+      "replaceTextFrom": "1800 Coconut",
+      "replaceTextTo": "1800 Coconut Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/coconut/",
+          "supports": "Manufacturer identifies1800 Coconut tequila. This is brand/expression evidence; the existing source volume is independently confirmed by the exactUPC record and inspected size-specific bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/1800-coconut-tequila-375ml",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010368; listing and individually inspected bottle/package corroborate brand, expression and existing 375 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Coconut-Tequila-375ml-Vintage-Wine-and-Spi-41.jpg?v=1788760801",
+          "supports": "Complete white-background 1800 Coconut bottle. Lower package label clearly reads NET CONT 375 ML, 35% ALC BY VOL. No price. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "88",
+      "expectedUpc": "811538010375",
+      "expectedNameSha256": "226e1d91c32f3b82cde0450d7c71e0f993cd10aa37ef5b064cb00cdd77b822bc",
+      "replaceTextFrom": "1800 COCONUT",
+      "replaceTextTo": "1800 Coconut Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/coconut/",
+          "supports": "Manufacturer identifies1800 Coconut tequila. This is brand/expression evidence; the existing source volume is independently confirmed by the exactUPC record and inspected size-specific bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47573406",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010375; listing and individually inspected bottle/package corroborate brand, expression and existing 750 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://target.scene7.com/is/image/Target/GUEST_0aff831c-eac0-4e91-b4ee-1fb231398a72?wid=1200&hei=1200&qlt=80",
+          "supports": "Complete clean professional white-background Coconut bottle. Actual lower label35% ALC BY VOL NET CONT750ML readable. No added text or price. Target page explicitly lists exactUPC811538010375. Actual source file individually inspected; original source size/pack remains unchanged."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/coconut",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010375 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0375/2.400.jpg",
+          "supports": "Individually inspected green-capped bottle; front reads 1800 Coconut, infused with natural coconut flavor. Existing 750 mL source size is retained. Household photograph is identity evidence only."
+        }
+      ]
+    },
+    {
+      "sku": "102",
+      "expectedUpc": "811538010238",
+      "expectedNameSha256": "81856be5948e1d28a112c12b1f3d5145588278907454522345b1b3501c49d171",
+      "replaceTextFrom": "1800 Reposado",
+      "replaceTextTo": "1800 Reposado Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado/",
+          "supports": "Manufacturer confirms1800 Reposado tequila. Product type added; existing volume and all other source facts are preserved."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/1800-reposado-tequila-reserva",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010238; listing and individually inspected bottle/package corroborate brand, expression and existing 750 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Reposado-Tequila-Reserva-Vintage-Wine-and-Spi-0.png?v=1756541258",
+          "supports": "Complete historical Reposado bottle on white. Lower label clearly reads NET CONT 750 ML and 40% ALC BY VOL. No price. Actual source file individually inspected; original source size/pack remains unchanged."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010238 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0238/2.jpg",
+          "supports": "Individually inspected complete bottle; front reads 1800 Reposado and NET CONT 750ML. Household photograph is identity evidence only."
+        }
+      ]
+    },
+    {
+      "sku": "99",
+      "expectedUpc": "811538010252",
+      "expectedNameSha256": "3d8f77959aa516f8a91aa7fb1f3be00016a1c0c26f44ec2e8d34b89ff13b872d",
+      "replaceTextFrom": "1800 Reposado",
+      "replaceTextTo": "1800 Reposado Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado/",
+          "supports": "Manufacturer confirms1800 Reposado tequila. Product type added; existing volume and all other source facts are preserved."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/1800-reposado-tequila-1750ml",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010252; listing and individually inspected bottle/package corroborate brand, expression and existing 1.75 L. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Reposado-Tequila-1-75L-Vintage-Wine-and-Sp-61.jpg?v=1788760812",
+          "supports": "Complete white-background 1800 Reposado bottle. Lower package label reads NET CONT 1.75 L and 40% ALC BY VOL. No price. Actual source file individually inspected; original source size/pack remains unchanged."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado",
+          "supports": "Manufacturer directly documents the brand and complete expression shown on the inspected package. Existing source size and strength are retained."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010252 with this product and its existing source size 1.75 L. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0252/1.400.jpg",
+          "supports": "Individually inspected back label explicitly reads 1800 Reposado and shows barcode 811538010252. This label close-up is name evidence only; 1.75 L is independently corroborated in the historical official UPC listing."
+        }
+      ]
+    },
+    {
+      "sku": "101",
+      "expectedUpc": "811538010221",
+      "expectedNameSha256": "6c2724f97a1b71c7b9be724f9740cede2941eadba737615a59fb9ac1d573a7cc",
+      "replaceTextFrom": "1800 Reposado",
+      "replaceTextTo": "1800 Reposado Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado/",
+          "supports": "Manufacturer confirms1800 Reposado tequila. Product type added; existing volume and all other source facts are preserved."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-53128777",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010221; listing and individually inspected bottle/package corroborate brand, expression and existing 375 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://target.scene7.com/is/image/Target/GUEST_17a45e9e-3661-46e0-bc1f-5e2f28c02543?wid=1200&hei=1200&qlt=80",
+          "supports": "Complete clean professional white-background Reposado bottle. Actual lower label40% ALC BY VOL NET CONT375ML readable. No added text or price. Target page explicitly lists exactUPC811538010221. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "100",
+      "expectedUpc": "811538010108",
+      "expectedNameSha256": "ab570046fadbcb60194165c17f3c3055c8510eeece624da25850c1248049d24b",
+      "replaceTextFrom": "1800 Reposado",
+      "replaceTextTo": "1800 Reposado Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado/",
+          "supports": "Manufacturer confirms1800 Reposado tequila. Product type added; existing volume and all other source facts are preserved."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/1800-reposado-tequila-200ml",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010108; listing and individually inspected bottle/package corroborate brand, expression and existing 200 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Reposado-Tequila-200ml-Vintage-Wine-and-Sp-45.jpg?v=1788760817",
+          "supports": "Complete white-background 1800 Reposado bottle. Lower package label clearly reads NET CONT 200 ML and 40% ALC BY VOL. No price. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "108",
+      "expectedUpc": "811538010139",
+      "expectedNameSha256": "54cce182171559e2baeb4c9efefac172df6b8cb81e8459bec1fdf5434859a3ce",
+      "replaceTextFrom": "1800 Silver",
+      "replaceTextTo": "1800 Silver Tequila",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/blanco",
+          "supports": "Manufacturer currently documents1800 Blanco tequila, supporting the1800 brand and tequila category only. The historical Silver expression is retained from the exactUPC historical record and actual Silver-labeled bottle; no Blanco rename."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/1800-silver-tequila-reserva",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010139; listing and individually inspected bottle/package corroborate brand, expression and existing 750 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Silver-Tequila-Reserva-Vintage-Wine-and-Spiri-0.png?v=1758457508",
+          "supports": "Complete historical Silver bottle on white. Lower label clearly reads NET CONT 750 ML and 40% ALC BY VOL. No visible price. Actual source file individually inspected; original source size/pack remains unchanged."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/blanco",
+          "supports": "Manufacturer documents its current 1800 Blanco tequila. The legacy Silver expression is independently established by the historical official exact UPC listing and is retained; current branding is not substituted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19405/2/0515_Pricebook.pdf#page=12",
+          "supports": "Historical official Iowa catalog PDF page 12 pairs UPC 811538010139 with this product and its existing source size 750 mL. Only identity and size corroboration are used; wholesale pack quantities and financial columns are not adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/153/801/0139/1.jpg",
+          "supports": "Individually inspected bottle explicitly reading 1800 Silver and NET CONT 750ML. Historical UPC listing confirms that exact legacy expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "221",
+      "expectedUpc": "089000118359",
+      "expectedNameSha256": "07c48373080d47c435cad8b12f494f0ccb3d4a9d1293039bf8a8b94f6f6d0f16",
+      "replaceTextFrom": "99 Apples",
+      "replaceTextTo": "99 Apples Liqueur",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.99brandparty.com/products/99-apples/",
+          "supports": "The official product URL currently redirects to the Shots collection, corroborating the 99 brand and liqueur category only. The exact UPC retailer and individually inspected bottle independently confirm Apples, not Sour Apple; no manufacturer expression claim is inferred from the redirect."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.99brandparty.com/",
+          "supports": "Official brand homepage footer classifies99 Brand as liqueur. No source strength or volume is added or altered."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.napacabs.com/99-apples-schnapps-liqueur-750ml.html",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 089000118359; listing and individually inspected bottle/package corroborate brand, expression and existing 750 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://cdn11.bigcommerce.com/s-0ddlsmhg83/images/stencil/836x836/products/15114/15421/99-apples-schnapps-liqueur__05462.1752495943.1280.1280__43267.1755244076.jpg?c=1",
+          "supports": "Individually viewed larger observed source image. Complete historical 99 Apples bottle on white, with clearly readable 750 ML and 49.5% ALC/VOL at bottom; 99 PROOF and APPLES on front. No visible price. Actual source file individually inspected; original source size/pack remains unchanged."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -17967,8 +20379,8 @@
       "sku": "88",
       "expectedUpc": "811538010375",
       "expectedNameSha256": "226e1d91c32f3b82cde0450d7c71e0f993cd10aa37ef5b064cb00cdd77b822bc",
-      "verifiedOn": "2026-10-27",
-      "expectedPublicName": "1800 COCONUT",
+      "verifiedOn": "2026-10-28",
+      "expectedPublicName": "1800 Coconut Tequila",
       "expectedLabel": "750 mL",
       "verification": {
         "brand": true,
@@ -17977,6 +20389,21 @@
         "visual": true
       },
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/coconut/",
+          "supports": "Manufacturer identifies1800 Coconut tequila. This is brand/expression evidence; the existing source volume is independently confirmed by the exactUPC record and inspected size-specific bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47573406",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010375; listing and individually inspected bottle/package corroborate brand, expression and existing 750 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://target.scene7.com/is/image/Target/GUEST_0aff831c-eac0-4e91-b4ee-1fb231398a72?wid=1200&hei=1200&qlt=80",
+          "supports": "Complete clean professional white-background Coconut bottle. Actual lower label35% ALC BY VOL NET CONT750ML readable. No added text or price. Target page explicitly lists exactUPC811538010375. Actual source file individually inspected; original source size/pack remains unchanged."
+        },
         {
           "kind": "manufacturer",
           "url": "https://www.1800tequila.com/products/coconut",
@@ -17998,8 +20425,8 @@
       "sku": "99",
       "expectedUpc": "811538010252",
       "expectedNameSha256": "3d8f77959aa516f8a91aa7fb1f3be00016a1c0c26f44ec2e8d34b89ff13b872d",
-      "verifiedOn": "2026-10-27",
-      "expectedPublicName": "1800 Reposado",
+      "verifiedOn": "2026-10-28",
+      "expectedPublicName": "1800 Reposado Tequila",
       "expectedLabel": "1.75 L",
       "verification": {
         "brand": true,
@@ -18008,6 +20435,21 @@
         "visual": true
       },
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado/",
+          "supports": "Manufacturer confirms1800 Reposado tequila. Product type added; existing volume and all other source facts are preserved."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/1800-reposado-tequila-1750ml",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010252; listing and individually inspected bottle/package corroborate brand, expression and existing 1.75 L. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Reposado-Tequila-1-75L-Vintage-Wine-and-Sp-61.jpg?v=1788760812",
+          "supports": "Complete white-background 1800 Reposado bottle. Lower package label reads NET CONT 1.75 L and 40% ALC BY VOL. No price. Actual source file individually inspected; original source size/pack remains unchanged."
+        },
         {
           "kind": "manufacturer",
           "url": "https://www.1800tequila.com/products/reposado",
@@ -18029,8 +20471,8 @@
       "sku": "102",
       "expectedUpc": "811538010238",
       "expectedNameSha256": "81856be5948e1d28a112c12b1f3d5145588278907454522345b1b3501c49d171",
-      "verifiedOn": "2026-10-27",
-      "expectedPublicName": "1800 Reposado",
+      "verifiedOn": "2026-10-28",
+      "expectedPublicName": "1800 Reposado Tequila",
       "expectedLabel": "750 mL",
       "verification": {
         "brand": true,
@@ -18039,6 +20481,21 @@
         "visual": true
       },
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/reposado/",
+          "supports": "Manufacturer confirms1800 Reposado tequila. Product type added; existing volume and all other source facts are preserved."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/1800-reposado-tequila-reserva",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010238; listing and individually inspected bottle/package corroborate brand, expression and existing 750 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Reposado-Tequila-Reserva-Vintage-Wine-and-Spi-0.png?v=1756541258",
+          "supports": "Complete historical Reposado bottle on white. Lower label clearly reads NET CONT 750 ML and 40% ALC BY VOL. No price. Actual source file individually inspected; original source size/pack remains unchanged."
+        },
         {
           "kind": "manufacturer",
           "url": "https://www.1800tequila.com/products/reposado",
@@ -18153,8 +20610,8 @@
       "sku": "108",
       "expectedUpc": "811538010139",
       "expectedNameSha256": "54cce182171559e2baeb4c9efefac172df6b8cb81e8459bec1fdf5434859a3ce",
-      "verifiedOn": "2026-10-27",
-      "expectedPublicName": "1800 SILVER",
+      "verifiedOn": "2026-10-28",
+      "expectedPublicName": "1800 Silver Tequila",
       "expectedLabel": "750 mL",
       "verification": {
         "brand": true,
@@ -18163,6 +20620,21 @@
         "visual": true
       },
       "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.1800tequila.com/products/blanco",
+          "supports": "Manufacturer currently documents1800 Blanco tequila, supporting the1800 brand and tequila category only. The historical Silver expression is retained from the exactUPC historical record and actual Silver-labeled bottle; no Blanco rename."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/1800-silver-tequila-reserva",
+          "supports": "Actual downloaded retailer source explicitly contains exactUPC 811538010139; listing and individually inspected bottle/package corroborate brand, expression and existing 750 mL. No financial fields or case quantities are adopted."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://vintagewineandspirits.com/cdn/shop/files/1800-Silver-Tequila-Reserva-Vintage-Wine-and-Spiri-0.png?v=1758457508",
+          "supports": "Complete historical Silver bottle on white. Lower label clearly reads NET CONT 750 ML and 40% ALC BY VOL. No visible price. Actual source file individually inspected; original source size/pack remains unchanged."
+        },
         {
           "kind": "manufacturer",
           "url": "https://www.1800tequila.com/products/blanco",
@@ -19902,6 +22374,38 @@
           "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
         }
       ]
+    },
+    {
+      "sku": "6033",
+      "expectedUpc": "028400041768",
+      "expectedNameSha256": "95e9b21a52dd6990c9b86e2d61ebbd3176fd5f95dac0ea476a26b98196be481f",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/028400041768-0011-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "028400041768",
+        "observedName": "Munchies, Salted, Peanuts",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "3d94568590a4c207100c01bcded5c586b3dd76f23ed634e849ed92b6079a191c",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/028400041768-0011-en-US/index.html",
+          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
+        }
+      ],
+      "expectedPublicName": "Munchies Salted Peanuts",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      }
     }
   ]
 }
