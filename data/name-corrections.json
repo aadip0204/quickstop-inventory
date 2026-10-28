@@ -21049,6 +21049,32 @@
           "supports": "The artist series uses six bottle designs; the specific design remains unconfirmed."
         }
       ]
+    },
+    {
+      "sku": "223",
+      "expectedUpc": "089000515950",
+      "expectedNameSha256": "3fc82ca8bbd4dc49009f7f469516e2436d24604b91df6bdb6ffde5670f7c9e42",
+      "replaceTextFrom": "99 Black Berries 750ml",
+      "replaceTextTo": "99 Blackberries 750ml",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/136837",
+          "supports": "State alcohol commission identifies the exact UPC and 750 mL Blackberries expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/139002-99-brand-blackberries-liqueur-750-ml",
+          "supports": "Exact UPC listing confirms the name and bottle size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b66fa28f-8969-4e11-a70d-18db08677217.jpg",
+          "supports": "Inspected bottle spells the flavor Blackberries."
+        }
+      ]
     }
   ],
   "identityReviews": [
