@@ -9848,6 +9848,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1998",
+      "expectedUpc": "028400437745",
+      "expectedName": "Chester's fries",
+      "expectedLabel": "4 oz",
+      "src": "images/products/sku-1998.jpg",
+      "alt": "Chester's fries — 4 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400437745-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400437745-0010-en-US/images/150cf4c1-eda4-4739-a83e-822c3f51a11e.jpg",
+      "sha256": "bf1434328401d7401ae2037cd28e3dabaf02e135d1049fd89d9501484915bab1",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2001",
+      "expectedUpc": "028400563604",
+      "expectedName": "Chester's Fries Bacon Cheddar",
+      "expectedLabel": "4 oz",
+      "src": "images/products/sku-2001.jpg",
+      "alt": "Chester's Fries Bacon Cheddar — 4 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400563604-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400563604-0010-en-US/images/d0eb213e-e519-4225-8ec5-81dcfb71ec4a.jpg",
+      "sha256": "f6f3e933029b7f9b1f5bfeed75be0668db87e772d432a489acae34fbba2eb53b",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6752",
+      "expectedUpc": "028400083591",
+      "expectedName": "POPCORN WHITE CHEDDAR",
+      "expectedLabel": "9 oz",
+      "src": "images/products/sku-6752.jpg",
+      "alt": "POPCORN WHITE CHEDDAR — 9 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400083591-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400083591-0010-en-US/images/e9add43c-3c53-44b0-8c4d-85c5e6a20ee6.jpg",
+      "sha256": "77b9c0e3a0c722f66c15965b66705afa8b805fd9dca2398fdc7d41a5bd8bf893",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
