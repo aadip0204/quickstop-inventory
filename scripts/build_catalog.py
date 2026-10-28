@@ -711,8 +711,13 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                 resolution = entry['identityResolution']
                 fields = {'expectedName', 'expectedLabel', 'verifiedName', 'verifiedLabel',
                           'verification', 'evidence', 'reason'}
-                if not isinstance(resolution, dict) or set(resolution) != fields:
+                if not isinstance(resolution, dict) or set(resolution) not in (fields, fields | {'groupWithPriorExpression'}):
                     raise ValueError(f'Identity resolution contains missing, unsupported or private fields: {sku}')
+                if 'groupWithPriorExpression' in resolution and (
+                        resolution['groupWithPriorExpression'] is not True
+                        or entry['action'] != 'size_needs_confirmation'
+                        or resolution['expectedName'] != resolution['verifiedName']):
+                    raise ValueError(f'Grouping requires the unchanged prior product expression: {sku}')
                 for field in ('expectedName', 'expectedLabel', 'verifiedName', 'verifiedLabel', 'reason'):
                     value = resolution[field]
                     if (not isinstance(value, str) or not value.strip() or PRICE_RE.search(value)
@@ -1070,7 +1075,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 # Exact normalized expression and department only. No fuzzy
                 # matching, synonym mapping, or deletion of brand/age/proof.
                 key = (public['category'], public['department'], public['name'].casefold())
-                if restoring or resolving or repairing or (review and review.get('identityResolution')):
+                identity_resolution = review.get('identityResolution') if review else None
+                if restoring or resolving or repairing or (identity_resolution and not identity_resolution.get('groupWithPriorExpression')):
                     key += ('restored-source-sku', sku)
                 # Exact source title says regular Silver, but the first-100 image
                 # audit found UPC-specific evidence of an Artist Series package.

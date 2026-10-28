@@ -4339,6 +4339,384 @@
           "supports": "Inspected product photo shows the matching expression and package weight."
         }
       ]
+    },
+    {
+      "sku": "1338",
+      "expectedUpc": "012000567490",
+      "expectedNameSha256": "8bbed4deb2116a5905be3fda657bfdc6163eabb25293e17822cef0e2b9a015c0",
+      "expectedSourceRecordSha256": "e66082d86d0659a9646486d4209f60614e38bd5db9a84a8e650d6c69dac0965d",
+      "action": "size_needs_confirmation",
+      "reason": "Original source gives equivalent metric and fluid-ounce sizes; exact UPC and package evidence establish the one-liter variant.",
+      "reviewedOn": "2026-10-28",
+      "identityResolution": {
+        "expectedName": "Brisk Fruit Punch Juice Drink",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Brisk Fruit Punch Juice Drink",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/012000567490-0012-en-US/index.html",
+            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/012000567490-0012-en-US/index.html",
+            "supports": "Exact UPC record corroborates the single bottle size."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/012000567490-0012-en-US/images/f40f3f55-21f3-42af-9bf3-b8183ff6d4ff.jpg",
+            "supports": "Inspected product image shows the matching flavor and package."
+          }
+        ],
+        "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1333",
+      "expectedUpc": "012000140211",
+      "expectedNameSha256": "6f22cb235ca10f00b7ee8558a6c57c7b3a011338b526761d7d241f15ea3a1f77",
+      "expectedSourceRecordSha256": "2a30c66299a9cffb5cee30df6cdf13a8c4d7a7ed8a42f8c2abfbc5313f07be00",
+      "action": "size_needs_confirmation",
+      "reason": "Original source gives equivalent metric and fluid-ounce sizes; exact UPC and package evidence establish the one-liter variant.",
+      "reviewedOn": "2026-10-28",
+      "identityResolution": {
+        "expectedName": "Brisk Half & Half Iced Tea + Blueberry Lemonade",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Brisk Half & Half Iced Tea + Blueberry Lemonade",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/012000140211-0011-en-US/index.html",
+            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/012000140211-0011-en-US/index.html",
+            "supports": "Exact UPC record corroborates the single bottle size."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/012000140211-0011-en-US/images/c9e25b38-e9b2-4d80-8c61-91d2e1b08ba8.jpg",
+            "supports": "Inspected product image shows the matching flavor and package."
+          }
+        ],
+        "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1330",
+      "expectedUpc": "012000034015",
+      "expectedNameSha256": "5c22f274190eef7e10f9e19aeb98ba274e3f60314687e96bf9077b706df805a8",
+      "expectedSourceRecordSha256": "c5c595130dae2648e0e5476e94cfd10431bc406e1a07c9bc103c3e87fe1d0d25",
+      "action": "size_needs_confirmation",
+      "reason": "Original source gives equivalent metric and fluid-ounce sizes; exact UPC and package evidence establish the one-liter variant.",
+      "reviewedOn": "2026-10-28",
+      "identityResolution": {
+        "expectedName": "Brisk Half & Half Iced Tea + Lemonade",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Brisk Half & Half Iced Tea + Lemonade",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/012000034015-0012-en-US/index.html",
+            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/012000034015-0012-en-US/index.html",
+            "supports": "Exact UPC record corroborates the single bottle size."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/012000034015-0012-en-US/images/19a6a6da-9ee1-4993-9f47-6535b00681f6.jpg",
+            "supports": "Inspected product image shows the matching flavor and package."
+          }
+        ],
+        "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1360",
+      "expectedUpc": "012000161476",
+      "expectedNameSha256": "b443e3caa53d6140fd9cb2330e156499f3c8e0a22315d1aba2f343be6f1506d2",
+      "expectedSourceRecordSha256": "b26b419fbc3de268a19d78490a149d1e331bdb4a92ef512b779caec457c1df25",
+      "action": "size_needs_confirmation",
+      "reason": "Original source gives equivalent metric and fluid-ounce sizes; exact UPC and package evidence establish the one-liter variant.",
+      "reviewedOn": "2026-10-28",
+      "identityResolution": {
+        "expectedName": "Brisk Half & Half Iced Tea + Watermelon Lemonade",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Brisk Half & Half Iced Tea + Watermelon Lemonade",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/012000161476-0011-en-US/index.html",
+            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/012000161476-0011-en-US/index.html",
+            "supports": "Exact UPC record corroborates the single bottle size."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/012000161476-0011-en-US/images/44ee8a35-33d4-4180-891c-6b9f030f33f1.jpg",
+            "supports": "Inspected product image shows the matching flavor and package."
+          }
+        ],
+        "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1346",
+      "expectedUpc": "012000101908",
+      "expectedNameSha256": "520e40ae126dffc2a85a93e0e26a55cfa002b526f82e1681e32788aab979dd0c",
+      "expectedSourceRecordSha256": "0dea1fdf5da37c704222432e4ea220e307f75ba860b2b5d5c1769f713c75f3fd",
+      "action": "size_needs_confirmation",
+      "reason": "Original source gives equivalent metric and fluid-ounce sizes; exact UPC and package evidence establish the one-liter variant.",
+      "reviewedOn": "2026-10-28",
+      "identityResolution": {
+        "expectedName": "Brisk Lemonade Juice Drink",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Brisk Lemonade Juice Drink",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/012000101908-0011-en-US/index.html",
+            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/012000101908-0011-en-US/index.html",
+            "supports": "Exact UPC record corroborates the single bottle size."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/012000101908-0011-en-US/images/2dfddf5a-71fc-4b39-95d3-213713ad79fc.jpg",
+            "supports": "Inspected product image shows the matching flavor and package."
+          }
+        ],
+        "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1352",
+      "expectedUpc": "012000384196",
+      "expectedNameSha256": "95639a71bd5ab0ded5a7e961c49b82051a4081299fa7e5267097fbe87e160989",
+      "expectedSourceRecordSha256": "5d96338e1affea284cc1784b90536cc7ebabe73b15fc447a6c1a668d3a15d909",
+      "action": "size_needs_confirmation",
+      "reason": "Original source gives equivalent metric and fluid-ounce sizes; exact UPC and package evidence establish the one-liter variant.",
+      "reviewedOn": "2026-10-28",
+      "identityResolution": {
+        "expectedName": "Brisk Pink Lemonade Juice Drink",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Brisk Pink Lemonade Juice Drink",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/012000384196-0012-en-US/index.html",
+            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/012000384196-0012-en-US/index.html",
+            "supports": "Exact UPC record corroborates the single bottle size."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/012000384196-0012-en-US/images/27eff74e-ae74-4a99-95d1-a187a3fd4fcf.jpg",
+            "supports": "Inspected product image shows the matching flavor and package."
+          }
+        ],
+        "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1331",
+      "expectedUpc": "012000024528",
+      "expectedNameSha256": "e913130170fdab7fa1fd6d755392640db652a25c6da5b9f9979f798db4b17f03",
+      "expectedSourceRecordSha256": "67e4b2d1df91ec89f1093d4be498bbe4f04121fd5a70f00ba2dad4679ab0011f",
+      "action": "size_needs_confirmation",
+      "reason": "Original source gives equivalent metric and fluid-ounce sizes; exact UPC and package evidence establish the one-liter variant.",
+      "reviewedOn": "2026-10-28",
+      "identityResolution": {
+        "expectedName": "Brisk Raspberry Iced Tea",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Brisk Raspberry Iced Tea",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/012000024528-0012-en-US/index.html",
+            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/012000024528-0012-en-US/index.html",
+            "supports": "Exact UPC record corroborates the single bottle size."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/012000024528-0012-en-US/images/4de131ef-e15f-43a5-8508-05edf25496ef.jpg",
+            "supports": "Inspected product image shows the matching flavor and package."
+          }
+        ],
+        "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1356",
+      "expectedUpc": "012000161230",
+      "expectedNameSha256": "64001bdc02997e3e38c1368b44705b240c4a54fab83429f3ee6fa779ab9c551a",
+      "expectedSourceRecordSha256": "5bef823d5a7bd4d3641fc10fdd608c6c6112ccabae63a15693d9c5ac4e2f49e9",
+      "action": "size_needs_confirmation",
+      "reason": "Original source gives equivalent metric and fluid-ounce sizes; exact UPC and package evidence establish the one-liter variant.",
+      "reviewedOn": "2026-10-28",
+      "identityResolution": {
+        "expectedName": "Brisk Strawberry Melon Iced Tea",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Brisk Strawberry Melon Iced Tea",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/012000161230-0011-en-US/index.html",
+            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/012000161230-0011-en-US/index.html",
+            "supports": "Exact UPC record corroborates the single bottle size."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/012000161230-0011-en-US/images/0cbe395a-c89c-4d63-9a46-8dae7b22a266.jpg",
+            "supports": "Inspected product image shows the matching flavor and package."
+          }
+        ],
+        "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1359",
+      "expectedUpc": "012000031878",
+      "expectedNameSha256": "f4f65cd47d890c1e36c2b01890c99453342ca53697bc678bf8aaff7bef5ce060",
+      "expectedSourceRecordSha256": "5acd6a31ad6e55f1cf92c1733fc1dc547d71ee20129631b9bde637aaab9fe998",
+      "action": "size_needs_confirmation",
+      "reason": "Original source gives equivalent metric and fluid-ounce sizes; exact UPC and package evidence establish the one-liter variant.",
+      "reviewedOn": "2026-10-28",
+      "identityResolution": {
+        "expectedName": "Brisk Sweet Iced Tea",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Brisk Sweet Iced Tea",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/012000031878-0012-en-US/index.html",
+            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/012000031878-0012-en-US/index.html",
+            "supports": "Exact UPC record corroborates the single bottle size."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/012000031878-0012-en-US/images/744d3f86-d992-489c-8640-04a269bdb311.jpg",
+            "supports": "Inspected product image shows the matching flavor and package."
+          }
+        ],
+        "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
+        "groupWithPriorExpression": true
+      }
     }
   ]
 }

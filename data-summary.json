@@ -25,13 +25,13 @@
     "evidenceBackedCorrections": 911,
     "nameVerificationRecords": 84,
     "identityConflicts": 3,
-    "exactIdentitiesResolved": 61,
+    "exactIdentitiesResolved": 70,
     "fullyVerifiedNames": 605,
-    "manufacturerRecordVerifiedNames": 159,
+    "manufacturerRecordVerifiedNames": 150,
     "scopeNote": "All rows scanned for specified risks. Only listed corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock."
   },
   "imageStatus": {
-    "verifiedVariants": 394,
-    "unverifiedVariants": 9295
+    "verifiedVariants": 403,
+    "unverifiedVariants": 9286
   }
 }

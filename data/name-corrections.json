@@ -15064,7 +15064,7 @@
       "replaceTextFrom": "Brisk Blueberry 1 Liter",
       "replaceTextTo": "Brisk Half & Half Iced Tea + Blueberry Lemonade 1 Liter",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1 L",
       "verifiedPublicName": "Brisk Half & Half Iced Tea + Blueberry Lemonade",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -16044,7 +16044,7 @@
       "replaceTextFrom": "Brisk watermelon ice tea  1L",
       "replaceTextTo": "Brisk Half & Half Iced Tea + Watermelon Lemonade 1L",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1 L",
       "verifiedPublicName": "Brisk Half & Half Iced Tea + Watermelon Lemonade",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -16156,7 +16156,7 @@
       "replaceTextFrom": "Brisk  half & half  lemonad 1L",
       "replaceTextTo": "Brisk Half & Half Iced Tea + Lemonade 1L",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1 L",
       "verifiedPublicName": "Brisk Half & Half Iced Tea + Lemonade",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -16184,7 +16184,7 @@
       "replaceTextFrom": "Brisk Sweet Tea 1 Liter",
       "replaceTextTo": "Brisk Sweet Iced Tea 1 Liter",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1 L",
       "verifiedPublicName": "Brisk Sweet Iced Tea",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -16489,7 +16489,7 @@
       "sku": "1356",
       "expectedUpc": "012000161230",
       "expectedNameSha256": "64001bdc02997e3e38c1368b44705b240c4a54fab83429f3ee6fa779ab9c551a",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1 L",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -16573,7 +16573,7 @@
       "sku": "1338",
       "expectedUpc": "012000567490",
       "expectedNameSha256": "8bbed4deb2116a5905be3fda657bfdc6163eabb25293e17822cef0e2b9a015c0",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1 L",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -16937,7 +16937,7 @@
       "sku": "1331",
       "expectedUpc": "012000024528",
       "expectedNameSha256": "e913130170fdab7fa1fd6d755392640db652a25c6da5b9f9979f798db4b17f03",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1 L",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17021,7 +17021,7 @@
       "sku": "1352",
       "expectedUpc": "012000384196",
       "expectedNameSha256": "95639a71bd5ab0ded5a7e961c49b82051a4081299fa7e5267097fbe87e160989",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1 L",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17049,7 +17049,7 @@
       "sku": "1346",
       "expectedUpc": "012000101908",
       "expectedNameSha256": "520e40ae126dffc2a85a93e0e26a55cfa002b526f82e1681e32788aab979dd0c",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1 L",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
