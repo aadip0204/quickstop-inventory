@@ -17057,7 +17057,7 @@
       "sku": "1975",
       "expectedUpc": "028400211772",
       "expectedNameSha256": "156d147c61dde7b10a259d0a51c4dc87d57fcfee8652809c5f83a591c068fdfa",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "1.25 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17085,7 +17085,7 @@
       "sku": "1948",
       "expectedUpc": "028400305907",
       "expectedNameSha256": "a700076bdba020c85aac18be4e95389104bcd2bbdd90a60294ce94226f1d0bab",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "2 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17118,7 +17118,7 @@
       "sku": "1947",
       "expectedUpc": "028400674164",
       "expectedNameSha256": "6703abf972484863f14124f79d15474ff2693b17a12456e3a18149ac4699cd07",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "2 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17207,7 +17207,7 @@
       "sku": "2915",
       "expectedUpc": "028400070546",
       "expectedNameSha256": "25b41c7b4927cf68cfa633584bc52f9334c7e9a6016256b3b0b9d01e330a2a62",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "1.75 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17436,7 +17436,7 @@
       "sku": "7226",
       "expectedUpc": "028400002912",
       "expectedNameSha256": "962c5dd5649b356838a69e31557ed4e1202a2dce9571ce8e953cec652212f7c7",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "1.5 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17469,7 +17469,7 @@
       "sku": "7305",
       "expectedUpc": "028400005784",
       "expectedNameSha256": "a6c3ce0eaf2c21efb94195655b33d277cc339f4880c1ff2d4398f4520a30f4f3",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "1.38 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17497,7 +17497,7 @@
       "sku": "7306",
       "expectedUpc": "028400006200",
       "expectedNameSha256": "9455d42d8ef358694ef9c4ae197e896a21334caafb33bdef3d7c5554747f7719",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "1.38 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17553,7 +17553,7 @@
       "sku": "8812",
       "expectedUpc": "028400589253",
       "expectedNameSha256": "1f64f5bfb391697182b771540bce43cfcbfbd8f617d023eeb65292e9717e5f28",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "15.5 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17609,7 +17609,7 @@
       "sku": "8820",
       "expectedUpc": "028400090582",
       "expectedNameSha256": "0a833bacfa185dc5ba185dcc4380d9f4dee36b4ff3a89483d2cd9c3bedd42821",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "15 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17950,7 +17950,7 @@
       "sku": "5026",
       "expectedUpc": "028400091565",
       "expectedNameSha256": "641ebe5c6e342b48b41787911a1d2d69036beeee092dc916b021ca5130f1307b",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "1.5 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -18146,7 +18146,7 @@
       "sku": "1949",
       "expectedUpc": "028400047913",
       "expectedNameSha256": "d090ab6e07b4e5b6aa04d16b839e3cae3fbfaf70b2837e8c673fe6098b107c94",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "2 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -18879,7 +18879,7 @@
       "sku": "2936",
       "expectedUpc": "028400516464",
       "expectedNameSha256": "bda0996959cf9d856f07d19f4843bc1ef383b6bf386d7c50cbd2904b7024c314",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "9.25 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",

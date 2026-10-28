@@ -2971,6 +2971,474 @@
           "supports": "Complete product can is visually inspected for the exact flavor. The manufacturer package image independently shows the UPC and 40 g size."
         }
       ]
+    },
+    {
+      "sku": "1952",
+      "expectedUpc": "028400624442",
+      "expectedNameSha256": "d02b185181d51560d86224e283d46ba944897e945108412fa87e91b4863802dd",
+      "expectedSourceRecordSha256": "951d567367f2d7ead82f27395204fcdd256885ac20dc36070c43d50ae3f5bc08",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Cheetos Bag of Bones White Cheddar Flavored Cheese Snacks",
+      "verifiedLabel": "2.625 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400624442-0011-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://brickseek.com/walmart-inventory-checker?sku=178365859",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400624442-0011-en-US/images/63c77808-237c-4755-a134-14cd18384298.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "1949",
+      "expectedUpc": "028400047913",
+      "expectedNameSha256": "d090ab6e07b4e5b6aa04d16b839e3cae3fbfaf70b2837e8c673fe6098b107c94",
+      "expectedSourceRecordSha256": "88822f075002527846d12df1bab1fff4197ce57a1529579b1933a4ce7252b6bd",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Cheetos Crunchy Flamin' Hot Flavored Cheese Flavored Snacks",
+      "verifiedLabel": "2 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400047913-0015-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/28400047913",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400047913-0015-en-US/images/c9231d51-95c9-4697-bfe1-99cd2cd11d9e.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "1947",
+      "expectedUpc": "028400674164",
+      "expectedNameSha256": "6703abf972484863f14124f79d15474ff2693b17a12456e3a18149ac4699cd07",
+      "expectedSourceRecordSha256": "dbcb1210645ae2917c9623d3be8b3d177c4ed9ef0d391f9ee0d78b47ddfff62c",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Cheetos Crunchy XXtra Flamin' Hot Flavored Cheese Flavored Snacks",
+      "verifiedLabel": "2 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400674164-0012-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://menu.pepsico.info/45373434-65ec-4992-8d78-34be7ba6ddf0/index.html",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400674164-0012-en-US/images/51c663c8-f3f0-4dab-a4cd-5808c7ac4211.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "1948",
+      "expectedUpc": "028400305907",
+      "expectedNameSha256": "a700076bdba020c85aac18be4e95389104bcd2bbdd90a60294ce94226f1d0bab",
+      "expectedSourceRecordSha256": "e5800184ec25082e4ef6de949422547ae70747d295686eff56988acb7aaefd48",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Cheetos Flamin' Hot Flavored Popcorn",
+      "verifiedLabel": "2 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400305907-0013-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400305907-0013-en-US/index.html",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400305907-0013-en-US/images/410d68e2-ce98-46fc-aa07-cd948260fa1d.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "1975",
+      "expectedUpc": "028400211772",
+      "expectedNameSha256": "156d147c61dde7b10a259d0a51c4dc87d57fcfee8652809c5f83a591c068fdfa",
+      "expectedSourceRecordSha256": "8e6f615316785a9df09d40f10b852f1f2c99a3d4660c1f76a7d9df0eab871465",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Cheetos Flavor Shots Flamin' Hot Asteroids Flavored Corn Puffs",
+      "verifiedLabel": "1.25 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400211772-0011-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400211772-0011-en-US/index.html",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400211772-0011-en-US/images/bcab25d7-0fdd-4254-94c0-16aaa2478799.JPEG",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "2915",
+      "expectedUpc": "028400070546",
+      "expectedNameSha256": "25b41c7b4927cf68cfa633584bc52f9334c7e9a6016256b3b0b9d01e330a2a62",
+      "expectedSourceRecordSha256": "dcf785a510c76ef57b08f60ccdec921a5ef8cc24dddf2e7a141a1669b0ca6df3",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Doritos Cool Ranch Flavored Tortilla Chips",
+      "verifiedLabel": "1.75 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400070546-0012-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/28400070546",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400070546-0012-en-US/images/505f1278-aab2-4382-a33a-1208577e48eb.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "2936",
+      "expectedUpc": "028400516464",
+      "expectedNameSha256": "bda0996959cf9d856f07d19f4843bc1ef383b6bf386d7c50cbd2904b7024c314",
+      "expectedSourceRecordSha256": "da5934abd0ca7e46411f3f7a892ecef551a6026e20415240d629a16b1904872a",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Doritos Nacho Cheese Flavored Tortilla Chips",
+      "verifiedLabel": "9.25 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400516464-0012-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/23587497-doritos-nacho-cheese-tortilla-chips-9-25-oz",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400516464-0012-en-US/images/a0ede8be-1b82-4cb7-b168-88df844302cf.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "5026",
+      "expectedUpc": "028400091565",
+      "expectedNameSha256": "641ebe5c6e342b48b41787911a1d2d69036beeee092dc916b021ca5130f1307b",
+      "expectedSourceRecordSha256": "8c15b2601935cb878c2d3b9f2fb0c32bb91d190171e6190bd9ba5907aa9e123c",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Lay's Classic Potato Chips",
+      "verifiedLabel": "1.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400091565-0013-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.webstaurantstore.com/documents/nutrition/lay_s_15_oz_regular_potato_chips.pdf",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400091565-0013-en-US/images/dde3dac2-aa49-461f-9a47-434e36c9bac6.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "7226",
+      "expectedUpc": "028400002912",
+      "expectedNameSha256": "962c5dd5649b356838a69e31557ed4e1202a2dce9571ce8e953cec652212f7c7",
+      "expectedSourceRecordSha256": "646a45fd57cc0e90e4ee7c908521f4dea4a61cd202f8591ca2f4e0806e2fb846",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Ruffles Cheddar & Sour Cream Flavored Potato Chips",
+      "verifiedLabel": "1.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400002912-0012-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400002912-0012-en-US/images/719d7a9e-049d-4975-8721-f8d5ed05b5c4.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "8820",
+      "expectedUpc": "028400090582",
+      "expectedNameSha256": "0a833bacfa185dc5ba185dcc4380d9f4dee36b4ff3a89483d2cd9c3bedd42821",
+      "expectedSourceRecordSha256": "2694274d2cc0c3d597ea68a531894a2f9c474c912b805b06070a769eec6a4bcb",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Tostitos Cheese Flavored Smooth & Cheesy Dip",
+      "verifiedLabel": "15 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400090582-0011-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/28400090582",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400090582-0011-en-US/images/399f2eac-a0bf-41d2-8d7f-4905f57939c5.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "8812",
+      "expectedUpc": "028400589253",
+      "expectedNameSha256": "1f64f5bfb391697182b771540bce43cfcbfbd8f617d023eeb65292e9717e5f28",
+      "expectedSourceRecordSha256": "eccfb46cee848d47beb851a59b9ac40180b7c8598d8b012dd3fe858aea1b3b74",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Tostitos Habanero Hot Chunky Salsa",
+      "verifiedLabel": "15.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400589253-0012-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/28400589253",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400589253-0012-en-US/images/8d2501da-127a-4a1e-be69-d48c48d068fc.png",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "7305",
+      "expectedUpc": "028400005784",
+      "expectedNameSha256": "a6c3ce0eaf2c21efb94195655b33d277cc339f4880c1ff2d4398f4520a30f4f3",
+      "expectedSourceRecordSha256": "58d947dda783482333c3cc276891fc925ed062a08ef171ad57bc2161ec5c1281",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Munchies Cheetos Cheddar Cheese Flavored on Baked Golden Toast Sandwich Crackers",
+      "verifiedLabel": "1.38 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400005784-0012-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/517149-munchies-cheddar-cheese-flavored-sandwich-crackers-1-38-fl-oz",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400005784-0012-en-US/images/44ec9254-ef48-46e2-9f0e-6507765be1de.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
+    },
+    {
+      "sku": "7306",
+      "expectedUpc": "028400006200",
+      "expectedNameSha256": "9455d42d8ef358694ef9c4ae197e896a21334caafb33bdef3d7c5554747f7719",
+      "expectedSourceRecordSha256": "0b1655e4392da0e18c3cd86ffef35500cf8b4f559d107fb52c6f69bc7ad7cd59",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Munchies Doritos Jalapeno Cheddar Artificially Flavored on Baked Golden Toast Sandwich Crackers",
+      "verifiedLabel": "1.38 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400006200-0012-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/info-munchies",
+          "supports": "The exact UPC listing corroborates the product and its package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400006200-0012-en-US/images/e2fe0879-979a-47d6-b800-d9c67ecccfc5.jpg",
+          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
+        }
+      ]
     }
   ]
 }
