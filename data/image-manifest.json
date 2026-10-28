@@ -10508,6 +10508,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1660",
+      "expectedUpc": "078000152456",
+      "expectedName": "CANADA DRY GINGER ALE",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1660.jpg",
+      "alt": "CANADA DRY GINGER ALE — 1 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/2764594-canada-dry-ginger-ale-1-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5677e80e-af2b-46bc-834e-80823a54718c.jpg",
+      "sha256": "c5250f907153a11f4da103f4ce8565fe8c21c4443d764873248c4bdd008e3d3e",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1682",
+      "expectedUpc": "078000152401",
+      "expectedName": "CANADA DRY GINGERALE",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-1682.jpg",
+      "alt": "CANADA DRY GINGERALE — 20 oz bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/17313708-canada-dry-ginger-ale-20-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_85e247b9-3bf9-47c7-8b2c-b0e6d9ed297b.jpg",
+      "sha256": "42ae8c877cc916a1f5d15dc55da22284b32e3e52b5fcea6f553384d99a1b1e3a",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1687",
+      "expectedUpc": "078000153453",
+      "expectedName": "CANADA DRY TONIC WATER",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1687.jpg",
+      "alt": "CANADA DRY TONIC WATER — 1 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/82385-canada-dry-tonic-water-1-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_80956be0-131c-4d10-80df-d8380b98fc2a.jpg",
+      "sha256": "6b36df448ad156f53da8df11a628452940308e326cbfcc37aac49510fffa5686",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
