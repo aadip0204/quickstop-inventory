@@ -10838,6 +10838,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2833",
+      "expectedUpc": "012000809958",
+      "expectedName": "Diet Pepsi",
+      "expectedLabel": "12-pack",
+      "src": "images/products/sku-2833.png",
+      "alt": "Diet Pepsi — 12-pack cans",
+      "sourcePage": "https://www.cub.com/store/cub/products/3318526-pepsi-cola-12-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e7f2a9a3-aaab-4ccb-9f78-15a35b7be05b.png",
+      "sha256": "a3e996ee90cb9e5b48109e607b006065d4228d812569ab39ff69d027f555fe49",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6627",
+      "expectedUpc": "012000809941",
+      "expectedName": "PEPSI",
+      "expectedLabel": "12-pack",
+      "src": "images/products/sku-6627.png",
+      "alt": "PEPSI — 12-pack cans",
+      "sourcePage": "https://www.cub.com/store/cub/products/42309-pepsi-cola-12-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4ef5c55c-3175-41d1-a79c-fc7b8487b5cf.png",
+      "sha256": "159d5ef4f6af73969c1ee6ef871fa815ae6350378e4ba83e53c654f82878cd21",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
