@@ -232,19 +232,6 @@
           imageSlot.hidden = true;
         }, { once: true });
         imageSlot.append(img);
-        if (image.attribution && image.sourcePage && image.license && image.licenseUrl) {
-          const credit = element('p', 'image-credit');
-          const source = element('a', '', image.attribution);
-          source.href = image.sourcePage;
-          source.target = '_blank';
-          source.rel = 'noopener noreferrer';
-          const license = element('a', '', image.license);
-          license.href = image.licenseUrl;
-          license.target = '_blank';
-          license.rel = 'noopener noreferrer';
-          credit.append(/^Photo:\s/i.test(image.attribution || '') ? '' : 'Photo: ', source, ' · ', license);
-          imageSlot.append(credit);
-        }
         imageSlot.hidden = false;
       }
     }

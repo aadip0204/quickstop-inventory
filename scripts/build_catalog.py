@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+from html import escape
 import io
 import json
 import re
@@ -1261,6 +1262,58 @@ def name_audit(catalog: dict, audit: dict) -> dict:
             'records': rows}
 
 
+def render_image_credits(catalog: dict) -> str:
+    """Keep required per-photo attribution on a separate public page."""
+    items = []
+    for product in catalog['products']:
+        for variant in product['variants']:
+            image = variant.get('image')
+            if not image:
+                continue
+            for key in ('sourcePage', 'licenseUrl'):
+                if not re.fullmatch(r'https?://[^\s]+', image[key]):
+                    raise ValueError(f'Invalid image credit link for SKU {variant["sku"]}')
+            if not re.fullmatch(r'images/products/[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp)', image['src']):
+                raise ValueError(f'Invalid credited image path for SKU {variant["sku"]}')
+            title = escape(product['name'] + ' — ' + variant['label'])
+            items.append(
+                f'<li id="sku-{escape(variant["sku"])}" data-sku="{escape(variant["sku"])}">'
+                f'<h2>{title}</h2><p>{escape(image["attribution"])}</p>'
+                f'<p><a href="{escape(image["src"])}">Photograph</a> · '
+                f'<a href="{escape(image["sourcePage"])}" rel="noopener noreferrer">Source</a> · '
+                f'<a href="{escape(image["licenseUrl"])}" rel="noopener noreferrer">{escape(image["license"])}</a>'
+                '</p></li>')
+    return '''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#181b19">
+  <title>Image credits — Quick Stop Food &amp; Liquor</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#credits">Skip to image credits</a>
+  <header class="site-header"><div class="header-inner shell">
+    <a class="brand" href="./" aria-label="Quick Stop Food &amp; Liquor home">
+      <img id="logo" src="images/logo.png" alt="Quick Stop Food &amp; Liquor" width="108" height="108">
+      <span class="brand-copy"><strong>QUICK STOP</strong><span>FOOD &amp; LIQUOR</span></span>
+    </a><a class="header-link" href="./">Browse the catalog <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <main id="credits" class="credits-page shell" tabindex="-1">
+    <h1>Image credits</h1>
+    <p class="credits-intro">Credits and license details for the product photographs used in this catalog.</p>
+    <ul class="credits-list">
+''' + '\n'.join(items) + '''
+    </ul>
+    <a href="./">Back to catalog</a>
+  </main>
+</body>
+</html>
+'''
+
+
 def safe_private_path(path: Path) -> Path:
     path = path.expanduser().resolve()
     if path == ROOT or ROOT in path.parents:
@@ -1298,6 +1351,7 @@ def main() -> None:
     (private_output / 'all-names-audit.json').write_text(json.dumps(names, indent=2) + '\n')
     (private_output / 'name-audit-summary.json').write_text(json.dumps(names['summary'], indent=2) + '\n')
     args.output.write_text(json.dumps(catalog, ensure_ascii=False, separators=(',', ':')) + '\n')
+    (args.output.parent / 'image-credits.html').write_text(render_image_credits(catalog))
     summary = {'schemaVersion': 1, 'sourceDate': args.source_date,
                'sourceSha256': audit['sourceSha256'], 'counts': catalog['counts'],
                'sourceDispositions': audit['sourceDispositions'],

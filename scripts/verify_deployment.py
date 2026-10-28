@@ -24,7 +24,7 @@ def verify(base_url, root):
     photo_paths = sorted({variant["image"]["src"]
                           for product in catalog["products"]
                           for variant in product["variants"] if variant["image"]})
-    for name in ["index.html", "style.css", "script.js", "catalog.json", "images/logo.png", *photo_paths]:
+    for name in ["index.html", "style.css", "script.js", "catalog.json", "image-credits.html", "images/logo.png", *photo_paths]:
         expected = (root / name).read_bytes()
         actual = fetch(urllib.parse.urljoin(base_url, name))
         digest = hashlib.sha256(actual).hexdigest()
