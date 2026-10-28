@@ -20851,6 +20851,110 @@
           "supports": "Package shows Flow Kiwi Strawberry and 28 oz."
         }
       ]
+    },
+    {
+      "sku": "2934",
+      "expectedUpc": "028400670562",
+      "expectedNameSha256": "35800365903a7dd92dd504a1d958090f53726049c83e3dd2674ea19cd8b9a8d5",
+      "replaceTextFrom": "Doritos Mix 3oz",
+      "replaceTextTo": "Doritos Crunch Mix Nacho Cheese Snack Mix 3oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400670562-0010-en-US/index.html",
+          "supports": "Retired manufacturer record identifies exact UPC, expression and 3 oz package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://images.aafes.com/wsICSImage/clsShowImage.asmx/ShowImage?id=920175l1.pdf&type=Pog",
+          "supports": "Retail assortment listing associates the exact UPC with product line and flavor."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400670562-0010-en-US/images/a3fccdd3-1665-4863-9ae1-17435c420ce4.jpg",
+          "supports": "Inspected manufacturer package shows the product line and flavor; printed price prevents photo use."
+        }
+      ]
+    },
+    {
+      "sku": "2947",
+      "expectedUpc": "028400670548",
+      "expectedNameSha256": "786ecc493d6222a0632cc26e18df3d8ab121090c61d755280c3025c986b359ca",
+      "replaceTextFrom": "Doritos Nuts 3oz",
+      "replaceTextTo": "Doritos Crunch Nuts Nacho Cheese Coated Peanuts 3oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400670548-0010-en-US/index.html",
+          "supports": "Retired manufacturer record identifies exact UPC, expression and 3 oz package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://images.aafes.com/wsICSImage/clsShowImage.asmx/ShowImage?id=920175l1.pdf&type=Pog",
+          "supports": "Retail assortment listing associates the exact UPC with product line and flavor."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400670548-0010-en-US/images/3ba2299a-68f3-4547-afd8-44e1d87b017b.jpg",
+          "supports": "Inspected manufacturer package shows the product line and flavor; printed price prevents photo use."
+        }
+      ]
+    },
+    {
+      "sku": "2948",
+      "expectedUpc": "028400670555",
+      "expectedNameSha256": "cf3b2f3f1794c5686381e7f8d5ab7d9dbc5022c1f84c2d9ec01f98571bbdcaa1",
+      "replaceTextFrom": "Doritos Ranch 3oz",
+      "replaceTextTo": "Doritos Crunch Nuts Cool Ranch Coated Peanuts 3oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400670555-0010-en-US/index.html",
+          "supports": "Retired manufacturer record identifies exact UPC, expression and 3 oz package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://images.aafes.com/wsICSImage/clsShowImage.asmx/ShowImage?id=920175l1.pdf&type=Pog",
+          "supports": "Retail assortment listing associates the exact UPC with product line and flavor."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400670555-0010-en-US/images/0e299f2a-9e19-4835-923f-1a3e638ab9ea.jpg",
+          "supports": "Inspected manufacturer package shows the product line and flavor; printed price prevents photo use."
+        }
+      ]
+    },
+    {
+      "sku": "2949",
+      "expectedUpc": "028400670579",
+      "expectedNameSha256": "e953f2ce79685e3abd74d5f51e82f7d63bc39427566512d7b637203122473a36",
+      "replaceTextFrom": "Doritos Ranch Mix 3oz",
+      "replaceTextTo": "Doritos Crunch Mix Cool Ranch Snack Mix 3oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400670579-0010-en-US/index.html",
+          "supports": "Retired manufacturer record identifies exact UPC, expression and 3 oz package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://images.aafes.com/wsICSImage/clsShowImage.asmx/ShowImage?id=920175l1.pdf&type=Pog",
+          "supports": "Retail assortment listing associates the exact UPC with product line and flavor."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400670579-0010-en-US/images/0d87ab3e-a88b-4c98-af2e-ccfc0ee46b03.jpg",
+          "supports": "Inspected manufacturer package shows the product line and flavor; printed price prevents photo use."
+        }
+      ]
     }
   ],
   "identityReviews": [

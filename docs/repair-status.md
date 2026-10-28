@@ -123,3 +123,5 @@ Two Gatorade bottles and a Mountain Dew 12-pack received exact-UPC, individually
 Two additional 7UP and A&W Cream Soda 12-packs received exact-UPC, individually inspected package photos.
 
 One Gatorade Flow Kiwi Strawberry 28 oz bottle received a verified flavor correction and matching package photo. The product evidence includes a retired manufacturer label, so it does not establish current availability.
+
+Four Doritos Crunch Mix and Crunch Nuts names were clarified using exact UPC evidence; the manufacturer package images display prices and were not added.
