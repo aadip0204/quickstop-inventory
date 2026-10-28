@@ -147,3 +147,5 @@ A Canada Dry Fruit Splash Cherry Ginger Ale 2 L bottle received an exact-UPC nam
 Schweppes Club Soda and Tonic Water 1-liter bottles received individually inspected UPC-matched photos.
 
 A Schweppes Ginger Ale 2-liter bottle received an inspected UPC-matched photo.
+
+The 1800 Silver 750 mL artist-series entry was clarified by exact UPC; its specific bottle artwork remains unconfirmed and no photo was assigned.
