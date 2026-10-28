@@ -20243,6 +20243,58 @@
           "supports": "The inspected package shows brand, expression and 3/4 oz weight."
         }
       ]
+    },
+    {
+      "sku": "1978",
+      "expectedUpc": "028400087612",
+      "expectedNameSha256": "7b22bcdb9f9c5c7a4512900e1cbf33f0b8f2ddc4ad6e68bcf250f44b8b921ff2",
+      "replaceTextFrom": "CHEETOS PUFFS 1OZ",
+      "replaceTextTo": "Cheetos Puffs 1OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400087612-0011-en-US/index.html",
+          "supports": "Manufacturer records the exact UPC, brand, product expression and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400087612-0011-en-US/index.html",
+          "supports": "Manufacturer UPC record connects the original SKU to this expression and size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400087612-0011-en-US/images/a2baa8df-e456-4777-a4a3-f35258b93f98.jpg",
+          "supports": "The package was inspected for the brand, expression and stated size."
+        }
+      ]
+    },
+    {
+      "sku": "3492",
+      "expectedUpc": "028400078344",
+      "expectedNameSha256": "a033fd3928900a66913de9950a00b04b71708d101496dd356b48f208de25df25",
+      "replaceTextFrom": "FRITOLAY SALTED PEANUTS 4.5OZ",
+      "replaceTextTo": "Frito-Lay Salted In-Shell Peanuts 4.5OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400078344-0011-en-US/index.html",
+          "supports": "Manufacturer records the exact UPC, brand, product expression and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400078344-0011-en-US/index.html",
+          "supports": "Manufacturer UPC record connects the original SKU to this expression and size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400078344-0011-en-US/images/5712d556-6df5-43fe-ae40-70409c3aa9cd.jpg",
+          "supports": "The package was inspected for the brand, expression and stated size."
+        }
+      ]
     }
   ],
   "identityReviews": [
