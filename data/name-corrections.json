@@ -7803,17 +7803,27 @@
       "sku": "4130",
       "expectedUpc": "034000013814",
       "expectedNameSha256": "45fa35c2d6b2b1c119ccc4445d00473989ffc73f2148501539453d768c07539c",
-      "replaceTextFrom": "Hersheys",
-      "replaceTextTo": "Hershey's",
-      "scope": "brand_punctuation_only",
+      "replaceTextFrom": "Hersheys 1.55ozcandy cane",
+      "replaceTextTo": "Hershey's Candy Cane Mint Candy Bar 1.55oz",
+      "scope": "exact_upc_name_identity",
       "evidence": [
         {
-          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "url": "https://smartlabel.hersheys.com/034000013814-0013-en-US/index.html",
+          "supports": "Manufacturer associates exact UPC with this product expression and packaging."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getfoodfacts.com/food/candy-cane-mint-candy-bar-with-candy-bits-candy-cane-2618510",
+          "supports": "Exact UPC product record corroborates the expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.hersheys.com/034000013814-0013-en-US/images/e014146e-1f89-4135-91cd-ab34b45c13df.png",
+          "supports": "Inspected package confirms the expression and source weight."
         }
       ],
-      "verifiedOn": "2026-10-27"
+      "verifiedOn": "2026-10-28"
     },
     {
       "sku": "4140",
@@ -7897,17 +7907,27 @@
       "sku": "4135",
       "expectedUpc": "034000243105",
       "expectedNameSha256": "e23f157682e02fce878ac0fecf4521400c9acf051dbe9b0ae5a92b525d29c843",
-      "replaceTextFrom": "hersheys",
-      "replaceTextTo": "Hershey's",
-      "scope": "brand_punctuation_only",
+      "replaceTextFrom": "hersheys chocolate 43g",
+      "replaceTextTo": "Hershey's Halloween Props Milk Chocolate Candy Bar 43g",
+      "scope": "exact_upc_name_identity",
       "evidence": [
         {
-          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "url": "https://smartlabel.hersheys.com/034000243105-0050-en-US/index.html",
+          "supports": "Manufacturer associates exact UPC with this product expression and packaging."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.hersheys.com/034000243105-0050-en-US/index.html",
+          "supports": "Exact UPC product record corroborates the expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.hersheys.com/034000243105-0050-en-US/images/e00b1138-ad66-4770-b575-90d52636976d.png",
+          "supports": "Inspected package confirms the expression and source weight."
         }
       ],
-      "verifiedOn": "2026-10-27"
+      "verifiedOn": "2026-10-28"
     },
     {
       "sku": "4131",

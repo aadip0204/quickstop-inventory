@@ -8682,6 +8682,138 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "4130",
+      "expectedUpc": "034000013814",
+      "expectedName": "Hershey's Candy Cane Mint Candy Bar",
+      "expectedLabel": "1.55 oz",
+      "src": "images/products/sku-4130.png",
+      "alt": "Hershey's Candy Cane Mint Candy Bar — 1.55 oz package",
+      "sourcePage": "https://smartlabel.hersheys.com/034000013814-0013-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.hersheys.com/034000013814-0013-en-US/images/e014146e-1f89-4135-91cd-ab34b45c13df.png",
+      "sha256": "67dac6a809f68e520f5914e1bc0ff9d7d328199625cc56af8e9ee0694db44a0f",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4135",
+      "expectedUpc": "034000243105",
+      "expectedName": "Hershey's Halloween Props Milk Chocolate Candy Bar",
+      "expectedLabel": "43 g",
+      "src": "images/products/sku-4135.png",
+      "alt": "Hershey's Halloween Props Milk Chocolate Candy Bar — 43 g package",
+      "sourcePage": "https://smartlabel.hersheys.com/034000243105-0050-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.hersheys.com/034000243105-0050-en-US/images/e00b1138-ad66-4770-b575-90d52636976d.png",
+      "sha256": "352b4153ba66c4a0e5f0abee8358a01b148699c9927d28bd5c963fc1b0c7be9d",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6589",
+      "expectedUpc": "010700807229",
+      "expectedName": "Payday Peanut Caramel Candy Bar",
+      "expectedLabel": "1.85 oz",
+      "src": "images/products/sku-6589.png",
+      "alt": "Payday Peanut Caramel Candy Bar — 1.85 oz package",
+      "sourcePage": "https://smartlabel.hersheys.com/010700807229-0055-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.hersheys.com/010700807229-0055-en-US/images/8da1c90c-1d29-4950-b676-b18de0803707.png",
+      "sha256": "182516434e9f49403def845365aad9f1cfe3afa0ea63c5c85a9cf8a66459d2e6",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4138",
+      "expectedUpc": "034000249862",
+      "expectedName": "Hershey's Milk Chocolate Candy Bar",
+      "expectedLabel": "43 g",
+      "src": "images/products/sku-4138.jpg",
+      "alt": "Hershey's Milk Chocolate Candy Bar — 43 g package",
+      "sourcePage": "https://www.aallyandsons.com/hershey-s-milk-chocolate-bar-43g/",
+      "sourceImageUrl": "https://cdn11.bigcommerce.com/s-mivyx18b6b/products/55785/images/1495782/034000002405_4__93534.1760646590.1280.1280.jpg?c=1",
+      "sha256": "0fe053a25691056ee53064b64cc9a1322731ded680e60dd725e10020f07c9625",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4139",
+      "expectedUpc": "034000702343",
+      "expectedName": "Hershey's Milk Chocolate with Whole Almonds Candy Bar",
+      "expectedLabel": "41 g",
+      "src": "images/products/sku-4139.png",
+      "alt": "Hershey's Milk Chocolate with Whole Almonds Candy Bar — 41 g package",
+      "sourcePage": "https://www.aallyandsons.com/hershey-s-milk-chocolate-with-whole-almonds-bar-41g/",
+      "sourceImageUrl": "https://cdn11.bigcommerce.com/s-mivyx18b6b/products/55786/images/1495785/034000702343_0_big__77870.1760646863.1280.1280.png?c=1",
+      "sha256": "2de1c8de55d7b6bf646445568885125fd3d926d38a9b277ae4cc9af80277eb90",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7004",
+      "expectedUpc": "034000702329",
+      "expectedName": "Reese's Milk Chocolate Peanut Butter Cups",
+      "expectedLabel": "42 g",
+      "src": "images/products/sku-7004.jpg",
+      "alt": "Reese's Milk Chocolate Peanut Butter Cups — 42 g package",
+      "sourcePage": "https://www.myamericanmarket.com/us/reeses-cup-2cups",
+      "sourceImageUrl": "https://www.myamericanmarket.com/2841-thickbox_default/reeses-cup-2cups.jpg",
+      "sha256": "c7a06e06910eaa3e59b6cad53d83729c8123c79d8fa02fccd0227baf4a0733fc",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

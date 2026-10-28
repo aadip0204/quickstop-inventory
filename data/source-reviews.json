@@ -4195,6 +4195,150 @@
       "action": "size_needs_confirmation",
       "reason": "The source size and package description conflict with exact UPC product records; retain original fields and request size confirmation.",
       "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "6589",
+      "expectedUpc": "010700807229",
+      "expectedNameSha256": "51b6315305c4ac70791be86e453d38a753837399c989f43f2f685dc2316d30d6",
+      "expectedSourceRecordSha256": "09ecf54be6d4001fe0ec4daf9b666295a0eaaf760a757ff67dd9e26dfdf555b5",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Payday Peanut Caramel Candy Bar",
+      "verifiedLabel": "1.85 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC listing and inspected package establish the previously unspecified variant; retain original source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.hersheys.com/010700807229-0055-en-US/index.html",
+          "supports": "Manufacturer confirms the brand, expression, and corresponding package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16609045-payday-bar-peanut-caramel-1-85-oz",
+          "supports": "Exact UPC listing identifies the product and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.hersheys.com/010700807229-0055-en-US/images/8da1c90c-1d29-4950-b676-b18de0803707.png",
+          "supports": "Inspected product photo shows the matching expression and package weight."
+        }
+      ]
+    },
+    {
+      "sku": "4138",
+      "expectedUpc": "034000249862",
+      "expectedNameSha256": "0246186af76dfcf62f205f39d498a1d1183a5fdfc369deb8c514c6414f252d70",
+      "expectedSourceRecordSha256": "44d0a35964f53c96d6ee7abcbd306d278fb67c320c841f75d0c08004be26fa42",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Hershey's Milk Chocolate Candy Bar",
+      "verifiedLabel": "43 g",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC listing and inspected package establish the previously unspecified variant; retain original source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hersheyland.com/products/hersheys-milk-chocolate-candy-bar-1-55-oz.html",
+          "supports": "Manufacturer confirms the brand, expression, and corresponding package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.theamericanstore.de/Hersheys-Milk-Chocolate-Bar-43g",
+          "supports": "Exact UPC listing identifies the product and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://cdn11.bigcommerce.com/s-mivyx18b6b/products/55785/images/1495782/034000002405_4__93534.1760646590.1280.1280.jpg?c=1",
+          "supports": "Inspected product photo shows the matching expression and package weight."
+        }
+      ]
+    },
+    {
+      "sku": "4139",
+      "expectedUpc": "034000702343",
+      "expectedNameSha256": "eee030a977189aecb4a12b48f16ca8697114739b9211cfe11bd0381f970125d8",
+      "expectedSourceRecordSha256": "5e5472152bfebed62937fbb919f2cf9299645a1ae0b63e9b47ef60939dd09647",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Hershey's Milk Chocolate with Whole Almonds Candy Bar",
+      "verifiedLabel": "41 g",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC listing and inspected package establish the previously unspecified variant; retain original source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hersheyland.com/products/hersheys-milk-chocolate-with-almonds-candy-bar-1-45-oz.html",
+          "supports": "Manufacturer confirms the brand, expression, and corresponding package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.aallyandsons.com/hershey-s-milk-chocolate-with-whole-almonds-bar-41g/",
+          "supports": "Exact UPC listing identifies the product and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://cdn11.bigcommerce.com/s-mivyx18b6b/products/55786/images/1495785/034000702343_0_big__77870.1760646863.1280.1280.png?c=1",
+          "supports": "Inspected product photo shows the matching expression and package weight."
+        }
+      ]
+    },
+    {
+      "sku": "7004",
+      "expectedUpc": "034000702329",
+      "expectedNameSha256": "8352c610ee6b526841ab25adfbe48b00609faf16819ffb36970bf3ffc31a815d",
+      "expectedSourceRecordSha256": "525c2cc686903c084b4bfc31fa68b5d9f48d9b0bc520abd05b0b398be4425b2a",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Reese's Milk Chocolate Peanut Butter Cups",
+      "verifiedLabel": "42 g",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC listing and inspected package establish the previously unspecified variant; retain original source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hersheyland.com/products/reeses-milk-chocolate-peanut-butter-cups-1-5-oz-6-pack.html/1000",
+          "supports": "Manufacturer confirms the brand, expression, and corresponding package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getzh.de/reeses-peanut-butter-cups-42g",
+          "supports": "Exact UPC listing identifies the product and package size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.myamericanmarket.com/2841-thickbox_default/reeses-cup-2cups.jpg",
+          "supports": "Inspected product photo shows the matching expression and package weight."
+        }
+      ]
     }
   ]
 }
