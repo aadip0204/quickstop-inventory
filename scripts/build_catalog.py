@@ -514,6 +514,8 @@ def validated_name_overrides(manifest: dict | None) -> tuple[dict, dict]:
                 raise ValueError(f'Name manifest requires original identity fields: {sku}')
             if not entry.get('evidence') or not all(re.match(r'^https?://', e.get('url', '')) for e in entry['evidence']):
                 raise ValueError(f'Name manifest requires inspectable evidence: {sku}')
+            if field == 'identityReviews' and entry.get('action', 'quarantine') not in {'quarantine', 'retain_flagged'}:
+                raise ValueError(f'Unsupported identity review action: {sku}')
             if field == 'corrections':
                 if not all(isinstance(entry.get(k), str) and entry[k] and not PRICE_RE.search(entry[k])
                            for k in ('replaceTextFrom', 'replaceTextTo')):
@@ -1001,7 +1003,14 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
             if sku in identity_reviews:
                 identity_review = identity_reviews[sku]
                 record['identityReview'] = identity_review
-                disposition, reason, public, flags = 'needs_review', identity_review['reason'], None, []
+                if identity_review.get('action') == 'retain_flagged':
+                    disposition, reason, public, flags = classify_record(adjusted_source)
+                    if not public:
+                        raise ValueError(f'Flagged identity requires a retainable original SKU: {sku}')
+                    public['name'] += ' (identity needs confirmation)'
+                    flags.append('Exact UPC and source title conflict; listing isolated pending identity confirmation')
+                else:
+                    disposition, reason, public, flags = 'needs_review', identity_review['reason'], None, []
             else:
                 disposition, reason, public, flags = classify_record(adjusted_source)
             if manufacturer_baseline and (not public or public['variant'] != manufacturer_baseline['variant']):
@@ -1076,7 +1085,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 # matching, synonym mapping, or deletion of brand/age/proof.
                 key = (public['category'], public['department'], public['name'].casefold())
                 identity_resolution = review.get('identityResolution') if review else None
-                if restoring or resolving or repairing or (identity_resolution and not identity_resolution.get('groupWithPriorExpression')):
+                if restoring or resolving or repairing or (sku in identity_reviews) or (identity_resolution and not identity_resolution.get('groupWithPriorExpression')):
                     key += ('restored-source-sku', sku)
                 # Exact source title says regular Silver, but the first-100 image
                 # audit found UPC-specific evidence of an Artist Series package.
@@ -1163,6 +1172,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     blocked_images = {sku for sku, review in source_reviews.items()
                       if review['action'] != 'resolve_verified_identity' and not review.get('identityResolution')}
     blocked_images.update(entry['sku'] for entry in report_additions)
+    blocked_images.update(sku for sku, review in identity_reviews.items() if review.get('action') == 'retain_flagged')
     variants_by_sku = {v['sku']: (p, v) for p in products for v in p['variants']}
     records_by_sku = {record['sku']: record for record in master}
     for sku, verification in name_verifications.items():

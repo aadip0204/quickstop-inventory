@@ -20785,6 +20785,20 @@
         }
       ],
       "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "2944",
+      "expectedUpc": "028400328753",
+      "expectedNameSha256": "3ef7b742689636bb417914e9245ac3f489ca23d5ef627fad8afbf19fb61aa09f",
+      "action": "retain_flagged",
+      "reason": "Original Doritos title and size conflict with the exact UPC manufacturer record for Smartfood Flamin’ Hot White Cheddar popcorn. Neither field can be chosen without further evidence.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400328753-0010-en-US/index.html",
+          "supports": "Manufacturer identifies this UPC as a different product and size."
+        }
+      ]
     }
   ],
   "nameVerifications": [

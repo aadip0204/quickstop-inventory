@@ -346,6 +346,23 @@ class ImportTests(unittest.TestCase):
             builder.build(source, name_manifest=name_manifest,
                           category_reviews_manifest={'schemaVersion': 1, 'reviews': [entry]})
 
+    def test_conflicting_identity_can_remain_visible_without_grouping_or_photo(self):
+        source = export({'ItemName': 'Example Chips 3oz'}, {'ItemName': 'Example Chips 4oz'})
+        entry = {'sku': '1', 'expectedUpc': '001234567890',
+                 'expectedNameSha256': hashlib.sha256(b'Example Chips 3oz').hexdigest(),
+                 'action': 'retain_flagged', 'reason': 'UPC identifies another product',
+                 'evidence': [{'url': 'https://example.test/conflict'}]}
+        catalog, audit = builder.build(source, name_manifest={'schemaVersion': 1, 'identityReviews': [entry]})
+        self.assertEqual(catalog['counts']['publicVariants'], 2)
+        self.assertEqual(len(catalog['products']), 2)
+        flagged = next(p for p in catalog['products'] if p['variants'][0]['sku'] == '1')
+        self.assertIn('identity needs confirmation', flagged['name'])
+        self.assertIsNone(flagged['variants'][0]['image'])
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'Example Chips 3oz')
+        with self.assertRaisesRegex(ValueError, 'identity mismatch'):
+            builder.build(source.replace(b'Example Chips 3oz', b'Example Chips 5oz'),
+                          name_manifest={'schemaVersion': 1, 'identityReviews': [entry]})
+
     def test_category_review_checks_corrected_public_name_but_original_source_hash(self):
         source = export({'ItemName': 'Exampel Crackers 4oz', 'DEPNAME': 'MISC'})
         old_review = category_review(source)
