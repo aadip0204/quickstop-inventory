@@ -11190,6 +11190,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "651",
+      "expectedUpc": "736040519324",
+      "expectedName": "Avion Reposado",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-651.jpg",
+      "alt": "Avion Reposado — 750 mL bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/244228-avion-reposado-750-ml",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_769ad318-89af-452e-a8ce-34232e1e6c5b.jpg",
+      "sha256": "7872ccadbc3b04da04369acc78043b1ff3952b8e78d8a6f15b9f34d103c852c2",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "653",
+      "expectedUpc": "736040519348",
+      "expectedName": "Avion Silver",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-653.jpg",
+      "alt": "Avion Silver — 750 mL bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/16308767-avion-silver-750-ml",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cfa0badb-ed79-4b54-b6a5-c3ffc3817ca0.jpg",
+      "sha256": "70eed13e27bd0d26a4e3331fdcd700da5a2b15215d807fbfe95d86eaf5b9cd02",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
