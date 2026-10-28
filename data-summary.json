@@ -8,10 +8,10 @@
     "originalSourceRows": 9881,
     "reportSourceRows": 71,
     "publicVariants": 9689,
-    "products": 7997,
+    "products": 7998,
     "needsReview": 107,
     "excludedNonproducts": 156,
-    "flaggedPublicVariants": 2079
+    "flaggedPublicVariants": 2080
   },
   "sourceDispositions": {
     "needs_review": 107,
@@ -21,10 +21,10 @@
   "categoryReviews": 84,
   "nameAudit": {
     "sourceRowsScanned": 9952,
-    "rowsWithIssues": 4002,
+    "rowsWithIssues": 4003,
     "evidenceBackedCorrections": 929,
     "nameVerificationRecords": 84,
-    "identityConflicts": 3,
+    "identityConflicts": 4,
     "exactIdentitiesResolved": 70,
     "fullyVerifiedNames": 624,
     "manufacturerRecordVerifiedNames": 150,
