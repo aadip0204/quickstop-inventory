@@ -10490,7 +10490,7 @@
     {
       "sku": "8504",
       "expectedUpc": "078000020403",
-      "expectedName": "TAHITIAN TREAT FRUIT PUNCH",
+      "expectedName": "Tahitian Treat Fruit Punch",
       "expectedLabel": "20 oz",
       "src": "images/products/sku-8504.jpg",
       "alt": "Tahitian Treat Fruit Punch — 20 oz bottle",
@@ -10563,6 +10563,28 @@
       "sourcePage": "https://www.cub.com/store/cub/products/82385-canada-dry-tonic-water-1-l",
       "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_80956be0-131c-4d10-80df-d8380b98fc2a.jpg",
       "sha256": "6b36df448ad156f53da8df11a628452940308e326cbfcc37aac49510fffa5686",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8502",
+      "expectedUpc": "078000039580",
+      "expectedName": "Tahitian Treat Fruit Punch",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-8502.png",
+      "alt": "Tahitian Treat Fruit Punch — 2 L bottle",
+      "sourcePage": "https://yegexotic.com/products/tahitian-treat-2l",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0515/3692/0757/files/transparent-Photoroom-2025-11-12T162720.581.png?v=1762990059",
+      "sha256": "c639279cccb34e49f4846ae98798ad5b218f523d0215ab98a6719665bae8618b",
       "verifiedOn": "2026-10-28",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,

@@ -20981,6 +20981,27 @@
           "supports": "Inspected package photo shows the orange soda bottle."
         }
       ]
+    },
+    {
+      "sku": "8502",
+      "expectedUpc": "078000039580",
+      "expectedNameSha256": "211795d77f00d1f297f883dd01c83fdd71bfb03b47f93a726738780185b11e5a",
+      "replaceTextFrom": "TAHITIAN TREAT  FRUIT PUN   2L",
+      "replaceTextTo": "Tahitian Treat Fruit Punch 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://yegexotic.com/products/tahitian-treat-2l",
+          "supports": "The exact UPC identifies a 2-liter fruit punch soda bottle."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://cdn.shopify.com/s/files/1/0515/3692/0757/files/transparent-Photoroom-2025-11-12T162720.581.png?v=1762990059",
+          "supports": "The inspected package shows Tahitian Treat Fruit Punch and 2 liters."
+        }
+      ]
     }
   ],
   "identityReviews": [
