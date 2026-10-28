@@ -21075,6 +21075,32 @@
           "supports": "Inspected bottle spells the flavor Blackberries."
         }
       ]
+    },
+    {
+      "sku": "388",
+      "expectedUpc": "083300048729",
+      "expectedNameSha256": "c2f04868391612da7a4bd0356b20498fdae47c0fd8f59b55de8655fef3d9400d",
+      "replaceTextFrom": "Amarula 750ml",
+      "replaceTextTo": "Amarula Cream Liqueur 750ml",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/153107",
+          "supports": "State alcohol commission identifies this exact UPC as 750 mL Amarula Cream Liqueur."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/74315-amarula-cream-liqueur-marula-fruit-750-ml",
+          "supports": "Exact UPC listing confirms cream liqueur and 750 mL bottle."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_330ed557-0218-4dab-b9c0-3c1ad5b34387.png",
+          "supports": "Inspected label shows Amarula Cream Liqueur."
+        }
+      ]
     }
   ],
   "identityReviews": [
