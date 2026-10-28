@@ -20643,6 +20643,84 @@
           "supports": "Individually inspected package shows the corresponding brand and expression."
         }
       ]
+    },
+    {
+      "sku": "1998",
+      "expectedUpc": "028400437745",
+      "expectedNameSha256": "99d3703f3390a71eac21268b8bfa7587162be978ec1f5d5707dccd8356d57274",
+      "replaceTextFrom": "Chester's fries 4OZ",
+      "replaceTextTo": "Chester's Flamin' Hot Fries 4OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400437745-0010-en-US/index.html",
+          "supports": "Exact UPC manufacturer record identifies flavor and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400437745-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches UPC and source size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400437745-0010-en-US/images/150cf4c1-eda4-4739-a83e-822c3f51a11e.jpg",
+          "supports": "Inspected package identifies the brand, flavor and weight."
+        }
+      ]
+    },
+    {
+      "sku": "1999",
+      "expectedUpc": "028400596008",
+      "expectedNameSha256": "4a62b9b86426f92e67c0e51e4216f43101c0abef68eaae44a651195bacc035d6",
+      "replaceTextFrom": "Chester's Fries 5 1/2oz",
+      "replaceTextTo": "Chester's Flamin' Hot Fries 5 1/2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400596008-0010-en-US/index.html",
+          "supports": "Exact UPC manufacturer record identifies flavor and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400596008-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches UPC and source size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400596008-0010-en-US/images/bed741db-bcca-4f99-9c20-2a67c8233e5f.jpg",
+          "supports": "Inspected package identifies the brand, flavor and weight."
+        }
+      ]
+    },
+    {
+      "sku": "6752",
+      "expectedUpc": "028400083591",
+      "expectedNameSha256": "cb3ad9270a1e5371b0a015006e3efd7ceb42e5ab851ec12ed2dc55b7eefb9a20",
+      "replaceTextFrom": "POPCORN WHITE CHEDDAR 9OZ",
+      "replaceTextTo": "Smartfood White Cheddar Popcorn 9OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400083591-0010-en-US/index.html",
+          "supports": "Exact UPC manufacturer record identifies flavor and package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400083591-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches UPC and source size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400083591-0010-en-US/images/e9add43c-3c53-44b0-8c4d-85c5e6a20ee6.jpg",
+          "supports": "Inspected package identifies the brand, flavor and weight."
+        }
+      ]
     }
   ],
   "identityReviews": [
