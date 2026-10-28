@@ -10200,6 +10200,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3654",
+      "expectedUpc": "052000135299",
+      "expectedName": "Gatorade Citrus Cooler Thirst Quencher",
+      "expectedLabel": "28 oz",
+      "src": "images/products/sku-3654.jpg",
+      "alt": "Gatorade Citrus Cooler Thirst Quencher — 28 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/052000135299-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/052000135299-0010-en-US/images/fe360ec6-a571-41a0-a445-2cb1425c3d46.jpg",
+      "sha256": "1d9a3d38ab078ebcb7b57eb404b592687ef0fdbb91f288bbcb12554a0c0d8c8f",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3680",
+      "expectedUpc": "052000322170",
+      "expectedName": "Gatorade G2 Orange Thirst Quencher",
+      "expectedLabel": "32 oz",
+      "src": "images/products/sku-3680.jpg",
+      "alt": "Gatorade G2 Orange Thirst Quencher — 32 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/052000322170-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/052000322170-0010-en-US/images/f56ab98b-f243-4c69-88a4-016b5e696179.jpg",
+      "sha256": "2487d57e0a4a0ffdace0433f148e18570f5fdac1894fdb4f768aff122fd2d8f3",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5878",
+      "expectedUpc": "012000809965",
+      "expectedName": "Mountain Dew",
+      "expectedLabel": "12-pack",
+      "src": "images/products/sku-5878.jpg",
+      "alt": "Mountain Dew — 12-pack package",
+      "sourcePage": "https://smartlabel.pepsico.info/012000809965-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000809965-0010-en-US/images/ba553ef2-0148-4415-b4ec-66c71ce1ee60.jpg",
+      "sha256": "7ee8e964e40d0236df8c08f36127a2453f26417f507c40f06676c132e204d8d3",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
