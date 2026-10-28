@@ -9012,6 +9012,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1342",
+      "expectedUpc": "012000202384",
+      "expectedName": "Brisk Lemon Iced Tea",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1342.jpg",
+      "alt": "Brisk Lemon Iced Tea — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000202384-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000202384-0011-en-US/images/1ce9c812-e924-40e0-876f-0cac3305e9a3.jpg",
+      "sha256": "90eec834ecf7ae11ac6cbd1c6cd29bf386b0844fd5dc33689d86e470b7fc30e9",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1343",
+      "expectedUpc": "012000202377",
+      "expectedName": "Brisk Lemon Iced Tea",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-1343.jpg",
+      "alt": "Brisk Lemon Iced Tea — 2 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000202377-0013-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000202377-0013-en-US/images/6a634581-2ff3-4b12-88e8-6f2797f07734.jpg",
+      "sha256": "d28d725dd1f852d5f191a1a20e5e7e9e3a3bfd6e3c3979514a297b217c7a5f14",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1351",
+      "expectedUpc": "012000141652",
+      "expectedName": "Brisk Pineapple Passionfruit Iced Tea",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1351.jpg",
+      "alt": "Brisk Pineapple Passionfruit Iced Tea — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000141652-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000141652-0011-en-US/images/b82ac887-9bac-486a-a4f0-312493735d35.jpg",
+      "sha256": "2325030ed579bfda33f69f064cda0fe2d1b3415ddc12512f8c3e19700e20d894",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1357",
+      "expectedUpc": "012000161261",
+      "expectedName": "Brisk Strawberry Melon Iced Tea",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-1357.jpg",
+      "alt": "Brisk Strawberry Melon Iced Tea — 2 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000161261-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000161261-0011-en-US/images/94d4edc5-6f44-459c-b2ba-fdef1b9ed579.jpg",
+      "sha256": "bfc02b324885358a36e60b469b1e373bdac01708be0a55ea00c0c003844448d4",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
