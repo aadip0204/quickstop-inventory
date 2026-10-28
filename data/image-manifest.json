@@ -9320,6 +9320,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "243",
+      "expectedUpc": "078000052459",
+      "expectedName": "A&W ROOT BEER",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-243.jpg",
+      "alt": "A&W ROOT BEER — 1 L bottle",
+      "sourcePage": "https://goldeneagledistributors.com/product/aw-root-beer-1-liter-15-case/",
+      "sourceImageUrl": "https://goldeneagledistributors.com/wp-content/uploads/aw1.jpg",
+      "sha256": "de5f80f37aefe1cf282f76cb6b98621fa91714625651d5a2a2044fd0f917d31a",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "206",
+      "expectedUpc": "078000000283",
+      "expectedName": "7UP",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-206.jpg",
+      "alt": "7UP — 1 L bottle",
+      "sourcePage": "https://goldeneagledistributors.com/product/7up-1-liter-15-case/",
+      "sourceImageUrl": "https://goldeneagledistributors.com/wp-content/uploads/71.jpg",
+      "sha256": "d1de18abcc4d9facbd671d7ee6908e9d96ba90d2e4905162a0c8f5804b5cae70",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "205",
+      "expectedUpc": "078000000399",
+      "expectedName": "7UP",
+      "expectedLabel": "16 oz · cans",
+      "src": "images/products/sku-205.png",
+      "alt": "7UP — 16 oz can",
+      "sourcePage": "https://shop.mercaso.com/products/7-up-16-oz-24-pack",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/UP000399-20260701200046.png?v=1782936050",
+      "sha256": "7778de7741497bf07c630579a19232f1c955437ce0d769eb867fb832a6a7dd6a",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
