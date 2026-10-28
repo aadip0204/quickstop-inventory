@@ -11454,6 +11454,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "811",
+      "expectedUpc": "086767705761",
+      "expectedName": "Baileys Original Irish Cream Gift Set with Coupe Glass",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-811.png",
+      "alt": "Baileys Original Irish Cream Gift Set with Coupe Glass — 750 mL packaging",
+      "sourcePage": "https://www.winemadeeasy.com/spirits/cordials-liqueurs/baileys-irish-crm-w-glass-750-ml-65222.html",
+      "sourceImageUrl": "https://www.winemadeeasy.com/media/catalog/product/cache/400a650acef16caf799ce948294c4e36/S/R/SRuWJ60c-baileys_gift_set_glass_NV_750_a3287fc9.png",
+      "sha256": "f27fcea77d4a51068adb484903074b3127f5defb215ef746ac450f5929483cb9",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "713",
+      "expectedUpc": "080480000271",
+      "expectedName": "Bacardi Dragonberry",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-713.jpg",
+      "alt": "Bacardi Dragonberry — 750 mL packaging",
+      "sourcePage": "https://www.shopliquordirect.com/bacardi-dragonberry-rum-750ml.html",
+      "sourceImageUrl": "https://cdn11.bigcommerce.com/s-0ddlsmhg83/products/5205/images/5438/bacardi-dragonberry-rum__76307.1781309225.386.513.jpg?c=1",
+      "sha256": "3befaf3734540004e99b9be5127ebb08c94478ea15b236e24f65956ed2d5ae27",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

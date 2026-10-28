@@ -21101,6 +21101,27 @@
           "supports": "Inspected label shows Amarula Cream Liqueur."
         }
       ]
+    },
+    {
+      "sku": "811",
+      "expectedUpc": "086767705761",
+      "scope": "exact_upc_packaging_clarification",
+      "evidence": [
+        {
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/171277",
+          "kind": "exact_upc_listing",
+          "supports": "Exact UPC identifies a 750 mL Baileys gift set with coupe glass."
+        },
+        {
+          "url": "https://www.winemadeeasy.com/spirits/cordials-liqueurs/baileys-irish-crm-w-glass-750-ml-65222.html",
+          "kind": "inspected_package_photo",
+          "supports": "Inspected gift package identifies original Irish cream and a coupe glass."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "c47e32e91a9e46a4f767f117d63eed41c89aa84260fbd13f118d347edf9761e1",
+      "replaceTextFrom": "BAILEYS ORIGINAL",
+      "replaceTextTo": "Baileys Original Irish Cream Gift Set with Coupe Glass"
     }
   ],
   "identityReviews": [
