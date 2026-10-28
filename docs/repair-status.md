@@ -16,7 +16,7 @@ Catalog repairs are implemented and tested. The first repair release was verifie
 
 Only exact SKU/UPC, expression, size and packaging matches with a completed professional presentation review may enter the public manifest. Licensed photographs retain their license records. At the owner’s explicit request, direct internet product references use a separate approval basis without asserting copyright-holder permission or a license. Each selected variant has its own image; changing size cannot inherit a sibling photo.
 
-Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 504 variants currently have approved professional images; 9,185 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
+Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 507 variants currently have approved professional images; 9,182 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
 
 Professional image sourcing is ongoing. Direct manufacturer and retailer research continues for items without an exact professional photo. Unreviewed bulk barcode matches are not treated as approvals.
 
@@ -165,3 +165,5 @@ Alizé Bleu and Peach 750 mL bottles received inspected UPC-matched photographs.
 Agavales Blanco, Agavales Reposado and Agavero 750 mL bottles received inspected UPC-matched photos. An Agavales Gold source title has conflicting UPC evidence and remains unconfirmed.
 
 Avión Reposado and Silver 750 mL bottles received individually inspected UPC-matched photos.
+
+B&B Liqueur, Ardbeg 10 Year and Bacardí Reserva Ocho 750 mL bottles received inspected UPC-matched photos.

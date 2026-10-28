@@ -11234,6 +11234,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "481",
+      "expectedUpc": "083300072106",
+      "expectedName": "Ardbeg 10 Year",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-481.png",
+      "alt": "Ardbeg 10 Year — 750 mL bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/233660-ardbeg-10-year-old-scotch-whisky-750-ml",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8a01a533-436b-43fe-83fe-26a963986d90.png",
+      "sha256": "73c24f928469c9b1bb9e7908bd0c319f115f4e6996efeb315073f2f522a1c1a8",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "679",
+      "expectedUpc": "080480545406",
+      "expectedName": "B & B",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-679.jpg",
+      "alt": "B & B — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137240",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_9fc5c368-118f-482a-a9ea-02a6c9dce7ea?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "8f72947c1243ae47539835bcec2aad72d9e0a73d95a65aa0956622a6683ab364",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "696",
+      "expectedUpc": "080480505400",
+      "expectedName": "Bacardi 8 Anos Rum",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-696.jpg",
+      "alt": "Bacardi 8 Anos Rum — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47983672",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_2d4e1f22-a0e8-4971-9a47-fe8a0a916966?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "37411920a364bf8e9d6b22f93f3bb30468af6bc1b2c00ad5af2de2865b2eb1a4",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
