@@ -10772,6 +10772,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7392",
+      "expectedUpc": "078000203455",
+      "expectedName": "Schweppes Club Soda",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-7392.jpg",
+      "alt": "Schweppes Club Soda — 1 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/3071118-schweppes-club-soda-1-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d70ea424-3705-4fff-98e1-adae370084e0.jpg",
+      "sha256": "f807b2af3f50d1c7aa3a4cec2feb30c8f1e843a5891c8d9c16b451b0bfcec463",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7399",
+      "expectedUpc": "078000218459",
+      "expectedName": "Schweppes Tonic Water",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-7399.jpg",
+      "alt": "Schweppes Tonic Water — 1 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/78252-schweppes-tonic-water-1-l",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3ee59a7d-6ba5-42d2-8ae0-1c5b70d25053.jpg",
+      "sha256": "64a2bdaf3a33abeef1877a42845c10a21e1181c11df530b7fca8227e44ce1f34",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
