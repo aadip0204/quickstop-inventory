@@ -16,7 +16,7 @@ Catalog repairs are implemented and tested. The first repair release was verifie
 
 Only exact SKU/UPC, expression, size and packaging matches with a completed professional presentation review may enter the public manifest. Licensed photographs retain their license records. At the owner’s explicit request, direct internet product references use a separate approval basis without asserting copyright-holder permission or a license. Each selected variant has its own image; changing size cannot inherit a sibling photo.
 
-Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 495 variants currently have approved professional images; 9,194 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
+Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 497 variants currently have approved professional images; 9,192 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
 
 Professional image sourcing is ongoing. Direct manufacturer and retailer research continues for items without an exact professional photo. Unreviewed bulk barcode matches are not treated as approvals.
 
@@ -157,3 +157,5 @@ Three 99 Brand 750 mL bottle photos were matched by UPC and inspected; Blackberr
 99 Watermelons and 99 Peaches 750 mL bottles received UPC-matched, inspected photos.
 
 Amarula Cream Liqueur and Alizé Red Passion 750 mL bottles received UPC-matched photos; the Amarula name was clarified.
+
+Alizé Gold Passion and Rosé 750 mL bottles received inspected UPC-matched photographs.

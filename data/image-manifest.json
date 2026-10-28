@@ -11036,6 +11036,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "340",
+      "expectedUpc": "084692200948",
+      "expectedName": "Alize Gold Passion",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-340.webp",
+      "alt": "Alize Gold Passion — 750 mL bottle",
+      "sourcePage": "https://www.thebarreltap.com/products/alize-gold-passion-liqueur-750ml",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0416/3023/6825/files/alize-gold-passion-liqueur-750ml-the-barrel-tap-www-thebarreltap-com.webp?v=1691181364",
+      "sha256": "1c4e32e7c9c03ac9997e78e70f2aabe5d2a574aa80a2daec9506302841ee1e76",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "348",
+      "expectedUpc": "084692207343",
+      "expectedName": "Alize Rose",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-348.jpg",
+      "alt": "Alize Rose — 750 mL bottle",
+      "sourcePage": "https://peeceeliquor.com/products/alize-rose-750ml",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0693/2620/9270/files/389731.jpg?v=1723316219",
+      "sha256": "21491254081239894bfcd8749b062b2501900f5d878ea8806f992d2ea59a017e",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
