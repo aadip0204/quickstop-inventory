@@ -10486,6 +10486,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8504",
+      "expectedUpc": "078000020403",
+      "expectedName": "TAHITIAN TREAT FRUIT PUNCH",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-8504.jpg",
+      "alt": "Tahitian Treat Fruit Punch — 20 oz bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/2705931-tahitian-treat-fruit-punch-soda-20-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5dd6e81a-82d0-4143-9467-db3dae72b678.jpg",
+      "sha256": "473c041c2184a5a7e3e51b5e7642ffa315e1afbaa01087a884f5d632b0d03291",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

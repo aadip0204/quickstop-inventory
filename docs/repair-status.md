@@ -16,7 +16,7 @@ Catalog repairs are implemented and tested. The first repair release was verifie
 
 Only exact SKU/UPC, expression, size and packaging matches with a completed professional presentation review may enter the public manifest. Licensed photographs retain their license records. At the owner’s explicit request, direct internet product references use a separate approval basis without asserting copyright-holder permission or a license. Each selected variant has its own image; changing size cannot inherit a sibling photo.
 
-Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 470 variants currently have approved professional images; 9,219 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
+Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 471 variants currently have approved professional images; 9,218 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
 
 Professional image sourcing is ongoing. Direct manufacturer and retailer research continues for items without an exact professional photo. Unreviewed bulk barcode matches are not treated as approvals.
 
@@ -131,3 +131,5 @@ Three UPC-matched Canada Dry, Sunkist and Vernors 12-pack photographs were added
 Three individually inspected Squirt, Sunkist Grape and Sunkist Strawberry 12-pack photographs were matched to their UPCs.
 
 One Sunkist Orange 20 oz bottle received an exact-UPC name clarification and an individually inspected photo.
+
+One Tahitian Treat Fruit Punch 20 oz bottle received an exact-UPC and individually inspected photo.
