@@ -20721,6 +20721,110 @@
           "supports": "Inspected package identifies the brand, flavor and weight."
         }
       ]
+    },
+    {
+      "sku": "2870",
+      "expectedUpc": "012000064524",
+      "expectedNameSha256": "f1b99abe59d45d8063929233e1105a1033d1ad3c5f0b86b625b09bd5dcd38efe",
+      "replaceTextFrom": "DOLE  LEMONADE  2L",
+      "replaceTextTo": "Dole Lemonade 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/012000064524-0010-en-US/index.html",
+          "supports": "Exact UPC manufacturer record identifies the drink and bottle size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/012000064524-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches UPC and source size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/012000064524-0010-en-US/images/6732eea0-e452-433f-bd80-817e0d7f4fa2.tif",
+          "supports": "Inspected bottle shows the brand and flavor."
+        }
+      ]
+    },
+    {
+      "sku": "2869",
+      "expectedUpc": "012000064494",
+      "expectedNameSha256": "90de24ef178c598734960751426787927fa376c6785610db4735be12e6f1a754",
+      "replaceTextFrom": "DOLE   LEMONADE  20 OZ",
+      "replaceTextTo": "Dole Lemonade 20 OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/012000064494-0010-en-US/index.html",
+          "supports": "Exact UPC manufacturer record identifies the drink and bottle size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/012000064494-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches UPC and source size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/012000064494-0010-en-US/images/3523f5e1-771d-4a26-b197-1200c8ff3c84.jpg",
+          "supports": "Inspected bottle shows the brand and flavor."
+        }
+      ]
+    },
+    {
+      "sku": "2877",
+      "expectedUpc": "012000064531",
+      "expectedNameSha256": "6ff6dde1581547bd7f0d8900e8d9430ee8df6e1e304830bbf5dbb5a9fa728468",
+      "replaceTextFrom": "DOLE STRAWBERRY LEMONADE  2L",
+      "replaceTextTo": "Dole Strawberry Lemonade 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/012000064531-0010-en-US/index.html",
+          "supports": "Exact UPC manufacturer record identifies the drink and bottle size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/012000064531-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches UPC and source size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/012000064531-0010-en-US/images/ba49f2e7-030f-4b76-982f-3c7f014d6a97.tif",
+          "supports": "Inspected bottle shows the brand and flavor."
+        }
+      ]
+    },
+    {
+      "sku": "2876",
+      "expectedUpc": "012000064500",
+      "expectedNameSha256": "7abdd49b97bb507232c5305bed149d79643e669e50440c92b361d42e2079b381",
+      "replaceTextFrom": "DOLE STRAWBERRY  LEMONADE20OZ",
+      "replaceTextTo": "Dole Strawberry Lemonade 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/012000064500-0010-en-US/index.html",
+          "supports": "Exact UPC manufacturer record identifies the drink and bottle size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/012000064500-0010-en-US/index.html",
+          "supports": "Manufacturer listing matches UPC and source size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/012000064500-0010-en-US/images/78a91f03-b7f1-4f85-aed9-123a6f225442.jpg",
+          "supports": "Inspected bottle shows the brand and flavor."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -22965,7 +23069,7 @@
       "sku": "2870",
       "expectedUpc": "012000064524",
       "expectedNameSha256": "f1b99abe59d45d8063929233e1105a1033d1ad3c5f0b86b625b09bd5dcd38efe",
-      "expectedPublicName": "DOLE LEMONADE",
+      "expectedPublicName": "Dole Lemonade",
       "expectedLabel": "2 L",
       "verifiedOn": "2026-10-27",
       "verificationMethod": "manufacturer_exact_upc_record",
@@ -22997,7 +23101,7 @@
       "sku": "2877",
       "expectedUpc": "012000064531",
       "expectedNameSha256": "6ff6dde1581547bd7f0d8900e8d9430ee8df6e1e304830bbf5dbb5a9fa728468",
-      "expectedPublicName": "DOLE STRAWBERRY LEMONADE",
+      "expectedPublicName": "Dole Strawberry Lemonade",
       "expectedLabel": "2 L",
       "verifiedOn": "2026-10-27",
       "verificationMethod": "manufacturer_exact_upc_record",
@@ -23144,7 +23248,7 @@
           "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
         }
       ],
-      "expectedPublicName": "DOLE LEMONADE",
+      "expectedPublicName": "Dole Lemonade",
       "verificationMethod": "manufacturer_exact_upc_record",
       "verification": {
         "brand": true,
@@ -23176,7 +23280,7 @@
           "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
         }
       ],
-      "expectedPublicName": "DOLE STRAWBERRY LEMONADE",
+      "expectedPublicName": "Dole Strawberry Lemonade",
       "verificationMethod": "manufacturer_exact_upc_record",
       "verification": {
         "brand": true,

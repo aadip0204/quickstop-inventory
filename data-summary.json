@@ -11,7 +11,7 @@
     "products": 7998,
     "needsReview": 107,
     "excludedNonproducts": 156,
-    "flaggedPublicVariants": 2080
+    "flaggedPublicVariants": 2084
   },
   "sourceDispositions": {
     "needs_review": 107,
@@ -21,8 +21,8 @@
   "categoryReviews": 84,
   "nameAudit": {
     "sourceRowsScanned": 9952,
-    "rowsWithIssues": 4003,
-    "evidenceBackedCorrections": 929,
+    "rowsWithIssues": 4006,
+    "evidenceBackedCorrections": 933,
     "nameVerificationRecords": 84,
     "identityConflicts": 4,
     "exactIdentitiesResolved": 70,
