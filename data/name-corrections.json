@@ -20955,6 +20955,32 @@
           "supports": "Inspected manufacturer package shows the product line and flavor; printed price prevents photo use."
         }
       ]
+    },
+    {
+      "sku": "8229",
+      "expectedUpc": "078000113402",
+      "expectedNameSha256": "4dcf077d9b41cf05da94300cc7e1a36f055e64ea8620389bf2b09ec0dd708a19",
+      "replaceTextFrom": "SUNKIST ORANGE 20OZ",
+      "replaceTextTo": "Sunkist Orange Soda 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-12965389",
+          "supports": "Exact UPC identifies Sunkist Orange Soda in a 20 fl oz bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/16409619-sunkist-orange-soda-20-fl-oz",
+          "supports": "Exact UPC and product metadata confirm the orange soda and 20 fl oz bottle."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fc4f7954-0c80-4ac3-9c84-163742a91f77.jpg",
+          "supports": "Inspected package photo shows the orange soda bottle."
+        }
+      ]
     }
   ],
   "identityReviews": [
