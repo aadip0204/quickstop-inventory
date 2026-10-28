@@ -3439,6 +3439,501 @@
           "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
         }
       ]
+    },
+    {
+      "sku": "1997",
+      "expectedUpc": "028400242936",
+      "expectedNameSha256": "1a7529b279a87162f5ba33cdc0fbc0bf315ab70753163108d949f75d61b92b38",
+      "expectedSourceRecordSha256": "f3dda59dec3d020c468d4ce98e495192b4dfbf84e1e00b1ce17483f8cabc40b0",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Chester's Fries Flamin' Hot Flavored Corn Snacks",
+      "verifiedLabel": "2.125 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400242936-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400242936-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400242936-0012-en-US/images/e4eb941b-b928-4074-9e60-2e25765c83aa.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "2014",
+      "expectedUpc": "028400041560",
+      "expectedNameSha256": "a4f87321130aeec6fbfc3f6ba30a4f88ee252d5cae24be9a563b672ac18645e2",
+      "expectedSourceRecordSha256": "1473557da8c1d1a9271d636cdc1f310d4a6dd0a5568e917b1dc1f55797e9c44d",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Chester's Puffcorn Cheese Flavored Puffed Corn Snacks",
+      "verifiedLabel": "4.25 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400041560-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400041560-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400041560-0012-en-US/images/8ee03a3e-e39b-4954-891b-1e16f49a7c1f.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "1996",
+      "expectedUpc": "028400041898",
+      "expectedNameSha256": "24cf17b99acd24a43be956ca37cafa7ef98939d4f81bfefb8d47d45dd5a727d8",
+      "expectedSourceRecordSha256": "7cc2329bc70ca7ee44c7f773669500c1211ce398351e67bb22b05611b7fc837a",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Chester's Puffcorn Flamin' Hot Flavored Puffed Corn Snacks",
+      "verifiedLabel": "4.25 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400041898-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400041898-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400041898-0012-en-US/images/2e557872-9bac-4c03-ad8f-b5b953f08339.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "3495",
+      "expectedUpc": "028400327299",
+      "expectedNameSha256": "9918c08be30e241523ca7584e4cb1ab5526673a9df21ef172f05d08a007ddcfb",
+      "expectedSourceRecordSha256": "262fd647ced960a570ee27d754b5e9208e33a75241b1b285962a328bb58139d8",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Fritos Chili Cheese Flavored Corn Chips",
+      "verifiedLabel": "3.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400327299-0013-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400327299-0013-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400327299-0013-en-US/images/a6aa3322-eaed-4b7b-b820-d35740b5c9a9.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "3498",
+      "expectedUpc": "028400327312",
+      "expectedNameSha256": "4a154adc54c8d50e564b75bafb6f3d4eded38b510e733807c17d9e44b607fcae",
+      "expectedSourceRecordSha256": "4dc039ef9af39889d848c62790c2ee9716555a77843eb6180e22cc7e6ef8ed65",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Fritos Flamin' Hot Flavored Corn Chips",
+      "verifiedLabel": "3.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400327312-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400327312-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400327312-0012-en-US/images/cd381c53-5d27-4063-bbbe-4bba60015c59.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "3546",
+      "expectedUpc": "028400331609",
+      "expectedNameSha256": "aba75c083bfe1a3a1d33025730f874f0c299979499087276c63f80c7136def20",
+      "expectedSourceRecordSha256": "45ed3a3e50c80c1b77a7c26cfd826a1598ea68dea128bda64c47da6b612548bf",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Funyuns Flamin' Hot Flavored Onion Flavored Rings",
+      "verifiedLabel": "2.125 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400331609-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400331609-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400331609-0012-en-US/images/09bf0f5c-121c-4562-bcc3-aafe5272868b.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "3857",
+      "expectedUpc": "028400259613",
+      "expectedNameSha256": "1013149772221397a1073ca8f72eabf19ea09b193a4b48725a2a0952ecb4b834",
+      "expectedSourceRecordSha256": "462acae912d4d342ee558335db258407ffb972f7cc6ea642854444547c3a9371",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Grandma's Chocolate Chip Cookies",
+      "verifiedLabel": "2.875 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400259613-0011-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400259613-0011-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400259613-0011-en-US/images/6f5d31be-62c1-4437-8d45-a3ad7b499d8a.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "3861",
+      "expectedUpc": "028400004473",
+      "expectedNameSha256": "8a86f74e3c783ab991cc428a5de2c4745139580239a46eb82a37433bc1340ee7",
+      "expectedSourceRecordSha256": "63c7b966b663d41534191c7e07bc21c6101650076efc3c6297d796124cd325a8",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Grandma's Vanilla Creme Naturally & Artificially Flavored Mini Sandwich Cookies",
+      "verifiedLabel": "1.71 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400004473-0011-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400004473-0011-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400004473-0011-en-US/images/5f9c847c-2a01-4d57-af30-6ccc9a3e32f1.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "6023",
+      "expectedUpc": "028400436182",
+      "expectedNameSha256": "a33d2c60ac22dd784ccb0c85f54155d5a17fcb04913c5ddd495ef6caac01f111",
+      "expectedSourceRecordSha256": "fb9e8356257f27d11b29448327fd0f132e329db84d94c474dcf68c06d86b5d78",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Munchies Cheese Fix Flavored Snack Mix",
+      "verifiedLabel": "3 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400436182-0013-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400436182-0013-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400436182-0013-en-US/images/a0f10050-1cda-452c-955d-a5b72ad91751.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "6024",
+      "expectedUpc": "028400436236",
+      "expectedNameSha256": "1a0c6b601d0cdf8145cc87546d683c4ea684643833c5efa6c0d6348297abdc2f",
+      "expectedSourceRecordSha256": "3791a018a6aab638413c1904c1d49285c10477f3d4da22bb39b6392639215639",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Munchies Flamin' Hot Flavored Snack Mix",
+      "verifiedLabel": "3 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400436236-0013-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400436236-0013-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400436236-0013-en-US/images/6af967d7-3b07-4191-bb23-efa99d14d5f0.JPEG",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "7307",
+      "expectedUpc": "028400026864",
+      "expectedNameSha256": "04bb11116e855c5456db2c0ddeb11a62e73cd866a1804c2eb8a33704a0bb5cb6",
+      "expectedSourceRecordSha256": "fc97704e45f06c96145940bd67cf6576c02dbb9ceb03ef06661db63bd2f814aa",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Munchies Peanut Butter on Baked Golden Toast Sandwich Crackers",
+      "verifiedLabel": "1.42 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400026864-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400026864-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400026864-0012-en-US/images/61a103dd-1b51-4bab-93dc-8a50ddc49952.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "7308",
+      "expectedUpc": "028400026734",
+      "expectedNameSha256": "e22e72d8a862ac02f1559266ac981ca2ac772431a022df7744792fe74df68146",
+      "expectedSourceRecordSha256": "ec060ed9fbf827990b53d1e5b6c988f0de4967699d9bafcf0866bd04b4bd2300",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Munchies Peanut Butter on Baked Cheese Sandwich Crackers",
+      "verifiedLabel": "1.42 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400026734-0012-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400026734-0012-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400026734-0012-en-US/images/ff32d8ca-2e7f-450e-99fd-13506c3335e6.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "7676",
+      "expectedUpc": "028400020008",
+      "expectedNameSha256": "7e503dc6f3c76717d16c0d12aa66de0013117e197d05157b79d4f381631b2c43",
+      "expectedSourceRecordSha256": "ae9c925d8fc4f323a6d45a5848f422b2eb1952a5daf7b9dd79b959f8787e0f63",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Smartfood White Cheddar Flavored Popcorn",
+      "verifiedLabel": "1 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400020008-0011-en-US/index.html",
+          "supports": "Manufacturer record identifies the exact UPC, product and package size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400020008-0011-en-US/index.html",
+          "supports": "Exact UPC manufacturer listing states the matching package weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400020008-0011-en-US/images/0cda0124-1570-439c-8ade-f703f5c20e2d.jpg",
+          "supports": "Inspected manufacturer image shows the matching product and package."
+        }
+      ]
+    },
+    {
+      "sku": "3858",
+      "expectedUpc": "028400259422",
+      "expectedNameSha256": "4321f85bf5362e11120ca90d1fd2fb41a2d2b3c81ef5e908a6cd6b089b3a282b",
+      "expectedSourceRecordSha256": "b136be7b3fbf0e41f7b4d559e36a1c3830620b9e211e056ce764e7e6a8aa5561",
+      "action": "size_needs_confirmation",
+      "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
+      "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "3863",
+      "expectedUpc": "028400259552",
+      "expectedNameSha256": "d2026c19799e054a168443e790c76fc0367a1f04d8ab40368880aee1fcfadd07",
+      "expectedSourceRecordSha256": "1955f2a13aa29905b62e95b83c046aa5036863954a4f192f748ba23fb0c7e611",
+      "action": "size_needs_confirmation",
+      "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
+      "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "6020",
+      "expectedUpc": "028400025287",
+      "expectedNameSha256": "c5576e7b13e6a8757f8e6548a35d94e0d4110b0f6b53163f4b62bc1d0147eb9f",
+      "expectedSourceRecordSha256": "6a6eb4dc67a95aaa32dd3aaa2d0587a75a2258d83ea9796a60c6d76bfc74d559",
+      "action": "size_needs_confirmation",
+      "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
+      "reviewedOn": "2026-10-28"
     }
   ]
 }
