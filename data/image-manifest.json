@@ -8814,6 +8814,204 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1338",
+      "expectedUpc": "012000567490",
+      "expectedName": "Brisk Fruit Punch Juice Drink",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1338.jpg",
+      "alt": "Brisk Fruit Punch Juice Drink — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000567490-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000567490-0012-en-US/images/f40f3f55-21f3-42af-9bf3-b8183ff6d4ff.jpg",
+      "sha256": "dcb9935bc289af3c9103e3d867982a323294bb558ba1d00677c24abac4a13fb4",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1333",
+      "expectedUpc": "012000140211",
+      "expectedName": "Brisk Half & Half Iced Tea + Blueberry Lemonade",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1333.jpg",
+      "alt": "Brisk Half & Half Iced Tea + Blueberry Lemonade — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000140211-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000140211-0011-en-US/images/c9e25b38-e9b2-4d80-8c61-91d2e1b08ba8.jpg",
+      "sha256": "126eb4c1fcba5e703d8eef59dbb34c02ef6184a07e70e7dffb3cfe66e6853b9b",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1330",
+      "expectedUpc": "012000034015",
+      "expectedName": "Brisk Half & Half Iced Tea + Lemonade",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1330.jpg",
+      "alt": "Brisk Half & Half Iced Tea + Lemonade — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000034015-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000034015-0012-en-US/images/19a6a6da-9ee1-4993-9f47-6535b00681f6.jpg",
+      "sha256": "a9ec709f7b4b8d8c163c4d1c1abc15a70d0b354d96481110a90391603ef80e44",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1360",
+      "expectedUpc": "012000161476",
+      "expectedName": "Brisk Half & Half Iced Tea + Watermelon Lemonade",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1360.jpg",
+      "alt": "Brisk Half & Half Iced Tea + Watermelon Lemonade — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000161476-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000161476-0011-en-US/images/44ee8a35-33d4-4180-891c-6b9f030f33f1.jpg",
+      "sha256": "1ebf491973db53c1586e5c16bc5deb8967fae07a71351b7ac5b1d8644fd3f0e2",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1346",
+      "expectedUpc": "012000101908",
+      "expectedName": "Brisk Lemonade Juice Drink",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1346.jpg",
+      "alt": "Brisk Lemonade Juice Drink — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000101908-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000101908-0011-en-US/images/2dfddf5a-71fc-4b39-95d3-213713ad79fc.jpg",
+      "sha256": "ea30775ba6b26d5d0a87a6c8bc1fdb8e9c0fd693d15086f717df67401dab7c45",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1352",
+      "expectedUpc": "012000384196",
+      "expectedName": "Brisk Pink Lemonade Juice Drink",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1352.jpg",
+      "alt": "Brisk Pink Lemonade Juice Drink — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000384196-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000384196-0012-en-US/images/27eff74e-ae74-4a99-95d1-a187a3fd4fcf.jpg",
+      "sha256": "413150eded8390dcbb138f15d976334dd825fecb4d94c194ee645280c33a4d00",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1331",
+      "expectedUpc": "012000024528",
+      "expectedName": "Brisk Raspberry Iced Tea",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1331.jpg",
+      "alt": "Brisk Raspberry Iced Tea — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000024528-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000024528-0012-en-US/images/4de131ef-e15f-43a5-8508-05edf25496ef.jpg",
+      "sha256": "3059435a5f53ffdedb1b7dfccb3af4df70c6274a4d5bb03e62beeff673978efc",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1356",
+      "expectedUpc": "012000161230",
+      "expectedName": "Brisk Strawberry Melon Iced Tea",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1356.jpg",
+      "alt": "Brisk Strawberry Melon Iced Tea — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000161230-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000161230-0011-en-US/images/0cbe395a-c89c-4d63-9a46-8dae7b22a266.jpg",
+      "sha256": "8f3a1251d45bd46ad6b49c5c7d4bb72fd1885399f7933de1b9fd231bca55d115",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1359",
+      "expectedUpc": "012000031878",
+      "expectedName": "Brisk Sweet Iced Tea",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1359.jpg",
+      "alt": "Brisk Sweet Iced Tea — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000031878-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000031878-0012-en-US/images/744d3f86-d992-489c-8640-04a269bdb311.jpg",
+      "sha256": "b76d53dd9966d8a453487264f1896ae8e6e7d54404cec37689940160af505cd6",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

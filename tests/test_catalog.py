@@ -1171,6 +1171,20 @@ class ImportTests(unittest.TestCase):
         review['reviews'][0]['identityResolution'] = resolution
         catalog, audit = builder.build(source, source_reviews_manifest=review)
         self.assertEqual(len(catalog['products']), 2)
+        grouped_review = copy.deepcopy(review)
+        grouped_review['reviews'][0]['identityResolution']['groupWithPriorExpression'] = True
+        grouped, _ = builder.build(source, source_reviews_manifest=grouped_review)
+        self.assertEqual(len(grouped['products']), 1)
+        self.assertEqual({v['sku'] for v in grouped['products'][0]['variants']}, {'1', '2'})
+        for invalid in (False, 'true'):
+            bad = copy.deepcopy(grouped_review)
+            bad['reviews'][0]['identityResolution']['groupWithPriorExpression'] = invalid
+            with self.assertRaisesRegex(ValueError, 'unchanged prior product expression'):
+                builder.build(source, source_reviews_manifest=bad)
+        bad = copy.deepcopy(grouped_review)
+        bad['reviews'][0]['identityResolution']['verifiedName'] = 'Different Berry'
+        with self.assertRaisesRegex(ValueError, 'unchanged prior product expression'):
+            builder.build(source, source_reviews_manifest=bad)
         by_sku = {v['sku']: v for p in catalog['products'] for v in p['variants']}
         self.assertEqual(by_sku['1']['label'], '1.75 L')
         self.assertEqual(audit['records'][0]['previousPublicIdentity']['label'], 'Size needs confirmation')
