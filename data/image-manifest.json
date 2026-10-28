@@ -11366,6 +11366,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "708",
+      "expectedUpc": "080480400637",
+      "expectedName": "Bacardi COCONUT",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-708.jpg",
+      "alt": "Bacardi COCONUT — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137497",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_669a184a-6408-4ab0-a88b-f0c98c097ec4?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "dc442ea049377a22a05a2c2ae05b1ad5a9f8ce5ab2c32ee23ecce30f982a222b",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "725",
+      "expectedUpc": "080480984274",
+      "expectedName": "Bacardi Lime",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-725.jpg",
+      "alt": "Bacardi Lime — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-54208154",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_7fb8b971-336e-43d0-b917-3eae480ebbd5?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "7d59fdbbd6990ec7d502969ce05ca5def28ee0b899db35f4d1d3660958054f85",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "730",
+      "expectedUpc": "080480355401",
+      "expectedName": "Bacardi Limon",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-730.jpg",
+      "alt": "Bacardi Limon — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-14765233",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_5f66a398-7b94-4ca1-9985-5688001284e0?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "feb32826bcd699b38ba5da157afeed792f8ecae2852687b64e197ed7121eae5d",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "748",
+      "expectedUpc": "080480003838",
+      "expectedName": "Bacardi Pineapple",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-748.jpg",
+      "alt": "Bacardi Pineapple — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-15419055",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_14be01ff-2db5-4bcc-8d8f-7d0c34dee7f4?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "77ef0ab8444099dfe640ab6c5bad3edfa86685fc56ba97ab370728a309fff075",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
