@@ -319,6 +319,21 @@ def classify_record(record: dict) -> tuple[str, str, dict | None, list[str]]:
     return 'retained_variant', 'Named merchandise retained', public, flags
 
 
+def is_direct_reference_image(image: dict, sku: str) -> bool:
+    """Distinguish a user-authorized reference use from a claimed image license."""
+    if 'usageBasis' not in image:
+        if 'attributionRequired' in image:
+            raise ValueError(f'Image attribution policy requires an explicit usage basis: {sku}')
+        return False
+    if image['usageBasis'] != 'user_authorized_direct_reference':
+        raise ValueError(f'Unsupported image usage basis: {sku}')
+    if image.get('attributionRequired') is not False:
+        raise ValueError(f'Direct reference image requires explicit attribution policy: {sku}')
+    if any(field in image for field in ('license', 'licenseUrl', 'attribution')):
+        raise ValueError(f'Direct reference image must not invent license or attribution metadata: {sku}')
+    return True
+
+
 def apply_verified_images(products: list, image_manifest: dict | None, blocked_skus: set | None = None) -> int:
     if not image_manifest:
         return 0
@@ -352,16 +367,34 @@ def apply_verified_images(products: list, image_manifest: dict | None, blocked_s
         data = image_path.read_bytes()
         if not data or hashlib.sha256(data).hexdigest() != entry.get('sha256'):
             raise ValueError(f'Product image is empty or hash does not match: {sku}')
-        for field in ('alt', 'sourcePage', 'sourceImageUrl', 'license', 'licenseUrl', 'attribution', 'verifiedOn'):
+        direct_reference = is_direct_reference_image(entry, sku)
+        if direct_reference:
+            required = {'sku', 'expectedUpc', 'expectedName', 'expectedLabel', 'src', 'alt',
+                        'sourcePage', 'sourceImageUrl', 'sha256', 'verifiedOn', 'verification',
+                        'usageBasis', 'attributionRequired'}
+            if set(entry) != required:
+                raise ValueError(f'Direct reference image has missing, unsupported or private fields: {sku}')
+            if (not re.fullmatch(r'\d{6,14}', variant['upc'])
+                    or variant['label'] in {'Size not specified', 'Size needs confirmation'}):
+                raise ValueError(f'Direct reference image requires a known exact UPC and size: {sku}')
+        required_text = ('alt', 'sourcePage', 'sourceImageUrl', 'verifiedOn')
+        if not direct_reference:
+            required_text += ('license', 'licenseUrl', 'attribution')
+        for field in required_text:
             if not isinstance(entry.get(field), str) or not entry[field].strip():
                 raise ValueError(f'Image manifest requires {field}: {sku}')
-        for field in ('sourcePage', 'sourceImageUrl', 'licenseUrl'):
-            if not re.match(r'^https?://', entry[field]):
+        for field in ('sourcePage', 'sourceImageUrl') + (() if direct_reference else ('licenseUrl',)):
+            if not re.fullmatch(r'https?://[^\s]+', entry[field]):
                 raise ValueError(f'Invalid image evidence/license URL: {sku}')
         if PRICE_RE.search(entry['alt']):
             raise ValueError(f'Image alt text must not contain prices: {sku}')
-        variant['image'] = {field: entry[field] for field in
-                            ('src', 'alt', 'sourcePage', 'license', 'licenseUrl', 'attribution')}
+        if direct_reference:
+            if not safe_review_text(entry['alt']) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['verifiedOn']):
+                raise ValueError(f'Direct reference image requires safe alt text and review date: {sku}')
+            public_fields = ('src', 'alt', 'sourcePage', 'usageBasis', 'attributionRequired')
+        else:
+            public_fields = ('src', 'alt', 'sourcePage', 'license', 'licenseUrl', 'attribution')
+        variant['image'] = {field: entry[field] for field in public_fields}
     return len(seen)
 
 
@@ -1270,11 +1303,14 @@ def render_image_credits(catalog: dict) -> str:
             image = variant.get('image')
             if not image:
                 continue
-            for key in ('sourcePage', 'licenseUrl'):
+            direct_reference = is_direct_reference_image(image, variant['sku'])
+            for key in ('sourcePage',) + (() if direct_reference else ('licenseUrl',)):
                 if not re.fullmatch(r'https?://[^\s]+', image[key]):
                     raise ValueError(f'Invalid image credit link for SKU {variant["sku"]}')
             if not re.fullmatch(r'images/products/[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp)', image['src']):
                 raise ValueError(f'Invalid credited image path for SKU {variant["sku"]}')
+            if direct_reference:
+                continue
             title = escape(product['name'] + ' — ' + variant['label'])
             items.append(
                 f'<li id="sku-{escape(variant["sku"])}" data-sku="{escape(variant["sku"])}">'

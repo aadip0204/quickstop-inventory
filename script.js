@@ -36,6 +36,22 @@
     });
   }
 
+  function sortProducts(products, filters = {}) {
+    const query = String(filters.query || '').trim();
+    const identifierRank = product => {
+      if (!query) return 0;
+      if (product.variants.some(variant => variant.sku === query)) return 2;
+      return product.variants.some(variant => variant.upc === query) ? 1 : 0;
+    };
+    // Exact identifiers lead; the chosen name order still applies within each
+    // tier. Keep partial matches visible and preserve leading zeroes in IDs.
+    const ranked = products.map(product => ({ product, rank: identifierRank(product) }));
+    ranked.sort((a, b) => b.rank - a.rank ||
+      (filters.sort === 'za' ? -1 : 1) * a.product.name.localeCompare(b.product.name, 'en', { numeric: true }) ||
+      a.product.id.localeCompare(b.product.id));
+    return ranked.map(item => item.product);
+  }
+
   function paginate(products, requestedPage = 1, pageSize = PAGE_SIZE) {
     const safeSize = Math.max(1, Math.floor(Number(pageSize) || PAGE_SIZE));
     const totalPages = Math.max(1, Math.ceil(products.length / safeSize));
@@ -50,8 +66,9 @@
       if (selected) return selected;
     }
     const tokens = queryTokens(query);
-    const exactIdentifier = product.variants.find(variant =>
-      query.trim() && [variant.sku, variant.upc].some(value => String(value) === query.trim()));
+    const identifier = query.trim();
+    const exactIdentifier = identifier && (product.variants.find(variant => variant.sku === identifier) ||
+      product.variants.find(variant => variant.upc === identifier));
     if (exactIdentifier) return exactIdentifier;
     const matches = product.variants.filter(variant => {
       const text = normalize([product.name, product.department, product.category,
@@ -74,7 +91,7 @@
       sourcePage: safeLink(image.sourcePage), license: image.license || '', licenseUrl: safeLink(image.licenseUrl) };
   }
 
-  const helpers = { PAGE_SIZE, normalize, productSearchText, shoppingCategoryLabel, filterProducts, paginate, matchingVariant, getVariantImage };
+  const helpers = { PAGE_SIZE, normalize, productSearchText, shoppingCategoryLabel, filterProducts, sortProducts, paginate, matchingVariant, getVariantImage };
   if (typeof module !== 'undefined' && module.exports) module.exports = helpers;
   if (typeof document === 'undefined') return;
   window.QuickStopCatalog = helpers;
@@ -280,8 +297,7 @@
 
   function render() {
     if (!catalog) return;
-    const filtered = filterProducts(catalog.products, state, catalog.categories)
-      .sort((a, b) => (state.sort === 'za' ? -1 : 1) * a.name.localeCompare(b.name, 'en', { numeric: true }) || a.id.localeCompare(b.id));
+    const filtered = sortProducts(filterProducts(catalog.products, state, catalog.categories), state);
     const pageData = paginate(filtered, state.page);
     state.page = pageData.page;
     elements.nav.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === state.category)));

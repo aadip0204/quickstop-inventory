@@ -18,6 +18,49 @@ test('every retained SKU and UPC participates in search and selects its own vari
   assert.equal(variants, catalog.counts.publicVariants);
 });
 
+test('exact identifiers lead partial matches without losing results or changing name order within tiers', () => {
+  const product = (id, name, sku, upc) => ({ id, name, category: 'food', department: 'Snacks',
+    variants: [{ sku, upc, label: '12 oz', image: null }] });
+  const partials = Array.from({length: 40}, (_, i) =>
+    product(`partial-${i}`, `Aardvark Snack ${i}`, `P${i}`, `0002002${String(i).padStart(5, '0')}`));
+  const exactSku = product('exact-sku', 'Zesty Snack', '2002', '009876543210');
+  const exactUpc = product('exact-upc', 'Middle Snack', 'UPC-1', '2002');
+  const products = [...partials, exactUpc, exactSku];
+  for (const sort of ['az', 'za']) {
+    const filters = {query: ' 2002 ', sort};
+    const matches = ui.filterProducts(products, filters);
+    const sorted = ui.sortProducts(matches, filters);
+    assert.equal(sorted.length, products.length);
+    assert.equal(sorted[0], exactSku);
+    assert.equal(sorted[1], exactUpc);
+    assert.equal(ui.paginate(sorted).items[0], exactSku);
+    const expectedPartials = [...partials].sort((a, b) =>
+      (sort === 'za' ? -1 : 1) * a.name.localeCompare(b.name, 'en', {numeric: true}) || a.id.localeCompare(b.id));
+    assert.deepEqual(sorted.slice(2), expectedPartials);
+    assert.deepEqual(matches, products, 'sorting must not mutate the filtered list');
+    assert.deepEqual(ui.sortProducts(ui.filterProducts(products, {query: 'Snack'}), {query: 'Snack', sort}),
+      [...products].sort((a, b) => (sort === 'za' ? -1 : 1) * a.name.localeCompare(b.name, 'en', {numeric: true}) || a.id.localeCompare(b.id)));
+  }
+  const exactUpcQuery = {query: '009876543210', sort: 'az'};
+  const upcPart = product('upc-partial', 'Aardvark', 'P99', '10098765432109');
+  assert.deepEqual(ui.sortProducts(ui.filterProducts([upcPart, exactSku], exactUpcQuery), exactUpcQuery), [exactSku, upcPart]);
+  const leadingZero = product('leading-zero', 'Aardvark Zero', '02002', '123');
+  assert.equal(ui.sortProducts([leadingZero, exactSku], {query: '2002'})[0], exactSku);
+  assert.equal(ui.sortProducts([exactSku, leadingZero], {query: '02002'})[0], leadingZero);
+  const mixed = {...exactSku, variants: [...exactUpc.variants, ...exactSku.variants]};
+  assert.equal(ui.matchingVariant(mixed, '2002').sku, '2002');
+});
+
+test('the real SKU 2002 is on the first page ahead of UPC substring matches in both sort orders', () => {
+  for (const sort of ['az', 'za']) {
+    const filters = {query: '2002', sort};
+    const matches = ui.filterProducts(catalog.products, filters, catalog.categories);
+    assert.ok(matches.length > ui.PAGE_SIZE, 'regression needs competing partial matches beyond one page');
+    const first = ui.paginate(ui.sortProducts(matches, filters)).items[0];
+    assert.equal(ui.matchingVariant(first, '2002').sku, '2002');
+  }
+});
+
 test('every populated category and original department is reachable without losing products', () => {
   const reached = new Set();
   for (const category of catalog.categories) {

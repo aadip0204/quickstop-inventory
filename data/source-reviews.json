@@ -857,7 +857,7 @@
       "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
       "reviewedOn": "2026-10-27",
       "identityResolution": {
-        "verifiedName": "Ruffles Jalapeño Ranch Flavored Potato Chips",
+        "verifiedName": "Ruffles Jalape\u00f1o Ranch Flavored Potato Chips",
         "verifiedLabel": "74.4 g",
         "verification": {
           "brand": true,
@@ -872,7 +872,7 @@
           {
             "kind": "manufacturer",
             "url": "https://www.pepsicoproductfacts.com/Home/product?gtin=00028400634502",
-            "supports": "PepsiCo confirms the Ruffles Jalapeño Ranch Flavored Potato Chips expression. This page is a different 8.5 oz GTIN and is used only for expression, never as size/UPC proof."
+            "supports": "PepsiCo confirms the Ruffles Jalape\u00f1o Ranch Flavored Potato Chips expression. This page is a different 8.5 oz GTIN and is used only for expression, never as size/UPC proof."
           },
           {
             "kind": "exact_upc_listing",
@@ -882,7 +882,7 @@
           {
             "kind": "inspected_package_photo",
             "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/063/4519/1.jpg",
-            "supports": "Actually inspected full original: complete sealed Ruffles Jalapeño Ranch potato-chip bag, visible net weight 2 5/8 OZ (74.4 g); plain white background with no price imprint or obstruction."
+            "supports": "Actually inspected full original: complete sealed Ruffles Jalape\u00f1o Ranch potato-chip bag, visible net weight 2 5/8 OZ (74.4 g); plain white background with no price imprint or obstruction."
           }
         ],
         "expectedName": "Ruffles Jalapeno Ranch",
@@ -2215,7 +2215,7 @@
         {
           "kind": "manufacturer",
           "url": "https://dnovacampinas.com.br/wp-content/uploads/2025/06/Catalogo-Distribuidor-Q2.pdf",
-          "supports": "Mondelēz International branded distributor catalog, rendered and inspected cover and PDFpage47. HALLS BASE DSP CEREJA table lists28g and EAN8 unit78938793; display and case codes are separately stated. Manufacturer-authored document hosted by distributor."
+          "supports": "Mondel\u0113z International branded distributor catalog, rendered and inspected cover and PDFpage47. HALLS BASE DSP CEREJA table lists28g and EAN8 unit78938793; display and case codes are separately stated. Manufacturer-authored document hosted by distributor."
         },
         {
           "kind": "exact_upc_listing",
@@ -2854,6 +2854,33 @@
           "supports": "Full original individually inspected: complete single Sweet Baby Ray's Hickory & Brown Sugar Barbecue Sauce bottle on white. Full cap with margin and base visible; NET WT18 OZ (1 LB2 OZ)510g readable. No visible prices or household objects. Best of three studio alternatives, conditional on exact-source guarded identity resolution and parent review; not a public assignment."
         }
       ]
+    },
+    {
+      "sku": "1377",
+      "expectedUpc": "018200960239",
+      "expectedNameSha256": "60ee99b97b08d129020dbcf4ad575fd6f4bedc9db6543645f1c06b8686b7840e",
+      "expectedSourceRecordSha256": "593e09c73a6595b4854272def02a693b289783a6e263e84832d6a3cb6e594a20",
+      "action": "size_needs_confirmation",
+      "reason": "Slash-separated source measure is ambiguous with the explicit pack count. Withhold the calculated fraction; no alternative bottle volume is inferred.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "2016",
+      "expectedUpc": "028400002295",
+      "expectedNameSha256": "b871302b81d0f8485e188f00ec41b18497d3fa7c1cc3c8ae040b2f6b5414d87f",
+      "expectedSourceRecordSha256": "dd2088990ecde04f5bf45c60158e3aec91f35a57a9b5e6a8da164a6029246cb8",
+      "action": "size_needs_confirmation",
+      "reason": "Joined source fraction is ambiguous between a mathematical fraction and a missing mixed-number separator. Withhold the calculated measure; no alternative weight is inferred.",
+      "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "2537",
+      "expectedUpc": "028400079976",
+      "expectedNameSha256": "05dd807f094976bbe5b82be6e92764ab7995c92e6106a61baf34ec3e5e70440d",
+      "expectedSourceRecordSha256": "88cec273f512a04c8c1ebcb75a5861e4ec303d1d6a5300824033581acfa539ae",
+      "action": "size_needs_confirmation",
+      "reason": "Joined source fraction is ambiguous between a mathematical fraction and a missing mixed-number separator. Withhold the calculated measure; no alternative weight is inferred.",
+      "reviewedOn": "2026-10-27"
     }
   ]
 }
