@@ -10882,6 +10882,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "222",
+      "expectedUpc": "080660620053",
+      "expectedName": "99 Bananas",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-222.jpg",
+      "alt": "99 Bananas — 750 mL bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/139001-99-brand-bananas-liqueur-750-ml",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_acca96a2-5b3a-48ce-8ad4-e205595a5be1.jpg",
+      "sha256": "cc0483fdb73820e1aa78ec11c9722aec61d8035c52bc1c7d31c46f9bc7935a0d",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "224",
+      "expectedUpc": "080660113609",
+      "expectedName": "99 Black Cherries",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-224.jpg",
+      "alt": "99 Black Cherries — 750 mL bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/17463658-99-brand-black-cherries-liqueur-750-ml",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_21695aad-8a09-4f7d-99fc-6bc34cf07ad2.jpg",
+      "sha256": "d45c073003fc5cfb86cee5d4b16b66888180c01cb2f7cdf797f233b10e598099",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "223",
+      "expectedUpc": "089000515950",
+      "expectedName": "99 Blackberries",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-223.jpg",
+      "alt": "99 Blackberries — 750 mL bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/139002-99-brand-blackberries-liqueur-750-ml",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b66fa28f-8969-4e11-a70d-18db08677217.jpg",
+      "sha256": "f1dc7f3beca89232157acb3a41a9173959d43d74f4fdde49e67436a61f488b39",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
