@@ -16504,6 +16504,650 @@
           "supports": "Manufacturer record explicitly links exact UPC 052000104783 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
         }
       ]
+    },
+    {
+      "sku": "5331",
+      "expectedUpc": "012000017513",
+      "expectedNameSha256": "061c8c7d615e5d34b700061ab3b0c7d22bdba35d7dc435cf8a175ea5f42bc712",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000017513-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000017513",
+        "observedName": "Manzanita Sol, Apple Naturally & Artificially Flavored, Soda",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d33471ee33c13e439223dbaa55299dc426062831b7893ed75cc87cfe7308891a",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000017513-0012-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "manzanita sol    apple  12oz",
+      "replaceTextTo": "Manzanita Sol Apple Soda 12oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Manzanita Sol Apple Soda"
+    },
+    {
+      "sku": "101286",
+      "expectedUpc": "889392021394",
+      "expectedNameSha256": "1def1701e51ebdd056e6544ce62c1027ef2c17fec1029b4a5ece841d195dfc9c",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/889392021394-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "889392021394",
+        "observedName": "Celsius, Live Fit, Tropical Vibe, Sparkling Starfruit Pineapple Edition, Energy Drink",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "c8a53de61546792bdbe73941bdbc4b5ffe46b988692d2215d970c8c4dbc110e7",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/889392021394-0001-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "CELSIUS TROPICAL VIBE 12OZ.",
+      "replaceTextTo": "Celsius Live Fit Tropical Vibe Sparkling Starfruit Pineapple Edition Energy Drink 12OZ.",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Celsius Live Fit Tropical Vibe Sparkling Starfruit Pineapple Edition Energy Drink"
+    },
+    {
+      "sku": "1356",
+      "expectedUpc": "012000161230",
+      "expectedNameSha256": "64001bdc02997e3e38c1368b44705b240c4a54fab83429f3ee6fa779ab9c551a",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000161230-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000161230",
+        "observedName": "Brisk, Strawberry Melon Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "51b5aeb28d75385fc9f0007b85fd113a433b6827277a030002fc650e26fdf436",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000161230-0014-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Brisk Strawberry Melon 1L",
+      "replaceTextTo": "Brisk Strawberry Melon Iced Tea 1L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Brisk Strawberry Melon Iced Tea"
+    },
+    {
+      "sku": "5876",
+      "expectedUpc": "012000194214",
+      "expectedNameSha256": "e4f51d72c13ab1e2fda17027c71962085de6909a6c63c502d45d9627a67bffb7",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000194214-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000194214",
+        "observedName": "Mountain Dew, Frost Bite, Naturally & Artificially Flavored Dew",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e9a963f2e4592fda0bbe3d41f8132d4c369d6ad354898387b2372a19ac661b9d",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000194214-0001-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Mountain Dew   frost  12oz",
+      "replaceTextTo": "Mountain Dew Frost Bite 12oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Mountain Dew Frost Bite"
+    },
+    {
+      "sku": "3666",
+      "expectedUpc": "052000338751",
+      "expectedNameSha256": "af3ca20351652e5d6687f47f8389662c376c1c89c40e42ff53b48b8ca15b36b4",
+      "expectedLabel": "32 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000338751-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000338751",
+        "observedName": "Gatorade, Fruit Punch Flavor, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e34a58e9befc7dc9d5996bc243b962952d30e83e94259af11480f8a45806d9ab",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000338751-0013-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Gatorade Fruit Punch 32oz",
+      "replaceTextTo": "Gatorade Fruit Punch Thirst Quencher 32oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Fruit Punch Thirst Quencher"
+    },
+    {
+      "sku": "1338",
+      "expectedUpc": "012000567490",
+      "expectedNameSha256": "8bbed4deb2116a5905be3fda657bfdc6163eabb25293e17822cef0e2b9a015c0",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000567490-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000567490",
+        "observedName": "Brisk, Fruit Punch, Juice Drink",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "1d7e2e85b9b3d21a6a4f771e94cadb68157862a77b1b85a8695c6e3132d93207",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000567490-0012-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Brisk FruitPunch  1L",
+      "replaceTextTo": "Brisk Fruit Punch Juice Drink 1L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Brisk Fruit Punch Juice Drink"
+    },
+    {
+      "sku": "3684",
+      "expectedUpc": "052000102871",
+      "expectedNameSha256": "fd921c005a40dec6bd7f044be1c5be023122bb5f8fe3eade8bd5270c47bde106",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000102871-0014-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000102871",
+        "observedName": "Gatorade, Glacier Freeze, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "5f9e9e2f0df7c824b2a62a9df335fd8f1defe9b82cccc1ac88ebb38f4c032a0a",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000102871-0014-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Gatorade glacier freeze12fl oz",
+      "replaceTextTo": "Gatorade Glacier Freeze Thirst Quencher 12fl oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Glacier Freeze Thirst Quencher"
+    },
+    {
+      "sku": "3695",
+      "expectedUpc": "052000135084",
+      "expectedNameSha256": "269b4ac0b1f873b398f9d05ecdc43cd145bb69906a2c10870aa170f340848409",
+      "expectedLabel": "28 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000135084-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000135084",
+        "observedName": "Gatorade, Lime Cucumber Artificially Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "c7940d3d8fd64bd68ead61d9e156cb9dcac6ec70ee993c9e7167f2117ab40b4c",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000135084-0016-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Gatorade lime cucumber 28ozpepino limon",
+      "replaceTextTo": "Gatorade Lime Cucumber (Pepino Limon) Thirst Quencher 28oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Lime Cucumber (Pepino Limon) Thirst Quencher"
+    },
+    {
+      "sku": "101285",
+      "expectedUpc": "889392001723",
+      "expectedNameSha256": "c8ad9837035f57cfd9c813ae2b12779fa9d029b83d91acb31d54a41f5c5540c3",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/889392001723-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "889392001723",
+        "observedName": "Celsius, Live Fit, Retro Vibe, Sparkling Sherbet Slush Flavor, Energy Drink",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "951bd849c935faa105090784d3f829b4d217e2bc7279f6ae571e0c2af5af18d7",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/889392001723-0001-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "CELSIUS RETRO VIBE 12OZ.",
+      "replaceTextTo": "Celsius Live Fit Retro Vibe Sparkling Sherbet Slush Energy Drink 12OZ.",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Celsius Live Fit Retro Vibe Sparkling Sherbet Slush Energy Drink"
+    },
+    {
+      "sku": "3700",
+      "expectedUpc": "052000102475",
+      "expectedNameSha256": "72c15a3552b3509f5c16221900fa563e00afc1ad4b23162bc20f58f989d2d02b",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000102475-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000102475",
+        "observedName": "Gatorade, Glacier Cherry Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "6c91b3324365d4a974e18a450c3451f07f5110d8c51b1e1326b98c2b622b6ec6",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000102475-0013-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "GATORADE THIRST  QUE 20OZ",
+      "replaceTextTo": "Gatorade Glacier Cherry Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Glacier Cherry Thirst Quencher"
+    },
+    {
+      "sku": "1343",
+      "expectedUpc": "012000202377",
+      "expectedNameSha256": "947dadebf34a29d067e80f085f624e79235298b04fbf1e5ddbc28cb76f413ad1",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000202377-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000202377",
+        "observedName": "Brisk, Lemon Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "b4f3a320114be50f0a9479c2ed7f9e95f20344e5bfe1c3518723296570717dcd",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000202377-0016-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Brisk Lemon 2L",
+      "replaceTextTo": "Brisk Lemon Iced Tea 2L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Brisk Lemon Iced Tea"
+    },
+    {
+      "sku": "3645",
+      "expectedUpc": "052000135282",
+      "expectedNameSha256": "1d13df1eb36450e227f0fb3fd6e15ae8fd60a2a6e2c733e6988146152303b947",
+      "expectedLabel": "28 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000135282-0017-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000135282",
+        "observedName": "Gatorade, Fierce Strawberry Artificially Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "07bbf96610cf2980031e81bb6b007e7099f00cd129fe6755147765a942cec4b0",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000135282-0017-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Gatorade 28ozStrawberry",
+      "replaceTextTo": "Gatorade Fierce Strawberry Thirst Quencher 28oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Fierce Strawberry Thirst Quencher"
+    },
+    {
+      "sku": "101209",
+      "expectedUpc": "052000010398",
+      "expectedNameSha256": "e24e02170f2b0f5db5576e3d21554eab0726c7ddb88a18a4d4e9b2fb593dd836",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000010398-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000010398",
+        "observedName": "Gatorade, Arctic Blitz, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "9c8ea6a78d2c3ed98db7f04f32f38fa909ed90d182e882853b081378e2b1b30b",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000010398-0013-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "GATORADE ARTIC BLITZ 20OZ",
+      "replaceTextTo": "Gatorade Arctic Blitz Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Arctic Blitz Thirst Quencher"
+    },
+    {
+      "sku": "3661",
+      "expectedUpc": "052000122473",
+      "expectedNameSha256": "a64c8f58f4520165b3679910c6950c470a79bcb847c9c6a99347c0891cb96227",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000122473-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000122473",
+        "observedName": "Gatorade, Fruit Punch Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "58389fc05cc47cb52e8f05b09b70865a619a0a1ba245f18fe9ede8e4c29a8c9d",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000122473-0015-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "GATORADE FRUIT PUNCH 12FL OZ",
+      "replaceTextTo": "Gatorade Fruit Punch Thirst Quencher 12FL OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Fruit Punch Thirst Quencher"
+    },
+    {
+      "sku": "3697",
+      "expectedUpc": "052000129373",
+      "expectedNameSha256": "b856c6660557770bfccd90272d758a74f5866450dc803746083d902a5792b01d",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000129373-0015-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000129373",
+        "observedName": "Gatorade, Orange Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "1c6239ac44e752312e7b6c658b709349e4e9118074c59ab56bbec9e7eafa4de6",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000129373-0015-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Gatorade orange   12fl oz",
+      "replaceTextTo": "Gatorade Orange Thirst Quencher 12fl oz",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Orange Thirst Quencher"
+    },
+    {
+      "sku": "6636",
+      "expectedUpc": "012000171765",
+      "expectedNameSha256": "c280fc0fade4410d67943ab4266959abe35526abba0c732174a636e55d530414",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000171765-0019-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000171765",
+        "observedName": "Diet Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "5bd4bb0f898006521d0b111a2edd938bd3a80f1a4e2c49b337db671ed1a4b65a",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000171765-0019-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "PEPSI DIET    2L",
+      "replaceTextTo": "Diet Pepsi 2L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Diet Pepsi"
+    },
+    {
+      "sku": "8983",
+      "expectedUpc": "012000193194",
+      "expectedNameSha256": "e2efd1dd8f70e2e7009394b2d85f16cfee642c2171961f5d6edd93b8ab853400",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000193194-0002-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000193194",
+        "observedName": "Tropicana, Tw!ster, Strawberry Kiwi Cyclone, Flavored Beverage",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d50f0f107423e6064665a5346586019eff167ffc56a9b1d2187d0f9acb1b03d1",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000193194-0002-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Twister strawberry kiwi",
+      "replaceTextTo": "Tropicana Twister Strawberry Kiwi Cyclone Flavored Beverage",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Tropicana Twister Strawberry Kiwi Cyclone Flavored Beverage"
+    },
+    {
+      "sku": "3692",
+      "expectedUpc": "052000328684",
+      "expectedNameSha256": "e7420ed5349d8f4c8dce5442f55b5033b41eea4778a15cccfcfe9c7134dbb7fe",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000328684-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000328684",
+        "observedName": "Gatorade, Lemon Lime Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "883b4fc2a78ac5f3eeb5c4c3a98d7b3d17a0f21a19ee40df83d1f64f36948666",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000328684-0013-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "GATORADE LEMON LIME 20OZ",
+      "replaceTextTo": "Gatorade Lemon Lime Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Lemon Lime Thirst Quencher"
+    },
+    {
+      "sku": "1331",
+      "expectedUpc": "012000024528",
+      "expectedNameSha256": "e913130170fdab7fa1fd6d755392640db652a25c6da5b9f9979f798db4b17f03",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000024528-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000024528",
+        "observedName": "Brisk, Raspberry Flavor, Iced Tea",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "16debbdfd13bd065306a390125edbb43803b60a2ac11aca7dee116151a2b42c2",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000024528-0012-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Brisk  raspberry ice tea  1L",
+      "replaceTextTo": "Brisk Raspberry Iced Tea 1L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Brisk Raspberry Iced Tea"
+    },
+    {
+      "sku": "3696",
+      "expectedUpc": "052000122480",
+      "expectedNameSha256": "9319c1e9726b4f07b03a2f0289e9be22956a250132b6470cd1ea564ddab44729",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000122480-0016-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000122480",
+        "observedName": "Gatorade, Orange Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "e69f2c056c2b0066cecb82932c69edce9f460ed82624dee56771aebe22ba2ceb",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000122480-0016-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "GATORADE ORANGE     12FL OZ",
+      "replaceTextTo": "Gatorade Orange Thirst Quencher 12FL OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Orange Thirst Quencher"
+    },
+    {
+      "sku": "3662",
+      "expectedUpc": "052000328660",
+      "expectedNameSha256": "96644d92b1bf7b690a96b12a849d9a1a6e63fa16e797f4d5979ca58fd77c7e0e",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/052000328660-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "052000328660",
+        "observedName": "Gatorade, Fruit Punch Flavored, Thirst Quencher",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d8f633b886e8e31f4cb9c295998f926fc1a5cd2b83412e9b5f2538344e19d446",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/052000328660-0013-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "GATORADE FRUIT PUNCH 20OZ",
+      "replaceTextTo": "Gatorade Fruit Punch Thirst Quencher 20OZ",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Gatorade Fruit Punch Thirst Quencher"
+    },
+    {
+      "sku": "1352",
+      "expectedUpc": "012000384196",
+      "expectedNameSha256": "95639a71bd5ab0ded5a7e961c49b82051a4081299fa7e5267097fbe87e160989",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000384196-0012-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000384196",
+        "observedName": "Brisk, Pink Lemonade, Juice Drink",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "8dcd49564f7f82a1773245624c2bafffd0b97ba0f792f419849990f496a7108f",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000384196-0012-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Brisk Pink Lemonade 1 Liter",
+      "replaceTextTo": "Brisk Pink Lemonade Juice Drink 1 Liter",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Brisk Pink Lemonade Juice Drink"
+    },
+    {
+      "sku": "1346",
+      "expectedUpc": "012000101908",
+      "expectedNameSha256": "520e40ae126dffc2a85a93e0e26a55cfa002b526f82e1681e32788aab979dd0c",
+      "expectedLabel": "Size needs confirmation",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000101908-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000101908",
+        "observedName": "Brisk, Lemonade, Juice Drink",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "aebc16e67377b28475c935c39347112ff5b063c358ae0f8c2815c08653331513",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000101908-0013-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "replaceTextFrom": "Brisk Lemonade 1L",
+      "replaceTextTo": "Brisk Lemonade Juice Drink 1L",
+      "scope": "manufacturer_exact_upc_name_identity",
+      "verifiedPublicName": "Brisk Lemonade Juice Drink"
     }
   ],
   "identityReviews": [
@@ -18795,6 +19439,467 @@
           "kind": "manufacturer_exact_upc_record",
           "url": "https://smartlabel.myproduct.info/012000002304-0011-en-US/index.html",
           "supports": "Manufacturer record explicitly links exact UPC 012000002304 to the recorded brand and product expression. Text-name verification only; no visual, source-size, pack-count, packaging, stock or current formulation verification."
+        }
+      ]
+    },
+    {
+      "sku": "6621",
+      "expectedUpc": "012000030284",
+      "expectedNameSha256": "ae5ed5459b6a7be7786b374d72d985b9ca49432d093a03cf4b2ef56d2b7755f3",
+      "expectedLabel": "16 oz · cans",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000030284-0004-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000030284",
+        "observedName": "Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "1fc9ef6e497633b3ab9a6991f6f7ffaafdd111aa0406bf07553d2bb83e258fc9",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000030284-0004-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "expectedPublicName": "PEPSI",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      }
+    },
+    {
+      "sku": "2869",
+      "expectedUpc": "012000064494",
+      "expectedNameSha256": "90de24ef178c598734960751426787927fa376c6785610db4735be12e6f1a754",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000064494-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000064494",
+        "observedName": "Dole, Lemonade",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "ae8008d317d6566d23db660953de76ed5fdf9b8581d63b6205ad8b926b57e256",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000064494-0013-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "expectedPublicName": "DOLE LEMONADE",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      }
+    },
+    {
+      "sku": "2876",
+      "expectedUpc": "012000064500",
+      "expectedNameSha256": "7abdd49b97bb507232c5305bed149d79643e669e50440c92b361d42e2079b381",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000064500-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000064500",
+        "observedName": "Dole, Strawberry Lemonade",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d8f37300bb9ba920327a20fca4e5b747ff4b205716d0783c0641f85c0e728a49",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000064500-0013-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "expectedPublicName": "DOLE STRAWBERRY LEMONADE",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      }
+    },
+    {
+      "sku": "6625",
+      "expectedUpc": "012000140921",
+      "expectedNameSha256": "68ae8f775ea8b763a44cd4c754a888accd92e5df05c2ebe5c9dc9caef63b71c3",
+      "expectedLabel": "1.25 L",
+      "verifiedOn": "2026-10-27",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://smartlabel.myproduct.info/012000140921-0013-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.pepsico.info/sitemap.xml",
+        "observedUpc": "012000140921",
+        "observedName": "Pepsi",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "7bff79126b81e487ec1aec71d693ee2dab3f1eacbf68e8eb08ec480fbf91cb7d",
+        "retiredNotice": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.myproduct.info/012000140921-0013-en-US/index.html",
+          "supports": "Publisher-owned exact-UPC record establishes the recorded brand and full expression. Text name only: no photograph, package size, packaging, stock or current formulation verification. Official PepsiCo sitemap contains this exact delegated product URL."
+        }
+      ],
+      "expectedPublicName": "PEPSI",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      }
+    },
+    {
+      "sku": "2601",
+      "expectedUpc": "078000019353",
+      "expectedNameSha256": "fdd63a062851623c841aa1fad8e0c0c916a9fec5232999b6c229aefde98dc6ef",
+      "expectedPublicName": "Crush Grape",
+      "expectedLabel": "16 oz",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Grape/p/1-E5IFU-5",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Grape/p/1-E5IFU-5",
+        "observedUpc": "078000019353",
+        "observedName": "Crush Grape",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "2a64b7fe38da25c9bdde23fef4fa7320d5afac992bc8db7edd720e07e42d13c4",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Grape/p/1-E5IFU-5",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2607",
+      "expectedUpc": "078000019339",
+      "expectedNameSha256": "6f6dd309997aa4e56bbf4475c4a6bfab5bcda244ed9fb019fa7227683bb94cc9",
+      "expectedPublicName": "CRUSH ORANGE",
+      "expectedLabel": "16 oz",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-AR6XV-1",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-AR6XV-1",
+        "observedUpc": "078000019339",
+        "observedName": "Crush Orange",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "a026f076304d1992461801996bcfb17ed9f1d5e0f97d99fe411499f7a240004a",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-AR6XV-1",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2615",
+      "expectedUpc": "078000013719",
+      "expectedNameSha256": "8a454263302e655d324e43d58c61b9c9357e9458e5fe641ed245488e123877f9",
+      "expectedPublicName": "CRUSH STRAWBERRY",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Strawberry/p/1-5JGOJ-81",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Strawberry/p/1-5JGOJ-81",
+        "observedUpc": "078000013719",
+        "observedName": "Crush Strawberry",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "1b231fe06f3f3d4e053347a94d5b8f12ddb724b76be81e5b1c32d1f0440d78c9",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Strawberry/p/1-5JGOJ-81",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2606",
+      "expectedUpc": "078000013153",
+      "expectedNameSha256": "5ee3c50f4abb01e362cf8e9c3806b099d42bf391e6a937176a049b90b89bc3b2",
+      "expectedPublicName": "CRUSH ORANGE",
+      "expectedLabel": "1.25 L",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-DLFK8-26",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-DLFK8-26",
+        "observedUpc": "078000013153",
+        "observedName": "Crush Orange",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "701a2473cf8a9221b3679f686eee385b571b990738c8bb39895da4d02807679c",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-DLFK8-26",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2602",
+      "expectedUpc": "078000013528",
+      "expectedNameSha256": "765f595cba58e467958d24bd4f192164b5c9f60ae66b0faff3c56ed439086ad4",
+      "expectedPublicName": "Crush Grape",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Grape/p/1-5JGOJ-58",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Grape/p/1-5JGOJ-58",
+        "observedUpc": "078000013528",
+        "observedName": "Crush Grape",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "397a7ee2a72750d445753e8c1f0c4dfdaa72810da9682877923497b267bbc186",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Grape/p/1-5JGOJ-58",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2612",
+      "expectedUpc": "078000014075",
+      "expectedNameSha256": "3a06966b655f29c92ee9080f1496e1eaedc1c64b3c429e7e130e511bd8597497",
+      "expectedPublicName": "crush peach",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Peach/p/1-5JGOJ-79",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Peach/p/1-5JGOJ-79",
+        "observedUpc": "078000014075",
+        "observedName": "Crush Peach",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "bcdfab7898b3b44c57e5a67e0043a53be7e928658847678c15a1bc69b339dba9",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Peach/p/1-5JGOJ-79",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2608",
+      "expectedUpc": "078000013283",
+      "expectedNameSha256": "a200f8173f2a3704453e9e024035125296f500100a6196fb6422a7d82ea66554",
+      "expectedPublicName": "CRUSH ORANGE",
+      "expectedLabel": "20 oz",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-5JGOJ-60",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-5JGOJ-60",
+        "observedUpc": "078000013283",
+        "observedName": "Crush Orange",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "d37a85ba457307468a022315dfaa526506f9839c95a486df0c71ee6041c2eff1",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-5JGOJ-60",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2613",
+      "expectedUpc": "078000014167",
+      "expectedNameSha256": "5f463743792cbf1a7ac908bf8e5c99f6e820eaa5efec4c8e4e6963968400be4b",
+      "expectedPublicName": "CRUSH PINEAPPLE",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Pineapple/p/1-5JGOJ-80",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Pineapple/p/1-5JGOJ-80",
+        "observedUpc": "078000014167",
+        "observedName": "Crush Pineapple",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "44150ddf262c50ae9f91a0eeec571a7a45a9cd20498a8f1c291432d994d7f8a5",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Pineapple/p/1-5JGOJ-80",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2605",
+      "expectedUpc": "078000013368",
+      "expectedNameSha256": "3dfc19b345b5428e1c6f9cbddf2f236f8e9b56f1eddbde9069c37fdff2b5a9ff",
+      "expectedPublicName": "CRUSH orange",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-10-27",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "manufacturerRecord": {
+        "publisher": "PepsiCo",
+        "productUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-5JGOJ-78",
+        "publisherEvidenceUrl": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-5JGOJ-78",
+        "observedUpc": "078000013368",
+        "observedName": "Crush Orange",
+        "retrievedOn": "2026-10-27",
+        "sourceSha256": "32f7d5e0c5831ba7de28a12cc3fa4b47d58a1d91a7fa1adfc6b1683d606a9bcc",
+        "retiredNotice": false
+      },
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-5JGOJ-78",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
         }
       ]
     }

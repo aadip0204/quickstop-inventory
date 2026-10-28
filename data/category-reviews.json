@@ -780,6 +780,81 @@
           "supports": "Kraft Heinz names this exact unit UPC 043000955437 as Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
         }
       ]
+    },
+    {
+      "sku": "2615",
+      "expectedUpc": "078000013719",
+      "expectedNameSha256": "8a454263302e655d324e43d58c61b9c9357e9458e5fe641ed245488e123877f9",
+      "expectedSourceRecordSha256": "e28faf082ea199de8d9479325d59328ac13f5880dcbb1e83b02eb2e38109a767",
+      "expectedPublicName": "CRUSH STRAWBERRY",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Exact unit UPC is identified as a Crush soft drink by the licensed manufacturer record. Show this SKU in Drinks & mixers while preserving the original MISC department, its filter access, and every source size and package field.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Strawberry/p/1-5JGOJ-81",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2613",
+      "expectedUpc": "078000014167",
+      "expectedNameSha256": "5f463743792cbf1a7ac908bf8e5c99f6e820eaa5efec4c8e4e6963968400be4b",
+      "expectedSourceRecordSha256": "d6587f06504594c16b44bbb2a42fba7789979ce857d87b213cb0ce8374caf195",
+      "expectedPublicName": "CRUSH PINEAPPLE",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Exact unit UPC is identified as a Crush soft drink by the licensed manufacturer record. Show this SKU in Drinks & mixers while preserving the original MISC department, its filter access, and every source size and package field.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Pineapple/p/1-5JGOJ-80",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
+    },
+    {
+      "sku": "2605",
+      "expectedUpc": "078000013368",
+      "expectedNameSha256": "3dfc19b345b5428e1c6f9cbddf2f236f8e9b56f1eddbde9069c37fdff2b5a9ff",
+      "expectedSourceRecordSha256": "1fd1aaab62286654328ee0b58d2018250e1432b9f2be9f602170c399ced9cb89",
+      "expectedPublicName": "CRUSH orange",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "category": "drinks",
+      "reviewedOn": "2026-10-27",
+      "reason": "Exact unit UPC is identified as a Crush soft drink by the licensed manufacturer record. Show this SKU in Drinks & mixers while preserving the original MISC department, its filter access, and every source size and package field.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-5JGOJ-78",
+          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
+        },
+        {
+          "kind": "manufacturer_licensing_relationship",
+          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
+        }
+      ]
     }
   ]
 }
