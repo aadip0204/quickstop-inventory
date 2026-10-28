@@ -857,7 +857,7 @@
       "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
       "reviewedOn": "2026-10-27",
       "identityResolution": {
-        "verifiedName": "Ruffles Jalape\u00f1o Ranch Flavored Potato Chips",
+        "verifiedName": "Ruffles Jalapeño Ranch Flavored Potato Chips",
         "verifiedLabel": "74.4 g",
         "verification": {
           "brand": true,
@@ -872,7 +872,7 @@
           {
             "kind": "manufacturer",
             "url": "https://www.pepsicoproductfacts.com/Home/product?gtin=00028400634502",
-            "supports": "PepsiCo confirms the Ruffles Jalape\u00f1o Ranch Flavored Potato Chips expression. This page is a different 8.5 oz GTIN and is used only for expression, never as size/UPC proof."
+            "supports": "PepsiCo confirms the Ruffles Jalapeño Ranch Flavored Potato Chips expression. This page is a different 8.5 oz GTIN and is used only for expression, never as size/UPC proof."
           },
           {
             "kind": "exact_upc_listing",
@@ -882,7 +882,7 @@
           {
             "kind": "inspected_package_photo",
             "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/063/4519/1.jpg",
-            "supports": "Actually inspected full original: complete sealed Ruffles Jalape\u00f1o Ranch potato-chip bag, visible net weight 2 5/8 OZ (74.4 g); plain white background with no price imprint or obstruction."
+            "supports": "Actually inspected full original: complete sealed Ruffles Jalapeño Ranch potato-chip bag, visible net weight 2 5/8 OZ (74.4 g); plain white background with no price imprint or obstruction."
           }
         ],
         "expectedName": "Ruffles Jalapeno Ranch",
@@ -2215,7 +2215,7 @@
         {
           "kind": "manufacturer",
           "url": "https://dnovacampinas.com.br/wp-content/uploads/2025/06/Catalogo-Distribuidor-Q2.pdf",
-          "supports": "Mondel\u0113z International branded distributor catalog, rendered and inspected cover and PDFpage47. HALLS BASE DSP CEREJA table lists28g and EAN8 unit78938793; display and case codes are separately stated. Manufacturer-authored document hosted by distributor."
+          "supports": "Mondelēz International branded distributor catalog, rendered and inspected cover and PDFpage47. HALLS BASE DSP CEREJA table lists28g and EAN8 unit78938793; display and case codes are separately stated. Manufacturer-authored document hosted by distributor."
         },
         {
           "kind": "exact_upc_listing",
@@ -2881,6 +2881,96 @@
       "action": "size_needs_confirmation",
       "reason": "Joined source fraction is ambiguous between a mathematical fraction and a missing mixed-number separator. Withhold the calculated measure; no alternative weight is inferred.",
       "reviewedOn": "2026-10-27"
+    },
+    {
+      "sku": "101288",
+      "expectedUpc": "024100122615",
+      "expectedNameSha256": "c7cea890ad654af50462b7aee38ebb11c82a5ad319eb514f00b43870fcd7df2e",
+      "expectedSourceRecordSha256": "cb395d99e4fcbe04fd64700b9a44a7fd8faff9e5f8bb36836f9125841318e962",
+      "action": "size_needs_confirmation",
+      "reason": "Original source size conflicts with exact-UPC manufacturer and retailer evidence; retain original fields and request size confirmation.",
+      "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "4769",
+      "expectedUpc": "038000596551",
+      "expectedNameSha256": "7f30029bf926f456a8d19667a93f0d36db6344ed8fdf0afbb8d0e839815be8b4",
+      "expectedSourceRecordSha256": "aa0fb6c16345d3bb8c8cbf366a55b0947b8bf43f65a079f282793e502e34c6c4",
+      "action": "size_needs_confirmation",
+      "reason": "Original source size differs from the size recorded by an exact-UPC product listing; retain original fields and request size confirmation.",
+      "reviewedOn": "2026-10-28"
+    },
+    {
+      "sku": "6807",
+      "expectedUpc": "038000845536",
+      "expectedNameSha256": "db7b1a872c501159ee9b39fd1e91014760eedccd9ac13ccf4d57db8f9940da9a",
+      "expectedSourceRecordSha256": "214b1b1108ba595a6192cbecca2db7c2ff726fea558c473df0b687dc0072aed5",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Pringles Cheddar Cheese Potato Crisps",
+      "verifiedLabel": "40 g",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, manufacturer single-can details, retailer evidence and inspected package establish this formerly unspecified variant.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kellanovaawayfromhome.com/en-us/products/pringles-grab-go-cheddar-cheese-product.00038000845567.html",
+          "supports": "Manufacturer identifies the exact individual UPC and the 40 g can for this flavor; case quantity is not adopted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://weinersltd.com/products/whole-pringles-cheddar-cheese-potato-chips",
+          "supports": "Independent listing identifies the source UPC, flavor and individual can size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/assets/domains/product-image/file/large_abf2be95-9560-4437-af6a-4097bbd0f8d0.jpg",
+          "supports": "Complete product can is visually inspected for the exact flavor. The manufacturer package image independently shows the UPC and 40 g size."
+        }
+      ]
+    },
+    {
+      "sku": "6806",
+      "expectedUpc": "038000845529",
+      "expectedNameSha256": "765735efcf00713e84ad83e5cea2ada0a5b58097c29715fc622601a67c24c490",
+      "expectedSourceRecordSha256": "6c0d1489cb5abf28dc966366d188c42c4b9b102cae7d69e01b6a5c58ba7c1d68",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Pringles Sour Cream & Onion Potato Crisps",
+      "verifiedLabel": "40 g",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, manufacturer single-can details, retailer evidence and inspected package establish this formerly unspecified variant.",
+      "reviewedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kellanovaawayfromhome.com/en-us/products/pringles-grab-go-sour-cream-onion-product.00038000845550.html",
+          "supports": "Manufacturer identifies the exact individual UPC and the 40 g can for this flavor; case quantity is not adopted."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://redstonefoods.com/products/84555--pringles-sour-cream-onion?product_code=H",
+          "supports": "Independent listing identifies the source UPC, flavor and individual can size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.kroger.com/product/images/xlarge/front/0003800084552",
+          "supports": "Complete product can is visually inspected for the exact flavor. The manufacturer package image independently shows the UPC and 40 g size."
+        }
+      ]
     }
   ]
 }

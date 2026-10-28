@@ -6372,6 +6372,160 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1991",
+      "expectedUpc": "024100573820",
+      "expectedName": "Cheez-It Pepper Jack Baked Snack Crackers",
+      "expectedLabel": "85 g",
+      "src": "images/products/sku-1991.jpg",
+      "alt": "Cheez-It Pepper Jack Baked Snack Crackers — 85 g package",
+      "sourcePage": "https://www.kellanovaawayfromhome.com/en-us/products/cheez-it-pepper-jack-product.00024100573790.html",
+      "sourceImageUrl": "https://s7d1.scene7.com/is/image/Kellanovaprod/00024100573790_C1NB",
+      "sha256": "a76c56dd41788315a664f7d336386084bb4cc081af248ca3388ccf142f2e6b97",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3512",
+      "expectedUpc": "038000198861",
+      "expectedName": "Kellogg's Froot Loops Cereal",
+      "expectedLabel": "10.1 oz",
+      "src": "images/products/sku-3512.jpg",
+      "alt": "Kellogg's Froot Loops Cereal — 10.1 oz package",
+      "sourcePage": "https://www.upcitemdb.com/upc/38000198861",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_60e9b9a0-e8f8-4c10-bfcd-db750cedb27b?hei=1000&wid=1000",
+      "sha256": "5a0d15f2502c7cc0f8a129aa88f53f97ba3dbe38308e669eb7a2e2f347a9e75b",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4766",
+      "expectedUpc": "038000391347",
+      "expectedName": "Kellogg's Apple Jacks Cereal",
+      "expectedLabel": "12.2 oz",
+      "src": "images/products/sku-4766.jpg",
+      "alt": "Kellogg's Apple Jacks Cereal — 12.2 oz package",
+      "sourcePage": "https://shop.luckysupermarkets.com/store/lucky-supermarkets/products/34825-kellogg-s-apple-jacks-breakfast-cereal-original-with-apple-and-cinnamon-good-source-of-fiber-12-2-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a7cee5dc-ebcb-4a4f-a7b9-12d9242118b8.jpg",
+      "sha256": "497c7c90345ef9bb190c3c6def6207e969c376fb7a9c1c79512a3aa72c0b77d1",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4767",
+      "expectedUpc": "038000391187",
+      "expectedName": "Kellogg's Froot Loops Cereal",
+      "expectedLabel": "12.2 oz",
+      "src": "images/products/sku-4767.jpg",
+      "alt": "Kellogg's Froot Loops Cereal — 12.2 oz package",
+      "sourcePage": "https://www.foodsco.net/p/kellogg-s-froot-loops-cereal/0003800039118",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0003800039118",
+      "sha256": "cafd85c8b7aa30af80dff81893237c3d2b237417711e69417dc016155d4b6042",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4768",
+      "expectedUpc": "038000391255",
+      "expectedName": "Kellogg's Froot Loops Cereal",
+      "expectedLabel": "8.7 oz",
+      "src": "images/products/sku-4768.jpg",
+      "alt": "Kellogg's Froot Loops Cereal — 8.7 oz package",
+      "sourcePage": "https://www.picknsave.com/p/kellogg-s-froot-loops-cereal/0003800039125",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0003800039125",
+      "sha256": "0c71b47026b9e8d5c49f8adb0bfb610bf688ea942cbe99675966164beeeedfd8",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6807",
+      "expectedUpc": "038000845536",
+      "expectedName": "Pringles Cheddar Cheese Potato Crisps",
+      "expectedLabel": "40 g",
+      "src": "images/products/sku-6807.jpg",
+      "alt": "Pringles Cheddar Cheese Potato Crisps — 40 g can",
+      "sourcePage": "https://shop.mycountymarket.com/store/my-county-market/products/1556214-pringles-potato-crisps-chips-lunch-snacks-office-and-kids-snacks-cheddar-cheese-1-4-oz",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_abf2be95-9560-4437-af6a-4097bbd0f8d0.jpg",
+      "sha256": "9a326f2bcf799e84f462280abbfca5ef9f44b2dc23fa9b11c1b00291eae7bfbc",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6806",
+      "expectedUpc": "038000845529",
+      "expectedName": "Pringles Sour Cream & Onion Potato Crisps",
+      "expectedLabel": "40 g",
+      "src": "images/products/sku-6806.jpg",
+      "alt": "Pringles Sour Cream & Onion Potato Crisps — 40 g can",
+      "sourcePage": "https://www.food4less.com/p/pringles-sour-cream-and-onion-grab-and-go-snack-pack-potato-crisps-chips/0003800084552",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0003800084552",
+      "sha256": "935adff06bb606f2d291689f0ff7d390b21b07503b39b327f2b04429ccd8eeb9",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
