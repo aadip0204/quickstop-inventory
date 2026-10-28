@@ -8330,6 +8330,160 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3490",
+      "expectedUpc": "028400000246",
+      "expectedName": "Fritos Jalapeno & Cheddar Flavored Cheese Dip",
+      "expectedLabel": "9 oz",
+      "src": "images/products/sku-3490.jpg",
+      "alt": "Fritos Jalapeno & Cheddar Flavored Cheese Dip — 9 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400000246-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400000246-0012-en-US/images/09f5dbac-c528-42bf-ab2d-671da2fc5eaf.jpg",
+      "sha256": "d8753927b10d53f4e92ec919a737e3a8cf3227d37dca4ac792bf56bb35e3c265",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3491",
+      "expectedUpc": "028400000222",
+      "expectedName": "Fritos Mild Cheddar Flavored Cheese Dip",
+      "expectedLabel": "9 oz",
+      "src": "images/products/sku-3491.jpg",
+      "alt": "Fritos Mild Cheddar Flavored Cheese Dip — 9 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400000222-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400000222-0011-en-US/images/8be400ac-1bea-4e58-bf6c-2aaf7eaceeea.jpg",
+      "sha256": "fc74efd1a612e8ba69e119505d0dc10cb5c596c5164e704b375a3018c1b6e23a",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5051",
+      "expectedUpc": "028400070942",
+      "expectedName": "Lay's French Onion Flavored Dip",
+      "expectedLabel": "15 oz",
+      "src": "images/products/sku-5051.jpg",
+      "alt": "Lay's French Onion Flavored Dip — 15 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400070942-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400070942-0012-en-US/images/25c20f22-e982-42c2-97b5-1208fb449ac7.jpg",
+      "sha256": "a8c1a78a59f4f182a7910e30c43375d06bb29a6f667d248898567c9fa367a481",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7270",
+      "expectedUpc": "028400041546",
+      "expectedName": "Sabritones Chile & Lime Flavored Puffed Wheat Snacks",
+      "expectedLabel": "4 oz",
+      "src": "images/products/sku-7270.jpg",
+      "alt": "Sabritones Chile & Lime Flavored Puffed Wheat Snacks — 4 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400041546-0012-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400041546-0012-en-US/images/bfc42ea6-c3ad-40b5-adab-4305ca808ad0.jpg",
+      "sha256": "0d5a857e8029e622f952cf13b99861b411e419bd8153b7ce4a7adf7f66d51cd1",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2926",
+      "expectedUpc": "028400162128",
+      "expectedName": "Doritos Dinamita Chile Limon Flavored Rolled Tortilla Chips",
+      "expectedLabel": "1.125 oz",
+      "src": "images/products/sku-2926.jpg",
+      "alt": "Doritos Dinamita Chile Limon Flavored Rolled Tortilla Chips — 1.125 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400162128-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400162128-0011-en-US/images/4b1023d4-9fde-4a03-b69c-3bee3ab72fd1.jpg",
+      "sha256": "1a674636d3da939fd7ce27964375e9985c49988bb14ef095f4c49b55b73350a6",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7269",
+      "expectedUpc": "028400133142",
+      "expectedName": "Doritos Dinamita Chile Limon Flavored Rolled Tortilla Chips",
+      "expectedLabel": "1.75 oz",
+      "src": "images/products/sku-7269.jpg",
+      "alt": "Doritos Dinamita Chile Limon Flavored Rolled Tortilla Chips — 1.75 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400133142-0013-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400133142-0013-en-US/images/c2dcd9eb-ad04-4e15-930f-5b6ed55e0618.jpg",
+      "sha256": "f2d5bbf0049a805426e1e84964ed354298df84e7a5fac8aefdaa249a7d3be64c",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6751",
+      "expectedUpc": "028400087735",
+      "expectedName": "Smartfood White Cheddar Flavored Popcorn",
+      "expectedLabel": "0.75 oz",
+      "src": "images/products/sku-6751.jpg",
+      "alt": "Smartfood White Cheddar Flavored Popcorn — 0.75 oz package",
+      "sourcePage": "https://smartlabel.pepsico.info/028400087735-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400087735-0011-en-US/images/e389813e-0a92-4da6-a517-375c1cf3d3ca.jpg",
+      "sha256": "a5cab0096185c7e4a9bfb3390bac7e3166b2354ae4611f141f7c93b2572b9e89",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
