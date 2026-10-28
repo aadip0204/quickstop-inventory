@@ -9386,6 +9386,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1964",
+      "expectedUpc": "028400433181",
+      "expectedName": "Cheetos Crunchy Cheese Flavored Snacks",
+      "expectedLabel": "3.5 oz",
+      "src": "images/products/sku-1964.jpg",
+      "alt": "Cheetos Crunchy Cheese Flavored Snacks — 3.5 oz bag",
+      "sourcePage": "https://smartlabel.pepsico.info/028400433181-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400433181-0010-en-US/images/174a3fd5-059d-48c7-a47a-f027c135e2a8.jpg",
+      "sha256": "188e1816a6d119972be4a75d7c8b93691fdd10decc3aea746c90c72dc19160e9",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1973",
+      "expectedUpc": "028400433938",
+      "expectedName": "Cheetos Flamin hot",
+      "expectedLabel": "3.5 oz",
+      "src": "images/products/sku-1973.jpg",
+      "alt": "Cheetos Flamin hot — 3.5 oz bag",
+      "sourcePage": "https://smartlabel.pepsico.info/028400433938-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400433938-0010-en-US/images/90cee045-5346-4bbd-9230-93db00059b07.jpg",
+      "sha256": "5689da1ab208ef057accb87a3bb329ea9c3756d12bb2d85d51f5edc38abef26c",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1974",
+      "expectedUpc": "028400433303",
+      "expectedName": "Cheetos Flamin hot xxtra",
+      "expectedLabel": "3.5 oz",
+      "src": "images/products/sku-1974.jpg",
+      "alt": "Cheetos Flamin hot xxtra — 3.5 oz bag",
+      "sourcePage": "https://smartlabel.pepsico.info/028400433303-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400433303-0010-en-US/images/b1d7c4d7-7fd5-45ab-a0c2-6a2544300f6d.jpg",
+      "sha256": "de22e940f810b07f5f73657653b6ae8e0ef4273155e8bdc626375083f939225b",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1982",
+      "expectedUpc": "028400435031",
+      "expectedName": "Cheetos Puffs",
+      "expectedLabel": "3.375 oz",
+      "src": "images/products/sku-1982.jpg",
+      "alt": "Cheetos Puffs — 3.375 oz bag",
+      "sourcePage": "https://smartlabel.pepsico.info/028400435031-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400435031-0010-en-US/images/972832ea-a2ed-4481-a813-48c74dd7218a.jpg",
+      "sha256": "7d2200f1f1013bad8eb9f21a53e647bbb970bffa11fe0e05dbd9e18bac492cc7",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
