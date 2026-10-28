@@ -20295,6 +20295,58 @@
           "supports": "The package was inspected for the brand, expression and stated size."
         }
       ]
+    },
+    {
+      "sku": "1973",
+      "expectedUpc": "028400433938",
+      "expectedNameSha256": "3c30b4127d645780f508a37c16620f7c30b030a3d60f51939e216f77e9b9b936",
+      "replaceTextFrom": "Cheetos Flamin hot 3 1/2OZ",
+      "replaceTextTo": "Cheetos Crunchy Flamin' Hot 3 1/2OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400433938-0010-en-US/index.html",
+          "supports": "Manufacturer identifies exact UPC, Cheetos expression and bag size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400433938-0010-en-US/index.html",
+          "supports": "UPC record confirms the named flavor and size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400433938-0010-en-US/images/90cee045-5346-4bbd-9230-93db00059b07.jpg",
+          "supports": "Inspected package shows the brand, expression and stated size."
+        }
+      ]
+    },
+    {
+      "sku": "1974",
+      "expectedUpc": "028400433303",
+      "expectedNameSha256": "3d85d87851091ffd3f1fb859f93f0a76fc4aa08230309b267c315761b94b9060",
+      "replaceTextFrom": "Cheetos Flamin hot 3 1/2OZxxtra",
+      "replaceTextTo": "Cheetos Crunchy XXTRA Flamin' Hot 3 1/2OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400433303-0010-en-US/index.html",
+          "supports": "Manufacturer identifies exact UPC, Cheetos expression and bag size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/028400433303-0010-en-US/index.html",
+          "supports": "UPC record confirms the named flavor and size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/028400433303-0010-en-US/images/b1d7c4d7-7fd5-45ab-a0c2-6a2544300f6d.jpg",
+          "supports": "Inspected package shows the brand, expression and stated size."
+        }
+      ]
     }
   ],
   "identityReviews": [
