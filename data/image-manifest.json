@@ -9210,6 +9210,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "210",
+      "expectedUpc": "078000005547",
+      "expectedName": "7UP CHERRY",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-210.jpg",
+      "alt": "7UP CHERRY — 20 oz bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/289333-7up-cherry-soda-20-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_63e84f5b-9231-460c-af63-8778a85827f7.jpg",
+      "sha256": "83330dbdc023c569508c076b9c944717b0c5630d822c5da3ae565cc4dd7e547d",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "241",
+      "expectedUpc": "078000054408",
+      "expectedName": "A&W CREAM SODA",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-241.jpg",
+      "alt": "A&W CREAM SODA — 20 oz bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/1415035-a-w-cream-soda-20-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a7d97349-4cda-4652-85d6-0f81c4063642.jpg",
+      "sha256": "0db0102d065ec99d4d7bf2ec955b3c68cdf955a7deaf38e63793fb4590e9fc45",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "237",
+      "expectedUpc": "078000052404",
+      "expectedName": "A & W ROOT BEER",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-237.jpg",
+      "alt": "A & W ROOT BEER — 20 oz bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/16694662-a-w-root-beer-20-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cabb3cb7-1de4-4520-9000-b1e79822970d.jpg",
+      "sha256": "11fce2682e6d9040615e94f30cfcb6b075081772aa9793587876a0244ef90505",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
