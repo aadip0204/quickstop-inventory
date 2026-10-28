@@ -21179,6 +21179,25 @@
           "supports": "Manufacturer identifies this UPC as a different product and size."
         }
       ]
+    },
+    {
+      "sku": "283",
+      "expectedUpc": "009016014292",
+      "expectedNameSha256": "843548fa2d33844baa896d25d46e1a7f795711c8e479602dc3fae45c4bad0bbe",
+      "action": "retain_flagged",
+      "reason": "Source title and a retailer call this Gold, while the Iowa alcohol authority lists the same UPC as Reposado; the precise expression needs confirmation.",
+      "evidence": [
+        {
+          "kind": "state_listing",
+          "url": "https://shop.iowaabd.com/assets/media/IaPAkIGDpOqU.pdf",
+          "supports": "State record identifies UPC as 750 mL Reposado."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.highendliquor.com/products/agavales-gold-tequila-750ml/",
+          "supports": "Retailer identifies the same UPC as 750 mL Gold."
+        }
+      ]
     }
   ],
   "nameVerifications": [
