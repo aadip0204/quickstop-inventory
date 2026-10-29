@@ -15040,6 +15040,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "526",
+      "expectedUpc": "613008751302",
+      "expectedName": "AriZona Fruit Punch Fruit Juice Cocktail",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-526.jpg",
+      "alt": "AriZona Fruit Punch Fruit Juice Cocktail — 20 oz bottle",
+      "sourcePage": "https://www.maxwarehouse.com/products/arizona-fruit-punch-beverage-20-oz-1-pk-pack-of-24",
+      "sourceImageUrl": "https://www.maxwarehouse.com/cdn/shop/files/image_a5122ac1-4131-401b-9f6d-39ec2ee25517.jpg?v=1772226039",
+      "sha256": "72cce5ecf20dfffaef9299e2321d7f056d60005a1e74a428126cad71437f1d02",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "535",
+      "expectedUpc": "613008751159",
+      "expectedName": "AriZona Green Tea with Ginseng & Honey",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-535.jpg",
+      "alt": "AriZona Green Tea with Ginseng & Honey — 20 oz bottle",
+      "sourcePage": "https://www.maxwarehouse.com/products/arizona-green-tea-with-ginseng-and-honey-beverage-20-oz-1-pk-pack-of-24",
+      "sourceImageUrl": "https://www.maxwarehouse.com/cdn/shop/files/image_ff15570d-20ca-412a-a84e-cf7c588ca8a8.jpg?v=1772226011",
+      "sha256": "a5f88108f9958ba7afa96c6158f20cd96d224b3f4de6f604163c4e538b935735",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "552",
+      "expectedUpc": "613008751432",
+      "expectedName": "AriZona Iced Tea with Peach Flavor B",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-552.jpg",
+      "alt": "AriZona Iced Tea with Peach Flavor B — 20 oz bottle",
+      "sourcePage": "https://pharmacybigapple.com/products/arizona-iced-tea-with-peach-20-oz-bottle",
+      "sourceImageUrl": "https://pharmacybigapple.com/cdn/shop/products/613008751432.jpg?v=1681248952",
+      "sha256": "dfa61c54741b0e318a7f4d12d647ea579e5101e77dc7f921593039e5d4963366",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "580",
+      "expectedUpc": "613008751333",
+      "expectedName": "Arizona mucho mango",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-580.jpg",
+      "alt": "Arizona mucho mango — 20 oz bottle",
+      "sourcePage": "https://www.maxwarehouse.com/products/arizona-mango-beverage-20-oz-1-pk-pack-of-24",
+      "sourceImageUrl": "https://www.maxwarehouse.com/cdn/shop/files/image_0f4b341d-ed11-4670-a5b3-53a27d47ed7e.jpg?v=1776982177",
+      "sha256": "39b1e003361fcb1843cfac266dfe9426d0dedf94401423391ecf165a8ff11668",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
