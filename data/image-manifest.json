@@ -14512,6 +14512,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7933",
+      "expectedUpc": "041364080536",
+      "expectedName": "Sour Punch Strawberry Straws",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-7933.jpg",
+      "alt": "Sour Punch Strawberry Straws — 2 oz package",
+      "sourcePage": "https://allcitycandy.com/products/sour-punch-straws-strawberry-3",
+      "sourceImageUrl": "https://allcitycandy.com/cdn/shop/products/all-city-candy-strawberry-sour-punch-straws-candy-2-oz-pack-sour-american-licorice-company-1-package-472044_600x.jpg?v=1557255993",
+      "sha256": "b0f22981a2a7b5d80b25530e35c84cebcbbba0306779678b664901569997fce7",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
