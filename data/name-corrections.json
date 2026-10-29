@@ -21393,6 +21393,27 @@
           "supports": "Exact UPC and size identify the brand spelling Vanilia."
         }
       ]
+    },
+    {
+      "sku": "692",
+      "expectedUpc": "080686967675",
+      "expectedNameSha256": "205ad61d0e8541bdc9762578e1117393dad4eca5d3b1863f6eb858a7e7f8c631",
+      "replaceTextFrom": "Bacardi  cruzan  1.75L rum",
+      "replaceTextTo": "Cruzan Aged Light Rum 1.75L",
+      "scope": "exact_upc_identity_clarification",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-54637051",
+          "supports": "Exact UPC identifies Cruzan Light Aged Rum in a 1.75 L bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/16308302-cruzan-light-rum-1-75-l",
+          "supports": "Independent retailer confirms same UPC, brand, light rum and size."
+        }
+      ]
     }
   ],
   "identityReviews": [
