@@ -12796,6 +12796,116 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "6551",
+      "expectedUpc": "721733000043",
+      "expectedName": "Patron citronge",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6551.jpg",
+      "alt": "Patrón Citrónge Orange — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47572790",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_f9512779-e404-402f-b1d8-87fd4bab1da1?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "e83e8cdf9c8e778c25af8ab4fd1352777cfaf94554a142576f5f7aee9a71649e",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7160",
+      "expectedUpc": "721733002016",
+      "expectedName": "Roca Patron Anejo",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7160.jpg",
+      "alt": "Roca Patrón Añejo — 750 mL bottle",
+      "sourcePage": "https://www.kingswineandspirits.com/products/roca-patron-anejo-tequila-750ml",
+      "sourceImageUrl": "https://www.kingswineandspirits.com/cdn/shop/products/920.jpg?v=1660187000",
+      "sha256": "b2096a0fa11d316408ee64d122b79d38b1adaad36bc096e62584e5f30e3386bc",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7161",
+      "expectedUpc": "721733002009",
+      "expectedName": "Roca Patron Reposado",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7161.png",
+      "alt": "Roca Patrón Reposado — 750 mL bottle",
+      "sourcePage": "https://www.kingswineandspirits.com/products/roca-patron-reposado-tequila-750ml",
+      "sourceImageUrl": "https://www.kingswineandspirits.com/cdn/shop/products/919-removebg-preview.png?v=1662278544",
+      "sha256": "ca50f3335bc6a6056d976a7ef19de291434c877990bc56b166ba07766234ec98",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7162",
+      "expectedUpc": "721733001996",
+      "expectedName": "Roca Patron Silver",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7162.jpg",
+      "alt": "Roca Patrón Silver — 750 mL bottle",
+      "sourcePage": "https://www.thehutliquors.com/roca-patron-silver-tequila-750ml.html",
+      "sourceImageUrl": "https://cdn.shoplightspeed.com/shops/637462/files/22861133/patron-roca-patron-silver-tequila-750ml.jpg",
+      "sha256": "07210a4b5fe2a1b74abd98915ff53c8c438f511cb4583d941872c3b9abed0a33",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "695",
+      "expectedUpc": "080480095406",
+      "expectedName": "Bacardi 151 P Rum",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-695.jpg",
+      "alt": "Bacardi 151 Rum — 750 mL bottle",
+      "sourcePage": "https://www.liquorpalacect.com/p/bacardi-151-rum/39242",
+      "sourceImageUrl": "https://images.gotoliquorstore.com/product/1000039234/ee1fcef6-3ca3-463b-9216-a037076ee173_1000.jpg",
+      "sha256": "864f31d7d9b8bd68bf8d9002923436a1a5913cb01f3cce692c7a3aee42855fc6",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
