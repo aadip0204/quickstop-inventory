@@ -23579,6 +23579,34 @@
           "supports": "UPC 811538010269 appears on a listing using Wild Berry and Blueberry wording."
         }
       ]
+    },
+    {
+      "sku": "267",
+      "expectedUpc": "835229000704",
+      "expectedNameSha256": "4b841b07b91c994301fa4f9085f9516f5672b8de1dbd3c0221487027ee375093",
+      "action": "retain_flagged",
+      "reason": "Source describes a limited edition while the exact UPC is listed as regular Absolut vodka; edition needs confirmation.",
+      "evidence": [
+        {
+          "kind": "state_listing",
+          "url": "https://publications.iowa.gov/19829/2/0615_Pricebook2.pdf",
+          "supports": "Exact UPC 835229000704 identifies the conflicting product expression."
+        }
+      ]
+    },
+    {
+      "sku": "282",
+      "expectedUpc": "009016015947",
+      "expectedNameSha256": "551f1300dae70f9043ddee2edba688e53d01fdefae053532d577b29e11c4c650",
+      "action": "retain_flagged",
+      "reason": "Source identifies Gold while the exact UPC is listed as Reposado; expression needs confirmation.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://royalwine.com/spirits-liqueurs/agavales-reposado-tequila-50ml/",
+          "supports": "Exact UPC 009016015947 identifies the conflicting product expression."
+        }
+      ]
     }
   ],
   "nameVerifications": [
@@ -24674,7 +24702,7 @@
       "expectedUpc": "835229000605",
       "expectedNameSha256": "235fc90025e13c2340ce3e606ec99db16eff1c9c66b863fd92887f70283aa15e",
       "verifiedOn": "2026-10-27",
-      "expectedPublicName": "ABSOLUT VODKA",
+      "expectedPublicName": "Absolut Vodka",
       "expectedLabel": "1.75 L",
       "verification": {
         "brand": true,
@@ -24705,7 +24733,7 @@
       "expectedUpc": "835229000209",
       "expectedNameSha256": "dc22f4060decf25335cbcfecf4a10645c552289cb01f5ba88551e967dc710bce",
       "verifiedOn": "2026-10-27",
-      "expectedPublicName": "ABSOLUT VODKA",
+      "expectedPublicName": "Absolut Vodka",
       "expectedLabel": "375 mL",
       "verification": {
         "brand": true,
