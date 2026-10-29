@@ -13280,6 +13280,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "254",
+      "expectedUpc": "835229003408",
+      "expectedName": "Absolut Kurant",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-254.jpg",
+      "alt": "Absolut Kurant — 1 L bottle",
+      "sourcePage": "https://lyliquor.com/es/products/absolut-vodka-kurant-absolut-vodka-kurant",
+      "sourceImageUrl": "https://lyliquor.com/cdn/shop/files/Absolut_Vodka_Kurant_Absolut_Vodka_Kurant.jpg?v=1755800133&width=1024",
+      "sha256": "ee0a4875fdb1d67899c2387ebb261f43663d06049458d6a90daf91b86d1f4dde",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "255",
+      "expectedUpc": "835229001428",
+      "expectedName": "Absolut MANGO",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-255.jpg",
+      "alt": "Absolut Mango — 750 mL bottle",
+      "sourcePage": "https://theliquorbarn.com/products/absolut-mango-750ml",
+      "sourceImageUrl": "https://theliquorbarn.com/cdn/shop/files/Absolut-Mango__33232.jpg?crop=center&height=1200&v=1730463425&width=1200",
+      "sha256": "6d55be64213b72f549c51968aa0865506110c5d385a989ac0361ac9501c6fe8e",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "258",
+      "expectedUpc": "835229004405",
+      "expectedName": "Absolut PEPPAR",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-258.jpg",
+      "alt": "Absolut Peppar — 1 L bottle",
+      "sourcePage": "https://67wine.com/products/absolut-peppar-vodka-sweden-1-0l-liter",
+      "sourceImageUrl": "https://67wine.com/cdn/shop/files/tu9ysgi4zg6sfcz4knhf.jpg?v=1767412344",
+      "sha256": "1681bc5dadf92ca65774fc3ff15b21fb019ef646f7707fd585edcca1f4fb365a",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
