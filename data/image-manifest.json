@@ -16184,6 +16184,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8214",
+      "expectedUpc": "078000031805",
+      "expectedName": "Sunkist Strawberry Lemonade",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-8214.jpg",
+      "alt": "Sunkist Strawberry Lemonade — 2 L bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/19425777-sunkist-strawberry-lemonade-soda-2-l",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007800003180",
+      "sha256": "06393b41d48f6a2cb5b9cde6902f6366a20243e461edb39270652b2fea075e2d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101483",
+      "expectedUpc": "078000035551",
+      "expectedName": "SUNKIST BERRY LEMONADE",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-101483.jpg",
+      "alt": "Sunkist Berry Lemonade — 12-pack of 12 oz cans",
+      "sourcePage": "https://www.cub.com/store/cub/products/23897817-sunkist-berry-lemonade-soda-12-fl-oz",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007800003555",
+      "sha256": "d0ceab9b31245296cbedb45b0e9c74610ddf61d4c6fd40f5ad6fbab768f64aa6",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
