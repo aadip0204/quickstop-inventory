@@ -17827,6 +17827,204 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "9404",
+      "expectedUpc": "041800236008",
+      "expectedName": "Welch's 100% Apple Juice",
+      "expectedLabel": "16 oz · bottles",
+      "src": "images/products/sku-9404.jpg",
+      "alt": "Welch's 100% Apple Juice — 16 oz · bottles package",
+      "sourcePage": "https://www.jcsalesweb.com/Catalog/Product/3045/0/526011-WELCHS-100-16-OZ-APPLE-JUICE",
+      "sourceImageUrl": "https://www.riteway.vg/media/catalog/product/b/1/b1330eb44f46c4e942f809ee7ec08106.jpg?canvas=700%3A700&fit=bounds&height=700&optimize=low&width=700",
+      "sha256": "9062d1ccc970e092f1c9417faa1c5d7f6159c368e40b38727daa3fa14bcb27d1",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9409",
+      "expectedUpc": "041800326006",
+      "expectedName": "Welch's Grape Juice Drink",
+      "expectedLabel": "10 oz",
+      "src": "images/products/sku-9409.jpg",
+      "alt": "Welch's Grape Juice Drink — 10 oz package",
+      "sourcePage": "https://www.thefreshgrocer.com/product/welchs-grape-flavored-juice-drink-10-fl-oz-id-00041800326006",
+      "sourceImageUrl": "https://images.cdn.shoprite.com/detail/00041800326006_1",
+      "sha256": "f29c1778ba0969984f47d9526816fb524f674ab0fd8f0fc3025045f232969161",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9410",
+      "expectedUpc": "041800354504",
+      "expectedName": "Welch's 100% Concord Grape Juice",
+      "expectedLabel": "16 oz · bottles",
+      "src": "images/products/sku-9410.jpg",
+      "alt": "Welch's 100% Concord Grape Juice — 16 oz · bottles package",
+      "sourcePage": "https://go-upc.com/search?q=00041800354504",
+      "sourceImageUrl": "https://acemarket.ph/cdn/shop/products/E-comm-WelchsGrapeJuicePurple-16oz_12bc89c7-1462-4126-a478-a0139ef9a50f.jpg?v=1740979427&width=1445",
+      "sha256": "54c9ddea66032c0a2d0a97afcc0f4afc96886b1bf3007cf78805821eefa5d8e5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9413",
+      "expectedUpc": "041800346103",
+      "expectedName": "Welch's Mango Passion Fruit Juice Drink",
+      "expectedLabel": "16 oz · bottles",
+      "src": "images/products/sku-9413.png",
+      "alt": "Welch's Mango Passion Fruit Juice Drink — 16 oz · bottles package",
+      "sourcePage": "https://assets-of-websites.s3.amazonaws.com/media/934502/6cb93847949f9f0f43e3d26979cfc0b7bc4ad411/original/1.pdf",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/DW84910-12.png?v=1727930600",
+      "sha256": "1db8445f903007bd113134e78808c3a2540ec20cbf87d86e400ec7356f5a7c2d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9415",
+      "expectedUpc": "041800260003",
+      "expectedName": "Welch's 100% Orange Juice",
+      "expectedLabel": "16 oz · bottles",
+      "src": "images/products/sku-9415.jpg",
+      "alt": "Welch's 100% Orange Juice — 16 oz · bottles package",
+      "sourcePage": "https://www.upcitemdb.com/info-welch-s_fruit-juice",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_6c1a7ead-2df4-459b-9c7c-4d4178b7afb9.jpg",
+      "sha256": "a18572c7199868496059f85064b7740a8128a5e6b372d4f23cd2cac55a50b9cf",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9416",
+      "expectedUpc": "041800478002",
+      "expectedName": "Welch's Orange Pineapple Juice Drink",
+      "expectedLabel": "16 oz · bottles",
+      "src": "images/products/sku-9416.jpg",
+      "alt": "Welch's Orange Pineapple Juice Drink — 16 oz · bottles package",
+      "sourcePage": "https://www.jcsalesweb.com/Catalog/Product/0/0/619076-WELCHS-ORANGE-PINEAPPLE-JUICE-DRINK-16-OZ",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/DW84860-12.jpg?v=1792530708",
+      "sha256": "80a9fd8bfc7ea4bf1d0001f5e40b703b38ccad289e566674691ed6f8ae9b9d32",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9421",
+      "expectedUpc": "041800453009",
+      "expectedName": "Welch's Strawberry Kiwi Juice Drink",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-9421.jpg",
+      "alt": "Welch's Strawberry Kiwi Juice Drink — 16 oz package",
+      "sourcePage": "https://go-upc.com/search?q=041800453009",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/DW84890-12.jpg?v=1792530106",
+      "sha256": "771806adc0201e82a5aef934f10c2bfb2a2f03e3d5fee5a42915f727ee0901d4",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9408",
+      "expectedUpc": "041800432004",
+      "expectedName": "Welch's Fruit Punch Juice Drink",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-9408.jpg",
+      "alt": "Welch's Fruit Punch Juice Drink — 16 oz bottle",
+      "sourcePage": "https://go-upc.com/search?q=00041800432004",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/9fba4660-d666-446f-8b30-3b3524dc2bc3_1.7a449ef84b06b638265ab38557bb7126.jpeg?odnBg=ffffff&odnHeight=1000&odnWidth=1000",
+      "sha256": "5abd5356f3bb7a1ee6debea161d653f1e58cd0a5902e50d43733887c2a07c358",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9423",
+      "expectedUpc": "041800302161",
+      "expectedName": "Welch's Watermelon Juice Drink",
+      "expectedLabel": "16 oz · bottles",
+      "src": "images/products/sku-9423.jpg",
+      "alt": "Welch's Watermelon Juice Drink — 16 oz · bottles bottle",
+      "sourcePage": "https://food.saltie.app/food/a4989af8-d156-49d1-b854-bde5f09fae2b",
+      "sourceImageUrl": "https://www.instacart.com/image-server/1864x1864/www.instacart.com/assets/domains/product-image/file/large_ecd7eaad-4d2d-4943-b1cb-7c360cefd48a.JPG",
+      "sha256": "e3386bd82dd152c15054eb9a6e12a7085331bea337524b404df346d616dee498",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

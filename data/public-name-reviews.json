@@ -1721,6 +1721,222 @@
           "supports": "UPC 849806003002 identifies Four Loko Electric Lemonade."
         }
       ]
+    },
+    {
+      "sku": "9404",
+      "expectedUpc": "041800236008",
+      "expectedSourceRow": 9688,
+      "expectedRawFieldsSha256": "7f9fc54c4a6f3c2e2bfc44b1a271a0cf87054260d513170e04255f8e1350ebe9",
+      "expectedPublicName": "Welchs Apple",
+      "expectedLabel": "16 oz · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Welch's 100% Apple Juice",
+      "reason": "Exact UPC and inspected product label support the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.jcsalesweb.com/Catalog/Product/3045/0/526011-WELCHS-100-16-OZ-APPLE-JUICE",
+          "supports": "UPC 041800236008: exact product record identifies the corrected expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.riteway.vg/welch-s-100-apple-juice-16oz.html",
+          "supports": "The inspected package identifies the pictured product expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "9409",
+      "expectedUpc": "041800326006",
+      "expectedSourceRow": 5968,
+      "expectedRawFieldsSha256": "c98308a9c48c9e44a68cdf6aa7b078013820181e6628b4929176370c517c45be",
+      "expectedPublicName": "Welchs Grape",
+      "expectedLabel": "10 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Welch's Grape Juice Drink",
+      "reason": "Exact UPC and inspected product label support the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.thefreshgrocer.com/product/welchs-grape-flavored-juice-drink-10-fl-oz-id-00041800326006",
+          "supports": "UPC 041800326006: exact product record identifies the corrected expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.thefreshgrocer.com/product/welchs-grape-flavored-juice-drink-10-fl-oz-id-00041800326006",
+          "supports": "The inspected package identifies the pictured product expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "9410",
+      "expectedUpc": "041800354504",
+      "expectedSourceRow": 9324,
+      "expectedRawFieldsSha256": "59c69592741275e6693b5234bbefb83a74497c61c189dfd0d8ece67aabb8ce37",
+      "expectedPublicName": "Welchs Grape",
+      "expectedLabel": "16 oz · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Welch's 100% Concord Grape Juice",
+      "reason": "Exact UPC and inspected product label support the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=00041800354504",
+          "supports": "UPC 041800354504: exact product record identifies the corrected expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://acemarket.ph/products/welch-100-grape-juice-purple-16-oz",
+          "supports": "The inspected package identifies the pictured product expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "9413",
+      "expectedUpc": "041800346103",
+      "expectedSourceRow": 9528,
+      "expectedRawFieldsSha256": "53c15a2625958b23ccc5c51ab7b4a9e0bc4343a2ec852a65b5242b38baa13538",
+      "expectedPublicName": "Welchs Mango passion",
+      "expectedLabel": "16 oz · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Welch's Mango Passion Fruit Juice Drink",
+      "reason": "Exact UPC and inspected product label support the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://assets-of-websites.s3.amazonaws.com/media/934502/6cb93847949f9f0f43e3d26979cfc0b7bc4ad411/original/1.pdf",
+          "supports": "UPC 041800346103: exact product record identifies the corrected expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://shop.mercaso.com/products/welchs-mango-passion-juice-16-9-oz-12-pack",
+          "supports": "The inspected package identifies the pictured product expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "9415",
+      "expectedUpc": "041800260003",
+      "expectedSourceRow": 9689,
+      "expectedRawFieldsSha256": "7212fad8ac427cac98c009d5ed41723e0f92480291532de39de371b0a7e9d118",
+      "expectedPublicName": "Welchs Orange",
+      "expectedLabel": "16 oz · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Welch's 100% Orange Juice",
+      "reason": "Exact UPC and inspected product label support the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/info-welch-s_fruit-juice",
+          "supports": "UPC 041800260003: exact product record identifies the corrected expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://shop.foodbazaar.com/store/food-bazaar/products/2009715-welch-s-orange-juice-16-fo",
+          "supports": "The inspected package identifies the pictured product expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "9416",
+      "expectedUpc": "041800478002",
+      "expectedSourceRow": 9466,
+      "expectedRawFieldsSha256": "fdb90ad8821bbaa47a5fc3b5024415c991131f68400a861f3236e58c92ed92c1",
+      "expectedPublicName": "Welchs Pineapple/ Orange",
+      "expectedLabel": "16 oz · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Welch's Orange Pineapple Juice Drink",
+      "reason": "Exact UPC and inspected product label support the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.jcsalesweb.com/Catalog/Product/0/0/619076-WELCHS-ORANGE-PINEAPPLE-JUICE-DRINK-16-OZ",
+          "supports": "UPC 041800478002: exact product record identifies the corrected expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://shop.mercaso.com/products/welchs-orange-pineapple-16-9-oz-12-pack",
+          "supports": "The inspected package identifies the pictured product expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "9421",
+      "expectedUpc": "041800453009",
+      "expectedSourceRow": 9537,
+      "expectedRawFieldsSha256": "5f37701b1fd94f0600d55c54c2a9a43d8d4d886cdf68e9138138ceff78de753a",
+      "expectedPublicName": "Welchs Strawberry Kiwi",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Welch's Strawberry Kiwi Juice Drink",
+      "reason": "Exact UPC and inspected product label support the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=041800453009",
+          "supports": "UPC 041800453009: exact product record identifies the corrected expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://shop.mercaso.com/products/welchs-strawberry-kiwi-juice-16-9-oz-12-pack",
+          "supports": "The inspected package identifies the pictured product expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "9408",
+      "expectedUpc": "041800432004",
+      "expectedSourceRow": 8801,
+      "expectedRawFieldsSha256": "338ecc690d1accd5afff2b0ce3add9e34cf6057752ccf1acde30544e4bce42f8",
+      "expectedPublicName": "Welchs Fruit Punch",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Welch's Fruit Punch Juice Drink",
+      "reason": "Exact UPC and inspected product label support the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=00041800432004",
+          "supports": "UPC 041800432004: exact product record identifies the corrected expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.walmart.com/ip/735723523",
+          "supports": "The inspected package identifies the pictured product expression and size."
+        }
+      ]
+    },
+    {
+      "sku": "9423",
+      "expectedUpc": "041800302161",
+      "expectedSourceRow": 5977,
+      "expectedRawFieldsSha256": "134d15fb5ceb7dc27fa07f9afaa2fee71259a814ee42242ad5d391c3c33c78b3",
+      "expectedPublicName": "Welchs Watermelon",
+      "expectedLabel": "16 oz · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Welch's Watermelon Juice Drink",
+      "reason": "Exact UPC and inspected product label support the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://food.saltie.app/food/a4989af8-d156-49d1-b854-bde5f09fae2b",
+          "supports": "UPC 041800302161: exact product record identifies the corrected expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/products/2008747-welch-s-watermelon-juice-drink-16-fl-oz",
+          "supports": "The inspected package identifies the pictured product expression and size."
+        }
+      ]
     }
   ]
 }

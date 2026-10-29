@@ -5382,6 +5382,15 @@
       "action": "size_needs_confirmation",
       "reason": "Source states 24 oz, while exact UPC records list 23.5 oz. Confirm the actual can before selecting a size.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1981",
+      "expectedUpc": "028400329132",
+      "expectedNameSha256": "3629b684a34c9e085ff3ef3e7eb289e422b32b84466afb8840e45a564fe7f3a3",
+      "expectedSourceRecordSha256": "9327267d9c49450a8abbaa86deb7ec95b6f89a607e761d31ea252e2e82f35ff0",
+      "action": "size_needs_confirmation",
+      "reason": "The source weight is 3.375 oz while a manufacturer record for the exact UPC lists 3 oz; confirm the package before selecting a size or photo.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }

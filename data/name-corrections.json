@@ -19068,7 +19068,7 @@
       "sku": "1981",
       "expectedUpc": "028400329132",
       "expectedNameSha256": "3629b684a34c9e085ff3ef3e7eb289e422b32b84466afb8840e45a564fe7f3a3",
-      "expectedLabel": "3.375 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -23498,6 +23498,76 @@
           "kind": "identifier_or_product_listing",
           "url": "https://www.buycott.com/brand/10399/mikes-hard-lemonade-upc",
           "supports": "UPC 635985258803 is indexed as Mike's Hard Cranberry Lemonade."
+        }
+      ]
+    },
+    {
+      "sku": "3656",
+      "expectedUpc": "052000135190",
+      "expectedNameSha256": "8cd517302f2224549d7024db0497bc2a079ecb32f9a42de4713ac451ac46ff32",
+      "action": "retain_flagged",
+      "reason": "Inventory expression and exact UPC product evidence differ; confirm the actual flavor and product line before assigning an image.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://smartlabel.pepsico.info/052000135190-0016-en-US/index.html",
+          "supports": "UPC 052000135190: SKU name says Cool, UPC identifies Glacier Freeze; do not silently select a flavor."
+        }
+      ]
+    },
+    {
+      "sku": "3670",
+      "expectedUpc": "052000320169",
+      "expectedNameSha256": "d1e9a8301aa9a806b00475602927436a2dbb8b90af2bfae04c8b68d1d82c44d3",
+      "action": "retain_flagged",
+      "reason": "Inventory expression and exact UPC product evidence differ; confirm the actual flavor and product line before assigning an image.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://smartlabel.pepsico.info/052000320169-0011-en-US/index.html",
+          "supports": "UPC 052000320169: SKU says G2; manufacturer UPC is regular Frost Glacier Freeze."
+        }
+      ]
+    },
+    {
+      "sku": "3677",
+      "expectedUpc": "052000132243",
+      "expectedNameSha256": "2e34cf074329aa3cd86c0390e4cb465a9178d494824f6a33313ad869a4398e18",
+      "action": "retain_flagged",
+      "reason": "Inventory expression and exact UPC product evidence differ; confirm the actual flavor and product line before assigning an image.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Sports-Drinks/Gatorade-Lime-Cucumber/p/1-69F6D-2",
+          "supports": "UPC 052000132243: SKU says G2 Lemon Lime; manufacturer UPC identifies Lime Cucumber."
+        }
+      ]
+    },
+    {
+      "sku": "3678",
+      "expectedUpc": "052000338775",
+      "expectedNameSha256": "2e34cf074329aa3cd86c0390e4cb465a9178d494824f6a33313ad869a4398e18",
+      "action": "retain_flagged",
+      "reason": "Inventory expression and exact UPC product evidence differ; confirm the actual flavor and product line before assigning an image.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://smartlabel.pepsico.info/052000338775-0012-en-US/index.html",
+          "supports": "UPC 052000338775: SKU says G2 Lemon Lime; manufacturer UPC identifies regular Lemon-Lime."
+        }
+      ]
+    },
+    {
+      "sku": "3681",
+      "expectedUpc": "052000338768",
+      "expectedNameSha256": "5be988d54973bd2ff062fd3b5bb32a2b30f36a4da1a0129d4a14691a3986e659",
+      "action": "retain_flagged",
+      "reason": "Inventory expression and exact UPC product evidence differ; confirm the actual flavor and product line before assigning an image.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://www.cub.com/store/cub/products/34838-gatorade-thirst-quencher-orange-32-fl-oz",
+          "supports": "UPC 052000338768: SKU says G2 Orange; UPC identifies regular Orange."
         }
       ]
     }
