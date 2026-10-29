@@ -21530,6 +21530,69 @@
           "supports": "Inspected manufacturer package displays Pepsi-Cola Made with Real Sugar and twelve cans."
         }
       ]
+    },
+    {
+      "sku": "185",
+      "expectedUpc": "5201360505630",
+      "expectedNameSha256": "f3700084161222d878af48368a25e53d87de4031bd8e8872aa5e3f31f0c347f0",
+      "replaceTextFrom": "7 Days Soft Croissant 2.65ozJelly",
+      "replaceTextTo": "7Days Soft Croissant with Peanut Butter and Jelly 2.65oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=5201360505630",
+          "supports": "Exact UPC listing identifies the stated product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/77774410.jpeg",
+          "supports": "Inspected package displays the corresponding croissant flavor."
+        }
+      ]
+    },
+    {
+      "sku": "186",
+      "expectedUpc": "5201360505647",
+      "expectedNameSha256": "d55c58acdbb3db36965cb74be7a0d93ddc842c0c65a05f2a1886b3ed469da254",
+      "replaceTextFrom": "7 Days Soft Croissant 2.65ozchocolate",
+      "replaceTextTo": "7Days Soft Croissant with Peanut Butter and Chocolate 2.65oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=5201360505647",
+          "supports": "Exact UPC listing identifies the stated product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/77774408.jpeg",
+          "supports": "Inspected package displays the corresponding croissant flavor."
+        }
+      ]
+    },
+    {
+      "sku": "187",
+      "expectedUpc": "5201360508600",
+      "expectedNameSha256": "2e365144ea635c6c940ea198ea3ef47ef37c1ffdad60dce8e26b163e77f4235c",
+      "replaceTextFrom": "7 Days Strudel 2.82oz",
+      "replaceTextTo": "7Days Apple Cinnamon Strudel 2.82oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.abconline.gr/7-DAYS-STRUDEL-WITH-APPLE-CINNAMON-85G-11602",
+          "supports": "Exact UPC listing identifies the stated product expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://joymarket.gr/product/7days-strudel-85g-mhlo-kanela-no-50860/",
+          "supports": "Independent exact barcode listing identifies apple and cinnamon strudel; listed weight conflicts with source."
+        }
+      ]
     }
   ],
   "identityReviews": [
