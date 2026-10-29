@@ -13830,6 +13830,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "4134",
+      "expectedUpc": "072250007672",
+      "expectedName": "Mrs. Freshley's Deluxe Hershey's Triple Chocolate Cakes",
+      "expectedLabel": "99 g",
+      "src": "images/products/sku-4134.png",
+      "alt": "Mrs. Freshley's Deluxe Hershey's Triple Chocolate Cakes — 99 g wrapper",
+      "sourcePage": "https://shop.mercaso.com/products/mrs-freshleys-cake-hershey-triple-chocolate-3-5-oz-8-pack",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/CM484560-20250908181631.png?v=1758325226",
+      "sha256": "2ac9d79dcc763a10467652767635bc34db78d1be767b4af9d766dcd3f597d4b7",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4136",
+      "expectedUpc": "072250916417",
+      "expectedName": "Mrs. Freshley's Deluxe Hershey's Cookies 'n' Creme Cakes",
+      "expectedLabel": "99 g",
+      "src": "images/products/sku-4136.jpg",
+      "alt": "Mrs. Freshley's Deluxe Hershey's Cookies 'n' Creme Cakes — 99 g wrapper",
+      "sourcePage": "https://go-upc.com/search?q=72250916417",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/179674351.jpeg",
+      "sha256": "6f947bbd85443b0b623fa10d5b3f8796c1b7203dd020d9807e22cbe6b7458dba",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7003",
+      "expectedUpc": "072250020381",
+      "expectedName": "Mrs. Freshley's Deluxe Reese's Peanut Butter Flavored Cupcakes",
+      "expectedLabel": "4.5 oz",
+      "src": "images/products/sku-7003.png",
+      "alt": "Mrs. Freshley's Deluxe Reese's Peanut Butter Flavored Cupcakes — 4.5 oz wrapper",
+      "sourcePage": "https://shop.mercaso.com/products/mrs-freshleys-cupcake-reeses-peanut-butter-4-5-oz-6-pack",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/CM484559-20250908181634.png?v=1771623661",
+      "sha256": "2776c505af32ffecce3b6b0e9a887057fadc0a869797e459ee8050e8d5232e4d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7009",
+      "expectedUpc": "016000275034",
+      "expectedName": "Reese's Puffs Cereal",
+      "expectedLabel": "13 oz",
+      "src": "images/products/sku-7009.jpg",
+      "alt": "Reese's Puffs Cereal — 13 oz box",
+      "sourcePage": "https://www.barcodespider.com/016000275034",
+      "sourceImageUrl": "https://images-na.ssl-images-amazon.com/images/I/5190Yo9NPaL.jpg",
+      "sha256": "b8e8f03314aa67841bc6152013b7112457e7dc19899bc7ba4490aa7c916c81c2",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

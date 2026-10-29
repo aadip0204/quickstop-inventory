@@ -7996,17 +7996,27 @@
       "sku": "4136",
       "expectedUpc": "072250916417",
       "expectedNameSha256": "4f390b7e7515dd0c5f5c54223d968dd98c41a6b27d4853ef93cd965e2d9e5c01",
-      "replaceTextFrom": "hersheys",
-      "replaceTextTo": "Hershey's",
-      "scope": "brand_punctuation_only",
+      "replaceTextFrom": "hersheys cookies creme 99g",
+      "replaceTextTo": "Mrs. Freshley's Deluxe Hershey's Cookies 'n' Creme Cakes 99g",
+      "scope": "exact_upc_name_identity",
       "evidence": [
         {
-          "url": "https://www.thehersheycompany.com/content/hersheyland/en-us/home/our-brands/hersheys.html",
           "kind": "manufacturer",
-          "supports": "Manufacturer uses HERSHEY’S possessive brand spelling. Add brand apostrophe only; no product expression or size verified."
+          "url": "https://www.mrsfreshleys.com/creme-filled-cakes",
+          "supports": "Manufacturer identifies Mrs. Freshley's snack cake brand."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=72250916417",
+          "supports": "Exact UPC identifies Mrs. Freshley's Deluxe Hershey's Cookies 'n' Creme Cakes at 3.5 oz."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/179674351.jpeg",
+          "supports": "Inspected single wrapper displays the full brand, flavor and 99 g net weight."
         }
       ],
-      "verifiedOn": "2026-10-27"
+      "verifiedOn": "2026-10-29"
     },
     {
       "sku": "4139",
