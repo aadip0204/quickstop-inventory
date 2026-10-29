@@ -22127,6 +22127,38 @@
           "supports": "Exact UPC and package identify Grapeade; one gallon equals the 128 oz size in the source pack field."
         }
       ]
+    },
+    {
+      "sku": "559",
+      "expectedUpc": "613008721756",
+      "expectedNameSha256": "3ec2a15e0ba610ae6cd29b4116f6ec8bf15f39b7c2d1760f6d16ae18b0c724ce",
+      "replaceTextFrom": "ARIZONA ICED TEA 34OZ",
+      "replaceTextTo": "AriZona Iced Tea with Lemon Flavor 34OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.mercaso.com/collections/arizona-teas/products/arizona-tea-lemon-34-oz-12-pack",
+          "supports": "Exact UPC listing and matching package photograph identify the product expression; source size is preserved."
+        }
+      ]
+    },
+    {
+      "sku": "613",
+      "expectedUpc": "613008740412",
+      "expectedNameSha256": "a391dda5eac97e1a5dd34d95a5ffd2597864431ae2bac2b184bd60635bd9fa4d",
+      "replaceTextFrom": "ARIZONA WATERMELON128 OZ",
+      "replaceTextTo": "AriZona Watermelon Fruit Juice Cocktail 128 OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.smartandlfinal.com/sm/pickup/rsid/522/product/arizona-fruit-juice-cocktail-watermelon-id-00613008740412",
+          "supports": "Exact UPC listing and matching package photograph identify the product expression; source size is preserved."
+        }
+      ]
     }
   ],
   "identityReviews": [
