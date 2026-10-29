@@ -12774,6 +12774,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7749",
+      "expectedUpc": "082000739937",
+      "expectedName": "Smirnoff Passion Fruit",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7749.jpg",
+      "alt": "Smirnoff Passion Fruit — 750 mL bottle",
+      "sourcePage": "https://theboozecartel.com/products/smirnoff-passionfruit-vodka-750ml",
+      "sourceImageUrl": "https://theboozecartel.com/cdn/shop/files/c2caddext__10699.1741893746.1280.1280.jpg?v=1758562167",
+      "sha256": "1f43b613e6f225245abef84e6d899b1c4e39ae703d5c37ce3cbca027dcf24789",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

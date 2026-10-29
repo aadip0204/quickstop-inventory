@@ -21389,6 +21389,25 @@
           "supports": "Retailer identifies the same UPC as 750 mL Gold."
         }
       ]
+    },
+    {
+      "sku": "7774",
+      "expectedUpc": "082000001225",
+      "expectedNameSha256": "07b4d34e88ad251ddd83671af71c23d599b66ce165b5f85d0e711d1249532bbb",
+      "action": "retain_flagged",
+      "reason": "The source says Strawberry while the same UPC is listed as Cranberry; the actual bottle must be confirmed before choosing a flavor or photo.",
+      "evidence": [
+        {
+          "kind": "state_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/distributors-monthly-price-posting-reports/SGWS%20July%2023%20Price%20Posting.pdf",
+          "supports": "State distributor record lists the exact UPC as 750 mL Smirnoff Cranberry."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/smirnoff-cranberry-750ml",
+          "supports": "A separate retailer identifies the same UPC as Smirnoff Cranberry, conflicting with the source name."
+        }
+      ]
     }
   ],
   "nameVerifications": [
