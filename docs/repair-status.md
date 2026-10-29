@@ -6,9 +6,9 @@ Catalog repairs are implemented and tested. The first repair release was verifie
 
 - All 9,881 original rows and distinct SKUs are preserved in private reconciliation outside this repository.
 - Store reports add 67 merchandise SKUs and four explicitly excluded POS controls. Eight exact-SKU report descriptions repair unquoted CSV commas: five merchandise listings are restored and three lottery rows receive explicit exclusion. All 9,881 original rows remain, including 12 absent from later reports. The combined reconciliation covers 9,952 records. New report records do not supply UPCs or photos and stay isolated pending identity review.
-- The current catalog contains 9,689 variants in 7,998 conservative product groups.
+- The current catalog contains 9,689 variants in 7,985 conservative product groups.
 - 107 rows require identity/name review; 156 explicit nonproducts are excluded with private reasons. No source SKU is silently discarded. A guarded review restored 153 named merchandise rows by removing explicit price annotations or withholding an ambiguous size; these SKUs remain isolated and cannot inherit photos.
-- 955 exact, source-hash/UPC-guarded spelling, spacing or name clarifications are applied. Every original name remains private and unchanged. All rows were scanned for defined risks. Only 635 complete names have external identity verification; the other corrections have narrower documented scopes. There are 84 separate name-verification records, which do not count as corrections. Seventy uncertain identities were resolved using manufacturer, exact-UPC and inspected-package evidence. The final eight spelling flags received explicit review: seven scoped repairs and the intentional manufacturer spelling “Blue Razberry,” which remains unchanged.
+- 1,061 source-hash/UPC-guarded spelling, spacing or name clarifications are applied. Every original name remains private and unchanged. All 9,952 rows were scanned for defined risks. 734 complete names have external identity verification; the other corrections have narrower documented scopes. There are 84 unchanged-name verification records and 77 exact identity resolutions. A further 150 manufacturer-record checks verify names only; they do not verify size, photos or stock. The other source names remain unverified.
 - October report evidence distinguishes glass and PET containers for two exact Dimitri Gin SKUs without changing their original volumes or UPCs. Clipped identifiers in the narrow reports are not guessed into catalog joins.
 - Ambiguous sizes display a confirmation label. Differing flavors, strength, age, packaging and unknown identities are not guessed into one product.
 
@@ -16,7 +16,7 @@ Catalog repairs are implemented and tested. The first repair release was verifie
 
 Only exact SKU/UPC, expression, size and packaging matches with a completed professional presentation review may enter the public manifest. Licensed photographs retain their license records. At the owner’s explicit request, direct internet product references use a separate approval basis without asserting copyright-holder permission or a license. Each selected variant has its own image; changing size cannot inherit a sibling photo.
 
-Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 753 variants currently have approved professional images; 8,936 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
+Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 773 variants currently have approved professional images; 8,916 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
 
 Professional image sourcing is ongoing. Direct manufacturer and retailer research continues for items without an exact professional photo. Unreviewed bulk barcode matches are not treated as approvals.
 
@@ -27,7 +27,7 @@ Professional image sourcing is ongoing. Direct manufacturer and retailer researc
 - Search covers every retained SKU/UPC, product name and size. Exact SKU matches appear first, followed by exact UPC matches, while partial results remain available; pagination limits rendering to 36 cards without limiting the catalog.
 - No prices or stock quantities are emitted by the public data builder. Current legacy price-bearing files and unverified old photographs are removed. Older Git history is unchanged.
 - Loading, retry, empty results, keyboard navigation, selected sizes and filter URL state are implemented.
-- 70 Python tests and eleven frontend tests pass, including original-source conservation, safe grouping, price removal, guarded restoration and image validation. The new identity checks reject absent, whitespace, descriptive and padded UPCs while accepting valid EAN-8 identifiers. Browser checks cover every category/department, size-specific photographs, narrow mobile layouts, pagination and error recovery.
+- 71 Python tests and eleven frontend tests pass, including original-source conservation, safe grouping, price removal, guarded restoration and image validation. The new identity checks reject absent, whitespace, descriptive and padded UPCs while accepting valid EAN-8 identifiers. Browser checks cover every category/department, size-specific photographs, narrow mobile layouts, pagination and error recovery.
 - Local HTTP asset hashes and all approved image responses are checked using `scripts/verify_deployment.py`. Browser checks remain required after publication.
 
 ## Deployment
@@ -191,3 +191,15 @@ Minute Maid Pink Lemonade and two Tropicana drinks received individually inspect
 Tropicana Island Punch and Piña Colada 52 oz bottles received inspected manufacturer photos.
 
 Coca-Cola Zero Sugar 12 oz single can received an inspected UPC-matched product image.
+
+1800 Silver 1.75 L, 1 L, 375 mL and 200 mL bottles received exact-UPC, size-checked studio photos. The 1800 Añejo 200 mL spelling was corrected from manufacturer and exact-UPC evidence; a matching size-specific photo is still unresolved.
+
+Absolut Raspberri 1.75 L and Original 1.75 L and 375 mL bottles received exact-UPC, individually inspected packshots.
+
+Grey Goose La Poire was corrected from a source typo using manufacturer and exact-UPC listings, and its existing matching photo guard was updated.
+
+Nine previously assigned photos failed a fresh package, size or completeness review and were removed pending exact replacements. Product names and remaining public assignments were not changed by those holds.
+
+The current review adds size-specific Arbor Mist and Alizé photos, replaces six photographs held for a fresh review, and reconciles a Don Julio Ultima Reserva name and matching photograph. Two held photographs remain absent. Corrected wine names bring matching sizes together with separate SKU-level images. An Arnold Palmer product is identified as Spiked, and a conflicting AriZona can size is held for confirmation. Full catalog-wide image and name verification remains unfinished.
+
+Four additional exact photos cover a Golden Bear lemonade jug, AriZona sweet tea bottle, Armour chicken sausage can and Arnold Palmer Spiked can. An Asahi size conflict is also marked for confirmation.
