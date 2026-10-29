@@ -13720,6 +13720,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2269",
+      "expectedUpc": "049000042566",
+      "expectedName": "COKE ZERO SINGLE",
+      "expectedLabel": "12 oz · cans",
+      "src": "images/products/sku-2269.png",
+      "alt": "Coca-Cola Zero Sugar — 12 oz can",
+      "sourcePage": "https://www.koshervillage.com/products/beverages-1/soda-1/single-cans/805457-zero-sugar-diet-soda",
+      "sourceImageUrl": "https://3hr-images-prod.s3.amazonaws.com/c86ebbe6-1334-4607-b362-f748314588397085602558396519512.png",
+      "sha256": "cf8293016e2137d279084704d7f742fb573e719ce31d94082f2a0ed5fe3b6836",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
