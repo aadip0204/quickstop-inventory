@@ -13786,6 +13786,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "101226",
+      "expectedUpc": "082184206874",
+      "expectedName": "JACK DANIEL'S & COLA",
+      "expectedLabel": "4-pack",
+      "src": "images/products/sku-101226.jpg",
+      "alt": "Jack Daniel's & Coca-Cola — four 355 mL cans",
+      "sourcePage": "https://www.target.com/p/-/A-87956661",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_6aefec53-e133-41cc-9108-0aa7ac620822?wid=1500&hei=1500",
+      "sha256": "f6916e3b8598e6d5d6a4397b9386e0dca8ceb2cf8ff9cd291e77809f3c37b966",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101227",
+      "expectedUpc": "082184208267",
+      "expectedName": "JACK DANIEL'S RTD VARIETY",
+      "expectedLabel": "6-pack",
+      "src": "images/products/sku-101227.jpg",
+      "alt": "Jack Daniel's & Coca-Cola flavors variety pack — six 355 mL cans",
+      "sourcePage": "https://www.target.com/p/-/A-93974347",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_9854d5e5-4d7d-4bac-8f4a-407cfb546c54?wid=1500&hei=1500",
+      "sha256": "5162651260cae179ef5bc3f4238716025ce40c72245c5937e8ebc8cb3e997789",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
