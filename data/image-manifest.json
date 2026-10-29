@@ -13588,6 +13588,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "4431",
+      "expectedUpc": "082184001554",
+      "expectedName": "Jack Daniel's Fire",
+      "expectedLabel": "200 mL",
+      "src": "images/products/sku-4431.png",
+      "alt": "Jack Daniel's Tennessee Fire — 200 mL bottle",
+      "sourcePage": "https://goodpour.com/products/jack-daniels-tennessee-fire-whiskey",
+      "sourceImageUrl": "https://goodpour.com/cdn/shop/files/jack-daniels-tennessee-fire-whiskey-200ml.png",
+      "sha256": "4b15bfabbc9792fceedc74a9767a6609244c9557a48d8d1a48a3e7d75827ff51",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
