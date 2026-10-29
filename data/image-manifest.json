@@ -14490,6 +14490,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7935",
+      "expectedUpc": "041364080499",
+      "expectedName": "Sour Punch Watermelon Straws",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-7935.jpg",
+      "alt": "Sour Punch Watermelon Straws — 2 oz package",
+      "sourcePage": "https://allcitycandy.com/products/sour-punch-straws-watermelon-3",
+      "sourceImageUrl": "https://allcitycandy.com/cdn/shop/products/sourpunchwatermelonstraws_600x.jpg?v=1651069720",
+      "sha256": "51474da7423bc156fb94a1604631d3f3554acf357ac2fbb07acf86b8e722cb1c",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
