@@ -21887,6 +21887,38 @@
           "supports": "Exact UPC listing identifies the product expression."
         }
       ]
+    },
+    {
+      "sku": "7925",
+      "expectedUpc": "041364080529",
+      "expectedNameSha256": "86082115d6238e3734096b55b4cb024088f8137eb91cab32e386b496f302da94",
+      "replaceTextFrom": "Sour Patch Apple 2oz",
+      "replaceTextTo": "Sour Punch Apple Straws 2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://allcitycandy.com/collections/sour-candy/products/sour-punch-straws-apple-3",
+          "supports": "Exact UPC listing identifies the product brand, flavor, and 2 oz package."
+        }
+      ]
+    },
+    {
+      "sku": "7926",
+      "expectedUpc": "041364080512",
+      "expectedNameSha256": "4b8e43a85745becc19deaa6a4fd8867bd4dfcd7cd339b040a5f3b1695845508a",
+      "replaceTextFrom": "Sour Patch Blue Rasp 2oz",
+      "replaceTextTo": "Sour Punch Blue Raspberry Straws 2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.nassaucandy.com/sour-punch-blue-raspberry.html",
+          "supports": "Exact UPC listing identifies the product brand, flavor, and 2 oz package."
+        }
+      ]
     }
   ],
   "identityReviews": [

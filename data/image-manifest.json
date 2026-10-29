@@ -14446,6 +14446,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7925",
+      "expectedUpc": "041364080529",
+      "expectedName": "Sour Punch Apple Straws",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-7925.png",
+      "alt": "Sour Punch Apple Straws — 2 oz package",
+      "sourcePage": "https://allcitycandy.com/collections/sour-candy/products/sour-punch-straws-apple-3",
+      "sourceImageUrl": "https://allcitycandy.com/cdn/shop/files/sour_apple_straws_600x.png?v=1757612716",
+      "sha256": "e29130be80fa2c29bb76911885e14f56356c49a071f9110a81fc9b41660674ee",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7926",
+      "expectedUpc": "041364080512",
+      "expectedName": "Sour Punch Blue Raspberry Straws",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-7926.jpg",
+      "alt": "Sour Punch Blue Raspberry Straws — 2 oz package",
+      "sourcePage": "https://bulkcandystore.com/products/sour-punch-straws-blue-raspberry-each",
+      "sourceImageUrl": "https://bulkcandystore.com/cdn/shop/files/american-licorice-sour-punch-straws-blue-raspberry-each__42627.1702588370.1280.1280.jpg?v=1720318702",
+      "sha256": "97e37aa52557479c35842f8ef02d990f643be4a9c32a695330d7643a194f9d12",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
