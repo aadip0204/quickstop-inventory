@@ -12444,6 +12444,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1963",
+      "expectedUpc": "028400040112",
+      "expectedName": "Cheetos Crunchy Cheese Flavored Snacks",
+      "expectedLabel": "1 oz",
+      "src": "images/products/sku-1963.png",
+      "alt": "Cheetos Crunchy Cheese Flavored Snacks — 1 oz bag",
+      "sourcePage": "https://www.spring-market.com/product/cheetos-crunchy-cheese-flavored-snacks-1-ounce-id-00028400040112",
+      "sourceImageUrl": "https://images.cdn.retail.brookshires.com/detail/00028400040112_C1C1.jpeg",
+      "sha256": "33a5d1b7de0750e1d07fa7cec4bbee6569a46e87410a0bbabcdc7db4c485b63d",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
