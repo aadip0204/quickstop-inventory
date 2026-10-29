@@ -951,13 +951,10 @@
       "expectedLabel": "12 oz",
       "src": "images/products/sku-4479.jpg",
       "alt": "D&G Jamaican Pineapple Soda — 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0089087120177",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0177/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
-      "sha256": "8e678118834c4e35e06e9756e6cde59d5cb006ed1cac4ccc5ccb8a89e4f13247",
-      "verifiedOn": "2026-10-26",
+      "sourcePage": "https://www.target.com/p/-/A-47108568",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_3eb1d460-ab35-4029-9e01-c8493e2c51e3?fmt=jpg&wid=1200&hei=1200",
+      "sha256": "d88c1796a4a86eb5793e3bb51841a9c2e6f2661373c0b4c90d2b8c13ab9f76a8",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -965,7 +962,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1671",
@@ -997,13 +996,10 @@
       "expectedLabel": "20 oz",
       "src": "images/products/sku-6940.jpg",
       "alt": "RC COLA — 20 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078000041408",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/004/1408/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "thaialagata / Open Food Facts",
-      "sha256": "9a8311ad4b3abc4250eb723f31fba48ce32f028a095781e84df52d7dcfaa1431",
-      "verifiedOn": "2026-10-26",
+      "sourcePage": "https://www.target.com/p/-/A-14992915",
+      "sourceImageUrl": "https://s7d1.scene7.com/is/image/dolgen/dg-01935701-1",
+      "sha256": "6d5b87f1dad554afe773372c3d8c75454d8f2a3e07ae889528171775343a8bf8",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -1011,7 +1007,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4472",
@@ -1089,13 +1087,10 @@
       "expectedLabel": "3.375 oz",
       "src": "images/products/sku-1983.jpg",
       "alt": "Cheetos Puffs Flamin' Hot Cheese Flavored Snacks — 3.375 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0028400435413",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/043/5413/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
-      "sha256": "98d31b1c4db28bf4305b627c507e34f01ad714a99b3b384040f226991b3e503b",
-      "verifiedOn": "2026-10-26",
+      "sourcePage": "https://smartlabel.pepsico.info/028400435413-0010-en-US/index.html",
+      "sourceImageUrl": "https://images-cdn.ubuy.co.in/633b44810af12a4852169509-cheetos-puffs-flamin-hot-3-38-oz-bag.jpg",
+      "sha256": "283e0d7973ca74843adb6db3384735c96e499e75879bee33fe87154a227db709",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -1103,7 +1098,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1629",
@@ -1156,15 +1153,12 @@
       "expectedUpc": "850003628493",
       "expectedName": "Rap Snacks Lil Baby Bar-B-Quin With My Honey Heat Potato Chips",
       "expectedLabel": "2.5 oz",
-      "src": "images/products/sku-7195.jpg",
+      "src": "images/products/sku-7195.png",
       "alt": "Rap Snacks Lil Baby Bar-B-Quin With My Honey Heat Potato Chips — 2.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0850003628493",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/000/362/8493/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
-      "sha256": "8c1abb7a9c4bac8ed18c98394ed4e971550f3a0876cd10b847f76fd5145f134d",
-      "verifiedOn": "2026-10-26",
+      "sourcePage": "https://www.target.com/p/-/A-90612535",
+      "sourceImageUrl": "https://www.instacart.com/image-server/1864x1864/www.instacart.com/assets/domains/product-image/file/large_7f539e74-8be0-4466-a2ef-7a737262ed77.png",
+      "sha256": "2f974740e34771162d7b6fbbb25e292c7cfe40e53cd7386347328433f5b42f9c",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -1172,7 +1166,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "9406",
@@ -1204,13 +1200,10 @@
       "expectedLabel": "425 g",
       "src": "images/products/sku-4289.jpg",
       "alt": "Iberia Sardines in Tomato Sauce with Jalapeno Slices — 425 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0075669111565",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/1565/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
-      "sha256": "097bc7ad0675cb41a3dc027bf00c30b5964e6e2c9bb0daf56449280db0d1c743",
-      "verifiedOn": "2026-10-26",
+      "sourcePage": "https://iberiafoods.com/product/iberia-oval-sardines-in-tomato-w-jalapenos-slices-15-oz/",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Iberia-Sardines-in-Tomato-Sauce-with-Jalapeno-Slices-15-oz_b6b61f06-e8b8-4434-be09-f68e3e6192b3.b2321a0d1d8a7da43a6a9d56a651ccc8.jpeg",
+      "sha256": "d7fe8750760b31c5f9a073fe5a831fe9777c2cafa06ee997ff5ee5055ef2646b",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -1218,7 +1211,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "840",
@@ -17337,6 +17332,204 @@
       "sourcePage": "https://www.cub.com/store/cub/products/16711105-doritos-tortilla-chips-nacho-cheese-3-375-oz",
       "sourceImageUrl": "https://pngimg.com/uploads/doritos/doritos_PNG2.png",
       "sha256": "76109f88939dfa0ed373afffe838d92fcd2d0c4252c6e3f6f78843bec2f09b36",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2939",
+      "expectedUpc": "028400595117",
+      "expectedName": "Doritos nacho cheese",
+      "expectedLabel": "10 oz",
+      "src": "images/products/sku-2939.jpg",
+      "alt": "Doritos Nacho Cheese tortilla chips — 10 oz bag",
+      "sourcePage": "https://upcfoodsearch.com/food-products/corn-chips/028400595117/",
+      "sourceImageUrl": "https://m.media-amazon.com/images/I/51C1PIPbnHL._SS1000_.jpg",
+      "sha256": "cc6ff2d0b95a8c0665611584affdf105341255b96835d19f4b1fb59ddd45617e",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "81",
+      "expectedUpc": "818844020074",
+      "expectedName": "1800 Añejo",
+      "expectedLabel": "200 mL",
+      "src": "images/products/sku-81.jpg",
+      "alt": "1800 Añejo tequila — 200 mL bottle",
+      "sourcePage": "https://winebarrel.com/products/1800-anejo-200-ml",
+      "sourceImageUrl": "https://www.instacart.com/image-server/1200x1200/www.instacart.com/assets/domains/product-image/file/large_220835b5-5640-43af-8336-61db612c4242.jpg",
+      "sha256": "edb44589eb2e3c25684017817ac5bce0d64c394f378d0f09a17303110f3586aa",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7830",
+      "expectedUpc": "076183168509",
+      "expectedName": "SNAPPLE APPLE",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-7830.jpg",
+      "alt": "Snapple Apple — 16 oz glass bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/88473-snapple-juice-drink-apple-16-fl-oz",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0007618316850",
+      "sha256": "65aaaa8958ba3eae4c8e5b0cb3f4fa40cd0c7f56352cf15acf1eb12b227e89af",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7832",
+      "expectedUpc": "076183163634",
+      "expectedName": "Snapple Kiwi Strawberry",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-7832.jpg",
+      "alt": "Snapple Kiwi Strawberry — 16 oz glass bottle",
+      "sourcePage": "https://www.cub.com/store/cub/products/88474-snapple-all-natural-kiwi-strawberry-flavored-juice-drink-16-oz",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007618316363",
+      "sha256": "8442cf9f4b836e88e4e7f1db2040c5334d253b79b59a7c9bc53c4ed5fdb7e2ee",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7828",
+      "expectedUpc": "076183163740",
+      "expectedName": "SNAPPLE LEMON TEA",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-7828.jpg",
+      "alt": "Snapple Lemon Tea — 16 oz glass bottle",
+      "sourcePage": "https://www.fairwaymarket.com/product/snapple-lemon-tea-16-fl-oz-id-00076183163740",
+      "sourceImageUrl": "https://images.cdn.shoprite.com/detail/00076183163740_596",
+      "sha256": "c4d176302e9538c3c9ffbf69a417dd1e63fe90986b70fb872782eba65726918f",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101383",
+      "expectedUpc": "076183003152",
+      "expectedName": "SNAPPLE LEMON TEA",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-101383.jpg",
+      "alt": "Snapple Lemon Tea — 16 oz plastic bottle",
+      "sourcePage": "https://www.fairwaymarket.com/product/snapple-lemon-tea-16-fl-oz-id-00076183003152",
+      "sourceImageUrl": "https://storage.googleapis.com/images-prs-prd-c7e7986.prs.prd.v8.commerce.mi9cloud.com/product-images/zoom/00076183003152_1",
+      "sha256": "6d2ce6be60a3fce461df9fa095e79e7aa6f1e68699612330aee4aab4866131bd",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7831",
+      "expectedUpc": "076183163566",
+      "expectedName": "Snapple Peach tea",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-7831.jpg",
+      "alt": "Snapple Peach Tea — 16 oz glass bottle",
+      "sourcePage": "https://www.fairwaymarket.com/product/snapple-peach-tea-limited-edition-glass-16-fl-oz-id-00076183163566",
+      "sourceImageUrl": "https://storage.googleapis.com/images-prs-prd-c7e7986.prs.prd.v8.commerce.mi9cloud.com/product-images/zoom/00076183163566_596",
+      "sha256": "495d233518eb6d6eb26dd1b08e0a72632a1a240d4ad7f66049cb94962d901fce",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101385",
+      "expectedUpc": "076183003114",
+      "expectedName": "Snapple Peach tea",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-101385.jpg",
+      "alt": "Snapple Peach Tea — 16 oz plastic bottle",
+      "sourcePage": "https://www.target.com/p/-/A-12988784",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0007618300311",
+      "sha256": "74fadba7e467d51962f71b9afb8be800587116ead370dccf5132d9d7ea527735",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101384",
+      "expectedUpc": "076183003190",
+      "expectedName": "SNAPPLE RASPBERRY TEA",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-101384.jpg",
+      "alt": "Snapple Raspberry Tea — 16 oz plastic bottle",
+      "sourcePage": "https://www.shoprite.com/product/snapple-raspberry-tea-16-fl-oz-recycled-plastic-bottle-id-00076183003190",
+      "sourceImageUrl": "https://images.cdn.shoprite.com/detail/00076183003190_596",
+      "sha256": "b79a7d179b88de453599426ca14e8d2e96d90c8b24bd076b484a1f013965f0f1",
       "verifiedOn": "2026-10-29",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,

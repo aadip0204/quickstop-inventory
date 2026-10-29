@@ -11,7 +11,7 @@
     "products": 7983,
     "needsReview": 107,
     "excludedNonproducts": 156,
-    "flaggedPublicVariants": 2249
+    "flaggedPublicVariants": 2250
   },
   "sourceDispositions": {
     "needs_review": 107,
@@ -33,7 +33,7 @@
     "scopeNote": "All rows scanned for specified risks. Only listed spelling corrections, public-title corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; public-title corrections preserve source and variant metadata. Remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock."
   },
   "imageStatus": {
-    "verifiedVariants": 783,
-    "unverifiedVariants": 8906
+    "verifiedVariants": 792,
+    "unverifiedVariants": 8897
   }
 }

@@ -5310,6 +5310,15 @@
       "action": "size_needs_confirmation",
       "reason": "Source says 8.2 oz per can, while exact UPC records identify four 8.4 oz cans; confirm before selecting a size or image.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "141",
+      "expectedUpc": "652682034219",
+      "expectedNameSha256": "fea6f85a4de540eab287e8bf2d78aeb535673ff3d89857097f20a6a4ae9cefae",
+      "expectedSourceRecordSha256": "7baf54395bac7a2191882f4404b26efb23e2595c1290793d70839bf6b8123d99",
+      "action": "size_needs_confirmation",
+      "reason": "Source says 24 oz; exact UPC 652682034219 is listed for a 19.2 oz can. Confirm the package before selecting size or assigning a photo.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
