@@ -21593,6 +21593,111 @@
           "supports": "Independent exact barcode listing identifies apple and cinnamon strudel; listed weight conflicts with source."
         }
       ]
+    },
+    {
+      "sku": "415",
+      "expectedUpc": "026200471594",
+      "expectedNameSha256": "38d2364b3310e41b4c1e480316484d6e29930e636e5ac5dcf735579ba77f3083",
+      "replaceTextFrom": "andy capps hot fries 85g",
+      "replaceTextTo": "Andy Capp's Hot Fries 85g",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=026200471594",
+          "supports": "Exact UPC listing identifies the product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/314379291.jpeg",
+          "supports": "Inspected package displays the brand and product expression."
+        }
+      ]
+    },
+    {
+      "sku": "838",
+      "expectedUpc": "031000100094",
+      "expectedNameSha256": "6444a56eaca3988a8019eb84d53d4b8078bb87b04336bbfe8dece35aa1d56bb4",
+      "replaceTextFrom": "Banquet crispy fried chicken29OZ",
+      "replaceTextTo": "Banquet Original Crispy Fried Chicken 29OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.conagra.com/031000100094-0003-en-US/index.html",
+          "supports": "Exact UPC listing identifies the product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.conagra.com/031000100094-0003-en-US/images/93704a6c-584c-4e8f-9e02-46e50b18cc65.png",
+          "supports": "Inspected package displays the brand and product expression."
+        }
+      ]
+    },
+    {
+      "sku": "839",
+      "expectedUpc": "031000100100",
+      "expectedNameSha256": "98e9bb85a7cbe7e70bd121314d8d498449c710f7f41f36e7407816a7dc6f507a",
+      "replaceTextFrom": "Banquet crispy fried chickenSouthern 29OZ",
+      "replaceTextTo": "Banquet Southern Crispy Fried Chicken 29OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=031000100100",
+          "supports": "Exact UPC listing identifies the product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/379789894.jpeg",
+          "supports": "Inspected package displays the brand and product expression."
+        }
+      ]
+    },
+    {
+      "sku": "6454",
+      "expectedUpc": "072250051071",
+      "expectedNameSha256": "28100c8ae112b0ce1ecef2ab7f716a2388459b5fb014e04aae72ac61f0e22d45",
+      "replaceTextFrom": "Oreo cookies 3 oz",
+      "replaceTextTo": "Mrs. Freshley's Oreo Brownie 3 oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=072250051071",
+          "supports": "Exact UPC listing identifies the product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/98453903.jpeg",
+          "supports": "Inspected package displays the brand and product expression."
+        }
+      ]
+    },
+    {
+      "sku": "6606",
+      "expectedUpc": "072250903561",
+      "expectedNameSha256": "f47b0936d2aec39fed3f17a6805daad517db491a27919d8ba668d2078624153e",
+      "replaceTextFrom": "Pecan Twirls 3oz",
+      "replaceTextTo": "Mrs. Freshley's Pecan Twirls Sweet Rolls 3oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.vendorssupply.com/item/025611/Mrs-Freshley-s-Pecan-Twirls-3-Pack/",
+          "supports": "Exact UPC listing identifies the product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/89891978.png",
+          "supports": "Inspected package displays the brand and product expression."
+        }
+      ]
     }
   ],
   "identityReviews": [
