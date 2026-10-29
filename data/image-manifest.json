@@ -15876,6 +15876,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2265",
+      "expectedUpc": "049000051155",
+      "expectedName": "Coke",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-2265.jpg",
+      "alt": "Coke — 16 oz packaging",
+      "sourcePage": "https://getfoodfacts.com/food/coca-cola-bottle-16-fl-oz-2718302",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/65c87c42-ef4f-4f47-a4f7-de9ed682a4be_1.974738eeb5065a6328326eed9c445c12.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+      "sha256": "c8d9d071cc869c23777c15022609303fd4304e3d22e01437f44d42cf00c79ca1",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6621",
+      "expectedUpc": "012000030284",
+      "expectedName": "PEPSI",
+      "expectedLabel": "16 oz · cans",
+      "src": "images/products/sku-6621.jpg",
+      "alt": "PEPSI — 16 oz · cans packaging",
+      "sourcePage": "https://www.priceritemarketplace.com/product/pepsi-soda-473-ml-id-00012000030284",
+      "sourceImageUrl": "https://storage.googleapis.com/images-prs-prd-c7e7986.prs.prd.v8.commerce.mi9cloud.com/product-images/zoom/00012000030284_1",
+      "sha256": "8b270bfda93980819f380292d74977d6e9ea72a7727fe13e46f57f1f0618e054",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
