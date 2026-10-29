@@ -22415,6 +22415,70 @@
           "supports": "Manufacturer confirms a 16.9 oz Pepsi bottle; fixes the source packaging-word typo only."
         }
       ]
+    },
+    {
+      "sku": "8217",
+      "expectedUpc": "078000035209",
+      "expectedNameSha256": "0c248a88c88e7818981fb69197152e809d7f4d52f5c14074ced9e9d606a1c06d",
+      "replaceTextFrom": "SUNKIST BERRYLEMONADE 20OZ",
+      "replaceTextTo": "Sunkist Berry Lemonade 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.starimporters.com/product-details/sunkist-20-oz-24-ct?id=8443",
+          "supports": "Exact UPC identifies brand and flavor; original package size and count remain unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "8203",
+      "expectedUpc": "078000036367",
+      "expectedNameSha256": "feb195e3241eef0de4aa7123aefa8c41948630fe37ff301a8c59634b87ae268b",
+      "replaceTextFrom": "SUNKIST  MANGO ORANGE 20OZ",
+      "replaceTextTo": "Sunkist Mango Orange 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.bakerdistributing.com/wp-content/uploads/2025/03/BNAP-April-2025-WEB.pdf",
+          "supports": "Exact UPC identifies brand and flavor; original package size and count remain unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "8195",
+      "expectedUpc": "078000036343",
+      "expectedNameSha256": "4068694da9be83bc36e7ef2a346aa3f94a357759a4296bcb8f7a47345b968fe3",
+      "replaceTextFrom": "SUNKIST   MANGO ORANGE  12OZSINGLE CAN",
+      "replaceTextTo": "Sunkist Mango Orange 12OZ CAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.mercaso.com/products/sunkist-mango-orange-12-oz-24-pack",
+          "supports": "Exact UPC identifies brand and flavor; original package size and count remain unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "8196",
+      "expectedUpc": "078000122404",
+      "expectedNameSha256": "f907499d841229a24d5830ee27269caaff4a2bc6cdef55fb0f944e423dd4feb2",
+      "replaceTextFrom": "SUNKIST   ORANGE 20OZZERO SUGAR",
+      "replaceTextTo": "Sunkist Orange Zero Sugar 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-12965388",
+          "supports": "Exact UPC identifies brand and flavor; original package size and count remain unchanged."
+        }
+      ]
     }
   ],
   "identityReviews": [
