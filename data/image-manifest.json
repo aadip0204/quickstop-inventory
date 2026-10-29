@@ -13192,6 +13192,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "257",
+      "expectedUpc": "835229001336",
+      "expectedName": "Absolut Pears",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-257.jpg",
+      "alt": "Absolut Pears — 750 mL bottle",
+      "sourcePage": "https://www.shopliquordirect.com/absolut-pears-vodka-750ml.html",
+      "sourceImageUrl": "https://cdn11.bigcommerce.com/s-0ddlsmhg83/products/7914/images/8165/absolut-pears-vodka__09241.1754742217.1280.1280__24265.1755242982.386.513.jpg?c=1",
+      "sha256": "9ef0889c3a466758d7fb187830931acb76e7aca8916b1ce3daf1717827ddfba8",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "260",
+      "expectedUpc": "835229008304",
+      "expectedName": "Absolut Raspberri",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-260.jpg",
+      "alt": "Absolut Raspberri — 750 mL bottle",
+      "sourcePage": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/76108008/Absolut-Raspberri-Flavored-Raspberry-Vodka-750-ml-Bottle-76-Proof/",
+      "sourceImageUrl": "https://images.salsify.com/image/upload/f_auto,c_limit,w_1080,q_auto/lxrp58flwkpavm2dbgbe.jpg",
+      "sha256": "4c78c22bd4253cacfad215d96901e192df37f4392fee8652b773800c50cbf9cc",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "261",
+      "expectedUpc": "835229006409",
+      "expectedName": "Absolut Vanilia",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-261.jpg",
+      "alt": "Absolut Vanilia — 1 L bottle",
+      "sourcePage": "https://wineandliquormart.com/products/absolut-vanilla-vodka-1-l",
+      "sourceImageUrl": "https://wineandliquormart.com/cdn/shop/products/absolut_vanilla_1__12445.1342642173_1200x1200.jpg?v=1586118419",
+      "sha256": "da85048700d90a8b662c4f8fd48b4e954d21fb1df71c4767a58ed7a885dccab2",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "262",
+      "expectedUpc": "835229006300",
+      "expectedName": "Absolut Vanilia",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-262.png",
+      "alt": "Absolut Vanilia — 750 mL bottle",
+      "sourcePage": "https://www.cbcliquors.com/product/vanilla-vodka-absolut/39977133",
+      "sourceImageUrl": "https://d36musakzcdau7.cloudfront.net/esplanda/Product/0e6554c9-bd95-494a-8ce6-17f894edd623/absolut-vanilla-vodka-750ml.png",
+      "sha256": "4f4603f89030fcd981ef9dcbbaa98e37f99067e43abfb42389df97b5988cc78c",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

@@ -21361,6 +21361,38 @@
           "supports": "USDA branded foods entry for exact UPC identifies Salsa Con Queso; retain source crunchy form and size."
         }
       ]
+    },
+    {
+      "sku": "261",
+      "expectedUpc": "835229006409",
+      "expectedNameSha256": "bc14e193fd5f5575a04452f4822b8c47bdd465d0dc77e67b9ae846fef02ecca5",
+      "replaceTextFrom": "Absolut Vanilla 1 Liter",
+      "replaceTextTo": "Absolut Vanilia 1 Liter",
+      "scope": "brand_spelling_correction",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "state_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/151721",
+          "supports": "Exact UPC and size identify the brand spelling Vanilia."
+        }
+      ]
+    },
+    {
+      "sku": "262",
+      "expectedUpc": "835229006300",
+      "expectedNameSha256": "42a6e5b981164ece90f0c07f586ccf4aa3f59cfc81cc44450cabfebfec5de552",
+      "replaceTextFrom": "Absolut Vanilla 750ml",
+      "replaceTextTo": "Absolut Vanilia 750ml",
+      "scope": "brand_spelling_correction",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "state_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/144366",
+          "supports": "Exact UPC and size identify the brand spelling Vanilia."
+        }
+      ]
     }
   ],
   "identityReviews": [
