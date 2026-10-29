@@ -21462,6 +21462,38 @@
           "supports": "Exact UPC identifies 750 mL Cruzan aged dark rum; source name says gold."
         }
       ]
+    },
+    {
+      "sku": "1742",
+      "expectedUpc": "082000741985",
+      "expectedNameSha256": "3991967679283b0ec361fab51214e2481fe1d5fc6d86140c537325754942f851",
+      "replaceTextFrom": "Captain Morgan 100 P 750ml",
+      "replaceTextTo": "Captain Morgan 100 Proof Spiced Rum 750ml",
+      "scope": "exact_upc_name_clarification",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/133747",
+          "supports": "Exact UPC identifies 100-proof spiced rum, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "1744",
+      "expectedUpc": "082000743507",
+      "expectedNameSha256": "78c370a8cce0ee88e605262e2d062edc9673036b037acf5a54a6f9b850e45408",
+      "replaceTextFrom": "Captain Morgan LIIT 1.75 Liter",
+      "replaceTextTo": "Captain Morgan Long Island Iced Tea 1.75 Liter",
+      "scope": "exact_upc_name_clarification",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47137999",
+          "supports": "Exact UPC identifies Long Island Iced Tea, 1.75 L."
+        }
+      ]
     }
   ],
   "identityReviews": [

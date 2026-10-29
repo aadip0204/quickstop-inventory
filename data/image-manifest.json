@@ -13456,6 +13456,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1742",
+      "expectedUpc": "082000741985",
+      "expectedName": "Captain Morgan 100 Proof Spiced Rum",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1742.jpg",
+      "alt": "Captain Morgan 100 Proof Spiced Rum — 750 mL bottle",
+      "sourcePage": "https://theliquorbarn.com/products/captain-morgan-100-proof-750ml",
+      "sourceImageUrl": "https://theliquorbarn.com/cdn/shop/files/Captain-Morgan-100-Proof__32036.jpg?crop=center&height=1200&v=1730460181&width=1200",
+      "sha256": "b5e67ad8a0d7f25c310ea6d9ad04674b5c25f8a9e5c9d6e335c129b8cf6c4df5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1744",
+      "expectedUpc": "082000743507",
+      "expectedName": "Captain Morgan Long Island Iced Tea",
+      "expectedLabel": "1.75 L",
+      "src": "images/products/sku-1744.jpg",
+      "alt": "Captain Morgan Long Island Iced Tea — 1.75 L bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137999",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_dfe9e468-9b98-4214-9cff-13dfd1586cc7?wid=1500&hei=1500",
+      "sha256": "a093a74082132c7704f0550b9a71395072da7b78ca72a0170c607d11aace2395",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1754",
+      "expectedUpc": "087000505179",
+      "expectedName": "Captain Morgan Tattoo",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1754.jpg",
+      "alt": "Captain Morgan Tattoo — 750 mL bottle",
+      "sourcePage": "https://theliquorbarn.com/products/captain-morgan-tattoo-750ml",
+      "sourceImageUrl": "https://theliquorbarn.com/cdn/shop/files/captain-morgan-tattoo-750__42063.jpg?crop=center&height=1200&v=1730460216&width=1200",
+      "sha256": "7af5a29444ccc33da065ae27e74ac0d0dc8fe8cd125001e30ad39d6e2e42cdc4",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
