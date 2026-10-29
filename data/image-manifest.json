@@ -14776,6 +14776,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "5314",
+      "expectedUpc": "072799035136",
+      "expectedName": "Mamba Fruit Chews 18 Chews",
+      "expectedLabel": "2.65 oz",
+      "src": "images/products/sku-5314.jpg",
+      "alt": "Mamba Fruit Chews 18 Chews — 2.65 oz package",
+      "sourcePage": "https://www.vons.com/shop/pd/mamba-fruit-chews-candy-variety-pack-2-65-oz/101011709",
+      "sourceImageUrl": "https://images.albertsons-media.com/is/image/ABS/101011709-C1N1?$ng-ecom-pdp-desktop$&defaultImage=Not_Available",
+      "sha256": "0e20cafa02cfbb2f4344973869bb1a8fbca467780cb54c31daed5f8b057fad8e",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8950",
+      "expectedUpc": "872181005019",
+      "expectedName": "Turtles Original Pecan",
+      "expectedLabel": "1.76 oz",
+      "src": "images/products/sku-8950.jpg",
+      "alt": "Turtles Original Pecan — 1.76 oz package",
+      "sourcePage": "https://allcitycandy.com/collections/candy-type/products/turtles-caramel-nut-clusters-3",
+      "sourceImageUrl": "https://allcitycandy.com/cdn/shop/products/all-city-candy-turtles-original-pecan-caramel-nut-clusters-176-oz-chocolate-demets-candy-company-704638_600x.jpg?v=1557252739",
+      "sha256": "2f2217da2c990a6d669d38408e7f37048120b5fd39b2118bbec98aaef0b361e5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
