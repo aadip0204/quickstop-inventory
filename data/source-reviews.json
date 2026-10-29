@@ -5109,6 +5109,15 @@
           "supports": "Inspected front package reads iced lemon and 5.34 oz."
         }
       ]
+    },
+    {
+      "sku": "8043",
+      "expectedUpc": "022000116598",
+      "expectedNameSha256": "baecee8e0c77d3e6dbbb5ce8613b1a994fc9b4ce1408eeef5659660078658a5e",
+      "expectedSourceRecordSha256": "0bb1cd973d7a4969037f253b327417671aa7f9b8cb06e670f05182575fa9e658",
+      "action": "size_needs_confirmation",
+      "reason": "The inventory states 2 oz, while an exact-UPC listing identifies a 1.5 oz Gummibursts Duos pack (https://www.buycott.com/upc/022000116598); retain the SKU and verify the actual package before choosing a size or photo.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }

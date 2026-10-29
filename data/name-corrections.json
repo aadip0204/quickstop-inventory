@@ -22015,6 +22015,22 @@
           "supports": "Exact UPC identifies Turtles Original Pecan in the 1.76 oz package."
         }
       ]
+    },
+    {
+      "sku": "634",
+      "expectedUpc": "041420005572",
+      "expectedNameSha256": "da1a98fede1671fb684087cce3122f07d9626e76261ed0e4e8d985ff43c60136",
+      "replaceTextFrom": "Atomic Fireball 2.2oz",
+      "replaceTextTo": "Chewy Atomic Fireball 2.2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.navymwr.org/modules/media/?do=download&id=d9f4b19c-d578-4879-9c82-bacdb1f94dea",
+          "supports": "Exact UPC record identifies the chewy Atomic Fireball expression."
+        }
+      ]
     }
   ],
   "identityReviews": [
