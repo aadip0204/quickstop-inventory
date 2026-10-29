@@ -15128,6 +15128,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "614",
+      "expectedUpc": "613008751272",
+      "expectedName": "Arizona Watermelon",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-614.png",
+      "alt": "Arizona Watermelon — 20 oz bottle",
+      "sourcePage": "https://shop.mercaso.com/collections/amazing-closeout-blowout-beverages/products/arizona-watermelon-pet-tall-boy-20-oz-24-pack",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/ARI74924-20260102182059.png?v=1775113266",
+      "sha256": "67bb2bbdc08731f12b7ea4b85778eb47b9e7bb2e6b49de27bbb03571bece1625",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101295",
+      "expectedUpc": "613008731021",
+      "expectedName": "AriZona Blueberry White Tea",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-101295.jpg",
+      "alt": "AriZona Blueberry White Tea — 20 oz bottle",
+      "sourcePage": "https://www.upcitemdb.com/upc/613008731021",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/d3ffef36-775b-4ddc-876a-1084f14756d8_1.a9c442066a3afea0a8d484fbdd5d48fe.jpeg",
+      "sha256": "df58c2d38f9fb31454d90fa08f29707f41f31d7be16e7615e898cd473cb60959",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "550",
+      "expectedUpc": "613008725693",
+      "expectedName": "AriZona Iced Tea with Lemon Flavor -PLASTIC",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-550.jpg",
+      "alt": "AriZona Iced Tea with Lemon Flavor -PLASTIC — 20 oz bottle",
+      "sourcePage": "https://www.upcitemdb.com/upc/613008725693",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/62baea61-f389-43a2-8f41-7f5a6c51f645_1.5a68f60727f446175cf2c81312cbbb5e.jpeg",
+      "sha256": "3ce286e71bdcd842212952000a82d122319d996e97b61b334cac88fa8b2b04f7",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "507",
+      "expectedUpc": "613008725815",
+      "expectedName": "AriZona Half & Half Iced Tea & Lemonade",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-507.jpg",
+      "alt": "AriZona Half & Half Iced Tea & Lemonade — 20 oz bottle",
+      "sourcePage": "https://www.upcitemdb.com/upc/613008725815",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/8d3bbff7-a1ce-47fb-9b9c-0cecc99e4ff8_1.05a63430b2577180ebd734f6a15a4c8d.jpeg",
+      "sha256": "a514e4b308afa234e9de3e03dc18a18c129d979c427ec8ce64b63f07b375244e",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
