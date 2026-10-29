@@ -4938,6 +4938,33 @@
       "action": "size_needs_confirmation",
       "reason": "Source records 2.82 oz while current exact barcode listings identify an 85 g package; original record retained privately pending confirmation.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1000",
+      "expectedUpc": "070842003316",
+      "expectedNameSha256": "fcf67f6b1f3fdfa19f3d484f8f313965b0ac873ec252da5870ba226ad98eda56",
+      "expectedSourceRecordSha256": "106c5be8a01c8dabd0a57ee390e87acce69c126c01309fa586a952023ef88e93",
+      "action": "size_needs_confirmation",
+      "reason": "Manufacturer and historical listings report different package weights under the same UPC; source identity retained privately pending confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1001",
+      "expectedUpc": "070842002067",
+      "expectedNameSha256": "3e360904ce79cff20d99b63f8f1ca26f770b6b35201f68bc66fe3ba4c3c87ada",
+      "expectedSourceRecordSha256": "d0d3a17dac76f002cabd40008b5796d46017ba45bb34aaffba30c036bb945be7",
+      "action": "size_needs_confirmation",
+      "reason": "Manufacturer and historical listings report different package weights under the same UPC; source identity retained privately pending confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1002",
+      "expectedUpc": "070842001664",
+      "expectedNameSha256": "9f22256d50354b315ed71acdb4083b10c36333d5367d28131e553876508d7659",
+      "expectedSourceRecordSha256": "20fe893aec517546e379b4f111157340eeefb690be92c967bb603419b4c3cabc",
+      "action": "size_needs_confirmation",
+      "reason": "Manufacturer and historical listings report different package weights under the same UPC; source identity retained privately pending confirmation.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
