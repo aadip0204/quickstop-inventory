@@ -4929,6 +4929,15 @@
       "action": "size_needs_confirmation",
       "reason": "The source size differs from the current manufacturer package for this UPC; package weight needs confirmation.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "187",
+      "expectedUpc": "5201360508600",
+      "expectedNameSha256": "2e365144ea635c6c940ea198ea3ef47ef37c1ffdad60dce8e26b163e77f4235c",
+      "expectedSourceRecordSha256": "5a1bef9388c05d3d378c9f18ead1057a5e1732d35f06dc6bc8655c4160f7b445",
+      "action": "size_needs_confirmation",
+      "reason": "Source records 2.82 oz while current exact barcode listings identify an 85 g package; original record retained privately pending confirmation.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }

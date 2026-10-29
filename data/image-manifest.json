@@ -14094,6 +14094,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "203",
+      "expectedUpc": "048794101022",
+      "expectedName": "7Days Soft Croissant with Vanilla Filling",
+      "expectedLabel": "75 g",
+      "src": "images/products/sku-203.jpg",
+      "alt": "7Days Soft Croissant with Vanilla Filling — 75 g wrapper",
+      "sourcePage": "https://go-upc.com/search?q=48794101022",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/368436334.jpeg",
+      "sha256": "cfabf7fd6f1972fd4fd42f03ecdcc5b83160612b1a2eba7795e9526cfd90c852",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "295",
+      "expectedUpc": "073390002206",
+      "expectedName": "Airheads Blue Raspberry",
+      "expectedLabel": "0.55 oz",
+      "src": "images/products/sku-295.png",
+      "alt": "Airheads Blue Raspberry — 0.55 oz candy bar",
+      "sourcePage": "https://go-upc.com/search?q=73390002206",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/153944747.png",
+      "sha256": "acee136e559bcd8aa7b3f718512c37cae9fa18122bcf4dc1cf92201936d25f44",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
