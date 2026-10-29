@@ -13060,6 +13060,116 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "101285",
+      "expectedUpc": "889392001723",
+      "expectedName": "Celsius Live Fit Retro Vibe Sparkling Sherbet Slush Energy Drink",
+      "expectedLabel": "12 oz",
+      "src": "images/products/sku-101285.png",
+      "alt": "Celsius Retro Vibe — 12 oz can",
+      "sourcePage": "https://delivery.publix.com/store/publix/products/63814244-celsius-retro-vibe",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4989f53a-688a-4b87-9591-8384f2d91041.png",
+      "sha256": "fbbd8c23631368184ed98723b3802d26f9089fb5e39c277f47711e537bb6a067",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101286",
+      "expectedUpc": "889392021394",
+      "expectedName": "Celsius Live Fit Tropical Vibe Sparkling Starfruit Pineapple Edition Energy Drink",
+      "expectedLabel": "12 oz",
+      "src": "images/products/sku-101286.png",
+      "alt": "Celsius Tropical Vibe — 12 oz can",
+      "sourcePage": "https://go-upc.com/search?q=889392021394",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/334992362.png",
+      "sha256": "363b80e2f3bc83e4f5202bbeedacc2dacc31b766f8cff66eca41b63b75cc77ae",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5840",
+      "expectedUpc": "070847811268",
+      "expectedName": "Monster Energy Lo-Carb",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-5840.jpg",
+      "alt": "Monster Energy Lo-Carb — 16 oz can",
+      "sourcePage": "https://www.dearbornmarket.com/product/monster-energy-locarb-energy-drink-id-00070847811268",
+      "sourceImageUrl": "https://storage.googleapis.com/images-prs-prd-c7e7986.prs.prd.v8.commerce.mi9cloud.com/product-images/zoom/00070847811268_1",
+      "sha256": "0007afeece4e9fd753bd0db897745a8b05d86cddc698229ca9f6498f4982b91e",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6959",
+      "expectedUpc": "611269818994",
+      "expectedName": "Red Bull",
+      "expectedLabel": "12 oz",
+      "src": "images/products/sku-6959.png",
+      "alt": "Red Bull Original — 12 oz can",
+      "sourcePage": "https://energydrinkcity.com/products/redbull-original",
+      "sourceImageUrl": "https://energydrinkcity.com/cdn/shop/files/Redbull_Original_Energydrinkcity.png?v=1749048749",
+      "sha256": "b5cc084f5e3d4ec724a7ab8ee168d2ed23fe92c40b21d4ad5ea5f336d11fc848",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6960",
+      "expectedUpc": "611269546019",
+      "expectedName": "Red Bull",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-6960.jpg",
+      "alt": "Red Bull Original — 16 oz can",
+      "sourcePage": "https://www.walmart.com/ip/12018771",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Red-Bull-Energy-Drink-16-fl-oz-Can_83921438-6362-4ed0-9bd9-dba8d926ad5f.29ac552f0a3a3d083809c9493d58771e.jpeg",
+      "sha256": "8d3b900a700e114414c657893a8bd40c2b8dd91731e9de44c620827b4291cbfe",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
