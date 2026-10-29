@@ -15744,6 +15744,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3002",
+      "expectedUpc": "078000082456",
+      "expectedName": "Dr Pepper",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-3002.jpg",
+      "alt": "Dr Pepper — 1 L bottle",
+      "sourcePage": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Dr-Pepper/p/1-108UO-8",
+      "sourceImageUrl": "https://www.dollartree.com/ccstore/v1/images/?height=940&source=%2Ffile%2Fv2687867068219464549%2Fproducts%2F24257.jpg&width=940",
+      "sha256": "c19a4071dc92dd1fa54753837c910291796fe76574e66df5f18fcca186e45fa8",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3004",
+      "expectedUpc": "078000082395",
+      "expectedName": "Dr Pepper",
+      "expectedLabel": "42.2 oz",
+      "src": "images/products/sku-3004.png",
+      "alt": "Dr Pepper — 42.2 oz bottle",
+      "sourcePage": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Dr-Pepper/p/1-DLFK8-18",
+      "sourceImageUrl": "https://storage.googleapis.com/schnucks-item-catalog/d6b361d6-4b5c-42c8-94fc-b2c622d89b68-00078000082395-main-20260120060124.png",
+      "sha256": "df2193036ac9c3b5c4678e274564afbf09689561812959228f3d2b0d43572953",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
