@@ -21829,6 +21829,64 @@
           "supports": "Inspected package identifies the corresponding product expression."
         }
       ]
+    },
+    {
+      "sku": "1941",
+      "expectedUpc": "041780003454",
+      "expectedNameSha256": "fbb88083859e197a53a3b6cc8d3ec32970568b77164625bd35cb76d89647b4f2",
+      "replaceTextFrom": "Cheese Curls 4oz",
+      "replaceTextTo": "Utz Baked Cheese Curls 4oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://listex.online/product/41780003454-us-utz-baked-cheese-curls",
+          "supports": "Exact UPC listing identifies the product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://icf.listex.info/med/1c2c91c5-5304-1d1b-641b-2177495e671e.jpg",
+          "supports": "Inspected package displays matching brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "1943",
+      "expectedUpc": "085264221606",
+      "expectedNameSha256": "56d168992f7073efccb19db4954d71f9e734319b22727d0dafa49a6e534894ef",
+      "replaceTextFrom": "CHEESE DANISH 4.0 OZCLOVERHILL",
+      "replaceTextTo": "Cloverhill Bakery Cheese Danish 4.0 OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.vendorssupply.com/item/623161/Cloverhill-FROZEN-Round-Cheese-Danish-4-oz/",
+          "supports": "Exact UPC listing identifies the product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://images-na.ssl-images-amazon.com/images/I/61Wvrw-EWeL.jpg",
+          "supports": "Inspected package displays matching brand and expression."
+        }
+      ]
+    },
+    {
+      "sku": "1945",
+      "expectedUpc": "077079000712",
+      "expectedNameSha256": "d199fb8bf4b0672a323766f0ae1be3264bf8ae3e02d0c9d42160b23c8fc4fc3e",
+      "replaceTextFrom": "Cheesy Jalapeno 2.375oz",
+      "replaceTextTo": "Southern Recipe Cheesy Jalapeno Curls 2.375oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cloud9liquor.com/southern-recipe-cheesy-jalapeno-curls",
+          "supports": "Exact UPC listing identifies the product expression."
+        }
+      ]
     }
   ],
   "identityReviews": [

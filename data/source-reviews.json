@@ -4992,6 +4992,15 @@
       "action": "size_needs_confirmation",
       "reason": "Source weight differs from the weight on an exact UPC package image; original record retained privately pending confirmation.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1945",
+      "expectedUpc": "077079000712",
+      "expectedNameSha256": "d199fb8bf4b0672a323766f0ae1be3264bf8ae3e02d0c9d42160b23c8fc4fc3e",
+      "expectedSourceRecordSha256": "84c69cb4c050ae71ce91243ecf626ccb426b1fc4eb647410be9294da36557005",
+      "action": "size_needs_confirmation",
+      "reason": "Source weight differs from an exact UPC retail listing; original record retained privately pending confirmation.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
