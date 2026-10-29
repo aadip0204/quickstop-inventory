@@ -13610,6 +13610,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "5713",
+      "expectedUpc": "025000058868",
+      "expectedName": "Minute Maid Pink Lemonade",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-5713.jpg",
+      "alt": "Minute Maid Pink Lemonade — 20 oz bottle",
+      "sourcePage": "https://www.murraycashandcarry.com/shop/minute-maid-bottle-pink-lemonade-591ml-u-38853",
+      "sourceImageUrl": "https://www.murraycashandcarry.com/web/image/product.template/38853/image_1024?unique=2caf0a9",
+      "sha256": "8a2a55433f4ff139e46811f16d37f72af7b36f67fded4defa0e0b62f7d07d5b0",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8905",
+      "expectedUpc": "048500203972",
+      "expectedName": "Tropicana Caribbean Sunset Drink",
+      "expectedLabel": "52 oz",
+      "src": "images/products/sku-8905.jpg",
+      "alt": "Tropicana Caribbean Sunset Drink — 52 oz bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/048500203972-0004-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/048500203972-0004-en-US/images/e2897f81-17ff-4913-8b80-ea330950ab85.jpg",
+      "sha256": "02018e848c51ce4cdb5a8897796edd0d28a915763e0e86b2a26e328921964fce",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8909",
+      "expectedUpc": "048500204726",
+      "expectedName": "Tropicana Peachy Pineapple Paradise Drink",
+      "expectedLabel": "52 oz",
+      "src": "images/products/sku-8909.jpg",
+      "alt": "Tropicana Peachy Pineapple Paradise Drink — 52 oz bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/048500204726-0002-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/048500204726-0002-en-US/images/cc6a4072-4e8d-43ec-a6af-a7ab6dec5e2d.jpg",
+      "sha256": "42d82df9b9fcf9e7a6227d3e8617daec8093142d2f19dc8c9b1f6950dbff642c",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
