@@ -11938,6 +11938,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "6547",
+      "expectedUpc": "721733000012",
+      "expectedName": "Patron Anejo",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6547.jpg",
+      "alt": "Patron Anejo — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137540",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_1a3fd579-ade8-4c9d-861c-0be6a00c89cc?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "05dca608b1ebaaf062b1d3c683f15cc98c8b37614a402a07c4b9664085ab61d8",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6557",
+      "expectedUpc": "721733000159",
+      "expectedName": "Patron Reposado",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6557.jpg",
+      "alt": "Patron Reposado — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137539",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_405f1f5e-8742-4306-b216-ddfbec975ce0?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "8a8f4cf4faa350688e99c3c6052ba1c1823cf373068d320513ba592f6a9f850d",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6561",
+      "expectedUpc": "721733000029",
+      "expectedName": "Patron Silver",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6561.jpg",
+      "alt": "Patron Silver — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-14778310",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_d65fdb6d-a65e-4004-9ebe-edce939cb43a?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "45843876c727e0a0c39001d10d33783d0e7d247a800aa166eb2e0e4216d4820e",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7666",
+      "expectedUpc": "721059007504",
+      "expectedName": "SKYY Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7666.jpg",
+      "alt": "SKYY Vodka — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-13392210",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_d722c0c6-1767-4e3d-804b-95e7259d9621?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "d7f31d17d484b99ceadf810aa2fcab5af26c056e819cc4a4409db592593423e7",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
