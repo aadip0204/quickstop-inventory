@@ -16338,6 +16338,248 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "5667",
+      "expectedUpc": "034100575091",
+      "expectedName": "Miller Lite",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "src": "images/products/sku-5667.jpg",
+      "alt": "Miller Lite — 12-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/miller-lite-beer/0003410057509",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0003410057509",
+      "sha256": "410474be8fd3392c7e7ae891bf66c05dedcf02406d0b827ec2090d78c673d842",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1402",
+      "expectedUpc": "018200179990",
+      "expectedName": "Bud Light",
+      "expectedLabel": "12-pack · 8 oz · cans",
+      "src": "images/products/sku-1402.jpg",
+      "alt": "Bud Light — 12-pack of 8 oz cans",
+      "sourcePage": "https://www.kroger.com/p/bud-light-beer/0001820017999",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0001820017999",
+      "sha256": "a9f906e0f6a9005a17d7b626a76d7a47898eff90c2e7be7fa8125d9c00dec5d8",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4009",
+      "expectedUpc": "072890001528",
+      "expectedName": "Heineken",
+      "expectedLabel": "18-pack · 12 oz · bottles",
+      "src": "images/products/sku-4009.jpg",
+      "alt": "Heineken — 18-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/heineken-original-lager-beer-bottles/0007289000152",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007289000152",
+      "sha256": "ec08bd738de6bc771a0164d1d264c7decc08e64a2fb8e22c58b3fbdca0e0238f",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5506",
+      "expectedUpc": "034100172565",
+      "expectedName": "MGD",
+      "expectedLabel": "18-pack · 12 oz · bottles",
+      "src": "images/products/sku-5506.jpg",
+      "alt": "MGD — 18-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/miller-genuine-draft-beer/0003410017256",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0003410017256",
+      "sha256": "cde1327c30ba3276e355730139451b3cae0ab3313bc9456c72776ed090e9989f",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2412",
+      "expectedUpc": "071990300784",
+      "expectedName": "Coors Light",
+      "expectedLabel": "18-pack · 12 oz · bottles",
+      "src": "images/products/sku-2412.jpg",
+      "alt": "Coors Light — 18-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/coors-light-beer/0007199030078",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007199030078",
+      "sha256": "db69044c4252d061243e5cb9c828035ce346a7be5cc04188d715bb760fa30827",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5752",
+      "expectedUpc": "033544000212",
+      "expectedName": "Modelo Especial Modelito",
+      "expectedLabel": "24-pack · 7 oz · bottles",
+      "src": "images/products/sku-5752.jpg",
+      "alt": "Modelo Especial Modelito — 24-pack of 7 oz bottles",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/21027467-modelo-especial-modelito-mexican-lager-beer-bottles-7-oz",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0003354400021",
+      "sha256": "7c38c3421fc76270efd459271500737541b3c1b441444ff8a71b321d2d1b1381",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1428",
+      "expectedUpc": "018200962929",
+      "expectedName": "BUD LIGHT LIME",
+      "expectedLabel": "18-pack · bottles",
+      "src": "images/products/sku-1428.jpg",
+      "alt": "BUD LIGHT LIME — 18-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/bud-light-lime-beer/0001820096292",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0001820096292",
+      "sha256": "66db2e060f6f6c4d7d3980c84fb4366aae80ed6728115518b9b8e56467c880e4",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1542",
+      "expectedUpc": "018200007682",
+      "expectedName": "Busch",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "src": "images/products/sku-1542.jpg",
+      "alt": "Busch — 12-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/busch-beer/0001820007682",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0001820000768",
+      "sha256": "9f80dd7e6472de2af0f51dc617bb852d3fb30396c6348cfcf63555e104a7ddaf",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2313",
+      "expectedUpc": "071250406102",
+      "expectedName": "Colt 45",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "src": "images/products/sku-2313.jpg",
+      "alt": "Colt 45 — 12-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/colt-45-malt-liquor/0007125040610",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007125040610",
+      "sha256": "f7cc26d81f2907315326a9180cc784fe2340bca081c41999383b80f9b1ce61e5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6351",
+      "expectedUpc": "073360119064",
+      "expectedName": "Old Style",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "src": "images/products/sku-6351.jpg",
+      "alt": "Old Style — 12-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/old-style-lager-beer/0007336011906",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007336011906",
+      "sha256": "43ee2a9469c4b7a6886c628406684be6d50458b8e63b0bd92422ea9e276e5cdf",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8638",
+      "expectedUpc": "089826912032",
+      "expectedName": "Tecate",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "src": "images/products/sku-8638.jpg",
+      "alt": "Tecate — 12-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/tecate-original-beer/0008982691203",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0008982691203",
+      "sha256": "a0d29c65637061d25c0a8c6c88dfdc6ca2fcb06b85b3cb8c02fa72bf8d110347",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
