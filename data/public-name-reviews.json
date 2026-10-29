@@ -2148,6 +2148,158 @@
           "supports": "UPC 818844023150: reviewed product expression and source details."
         }
       ]
+    },
+    {
+      "sku": "191",
+      "expectedUpc": "078000012194",
+      "expectedSourceRow": 7716,
+      "expectedRawFieldsSha256": "5bc456f81ebcb728ad867be4572e4cdd8453d0351fad84b1039af14d2f808666",
+      "expectedPublicName": "7 UP ?",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "7UP Lemon Lime Soda",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/35042-7up-lemon-lime-soda-16-9-fl-oz",
+          "supports": "UPC 078000012194: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "207",
+      "expectedUpc": "078000026597",
+      "expectedSourceRow": 150,
+      "expectedRawFieldsSha256": "314ed1e2875d2763efd82e78fea2e4d3d1d66a1ada83892732fa2c2a9609df9a",
+      "expectedPublicName": "7UP",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "7UP Lemon Lime Soda",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/17594286-7up-lemon-lime-soda-1-25-l",
+          "supports": "UPC 078000026597: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "250",
+      "expectedUpc": "835229005426",
+      "expectedSourceRow": 172,
+      "expectedRawFieldsSha256": "549acf5ee490ff982705b14c948a4f8768f6d616dcbf279e9d073ac2d7dd0b63",
+      "expectedPublicName": "Absolut 100 P Vodka",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Absolut 100 Proof Vodka",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/19829/2/0615_Pricebook2.pdf",
+          "supports": "UPC 835229005426: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "256",
+      "expectedUpc": "835229000803",
+      "expectedSourceRow": 178,
+      "expectedRawFieldsSha256": "59d707331891451fb722e1df9afa3d3b6c7cd443e773a4c91dde4ff0eea74cb8",
+      "expectedPublicName": "Absolut Orient Apple",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Absolut Orient Apple Vodka",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://jensonsliquor.com/product/absolut-orient-apple-vodka-750ml/",
+          "supports": "UPC 835229000803: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "266",
+      "expectedUpc": "835229010109",
+      "expectedSourceRow": 6881,
+      "expectedRawFieldsSha256": "914f131eaaabac1b947d9c01d8b830b7304f4bd644146e76de1b5086c0fc0b81",
+      "expectedPublicName": "ABSOLUT VODKA",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Absolut A Tribute to Gilbert Baker Vodka",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/product/absolut-vodka-a-tribute-to-gilbert-baker-750ml/",
+          "supports": "UPC 835229010109: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "268",
+      "expectedUpc": "835229010024",
+      "expectedSourceRow": 186,
+      "expectedRawFieldsSha256": "9fc90db9fac6912de6324342520ecba387321c69a92d10224e9fc3deecf6f9ae",
+      "expectedPublicName": "Absolut Vodka limited edition",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Absolut Chicago Limited Edition Vodka",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://sklep-domwhisky.pl/product-eng-21492-Absolut-Chicago-Limited-Edition-Vodka-40-0-75l.html",
+          "supports": "UPC 835229010024: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "271",
+      "expectedUpc": "835229000766",
+      "expectedSourceRow": 188,
+      "expectedRawFieldsSha256": "f6d0be58a62436bd8b4acd9db90a85e3f5c2044bfc39d8e28c490cdc346cc5c2",
+      "expectedPublicName": "ABSOLUT WILD TEA",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Absolut Wild Tea Vodka",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.thebottleshoppememphis.com/product/s-11145/p-11501739/buy-absolut-wild-tea-flavored-vodka",
+          "supports": "UPC 835229000766: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "286",
+      "expectedUpc": "811538012010",
+      "expectedSourceRow": 201,
+      "expectedRawFieldsSha256": "0f9b060c0c4a1cefee196c053ccdf6cd3122e03e1dc6cb1cf7b11c5f34e18d16",
+      "expectedPublicName": "Agavero Orange",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Agavero Orange Tequila Liqueur",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/167510",
+          "supports": "UPC 811538012010: reviewed product expression."
+        }
+      ]
     }
   ]
 }

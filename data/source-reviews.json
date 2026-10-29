@@ -5535,6 +5535,15 @@
           "supports": "The inspected full pint displays the product brand and 16 fl oz volume."
         }
       ]
+    },
+    {
+      "sku": "191",
+      "expectedUpc": "078000012194",
+      "expectedNameSha256": "9a184b2f9ba3e5989ae2f8ea7b8ddf4ee6030d0f86d864bbdf9489b49dafa796",
+      "expectedSourceRecordSha256": "5bc456f81ebcb728ad867be4572e4cdd8453d0351fad84b1039af14d2f808666",
+      "action": "size_needs_confirmation",
+      "reason": "Original description says 16 oz with a question mark; exact UPC listings identify a 6-pack of 16.9 oz bottles. Package and size need confirmation.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
