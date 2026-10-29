@@ -5073,6 +5073,42 @@
           "supports": "Inspected image shows the named flavor in an individual 2 oz bag."
         }
       ]
+    },
+    {
+      "sku": "7902",
+      "expectedUpc": "740235500110",
+      "expectedNameSha256": "e5924e27db5faa83651f046e3949900ebc370c51674d024da6d98c8807a56b00",
+      "expectedSourceRecordSha256": "d48564a15494cc911c45ab6f17c67f099c805a2f6e6537cfb756390ab24e1a9d",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Carley's Soft Baked Iced Lemon Cookies",
+      "verifiedLabel": "5.34 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer, exact UPC listing and inspected package corroborate this 5.34 oz tray; original unspecified source size is retained privately.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.carleys.com/6-pack-iced-lemon",
+          "supports": "Manufacturer identifies the six-cookie iced lemon package as 5.34 oz."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://snack4less.com/collections/carleys/products/carleys-iced-lemon-soft-baked-cookies-5-34oz-6pk",
+          "supports": "Exact unit UPC identifies the iced lemon 5.34 oz package."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://snack4less.com/cdn/shop/files/SNACK-CARLEY_S-SB-6CT-5.34OZ-IL.webp?crop=center&height=1200&v=1787741125&width=1200",
+          "supports": "Inspected front package reads iced lemon and 5.34 oz."
+        }
+      ]
     }
   ]
 }
