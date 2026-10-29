@@ -2300,6 +2300,272 @@
           "supports": "UPC 811538012010: reviewed product expression."
         }
       ]
+    },
+    {
+      "sku": "134",
+      "expectedUpc": "764053428333",
+      "expectedSourceRow": 9745,
+      "expectedRawFieldsSha256": "c65f7176c013e311b939be097bb04fb8b94303322ae46f82467cb3e2b21aef19",
+      "expectedPublicName": "20 Bowls",
+      "expectedLabel": "12 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Good Time Foam Bowls (20-count)",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://wellsgw.com/wp-content/uploads/2025/10/Fall-Specials-2025-1.pdf",
+          "supports": "UPC 764053428333: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "137",
+      "expectedUpc": "082665110256",
+      "expectedSourceRow": 101,
+      "expectedRawFieldsSha256": "325e4c6d67dd6590776711f9fe5e4ba28739275c78908441f9e73077fadaf14c",
+      "expectedPublicName": "25 READI PLATES",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Readi Foam Plates (25-count)",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://mercausacorporation.com/wp-content/uploads/2026/02/FARMACY-CATALOG.pdf",
+          "supports": "UPC 082665110256: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "141",
+      "expectedUpc": "652682034219",
+      "expectedSourceRow": 6721,
+      "expectedRawFieldsSha256": "7baf54395bac7a2191882f4404b26efb23e2595c1290793d70839bf6b8123d99",
+      "expectedPublicName": "3 floyds zombie dust",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "3 Floyds Zombie Dust Pale Ale",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-89144847",
+          "supports": "UPC 652682034219: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "142",
+      "expectedUpc": "652682141214",
+      "expectedSourceRow": 7879,
+      "expectedRawFieldsSha256": "9bb7877697650a5e32b70fe74dee49b2df53e18a07da5f08d9d0c5accbcf4735",
+      "expectedPublicName": "3 floyds zombie ice",
+      "expectedLabel": "Single · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "3 Floyds Zombie Ice Double Pale Ale",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/three-floyds-zombie-ice-19-2oz",
+          "supports": "UPC 652682141214: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "159",
+      "expectedUpc": "818892013516",
+      "expectedSourceRow": 121,
+      "expectedRawFieldsSha256": "041d39d21705178e77823e7b0f0afbe2211f6e9f233be57f8bed7d7f841e574f",
+      "expectedPublicName": "4 K's MANGO",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "Tobacco",
+      "proposedPublicTitle": "4K Mango Cigarillos",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
+          "supports": "UPC 818892013516: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "160",
+      "expectedUpc": "818892013509",
+      "expectedSourceRow": 122,
+      "expectedRawFieldsSha256": "3726dca50e6c02c3e9148282c290b0ab663201617a562b56013f945c2ae9269c",
+      "expectedPublicName": "4 K's WATER MELON",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "Tobacco",
+      "proposedPublicTitle": "4K Watermelon Cigarillos",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
+          "supports": "UPC 818892013509: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "167",
+      "expectedUpc": "818892013523",
+      "expectedSourceRow": 129,
+      "expectedRawFieldsSha256": "4f6f7824f1651119d4391728ca6d67fd18f71965f1bf445516c894ced47ac014",
+      "expectedPublicName": "4K'S french vanilla cigar",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "Tobacco",
+      "proposedPublicTitle": "4K French Vanilla Cigarillos",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
+          "supports": "UPC 818892013523: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "168",
+      "expectedUpc": "818892017118",
+      "expectedSourceRow": 130,
+      "expectedRawFieldsSha256": "83dc5244bcc44c9ad03c9b4f82758787bb9262d6747980845c883f3f40075a72",
+      "expectedPublicName": "4K'S Melon berry",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "Tobacco",
+      "proposedPublicTitle": "4K Melonberry Cigarillos",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
+          "supports": "UPC 818892017118: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "170",
+      "expectedUpc": "818892013493",
+      "expectedSourceRow": 132,
+      "expectedRawFieldsSha256": "596cc4d33e6684c3372183707414b6628c02876295d994961fe4555cf6f8fe37",
+      "expectedPublicName": "4K'S NAPA GRAPE",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "Tobacco",
+      "proposedPublicTitle": "4K Napa Grape Cigarillos",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
+          "supports": "UPC 818892013493: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "172",
+      "expectedUpc": "818892013486",
+      "expectedSourceRow": 134,
+      "expectedRawFieldsSha256": "fc9e16f7bc8a1ebf48c1da6dc8858d7ee27d4ec5fdb6e477f817b3443dbab559",
+      "expectedPublicName": "4K'S sweet delicious",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "Tobacco",
+      "proposedPublicTitle": "4K Sweet Delicious Cigarillos",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
+          "supports": "UPC 818892013486: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "182",
+      "expectedUpc": "741459279929",
+      "expectedSourceRow": 7470,
+      "expectedRawFieldsSha256": "91663b2ad25e7cde9347c7b062375c884c61f0716e479b0b9724066c8b793eb9",
+      "expectedPublicName": "50 Cups",
+      "expectedLabel": "7 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Anytime Clear Plastic Cups (50-count)",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/anytime-plastic-cups-7oz-50pk",
+          "supports": "UPC 741459279929: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "183",
+      "expectedUpc": "079068003100",
+      "expectedSourceRow": 6373,
+      "expectedRawFieldsSha256": "33d192a6d8c8a037555a163cdc4d318ddfc0eb8f58cc586749ce5574e7eeb2ec",
+      "expectedPublicName": "50% isopropyl alcohol",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Swan 50% Wintergreen Isopropyl Alcohol",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.glwholesale.com/product/wholesale-swan-50-wintergreen-isopropyl-alcohol-16/7906800310",
+          "supports": "UPC 079068003100: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "194",
+      "expectedUpc": "078000019544",
+      "expectedSourceRow": 7825,
+      "expectedRawFieldsSha256": "486ebf60d585854cac8186fd0beb21b58e593a5fd17ae68177d238d979c09909",
+      "expectedPublicName": "7 UP",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "7UP Mexican Lemon Lime Soda",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://redstonefoods.com/products/09154--mexican-7-up",
+          "supports": "UPC 078000019544: reviewed product expression."
+        }
+      ]
+    },
+    {
+      "sku": "201",
+      "expectedUpc": "308691156106",
+      "expectedSourceRow": 8572,
+      "expectedRawFieldsSha256": "474f4ad243215c49ad13ee6e33133e7c1cf10682408977dd21a6b0977fe33c4e",
+      "expectedPublicName": "70% isopropyl alcohol",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Swan 70% Isopropyl Rubbing Alcohol",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/18632301-swan-alcohol-70-isopropyl-16-oz",
+          "supports": "UPC 308691156106: reviewed product expression."
+        }
+      ]
     }
   ]
 }
