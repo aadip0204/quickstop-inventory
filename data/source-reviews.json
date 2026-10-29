@@ -4803,6 +4803,132 @@
       "action": "size_needs_confirmation",
       "reason": "Source says 16 oz, while the manufacturer exact UPC identifies a six-pack of 16.9 oz bottles; original record preserved privately pending confirmation.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3663",
+      "expectedUpc": "052000208061",
+      "expectedNameSha256": "6f53646ed43a6a5f6500e113d40d5e165ae453a41cec098a40398fb406b28bf4",
+      "expectedSourceRecordSha256": "dc03556ad2fd0292b1a05383c350e58cac2853e24284d968018fecf19a20ff9d",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "6623",
+      "expectedUpc": "012000172229",
+      "expectedNameSha256": "d92f0ca76ccd7083f3779b370a04be776cb803bfa22091c8bca9a38048cc2725",
+      "expectedSourceRecordSha256": "a5f5b823b4759df19953688e276e0e96134f044defd52eea342b4bcc17a0832d",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3689",
+      "expectedUpc": "052000208054",
+      "expectedNameSha256": "68f2701b52107db909101a2e155f04fdb3171bb1b290426e96c969ba408fb336",
+      "expectedSourceRecordSha256": "8d8548cc3a350e8b33a182428bb1e72912a87452fe7a163c465e2d9d0f433678",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3697",
+      "expectedUpc": "052000129373",
+      "expectedNameSha256": "b856c6660557770bfccd90272d758a74f5866450dc803746083d902a5792b01d",
+      "expectedSourceRecordSha256": "5fa6785f891b313991db7ba98d7ce574b36b1ab595ace36a27b5141709ec80cd",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3683",
+      "expectedUpc": "052000122510",
+      "expectedNameSha256": "1700ca72ce65e8a4fbce40b864970b50bd7823a21ad8b73cac2d5f45c5ab5821",
+      "expectedSourceRecordSha256": "c94bd49b8ae5b24f1b2323f26e88eb405c4eaf58858af84459152debabb30e01",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3686",
+      "expectedUpc": "052000208719",
+      "expectedNameSha256": "351fd815cee20f85c0f440b00ff8e02683a4c4dd19e35e78bfef625fab5875e6",
+      "expectedSourceRecordSha256": "c3094e663e04b6cb94642f2ba3c71a49b38a6b0935bcb7adbbc099a9d6c58d9a",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1972",
+      "expectedUpc": "028400329507",
+      "expectedNameSha256": "2d57a08e288c42def8022d4f353009dde5c0574bccdd6f1966410cc81dcd6a1a",
+      "expectedSourceRecordSha256": "1da4bde816810aefe37f223f96c2e0109606a081fdeb5d29ede618ce7ed9d74a",
+      "action": "size_needs_confirmation",
+      "reason": "The source size differs from the current manufacturer package for this UPC; package weight needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "101356",
+      "expectedUpc": "028400725163",
+      "expectedNameSha256": "ef8faa18dc54732d0fa4bf798251d7238784c51d4957b7296485a9b7a5d0c5da",
+      "expectedSourceRecordSha256": "74b49597753e8b13ddd4055a65804898577bffd06256215e1f1a9c1e7566342e",
+      "action": "size_needs_confirmation",
+      "reason": "The source size differs from the current manufacturer package for this UPC; package weight needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3694",
+      "expectedUpc": "052000047660",
+      "expectedNameSha256": "ab0c3ec547b634b082923a9765b0b5e93fced33e3f956aebcb0da9ace42ae068",
+      "expectedSourceRecordSha256": "51678315ee28df440e28571be5714605a6a6bff5c5a663add12fd3ed7fc9ec1c",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3691",
+      "expectedUpc": "052000121780",
+      "expectedNameSha256": "87151b7c5b151ee13dd164a15d54a8da386052b0c7de000a75bdd4f197f2cfa6",
+      "expectedSourceRecordSha256": "90c3ea59c9a8859b04c052befca177ac0ecb9dc3449071ab311faba205c9a235",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3657",
+      "expectedUpc": "052000122060",
+      "expectedNameSha256": "26cb5cadcd3076781397d8f41d7823dcd9f830c515248aca7c1d7f0c545df449",
+      "expectedSourceRecordSha256": "f0276de49714ef2521b6d0675a61e9d2a9837d49a8f182d9d74d78339f37d5ec",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3658",
+      "expectedUpc": "052000208443",
+      "expectedNameSha256": "26865d581f065bcdbb3c9210103e8a588533a3ae4c9cbac20c8cc66330a3c7e9",
+      "expectedSourceRecordSha256": "5185a83aa92043061fd3c4cacdeb37663fcadaf47d25f37f7d2403e41dd23349",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "3698",
+      "expectedUpc": "052000208078",
+      "expectedNameSha256": "92ef60d925d0ad11f328399e5fa034e4f3d4201e5c045812591d000c19670593",
+      "expectedSourceRecordSha256": "16db6e13c549572a47087e959955950e5a5ff99d7d3419eab4b92f35cf2de46a",
+      "action": "size_needs_confirmation",
+      "reason": "The source describes an individual size, while the manufacturer exact UPC identifies a multipack; package count needs confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1950",
+      "expectedUpc": "028400363532",
+      "expectedNameSha256": "d2831aed9f1f965c015bfc9bc6db5d624090a1b692a047d83a88b6a64496bd30",
+      "expectedSourceRecordSha256": "5cb6e75c11557dbbfe727d6c1c67463b75d5585d026150e903c87ecf848b434a",
+      "action": "size_needs_confirmation",
+      "reason": "The source size differs from the current manufacturer package for this UPC; package weight needs confirmation.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
