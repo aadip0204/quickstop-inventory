@@ -21504,6 +21504,32 @@
           "supports": "Exact UPC identifies Long Island Iced Tea, 1.75 L."
         }
       ]
+    },
+    {
+      "sku": "6638",
+      "expectedUpc": "012000030680",
+      "expectedNameSha256": "040c8d8ee88c12016ac048276855d1c730114357ba37e8282b45b474b8c9d03b",
+      "replaceTextFrom": "PEPSI THROWBACK 12PKPACK",
+      "replaceTextTo": "Pepsi-Cola Made with Real Sugar 12PK",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/012000030680-0005-en-US/index.html",
+          "supports": "Manufacturer identifies the exact UPC as twelve cans of Pepsi-Cola."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/pepsi-throwback-cans-pack-of-12-012000030680",
+          "supports": "Exact UPC listing identifies Pepsi Throwback as a twelve-can real sugar cola."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://smartlabel.pepsico.info/012000030680-0005-en-US/images/a4856696-d340-43c0-8612-dd87f90b4729.png",
+          "supports": "Inspected manufacturer package displays Pepsi-Cola Made with Real Sugar and twelve cans."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -23851,7 +23877,7 @@
       "expectedUpc": "012000504051",
       "expectedNameSha256": "bcf2408ad9420f0da2d22b41d7ff16551443faa0a812686d0b1da48b8a61e4d1",
       "expectedPublicName": "PEPSI",
-      "expectedLabel": "16 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "verificationMethod": "manufacturer_exact_upc_record",
       "manufacturerRecord": {

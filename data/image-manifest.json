@@ -13918,6 +13918,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1340",
+      "expectedUpc": "012000210655",
+      "expectedName": "Brisk Blood Orange Iced Tea",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1340.jpg",
+      "alt": "Brisk Blood Orange Iced Tea — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000210655-0002-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000210655-0002-en-US/images/57ce7960-a1ac-4c8f-8256-b9b5f9b8236a.jpg",
+      "sha256": "570276a175c8bffbf0a38e85b55383f1d14f0e7c65a2f8b2ecefc9fc4a182efb",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6638",
+      "expectedUpc": "012000030680",
+      "expectedName": "Pepsi-Cola Made with Real Sugar",
+      "expectedLabel": "12-pack",
+      "src": "images/products/sku-6638.png",
+      "alt": "Pepsi-Cola Made with Real Sugar — 12 cans",
+      "sourcePage": "https://smartlabel.pepsico.info/012000030680-0005-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000030680-0005-en-US/images/a4856696-d340-43c0-8612-dd87f90b4729.png",
+      "sha256": "b407ce0e5d228d3e1cd9aa5caf182cb75c1f8541597255861543b2e04be9d67a",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

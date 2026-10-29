@@ -4794,6 +4794,15 @@
           "supports": "Additional package image displays the 3 fl oz size."
         }
       ]
+    },
+    {
+      "sku": "6629",
+      "expectedUpc": "012000504051",
+      "expectedNameSha256": "bcf2408ad9420f0da2d22b41d7ff16551443faa0a812686d0b1da48b8a61e4d1",
+      "expectedSourceRecordSha256": "490ad4b68fb1e4912ae1b132459aa5cc9af887375cce03561852084fe3857805",
+      "action": "size_needs_confirmation",
+      "reason": "Source says 16 oz, while the manufacturer exact UPC identifies a six-pack of 16.9 oz bottles; original record preserved privately pending confirmation.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
