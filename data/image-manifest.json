@@ -13522,6 +13522,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "4426",
+      "expectedUpc": "082184090503",
+      "expectedName": "Jack Daniel's",
+      "expectedLabel": "375 mL",
+      "src": "images/products/sku-4426.png",
+      "alt": "Jack Daniel's — 375 mL bottle",
+      "sourcePage": "https://winebarrel.com/products/j-daniels-old-7-black-tn-pl-80-proof-375-ml",
+      "sourceImageUrl": "https://winebarrel.com/cdn/shop/files/1631_J_DANIELS_OLD_7_BLACK__TN__PL_80_Proof_375_ml.png?crop=center&height=500&v=1777681757&width=600",
+      "sha256": "c3cf13d92ffa17adeb54dac5887bcdb990fa75dae4daad14943dc92e031487a5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4428",
+      "expectedUpc": "082184090466",
+      "expectedName": "Jack Daniel's",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-4428.png",
+      "alt": "Jack Daniel's — 750 mL bottle",
+      "sourcePage": "https://www.cbcliquors.com/product/old-no7-jack-daniels/39976825?format=43136245&variant=615918",
+      "sourceImageUrl": "https://d36musakzcdau7.cloudfront.net/esplanda/Product/8b5e2fd3-e30b-4bd3-92c4-351f5b43e6c2/jack-daniels-old-no7-750ml.png",
+      "sha256": "0dbd7edabfb8e9cf642f4f675cd823f4670ad40daf30f3f951b2725df9b97819",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4432",
+      "expectedUpc": "082184001561",
+      "expectedName": "Jack Daniel's Fire",
+      "expectedLabel": "375 mL",
+      "src": "images/products/sku-4432.jpg",
+      "alt": "Jack Daniel's Fire — 375 mL bottle",
+      "sourcePage": "https://www.gordonswine.com/collections/whiskey/products/jack-daniels-tennessee-fire-375ml",
+      "sourceImageUrl": "https://www.gordonswine.com/cdn/shop/files/large_3c89d325-a33a-41de-90d9-1068ef645e89.jpg?v=1742939713",
+      "sha256": "7c798aeb5f485a2e7283619956767f1d1cc7dbde12fcc0762b48cb44f3e942a6",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
