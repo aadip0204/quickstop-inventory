@@ -12488,6 +12488,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2924",
+      "expectedUpc": "028400420716",
+      "expectedName": "Doritos Cool Ranch Flavored Tortilla Chips",
+      "expectedLabel": "3.125 oz",
+      "src": "images/products/sku-2924.jpg",
+      "alt": "Doritos Cool Ranch — 3.125 oz bag",
+      "sourcePage": "https://smartlabel.pepsico.info/028400420716-0010-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400420716-0010-en-US/images/2001cb8c-4a39-448b-80e7-cf75110d7ad9.jpg",
+      "sha256": "82374c0a7d6167de07c619618276b37a600792d57ac184446b4cf7db13d8de40",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
