@@ -11608,6 +11608,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2130",
+      "expectedUpc": "088076180697",
+      "expectedName": "Ciroc Mango",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2130.jpg",
+      "alt": "Ciroc Mango — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-52087248",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_3e45fca3-c9a6-490e-8f31-e333a77d81e5?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "381da726821686a38e6bb122d6bffb97b333a5e3487e23b36d18d645605d86f0",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2134",
+      "expectedUpc": "088076177406",
+      "expectedName": "CIROC PEACH",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2134.jpg",
+      "alt": "CIROC PEACH — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-14983862",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_c153929f-c963-4ca8-9a75-fb747e5a1a89?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "5511b02e85f0db771c2d853fef61bb783d1a93c907b16c88d9bdf7f66d012a73",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2138",
+      "expectedUpc": "088076179080",
+      "expectedName": "Ciroc PINEAPPLE",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2138.jpg",
+      "alt": "Ciroc PINEAPPLE — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47984884",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_349b0253-dd21-4620-9836-11bf18021769?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "25ebbc5ff46c68043c44a702d08a04c087b7149c673746cb4020bdb6f81f9dee",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2141",
+      "expectedUpc": "088076175051",
+      "expectedName": "Ciroc Red Berry",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2141.jpg",
+      "alt": "Ciroc Red Berry — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-16781252",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_80e71b84-b16c-4f59-9abd-f573efc70a1c?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "a26ba08005daee17b317b04285c694d995a3a8a821f07df22ca4f6c1fecfabe7",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
