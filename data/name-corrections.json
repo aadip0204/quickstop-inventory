@@ -19601,15 +19601,20 @@
       "sku": "4433",
       "expectedUpc": "082184202777",
       "expectedNameSha256": "370315654439e2fd9f5ff7c854fed85a92258632a4cceca1666c5a6e162e5674",
-      "replaceTextFrom": "Jack Daniels",
-      "replaceTextTo": "Jack Daniel's",
-      "scope": "brand_punctuation_only",
+      "replaceTextFrom": "Jack Daniels Fire",
+      "replaceTextTo": "Jack Daniel's Tennessee Fire Gift Set with Two Shot Glasses",
+      "scope": "exact_upc_gift_pack_clarification",
       "verifiedOn": "2026-10-28",
       "evidence": [
         {
-          "kind": "manufacturer",
-          "url": "https://pressroom.jackdaniels.com/background/",
-          "supports": "The official brand name uses an apostrophe; this scoped correction does not assert flavor, size, packaging or full product identity."
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/179530",
+          "supports": "Exact UPC identifies Tennessee Fire with two shot glasses."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winemadeeasy.com/jack-daniels-tennessee-fire-w2-glass-gift-set-750-ml-43705.html",
+          "supports": "Exact UPC and bottle size identify the two-glass gift set."
         }
       ]
     },

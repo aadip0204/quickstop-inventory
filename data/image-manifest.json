@@ -12290,6 +12290,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "4848",
+      "expectedUpc": "080686016403",
+      "expectedName": "Knob Creek",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-4848.jpg",
+      "alt": "Knob Creek — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137252",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_e1fae7d1-87d4-4118-94b3-3a3670e8e404?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "31604050eb533637ae4a7636bfe6d1892176281c1c42164ba95242abefca270e",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9683",
+      "expectedUpc": "081128001506",
+      "expectedName": "Woodford Reserve",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-9683.jpg",
+      "alt": "Woodford Reserve — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-14983851",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_7d53bd1a-3ed6-4c93-a726-23639b6871f6?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "b74e84739cf2d4fe5ae07d7b8ebcb68c8a3bc0b8e3727172a4d9eef1670e3a89",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

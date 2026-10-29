@@ -8,7 +8,7 @@
     "originalSourceRows": 9881,
     "reportSourceRows": 71,
     "publicVariants": 9689,
-    "products": 7997,
+    "products": 7998,
     "needsReview": 107,
     "excludedNonproducts": 156,
     "flaggedPublicVariants": 2106
@@ -31,7 +31,7 @@
     "scopeNote": "All rows scanned for specified risks. Only listed corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock."
   },
   "imageStatus": {
-    "verifiedVariants": 552,
-    "unverifiedVariants": 9137
+    "verifiedVariants": 554,
+    "unverifiedVariants": 9135
   }
 }
