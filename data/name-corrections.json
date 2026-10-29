@@ -2872,17 +2872,22 @@
       "sku": "1199",
       "expectedUpc": "070640002504",
       "expectedNameSha256": "661151f946b3442893d1861fc4a606cdf8ac6c313327e1a17d65565fa1798575",
-      "replaceTextFrom": "CUNCH",
-      "replaceTextTo": "CRUNCH",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "BLUE BUNNY CUNCH BAR 4OZ",
+      "replaceTextTo": "Blue Ribbon Classics Vanilla Crunch Bar 4OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
       "evidence": [
         {
-          "url": "https://dictionary.cambridge.org/us/dictionary/english/crunch",
-          "kind": "english_dictionary_ordinary_word_spelling",
-          "supports": "Confirms only standard spelling crunch; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
+          "kind": "exact_upc_listing",
+          "url": "https://wellsfoodservice.com/products/blue-ribbon-classics/bars/king-size-vanilla-crunch-bar",
+          "supports": "Exact UPC listing identifies the product brand and expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://wellscdn.com/content/foodservice/product/large/fd453052-e8cc-416f-aca1-10f72cb4ba6c/king-size-vanilla-crunch-bar.v3.png",
+          "supports": "Inspected package identifies the corresponding product expression."
         }
-      ],
-      "verifiedOn": "2026-10-27"
+      ]
     },
     {
       "sku": "101373",
@@ -21738,6 +21743,90 @@
           "kind": "inspected_package_photo",
           "url": "https://go-upc.s3.amazonaws.com/images/323240713.jpeg",
           "supports": "Inspected package displays the brand, expression, and source size."
+        }
+      ]
+    },
+    {
+      "sku": "1262",
+      "expectedUpc": "053000052616",
+      "expectedNameSha256": "a555bf4b04b4ea077c0f43e88f46f9a5173b82da37f59aa1fa126109840a8608",
+      "replaceTextFrom": "Borden mild cheddarcheese 8oz",
+      "replaceTextTo": "Borden Mild Cheddar Shredded Cheese 8oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=053000052616",
+          "supports": "Exact UPC listing identifies the product brand and expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/496089887.jpeg",
+          "supports": "Inspected package identifies the corresponding product expression."
+        }
+      ]
+    },
+    {
+      "sku": "1326",
+      "expectedUpc": "028293000811",
+      "expectedNameSha256": "fe38d473e4f45759c55e064a83e1226b445aa41e9ba65470b460c88c5ae4c310",
+      "replaceTextFrom": "brims snack foods barbecuepork rinds 74.3 g",
+      "replaceTextTo": "Brim's Barbecue Fried Pork Rinds 74.3 g",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=028293000811",
+          "supports": "Exact UPC listing identifies the product brand and expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/96171790.jpeg",
+          "supports": "Inspected package identifies the corresponding product expression."
+        }
+      ]
+    },
+    {
+      "sku": "1272",
+      "expectedUpc": "888109251734",
+      "expectedNameSha256": "1f7740c7e953bc12ba843ee5a26de19cd8ade340d34c49b10b2df0f8d45580b2",
+      "replaceTextFrom": "bouncers  cinnamon62 g",
+      "replaceTextTo": "Hostess Bouncers Cinnamon Donettes 62 g",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.holidaywholesale.com/wp-content/uploads/06_JuneHolidayHighlights_2023.pdf",
+          "supports": "Exact UPC listing identifies the product brand and expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/243422338.png",
+          "supports": "Inspected package identifies the corresponding product expression."
+        }
+      ]
+    },
+    {
+      "sku": "1299",
+      "expectedUpc": "028293510662",
+      "expectedNameSha256": "f129ab049ed2c5787b02b6fe2605014de485cecbaefa47ec3f59d6527b9a1e06",
+      "replaceTextFrom": "brims  pork rinds 1.8oz",
+      "replaceTextTo": "Brim's Red Hot Pork Rinds 1.8oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=028293510662",
+          "supports": "Exact UPC listing identifies the product brand and expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/84043564.png",
+          "supports": "Inspected package identifies the corresponding product expression."
         }
       ]
     }

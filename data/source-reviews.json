@@ -4965,6 +4965,33 @@
       "action": "size_needs_confirmation",
       "reason": "Manufacturer and historical listings report different package weights under the same UPC; source identity retained privately pending confirmation.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1272",
+      "expectedUpc": "888109251734",
+      "expectedNameSha256": "1f7740c7e953bc12ba843ee5a26de19cd8ade340d34c49b10b2df0f8d45580b2",
+      "expectedSourceRecordSha256": "d014dbb52ef2edf95bcab2bbe6e3f1e0fc94e2c1e59f773ecf02e25d7bf2d674",
+      "action": "size_needs_confirmation",
+      "reason": "Source weight differs from the weight on an exact UPC package image; original record retained privately pending confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1299",
+      "expectedUpc": "028293510662",
+      "expectedNameSha256": "f129ab049ed2c5787b02b6fe2605014de485cecbaefa47ec3f59d6527b9a1e06",
+      "expectedSourceRecordSha256": "ff2e9d231c2d061272bc7ce1690d26291a277d9e4755428831833fd97fe508b8",
+      "action": "size_needs_confirmation",
+      "reason": "Source weight differs from the weight on an exact UPC package image; original record retained privately pending confirmation.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1316",
+      "expectedUpc": "028293510655",
+      "expectedNameSha256": "5d58aecd4feda6ce0316ae58f0a3a884042501b3007a441e2e58d3fad19eb875",
+      "expectedSourceRecordSha256": "0970c521238637a23fe6691f33257b7b6b73a2bee61adf20f1125299c72ce52c",
+      "action": "size_needs_confirmation",
+      "reason": "Source weight differs from the weight on an exact UPC package image; original record retained privately pending confirmation.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
