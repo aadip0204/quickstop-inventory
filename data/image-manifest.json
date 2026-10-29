@@ -12642,6 +12642,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7751",
+      "expectedUpc": "082000750710",
+      "expectedName": "Smirnoff Peach",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7751.png",
+      "alt": "Smirnoff Peach — 750 mL bottle",
+      "sourcePage": "https://www.thehutliquors.com/smirnoff-peach-vodka.html",
+      "sourceImageUrl": "https://cdn.shoplightspeed.com/shops/637462/files/25031386/1600x2048x1/smirnoff-smirnoff-peach-vodka.jpg",
+      "sha256": "1bf66e79facde88fefdb596eb56f0275fd92a7a5768301bc596b779558f05388",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7773",
+      "expectedUpc": "082000729341",
+      "expectedName": "SMIRNOFF STRAWBERRY 750",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7773.png",
+      "alt": "Smirnoff Strawberry — 750 mL bottle",
+      "sourcePage": "https://jensensliquors.com/products/smirnoff-strawberry-flavored-vodka-1",
+      "sourceImageUrl": "https://jensensliquors.com/cdn/shop/files/smirnoff-strawberry-750-new-web.png?v=1726868480",
+      "sha256": "570f5a1b6231e12afa24b748c88ba8271d7de5a9749835ff13d29cc390d78528",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7798",
+      "expectedUpc": "082000001171",
+      "expectedName": "Smirnoff WATERMELON",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7798.png",
+      "alt": "Smirnoff Watermelon — 750 mL bottle",
+      "sourcePage": "https://unwindbottleshop.com/products/smirnoff-vodka-watermelon-750ml",
+      "sourceImageUrl": "https://unwindbottleshop.com/cdn/shop/products/SMIRNOFF_WATER.png?v=1710057766&width=1946",
+      "sha256": "7aca58f824953d3977684cd0577d67845db0f65444c2cdba975ad036045a749c",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
