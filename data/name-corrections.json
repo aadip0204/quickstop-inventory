@@ -21122,6 +21122,38 @@
       "expectedNameSha256": "c47e32e91a9e46a4f767f117d63eed41c89aa84260fbd13f118d347edf9761e1",
       "replaceTextFrom": "BAILEYS ORIGINAL",
       "replaceTextTo": "Baileys Original Irish Cream Gift Set with Coupe Glass"
+    },
+    {
+      "sku": "1736",
+      "expectedUpc": "082000004882",
+      "scope": "brand_completion_exact_upc",
+      "evidence": [
+        {
+          "url": "https://www.target.com/p/-/A-52136768",
+          "kind": "exact_upc_listing",
+          "supports": "Exact UPC and package photo establish the full Captain Morgan brand and unchanged flavor."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "51fda26e8e6aeb14f9f3f475aa85d2fce74177ef2916e4b502b3b6dad600c79a",
+      "replaceTextFrom": "Captain Coconut",
+      "replaceTextTo": "Captain Morgan Coconut"
+    },
+    {
+      "sku": "1756",
+      "expectedUpc": "082000004929",
+      "scope": "brand_completion_exact_upc",
+      "evidence": [
+        {
+          "url": "https://www.target.com/p/-/A-52329331",
+          "kind": "exact_upc_listing",
+          "supports": "Exact UPC and package photo establish the full Captain Morgan brand and unchanged flavor."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "1789d14a5d30eae20956ab21ca8470432091f2bdcd65bf9c036663a6f656f2e2",
+      "replaceTextFrom": "Captain Pineapple",
+      "replaceTextTo": "Captain Morgan Pineapple"
     }
   ],
   "identityReviews": [

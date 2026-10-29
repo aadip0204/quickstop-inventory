@@ -11498,6 +11498,116 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1736",
+      "expectedUpc": "082000004882",
+      "expectedName": "Captain Morgan Coconut",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1736.jpg",
+      "alt": "Captain Morgan Coconut — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-52136768",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_3370899b-3b3b-4e84-953a-3764a1e0329f?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "3cb3a666a200dd297a744148e6a59fd1a7a1f2d2fc3f494c24b5377b75d97e19",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1756",
+      "expectedUpc": "082000004929",
+      "expectedName": "Captain Morgan Pineapple",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1756.jpg",
+      "alt": "Captain Morgan Pineapple — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-52329331",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_22c7449f-54a0-4c1a-85dd-06adc92e41e4?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "c3cb6d4f8091ea7e6ee8abf37a2e843dee2444de696ffbdfd4bd3d37fef44978",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1755",
+      "expectedUpc": "082000766827",
+      "expectedName": "Captain Morgan White Rum",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1755.jpg",
+      "alt": "Captain Morgan White Rum — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-15113119",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_6e5b25cd-eed7-42a8-82a6-46ccf44d2bb2?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "4d10aff15886cf0d9a3297266c9f55e4a5a4f419440c526477b447430b056cce",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1758",
+      "expectedUpc": "082000757900",
+      "expectedName": "CAPTAIN MORGAN BLACK",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1758.jpg",
+      "alt": "CAPTAIN MORGAN BLACK — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137760",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_e9222581-ddd5-4a13-8c58-80ff6d7e8e59?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "ed1c27481ffc22acdd1a702b2fb5d8eea4b67ca0d4ea4d0c3e063303a74ceb7e",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1156",
+      "expectedUpc": "088100134757",
+      "expectedName": "Black Velvet",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1156.jpg",
+      "alt": "Black Velvet — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-53483660",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_ffba2236-be51-49b9-8cd3-ffd3d23cc97a?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "299c70f49547aa36006ba84d74d0c885ff13c310f68c9ba8268f6d639f8eb21a",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
