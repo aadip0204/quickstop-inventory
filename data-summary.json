@@ -26,12 +26,12 @@
     "nameVerificationRecords": 84,
     "identityConflicts": 6,
     "exactIdentitiesResolved": 72,
-    "fullyVerifiedNames": 635,
+    "fullyVerifiedNames": 636,
     "manufacturerRecordVerifiedNames": 150,
     "scopeNote": "All rows scanned for specified risks. Only listed corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock."
   },
   "imageStatus": {
-    "verifiedVariants": 622,
-    "unverifiedVariants": 9067
+    "verifiedVariants": 626,
+    "unverifiedVariants": 9063
   }
 }
