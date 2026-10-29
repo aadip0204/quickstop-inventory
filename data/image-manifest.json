@@ -12224,6 +12224,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3159",
+      "expectedUpc": "744607068208",
+      "expectedName": "el Jimador Blanco",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-3159.jpg",
+      "alt": "el Jimador Blanco — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137685",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_a785092a-1cd9-405f-85e1-7a0f16e60546?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "66bb8ef70f92583e06a212cb8618c1e471be93c3147849f0fe09f9cbe274408f",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4655",
+      "expectedUpc": "811538010832",
+      "expectedName": "Jose Cuervo Gold",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-4655.jpg",
+      "alt": "Jose Cuervo Gold — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-13355299",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_ae176209-2178-4c24-b78d-71f63bfa4cde?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "0130ff394cb909f3913f07289af33670c68138f0db60f9a3db7c4d999eabdd9b",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4676",
+      "expectedUpc": "811538011426",
+      "expectedName": "Jose Cuervo silver Tradicional",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-4676.jpg",
+      "alt": "Jose Cuervo silver Tradicional — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137645",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_f3597826-37ea-454e-b643-0897d24f6c71?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "e24fbb33b8c1b47619f0bdfdf581b98ef2a5ad10faafa0d55272d12644977a1c",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
