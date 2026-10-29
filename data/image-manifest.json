@@ -12026,6 +12026,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "4781",
+      "expectedUpc": "085156007509",
+      "expectedName": "Ketel One Citroen",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-4781.jpg",
+      "alt": "Ketel One Citroen — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137328",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_0700a193-6fe7-4af8-ba7d-b33ebfd46afa?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "950a65a9e1380750f04e9ecad65d4f9abcaa9fd54358d0ced3e743d843f6fab6",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8532",
+      "expectedUpc": "088110110307",
+      "expectedName": "Tanqueray Gin",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-8532.jpg",
+      "alt": "Tanqueray Gin — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-13355117",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_b81b24ee-f3f3-4b77-a101-d45e3d3a8c38?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "526319eb61b7b55685fb6a4397140b41edc063d452972ddf42166615ad4fa0de",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8538",
+      "expectedUpc": "088110158606",
+      "expectedName": "Tanqueray Ten Gin",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-8538.jpg",
+      "alt": "Tanqueray Ten Gin — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137279",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_6d955067-db07-4504-83b3-2b000d42db1e?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "e0e71f1005e42cbb81b1fd414785ac953674d3ff963702807f3f1508ae1892d6",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8771",
+      "expectedUpc": "619947000020",
+      "expectedName": "Tito's vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-8771.jpg",
+      "alt": "Tito's vodka — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-14984942",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_28e501a7-0a17-44e8-ab24-3cf9b415627a?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "bf09450580355ae70c629654a51a08014554574ddaf27d9c9552ee3f494dfe7f",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
