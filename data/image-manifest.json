@@ -12114,6 +12114,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7780",
+      "expectedUpc": "082000004011",
+      "expectedName": "Smirnoff Vanilla Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7780.jpg",
+      "alt": "Smirnoff Vanilla Vodka — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-14765225",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_b8a6ac9e-b1a4-48d4-aff8-745147681e12?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "b35da38766c73607bd583e3d68ab9779d4750ac86187e30ded90614f28a2d0aa",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7753",
+      "expectedUpc": "082000747314",
+      "expectedName": "SMIRNOFF PINEAPPLE",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7753.jpg",
+      "alt": "SMIRNOFF PINEAPPLE — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137604",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_58b3adc8-8d0b-43b9-aa56-9e9c7b68d929?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "c63158a643cb9752062f58ca315acb7ae5723725629a067ebca14c2eadf4c20c",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
