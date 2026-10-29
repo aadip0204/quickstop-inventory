@@ -22335,6 +22335,70 @@
           "supports": "Exact UPC and matching package identify Strawberries & Cream; source size remains unchanged."
         }
       ]
+    },
+    {
+      "sku": "197",
+      "expectedUpc": "078000015102",
+      "expectedNameSha256": "019b5360e183a82af40147947a06459edb391e75a34e17123ce46618e3dde2dc",
+      "replaceTextFrom": "7 UP TEN 2 LTR",
+      "replaceTextTo": "7UP TEN 2 LTR",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kroger.com/p/7up-ten-lemon-lime-soda/0007800001510",
+          "supports": "Exact UPC and inspected package identify product expression; source size remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "198",
+      "expectedUpc": "078000025552",
+      "expectedNameSha256": "613fe9c06a94aac560e6f75b3241d3ef29b5fee3ef0107a562d644e9122dd8e7",
+      "replaceTextFrom": "7 UP TROPICAL  2L",
+      "replaceTextTo": "7UP Tropical 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/info-7up",
+          "supports": "Exact UPC and inspected package identify product expression; source size remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "212",
+      "expectedUpc": "078000001624",
+      "expectedNameSha256": "a59beb443a6be2cb92c9d1ea79a814e782a807e87641b270e0105f2ebec07b98",
+      "replaceTextFrom": "7UP DIET 20OZ",
+      "replaceTextTo": "7UP Zero Sugar 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.elevatedbws.com/diet-7up-20oz.html",
+          "supports": "Exact UPC and inspected package identify product expression; source size remains unchanged."
+        }
+      ]
+    },
+    {
+      "sku": "214",
+      "expectedUpc": "078000037951",
+      "expectedNameSha256": "b372767a6c41fd10e946660e07802f9b5bd5ca5899694b380609cc91fc6a6701",
+      "replaceTextFrom": "7UP TROPICAL  20OZ",
+      "replaceTextTo": "7UP Tropical 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://soda-emporium.com/product/fresh-20oz-7-up-tropical/",
+          "supports": "Exact UPC and inspected package identify product expression; source size remains unchanged."
+        }
+      ]
     }
   ],
   "identityReviews": [
