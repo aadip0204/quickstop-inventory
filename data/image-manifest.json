@@ -14314,6 +14314,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1199",
+      "expectedUpc": "070640002504",
+      "expectedName": "Blue Ribbon Classics Vanilla Crunch Bar",
+      "expectedLabel": "4 oz",
+      "src": "images/products/sku-1199.png",
+      "alt": "Blue Ribbon Classics Vanilla Crunch Bar — 4 oz bar",
+      "sourcePage": "https://wellsfoodservice.com/products/blue-ribbon-classics/bars/king-size-vanilla-crunch-bar",
+      "sourceImageUrl": "https://wellscdn.com/content/foodservice/product/large/fd453052-e8cc-416f-aca1-10f72cb4ba6c/king-size-vanilla-crunch-bar.v3.png",
+      "sha256": "d4621b7a4e139ed0f59d992ad76b3d831d52f0e6d15ff074909bc97f029bf5f5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1262",
+      "expectedUpc": "053000052616",
+      "expectedName": "Borden Mild Cheddar Shredded Cheese",
+      "expectedLabel": "8 oz",
+      "src": "images/products/sku-1262.jpg",
+      "alt": "Borden Mild Cheddar Shredded Cheese — 8 oz bag",
+      "sourcePage": "https://go-upc.com/search?q=053000052616",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/496089887.jpeg",
+      "sha256": "f50d19269e3f202b1897b7277ccdd46c270864c4b1095f084dc0609bd81a9c67",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1326",
+      "expectedUpc": "028293000811",
+      "expectedName": "Brim's Barbecue Fried Pork Rinds",
+      "expectedLabel": "74.3 g",
+      "src": "images/products/sku-1326.jpg",
+      "alt": "Brim's Barbecue Fried Pork Rinds — 74.3 g bag",
+      "sourcePage": "https://go-upc.com/search?q=028293000811",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/96171790.jpeg",
+      "sha256": "9d370755f7fbb783dcad6a811999186b1424a675dd10bc03a2b24627ae62b55e",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
