@@ -14974,6 +14974,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "498",
+      "expectedUpc": "613008764760",
+      "expectedName": "AriZona Marvel Super LXR Hero Hydration Açaí Blueberry",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-498.png",
+      "alt": "AriZona Marvel Super LXR Hero Hydration Açaí Blueberry — 16 oz bottle",
+      "sourcePage": "https://www.unicat-candy.de/Marvel-Super-LXR-Hero-Hydration-Acai-Blueberry-473-ml",
+      "sourceImageUrl": "https://www.unicat-candy.de/media/image/product/71005/lg/marvel-super-lxr-hero-hydration-acai-blueberry-473-ml.png",
+      "sha256": "864081a532bda4faa1973e924a38d8fec5ff51ecdd8a6d83b6efab57e39a31c8",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "497",
+      "expectedUpc": "613008764722",
+      "expectedName": "AriZona Marvel Super LXR Hero Hydration Peach Mango",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-497.png",
+      "alt": "AriZona Marvel Super LXR Hero Hydration Peach Mango — 16 oz bottle",
+      "sourcePage": "https://www.unicat-candy.de/Marvel-Super-LXR-Hero-Hydration-Drink-Peach-Mango-473ml",
+      "sourceImageUrl": "https://www.unicat-candy.de/media/image/product/71017/lg/marvel-super-lxr-hero-hydration-drink-peach-mango-473ml.png",
+      "sha256": "91941fccbcefd8fa7f52fa59ac105d971617eea145ec3c44009165531adbd84d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "499",
+      "expectedUpc": "613008764784",
+      "expectedName": "AriZona Marvel Super LXR Hero Hydration Dragon Fruit Watermelon",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-499.png",
+      "alt": "AriZona Marvel Super LXR Hero Hydration Dragon Fruit Watermelon — 16 oz bottle",
+      "sourcePage": "https://www.unicat-candy.de/Marvel-Super-LXR-Hero-Hydration-Drink-Dragon-Fruit-Watermelon-473ml",
+      "sourceImageUrl": "https://www.unicat-candy.de/media/image/product/71016/lg/marvel-super-lxr-hero-hydration-drink-dragon-fruit-watermelon-473ml.png",
+      "sha256": "d72226faeaed2da1d0f954d92c4c0bf437409eccb3f19fe217dd337dcaa1341d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
