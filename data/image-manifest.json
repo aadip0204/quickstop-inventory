@@ -14732,6 +14732,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8437",
+      "expectedUpc": "070462542509",
+      "expectedName": "Swedish Fish",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-8437.jpg",
+      "alt": "Swedish Fish — 2 oz package",
+      "sourcePage": "https://weinersltd.com/products/swedish-fish-soft-chewy-candy",
+      "sourceImageUrl": "https://weinersltd.com/cdn/shop/products/33602_Swedish_Fish_2_oz_1200x1200.jpg?v=1576013644",
+      "sha256": "7d336d9e5a29b20d0d64afce491540c14143c2858bef7968a1c1ca837e913111",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5315",
+      "expectedUpc": "072799111670",
+      "expectedName": "Mamba Sour 18 Fruit Chews",
+      "expectedLabel": "2.65 oz",
+      "src": "images/products/sku-5315.jpg",
+      "alt": "Mamba Sour 18 Fruit Chews — 2.65 oz package",
+      "sourcePage": "https://www.candyfavorites.com/products/mamba-sour",
+      "sourceImageUrl": "https://www.candyfavorites.com/cdn/shop/files/Mamba_Sour_Fruit_Chews_-_CandyFavorites-3981812.jpg?v=1730814196",
+      "sha256": "0b7db14e6b3f18622348534873c454a1765042558913221674dfddabe8a93d2a",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
