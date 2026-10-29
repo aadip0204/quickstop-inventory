@@ -15920,6 +15920,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "6620",
+      "expectedUpc": "012000182563",
+      "expectedName": "PEPSI",
+      "expectedLabel": "16.9 oz · bottles",
+      "src": "images/products/sku-6620.jpg",
+      "alt": "PEPSI — 16.9 oz · bottles bottle",
+      "sourcePage": "https://shop.mercaso.com/products/pepsi-16-9-oz",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/JC27652.jpg?v=1770495454",
+      "sha256": "ec37a2a9e92449a5985c8312d0b7e4280f896831e941890953c681de8112d4bc",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2834",
+      "expectedUpc": "012000813337",
+      "expectedName": "Diet Pepsi",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-2834.jpg",
+      "alt": "Diet Pepsi — 16 oz bottle",
+      "sourcePage": "https://getfoodfacts.com/food/directory/382",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Diet-Pepsi-Cola-Soda-Pop-16-fl-oz_4ee93c5b-d0c0-41d0-b128-116d38ad3411.e52f826ba9d8a45ad96eca8aa04fd0a4.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768",
+      "sha256": "34539a15c51598508b585eb4e126006d74d6354d67e264fbdae93266463d6bcd",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
