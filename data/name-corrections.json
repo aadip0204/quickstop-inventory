@@ -22575,6 +22575,54 @@
           "supports": "Exact UPC identifies brand, flavor, size and packaging."
         }
       ]
+    },
+    {
+      "sku": "8213",
+      "expectedUpc": "078000027662",
+      "expectedNameSha256": "cfc194ca3b9e38f40c17187d394c5930e74624fd22f3a06c8902d4ff7de55f35",
+      "replaceTextFrom": "SUNKIST 2LLEMONADE",
+      "replaceTextTo": "Sunkist Lemonade",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kroger.com/product/images/large/front/0007800002766",
+          "supports": "Exact UPC identifies Sunkist expression and product name."
+        }
+      ]
+    },
+    {
+      "sku": "8215",
+      "expectedUpc": "078000027723",
+      "expectedNameSha256": "5192447c6902552c485cd96dc6076e6c68de07405412aab8bac4a9379382553a",
+      "replaceTextFrom": "SUNKIST 2LSTRAWBERRY LEMONADE",
+      "replaceTextTo": "Sunkist Strawberry Lemonade",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=078000027723",
+          "supports": "Exact UPC identifies Sunkist expression and product name."
+        }
+      ]
+    },
+    {
+      "sku": "8232",
+      "expectedUpc": "078000015126",
+      "expectedNameSha256": "1062570f39c0203ad4996f0613a3c375095e3551c4e73fe7630d73f5c536658b",
+      "replaceTextFrom": "SUNKIST Orange 2L",
+      "replaceTextTo": "Sunkist TEN Orange Soda 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://listex.online/product/78000015126-us-sunkist-ten-orange-soda",
+          "supports": "Exact UPC identifies Sunkist expression and product name."
+        }
+      ]
     }
   ],
   "identityReviews": [

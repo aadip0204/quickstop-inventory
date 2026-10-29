@@ -16272,6 +16272,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8213",
+      "expectedUpc": "078000027662",
+      "expectedName": "SUNKIST LEMONADE",
+      "expectedLabel": "67.2 oz",
+      "src": "images/products/sku-8213.jpg",
+      "alt": "Sunkist Lemonade — 2 L bottle",
+      "sourcePage": "https://www.upcitemdb.com/info-the-seven-up-company",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007800002766",
+      "sha256": "7e78cc20c1afd834b31b8bfe8c36b91fa8d7b109f18cb0db23ed6a1ecb0a066d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8215",
+      "expectedUpc": "078000027723",
+      "expectedName": "Sunkist Strawberry Lemonade",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-8215.jpg",
+      "alt": "Sunkist Strawberry Lemonade — 2 L bottle",
+      "sourcePage": "https://go-upc.com/search?q=078000027723",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007800002772",
+      "sha256": "1780e9b0a58d9cdb2380389e527c17329b1393cbf4eb9c3d61dda7f79a505197",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8232",
+      "expectedUpc": "078000015126",
+      "expectedName": "Sunkist TEN Orange Soda",
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-8232.jpg",
+      "alt": "Sunkist TEN Orange Soda — 2 L bottle",
+      "sourcePage": "https://listex.online/product/78000015126-us-sunkist-ten-orange-soda",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007800001512",
+      "sha256": "b92be4ffef1172dffdc3977ef83190f32939d3dd0c973a3d97545915393cc236",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

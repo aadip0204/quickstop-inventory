@@ -5160,6 +5160,48 @@
         "reason": "Exact UPC and inspected package establish this single two liter bottle.",
         "groupWithPriorExpression": true
       }
+    },
+    {
+      "sku": "8215",
+      "expectedUpc": "078000027723",
+      "expectedNameSha256": "5192447c6902552c485cd96dc6076e6c68de07405412aab8bac4a9379382553a",
+      "expectedSourceRecordSha256": "198106449b378c362245f5ba41cb94c9c3cb3da034d237ea28023ffb0a4bf3b7",
+      "action": "size_needs_confirmation",
+      "reason": "The original item title gave the 2 L amount without a parseable separator; exact UPC and package evidence resolve the size.",
+      "reviewedOn": "2026-10-29",
+      "identityResolution": {
+        "expectedName": "Sunkist Strawberry Lemonade",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Sunkist Strawberry Lemonade",
+        "verifiedLabel": "2 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://sunkistsummer.com/products.pdf",
+            "supports": "Manufacturer product list identifies Sunkist Strawberry Lemonade in a single 2 L package; listed UPC prefix matches source."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://go-upc.com/search?q=078000027723",
+            "supports": "Exact UPC is listed as Sunkist Strawberry Lemonade soda."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.kroger.com/product/images/large/front/0007800002772",
+            "supports": "Inspected exact-UPC package front identifies Sunkist Strawberry Lemonade and 2 liters."
+          }
+        ],
+        "reason": "Exact UPC and inspected package establish one 2 L bottle matching the existing expression.",
+        "groupWithPriorExpression": true
+      }
     }
   ]
 }
