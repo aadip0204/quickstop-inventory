@@ -15370,6 +15370,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "559",
+      "expectedUpc": "613008721756",
+      "expectedName": "AriZona Iced Tea with Lemon Flavor",
+      "expectedLabel": "34 oz",
+      "src": "images/products/sku-559.png",
+      "alt": "AriZona Iced Tea with Lemon Flavor — 34 oz bottle",
+      "sourcePage": "https://shop.mercaso.com/collections/arizona-teas/products/arizona-tea-lemon-34-oz-12-pack",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/CM323675-20251007175134.png?v=1782889277",
+      "sha256": "504f1653266a34e0babfda24ac070f2d316d21d71dbe0b821dca582b495d337f",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "576",
+      "expectedUpc": "613008740382",
+      "expectedName": "AriZona Mucho Mango Fruit Juice Cocktail",
+      "expectedLabel": "128 oz",
+      "src": "images/products/sku-576.jpg",
+      "alt": "AriZona Mucho Mango Fruit Juice Cocktail — 128 oz bottle",
+      "sourcePage": "https://www.kroger.com/p/arizona-mucho-mango-fruit-juice-cocktail-bottle/0061300874038",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0061300874038",
+      "sha256": "d117055042d00c0131ae30ebf2b0294e5d3d185d93e026d883a27238a02f749f",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "613",
+      "expectedUpc": "613008740412",
+      "expectedName": "AriZona Watermelon Fruit Juice Cocktail",
+      "expectedLabel": "128 oz",
+      "src": "images/products/sku-613.jpg",
+      "alt": "AriZona Watermelon Fruit Juice Cocktail — 128 oz bottle",
+      "sourcePage": "https://www.smartandlfinal.com/sm/pickup/rsid/522/product/arizona-fruit-juice-cocktail-watermelon-id-00613008740412",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0061300874041",
+      "sha256": "13a59d6c6e81583fd1fb552e0a3af932149c8b471a9baf4271e1b1d9dc84cedc",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
