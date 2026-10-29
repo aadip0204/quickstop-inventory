@@ -4919,17 +4919,17 @@
       "sku": "101483",
       "expectedUpc": "078000035551",
       "expectedNameSha256": "52840bdc6b547fb944684b52a248aecc088acbba610b3407ad528678c9673741",
-      "replaceTextFrom": "SANKIST",
-      "replaceTextTo": "SUNKIST",
-      "scope": "brand_spelling_only",
+      "replaceTextFrom": "SANKIST BERRY LYMD 12PK 12OZ",
+      "replaceTextTo": "Sunkist Berry Lemonade 12PK 12OZ",
+      "scope": "exact_upc_name_identity",
       "evidence": [
         {
-          "url": "https://www.sunkistsoda.com/",
-          "kind": "official_manufacturer_brand_or_product",
-          "supports": "Confirms only the stated brand or expression spelling, not the full UPC-specific product name, measurement, packaging or availability."
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/23897817-sunkist-berry-lemonade-soda-12-fl-oz",
+          "supports": "Exact UPC identifies berry lemonade and twelve 12 oz cans."
         }
       ],
-      "verifiedOn": "2026-10-27"
+      "verifiedOn": "2026-10-29"
     },
     {
       "sku": "3756",

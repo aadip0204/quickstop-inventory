@@ -5118,6 +5118,48 @@
       "action": "size_needs_confirmation",
       "reason": "The inventory states 2 oz, while an exact-UPC listing identifies a 1.5 oz Gummibursts Duos pack (https://www.buycott.com/upc/022000116598); retain the SKU and verify the actual package before choosing a size or photo.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "8214",
+      "expectedUpc": "078000031805",
+      "expectedNameSha256": "f6a776f69ea6a82f38b67313bc9da60bc248d6b69937342cba0c0f9f0ff5e96f",
+      "expectedSourceRecordSha256": "f3cd9f8277a52b65f7853c2b5e9a24c546b4a6406f98db7e882969b8cfd0bc05",
+      "action": "size_needs_confirmation",
+      "reason": "Source name and package quantity differ in units; exact UPC and package evidence resolve the size.",
+      "reviewedOn": "2026-10-29",
+      "identityResolution": {
+        "expectedName": "Sunkist Strawberry Lemonade",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Sunkist Strawberry Lemonade",
+        "verifiedLabel": "2 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://sunkistsummer.com/products.pdf",
+            "supports": "Sunkist promotion identifies strawberry lemonade in a single 2 liter package using the UPC prefix."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.cub.com/store/cub/products/19425777-sunkist-strawberry-lemonade-soda-2-l",
+            "supports": "Exact UPC identifies strawberry lemonade in a 2 liter bottle."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.kroger.com/product/images/large/front/0007800003180",
+            "supports": "Inspected bottle label shows strawberry lemonade and 2 liters."
+          }
+        ],
+        "reason": "Exact UPC and inspected package establish this single two liter bottle.",
+        "groupWithPriorExpression": true
+      }
     }
   ]
 }
