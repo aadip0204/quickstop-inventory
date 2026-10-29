@@ -16,7 +16,7 @@ Catalog repairs are implemented and tested. The first repair release was verifie
 
 Only exact SKU/UPC, expression, size and packaging matches with a completed professional presentation review may enter the public manifest. Licensed photographs retain their license records. At the owner’s explicit request, direct internet product references use a separate approval basis without asserting copyright-holder permission or a license. Each selected variant has its own image; changing size cannot inherit a sibling photo.
 
-Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 617 variants currently have approved professional images; 9,072 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
+Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 618 variants currently have approved professional images; 9,071 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
 
 Professional image sourcing is ongoing. Direct manufacturer and retailer research continues for items without an exact professional photo. Unreviewed bulk barcode matches are not treated as approvals.
 
@@ -189,3 +189,5 @@ Jack Daniel’s Tennessee Fire 200 mL received an inspected UPC-matched bottle p
 Minute Maid Pink Lemonade and two Tropicana drinks received individually inspected, UPC-matched bottle photos.
 
 Tropicana Island Punch and Piña Colada 52 oz bottles received inspected manufacturer photos.
+
+Coca-Cola Zero Sugar 12 oz single can received an inspected UPC-matched product image.
