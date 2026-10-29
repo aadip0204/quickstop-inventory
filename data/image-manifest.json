@@ -13676,6 +13676,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8906",
+      "expectedUpc": "048500203484",
+      "expectedName": "Tropicana Island Punch Drink",
+      "expectedLabel": "52 oz",
+      "src": "images/products/sku-8906.jpg",
+      "alt": "Tropicana Island Punch Drink — 52 oz bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/048500203484-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/048500203484-0011-en-US/images/d4e979d6-cbbe-4aa9-a17d-3acdbdceb8b3.tif",
+      "sha256": "f38819183a4e7026a21b07fe9bb193c409eb3efab3fd711e687972766d5bfaeb",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8910",
+      "expectedUpc": "048500203989",
+      "expectedName": "Tropicana Piña Colada Drink",
+      "expectedLabel": "52 oz",
+      "src": "images/products/sku-8910.jpg",
+      "alt": "Tropicana Piña Colada Drink — 52 oz bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/048500203989-0004-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/048500203989-0004-en-US/images/e8e35d39-adad-4455-a3eb-94980d5cc4e8.jpg",
+      "sha256": "e680ec4ede8ed9e843de16497fbc27462e341decd24b7b4b8609b47f1b70da48",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
