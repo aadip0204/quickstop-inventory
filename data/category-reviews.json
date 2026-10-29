@@ -2025,6 +2025,26 @@
           "supports": "Exact UPC 855880008178 and 375 mL package; product is sold as an Aviation cocktail."
         }
       ]
+    },
+    {
+      "sku": "486",
+      "expectedUpc": "613008739485",
+      "expectedNameSha256": "48ec5b2fed8a1eeddaafbaafef0cdc6b9f6aa11071b850c6bb241d12aac44491",
+      "expectedSourceRecordSha256": "5cd4150ae69b7fe5186c848f13f4c7a4483ad4d3e63e798430b699b16f7fc8cb",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "Ari zona energy drlnk",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies a beverage; route to Drinks & mixers while preserving the original source department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://kellyhost.com/prop65/BPA_Product_List.pdf",
+          "supports": "UPC 613008739485 is listed as AriZona Fruit Punch Caution in the Drink category."
+        }
+      ]
     }
   ]
 }

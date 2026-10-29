@@ -8941,25 +8941,15 @@
       "sku": "2705",
       "expectedUpc": "074806000564",
       "expectedNameSha256": "8f41de78d7105e4906acd8c0152e06ec40375e91af8714192f418e0ccdc27bf9",
-      "replaceTextFrom": "Dailys Peach 64oz",
-      "replaceTextTo": "Daily's Peach Mix 64oz",
-      "scope": "exact_upc_name_identity",
+      "replaceTextFrom": "Dailys",
+      "replaceTextTo": "Daily's",
+      "scope": "brand_spelling",
       "verifiedOn": "2026-10-27",
       "evidence": [
         {
-          "url": "https://dailyscocktails.com/about-us/",
           "kind": "manufacturer",
-          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
-        },
-        {
-          "url": "https://world-en.openfoodfacts.org/product/0074806000564",
-          "kind": "exact_upc_listing",
-          "supports": "Existing exact UPC listing for 074806000564; not sole evidence of the product name."
-        },
-        {
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/480/600/0564/1.jpg",
-          "kind": "inspected_package_photo",
-          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
+          "url": "https://dailyscocktails.com/about-us/",
+          "supports": "The manufacturer styles the brand as Daily's; the flavor remains unconfirmed because source name and UPC conflict."
         }
       ]
     },
@@ -17640,7 +17630,7 @@
       "sku": "5025",
       "expectedUpc": "028400575317",
       "expectedNameSha256": "3693cf116a12a79148fdfebf1360b6a4fc8a8fb5bf8c83e9837d25c325b1bc3c",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "7.75 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -23163,6 +23153,86 @@
           "supports": "Exact UPC confirms the complete product name and packaging."
         }
       ]
+    },
+    {
+      "sku": "1064",
+      "expectedUpc": "089819541874",
+      "expectedNameSha256": "b445bb92c82b330ab7b6812d59ce0725f53fc1fb7fb5c9b3a67f8758e5bf4aff",
+      "replaceTextFrom": "Beringer Red Moscato 750mlCheck Inventory 17",
+      "replaceTextTo": "Beringer Red Moscato 750ml",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/beringer-main-vine-red-moscato",
+          "supports": "Exact UPC identifies Beringer Red Moscato 750 mL; the source inventory note is not part of the product name."
+        }
+      ]
+    },
+    {
+      "sku": "1068",
+      "expectedUpc": "089819784639",
+      "expectedNameSha256": "1b21957357465b1ef35fcc5a4bad6db96f193c92b2992d67c45e7e6b85180983",
+      "replaceTextFrom": "Beringer White Zin",
+      "replaceTextTo": "Beringer White Zinfandel",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/upc/089819784639",
+          "supports": "Exact UPC identifies Beringer White Zinfandel in a four-pack of 187 mL bottles."
+        }
+      ]
+    },
+    {
+      "sku": "5032",
+      "expectedUpc": "028400025904",
+      "expectedNameSha256": "5d9e4b386c73624f39fa4c9b9d45f2d866da3c390043ece7309ca2cacaef0e59",
+      "replaceTextFrom": "Lays",
+      "replaceTextTo": "Lay's",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/upc/028400025904",
+          "supports": "Exact UPC identifies the Lay's brand and product expression; package size remains unconfirmed."
+        }
+      ]
+    },
+    {
+      "sku": "5038",
+      "expectedUpc": "028400087582",
+      "expectedNameSha256": "49e551329baf78f4d4388a2f3f101ae1875cd9b12faa6b48203d5aac434f747b",
+      "replaceTextFrom": "Lays",
+      "replaceTextTo": "Lay's",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.ubuy.rs/en/product/54PK9JQQK-lay-39-s-potato-chips-classic-1-13-ounce",
+          "supports": "Exact UPC identifies the Lay's brand and product expression; package size remains unconfirmed."
+        }
+      ]
+    },
+    {
+      "sku": "5838",
+      "expectedUpc": "070847000037",
+      "expectedNameSha256": "b58ff0370286b7447bc18a6b351b2948a3b7e8421634584320f16729a81419c2",
+      "replaceTextFrom": "Absolute Zero",
+      "replaceTextTo": "Absolutely Zero",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/monster-energy-drink-absolutely-zero--id-070847000037",
+          "supports": "Exact UPC identifies Monster Absolutely Zero 16 oz; the pictured package confirms the expression spelling."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -23291,6 +23361,63 @@
           "kind": "manufacturer_listing",
           "url": "https://static1.squarespace.com/static/5e41cdeef46c7f630057fdae/t/5ec5aba82437b371a891643e/1590012841410/Carleys%2B6-Pack%2BSoft%2BBaked%2BProduct%2BSpecifications.pdf",
           "supports": "Manufacturer product specifications identify UPC 740235500103 as chocolate chip."
+        }
+      ]
+    },
+    {
+      "sku": "1065",
+      "expectedUpc": "089819542574",
+      "expectedNameSha256": "da710452eef66e4f86860e517c0bebd697811295d3d2aaa730e7ee9a0cf206df",
+      "action": "retain_flagged",
+      "reason": "Inventory says Smooth Red Blend, while exact UPC records identify Dark Red Blend; confirm the actual bottle before choosing an expression or image.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.mbllpartners.ca/sites/mbll-pa/files/pdf_pamphlets/Manitoba%20Liquor%20%26%20Lotteries%20Category%20Price%20List%20effective%20April%2016%2C%202021.pdf",
+          "supports": "The exact UPC is associated with Beringer Founders Estate Dark Red."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://www.wine.com/product/beringer-founders-estate-smooth-red-blend-2010/115675",
+          "supports": "Smooth Red Blend is also a named Beringer expression; a source-name conflict remains."
+        }
+      ]
+    },
+    {
+      "sku": "2705",
+      "expectedUpc": "074806000564",
+      "expectedNameSha256": "8f41de78d7105e4906acd8c0152e06ec40375e91af8714192f418e0ccdc27bf9",
+      "action": "retain_flagged",
+      "reason": "The source name says Peach, while the exact UPC is listed for Piña Colada; confirm the bottle before assigning an expression or photo.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/dailys-pina-colada-mix-64oz",
+          "supports": "UPC 074806000564 is listed for Daily’s Piña Colada Mix 64 oz."
+        },
+        {
+          "kind": "source_name",
+          "url": "https://world-en.openfoodfacts.org/product/0074806000564",
+          "supports": "A conflicting Peach Mix photo was associated with the UPC; source records also say Peach. Retain both as unresolved rather than choose a flavor."
+        }
+      ]
+    },
+    {
+      "sku": "6965",
+      "expectedUpc": "9002490100070",
+      "expectedNameSha256": "c5a2b7b17600078d78f77c3a20ac0c069028295cb86ed9808956bf71b18d1227",
+      "action": "retain_flagged",
+      "reason": "Inventory says Sugar Free, but the exact EAN is documented for the original sugar-containing Red Bull Energy Drink; confirm the actual can.",
+      "evidence": [
+        {
+          "kind": "exact_ean_product_specification",
+          "url": "https://cdn-s1.lyreco.com/staticswebshop/sds/ITIT/13020670.pdf",
+          "supports": "EAN 9002490100070 identifies the original Red Bull Energy Drink 250 mL, conflicting with the Sugar Free inventory title."
+        },
+        {
+          "kind": "exact_ean_product_specification",
+          "url": "https://files.merstatic.com/files/products/2022/06/07/red-bull-original-0-1528271455-ficha-tecnica-y-compuesto%281%29.pdf",
+          "supports": "EAN 9002490100070 identifies the original Red Bull Energy Drink 250 mL can."
         }
       ]
     }

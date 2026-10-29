@@ -112,6 +112,20 @@ def category_review(source, category='food', row=1, name_manifest=None):
             'evidence': [{'kind': 'manufacturer', 'url': 'https://example.test/reviewed-product'}]}
 
 
+def public_name_review(source, proposed, row=1, category=None):
+    raw = list(csv.reader(io.StringIO(source.decode())))[row]
+    catalog, _ = builder.build(source)
+    product, variant = next((p, v) for p in catalog['products'] for v in p['variants'] if v['sku'] == raw[0])
+    review = {'sku': raw[0], 'expectedUpc': raw[1], 'expectedSourceRow': row,
+              'expectedRawFieldsSha256': hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest(),
+              'expectedPublicName': product['name'], 'expectedLabel': variant['label'],
+              'expectedCategory': category or product['category'], 'expectedDepartment': product['department'],
+              'proposedPublicTitle': proposed, 'reason': 'Exact UPC listing confirms the product title.',
+              'evidence': [{'kind': 'exact_upc_listing', 'url': f'https://example.test/upc/{raw[1]}',
+                            'supports': f'Exact UPC {raw[1]} identifies the reviewed expression.'}]}
+    return {'schemaVersion': 1, 'reviews': [review]}
+
+
 def manufacturer_correction(source, replacement, public_name, label):
     # Synthetic evidence exercises guards; it is never a real source approval
     # and is never written to any public manifest or product catalog.
@@ -133,6 +147,101 @@ def manufacturer_correction(source, replacement, public_name, label):
 
 
 class ImportTests(unittest.TestCase):
+    def test_guarded_public_name_correction_changes_only_the_reviewed_title(self):
+        source = export(
+            {'ItemName': 'Example Grape 12oz', 'SKU': '100', 'MAINUPC': '012345678905', 'DEPNAME': 'Juice'},
+            {'ItemName': 'Example Grape 24oz', 'SKU': '101', 'MAINUPC': '012345678912', 'DEPNAME': 'Juice'},
+        )
+        baseline, _ = builder.build(source)
+        reviews = public_name_review(source, 'Example Concord Grape')
+        catalog, audit = builder.build(source, public_name_reviews_manifest=reviews)
+        before = {v['sku']: (p, v) for p in baseline['products'] for v in p['variants']}
+        after = {v['sku']: (p, v) for p in catalog['products'] for v in p['variants']}
+
+        self.assertEqual(after['100'][0]['name'], 'Example Concord Grape')
+        self.assertEqual(after['101'][0]['name'], before['101'][0]['name'])
+        self.assertEqual(after['100'][1], before['100'][1])
+        self.assertEqual(after['101'][1], before['101'][1])
+        self.assertEqual(after['100'][0]['category'], before['100'][0]['category'])
+        self.assertEqual(after['100'][0]['department'], before['100'][0]['department'])
+        self.assertNotEqual(after['100'][0]['id'], after['101'][0]['id'])
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'Example Grape 12oz')
+        self.assertEqual(audit['publicNameCorrections'], 1)
+        self.assertEqual(builder.name_audit(catalog, audit)['summary']['publicTitleCorrections'], 1)
+
+    def test_guarded_public_name_correction_runs_after_category_review(self):
+        source = export({'ItemName': 'Example Crackers 4oz', 'DEPNAME': 'MISC',
+                         'MAINUPC': '012345678905'})
+        categories = {'schemaVersion': 1, 'reviews': [category_review(source, category='food')]}
+        names = public_name_review(source, 'Example Savory Crackers', category='food')
+        catalog, audit = builder.build(source, category_reviews_manifest=categories,
+                                       public_name_reviews_manifest=names)
+        product = catalog['products'][0]
+        self.assertEqual(product['name'], 'Example Savory Crackers')
+        self.assertEqual(product['category'], 'food')
+        self.assertEqual(product['department'], 'MISC')
+        self.assertEqual(product['variants'][0]['label'], '4 oz')
+        self.assertEqual(audit['records'][0]['source']['ItemName'], 'Example Crackers 4oz')
+
+    def test_public_name_review_cannot_hide_an_identity_conflict(self):
+        original = 'Example Grape 12oz'
+        source = export({'ItemName': original, 'SKU': '100', 'MAINUPC': '012345678905', 'DEPNAME': 'Juice'})
+        names = {'schemaVersion': 1, 'identityReviews': [{
+            'sku': '100', 'expectedUpc': '012345678905',
+            'expectedNameSha256': hashlib.sha256(original.encode()).hexdigest(),
+            'action': 'retain_flagged', 'reason': 'UPC identifies a different product',
+            'evidence': [{'url': 'https://example.test/conflict'}]}]}
+        proposal = public_name_review(source, 'Example Concord Grape')
+        proposal['reviews'][0]['expectedPublicName'] += ' (identity needs confirmation)'
+        with self.assertRaisesRegex(ValueError, 'cannot override an unresolved identity conflict'):
+            builder.build(source, name_manifest=names, public_name_reviews_manifest=proposal)
+
+    def test_default_public_name_manifest_is_repository_data_file(self):
+        args = builder.build_argument_parser().parse_args([
+            '--input', '/tmp/private.csv', '--private-output', '/tmp/private-output'])
+        self.assertEqual(args.public_name_reviews, ROOT / 'data/public-name-reviews.json')
+        self.assertEqual(builder.DEFAULT_PUBLIC_NAME_REVIEWS, args.public_name_reviews)
+
+    def test_guarded_public_name_correction_rejects_stale_guards_and_unsafe_proposals(self):
+        source = export({'ItemName': 'Example Grape 12oz', 'SKU': '100',
+                         'MAINUPC': '012345678905', 'DEPNAME': 'Juice'})
+        proposal = public_name_review(source, 'Example Concord Grape')
+        for field, value in [('expectedUpc', '012345678912'), ('expectedSourceRow', 2),
+                             ('expectedPublicName', 'Stale Title'),
+                             ('expectedRawFieldsSha256', '0' * 64),
+                             ('expectedLabel', '13 oz'), ('expectedCategory', 'food'),
+                             ('expectedDepartment', 'Soda')]:
+            stale = copy.deepcopy(proposal)
+            stale['reviews'][0][field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                builder.build(source, public_name_reviews_manifest=stale)
+
+        with self.assertRaisesRegex(ValueError, 'identity mismatch'):
+            builder.build(source.replace(b'19.99', b'29.99'), public_name_reviews_manifest=proposal)
+        for mutate in [lambda x: x.update(proposedPublicTitle='Example Grape $4.99'),
+                       lambda x: x.update(proposedPublicTitle='Juice'),
+                       lambda x: x.update(evidence=[]),
+                       lambda x: x['evidence'][0].update(url='file:///private/source'),
+                       lambda x: x['evidence'][0].update(url='https://example.test/source',
+                                                        supports='UPC omitted from evidence')]:
+            wrong = copy.deepcopy(proposal)
+            mutate(wrong['reviews'][0])
+            with self.subTest(wrong=wrong), self.assertRaises(ValueError):
+                builder.build(source, public_name_reviews_manifest=wrong)
+
+        missing = copy.deepcopy(proposal)
+        missing['reviews'][0]['sku'] = '999'
+        with self.assertRaisesRegex(ValueError, 'applicable original-source merchandise SKU'):
+            builder.build(source, public_name_reviews_manifest=missing)
+
+        for field, value in [('currentRawSourceName', 'private raw title'),
+                             ('privatePath', '/Users/private/input.csv'),
+                             ('catalogSha256Snapshot', 'a' * 64)]:
+            private_field = copy.deepcopy(proposal)
+            private_field['reviews'][0][field] = value
+            with self.subTest(private_field=field), self.assertRaisesRegex(ValueError, 'private fields'):
+                builder.build(source, public_name_reviews_manifest=private_field)
+
     def test_manufacturer_name_correction_preserves_size_source_and_absent_photo(self):
         source = export({'ItemName': 'Example G2 Lem 16oz bottles', 'MAINUPC': '012345678905'})
         entry = manufacturer_correction(source, 'Example G2 Lemon 16oz bottles', 'Example G2 Lemon', '16 oz · bottles')
@@ -362,6 +471,27 @@ class ImportTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'identity mismatch'):
             builder.build(source.replace(b'Example Chips 3oz', b'Example Chips 5oz'),
                           name_manifest={'schemaVersion': 1, 'identityReviews': [entry]})
+
+    def test_identity_conflict_summary_is_not_masked_by_simultaneous_name_correction(self):
+        original = 'Example Chips 3oz'
+        source = export({'ItemName': original, 'SKU': '2705', 'MAINUPC': '012345678905'})
+        name_hash = hashlib.sha256(original.encode()).hexdigest()
+        names = {'schemaVersion': 1,
+                 'corrections': [{'sku': '2705', 'expectedUpc': '012345678905',
+                                  'expectedNameSha256': name_hash, 'replaceTextFrom': 'Example',
+                                  'replaceTextTo': 'Example Brand', 'scope': 'product_name_spelling',
+                                  'evidence': [{'url': 'https://example.test/name'}]}],
+                 'identityReviews': [{'sku': '2705', 'expectedUpc': '012345678905',
+                                      'expectedNameSha256': name_hash,
+                                      'action': 'retain_flagged', 'reason': 'UPC identity remains unresolved',
+                                      'evidence': [{'url': 'https://example.test/upc-conflict'}]}]}
+        catalog, audit = builder.build(source, name_manifest=names)
+        names_audit = builder.name_audit(catalog, audit)
+        self.assertEqual(names_audit['records'][0]['outcome'], 'identity_conflict_needs_review')
+        self.assertEqual(names_audit['records'][0]['correctedSourceName'], 'Example Brand Chips 3oz')
+        self.assertEqual(names_audit['summary']['identityConflicts'], 1)
+        self.assertEqual(names_audit['summary']['evidenceBackedCorrections'], 1)
+        self.assertEqual(names_audit['summary']['fullyVerifiedNames'], 0)
 
     def test_category_review_checks_corrected_public_name_but_original_source_hash(self):
         source = export({'ItemName': 'Exampel Crackers 4oz', 'DEPNAME': 'MISC'})
@@ -1395,9 +1525,12 @@ class GeneratedCatalogTests(unittest.TestCase):
         reports = json.loads(reports_path.read_text()) if reports_path.exists() else None
         categories_path = ROOT / 'data/category-reviews.json'
         categories = json.loads(categories_path.read_text()) if categories_path.exists() else None
+        public_names_path = ROOT / 'data/public-name-reviews.json'
+        public_names = json.loads(public_names_path.read_text()) if public_names_path.exists() else None
         catalog, audit = builder.build(source, image_manifest=manifest, name_manifest=names,
                                        source_reviews_manifest=reviews, report_additions_manifest=reports,
-                                       category_reviews_manifest=categories)
+                                       category_reviews_manifest=categories,
+                                       public_name_reviews_manifest=public_names)
         self.assertEqual(audit['sourceSha256'], builder.BASELINE_HASH)
         self.assertEqual(catalog, self.catalog)
         self.assertEqual(catalog['counts']['originalSourceRows'], 9881)

@@ -5220,6 +5220,96 @@
       "action": "size_needs_confirmation",
       "reason": "Inventory states 40 oz, but exact UPC is associated with a 1 L bottle and separately with a keg. Confirm the actual package. Evidence: https://theliquorbarn.com/products/asahi-super-dry-1l and https://oklahoma.gov/content/dam/ok/en/able-commission/documents/distributors-monthly-price-posting-reports/SGWS%20July%2023%20Price%20Posting.pdf.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1056",
+      "expectedUpc": "089819012343",
+      "expectedNameSha256": "652ebed799d0f516c4ca0305df6151f3c3fd0ade1b0fddf977a9b1129784268e",
+      "expectedSourceRecordSha256": "dc7f2c281a04aeae4fb687d084327c807521158ff6810bb41e8fd33d8288c4c6",
+      "action": "size_needs_confirmation",
+      "reason": "The inventory combines a four-pack title with a 750 mL pack field. It does not say whether 750 mL is per bottle or the pack total; confirm the actual package before assigning a photograph.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "1070",
+      "expectedUpc": "089819012213",
+      "expectedNameSha256": "e37355254ab9e3f23bf1e713b0f42226b7008efc90faa311307f16d818f515e4",
+      "expectedSourceRecordSha256": "d1edb04f6e5343b365504b684eb4bb297bc19beb0c7f9d91369ac2fa3a7fc81f",
+      "action": "size_needs_confirmation",
+      "reason": "The inventory combines a four-pack title with a 750 mL pack field. It does not say whether 750 mL is per bottle or the pack total; confirm the actual package before assigning a photograph.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "5031",
+      "expectedUpc": "028400034180",
+      "expectedNameSha256": "bb0bb1bd9513743658ded7d4e3ef35c3f48b55a275d145ddbdb4d187d53f2d4b",
+      "expectedSourceRecordSha256": "339fee624cee25aba72e4c6af8a0b1df82cc624c4ff4fcc92e2c955ff626df3e",
+      "action": "size_needs_confirmation",
+      "reason": "The source inventory size conflicts with an exact-UPC product listing. Product weights may change over time; confirm the actual bag before choosing a size or image. Evidence: https://www.upcitemdb.com/info-lay-s",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "5032",
+      "expectedUpc": "028400025904",
+      "expectedNameSha256": "5d9e4b386c73624f39fa4c9b9d45f2d866da3c390043ece7309ca2cacaef0e59",
+      "expectedSourceRecordSha256": "acf54f3297833ef5be538783a2e54271517823b99f6c25b0a2efa280a2e2e0dc",
+      "action": "size_needs_confirmation",
+      "reason": "The source inventory size conflicts with an exact-UPC product listing. Product weights may change over time; confirm the actual bag before choosing a size or image. Evidence: https://www.buycott.com/upc/028400025904",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "5038",
+      "expectedUpc": "028400087582",
+      "expectedNameSha256": "49e551329baf78f4d4388a2f3f101ae1875cd9b12faa6b48203d5aac434f747b",
+      "expectedSourceRecordSha256": "2a4963538f44785bcf75b407cdd38170c6883e33ada543a69fdd9a4f863e28eb",
+      "action": "size_needs_confirmation",
+      "reason": "The source inventory size conflicts with an exact-UPC product listing. Product weights may change over time; confirm the actual bag before choosing a size or image. Evidence: https://www.ubuy.rs/en/product/54PK9JQQK-lay-39-s-potato-chips-classic-1-13-ounce",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "5025",
+      "expectedUpc": "028400575317",
+      "expectedNameSha256": "3693cf116a12a79148fdfebf1360b6a4fc8a8fb5bf8c83e9837d25c325b1bc3c",
+      "expectedSourceRecordSha256": "0debf67e15546c60940e9c9e10f85433f71a4b68be39d2afcc8af88b03282d0e",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Lay's BLT Sandwich Naturally & Artificially Flavored Potato Chips",
+      "verifiedLabel": "7.75 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC manufacturer product record and the individually inspected 7.75 oz bag corroborate this SKU; the original unspecified size is retained privately.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.pepsico.info/028400575317-0004-en-US/index.html",
+          "supports": "PepsiCo exact UPC record identifies the BLT Sandwich expression and 7.75 oz package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.harristeeter.com/p/lay-s-blt-sandwich-flavored-potato-chips/0002840057531",
+          "supports": "Retailer identifies the matching UPC product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.kroger.com/product/images/xlarge/front/0002840057531?banner=harristeeter",
+          "supports": "Inspected complete Lay’s BLT Sandwich bag visibly states 7.75 oz."
+        }
+      ]
+    },
+    {
+      "sku": "6962",
+      "expectedUpc": "611269108026",
+      "expectedNameSha256": "c1e20c2c53a8c6144f842bdccb3b99900e4b41190e74751e96be2b8b595204b9",
+      "expectedSourceRecordSha256": "1a0560dc5402e0f8fa1f3b4c3903d4eabd61f3340c136803bb8115f12adb185d",
+      "action": "size_needs_confirmation",
+      "reason": "Source says 8.2 oz per can, while exact UPC records identify four 8.4 oz cans; confirm before selecting a size or image.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }

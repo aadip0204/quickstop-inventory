@@ -1,0 +1,809 @@
+{
+  "schemaVersion": 1,
+  "reviews": [
+    {
+      "sku": "176",
+      "expectedUpc": "719410700010",
+      "expectedSourceRow": 6371,
+      "expectedRawFieldsSha256": "d1a7ae5c967a15a92d98de957403244b73ee4471a39f674053515c22e7dd7c40",
+      "expectedPublicName": "5 Hour Energy - Extra StrengthEnergy",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "5-hour ENERGY Extra Strength Berry Shot",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-90851798",
+          "supports": "Exact UPC 719410700010; product listing identifies 5-hour ENERGY Extra Strength Berry."
+        }
+      ]
+    },
+    {
+      "sku": "178",
+      "expectedUpc": "719410500016",
+      "expectedSourceRow": 7423,
+      "expectedRawFieldsSha256": "8bcddc0ded36f489a76cbbdd340ccb46229e645187339bf16363535e32fe31a2",
+      "expectedPublicName": "5 HOUR ENERGY BERRY",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "5-hour ENERGY Berry Shot",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.officedepot.com/a/products/769855/5-hour-ENERGY-Shot-Regular-Strength/",
+          "supports": "Exact UPC 719410500016; listing identifies 5-hour ENERGY Shot, Regular Strength, Berry."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/210369-5-hour-energy-shot-1-93-fl-oz",
+          "supports": "Exact UPC 719410500016; listing identifies 5-hour ENERGY Berry."
+        }
+      ]
+    },
+    {
+      "sku": "179",
+      "expectedUpc": "719410200015",
+      "expectedSourceRow": 6372,
+      "expectedRawFieldsSha256": "994ea0df97a461ac706e4ecf5cebca492cf271124d1573b5f76ab7b55c53f1ea",
+      "expectedPublicName": "5 Hour Energy grape",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "5-hour ENERGY Grape Shot",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.shelllumber.com/products/5-hour-energy-regular-strength-sugar-free-grape-energy-shot-1-93-oz-pack-of-12",
+          "supports": "Listing identifies exact UPC 719410200015 as grape 5-hour ENERGY shot."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.leegov.com/procurement/Project%20Documents/B180363JJB%2C%20Annual%20-%20Paint%20and%20Paint%20Related%20Products/PPG%20US%20Active%20Spray%20and%20Sundries%20List%20Updated%208.1.2022.pdf",
+          "supports": "Distributor list contains UPC 719410200015 and 5-Hour Energy Grape."
+        }
+      ]
+    },
+    {
+      "sku": "453",
+      "expectedUpc": "082100738502",
+      "expectedSourceRow": 311,
+      "expectedRawFieldsSha256": "fcf319c09cc73039c95c74691fdc6f2b387e2b958d2c56f79b8bd051d800d9d7",
+      "expectedPublicName": "Arbor Mist Pomegranate B Pinot Noir",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Pomegranate Berry Pinot Noir",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/brand/23267/arbor-mist-upc",
+          "supports": "UPC 082100738502 listed as Arbor Mist Pomegranate Berry Pinot Noir."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "Exact UPC 082100738502 appears with Pomegranate Berry Pinot Noir product description."
+        }
+      ]
+    },
+    {
+      "sku": "466",
+      "expectedUpc": "082100739202",
+      "expectedSourceRow": 6265,
+      "expectedRawFieldsSha256": "2a9c7da29c9cceb13011b32de20764766ce3f0a711af3c9cb45904bacefd928f",
+      "expectedPublicName": "Arborita Lime MARGARITA",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Lime Arborita",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://encorpatl.ca/wp-content/uploads/2023/10/alcohol-desc-oct-4-2023.pdf",
+          "supports": "Distributor catalog maps UPC 082100739202 to Arbor Mist Lime Arborita."
+        }
+      ]
+    },
+    {
+      "sku": "468",
+      "expectedUpc": "082100739196",
+      "expectedSourceRow": 319,
+      "expectedRawFieldsSha256": "f843204704e71ce31689810661cfd3c00cd090b497b6f5425d24ae0faf0bf2c1",
+      "expectedPublicName": "Arborita Strawberry MARGARITA",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Arborita Strawberry Margarita",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/distributors-monthly-price-posting-reports/SGWS%20July%2023%20Price%20Posting.pdf",
+          "supports": "Exact UPC 082100739196 listed as Arbor Mist Arborita Margarita Strawberry."
+        }
+      ]
+    },
+    {
+      "sku": "474",
+      "expectedUpc": "082100737567",
+      "expectedSourceRow": 323,
+      "expectedRawFieldsSha256": "3d523d4d877335d2e6fd7d0dbb3aaa303fa98f1c5fe14bef40991bfa74327fff",
+      "expectedPublicName": "Arbormist Mix Berry PINOT NOIR",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Mixed Berry Pinot Noir",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://idahodocs.contentdm.oclc.org/digital/api/collection/p16293coll3/id/44100/download",
+          "supports": "Idaho Alcohol Beverage Control report maps exact UPC 082100737567 to Arbor Mist Mixed Berry Pinot Noir."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://internationalpointofsale.com/Database/PDF/Liquor%20Database%20GA.pdf",
+          "supports": "Exact UPC 082100737567 listed as Arbor Mist Mix Berry 750ml."
+        }
+      ]
+    },
+    {
+      "sku": "478",
+      "expectedUpc": "082100739325",
+      "expectedSourceRow": 324,
+      "expectedRawFieldsSha256": "f232103affaa520efe1af0a6f767f49d57a2f3fec218e04b06ac3b94ba9d2163",
+      "expectedPublicName": "ArborMist PinkMoscato PineappleStrawberry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Pineapple Strawberry Pink Moscato",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "Exact UPC 082100739325 is listed as Arbor Mist Pineapple Strawberry Pink Moscato (abbreviated in report)."
+        }
+      ]
+    },
+    {
+      "sku": "486",
+      "expectedUpc": "613008739485",
+      "expectedSourceRow": 9583,
+      "expectedRawFieldsSha256": "5cd4150ae69b7fe5186c848f13f4c7a4483ad4d3e63e798430b699b16f7fc8cb",
+      "expectedPublicName": "Ari zona energy drlnk",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "AriZona Caution Fruit Punch",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://bpaproductlist.wordpress.com/",
+          "supports": "UPC 613008739485 is listed as Arizona Fruit Punch Caution, 11 oz can."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "Exact UPC 613008739485 product listing identifies AriZona Caution Fruit Punch."
+        }
+      ]
+    },
+    {
+      "sku": "585",
+      "expectedUpc": "613008737443",
+      "expectedSourceRow": 370,
+      "expectedRawFieldsSha256": "aceb5598c2f108835fdb60a79370abaa29ea9cd3d741621ab4586b9001e62993",
+      "expectedPublicName": "ARIZONA Orange creamCan",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Soda Shaq Orange Cream Soda",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://static1.squarespace.com/static/53ffbecbe4b05d43d09a57c8/t/5a4bfffa4192021bcbb4f072/1514930170593/NWB%2BProducts%2Bwith%2BSBT%2B123017.pdf",
+          "supports": "UPC 613008737443 listed as ARIZONA SODA SHAQ ORG CRM (Orange Cream)."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getfoodfacts.com/food/directory/62",
+          "supports": "USDA FoodData Central entry lists Arizona Soda Shaq Orange Cream Soda with UPC 613008737443."
+        }
+      ]
+    },
+    {
+      "sku": "593",
+      "expectedUpc": "613008771300",
+      "expectedSourceRow": 6726,
+      "expectedRawFieldsSha256": "a444857f7c6da012694cd2b0b1e5f63ffae5644615cb4fcff2d7d2b1f260ad6e",
+      "expectedPublicName": "ARIZONA RX ENERGY WATERMELONCAN",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona RX Energy Watermelon",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=613008771300",
+          "supports": "UPC 613008771300 product title is Arizona Rx Energy Watermelon 650ml."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://canmuseum.com/Detail.aspx?CanID=155881",
+          "supports": "Barcode 613008771300 identifies RX Energy Watermelon Herbal Tonic."
+        }
+      ]
+    },
+    {
+      "sku": "437",
+      "expectedUpc": "082100739110",
+      "expectedSourceRow": 6261,
+      "expectedRawFieldsSha256": "46623a3788d292866681efb4da664599e9fef0e839564ecd40e19259cc3b1b39",
+      "expectedPublicName": "Arbor Mist cherry red macsato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Cherry Red Moscato",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://encorpatl.ca/wp-content/uploads/2023/10/alcohol-desc-oct-4-2023.pdf",
+          "supports": "Distributor catalog maps UPC 082100739110 to Arbor Mist Cherry Red Moscato."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/distributors-monthly-price-posting-reports/SGWS%20July%2023%20Price%20Posting.pdf",
+          "supports": "Exact UPC 082100739110 is listed as Arbor Mist Cherry Red Moscato."
+        }
+      ]
+    },
+    {
+      "sku": "454",
+      "expectedUpc": "082100738199",
+      "expectedSourceRow": 312,
+      "expectedRawFieldsSha256": "4c0872bf6849b5f77dcc9acb8094f9836a38df9b691c083f21db92562a9640c7",
+      "expectedPublicName": "ARBOR MIST RASP SPARKAL",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Arbor Mist Raspberry Sparkle",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://encorpatl.ca/wp-content/uploads/2023/03/alcohol-desc.pdf",
+          "supports": "Distributor catalog maps UPC 082100738199 to Arbor Mist Raspberry Sparkle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.yumpu.com/it/document/view/25354070/liquidation-sale-list-alcool-nb-liquor",
+          "supports": "Liquor authority list associates exact UPC 082100738199 with Arbor Mist Raspberry Sparkle."
+        }
+      ]
+    },
+    {
+      "sku": "451",
+      "expectedUpc": "082100739332",
+      "expectedSourceRow": 7478,
+      "expectedRawFieldsSha256": "d06dea526c8e10f08d485487971ad2a05aeab0011c076ab011e3988a2b602700",
+      "expectedPublicName": "ARBORMIST PINEA STRAW PINK",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Pineapple Strawberry Pink Moscato",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.liquortoship.com/products/arbor-mist-pineapple-strawberry-pink-moscato-1-5l",
+          "supports": "Exact SKU/UPC 082100739332 and full product name."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "Exact UPC 082100739332 listed as Arbor Mist Pineapple Strawberry Pink Moscato (abbreviated in report)."
+        }
+      ]
+    },
+    {
+      "sku": "439",
+      "expectedUpc": "082100179060",
+      "expectedSourceRow": 326,
+      "expectedRawFieldsSha256": "8526e76e445e8c6d612302d7057d4b763c2bcb10dffa19cfc1206ded13dc146d",
+      "expectedPublicName": "ARBORMIST WHITE ZIN EXO FRT",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Exotic Fruits White Zinfandel",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://wineandliquormart.com/products/arbor-mist-exotic-wz-1-5ml",
+          "supports": "Exact UPC/SKU 082100179060 and full Arbor Mist Exotic Fruit White Zinfandel title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "Exact UPC 082100179060 is listed as Arbor Mist Exotic Fruit White Zinfandel."
+        }
+      ]
+    },
+    {
+      "sku": "480",
+      "expectedUpc": "082100109173",
+      "expectedSourceRow": 327,
+      "expectedRawFieldsSha256": "4cb036324befa48e1c974d086f152d6ef8551e3719c9fb7825b6306ee0f21205",
+      "expectedPublicName": "ARBORMIST WHITE ZIN MELON MELON",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Melon White Zinfandel",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://idahodocs.contentdm.oclc.org/digital/api/collection/p16293coll3/id/44809/download",
+          "supports": "Idaho Alcohol Beverage Control record maps UPC 082100109173 to Arbor Mist Melon White Zinfandel."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.internationalpointofsale.com/Database/PDF/Liquor%20Database%20NY.pdf",
+          "supports": "Exact UPC 082100109173 listed as Arbor Mist Melon 1.5L."
+        }
+      ]
+    },
+    {
+      "sku": "472",
+      "expectedUpc": "082100109418",
+      "expectedSourceRow": 321,
+      "expectedRawFieldsSha256": "6c4a8bd570b4a798d1f5f59a0aca6b4a1121d4c47d0ddd53e3ab04388fe37144",
+      "expectedPublicName": "ARBORMIST MELON WHITE ZIN",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Melon White Zinfandel",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://idahodocs.contentdm.oclc.org/digital/api/collection/p16293coll3/id/44100/download",
+          "supports": "Idaho Alcohol Beverage Control record maps UPC 082100109418 to Arbor Mist Melon White Zinfandel."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.internationalpointofsale.com/Database/PDF/Liquor%20Database%20NY.pdf",
+          "supports": "Exact UPC 082100109418 listed as Arbor Mist Melon 750ml."
+        }
+      ]
+    },
+    {
+      "sku": "469",
+      "expectedUpc": "082100179268",
+      "expectedSourceRow": 320,
+      "expectedRawFieldsSha256": "4aaf5a6f26b2eb73a936b16673585226f6eeafbcf0abe1569911a1a2855ed649",
+      "expectedPublicName": "ARBORMIST CRAN TWIST WHITE MERLOT",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Cranberry Twist White Merlot",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/brand/23267/arbor-mist-upc",
+          "supports": "UPC 082100179268 listed as Arbor Mist Wine Cranberry Twist White Merlot."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://idahodocs.contentdm.oclc.org/digital/api/collection/p16293coll3/id/44809/download",
+          "supports": "UPC 082100179268: Idaho Alcohol Beverage Control record maps exact UPC to Arbor Mist Cranberry White Merlot."
+        }
+      ]
+    },
+    {
+      "sku": "470",
+      "expectedUpc": "082100179022",
+      "expectedSourceRow": 9352,
+      "expectedRawFieldsSha256": "aeaec874111c4af752ba21d0c7f60698198a57d6519ca375fa7be9f66930f829",
+      "expectedPublicName": "ARBORMIST EXOTIC FRUIT WHITE ZINFANDEL",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Exotic Fruit White Zinfandel",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.mbllpartners.ca/sites/mbll-pa/files/pdf_pamphlets/Manitoba%20Liquor%20%26%20Lotteries%20Category%20Price%20List%20effective%20April%2016%2C%202021.pdf",
+          "supports": "Manitoba liquor catalog maps UPC 082100179022 to Arbor Mist Exotic Fruit White Zinfandel."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "Exact UPC 082100179022 product line is Arbor Mist Exotic Fruit White Zinfandel."
+        }
+      ]
+    },
+    {
+      "sku": "513",
+      "expectedUpc": "613008737474",
+      "expectedSourceRow": 339,
+      "expectedRawFieldsSha256": "99ad7c7fe18804f7d01bfc15c7ca530592b3b38e510252c3268aaa129757937c",
+      "expectedPublicName": "ARIZONA BLUEBERRY CREAMCAN",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Soda Shaq Blueberry Cream Soda",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://static1.squarespace.com/static/53ffbecbe4b05d43d09a57c8/t/5a4bfffa4192021bcbb4f072/1514930170593/NWB%2BProducts%2Bwith%2BSBT%2B123017.pdf",
+          "supports": "Exact UPC 613008737474 appears as Arizona Soda Shaq Blueberry Cream."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.ewg.org/foodscores/products/613008737474-SodaShaqCreamSodaBlueberry/",
+          "supports": "Product record ID contains exact UPC 613008737474 and identifies Soda Shaq Cream Soda, Blueberry."
+        }
+      ]
+    },
+    {
+      "sku": "539",
+      "expectedUpc": "613008740917",
+      "expectedSourceRow": 350,
+      "expectedRawFieldsSha256": "c26e862841b2e57681c7ae43f717fbdb38b590b0d56231fb3e3dcde76ba610b2",
+      "expectedPublicName": "ARIZONA GREENTEAGINSENG HONEY",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "AriZona Green Tea with Ginseng and Honey",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://food.saltie.app/food/801174b2-2708-42ce-84b6-66db918e9aec",
+          "supports": "UPC 613008740917; USDA record names Green Tea with Ginseng and Honey, Arizona."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getfoodfacts.com/food/arizona-green-tea-with-ginseng-and-honey-2046082",
+          "supports": "UPC 613008740917 and manufacturer-submitted product name."
+        }
+      ]
+    },
+    {
+      "sku": "544",
+      "expectedUpc": "613008741051",
+      "expectedSourceRow": 352,
+      "expectedRawFieldsSha256": "aa92d0085fa1e4a8d373d23bb6af6103c0ca2088a492f63c0d855fda2a4e0815",
+      "expectedPublicName": "ARIZONA HALF &HALF GLASS BOT",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Half & Half Iced Tea Lemonade",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://food.saltie.app/food/9c0a9ae0-4fcf-4e4c-9219-3fe351e462c8",
+          "supports": "UPC 613008741051; USDA record names Half & Half Iced Tea Lemonade and gives 16 fl oz package weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://nutritiondatalist.com/product/arizona-half-half-iced-tea-lemonade-upc-613008741051",
+          "supports": "Exact UPC 613008741051 and product name Arizona Half & Half Iced Tea Lemonade."
+        }
+      ]
+    },
+    {
+      "sku": "537",
+      "expectedUpc": "613008722395",
+      "expectedSourceRow": 348,
+      "expectedRawFieldsSha256": "c4fd0018d03e2d0205a34fbcb2cca9f66ad4c3b271e73f658d270b146604bbe7",
+      "expectedPublicName": "ARIZONA GREEN TEA",
+      "expectedLabel": "23 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Red Apple Green Tea",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/upc/613008722395",
+          "supports": "UPC 613008722395: Exact UPC lookup calls this Iced Tea - Red Apple Green Tea."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://premierbrandsus.com/wp-content/uploads/2022/05/Product-Catalogue.pdf",
+          "supports": "Distributor product catalog maps UPC 613008722395 to Arizona Red Apple Tea, 23 oz."
+        }
+      ]
+    },
+    {
+      "sku": "545",
+      "expectedUpc": "613008727130",
+      "expectedSourceRow": 353,
+      "expectedRawFieldsSha256": "e4e70c7cab9ff019c3a4438840e203f8322d71242e4196565481706c20de7fce",
+      "expectedPublicName": "ARIZONA HALF/HALF",
+      "expectedLabel": "34 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "AriZona Mango Half & Half Iced Tea Lemonade",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.navymwr.org/modules/media/?do=download&id=d9f4b19c-d578-4879-9c82-bacdb1f94dea",
+          "supports": "Distributor inventory table maps UPC 613008727130 to Arizona 34 oz PET Mango H/H (Mango Half & Half)."
+        }
+      ]
+    },
+    {
+      "sku": "546",
+      "expectedUpc": "613008763749",
+      "expectedSourceRow": 9243,
+      "expectedRawFieldsSha256": "d7f6faf6f2122d248436494b91450ad9d0c517b6aeae67d12069f2b178ff5f10",
+      "expectedPublicName": "ARIZONA HARD GREEN TEA HONEYCAN GINSENG",
+      "expectedLabel": "Single · 22 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "AriZona Hard Ginseng & Honey Green Tea",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-87741896",
+          "supports": "Target product metadata shows UPC 613008763749 on AriZona Hard Green Tea, single can."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.shopliquordirect.com/arizona-hard-ginseng-and-honey-green-tea-12oz-6-pack-cans.html",
+          "supports": "Retail listing for exact UPC 613008763749 names AriZona Hard Ginseng & Honey Green Tea."
+        }
+      ]
+    },
+    {
+      "sku": "547",
+      "expectedUpc": "613008763732",
+      "expectedSourceRow": 9244,
+      "expectedRawFieldsSha256": "eda0cb9a99707d15c0f10077d5f7f0b6ce710d2d0e10cbf7e63f9b4e16022a46",
+      "expectedPublicName": "ARIZONA HARD ICED TEA LEMONCAN",
+      "expectedLabel": "Single · 22 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "AriZona Hard Lemon Iced Tea",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.shopliquordirect.com/arizona-hard-lemon-iced-tea-12oz-6-pack-cans.html",
+          "supports": "Retail listing shows UPC 613008763732 for AriZona Hard Lemon Iced Tea, 22 oz can."
+        }
+      ]
+    },
+    {
+      "sku": "548",
+      "expectedUpc": "613008763756",
+      "expectedSourceRow": 9245,
+      "expectedRawFieldsSha256": "f4979fbf05fa4082ea9e5264adb9dd359d69bc8faa85dc4edbdd8d701a9f78b2",
+      "expectedPublicName": "arizona hard iced tea peachCan",
+      "expectedLabel": "Single · 22 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "AriZona Hard Peach Iced Tea",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shopwinedirect.com/arizona-hard-peach-iced-tea-12oz-6-pack-cans.html",
+          "supports": "Retail listing shows UPC 613008763756 for AriZona Hard Peach Iced Tea, 22 oz can."
+        }
+      ]
+    },
+    {
+      "sku": "554",
+      "expectedUpc": "073360709890",
+      "expectedSourceRow": 354,
+      "expectedRawFieldsSha256": "040c3365e83aeaa2fee4e002b0f8823747260fb20fbc440eab023c319f9e29e4",
+      "expectedPublicName": "ARIZONA ICED TEA",
+      "expectedLabel": "1 gal",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Lemon Tea",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.navymwr.org/modules/media/?do=download&id=d9f4b19c-d578-4879-9c82-bacdb1f94dea",
+          "supports": "Distributor inventory table maps UPC 073360709890 to Arizona gallon Lemon Tea."
+        }
+      ]
+    },
+    {
+      "sku": "561",
+      "expectedUpc": "613008725839",
+      "expectedSourceRow": 7232,
+      "expectedRawFieldsSha256": "6a8d16d1fc504856e718efad416e202636091f62e3623f7359a532c342c157aa",
+      "expectedPublicName": "ARIZONA ICED TEA AND TROPICAL",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Tropical Half & Half Iced Tea",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://premierbrandsus.com/wp-content/uploads/2022/05/Product-Catalogue.pdf",
+          "supports": "Distributor catalog maps UPC 613008725839 to Arizona Half & Half Tropical."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/613008725839",
+          "supports": "UPC 613008725839: Exact UPC entry identifies Arizona Half & Half Iced Tea Tropical."
+        }
+      ]
+    },
+    {
+      "sku": "549",
+      "expectedUpc": "613008740931",
+      "expectedSourceRow": 357,
+      "expectedRawFieldsSha256": "14833ddad4a9937c8c18839c6b224ef55ac7b5168efcfbf4cc3b2081d1c4f3c7",
+      "expectedPublicName": "Arizona Iced tea Glass bot",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Sun Brewed Style Iced Tea, Lemon",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getfoodfacts.com/food/arizona-sun-brewed-style-iced-tea-lemon-lemon-1881893",
+          "supports": "USDA branded food record identifies exact UPC 613008740931 as Arizona Sun Brewed Style Iced Tea, Lemon."
+        }
+      ]
+    },
+    {
+      "sku": "565",
+      "expectedUpc": "073360709494",
+      "expectedSourceRow": 359,
+      "expectedRawFieldsSha256": "b1759d0cb34f682e969deea0a1bde25e3469c2ef41c505afe65aa51183418dcb",
+      "expectedPublicName": "ARIZONA KIWI STRA",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "AriZona Kiwi Strawberry",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://martinandsnyder.com/product/arizona-kiwi-strawberry-24-ct/",
+          "supports": "Distributor listing identifies unit UPC 073360709494 as Arizona Kiwi/Strawberry."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://canmuseum.com/Detail.aspx?CanID=29458",
+          "supports": "Exact barcode 073360709494 is described as Arizona Kiwi/Strawberry juice."
+        }
+      ]
+    },
+    {
+      "sku": "569",
+      "expectedUpc": "613008733988",
+      "expectedSourceRow": 361,
+      "expectedRawFieldsSha256": "d40bef0bcea0ee717fa1c219e28dc0c24eab87adb2aab07c88a9d13b0b968b5a",
+      "expectedPublicName": "ARIZONA LEMONADE",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Golden Bear Lemonade",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.glwholesale.com/product/wholesale-arizona-ice-tea-jack-nicklaus-golden-bea/1300873398",
+          "supports": "Wholesale listing maps exact UPC 613008733988 to Arizona Jack Nicklaus Golden Bear Lemonade."
+        }
+      ]
+    },
+    {
+      "sku": "570",
+      "expectedUpc": "613008734787",
+      "expectedSourceRow": 362,
+      "expectedRawFieldsSha256": "710fbe7f2aa03db3d10505f15de2c4ab258b51b9565c50cce933baf00603cfb6",
+      "expectedPublicName": "ARIZONA LEMONADE 1GLGOLDEN BEAR",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Golden Bear Lemonade with Honey",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getfoodfacts.com/food/directory/504",
+          "supports": "USDA branded-food directory gives exact UPC 613008734787 as Golden Bear Lemonade with Honey, Arizona."
+        }
+      ]
+    },
+    {
+      "sku": "573",
+      "expectedUpc": "613008734022",
+      "expectedSourceRow": 364,
+      "expectedRawFieldsSha256": "762fb1084695be8d7e48109f03ad50bbd793b92c93d2a9cd03ca2ed9f2b18c65",
+      "expectedPublicName": "Arizona Lemonade MangoCan",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Coolers",
+      "proposedPublicTitle": "AriZona Golden Bear Lemonade with Mango",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.glwholesale.com/product/wholesale-az-nicklaus-gldn-bear-lmnde-w-mango/1300873402",
+          "supports": "Wholesale listing maps exact UPC 613008734022 to Arizona Golden Bear Lemonade with Mango."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://static1.squarespace.com/static/53ffbecbe4b05d43d09a57c8/t/5a4bfffa4192021bcbb4f072/1514930170593/NWB%2BProducts%2Bwith%2BSBT%2B123017.pdf",
+          "supports": "Retail UPC report identifies UPC 613008734022 as Arizona Golden Bear Lemonade Mango."
+        }
+      ]
+    },
+    {
+      "sku": "571",
+      "expectedUpc": "613008736910",
+      "expectedSourceRow": 363,
+      "expectedRawFieldsSha256": "d649ea7035ff5a76c8ebaabdf47b6e45b1f70000b9c24145697d5a2363a499ba",
+      "expectedPublicName": "ARIZONA lemonade Plastic",
+      "expectedLabel": "20 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Golden Bear Pink Lemonade",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.navymwr.org/modules/media/?do=download&id=d9f4b19c-d578-4879-9c82-bacdb1f94dea",
+          "supports": "Distributor inventory maps UPC 613008736910 to Arizona 20 oz Golden Bear Pink Lemonade."
+        }
+      ]
+    },
+    {
+      "sku": "589",
+      "expectedUpc": "613008732288",
+      "expectedSourceRow": 9691,
+      "expectedRawFieldsSha256": "2b08a2f332284042082ad22ccb48839d029fd07e45936e3bf3ec872d8fd47216",
+      "expectedPublicName": "ARIZONA RAS H&HICED TEA &LEMONADE",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Raspberry Half & Half Iced Tea Lemonade",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/613008732288",
+          "supports": "UPC 613008732288: Exact UPC maps to Arizona Raspberry Half Iced Tea & Half Lemonade."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.tandeimports.com/product?item_no=8152P",
+          "supports": "Distributor listing maps UPC 613008732288 to Arizona bottle Half & Half Raspberry, 20 oz."
+        }
+      ]
+    }
+  ]
+}
