@@ -12972,6 +12972,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "704",
+      "expectedUpc": "080480401030",
+      "expectedName": "Bacardi Big Apple",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-704.jpg",
+      "alt": "Bacardi Big Apple — 750 mL bottle",
+      "sourcePage": "https://www.thebeerliquorstore.com/p/bacardi-big-apple-rum/5283",
+      "sourceImageUrl": "https://images.gotoliquorstore.com/product/1000005281/2742ede7-4c31-44c0-87ed-7cc450213762_1000.jpg",
+      "sha256": "359d77efdb0817535bcffa17dfbdb5082fd0becfecf5d11951a65ec206925972",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "740",
+      "expectedUpc": "080480400026",
+      "expectedName": "Bacardi Orange",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-740.jpg",
+      "alt": "Bacardi Orange — 750 mL bottle",
+      "sourcePage": "https://www.smithsfoodanddrug.com/p/bacardi-orange-flavored-rum/0008048040002",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0008048040002",
+      "sha256": "0a151b38e222e9bb3e18259977e2a70d2daac811e9895aaab1f2f8775eaf1003",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "743",
+      "expectedUpc": "080480402044",
+      "expectedName": "Bacardi Peach Red",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-743.png",
+      "alt": "Bacardi Peach Red — 750 mL bottle",
+      "sourcePage": "https://preetliquor.com/products/bacardi-rum-peach-red-bacardi-rum-peach-red",
+      "sourceImageUrl": "https://preetliquor.com/cdn/shop/files/2_a283cf9a-aaeb-4206-ba28-c58ce28c4d0d_1024x1024.png?v=1735596004",
+      "sha256": "7af67bde123741aaf45cf6cecf1ec6f4e05e627332fd0f944dd8f1ac9b1ace54",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
