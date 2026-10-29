@@ -14622,6 +14622,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "297",
+      "expectedUpc": "073390002022",
+      "expectedName": "Airheads Orange",
+      "expectedLabel": "0.55 oz",
+      "src": "images/products/sku-297.png",
+      "alt": "Airheads Orange — 0.55 oz bar",
+      "sourcePage": "https://www.instacart.com/store/products/16633034-airheads-orange-candy-55-oz",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_a0249de1-2e02-4ffa-a830-6daf6ba03995.png",
+      "sha256": "92bc4b5d17da7c8c4b7740e265a7dcf27bddbe10e646ef3b8a5e0035499fa7b1",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "298",
+      "expectedUpc": "073390004118",
+      "expectedName": "Airheads Pink Lemonade",
+      "expectedLabel": "0.55 oz",
+      "src": "images/products/sku-298.jpg",
+      "alt": "Airheads Pink Lemonade — 0.55 oz bar",
+      "sourcePage": "https://www.candywarehouse.com/products/pink-lemonade-airheads-taffy-candy-bars-36-piece-box",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0636/2519/9866/files/airheads-taffy-candy-bars-pink-lemonade-36-piece-box-candy-warehouse-1.jpg?v=1762446621",
+      "sha256": "6167672dfa0b27769ea1c7610b72522d30ec495c029f40186ad1b0908d004ce5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

@@ -21983,6 +21983,22 @@
           "supports": "Exact UPC identifies the Carley’s soft baked cookie flavor."
         }
       ]
+    },
+    {
+      "sku": "298",
+      "expectedUpc": "073390004118",
+      "expectedNameSha256": "123e4c3fe77ee0ba44a31c91401200d2bf06af1596965f1011c436f1e7e128a9",
+      "replaceTextFrom": "Air Heads Pink Lem 0.55oz",
+      "replaceTextTo": "Airheads Pink Lemonade 0.55oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/info-airheads",
+          "supports": "Exact UPC identifies Airheads Pink Lemonade in a 0.55 oz bar."
+        }
+      ]
     }
   ],
   "identityReviews": [
