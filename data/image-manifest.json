@@ -14578,6 +14578,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "296",
+      "expectedUpc": "073390002015",
+      "expectedName": "Airheads Cherry",
+      "expectedLabel": "0.55 oz",
+      "src": "images/products/sku-296.jpg",
+      "alt": "Airheads Cherry — 0.55 oz package",
+      "sourcePage": "https://allcitycandy.com/collections/popular-brands/products/cs-airheads-cherry-40",
+      "sourceImageUrl": "https://allcitycandy.com/cdn/shop/products/all-city-candy-airheads-cherry-taffy-bar-55-oz-36-piece-case-taffy-perfetti-van-melle-693646_600x.jpg?v=1574432278",
+      "sha256": "05d72902524333b8a756b67a5a6a49f777c5d461e051914f699c334693f6781f",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "301",
+      "expectedUpc": "073390008383",
+      "expectedName": "Airheads Xtremes Rainbow Berry Sweetly Sour Belts",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-301.jpg",
+      "alt": "Airheads Xtremes Rainbow Berry Sweetly Sour Belts — 2 oz package",
+      "sourcePage": "https://weinersltd.com/products/airheads-xtremes-rainbow-berry-candy-2-oz",
+      "sourceImageUrl": "https://weinersltd.com/cdn/shop/products/31120-Airheads-Xtremes-Rainbow-Berry-Candy-front2_1200x1200.jpg?v=1622143043",
+      "sha256": "f42281e811c0ae56a10e044fbca887525669e75df8b583b2b9ca5ddb990817a2",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
