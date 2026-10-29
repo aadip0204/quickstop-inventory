@@ -21313,6 +21313,54 @@
           "supports": "Separate UPC listing identifies the same 750 mL Tradicional Plata gift set."
         }
       ]
+    },
+    {
+      "sku": "1953",
+      "expectedUpc": "028400036832",
+      "expectedNameSha256": "e5429951af05e2ee55ef60b4992ac5315e548f7f1d95fc16574d507703e61ca7",
+      "replaceTextFrom": "Cheetos Chd Jalapeno 3 3/4oz",
+      "replaceTextTo": "Cheetos Cheddar Jalapeño 3 3/4oz",
+      "scope": "exact_upc_name_clarification",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/brand/5737/cheetos-upc",
+          "supports": "Exact UPC identifies Cheddar Jalapeno Cheetos; expand abbreviation while retaining source size."
+        }
+      ]
+    },
+    {
+      "sku": "1970",
+      "expectedUpc": "028400087667",
+      "expectedNameSha256": "8d67d4be2e5181dedf805fff3735bf7e3740066ee6870bca4641d4e5425e965c",
+      "replaceTextFrom": "Cheetos Crunchy Hot 1 1/4oz",
+      "replaceTextTo": "Cheetos Crunchy Flamin' Hot 1 1/4oz",
+      "scope": "exact_upc_name_clarification",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.desertcart.com.sa/products/93625430-cheetos-crunchy-flamin-hot-1-25oz-35-4g-pack-of-12-american-us-import",
+          "supports": "Exact UPC identifies Crunchy Flamin Hot, 1.25 oz."
+        }
+      ]
+    },
+    {
+      "sku": "1987",
+      "expectedUpc": "028400602150",
+      "expectedNameSha256": "afbd98c05cdb73add1a68a125a5b7e2aeb4abab13db0df1959b0fcf252ee291f",
+      "replaceTextFrom": "Cheetos salsa crunchy 3oz",
+      "replaceTextTo": "Cheetos Crunchy Salsa Con Queso 3oz",
+      "scope": "exact_upc_name_clarification",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.nutritionvalue.org/Cheetos%2C_cheese_flavored_snacks%2C_salsa_con_queso%2C_salsa_con_queso_by_Frito-Lay_Company_1594780_nutritional_value.html",
+          "supports": "USDA branded foods entry for exact UPC identifies Salsa Con Queso; retain source crunchy form and size."
+        }
+      ]
     }
   ],
   "identityReviews": [

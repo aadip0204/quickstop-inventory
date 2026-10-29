@@ -169,3 +169,5 @@ Avión Reposado and Silver 750 mL bottles received individually inspected UPC-ma
 B&B Liqueur, Ardbeg 10 Year and Bacardí Reserva Ocho 750 mL bottles received inspected UPC-matched photos.
 
 Skittles Original Gummies 5.8 oz received an individually inspected, UPC-matched package photo.
+
+Three Cheetos names were clarified using exact-UPC evidence; original source sizes remain unchanged.
