@@ -15216,6 +15216,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "510",
+      "expectedUpc": "613008742287",
+      "expectedName": "AriZona Golden Bear Strawberry Lemonade",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-510.jpg",
+      "alt": "AriZona Golden Bear Strawberry Lemonade — 20 oz bottle",
+      "sourcePage": "https://www.upcitemdb.com/upc/613008742287",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/7e9960ca-9308-4086-ada3-9844b30ec381_1.a9a67b85d44bcb3d1d8ea3c41479e31c.jpeg",
+      "sha256": "d0c7ec277ee9bd7c9a44235780b4a005dbb7a3e98b2d7bfe7d2987b058d9c896",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "493",
+      "expectedUpc": "613008739980",
+      "expectedName": "AriZona Shaq Fu Punch Pineapple",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-493.jpg",
+      "alt": "AriZona Shaq Fu Punch Pineapple — 20 oz bottle",
+      "sourcePage": "https://www.upcitemdb.com/upc/613008739980",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/a0180781-013e-483a-803d-3fb228253c3e_1.bd96c53c110255c8fd226a8cbae0ad47.jpeg",
+      "sha256": "d8718f6b54dcade29cbcd5b594e277191eb7e1e7419019e50c01a40cef00a3a2",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
