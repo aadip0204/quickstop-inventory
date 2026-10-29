@@ -15634,6 +15634,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3668",
+      "expectedUpc": "052000322569",
+      "expectedName": "Gatorade G2 Blueberry Pomegranate",
+      "expectedLabel": "32 oz",
+      "src": "images/products/sku-3668.jpg",
+      "alt": "Gatorade G2 Blueberry Pomegranate — 32 oz bottle",
+      "sourcePage": "https://www.buycott.com/brand/6600/gatorade-upc",
+      "sourceImageUrl": "https://dsom-imager-prod.shipt.com/5b202b3b-4b3d-a45b-d82a-b6feb8281e00/fcc1f481ec28bd0577bad09223173a22.jpeg",
+      "sha256": "2c1ce2328c7c1515c799e56a0698836006474200975df800159f7eef62357119",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3676",
+      "expectedUpc": "052000209648",
+      "expectedName": "Gatorade G2 Lemon Lime",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-3676.jpg",
+      "alt": "Gatorade G2 Lemon Lime — 20 oz bottle",
+      "sourcePage": "https://go-upc.com/search?q=52000209648",
+      "sourceImageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit%3Dcontain%2Cwidth%3D1200%2Cheight%3D672%2Cformat%3Dauto/https%3A/doordash-static.s3.amazonaws.com/media/photosV2/0945873e-fc09-4398-bd1c-c003154a222b-retina-large.jpg",
+      "sha256": "1a8931aa8ce6a904cc78168271b7e5f3c56fab0bb708b8303e168e36c5f0fb79",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3679",
+      "expectedUpc": "052000204070",
+      "expectedName": "Gatorade G2 Orange",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-3679.jpg",
+      "alt": "Gatorade G2 Orange — 20 oz bottle",
+      "sourcePage": "https://www.officedepot.com/a/products/1387225/Gatorade-G2-Sports-Drink-Orange-20/",
+      "sourceImageUrl": "https://roundeyesupply.com/cdn/shop/products/153228164.jpg?v=1680345937&width=720",
+      "sha256": "b229010a0f356662945463e505912e69c6f2be049298616a5e86040b0e87a12d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

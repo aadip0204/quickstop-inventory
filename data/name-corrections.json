@@ -22287,6 +22287,22 @@
           "supports": "Exact UPC and inspected packaging identify brand and expression; source size or pack count is preserved."
         }
       ]
+    },
+    {
+      "sku": "3668",
+      "expectedUpc": "052000322569",
+      "expectedNameSha256": "b2343419777301ab6bd5769f9431dcb22ec4b69ced77be352f4370690b5d5a12",
+      "replaceTextFrom": "Gatorade G2 Blue-Pome 32oz",
+      "replaceTextTo": "Gatorade G2 Blueberry Pomegranate 32oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/brand/6600/gatorade-upc",
+          "supports": "Exact UPC identifies G2 Blueberry Pomegranate; inspected 32 oz bottle confirms expression and source size."
+        }
+      ]
     }
   ],
   "identityReviews": [
