@@ -21414,6 +21414,54 @@
           "supports": "Independent retailer confirms same UPC, brand, light rum and size."
         }
       ]
+    },
+    {
+      "sku": "2618",
+      "expectedUpc": "080686967644",
+      "expectedNameSha256": "1e6d4859ad26191ea738e8727be3a1660543dba838eb3a9a0e5a66e13a6d723a",
+      "replaceTextFrom": "CRUZAN 375ML",
+      "replaceTextTo": "Cruzan Aged Light Rum 375ML",
+      "scope": "exact_upc_identity_clarification",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "Exact UPC identifies 375 mL Cruzan aged light rum in PET packaging."
+        }
+      ]
+    },
+    {
+      "sku": "2620",
+      "expectedUpc": "080686967651",
+      "expectedNameSha256": "3e7606ef40d629364195ce111ab73c10f8e805e039dce3acb4e944d505453251",
+      "replaceTextFrom": "CRUZAN AGED RUM 750ml",
+      "replaceTextTo": "Cruzan Aged Light Rum 750ml",
+      "scope": "exact_upc_identity_clarification",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/158530",
+          "supports": "Exact UPC identifies 750 mL Cruzan light rum."
+        }
+      ]
+    },
+    {
+      "sku": "2621",
+      "expectedUpc": "080686967460",
+      "expectedNameSha256": "3e61d72e75f0048b9c79f6e16e1663aefbcb4c4f5fc65232f451f871bbcca413",
+      "replaceTextFrom": "CRUZAN AGED RUM GOLD 750ml",
+      "replaceTextTo": "Cruzan Aged Dark Rum 750ml",
+      "scope": "exact_upc_identity_clarification",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47137237",
+          "supports": "Exact UPC identifies 750 mL Cruzan aged dark rum; source name says gold."
+        }
+      ]
     }
   ],
   "identityReviews": [
