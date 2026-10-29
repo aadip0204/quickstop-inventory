@@ -13038,6 +13038,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "4674",
+      "expectedUpc": "818844025451",
+      "expectedName": "Jose Cuervo Tradicional Silver Gift Set with Clay Cup",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-4674.jpg",
+      "alt": "Jose Cuervo Tradicional Silver — 750 mL gift set with clay cup",
+      "sourcePage": "https://www.gotoliquorstore.com/p/jose-cuervo-tradicional-silver-tequila-gift-set-with-cantarito/60774",
+      "sourceImageUrl": "https://images.gotoliquorstore.com/product/1000060743/e9296d03-ecfc-4782-997a-75c763d83749_1000_m.jpg",
+      "sha256": "3448d2e7ad60dc23f17fdca23c1888dc70aa6e1c82cd80c350864aefb40f1f14",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
