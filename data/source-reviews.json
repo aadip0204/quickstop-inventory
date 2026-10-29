@@ -5001,6 +5001,78 @@
       "action": "size_needs_confirmation",
       "reason": "Source weight differs from an exact UPC retail listing; original record retained privately pending confirmation.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "306",
+      "expectedUpc": "073390014360",
+      "expectedNameSha256": "768373353da3bc392164aa611e334b55799b4b66bb0a642d955ed568c6d0b6d1",
+      "expectedSourceRecordSha256": "5b173920ea0282cc724c5eabbf9afbfb2d55e447d63ff6dfcad3e164f3a1aff8",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Airheads Bites Original Fruit",
+      "verifiedLabel": "2 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer product details, exact UPC listing and inspected package corroborate this single 2 oz bag; original unspecified source size is retained privately.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.labelinsight.com/product/4961190/image?return=%2Fingredients%2Fbeeswax",
+          "supports": "Manufacturer identifies the product and 2 oz bag."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/2915508-airheads-bites-fruit-2-0-oz",
+          "supports": "The exact unit UPC identifies this expression and 2 oz bag."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/assets/domains/product-image/file/large_275f680f-89ae-4a4e-88d4-b425d4e17c20.png",
+          "supports": "Inspected image shows the named flavor in an individual 2 oz bag."
+        }
+      ]
+    },
+    {
+      "sku": "305",
+      "expectedUpc": "073390011000",
+      "expectedNameSha256": "162bceb9f11a109c8124f834e584b7db12ad040faa5a9687417affd418600e4f",
+      "expectedSourceRecordSha256": "f654aa15c7b3350fa941913d5d31505855f40b43666ebdd9049ca7244117409d",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Airheads Bites Paradise Blends",
+      "verifiedLabel": "2 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer product details, exact UPC listing and inspected package corroborate this single 2 oz bag; original unspecified source size is retained privately.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://perfettivanmelleus.com/airheads-paradise-blends-2/",
+          "supports": "Manufacturer identifies the product and 2 oz bag."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://americansweets.co.uk/sweets-and-candy/soft-candy/airheads-bites-paradise-blend-2oz-57g-html",
+          "supports": "The exact unit UPC identifies this expression and 2 oz bag."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://cdn.shopify.com/s/files/1/0148/3295/9574/files/Headbitestropical.jpg?v=1782319089",
+          "supports": "Inspected image shows the named flavor in an individual 2 oz bag."
+        }
+      ]
     }
   ]
 }
