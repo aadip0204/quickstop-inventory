@@ -15964,6 +15964,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8217",
+      "expectedUpc": "078000035209",
+      "expectedName": "SUNKIST BERRY LEMONADE",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-8217.jpg",
+      "alt": "SUNKIST BERRY LEMONADE — 20 oz packaging",
+      "sourcePage": "https://www.starimporters.com/product-details/sunkist-20-oz-24-ct?id=8443",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007800003520",
+      "sha256": "e8d0f94dbd587d35c87058f7d3848792d639fb519eb7d28e77e57d1c1845d294",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8203",
+      "expectedUpc": "078000036367",
+      "expectedName": "Sunkist Mango Orange",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-8203.png",
+      "alt": "Sunkist Mango Orange — 20 oz packaging",
+      "sourcePage": "https://www.bakerdistributing.com/wp-content/uploads/2025/03/BNAP-April-2025-WEB.pdf",
+      "sourceImageUrl": "https://images.gopuff.com/blob/gopuffcatalogstorageprod/catalog-images-container/resize/cf/version%3D1_2%2Cformat%3Dauto%2Cfit%3Dscale-down%2Cwidth%3D800%2Cheight%3D800/b316cf91-a4df-42c7-8343-bcebb368727e.png",
+      "sha256": "56638598fc86d12179e003c6fbe93930fa81246e8b5b7c81b754b93fe0cc9f48",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8195",
+      "expectedUpc": "078000036343",
+      "expectedName": "Sunkist Mango Orange",
+      "expectedLabel": "12 oz · cans",
+      "src": "images/products/sku-8195.jpg",
+      "alt": "Sunkist Mango Orange — 12 oz · cans packaging",
+      "sourcePage": "https://shop.mercaso.com/products/sunkist-mango-orange-12-oz-24-pack",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/M10009.jpg?v=1753498096",
+      "sha256": "44850bbbbead11a44cb7dd27c6cbff324973206c189f7dcbd9d8c86bc2d415fb",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8196",
+      "expectedUpc": "078000122404",
+      "expectedName": "Sunkist Orange Zero Sugar",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-8196.jpg",
+      "alt": "Sunkist Orange Zero Sugar — 20 oz packaging",
+      "sourcePage": "https://www.target.com/p/-/A-12965388",
+      "sourceImageUrl": "https://pics.walgreens.com/prodimg/416835/900.jpg",
+      "sha256": "724811137cdf6735c64587ad005f62e5301d1b38d2461e677d2f706df4650173",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
