@@ -18025,6 +18025,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7869",
+      "expectedUpc": "040000394129",
+      "expectedName": "Snickers Peanut Butter Squared",
+      "expectedLabel": "1.78 oz",
+      "src": "images/products/sku-7869.jpg",
+      "alt": "Snickers Peanut Butter Squared — 1.78 oz wrapper",
+      "sourcePage": "https://www.officedepot.com/a/products/928102/Snickers-Peanut-Butter-Squared-178-Oz/",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/DW52270-18.jpg?v=1752164772",
+      "sha256": "44847ad57338a5286f729335b45f7d259c684741d17522202147f461a1e9b2db",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7932",
+      "expectedUpc": "070462098525",
+      "expectedName": "Sour Patch Kids Watermelon Soft & Chewy Candy",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-7932.jpg",
+      "alt": "Sour Patch Kids Watermelon Soft & Chewy Candy — 2 oz bag",
+      "sourcePage": "https://www.smartandfinal.com/product/sour-patch-kids-candy-soft-%26-chewy-watermelon-id-00070462098525",
+      "sourceImageUrl": "https://images.cdn.smartandfinal.com/zoom/0c23baad-4c09-4236-b6b7-2b2f4bf8597a.jpeg",
+      "sha256": "ab8b68fea27bd6c5003a050e5b1f11188793dfd24d7f05acfaf84581c5d6a389",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7872",
+      "expectedUpc": "047677388062",
+      "expectedName": "Snickers Vanilla Ice Cream",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-7872.jpg",
+      "alt": "Snickers Vanilla Ice Cream — 16 oz pint",
+      "sourcePage": "https://www.cloud9liquor.com/snickers-ice-cream-pints-9",
+      "sourceImageUrl": "https://futurisoft.azureedge.net/alchub/047677388062.jpeg",
+      "sha256": "f31965d94bc07c777a5ab3d5b4fc32e8d467ee841f1d74a3253741ba83316855",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8987",
+      "expectedUpc": "047677388079",
+      "expectedName": "Twix Caramel Ice Cream",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-8987.png",
+      "alt": "Twix Caramel Ice Cream — 16 oz pint",
+      "sourcePage": "https://www.holidaywholesale.com/wp-content/uploads/2018_05_May_HolidayHighlights_LR_.pdf",
+      "sourceImageUrl": "https://www.twix.com/sites/g/files/fnmzdf236/files/2023-10/l9dmcmluctbbrkmgekfi.png",
+      "sha256": "f4d64cb6725541e60fee43d2d49f6d84c0f609367bee1a601f69cbc4076d007b",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

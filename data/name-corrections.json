@@ -11110,7 +11110,7 @@
       "expectedUpc": "040000394129",
       "expectedNameSha256": "f288c528ff676dc2f2be0baffbda4e30e5a1af143dc1260892097cd6d2a82eed",
       "replaceTextFrom": "Snickers Barpeanut better",
-      "replaceTextTo": "Snickers Crunchy Peanut Butter Squared",
+      "replaceTextTo": "Snickers Peanut Butter Squared",
       "scope": "exact_upc_name_identity",
       "verifiedOn": "2026-10-27",
       "evidence": [
@@ -11123,11 +11123,6 @@
           "kind": "exact_upc_listing",
           "url": "https://www.officedepot.com/a/products/928102/Snickers-Peanut-Butter-Squared-178-Oz/",
           "supports": "Exact source UPC 040000394129 is listed for this product identity. Listed size or multipack data is not imported."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/039/4129/7.400.jpg",
-          "supports": "Snickers Crunchy Peanut Butter display box and loose square-format wrapper. Peanut butter expression is clear; exact-UPC retailer and Mars corroborate Peanut Butter Squared. No size/count imported."
         }
       ]
     },
@@ -23568,6 +23563,20 @@
           "kind": "exact_upc_product_record",
           "url": "https://www.cub.com/store/cub/products/34838-gatorade-thirst-quencher-orange-32-fl-oz",
           "supports": "UPC 052000338768: SKU says G2 Orange; UPC identifies regular Orange."
+        }
+      ]
+    },
+    {
+      "sku": "91",
+      "expectedUpc": "811538010269",
+      "expectedNameSha256": "d7fcb0cd253e2c771db08b07bd798442cbe8bd73fe383516dc9f9808d1089697",
+      "action": "retain_flagged",
+      "reason": "Source says Blue while the exact UPC listing uses Wild Berry and Blueberry language; confirm the actual flavor and package.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/1800-margarita-blueberry-1-75l",
+          "supports": "UPC 811538010269 appears on a listing using Wild Berry and Blueberry wording."
         }
       ]
     }

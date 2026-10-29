@@ -5391,6 +5391,150 @@
       "action": "size_needs_confirmation",
       "reason": "The source weight is 3.375 oz while a manufacturer record for the exact UPC lists 3 oz; confirm the package before selecting a size or photo.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "7869",
+      "expectedUpc": "040000394129",
+      "expectedNameSha256": "f288c528ff676dc2f2be0baffbda4e30e5a1af143dc1260892097cd6d2a82eed",
+      "expectedSourceRecordSha256": "185339336b236334c6ad99a45d6edbda69d79d5cb1085a994ee6533eab98c765",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Snickers Peanut Butter Squared",
+      "verifiedLabel": "1.78 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, manufacturer single-bar listing and inspected complete wrapper corroborate this SKU; original unspecified source identity remains private.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/snickers-peanut-butter-squared",
+          "supports": "Mars lists Snickers Peanut Butter Squared singles at 1.78 oz."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.officedepot.com/a/products/928102/Snickers-Peanut-Butter-Squared-178-Oz/",
+          "supports": "UPC 040000394129 identifies the 1.78 oz Peanut Butter Squared bar."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/DW52270-18.jpg?v=1752164772",
+          "supports": "The complete inspected wrapper is Peanut Butter Squared with two squares."
+        }
+      ]
+    },
+    {
+      "sku": "7932",
+      "expectedUpc": "070462098525",
+      "expectedNameSha256": "74be3e66022cc4fd1ac4322b09f0336a74033bd5318bbf4ae5121ee14c3bfdd0",
+      "expectedSourceRecordSha256": "c79037a1901d10ec49e2cc6012c90b2a1c2c00051f09920862fc46e8266e1234",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Sour Patch Kids Watermelon Soft & Chewy Candy",
+      "verifiedLabel": "2 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer multipack record, exact unit UPC listings and inspected single bag corroborate this SKU; original unspecified source identity remains private.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.mondelez.info/070462012323-0001-en-US/index.html",
+          "supports": "Mondelez identifies a 24 count pack of 2 oz Watermelon bags."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.nassaucandy.com/sour-patch-watermelon-2oz.html",
+          "supports": "UPC 070462098525 identifies Sour Patch Watermelon 2 oz."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.smartandfinal.com/product/sour-patch-kids-candy-soft-%26-chewy-watermelon-id-00070462098525",
+          "supports": "The exact-UPC product page provides a complete 2 oz watermelon bag photo."
+        }
+      ]
+    },
+    {
+      "sku": "7872",
+      "expectedUpc": "047677388062",
+      "expectedNameSha256": "babede82015626a023f1634332873069d91dfffd8e60aae8180052ddc504b92b",
+      "expectedSourceRecordSha256": "5bcfbc3150bea20bf7ee74179baff3ab79365b125e7dd8662f8b6f89b3cb4cee",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Snickers Vanilla Ice Cream",
+      "verifiedLabel": "16 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Mars product guide, exact UPC product record and inspected pint corroborate this SKU; original unspecified source identity remains private.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://brownsicecream.com/wp-content/uploads/2024/01/mars-products.pdf",
+          "supports": "Mars UPC/UCC guide identifies UPC 047677388062 as a 16 fl oz pint."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cloud9liquor.com/snickers-ice-cream-pints-9",
+          "supports": "UPC 047677388062 is listed for the specific 16 oz ice cream pint."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://futurisoft.azureedge.net/alchub/047677388062.jpeg",
+          "supports": "The inspected full pint displays the product brand and 16 fl oz volume."
+        }
+      ]
+    },
+    {
+      "sku": "8987",
+      "expectedUpc": "047677388079",
+      "expectedNameSha256": "a9f1300876e35b823329d0c67b0e723df311e4c5e60082c0681237dcf57f5aae",
+      "expectedSourceRecordSha256": "e21ac2c83606614cd1ed57794a2001aa919549c1134608830ffd3659a9a20687",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Twix Caramel Ice Cream",
+      "verifiedLabel": "16 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Mars product guide, exact UPC product record and inspected pint corroborate this SKU; original unspecified source identity remains private.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://brownsicecream.com/wp-content/uploads/2024/01/mars-products.pdf",
+          "supports": "Mars UPC/UCC guide identifies UPC 047677388079 as a 16 fl oz pint."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.holidaywholesale.com/wp-content/uploads/2018_05_May_HolidayHighlights_LR_.pdf",
+          "supports": "UPC 047677388079 is listed for the specific 16 oz ice cream pint."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.twix.com/sites/g/files/fnmzdf236/files/2023-10/l9dmcmluctbbrkmgekfi.png",
+          "supports": "The inspected full pint displays the product brand and 16 fl oz volume."
+        }
+      ]
     }
   ]
 }

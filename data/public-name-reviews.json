@@ -1937,6 +1937,217 @@
           "supports": "The inspected package identifies the pictured product expression and size."
         }
       ]
+    },
+    {
+      "sku": "70",
+      "expectedUpc": "028000206307",
+      "expectedSourceRow": 59,
+      "expectedRawFieldsSha256": "1baefa7e781a90a5026a9381b6d70bcefd5a09e4d5476baf535ea05120a25bff",
+      "expectedPublicName": "100 GRAND",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Candy",
+      "proposedPublicTitle": "100 Grand",
+      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.dkhardware.com/nestle-743257-candy-bar-100-grand-caramel-milk-chocolate-15-oz-product-5616704.html",
+          "supports": "UPC 028000206307: reviewed product expression and source details."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://sweetiescandyaz.com/wp-content/uploads/2020/04/0.01-1.50.pdf",
+          "supports": "UPC 028000206307: reviewed product expression and source details."
+        }
+      ]
+    },
+    {
+      "sku": "73",
+      "expectedUpc": "054200040533",
+      "expectedSourceRow": 6720,
+      "expectedRawFieldsSha256": "18bca5a69d28c34e0370fa544908b895a9c9c5ff4dcbb30b82d2896f2cfdb961",
+      "expectedPublicName": "101 Bleach",
+      "expectedLabel": "1 gal",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "101 Regular Bleach",
+      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kikcorp.com/wp-content/uploads/2019/11/101_Regular-Bleach-128oz_0-54200-04053-3.pdf",
+          "supports": "UPC 054200040533: reviewed product expression and source details."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://www.nuthousehardware.com/jam-5420004053",
+          "supports": "UPC 054200040533: reviewed product expression and source details."
+        }
+      ]
+    },
+    {
+      "sku": "89",
+      "expectedUpc": "811538014557",
+      "expectedSourceRow": 73,
+      "expectedRawFieldsSha256": "eece0da7a892cafa9df73c846e2a28a9ab54cac72fd9818b4675badd5d1d27e9",
+      "expectedPublicName": "1800 jalapeno lime",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Spicy Jalapeño Lime Margarita",
+      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/172611",
+          "supports": "UPC 811538014557: reviewed product expression and source details."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://www.reservebar.com/products/1800-ultimate-spicy-jalapeno-lime-margarita-tequila-cocktail/GROUPING-487858",
+          "supports": "UPC 811538014557: reviewed product expression and source details."
+        }
+      ]
+    },
+    {
+      "sku": "94",
+      "expectedUpc": "811538018951",
+      "expectedSourceRow": 78,
+      "expectedRawFieldsSha256": "a5d825a586b7b50476acb163dd0a8e064dae4f53c4a341b7b1e3064b09719b56",
+      "expectedPublicName": "1800 orange margarita",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Blood Orange Margarita",
+      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/150962",
+          "supports": "UPC 811538018951: reviewed product expression and source details."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/21110070-1800-tequila-1-75-l",
+          "supports": "UPC 811538018951: reviewed product expression and source details."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://go-upc.com/search?q=811538018951",
+          "supports": "UPC 811538018951: reviewed product expression and source details."
+        }
+      ]
+    },
+    {
+      "sku": "95",
+      "expectedUpc": "811538012867",
+      "expectedSourceRow": 9080,
+      "expectedRawFieldsSha256": "8fca8165c6bd416aa39a45e7d2dd44295c78be5cefc96817c5b13a750b387e0d",
+      "expectedPublicName": "1800 Peach Marg",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Peach Margarita",
+      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.bjs.com/product/1800-the-ultimate-margarita-peach-ready-to-drink-cocktail-175l/3000000000001708185/",
+          "supports": "UPC 811538012867: reviewed product expression and source details."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://publications.iowa.gov/20013/1/0715_Price_Book.pdf",
+          "supports": "UPC 811538012867: reviewed product expression and source details."
+        }
+      ]
+    },
+    {
+      "sku": "96",
+      "expectedUpc": "811538010399",
+      "expectedSourceRow": 7361,
+      "expectedRawFieldsSha256": "75be7f14cf80b6e66495a024ca56e499d62c7bb85ddffb41388b68342426d3b8",
+      "expectedPublicName": "1800 Pineapple Mrg",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Pineapple Margarita",
+      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47573391",
+          "supports": "UPC 811538010399: reviewed product expression and source details."
+        }
+      ]
+    },
+    {
+      "sku": "97",
+      "expectedUpc": "818844023167",
+      "expectedSourceRow": 6257,
+      "expectedRawFieldsSha256": "80edd2e4f4917ed5e73a1a6b9eebbd04fad8f447bf74933a60d9734f0dfbc7f9",
+      "expectedPublicName": "1800 PINEAPPLE MRG",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Pineapple Margarita",
+      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/168866",
+          "supports": "UPC 818844023167: reviewed product expression and source details."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://www.abc.nc.gov/media/1018/open",
+          "supports": "UPC 818844023167: reviewed product expression and source details."
+        }
+      ]
+    },
+    {
+      "sku": "98",
+      "expectedUpc": "811538013819",
+      "expectedSourceRow": 7545,
+      "expectedRawFieldsSha256": "15fda1b5613d57aa84294a2e311bb213a45612965c4960ee01cb30c59c0c276c",
+      "expectedPublicName": "1800 Raspberry",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Raspberry Margarita",
+      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.willowspirits.com/product-page/1800-ultimate-raspberry-margarita-1-75l-811538013819",
+          "supports": "UPC 811538013819: reviewed product expression and source details."
+        }
+      ]
+    },
+    {
+      "sku": "101221",
+      "expectedUpc": "818844023150",
+      "expectedSourceRow": 8883,
+      "expectedRawFieldsSha256": "0e0f2c001582309fd2958f4956643f444d564c9ea10753c731cff52725ebc300",
+      "expectedPublicName": "1800 PEACH MARG",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Peach Margarita",
+      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/166793",
+          "supports": "UPC 818844023150: reviewed product expression and source details."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://www.target.com/p/-/A-52044909",
+          "supports": "UPC 818844023150: reviewed product expression and source details."
+        }
+      ]
     }
   ]
 }
