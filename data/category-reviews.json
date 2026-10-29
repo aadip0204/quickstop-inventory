@@ -2045,6 +2045,326 @@
           "supports": "UPC 613008739485 is listed as AriZona Fruit Punch Caution in the Drink category."
         }
       ]
+    },
+    {
+      "sku": "1891",
+      "expectedUpc": "070980229210",
+      "expectedNameSha256": "23527998213ae7cbcc58c84c5897af64969aa188de4f56a30816d40e0531e82f",
+      "expectedSourceRecordSha256": "d5ce2d180354ac354016ac59ab1e6a92240632cd8db20be309cb575cd763a0c8",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Centrella Oats",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://world.openfoodfacts.org/product/070980229210",
+          "kind": "exact_upc_product_record",
+          "supports": "Open Food Facts exact barcode record identifies Centrella Old Fashioned Oats. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "1881",
+      "expectedUpc": "070980027663",
+      "expectedNameSha256": "03dc5603c65474131ee6edeba6013ff0ba04e1f45128e145f3c29b27a7750551",
+      "expectedSourceRecordSha256": "a8b517c7bfd235f9f0a949a19a7b24eff05bafd791dc2813076ab6e3a09ecc0a",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Centrellagrape jelly",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://world.openfoodfacts.org/product/070980027663",
+          "kind": "exact_upc_product_record",
+          "supports": "Open Food Facts exact barcode record identifies Centrella Grape Jelly. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "1944",
+      "expectedUpc": "079003840418",
+      "expectedNameSha256": "f10ed13b4223eb86a2183eac9c54a7390071f0fd98207830f6295467c2c63f55",
+      "expectedSourceRecordSha256": "f739ec030a619e80aaf92c8cb20a5809535c75360da2b0f521277663632cc5df",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "CHEESE POP CORN",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://world.openfoodfacts.org/product/079003840418",
+          "kind": "exact_upc_product_record",
+          "supports": "Open Food Facts exact barcode record identifies Outrageously Cheesy Cheddarcorn. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "3843",
+      "expectedUpc": "041331024792",
+      "expectedNameSha256": "289a977bd8f3162f3a79451736e908ff5567942959d70adcbfdcfa812b9f3651",
+      "expectedSourceRecordSha256": "23b9b07b2698405cdf99120822c89110275c61922df139f5c831fba22595ef36",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "GoyaBlack beans",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://www.azdhs.gov/documents/prevention/azwic/vendors/arizona-wic-foods-database.pdf",
+          "kind": "exact_upc_product_record",
+          "supports": "Arizona WIC database maps UPC 041331024792 to Goya Black Beans, 16 oz. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "3842",
+      "expectedUpc": "041331024716",
+      "expectedNameSha256": "686235fd5436f2c55aad4e5b77db2e0b87e66f0ee6e8a239c32df0cf08cee992",
+      "expectedSourceRecordSha256": "e59a46bd5e32bb5716c630f6863417c727fc6e412a9f49e45e5aa4be883b7974",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "GoyaRed beans",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://www.azdhs.gov/documents/prevention/azwic/vendors/arizona-wic-foods-database.pdf",
+          "kind": "exact_upc_product_record",
+          "supports": "Arizona WIC database maps UPC 041331024716 to Goya Red Kidney Beans, 16 oz. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "4949",
+      "expectedUpc": "071524012152",
+      "expectedNameSha256": "405024400dbb55a5ede4df4e0c5b0ba039701f4c3beed6a2858ac52f682d43fd",
+      "expectedSourceRecordSha256": "dcd73842700a171647ec1bd4e4dfea3dd0ff0f6fc7bb1e0478a35a02f7d10407",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "La PreferidaBlack beans",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://www.azdhs.gov/documents/prevention/azwic/vendors/arizona-wic-foods-database.pdf",
+          "kind": "exact_upc_product_record",
+          "supports": "Arizona WIC database maps UPC 071524012152 to La Preferida Black Beans, 16 oz. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "4948",
+      "expectedUpc": "071524011728",
+      "expectedNameSha256": "56bae296b27013aa33eb5a44ef0b6c876e73224d5f45d1b7d9fac8a4d07c6b6f",
+      "expectedSourceRecordSha256": "0598d3d187e63b1eb4930a9c9c80eaeb75cf1568202708632fa4e4d406ad7663",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "La Preferidapinto beans",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://www.cub.com/store/cub/products/78489-la-preferida-dried-pinto-beans-frijoles-pintos-secas-1-0-lb",
+          "kind": "exact_upc_product_record",
+          "supports": "Cub exact UPC record maps UPC 071524011728 to La Preferida Dried Pinto Beans, 1 lb. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "3744",
+      "expectedUpc": "876274001858",
+      "expectedNameSha256": "ada656c3e1f61cb951092d59531a27f2ce52b9bd7f7489a651588eec200b6f84",
+      "expectedSourceRecordSha256": "7bb036818037709da291e761f2a6c9f259bf5c9fde3906c225ff1a3b3c423941",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "global brands crackers",
+      "expectedLabel": "340 g",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://osm-us.com/index.php?disp_order=1&main_page=products_all&page=211",
+          "kind": "exact_upc_product_record",
+          "supports": "Distributor item record maps UPC 876274001858 to Global Brands Snak Time Stack Pack Salted Crackers. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "3740",
+      "expectedUpc": "876274001940",
+      "expectedNameSha256": "0b54489c3bfa75ffcdb8a7b6783abcd71b575e29416d3c2aa62727465d76777f",
+      "expectedSourceRecordSha256": "d6638ddaae09d7d5823c6a132291381df41d4090337e08773ee694fba292712e",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "global brands crackers 227gcheddar cheese",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://nd.hkservice.net/nd0579.html",
+          "kind": "exact_upc_product_record",
+          "supports": "FoodData Central record maps UPC 876274001940 to Global Brands Cheddar Cheese Crackers; category is flavored snack crackers. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "3741",
+      "expectedUpc": "876274001841",
+      "expectedNameSha256": "83b8b9f87e7edddbb732b86e72d2b9707dfeab2b79e0b6337900d1f0ea3b668e",
+      "expectedSourceRecordSha256": "7a14d339cd829120ca4f79abd61410530294c52d8166240b3d62d27653d0930f",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "global brands crackers 227goriginal salted",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://www.glwholesale.com/product/wholesale-global-brands-salted-cracker-tub/7627400184",
+          "kind": "exact_upc_product_record",
+          "supports": "Distributor listing maps UPC 876274001841 to Global Brands Salted Cracker Tub, 8 oz. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "3743",
+      "expectedUpc": "876274001872",
+      "expectedNameSha256": "235e834f8e6586d266f8b067e96493205065dbe618262b7f9b5c3304d8020daf",
+      "expectedSourceRecordSha256": "2c061b3ddf24f7f779e7432308333bce7b3ef0e2b47d1077825466896bab7c57",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "global brands crackers 227granch flavored",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://www.nutritiondatalist.com/product/global-brands-the-original-cracker-tub-ranch-upc-876274001872",
+          "kind": "exact_upc_product_record",
+          "supports": "Exact UPC 876274001872 identifies Global Brands Original Cracker Tub Ranch. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "3742",
+      "expectedUpc": "876274001865",
+      "expectedNameSha256": "519c2d6294e39cfd7ec9dc4d24b09bd4d607fc8c622af4d371b9dc6161fa5ad7",
+      "expectedSourceRecordSha256": "a3dd2a9dfc6497cea3b389378c1639fd822403a44950d4e7f36056bee5fbfc8f",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "global brands crackers 227gsour cream",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://www.buycott.com/brand/11946/sour-cream-upc",
+          "kind": "exact_upc_product_record",
+          "supports": "UPC index maps 876274001865 to Global Brands Sour Cream & Onion cracker tubs. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "3739",
+      "expectedUpc": "876274001896",
+      "expectedNameSha256": "b60b95fa3b192ee6f40d6954fed7c90909fa880652566fffa4f106670c2a51d7",
+      "expectedSourceRecordSha256": "dc7bfa9fb924e7ecfb18744bdc20133aeec2ea9cf5071c32d94d4db000a56ac0",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "global brands select cracker",
+      "expectedLabel": "340 g",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://www.nutritiondatalist.com/product/global-brands-soup-oyster-crackers-soup-oyster-crackers-upc-876274001896",
+          "kind": "exact_upc_product_record",
+          "supports": "Exact UPC 876274001896 identifies Global Brands Soup & Oyster Crackers. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "5094",
+      "expectedUpc": "086106011843",
+      "expectedNameSha256": "e92bfb58ce87588ce8b87773f46ed69859c22c690ef678e01c5a38276ba1e824",
+      "expectedSourceRecordSha256": "e0507d4fd899ce84a5ccfc25141dcd3033745b1297b82343601da118fd6f2738",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Lemon cremecookies",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://getfoodfacts.com/food/lemon-creme-cookies-lemon-creme-2085906",
+          "kind": "exact_upc_product_record",
+          "supports": "USDA branded-food record maps UPC 086106011843 to Lil’ Dutch Maid Lemon Creme Cookies. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "8498",
+      "expectedUpc": "078907200403",
+      "expectedNameSha256": "48fa860d88944e0c05381e63944d7a2f5ae3bd644a5e16a9499508f67ac613ed",
+      "expectedSourceRecordSha256": "6f776ea0d32ac6172c56821c699d4cff532f9294ebd58fcb3da4d9a4a99f9de6",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "TACO LITOS SPICY",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://www.buycott.com/brand/16695/el-sabroso-upc",
+          "kind": "exact_upc_product_record",
+          "supports": "UPC index maps 078907200403 to El Sabroso Taco-Litos; product line is a corn/tortilla chip snack. Suggested change is category-only: retain source department MISC."
+        }
+      ]
+    },
+    {
+      "sku": "7900",
+      "expectedUpc": "740235511017",
+      "expectedNameSha256": "465ac3942fed294787059ec90eb90a2e06fe972ca7b823e132f36fe2b76345c1",
+      "expectedSourceRecordSha256": "d23b7be1239df393b5dfab95d005aa53f0df2f6a19ce4f28c55db7365e2f9ebf",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "SOFT BACKED COOKIES",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-10-29",
+      "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
+      "evidence": [
+        {
+          "url": "https://assets-of-websites.s3.amazonaws.com/media/934593/ea9ec16005b6b01eb3e7307a44dcf275c1361fed/original/7201%20Online%20Inv%201.21.24%20%281%29%20-%207201%20Online%20Inv%201.21.24%20%281%29.csv.pdf",
+          "kind": "exact_upc_product_record",
+          "supports": "UPC 740235511017 maps to Carley’s Chocolate Chip Cookies (2.5 oz); category-only change, retain source department MISC."
+        }
+      ]
     }
   ]
 }

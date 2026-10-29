@@ -23458,6 +23458,48 @@
           "supports": "UPC 062338761435 is also listed as White Lilac and Orange Blossom."
         }
       ]
+    },
+    {
+      "sku": "1664",
+      "expectedUpc": "782650",
+      "expectedNameSha256": "e8853b92c4564fd7ddab2a2994d1f2c52895c9c236fea0aae3b8df7ab9dc48d7",
+      "action": "retain_flagged",
+      "reason": "The six-digit source identifier is not a complete GTIN; confirm the store barcode and package before relying on a barcode match.",
+      "evidence": [
+        {
+          "kind": "barcode_standard",
+          "url": "https://ref.gs1.org/standards/genspecs/",
+          "supports": "GS1 identifies complete GTINs as 8, 12, 13 or 14 digit strings; the six-digit source identifier is incomplete."
+        }
+      ]
+    },
+    {
+      "sku": "2708",
+      "expectedUpc": "074806185407",
+      "expectedNameSha256": "7d9b41aad5271c346f5ac6bff62c6683a8aed84e7917babb6ce1246882972026",
+      "action": "retain_flagged",
+      "reason": "The source name says Pink Lemonade while the exact UPC is indexed as Lemonade Frozen Cocktail; confirm the pouch flavor.",
+      "evidence": [
+        {
+          "kind": "identifier_or_product_listing",
+          "url": "https://www.buycott.com/brand/62784/dailys-cocktails-upc",
+          "supports": "UPC 074806185407 is indexed as Daily's Lemonade Frozen Cocktail."
+        }
+      ]
+    },
+    {
+      "sku": "5585",
+      "expectedUpc": "635985258803",
+      "expectedNameSha256": "7ccd37905d6c1662e74b0fa7a44c7bbc1205b9a00c8df146e6dba0f93154ceef",
+      "action": "retain_flagged",
+      "reason": "The source says HARDER Cranberry Lemonade while the exact UPC is listed as Hard Cranberry Lemonade; confirm the product line and package.",
+      "evidence": [
+        {
+          "kind": "identifier_or_product_listing",
+          "url": "https://www.buycott.com/brand/10399/mikes-hard-lemonade-upc",
+          "supports": "UPC 635985258803 is indexed as Mike's Hard Cranberry Lemonade."
+        }
+      ]
     }
   ],
   "nameVerifications": [

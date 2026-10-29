@@ -5373,6 +5373,15 @@
       "action": "size_needs_confirmation",
       "reason": "Inventory size conflicts with exact UPC listings for 12.4 oz. Confirm the actual package before selecting a size or image.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "5600",
+      "expectedUpc": "635985258919",
+      "expectedNameSha256": "0fe27f569fbe5f535cfa998f3265310d318475e68c361e56f0850c68687fa57d",
+      "expectedSourceRecordSha256": "f6fc80248aa242baa7d2b9a4b8a36888c07bc1a69a7c6c4a15bd096911b850f3",
+      "action": "size_needs_confirmation",
+      "reason": "Source states 24 oz, while exact UPC records list 23.5 oz. Confirm the actual can before selecting a size.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
