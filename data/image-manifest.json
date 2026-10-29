@@ -13346,6 +13346,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "692",
+      "expectedUpc": "080686967675",
+      "expectedName": "Cruzan Aged Light Rum",
+      "expectedLabel": "1.75 L",
+      "src": "images/products/sku-692.jpg",
+      "alt": "Cruzan Aged Light Rum — 1.75 L bottle",
+      "sourcePage": "https://www.target.com/p/-/A-54637051",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_26f5321e-c54f-4d19-97db-1ca4738de87b?wid=1500&hei=1500",
+      "sha256": "37dfd8e425a2b61f6f04780c786730eb9eca2e410be808db087dd046fbd40cb3",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
