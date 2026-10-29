@@ -14138,6 +14138,116 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "415",
+      "expectedUpc": "026200471594",
+      "expectedName": "Andy Capp's hot fries",
+      "expectedLabel": "85 g",
+      "src": "images/products/sku-415.jpg",
+      "alt": "Andy Capp's Hot Fries — 85 g bag",
+      "sourcePage": "https://go-upc.com/search?q=026200471594",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/314379291.jpeg",
+      "sha256": "e223e11b1ca6177b2b22c09da517accf417e742d0635aca3c3f52bec59f4cfb4",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "838",
+      "expectedUpc": "031000100094",
+      "expectedName": "Banquet Original Crispy Fried Chicken",
+      "expectedLabel": "29 oz",
+      "src": "images/products/sku-838.png",
+      "alt": "Banquet Original Crispy Fried Chicken — 29 oz box",
+      "sourcePage": "https://smartlabel.conagra.com/031000100094-0003-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.conagra.com/031000100094-0003-en-US/images/93704a6c-584c-4e8f-9e02-46e50b18cc65.png",
+      "sha256": "eb8acf99455e946b7641358423db67c346741fbb8eea8edd512264a7d84033fe",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "839",
+      "expectedUpc": "031000100100",
+      "expectedName": "Banquet Southern Crispy Fried Chicken",
+      "expectedLabel": "29 oz",
+      "src": "images/products/sku-839.jpg",
+      "alt": "Banquet Southern Crispy Fried Chicken — 29 oz box",
+      "sourcePage": "https://go-upc.com/search?q=031000100100",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/379789894.jpeg",
+      "sha256": "34997e7af31c511947d71ad6ce82b8347ef56a7d07db44547b6ce490921c0ba9",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6454",
+      "expectedUpc": "072250051071",
+      "expectedName": "Mrs. Freshley's Oreo Brownie",
+      "expectedLabel": "3 oz",
+      "src": "images/products/sku-6454.jpg",
+      "alt": "Mrs. Freshley's Oreo Brownie — 3 oz wrapper",
+      "sourcePage": "https://go-upc.com/search?q=072250051071",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/98453903.jpeg",
+      "sha256": "bd558108da060302c01fd183ec6801cc4f7e9dc517d2a725a5e820826a303f9a",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6606",
+      "expectedUpc": "072250903561",
+      "expectedName": "Mrs. Freshley's Pecan Twirls Sweet Rolls",
+      "expectedLabel": "3 oz",
+      "src": "images/products/sku-6606.png",
+      "alt": "Mrs. Freshley's Pecan Twirls Sweet Rolls — 3 oz wrapper",
+      "sourcePage": "https://go-upc.com/search?q=072250903561",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/89891978.png",
+      "sha256": "073c28895769625708f637f12bb2eae9632bcd396727cb5bebce4167249aeee0",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
