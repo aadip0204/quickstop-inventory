@@ -12906,6 +12906,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2575",
+      "expectedUpc": "087000201330",
+      "expectedName": "Crown Royal Reserve",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2575.jpg",
+      "alt": "Crown Royal Reserve — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137251",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_9445cddb-876d-4be5-9f1d-9025b2ee2ea0?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "bce6b009c262d5e96d29acc883f3d341b7a7907ae3c0f700d7bab5097965921f",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3359",
+      "expectedUpc": "088004144692",
+      "expectedName": "fireball whisky",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-3359.jpg",
+      "alt": "Fireball Cinnamon Whisky — 750 mL plastic bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47828854",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_ef146e34-29b9-47f8-81c5-ea935131200c?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "656ee8991503a944264bbd5549f5e11495a718aced7c4b2512cbcbdcdb6f763f",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101252",
+      "expectedUpc": "088004069148",
+      "expectedName": "FIREBALL APPLE WHISKY",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-101252.png",
+      "alt": "Fireball Blazin’ Apple Whisky — 750 mL bottle",
+      "sourcePage": "https://barbank.com/products/fireball-blazin-apple",
+      "sourceImageUrl": "https://barbank.com/cdn/shop/files/fireballblazinapple750ml.png?height=645&pad_color=fff&v=1737493985&width=645",
+      "sha256": "8e14792d5c09151e0a0d25f62964e6fb56d62f18ab44737fab6ab392ee784c1b",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
