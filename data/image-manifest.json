@@ -12158,6 +12158,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8427",
+      "expectedUpc": "617768111758",
+      "expectedName": "Svedka Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-8427.jpg",
+      "alt": "Svedka Vodka — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-14984934",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_8108f0d3-075f-40b1-8a6d-d64f1cfc8829?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "ead9d3ecf4b93957885b0c920abf490667832569e0eecfda0063ffc774be1dfc",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8415",
+      "expectedUpc": "617768151754",
+      "expectedName": "Svedka mango pineapple",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-8415.jpg",
+      "alt": "Svedka mango pineapple — 750 mL bottle",
+      "sourcePage": "https://www.universalfws.com/product/p-6918-svedka-mango-pineapple-vodka/",
+      "sourceImageUrl": "https://www.universalfws.com/wp-content/uploads/2024/08/image-product-617768151754.jpg",
+      "sha256": "442d720539e03ab3cc9cb517f27dbf76a606e7bfb733054ef5d505aa177ec263",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8421",
+      "expectedUpc": "617768141755",
+      "expectedName": "Svedka Strawberry Lemonade",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-8421.jpg",
+      "alt": "Svedka Strawberry Lemonade — 750 mL bottle",
+      "sourcePage": "https://www.thehutliquors.com/svedka-strawberry-lemonade.html",
+      "sourceImageUrl": "https://cdn.shoplightspeed.com/shops/637462/files/24657269/svedka-svedka-strawberry-lemonade.jpg",
+      "sha256": "e6d27870e33acdd660de2442a644b4cdad6ea3aa3161a1625c0df7c08afdee4f",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
