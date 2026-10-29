@@ -12576,6 +12576,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "5294",
+      "expectedUpc": "089540520100",
+      "expectedName": "Malibu Black 70 P",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-5294.jpg",
+      "alt": "Malibu Black 70 Proof — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137758",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_aa525026-6ff1-46b0-a4e0-4082a47abd06?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "21f370a53162d07537bb6d75d5147c1f222f17fe76f2358c13f29b4a83020c88",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7683",
+      "expectedUpc": "082000001041",
+      "expectedName": "Smirnoff Green Apple",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7683.png",
+      "alt": "Smirnoff Green Apple — 750 mL bottle",
+      "sourcePage": "https://craftspiritsxchange.com/products/smirnoff-green-apple-flavored-vodka",
+      "sourceImageUrl": "https://craftspiritsxchange.com/cdn/shop/files/smirnoff-greenapple-750-new-web.png?v=1730841290",
+      "sha256": "47d07b38b69ba5d39b9efd2658358d4c761de820634352e2c7c606a04ce26462",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7762",
+      "expectedUpc": "082000003960",
+      "expectedName": "Smirnoff raspberry",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7762.png",
+      "alt": "Smirnoff Raspberry — 750 mL bottle",
+      "sourcePage": "https://unwindbottleshop.com/products/smirnoff-vodka-raspberry-750ml",
+      "sourceImageUrl": "https://unwindbottleshop.com/cdn/shop/products/SMIRNOFF_RASP.png?v=1710057744",
+      "sha256": "746aa63ea832325a7f2e648c417327a3ca5f34164226fa9b2517d77c827448af",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
