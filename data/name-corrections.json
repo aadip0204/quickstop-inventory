@@ -22495,6 +22495,54 @@
           "supports": "Exact UPC identifies strawberry lemonade; source package size remains unchanged."
         }
       ]
+    },
+    {
+      "sku": "8214",
+      "expectedUpc": "078000031805",
+      "expectedNameSha256": "f6a776f69ea6a82f38b67313bc9da60bc248d6b69937342cba0c0f9f0ff5e96f",
+      "replaceTextFrom": "SUNKIST 2LPINK LEMONADE",
+      "replaceTextTo": "Sunkist Strawberry Lemonade 2L",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/19425777-sunkist-strawberry-lemonade-soda-2-l",
+          "supports": "Exact UPC identifies flavor and package size."
+        }
+      ]
+    },
+    {
+      "sku": "8201",
+      "expectedUpc": "078000121407",
+      "expectedNameSha256": "7cb4a366801c69ed512b28a582644d6a248817141ab5b87452983c50b381ae11",
+      "replaceTextFrom": "SUNKIST  CHERRY LEMONADE 20OZ",
+      "replaceTextTo": "Sunkist Cherry Limeade 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.bakerdistributing.com/wp-content/uploads/2025/09/BNAP-Oct-2025-WEB.pdf",
+          "supports": "Exact UPC identifies flavor and package size."
+        }
+      ]
+    },
+    {
+      "sku": "8250",
+      "expectedUpc": "078000037746",
+      "expectedNameSha256": "60dbf5255194537902fba6928f65113c30919ec12d295e7bf7b9c14a73134026",
+      "replaceTextFrom": "SUNKIST WATERMELON LEMONA 20OZ",
+      "replaceTextTo": "Sunkist Watermelon Lemonade 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://americansweets.co.uk/sunkist-watermelon-lemonade-20oz-591ml-html",
+          "supports": "Exact UPC identifies flavor and package size."
+        }
+      ]
     }
   ],
   "identityReviews": [
