@@ -21292,6 +21292,27 @@
       "expectedNameSha256": "b7c568f610b0495027399c8328f79e216b95a8d4ff71126d90cd1bf2788c8a18",
       "replaceTextFrom": "Svedka stralemon",
       "replaceTextTo": "Svedka Strawberry Lemonade"
+    },
+    {
+      "sku": "4674",
+      "expectedUpc": "818844025451",
+      "expectedNameSha256": "626248c1b8dcf49269d0ecf0b429527026efb31e81c5f042771c0704ff5a1975",
+      "replaceTextFrom": "Jose Cuervo Silver 750mlTradicional",
+      "replaceTextTo": "Jose Cuervo Tradicional Silver Gift Set with Clay Cup 750ml",
+      "scope": "exact_upc_gift_pack_clarification",
+      "verifiedOn": "2026-10-28",
+      "evidence": [
+        {
+          "kind": "state_listing",
+          "url": "https://abs.stage.utah.gov/wp-content/uploads/Feb2026NumericPriceList.pdf",
+          "supports": "Utah state alcohol catalog lists exact UPC as 750 mL Jose Cuervo Tradicional Plata with clay cup, categorized as a gift set."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=00818844025451",
+          "supports": "Separate UPC listing identifies the same 750 mL Tradicional Plata gift set."
+        }
+      ]
     }
   ],
   "identityReviews": [
