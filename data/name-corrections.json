@@ -2423,17 +2423,17 @@
       "sku": "496",
       "expectedUpc": "613008756864",
       "expectedNameSha256": "cd8d3887ca5012ddb529ebe9f44ae68f2baef8088b4828282465ae3adedb8b3e",
-      "replaceTextFrom": "STRAWBERRYY",
-      "replaceTextTo": "STRAWBERRY",
-      "scope": "ordinary_word_spelling_only",
+      "replaceTextFrom": "ARIZONA  KIWI STRAWBERRYY",
+      "replaceTextTo": "AriZona Kiwi Strawberry Fruit Juice Cocktail",
+      "scope": "exact_upc_name_identity",
       "evidence": [
         {
-          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
-          "kind": "english_dictionary_ordinary_word_spelling",
-          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=00613008756864",
+          "supports": "Exact UPC identifies Kiwi Strawberry; 34 oz remains in the original pack field."
         }
       ],
-      "verifiedOn": "2026-10-26"
+      "verifiedOn": "2026-10-29"
     },
     {
       "sku": "8870",
@@ -22157,6 +22157,22 @@
           "kind": "exact_upc_listing",
           "url": "https://www.smartandlfinal.com/sm/pickup/rsid/522/product/arizona-fruit-juice-cocktail-watermelon-id-00613008740412",
           "supports": "Exact UPC listing and matching package photograph identify the product expression; source size is preserved."
+        }
+      ]
+    },
+    {
+      "sku": "577",
+      "expectedUpc": "613008742478",
+      "expectedNameSha256": "33aac1a55a91eb744689a4c3df8ad09761da6e2299b200cc83f59bc51a33962a",
+      "replaceTextFrom": "ARIZONA MUCHO MANGO34OZ",
+      "replaceTextTo": "AriZona Mucho Mango Fruit Juice Cocktail 34OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.mercaso.com/products/arizona-mucho-mango-34-oz-12-pack",
+          "supports": "Exact UPC identifies Mucho Mango, 34 oz; source size is preserved."
         }
       ]
     }

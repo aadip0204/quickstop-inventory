@@ -15436,6 +15436,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "496",
+      "expectedUpc": "613008756864",
+      "expectedName": "AriZona Kiwi Strawberry Fruit Juice Cocktail",
+      "expectedLabel": "34 oz",
+      "src": "images/products/sku-496.png",
+      "alt": "AriZona Kiwi Strawberry Fruit Juice Cocktail — 34 oz bottle",
+      "sourcePage": "https://www.gopuff.com/p/arizona-kiwi-strawberry-juice-34oz-btl/p63087",
+      "sourceImageUrl": "https://images.gopuff.com/resize/cf/version%3D1_2%2Cformat%3Dauto%2Cfit%3Dscale-down%2Cquality%3D70%2Cwidth%3D800%2Cheight%3D800/https%3A/images.gopuff.com/blob/gopuffcatalogstorageprod/catalog-images-container/resize/cf/version%3D1_2%2Cformat%3Dauto%2Cfit%3Dscale-down%2Cwidth%3D800%2Cheight%3D800/5ad2547e-7173-445d-bf9f-8050db1b9255.png",
+      "sha256": "2adb24f93f946e4926e424e74bec58ab589313a0d9f8f313e6be4aeed10b9423",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "577",
+      "expectedUpc": "613008742478",
+      "expectedName": "AriZona Mucho Mango Fruit Juice Cocktail",
+      "expectedLabel": "34 oz",
+      "src": "images/products/sku-577.png",
+      "alt": "AriZona Mucho Mango Fruit Juice Cocktail — 34 oz bottle",
+      "sourcePage": "https://www.gopuff.com/p/arizona-mucho-mango-juice-34oz-btl/p10728",
+      "sourceImageUrl": "https://images.gopuff.com/blob/gopuffcatalogstorageprod/catalog-images-container/resize/cf/version%3D1_2%2Cformat%3Dauto%2Cfit%3Dscale-down%2Cwidth%3D800%2Cheight%3D800/707892de-42fb-43a2-84ff-debec80b78e4.png",
+      "sha256": "54c8cb348d0e45384f68c04a512b04aaf981f4ae28cd2634e40c5987c5798901",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
