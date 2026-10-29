@@ -22303,6 +22303,38 @@
           "supports": "Exact UPC identifies G2 Blueberry Pomegranate; inspected 32 oz bottle confirms expression and source size."
         }
       ]
+    },
+    {
+      "sku": "3001",
+      "expectedUpc": "078000037678",
+      "expectedNameSha256": "33dd11d9f7b3f67b03a08d0a1406065084b187e11f844a73c411c3b990f3477d",
+      "replaceTextFrom": "DR PEPPER  20 FL",
+      "replaceTextTo": "Dr Pepper Strawberries & Cream 20 oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Dr-Pepper-Strawberries-%26-Cream-/p/1-16CTDY-1",
+          "supports": "Exact UPC identifies Strawberries & Cream, 20 oz, consistent with the original pack field."
+        }
+      ]
+    },
+    {
+      "sku": "3007",
+      "expectedUpc": "078000037692",
+      "expectedNameSha256": "425c60fd83470e8e24c05df07d793844f7e7c9ebac8809895ce617a17048bae7",
+      "replaceTextFrom": "DR PEPPER STRAWBERRIES 12OZ",
+      "replaceTextTo": "Dr Pepper Strawberries & Cream 12OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://candybase.co.uk/products/dr-pepper-strawberries-cream-12oz-355ml",
+          "supports": "Exact UPC and matching package identify Strawberries & Cream; source size remains unchanged."
+        }
+      ]
     }
   ],
   "identityReviews": [
