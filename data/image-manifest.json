@@ -15546,6 +15546,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3005",
+      "expectedUpc": "078000040586",
+      "expectedName": "Dr Pepper Blackberry",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-3005.jpg",
+      "alt": "Dr Pepper Blackberry — 20 oz packaging",
+      "sourcePage": "https://www.dollargeneral.com/p/dr-pepper-blackberry-soda-20-fl-oz-bottle-1-ct/78000040586",
+      "sourceImageUrl": "https://s7d1.scene7.com/is/image/dolgen/dg-40676101-1?wid=1000&hei=1000",
+      "sha256": "2a96d01bf8e2390f30b7e7e39043e10330426caad0c8d50b40ec919e6522a01d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3006",
+      "expectedUpc": "078000098402",
+      "expectedName": "Dr Pepper Cherry",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-3006.jpg",
+      "alt": "Dr Pepper Cherry — 20 oz packaging",
+      "sourcePage": "https://patriotwineandliquor.com/product/20-oz-dr-pepper-cherry/",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Dr-Pepper-Cherry-Soda-Pop-20-fl-oz-Bottle_903666a5-0ecb-47b1-96ae-df9bfa27bf94.caee2b27e90e8b177e57aa4a8db4335a.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+      "sha256": "d5cecc1f44e07a12ece6babc747761993dcfc32f644d866d3046820996c004f1",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101530",
+      "expectedUpc": "078000037616",
+      "expectedName": "Dr Pepper Strawberries & Cream",
+      "expectedLabel": "12-pack · cans",
+      "src": "images/products/sku-101530.jpg",
+      "alt": "Dr Pepper Strawberries & Cream — 12-pack · cans packaging",
+      "sourcePage": "https://www.brookshires.com/product/dr-pepper-soda-strawberries-%26-cream-12-pack-id-00078000037616",
+      "sourceImageUrl": "https://images.cdn.retail.brookshires.com/detail/00078000037616_C1C1.jpeg",
+      "sha256": "99efc478380bd48750ce205c15cd54a12c58ab75e0aee9caef902afab0c56f5e",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3664",
+      "expectedUpc": "052000204087",
+      "expectedName": "Gatorade Fruit Punch Thirst Quencher",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-3664.jpg",
+      "alt": "Gatorade Fruit Punch Thirst Quencher — 20 oz packaging",
+      "sourcePage": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Sports-Drinks/Gatorade-Fruit-Punch/p/1-4WG82-4",
+      "sourceImageUrl": "https://www.mustakshif.com/public/uploads/products/gatorade-gatorade-fruit-punch-thirst-quencher-sports-drink-20-oz-8-pack-bottles_0055577420263_Mustakshif.jpg",
+      "sha256": "229c50e89b9bc864a0663cc5331e60ff7485a7882628373167852b7a12b5cf08",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
