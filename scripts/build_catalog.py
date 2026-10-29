@@ -21,6 +21,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_PUBLIC_NAME_REVIEWS = ROOT / 'data/public-name-reviews.json'
 EXPECTED_HEADERS = ['SKU', 'MAINUPC', 'ItemName', 'PackName', 'DEPNAME',
                     'ItemPrice', 'TotalQty_Multi', 'ItemTypeDesc']
 BASELINE_HASH = '822ee8b3b623548db0f2ea531aa10c340b160a47afc0d9e88398311ed7fa6882'
@@ -601,6 +602,80 @@ def apply_category_review(public: dict | None, source: dict, raw_fields: list,
     public['category'] = review['category']
 
 
+def apply_public_name_review(public: dict | None, source: dict, raw_fields: list,
+                             review: dict) -> None:
+    """Replace only the parsed product title after exact source/public guards."""
+    sku = source['SKU']
+    if not public:
+        raise ValueError(f'Public-name review requires retained source merchandise: {sku}')
+    source_hash = hashlib.sha256(json.dumps(
+        raw_fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+    expected = (review['sku'], review['expectedUpc'], review['expectedSourceRow'],
+                review['expectedRawFieldsSha256'], review['expectedPublicName'], review['expectedLabel'],
+                review['expectedCategory'], review['expectedDepartment'])
+    current = (sku, public['variant']['upc'], source['sourceRow'], source_hash,
+               public['name'], public['variant']['label'], public['category'], public['department'])
+    if current != expected:
+        raise ValueError(f'Public-name review current identity mismatch: {sku}')
+    before_variant = dict(public['variant'])
+    before_category = public['category']
+    before_department = public['department']
+    public['name'] = review['proposedPublicTitle']
+    if (public['variant'] != before_variant or public['category'] != before_category
+            or public['department'] != before_department):
+        raise ValueError(f'Public-name review changed guarded variant metadata: {sku}')
+
+
+def validated_public_name_reviews(manifest: dict | None) -> dict:
+    """Accept exact-source, parsed-variant guarded title-only corrections."""
+    if manifest is None:
+        return {}
+    if (not isinstance(manifest, dict) or set(manifest) != {'schemaVersion', 'reviews'}
+            or manifest.get('schemaVersion') != 1 or not isinstance(manifest.get('reviews'), list)):
+        raise ValueError('Invalid guarded public-name review manifest schema')
+    reviews = {}
+    required = {'sku', 'expectedUpc', 'expectedSourceRow', 'expectedRawFieldsSha256',
+                'expectedPublicName', 'expectedLabel', 'expectedCategory', 'expectedDepartment',
+                'proposedPublicTitle', 'reason', 'evidence'}
+    for entry in manifest['reviews']:
+        if not isinstance(entry, dict) or set(entry) != required:
+            raise ValueError('Public-name review contains unsupported or private fields')
+        sku = entry.get('sku')
+        if not isinstance(sku, str) or not re.fullmatch(r'\d+', sku) or sku in reviews:
+            raise ValueError('Public-name reviews require unique string SKUs')
+        if (not isinstance(entry['expectedUpc'], str) or not valid_gtin(entry['expectedUpc'])
+                or type(entry['expectedSourceRow']) is not int or entry['expectedSourceRow'] < 1
+                or not isinstance(entry['expectedRawFieldsSha256'], str)
+                or not re.fullmatch(r'[a-f0-9]{64}', entry['expectedRawFieldsSha256'])):
+            raise ValueError(f'Public-name review requires exact source guards: {sku}')
+        public_fields = ('expectedPublicName', 'expectedLabel', 'expectedCategory')
+        if any(not safe_review_text(entry[field]) for field in public_fields):
+            raise ValueError(f'Public-name review contains unsafe parsed public metadata: {sku}')
+        if (not isinstance(entry['expectedDepartment'], str)
+                or (entry['expectedDepartment'] and not safe_review_text(entry['expectedDepartment']))):
+            raise ValueError(f'Public-name review contains unsafe parsed department metadata: {sku}')
+        title = entry['proposedPublicTitle']
+        if not safe_review_text(title) or not identifiable_name(title):
+            raise ValueError(f'Public-name review requires a safe, specific title: {sku}')
+        if not safe_review_text(entry['reason']):
+            raise ValueError(f'Public-name review requires a safe explanation: {sku}')
+        evidence = entry.get('evidence')
+        if not isinstance(evidence, list) or not evidence:
+            raise ValueError(f'Public-name review requires inspectable evidence: {sku}')
+        exact_upc_evidence = False
+        for item in evidence:
+            if not isinstance(item, dict) or set(item) != {'kind', 'url', 'supports'}:
+                raise ValueError(f'Public-name evidence contains unsupported or missing fields: {sku}')
+            if (not safe_review_text(item['kind']) or not review_url_host(item['url'])
+                    or not safe_review_text(item['supports'])):
+                raise ValueError(f'Public-name evidence must use a safe, inspectable HTTPS source: {sku}')
+            exact_upc_evidence |= entry['expectedUpc'] in item['supports'] or entry['expectedUpc'] in item['url']
+        if not exact_upc_evidence:
+            raise ValueError(f'Public-name evidence must explicitly identify the guarded UPC: {sku}')
+        reviews[sku] = entry
+    return reviews
+
+
 def validated_repair_image_review(review: object, sku: str) -> None:
     required = {'expectedName', 'expectedLabel', 'expectedImageSha256', 'verification', 'evidence'}
     if not isinstance(review, dict) or set(review) != required:
@@ -930,7 +1005,8 @@ def isolate_unspecified_variants(groups: dict, records: list, flag_reasons: Coun
 def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dict | None = None,
           name_manifest: dict | None = None, source_reviews_manifest: dict | None = None,
           report_additions_manifest: dict | None = None,
-          category_reviews_manifest: dict | None = None) -> tuple[dict, dict]:
+          category_reviews_manifest: dict | None = None,
+          public_name_reviews_manifest: dict | None = None) -> tuple[dict, dict]:
     reader = csv.reader(io.StringIO(source_bytes.decode('utf-8-sig'), newline=''))
     headers = next(reader)
     if headers != EXPECTED_HEADERS:
@@ -941,7 +1017,9 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     source_reviews = validated_source_reviews(source_reviews_manifest)
     report_additions = validated_report_additions(report_additions_manifest)
     category_reviews = validated_category_reviews(category_reviews_manifest)
+    public_name_reviews = validated_public_name_reviews(public_name_reviews_manifest)
     applied_category_reviews = set()
+    applied_public_name_reviews = set()
     master = []
     dispositions = Counter()
     flag_reasons = Counter()
@@ -1077,6 +1155,14 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 record['categoryReview'] = category_review
                 applied_category_reviews.add(sku)
                 flags.append('Guarded shopping category corrected; original department preserved')
+            public_name_review = public_name_reviews.get(sku)
+            if public_name_review:
+                if sku in identity_reviews:
+                    raise ValueError(f'Public-name review cannot override an unresolved identity conflict: {sku}')
+                apply_public_name_review(public, source, fields, public_name_review)
+                record['publicNameCorrection'] = public_name_review
+                applied_public_name_reviews.add(sku)
+                flags.append('Guarded exact-UPC public title correction applied; original source name and variant metadata preserved')
             flags = override_flags + flags
             record.update(source=source, disposition=disposition, reason=reason, flags=flags)
             flag_reasons.update(flags)
@@ -1108,6 +1194,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
         raise ValueError('Source review contains SKUs absent from the original source export')
     if set(category_reviews) != applied_category_reviews:
         raise ValueError('Category review requires an applicable original-source merchandise SKU')
+    if set(public_name_reviews) != applied_public_name_reviews:
+        raise ValueError('Public-name review requires an applicable original-source merchandise SKU')
     original_rows = len(master)
     original_dispositions = dict(dispositions)
     report_dispositions = Counter()
@@ -1231,7 +1319,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
              'originalSourceDispositions': original_dispositions,
              'reportSourceDispositions': dict(report_dispositions),
              'verifiedImages': verified_images, 'nameCorrections': len(corrections),
-             'categoryReviews': len(applied_category_reviews), 'records': master}
+             'categoryReviews': len(applied_category_reviews),
+             'publicNameCorrections': len(applied_public_name_reviews), 'records': master}
     assert sum(dispositions.values()) == len(master)
     return catalog, audit
 
@@ -1276,8 +1365,13 @@ def name_audit(catalog: dict, audit: dict) -> dict:
         if record['disposition'] != 'retained_variant':
             issues.append(record['reason'])
         correction = record.get('nameCorrection')
+        public_name_correction = record.get('publicNameCorrection')
         verification = record.get('nameVerification')
-        evidence = correction['evidence'] if correction else record.get('identityReview', {}).get('evidence', [])
+        evidence = (correction['evidence'] if correction else
+                    public_name_correction['evidence'] if public_name_correction else
+                    record.get('identityReview', {}).get('evidence', []))
+        if record.get('identityReview') and (correction or public_name_correction):
+            evidence = evidence + record['identityReview']['evidence']
         if verification:
             evidence = evidence + verification['evidence']
         resolution = record.get('sourceReview', {})
@@ -1286,9 +1380,10 @@ def name_audit(catalog: dict, audit: dict) -> dict:
         if resolved_identity:
             evidence = evidence + (identity_resolution or resolution)['evidence']
         outcome = ('evidence_backed_identity_resolved' if resolved_identity else
+                   'identity_conflict_needs_review' if record.get('identityReview') else
+                   'evidence_backed_public_title_correction' if public_name_correction else
                    'evidence_backed_correction_applied' if correction else
                    'evidence_backed_name_verified_unchanged' if verification else
-                   'identity_conflict_needs_review' if record.get('identityReview') else
                    'scanned_not_externally_verified')
         rows.append({'sourceRow': record['sourceRow'], 'sku': record['sku'],
                      'originalName': original, 'correctedSourceName': record.get('correctedSourceName', original),
@@ -1296,18 +1391,20 @@ def name_audit(catalog: dict, audit: dict) -> dict:
                      'issues': issues, 'suggestedCorrections': suggestions, 'evidence': evidence,
                      'outcome': outcome,
                      'verifiedScope': 'product_name_identity_and_variant' if resolved_identity else
+                        'exact_upc_public_title_identity' if public_name_correction else
                         MANUFACTURER_NAME_SCOPE if verification and verification.get('verificationMethod') == 'manufacturer_exact_upc_record' else
                         'exact_upc_name_identity' if verification else
                         (correction['scope'] if correction else None)})
     return {'schemaVersion': 1, 'sourceSha256': audit['sourceSha256'],
             'summary': {'sourceRowsScanned': len(rows), 'rowsWithIssues': sum(bool(r['issues']) for r in rows),
                         'evidenceBackedCorrections': sum(bool(r.get('nameCorrection')) for r in audit['records']),
+                        'publicTitleCorrections': sum(bool(r.get('publicNameCorrection')) for r in audit['records']),
                         'nameVerificationRecords': sum(bool(r.get('nameVerification')) for r in audit['records']),
-                        'identityConflicts': sum(r['outcome'] == 'identity_conflict_needs_review' for r in rows),
+                        'identityConflicts': sum(bool(r.get('identityReview')) for r in audit['records']),
                         'exactIdentitiesResolved': sum(r['outcome'] == 'evidence_backed_identity_resolved' for r in rows),
-                        'fullyVerifiedNames': sum(r['verifiedScope'] in {'product_name_spelling', 'exact_upc_name_identity', 'product_name_identity_and_variant', MANUFACTURER_NAME_SCOPE} for r in rows),
+                        'fullyVerifiedNames': sum(r['verifiedScope'] in {'product_name_spelling', 'exact_upc_name_identity', 'product_name_identity_and_variant', MANUFACTURER_NAME_SCOPE, 'exact_upc_public_title_identity'} and r['outcome'] != 'identity_conflict_needs_review' for r in rows),
                         'manufacturerRecordVerifiedNames': sum(r['verifiedScope'] == MANUFACTURER_NAME_SCOPE for r in rows),
-                        'scopeNote': 'All rows scanned for specified risks. Only listed corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock.'},
+                        'scopeNote': 'All rows scanned for specified risks. Only listed spelling corrections, public-title corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; public-title corrections preserve source and variant metadata. Remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock.'},
             'records': rows}
 
 
@@ -1373,7 +1470,7 @@ def safe_private_path(path: Path) -> Path:
     return path
 
 
-def main() -> None:
+def build_argument_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input', required=True, type=Path)
     parser.add_argument('--private-output', required=True, type=Path)
@@ -1384,7 +1481,13 @@ def main() -> None:
     parser.add_argument('--source-reviews', type=Path, default=ROOT / 'data/source-reviews.json')
     parser.add_argument('--report-additions', type=Path, default=ROOT / 'data/report-additions.json')
     parser.add_argument('--category-reviews', type=Path, default=ROOT / 'data/category-reviews.json')
-    args = parser.parse_args()
+    parser.add_argument('--public-name-reviews', type=Path, default=DEFAULT_PUBLIC_NAME_REVIEWS,
+                        help='Privacy-safe exact-UPC title review manifest (default: data/public-name-reviews.json)')
+    return parser
+
+
+def main() -> None:
+    args = build_argument_parser().parse_args()
     source_path = safe_private_path(args.input)
     private_output = safe_private_path(args.private_output)
     source_bytes = source_path.read_bytes()
@@ -1393,8 +1496,10 @@ def main() -> None:
     source_reviews = json.loads(args.source_reviews.read_text()) if args.source_reviews.exists() else None
     report_additions = json.loads(args.report_additions.read_text()) if args.report_additions.exists() else None
     category_reviews = json.loads(args.category_reviews.read_text()) if args.category_reviews.exists() else None
+    public_name_reviews = (json.loads(args.public_name_reviews.read_text())
+                           if args.public_name_reviews.exists() else None)
     catalog, audit = build(source_bytes, args.source_date, image_manifest, name_manifest, source_reviews,
-                           report_additions, category_reviews)
+                           report_additions, category_reviews, public_name_reviews)
     private_output.mkdir(parents=True, exist_ok=True, mode=0o700)
     (private_output / 'master-reconciliation.json').write_text(json.dumps(audit, indent=2) + '\n')
     (private_output / 'review-queue.json').write_text(json.dumps([
@@ -1408,6 +1513,7 @@ def main() -> None:
                'sourceSha256': audit['sourceSha256'], 'counts': catalog['counts'],
                'sourceDispositions': audit['sourceDispositions'],
                'categoryReviews': audit['categoryReviews'],
+               'publicNameCorrections': audit['publicNameCorrections'],
                'nameAudit': names['summary'],
                'imageStatus': {'verifiedVariants': audit['verifiedImages'],
                                'unverifiedVariants': catalog['counts']['publicVariants'] - audit['verifiedImages']}}
