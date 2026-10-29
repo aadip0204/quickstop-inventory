@@ -4717,6 +4717,83 @@
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
+    },
+    {
+      "sku": "7871",
+      "expectedUpc": "047677482487",
+      "expectedNameSha256": "babede82015626a023f1634332873069d91dfffd8e60aae8180052ddc504b92b",
+      "expectedSourceRecordSha256": "e235db2b3f4f39f8261233021b35e0ae2aee68f01a78f9cecf1295195a437bf1",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Snickers Ice Cream Bar",
+      "verifiedLabel": "2.8 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC, manufacturer product description and visually inspected package corroborate this single bar. Original source identity remains private.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/snickers-ice-cream-bar",
+          "supports": "Manufacturer identifies the flavor and single ice cream bar size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://cooperstruevalue.com/p/snickers-ice-cream-bar-king-size-047677482487",
+          "supports": "Exact UPC listing corroborates the single bar and size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://storage.googleapis.com/ezimage-cache/noscale/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3Byb2R1Y3RzLmV6YWR0di5jb20vZWNvbS1pbWFnZS12Mi8wMDA2NWNlZGJjNjY0OTZhY2FkNDU3ZWUuanBlZw.webp",
+          "supports": "Inspected package matches the product and single-bar format."
+        }
+      ]
+    },
+    {
+      "sku": "8988",
+      "expectedUpc": "047677474208",
+      "expectedNameSha256": "dc06f98b55e23ab72aaf0f20d8aeed2b1b639eabc9b7530e185879a6eedc8be9",
+      "expectedSourceRecordSha256": "9d3051b2da17d4bf206ceec01543362df5880248382f61228796fea7c8c85cbd",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Twix Ice Cream Bar",
+      "verifiedLabel": "3 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC, manufacturer product description and visually inspected package corroborate this single bar. Original source identity remains private.",
+      "reviewedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.marsfoodservices.com/product/twix-ice-cream-bar",
+          "supports": "Manufacturer identifies the flavor and single ice cream bar size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/242251-twix-ice-cream-bar-3-oz",
+          "supports": "Exact UPC listing corroborates the single bar and size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/assets/domains/product-image/file/large_a49a017d-4ea3-424b-9d29-3594ea04d7f1.jpg",
+          "supports": "Inspected package matches the product and single-bar format."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.colmadowikonline.com/web/image/product.template/50815/image_1920",
+          "supports": "Additional package image displays the 3 fl oz size."
+        }
+      ]
     }
   ]
 }

@@ -13742,6 +13742,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7871",
+      "expectedUpc": "047677482487",
+      "expectedName": "Snickers Ice Cream Bar",
+      "expectedLabel": "2.8 oz",
+      "src": "images/products/sku-7871.webp",
+      "alt": "Snickers Ice Cream Bar — 2.8 oz single bar",
+      "sourcePage": "https://cooperstruevalue.com/p/snickers-ice-cream-bar-king-size-047677482487",
+      "sourceImageUrl": "https://storage.googleapis.com/ezimage-cache/noscale/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3Byb2R1Y3RzLmV6YWR0di5jb20vZWNvbS1pbWFnZS12Mi8wMDA2NWNlZGJjNjY0OTZhY2FkNDU3ZWUuanBlZw.webp",
+      "sha256": "8fe421d7220aa5295e14c44912c6d25d67fb35cf7c6c63f85d4b6c8dd1125a6b",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8988",
+      "expectedUpc": "047677474208",
+      "expectedName": "Twix Ice Cream Bar",
+      "expectedLabel": "3 oz",
+      "src": "images/products/sku-8988.jpg",
+      "alt": "Twix Ice Cream Bar — 3 oz single bar",
+      "sourcePage": "https://www.cub.com/store/cub/products/242251-twix-ice-cream-bar-3-oz",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_a49a017d-4ea3-424b-9d29-3594ea04d7f1.jpg",
+      "sha256": "fbb5fb4af9d82691d9faaf016b29c15da50bb503dc46f99bdcd47dc2e5249cad",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
