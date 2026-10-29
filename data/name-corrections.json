@@ -21266,6 +21266,27 @@
       "expectedNameSha256": "5eb110f1464bed0c883ebcf37ed7741aceace702f402505247a471ee6e5f179d",
       "replaceTextFrom": "GLENFIDDICH 16YR",
       "replaceTextTo": "Glenfiddich 16 Year Aston Martin Formula One Edition"
+    },
+    {
+      "sku": "8421",
+      "expectedUpc": "617768141755",
+      "scope": "exact_upc_flavor_clarification",
+      "evidence": [
+        {
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/173042",
+          "kind": "exact_upc_listing",
+          "supports": "Exact UPC identifies Svedka Strawberry Lemonade."
+        },
+        {
+          "url": "https://www.thehutliquors.com/svedka-strawberry-lemonade.html",
+          "kind": "inspected_package_photo",
+          "supports": "Package shows Strawberry Lemonade flavor."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "b7c568f610b0495027399c8328f79e216b95a8d4ff71126d90cd1bf2788c8a18",
+      "replaceTextFrom": "Svedka stralemon",
+      "replaceTextTo": "Svedka Strawberry Lemonade"
     }
   ],
   "identityReviews": [
