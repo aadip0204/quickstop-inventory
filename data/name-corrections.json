@@ -22543,6 +22543,38 @@
           "supports": "Exact UPC identifies flavor and package size."
         }
       ]
+    },
+    {
+      "sku": "8210",
+      "expectedUpc": "078000037715",
+      "expectedNameSha256": "22aa557de41ec9c38170b2a21ff0def43ef6df533ee136455a59f47340d669e2",
+      "replaceTextFrom": "SUNKIST  WATERMELON 12OZ CAN",
+      "replaceTextTo": "Sunkist Watermelon Lemonade 12OZ CAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.shindigs.com.au/sunkist-watermelon-lemonade-can-355ml-pk-1-106351",
+          "supports": "Exact UPC identifies brand, flavor, size and packaging."
+        }
+      ]
+    },
+    {
+      "sku": "101316",
+      "expectedUpc": "078000395402",
+      "expectedNameSha256": "9874e41605f8b7f6f039569807f3dfbe4bb837de54da699e32820f1e70048f9c",
+      "replaceTextFrom": "SUNKIST RASPBERRY BLOODOR 20OZ",
+      "replaceTextTo": "Sunkist Raspberry Blood Orange 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.masoncityposters.com/products/new-dr-pepper-strawberries-cream-20-ounce-bottle-copy-1",
+          "supports": "Exact UPC identifies brand, flavor, size and packaging."
+        }
+      ]
     }
   ],
   "identityReviews": [

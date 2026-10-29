@@ -16228,6 +16228,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8210",
+      "expectedUpc": "078000037715",
+      "expectedName": "Sunkist Watermelon Lemonade",
+      "expectedLabel": "12 oz · cans",
+      "src": "images/products/sku-8210.jpg",
+      "alt": "Sunkist Watermelon Lemonade — 12 oz can",
+      "sourcePage": "https://yegexotic.com/products/sunkist-watermelon-lemonade-can",
+      "sourceImageUrl": "https://yegexotic.com/cdn/shop/products/image_5510ca7e-385b-46e8-b875-2a4d9b369311.jpg?v=1682189746",
+      "sha256": "0f3229e35932218c7bcd876b5e1ee5120f38b91ee517bdf4d777012b94c9b6c7",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101316",
+      "expectedUpc": "078000395402",
+      "expectedName": "Sunkist Raspberry Blood Orange",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-101316.jpg",
+      "alt": "Sunkist Raspberry Blood Orange — 20 oz bottle",
+      "sourcePage": "https://www.masoncityposters.com/products/new-dr-pepper-strawberries-cream-20-ounce-bottle-copy-1",
+      "sourceImageUrl": "https://www.masoncityposters.com/cdn/shop/files/SunkistRasberryBloodOrangeCasey_sExclusive_grande.jpg?v=1739105061",
+      "sha256": "70447d9f033cc958c4427411500c15c7f4979cf259839633ab495722d8409c4b",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
