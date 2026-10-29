@@ -21154,6 +21154,22 @@
       "expectedNameSha256": "1789d14a5d30eae20956ab21ca8470432091f2bdcd65bf9c036663a6f656f2e2",
       "replaceTextFrom": "Captain Pineapple",
       "replaceTextTo": "Captain Morgan Pineapple"
+    },
+    {
+      "sku": "2554",
+      "expectedUpc": "082000789550",
+      "scope": "brand_completion_exact_upc",
+      "evidence": [
+        {
+          "url": "https://www.cub.com/store/cub-liquors/products/42709636-crown-royal-blackberry-whisky-750-ml",
+          "kind": "exact_upc_listing",
+          "supports": "Exact UPC identifies Crown Royal Blackberry whisky."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "725d080047b8af98ec9938d37c9e36296d03292330aa723494c11e55b9c9f0e4",
+      "replaceTextFrom": "Crown blackberry",
+      "replaceTextTo": "Crown Royal Blackberry"
     }
   ],
   "identityReviews": [

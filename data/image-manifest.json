@@ -11696,6 +11696,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2554",
+      "expectedUpc": "082000789550",
+      "expectedName": "Crown Royal Blackberry",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2554.jpg",
+      "alt": "Crown Royal Blackberry — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-90981545",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_8909321a-4131-4564-b08d-a0f5ba949744?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "f88577e4e86a092f97778bf7dc31c8155fe5eae21491945b6fc7f4fffb81cf0c",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2553",
+      "expectedUpc": "082000771562",
+      "expectedName": "Crown Royal APPLE",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2553.jpg",
+      "alt": "Crown Royal APPLE — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47949067",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_996306eb-eb87-4dd3-8b34-67389391c2f3?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "ac0f199952cfd47abe13fc76992f6a78782302b539472f1662c3aca537c7b361",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2557",
+      "expectedUpc": "082000782919",
+      "expectedName": "Crown Royal Peach",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2557.jpg",
+      "alt": "Crown Royal Peach — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-54351762",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_1809eb10-c4d9-4e7f-9f8b-6db7e88d69b6?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "5cbf9eba1775eed925de79232dfcda739c04ef5d8e60798a394ab0b20c43d6a8",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2574",
+      "expectedUpc": "082000750437",
+      "expectedName": "Crown Royal Black",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2574.jpg",
+      "alt": "Crown Royal Black — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137635",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_7ff775c1-c447-4646-9ac4-9ac3ca9b3c00?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "0ac9f234765fec7ff21e2c3793035b56e57c543a86a39ea2fe39d7da793e8e02",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
