@@ -5202,6 +5202,24 @@
         "reason": "Exact UPC and inspected package establish one 2 L bottle matching the existing expression.",
         "groupWithPriorExpression": true
       }
+    },
+    {
+      "sku": "610",
+      "expectedUpc": "613008767372",
+      "expectedNameSha256": "566eb31282e0a334de24409d991a2c9d43a08a575f261ac8c4467758b8ebf91e",
+      "expectedSourceRecordSha256": "222c5ce40b5ea312b4c75fbb8f859900eadb1fb014c002f151dfd909fdfcd675",
+      "action": "size_needs_confirmation",
+      "reason": "Original inventory specifies 24 oz; exact UPC distributor records describe 22 oz (650 mL). Confirm the actual can before selecting a size or photo. Evidence: https://www.tandeimports.com/product?item_no=8151M and https://www.creveleurope.com/products/arizona-tropical-chillzicle-us-edition-650-ml.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "627",
+      "expectedUpc": "038766302700",
+      "expectedNameSha256": "da5127346ed7c12b5ef09aaf6411f7e6547f7d205207a722c119fb1946d3e6ee",
+      "expectedSourceRecordSha256": "ea504c4c1a398807c867178bc708021d5056909754aee44f7382ed85b6c55d59",
+      "action": "size_needs_confirmation",
+      "reason": "Inventory states 40 oz, but exact UPC is associated with a 1 L bottle and separately with a keg. Confirm the actual package. Evidence: https://theliquorbarn.com/products/asahi-super-dry-1l and https://oklahoma.gov/content/dam/ok/en/able-commission/documents/distributors-monthly-price-posting-reports/SGWS%20July%2023%20Price%20Posting.pdf.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
