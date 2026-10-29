@@ -14710,6 +14710,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7902",
+      "expectedUpc": "740235500110",
+      "expectedName": "Carley's Soft Baked Iced Lemon Cookies",
+      "expectedLabel": "5.34 oz",
+      "src": "images/products/sku-7902.webp",
+      "alt": "Carley's Soft Baked Iced Lemon Cookies — 5.34 oz package",
+      "sourcePage": "https://snack4less.com/collections/carleys/products/carleys-iced-lemon-soft-baked-cookies-5-34oz-6pk",
+      "sourceImageUrl": "https://snack4less.com/cdn/shop/files/SNACK-CARLEY_S-SB-6CT-5.34OZ-IL.webp?crop=center&height=1200&v=1787741125&width=1200",
+      "sha256": "6e8bf9146d3157585cdabf1f5ab2e4f97e00296f8e6d45f60a14076e207b2be8",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
