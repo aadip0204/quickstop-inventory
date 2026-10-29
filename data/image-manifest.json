@@ -14556,6 +14556,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "5009",
+      "expectedUpc": "041755000587",
+      "expectedName": "Langers Fruit Punch",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-5009.jpg",
+      "alt": "Langers Fruit Punch — 16 oz bottle",
+      "sourcePage": "https://shop.mercaso.com/products/langers-fruit-punch-16-oz-12-pack",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/DW12080-12-20251204023433.jpg?v=1775026906",
+      "sha256": "5d50eab035b1737fda5e48f5103ba506f89365a2dd627b5393ae1f0441841e7c",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
