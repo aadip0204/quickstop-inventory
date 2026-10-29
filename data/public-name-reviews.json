@@ -1318,6 +1318,409 @@
           "supports": "UPC 073800006336 identifies Faygo Raspberry Blueberry."
         }
       ]
+    },
+    {
+      "sku": "5579",
+      "expectedUpc": "635985010371",
+      "expectedSourceRow": 3609,
+      "expectedRawFieldsSha256": "fdc8047a5a8fb4452f335612eddb0d0bb35c75f141f619a129dcf26b32909c83",
+      "expectedPublicName": "Mikes Cranberry Lemonade Can - Single",
+      "expectedLabel": "Single · 16 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Mike's HARDER Cranberry Lemonade Can",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/upc/635985010371",
+          "supports": "UPC 635985010371: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=635985010371",
+          "supports": "UPC 635985010371: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "950",
+      "expectedUpc": "085000039588",
+      "expectedSourceRow": 9393,
+      "expectedRawFieldsSha256": "37bd155c56de474d856317bd689b09b16fe173309da3a93790a53409d358f33c",
+      "expectedPublicName": "beach juice strawberry guava lemonade",
+      "expectedLabel": "500 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beach Juice Strawberry Guava Lemonade",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winedeals.com/wine/fruit-wines/beach-juice-strawberry-guava-lemonade-500-ml-5881.html",
+          "supports": "UPC 085000039588: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kingswineandspirits.com/products/beach-juice-strawbery-guava-lemonade-500ml",
+          "supports": "UPC 085000039588: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "963",
+      "expectedUpc": "851133006175",
+      "expectedSourceRow": 6554,
+      "expectedRawFieldsSha256": "351ce53e6db0f6f1bf634db61272b2e0ca403e852035b36a1cd27b93ece8ced3",
+      "expectedPublicName": "beatbox watermelon",
+      "expectedLabel": "500 mL · 16.9 oz",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "BeatBox Fresh Watermelon",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/20513336-beatbox-fresh-watermelon-cocktail-500-ml",
+          "supports": "UPC 851133006175: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.finewinehouse.com/beatbox-beverages-fresh-watermelon-500ml.html",
+          "supports": "UPC 851133006175: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "1661",
+      "expectedUpc": "078000030242",
+      "expectedSourceRow": 6684,
+      "expectedRawFieldsSha256": "eef84b858be0fb1fb359b8e513a156ecdb0fe0683541ec4650f338399cae5600",
+      "expectedPublicName": "canada dryginger ale with lemonade",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Canada Dry Ginger Ale and Lemonade",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/brand/11359/canada-dry-upc?page=6",
+          "supports": "UPC 078000030242: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://barcodebucks.com/canadadry/terms.pdf",
+          "supports": "UPC 078000030242: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "5580",
+      "expectedUpc": "635985006169",
+      "expectedSourceRow": 3610,
+      "expectedRawFieldsSha256": "2c828569fcfde54537d97c11ced2f6415399beae64d1ebded9a421b89ed6e115",
+      "expectedPublicName": "Mikes Cranberry Lemonade Plastic Bottle - Single",
+      "expectedLabel": "Single · 16 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Mike's Hard Cranberry Lemonade Plastic Bottle",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/upc/635985006169",
+          "supports": "UPC 635985006169: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://idahodocs.contentdm.oclc.org/digital/api/collection/p16293coll3/id/44809/download",
+          "supports": "UPC 635985006169: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "5587",
+      "expectedUpc": "635985800170",
+      "expectedSourceRow": 3615,
+      "expectedRawFieldsSha256": "71d04565037c200e748db3b47dc322f40eefdc74d28b9358f2422a2d05cddc3c",
+      "expectedPublicName": "mikes hard lemonade Cans variety pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Mike's Hard Lemonade Seltzer Variety Pack Cans",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/23895234-mike-s-hard-lemonade-hard-seltzer-hard-lemonade-variety-pack-12-ea",
+          "supports": "UPC 635985800170: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-81830733",
+          "supports": "UPC 635985800170: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "90",
+      "expectedUpc": "811538018920",
+      "expectedSourceRow": 74,
+      "expectedRawFieldsSha256": "2bc884fe6ab8fe0d07465777475039d2256f1961358afef02a58fdeaf4badb67",
+      "expectedPublicName": "1800 mango Margarita",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Mango Margarita",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=811538018920",
+          "supports": "UPC 811538018920: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "112",
+      "expectedUpc": "811538016445",
+      "expectedSourceRow": 9081,
+      "expectedRawFieldsSha256": "1389026b3046f290b5ad8a527f7e5e67dc498390a46bc3e3d795ef0cf71a326a",
+      "expectedPublicName": "1800 WATERMELON",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Watermelon Margarita",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/173229",
+          "supports": "UPC 811538016445: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=81153801644",
+          "supports": "UPC 811538016445: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "113",
+      "expectedUpc": "818844021415",
+      "expectedSourceRow": 8090,
+      "expectedRawFieldsSha256": "fe6a27e322c6bb4e9b1d09650554b3196304836610fe8587ae0b48f4ac9ad500",
+      "expectedPublicName": "1800 BLACK CHERRY MARG",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "1800 Ultimate Black Cherry Margarita",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/148408",
+          "supports": "UPC 818844021415: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/24109732-1800-margarita-1-75-l",
+          "supports": "UPC 818844021415: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "359",
+      "expectedUpc": "081054997607",
+      "expectedSourceRow": 8576,
+      "expectedRawFieldsSha256": "1e440332a4a6801d6c62d0e579c1026040459072eabd363cb4786d6b42e1416d",
+      "expectedPublicName": "allure apple & pear Moscato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Allure Apple & Pear Moscato",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://assets-global.website-files.com/5f7b5574577b9a0c7e04b2da/6219315522323a5eac5bddfa_BWC_AllureInfusions_Recipe_FamilySellSheet_020322.pdf",
+          "supports": "UPC 081054997607: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "361",
+      "expectedUpc": "081054997614",
+      "expectedSourceRow": 7231,
+      "expectedRawFieldsSha256": "ba3a4ff749083ca032d0b3023558d6370ac7fe03852a5ddf7f2edc3875bceec2",
+      "expectedPublicName": "allure mango Moscato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Allure Mango Moscato",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://assets-global.website-files.com/5f7b5574577b9a0c7e04b2da/6219315522323a5eac5bddfa_BWC_AllureInfusions_Recipe_FamilySellSheet_020322.pdf",
+          "supports": "UPC 081054997614: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "413",
+      "expectedUpc": "085000012352",
+      "expectedSourceRow": 288,
+      "expectedRawFieldsSha256": "543c9d7ecee90781639ee2b463903172c893df4c9670d61faf1498a91959856b",
+      "expectedPublicName": "Andre Strawberry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "André Strawberry Moscato",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winedeals.com/wine/sparkling-wine/andre-strawberry-moscato-750-ml-74684.html",
+          "supports": "UPC 085000012352: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.highendliquor.com/products/andre-strawberry-moscato-750ml",
+          "supports": "UPC 085000012352: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "UPC 085000012352: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "516",
+      "expectedUpc": "613008735012",
+      "expectedSourceRow": 9863,
+      "expectedRawFieldsSha256": "a2198e1222a7f6ee52410500ac0ee12be244187a0fe0efb765e937d46c91a4b5",
+      "expectedPublicName": "AriZona Cherry Lime Rickey Sparkling Cherry-Lime",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Cherry Lime Rickey Sparkling Soda",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/613008735012",
+          "supports": "UPC 613008735012: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.canmuseum.com/Detail.aspx?CanID=80794",
+          "supports": "UPC 613008735012: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://kitchn.shop/arizona-22-fl-oz-cherry-lime-rickey/",
+          "supports": "UPC 613008735012: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "579",
+      "expectedUpc": "613008725792",
+      "expectedSourceRow": 9260,
+      "expectedRawFieldsSha256": "808357f1cb8aef668413db7563adaf078b72f2fe690029e52e4eee82b5d90221",
+      "expectedPublicName": "ARIZONA MUCHO MANGOPLASTIC TALL",
+      "expectedLabel": "20 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Mucho Mango Plastic Bottle",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/613008725792",
+          "supports": "UPC 613008725792: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.super99.com/10100857-arizona-mucho-mango-tallboy-20",
+          "supports": "UPC 613008725792: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "622",
+      "expectedUpc": "613008730895",
+      "expectedSourceRow": 6665,
+      "expectedRawFieldsSha256": "254bcf43c33f4b69f066f0702bb990a2641972bf605d5e5225443b645c37330e",
+      "expectedPublicName": "ARNOLD LITE H&HICED TEA LEMONADE-Plastic",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Arnold Palmer Lite Half & Half Iced Tea Lemonade Plastic Bottle",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://assets-of-websites.s3.amazonaws.com/media/934593/ea9ec16005b6b01eb3e7307a44dcf275c1361fed/original/7201%20Online%20Inv%201.21.24%20%281%29%20-%207201%20Online%20Inv%201.21.24%20%281%29.csv.pdf",
+          "supports": "UPC 613008730895: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://premierbrandsus.com/wp-content/uploads/2022/05/Product-Catalogue.pdf",
+          "supports": "UPC 613008730895: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "637",
+      "expectedUpc": "857853002572",
+      "expectedSourceRow": 9539,
+      "expectedRawFieldsSha256": "cc0dcd987f7e80f48bf2c0bae08bbc6986bd9e031667beb9d23940a08c30201f",
+      "expectedPublicName": "Atto primo mango",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Gancia Atto Primo Mango Sparkling Wine",
+      "reason": "Exact UPC evidence supports the corrected product title; source and variant details are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://fivestarliquorwine.com/shop/product/atto-primo-peach-sparkling-atto-primo-mango-sparkling-750ml/60942771bd7207635b960fef?option-id=68e6bbd7df3d2849f27ef53643800392346e507c16ff8afacd4f2ccdfcbc0e9e",
+          "supports": "UPC 857853002572: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/product/p-11423-gancia-atto-primo-mango-sparkling-wine-750ml/",
+          "supports": "UPC 857853002572: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/distributors-monthly-price-posting-reports/RNDC%20PB202307.pdf",
+          "supports": "UPC 857853002572: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "3405",
+      "expectedUpc": "849806003002",
+      "expectedSourceRow": 6423,
+      "expectedRawFieldsSha256": "4bd7113a4c5793f118da0de1e18fc8bbc9a5364ce54f454abb76a2387c628c11",
+      "expectedPublicName": "Four Loko e lemonade Single",
+      "expectedLabel": "Single · 23.5 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Four Loko Electric Lemonade",
+      "reason": "Exact UPC records identify the Electric Lemonade expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://broadway-liquors.com/shop/product/four-loko-electric-lemonade/5fdcea6432b33f42172cb181?option-id=06d506686e8dc9a0e677a73b014593b3827e190cbf21c1ee412a1e60c3db09d3",
+          "supports": "UPC 849806003002 identifies Four Loko Electric Lemonade."
+        }
+      ]
     }
   ]
 }

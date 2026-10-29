@@ -17783,6 +17783,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3342",
+      "expectedUpc": "073800004608",
+      "expectedName": "FAYGO RED POP",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-3342.png",
+      "alt": "Faygo Redpop — 24 oz bottle",
+      "sourcePage": "https://shoptheking.us/products/red-pop-faygo-24-oz",
+      "sourceImageUrl": "https://www.unitedsweets.co.nz/cdn/shop/products/Faygo_Redpop_600x.png?v=1621220519",
+      "sha256": "f50eca084a625d18ba38211eb2579b47e20f5b200006560130091cb3201571f4",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3338",
+      "expectedUpc": "073800006299",
+      "expectedName": "FAYGO PINEAPPLE",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-3338.png",
+      "alt": "Faygo Pineapple — 24 oz bottle",
+      "sourcePage": "https://www.wbiw.com/wordpress/wp-content/uploads/2026/01/full-list-of-recall.pdf",
+      "sourceImageUrl": "https://www.unitedsweets.co.nz/cdn/shop/products/Faygo_Pineapple_1024x1024.png?v=1621220519",
+      "sha256": "5018a66475d21cec7023658cefb7befa2baeb9e2a400b5ec53125998550700cb",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
