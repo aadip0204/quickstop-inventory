@@ -13170,6 +13170,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "6460",
+      "expectedUpc": "022000285942",
+      "expectedName": "Skittles Original Gummies",
+      "expectedLabel": "5.8 oz",
+      "src": "images/products/sku-6460.jpg",
+      "alt": "Skittles Original Gummies — 5.8 oz bag",
+      "sourcePage": "https://candycorner.com/skittles-gummies-soft-candy-original-12ct-box/",
+      "sourceImageUrl": "https://cdn11.bigcommerce.com/s-840m18ew7o/images/stencil/1280x1280/products/3940/6375/417960__56637.1711399412.jpg?c=1",
+      "sha256": "0ff87dd8594ef5495177a21246523fbe71aded92508611a2f135092bec0a58c3",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
