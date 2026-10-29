@@ -22399,6 +22399,22 @@
           "supports": "Exact UPC and inspected package identify product expression; source size remains unchanged."
         }
       ]
+    },
+    {
+      "sku": "6620",
+      "expectedUpc": "012000182563",
+      "expectedNameSha256": "b96d6dbc549e6a258a4a943eefbf9cee4d4d6984716fdb1781e85d5be461203e",
+      "replaceTextFrom": "BOTTER",
+      "replaceTextTo": "BOTTLE",
+      "scope": "packaging_word_spelling_only",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.pepsico.info/012000182563-0002-en-US/index.html",
+          "supports": "Manufacturer confirms a 16.9 oz Pepsi bottle; fixes the source packaging-word typo only."
+        }
+      ]
     }
   ],
   "identityReviews": [
