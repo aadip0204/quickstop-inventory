@@ -14666,6 +14666,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "306",
+      "expectedUpc": "073390014360",
+      "expectedName": "Airheads Bites Original Fruit",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-306.png",
+      "alt": "Airheads Bites Original Fruit — 2 oz bag",
+      "sourcePage": "https://www.cub.com/store/cub/products/2915508-airheads-bites-fruit-2-0-oz",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_275f680f-89ae-4a4e-88d4-b425d4e17c20.png",
+      "sha256": "658a37743e6da79c06bb9c58528b2ccbc83783da008a1ba3d64ccd0ca3093b45",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "305",
+      "expectedUpc": "073390011000",
+      "expectedName": "Airheads Bites Paradise Blends",
+      "expectedLabel": "2 oz",
+      "src": "images/products/sku-305.jpg",
+      "alt": "Airheads Bites Paradise Blends — 2 oz bag",
+      "sourcePage": "https://americansweets.co.uk/sweets-and-candy/soft-candy/airheads-bites-paradise-blend-2oz-57g-html",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0148/3295/9574/files/Headbitestropical.jpg?v=1782319089",
+      "sha256": "f650a36cb0ba72252eb05d015f513dc80a74bff8707ac529910cede9ab9ddbf1",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
