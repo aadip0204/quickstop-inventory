@@ -22095,6 +22095,22 @@
           "supports": "Exact UPC listing identifies brand and product expression; package size preserved from source inventory."
         }
       ]
+    },
+    {
+      "sku": "580",
+      "expectedUpc": "613008751333",
+      "expectedNameSha256": "70f09d0492b29726e6fe31e4ead72d497e2a97a4c1af680a37f3a9c0f6a6232f",
+      "replaceTextFrom": "Arizona mucho mango   20oz",
+      "replaceTextTo": "AriZona Mucho Mango 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.maxwarehouse.com/products/arizona-mango-beverage-20-oz-1-pk-pack-of-24",
+          "supports": "Exact UPC and package image confirm brand casing and product name; source size is preserved."
+        }
+      ]
     }
   ],
   "identityReviews": [
