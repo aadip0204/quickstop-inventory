@@ -22239,6 +22239,54 @@
           "supports": "Exact UPC and package identify Watermelon Fruit Juice Cocktail; source size remains unchanged."
         }
       ]
+    },
+    {
+      "sku": "3005",
+      "expectedUpc": "078000040586",
+      "expectedNameSha256": "95dfd2bd69c016c79851c9f8f8216713634ca1d8e4c99cdbfc0d600c276a1385",
+      "replaceTextFrom": "DR PEPPER BLACKBERRY 20OZ",
+      "replaceTextTo": "Dr Pepper Blackberry 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.dollargeneral.com/p/dr-pepper-blackberry-soda-20-fl-oz-bottle-1-ct/78000040586",
+          "supports": "Exact UPC and inspected packaging identify brand and expression; source size or pack count is preserved."
+        }
+      ]
+    },
+    {
+      "sku": "3006",
+      "expectedUpc": "078000098402",
+      "expectedNameSha256": "1353f1fbc0e9c0e39b98f7727eb62f8bffdadb59781385019bccec96f7c4c072",
+      "replaceTextFrom": "DR PEPPER CHERRY 20OZ",
+      "replaceTextTo": "Dr Pepper Cherry 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://patriotwineandliquor.com/product/20-oz-dr-pepper-cherry/",
+          "supports": "Exact UPC and inspected packaging identify brand and expression; source size or pack count is preserved."
+        }
+      ]
+    },
+    {
+      "sku": "101530",
+      "expectedUpc": "078000037616",
+      "expectedNameSha256": "4b47aa8a97397f82070fbe34e2a39c0945878d8faac962d5062fddd8da06aca0",
+      "replaceTextFrom": "DR PEPPER STRAWCREAM 12PK CAN",
+      "replaceTextTo": "Dr Pepper Strawberries & Cream 12PK CAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.brookshires.com/product/dr-pepper-soda-strawberries-%26-cream-12-pack-id-00078000037616",
+          "supports": "Exact UPC and inspected packaging identify brand and expression; source size or pack count is preserved."
+        }
+      ]
     }
   ],
   "identityReviews": [
