@@ -12466,6 +12466,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1967",
+      "expectedUpc": "028400028165",
+      "expectedName": "cheetos crunchy",
+      "expectedLabel": "3.75 oz",
+      "src": "images/products/sku-1967.jpg",
+      "alt": "Cheetos Crunchy — 3.75 oz bag",
+      "sourcePage": "https://www.doordash.com/products/cheetos-crunchy-corn-puff-chips-375-oz/urpc_bc13d6b6-9a2d-4e5b-90d6-209d9d267844",
+      "sourceImageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit%3Dcontain%2Cwidth%3D1200%2Cheight%3D672%2Cformat%3Dauto/https%3A/doordash-static.s3.amazonaws.com/media/photosV2/502fe7bc-db15-45ef-bf7d-a39a0823f78d-retina-large.jpg",
+      "sha256": "db7f29027e25f38a99514f8f8aba4ddceab5b9a82d0c6267f25efcf6c0db57d9",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
