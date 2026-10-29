@@ -15700,6 +15700,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3001",
+      "expectedUpc": "078000037678",
+      "expectedName": "Dr Pepper Strawberries & Cream",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-3001.jpg",
+      "alt": "Dr Pepper Strawberries & Cream — 20 oz packaging",
+      "sourcePage": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Dr-Pepper-Strawberries-%26-Cream-/p/1-16CTDY-1",
+      "sourceImageUrl": "https://images.heb.com/is/image/HEBGrocery/008726517?fit=constrain&hei=1000&qlt=75",
+      "sha256": "d875b0f279a811cecad703af8995e9c3f6bf5bc22f910ee88a58bee6ff965faa",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3007",
+      "expectedUpc": "078000037692",
+      "expectedName": "Dr Pepper Strawberries & Cream",
+      "expectedLabel": "12 oz",
+      "src": "images/products/sku-3007.png",
+      "alt": "Dr Pepper Strawberries & Cream — 12 oz packaging",
+      "sourcePage": "https://candybase.co.uk/products/dr-pepper-strawberries-cream-12oz-355ml",
+      "sourceImageUrl": "https://www.myamericanshop.com/cdn/shop/files/dr-pepper-strawberries-cream-1166437785.png?v=1777330312&width=800",
+      "sha256": "0c4adab972e53d00ab87dd9f8f713ff1d6c43b3d975e82d65fdbb4885a29383a",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
