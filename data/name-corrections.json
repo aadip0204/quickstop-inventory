@@ -22047,6 +22047,54 @@
           "supports": "Exact UPC identifies Frost ChillZicle in a 22 oz can."
         }
       ]
+    },
+    {
+      "sku": "510",
+      "expectedUpc": "613008742287",
+      "expectedNameSha256": "48883c19f62d6ba646ace301915006d5d8652240002538847f026f3621562e9d",
+      "replaceTextFrom": "ARIZONA 20OZGOLDEN BEAR LEMONDAE",
+      "replaceTextTo": "AriZona Golden Bear Strawberry Lemonade 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/613008742287",
+          "supports": "Exact UPC listing identifies brand and product expression; package size preserved from source inventory."
+        }
+      ]
+    },
+    {
+      "sku": "493",
+      "expectedUpc": "613008739980",
+      "expectedNameSha256": "735504ad771ed6cf901ceff1bfe99ebab5b988d382accbd3f82533887a0cfe4e",
+      "replaceTextFrom": "ARIZONA  20OZPINEAPPLE",
+      "replaceTextTo": "AriZona Shaq Fu Punch Pineapple 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/613008739980",
+          "supports": "Exact UPC listing identifies brand and product expression; package size preserved from source inventory."
+        }
+      ]
+    },
+    {
+      "sku": "587",
+      "expectedUpc": "613008731045",
+      "expectedNameSha256": "47966fd2fa920a779b85e8cca3377d4026c3bc9ffde97b3e8ecf037966c263e3",
+      "replaceTextFrom": "Arizona PinaColada 20oz",
+      "replaceTextTo": "AriZona Piña Colada 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/613008731045",
+          "supports": "Exact UPC listing identifies brand and product expression; package size preserved from source inventory."
+        }
+      ]
     }
   ],
   "identityReviews": [
