@@ -21234,6 +21234,38 @@
       "expectedNameSha256": "bdcb46c7df2b2373f2cc9044e586610972890f4c757e5c85dc3f2dc403c535b4",
       "replaceTextFrom": "Dewars",
       "replaceTextTo": "Dewar's"
+    },
+    {
+      "sku": "101266",
+      "expectedUpc": "674868000146",
+      "scope": "exact_upc_edition_clarification",
+      "evidence": [
+        {
+          "url": "https://sites.salsify.com/c1f255a9-992a-490a-af17-0a225b7fbc83/c05cce1a-ed46-4743-a214-750a539b4a1f/product/77A08001/The-Glenlivet-12-Year-Old-Jamaica-Rum-Cask-Selection-Whisky-750-ml-Can-80-Proof/",
+          "kind": "exact_upc_listing",
+          "supports": "Exact UPC identifies the named limited edition and stated age."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "85454114e6e9aad7683e2e10501f205f22eb7aad0dbc0b21917e561b6001311b",
+      "replaceTextFrom": "GLENLIVET 12YR",
+      "replaceTextTo": "The Glenlivet 12 Year Jamaica Edition"
+    },
+    {
+      "sku": "101257",
+      "expectedUpc": "083664875412",
+      "scope": "exact_upc_edition_clarification",
+      "evidence": [
+        {
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/169078",
+          "kind": "exact_upc_listing",
+          "supports": "Exact UPC identifies the named limited edition and stated age."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "5eb110f1464bed0c883ebcf37ed7741aceace702f402505247a471ee6e5f179d",
+      "replaceTextFrom": "GLENFIDDICH 16YR",
+      "replaceTextTo": "Glenfiddich 16 Year Aston Martin Formula One Edition"
     }
   ],
   "identityReviews": [

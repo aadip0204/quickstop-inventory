@@ -11850,6 +11850,50 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3736",
+      "expectedUpc": "083664107360",
+      "expectedName": "GLENFIDDICH 12YR",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-3736.jpg",
+      "alt": "GLENFIDDICH 12YR — 750 mL packaging",
+      "sourcePage": "https://www.target.com/p/-/A-47137363",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_60f566f6-8fcf-4f69-b857-228a7a1c1bf4?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "8321be971d9b39c9262d3e70b272434fa26d474e38a7c8c73797ebb8d4a7a3b4",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101266",
+      "expectedUpc": "674868000146",
+      "expectedName": "The Glenlivet 12 Year Jamaica Edition",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-101266.jpg",
+      "alt": "The Glenlivet 12 Year Jamaica Edition — 750 mL packaging",
+      "sourcePage": "https://cwspirits.com/products/the-glenlivet-12-year-single-malt-scotch-whisky-jamaica-edition-treasure-beach-750ml",
+      "sourceImageUrl": "https://cwspirits.com/cdn/shop/files/TheGlenlivet12YearSingleMaltScotchWhiskyJamaicaEditionTreasureBeach_750Ml_be1a63f0-34ae-401b-9a68-e911cdc23180.jpg?v=1783365066",
+      "sha256": "0f2c9479b15c94a3a7f4fcf03e09f7ddf7d72698643990ffc777b65f3491d524",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
