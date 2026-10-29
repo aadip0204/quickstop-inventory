@@ -22175,6 +22175,70 @@
           "supports": "Exact UPC identifies Mucho Mango, 34 oz; source size is preserved."
         }
       ]
+    },
+    {
+      "sku": "529",
+      "expectedUpc": "613008733285",
+      "expectedNameSha256": "6bb435384f8abd40d553c8e3ae5c69d3ebda21a6885d4fae132798e7b208b90a",
+      "replaceTextFrom": "ARIZONA FRUITPUNCH 64OZ",
+      "replaceTextTo": "AriZona Fruit Punch Fruit Juice Cocktail 64OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/613008733285",
+          "supports": "Exact UPC identifies product expression; inspected 64 oz packaging and source size agree."
+        }
+      ]
+    },
+    {
+      "sku": "575",
+      "expectedUpc": "613008739409",
+      "expectedNameSha256": "b5a2dfd2dffbb4a96d86422d0c9992d1281581e94a8efcc9f1c5644ff82177e6",
+      "replaceTextFrom": "Arizona Mango 64oz",
+      "replaceTextTo": "AriZona Mucho Mango Fruit Juice Cocktail 64oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getfoodfacts.com/food/arizona-mucho-mango-drink-2082929",
+          "supports": "Exact UPC identifies product expression; inspected 64 oz packaging and source size agree."
+        }
+      ]
+    },
+    {
+      "sku": "617",
+      "expectedUpc": "613008739386",
+      "expectedNameSha256": "35014829786eda61b6388fa15036fbb3d4cb0650af045bab7f95796b5d923906",
+      "replaceTextFrom": "Arizona Watermelon 64oz",
+      "replaceTextTo": "AriZona Watermelon Fruit Juice Cocktail 64oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://listex.online/product/613008739386-us-arizona-100-natural-fruit-juice-cocktail-watermelon",
+          "supports": "Exact UPC identifies product expression; inspected 64 oz packaging and source size agree."
+        }
+      ]
+    },
+    {
+      "sku": "614",
+      "expectedUpc": "613008751272",
+      "expectedNameSha256": "8cd8aec647b383e05878602cc0eb73b65a9e85d00dda113f0aafa320230053e4",
+      "replaceTextFrom": "Arizona watermelon    20oz",
+      "replaceTextTo": "AriZona Watermelon Fruit Juice Cocktail 20oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.mercaso.com/collections/amazing-closeout-blowout-beverages/products/arizona-watermelon-pet-tall-boy-20-oz-24-pack",
+          "supports": "Exact UPC and package identify Watermelon Fruit Juice Cocktail; source size remains unchanged."
+        }
+      ]
     }
   ],
   "identityReviews": [
