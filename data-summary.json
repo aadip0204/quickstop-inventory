@@ -8,10 +8,10 @@
     "originalSourceRows": 9881,
     "reportSourceRows": 71,
     "publicVariants": 9689,
-    "products": 8000,
+    "products": 7999,
     "needsReview": 107,
     "excludedNonproducts": 156,
-    "flaggedPublicVariants": 2108
+    "flaggedPublicVariants": 2111
   },
   "sourceDispositions": {
     "needs_review": 107,
@@ -21,8 +21,8 @@
   "categoryReviews": 84,
   "nameAudit": {
     "sourceRowsScanned": 9952,
-    "rowsWithIssues": 4028,
-    "evidenceBackedCorrections": 956,
+    "rowsWithIssues": 4031,
+    "evidenceBackedCorrections": 959,
     "nameVerificationRecords": 84,
     "identityConflicts": 6,
     "exactIdentitiesResolved": 70,
