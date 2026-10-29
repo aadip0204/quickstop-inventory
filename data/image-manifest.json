@@ -12708,6 +12708,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7697",
+      "expectedUpc": "082000732914",
+      "expectedName": "Smirnoff Blueberry Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7697.png",
+      "alt": "Smirnoff Blueberry — 750 mL bottle",
+      "sourcePage": "https://www.thehutliquors.com/smirnoff-blueberry-vodka.html",
+      "sourceImageUrl": "https://cdn.shoplightspeed.com/shops/637462/files/25031160/smirnoff-smirnoff-blueberry-vodka.jpg",
+      "sha256": "25c8a5d1abd23a5f7b9f474b240a13dab356e9e4e5b0972da8ebd1618aa14b84",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7742",
+      "expectedUpc": "082000732860",
+      "expectedName": "Smirnoff Lime Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7742.jpg",
+      "alt": "Smirnoff Lime — 750 mL bottle",
+      "sourcePage": "https://liquorgeeks.com/products/smirnoff-lime-vodka",
+      "sourceImageUrl": "https://liquorgeeks.com/cdn/shop/files/SmirnoffLimeFlavoredVodka.jpg?v=1726124758&width=1214",
+      "sha256": "27267c9f7fb37e5c991de7c5bd3ed86ef234d68c375f6498a832ab7eb4aba4ee",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7746",
+      "expectedUpc": "082000003861",
+      "expectedName": "SMIRNOFF ORANGE Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7746.jpg",
+      "alt": "Smirnoff Orange — 750 mL bottle",
+      "sourcePage": "https://unwindbottleshop.com/products/smirnoff-vodka-orange-750ml",
+      "sourceImageUrl": "https://unwindbottleshop.com/cdn/shop/products/SMIRNOFF_ORANGE.jpg?v=1710057721",
+      "sha256": "0e505109db438d6982529b348a6f14c1379d0f9ef2c1d407aac7b88a952f9a5d",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
