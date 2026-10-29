@@ -21919,6 +21919,22 @@
           "supports": "Exact UPC listing identifies the product brand, flavor, and 2 oz package."
         }
       ]
+    },
+    {
+      "sku": "7935",
+      "expectedUpc": "041364080499",
+      "expectedNameSha256": "88353387e98eb5939dd223c56e8777a779b1aa42e29ec3a7ba5ab53fad66cd5d",
+      "replaceTextFrom": "Sour Punch Watermelon 2oz",
+      "replaceTextTo": "Sour Punch Watermelon Straws 2oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://wholesale.americanlicorice.com/products/sour-punch-watermelon-straws-2oz-tray",
+          "supports": "Manufacturer identifies the exact UPC, flavor, straws and 2 oz tray."
+        }
+      ]
     }
   ],
   "identityReviews": [
