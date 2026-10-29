@@ -14820,6 +14820,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "615",
+      "expectedUpc": "613008740665",
+      "expectedName": "AriZona Watermelon Fruit Juice Cocktail",
+      "expectedLabel": "11.5 oz",
+      "src": "images/products/sku-615.png",
+      "alt": "AriZona Watermelon Fruit Juice Cocktail — 11.5 oz can",
+      "sourcePage": "https://americansweets.co.uk/soda-and-drinks/juices-fruit-drinks/arizona-watermelon-slim-can-11-5oz-340ml",
+      "sourceImageUrl": "https://americansweets.co.uk/media/catalog/product/a/r/arizona-watermelon-fruit-juice-cocktail-slim-can-11-5oz-340ml.png",
+      "sha256": "a3f758a4ad620ed4c6a0d9379fca28e1d93d42ed535338c10b46de5c36cf864c",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "581",
+      "expectedUpc": "613008737580",
+      "expectedName": "AriZona Mucho Mango Fruit Juice Cocktail",
+      "expectedLabel": "11.5 oz",
+      "src": "images/products/sku-581.png",
+      "alt": "AriZona Mucho Mango Fruit Juice Cocktail — 11.5 oz can",
+      "sourcePage": "https://americanfizz.co.uk/soda-and-drinks/fruit-juice-juice-drinks/arizona-mucho-mango-slim-can-11-5oz-340ml-html",
+      "sourceImageUrl": "https://americanfizz.co.uk/media/catalog/product/a/r/arizona-mucho-mango-fruit-juice-cocktail-slim-can-11-5oz-340ml.png",
+      "sha256": "39ff3609ef72ef2d6ad8ffbc431b00ef81ea34b09b9f919e61dedc739b5aed1a",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "540",
+      "expectedUpc": "613008714253",
+      "expectedName": "AriZona Green Tea with Ginseng & Honey",
+      "expectedLabel": "11.5 oz",
+      "src": "images/products/sku-540.png",
+      "alt": "AriZona Green Tea with Ginseng & Honey — 11.5 oz can",
+      "sourcePage": "https://americansweets.co.uk/soda-and-drinks/arizona-green-tea-slim-can-11-5oz-340ml-html",
+      "sourceImageUrl": "https://americansweets.co.uk/media/catalog/product/a/r/arizona-green-tea-ginseng-honey-115oz-340ml-slim-can.png",
+      "sha256": "074ad360d1aa3aabbcee8cfdd8c2132d760d4bc033ee2331bea9deff851e3b81",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "563",
+      "expectedUpc": "613008735784",
+      "expectedName": "AriZona Iced Tea with Lemon Flavor",
+      "expectedLabel": "11.5 oz",
+      "src": "images/products/sku-563.png",
+      "alt": "AriZona Iced Tea with Lemon Flavor — 11.5 oz can",
+      "sourcePage": "https://americansweets.co.uk/soda-and-drinks/regular-soda/arizona-lemon-iced-tea-slim-can-11-5oz-340ml",
+      "sourceImageUrl": "https://americansweets.co.uk/media/catalog/product/a/r/arizona-lemon-iced-tea-slim-can-11.5oz.png",
+      "sha256": "e2d39995070deab0622cfbb5ad8f98c1558cc9cddc2e0aa5d56e412d33f63035",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
