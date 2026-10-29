@@ -12334,6 +12334,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "5303",
+      "expectedUpc": "089540463087",
+      "expectedName": "Malibu Mango",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-5303.jpg",
+      "alt": "Malibu Mango — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137270",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_0468020b-91fd-45c6-bce8-050189b5fe35?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "6aac89a3068881d1d6120b96ba5bf12d489cf7af27d0b84617f4240541331980",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5307",
+      "expectedUpc": "089540463131",
+      "expectedName": "Malibu Pineapple",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-5307.jpg",
+      "alt": "Malibu Pineapple — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137275",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_c04419b6-f661-40d5-b78a-3ad80c0f95f5?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "4a03e0e355e07038e32b90eaf9910e5bd926d29b3166ddc9cda4a7ba92881a12",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5553",
+      "expectedUpc": "088857003306",
+      "expectedName": "Midori Melon",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-5553.jpg",
+      "alt": "Midori Melon — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137260",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_5ddff591-dfdb-4d18-b0b6-4a2f061b89e0?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "607a730bad1ae10be4dd9592a250c9f1ad91d08bf518607c25f41b3fb5aadabc",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9524",
+      "expectedUpc": "721059817509",
+      "expectedName": "Wild Turkey American honey 750",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-9524.jpg",
+      "alt": "Wild Turkey American honey 750 — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137390",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_0a55b5ac-0d34-43d5-85a9-595f23fb4bcf?wid=1200&hei=1200&fmt=jpeg",
+      "sha256": "4e4f49b7bff027060828ecb1b713b879b5777eaa0d7d5a2a7d40f84024d60549",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
