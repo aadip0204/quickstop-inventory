@@ -22111,6 +22111,22 @@
           "supports": "Exact UPC and package image confirm brand casing and product name; source size is preserved."
         }
       ]
+    },
+    {
+      "sku": "531",
+      "expectedUpc": "613008719883",
+      "expectedNameSha256": "84eff1285e2f5ea6c0624d8868e179a83361ad8babf0567db49398a3b442ee25",
+      "replaceTextFrom": "ARIZONA GRAPEADE 1GL",
+      "replaceTextTo": "AriZona Grapeade Fruit Juice Cocktail 128 oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/613008719883",
+          "supports": "Exact UPC and package identify Grapeade; one gallon equals the 128 oz size in the source pack field."
+        }
+      ]
     }
   ],
   "identityReviews": [

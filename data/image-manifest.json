@@ -15304,6 +15304,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "525",
+      "expectedUpc": "613008710194",
+      "expectedName": "AriZona Fruit Punch Fruit Juice Cocktail",
+      "expectedLabel": "128 oz",
+      "src": "images/products/sku-525.jpg",
+      "alt": "AriZona Fruit Punch Fruit Juice Cocktail — 128 oz bottle",
+      "sourcePage": "https://www.upcitemdb.com/upc/613008710194",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/d04b78fc-4bbf-4974-a654-91e6c42ea913_1.d03319d3b667e2823918026f40caae5a.jpeg",
+      "sha256": "26edd06913473a5bf7ef4f8f0b4ddaa55eaa3368e222b2fb7334bc436e2e3a0a",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "531",
+      "expectedUpc": "613008719883",
+      "expectedName": "AriZona Grapeade Fruit Juice Cocktail",
+      "expectedLabel": "128 oz",
+      "src": "images/products/sku-531.jpg",
+      "alt": "AriZona Grapeade Fruit Juice Cocktail — 128 oz bottle",
+      "sourcePage": "https://www.upcitemdb.com/upc/613008719883",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/eac5f6c1-aa26-4857-bced-2bb304180414_1.2aaf9383269b15cf146275cf3da32cf9.jpeg",
+      "sha256": "d3e3a3a70facada811f3ca1b97d4eb432598696be8af3b3f0919757faf7673eb",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "534",
+      "expectedUpc": "613008721770",
+      "expectedName": "AriZona Green Tea with Ginseng & Honey",
+      "expectedLabel": "34 oz",
+      "src": "images/products/sku-534.jpg",
+      "alt": "AriZona Green Tea with Ginseng & Honey — 34 oz bottle",
+      "sourcePage": "https://www.upcitemdb.com/upc/613008721770",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/30199aac-2ea6-4728-aaac-4b370c5aba86.f422503c5f6b059955d3863796dedb41.jpeg",
+      "sha256": "3d9b11857ffc11c1fdc0ee28be1eb5e1f0ac5536eefce78bfc96b4c0eb8e04cc",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
