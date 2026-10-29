@@ -13368,6 +13368,94 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2620",
+      "expectedUpc": "080686967651",
+      "expectedName": "Cruzan Aged Light Rum",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2620.jpg",
+      "alt": "Cruzan Aged Light Rum — 750 mL bottle",
+      "sourcePage": "https://www.universalfws.com/product/p-2063-cruzan-aged-light-rum/",
+      "sourceImageUrl": "https://www.universalfws.com/wp-content/uploads/2024/08/image-product-080686967651.jpg",
+      "sha256": "6d11089e4457b8e4c78d0e4dbf722fbd503bae278a2a80594e2f8fbb75b149f5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2621",
+      "expectedUpc": "080686967460",
+      "expectedName": "Cruzan Aged Dark Rum",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2621.jpg",
+      "alt": "Cruzan Aged Dark Rum — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47137237",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_f5f985c9-33c7-4a3e-a117-0dc16ec0ad09?wid=1500&hei=1500",
+      "sha256": "c30da1d203aaa28f2a82a20532939a4d10183d6680032fd2dec4330551677480",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2622",
+      "expectedUpc": "080686970163",
+      "expectedName": "Cruzan Coconut Rum",
+      "expectedLabel": "1.75 L",
+      "src": "images/products/sku-2622.jpg",
+      "alt": "Cruzan Coconut Rum — 1.75 L bottle",
+      "sourcePage": "https://www.target.com/p/-/A-79546171",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_6f7ab5a0-c275-4607-9b70-b8a154e5f9d3?wid=1500&hei=1500",
+      "sha256": "8cc82f59809503fabc215a95592d05c9743f1c5f4615436e3ae4dcd33050558f",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2623",
+      "expectedUpc": "080686973096",
+      "expectedName": "CRUZAN STRAWBERRY",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2623.jpg",
+      "alt": "Cruzan Strawberry — 750 mL bottle",
+      "sourcePage": "https://www.universalfws.com/product/p-2072-cruzan-strawberry-rum/",
+      "sourceImageUrl": "https://www.universalfws.com/wp-content/uploads/2024/08/image-product-080686973096.jpg",
+      "sha256": "50586aa57a5d562a3b860c959563811c963132cdf330cf9e25509244373552ec",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
