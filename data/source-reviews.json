@@ -5319,6 +5319,60 @@
       "action": "size_needs_confirmation",
       "reason": "Source says 24 oz; exact UPC 652682034219 is listed for a 19.2 oz can. Confirm the package before selecting size or assigning a photo.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "4444",
+      "expectedUpc": "082184264935",
+      "expectedNameSha256": "790c0149d2161c1c8cb18c4593568a87a5ffaaf0645ff421cbfaef682fa2dbee",
+      "expectedSourceRecordSha256": "372a8c1a93260a675ab48c5b5d2ca4ca591b3e1d0b38c2fe2e3f7d4aefbdae84",
+      "action": "size_needs_confirmation",
+      "reason": "Source states 6-pack of 12 oz; exact UPC listings describe a 6-pack of 10 oz units. Confirm the package before selecting a size.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "315",
+      "expectedUpc": "827854007463",
+      "expectedNameSha256": "09ca64c4201feae0ae72709616f674db917f7fa3f14fa5d359ec157af7ac5130",
+      "expectedSourceRecordSha256": "ceb088b5e97732aebf5ef9a33245d5b22efaa099a4ddc67f17c440eb074ff134",
+      "action": "size_needs_confirmation",
+      "reason": "Inventory size conflicts with exact UPC listings for 12.4 oz. Confirm the actual package before selecting a size or image.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "317",
+      "expectedUpc": "827854007487",
+      "expectedNameSha256": "df1552907915e2f4dd1f64a4858e76ad2a9a3a3930f2703e07bc9f33e50db3af",
+      "expectedSourceRecordSha256": "96c1e95398499365e37e08118a851ea7b3fd4cf65765a3495affb2bb04e7423f",
+      "action": "size_needs_confirmation",
+      "reason": "Inventory size conflicts with exact UPC listings for 12.4 oz. Confirm the actual package before selecting a size or image.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "319",
+      "expectedUpc": "827854007142",
+      "expectedNameSha256": "caacb4602124f4cade142794ffbe50660d3cea8908f1aee69b8f01be44f33859",
+      "expectedSourceRecordSha256": "326a1046a71bece11cb6d1c269f3929c1afc0628a2ddf23bd3c3a5e623793839",
+      "action": "size_needs_confirmation",
+      "reason": "Inventory size conflicts with exact UPC listings for 12.4 oz. Confirm the actual package before selecting a size or image.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "320",
+      "expectedUpc": "827854007128",
+      "expectedNameSha256": "d40225bd5a4ebb48adb2aa9714984f2f26f0f8c8de2fbbb77503335f6d1cb9c8",
+      "expectedSourceRecordSha256": "e5df0996e9bfdedf72b60898c8c9299522e39594c05197fbb5548214a0e65289",
+      "action": "size_needs_confirmation",
+      "reason": "Inventory size conflicts with exact UPC listings for 12.4 oz. Confirm the actual package before selecting a size or image.",
+      "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "321",
+      "expectedUpc": "827854007470",
+      "expectedNameSha256": "cc2a167cd251d16dcfa0b4ba72edc3ca890b72156cdc75ef678a8be9f45469f1",
+      "expectedSourceRecordSha256": "2956c4aa6c4c5c051d7b627faddfb7799dde71308f1ed9b4457777db6176d7d9",
+      "action": "size_needs_confirmation",
+      "reason": "Inventory size conflicts with exact UPC listings for 12.4 oz. Confirm the actual package before selecting a size or image.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }
