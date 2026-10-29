@@ -14380,6 +14380,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1941",
+      "expectedUpc": "041780003454",
+      "expectedName": "Utz Baked Cheese Curls",
+      "expectedLabel": "4 oz",
+      "src": "images/products/sku-1941.jpg",
+      "alt": "Utz Baked Cheese Curls — 4 oz bag",
+      "sourcePage": "https://listex.online/product/41780003454-us-utz-baked-cheese-curls",
+      "sourceImageUrl": "https://icf.listex.info/med/1c2c91c5-5304-1d1b-641b-2177495e671e.jpg",
+      "sha256": "ad13ef43ab0df9840d39fd7ca7250cdd9a303cc4f63d0831203b8de15647ff6b",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1943",
+      "expectedUpc": "085264221606",
+      "expectedName": "Cloverhill Bakery Cheese Danish",
+      "expectedLabel": "4 oz",
+      "src": "images/products/sku-1943.jpg",
+      "alt": "Cloverhill Bakery Cheese Danish — 4 oz wrapper",
+      "sourcePage": "https://www.barcodespider.com/085264221606",
+      "sourceImageUrl": "https://images-na.ssl-images-amazon.com/images/I/61Wvrw-EWeL.jpg",
+      "sha256": "50041bc42110c905b624f31ba5aa1f2a307ae5fe61c848c0822c325d032f2cb5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1291",
+      "expectedUpc": "077567254238",
+      "expectedName": "Breyers Natural Vanilla",
+      "expectedLabel": "1.5 qt",
+      "src": "images/products/sku-1291.png",
+      "alt": "Breyers Natural Vanilla Ice Cream — 1.5 qt tub",
+      "sourcePage": "https://www.cub.com/store/cub/products/26166-breyers-ice-cream-natural-vanilla-48-oz",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_cc38b7bf-3e2d-42b4-8631-7e93ff97fb5d.png",
+      "sha256": "7645bcfe1bf6891d5a6b45399c2b6e02f1f110efca81f5f021770ff13a65e97d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
