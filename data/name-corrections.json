@@ -21951,6 +21951,38 @@
           "supports": "Exact UPC listing identifies Sour Punch strawberry straws in a 2 oz package."
         }
       ]
+    },
+    {
+      "sku": "7906",
+      "expectedUpc": "740235500158",
+      "expectedNameSha256": "fa1ab03e69292877f27dfaaa727f78a0b8497b4ad20cc4c7c9a6727978fb350b",
+      "replaceTextFrom": "SoftBaked iced oatmeal 5.34oz",
+      "replaceTextTo": "Carley's Soft Baked Iced Oatmeal Cookies 5.34oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.directionsforme.org/product/201928",
+          "supports": "Exact UPC identifies the Carley’s soft baked cookie flavor."
+        }
+      ]
+    },
+    {
+      "sku": "7902",
+      "expectedUpc": "740235500110",
+      "expectedNameSha256": "e5924e27db5faa83651f046e3949900ebc370c51674d024da6d98c8807a56b00",
+      "replaceTextFrom": "Soft BakedIced Lemon",
+      "replaceTextTo": "Carley's Soft Baked Iced Lemon Cookies",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://snack4less.com/collections/carleys/products/carleys-iced-lemon-soft-baked-cookies-5-34oz-6pk",
+          "supports": "Exact UPC identifies the Carley’s soft baked cookie flavor."
+        }
+      ]
     }
   ],
   "identityReviews": [
@@ -22065,6 +22097,20 @@
           "kind": "exact_upc_listing",
           "url": "https://theliquorbarn.com/products/smirnoff-cranberry-750ml",
           "supports": "A separate retailer identifies the same UPC as Smirnoff Cranberry, conflicting with the source name."
+        }
+      ]
+    },
+    {
+      "sku": "7901",
+      "expectedUpc": "740235500103",
+      "expectedNameSha256": "05911a1b7ad37b57e7576375c764ba1aad77cdff59cd8c5b9782ca8f65e9ed4d",
+      "action": "retain_flagged",
+      "reason": "Source name says strawberry chip but the manufacturer lists this UPC as chocolate chip; confirm the actual package before choosing a flavor or photo.",
+      "evidence": [
+        {
+          "kind": "manufacturer_listing",
+          "url": "https://static1.squarespace.com/static/5e41cdeef46c7f630057fdae/t/5ec5aba82437b371a891643e/1590012841410/Carleys%2B6-Pack%2BSoft%2BBaked%2BProduct%2BSpecifications.pdf",
+          "supports": "Manufacturer product specifications identify UPC 740235500103 as chocolate chip."
         }
       ]
     }
