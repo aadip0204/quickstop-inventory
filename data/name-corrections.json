@@ -21698,6 +21698,48 @@
           "supports": "Inspected package displays the brand and product expression."
         }
       ]
+    },
+    {
+      "sku": "997",
+      "expectedUpc": "070842001091",
+      "expectedNameSha256": "dec91992de8d4460d807e49839915bd1097ba633faa73ad2fb243163204574d0",
+      "replaceTextFrom": "Beer Nuts   bar mix 4 oz",
+      "replaceTextTo": "BEER NUTS Habanero Bar Mix 4 oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://beernuts.com/products/habanero-bar-mix-4oz-bag",
+          "supports": "Exact UPC listing identifies the brand and product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://beernuts.com/cdn/shop/files/Untitled_design_94.png?v=1727899066",
+          "supports": "Inspected package displays the brand, expression, and source size."
+        }
+      ]
+    },
+    {
+      "sku": "628",
+      "expectedUpc": "086106011836",
+      "expectedNameSha256": "97c060e0de2d04cc485d9fb74b2aaf5c57eec2196de8e45fabcebbb3ee16547b",
+      "replaceTextFrom": "Assorted Creme cookies13oz",
+      "replaceTextTo": "Lil' Dutch Maid Assorted Creme Cookies 13oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.glwholesale.com/product/wholesale-dutchmaid-assorted-sandwich-c/1012803",
+          "supports": "Exact UPC listing identifies the brand and product expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.s3.amazonaws.com/images/323240713.jpeg",
+          "supports": "Inspected package displays the brand, expression, and source size."
+        }
+      ]
     }
   ],
   "identityReviews": [

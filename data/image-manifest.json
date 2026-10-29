@@ -14248,6 +14248,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "997",
+      "expectedUpc": "070842001091",
+      "expectedName": "BEER NUTS Habanero Bar Mix",
+      "expectedLabel": "4 oz",
+      "src": "images/products/sku-997.png",
+      "alt": "BEER NUTS Habanero Bar Mix — 4 oz bag",
+      "sourcePage": "https://beernuts.com/products/habanero-bar-mix-4oz-bag",
+      "sourceImageUrl": "https://beernuts.com/cdn/shop/files/Untitled_design_94.png?v=1727899066",
+      "sha256": "63e27c11640c6d3d8e2136030cd59e6ec4cc673fced327a973f585ef904d5103",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "628",
+      "expectedUpc": "086106011836",
+      "expectedName": "Lil' Dutch Maid Assorted Creme Cookies",
+      "expectedLabel": "13 oz",
+      "src": "images/products/sku-628.jpg",
+      "alt": "Lil' Dutch Maid Assorted Creme Cookies — 13 oz bag",
+      "sourcePage": "https://go-upc.com/search?q=086106011836",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/323240713.jpeg",
+      "sha256": "1d8944a9cbe2d55e0ef312b72540ec04b4d006d81f3794373e6c60850a9b42c5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1288",
+      "expectedUpc": "077567254405",
+      "expectedName": "Breyers Butter Pecan",
+      "expectedLabel": "1.5 qt",
+      "src": "images/products/sku-1288.jpg",
+      "alt": "Breyers Butter Pecan — 1.5 qt tub",
+      "sourcePage": "https://go-upc.com/search?q=077567254405",
+      "sourceImageUrl": "https://go-upc.s3.amazonaws.com/images/307751595.jpeg",
+      "sha256": "e483c5e14f844209180c80ee534cfc5f5c5b2ef6199683018503709bcea84502",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
