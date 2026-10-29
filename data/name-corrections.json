@@ -21170,6 +21170,70 @@
       "expectedNameSha256": "725d080047b8af98ec9938d37c9e36296d03292330aa723494c11e55b9c9f0e4",
       "replaceTextFrom": "Crown blackberry",
       "replaceTextTo": "Crown Royal Blackberry"
+    },
+    {
+      "sku": "2820",
+      "expectedUpc": "080480230029",
+      "scope": "exact_upc_spelling_clarification",
+      "evidence": [
+        {
+          "url": "https://www.target.com/p/-/A-14983863",
+          "kind": "exact_upc_listing",
+          "supports": "Exact UPC and inspected bottle establish the spelling and product name."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "aa6193cfdb1b8e0ab4cb67e2c8eac7523125f439d7e9f8ca237501cadcb0853b",
+      "replaceTextFrom": "Dewars",
+      "replaceTextTo": "Dewar's"
+    },
+    {
+      "sku": "2888",
+      "expectedUpc": "674545000827",
+      "scope": "exact_upc_spelling_clarification",
+      "evidence": [
+        {
+          "url": "https://www.target.com/p/-/A-47788895",
+          "kind": "exact_upc_listing",
+          "supports": "Exact UPC and inspected bottle establish the spelling and product name."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "d5b57647088d59de5f6fa44e0f618c2bba773aa0d48320633d4a01002d7ef68f",
+      "replaceTextFrom": "DON JULIO 70TH ANNIVERS",
+      "replaceTextTo": "Don Julio 70th Anniversary"
+    },
+    {
+      "sku": "2818",
+      "expectedUpc": "080480230005",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.dewars.com/us/en/our-whisky/white-label/",
+          "kind": "manufacturer",
+          "supports": "Dewar’s brand spelling only; existing expression and size remain unchanged."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "9f998d97315ebdba880ae7867ed0f55e601d0adafe48e947c323cb6f8b75859a",
+      "replaceTextFrom": "Dewars",
+      "replaceTextTo": "Dewar's"
+    },
+    {
+      "sku": "2819",
+      "expectedUpc": "080480230074",
+      "scope": "brand_spelling_only",
+      "evidence": [
+        {
+          "url": "https://www.dewars.com/us/en/our-whisky/white-label/",
+          "kind": "manufacturer",
+          "supports": "Dewar’s brand spelling only; existing expression and size remain unchanged."
+        }
+      ],
+      "verifiedOn": "2026-10-28",
+      "expectedNameSha256": "bdcb46c7df2b2373f2cc9044e586610972890f4c757e5c85dc3f2dc403c535b4",
+      "replaceTextFrom": "Dewars",
+      "replaceTextTo": "Dewar's"
     }
   ],
   "identityReviews": [
