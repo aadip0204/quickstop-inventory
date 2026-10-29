@@ -22623,6 +22623,22 @@
           "supports": "Exact UPC identifies Sunkist expression and product name."
         }
       ]
+    },
+    {
+      "sku": "5752",
+      "expectedUpc": "033544000212",
+      "expectedNameSha256": "4baca5321da676e6c1ebf7d3b8bf3371e374bd3e8722fc235cd297a31614462e",
+      "replaceTextFrom": "modelo  24pk 7ozBottles",
+      "replaceTextTo": "Modelo Especial Modelito 24pk 7oz Bottles",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/21027467-modelo-especial-modelito-mexican-lager-beer-bottles-7-oz",
+          "supports": "Exact UPC identifies Modelo Especial Modelito, 24 bottles of 7 oz."
+        }
+      ]
     }
   ],
   "identityReviews": [
