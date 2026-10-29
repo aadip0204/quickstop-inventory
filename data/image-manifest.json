@@ -16052,6 +16052,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8221",
+      "expectedUpc": "078000116403",
+      "expectedName": "Sunkist Grape",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-8221.jpg",
+      "alt": "Sunkist Grape — 20 oz bottle",
+      "sourcePage": "https://shop.mercaso.com/products/sunkist-grape-20-oz-24-pack-c",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007800011640",
+      "sha256": "02563728f9ac4dc50eae2c177f640f559153e57f268d8959834b6409023ec32d",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8225",
+      "expectedUpc": "078000031782",
+      "expectedName": "SUNKIST STRAWBERRY LEMONADE",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-8225.jpg",
+      "alt": "Sunkist Strawberry Lemonade — 20 oz bottle",
+      "sourcePage": "https://www.upcitemdb.com/upc/78000031782",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007800003178",
+      "sha256": "80e1033f813efd069e12f1aef5a77f0fb2fa858ae85cc138160f1bb70798b9ec",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8246",
+      "expectedUpc": "078000118407",
+      "expectedName": "SUNKIST STRAWBERRY",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-8246.jpg",
+      "alt": "Sunkist Strawberry — 20 oz bottle",
+      "sourcePage": "https://go-upc.com/search?q=000000078000118407",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007800011840",
+      "sha256": "1a4540863711eaf765fe11444aaca4f854976f3478923512b419f3200ca991eb",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

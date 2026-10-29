@@ -22479,6 +22479,22 @@
           "supports": "Exact UPC identifies brand and flavor; original package size and count remain unchanged."
         }
       ]
+    },
+    {
+      "sku": "8225",
+      "expectedUpc": "078000031782",
+      "expectedNameSha256": "5f29beef551938e131034397d3888de56eb56dea64a88acf3b99695ca2631845",
+      "replaceTextFrom": "SUNKIST LEMONADE 20OZ",
+      "replaceTextTo": "Sunkist Strawberry Lemonade 20OZ",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.bakerdistributing.com/wp-content/uploads/2026/01/BNAP-jan26-WEB.pdf",
+          "supports": "Exact UPC identifies strawberry lemonade; source package size remains unchanged."
+        }
+      ]
     }
   ],
   "identityReviews": [
