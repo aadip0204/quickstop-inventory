@@ -2005,6 +2005,26 @@
           "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Product brand, name and matching GTIN are bound within the same owned-site Product structured-data record."
         }
       ]
+    },
+    {
+      "sku": "6430",
+      "expectedUpc": "855880008178",
+      "expectedNameSha256": "2e8830fe28150811f6cdf2d2b42358777d713b1353edd2c3f6b0b442aece150f",
+      "expectedSourceRecordSha256": "e51d71e984945952c56cf7000e923b040242921dce8ae8de4bd8b99ba3805446",
+      "expectedDepartment": "Cognac",
+      "expectedPublicName": "On The Rocks Larios Aviation Cocktail",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "category": "drinks",
+      "reviewedOn": "2026-10-29",
+      "reason": "Verified On The Rocks Larios Aviation is a ready-to-drink cocktail; its original Cognac department is retained.",
+      "evidence": [
+        {
+          "url": "https://www.cub.com/store/cub-liquors/products/20144476-on-the-rocks-larios-aviation-cocktail-375-ml",
+          "kind": "retailer_exact_upc_product_page",
+          "supports": "Exact UPC 855880008178 and 375 mL package; product is sold as an Aviation cocktail."
+        }
+      ]
     }
   ]
 }

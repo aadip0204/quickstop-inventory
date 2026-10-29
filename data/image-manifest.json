@@ -16580,6 +16580,138 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "5678",
+      "expectedUpc": "034100572433",
+      "expectedName": "Miller Lite",
+      "expectedLabel": "24-pack · 12 oz · bottles",
+      "src": "images/products/sku-5678.jpg",
+      "alt": "Miller Lite — 24-pack of 12 oz bottles",
+      "sourcePage": "https://www.kroger.com/p/miller-lite-beer/0003410057243",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0003410057243",
+      "sha256": "b6c0779f89d14109eff7e5198f422547e091c54338fe2c5062ea303ebe6ff837",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1407",
+      "expectedUpc": "018200531828",
+      "expectedName": "Bud Light",
+      "expectedLabel": "18-pack · 16 oz · cans",
+      "src": "images/products/sku-1407.jpg",
+      "alt": "Bud Light — 18-pack of 16 oz cans",
+      "sourcePage": "https://www.kroger.com/p/bud-light-beer-16-oz-cans/0001820053182",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0001820053182",
+      "sha256": "fb26826b4bfafe80c9d0f88b818aea7007122e5f9d46cf87705392a6a7605291",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2413",
+      "expectedUpc": "071990300739",
+      "expectedName": "Coors Light",
+      "expectedLabel": "18-pack · 16 oz · cans",
+      "src": "images/products/sku-2413.jpg",
+      "alt": "Coors Light — 18-pack of 16 oz cans",
+      "sourcePage": "https://www.kroger.com/p/coors-light-beer-16-oz/0007199030073",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0007199030073",
+      "sha256": "b2c64f97d8fb845656587e3e2e131032b1dc0318c876d7d5ed0904d1417a7bc4",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6894",
+      "expectedUpc": "850012571919",
+      "expectedName": "Rancho La Gloria Blueberry Margarita",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6894.jpg",
+      "alt": "Rancho La Gloria Blueberry Margarita — 750 mL bottle",
+      "sourcePage": "https://morewines.com/rancho-la-gloria-blueberry-margarita-wine-cocktail-750ml/",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0085001257191",
+      "sha256": "1d72a5f9382f0f0c5eba4f3ea8600e3b5c0885575869432fb587ba0ce21d2f35",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6430",
+      "expectedUpc": "855880008178",
+      "expectedName": "On The Rocks Larios Aviation Cocktail",
+      "expectedLabel": "375 mL",
+      "src": "images/products/sku-6430.jpg",
+      "alt": "On The Rocks Larios Aviation Cocktail — 375 mL bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/20144476-on-the-rocks-larios-aviation-cocktail-375-ml",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0085588000817",
+      "sha256": "189a0c2ca34310936bdedf41abc3bd232b0237c304036a725254010e8e8c9485",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7466",
+      "expectedUpc": "080432401200",
+      "expectedName": "Seagram's Extra Dry Gin",
+      "expectedLabel": "100 mL",
+      "src": "images/products/sku-7466.jpg",
+      "alt": "Seagram's Extra Dry Gin — 100 mL bottle",
+      "sourcePage": "https://shop.iowaabd.com/products/32232-seagrams-extra-dry-gin-100-ml",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0008043240120",
+      "sha256": "82a6e9f97779c459261cc6ea21bd1ea60e8ff0515027a4ad4932e8a26a601d6c",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

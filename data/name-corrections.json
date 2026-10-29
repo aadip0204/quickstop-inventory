@@ -6864,22 +6864,6 @@
       "verifiedOn": "2026-10-27"
     },
     {
-      "sku": "6894",
-      "expectedUpc": "850012571919",
-      "expectedNameSha256": "f3a11df4fab3953fdcfa403772fd6489433933c962d1aa39d1086d8eaa4d2855",
-      "replaceTextFrom": "ranchola gloria",
-      "replaceTextTo": "Rancho La Gloria",
-      "scope": "brand_spacing_only",
-      "evidence": [
-        {
-          "url": "https://rancholagloria.com/bottled-cocktails/",
-          "kind": "manufacturer",
-          "supports": "Manufacturer confirms Rancho La Gloria word boundaries. Preserve every remaining source flavor, expression and measurement token; incomplete size expressions remain unresolved."
-        }
-      ],
-      "verifiedOn": "2026-10-27"
-    },
-    {
       "sku": "6900",
       "expectedUpc": "861518002654",
       "expectedNameSha256": "91bff095f88b4cccc408cc13adc68ce14f3cedb263a5573ebdcda27b71f8e02d",
@@ -22637,6 +22621,54 @@
           "kind": "exact_upc_listing",
           "url": "https://www.cub.com/store/cub-liquors/products/21027467-modelo-especial-modelito-mexican-lager-beer-bottles-7-oz",
           "supports": "Exact UPC identifies Modelo Especial Modelito, 24 bottles of 7 oz."
+        }
+      ]
+    },
+    {
+      "sku": "6894",
+      "expectedUpc": "850012571919",
+      "expectedNameSha256": "f3a11df4fab3953fdcfa403772fd6489433933c962d1aa39d1086d8eaa4d2855",
+      "replaceTextFrom": "ranchola gloria blueberry 750margarita",
+      "replaceTextTo": "Rancho La Gloria Blueberry Margarita",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://morewines.com/rancho-la-gloria-blueberry-margarita-wine-cocktail-750ml/",
+          "supports": "Exact UPC confirms the corrected product expression and brand spelling."
+        }
+      ]
+    },
+    {
+      "sku": "6430",
+      "expectedUpc": "855880008178",
+      "expectedNameSha256": "2e8830fe28150811f6cdf2d2b42358777d713b1353edd2c3f6b0b442aece150f",
+      "replaceTextFrom": "on the rocks aviation  375mllarios  gin",
+      "replaceTextTo": "On The Rocks Larios Aviation Cocktail 375mL",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/20144476-on-the-rocks-larios-aviation-cocktail-375-ml",
+          "supports": "Exact UPC confirms the corrected product expression and brand spelling."
+        }
+      ]
+    },
+    {
+      "sku": "7466",
+      "expectedUpc": "080432401200",
+      "expectedNameSha256": "4bb80a58841a6c777f6cb3e0f759f8d7929f467cee67ea1e19c576553ab3d788",
+      "replaceTextFrom": "Seagrams Gin 100ml",
+      "replaceTextTo": "Seagram's Extra Dry Gin 100mL",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.iowaabd.com/products/32232-seagrams-extra-dry-gin-100-ml",
+          "supports": "Exact UPC confirms the corrected product expression and brand spelling."
         }
       ]
     }
