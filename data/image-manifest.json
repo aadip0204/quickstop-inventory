@@ -14908,6 +14908,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "514",
+      "expectedUpc": "613008773069",
+      "expectedName": "AriZona Blueberry White Tea",
+      "expectedLabel": "22 oz",
+      "src": "images/products/sku-514.jpg",
+      "alt": "AriZona Blueberry White Tea — 22 oz can",
+      "sourcePage": "https://www.myamericanmarket.com/us/arizona-blueberry-white-tea",
+      "sourceImageUrl": "https://www.myamericanmarket.com/10807-thickbox_default/arizona-blueberry-white-tea.jpg",
+      "sha256": "e609dbcf49ff3a754717d6857f9657dbe3785fbbccfba2860f70f20b2e079358",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "519",
+      "expectedUpc": "613008773014",
+      "expectedName": "AriZona Dragonfruit Mango Juice Cocktail",
+      "expectedLabel": "22 oz",
+      "src": "images/products/sku-519.jpg",
+      "alt": "AriZona Dragonfruit Mango Juice Cocktail — 22 oz can",
+      "sourcePage": "https://www.myamericanmarket.com/us/arizona-dragonfruit-mango-juice-cocktail",
+      "sourceImageUrl": "https://www.myamericanmarket.com/10805-thickbox_default/arizona-dragonfruit-mango-juice-cocktail.jpg",
+      "sha256": "274a31037db014c106bb8a2c2623eaddfea7e391045fe59bf87752b86451f493",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "517",
+      "expectedUpc": "613008771713",
+      "expectedName": "AriZona Frost ChillZicle",
+      "expectedLabel": "22 oz · cans",
+      "src": "images/products/sku-517.png",
+      "alt": "AriZona Frost ChillZicle — 22 oz can",
+      "sourcePage": "https://drinkarizona.com/products/frost-chillzicle-big-can",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0877/1505/3842/files/Frost-Chillzicle_Big-Can_Product-Image_01_1.png?v=1740427108",
+      "sha256": "48e8be97460b278e2d1cba0ac9a440923177c005a423ada52be38fb931745a8f",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

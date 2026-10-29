@@ -22031,6 +22031,22 @@
           "supports": "Exact UPC record identifies the chewy Atomic Fireball expression."
         }
       ]
+    },
+    {
+      "sku": "517",
+      "expectedUpc": "613008771713",
+      "expectedNameSha256": "3916d054315bf02db4b4a8bc537f320946a05fd956146b6b69a7aad8f8c1307f",
+      "replaceTextFrom": "ARIZONA CHILLZICLE  22OZCAN",
+      "replaceTextTo": "AriZona Frost ChillZicle 22OZCAN",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.myamericanmarket.com/us/arizona-frost-chillzicle-juice-cocktail",
+          "supports": "Exact UPC identifies Frost ChillZicle in a 22 oz can."
+        }
+      ]
     }
   ],
   "identityReviews": [
