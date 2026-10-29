@@ -14534,6 +14534,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7906",
+      "expectedUpc": "740235500158",
+      "expectedName": "Carley's Soft Baked Iced Oatmeal Cookies",
+      "expectedLabel": "5.34 oz",
+      "src": "images/products/sku-7906.png",
+      "alt": "Carley's Soft Baked Iced Oatmeal Cookies — 5.34 oz package",
+      "sourcePage": "https://www.carleys.com/6-pack-iced-oatmeal",
+      "sourceImageUrl": "https://images.squarespace-cdn.com/content/v1/5e41cdeef46c7f630057fdae/35c030d6-02f3-49e7-84ae-5eee359ad12e/CAR3dTray%28IcdOtml%2902-HR.png",
+      "sha256": "7a3c60a4537facaedcd47ba4a1122aa2d9bd188ec817e6097c7862ab16a098c2",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
