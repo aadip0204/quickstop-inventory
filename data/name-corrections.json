@@ -23420,6 +23420,44 @@
           "supports": "EAN 9002490100070 identifies the original Red Bull Energy Drink 250 mL can."
         }
       ]
+    },
+    {
+      "sku": "4444",
+      "expectedUpc": "082184264935",
+      "expectedNameSha256": "790c0149d2161c1c8cb18c4593568a87a5ffaaf0645ff421cbfaef682fa2dbee",
+      "action": "retain_flagged",
+      "reason": "Source names Cherry Lemonade but exact UPC listings disagree on flavor and list a different can or bottle size. Confirm the actual package before choosing an expression.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/16822295-jack-daniel-s-jack-daniel-s-country-cocktails-cherry-limeade-malt-beverage-10-fl-oz",
+          "supports": "UPC 082184264935 is listed for Cherry Limeade in a 6-pack of 10 fl oz units."
+        },
+        {
+          "kind": "conflicting_upc_listing",
+          "url": "https://theliquorbarn.com/products/jack-daniels-country-cocktails-jack-apple-6pk",
+          "supports": "UPC 082184264935 is also listed for Jack Apple 6-pack of 10 fl oz units; expression needs confirmation."
+        }
+      ]
+    },
+    {
+      "sku": "303",
+      "expectedUpc": "062338761435",
+      "expectedNameSha256": "2ab16b6dd83624b26522612f250268849207bdbd63c89cb70f9de8bef3ce90da",
+      "action": "retain_flagged",
+      "reason": "Historical and later exact UPC records use different scent names; confirm the actual package before assigning an expression or photo.",
+      "evidence": [
+        {
+          "kind": "historical_upc_listing",
+          "url": "https://ladinj.com/wp-content/uploads/2018/04/Complete-Catalog-Code-No-Price-3-7-18.pdf",
+          "supports": "UPC 062338761435 was listed for Freesia and Jasmine."
+        },
+        {
+          "kind": "manufacturer_product_list",
+          "url": "https://terms.snipp.com/Reckitt_Air_Wick_Spring_Sweepstakes_2006546/Reckitt%20Air%20Wick%20Spring%20Sweepstakes%20Product%20List_Updated_2_21_23.pdf",
+          "supports": "UPC 062338761435 is also listed as White Lilac and Orange Blossom."
+        }
+      ]
     }
   ],
   "nameVerifications": [

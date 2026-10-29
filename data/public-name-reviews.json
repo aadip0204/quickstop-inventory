@@ -804,6 +804,520 @@
           "supports": "Distributor listing maps UPC 613008732288 to Arizona bottle Half & Half Raspberry, 20 oz."
         }
       ]
+    },
+    {
+      "sku": "418",
+      "expectedUpc": "087692841029",
+      "expectedSourceRow": 290,
+      "expectedRawFieldsSha256": "f0fd5259a7d4dc0671a6d234f71c5e53e6dea86c2dbcceadd0bd4f73a5b8cd1f",
+      "expectedPublicName": "Angry Orchard botapple ginger",
+      "expectedLabel": "6-pack",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Angry Orchard Apple Ginger",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/angry-orchard-apple-ginger-6pk",
+          "supports": "UPC 087692841029: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/brand/12318/angry-orchard-upc",
+          "supports": "UPC 087692841029: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "803",
+      "expectedUpc": "813694023428",
+      "expectedSourceRow": 6388,
+      "expectedRawFieldsSha256": "7e15bbf4546e3f89f3cfc5a4c6bd91879d0dc0e6bbf947718db3958bb3d30cbe",
+      "expectedPublicName": "BAI antioxidant infusionkula watermelon",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Bai Kula Watermelon Antioxidant Infusion",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/3104020-bai-antioxidant-infusion-beverage-kula-watermelon-18-fl-oz",
+          "supports": "UPC 813694023428: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/upc/813694023428",
+          "supports": "UPC 813694023428: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "947",
+      "expectedUpc": "020100000069",
+      "expectedSourceRow": 8037,
+      "expectedRawFieldsSha256": "9dbc040b303cbe6461476f1f9cdd3d6a481348ada58b459af5b660a2ee533025",
+      "expectedPublicName": "beach cliff sardinessoybean oil",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Beach Cliff Sardines in Soybean Oil Can",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.mass.gov/files/documents/2017/11/08/ma-wic-upc-database.pdf",
+          "supports": "UPC 020100000069: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.azdhs.gov/documents/prevention/azwic/vendors/arizona-wic-foods-database.pdf",
+          "supports": "UPC 020100000069: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=020100000069",
+          "supports": "UPC 020100000069: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "1200",
+      "expectedUpc": "070640040759",
+      "expectedSourceRow": 765,
+      "expectedRawFieldsSha256": "ee4a180eeddb857ee1577380e429a70f14c9202fcceefd2a6d790ea852bbf16b",
+      "expectedPublicName": "Blue bunny douible strawberry",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Blue Bunny Double Strawberry Ice Cream",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://getfoodfacts.com/food/double-strawberry-ice-cream-double-strawberry-2394213",
+          "supports": "UPC 070640040759: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.nutritionvalue.org/Double_strawberry_ice_cream%2C_double_strawberry_by_Wells_Enterprises%2C_Inc._1506176_nutritional_value.html",
+          "supports": "UPC 070640040759: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "456",
+      "expectedUpc": "082100739127",
+      "expectedSourceRow": 313,
+      "expectedRawFieldsSha256": "c4b13ea2a70978a5350bb9babbdc824934641e9a215e98a31bfe9170400dd69c",
+      "expectedPublicName": "Arbor mist red mos cherry",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Arbor Mist Cherry Red Moscato",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/distributors-monthly-price-posting-reports/SGWS%20July%2023%20Price%20Posting.pdf",
+          "supports": "UPC 082100739127: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "1722",
+      "expectedUpc": "030000065310",
+      "expectedSourceRow": 1073,
+      "expectedRawFieldsSha256": "ffc8da1002ddc7909d97abfa311a7495d9ee66487303129f7a86ded13a31e2fe",
+      "expectedPublicName": "Capn Crunchoat cereal",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Cap'n Crunch Sweetened Corn & Oat Cereal Box",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.pepsico.info/030000065310-0011-en-US/index.html",
+          "supports": "UPC 030000065310: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "4762",
+      "expectedUpc": "854651003794",
+      "expectedSourceRow": 7510,
+      "expectedRawFieldsSha256": "ecb869fe5f28b76a90037097cdf2e940ac9206d22d49ac6fd763a31b871e5dc6",
+      "expectedPublicName": "KARMA STRAWBERRY LEMONAD",
+      "expectedLabel": "18 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Water",
+      "proposedPublicTitle": "Karma Strawberry Lemonade Probiotic Water",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=854651003794",
+          "supports": "UPC 854651003794: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "4770",
+      "expectedUpc": "038000596445",
+      "expectedSourceRow": 3052,
+      "expectedRawFieldsSha256": "2ca061c6c286ce495938113caed3c380ff65a1a6beb40409baff61cf538928dd",
+      "expectedPublicName": "Kellogg's frosted flakescereal",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Kellogg's Frosted Flakes Cereal",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://upcfoodsearch.com/food-products/corn-cold-cereal/038000596445/",
+          "supports": "UPC 038000596445: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/38000596445",
+          "supports": "UPC 038000596445: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "6107",
+      "expectedUpc": "076064088124",
+      "expectedSourceRow": 6619,
+      "expectedRawFieldsSha256": "bf32767f776301acf3939c1f620e09aafcd112cd969461db0881e25e4a1b314d",
+      "expectedPublicName": "NEMOS BLUEBERRY BREAD",
+      "expectedLabel": "113 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Ne-Mo's Wild Blueberry Bread",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shoptheking.us/products/893453",
+          "supports": "UPC 076064088124: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
+          "supports": "UPC 076064088124: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "101340",
+      "expectedUpc": "085000024225",
+      "expectedSourceRow": 9572,
+      "expectedRawFieldsSha256": "ff492352660c35a568d3a796aaa10f171f3c843ec0d914c8abe1948a02c2cdd2",
+      "expectedPublicName": "PETER VELLA MOS SANGRIA BOX",
+      "expectedLabel": "5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Peter Vella Moscato Sangria Box",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/3216456-peter-vella-moscato-sangria-5-l",
+          "supports": "UPC 085000024225: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winemadeeasy.com/wine/fruit-wines/sangria/peter-vella-moscato-sangria-5-l-box-42339.html",
+          "supports": "UPC 085000024225: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "304",
+      "expectedUpc": "062338770024",
+      "expectedSourceRow": 7973,
+      "expectedRawFieldsSha256": "6baf44e8fba521783165184b02fbc3f6f8c2763057cecdb739342dc8c9968785",
+      "expectedPublicName": "Air Wick air-freshener",
+      "expectedLabel": "8 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Air Wick Fresh Waters Air Freshener",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.officedepot.com/a/products/151729/Air-Wick-Aerosol-Spray-Air-Freshener/",
+          "supports": "UPC 062338770024: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.lowes.com/pd/Airwick-Fresh-Waters-Air-Freshener-Spray/3306542",
+          "supports": "UPC 062338770024: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/062338770024",
+          "supports": "UPC 062338770024: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "314",
+      "expectedUpc": "035000446282",
+      "expectedSourceRow": 6723,
+      "expectedRawFieldsSha256": "93ba660a162359afcd10b7bff2c665e8fedc3cb5dbe2e785242fa8084a7fb86c",
+      "expectedPublicName": "Ajax ultra dish liquid",
+      "expectedLabel": "14 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Ajax Bleach Alternative Grapefruit Dish Liquid",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/035000446282",
+          "supports": "UPC 035000446282: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://mercausacorporation.com/wp-content/uploads/2026/02/FARMACY-CATALOG.pdf",
+          "supports": "UPC 035000446282: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "316",
+      "expectedUpc": "035000446275",
+      "expectedSourceRow": 7370,
+      "expectedRawFieldsSha256": "688f7357ad64763ff0da04d6d8d5f15b7fcc1a1b0f23af3e9609ab9527ce04b7",
+      "expectedPublicName": "Ajax ultra lemon",
+      "expectedLabel": "14 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Ajax Ultra Lemon Dish Soap",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://mercausacorporation.com/wp-content/uploads/2026/02/FARMACY-CATALOG.pdf",
+          "supports": "UPC 035000446275: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.retailmarket.net/products/ajax-super-degreaser-dish-liquid-lemon-14-fluid-ounce/",
+          "supports": "UPC 035000446275: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/035000446275",
+          "supports": "UPC 035000446275: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "322",
+      "expectedUpc": "827854009504",
+      "expectedSourceRow": 8575,
+      "expectedRawFieldsSha256": "e6b7e6610fe1fcde06bcc91d69d98567c7150374acc5dfde3bfab847b08d4028",
+      "expectedPublicName": "Ajax with bleach ( )",
+      "expectedLabel": "21 oz · 1.31 lb",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Ajax Powder Cleanser with Bleach",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.shelllumber.com/products/ajax-61034403-powder-cleanser-21-oz-solid-bleach-white",
+          "supports": "UPC 827854009504: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.maxwarehouse.com/products/ajax-no-scent-cleanser-21-oz-powder",
+          "supports": "UPC 827854009504: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.4sgm.com/product/44438/Ajax-Powder-Cleanser-with-Bleach%2C-21-oz.html",
+          "supports": "UPC 827854009504: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "1506",
+      "expectedUpc": "085068200111",
+      "expectedSourceRow": 9757,
+      "expectedRawFieldsSha256": "1ab2e4d0208b55b6ff5831549036d1fd059d25177219709549c55a16704f80d4",
+      "expectedPublicName": "BULLDOG SARDINESSOYBEAN OIL",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Bulldog Sardines in Soybean Oil Can",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://itcnwic.org/wp-content/uploads/2023/03/ITCN_WIC_UPC_PLC_Food_List_February_2023.pdf",
+          "supports": "UPC 085068200111: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.scribd.com/document/661941381/CatalogPriceList",
+          "supports": "UPC 085068200111: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "1507",
+      "expectedUpc": "085068200128",
+      "expectedSourceRow": 7564,
+      "expectedRawFieldsSha256": "8dcaaf959d02fdb1cdfdbfe7cb936a288f0beba2c8c9c724e020febe988eddc2",
+      "expectedPublicName": "BULLDOG SARDINESMUSTARD SAUCE",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Bulldog Sardines in Mustard Sauce Can",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://itcnwic.org/wp-content/uploads/2023/03/ITCN_WIC_UPC_PLC_Food_List_February_2023.pdf",
+          "supports": "UPC 085068200128: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.scribd.com/document/661941381/CatalogPriceList",
+          "supports": "UPC 085068200128: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "1519",
+      "expectedUpc": "086600750729",
+      "expectedSourceRow": 938,
+      "expectedRawFieldsSha256": "8e13e33d61884cf8a8caef3d7125819f239ee958c0fd4fcc9e17dced4cab8b4e",
+      "expectedPublicName": "Bumble Bee Sardines in Hot Sauce",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Bumble Bee Sardines in Louisiana Hot Sauce Can",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.azdhs.gov/documents/prevention/azwic/vendors/arizona-wic-foods-database.pdf",
+          "supports": "UPC 086600750729: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://nyswicvendors.com/wp-content/uploads/2026/04/Canned-Fish-APR-23-2026.pdf",
+          "supports": "UPC 086600750729: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://groceryeshop.us/products/bumble-bee-sardines-in-louisiana-hot-sauce-3-75-oz-tin-wild-caught-gluten-free-keto-kosher",
+          "supports": "UPC 086600750729: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "6649",
+      "expectedUpc": "085000027066",
+      "expectedSourceRow": 9134,
+      "expectedRawFieldsSha256": "820490e668c1220fd7fe3691f2a2b223bf5fe948ba50694d7b34834a3eb25874",
+      "expectedPublicName": "PETER VELLA PINK MOS SANGRIA 5",
+      "expectedLabel": "5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Peter Vella Pink Moscato Sangria Box",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/18434704-peter-vella-pink-moscato-sangria-5-l",
+          "supports": "UPC 085000027066: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winemadeeasy.com/wine/fruit-wines/sangria/peter-vella-pink-moscato-sangria-5-l-box-46753.html",
+          "supports": "UPC 085000027066: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "UPC 085000027066: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "7715",
+      "expectedUpc": "082000798989",
+      "expectedSourceRow": 7842,
+      "expectedRawFieldsSha256": "37f42a7a78f4ae23770e635f8a6f42ae49909f0eaf7a7a403dbbadf5da8a61fe",
+      "expectedPublicName": "Smirnoff Ice Canpeach lemonade",
+      "expectedLabel": "Single · 23.5 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Smirnoff Ice Smash Peach Lemonade Can",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/27104073-smirnoff-peach-lemonade-smash-premium-malt-beverage-each",
+          "supports": "UPC 082000798989: exact product record supports the corrected title."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.bakerdistributing.com/wp-content/uploads/2025/03/BBP-March25-WEB.pdf",
+          "supports": "UPC 082000798989: exact product record supports the corrected title."
+        }
+      ]
+    },
+    {
+      "sku": "3336",
+      "expectedUpc": "073800010838",
+      "expectedSourceRow": 9772,
+      "expectedRawFieldsSha256": "7d18dd4477457516451aeb94d24aac4c776ae859efca613939b49a7972933f57",
+      "expectedPublicName": "FAYGO ORANGE CREME SODA",
+      "expectedLabel": "24 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Faygo Dreamin' Orange Creme Soda",
+      "reason": "Exact UPC and brand announcement identify the Dreamin Orange Creme expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goldstardist.com/wp-content/uploads/2025/12/FDA-Press-Release-for-Gold-Star-Distribution-Cross-Center-Reviewed_FINAL-2.pdf",
+          "supports": "UPC 073800010838 identifies Faygo Dreamin 24 oz."
+        },
+        {
+          "kind": "brand_announcement",
+          "url": "https://marxlayne.com/news/faygo-releases-new-dreamin-orange-creme-soda-that-tastes-like-orange-cream-frozen-treats",
+          "supports": "Faygo identifies Dreamin as Orange Creme soda."
+        }
+      ]
+    },
+    {
+      "sku": "101457",
+      "expectedUpc": "073800006336",
+      "expectedSourceRow": 9404,
+      "expectedRawFieldsSha256": "579a827114cd977c8da4e79bb2131c13dd38c43dd80bcbde2ee4e1394e580e67",
+      "expectedPublicName": "FAYGO RASP BLUEBERRY",
+      "expectedLabel": "24 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Faygo Raspberry Blueberry",
+      "reason": "Exact UPC evidence and the package label support expanding the abbreviated flavor name.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.unicat-candy.de/Faygo-Raspberry-Blueberry-Soda-710ml",
+          "supports": "UPC 073800006336 identifies Faygo Raspberry Blueberry."
+        }
+      ]
     }
   ]
 }

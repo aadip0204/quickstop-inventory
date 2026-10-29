@@ -17541,6 +17541,248 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3325",
+      "expectedUpc": "073800009092",
+      "expectedName": "FAYGO COTTON CANDY",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-3325.jpg",
+      "alt": "Faygo Cotton Candy — 24 oz bottle",
+      "sourcePage": "https://specialtyfoodsource.com/products/faygo-cotton-candy-24oz",
+      "sourceImageUrl": "https://images.media.gianteagle.com/00073800009092-d40a9c27-afc1-4014-b642-eee0ff75b73f.jpeg?fill=solid&fit=fill&h=768&q=80&w=768",
+      "sha256": "4a6fa30f48b1c9c88e0bd28075c7ae17daa4dae7935fcf1706b4c3d7a2147eaa",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3323",
+      "expectedUpc": "073800004530",
+      "expectedName": "FAYGO COLA",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-3323.jpg",
+      "alt": "Faygo Cola — 24 oz bottle",
+      "sourcePage": "https://shoptheking.us/products/838920",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Faygo-Soda-24-oz-Bottles-Cola-6-pack_dedc76c5-1be6-4be0-be74-c1ca8c575c1c.238ce03c6dba9880ba871c99765f729a.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768",
+      "sha256": "818e5c108f7e753ce2d9bde7048523966452e68a28940a25693dfbbbca101548",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "304",
+      "expectedUpc": "062338770024",
+      "expectedName": "Air Wick Fresh Waters Air Freshener",
+      "expectedLabel": "8 oz",
+      "src": "images/products/sku-304.jpg",
+      "alt": "Air Wick Fresh Waters Air Freshener — 8 oz package",
+      "sourcePage": "https://www.officedepot.com/a/products/151729/Air-Wick-Aerosol-Spray-Air-Freshener/",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/d4855b12-9ace-4629-8214-0d90a041fa0f_1.1fa8e2c8ae704c9aeeb2f0dc20e0ffa0.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+      "sha256": "764ce49ed8440a9f0dcf80d6c02e0da1a152c1ef872426214091fd5d834a3f14",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "314",
+      "expectedUpc": "035000446282",
+      "expectedName": "Ajax Bleach Alternative Grapefruit Dish Liquid",
+      "expectedLabel": "14 oz",
+      "src": "images/products/sku-314.jpg",
+      "alt": "Ajax Bleach Alternative Grapefruit Dish Liquid — 14 oz package",
+      "sourcePage": "https://www.upcitemdb.com/upc/035000446282",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/8e78e4f9-90e2-4f4b-964b-94f6baf4904f.be77f57adc2510067259322b7a961b47.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+      "sha256": "d6418d94820d5f6843f0314c721073d6dcce3f6887bcf1e12b19bd7c73dd2388",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "316",
+      "expectedUpc": "035000446275",
+      "expectedName": "Ajax Ultra Lemon Dish Soap",
+      "expectedLabel": "14 oz",
+      "src": "images/products/sku-316.jpg",
+      "alt": "Ajax Ultra Lemon Dish Soap — 14 oz package",
+      "sourcePage": "https://mercausacorporation.com/wp-content/uploads/2026/02/FARMACY-CATALOG.pdf",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/dfa79089-0670-4848-afc9-efda730ef97b.826b3d62031ba8527dd4f6cdc749f1ec.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+      "sha256": "350370825b6d76cbffa8b79e1cc57ac3ba448ce315381b8927c9a9ae6cf6efeb",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "322",
+      "expectedUpc": "827854009504",
+      "expectedName": "Ajax Powder Cleanser with Bleach",
+      "expectedLabel": "21 oz · 1.31 lb",
+      "src": "images/products/sku-322.jpg",
+      "alt": "Ajax Powder Cleanser with Bleach — 21 oz · 1.31 lb package",
+      "sourcePage": "https://www.shelllumber.com/products/ajax-61034403-powder-cleanser-21-oz-solid-bleach-white",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/f3994928-0d84-4a04-8fa4-ce810e903b8e.40dce812a66410bbb290cc1d3368dcaf.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+      "sha256": "d3de692647335394b90016d71541dea7561e4fb18a3162db9a2d28b51685f7e5",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3327",
+      "expectedUpc": "073800010227",
+      "expectedName": "FAYGO FIREWORK",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-3327.jpg",
+      "alt": "Faygo Firework — 24 oz bottle",
+      "sourcePage": "https://shoptheking.us/products/faygo-firework-flavor-soda-24-oz-bottle-pack-of-24",
+      "sourceImageUrl": "https://www.unicat-candy.de/media/image/product/62711/lg/faygo-firework-soda-710ml.jpg",
+      "sha256": "5d515fb0a53b2eb58b661ab7db7d80bc0e9c7162f328ddd113797b86e19339f9",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3330",
+      "expectedUpc": "073800004554",
+      "expectedName": "FAYGO GRAPE",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-3330.jpg",
+      "alt": "Faygo Grape — 24 oz bottle",
+      "sourcePage": "https://shop.mercaso.com/products/faygo-grape-soda-24-oz-12-pack",
+      "sourceImageUrl": "https://exoticblvd.com/cdn/shop/files/FaygoGrape24oz_1024x1024.jpg?v=1761948882",
+      "sha256": "616f6f367c2bf372e7e1f2de84ac14ac21240a9a67aa45beef9d9a0f4cb157c9",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101457",
+      "expectedUpc": "073800006336",
+      "expectedName": "Faygo Raspberry Blueberry",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-101457.jpg",
+      "alt": "Faygo Raspberry Blueberry — 24 oz bottle",
+      "sourcePage": "https://www.unicat-candy.de/Faygo-Raspberry-Blueberry-Soda-710ml",
+      "sourceImageUrl": "https://popsdistro.com/cdn/shop/files/FaygoBlueRaspberry24oz_1200x1200.jpg?v=1687109591",
+      "sha256": "1ced79cbceb9a89f1cbec6ba14ca148ba57ec3675c5918569a91e86156a7aa62",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3337",
+      "expectedUpc": "073800004707",
+      "expectedName": "FAYGO PEACH",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-3337.png",
+      "alt": "Faygo Peach — 24 oz bottle",
+      "sourcePage": "https://aceconvenience.ca/faygo-peach-710ml/",
+      "sourceImageUrl": "https://www.unitedsweets.co.nz/cdn/shop/products/Faygo_Peach_2048x2048.png?v=1627274984",
+      "sha256": "cacab581b0de45d1392508d61c873042c55d30ee8c01db3cc64e72fb59005411",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3336",
+      "expectedUpc": "073800010838",
+      "expectedName": "Faygo Dreamin' Orange Creme Soda",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-3336.png",
+      "alt": "Faygo Dreamin Orange Creme — 24 oz bottle",
+      "sourcePage": "https://goldstardist.com/wp-content/uploads/2025/12/FDA-Press-Release-for-Gold-Star-Distribution-Cross-Center-Reviewed_FINAL-2.pdf",
+      "sourceImageUrl": "https://candyfunhouse.ca/cdn/shop/files/faygo-orange-creme-soda-710ml-candy-funhouse.png?v=1749761162",
+      "sha256": "ec91f38eeda1128b7e41a76f810e4dd1d7aed59ad8275dc56f3314edf3741ae1",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
