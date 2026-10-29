@@ -21999,6 +21999,22 @@
           "supports": "Exact UPC identifies Airheads Pink Lemonade in a 0.55 oz bar."
         }
       ]
+    },
+    {
+      "sku": "8950",
+      "expectedUpc": "872181005019",
+      "expectedNameSha256": "4b4d8f4db61555aefdb54eaf942d816b87aef3ec81e8b77bd670955fdd46853c",
+      "replaceTextFrom": "Turtles 1.76oz",
+      "replaceTextTo": "Turtles Original Pecan 1.76oz",
+      "scope": "exact_upc_name_identity",
+      "verifiedOn": "2026-10-29",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://allcitycandy.com/collections/candy-type/products/turtles-caramel-nut-clusters-3",
+          "supports": "Exact UPC identifies Turtles Original Pecan in the 1.76 oz package."
+        }
+      ]
     }
   ],
   "identityReviews": [
