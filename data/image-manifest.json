@@ -13962,6 +13962,138 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1335",
+      "expectedUpc": "012000042669",
+      "expectedName": "Brisk Half & Half Iced Tea + Cherry Limeade",
+      "expectedLabel": "1 L",
+      "src": "images/products/sku-1335.jpg",
+      "alt": "Brisk Half & Half Iced Tea and Cherry Limeade — 1 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000042669-0001-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000042669-0001-en-US/images/3a198206-8a49-4dc0-b5e6-1062864e2850.tif",
+      "sha256": "4608fe148b5dac0526228df5d58516cbd0ecc4eaec04569ee3656a7bb9d2454e",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2735",
+      "expectedUpc": "026200006161",
+      "expectedName": "DAVID Original Salted & Roasted Sunflower Seeds",
+      "expectedLabel": "1.75 oz",
+      "src": "images/products/sku-2735.png",
+      "alt": "DAVID Original Sunflower Seeds — 1.75 oz bag",
+      "sourcePage": "https://smartlabel.conagra.com/026200006161-0001-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.conagra.com/026200006161-0001-en-US/images/6cc9d45e-0d8d-4625-8978-add8b77a69cb.png",
+      "sha256": "72039aa96211a62d1daa8c9e09b795fea755278a5fbe033541c1563a54525473",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1347",
+      "expectedUpc": "012000002731",
+      "expectedName": "Brisk Lemonade Juice Drink",
+      "expectedLabel": "20 oz",
+      "src": "images/products/sku-1347.jpg",
+      "alt": "Brisk Lemonade Juice Drink — 20 oz bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000002731-0002-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000002731-0002-en-US/images/9d764ba4-0a8a-40ef-8b5b-00640d5fdc95.jpg",
+      "sha256": "d04ac34660c25cdf9d2cd64e2d265a5f9ed3cd6daa69a05b64ab12ec3ce9ae9a",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5876",
+      "expectedUpc": "012000194214",
+      "expectedName": "Mountain Dew Frost Bite",
+      "expectedLabel": "12 oz",
+      "src": "images/products/sku-5876.jpg",
+      "alt": "Mountain Dew Frost Bite — 12 oz can",
+      "sourcePage": "https://smartlabel.pepsico.info/012000194214-0001-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000194214-0001-en-US/images/5f96b537-01ed-4df6-b6f2-027e771fe75f.jpg",
+      "sha256": "5e2184b305f168c0cb0d82bfa915bfa643d875156ce0d338724940b8afbbf77f",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6856",
+      "expectedUpc": "030000030509",
+      "expectedName": "Quaker Enriched & Degerminated Yellow Corn Meal",
+      "expectedLabel": "24 oz",
+      "src": "images/products/sku-6856.jpg",
+      "alt": "Quaker Yellow Corn Meal — 24 oz canister",
+      "sourcePage": "https://smartlabel.pepsico.info/030000030509-0003-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/030000030509-0003-en-US/images/b54e8930-caf9-43bf-9097-afff85c1c8b7.jpg",
+      "sha256": "f3e5e3f04b1da9e85607303029fe992540900faa70fb1ba269a96ad17de35fba",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2002",
+      "expectedUpc": "028400357371",
+      "expectedName": "Chester's Fries Flamin' Hot Flavored Corn Snacks",
+      "expectedLabel": "74.4 g",
+      "src": "images/products/sku-2002.jpg",
+      "alt": "Chester's Flamin' Hot Fries — 74.4 g bag",
+      "sourcePage": "https://smartlabel.pepsico.info/028400357371-0009-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/028400357371-0009-en-US/images/20ffb005-9ffd-4477-a4c8-6897d0262483.png",
+      "sha256": "33cd4683d990861d66c160166fb8fb1ee8a5e97459b273cb2600df5968381787",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

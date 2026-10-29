@@ -15422,7 +15422,7 @@
       "replaceTextFrom": "Gatorade Grape 20OZ",
       "replaceTextTo": "Gatorade G2 Grape Thirst Quencher 20OZ",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "20 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Gatorade G2 Grape Thirst Quencher",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -15534,7 +15534,7 @@
       "replaceTextFrom": "PEPSI  DIET 24OZBOTTLE",
       "replaceTextTo": "Diet Pepsi 24OZBOTTLE",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "24 oz · bottles",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Diet Pepsi",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -15590,7 +15590,7 @@
       "replaceTextFrom": "Gatorade lemon lime   12fl oz",
       "replaceTextTo": "Gatorade Lemon Lime Thirst Quencher 12fl oz",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "12 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Gatorade Lemon Lime Thirst Quencher",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -15618,7 +15618,7 @@
       "replaceTextFrom": "Gatorade glacier    12fl oz",
       "replaceTextTo": "Gatorade Glacier Freeze Thirst Quencher 12fl oz",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "12 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Gatorade Glacier Freeze Thirst Quencher",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -15814,7 +15814,7 @@
       "replaceTextFrom": "Gatorade orange   20OZ",
       "replaceTextTo": "Gatorade Orange Thirst Quencher 20OZ",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "20 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Gatorade Orange Thirst Quencher",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -15898,7 +15898,7 @@
       "replaceTextFrom": "Gatorade lime cucumber  20OZ",
       "replaceTextTo": "Gatorade Lime Cucumber Thirst Quencher 20OZ",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "20 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Gatorade Lime Cucumber Thirst Quencher",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -16010,7 +16010,7 @@
       "replaceTextFrom": "Gatorade cool blue    12fl oz",
       "replaceTextTo": "Gatorade Cool Blue Thirst Quencher 12fl oz",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "12 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Gatorade Cool Blue Thirst Quencher",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -16206,7 +16206,7 @@
       "replaceTextFrom": "Gatorade lemon 20OZ",
       "replaceTextTo": "Gatorade Lemon Lime Thirst Quencher 20OZ",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "20 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Gatorade Lemon Lime Thirst Quencher",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -16234,7 +16234,7 @@
       "replaceTextFrom": "Gatorade cool blue 20OZ",
       "replaceTextTo": "Gatorade Cool Blue Thirst Quencher 20OZ",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "20 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Gatorade Cool Blue Thirst Quencher",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -16262,7 +16262,7 @@
       "replaceTextFrom": "Gatorade fruit punch 20OZ",
       "replaceTextTo": "Gatorade Fruit Punch Thirst Quencher 20OZ",
       "scope": "manufacturer_exact_upc_name_identity",
-      "expectedLabel": "20 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedPublicName": "Gatorade Fruit Punch Thirst Quencher",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
@@ -16819,7 +16819,7 @@
       "sku": "3697",
       "expectedUpc": "052000129373",
       "expectedNameSha256": "b856c6660557770bfccd90272d758a74f5866450dc803746083d902a5792b01d",
-      "expectedLabel": "12 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17740,7 +17740,7 @@
       "sku": "1972",
       "expectedUpc": "028400329507",
       "expectedNameSha256": "2d57a08e288c42def8022d4f353009dde5c0574bccdd6f1966410cc81dcd6a1a",
-      "expectedLabel": "2.75 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -17824,7 +17824,7 @@
       "sku": "1950",
       "expectedUpc": "028400363532",
       "expectedNameSha256": "d2831aed9f1f965c015bfc9bc6db5d624090a1b692a047d83a88b6a64496bd30",
-      "expectedLabel": "2.75 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -19005,7 +19005,7 @@
       "sku": "101356",
       "expectedUpc": "028400725163",
       "expectedNameSha256": "ef8faa18dc54732d0fa4bf798251d7238784c51d4957b7296485a9b7a5d0c5da",
-      "expectedLabel": "1 oz",
+      "expectedLabel": "Size needs confirmation",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
