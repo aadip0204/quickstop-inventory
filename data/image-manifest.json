@@ -12422,6 +12422,28 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "752",
+      "expectedUpc": "080480400330",
+      "expectedName": "Bacardi Razz",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-752.png",
+      "alt": "Bacardi Razz — 750 mL bottle",
+      "sourcePage": "https://theliquorbarn.com/products/bacardi-razz-750ml",
+      "sourceImageUrl": "https://theliquorbarn.com/cdn/shop/files/BacardiRaspberryRum750ML.webp?crop=center&height=1200&v=1776203359&width=1200",
+      "sha256": "825fb3cfa2d07b4fe49b2ab0d47c93abf2b7f5ffc6ed586e19eb2620a7171129",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
