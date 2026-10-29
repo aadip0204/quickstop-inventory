@@ -12510,6 +12510,72 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "6625",
+      "expectedUpc": "012000140921",
+      "expectedName": "PEPSI",
+      "expectedLabel": "1.25 L",
+      "src": "images/products/sku-6625.jpg",
+      "alt": "Pepsi — 1.25 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000140921-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000140921-0011-en-US/images/67037392-b4ca-48b5-a9aa-11950df9007c.tif",
+      "sha256": "c451afd0725b4d83bade4458ea763d635a3810b2faeaebcffdb96e28ce0b5f93",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6637",
+      "expectedUpc": "012000171734",
+      "expectedName": "Diet Pepsi",
+      "expectedLabel": "1.25 L",
+      "src": "images/products/sku-6637.jpg",
+      "alt": "Diet Pepsi — 1.25 L bottle",
+      "sourcePage": "https://smartlabel.pepsico.info/012000171734-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000171734-0011-en-US/images/d8f83094-0a87-424b-aee5-9ecd4233502e.jpg",
+      "sha256": "275bc4ee8ac01ac38cced7749b315fe45a635272edf3995138bf17744c44b021",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6632",
+      "expectedUpc": "012000106040",
+      "expectedName": "PEPSI",
+      "expectedLabel": "20-pack · cans",
+      "src": "images/products/sku-6632.jpg",
+      "alt": "Pepsi — 20-pack of cans",
+      "sourcePage": "https://smartlabel.pepsico.info/012000106040-0011-en-US/index.html",
+      "sourceImageUrl": "https://smartlabel.pepsico.info/012000106040-0010-en-US/images/7f49f05f-da1a-452e-88b3-3268e54082ef.jpg",
+      "sha256": "02a04718c904c3b8058c0ec4683f414f5a9be7e472b4a5f7570c5f71d4b6e34c",
+      "verifiedOn": "2026-10-28",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
