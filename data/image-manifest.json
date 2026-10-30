@@ -19141,6 +19141,160 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2450",
+      "expectedUpc": "080660956954",
+      "expectedName": "Corona",
+      "expectedLabel": "12-pack · 12 oz · cans",
+      "src": "images/products/sku-2450.jpg",
+      "alt": "Corona Extra — 12-pack · 12 oz · cans package",
+      "sourcePage": "https://shop.foodland.com/product/corona-extra-cans-pack-of-12-080660956954",
+      "sourceImageUrl": "https://images.cdn.shop.foodland.com/detail/8066095695.jpg",
+      "sha256": "9c9b988ae5166816fb34b37a875b8b56841c9d4ba130b80e2e8430af4ec71f35",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2635",
+      "expectedUpc": "081308003009",
+      "expectedName": "CUPCAKE MOSCATO",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2635.png",
+      "alt": "Cupcake Vineyards Moscato — 750 mL bottle",
+      "sourcePage": "https://www.totalwine.com/wine/white-wine/muscatmoscato/cupcake-moscato/p/195511750",
+      "sourceImageUrl": "https://www.totalwine.com/dynamic/x1000%2Csq/images/195511750/195511750-1-fr.png",
+      "sha256": "1515ca8b27267c6135130b65621db41785a2e27f36bcb223f5b60965a0362c57",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3533",
+      "expectedUpc": "086024024130",
+      "expectedName": "Fu-Ki Sake",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-3533.png",
+      "alt": "Fu-Ki Junmai Sake — 750 mL bottle",
+      "sourcePage": "https://www.totalwine.com/wine/sake-plum-wine/sake/fuki-sake/p/3583750",
+      "sourceImageUrl": "https://www.totalwine.com/dynamic/x1000%2Csq/images/3583750/3583750-1-fr.png",
+      "sha256": "971df85a3afe027e8f69695cc8a70eb5146d9970f5f4db6a6ab74932961c06fd",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101208",
+      "expectedUpc": "076183643877",
+      "expectedName": "SNAPPLE APPLE",
+      "expectedLabel": "64 oz",
+      "src": "images/products/sku-101208.jpg",
+      "alt": "Snapple Apple Juice Drink — 64 oz bottle",
+      "sourcePage": "https://www.target.com/p/-/A-81836606",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_59ac4cdf-05c6-4e6a-9efb-f9834cc26ef3.jpg",
+      "sha256": "602311023ab98f9ef4bb45ddbbec9beed623cc75eba03e669d82a0bab2e588b3",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "768",
+      "expectedUpc": "080480001049",
+      "expectedName": "Bacardi Strawb Daiquiri Cocktails",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-768.jpg",
+      "alt": "Bacardi Strawberry Daiquiri Classic Cocktails — 750 mL bottle",
+      "sourcePage": "https://www.gotoliquorstore.com/p/bacardi-strawberry-daiquiri/7095",
+      "sourceImageUrl": "https://images.gotoliquorstore.com/product/1000007089/9e46d5bb-9d13-4a29-8d3e-84ea44d6b4f2_510_m.jpg",
+      "sha256": "5aa789b11e9eae2eaf39e630452a2700752a92196d376fc256432edee856c726",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2666",
+      "expectedUpc": "085000012178",
+      "expectedName": "Da Vinci Chianti",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2666.jpg",
+      "alt": "DaVinci Chianti — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-13308403",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Da-Vinci-Chianti-Red-Wine-750ml-Bottle_e1930ab3-6fd8-4279-885d-81ffb902cfcb.1262b1d084f136ab2f45e01036dcfa93.jpeg",
+      "sha256": "d2794e6ba62071c5cc9b6d331fb007fc888e010da77d02189e678e6306536358",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5637",
+      "expectedUpc": "083664868919",
+      "expectedName": "Milagro Silver",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-5637.png",
+      "alt": "Milagro Silver Tequila — 750 mL bottle",
+      "sourcePage": "https://abc2.nc.gov/Pricing/ViewItemDetails/124879",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Milagro-Silver-Tequila-750ml-Glass-Bottle-40-ABV-80-Proof_818bf62d-bcf9-4478-9c61-6378a8ee44f2.c4c9634dc24fc87372515ad0dd1599e1.png?odnBg=FFFFFF&odnHeight=640&odnWidth=640",
+      "sha256": "6986495b1e05737a7e4dccc8c38377ea0cb07951b769d312868e88eba1ad9d3a",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
