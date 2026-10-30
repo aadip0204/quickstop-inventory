@@ -19625,6 +19625,204 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "5360",
+      "expectedUpc": "086024007843",
+      "expectedName": "Margaritaville Silver Tequila",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-5360.jpg",
+      "alt": "Margaritaville Silver Tequila — 750 mL bottle",
+      "sourcePage": "https://abc2.nc.gov/Pricing/ViewItemDetails/155075",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_625e740c-f49a-4a3d-bd5a-ce894a416c81.jpg",
+      "sha256": "2cf1d2018069e3932c24a5c6a2daf51fa1805f6a82495547ced3a27ed7eb41c1",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3106",
+      "expectedUpc": "088004021344",
+      "expectedName": "Eagle Rare 10 Year Kentucky Straight Bourbon Whiskey",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-3106.webp",
+      "alt": "Eagle Rare 10 Year Kentucky Straight Bourbon Whiskey — 750 mL bottle",
+      "sourcePage": "https://www.ohlq.com/liquor/whiskey/american/bourbon/eagle-rare-10-year",
+      "sourceImageUrl": "https://media.ohlq.com/products/2880B.webp",
+      "sha256": "d2de70392fa29b95124b42e0f1269782f0bbc2de65b3ec42805113cf64de5769",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101249",
+      "expectedUpc": "857744001318",
+      "expectedName": "Josh Cellars Cabernet Sauvignon",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-101249.png",
+      "alt": "Josh Cellars Cabernet Sauvignon — 750 mL bottle",
+      "sourcePage": "https://shop.foodland.com/product/josh-cellars-cabernet-sauvignon-857744001318",
+      "sourceImageUrl": "https://dsom-imager-prod.shipt.com/36e8679b-e92a-dcf2-6b86-88538c1b85a1/359be8f4-fad9-40ce-af9d-f73e0b31050e.png",
+      "sha256": "0148c2b3c63844fa6218b7867b374b34365e3b12f4b5fe69f2c6994cd0f89dde",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5587",
+      "expectedUpc": "635985800170",
+      "expectedName": "Mike's Hard Lemonade Seltzer Variety Pack Cans",
+      "expectedLabel": "12-pack · 12 oz",
+      "src": "images/products/sku-5587.jpg",
+      "alt": "Mike's Hard Lemonade Seltzer Variety Pack — 12-pack of 12 oz cans",
+      "sourcePage": "https://www.target.com/p/-/A-81830733",
+      "sourceImageUrl": "https://images.heb.com/is/image/HEBGrocery/004795023-1",
+      "sha256": "6db4c05087634a8dc7790e3fb7602af1c5a05251df6e680e92029f90588185a8",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5630",
+      "expectedUpc": "083664875238",
+      "expectedName": "Milagro Reposado Tequila",
+      "expectedLabel": "200 mL",
+      "src": "images/products/sku-5630.jpg",
+      "alt": "Milagro Reposado Tequila — 200 mL bottle",
+      "sourcePage": "https://abc2.nc.gov/Pricing/ViewItemDetails/164657",
+      "sourceImageUrl": "https://www.winebarrel.com/cdn/shop/files/1693_Milagro_reposado_200ml_80_proof.jpg?v=1755977854&width=645",
+      "sha256": "730b6765f6ce1f63d2a66d06900f004785a7d90e54f23836136b5756ed4fb6dd",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6846",
+      "expectedUpc": "017800178365",
+      "expectedName": "PURINA PUPPY CHOW COMPLETE",
+      "expectedLabel": "1.81 kg",
+      "src": "images/products/sku-6846.jpg",
+      "alt": "Purina Puppy Chow Complete — 4 lb bag",
+      "sourcePage": "https://www.cub.com/store/cub/products/19618125-purina-puppy-chow-high-protein-dry-puppy-food-complete-with-real-chicken-4-lb",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_6b2b387d-d969-420d-b66d-3b1127c880db.jpg",
+      "sha256": "18189c2748cb1b4e1ea192c5ad3e860788d71ef90153bb7a5d67595430fe0520",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1049",
+      "expectedUpc": "089819001712",
+      "expectedName": "Beringer Main & Vine Chardonnay",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1049.jpg",
+      "alt": "Beringer Main & Vine Chardonnay — 750 mL bottle",
+      "sourcePage": "https://www.cbcliquors.com/product/main-vine-chardonnay-beringer/40448178?format=43134945",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_198394fc-4a38-431b-9882-9392bec50958.jpg",
+      "sha256": "e43d87aa006b2ea1ea9e093ba403de36c1ea1eb8ba3dbb090a9f3c0ce5ff8e13",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2480",
+      "expectedUpc": "080660954011",
+      "expectedName": "Corona Extra Coronita",
+      "expectedLabel": "6-pack · 7 oz · bottles",
+      "src": "images/products/sku-2480.png",
+      "alt": "Corona Extra Coronita — 6-pack of 7 oz bottles",
+      "sourcePage": "https://www.premiergourmet.com/coronita-extra-splits-6-pack-of-7-oz-bottles-080660954011.html",
+      "sourceImageUrl": "https://images.cdn.retail.brookshires.com/detail/00080660954011_C1C1.jpeg",
+      "sha256": "2b1405891eb6f7cee52b31ee715164f6071944c661721f39cc41366ba5a84f09",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9441",
+      "expectedUpc": "635985260875",
+      "expectedName": "White Claw Mango",
+      "expectedLabel": "6-pack",
+      "src": "images/products/sku-9441.jpg",
+      "alt": "White Claw Mango Hard Seltzer — 6-pack",
+      "sourcePage": "https://shop.foodland.com/product/white-claw-mango-hard-seltzer-cans-pack-of-6-635985260875",
+      "sourceImageUrl": "https://target.scene7.com/is/image/Target/GUEST_aa53755f-839e-44b6-a471-7bc1d6f7d43e?fmt=pjpeg&hei=300&wid=300",
+      "sha256": "7838fc8fe33bd440a8423a2129c631b32658ed67631622ecb79fe523060d8f2a",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
