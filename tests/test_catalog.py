@@ -73,7 +73,9 @@ def repaired_image_fixture(source):
     product, variant = next((p, v) for p in catalog['products'] for v in p['variants'] if v['sku'] == sku)
     # Reuse a local approved asset to test integrity checks; the synthetic test
     # metadata is never written to the public catalog or approval manifests.
-    image = copy.deepcopy(json.loads((ROOT / 'data/image-manifest.json').read_text())['images'][0])
+    image = copy.deepcopy(next(entry for entry in json.loads(
+        (ROOT / 'data/image-manifest.json').read_text())['images']
+        if entry.get('usageBasis') != 'user_authorized_direct_reference'))
     image.update(sku=sku, expectedUpc=variant['upc'], expectedName=product['name'], expectedLabel=variant['label'])
     review['reviews'][0]['imageIdentityReview'] = {
         'expectedName': product['name'], 'expectedLabel': variant['label'],
@@ -89,13 +91,26 @@ def direct_reference_image_fixture(source, sku='1'):
     catalog, _ = builder.build(source)
     product, variant = next((p, v) for p in catalog['products'] for v in p['variants'] if v['sku'] == sku)
     # Synthetic identity metadata reuses a checked local asset only inside tests.
-    image = copy.deepcopy(json.loads((ROOT / 'data/image-manifest.json').read_text())['images'][0])
-    for field in ('license', 'licenseUrl', 'attribution'):
+    image = copy.deepcopy(next(entry for entry in json.loads(
+        (ROOT / 'data/image-manifest.json').read_text())['images']
+        if entry.get('usageBasis') == 'user_authorized_direct_reference'))
+    for field in ('sourcePage', 'sourceImageUrl', 'license', 'licenseUrl', 'attribution'):
         image.pop(field, None)
     image.update(sku=sku, expectedUpc=variant['upc'], expectedName=product['name'],
                  expectedLabel=variant['label'], alt=product['name'] + ' packaging',
                  usageBasis='user_authorized_direct_reference', attributionRequired=False)
     return image
+
+
+def direct_reference_evidence_fixture(*images):
+    entries = []
+    for image in images:
+        entry = {field: image[field] for field in builder.DIRECT_REFERENCE_PUBLIC_FIELDS}
+        entry.update(sourcePage='https://example.test/source/' + entry['sku'],
+                     sourceImageUrl='https://example.test/image/' + entry['sku'] + '.jpg')
+        entries.append(entry)
+    return {'schemaVersion': 1, 'kind': builder.PRIVATE_DIRECT_IMAGE_EVIDENCE_KIND,
+            'entries': entries}
 
 
 def category_review(source, category='food', row=1, name_manifest=None):
@@ -671,15 +686,42 @@ class ImportTests(unittest.TestCase):
     def test_direct_reference_photo_has_no_invented_license_or_sibling_assignment(self):
         source = export({'ItemName': 'Example Berry 750ml'}, {'ItemName': 'Example Berry 375ml'})
         image = direct_reference_image_fixture(source)
-        catalog, audit = builder.build(source, image_manifest={'schemaVersion': 1, 'images': [image]})
+        catalog, audit = builder.build(
+            source, image_manifest={'schemaVersion': 1, 'images': [image]},
+            private_direct_image_evidence_manifest=direct_reference_evidence_fixture(image))
         variants = {v['sku']: v for p in catalog['products'] for v in p['variants']}
         self.assertEqual(audit['verifiedImages'], 1)
         self.assertEqual(set(variants['1']['image']),
-                         {'src', 'alt', 'sourcePage', 'usageBasis', 'attributionRequired'})
+                         {'src', 'alt', 'usageBasis', 'attributionRequired'})
         self.assertEqual(variants['1']['image']['usageBasis'], 'user_authorized_direct_reference')
         self.assertIs(variants['1']['image']['attributionRequired'], False)
         self.assertIsNone(variants['2']['image'])
         self.assertNotIn('data-sku="1"', builder.render_image_credits(catalog))
+
+    def test_direct_reference_provenance_is_private_and_fails_closed(self):
+        source = export({'ItemName': 'Example Berry 750ml'})
+        image = direct_reference_image_fixture(source)
+        manifest = {'schemaVersion': 1, 'images': [image]}
+        with self.assertRaisesRegex(ValueError, 'private evidence manifest'):
+            builder.build(source, image_manifest=manifest)
+        evidence = direct_reference_evidence_fixture(image)
+        catalog, _ = builder.build(
+            source, image_manifest=manifest,
+            private_direct_image_evidence_manifest=evidence)
+        photo = catalog['products'][0]['variants'][0]['image']
+        self.assertNotIn('sourcePage', photo)
+        self.assertNotIn('sourceImageUrl', photo)
+        public_url = copy.deepcopy(image)
+        public_url['sourcePage'] = 'https://example.test/should-not-publish'
+        with self.assertRaisesRegex(ValueError, 'must not contain provenance'):
+            builder.build(
+                source, image_manifest={'schemaVersion': 1, 'images': [public_url]},
+                private_direct_image_evidence_manifest=evidence)
+        bad_evidence = copy.deepcopy(evidence)
+        bad_evidence['entries'][0]['sha256'] = '0' * 64
+        with self.assertRaisesRegex(ValueError, 'does not match public assignment'):
+            builder.build(source, image_manifest=manifest,
+                          private_direct_image_evidence_manifest=bad_evidence)
 
     def test_direct_reference_rights_basis_cannot_claim_license_or_suppress_legacy_credits(self):
         source = export({'ItemName': 'Example Berry 750ml'})
@@ -691,12 +733,14 @@ class ImportTests(unittest.TestCase):
             changed = copy.deepcopy(image)
             changed[field] = value
             with self.subTest(field=field, value=value), self.assertRaises(ValueError):
-                builder.build(source, image_manifest={'schemaVersion': 1, 'images': [changed]})
+                builder.build(source, image_manifest={'schemaVersion': 1, 'images': [changed]},
+                              private_direct_image_evidence_manifest=direct_reference_evidence_fixture(changed))
         for field in ('usageBasis', 'attributionRequired'):
             changed = copy.deepcopy(image)
             changed.pop(field)
             with self.subTest(missing=field), self.assertRaises(ValueError):
-                builder.build(source, image_manifest={'schemaVersion': 1, 'images': [changed]})
+                builder.build(source, image_manifest={'schemaVersion': 1, 'images': [changed]},
+                              private_direct_image_evidence_manifest=direct_reference_evidence_fixture(image))
 
     def test_direct_reference_photo_keeps_exact_identity_file_and_quality_guards(self):
         source = export({'ItemName': 'Example Berry 750ml'})
@@ -711,7 +755,8 @@ class ImportTests(unittest.TestCase):
             changed = copy.deepcopy(image)
             changed[field] = value
             with self.subTest(field=field), self.assertRaises(ValueError):
-                builder.build(source, image_manifest={'schemaVersion': 1, 'images': [changed]})
+                builder.build(source, image_manifest={'schemaVersion': 1, 'images': [changed]},
+                              private_direct_image_evidence_manifest=direct_reference_evidence_fixture(changed))
         for field in ('brand', 'expression', 'size', 'packaging', 'visual', 'professional'):
             for missing in (False, True):
                 changed = copy.deepcopy(image)
@@ -720,18 +765,21 @@ class ImportTests(unittest.TestCase):
                 else:
                     changed['verification'][field] = False
                 with self.subTest(field=field, missing=missing), self.assertRaisesRegex(ValueError, 'professional-quality'):
-                    builder.build(source, image_manifest={'schemaVersion': 1, 'images': [changed]})
+                    builder.build(source, image_manifest={'schemaVersion': 1, 'images': [changed]},
+                                  private_direct_image_evidence_manifest=direct_reference_evidence_fixture(changed))
 
     def test_direct_reference_photo_cannot_bypass_unknown_size_or_upc(self):
         for source in (export({'ItemName': 'Example Berry'}),
                        export({'ItemName': 'Example Berry 750ml', 'MAINUPC': 'unknown'})):
             image = direct_reference_image_fixture(source)
             with self.subTest(source=source), self.assertRaisesRegex(ValueError, 'known exact UPC and size'):
-                builder.build(source, image_manifest={'schemaVersion': 1, 'images': [image]})
+                builder.build(source, image_manifest={'schemaVersion': 1, 'images': [image]},
+                              private_direct_image_evidence_manifest=direct_reference_evidence_fixture(image))
         source = export({'ItemName': 'Example Berry 750ml 1L'})
         image = direct_reference_image_fixture(source)
         with self.assertRaisesRegex(ValueError, 'known exact UPC and size'):
-            builder.build(source, image_manifest={'schemaVersion': 1, 'images': [image]})
+            builder.build(source, image_manifest={'schemaVersion': 1, 'images': [image]},
+                          private_direct_image_evidence_manifest=direct_reference_evidence_fixture(image))
 
     def test_direct_reference_photo_leaves_licensed_credit_entries_unchanged(self):
         source = export({'ItemName': 'Example Berry 750ml'}, {'ItemName': 'Other 375ml'})
@@ -739,7 +787,9 @@ class ImportTests(unittest.TestCase):
         licensed = copy.deepcopy(json.loads((ROOT / 'data/image-manifest.json').read_text())['images'][0])
         licensed.update(sku='2', expectedUpc='001234567890', expectedName='Other', expectedLabel='375 mL')
         before, _ = builder.build(source, image_manifest={'schemaVersion': 1, 'images': [licensed]})
-        after, _ = builder.build(source, image_manifest={'schemaVersion': 1, 'images': [licensed, direct]})
+        after, _ = builder.build(
+            source, image_manifest={'schemaVersion': 1, 'images': [licensed, direct]},
+            private_direct_image_evidence_manifest=direct_reference_evidence_fixture(direct))
         self.assertEqual(builder.render_image_credits(before), builder.render_image_credits(after))
         before_image = next(v['image'] for p in before['products'] for v in p['variants'] if v['sku'] == '2')
         after_image = next(v['image'] for p in after['products'] for v in p['variants'] if v['sku'] == '2')
@@ -1507,7 +1557,7 @@ class GeneratedCatalogTests(unittest.TestCase):
                 if variant['image'] is not None:
                     image = variant['image']
                     if image.get('usageBasis') == 'user_authorized_direct_reference':
-                        self.assertEqual(set(image), {'src', 'alt', 'sourcePage', 'usageBasis', 'attributionRequired'})
+                        self.assertEqual(set(image), {'src', 'alt', 'usageBasis', 'attributionRequired'})
                         self.assertIs(image['attributionRequired'], False)
                     else:
                         self.assertEqual(set(image), {'src', 'alt', 'sourcePage', 'license', 'licenseUrl', 'attribution'})
@@ -1527,10 +1577,14 @@ class GeneratedCatalogTests(unittest.TestCase):
         categories = json.loads(categories_path.read_text()) if categories_path.exists() else None
         public_names_path = ROOT / 'data/public-name-reviews.json'
         public_names = json.loads(public_names_path.read_text()) if public_names_path.exists() else None
+        evidence_path = os.environ.get('QUICKSTOP_PRIVATE_DIRECT_IMAGE_EVIDENCE')
+        self.assertTrue(evidence_path, 'Set QUICKSTOP_PRIVATE_DIRECT_IMAGE_EVIDENCE for direct-image reconciliation')
+        private_evidence = json.loads(Path(evidence_path).read_text())
         catalog, audit = builder.build(source, image_manifest=manifest, name_manifest=names,
                                        source_reviews_manifest=reviews, report_additions_manifest=reports,
                                        category_reviews_manifest=categories,
-                                       public_name_reviews_manifest=public_names)
+                                       public_name_reviews_manifest=public_names,
+                                       private_direct_image_evidence_manifest=private_evidence)
         self.assertEqual(audit['sourceSha256'], builder.BASELINE_HASH)
         self.assertEqual(catalog, self.catalog)
         self.assertEqual(catalog['counts']['originalSourceRows'], 9881)

@@ -5888,6 +5888,42 @@
           "supports": "Inspected full isolated asset shows one SunBrite Ultra Bleach jug with printed NET CONTENTS: 1 GALLON (128 FL OZ); no price text and no other products."
         }
       ]
+    },
+    {
+      "sku": "1992",
+      "expectedUpc": "064144043064",
+      "expectedNameSha256": "56a4e2c6844ce408664d3307eed63fdb8b8ac1869de54965ff7b00e499736686",
+      "expectedSourceRecordSha256": "d68d90d02c070ae21202fccdf56c4f5977d57465fc6b93720410ae3c62b92b68",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Chef Boyardee Mini Beef Ravioli in Pasta Sauce",
+      "verifiedLabel": "15 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "The exact source UPC, manufacturer product record, independent UPC listing, and inspected one-can package resolve the source's missing consumer size and duplicate ravioli wording for this SKU only.",
+      "reviewedOn": "2026-10-30",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://chefboyardee.com/products/mini/mini-ravioli-can/",
+          "supports": "Chef Boyardee identifies its Mini Ravioli Can as mini beef ravioli and lists a 15 oz consumer size; the source UPC is corroborated separately."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/chef-boyardee-mini-ravioli-id-064144043064",
+          "supports": "Exact UPC 064144043064 identifies Chef Boyardee Mini Ravioli in a 15 oz can."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.instacart.com/assets/domains/product-image/file/large_fafa62a4-e07b-4293-af30-e309531d87ae.jpg",
+          "supports": "Inspected package photo shows one complete Chef Boyardee Mini Beef Ravioli in Pasta Sauce can with 15 oz printed on the label."
+        }
+      ]
     }
   ]
 }

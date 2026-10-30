@@ -200,7 +200,8 @@ test('photo cards stay free of source lines and a late failure cannot hide the s
       { sku: '001', upc: '001234567890', label: '12 oz', image: { src: 'images/exact-12.jpg', alt: 'Example 12 oz',
           attribution: 'Example photographer', sourcePage: 'https://example.test/photo',
           license: 'Example license', licenseUrl: 'https://example.test/license' } },
-      { sku: '002', upc: '001234567891', label: '20 oz', image: { src: 'images/exact-20.jpg', alt: 'Example 20 oz' } }
+      { sku: '002', upc: '001234567891', label: '20 oz', image: { src: 'images/exact-20.jpg', alt: 'Example 20 oz',
+          usageBasis: 'user_authorized_direct_reference', attributionRequired: false } }
     ] }]
   };
   const context = {

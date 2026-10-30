@@ -12,19 +12,59 @@ import urllib.parse
 import urllib.request
 
 
+DIRECT_PUBLIC_IMAGE_FIELDS = {'src', 'alt', 'usageBasis', 'attributionRequired'}
+DIRECT_PUBLIC_MANIFEST_FIELDS = {
+    'sku', 'expectedUpc', 'expectedName', 'expectedLabel', 'src', 'alt',
+    'sha256', 'verifiedOn', 'verification', 'usageBasis', 'attributionRequired',
+}
+
+
 def fetch(url):
     request = urllib.request.Request(url, headers={"Cache-Control": "no-cache"})
     with urllib.request.urlopen(request, timeout=30) as response:
         return response.read()
 
 
+def validate_direct_reference_privacy(catalog, manifest):
+    """Require direct-reference provenance to stay outside public artifacts."""
+    if manifest.get('schemaVersion') != 1 or not isinstance(manifest.get('images'), list):
+        raise AssertionError('Public image manifest is invalid')
+    manifest_direct = {}
+    for entry in manifest['images']:
+        if entry.get('usageBasis') != 'user_authorized_direct_reference':
+            continue
+        sku = entry.get('sku')
+        if set(entry) != DIRECT_PUBLIC_MANIFEST_FIELDS:
+            raise AssertionError(f'Public direct image manifest exposes provenance or unsupported fields: {sku}')
+        if sku in manifest_direct:
+            raise AssertionError(f'Duplicate public direct image manifest SKU: {sku}')
+        manifest_direct[sku] = entry
+    catalog_direct = {}
+    for product in catalog['products']:
+        for variant in product['variants']:
+            image = variant.get('image')
+            if not image or image.get('usageBasis') != 'user_authorized_direct_reference':
+                continue
+            sku = variant['sku']
+            if set(image) != DIRECT_PUBLIC_IMAGE_FIELDS:
+                raise AssertionError(f'Public catalog direct image exposes provenance or unsupported fields: {sku}')
+            if sku in catalog_direct:
+                raise AssertionError(f'Duplicate public direct catalog image SKU: {sku}')
+            catalog_direct[sku] = image
+    if set(catalog_direct) != set(manifest_direct):
+        raise AssertionError('Public direct catalog and manifest assignments differ')
+    return len(catalog_direct)
+
+
 def verify(base_url, root):
     checks = []
     catalog = json.loads((root / "catalog.json").read_text())
+    manifest = json.loads((root / "data/image-manifest.json").read_text())
+    direct_count = validate_direct_reference_privacy(catalog, manifest)
     photo_paths = sorted({variant["image"]["src"]
                           for product in catalog["products"]
                           for variant in product["variants"] if variant["image"]})
-    for name in ["index.html", "style.css", "script.js", "catalog.json", "image-credits.html", "images/logo.png", *photo_paths]:
+    for name in ["index.html", "style.css", "script.js", "catalog.json", "data/image-manifest.json", "image-credits.html", "images/logo.png", *photo_paths]:
         expected = (root / name).read_bytes()
         actual = fetch(urllib.parse.urljoin(base_url, name))
         digest = hashlib.sha256(actual).hexdigest()
@@ -42,6 +82,7 @@ def verify(base_url, root):
             raise AssertionError(f"Legacy data is still publicly served: {name}")
     return {"url": base_url, "assetChecks": checks, "liveCatalogCounts": catalog["counts"],
             "verifiedPhotoAssetsServed": len(photo_paths),
+            "directReferenceImagesWithoutPublicProvenance": direct_count,
             "browserChecksStillRequired": ["search", "category navigation", "variant selection", "image loading", "responsive layout", "console"]}
 
 

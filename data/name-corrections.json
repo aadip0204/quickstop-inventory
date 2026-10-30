@@ -14382,34 +14382,6 @@
       ]
     },
     {
-      "sku": "1992",
-      "expectedUpc": "064144043064",
-      "expectedNameSha256": "56a4e2c6844ce408664d3307eed63fdb8b8ac1869de54965ff7b00e499736686",
-      "replaceTextFrom": "chef Boyardeebeef ravioli",
-      "replaceTextTo": "Chef Boyardee Mini Ravioli Beef Ravioli in Pasta Sauce",
-      "scope": "manufacturer_exact_upc_name_identity",
-      "verifiedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://smartlabel.conagra.com/064144043064-0001-en-US/index.html",
-          "supports": "The manufacturer record explicitly connects the exact source unit UPC 064144043064 to the brand and full named expression. This is a text-only name check: no package photo was inspected, no size or pack information is imported, and current stock or availability is not established. The page explicitly states that it is retired; its historical manufacturer name record is used within that limitation."
-        }
-      ],
-      "manufacturerRecord": {
-        "publisher": "Conagra Brands",
-        "productUrl": "https://smartlabel.conagra.com/064144043064-0001-en-US/index.html",
-        "publisherEvidenceUrl": "https://smartlabel.conagra.com/064144043064-0001-en-US/index.html",
-        "observedUpc": "064144043064",
-        "observedName": "Chef Boyardee Mini Ravioli, Beef Ravioli In Pasta Sauce",
-        "retrievedOn": "2026-10-27",
-        "sourceSha256": "bbc8993ae163f622d11ed91c9d97eb29e3bc5e2e8298aa2a7654435f76c40d14",
-        "retiredNotice": true
-      },
-      "expectedLabel": "Size not specified",
-      "verifiedPublicName": "Chef Boyardee Mini Ravioli Beef Ravioli in Pasta Sauce"
-    },
-    {
       "sku": "4268",
       "expectedUpc": "027000390054",
       "expectedNameSha256": "9dd380db4d2263ec3b3402ce1c722b255576478adf8a8d05ba113c60577f2ec2",
