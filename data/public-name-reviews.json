@@ -2585,6 +2585,25 @@
           "supports": "UPC 079114211435 identifies the Iltaco Beef Pizza Puff expression."
         }
       ]
+    },
+    {
+      "sku": "5992",
+      "expectedUpc": "072718101218",
+      "expectedSourceRow": 8362,
+      "expectedRawFieldsSha256": "117b24bf1e72680fe0fb49f8cc36e8fc13384a0616a508a2f4323090b388128b",
+      "expectedPublicName": "MR. PURE RUBY RED GRAPEFR",
+      "expectedLabel": "32 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Mr. Pure Ruby Red Grapefruit Juice",
+      "reason": "Exact UPC evidence completes the truncated product title while preserving the source record and variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/3254590-mr-pure-ruby-red-grapefruit-juice-32-fl-oz",
+          "supports": "UPC 072718101218 identifies Mr. Pure Ruby Red Grapefruit Juice in a 32 fl oz bottle."
+        }
+      ]
     }
   ]
 }

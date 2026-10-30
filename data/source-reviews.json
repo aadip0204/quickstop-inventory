@@ -5553,6 +5553,42 @@
       "action": "size_needs_confirmation",
       "reason": "Original description says 2.75 oz, while an exact UPC inventory listing identifies a 3.5 oz bag; package size needs confirmation.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "7842",
+      "expectedUpc": "076183003107",
+      "expectedNameSha256": "90c6d72fc530e42579f0fc913ba13e9f99649d48e6702b56994f97b46b3b6def",
+      "expectedSourceRecordSha256": "8eb07a4ec9a050077383c87cbaeff5faf296400066ca36148bd26ea318b389c5",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Snapple Kiwi Strawberry Juice Drink",
+      "verifiedLabel": "16 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Manufacturer flavor evidence, an exact UPC listing and an inspected complete package corroborate this single 16 oz bottle; the original source fields remain private.",
+      "reviewedOn": "2026-10-30",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://snapple.com/products/snapple-kiwi-strawberry-juice",
+          "supports": "Snapple identifies Kiwi Strawberry and lists a 16 oz consumer format."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-14993485",
+          "supports": "Target identifies UPC 076183003107 as Snapple Kiwi Strawberry Juice Drink, one 16 fl oz plastic bottle."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://images.heb.com/is/image/HEBGrocery/002147821-1?fit=constrain&hei=1400&jpegSize=150&qlt=75&v=1",
+          "supports": "The inspected complete Snapple Kiwi Strawberry Juice Drink bottle displays 16 FL OZ; exact UPC and single-bottle evidence are corroborated by the Target record."
+        }
+      ]
     }
   ]
 }

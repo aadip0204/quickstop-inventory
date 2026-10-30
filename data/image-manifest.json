@@ -19449,6 +19449,182 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "882",
+      "expectedUpc": "085000017593",
+      "expectedName": "BAREFOOT BUBBLY MOSCATO",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-882.jpg",
+      "alt": "Barefoot Bubbly Moscato Spumante — 750 mL bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/1020-barefoot-moscato-spumante-champagne-sparkling-wine-750-ml",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/8ea18f98-7975-4f36-8478-3e33038e0526.7d0cde193ae618984100fd1357f09a0e.jpeg",
+      "sha256": "3ef2caaf8efd2bddf8e201227a8a2f65a58428ade3baaaf988d8698cd3d1c415",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1583",
+      "expectedUpc": "857641002609",
+      "expectedName": "BUZZBALLZ STRAWBERRY",
+      "expectedLabel": "200 mL",
+      "src": "images/products/sku-1583.jpg",
+      "alt": "BuzzBallz Strawberry 'Rita — 200 mL cocktail",
+      "sourcePage": "https://abc2.nc.gov/Pricing/ViewItemDetails/167813",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0085764100260",
+      "sha256": "9de59a9dc0fdb766026da97c5f077b94e719549f6175e33f61f1b1455ef3035d",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1610",
+      "expectedUpc": "079581184010",
+      "expectedName": "CALYPSO ORIGINAL OCEAN BLUE LEMONADE",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-1610.jpg",
+      "alt": "Calypso Ocean Blue Lemonade — 16 oz bottle",
+      "sourcePage": "https://shop.foodland.com/sm/pickup/rsid/3/product/calypso-ocean-blue-lemonade-079581184010",
+      "sourceImageUrl": "https://images.heb.com/is/image/HEBGrocery/003652515-1",
+      "sha256": "1ef66ae42c9e67946556649c2a2dd0a8910c038ff61c36864cfb6abbad0a1301",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1630",
+      "expectedUpc": "079581187097",
+      "expectedName": "calypso tropic tango lemonade",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-1630.png",
+      "alt": "Calypso Tropic Tango Lemonade — 16 oz bottle",
+      "sourcePage": "https://www.hy-vee.com/aisles-online/p/3957290/calypso-tropic-tango-lemonade-16-fl-oz",
+      "sourceImageUrl": "https://rackcdn.com/shopwww/images/products/1000x1000/1947714_230520211259.jpg",
+      "sha256": "914725b09d129d90865fdb95b7dd17a0756e963fc4b72ef38c16691ec00a51a9",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1861",
+      "expectedUpc": "080480172039",
+      "expectedName": "Cazadores blanco",
+      "expectedLabel": "375 mL",
+      "src": "images/products/sku-1861.jpg",
+      "alt": "Cazadores Blanco Tequila — 375 mL bottle",
+      "sourcePage": "https://abc2.nc.gov/Pricing/ViewItemDetails/159821",
+      "sourceImageUrl": "https://cdn.shopify.com/s/files/1/0101/9412/4851/products/277768d0a887e0dfb8eba9a9e05514f169cf5b78.jpg?v=1646527787",
+      "sha256": "17a5e47e2a86c96209cbd126ff68f20d760df2c834a03e9a92a7d2af76f505db",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5992",
+      "expectedUpc": "072718101218",
+      "expectedName": "Mr. Pure Ruby Red Grapefruit Juice",
+      "expectedLabel": "32 oz",
+      "src": "images/products/sku-5992.jpg",
+      "alt": "Mr. Pure Ruby Red Grapefruit Juice — 32 oz bottle",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/3254590-mr-pure-ruby-red-grapefruit-juice-32-fl-oz",
+      "sourceImageUrl": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8e45a6d5-da46-4cb5-9bb1-6c1e67ad5f29.jpg",
+      "sha256": "f5d342ff21ee4a54659f9e680e704e2a41220aaed52f3225a84486967d1acbf2",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7842",
+      "expectedUpc": "076183003107",
+      "expectedName": "Snapple Kiwi Strawberry Juice Drink",
+      "expectedLabel": "16 oz",
+      "src": "images/products/sku-7842.jpg",
+      "alt": "Snapple Kiwi Strawberry Juice Drink — 16 oz bottle",
+      "sourcePage": "https://www.target.com/p/-/A-14993485",
+      "sourceImageUrl": "https://images.heb.com/is/image/HEBGrocery/002147821-1?fit=constrain&hei=1400&jpegSize=150&qlt=75&v=1",
+      "sha256": "842968d49d29f374063c06d2f4183bd090f5acbf521eecb17b6849e539a6f087",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9728",
+      "expectedUpc": "763955014002",
+      "expectedName": "xxl pineapple",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-9728.png",
+      "alt": "XXL Pineapple — 750 mL bottle",
+      "sourcePage": "https://www.tri-vin.com/products/brands/xxl/xxl-pineapple-750ml",
+      "sourceImageUrl": "https://www.tri-vin.com/Files/Images/Assets/Bottleshots/PM1400_1.png",
+      "sha256": "2aa9e8228ca1b7e5f3426303858ab9d7999f6b0ddb240f759aaf9eb07a071d49",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
