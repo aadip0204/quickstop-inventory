@@ -21121,6 +21121,182 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1047",
+      "expectedUpc": "089819543137",
+      "expectedName": "Beringer Main & Vine Chardonnay",
+      "expectedLabel": "1.5 L",
+      "src": "images/products/sku-1047.jpg",
+      "alt": "Beringer Main & Vine Chardonnay — 1.5 L packaging",
+      "sourcePage": "https://wineandliquormart.com/collections/white-wine/products/beringer-chard-1-5",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Beringer-Main-Vine-Chardonnay-California-White-Wine-1-5-L-Bottle-13-ABV_d77a9463-a8a0-4d37-a575-ed82918a07b6.76af71d65f86b5c6d3c474319a13dd76.jpeg",
+      "sha256": "84b032e182f866652250218fbf10c5ab2ba67ee78db582c1f047527fc0db1bb8",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2664",
+      "expectedUpc": "816751022457",
+      "expectedName": "Cutwater Strawberry Margarita",
+      "expectedLabel": "4-pack · 12 oz",
+      "src": "images/products/sku-2664.png",
+      "alt": "Cutwater Strawberry Margarita — 4-pack · 12 oz packaging",
+      "sourcePage": "https://www.target.com/p/-/A-82634684",
+      "sourceImageUrl": "https://storage.googleapis.com/images-lnb-prd-8936dd0.lnb.prd.v8.commerce.mi9cloud.com/product-images/zoom/00816751022457_Right.png",
+      "sha256": "a3036c44f50fb7d29b7e7cb568c8feb34373a3610bd6046e2ca893e6ee93640d",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2856",
+      "expectedUpc": "088004054359",
+      "expectedName": "Heublein Dirty Martini Crafted with Wheatley Vodka",
+      "expectedLabel": "375 mL",
+      "src": "images/products/sku-2856.png",
+      "alt": "Heublein Dirty Martini Crafted with Wheatley Vodka — 375 mL packaging",
+      "sourcePage": "https://www.winetransit.com/spirits/cocktails/original-cocktails-by-heublein-dirty-martini-crafted-with-wheatley-vodka-375-ml-58036.html",
+      "sourceImageUrl": "https://www.bourbonwineandspirits.com/cdn/shop/products/wheatley-dirty-martini-375_600x600_crop_center_b2525c1c-7965-4a1d-9d56-cb72d9e69e44_1080x.png?v=1665175613",
+      "sha256": "2213ba47e57a58b7dc092e3af0f3dca8c8d44d8fbbd45c80029bbd7cb2c11e4c",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4735",
+      "expectedUpc": "088076177703",
+      "expectedName": "Johnnie Walker Double Black Blended Scotch Whisky",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-4735.jpg",
+      "alt": "Johnnie Walker Double Black Blended Scotch Whisky — 750 mL packaging",
+      "sourcePage": "https://theliquorbarn.com/collections/scotch-whisky/products/johnnie-walker-double-black-750ml",
+      "sourceImageUrl": "https://barbank.com/cdn/shop/products/088076177703-Johnnie-Walker-Double-Black-750Ml-Front-1-scaled.jpg?v=1692646696",
+      "sha256": "da16ece98e0214f515b3ef83f0bdc561e3aba8486ad2270ba7f4fc618e927882",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6901",
+      "expectedUpc": "861518002630",
+      "expectedName": "Rancho La Gloria Strawberry Margarita Wine Cocktail",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6901.jpg",
+      "alt": "Rancho La Gloria Strawberry Margarita Wine Cocktail — 750 mL packaging",
+      "sourcePage": "https://www.target.com/p/-/A-79761324",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Rancho-La-Gloria-Strawberry-Margarita-Wine-Cocktail-13-9-ABV-750ml-Glass-Bottle-5-150ml-Servings_2a7371c7-a3c6-43bc-9296-88660bf737f2.3d231f5992f8c5736cee7afe1a0eef01.jpeg?odnBg=FFFFFF&odnHeight=640&odnWidth=640",
+      "sha256": "5527ac87913f56b7f27d4638f2be7a39aca39cf69db1ab15ad34db2650ef82de",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8055",
+      "expectedUpc": "078250004642",
+      "expectedName": "Steel Reserve 211 High Gravity Lager",
+      "expectedLabel": "4-pack · 16 oz",
+      "src": "images/products/sku-8055.png",
+      "alt": "Steel Reserve 211 High Gravity Lager — 4-pack · 16 oz packaging",
+      "sourcePage": "https://www.heb.com/product-detail/steel-reserve-211-high-gravity-lager-4-pk-cans/2029994",
+      "sourceImageUrl": "https://images.cdn.retail.brookshires.com/detail/00078250004642_C1C1.jpeg",
+      "sha256": "487a827bcf71b3896d90ba937fc07489120005a48d6910984ad95622da931680",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4146",
+      "expectedUpc": "085000029251",
+      "expectedName": "High Noon Watermelon Vodka Seltzer",
+      "expectedLabel": "Single · 12 oz",
+      "src": "images/products/sku-4146.jpg",
+      "alt": "High Noon Watermelon Vodka Seltzer — single 12 oz can packaging",
+      "sourcePage": "https://shop.foodland.com/product/high-noon-watermelon-single-085000029251",
+      "sourceImageUrl": "https://www.kroger.com/product/images/large/front/0008500002925",
+      "sha256": "1758ca727961054dc9ef470e828dbace24bbcde5ebba8d8b5961e6cdac30a0b6",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6658",
+      "expectedUpc": "051500204306",
+      "expectedName": "Pillsbury Best All Purpose Flour",
+      "expectedLabel": "2 lb",
+      "src": "images/products/sku-6658.jpg",
+      "alt": "Pillsbury Best All Purpose Flour — 2 lb packaging",
+      "sourcePage": "https://www.walmart.com/ip/Pillsbury-All-Purpose-Flour-2-lb/162959096",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Pillsbury-All-Purpose-Flour-2-lb_aebfda62-3cd0-4c56-b225-175097651a18.fa8d8b17c1483f5417571a95313a18c6.jpeg?odnBg=FFFFFF&odnHeight=573&odnWidth=573",
+      "sha256": "17036595dc34f35133e9c238d5dd4e3dbb800c4bf6ca61239ebf335e116ae0b8",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
