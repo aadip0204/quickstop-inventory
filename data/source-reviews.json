@@ -1311,11 +1311,43 @@
       "expectedUpc": "075669176328",
       "expectedNameSha256": "9e80d8ee2310caf26ae1ef8d52460db66bda4ae861976955cef8bbc43a77c7ff",
       "expectedSourceRecordSha256": "551e637c225d2f8f0c9bc30e82bb24ae5a164bda0bb2f68b1dfc9316999b1853",
+      "action": "restore_named_merchandise",
+      "reason": "The guarded source title contains an unlabelled decimal fragment. Retain only the reviewed name and an explicitly unresolved size before applying the exact-UPC identity resolution.",
+      "reviewedOn": "2026-10-30",
       "sanitizedSourceName": "iberla canola oil",
       "forceSizeNeedsConfirmation": true,
-      "action": "restore_named_merchandise",
-      "reason": "Named merchandise retained after reviewed removal of an unresolved amount or price annotation. Original source metadata remains private; identity and any uncertain size require confirmation.",
-      "reviewedOn": "2026-10-27"
+      "identityResolution": {
+        "expectedName": "iberla canola oil",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Iberia 100% Pure Canola Oil",
+        "verifiedLabel": "48 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://iberiafoods.com/product/iberia-canola-oil-48-oz/",
+            "supports": "Iberia Foods' product record names Iberia Canola Oil 48 oz and provides SKU 0-75669-17632-8, the same 12-digit UPC 075669176328."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://food.saltie.app/food/ddf5a663-e42e-4920-9a9a-f156a3919825",
+            "supports": "The USDA-derived product record identifies 100% Pure Canola Oil, brand Iberia, UPC Code 075669176328, and package weight 48 fl oz/1.5 quart."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://i5.walmartimages.com/asr/5facee98-27e1-47c7-8b8b-be52184c56b2.5a6c166c5a35ad9c34647bc25de363e2.jpeg",
+            "supports": "Inspected full isolated photo shows the complete single Iberia Canola Oil bottle with 100% PURE and 48 FL. OZ. (1.5 QUARTS) printed on the front; no price text or other products."
+          }
+        ],
+        "reason": "Manufacturer, exact-UPC, and inspected package evidence agree on the brand, 100% Pure Canola Oil expression, 48-fluid-ounce single bottle, and source UPC. The catalog serializer canonically renders fl oz as oz."
+      }
     },
     {
       "sku": "6911",
@@ -5587,6 +5619,273 @@
           "kind": "inspected_package_photo",
           "url": "https://images.heb.com/is/image/HEBGrocery/002147821-1?fit=constrain&hei=1400&jpegSize=150&qlt=75&v=1",
           "supports": "The inspected complete Snapple Kiwi Strawberry Juice Drink bottle displays 16 FL OZ; exact UPC and single-bottle evidence are corroborated by the Target record."
+        }
+      ]
+    },
+    {
+      "sku": "94",
+      "expectedUpc": "811538018951",
+      "expectedNameSha256": "ff01f0a02f0343a3cfbaf15f3502108185ab813681294984cb8c391452080b67",
+      "expectedSourceRecordSha256": "a5d825a586b7b50476acb163dd0a8e064dae4f53c4a341b7b1e3064b09719b56",
+      "action": "size_needs_confirmation",
+      "reason": "The original export's concatenated title and unrelated pack field leave its public size intentionally unresolved. Exact UPC records and the inspected package identify one 1.75 L Blood Orange ready-to-serve bottle, so a guarded identity resolution is safe.",
+      "reviewedOn": "2026-10-30",
+      "identityResolution": {
+        "expectedName": "1800 orange margarita",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "1800 The Ultimate Margarita Blood Orange Cocktail",
+        "verifiedLabel": "1.75 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/166735",
+            "supports": "The control-state product record names Proximo Spirits as distiller and maps UPC 811538018951 to 1800 Ultimate RTD Blood Orange Margarita in a 1.75 L bottle, corroborating producer, expression and size."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.cub.com/store/cub-liquors/products/21110070-1800-tequila-1-75-l",
+            "supports": "The exact UPC 811538018951 listing identifies 1800 The Ultimate Margarita Blood Orange Cocktail and its 1.75 L retail unit, corroborating the canonical public title."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://i5.walmartimages.com/seo/1800-The-Ultimate-Margarita-Blood-Orange-1-75-L-Bottle-9-95-ABV_4a7751b9-e1ea-4b79-a6e4-d8526ee46b5f.024b7aebc0c30ef6cfeb314a10b127ab.jpeg",
+            "supports": "The inspected 2200x2200 package image visibly shows one complete 1800 The Ultimate Margarita Blood Orange bottle and its 1.75 L marking."
+          }
+        ],
+        "reason": "Producer-linked control-state data, an independent exact-UPC listing, and an inspected complete package agree on brand, The Ultimate Margarita product line, Blood Orange expression, 1.75 L size, and single-bottle packaging."
+      }
+    },
+    {
+      "sku": "2042",
+      "expectedUpc": "089000547814",
+      "expectedNameSha256": "81cb8d261457aa420ccbca0abbf474985faa5b85c5661ff18e66eee937e6f862",
+      "expectedSourceRecordSha256": "81df961fcc33c5739d5c3eb462b5f5ec62e7ba23dfff55efe8eca74bf8d1e814",
+      "action": "size_needs_confirmation",
+      "reason": "The original abbreviated source title lacks a safe package identity even though it includes a measurement. Exact UPC records and the inspected package identify one 1.75 L Mexican Mudslide ready-to-drink bottle, so a guarded identity resolution is safe.",
+      "reviewedOn": "2026-10-30",
+      "identityResolution": {
+        "expectedName": "Chi-chis Mex Mudslide",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Chi-Chi's Mexican Mudslide",
+        "verifiedLabel": "1.75 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.universalfws.com/product/p-14352-chi-chis-mexican-mudslide-rtd-175l/",
+            "supports": "The distributor record identifies UPC 089000547814 as Chi Chis Mexican Mudslide RTD, 1.75 L; it corroborates the expression, ready-to-drink type and bottle size."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.cub.com/store/cub-liquors/products/317952-chi-chis-mexican-mudslide-1-75-l",
+            "supports": "The exact UPC 089000547814 listing identifies Chi-Chi's Mexican Mudslide, 1.75 L, with a single bottle product page."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.kroger.com/product/images/xlarge/front/0008900054781",
+            "supports": "The inspected 1000x1000 package image visibly shows one complete Chi-Chi's Mexican Mudslide bottle with its 1.75 L neck marking."
+          }
+        ],
+        "reason": "Distributor and independent exact-UPC records, plus an inspected complete package, agree on Chi-Chi's brand punctuation, Mexican Mudslide expression, 1.75 L size, and single-bottle packaging."
+      }
+    },
+    {
+      "sku": "101220",
+      "expectedUpc": "818844023174",
+      "expectedNameSha256": "36daeedd7cc0154f83e80fb9b6ba44bce30edf1e4c7b7926cfc1eadefcd3bb79",
+      "expectedSourceRecordSha256": "b6cea98eb19ceec3bb752059a2e2f2901b71e7a506c86f3f3fcff426430f9895",
+      "action": "size_needs_confirmation",
+      "reason": "The original abbreviated title contains 1.75 L but its incompatible source pack field makes the public size intentionally unresolved. First-party product information, exact UPC data and the inspected package identify one 1.75 L Mango ready-to-serve bottle, so a guarded identity resolution is safe.",
+      "reviewedOn": "2026-10-30",
+      "identityResolution": {
+        "expectedName": "1800 Ultimate Mango Margarita",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "1800 Ultimate Ready To Drink Mango Margarita",
+        "verifiedLabel": "1.75 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.1800tequila.com/products/margaritas-1800-mango/",
+            "supports": "The official 1800 brand page identifies Ultimate Mango Margarita as a ready-to-serve mango margarita and identifies The Ultimate Margarita as a ready-to-serve cocktail, corroborating the brand, product line and mango expression."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/171221",
+            "supports": "The current control-state record names Proximo Spirits as distiller and maps UPC 818844023174 to 1800 Ultimate RTD Mango Margarita in a 1.75 L bottle."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://cdn11.bigcommerce.com/s-0ddlsmhg83/images/stencil/640w/products/9352/9606/1800-the-ultimate-ready-to-drink-mango-margarita__07562.1752496225.1280.1280__63584.1.jpg",
+            "supports": "The inspected 600x600 WebP package image visibly shows one complete 1800 The Ultimate Margarita Mango ready-to-serve bottle and its 1.75 L marking."
+          }
+        ],
+        "reason": "The official 1800 product page, a current exact-UPC control-state listing, and an inspected complete package agree on the 1800 brand, Mango expression, ready-to-drink identity, 1.75 L size, and single-bottle packaging."
+      }
+    },
+    {
+      "sku": "4195",
+      "expectedUpc": "781231003786",
+      "expectedNameSha256": "ad37826849701565305f351eb2e3011b43e72501ee4560f45dd2a9f579c4423d",
+      "expectedSourceRecordSha256": "183f4772313f59c8a34ccf77a800204e784266c5eef115cd311ba856773fb658",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Rap Snacks Big Back Iced Honey Bun",
+      "verifiedLabel": "4.75 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, a live Rap Snacks product record, an independent exact-UPC listing, and a freshly hash-matched inspected individual wrapper corroborate the brand, Big Back Iced expression, 4.75 oz size, and single wrapped-pastry format. Original source wording remains private.",
+      "reviewedOn": "2026-10-30",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.rapsnacks.net/products/rap-snacks-big-back-iced-honey-bun",
+          "supports": "The live official Rap Snacks record identifies barcode 781231003786 as Rap Snacks Big Back Iced Honey Buns, 4.75 oz, and describes the Iced Honey Bun product."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.faire.com/product/p_7qyrpenme8",
+          "supports": "The wholesale listing identifies UPC 781231003786 as Rap Snacks Big Back Iced Honey Buns in the 4.75 oz expression."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.rapsnacks.net/cdn/shop/files/honeybun-BB-iced-noprice_1200x1200.png?v=1763869032",
+          "supports": "The inspected complete official wrapper visibly shows Rap Snacks Big Back Iced Honey Bun and 4.75 oz in a single wrapped-pastry presentation."
+        }
+      ]
+    },
+    {
+      "sku": "6881",
+      "expectedUpc": "041789002168",
+      "expectedNameSha256": "4a267fa515b86437f7a93c3f7aba0501a1c2e7ffda4b97c05dfaa6f56d6a8572",
+      "expectedSourceRecordSha256": "2830a307f1b345c92155a6daaa8ff9c54ccd132f0f931c2c1ac2950a3dcd4147",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Maruchan Ramen Noodle Soup, Chili Flavor",
+      "verifiedLabel": "3 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact source UPC, Maruchan's live GTIN product record, an independent exact-UPC listing, and a freshly hash-matched inspected complete packet corroborate the brand, Chili Flavor expression, 3 oz size, and single-packet format. Original source wording remains private.",
+      "reviewedOn": "2026-10-30",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://maruchan.com/products/ramen/chili-flavor",
+          "supports": "Maruchan's product record identifies Chili Flavor under the Maruchan brand with GTIN 041789002168 and a 3 oz size."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/153573-maruchan-chili-flavor-ramen-noodle-soup-3-oz",
+          "supports": "The listing identifies UPC 041789002168 as Maruchan Ramen Noodle Soup, Chili, 3 oz."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://cdn.sanity.io/images/5hhe19bn/production/d29102b74320bec93af36c4a7edb5c0078ae023a-760x760.webp",
+          "supports": "The inspected complete packet visibly shows Maruchan, Chili Flavor, and 3 oz in a single-packet presentation."
+        }
+      ]
+    },
+    {
+      "sku": "2875",
+      "expectedUpc": "038900001025",
+      "expectedNameSha256": "299abb5a05a310c4d02d1ec2474e0623265eb71663f6328d6f19e3b6fde55212",
+      "expectedSourceRecordSha256": "90d8c79c33bd5e4249a7fb552a6de68032170ca02aadaa28ea37f8c3f878f146",
+      "action": "resolve_verified_identity",
+      "reason": "The guarded source record has an incomplete product title and no source size. Exact Dole UPC, an independent exact-UPC listing, and the inspected single-can image agree on the same product.",
+      "reviewedOn": "2026-10-30",
+      "verifiedName": "Dole Pineapple Slices in Heavy Syrup",
+      "verifiedLabel": "20 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://smartlabel.labelinsight.com/product/4494682/other/certifications",
+          "supports": "Dole Packaged Foods LLC's SmartLabel record identifies Pineapple Slices in Heavy Syrup, 20 oz (567 g), and UPC 038900001025."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/dole-pineapple-slices-in-heavy-syrup-id-038900001025",
+          "supports": "Foodland identifies Dole Pineapple Slices in Heavy Syrup, 20 Ounce, with Product Number 038900001025."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://images.heb.com/is/image/HEBGrocery/000119372-4?fit=constrain&hei=1400&jpegSize=150&qlt=75&v=1",
+          "supports": "Inspected full isolated packshot shows the Dole Pineapple Slices in Heavy Syrup can and printed NET WT 20 OZ (567 g); one complete can, no price text, and no other products."
+        }
+      ]
+    },
+    {
+      "sku": "8185",
+      "expectedUpc": "022609000793",
+      "expectedNameSha256": "aaf8ed244f7306b2f97ced282a7f6b7df59a0e0c4628fa1b2f0e6aa76c39b9e9",
+      "expectedSourceRecordSha256": "f591ecc5c1d48e0d21704c140ee5d503e819dbc293904eb7ba832f50d635b09e",
+      "action": "resolve_verified_identity",
+      "reason": "The guarded source record contains a misspelled incomplete name and no source size. Manufacturer registration, exact-UPC distributor data, and the inspected single-jug asset agree without selecting a different bleach strength, format, or case.",
+      "reviewedOn": "2026-10-30",
+      "verifiedName": "SunBrite Ultra Bleach",
+      "verifiedLabel": "1 gal",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://info.nsf.org/USDA/Listings.asp?Company=1Q110",
+          "supports": "NSF's current official listing names Champion Packaging & Distribution, Inc. as manufacturer and lists SunBrite Ultra Bleach as its registered product."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.glwholesale.com/product/wholesale-sunbrite-ultra-6-bleach-1-gallon/sb110020",
+          "supports": "Distributor product record identifies Sunbrite Ultra 6% Bleach, Product Code SB110020, UPC Code 022609000793, and a net 128 fl oz bottle / 1 gallon. Its 6/128 oz field describes the case configuration; only the one-gallon consumer jug is resolved."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.farmandhomesupply.com/media/catalog/product/1/5/15850151.jpg?canvas=658%3A658&fit=bounds&height=658&quality=100&width=658",
+          "supports": "Inspected full isolated asset shows one SunBrite Ultra Bleach jug with printed NET CONTENTS: 1 GALLON (128 FL OZ); no price text and no other products."
         }
       ]
     }

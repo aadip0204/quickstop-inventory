@@ -2011,35 +2011,6 @@
       ]
     },
     {
-      "sku": "94",
-      "expectedUpc": "811538018951",
-      "expectedSourceRow": 78,
-      "expectedRawFieldsSha256": "a5d825a586b7b50476acb163dd0a8e064dae4f53c4a341b7b1e3064b09719b56",
-      "expectedPublicName": "1800 orange margarita",
-      "expectedLabel": "Size needs confirmation",
-      "expectedCategory": "drinks",
-      "expectedDepartment": "Ready To Drink",
-      "proposedPublicTitle": "1800 Ultimate Blood Orange Margarita",
-      "reason": "Exact UPC product evidence supports the corrected title; source and variant metadata are preserved.",
-      "evidence": [
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/150962",
-          "supports": "UPC 811538018951: reviewed product expression and source details."
-        },
-        {
-          "kind": "product_listing",
-          "url": "https://www.cub.com/store/cub-liquors/products/21110070-1800-tequila-1-75-l",
-          "supports": "UPC 811538018951: reviewed product expression and source details."
-        },
-        {
-          "kind": "product_listing",
-          "url": "https://go-upc.com/search?q=811538018951",
-          "supports": "UPC 811538018951: reviewed product expression and source details."
-        }
-      ]
-    },
-    {
       "sku": "95",
       "expectedUpc": "811538012867",
       "expectedSourceRow": 9080,
@@ -2901,6 +2872,668 @@
       "reason": "Exact UPC evidence restores the complete product-line and flavor title while preserving source and variant metadata.",
       "evidence": [
         {"kind": "exact_upc_listing", "url": "https://theliquorbarn.com/collections/flavored-malt-beverages/products/seagrams-escapes-strawberry-daiquiri-4pk", "supports": "UPC 080432802540 identifies Seagram's Escapes Strawberry Daiquiri as a four-bottle package."}
+      ]
+    },
+    {
+      "sku": "6661",
+      "expectedUpc": "058847950200",
+      "expectedSourceRow": 4225,
+      "expectedRawFieldsSha256": "186b471ad2d7e0053ad7916050e88962fdf7266735d6ca343b1c1ab8bc5f4aa3",
+      "expectedPublicName": "Pine Cleaner",
+      "expectedLabel": "32 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "First Force Pine All Purpose Cleaner",
+      "reason": "Exact UPC records establish the missing First Force brand and All Purpose Cleaner product identity; the title repair does not alter the current guarded variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.murraycashandcarry.com/shop/058847950200-first-force-pine-all-purpose-cleaner-946ml-36859",
+          "supports": "Exact UPC 058847950200 identifies First Force Pine All Purpose Cleaner."
+        },
+        {
+          "kind": "independent_product_listing",
+          "url": "https://shoptheking.us/products/first-force-95020-pine-cleaner-in-trigger-spray-bottle-32-ounce",
+          "supports": "Independent listing identifies First Force Pine Cleaner in the 32 ounce trigger-spray format."
+        }
+      ]
+    },
+    {
+      "sku": "6951",
+      "expectedUpc": "014800582154",
+      "expectedSourceRow": 8984,
+      "expectedRawFieldsSha256": "7111442902ac7b1b46a0f245c3ddbe7060553c4206cade3fa0a6bcbb527f8631",
+      "expectedPublicName": "REAL LIME LEMON JUICE",
+      "expectedLabel": "2.5 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "ReaLemon 100% Lemon Juice",
+      "reason": "Exact UPC evidence establishes ReaLemon 100% Lemon Juice rather than a lime product, so the current title is a material product-identity mismatch.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=014800582154",
+          "supports": "Exact UPC 014800582154 identifies ReaLemon 100% Lemon Juice."
+        },
+        {
+          "kind": "independent_product_listing",
+          "url": "https://shoptheking.us/products/realemon-100-lemon-juice-2-5-oz",
+          "supports": "Independent listing identifies ReaLemon 100% Lemon Juice in the 2.5 ounce bottle format."
+        }
+      ]
+    },
+    {
+      "sku": "9176",
+      "expectedUpc": "086106152133",
+      "expectedSourceRow": 7201,
+      "expectedRawFieldsSha256": "5e4f953eb3bd0628998f318fd768783a39e71139bbf0166a30b234a3ee8f0a80",
+      "expectedPublicName": "VANILLA CREME COOKIES",
+      "expectedLabel": "11.8 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Lil' Dutch Maid Vanilla Creme Cookies",
+      "reason": "Exact UPC records and the reviewed package establish the missing Lil' Dutch Maid brand and Vanilla Creme Cookies product identity.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.herbspro.com/products/vanilla-creme-cookies-305663",
+          "supports": "Exact UPC 086106152133 identifies Lil' Dutch Maid Vanilla Creme Cookies."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://kitchn.shop/lil-dutch-maid-11-8-oz-duplex-creme-cookies/",
+          "supports": "Independent exact UPC 086106152133 listing identifies Lil' Dutch Maid Vanilla Creme Cookies."
+        }
+      ]
+    },
+    {
+      "sku": "9712",
+      "expectedUpc": "094514000908",
+      "expectedSourceRow": 7206,
+      "expectedRawFieldsSha256": "42e86e12b7857f2f4ab239400d41d5e187bd3083db6ba8d4cc0a01192fe49312",
+      "expectedPublicName": "Xtra detergentstropical passion",
+      "expectedLabel": "67.5 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "XTRA Tropical Passion Laundry Detergent",
+      "reason": "Exact UPC evidence establishes the XTRA brand, Tropical Passion expression, and laundry-detergent product type missing from the concatenated current title.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.dollargeneral.com/p/xtra-tropical-passion-laundry-detergent-67-5-fl-oz/094514000908",
+          "supports": "Exact UPC 094514000908 identifies XTRA Tropical Passion Laundry Detergent."
+        },
+        {
+          "kind": "brand_product_page",
+          "url": "https://www.xtralaundry.com/liquid-detergents/xtra-tropical-passion-liquid-detergent",
+          "supports": "Brand product page identifies XTRA Tropical Passion liquid laundry detergent."
+        }
+      ]
+    },
+    {
+      "sku": "1061",
+      "expectedUpc": "089819760107",
+      "expectedSourceRow": 666,
+      "expectedRawFieldsSha256": "259f8ff3754b2f05c0d37e6936ac33947343a6d3c8b94c5f3aa8e33a74b95f2b",
+      "expectedPublicName": "BERINGER PINTO GRIGIO WINE",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Pinot Grigio",
+      "reason": "Exact UPC evidence corrects the material Pinto misspelling and establishes the Main & Vine product line; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/beringer-main-vine-pinot-grigio-1-5l",
+          "supports": "Exact UPC 089819760107 identifies Beringer Main & Vine Pinot Grigio in the 1.5 L bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winemadeeasy.com/wine/white-wine/pinot-grigio-pinot-gris/beringer-main-vine-pinot-grigio-1-5-l-19085.html",
+          "supports": "Independent exact UPC 089819760107 record confirms the Beringer Main & Vine Pinot Grigio title."
+        }
+      ]
+    },
+    {
+      "sku": "1062",
+      "expectedUpc": "089819541881",
+      "expectedSourceRow": 667,
+      "expectedRawFieldsSha256": "25873029f233d43fb4b49f85e16d92c34e2349ddf4da56e3e53a31cf3a108fa5",
+      "expectedPublicName": "Beringer Red Moscato",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Red Moscato",
+      "reason": "Exact UPC records establish Main & Vine as a material product-line identifier; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.heb.com/product-detail/beringer-main-vine-red-moscato/2147343",
+          "supports": "Exact UPC 089819541881 identifies Beringer Main & Vine Red Moscato."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.brookshires.com/sm/pickup/rsid/56/product/beringer-red-moscato-main-%26-vine-15-liter-id-00089819541881",
+          "supports": "Independent exact UPC 089819541881 record confirms Beringer Red Moscato Main & Vine."
+        }
+      ]
+    },
+    {
+      "sku": "1064",
+      "expectedUpc": "089819541874",
+      "expectedSourceRow": 668,
+      "expectedRawFieldsSha256": "e6be9c15665b384c74f00805bb1765ecc99d4d087bc45907a71a80e37b36f348",
+      "expectedPublicName": "Beringer Red Moscato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Red Moscato",
+      "reason": "Exact UPC records establish Main & Vine as a material product-line identifier; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/a/s/products/beringer-main-vine-red-moscato-750ml",
+          "supports": "Exact UPC 089819541874 identifies Beringer Main & Vine Red Moscato in the 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shopwoodmans.com/store/woodmans-food-markets/products/45808-beringer-main-vine-red-moscato-white-wine-750-ml",
+          "supports": "Independent exact UPC 089819541874 record confirms the Beringer Main & Vine Red Moscato title."
+        }
+      ]
+    },
+    {
+      "sku": "1069",
+      "expectedUpc": "089819038428",
+      "expectedSourceRow": 673,
+      "expectedRawFieldsSha256": "efec418da8defc3853da6bef67e1c2bdeaad850ae189d80e63c996fe17b048fd",
+      "expectedPublicName": "Beringer White Zinf",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine White Zinfandel",
+      "reason": "Exact UPC records establish the Main & Vine line and the full White Zinfandel expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/96771-beringer-main-vine-white-zinfandel-pink-wine-1-5-l",
+          "supports": "Exact UPC 089819038428 identifies Beringer Main & Vine White Zinfandel."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13437903",
+          "supports": "Independent exact UPC 089819038428 record confirms Beringer Main & Vine White Zinfandel."
+        }
+      ]
+    },
+    {
+      "sku": "2048",
+      "expectedUpc": "088004041007",
+      "expectedSourceRow": 1267,
+      "expectedRawFieldsSha256": "d06076f30824f54838f981729a8c1cbffe9f108622a082975652f47318fc7553",
+      "expectedPublicName": "CHI-CHIS PINK LEMONADE MARGARITA",
+      "expectedLabel": "187 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Chi-Chi's Pink Lemonade Margarita",
+      "reason": "Exact UPC evidence establishes the verified Chi-Chi's brand spelling for this complete Pink Lemonade Margarita expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/brand-registration/brand-registration-reports/monthly-price-postings/2026/march/SGWS%20March%2026.pdf",
+          "supports": "Exact UPC 088004041007 is listed as Chi-Chi's Pink Lemonade Margarita."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.qfc.com/p/chi-chi-s-pink-lemonade-margarita-wine-cocktail-single-bottle/0008800404100",
+          "supports": "Independent product record identifies the Chi-Chi's Pink Lemonade Margarita expression for UPC 088004041007."
+        }
+      ]
+    },
+    {
+      "sku": "4429",
+      "expectedUpc": "082184004388",
+      "expectedSourceRow": 6610,
+      "expectedRawFieldsSha256": "be1dfb1f3d66653a512989215db4f31c6eeaf640c1644f01a196f0c5e5da6bc5",
+      "expectedPublicName": "Jack Daniel's Apple",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Jack Daniel's Tennessee Apple",
+      "reason": "Exact UPC records establish Tennessee Apple as the material product-line expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/173498",
+          "supports": "Exact UPC 082184004388 identifies Jack Daniel's Tennessee Apple."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.binnys.com/spirits/whiskey/jack-daniels-tennessee-apple-981885/",
+          "supports": "Independent exact UPC 082184004388 record confirms Jack Daniel's Tennessee Apple."
+        }
+      ]
+    },
+    {
+      "sku": "4764",
+      "expectedUpc": "082352600633",
+      "expectedSourceRow": 3046,
+      "expectedRawFieldsSha256": "967ea365fc5a12d4c1ad52c5433bbb92a49995954d979719027caa2dea7b54bd",
+      "expectedPublicName": "Keglevich strawberry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Keglevich Strawberry Vodka",
+      "reason": "Exact UPC evidence establishes vodka as the material product type for the Strawberry expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/keglevich-strawberry-750ml",
+          "supports": "Exact UPC 082352600633 identifies Keglevich Strawberry Vodka in the 750 mL bottle."
+        },
+        {
+          "kind": "manufacturer_product_page",
+          "url": "https://keglevich.it/en/products/dry-wodka/",
+          "supports": "Manufacturer product information confirms Keglevich vodka branding; exact UPC 082352600633 is established by the independent product record."
+        }
+      ]
+    },
+    {
+      "sku": "6156",
+      "expectedUpc": "085000021361",
+      "expectedSourceRow": 9571,
+      "expectedRawFieldsSha256": "1b9cd92e6891d9cb8e6f3c656a884b507b6efa9f93712da0522f9285ee824d35",
+      "expectedPublicName": "New Amsterdam Coconut",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "New Amsterdam Coconut Vodka",
+      "reason": "Exact UPC records establish vodka as the material product type for the Coconut expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.drinksi.com/products/new-amsterdam-coconut-vodka",
+          "supports": "Exact UPC 085000021361 identifies New Amsterdam Coconut Vodka."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/new-amsterdam-coconut-750ml",
+          "supports": "Independent exact UPC 085000021361 record confirms New Amsterdam Coconut Vodka."
+        }
+      ]
+    },
+    {
+      "sku": "6672",
+      "expectedUpc": "089708461429",
+      "expectedSourceRow": 4231,
+      "expectedRawFieldsSha256": "d0043ff67ad00fe520be423f1d992987444099a8e21abb1f052d44f417a7e5a0",
+      "expectedPublicName": "PINNACLE CHERRY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Pinnacle Cherry Flavored Vodka",
+      "reason": "Exact UPC evidence establishes the complete Cherry Flavored Vodka product identity; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://internationalpointofsale.com/Database/PDF/Liquor%20Database%20CT.pdf",
+          "supports": "Exact UPC 089708461429 identifies Pinnacle Cherry flavored vodka."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.instacart.com/products/2915024-pinnacle-vodka-cherry-750-ml",
+          "supports": "Independent exact UPC 089708461429 record confirms Pinnacle Cherry Flavored Vodka."
+        }
+      ]
+    },
+    {
+      "sku": "6674",
+      "expectedUpc": "089708467803",
+      "expectedSourceRow": 4233,
+      "expectedRawFieldsSha256": "0ffec1d80c8fb186b908ac2d139439698cf1fcfc44037b8491f75970b465d26a",
+      "expectedPublicName": "Pinnacle Cherry Whipped",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Pinnacle Cherry Whipped Vodka",
+      "reason": "Exact UPC evidence establishes vodka as the material product type for the Cherry Whipped expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/upc/089708467803",
+          "supports": "Exact UPC 089708467803 identifies Pinnacle Cherry Whipped Vodka."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/15985/2/0214_Price_Book_Booklet.pdf",
+          "supports": "Independent exact UPC 089708467803 record confirms Pinnacle Cherry Whipped Vodka."
+        }
+      ]
+    },
+    {
+      "sku": "7486",
+      "expectedUpc": "080432103463",
+      "expectedSourceRow": 7794,
+      "expectedRawFieldsSha256": "789d51bc74a509d02e0188c4dada28df082cff61df40044b8022804a19550f02",
+      "expectedPublicName": "Seagrams Jamaican Me",
+      "expectedLabel": "4-pack · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Coolers",
+      "proposedPublicTitle": "Seagram's Escapes Jamaican Me Happy",
+      "reason": "Exact UPC records establish the Escapes product line and complete Jamaican Me Happy expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-52491067",
+          "supports": "Exact UPC 080432103463 identifies Seagram's Escapes Jamaican Me Happy."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/95099-seagram-s-escapes-jamaican-me-happy-11-2-fl-oz",
+          "supports": "Independent exact UPC 080432103463 record confirms Seagram's Escapes Jamaican Me Happy."
+        }
+      ]
+    },
+    {
+      "sku": "7517",
+      "expectedUpc": "720815987135",
+      "expectedSourceRow": 4824,
+      "expectedRawFieldsSha256": "2f25fe97351af39eab034489719136d7c05ef40f567a7e379b00ad14911c7e37",
+      "expectedPublicName": "Seagrams Sweet Tea",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's Sweet Tea Flavored Vodka",
+      "reason": "Exact UPC records establish the verified brand spelling and complete Sweet Tea Flavored Vodka product identity; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.thehutliquors.com/seagrams-sweet-tea-vodka-750ml.html",
+          "supports": "Exact UPC 720815987135 identifies Seagram's Sweet Tea Flavored Vodka."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.mainespirits.com/sites/default/files/price_books/May%202026%20Quarterly%20Price%20Book.pdf",
+          "supports": "Independent exact UPC 720815987135 record confirms Seagram's Sweet Tea Flavored Vodka."
+        }
+      ]
+    },
+    {
+      "sku": "7519",
+      "expectedUpc": "087000700758",
+      "expectedSourceRow": 4825,
+      "expectedRawFieldsSha256": "6bf65d60d18bc03e01e4890a62d7dae875240454c10402bfc25eaaa736099fb4",
+      "expectedPublicName": "Seagrams VO",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Seagram's VO Canadian Whisky",
+      "reason": "Exact UPC records establish the verified brand spelling and Canadian Whisky expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47137354",
+          "supports": "Exact UPC 087000700758 identifies Seagram's VO Canadian Whisky."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://internationalpointofsale.com/Database/PDF/Liquor%20Database%20GA.pdf",
+          "supports": "Independent exact UPC 087000700758 record confirms Seagram's VO Canadian Whisky."
+        }
+      ]
+    },
+    {
+      "sku": "7527",
+      "expectedUpc": "720815984424",
+      "expectedSourceRow": 4831,
+      "expectedRawFieldsSha256": "49256f32161e22e3c024802757a156c4fe3aba8365951bf1d3e9108fe2d44198",
+      "expectedPublicName": "Seagrams Vodka 100 P",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's 100 Proof Platinum Select Vodka",
+      "reason": "Exact UPC records establish the proof wording, Platinum Select line, and vodka product type; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.iowaabd.com/products/39815-seagrams-100prf-platinum-vodka-375-ml",
+          "supports": "Exact UPC 720815984424 identifies Seagram's 100 Proof Platinum Select Vodka."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/seagrams-100-proof-vodka-375ml",
+          "supports": "Independent exact UPC 720815984424 record confirms Seagram's 100 Proof Platinum Select Vodka."
+        }
+      ]
+    },
+    {
+      "sku": "8059",
+      "expectedUpc": "078250006271",
+      "expectedSourceRow": 7796,
+      "expectedRawFieldsSha256": "3bd4601d62869674477fb941a90f5c17d34aaa2f8babbd6699a7fbdf6b4d9508",
+      "expectedPublicName": "Steel Reserve blue razz",
+      "expectedLabel": "Single · 24 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Steel Reserve Alloy Series Spiked Blue Razz",
+      "reason": "Exact UPC records establish the Alloy Series line and complete Spiked Blue Razz expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kroger.com/p/steel-reserve-alloy-series-spiked-blue-razz-malt-flavored-hard-beverage-single-can/0007825000627",
+          "supports": "Exact UPC 078250006271 identifies Steel Reserve Alloy Series Spiked Blue Razz."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.dollargeneral.com/p/steel-reserve-alloy-series-spiked-blue-razz-24-fl-oz-can-1-ct/78250006271",
+          "supports": "Independent exact UPC 078250006271 record confirms Steel Reserve Alloy Series Spiked Blue Razz."
+        }
+      ]
+    },
+    {
+      "sku": "8082",
+      "expectedUpc": "087872630139",
+      "expectedSourceRow": 9575,
+      "expectedRawFieldsSha256": "42f34edf69ceda3ed1404b7a196faff1a9b93680acae503395aab5642a12aa68",
+      "expectedPublicName": "STELLA ROSA ROSSO RB",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "wine",
+      "proposedPublicTitle": "Stella Rosa Rosso",
+      "reason": "Exact UPC records establish Stella Rosa Rosso as the canonical product identity; the unexplained RB suffix is not retained in the customer-facing title.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-14777282",
+          "supports": "Exact UPC 087872630139 identifies Stella Rosa Rosso."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/stella-rosa-rosso-id-087872630139",
+          "supports": "Independent exact UPC 087872630139 record confirms Stella Rosa Rosso."
+        }
+      ]
+    },
+    {
+      "sku": "9384",
+      "expectedUpc": "754527012274",
+      "expectedSourceRow": 7202,
+      "expectedRawFieldsSha256": "fe4cfee27a9460e08e59b6856886a3d0a0fdf351af2da8bbabda37b4a9ff0890",
+      "expectedPublicName": "voodoo ranger tropic forceipa",
+      "expectedLabel": "Single · 19.2 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Voodoo Ranger Tropic Force Tropical IPA",
+      "reason": "Exact UPC records establish the complete Tropic Force Tropical IPA expression; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-89860759",
+          "supports": "Exact UPC 754527012274 identifies Voodoo Ranger Tropic Force Tropical IPA."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kroger.com/p/new-belgium-voodoo-ranger-tropic-force-tropical-ipa-craft-beer-single-can/0075452701227",
+          "supports": "Independent exact UPC 754527012274 record confirms Voodoo Ranger Tropic Force Tropical IPA."
+        }
+      ]
+    },
+    {
+      "sku": "1058",
+      "expectedUpc": "089819113774",
+      "expectedSourceRow": 664,
+      "expectedRawFieldsSha256": "7a18e675d8dc915b418eb8f059634a7aeec22348bdd85369db80bb5d7f4467c9",
+      "expectedPublicName": "Beringer Pinot Grigio Founders Estate",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Founders' Estate Pinot Grigio",
+      "reason": "Exact UPC records establish the canonical Founders' Estate product-line placement and correct the public-title word order without changing variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://spliquor.ca/products/beringer-founders-estate-pinot-grigio-2020-750-ml",
+          "supports": "Exact UPC 089819113774 identifies Beringer Founders' Estate Pinot Grigio in a 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://encorpatl.ca/wp-content/uploads/2023/10/alcohol-desc-oct-4-2023.pdf",
+          "supports": "Independent exact UPC 089819113774 record identifies Beringer Founders Estate Pinot Grigio 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "101424",
+      "expectedUpc": "072600054202",
+      "expectedSourceRow": 6604,
+      "expectedRawFieldsSha256": "6c961c43a9674656efb9cc7592d72e75d4feedb32213c42a5b4a5e0a260f82db",
+      "expectedPublicName": "HERR'S CHOMZ CRUNCHY",
+      "expectedLabel": "1 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Herr's Crunchy Cheesy Chomz Cheddaboom!",
+      "reason": "Herr's official exact-UPC product payload and the inspected package establish the Crunchy Cheesy Chomz Cheddaboom expression missing from the abbreviated public title.",
+      "evidence": [
+        {
+          "kind": "manufacturer_product_payload",
+          "url": "https://shop.herrs.com/products/crunchy-cheesy-chomz-cheddaboom.js",
+          "supports": "Herr's official product payload maps exact UPC 072600054202 to Crunchy Cheesy Chomz - Cheddaboom! in the 1 oz bag format."
+        }
+      ]
+    },
+    {
+      "sku": "5935",
+      "expectedUpc": "072718101508",
+      "expectedSourceRow": 8386,
+      "expectedRawFieldsSha256": "38a57df44ee306320ccb57c4c2f947b5611c7f9d9f459b01057127c1c487b217",
+      "expectedPublicName": "MR. PURE APPLE CRANBERRY",
+      "expectedLabel": "64 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Mr. Pure Apple Cranberry Juice",
+      "reason": "Exact UPC records establish the complete Mr. Pure Apple Cranberry Juice title while preserving the verified 64 oz variant.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://247bits.com/product-category/4-beverages/6-juice/52-juice-30-64oz/",
+          "supports": "Exact UPC 072718101508 identifies Mr. Pure Apple Cranberry Juice 64 oz."
+        },
+        {
+          "kind": "manufacturer_record",
+          "url": "https://nutritiondatalist.com/product-manufacturer/home-juice-company",
+          "supports": "Manufacturer-associated food record identifies exact UPC 072718101508 as a Mr. Pure apple cranberry juice drink."
+        }
+      ]
+    },
+    {
+      "sku": "6358",
+      "expectedUpc": "074090511166",
+      "expectedSourceRow": 7792,
+      "expectedRawFieldsSha256": "0645ea0771bad652f6b199c1201111f293808b566d193a0f16153c5ded495244",
+      "expectedPublicName": "Old time Ginger",
+      "expectedLabel": "20 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Old Tyme Ginger Ale",
+      "reason": "Exact UPC evidence establishes the Old Tyme spelling and Ginger Ale product type without changing the 20 oz single-bottle variant.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.fcfarmandhome.com/3149829/product/y/lipari-old-tyme-304083",
+          "supports": "Exact UPC 074090511166 identifies Lipari Old Tyme Ginger Ale, 20 oz."
+        }
+      ]
+    },
+    {
+      "sku": "6669",
+      "expectedUpc": "082844059420",
+      "expectedSourceRow": 4228,
+      "expectedRawFieldsSha256": "3c13060db727a17f6031b2b6b9d26c96d5f8e9234e7682bf45f0c2759cb51ffc",
+      "expectedPublicName": "Pineapple Jack Rum Jack Rum Flavors",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Rum",
+      "proposedPublicTitle": "Pineapple Jack Pineapple Coconut Rum",
+      "reason": "Exact UPC and inspected-package evidence establish the Pineapple Coconut Rum expression rather than preserving an accidental repeated source phrase.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://internationalpointofsale.com/Database/PDF/Liquor%20Database%20CT.pdf",
+          "supports": "Exact UPC 082844059420 identifies Pineapple Jack Rum in a 750 mL format."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://cdn.saucey.com/staging/products/RU-C90132-750ML/image_large.jpg",
+          "supports": "The inspected complete package for exact UPC 082844059420 visibly identifies Pineapple Jack Pineapple Coconut Rum."
+        }
+      ]
+    },
+    {
+      "sku": "7514",
+      "expectedUpc": "070310011652",
+      "expectedSourceRow": 4822,
+      "expectedRawFieldsSha256": "03de2d00f768f1fd779aa52060e323e37d1cf6ebf5a70913e974ccc648b8188e",
+      "expectedPublicName": "SEAGRAMS STRA DEQ",
+      "expectedLabel": "4-pack · 16 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Seagram's Escapes Strawberry Daiquiri",
+      "reason": "Exact UPC distributor and inspected four-can-pack evidence expand the abbreviated source title to the verified Seagram's Escapes Strawberry Daiquiri expression.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www2.myfloridalicense.com/abt/auditing/malt_prices/peace_river/documents/2015-121.pdf",
+          "supports": "Exact UPC 070310011652 identifies Seagram's Escapes Strawberry Daiquiri in four 16 oz cans."
+        },
+        {
+          "kind": "product_listing",
+          "url": "https://www.gotoliquorstore.com/p/seagrams-escapes-strawberry-daiquiri/1969",
+          "supports": "The product record confirms exact UPC 070310011652 and the Seagram's Escapes Strawberry Daiquiri expression."
+        }
+      ]
+    },
+    {
+      "sku": "8085",
+      "expectedUpc": "087872633956",
+      "expectedSourceRow": 9574,
+      "expectedRawFieldsSha256": "611beb58738e8a07ce578e61f5210641e027838ee003ec923e2dcbde7132e17e",
+      "expectedPublicName": "STELLA ROSA MANGO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "wine",
+      "proposedPublicTitle": "Stella Rosa Tropical Mango",
+      "reason": "Exact UPC records establish Tropical Mango as the material flavor identity of this 750 mL Stella Rosa wine.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/18433549-stella-rosa-tropical-mango-750-ml",
+          "supports": "Exact UPC 087872633956 identifies Stella Rosa Tropical Mango, 750 mL."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://morewines.com/stella-rosa-tropical-mango-750ml/",
+          "supports": "Independent exact UPC 087872633956 record confirms Stella Rosa Tropical Mango 750 mL."
+        }
       ]
     }
   ]
