@@ -2566,6 +2566,25 @@
           "supports": "UPC 308691156106: reviewed product expression."
         }
       ]
+    },
+    {
+      "sku": "988",
+      "expectedUpc": "079114211435",
+      "expectedSourceRow": 602,
+      "expectedRawFieldsSha256": "1f3a46431862487033f3c052de5a4d796a56652eea74fb45cf12b46fa46283c0",
+      "expectedPublicName": "Beef Pizza puff",
+      "expectedLabel": "6 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Iltaco Beef Pizza Puff",
+      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/153766-iltaco-foods-puff-beef-pizza-6-oz",
+          "supports": "UPC 079114211435 identifies the Iltaco Beef Pizza Puff expression."
+        }
+      ]
     }
   ]
 }

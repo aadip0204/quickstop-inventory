@@ -5544,6 +5544,15 @@
       "action": "size_needs_confirmation",
       "reason": "Original description says 16 oz with a question mark; exact UPC listings identify a 6-pack of 16.9 oz bottles. Package and size need confirmation.",
       "reviewedOn": "2026-10-29"
+    },
+    {
+      "sku": "786",
+      "expectedUpc": "077817286064",
+      "expectedNameSha256": "6d04710af416ef29b7c62b6ed1c90f4b6389157d5119a9126aff378d696e905e",
+      "expectedSourceRecordSha256": "262941ccd9a53a5c6c13b9b8b5e7626c21d6d050aab710e2dc403cc930bef4da",
+      "action": "size_needs_confirmation",
+      "reason": "Original description says 2.75 oz, while an exact UPC inventory listing identifies a 3.5 oz bag; package size needs confirmation.",
+      "reviewedOn": "2026-10-29"
     }
   ]
 }

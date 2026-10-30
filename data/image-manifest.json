@@ -1107,15 +1107,12 @@
       "expectedUpc": "079581184072",
       "expectedName": "CALYPSO TRIPLE MELON LEMONADE",
       "expectedLabel": "16 oz",
-      "src": "images/products/sku-1629.jpg",
+      "src": "images/products/sku-1629.png",
       "alt": "CALYPSO TRIPLE MELON LEMONADE — 16 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0079581184072",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/958/118/4072/7.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
-      "sha256": "f200bc27f2665e6af606b1d012f465711c4ce6ad59eb8ce0a570ddf0a7b7a360",
-      "verifiedOn": "2026-10-26",
+      "sourcePage": "https://www.super99.com/20112807-calypso-lemonade-triple-melon-20oz",
+      "sourceImageUrl": "https://www.super99.com/media/catalog/product/2/0/20112807.png?canvas=700%3A700&fit=bounds&format=jpeg&height=700&quality=80&width=700",
+      "sha256": "9842a310c467482a809dae65d6c33137f7a4412a2b2ea949b175d546686542a5",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -1123,7 +1120,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4729",
@@ -2579,13 +2578,10 @@
       "expectedLabel": "0.55 oz",
       "src": "images/products/sku-300.jpg",
       "alt": "Airheads White Mystery — 0.55 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0073390002213",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/339/000/2213/5.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
-      "sha256": "3dbf809371f327475e3bf147cfe2c27a950bf38517d0af482daf03c59341a0da",
-      "verifiedOn": "2026-10-27",
+      "sourcePage": "https://www.walmart.com/ip/43978158",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/c9a2b08b-5ce1-4cd4-aa88-aea8707c050e.b82f08f5af753ff6a11aa9c40893a544.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768",
+      "sha256": "74ccc14b5bb2b9a8b350583b5c762862bc3da9f2504b6e7ed431d01d9fd3da98",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -2593,22 +2589,21 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "299",
       "expectedUpc": "073390002039",
       "expectedName": "Airheads Watermelon",
       "expectedLabel": "0.55 oz",
-      "src": "images/products/sku-299.jpg",
+      "src": "images/products/sku-299.png",
       "alt": "Airheads Watermelon — 0.55 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0073390002039",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/339/000/2039/5.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
-      "sha256": "a740573bb0ef60a00c157b6fc0fca5e37b7144b111c81d6d771485e984beb464",
-      "verifiedOn": "2026-10-27",
+      "sourcePage": "https://www.freshbybrookshires.com/product/airheads-candy-watermelon-id-00073390002039",
+      "sourceImageUrl": "https://images.cdn.retail.brookshires.com/detail/00073390002039_C1C1.jpeg",
+      "sha256": "663f6c9433653c3f5f33c02f3efc8e8c0c4297ea2f46c6b83762ea422c0f3296",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -2616,7 +2611,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "8815",
@@ -3177,13 +3174,10 @@
       "expectedLabel": "18 oz",
       "src": "images/products/sku-806.jpg",
       "alt": "Bai Antioxidant Infusion Brasilia Blueberry — 18 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0852311004013",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/231/100/4013/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "thaialagata / Open Food Facts",
-      "sha256": "d1136297146e47f1687ce8a78e2a61eea2fceb3cb650cc7e51da480f9302df40",
-      "verifiedOn": "2026-10-27",
+      "sourcePage": "https://www.super1foods.com/sm/planning/rsid/633/product/bai-brasilia-blueberry-pet-ls12-18-fluid-ounce-id-00852311004013",
+      "sourceImageUrl": "https://images.cdn.retail.brookshires.com/detail/00852311004013_C1C1.jpeg",
+      "sha256": "eea59cc0cf722f7982cbb5e24dd163dac70c742f860a8ac92c624f51a67fbe54",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -3191,7 +3185,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "804",
@@ -3200,13 +3196,10 @@
       "expectedLabel": "18 oz",
       "src": "images/products/sku-804.jpg",
       "alt": "Bai Antioxidant Cocofusion Puna Coconut Pineapple — 18 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0813694023466",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/369/402/3466/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
-      "sha256": "e22fdf112722bc27f5d92e87e111f04be49a0940dfb61828decbc6fc15272572",
-      "verifiedOn": "2026-10-27",
+      "sourcePage": "https://lordsofthedrinks.com/products/bai-cocofusions-puna-coconut-pineapple-antioxidant-infused-beverage-18-fl-oz",
+      "sourceImageUrl": "https://lordsofthedrinks.com/cdn/shop/files/715s_6K5_gL.jpg?v=1776403438",
+      "sha256": "dd025ac2d0c7e334364c2cdae1ca93058837082380e9cbcfcff2d8bf87e448a8",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -3214,7 +3207,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2840",
@@ -3269,13 +3264,10 @@
       "expectedLabel": "16 oz",
       "src": "images/products/sku-1611.jpg",
       "alt": "Calypso Strawberry Lemonade — 16 oz bottle packaging",
-      "sourcePage": "https://world.openfoodfacts.org/product/0079581184027",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/958/118/4027/5.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "thaialagata / Open Food Facts",
-      "sha256": "72b7d6f550b50106becb029220f1d693c235905f07588317d1298dfd5b991bfa",
-      "verifiedOn": "2026-10-27",
+      "sourcePage": "https://www.partykungen.se/calypso-strawberry-lemonade-93595.html",
+      "sourceImageUrl": "https://images.partyking.org/fit-in/1300x0/products/original/calypso-strawberry-lemonade-93595-1.jpg",
+      "sha256": "c364c497e2433c4b277435c83fc3b120d35805feb288dcb5b06f51abad16e038",
+      "verifiedOn": "2026-10-29",
       "verification": {
         "brand": true,
         "expression": true,
@@ -3283,7 +3275,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "8439",
@@ -18102,6 +18096,94 @@
       "sourcePage": "https://www.holidaywholesale.com/wp-content/uploads/2018_05_May_HolidayHighlights_LR_.pdf",
       "sourceImageUrl": "https://www.twix.com/sites/g/files/fnmzdf236/files/2023-10/l9dmcmluctbbrkmgekfi.png",
       "sha256": "f4d64cb6725541e60fee43d2d49f6d84c0f609367bee1a601f69cbc4076d007b",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "988",
+      "expectedUpc": "079114211435",
+      "expectedName": "Iltaco Beef Pizza Puff",
+      "expectedLabel": "6 oz",
+      "src": "images/products/sku-988.png",
+      "alt": "Iltaco Beef Pizza Puff — 6 oz package",
+      "sourcePage": "https://www.kroger.com/p/iltaco-beef-pizza-puffs/0007911421143",
+      "sourceImageUrl": "https://www.kroger.com/product/images/xlarge/front/0007911421143",
+      "sha256": "1e7a9f421c7d80dbc3fb124d5be1e17432e0226a179585a44c8482da4c1792c4",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "264",
+      "expectedUpc": "835229000100",
+      "expectedName": "Absolut Vodka",
+      "expectedLabel": "200 mL",
+      "src": "images/products/sku-264.png",
+      "alt": "Absolut Vodka — 200 mL bottle",
+      "sourcePage": "https://goodpour.com/products/absolut-vodka",
+      "sourceImageUrl": "https://goodpour.com/cdn/shop/files/absolut-vodka-200ML.png?v=1716350186",
+      "sha256": "c45001e9080337613ea0f6da98576909e0e30e78711555556d4e19775078f434",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "266",
+      "expectedUpc": "835229010109",
+      "expectedName": "Absolut A Tribute to Gilbert Baker Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-266.jpg",
+      "alt": "Absolut A Tribute to Gilbert Baker Vodka — 750 mL bottle",
+      "sourcePage": "https://www.universalfws.com/product/absolut-vodka-a-tribute-to-gilbert-baker-750ml/",
+      "sourceImageUrl": "https://www.universalfws.com/wp-content/uploads/2025/06/ABSOLUT-VODKA-A-TRIBUTE-TO-GILBERT-BAKER-750ML.jpg",
+      "sha256": "2b3a11c741f603296e23d1490c5b80c4b1ee7d6bac8275856888737919b96292",
+      "verifiedOn": "2026-10-29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "268",
+      "expectedUpc": "835229010024",
+      "expectedName": "Absolut Chicago Limited Edition Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-268.jpg",
+      "alt": "Absolut Chicago Limited Edition Vodka — 750 mL bottle",
+      "sourcePage": "https://caskcartel.com/products/absolut-chicago-limited-edition-vodka",
+      "sourceImageUrl": "https://caskcartel.com/cdn/shop/products/vodka_abs53.jpg?v=1676913034&width=1214",
+      "sha256": "6766d48ef5faf34fd06b698385a3a0949cb25db89c7e66afa0994824cd862381",
       "verifiedOn": "2026-10-29",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
