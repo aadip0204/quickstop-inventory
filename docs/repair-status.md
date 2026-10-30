@@ -23,7 +23,7 @@ Professional image sourcing is ongoing. Direct manufacturer and retailer researc
 ## Implementation and checks
 
 - Warm, responsive retail layout with the supplied logo, seven main categories and all 29 original departments.
-- Product cards show no photo-source lines. Required attribution and licenses remain on a separate Image credits page linked once in the footer and regenerated with the catalog.
+- Product cards and the customer-facing footer show no photo-source or credit links. Required attribution and licenses remain in a generated compliance record, while source audit details remain private.
 - Search covers every retained SKU/UPC, product name and size. Exact SKU matches appear first, followed by exact UPC matches, while partial results remain available; pagination limits rendering to 36 cards without limiting the catalog.
 - No prices or stock quantities are emitted by the public data builder. Current legacy price-bearing files and unverified old photographs are removed. Older Git history is unchanged.
 - Loading, retry, empty results, keyboard navigation, selected sizes and filter URL state are implemented.
