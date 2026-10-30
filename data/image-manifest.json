@@ -19823,6 +19823,270 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1051",
+      "expectedUpc": "089819008728",
+      "expectedName": "Beringer Founders' Estate Merlot",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1051.jpg",
+      "alt": "Beringer Founders' Estate Merlot — 750 mL bottle",
+      "sourcePage": "https://theliquorbarn.com/products/beringer-founders-estate-merlot",
+      "sourceImageUrl": "https://theliquorbarn.com/cdn/shop/files/Beringer-Founders-Estate-Merlot__49701.jpg?crop=center&height=1200&v=1730483365&width=1200",
+      "sha256": "4aa815b455e3c7777b3d157d34eb11c41d65bd477ea5fa307442bd4792c889c5",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1055",
+      "expectedUpc": "089819542550",
+      "expectedName": "Beringer Main & Vine Pink Moscato",
+      "expectedLabel": "1.5 L",
+      "src": "images/products/sku-1055.jpg",
+      "alt": "Beringer Main & Vine Pink Moscato — 1.5 L bottle",
+      "sourcePage": "https://www.kroger.com/p/beringer-main-vine-pink-moscato-california-rose-wine/0008981954255",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_69e02f05-e94c-4abf-a500-368ab0af11de.jpg",
+      "sha256": "a664501cd73f148ba339616fe55bd23cc37eb2fee5b0fd1d797459100dbe743c",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1059",
+      "expectedUpc": "089819760091",
+      "expectedName": "Beringer Main & Vine Pinot Grigio",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1059.jpg",
+      "alt": "Beringer Main & Vine Pinot Grigio — 750 mL bottle",
+      "sourcePage": "https://theliquorbarn.com/products/beringer-main-vine-pinot-grigio",
+      "sourceImageUrl": "https://theliquorbarn.com/cdn/shop/files/Beringer-Main-Vine-Pinot-Grigio__81577.jpg?crop=center&height=1200&v=1730481126&width=1200",
+      "sha256": "178ab459c2cb5f4aee63771a61785a32d24741a4b51911c9107b91e8d3cbd19a",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2862",
+      "expectedUpc": "081434100108",
+      "expectedName": "Diseno Malbec",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2862.png",
+      "alt": "Diseño Malbec — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-13358996",
+      "sourceImageUrl": "https://www.instacart.com/assets/domains/product-image/file/large_6b0f457b-4dc0-4b15-aab3-146f6faccaca.png",
+      "sha256": "eeeaa37b892245e1f0285188dc3adf8f757464c285bfa21bbf0f9869d38cd69c",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5605",
+      "expectedUpc": "635985258759",
+      "expectedName": "Mike's Harder Lemonade",
+      "expectedLabel": "Single · 16 oz",
+      "src": "images/products/sku-5605.png",
+      "alt": "Mike's Harder Lemonade — 16 oz can",
+      "sourcePage": "https://shop.foodland.com/product/mikes-harder-lemonade-635985258759",
+      "sourceImageUrl": "https://i5.walmartimages.com/seo/Mike-s-HARDER-Lemonade-Single-Serve-16-fl-oz-Can-8-ABV_a311f514-f085-4372-89b4-8a4768b35254.eda36c81c6dd7ca3d142846617900e60.png?odnBg=FFFFFF&odnHeight=640&odnWidth=640",
+      "sha256": "d55cbc33db9e23f004d1fde6230a0586981fcba89395707018931ba4f150f490",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6133",
+      "expectedUpc": "085000019511",
+      "expectedName": "New Amsterdam Vodka",
+      "expectedLabel": "1.75 L",
+      "src": "images/products/sku-6133.jpg",
+      "alt": "New Amsterdam Vodka — 1.75 L bottle",
+      "sourcePage": "https://abc2.nc.gov/Pricing/ViewItemDetails/140524",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/cde788dc-55e0-4a6b-9dda-137326eff1eb_2.85b175978e70411c78fa4eb3748d6cd2.jpeg",
+      "sha256": "6bcc410f590264ea48910afb17a5a06ed35b0c805c877bc8306b4861385c41bd",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6154",
+      "expectedUpc": "085000020326",
+      "expectedName": "New Amsterdam Red Berry Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6154.jpg",
+      "alt": "New Amsterdam Red Berry Vodka — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-47572797",
+      "sourceImageUrl": "https://www.thebarreltap.com/cdn/shop/files/NewAmsterdamRedBerryVodka750mL.webp?v=1770155617",
+      "sha256": "54a694d1670412d2c90e1679f3cf399ca0386214e05a7b5f64eea8a6cdb1851e",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6157",
+      "expectedUpc": "085000022313",
+      "expectedName": "New Amsterdam Pineapple Flavored Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6157.jpg",
+      "alt": "New Amsterdam Pineapple Flavored Vodka — 750 mL bottle",
+      "sourcePage": "https://www.target.com/p/-/A-50483305",
+      "sourceImageUrl": "https://www.thebarreltap.com/cdn/shop/files/NewAmsterdamPineappleVodka750mL_1.webp?v=1792737253",
+      "sha256": "48620569e51e5b289ac60b889c46d04aba457c883a33bebbc47873a16d68c2c1",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6859",
+      "expectedUpc": "088004000332",
+      "expectedName": "Rich & Rare Canadian Whiskey",
+      "expectedLabel": "1.75 L",
+      "src": "images/products/sku-6859.jpg",
+      "alt": "Rich & Rare Canadian Whiskey — 1.75 L bottle",
+      "sourcePage": "https://shopwoodmans.com/store/woodmans-food-markets/products/3053519-r-r-whisky-canadian-1-75-lt",
+      "sourceImageUrl": "https://www.universalfws.com/wp-content/uploads/2024/10/088004000332.jpg",
+      "sha256": "0255a35d735c69d5b3acafc01559b7a5ab469efa74355c7266c935e18e4187f6",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7504",
+      "expectedUpc": "720815987234",
+      "expectedName": "Seagram's Red Berry Flavored Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7504.jpg",
+      "alt": "Seagram's Red Berry Flavored Vodka — 750 mL bottle",
+      "sourcePage": "https://morewines.com/seagrams-red-berry-vodka-750ml/",
+      "sourceImageUrl": "https://www.remedyliquor.com/cdn/shop/products/ci-seagrams-red-berry-flavored-vodka-742760c11121aeb6.jpg?v=1655362941&width=1445",
+      "sha256": "4bdb8c6e161bc92f4d2eb420c4b0dfcb72e85a8694b0fd902c3f11755a96ed67",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7515",
+      "expectedUpc": "080432802540",
+      "expectedName": "Seagram's Escapes Strawberry Daiquiri",
+      "expectedLabel": "4-pack",
+      "src": "images/products/sku-7515.jpg",
+      "alt": "Seagram's Escapes Strawberry Daiquiri — 4-pack",
+      "sourcePage": "https://theliquorbarn.com/collections/flavored-malt-beverages/products/seagrams-escapes-strawberry-daiquiri-4pk",
+      "sourceImageUrl": "https://i5.walmartimages.com/asr/f3c7f9e6-3261-4633-8274-912e3940c196.16ab3265405709371d65d4c00b9bf1c1.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768",
+      "sha256": "586427749345a8a8c9dae704210e99f68c60008f59d866c3bc91925a77be2a23",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101340",
+      "expectedUpc": "085000024225",
+      "expectedName": "Peter Vella Moscato Sangria Box",
+      "expectedLabel": "5 L",
+      "src": "images/products/sku-101340.jpg",
+      "alt": "Peter Vella Moscato Sangria — 5 L box",
+      "sourcePage": "https://www.cub.com/store/cub-liquors/products/3216456-peter-vella-moscato-sangria-5-l",
+      "sourceImageUrl": "https://cdn11.bigcommerce.com/s-h556z48a5y/images/stencil/1280x1280/products/156/6725/08500002422__54037.1608575414.jpg?c=1",
+      "sha256": "ffc722a84f04a5a6db136304718b55be33b258dfb85f776708eb6eeca0289ccc",
+      "verifiedOn": "2026-10-30",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

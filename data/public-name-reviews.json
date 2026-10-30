@@ -2752,6 +2752,156 @@
           "supports": "UPC 635985260875 identifies White Claw Mango as a six-can package."
         }
       ]
+    },
+    {
+      "sku": "1051",
+      "expectedUpc": "089819008728",
+      "expectedSourceRow": 656,
+      "expectedRawFieldsSha256": "5d2fa24a73fec4b9daccc14e11f910bf2af208763bb3b19b15c5a41761928d11",
+      "expectedPublicName": "Beringer Merlot Founders Estate",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Founders' Estate Merlot",
+      "reason": "Exact UPC evidence restores the verified product-line and varietal order while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://www.buycott.com/upc/089819008728", "supports": "UPC 089819008728 identifies Beringer Founders' Estate Merlot in a 750 mL bottle."}
+      ]
+    },
+    {
+      "sku": "1055",
+      "expectedUpc": "089819542550",
+      "expectedSourceRow": 660,
+      "expectedRawFieldsSha256": "447887239a0be96036ddc0974ec94e05982a712fc56ccdb1e6e6a62a64f375fb",
+      "expectedPublicName": "Beringer Pink Moscato",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Pink Moscato",
+      "reason": "Exact UPC evidence restores the material Main & Vine product line while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://www.kroger.com/p/beringer-main-vine-pink-moscato-california-rose-wine/0008981954255", "supports": "UPC 089819542550 identifies Beringer Main & Vine Pink Moscato in a 1.5 L bottle."}
+      ]
+    },
+    {
+      "sku": "1059",
+      "expectedUpc": "089819760091",
+      "expectedSourceRow": 663,
+      "expectedRawFieldsSha256": "a19a3dc21180aea472450e5f9f88323596fc00ead3ba13fff78a88f2d33ebc09",
+      "expectedPublicName": "Beringer Pinot Grigio",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Pinot Grigio",
+      "reason": "Exact UPC evidence restores the material Main & Vine product line while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://www.foodbasics.ca/aisles/beer-wine/wines-cocktails-coolers/white-wine/american-white-wine/p/089819760091", "supports": "UPC 089819760091 identifies Beringer Main & Vine Pinot Grigio in a 750 mL bottle."}
+      ]
+    },
+    {
+      "sku": "5605",
+      "expectedUpc": "635985258759",
+      "expectedSourceRow": 3626,
+      "expectedRawFieldsSha256": "d7d059187dafc47d4c80fa329b8d39eb1b69ecf155e116a030f60b1e30c3e8f7",
+      "expectedPublicName": "Mikes Lemonade Can - Single",
+      "expectedLabel": "Single · 16 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Mike's Harder Lemonade",
+      "reason": "Exact UPC evidence restores the material Harder expression and apostrophe while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://shop.foodland.com/product/mikes-harder-lemonade-635985258759", "supports": "UPC 635985258759 identifies Mike's Harder Lemonade as a 16 oz single can."}
+      ]
+    },
+    {
+      "sku": "6133",
+      "expectedUpc": "085000019511",
+      "expectedSourceRow": 7790,
+      "expectedRawFieldsSha256": "94452c74182cac212c7231c7e78d7188f00395f425da15a9704ee58e6d2bf7e7",
+      "expectedPublicName": "New Amsterdam Regular",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "New Amsterdam Vodka",
+      "reason": "Exact UPC evidence restores the verified vodka product type while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/140524", "supports": "UPC 085000019511 identifies New Amsterdam Vodka in a 1.75 L bottle."}
+      ]
+    },
+    {
+      "sku": "6154",
+      "expectedUpc": "085000020326",
+      "expectedSourceRow": 9570,
+      "expectedRawFieldsSha256": "70d46e3f3c3122e598c68dc981668bf1a6147b7f5fc0827b5a1de83b7faf4b35",
+      "expectedPublicName": "New Amsterdam Berry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "New Amsterdam Red Berry Vodka",
+      "reason": "Exact UPC evidence restores the material Red Berry flavor and vodka product type while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://www.target.com/p/-/A-47572797", "supports": "UPC 085000020326 identifies New Amsterdam Red Berry Flavored Vodka in a 750 mL bottle."}
+      ]
+    },
+    {
+      "sku": "6157",
+      "expectedUpc": "085000022313",
+      "expectedSourceRow": 7791,
+      "expectedRawFieldsSha256": "3692c569515b5f2fe73a1b785ed6064cb3e9edd3741fd68be18f7237e8b82a6b",
+      "expectedPublicName": "New Amsterdam Pineapple",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "New Amsterdam Pineapple Flavored Vodka",
+      "reason": "Exact UPC evidence restores the full flavor and vodka identity while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://www.target.com/p/-/A-50483305", "supports": "UPC 085000022313 identifies New Amsterdam Pineapple Vodka in a 750 mL bottle."}
+      ]
+    },
+    {
+      "sku": "6859",
+      "expectedUpc": "088004000332",
+      "expectedSourceRow": 9573,
+      "expectedRawFieldsSha256": "e8ad91cdc07c035a94c599f5d162ebf6043e8597e53742500a97b1673f73bc33",
+      "expectedPublicName": "R & R",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Rich & Rare Canadian Whiskey",
+      "reason": "Exact UPC evidence expands the abbreviated source title into the verified brand and product type while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://shopwoodmans.com/store/woodmans-food-markets/products/3053519-r-r-whisky-canadian-1-75-lt", "supports": "UPC 088004000332 identifies Rich & Rare Canadian Whiskey in a 1.75 L bottle."}
+      ]
+    },
+    {
+      "sku": "7504",
+      "expectedUpc": "720815987234",
+      "expectedSourceRow": 4814,
+      "expectedRawFieldsSha256": "2cb560fa111d15def4fb3b0ded9a36996a7e0184357b230c0321ae9fae1aca90",
+      "expectedPublicName": "Seagrams RED BERRY Vodka",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's Red Berry Flavored Vodka",
+      "reason": "Exact UPC evidence restores the apostrophe and verified flavored expression while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://morewines.com/seagrams-red-berry-vodka-750ml/", "supports": "UPC 720815987234 identifies Seagram's Red Berry Flavored Vodka in a 750 mL bottle."}
+      ]
+    },
+    {
+      "sku": "7515",
+      "expectedUpc": "080432802540",
+      "expectedSourceRow": 7190,
+      "expectedRawFieldsSha256": "598a5d59aa6a5c6176c1dac25c71557074f686eee19016e6a867abb36167be0d",
+      "expectedPublicName": "Seagrams Strawb Daiquiri",
+      "expectedLabel": "4-pack",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Coolers",
+      "proposedPublicTitle": "Seagram's Escapes Strawberry Daiquiri",
+      "reason": "Exact UPC evidence restores the complete product-line and flavor title while preserving source and variant metadata.",
+      "evidence": [
+        {"kind": "exact_upc_listing", "url": "https://theliquorbarn.com/collections/flavored-malt-beverages/products/seagrams-escapes-strawberry-daiquiri-4pk", "supports": "UPC 080432802540 identifies Seagram's Escapes Strawberry Daiquiri as a four-bottle package."}
+      ]
     }
   ]
 }
