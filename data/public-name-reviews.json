@@ -2604,6 +2604,154 @@
           "supports": "UPC 072718101218 identifies Mr. Pure Ruby Red Grapefruit Juice in a 32 fl oz bottle."
         }
       ]
+    },
+    {
+      "sku": "1049",
+      "expectedUpc": "089819001712",
+      "expectedSourceRow": 652,
+      "expectedRawFieldsSha256": "a67ddfa566e1fdcae3289de73d9d2849d16d520e7abc3e20abe3d8bb3f28f122",
+      "expectedPublicName": "BERINGER CHARDONNAY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Chardonnay",
+      "reason": "Exact UPC evidence restores the material Main & Vine product line in the public title while preserving source and variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cbcliquors.com/product/main-vine-chardonnay-beringer/40448178?format=43134945",
+          "supports": "UPC 089819001712 identifies Beringer Main & Vine Chardonnay in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "2480",
+      "expectedUpc": "080660954011",
+      "expectedSourceRow": 6592,
+      "expectedRawFieldsSha256": "3ef8a2b89925800c787cbdb26dd237f1d65945303dc1757944cfba29fcf83037",
+      "expectedPublicName": "Coronita",
+      "expectedLabel": "6-pack · 7 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Corona Extra Coronita",
+      "reason": "Exact UPC evidence restores the material Corona Extra brand in the public title while preserving source and variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.premiergourmet.com/coronita-extra-splits-6-pack-of-7-oz-bottles-080660954011.html",
+          "supports": "UPC 080660954011 identifies Corona Extra Coronita as six 7 oz bottles."
+        }
+      ]
+    },
+    {
+      "sku": "3106",
+      "expectedUpc": "088004021344",
+      "expectedSourceRow": 9555,
+      "expectedRawFieldsSha256": "9106a19fc51d953f86cacd8e0484e0b646061c36350991b7ec74d80fc2a38080",
+      "expectedPublicName": "EAGLE RARE 10YR",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Eagle Rare 10 Year Kentucky Straight Bourbon Whiskey",
+      "reason": "Manufacturer and exact UPC evidence expand the abbreviated public title while preserving source and variant metadata.",
+      "evidence": [
+        {
+          "kind": "manufacturer_record",
+          "url": "https://www.buffalotracedistillery.com/our-brands/eagle-rare/eagle-rare-10/",
+          "supports": "Manufacturer identifies Eagle Rare Aged 10 Years Kentucky Straight Bourbon Whiskey."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.ohlq.com/liquor/whiskey/american/bourbon/eagle-rare-10-year",
+          "supports": "UPC 088004021344 identifies the Eagle Rare 10 Year 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "101249",
+      "expectedUpc": "857744001318",
+      "expectedSourceRow": 3021,
+      "expectedRawFieldsSha256": "cf3c4d0c2df02924c1e1adcf156a3f823587c7ad090b96c495b6c026f633cb02",
+      "expectedPublicName": "JOSH CELLARS CABERNET",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "wine",
+      "proposedPublicTitle": "Josh Cellars Cabernet Sauvignon",
+      "reason": "Manufacturer and exact UPC evidence expand the abbreviated public title while preserving source and variant metadata.",
+      "evidence": [
+        {
+          "kind": "manufacturer_record",
+          "url": "https://www.joshcellars.com/products/josh-cellars-cabernet-sauvignon",
+          "supports": "Manufacturer identifies Josh Cellars Cabernet Sauvignon."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/josh-cellars-cabernet-sauvignon-857744001318",
+          "supports": "UPC 857744001318 identifies Josh Cellars Cabernet Sauvignon in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "5360",
+      "expectedUpc": "086024007843",
+      "expectedSourceRow": 7771,
+      "expectedRawFieldsSha256": "655e3daf620b1bc70b0c66cb15b522f06798e10919d1c11eeb448192649898bf",
+      "expectedPublicName": "Margaritaville Silver",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Margaritaville Silver Tequila",
+      "reason": "Exact UPC evidence adds the verified product type to the public title while preserving source and variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/155075",
+          "supports": "UPC 086024007843 identifies Margaritaville Silver Tequila in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "5630",
+      "expectedUpc": "083664875238",
+      "expectedSourceRow": 7179,
+      "expectedRawFieldsSha256": "bb7fab47ddf7adde0d68373763ab27086ff74fcc91ecd8a73a35d8638abfa736",
+      "expectedPublicName": "milagro Reposado",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Milagro Reposado Tequila",
+      "reason": "Manufacturer and exact UPC evidence correct capitalization and add the verified product type while preserving source and variant metadata.",
+      "evidence": [
+        {
+          "kind": "manufacturer_record",
+          "url": "https://milagrotequila.com/our-tequilas/reposado",
+          "supports": "Manufacturer identifies Milagro Reposado Tequila."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/164657",
+          "supports": "UPC 083664875238 identifies Milagro Reposado in a 200 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9441",
+      "expectedUpc": "635985260875",
+      "expectedSourceRow": 5998,
+      "expectedRawFieldsSha256": "1172583218e780e2b6650f3c83cdae9ab02843b406615a80ffa097bf815e4d9d",
+      "expectedPublicName": "White ClawMango",
+      "expectedLabel": "6-pack",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "White Claw Mango",
+      "reason": "Exact UPC evidence repairs the missing word break in the public title while preserving source and variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/white-claw-mango-hard-seltzer-cans-pack-of-6-635985260875",
+          "supports": "UPC 635985260875 identifies White Claw Mango as a six-can package."
+        }
+      ]
     }
   ]
 }
