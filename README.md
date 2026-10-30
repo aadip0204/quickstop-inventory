@@ -8,7 +8,7 @@ Run `python3 -m http.server 8765 --bind 127.0.0.1` in this directory, then open 
 
 ## Private inventory build
 
-Keep the original CSV and all private reports **outside this repository**. Never upload the source export, raw backups, or reconciliation records: they contain private commercial fields. The builder accepts explicit paths and emits a field-allowlisted public catalog. See `python3 scripts/build_catalog.py --help` for exact options.
+Keep the original CSV, private reports, and direct-image provenance evidence **outside this repository**. Never upload the source export, raw backups, reconciliation records, or `direct-reference-evidence-v1.json`: they contain private commercial or research fields. The builder accepts explicit paths and emits a field-allowlisted public catalog. See `python3 scripts/build_catalog.py --help` for exact options.
 
 The original export is immutable. Its SHA-256 is `822ee8b3b623548db0f2ea531aa10c340b160a47afc0d9e88398311ed7fa6882`.
 
@@ -22,7 +22,7 @@ Grouping is conservative: only identical expressions after recognized size/pack 
 
 Explicit trailing BTL/BTLS markers become bottle labels alongside the original measures and pack counts. When size metadata conflicts, the abbreviation stays in the product name and the size remains unconfirmed. Reviewed shopping-category corrections apply only to guarded source SKUs, preserving their original departments.
 
-Reviewed photographs are installed per SKU and shown only for the exact selected size. Product cards and the customer-facing footer show no source or credit links. Required attribution and license details are retained in the generated compliance record, while source and usage notes remain in the private audit. The owner also authorized direct internet product references. Those records use a distinct approval basis and do not claim a license or permission from the copyright holder. Photos remain absent where product identity or professional presentation is unresolved. The builder requires an explicit professional-quality review as well as exact identity checks; handheld and household snapshots are not approved for display. Existing photos from the earlier site were unverified and have been removed. The source-row image audit is private; aggregate status is recorded in `docs/repair-status.md`.
+Reviewed photographs are installed per SKU and shown only for the exact selected size. Product cards and the customer-facing footer show no source or credit links. Provenance for user-authorized direct references is held in an explicit private evidence manifest and is never emitted in public catalog data; the build fails closed without it. Required attribution and license details for separately licensed images remain in the generated compliance record. The owner also authorized direct internet product references. Those records use a distinct approval basis and do not claim a license or permission from the copyright holder. Photos remain absent where product identity or professional presentation is unresolved. The builder requires an explicit professional-quality review as well as exact identity checks; handheld and household snapshots are not approved for display. Existing photos from the earlier site were unverified and have been removed. The source-row image audit is private; aggregate status is recorded in `docs/repair-status.md`.
 
 A CSV comma repair stays isolated from other products. Its image remains blocked unless its source review names the exact current product, size and image hash, confirms all six identity checks, and links manufacturer, exact-UPC and inspected-photo evidence. That exception requires a matching licensed professional image record; it cannot approve another SKU or bypass file-hash validation.
 
@@ -32,7 +32,7 @@ Names may also be checked against a captured manufacturer record that explicitly
 
 ## Validation and deployment
 
-Run the Python tests with `python3 -m unittest discover -s tests -v`, and the frontend tests with `node --test tests/catalog-ui.test.cjs`. For full-source reconciliation, set `QUICKSTOP_PRIVATE_INPUT` to the absolute CSV path when running the Python tests. Never place the private CSV in CI.
+Run the Python tests with `python3 -m unittest discover -s tests -v`, and the frontend tests with `node --test tests/catalog-ui.test.cjs`. For full-source reconciliation, set `QUICKSTOP_PRIVATE_INPUT` to the absolute CSV path and `QUICKSTOP_PRIVATE_DIRECT_IMAGE_EVIDENCE` to the external direct-image evidence manifest when running the Python tests. The production builder likewise requires `--private-direct-image-evidence PATH` whenever direct-reference images exist. Never place private inputs in CI.
 
 The existing repository deploys GitHub Pages from its publishing branch. Preserve that configuration. Review and test a repair branch, push through authenticated GitHub access, and follow repository branch protections. Do not force-push or rewrite history. `_config.yml` excludes build tools, tests and maintainer reports from Pages.
 

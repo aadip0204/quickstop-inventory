@@ -335,11 +335,84 @@ def is_direct_reference_image(image: dict, sku: str) -> bool:
     return True
 
 
-def apply_verified_images(products: list, image_manifest: dict | None, blocked_skus: set | None = None) -> int:
+DIRECT_REFERENCE_PUBLIC_FIELDS = frozenset({
+    'sku', 'expectedUpc', 'expectedName', 'expectedLabel', 'src', 'alt',
+    'sha256', 'verifiedOn', 'verification', 'usageBasis', 'attributionRequired',
+})
+PRIVATE_DIRECT_IMAGE_EVIDENCE_FIELDS = frozenset({
+    *DIRECT_REFERENCE_PUBLIC_FIELDS, 'sourcePage', 'sourceImageUrl',
+})
+PRIVATE_DIRECT_IMAGE_EVIDENCE_KIND = 'quickstop-direct-reference-image-evidence'
+
+
+def validate_private_direct_image_evidence(image_manifest: dict | None,
+                                           evidence_manifest: dict | None) -> dict:
+    """Bind public direct-image assignments to private provenance evidence.
+
+    The public manifest deliberately contains only the SKU identity, local asset
+    and quality guards required to publish a card. Source URLs for
+    user-authorized direct references belong in an explicitly supplied private
+    input, never in a browser-delivered catalog or manifest.
+    """
+    entries = image_manifest.get('images', []) if isinstance(image_manifest, dict) else []
+    if not isinstance(entries, list):
+        return {}
+    direct_entries = []
+    for entry in entries:
+        if not isinstance(entry, dict):
+            raise ValueError('Image manifest entries must be objects')
+        if entry.get('usageBasis') == 'user_authorized_direct_reference':
+            sku = entry.get('sku')
+            if set(entry) != DIRECT_REFERENCE_PUBLIC_FIELDS:
+                raise ValueError(
+                    'Direct-reference public manifest must not contain provenance URLs or extra fields: '
+                    + str(sku))
+            direct_entries.append(entry)
+    if not direct_entries:
+        if evidence_manifest is not None:
+            if (not isinstance(evidence_manifest, dict)
+                    or evidence_manifest.get('schemaVersion') != 1
+                    or evidence_manifest.get('kind') != PRIVATE_DIRECT_IMAGE_EVIDENCE_KIND
+                    or evidence_manifest.get('entries') != []):
+                raise ValueError('Private direct-image evidence is stale or not applicable')
+        return {}
+    if evidence_manifest is None:
+        raise ValueError('Direct-reference image assignments require a private evidence manifest')
+    if (not isinstance(evidence_manifest, dict)
+            or set(evidence_manifest) != {'schemaVersion', 'kind', 'entries'}
+            or evidence_manifest.get('schemaVersion') != 1
+            or evidence_manifest.get('kind') != PRIVATE_DIRECT_IMAGE_EVIDENCE_KIND
+            or not isinstance(evidence_manifest.get('entries'), list)):
+        raise ValueError('Invalid private direct-image evidence manifest')
+    evidence_by_sku = {}
+    for evidence in evidence_manifest['entries']:
+        if not isinstance(evidence, dict) or set(evidence) != PRIVATE_DIRECT_IMAGE_EVIDENCE_FIELDS:
+            raise ValueError('Private direct-image evidence has missing or unsupported fields')
+        sku = evidence.get('sku')
+        if not isinstance(sku, str) or sku in evidence_by_sku:
+            raise ValueError('Private direct-image evidence SKU is missing or duplicate')
+        for field in ('sourcePage', 'sourceImageUrl'):
+            if not isinstance(evidence.get(field), str) or not re.fullmatch(r'https?://[^\s]+', evidence[field]):
+                raise ValueError(f'Private direct-image evidence requires a valid {field}: {sku}')
+        evidence_by_sku[sku] = evidence
+    direct_by_sku = {entry.get('sku'): entry for entry in direct_entries}
+    if set(direct_by_sku) != set(evidence_by_sku) or len(direct_by_sku) != len(direct_entries):
+        raise ValueError('Private direct-image evidence does not exactly cover public assignments')
+    for sku, entry in direct_by_sku.items():
+        evidence = evidence_by_sku[sku]
+        if any(evidence[field] != entry[field] for field in DIRECT_REFERENCE_PUBLIC_FIELDS):
+            raise ValueError(f'Private direct-image evidence does not match public assignment: {sku}')
+    return evidence_by_sku
+
+
+def apply_verified_images(products: list, image_manifest: dict | None, blocked_skus: set | None = None,
+                          private_direct_image_evidence: dict | None = None) -> int:
     if not image_manifest:
         return 0
     if image_manifest.get('schemaVersion') != 1 or not isinstance(image_manifest.get('images'), list):
         raise ValueError('Invalid image manifest schema')
+    direct_evidence = validate_private_direct_image_evidence(
+        image_manifest, private_direct_image_evidence)
     variants = {v['sku']: (p, v) for p in products for v in p['variants']}
     seen = set()
     image_root = (ROOT / 'images/products').resolve()
@@ -370,21 +443,18 @@ def apply_verified_images(products: list, image_manifest: dict | None, blocked_s
             raise ValueError(f'Product image is empty or hash does not match: {sku}')
         direct_reference = is_direct_reference_image(entry, sku)
         if direct_reference:
-            required = {'sku', 'expectedUpc', 'expectedName', 'expectedLabel', 'src', 'alt',
-                        'sourcePage', 'sourceImageUrl', 'sha256', 'verifiedOn', 'verification',
-                        'usageBasis', 'attributionRequired'}
-            if set(entry) != required:
-                raise ValueError(f'Direct reference image has missing, unsupported or private fields: {sku}')
+            if sku not in direct_evidence:
+                raise ValueError(f'Direct reference image lacks private provenance evidence: {sku}')
             if (not re.fullmatch(r'\d{6,14}', variant['upc'])
                     or variant['label'] in {'Size not specified', 'Size needs confirmation'}):
                 raise ValueError(f'Direct reference image requires a known exact UPC and size: {sku}')
-        required_text = ('alt', 'sourcePage', 'sourceImageUrl', 'verifiedOn')
+        required_text = ('alt', 'verifiedOn')
         if not direct_reference:
-            required_text += ('license', 'licenseUrl', 'attribution')
+            required_text += ('sourcePage', 'sourceImageUrl', 'license', 'licenseUrl', 'attribution')
         for field in required_text:
             if not isinstance(entry.get(field), str) or not entry[field].strip():
                 raise ValueError(f'Image manifest requires {field}: {sku}')
-        for field in ('sourcePage', 'sourceImageUrl') + (() if direct_reference else ('licenseUrl',)):
+        for field in (() if direct_reference else ('sourcePage', 'sourceImageUrl', 'licenseUrl')):
             if not re.fullmatch(r'https?://[^\s]+', entry[field]):
                 raise ValueError(f'Invalid image evidence/license URL: {sku}')
         if PRICE_RE.search(entry['alt']):
@@ -392,7 +462,7 @@ def apply_verified_images(products: list, image_manifest: dict | None, blocked_s
         if direct_reference:
             if not safe_review_text(entry['alt']) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['verifiedOn']):
                 raise ValueError(f'Direct reference image requires safe alt text and review date: {sku}')
-            public_fields = ('src', 'alt', 'sourcePage', 'usageBasis', 'attributionRequired')
+            public_fields = ('src', 'alt', 'usageBasis', 'attributionRequired')
         else:
             public_fields = ('src', 'alt', 'sourcePage', 'license', 'licenseUrl', 'attribution')
         variant['image'] = {field: entry[field] for field in public_fields}
@@ -1006,7 +1076,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
           name_manifest: dict | None = None, source_reviews_manifest: dict | None = None,
           report_additions_manifest: dict | None = None,
           category_reviews_manifest: dict | None = None,
-          public_name_reviews_manifest: dict | None = None) -> tuple[dict, dict]:
+          public_name_reviews_manifest: dict | None = None,
+          private_direct_image_evidence_manifest: dict | None = None) -> tuple[dict, dict]:
     reader = csv.reader(io.StringIO(source_bytes.decode('utf-8-sig'), newline=''))
     headers = next(reader)
     if headers != EXPECTED_HEADERS:
@@ -1293,7 +1364,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 *expected, image_review['expectedImageSha256']):
             raise ValueError(f'Repaired image manifest does not match exact review: {sku}')
         blocked_images.remove(sku)
-    verified_images = apply_verified_images(products, image_manifest, blocked_images)
+    verified_images = apply_verified_images(
+        products, image_manifest, blocked_images, private_direct_image_evidence_manifest)
     categories = []
     for category_id, (label, departments) in CATEGORY_DEPARTMENTS.items():
         # A reviewed item can shop in a different category while retaining its
@@ -1417,13 +1489,16 @@ def render_image_credits(catalog: dict) -> str:
             if not image:
                 continue
             direct_reference = is_direct_reference_image(image, variant['sku'])
-            for key in ('sourcePage',) + (() if direct_reference else ('licenseUrl',)):
+            # Direct-reference provenance is private and never appears in a
+            # browser-delivered catalog or compliance page. Licensed images
+            # retain their required attribution and source links.
+            if direct_reference:
+                continue
+            for key in ('sourcePage', 'licenseUrl'):
                 if not re.fullmatch(r'https?://[^\s]+', image[key]):
                     raise ValueError(f'Invalid image credit link for SKU {variant["sku"]}')
             if not re.fullmatch(r'images/products/[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp)', image['src']):
                 raise ValueError(f'Invalid credited image path for SKU {variant["sku"]}')
-            if direct_reference:
-                continue
             title = escape(product['name'] + ' — ' + variant['label'])
             items.append(
                 f'<li id="sku-{escape(variant["sku"])}" data-sku="{escape(variant["sku"])}">'
@@ -1477,6 +1552,8 @@ def build_argument_parser() -> argparse.ArgumentParser:
     parser.add_argument('--source-date', default='2026-02')
     parser.add_argument('--output', type=Path, default=ROOT / 'catalog.json')
     parser.add_argument('--images', type=Path, default=ROOT / 'data/image-manifest.json')
+    parser.add_argument('--private-direct-image-evidence', type=Path,
+                        help='Required outside-repository provenance manifest when direct-reference images exist')
     parser.add_argument('--names', type=Path, default=ROOT / 'data/name-corrections.json')
     parser.add_argument('--source-reviews', type=Path, default=ROOT / 'data/source-reviews.json')
     parser.add_argument('--report-additions', type=Path, default=ROOT / 'data/report-additions.json')
@@ -1490,6 +1567,10 @@ def main() -> None:
     args = build_argument_parser().parse_args()
     source_path = safe_private_path(args.input)
     private_output = safe_private_path(args.private_output)
+    private_direct_image_evidence = None
+    if args.private_direct_image_evidence:
+        evidence_path = safe_private_path(args.private_direct_image_evidence)
+        private_direct_image_evidence = json.loads(evidence_path.read_text())
     source_bytes = source_path.read_bytes()
     image_manifest = json.loads(args.images.read_text()) if args.images.exists() else None
     name_manifest = json.loads(args.names.read_text()) if args.names.exists() else None
@@ -1499,7 +1580,8 @@ def main() -> None:
     public_name_reviews = (json.loads(args.public_name_reviews.read_text())
                            if args.public_name_reviews.exists() else None)
     catalog, audit = build(source_bytes, args.source_date, image_manifest, name_manifest, source_reviews,
-                           report_additions, category_reviews, public_name_reviews)
+                           report_additions, category_reviews, public_name_reviews,
+                           private_direct_image_evidence)
     private_output.mkdir(parents=True, exist_ok=True, mode=0o700)
     (private_output / 'master-reconciliation.json').write_text(json.dumps(audit, indent=2) + '\n')
     (private_output / 'review-queue.json').write_text(json.dumps([

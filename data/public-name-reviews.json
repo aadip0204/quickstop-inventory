@@ -3717,6 +3717,150 @@
           "supports": "Pillsbury identifies Pillsbury Best All Purpose Flour as available in 2LB packaging."
         }
       ]
+    },
+    {
+      "sku": "1053",
+      "expectedUpc": "089819067244",
+      "expectedSourceRow": 658,
+      "expectedRawFieldsSha256": "5d0cd4ef5989cb83d53bbce7498ea669f1ed2b7a77bf0fb41db28cf725a70c3c",
+      "expectedPublicName": "Beringer Moscato",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Moscato",
+      "reason": "Exact-UPC records establish the Main & Vine product line for this 1.5 L bottle. This companion correction is applied with the 750 mL SKU so matching size variants remain together.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.liquortoship.com/products/beringer-main-and-vine-moscato-1-5l",
+          "supports": "Exact UPC 089819067244 identifies Beringer Main And Vine Moscato in a 1.5 L bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winetransit.com/wine/white-wine/moscato/beringer-main-vine-moscato-1-5-l-27831.html",
+          "supports": "Independent exact UPC 089819067244 record identifies Beringer Main & Vine Moscato in a 1.5 L bottle."
+        }
+      ]
+    },
+    {
+      "sku": "1054",
+      "expectedUpc": "089819067206",
+      "expectedSourceRow": 659,
+      "expectedRawFieldsSha256": "7d0cf0761638b47c917043350f5281e2127029ad4e6b396e137d5f9ca95789e4",
+      "expectedPublicName": "Beringer Moscato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Moscato",
+      "reason": "Exact-UPC records and the inspected bottle establish the Main & Vine product line for this 750 mL variant. It is applied with the 1.5 L companion so matching sizes remain one safe group.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.liquortoship.com/products/beringer-main-vine-moscato-750ml",
+          "supports": "Exact UPC 089819067206 identifies Beringer Main & Vine Moscato in a 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winetransit.com/wine/white-wine/moscato/beringer-main-vine-moscato-750-ml-27857.html",
+          "supports": "Independent exact UPC 089819067206 record identifies Beringer Main & Vine Moscato in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "2857",
+      "expectedUpc": "050037016420",
+      "expectedSourceRow": 1843,
+      "expectedRawFieldsSha256": "a96c12ac3def93a339de2c7d6add012c41d290c1a9fc156ab691bf9fab42f25f",
+      "expectedPublicName": "Disaronno",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Disaronno Originale Amaretto",
+      "reason": "Exact UPC evidence identifies the Originale amaretto expression for this 1.75 L variant. This coordinated correction retains the verified Disaronno size family as one product.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://disaronno.com/en-gb/products/disaronno-originale/",
+          "supports": "Official Disaronno product page identifies the Disaronno Originale liqueur expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/3054399-disaronno-disaronna-originale-1-75-l",
+          "supports": "Exact UPC 050037016420 identifies Disaronno Originale Amaretto Liqueur in a 1.75 L bottle."
+        }
+      ]
+    },
+    {
+      "sku": "2858",
+      "expectedUpc": "050037014518",
+      "expectedSourceRow": 1844,
+      "expectedRawFieldsSha256": "9ef6339aeb31cc25797eaeeefba0c31f5a447cfbae1abc4c1edd93e62e9dc9e9",
+      "expectedPublicName": "Disaronno",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Disaronno Originale Amaretto",
+      "reason": "Exact UPC evidence identifies the Originale amaretto expression for this 375 mL variant. This coordinated correction retains the verified Disaronno size family as one product.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://disaronno.com/en-gb/products/disaronno-originale/",
+          "supports": "Official Disaronno product page identifies the Disaronno Originale liqueur expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/3054398-disaronno-liqueur-originale-375-ml",
+          "supports": "Exact UPC 050037014518 identifies Disaronno Originale Amaretto Liqueur in a 375 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "2859",
+      "expectedUpc": "050037014549",
+      "expectedSourceRow": 1845,
+      "expectedRawFieldsSha256": "acad20fd4c131cc15b98e683314cbdd39334bf09464f1b5ab8d68ed71b957d97",
+      "expectedPublicName": "Disaronno",
+      "expectedLabel": "50 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Disaronno Originale Amaretto",
+      "reason": "Exact UPC evidence identifies the Originale amaretto expression for this 50 mL miniature bottle. This coordinated correction retains the verified Disaronno size family as one product.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://disaronno.com/en-gb/products/disaronno-originale/",
+          "supports": "Official Disaronno product page identifies the Disaronno Originale liqueur expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://store.shopping.yahoo.co.jp/sonoma-store/050037014549.html",
+          "supports": "Exact UPC 050037014549 identifies Disaronno Originale Amaretto in a 50 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "2860",
+      "expectedUpc": "050037014501",
+      "expectedSourceRow": 1846,
+      "expectedRawFieldsSha256": "4ce725b134f2d68da711b795b698bb0204039cf7c49ffb251594ffd0a1f822ff",
+      "expectedPublicName": "Disaronno Originale",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Disaronno Originale Amaretto",
+      "reason": "Exact UPC records confirm that this 750 mL standard bottle is the same Disaronno Originale Amaretto expression as its 1.75 L, 375 mL, and 50 mL size variants.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://disaronno.com/en-gb/products/disaronno-originale/",
+          "supports": "Official Disaronno product page identifies the Disaronno Originale amaretto liqueur expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://peeceeliquor.com/products/disaronno-750ml",
+          "supports": "The product page identifies Disaronno Originale Amaretto Liqueur 750 mL with exact GTIN-12 050037014501."
+        }
+      ]
     }
   ]
 }
