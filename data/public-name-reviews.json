@@ -3535,6 +3535,188 @@
           "supports": "Independent exact UPC 087872633956 record confirms Stella Rosa Tropical Mango 750 mL."
         }
       ]
+    },
+    {
+      "sku": "1047",
+      "expectedUpc": "089819543137",
+      "expectedSourceRow": 654,
+      "expectedRawFieldsSha256": "a30a8e1192c3275fb3e05db6099716b99f1a91db6b12e9976f10fde0293a5f0e",
+      "expectedPublicName": "BERINGER CHARDONNAY WINE",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Chardonnay",
+      "reason": "Exact UPC evidence identifies the Main & Vine Chardonnay expression. The existing 1.5 L label and source SKU remain unchanged.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://wineandliquormart.com/collections/white-wine/products/beringer-chard-1-5",
+          "supports": "Exact UPC 089819543137 identifies Beringer Main & Vine Chardonnay 1.5L."
+        }
+      ]
+    },
+    {
+      "sku": "2664",
+      "expectedUpc": "816751022457",
+      "expectedSourceRow": 8970,
+      "expectedRawFieldsSha256": "929f9a7c9409a5a23237902a6d59cc2c9979f4366ee45625f337219cbe084588",
+      "expectedPublicName": "CUTWATER STRAWBERRY",
+      "expectedLabel": "4-pack · 12 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Cutwater Strawberry Margarita",
+      "reason": "Exact UPC evidence identifies the Strawberry Margarita expression. The existing 4-pack · 12 oz label and source SKU remain unchanged.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-82634684",
+          "supports": "Exact UPC 816751022457 identifies Cutwater Strawberry Margarita Cocktail, 4pk/355ml cans."
+        }
+      ]
+    },
+    {
+      "sku": "2856",
+      "expectedUpc": "088004054359",
+      "expectedSourceRow": 1842,
+      "expectedRawFieldsSha256": "5c91f6a38736b2c3d21dcd2ebda09e3304a4cad9c4794d65f57bec7dd9e03168",
+      "expectedPublicName": "dirty martini vodka",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Heublein Dirty Martini Crafted with Wheatley Vodka",
+      "reason": "The exact UPC and inspected package identify the Heublein Dirty Martini cocktail crafted with Wheatley Vodka. This changes only the public title and preserves the original SKU, UPC, 375 mL label, spirits category, and Vodka department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winetransit.com/spirits/cocktails/original-cocktails-by-heublein-dirty-martini-crafted-with-wheatley-vodka-375-ml-58036.html",
+          "supports": "Exact UPC 088004054359 identifies Original Cocktails by Heublein Dirty Martini Crafted with Wheatley Vodka, 375 mL."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.mainespirits.com/sites/default/files/price_books/May%202026%20Quarterly%20Price%20Book.pdf",
+          "supports": "Exact UPC 088004054359 identifies Heublein Dirty Martini, 375 mL."
+        }
+      ]
+    },
+    {
+      "sku": "4735",
+      "expectedUpc": "088076177703",
+      "expectedSourceRow": 3030,
+      "expectedRawFieldsSha256": "988e9c68194c2f3cc0494ed37c99f702e23e06e72e9e6b0e0d172bdf67c851de",
+      "expectedPublicName": "JW Double Black",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Johnnie Walker Double Black Blended Scotch Whisky",
+      "reason": "The exact UPC, official Johnnie Walker product page, and inspected package resolve the abbreviated brand and full product class. This changes only the public title and preserves the original SKU, UPC, 750 mL label, spirits category, and Whiskey department.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.johnniewalker.com/en-us/our-whisky/core-range/johnnie-walker-double-black",
+          "supports": "Official Johnnie Walker product page identifies the Double Black Blended Scotch Whisky expression in 750 mL."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/collections/scotch-whisky/products/johnnie-walker-double-black-750ml",
+          "supports": "Exact UPC 088076177703 identifies Johnnie Walker Double Black, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "6901",
+      "expectedUpc": "861518002630",
+      "expectedSourceRow": 7188,
+      "expectedRawFieldsSha256": "a7da60936574984b37a4fe1b2e04b484319658deae4cf1df60bfa829880037b5",
+      "expectedPublicName": "Rancho La Gloria strawberry 750margarita",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Rancho La Gloria Strawberry Margarita Wine Cocktail",
+      "reason": "Exact UPC evidence resolves the normalized brand, Strawberry Margarita flavor, and Wine Cocktail product class while preserving the source SKU and 750 mL variant.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-79761324",
+          "supports": "Target identifies UPC 861518002630 as Rancho La Gloria Strawberry Margarita Wine Cocktail, a 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/rancho-la-gloria-strawberry-margarita-wine-cocktail-id-861518002630",
+          "supports": "Exact UPC 861518002630 identifies Rancho La Gloria Strawberry Margarita Wine Cocktail, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "8055",
+      "expectedUpc": "078250004642",
+      "expectedSourceRow": 8376,
+      "expectedRawFieldsSha256": "8d050697aea895f1554d823a9fa7e6d13817c0d55129375b02d3badb084129c7",
+      "expectedPublicName": "STEEL RESERVE CAN211",
+      "expectedLabel": "4-pack · 16 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Steel Reserve 211 High Gravity Lager",
+      "reason": "Exact UPC evidence resolves Steel Reserve 211 High Gravity Lager while preserving the source SKU and its 4-pack of 16 oz cans variant label.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://russellsofneillsville.com/p/steel-reserve-078250004642",
+          "supports": "Exact UPC 078250004642 identifies Steel Reserve 211 16 oz 4-pack."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.heb.com/product-detail/steel-reserve-211-high-gravity-lager-4-pk-cans/2029994",
+          "supports": "Exact UPC 078250004642 is Steel Reserve 211 High Gravity Lager in a four-pack of 16 oz cans."
+        }
+      ]
+    },
+    {
+      "sku": "4146",
+      "expectedUpc": "085000029251",
+      "expectedSourceRow": 7786,
+      "expectedRawFieldsSha256": "720fbca2022000002632d2b25b8809b349b2bf76423d8cdc5d1588b9f4322c75",
+      "expectedPublicName": "High noon sun sips watermelon",
+      "expectedLabel": "Single · 12 oz",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "High Noon Watermelon Vodka Seltzer",
+      "reason": "Manufacturer and exact-UPC evidence establish the canonical High Noon Watermelon Vodka Seltzer title for the verified single can while preserving the source SKU, UPC, size label, category, and department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/high-noon-watermelon-single-085000029251",
+          "supports": "Exact UPC 085000029251 identifies a High Noon Watermelon Vodka Seltzer single 355 mL can."
+        },
+        {
+          "kind": "manufacturer",
+          "url": "https://www.highnoonspirits.com/watermelon-vodka-seltzer.html",
+          "supports": "Manufacturer identifies High Noon Watermelon Vodka Seltzer in a 12 fl oz can."
+        }
+      ]
+    },
+    {
+      "sku": "6658",
+      "expectedUpc": "051500204306",
+      "expectedSourceRow": 4222,
+      "expectedRawFieldsSha256": "910a7f789a2a82a087eeb6dea05219de0492f5c99fca0f7effaa75206b2bdbba",
+      "expectedPublicName": "Pillsbury Flour",
+      "expectedLabel": "2 lb",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Pillsbury Best All Purpose Flour",
+      "reason": "Exact-UPC and manufacturer records establish the Pillsbury Best All Purpose Flour title. The 2 lb label already matches the package, and no bleach or unbleached qualifier is proposed because exact-UPC historical listings disagree.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/51500204306",
+          "supports": "Exact UPC 051500204306 maps to Pillsbury Best All Purpose Flour in a 2 lb or 32 oz bag; historical listing qualifiers conflict."
+        },
+        {
+          "kind": "manufacturer_product_page",
+          "url": "https://www.pillsburybaking.com/products/pillsbury-best-flour/all-purpose",
+          "supports": "Pillsbury identifies Pillsbury Best All Purpose Flour as available in 2LB packaging."
+        }
+      ]
     }
   ]
 }
