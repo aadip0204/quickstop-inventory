@@ -1472,7 +1472,7 @@ class GeneratedCatalogTests(unittest.TestCase):
             text = ''.join(record['text'])
             for expected in (product['name'], variant['label'], image['attribution'], image['license']):
                 self.assertIn(expected, text)
-        self.assertIn('href="image-credits.html"', (ROOT / 'index.html').read_text())
+        self.assertNotIn('href="image-credits.html"', (ROOT / 'index.html').read_text())
 
     def test_credit_metadata_is_escaped_and_unsafe_links_rejected(self):
         image = {'src': 'images/products/example.jpg', 'sourcePage': 'https://example.test/product',

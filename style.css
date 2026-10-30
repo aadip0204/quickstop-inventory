@@ -108,7 +108,6 @@ input[type="search"]:focus,select:focus{border-color:var(--red)}
 .credits-list h2{font-size:18px;letter-spacing:0;line-height:1.4;margin:0 0 12px}
 .credits-list p{font-size:13px;line-height:1.7;margin:8px 0}
 .credits-list a{text-underline-offset:3px}
-.footer-inner>.credits-link{font-size:10px;opacity:.8}
 .store-address{font-style:normal;font-size:14px;line-height:1.6;color:var(--ink)}
 .footer-inner .store-contact{gap:8px;font-size:14px}
 .store-contact a{text-decoration-thickness:1px;text-underline-offset:3px}
