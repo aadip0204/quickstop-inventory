@@ -23440,6 +23440,926 @@
       "usageBasis": "user_authorized_direct_reference",
       "src": "images/products/sku-101507.jpg",
       "alt": "Kellogg's Rice Krispies Treats Original Bars — 1.3 oz packaging"
+    },
+    {
+      "expectedUpc": "079100581221",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "232",
+      "sha256": "5685f4322f7cbb6bbcd7682710fdccff83357b0065aa9f843565f73737bebaf8",
+      "expectedLabel": "50.4 oz · 1.43 kg",
+      "alt": "9Lives Daily essentials — 50.4 oz · 1.43 kg packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-232.avif",
+      "attributionRequired": false,
+      "expectedName": "9Lives Daily essentials"
+    },
+    {
+      "expectedUpc": "076150232233",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "272",
+      "sha256": "d6ee8ea76a29495a16f078718a155b517a92cccfd097d11cba2033f646c2808e",
+      "expectedLabel": "2.75 oz",
+      "alt": "ACT II Butter Microwave Popcorn — 2.75 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-272.png",
+      "attributionRequired": false,
+      "expectedName": "ACT II Butter Microwave Popcorn"
+    },
+    {
+      "expectedUpc": "076150232486",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "273",
+      "sha256": "a177d1926023a3814a7a2269fbdad8851af9d2b8eac86b14e40ba611f52435a0",
+      "expectedLabel": "2.75 oz",
+      "alt": "ACT II Butter Lovers Microwave Popcorn — 2.75 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-273.jpg",
+      "attributionRequired": false,
+      "expectedName": "ACT II Butter Lovers Microwave Popcorn"
+    },
+    {
+      "expectedUpc": "851133006519",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "952",
+      "sha256": "1386b953a9d3dea3058c0c001603f1f257e86879da9e96a793e4493e15cbcc1a",
+      "expectedLabel": "500 mL",
+      "alt": "BeatBox Juicy Mango — 500 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-952.jpg",
+      "attributionRequired": false,
+      "expectedName": "BeatBox Juicy Mango"
+    },
+    {
+      "expectedUpc": "851133006137",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "954",
+      "sha256": "c21dd04aa459f336482b96ebbe0b2a667f5682b715fce59dcf02c921bb9c0a60",
+      "expectedLabel": "500 mL · 16.9 oz",
+      "alt": "BeatBox Blue Razzberry — 500 mL · 16.9 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-954.jpg",
+      "attributionRequired": false,
+      "expectedName": "BeatBox Blue Razzberry"
+    },
+    {
+      "expectedUpc": "851133006120",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "956",
+      "sha256": "0af860d53c9fbd7129a50d55cfa5584403e7b00872094dec8183027dc16eea6b",
+      "expectedLabel": "500 mL · 16.9 oz",
+      "alt": "BeatBox Fruit Punch — 500 mL · 16.9 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-956.jpg",
+      "attributionRequired": false,
+      "expectedName": "BeatBox Fruit Punch"
+    },
+    {
+      "expectedUpc": "857641002005",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "1571",
+      "sha256": "54516a8b63c136d6eff60f12e39c850e249b6cf4582920c99e78f46babfdcc90",
+      "expectedLabel": "200 mL",
+      "alt": "BuzzBallz Cocktails Cran Blaster — 200 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1571.png",
+      "attributionRequired": false,
+      "expectedName": "BuzzBallz Cocktails Cran Blaster"
+    },
+    {
+      "expectedUpc": "051000012616",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "1654",
+      "sha256": "1e189ab86f978fb40334ae090f90affcec787d44bcc7793444736b5a6aabb3f0",
+      "expectedLabel": "10.5 oz",
+      "alt": "Campbell's Condensed Cream of Mushroom Soup — 10.5 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1654.jpg",
+      "attributionRequired": false,
+      "expectedName": "Campbell's Condensed Cream of Mushroom Soup"
+    },
+    {
+      "expectedUpc": "083078113131",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "1813",
+      "sha256": "4b8ffd805f5e3799d7da44615923782a41e484c38a02e124f6f7b25ae8577fcc",
+      "expectedLabel": "0.35 oz",
+      "alt": "Carmex Classic Original Medicated Lip Balm Tube — 0.35 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1813.png",
+      "attributionRequired": false,
+      "expectedName": "Carmex Classic Original Medicated Lip Balm Tube"
+    },
+    {
+      "expectedUpc": "083300034531",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "1906",
+      "sha256": "15060eddb7b9debb9d8863f1872afa38034a2ac7706f35e25aa547059611a9c6",
+      "expectedLabel": "750 mL",
+      "alt": "Chambord — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1906.jpg",
+      "attributionRequired": false,
+      "expectedName": "Chambord"
+    },
+    {
+      "expectedUpc": "088076174955",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "2126",
+      "sha256": "7587acf09a1587a2b41c860dbbede6d97b581619c10f1b4fdabc4e1669fa4d4c",
+      "expectedLabel": "750 mL",
+      "alt": "Ciroc Coconut — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2126.jpg",
+      "attributionRequired": false,
+      "expectedName": "Ciroc Coconut"
+    },
+    {
+      "expectedUpc": "088076185395",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "2149",
+      "sha256": "c680a4906a81cb2b9555d6bcba784dff6f8d2b1ac55579e97731da0e8ef8eee5",
+      "expectedLabel": "750 mL",
+      "alt": "Ciroc Summer Citrus Vodka — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2149.jpg",
+      "attributionRequired": false,
+      "expectedName": "Ciroc Summer Citrus Vodka"
+    },
+    {
+      "expectedUpc": "080686975014",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "2519",
+      "sha256": "7c77f2d2b989c303f9faebf53942f71e707894a60d8345c6768f40ad131077ad",
+      "expectedLabel": "750 mL",
+      "alt": "Courvoisier Gold — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2519.jpg",
+      "attributionRequired": false,
+      "expectedName": "Courvoisier Gold"
+    },
+    {
+      "expectedUpc": "082000776581",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "2576",
+      "sha256": "938db91c297d5723bfc14038883ca2bdca024f0034a50aee2541d7c80abbca44",
+      "expectedLabel": "375 mL",
+      "alt": "Crown Royal Vanilla — 375 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2576.jpg",
+      "attributionRequired": false,
+      "expectedName": "Crown Royal Vanilla"
+    },
+    {
+      "expectedUpc": "073800011200",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "3322",
+      "sha256": "5c0251c7d03f1bbbfde8ee258b45aa3e0fbc2a66bf4fa3caf0a03df4e33875f3",
+      "expectedLabel": "24 oz",
+      "alt": "Faygo Jolly Green Apple — 24 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3322.jpg",
+      "attributionRequired": false,
+      "expectedName": "Faygo Jolly Green Apple"
+    },
+    {
+      "expectedUpc": "073800011217",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "3344",
+      "sha256": "f62c91c5eb43cb7a8b82b335ab7964ed672d0a3e7e75ba3c1b147b33231159d9",
+      "expectedLabel": "24 oz",
+      "alt": "Faygo Super Pop — 24 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3344.jpg",
+      "attributionRequired": false,
+      "expectedName": "Faygo Super Pop"
+    },
+    {
+      "expectedUpc": "632565000654",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "3348",
+      "sha256": "df1caadcf8a9dbfb241a6af95f3ede06037e27b04c39db5f6ab48c9339854fdd",
+      "expectedLabel": "700 mL",
+      "alt": "Fiji — 700 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3348.jpg",
+      "attributionRequired": false,
+      "expectedName": "Fiji"
+    },
+    {
+      "expectedUpc": "033293006312",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "3462",
+      "sha256": "510c87a7bbb7a6c749b71c9a529c7873a3262bb519a63380d7c97dbf10a221dd",
+      "expectedLabel": "750 mL",
+      "alt": "Freixenet Ice Demi Sec — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3462.jpg",
+      "attributionRequired": false,
+      "expectedName": "Freixenet Ice Demi Sec"
+    },
+    {
+      "expectedUpc": "037600241939",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "4206",
+      "sha256": "d0a47fe253b5cd5fe9236643ef707d18ce872bfe787ba61a58c17c433dad627f",
+      "expectedLabel": "15 oz",
+      "alt": "Hormel Chili No Beans — 15 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4206.png",
+      "attributionRequired": false,
+      "expectedName": "Hormel Chili No Beans"
+    },
+    {
+      "expectedUpc": "075669115464",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "4273",
+      "sha256": "33ba51369c9c0c10f3703aabbd0b607c4ffbd6abcadb80e82bdfca1524b644cf",
+      "expectedLabel": "1.5 L",
+      "alt": "Iberia Aloe Vera Coconut Drink — 1.5 L packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4273.png",
+      "attributionRequired": false,
+      "expectedName": "Iberia Aloe Vera Coconut Drink"
+    },
+    {
+      "expectedUpc": "075669115501",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "4277",
+      "sha256": "8c1dbe7e4aaf0094513cbce6d31373f5b22d70f8fd1192369810865b26b6be77",
+      "expectedLabel": "1.5 L",
+      "alt": "Iberia Original Aloe Vera Drink — 1.5 L packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4277.png",
+      "attributionRequired": false,
+      "expectedName": "Iberia Original Aloe Vera Drink"
+    },
+    {
+      "expectedUpc": "080432500149",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "4484",
+      "sha256": "caaa0426ceb78337717b6743f69e718b1ab050fe4d12f906ef985d20267a0335",
+      "expectedLabel": "375 mL",
+      "alt": "Jameson — 375 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4484.jpg",
+      "attributionRequired": false,
+      "expectedName": "Jameson"
+    },
+    {
+      "expectedUpc": "082000192886",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "4656",
+      "sha256": "5b9ce9f2feb1a0ff06c5684d37c7e356dca5af3a10c18f447d6f0667bf119ac5",
+      "expectedLabel": "750 mL",
+      "alt": "Jose Cuervo Gold — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4656.jpg",
+      "attributionRequired": false,
+      "expectedName": "Jose Cuervo Gold"
+    },
+    {
+      "expectedUpc": "085156803682",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "4783",
+      "sha256": "6cf61ca9a77d6fabd9afb83ae0ab38a834ef77298a40c92dae7721d49b1e7425",
+      "expectedLabel": "1.75 L",
+      "alt": "Ketel One Vodka — 1.75 L packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4783.jpg",
+      "attributionRequired": false,
+      "expectedName": "Ketel One Vodka"
+    },
+    {
+      "expectedUpc": "088110150556",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "4049",
+      "sha256": "c7fa95857828f6b10705145a5175a117c10062c65ad58497e43499f65c1f7a60",
+      "expectedLabel": "750 mL",
+      "alt": "Hennessy — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4049.jpg",
+      "attributionRequired": false,
+      "expectedName": "Hennessy"
+    },
+    {
+      "expectedUpc": "088110150617",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "4055",
+      "sha256": "aa0eceb089b395d808dfbfcbea355ce4acccaad9e1a5296576b8b8d54bde9f8b",
+      "expectedLabel": "100 mL",
+      "alt": "Hennessy VS — 100 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4055.jpg",
+      "attributionRequired": false,
+      "expectedName": "Hennessy VS"
+    },
+    {
+      "expectedUpc": "744607010603",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "4076",
+      "sha256": "7ddb5adf75d46aa17cdec7e34466a4cde89d757972e11e23f4434028e8604e6a",
+      "expectedLabel": "375 mL",
+      "alt": "Herradura Silver Tequila — 375 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4076.jpg",
+      "attributionRequired": false,
+      "expectedName": "Herradura Silver Tequila"
+    },
+    {
+      "expectedUpc": "041789003561",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "5401",
+      "sha256": "960bcbb978e095af2755c0210e359921ca7a6d6e4962e5efeba249c40b826606",
+      "expectedLabel": "3.49 oz",
+      "alt": "Maruchan Fire Bowl Ramen Spicy Beef Flavor — 3.49 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5401.png",
+      "attributionRequired": false,
+      "expectedName": "Maruchan Fire Bowl Ramen Spicy Beef Flavor"
+    },
+    {
+      "expectedUpc": "041789001420",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "5402",
+      "sha256": "0e585dd61fa5dcff7d6356bc25f1bd4cc1474bad89fbfda6abb13bb426e23a5c",
+      "expectedLabel": "2.25 oz",
+      "alt": "Maruchan Instant Lunch Hot & Spicy Beef Flavor — 2.25 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5402.webp",
+      "attributionRequired": false,
+      "expectedName": "Maruchan Instant Lunch Hot & Spicy Beef Flavor"
+    },
+    {
+      "expectedUpc": "041789003028",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "5405",
+      "sha256": "823221192514dd11776b03b4842f35a84fdb815fa0adae154d1a95d70c6305af",
+      "expectedLabel": "3.32 oz",
+      "alt": "Maruchan Ramen Bowl Hot & Spicy Chicken Flavor — 3.32 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5405.png",
+      "attributionRequired": false,
+      "expectedName": "Maruchan Ramen Bowl Hot & Spicy Chicken Flavor"
+    },
+    {
+      "expectedUpc": "041789003011",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "5407",
+      "sha256": "4c5fcd2163e07f04d3d78b5749c423ad4e9ddf84ddee8d41f23bd5e9ffbb062c",
+      "expectedLabel": "3.31 oz",
+      "alt": "Maruchan Ramen Bowl Chicken Flavor — 3.31 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5407.png",
+      "attributionRequired": false,
+      "expectedName": "Maruchan Ramen Bowl Chicken Flavor"
+    },
+    {
+      "expectedUpc": "041789001437",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "5410",
+      "sha256": "4fc470e9c5c85a5428a3ee0762b23aa34792b952993918be221974172c58f0bf",
+      "expectedLabel": "2.25 oz",
+      "alt": "Maruchan Instant Lunch Hot & Spicy Chicken Flavor — 2.25 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5410.webp",
+      "attributionRequired": false,
+      "expectedName": "Maruchan Instant Lunch Hot & Spicy Chicken Flavor"
+    },
+    {
+      "expectedUpc": "085000024874",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "6147",
+      "sha256": "340172f98c3bcb32040b1423276ed2109158057d4573346bd357bd4f785b98fe",
+      "expectedLabel": "750 mL",
+      "alt": "New Amsterdam Apple — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-6147.jpg",
+      "attributionRequired": false,
+      "expectedName": "New Amsterdam Apple"
+    },
+    {
+      "expectedUpc": "720815984530",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7530",
+      "sha256": "ba90746ff60288985437abab626c80a39e742518370c2af73057ed7abfa4ddae",
+      "expectedLabel": "750 mL",
+      "alt": "Seagram's 100 Proof Platinum Select Vodka — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-7530.jpg",
+      "attributionRequired": false,
+      "expectedName": "Seagram's 100 Proof Platinum Select Vodka"
+    },
+    {
+      "expectedUpc": "721059697507",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7660",
+      "sha256": "2061d59164270a77be3febc837e9c05fa51d73d68f6e66a1d95e507321422789",
+      "expectedLabel": "750 mL",
+      "alt": "SKYY Infusions Pineapple Vodka — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-7660.jpg",
+      "attributionRequired": false,
+      "expectedName": "SKYY Infusions Pineapple Vodka"
+    },
+    {
+      "expectedUpc": "040000424314",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7868",
+      "sha256": "830c0ac6d10ab1db4f8f82389aba0c5c507342a4323c854c93aed4e54f83ae1c",
+      "expectedLabel": "1.86 oz",
+      "alt": "Snickers Milk Chocolate Bar — 1.86 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-7868.png",
+      "attributionRequired": false,
+      "expectedName": "Snickers Milk Chocolate Bar"
+    },
+    {
+      "expectedUpc": "087236002114",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7028",
+      "sha256": "abf18a5a094a80fde0636fb19f227013b01c38835179d958860c55f538d55c46",
+      "expectedLabel": "750 mL",
+      "alt": "Remy 1738 — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-7028.jpg",
+      "attributionRequired": false,
+      "expectedName": "Remy 1738"
+    },
+    {
+      "expectedUpc": "087236108014",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7045",
+      "sha256": "ce20fe3409789fba99793f1078ef7314a0b0ea762d033df75d5a6e484936c59e",
+      "expectedLabel": "750 mL",
+      "alt": "Remy V — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-7045.jpg",
+      "attributionRequired": false,
+      "expectedName": "Remy V"
+    },
+    {
+      "expectedUpc": "087236001216",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7049",
+      "sha256": "9cb8fdc026b627313e011ecdefc3732577b0a54cb4cf44e05bc84f1c5e65f1b7",
+      "expectedLabel": "375 mL",
+      "alt": "Remy VSOP — 375 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-7049.jpg",
+      "attributionRequired": false,
+      "expectedName": "Remy VSOP"
+    },
+    {
+      "expectedUpc": "721059017503",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7663",
+      "sha256": "f4c0f4651f4140fa2a4b63832b9fb0e19bb704e8322fee4ab7d9746569a4a655",
+      "expectedLabel": "1.75 L",
+      "alt": "SKYY Vodka — 1.75 L packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-7663.jpg",
+      "attributionRequired": false,
+      "expectedName": "SKYY Vodka"
+    },
+    {
+      "expectedUpc": "635985025986",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "9439",
+      "sha256": "504ed44843582a2e0e89daf3b57be766275d6054776802a83e3504c3e864bdc0",
+      "expectedLabel": "6-pack",
+      "alt": "White Claw Hard Seltzer Natural Lime — 6-pack packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-9439.jpg",
+      "attributionRequired": false,
+      "expectedName": "White Claw Hard Seltzer Natural Lime"
+    },
+    {
+      "expectedUpc": "086003873889",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "9659",
+      "sha256": "c2abf4000b32aab179ed7aaaff6aa3e116118a1ba26cbc3ff70e97de777e391c",
+      "expectedLabel": "1.5 L",
+      "alt": "Woodbridge Chardonnay — 1.5 L packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-9659.jpg",
+      "attributionRequired": false,
+      "expectedName": "Woodbridge Chardonnay"
+    },
+    {
+      "expectedUpc": "086003003392",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "9673",
+      "sha256": "cb5565e2ed777a55576a70d617424eaf61cf6ee62323b7f399fbcffff48b75fd",
+      "expectedLabel": "750 mL",
+      "alt": "Woodbridge Pinot Noir — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-9673.jpg",
+      "attributionRequired": false,
+      "expectedName": "Woodbridge Pinot Noir"
+    },
+    {
+      "expectedUpc": "664804000378",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "101343",
+      "sha256": "d0c18eaf9861f627fb5209260b4e70ea93355c44c7fc82fa684087fd4c4f7cea",
+      "expectedLabel": "375 mL",
+      "alt": "Espolon Blanco — 375 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-101343.jpg",
+      "attributionRequired": false,
+      "expectedName": "Espolon Blanco"
+    },
+    {
+      "expectedUpc": "611269002249",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "101449",
+      "sha256": "575bb35b9645003a93c28835bbdb792c9aeb671d159fedb14c8848885d9f8e9a",
+      "expectedLabel": "250 mL",
+      "alt": "Red Bull Sea Blue Edition Sugarfree Energy Drink, Juneberry — 250 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-101449.jpg",
+      "attributionRequired": false,
+      "expectedName": "Red Bull Sea Blue Edition Sugarfree Energy Drink, Juneberry"
+    },
+    {
+      "expectedUpc": "085000032442",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "101513",
+      "sha256": "ad1c3e718c2784b52dc228db819bd64c2a0b20c9aa7dee39dc046b10020d6d3b",
+      "expectedLabel": "750 mL",
+      "alt": "La Marca Prosecco Rosé — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-101513.jpg",
+      "attributionRequired": false,
+      "expectedName": "La Marca Prosecco Rosé"
     }
   ]
 }

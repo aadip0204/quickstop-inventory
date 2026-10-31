@@ -100,14 +100,6 @@ input[type="search"]:focus,select:focus{border-color:var(--red)}
 
 @media(max-width:720px){.filters label{font-size:11px}input[type="search"],.filters select{font-size:16px}.variant-select{min-height:44px;font-size:14px}.reset-button{font-size:13px;min-height:40px}.catalog-note{font-size:12px}.variant-label{flex-wrap:wrap}}
 @media(max-width:480px){.variant-select{font-size:16px}}
-.credits-page{padding-block:40px 64px;max-width:960px}
-.credits-page h1{font-size:clamp(30px,5vw,42px);margin-bottom:16px}
-.credits-intro{max-width:680px;color:var(--muted);line-height:1.7}
-.credits-list{list-style:none;padding:0;margin:32px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
-.credits-list li{background:#fff;border:1px solid var(--line);border-radius:6px;padding:20px;overflow-wrap:anywhere}
-.credits-list h2{font-size:18px;letter-spacing:0;line-height:1.4;margin:0 0 12px}
-.credits-list p{font-size:13px;line-height:1.7;margin:8px 0}
-.credits-list a{text-underline-offset:3px}
 .store-address{font-style:normal;font-size:14px;line-height:1.6;color:var(--ink)}
 .footer-inner .store-contact{gap:8px;font-size:14px}
 .store-contact a{text-decoration-thickness:1px;text-underline-offset:3px}

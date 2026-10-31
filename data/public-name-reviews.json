@@ -5523,6 +5523,451 @@
           "supports": "Exact UPC 681425014010 identifies X-Rated Fusion Liqueur in a 750 mL bottle."
         }
       ]
+    },
+    {
+      "sku": "5401",
+      "expectedUpc": "041789003561",
+      "expectedSourceRow": 8697,
+      "expectedRawFieldsSha256": "0569f8a1cc5703a7d7101883d6e94c0fc9afbf86a6295e0e8e7a40482e4a8c20",
+      "expectedPublicName": "maruchan fire bowlramen spicy beef noodl soup",
+      "expectedLabel": "3.49 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Maruchan Fire Bowl Ramen Spicy Beef Flavor",
+      "reason": "The exact UPC manufacturer record corrects spacing and product terminology after the guarded size resolution. This singleton title correction preserves the UPC, 3.49 oz label, food category, and Snacks department.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://maruchan.com/products/bowl/fire-spicy-beef-flavor-bowl",
+          "supports": "Maruchan's official product record identifies exact UPC 041789003561 as Fire Bowl Ramen Spicy Beef Flavor."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://maruchan.com/products/bowl/fire-spicy-beef-flavor-bowl",
+          "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+        }
+      ]
+    },
+    {
+      "sku": "5402",
+      "expectedUpc": "041789001420",
+      "expectedSourceRow": 8281,
+      "expectedRawFieldsSha256": "3c095455cec3ed589cc693f77507aaf3fa9b2e901a927714d17cc6b89e6dd496",
+      "expectedPublicName": "MARUCHAN INSSTANT LUNCHHOT & SPICY BEEF FLAVOR",
+      "expectedLabel": "2.25 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Maruchan Instant Lunch Hot & Spicy Beef Flavor",
+      "reason": "The exact UPC manufacturer record corrects brand casing, spacing, and product terminology after the guarded size resolution. This singleton title correction preserves the UPC, 2.25 oz label, food category, and Snacks department.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://maruchan.com/products/instant-lunch/hot-spicy-beef-flavor",
+          "supports": "Maruchan's official product record identifies exact UPC 041789001420 as Instant Lunch Hot & Spicy Beef Flavor."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://maruchan.com/products/instant-lunch/hot-spicy-beef-flavor",
+          "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+        }
+      ]
+    },
+    {
+      "sku": "5405",
+      "expectedUpc": "041789003028",
+      "expectedSourceRow": 9010,
+      "expectedRawFieldsSha256": "1c48042ce21f295b5565c08fbd67bbc31fa82984d52bd505515143ed05fb12c9",
+      "expectedPublicName": "maruchan ramen bowlhot spicy chicken noodl soup",
+      "expectedLabel": "3.32 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Maruchan Ramen Bowl Hot & Spicy Chicken Flavor",
+      "reason": "The exact UPC manufacturer record corrects brand casing, spacing, and product terminology after the guarded size resolution. This singleton title correction preserves the UPC, 3.32 oz label, food category, and Snacks department.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://maruchan.com/products/bowl/hot-spicy-chicken-flavor-bowl",
+          "supports": "Maruchan's official product record identifies exact UPC 041789003028 as Ramen Bowl Hot & Spicy Chicken Flavor."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://maruchan.com/products/bowl/hot-spicy-chicken-flavor-bowl",
+          "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+        }
+      ]
+    },
+    {
+      "sku": "5407",
+      "expectedUpc": "041789003011",
+      "expectedSourceRow": 8049,
+      "expectedRawFieldsSha256": "e78f5e325a10792f464ce5bbd2488818c73ce1e431dea17512800a0f15089939",
+      "expectedPublicName": "maruchan ramen bowl chickennoodl soup",
+      "expectedLabel": "3.31 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Maruchan Ramen Bowl Chicken Flavor",
+      "reason": "The exact UPC manufacturer record corrects brand casing, spacing, and product terminology after the guarded size resolution. This singleton title correction preserves the UPC, 3.31 oz label, food category, and Snacks department.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://maruchan.com/products/bowl/chicken-flavor-bowl",
+          "supports": "Maruchan's official product record identifies exact UPC 041789003011 as Ramen Bowl Chicken Flavor."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://maruchan.com/products/bowl/chicken-flavor-bowl",
+          "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+        }
+      ]
+    },
+    {
+      "sku": "5410",
+      "expectedUpc": "041789001437",
+      "expectedSourceRow": 7177,
+      "expectedRawFieldsSha256": "850cc21cb4fe9d99c329cb7dbc0edf7ae8ab306c1fc4f44d65b34106e608dc54",
+      "expectedPublicName": "MARUCHAN INSTANT LUNCHHOT & SPICY CHICKEN",
+      "expectedLabel": "2.25 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Maruchan Instant Lunch Hot & Spicy Chicken Flavor",
+      "reason": "The exact UPC manufacturer record corrects brand casing, spacing, and product terminology after the guarded size resolution. This singleton title correction preserves the UPC, 2.25 oz label, food category, and Snacks department.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://maruchan.com/products/instant-lunch/hot-spicy-chicken-flavor",
+          "supports": "Maruchan's official product record identifies exact UPC 041789001437 as Instant Lunch Hot & Spicy Chicken Flavor."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://maruchan.com/products/instant-lunch/hot-spicy-chicken-flavor",
+          "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+        }
+      ]
+    },
+    {
+      "sku": "7530",
+      "expectedUpc": "720815984530",
+      "expectedSourceRow": 4834,
+      "expectedRawFieldsSha256": "9cb82ae60aecf08be7265cd2a5d1b5fceca84e44148d8d19bb5fe8284f322464",
+      "expectedPublicName": "Seagrams vodka 100prf",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's 100 Proof Platinum Select Vodka",
+      "reason": "Exact UPC evidence restores the omitted apostrophe and the complete Platinum Select 100 Proof expression while preserving the source variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kingswineandspirits.com/products/seagrams-vodka-100-proof-platinum-select-vodka-750ml",
+          "supports": "Exact UPC 720815984530 identifies Seagram's 100 Proof Platinum Select Vodka in a 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/153578",
+          "supports": "Exact UPC 720815984530 identifies Seagram's Platinum Vodka, 100 proof, in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "7660",
+      "expectedUpc": "721059697507",
+      "expectedSourceRow": 4929,
+      "expectedRawFieldsSha256": "a3b2ae918d8bbf5e15facc8d51ccbc3a68beb19012c1e8d4745c95933432beac",
+      "expectedPublicName": "SKYY Pineapple Vodka",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "SKYY Infusions Pineapple Vodka",
+      "reason": "Exact UPC evidence confirms the Infusions sub-brand and Pineapple expression while preserving the existing 750 mL vodka variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-52118151",
+          "supports": "Exact UPC 721059697507 identifies one SKYY Infusions Pineapple Vodka 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kingswineandspirits.com/products/skyy-infusions-pineapple-vodka-750ml",
+          "supports": "Exact UPC 721059697507 identifies SKYY Infusions Pineapple Vodka in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "952",
+      "expectedUpc": "851133006519",
+      "expectedSourceRow": 7292,
+      "expectedRawFieldsSha256": "79e5d4a03b3876b27e44d1a9ee4c3d7e3f1277b2f7965fce252fa52d397605fe",
+      "expectedPublicName": "beatbox juicy mango",
+      "expectedLabel": "500 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "BeatBox Juicy Mango",
+      "reason": "Exact UPC evidence and the manufacturer flavor catalog support the branded BeatBox capitalization and Juicy Mango expression; only the display title is corrected.",
+      "evidence": [
+        {
+          "kind": "manufacturer_flavor_catalog",
+          "url": "https://beatboxbeverages.com/pages/flavors",
+          "supports": "BeatBox lists Juicy Mango as a current flavor."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://eldoradoliquors.com/wp-json/wc/store/v1/products/70295",
+          "supports": "UPC 851133006519 identifies BeatBox Juicy Mango in the 500 mL format."
+        }
+      ]
+    },
+    {
+      "sku": "954",
+      "expectedUpc": "851133006137",
+      "expectedSourceRow": 9544,
+      "expectedRawFieldsSha256": "59bc86680340938513f3f233b399bdc66c93a33e4a319751756de77ccb94b73a",
+      "expectedPublicName": "beatbox blue razzberry",
+      "expectedLabel": "500 mL · 16.9 oz",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "BeatBox Blue Razzberry",
+      "reason": "Exact UPC evidence and the manufacturer flavor catalog support the branded BeatBox capitalization and Blue Razzberry expression; only the display title is corrected.",
+      "evidence": [
+        {
+          "kind": "manufacturer_flavor_catalog",
+          "url": "https://beatboxbeverages.com/pages/flavors",
+          "supports": "BeatBox lists Blue Razzberry as a current flavor."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://eldoradoliquors.com/wp-json/wc/store/v1/products/70289",
+          "supports": "UPC 851133006137 identifies BeatBox Blue Razzberry in the 500 mL format."
+        }
+      ]
+    },
+    {
+      "sku": "956",
+      "expectedUpc": "851133006120",
+      "expectedSourceRow": 6576,
+      "expectedRawFieldsSha256": "b6f90f940275edddf192ba8ce621600a8222f76dd8706761aea793a4721c5919",
+      "expectedPublicName": "beatbox fruit punch",
+      "expectedLabel": "500 mL · 16.9 oz",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "BeatBox Fruit Punch",
+      "reason": "Exact UPC evidence and the manufacturer flavor catalog support the branded BeatBox capitalization and Fruit Punch expression; only the display title is corrected.",
+      "evidence": [
+        {
+          "kind": "manufacturer_flavor_catalog",
+          "url": "https://beatboxbeverages.com/pages/flavors",
+          "supports": "BeatBox lists Fruit Punch as a current flavor."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://eldoradoliquors.com/wp-json/wc/store/v1/products/70288",
+          "supports": "UPC 851133006120 identifies BeatBox Fruit Punch in the 500 mL format."
+        }
+      ]
+    },
+    {
+      "sku": "1571",
+      "expectedUpc": "857641002005",
+      "expectedSourceRow": 7932,
+      "expectedRawFieldsSha256": "dc0fa42014c6ab36312653845d5b46c7d9b5d79d41d12af08c86491650dc75e7",
+      "expectedPublicName": "BUZZBALLZ CRAN BLASTER",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "BuzzBallz Cocktails Cran Blaster",
+      "reason": "The exact UPC record spells out the BuzzBallz Cocktails brand and Cran Blaster expression; only the display title is corrected.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/159435",
+          "supports": "UPC 857641002005 identifies BuzzBallz Cocktails Cran Blaster in a 200 mL ready-to-drink container."
+        }
+      ]
+    },
+    {
+      "sku": "2149",
+      "expectedUpc": "088076185395",
+      "expectedSourceRow": 7657,
+      "expectedRawFieldsSha256": "6caac9eafea89dcee3757ab46da5ef49a0e0540178798c6b8aa5e68c3dffb769",
+      "expectedPublicName": "CIROC VODKA SUMMER CITRUS",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Ciroc Summer Citrus Vodka",
+      "reason": "The exact UPC product record confirms the Ciroc Summer Citrus vodka expression and 750 mL format; this only normalizes word order and casing.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/ciroc-summer-citrus-750ml.js",
+          "supports": "UPC 088076185395 identifies Ciroc Summer Citrus vodka in the 750 mL format."
+        }
+      ]
+    },
+    {
+      "sku": "2519",
+      "expectedUpc": "080686975014",
+      "expectedSourceRow": 1608,
+      "expectedRawFieldsSha256": "ba24aed970633d9d3af137610bf4322c2ae634155283eb81a83f7e4312319cd9",
+      "expectedPublicName": "Courvoisier GOLD",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Courvoisier Gold",
+      "reason": "The exact UPC record identifies the Courvoisier Gold expression; only title casing is corrected.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/150360",
+          "supports": "UPC 080686975014 identifies Courvoisier Gold in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "3322",
+      "expectedUpc": "073800011200",
+      "expectedSourceRow": 7896,
+      "expectedRawFieldsSha256": "f3732bc37a6e1e8e6485bf1f1497ca4e281547da19cd5fae34e08194b9d94f63",
+      "expectedPublicName": "FAYGO APPLE",
+      "expectedLabel": "24 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Faygo Jolly Green Apple",
+      "reason": "Exact UPC evidence identifies the omitted Jolly Green Apple expression, while the manufacturer flavor catalog confirms the branded flavor name; no variant metadata changes.",
+      "evidence": [
+        {
+          "kind": "manufacturer_flavor_catalog",
+          "url": "https://www.faygo.com/flavors/",
+          "supports": "Faygo lists Jolly Green Apple as a current flavor."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=073800011200",
+          "supports": "UPC 073800011200 identifies Faygo Jolly Green Apple in the 24 oz format."
+        }
+      ]
+    },
+    {
+      "sku": "3344",
+      "expectedUpc": "073800011217",
+      "expectedSourceRow": 7376,
+      "expectedRawFieldsSha256": "1412af57802c075f619d113ed2cf8d0a94685f46b6f0f66ee98f4f179114b608",
+      "expectedPublicName": "FAYGO SUPER POP",
+      "expectedLabel": "24 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Faygo Super Pop",
+      "reason": "Exact UPC evidence and the manufacturer flavor catalog confirm the Faygo Super Pop expression; only title casing is corrected.",
+      "evidence": [
+        {
+          "kind": "manufacturer_flavor_catalog",
+          "url": "https://www.faygo.com/flavors/",
+          "supports": "Faygo lists Super Pop as a current flavor."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://specialtyfoodsource.com/collections/items-that-dropship/products/faygo-super-pop-24oz",
+          "supports": "UPC 073800011217 identifies Faygo Super Pop in the 24 oz format."
+        }
+      ]
+    },
+    {
+      "sku": "3462",
+      "expectedUpc": "033293006312",
+      "expectedSourceRow": 2241,
+      "expectedRawFieldsSha256": "428766565b494318eac1824c49c807b09ecb23ab3ffd331bdd7f32df9042d48d",
+      "expectedPublicName": "Freixenet Ice",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Freixenet Ice Demi Sec",
+      "reason": "The exact UPC product record confirms the Ice Demi Sec expression; only the incomplete public display title is repaired.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/freixenet-ice-demi-sec.js",
+          "supports": "UPC 033293006312 identifies Freixenet Ice Demi Sec in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "4076",
+      "expectedUpc": "744607010603",
+      "expectedSourceRow": 9371,
+      "expectedRawFieldsSha256": "41acf5e3acba930c838a4f5c4d1e9018ffb986fb97e908ee345eaf5fc47c389e",
+      "expectedPublicName": "herradura Silver tequila",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Herradura Silver Tequila",
+      "reason": "The exact UPC record confirms Herradura Silver tequila in the 375 mL format; only capitalization is corrected.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/158035",
+          "supports": "UPC 744607010603 identifies Herradura Silver tequila in a 375 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "4273",
+      "expectedUpc": "075669115464",
+      "expectedSourceRow": 6444,
+      "expectedRawFieldsSha256": "19a605dc16a24d0bd052f86d7ed367cf8645c313469d5f2819a1a08e7a914cf6",
+      "expectedPublicName": "IBERIA ALOE COCONUT",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Iberia Aloe Vera Coconut Drink",
+      "reason": "The first-party product record maps the exact UPC to the Iberia Aloe Vera Coconut drink; only the incomplete display title is repaired.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://iberiafoods.com/product/iberia-aloe-vera-coconut-1-5-lt/",
+          "supports": "UPC 075669115464 identifies Iberia Aloe Vera Coconut Drink in the 1.5 L format."
+        }
+      ]
+    },
+    {
+      "sku": "9439",
+      "expectedUpc": "635985025986",
+      "expectedSourceRow": 5999,
+      "expectedRawFieldsSha256": "6eb98bac29f35ee0942835dae980c2fd42f4c8139341020c052834b2491b61ef",
+      "expectedPublicName": "White ClawNatural Lime",
+      "expectedLabel": "6-pack",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "White Claw Hard Seltzer Natural Lime",
+      "reason": "The exact UPC record confirms White Claw Hard Seltzer Natural Lime; this repairs the missing space and restores the product expression without changing the six-pack label.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.france44.com/products/White-Claw-Lime-6pk-Can-p533197795",
+          "supports": "UPC 635985025986 identifies White Claw Natural Lime Hard Seltzer as a six-pack of 12 fl oz cans."
+        }
+      ]
+    },
+    {
+      "sku": "101513",
+      "expectedUpc": "085000032442",
+      "expectedSourceRow": 9733,
+      "expectedRawFieldsSha256": "2bb7b8e2ada23906aeea59300199b4889366a4c270b50766b2e572d957466a02",
+      "expectedPublicName": "LA MARCA ROSE PROSECCO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "wine",
+      "proposedPublicTitle": "La Marca Prosecco Rosé",
+      "reason": "The exact UPC record and the brand product page confirm the La Marca Prosecco Rosé expression; only word order, casing and the Rosé accent are corrected.",
+      "evidence": [
+        {
+          "kind": "manufacturer_product_page",
+          "url": "https://www.lamarcaprosecco.com/prosecco-rose.html",
+          "supports": "La Marca identifies its Prosecco Rosé D.O.C. in the 750 mL format."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-81785846",
+          "supports": "UPC 085000032442 identifies La Marca Prosecco Rosé sparkling wine in a 750 mL bottle."
+        }
+      ]
     }
   ]
 }
