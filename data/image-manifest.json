@@ -26440,6 +26440,1426 @@
         "professional": true
       },
       "sha256": "74dc01c8db36901b5fad009cdbe8acccd46dfe15046bc13eea409a27262625a4"
+    },
+    {
+      "expectedUpc": "099988071911",
+      "expectedName": "menage a trois dolce sweet red blend",
+      "alt": "menage a trois dolce sweet red blend — 750 mL bottle",
+      "src": "images/products/sku-5486.jpg",
+      "sku": "5486",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "4eb7fb06b28f3d36ddd8e297b80b384f2f79200c19e7ca39f425e78d3b2e4a56"
+    },
+    {
+      "expectedUpc": "081753818029",
+      "expectedName": "Moet ICE",
+      "alt": "Moet ICE — 750 mL bottle",
+      "src": "images/products/sku-5782.jpg",
+      "sku": "5782",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "4ed35c589cc93233ea69b616b51497fa09d16204d88e7bc411892c9d28a7f70d"
+    },
+    {
+      "expectedUpc": "852832000150",
+      "expectedName": "MUMM NAPA BRUT PRESTIGE",
+      "alt": "MUMM NAPA BRUT PRESTIGE — 750 mL bottle",
+      "src": "images/products/sku-6015.jpg",
+      "sku": "6015",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "10c3163550012d4d0516406fee8df622d55faea26ecc4ceacb800fdc1cd5dd03"
+    },
+    {
+      "expectedUpc": "085000014332",
+      "expectedName": "New Amsterdam Gin",
+      "alt": "New Amsterdam Gin — 200 mL bottle",
+      "src": "images/products/sku-6125.jpg",
+      "sku": "6125",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "200 mL",
+      "attributionRequired": false,
+      "sha256": "27e6dd1304de9a780a96575c75bf7b7934722513a323c0cab8ef8a29f56c962b"
+    },
+    {
+      "expectedUpc": "085000023174",
+      "expectedName": "New Amsterdam mango",
+      "alt": "New Amsterdam mango — 375 mL bottle",
+      "src": "images/products/sku-6128.jpg",
+      "sku": "6128",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "c2c670df3225310e4539ecc72553428426fd8cf5aae4819c8c5b0127229446e0"
+    },
+    {
+      "expectedUpc": "085000026175",
+      "expectedName": "New Amsterdam Raspberry",
+      "alt": "New Amsterdam Raspberry — 1.75 L bottle",
+      "src": "images/products/sku-6131.jpg",
+      "sku": "6131",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "f62269fa82a86567118617d246ff1d0cb6837d5eb56a782a77a0b39a8822ab8e"
+    },
+    {
+      "expectedUpc": "085000024317",
+      "expectedName": "New Amsterdam 100 Proof Vodka",
+      "alt": "New Amsterdam 100 Proof Vodka — 750 mL bottle",
+      "src": "images/products/sku-6146.jpg",
+      "sku": "6146",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "7b39b5988486dde1a82a27933fa1c81c87466df80003a0e8729c1f9187ed475f"
+    },
+    {
+      "expectedUpc": "085000024881",
+      "expectedName": "New Amsterdam Apple",
+      "alt": "New Amsterdam Apple — 1.75 L bottle",
+      "src": "images/products/sku-6158.jpg",
+      "sku": "6158",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "80676fef267d8189c73a794ebfa592bcd1b5db9f94e881f3ec4341027bed05bd"
+    },
+    {
+      "expectedUpc": "085000020364",
+      "expectedName": "NEW AMSTERDAM RED BERRY",
+      "alt": "NEW AMSTERDAM RED BERRY — 375 mL bottle",
+      "src": "images/products/sku-6163.jpg",
+      "sku": "6163",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "538d26e562510b0d745535c4a2c443a0b4818e040da4b592ddef148408dcbfe0"
+    },
+    {
+      "expectedUpc": "085000023204",
+      "expectedName": "New Amsterdam mango",
+      "alt": "New Amsterdam mango — 1.75 L bottle",
+      "src": "images/products/sku-6170.jpg",
+      "sku": "6170",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "18de9b6806eeae281c6f3a2c10dcbdfb134f821d444280b6e988f19af2349ba2"
+    },
+    {
+      "expectedUpc": "085000020395",
+      "expectedName": "New Amsterdam Peach",
+      "alt": "New Amsterdam Peach — 375 mL bottle",
+      "src": "images/products/sku-6175.jpg",
+      "sku": "6175",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "35ebf55983c08384267695dbb3a27d07907c30c3ddf5e8e797797c66dced76eb"
+    },
+    {
+      "expectedUpc": "085000021651",
+      "expectedName": "New Amsterdam Peach",
+      "alt": "New Amsterdam Peach — 1.75 L bottle",
+      "src": "images/products/sku-6176.jpg",
+      "sku": "6176",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "664aecb438993893ab2380929b7e203f94847233d6f69b24979cd29791559a83"
+    },
+    {
+      "expectedUpc": "012584000079",
+      "expectedName": "Oliver Soft Red",
+      "alt": "Oliver Soft Red — 750 mL bottle",
+      "src": "images/products/sku-6397.jpg",
+      "sku": "6397",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "c4f49feb7bf35946f6f41a9f843e3fbb80b5fff2a6eb76260fa68df729294d6e"
+    },
+    {
+      "expectedUpc": "080686008064",
+      "expectedName": "on the rocks blue hawaiian",
+      "alt": "on the rocks blue hawaiian — 375 mL bottle",
+      "src": "images/products/sku-6423.jpg",
+      "sku": "6423",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "9dee13eba5d0271967b565e870163925e6ad51597b4e39ba94cb184644a5908e"
+    },
+    {
+      "expectedUpc": "855880008390",
+      "expectedName": "on the rocks daiquiri classic daiquiri",
+      "alt": "on the rocks daiquiri classic daiquiri — 375 mL bottle",
+      "src": "images/products/sku-6424.jpg",
+      "sku": "6424",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "8700343f6cc929d405b6217817d22e0410047e6cf304ea7663b7a0fd6968f1c0"
+    },
+    {
+      "expectedUpc": "085316601196",
+      "expectedName": "Outer Space Vodka",
+      "alt": "Outer Space Vodka — 750 mL bottle",
+      "src": "images/products/sku-6472.jpg",
+      "sku": "6472",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "5caf808313ae005a14e555af9f90ac85d72bc186dded8aa09b14425dbf19a5e8"
+    },
+    {
+      "expectedUpc": "721733000968",
+      "expectedName": "Patron Anejo",
+      "alt": "Patron Anejo — 375 mL bottle",
+      "src": "images/products/sku-6546.jpg",
+      "sku": "6546",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "e2e9cd6738175c00e963f52ae88c4fdbe1d4f8254478ac3d18979cb78c7d9dc1"
+    },
+    {
+      "expectedUpc": "721733000036",
+      "expectedName": "Patron Cafe",
+      "alt": "Patron Cafe — 750 mL bottle",
+      "src": "images/products/sku-6549.jpg",
+      "sku": "6549",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "bb74ba2fbca8067063e2a4a65689da37a9fe5c1027ebcfb503ae0619dc916a4a"
+    },
+    {
+      "expectedUpc": "721733000951",
+      "expectedName": "Patron Reposado",
+      "alt": "Patron Reposado — 375 mL bottle",
+      "src": "images/products/sku-6556.jpg",
+      "sku": "6556",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "f6b3b5fb2e1b6d96d824edb3a6f205b765febb20e1afae0558425b9e346cb4ed"
+    },
+    {
+      "expectedUpc": "721733000944",
+      "expectedName": "Patron Silver",
+      "alt": "Patron Silver — 375 mL bottle",
+      "src": "images/products/sku-6559.jpg",
+      "sku": "6559",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "2b28f40b42269cb37120e3fb0af469899a6651fe70968f02dae4fd31696b8007"
+    },
+    {
+      "expectedUpc": "721733000234",
+      "expectedName": "Patron Silver",
+      "alt": "Patron Silver — 50 mL bottle",
+      "src": "images/products/sku-6560.jpg",
+      "sku": "6560",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "50 mL",
+      "attributionRequired": false,
+      "sha256": "cccacd54b51c5b7db32f2ac09ce35529b005c6e5c00e43ebf925cc9e10af6cc0"
+    },
+    {
+      "expectedUpc": "721733000883",
+      "expectedName": "Patron Silver",
+      "alt": "Patron Silver — 1.75 L bottle",
+      "src": "images/products/sku-6562.jpg",
+      "sku": "6562",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "32bd6311e011c904d4709421428733434e57f514d6900dc96e2f6624ed3bfb0c"
+    },
+    {
+      "expectedUpc": "021296620024",
+      "expectedName": "Paul Masson Peach",
+      "alt": "Paul Masson Peach — 750 mL bottle",
+      "src": "images/products/sku-6574.jpg",
+      "sku": "6574",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "b550390447f12f7cfc415d1cbce6e57ced4a6ccfb4383836c04fa1d10cc0c3a5"
+    },
+    {
+      "expectedUpc": "080686929406",
+      "expectedName": "Pinnacle Vodka",
+      "alt": "Pinnacle Vodka — 750 mL bottle",
+      "src": "images/products/sku-6690.jpg",
+      "sku": "6690",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "6df47632b30b3af46b5855cf5b4dafe3a8ae116f9cdd0da38fc79fe5d3d3d23f"
+    },
+    {
+      "expectedUpc": "082422489335",
+      "expectedName": "Presidente Brandy",
+      "alt": "Presidente Brandy — 750 mL bottle",
+      "src": "images/products/sku-6801.jpg",
+      "sku": "6801",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "e9eb96452094a8f3d3dac983749d008d8321b87d379922359c18aeb3b942d6cd"
+    },
+    {
+      "expectedUpc": "087236002831",
+      "expectedName": "Remy 1738",
+      "alt": "Remy 1738 — 375 mL bottle",
+      "src": "images/products/sku-7027.jpg",
+      "sku": "7027",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "5f295db5ff97ec0515a9b721a1a04d466e67f721ae0724027700082a2fc2e8b0"
+    },
+    {
+      "expectedUpc": "087236109042",
+      "expectedName": "Remy V",
+      "alt": "Remy V — 375 mL bottle",
+      "src": "images/products/sku-7044.jpg",
+      "sku": "7044",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "4db2d046b460aa0f3114fdcea1c4ff0e3506a90fd7977508ecb608f719a6e931"
+    },
+    {
+      "expectedUpc": "087236001131",
+      "expectedName": "Remy VSOP",
+      "alt": "Remy VSOP — 200 mL bottle",
+      "src": "images/products/sku-7048.jpg",
+      "sku": "7048",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "200 mL",
+      "attributionRequired": false,
+      "sha256": "5db9bed923071e5cad0fdae4be4370b6bf0fd293e21982413056df9e2b8cf6e2"
+    },
+    {
+      "expectedUpc": "084279977638",
+      "expectedName": "Risata Moscato",
+      "alt": "Risata Moscato — 750 mL bottle",
+      "src": "images/products/sku-7132.jpg",
+      "sku": "7132",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "97792ac49959eae9bdf85b07ae08a30c9526ae84947dcc2d225f83d4cafae32c"
+    },
+    {
+      "expectedUpc": "084279988108",
+      "expectedName": "Risata PINK Moscato",
+      "alt": "Risata PINK Moscato — 750 mL bottle",
+      "src": "images/products/sku-7133.jpg",
+      "sku": "7133",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "fb8a9dd34dceef05be7fe4455266275071e5af1b5dcf22ce1359a48ad865c4b5"
+    },
+    {
+      "expectedUpc": "086767221063",
+      "expectedName": "Romana Black",
+      "alt": "Romana Black — 750 mL bottle",
+      "src": "images/products/sku-7184.jpg",
+      "sku": "7184",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "ee95773daf982ead624b9d11228fb20142e73f142f6011ef58e846ddfa91718b"
+    },
+    {
+      "expectedUpc": "080686141129",
+      "expectedName": "Ron Rico Silver",
+      "alt": "Ron Rico Silver — 1.75 L bottle",
+      "src": "images/products/sku-7189.jpg",
+      "sku": "7189",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "ae1db72eb7155f9d02b833573e9905add88da97ebcb9e7095e2d2a48760aa91d"
+    },
+    {
+      "expectedUpc": "699013000550",
+      "expectedName": "Ron Zacapa Sistema Solera 23 Rum",
+      "alt": "Ron Zacapa Sistema Solera 23 Rum — 750 mL packaging",
+      "src": "images/products/sku-7193.jpg",
+      "sku": "7193",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "513f54d43667faae85d0e7efc0b87de8bae0f7a36a678ac8b3df9a97f10cbaf6"
+    },
+    {
+      "expectedUpc": "083085904081",
+      "expectedName": "Ruffino Prosecco Sparkling Wine",
+      "alt": "Ruffino Prosecco Sparkling Wine — 750 mL packaging",
+      "src": "images/products/sku-7221.jpg",
+      "sku": "7221",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "73793434f82c32ccf4435638870cf0fed17de1cda505e7104cd7e1a9e0bfa8fd"
+    },
+    {
+      "expectedUpc": "086767520104",
+      "expectedName": "Rumple Minze",
+      "alt": "Rumple Minze — 200 mL packaging",
+      "src": "images/products/sku-7252.jpg",
+      "sku": "7252",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "200 mL",
+      "attributionRequired": false,
+      "sha256": "46ebb895a9d6eab199e58cafa55dd61da3c9eb24afddc26fcd9e6c9a6bfaa812"
+    },
+    {
+      "expectedUpc": "086767520067",
+      "expectedName": "Rumple Minze",
+      "alt": "Rumple Minze — 750 mL packaging",
+      "src": "images/products/sku-7254.jpg",
+      "sku": "7254",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "4052439f395d404f2b956be3bd7f60098256dcbf5018137a35a9ff00cebbf3d4"
+    },
+    {
+      "expectedUpc": "087000700703",
+      "expectedName": "Seagrams 7 Crown",
+      "alt": "Seagrams 7 Crown — 1.75 L packaging",
+      "src": "images/products/sku-7436.jpg",
+      "sku": "7436",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "eac493422506c85816063838c133d2311b717f01a7640214782802607e0c7dbc"
+    },
+    {
+      "expectedUpc": "080432401262",
+      "expectedName": "Seagrams Gin",
+      "alt": "Seagrams Gin — 1.75 L packaging",
+      "src": "images/products/sku-7463.jpg",
+      "sku": "7463",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "3019b707aa64764cda767a096cc6d40b89439981c1b3b28c27e8735b7e06e44f"
+    },
+    {
+      "expectedUpc": "080432401224",
+      "expectedName": "Seagrams Gin",
+      "alt": "Seagrams Gin — 375 mL packaging",
+      "src": "images/products/sku-7468.jpg",
+      "sku": "7468",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "375 mL",
+      "attributionRequired": false,
+      "sha256": "c7ceae58186ecd17ac1dbfafcda57457d4f19b9da98158c531b45a77eae2398d"
+    },
+    {
+      "expectedUpc": "085676403171",
+      "expectedName": "SKOL GIN",
+      "alt": "SKOL GIN — 1.75 L packaging",
+      "src": "images/products/sku-7637.jpg",
+      "sku": "7637",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "23782a5a8a28fbd3e2161eb1a2ffea946cfa42848fac1f6dcc54567f6cd43334"
+    },
+    {
+      "expectedUpc": "085676101176",
+      "expectedName": "Skol Vodka",
+      "alt": "Skol Vodka — 1.75 L packaging",
+      "src": "images/products/sku-7643.jpg",
+      "sku": "7643",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "58c5ee9bebd4126d57c998cd95489fe1e4c236622606118d055c8b6efcdf8640"
+    },
+    {
+      "expectedUpc": "721059002004",
+      "expectedName": "SKYY Vodka",
+      "alt": "SKYY Vodka — 200 mL packaging",
+      "src": "images/products/sku-7664.jpg",
+      "sku": "7664",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "200 mL",
+      "attributionRequired": false,
+      "sha256": "7c2cf267d1906ccf3820d9388153099c3ac8b05cd0a8d25752603ecf39204964"
+    },
+    {
+      "expectedUpc": "082000723943",
+      "expectedName": "Smirnoff Citrus Vodka",
+      "alt": "Smirnoff Citrus Vodka — 1.75 L packaging",
+      "src": "images/products/sku-7703.jpg",
+      "sku": "7703",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "23b1cd5c96614320363e3c9f09643487bcaf22593dfa5aab94d9a09e6623fe75"
+    },
+    {
+      "expectedUpc": "082000001034",
+      "expectedName": "Smirnoff Green Apple",
+      "alt": "Smirnoff Green Apple — 1.75 L packaging",
+      "src": "images/products/sku-7708.jpg",
+      "sku": "7708",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "7b199efd693c8e5a4105fa4b8df79c191789ba86c5bb66437b22241fe9cc09ba"
+    },
+    {
+      "expectedUpc": "082000727606",
+      "expectedName": "Smirnoff Vodka",
+      "alt": "Smirnoff Vodka — 1.75 L packaging",
+      "src": "images/products/sku-7781.jpg",
+      "sku": "7781",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "0daf855854d3007646bc96070867ebbe90250c1e393462dfacadc2e6d51e8f8c"
+    },
+    {
+      "expectedUpc": "087236992002",
+      "expectedName": "St-Rémy VSOP French Brandy",
+      "alt": "St-Rémy VSOP French Brandy — 750 mL packaging",
+      "src": "images/products/sku-8026.jpg",
+      "sku": "8026",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "1be555cbede4019e9adec87bc70dfd0fd458d28eaec07d48751141e58eb050b0"
+    },
+    {
+      "expectedUpc": "087872630016",
+      "expectedName": "Stella Rosa Honey Peach Flavored Brandy",
+      "alt": "Stella Rosa Honey Peach Flavored Brandy — 750 mL packaging",
+      "src": "images/products/sku-8081.jpg",
+      "sku": "8081",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "c4f4da5429ef192cc6581f49f14d0551a5029b58d2d1926c493af6c660b1b95f"
+    },
+    {
+      "expectedUpc": "087872633406",
+      "expectedName": "Stella Rosa Red",
+      "alt": "Stella Rosa Red — 750 mL packaging",
+      "src": "images/products/sku-8087.jpg",
+      "sku": "8087",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "e7490c101b7c832e33887b0cc91bab91908e1622c09e2926220d05fdeb7e1473"
+    },
+    {
+      "expectedUpc": "087872630009",
+      "expectedName": "Stella Rosa Smooth Black Berry Flavored Brandy",
+      "alt": "Stella Rosa Smooth Black Berry Flavored Brandy — 750 mL packaging",
+      "src": "images/products/sku-8095.jpg",
+      "sku": "8095",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "53359488c8c6c840b2be58ecb99827322901ed9abb00b3919913bd6924dc62ba"
+    },
+    {
+      "expectedUpc": "088004070946",
+      "expectedName": "Svedka Vodka",
+      "alt": "Svedka Vodka — 1.75 L packaging",
+      "src": "images/products/sku-8424.jpg",
+      "sku": "8424",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "c7efef699960135b196f04fc7f4ff39b055c1d3da03fddcba75370ab1ceeb2d7"
+    },
+    {
+      "expectedUpc": "088076168664",
+      "expectedName": "Tanqueray Rangpur",
+      "alt": "Tanqueray Rangpur — 1.75 L packaging",
+      "src": "images/products/sku-8534.jpg",
+      "sku": "8534",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "52633c5080add6a5b286110519065e7399a19d4059b0d7e18c91bcb3e4c5dfbd"
+    },
+    {
+      "expectedUpc": "080660203010",
+      "expectedName": "Ten High Sour Mash Kentucky Bourbon Whiskey with Natural Flavors",
+      "alt": "Ten High Sour Mash Kentucky Bourbon Whiskey with Natural Flavors — 1.75 L packaging",
+      "src": "images/products/sku-8657.jpg",
+      "sku": "8657",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "fa7c7c083d9c913482c02c041a094d4bbeac120a385c1b6607ca3f3294dabf3b"
+    },
+    {
+      "expectedUpc": "085592121029",
+      "expectedName": "Tequila Rose",
+      "alt": "Tequila Rose — 1.75 L packaging",
+      "src": "images/products/sku-8658.jpg",
+      "sku": "8658",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "ebffb3929a520da3609b1b3ea4f774369beebe820675597c2751dd3527011185"
+    },
+    {
+      "expectedUpc": "857852002641",
+      "expectedName": "Tropical Blueberry Moscato",
+      "alt": "Tropical Blueberry Moscato — 750 mL packaging",
+      "src": "images/products/sku-8861.jpg",
+      "sku": "8861",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "2626bd04790cbc26311efa184bcc87a0d3535badee2a59aa562757fa815031e0"
+    },
+    {
+      "expectedUpc": "857852002108",
+      "expectedName": "Tropical Mango Moscato",
+      "alt": "Tropical Mango Moscato — 750 mL packaging",
+      "src": "images/products/sku-8900.jpg",
+      "sku": "8900",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "948f47b17d9f5ced04b3fd1d95ee8041dcff990c6472acd2597b203242c155ec"
+    },
+    {
+      "expectedUpc": "857852002085",
+      "expectedName": "Tropical Passion Fruit Moscato",
+      "alt": "Tropical Passion Fruit Moscato — 750 mL packaging",
+      "src": "images/products/sku-8901.jpg",
+      "sku": "8901",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "b50ae7a43a44d4d03c11c088d74a4066d7e2a39633929e6c98c274b429b6ec90"
+    },
+    {
+      "expectedUpc": "080686896098",
+      "expectedName": "Truly Pineapple Mango Flavored Vodka",
+      "alt": "Truly Pineapple Mango Flavored Vodka — 750 mL packaging",
+      "src": "images/products/sku-8918.jpg",
+      "sku": "8918",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "f84d308e107d5f5aa9a4809377ed3ab3660c2073d5d0f27034750b0da35dbc00"
+    },
+    {
+      "expectedUpc": "080686896036",
+      "expectedName": "Truly Strawberry Lemonade Flavored Vodka",
+      "alt": "Truly Strawberry Lemonade Flavored Vodka — 750 mL packaging",
+      "src": "images/products/sku-8921.jpg",
+      "sku": "8921",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "4c1b767f3e017ec623c2d6b223836f0434f71890be0e1057db96d28bbd5f1480"
+    },
+    {
+      "expectedUpc": "812459010505",
+      "expectedName": "Twenty Grand",
+      "alt": "Twenty Grand — 750 mL packaging",
+      "src": "images/products/sku-8957.jpg",
+      "sku": "8957",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "c2b52120cea00eb05affc930fdfb7aa4bad97cf3236cd8aedb3236cc608886bd"
+    },
+    {
+      "expectedUpc": "633824913432",
+      "expectedName": "Van Gogh Açaí-Blueberry Vodka",
+      "alt": "Van Gogh Açaí-Blueberry Vodka — 750 mL packaging",
+      "src": "images/products/sku-9160.jpg",
+      "sku": "9160",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "1f6bc63194fe6fab3d8385bd6f484dd83eb010384ac5ca6971c16859988dcd35"
+    },
+    {
+      "expectedUpc": "763955010004",
+      "expectedName": "XXL Blackberry Moscato",
+      "alt": "XXL Blackberry Moscato — 750 mL packaging",
+      "src": "images/products/sku-9722.jpg",
+      "sku": "9722",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "2c9b98521be9db1e257cda5e9e872101cb9fdf7eda6526e8042e0acb731a31ef"
+    },
+    {
+      "expectedUpc": "763955015009",
+      "expectedName": "XXL Peach Moscato",
+      "alt": "XXL Peach Moscato — 750 mL packaging",
+      "src": "images/products/sku-9727.jpg",
+      "sku": "9727",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "13a5c3ec51bd3fb20033d3433ae86aff86450a609cb4d9a3d6e1cf90c1a27fe6"
+    },
+    {
+      "expectedUpc": "763955016006",
+      "expectedName": "XXL Strawberry & Grapes Moscato",
+      "alt": "XXL Strawberry & Grapes Moscato — 750 mL packaging",
+      "src": "images/products/sku-9729.jpg",
+      "sku": "9729",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "e7da40b766c894e968e7534dd34480d1f01981466a41155d32941953447bfdb9"
+    },
+    {
+      "expectedUpc": "088004074579",
+      "expectedName": "FIREBALL APPLE WHISKY",
+      "alt": "FIREBALL APPLE WHISKY — 200 mL packaging",
+      "src": "images/products/sku-101253.jpg",
+      "sku": "101253",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "200 mL",
+      "attributionRequired": false,
+      "sha256": "3c2f6e119b38990fe0672cb6182b56801f00091a3ea039399e199149a3dc3755"
+    },
+    {
+      "expectedUpc": "811041030013",
+      "expectedName": "LALO Blanco Tequila",
+      "alt": "LALO Blanco Tequila — 750 mL packaging",
+      "src": "images/products/sku-101276.jpg",
+      "sku": "101276",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "91b2831b6911c41cd861e2ee4d222a94a583e70ac4f39a67221c8a68b92a7bad"
+    },
+    {
+      "expectedUpc": "088004012793",
+      "expectedName": "PLATINUM VODKA",
+      "alt": "PLATINUM VODKA — 200 mL packaging",
+      "src": "images/products/sku-101290.jpg",
+      "sku": "101290",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "200 mL",
+      "attributionRequired": false,
+      "sha256": "0846b19476bbd59a95bfe9a2ea31d4e5f85c2b5f70efe5d41432019b8c15697d"
+    },
+    {
+      "expectedUpc": "087872638425",
+      "expectedName": "Stella Rosa Watermelon",
+      "alt": "Stella Rosa Watermelon — 750 mL packaging",
+      "src": "images/products/sku-101362.jpg",
+      "sku": "101362",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "1c9100d1db6c3c680de4189b07a7e6ff496260c1c4908189d18f89f81d34a1d0"
+    },
+    {
+      "expectedUpc": "810118070068",
+      "expectedName": "Courvoisier VS",
+      "alt": "Courvoisier VS — 750 mL packaging",
+      "src": "images/products/sku-101403.jpg",
+      "sku": "101403",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "289ee4e5f4f616a01f120bca8c56ea02135f1074f3a631d6d4397880144debaf"
+    },
+    {
+      "expectedUpc": "856724006145",
+      "expectedName": "Casamigos Blanco",
+      "alt": "Casamigos Blanco — 1.75 L packaging",
+      "src": "images/products/sku-101456.jpg",
+      "sku": "101456",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "1.75 L",
+      "attributionRequired": false,
+      "sha256": "6b15112cc204acd78e557774499c2e7810b19812caed85fd1291b74344d0f61b"
+    },
+    {
+      "expectedUpc": "859026001221",
+      "expectedName": "LA GRITONA REPOSADO",
+      "alt": "LA GRITONA REPOSADO — 750 mL packaging",
+      "src": "images/products/sku-101521.jpg",
+      "sku": "101521",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "8d885523b36cc7c0f11d6f7217ecedcdb7df756be1f9b8ba662b223441ca45a8"
+    },
+    {
+      "expectedUpc": "857853002572",
+      "expectedName": "Gancia Atto Primo Mango Sparkling Wine",
+      "alt": "Gancia Atto Primo Mango Sparkling Wine — 750 mL packaging",
+      "src": "images/products/sku-637.jpg",
+      "sku": "637",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "attributionRequired": false,
+      "sha256": "9077bf5423de9ec36870ccb79fb5fc977579ee682f5382b03835f1c1b2ef90f7"
     }
   ]
 }
