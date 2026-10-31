@@ -19730,6 +19730,306 @@
       },
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false
+    },
+    {
+      "sku": "1241",
+      "expectedUpc": "080480301002",
+      "expectedName": "Bombay Sapphire Gin",
+      "expectedLabel": "1.75 L",
+      "src": "images/products/sku-1241.png",
+      "alt": "Bombay Sapphire Gin — 1.75 L bottle",
+      "sha256": "0f6ee13a2dd70506b87e7c79dde5e9ccfbbbc150cf4e0c284ed389b6650f0c9d",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "2639",
+      "expectedUpc": "081308001074",
+      "expectedName": "Cupcake Vineyards Riesling",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2639.png",
+      "alt": "Cupcake Vineyards Riesling — 750 mL bottle",
+      "sha256": "9b216966a3c37b1a52ad1630c888f43a424241f132a6f40fe18b305345e987a9",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "2791",
+      "expectedUpc": "024000163084",
+      "expectedName": "Del Monte Sweet Peas",
+      "expectedLabel": "15 oz",
+      "src": "images/products/sku-2791.jpg",
+      "alt": "Del Monte Sweet Peas — 15 oz can",
+      "sha256": "86d84eac8e3778640af92100078060c8ee23b56476b7a161ec712671537d5f4a",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "2879",
+      "expectedUpc": "088586600241",
+      "expectedName": "Domaine Ste. Michelle Brut Sparkling Wine",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-2879.jpg",
+      "alt": "Domaine Ste. Michelle Brut Sparkling Wine — 750 mL bottle",
+      "sha256": "ee7535c9da52dceccd5a9797cc9290af7a60402586ccf11e23c5e2662915eae9",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "326",
+      "expectedUpc": "085000018194",
+      "expectedName": "Alamos Malbec",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-326.jpg",
+      "alt": "Alamos Malbec — 750 mL bottle",
+      "sha256": "c57bfd65e573a2f2ea9b9e53cb77831aada0329eb85a701631149599f25f9bed",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "4240",
+      "expectedUpc": "888109010089",
+      "expectedName": "Hostess Raspberry Zingers",
+      "expectedLabel": "4.02 oz",
+      "src": "images/products/sku-4240.jpg",
+      "alt": "Hostess Raspberry Zingers — 4.02 oz · 3 cakes sleeve",
+      "sha256": "90b7a7603e3135668895f8fedeadf28137a4a4477b29bd808f3ac80b719acc68",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "4285",
+      "expectedUpc": "075669080021",
+      "expectedName": "Iberia Arroz Mexicano Mexican Style Rice",
+      "expectedLabel": "227 g",
+      "src": "images/products/sku-4285.jpg",
+      "alt": "Iberia Arroz Mexicano Mexican Style Rice — 8 oz (227 g) microwaveable box",
+      "sha256": "d8d4219952e1d8cefebf06e4dcaaf8786492bfc72e96704583496c698ff08a32",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "4286",
+      "expectedUpc": "075669080038",
+      "expectedName": "Iberia Rice & Black Beans",
+      "expectedLabel": "227 g",
+      "src": "images/products/sku-4286.jpg",
+      "alt": "Iberia Rice & Black Beans — 8 oz (227 g) microwaveable box",
+      "sha256": "01edbe511aa11858f3b77cd027b15564130b61594af7b4aff2931d4c3627cad4",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "4287",
+      "expectedUpc": "075669080045",
+      "expectedName": "Iberia Rice & Red Beans",
+      "expectedLabel": "227 g",
+      "src": "images/products/sku-4287.jpg",
+      "alt": "Iberia Rice & Red Beans — 8 oz (227 g) microwaveable box",
+      "sha256": "a2da825dc55e3a26249603fa1f79db391950726de7071a94f61b7557e1501267",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "6425",
+      "expectedUpc": "855880008147",
+      "expectedName": "On The Rocks The Mai Tai Cocktail, Crafted with Cruzan Rum",
+      "expectedLabel": "375 mL",
+      "src": "images/products/sku-6425.png",
+      "alt": "On The Rocks The Mai Tai Cocktail, Crafted with Cruzan Rum — 375 mL packaging",
+      "sha256": "2652292591d5511275a7cf2c7dc92f0b6d7ab181e3cb6d86d2b70db0af653c23",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "6613",
+      "expectedUpc": "084380360947",
+      "expectedName": "Pennsylvania Dutch Egg Nog",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6613.jpg",
+      "alt": "Pennsylvania Dutch Egg Nog — 750 mL packaging",
+      "sha256": "0fd48ce4da0a66678c43472c125858a4a6d102ee7e5b03a9925e283751c511f5",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "6678",
+      "expectedUpc": "089708450805",
+      "expectedName": "Pinnacle Cookie Dough Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6678.jpg",
+      "alt": "Pinnacle Cookie Dough Vodka — 750 mL packaging",
+      "sha256": "65ff06c6abf5044efd784ff62e85bf270b698bba82e4ffafbe22c76b2b7f921d",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "7523",
+      "expectedUpc": "087000007376",
+      "expectedName": "Seagram's VO Canadian Whisky",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-7523.png",
+      "alt": "Seagram's VO Canadian Whisky — 750 mL packaging",
+      "sha256": "21211c582bcc71d9236bd155deffd947e54fcda7dcbaa8b3af6cdb7425026780",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "7936",
+      "expectedUpc": "022000017772",
+      "expectedName": "Skittles Sour Candy",
+      "expectedLabel": "7.2 oz",
+      "src": "images/products/sku-7936.jpg",
+      "alt": "Skittles Sour Candy — 7.2 oz resealable pouch",
+      "sha256": "b2027ddea05fc617c4f87d71eb3412633541f2c17220a5ff899e2e5fdc60ff02",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "9218",
+      "expectedUpc": "038075206300",
+      "expectedName": "Verdi Peach Sparkletini",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-9218.jpg",
+      "alt": "Verdi Peach Sparkletini — 750 mL packaging",
+      "sha256": "96cca9a42b8d8648faa9e7aaa0c1067ee5bac003e4024e68a27cc93ca20efc05",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     }
   ]
 }
