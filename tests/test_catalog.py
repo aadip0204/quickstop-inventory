@@ -1222,6 +1222,78 @@ class ImportTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'requires one matching explicit source liquid volume'):
             builder.build(ounce_only, source_reviews_manifest=changed)
 
+    def test_guarded_food_size_resolution_keeps_photo_provenance_private(self):
+        source = export(
+            {'SKU': '6020', 'MAINUPC': '012345678905',
+             'ItemName': 'Example Snack 13oz', 'DEPNAME': 'Snacks'},
+            {'SKU': '6012', 'MAINUPC': '012345678912',
+             'ItemName': 'Example Snack 8oz', 'DEPNAME': 'Snacks'},
+        )
+        raw = list(csv.reader(io.StringIO(source.decode())))[1]
+        source_hash = hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+        image = direct_reference_image_fixture(source, '6020')
+        image.update(expectedUpc=raw[1], expectedName='Example Snack', expectedLabel='1.75 oz')
+        review = {'schemaVersion': 1, 'reviews': [{
+            'sku': '6020', 'expectedUpc': raw[1],
+            'expectedNameSha256': hashlib.sha256(raw[2].encode()).hexdigest(),
+            'expectedSourceRecordSha256': source_hash,
+            'action': 'size_needs_confirmation',
+            'reason': 'The original source size conflicts with the exact package record.',
+            'reviewedOn': '2026-10-30',
+            'foodSizeResolution': {
+                'expectedSourceRow': 1, 'expectedPublicName': 'Example Snack',
+                'expectedPublicLabel': 'Size needs confirmation',
+                'expectedCategory': 'food', 'expectedDepartment': 'Snacks',
+                'verifiedLabel': '1.75 oz', 'expectedImageSha256': image['sha256'],
+                'verification': {key: True for key in ('brand', 'expression', 'size', 'packaging', 'upc', 'visual')},
+                'evidence': [
+                    {'kind': 'manufacturer', 'url': 'https://example.test/brand',
+                     'supports': 'Manufacturer identifies the reviewed snack package.'},
+                    {'kind': 'exact_upc_listing', 'url': 'https://example.test/upc/012345678905',
+                     'supports': 'Exact UPC 012345678905 identifies the 1.75 oz snack bag.'},
+                ],
+                'expectedResultingGroupSkus': ['6020', '6012'],
+                'reason': 'Exact UPC package evidence resolves only the held snack weight.',
+            },
+        }]}
+        catalog, audit = builder.build(
+            source, source_reviews_manifest=review,
+            image_manifest={'schemaVersion': 1, 'images': [image]},
+            private_direct_image_evidence_manifest=direct_reference_evidence_fixture(image))
+        product = next(p for p in catalog['products'] if any(v['sku'] == '6020' for v in p['variants']))
+        by_sku = {v['sku']: v for v in product['variants']}
+        self.assertEqual([v['sku'] for v in product['variants']], ['6020', '6012'])
+        self.assertEqual(by_sku['6020']['label'], '1.75 oz')
+        self.assertIsNotNone(by_sku['6020']['image'])
+        self.assertIsNone(by_sku['6012']['image'])
+        self.assertEqual(audit['records'][0]['previousPublicIdentity'],
+                         {'name': 'Example Snack', 'label': 'Size needs confirmation'})
+
+        wrong = copy.deepcopy(review)
+        wrong['reviews'][0]['foodSizeResolution']['verifiedLabel'] = '1.75 fl oz'
+        with self.assertRaisesRegex(ValueError, 'canonical non-fluid-ounce'):
+            builder.build(source, source_reviews_manifest=wrong)
+        wrong = copy.deepcopy(review)
+        wrong['reviews'][0]['foodSizeResolution']['sourceImageUrl'] = 'https://example.test/photo.jpg'
+        with self.assertRaisesRegex(ValueError, 'missing or unsupported fields'):
+            builder.build(source, source_reviews_manifest=wrong)
+        wrong = copy.deepcopy(review)
+        wrong['reviews'][0]['foodSizeResolution']['expectedResultingGroupSkus'] = ['6020']
+        with self.assertRaisesRegex(ValueError, 'final SKU-group mismatch'):
+            builder.build(source, source_reviews_manifest=wrong,
+                          image_manifest={'schemaVersion': 1, 'images': [image]},
+                          private_direct_image_evidence_manifest=direct_reference_evidence_fixture(image))
+        wrong = copy.deepcopy(review)
+        wrong['reviews'][0]['identityResolution'] = {}
+        with self.assertRaisesRegex(ValueError, 'cannot coexist'):
+            builder.build(source, source_reviews_manifest=wrong)
+        wrong_image = copy.deepcopy(image)
+        wrong_image['sha256'] = '0' * 64
+        with self.assertRaisesRegex(ValueError, 'does not match exact label/image guard'):
+            builder.build(source, source_reviews_manifest=review,
+                          image_manifest={'schemaVersion': 1, 'images': [wrong_image]},
+                          private_direct_image_evidence_manifest=direct_reference_evidence_fixture(wrong_image))
+
     def test_duplicate_names_and_upcs_keep_every_sku(self):
         catalog, _ = builder.build(export({'ItemName': 'Example Vodka 750ml'}, {'ItemName': 'Example Vodka 750ml'}))
         self.assertEqual(catalog['counts']['products'], 1)
