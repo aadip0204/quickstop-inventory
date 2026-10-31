@@ -5924,6 +5924,120 @@
           "supports": "Inspected package photo shows one complete Chef Boyardee Mini Beef Ravioli in Pasta Sauce can with 15 oz printed on the label."
         }
       ]
+    },
+    {
+      "sku": "2868",
+      "expectedUpc": "638489000275",
+      "expectedNameSha256": "91689f7bdc52188f26c3e2502f7bb075d30f84f7469e76e3c12bfe50214eea3a",
+      "expectedSourceRecordSha256": "d8c74e5cae52b37e30de5356fcd78ac0f0e5f357aa661e451c830dbf9434e0ad",
+      "expectedSourceRow": 1853,
+      "action": "resolve_verified_pack_identity",
+      "reviewedOn": "2026-10-30",
+      "expectedPublicName": "Dog Fish Raison D'Etre",
+      "expectedLabel": "6-pack · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Micro",
+      "verifiedLabel": "6-pack · 12 oz · bottles",
+      "expectedImageSha256": "1a52a9d6bb269835692bececd1186f30a7bc2a4e351744f671d89c53be510705",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://dogfishalehouse.com/beers/raison-detre/",
+          "supports": "Dogfish Head identifies the Raison D’Être Belgian-style brown-ale expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www2.myfloridalicense.com/abt/auditing/malt_prices/jj_taylor/documents/2013-22_001.pdf",
+          "supports": "Exact UPC 638489000275 maps to Dogfish Head Raison D'Etre in six 12 oz bottles."
+        }
+      ],
+      "expectedResultingGroupSkus": [
+        "2868"
+      ],
+      "reason": "Exact UPC and package evidence add only the confirmed per-bottle size to the existing six-pack bottle identity."
+    },
+    {
+      "sku": "9440",
+      "expectedUpc": "635985260660",
+      "expectedNameSha256": "b7ba910f2c706868c53c1fcfe0d1407ec9aa0fd1e1984bd656ab467cf8fa17be",
+      "expectedSourceRecordSha256": "8df7f0d1a4c24888d75c1ec42ab7f0727e5201cc103c0fbdfbe509668c54d84c",
+      "expectedSourceRow": 6001,
+      "action": "resolve_verified_pack_identity",
+      "reviewedOn": "2026-10-30",
+      "expectedPublicName": "White ClawRaspberry",
+      "expectedLabel": "6-pack",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "verifiedLabel": "6-pack · 12 oz · cans",
+      "expectedImageSha256": "e7f43752da1edfdcf77e394f299c4511e57894c0f27db02a1bbbefb8abfa419c",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.whiteclaw.com/products/raspberry",
+          "supports": "White Claw identifies Raspberry as a single-flavor six-pack in 12 oz cans."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/18785697-white-claw-raspberry-can-12-fl-oz",
+          "supports": "Exact UPC 635985260660 identifies White Claw Raspberry Hard Seltzer as six 12 fl oz cans."
+        }
+      ],
+      "expectedResultingGroupSkus": [
+        "9440"
+      ],
+      "reason": "Exact UPC and package evidence add only the confirmed per-can size and can format to the existing six-pack identity."
+    },
+    {
+      "sku": "9712",
+      "expectedUpc": "094514000908",
+      "expectedNameSha256": "170c65382d782a359847740c6afa8c0d05f364494dd075f84e3ec61811ff5b64",
+      "expectedSourceRecordSha256": "42e86e12b7857f2f4ab239400d41d5e187bd3083db6ba8d4cc0a01192fe49312",
+      "expectedSourceRow": 7206,
+      "action": "refine_verified_fluid_ounce_label",
+      "reviewedOn": "2026-10-30",
+      "expectedPublicName": "XTRA Tropical Passion Laundry Detergent",
+      "expectedPublicLabel": "67.5 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "verifiedLabel": "67.5 fl oz",
+      "expectedImageSha256": "1781ec8eccd38168d19fb1dd884ac32279d0fb3bdb57c5013e66fb5fc602904e",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.xtralaundry.com/liquid-detergents/xtra-tropical-passion-liquid-detergent",
+          "supports": "XTRA identifies Tropical Passion liquid laundry detergent."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.dollargeneral.com/p/xtra-tropical-passion-laundry-detergent-67-5-fl-oz/094514000908",
+          "supports": "Exact UPC 094514000908 identifies XTRA Tropical Passion Laundry Detergent, 67.5 fl oz."
+        }
+      ],
+      "reason": "The exact raw source row explicitly states a 67.5 fl oz liquid volume; this guarded refinement changes no other product field."
     }
   ]
 }

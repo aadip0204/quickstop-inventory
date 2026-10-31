@@ -19650,6 +19650,86 @@
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "expectedUpc": "050037014549"
+    },
+    {
+      "sku": "2868",
+      "expectedUpc": "638489000275",
+      "expectedName": "Dogfish Head Raison D’Être Brown Ale",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "src": "images/products/sku-2868.jpg",
+      "alt": "Dogfish Head Raison D’Être Brown Ale — six 12 oz bottles",
+      "sha256": "1a52a9d6bb269835692bececd1186f30a7bc2a4e351744f671d89c53be510705",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "9440",
+      "expectedUpc": "635985260660",
+      "expectedName": "White Claw Raspberry",
+      "expectedLabel": "6-pack · 12 oz · cans",
+      "src": "images/products/sku-9440.jpg",
+      "alt": "White Claw Raspberry — six 12 oz cans",
+      "sha256": "e7f43752da1edfdcf77e394f299c4511e57894c0f27db02a1bbbefb8abfa419c",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "9712",
+      "expectedUpc": "094514000908",
+      "expectedName": "XTRA Tropical Passion Laundry Detergent",
+      "expectedLabel": "67.5 fl oz",
+      "src": "images/products/sku-9712.jpg",
+      "alt": "XTRA Tropical Passion Laundry Detergent — 67.5 fl oz packaging",
+      "sha256": "1781ec8eccd38168d19fb1dd884ac32279d0fb3bdb57c5013e66fb5fc602904e",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "7525",
+      "expectedUpc": "720815986046",
+      "expectedName": "Seagram's Extra Smooth Vodka",
+      "expectedLabel": "1.75 L",
+      "src": "images/products/sku-7525.jpg",
+      "alt": "Seagram's Extra Smooth Vodka — 1.75 L packaging",
+      "sha256": "6e809fea6aec580022220677edd34ff43c096061b1bde4e11f4142142fbf2718",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     }
   ]
 }

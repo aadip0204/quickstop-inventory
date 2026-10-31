@@ -1088,6 +1088,140 @@ class ImportTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Container clarification'):
                 builder.build(uncertain, source_reviews_manifest=changed)
 
+    def test_guarded_pack_identity_keeps_every_verified_package_fact_and_binds_one_photo(self):
+        source = export({'SKU': '2868', 'MAINUPC': '012345678905',
+                         'ItemName': 'Example Beverage 6pkBottles', 'PackName': '6pk Beer Tax',
+                         'DEPNAME': 'Micro'})
+        raw = list(csv.reader(io.StringIO(source.decode())))[1]
+        source_hash = hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+        image = direct_reference_image_fixture(source, '2868')
+        review = {'schemaVersion': 1, 'reviews': [{
+            'sku': '2868', 'expectedUpc': raw[1],
+            'expectedNameSha256': hashlib.sha256(raw[2].encode()).hexdigest(),
+            'expectedSourceRecordSha256': source_hash, 'expectedSourceRow': 1,
+            'action': 'resolve_verified_pack_identity', 'reviewedOn': '2026-10-30',
+            'expectedPublicName': 'Example Beverage', 'expectedLabel': '6-pack · bottles',
+            'expectedCategory': 'beer', 'expectedDepartment': 'Micro',
+            'verifiedLabel': '6-pack · 12 oz · bottles',
+            'expectedImageSha256': image['sha256'],
+            'verification': {key: True for key in ('brand', 'expression', 'size', 'packaging', 'upc', 'visual')},
+            'evidence': [
+                {'kind': 'manufacturer', 'url': 'https://example.test/brand',
+                 'supports': 'Manufacturer identifies the reviewed beverage expression.'},
+                {'kind': 'exact_upc_listing', 'url': 'https://example.test/upc/012345678905',
+                 'supports': 'Exact UPC 012345678905 identifies a six-pack of 12 oz bottles.'},
+            ],
+            'expectedResultingGroupSkus': ['2868'],
+            'reason': 'Exact UPC evidence enriches only the verified package facts.',
+        }]}
+        titles = {'schemaVersion': 1, 'reviews': [{
+            'sku': '2868', 'expectedUpc': raw[1], 'expectedSourceRow': 1,
+            'expectedRawFieldsSha256': source_hash,
+            'expectedPublicName': 'Example Beverage', 'expectedLabel': '6-pack · 12 oz · bottles',
+            'expectedCategory': 'beer', 'expectedDepartment': 'Micro',
+            'proposedPublicTitle': 'Example Reviewed Beverage',
+            'reason': 'Exact UPC evidence confirms the reviewed product title.',
+            'evidence': [{'kind': 'exact_upc_listing', 'url': 'https://example.test/upc/012345678905',
+                          'supports': 'Exact UPC 012345678905 identifies the reviewed product title.'}],
+        }]}
+        image.update(expectedUpc=raw[1], expectedName='Example Reviewed Beverage',
+                     expectedLabel='6-pack · 12 oz · bottles')
+        catalog, audit = builder.build(
+            source, source_reviews_manifest=review, public_name_reviews_manifest=titles,
+            image_manifest={'schemaVersion': 1, 'images': [image]},
+            private_direct_image_evidence_manifest=direct_reference_evidence_fixture(image))
+        product = catalog['products'][0]
+        variant = product['variants'][0]
+        self.assertEqual(product['name'], 'Example Reviewed Beverage')
+        self.assertEqual(variant['label'], '6-pack · 12 oz · bottles')
+        self.assertEqual([v['sku'] for v in product['variants']], ['2868'])
+        self.assertIsNotNone(variant['image'])
+        self.assertEqual(audit['records'][0]['previousPublicIdentity'],
+                         {'name': 'Example Beverage', 'label': '6-pack · bottles'})
+
+        changed = copy.deepcopy(review)
+        changed['reviews'][0]['verifiedLabel'] = '4-pack · 12 oz · bottles'
+        with self.assertRaisesRegex(ValueError, 'must only enrich'):
+            builder.build(source, source_reviews_manifest=changed)
+        changed = copy.deepcopy(review)
+        changed['reviews'][0]['expectedResultingGroupSkus'] = ['2868', '9999']
+        with self.assertRaisesRegex(ValueError, 'final SKU-group mismatch'):
+            builder.build(source, source_reviews_manifest=changed,
+                          public_name_reviews_manifest=titles,
+                          image_manifest={'schemaVersion': 1, 'images': [image]},
+                          private_direct_image_evidence_manifest=direct_reference_evidence_fixture(image))
+        changed = copy.deepcopy(image)
+        changed['sha256'] = '0' * 64
+        with self.assertRaisesRegex(ValueError, 'does not match exact label/image guard'):
+            builder.build(source, source_reviews_manifest=review,
+                          public_name_reviews_manifest=titles,
+                          image_manifest={'schemaVersion': 1, 'images': [changed]},
+                          private_direct_image_evidence_manifest=direct_reference_evidence_fixture(changed))
+
+    def test_guarded_fluid_ounce_refinement_is_scoped_and_preserves_the_product(self):
+        source = export({'SKU': '9712', 'MAINUPC': '012345678905',
+                         'ItemName': 'Example Liquid 67.5 fl oz', 'DEPNAME': 'MISC'})
+        raw = list(csv.reader(io.StringIO(source.decode())))[1]
+        source_hash = hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+        image = direct_reference_image_fixture(source, '9712')
+        titles = {'schemaVersion': 1, 'reviews': [{
+            'sku': '9712', 'expectedUpc': raw[1], 'expectedSourceRow': 1,
+            'expectedRawFieldsSha256': source_hash,
+            'expectedPublicName': 'Example Liquid', 'expectedLabel': '67.5 oz',
+            'expectedCategory': 'essentials', 'expectedDepartment': 'MISC',
+            'proposedPublicTitle': 'Example Verified Liquid',
+            'reason': 'Exact UPC evidence confirms the reviewed product title.',
+            'evidence': [{'kind': 'exact_upc_listing', 'url': 'https://example.test/upc/012345678905',
+                          'supports': 'Exact UPC 012345678905 identifies the reviewed product title.'}],
+        }]}
+        review = {'schemaVersion': 1, 'reviews': [{
+            'sku': '9712', 'expectedUpc': raw[1],
+            'expectedNameSha256': hashlib.sha256(raw[2].encode()).hexdigest(),
+            'expectedSourceRecordSha256': source_hash, 'expectedSourceRow': 1,
+            'action': 'refine_verified_fluid_ounce_label', 'reviewedOn': '2026-10-30',
+            'expectedPublicName': 'Example Verified Liquid', 'expectedPublicLabel': '67.5 oz',
+            'expectedCategory': 'essentials', 'expectedDepartment': 'MISC',
+            'verifiedLabel': '67.5 fl oz', 'expectedImageSha256': image['sha256'],
+            'verification': {key: True for key in ('brand', 'expression', 'size', 'packaging', 'upc', 'visual')},
+            'evidence': [
+                {'kind': 'manufacturer', 'url': 'https://example.test/brand',
+                 'supports': 'Manufacturer identifies the reviewed liquid expression.'},
+                {'kind': 'exact_upc_listing', 'url': 'https://example.test/upc/012345678905',
+                 'supports': 'Exact UPC 012345678905 identifies the reviewed liquid volume.'},
+            ],
+            'reason': 'The raw source explicitly states a liquid 67.5 fl oz volume.',
+        }]}
+        image.update(expectedUpc=raw[1], expectedName='Example Verified Liquid',
+                     expectedLabel='67.5 fl oz')
+        catalog, audit = builder.build(
+            source, source_reviews_manifest=review, public_name_reviews_manifest=titles,
+            image_manifest={'schemaVersion': 1, 'images': [image]},
+            private_direct_image_evidence_manifest=direct_reference_evidence_fixture(image))
+        product = catalog['products'][0]
+        variant = product['variants'][0]
+        self.assertEqual((product['name'], product['category'], product['department']),
+                         ('Example Verified Liquid', 'essentials', 'MISC'))
+        self.assertEqual((variant['sku'], variant['upc'], variant['sourceRow'], variant['label']),
+                         ('9712', raw[1], 1, '67.5 fl oz'))
+        self.assertIsNotNone(variant['image'])
+        self.assertEqual(audit['records'][0]['previousPublicIdentity'],
+                         {'name': 'Example Verified Liquid', 'label': '67.5 oz'})
+
+        changed = copy.deepcopy(review)
+        changed['reviews'][0]['verifiedLabel'] = '67.50 fl oz'
+        with self.assertRaisesRegex(ValueError, 'must preserve one canonical liquid volume'):
+            builder.build(source, source_reviews_manifest=changed)
+        ounce_only = export({'SKU': '9712', 'MAINUPC': '012345678905',
+                             'ItemName': 'Example Liquid 67.5 oz', 'DEPNAME': 'MISC'})
+        bad_raw = list(csv.reader(io.StringIO(ounce_only.decode())))[1]
+        changed = copy.deepcopy(review)
+        changed['reviews'][0]['expectedNameSha256'] = hashlib.sha256(bad_raw[2].encode()).hexdigest()
+        changed['reviews'][0]['expectedSourceRecordSha256'] = hashlib.sha256(
+            json.dumps(bad_raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
+        changed['reviews'][0]['expectedPublicName'] = 'Example Liquid'
+        with self.assertRaisesRegex(ValueError, 'requires one matching explicit source liquid volume'):
+            builder.build(ounce_only, source_reviews_manifest=changed)
+
     def test_duplicate_names_and_upcs_keep_every_sku(self):
         catalog, _ = builder.build(export({'ItemName': 'Example Vodka 750ml'}, {'ItemName': 'Example Vodka 750ml'}))
         self.assertEqual(catalog['counts']['products'], 1)

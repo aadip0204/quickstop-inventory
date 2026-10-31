@@ -3861,6 +3861,158 @@
           "supports": "The product page identifies Disaronno Originale Amaretto Liqueur 750 mL with exact GTIN-12 050037014501."
         }
       ]
+    },
+    {
+      "sku": "2868",
+      "expectedUpc": "638489000275",
+      "expectedSourceRow": 1853,
+      "expectedRawFieldsSha256": "d8c74e5cae52b37e30de5356fcd78ac0f0e5f357aa661e451c830dbf9434e0ad",
+      "expectedPublicName": "Dog Fish Raison D'Etre",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Micro",
+      "proposedPublicTitle": "Dogfish Head Raison D’Être Brown Ale",
+      "reason": "Exact UPC and product evidence correct the source title while preserving the reviewed six-pack bottle label.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www2.myfloridalicense.com/abt/auditing/malt_prices/jj_taylor/documents/2013-22_001.pdf",
+          "supports": "Exact UPC 638489000275 identifies Dogfish Head Raison D'Etre in six 12 oz bottles."
+        }
+      ]
+    },
+    {
+      "sku": "9440",
+      "expectedUpc": "635985260660",
+      "expectedSourceRow": 6001,
+      "expectedRawFieldsSha256": "8df7f0d1a4c24888d75c1ec42ab7f0727e5201cc103c0fbdfbe509668c54d84c",
+      "expectedPublicName": "White ClawRaspberry",
+      "expectedLabel": "6-pack · 12 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "White Claw Raspberry",
+      "reason": "Exact UPC and manufacturer evidence restore the missing word break while preserving the reviewed six-pack can label.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/18785697-white-claw-raspberry-can-12-fl-oz",
+          "supports": "Exact UPC 635985260660 identifies White Claw Raspberry Hard Seltzer as six 12 fl oz cans."
+        }
+      ]
+    },
+    {
+      "sku": "7528",
+      "expectedUpc": "720815985483",
+      "expectedSourceRow": 4832,
+      "expectedRawFieldsSha256": "89a96e4ee320b195bed6903131f2e58b400bc54f8fed2a2f52642eaa078dff2c",
+      "expectedPublicName": "Seagrams Vodka",
+      "expectedLabel": "100 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's Extra Smooth Vodka",
+      "reason": "Exact UPC evidence identifies the standard Extra Smooth expression for this 100 mL size variant.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://winebarrel.com/products/seagrams-extra-smooth-80-proof-100-ml",
+          "supports": "Exact UPC 720815985483 identifies Seagram's Extra Smooth 80 Proof Vodka, 100 mL."
+        }
+      ]
+    },
+    {
+      "sku": "7536",
+      "expectedUpc": "720815985308",
+      "expectedSourceRow": 4838,
+      "expectedRawFieldsSha256": "49510d1deb7476f0088d813fa1c08bd3127155a00a104f766155b92b31d11c4a",
+      "expectedPublicName": "Seagrams Vodka",
+      "expectedLabel": "50 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's Extra Smooth Vodka",
+      "reason": "Exact UPC evidence identifies the standard Extra Smooth expression for this 50 mL size variant.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/seagrams-extra-smooth-vodka-id-720815985308",
+          "supports": "Exact UPC 720815985308 identifies Seagram's Extra Smooth Vodka, 50 mL."
+        }
+      ]
+    },
+    {
+      "sku": "7532",
+      "expectedUpc": "720815985575",
+      "expectedSourceRow": 7091,
+      "expectedRawFieldsSha256": "3987992ca9f3dd2eaf9988cac7cc86d52de62dce773613f55a777562e1545c02",
+      "expectedPublicName": "Seagrams Vodka",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's Extra Smooth Vodka",
+      "reason": "Exact UPC evidence identifies the standard Extra Smooth expression for this 200 mL size variant.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/173516",
+          "supports": "Exact UPC 720815985575 identifies Seagram's Extra Smooth Vodka, 200 mL."
+        }
+      ]
+    },
+    {
+      "sku": "7525",
+      "expectedUpc": "720815986046",
+      "expectedSourceRow": 7191,
+      "expectedRawFieldsSha256": "6b27d2b21f7a3aa7bf4e9c0905276001deeec6e3623aa70ccdbbe0b5fe9d357a",
+      "expectedPublicName": "Seagrams Vodka",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's Extra Smooth Vodka",
+      "reason": "Exact UPC evidence identifies the standard Extra Smooth expression for this 1.75 L size variant.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47137494",
+          "supports": "Exact UPC 720815986046 identifies Seagram's Extra Smooth Vodka, 1.75 L."
+        }
+      ]
+    },
+    {
+      "sku": "7533",
+      "expectedUpc": "720815985629",
+      "expectedSourceRow": 9737,
+      "expectedRawFieldsSha256": "5d75abb7575110bc40310db635e95d4d7da929ef4062c4fc9bbe9b37a52948b9",
+      "expectedPublicName": "Seagrams Vodka",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's Extra Smooth Vodka",
+      "reason": "Exact UPC evidence identifies the standard Extra Smooth expression for this 375 mL size variant.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/173515",
+          "supports": "Exact UPC 720815985629 identifies Seagram's Extra Smooth Vodka, 375 mL."
+        }
+      ]
+    },
+    {
+      "sku": "7537",
+      "expectedUpc": "720815985735",
+      "expectedSourceRow": 9738,
+      "expectedRawFieldsSha256": "b79b266a13c9350bcb892f57574039ed3f78ea5192afe36b05c62e5c3f008121",
+      "expectedPublicName": "Seagrams Vodka",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's Extra Smooth Vodka",
+      "reason": "Exact UPC evidence identifies the standard Extra Smooth expression for this 750 mL size variant.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-14765223",
+          "supports": "Exact UPC 720815985735 identifies Seagram's Extra Smooth Vodka, 750 mL."
+        }
+      ]
     }
   ]
 }
