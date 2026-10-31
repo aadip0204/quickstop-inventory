@@ -7222,6 +7222,491 @@
         ],
         "reason": "Manufacturer, exact pouch UPC, and the inspected complete package agree on the Original Rice Krispies Treats expression, 1.3 oz size, and individual wrapper. No original raw field is overwritten."
       }
+    },
+    {
+      "sku": "272",
+      "expectedUpc": "076150232233",
+      "expectedNameSha256": "15dbf4554de939bb7d06bf12f440fc5c4caaf14607be98e8510c3ce72ce1dc18",
+      "expectedSourceRecordSha256": "9d5466deabdcaa4f1418a85c34b8e9fff6da27b22498195052bee5c27ea3d044",
+      "action": "size_needs_confirmation",
+      "reason": "The original source row has no package size. Wave18 W01's exact-UPC manufacturer record and complete single-bag packshot resolve only this currently unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "ACT II Butter Microwave Popcorn",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "ACT II Butter Microwave Popcorn",
+        "verifiedLabel": "2.75 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.congra.net/076150232233-0005-en-US/index.html",
+            "supports": "Conagra SmartLabel identifies ACT II Microwave Popcorn, Butter for exact UPC 076150232233."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.congra.net/076150232233-0005-en-US/index.html",
+            "supports": "The exact UPC 076150232233 product record states a net weight of 2.75 oz (78 g)."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.congra.net/076150232233-0005-en-US/index.html",
+            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+          }
+        ],
+        "reason": "The exact UPC record and inspected complete single bag agree on the unchanged ACT II Butter expression, 2.75 oz size, and individual microwave-popcorn-bag form.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "273",
+      "expectedUpc": "076150232486",
+      "expectedNameSha256": "cf83c520fdde101eb753a00c51066d5ffb4ac503020a6413d698edc34fc6c965",
+      "expectedSourceRecordSha256": "044543935bcd80b2dc79e70a8af039ef3a9247753ff82d10f19dbe8ed68df767",
+      "action": "size_needs_confirmation",
+      "reason": "The original source row has no package size. Wave18 W01's exact-UPC manufacturer record and complete single-bag packshot resolve only this currently unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "ACT II Butter Lovers Microwave Popcorn",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "ACT II Butter Lovers Microwave Popcorn",
+        "verifiedLabel": "2.75 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.congra.net/076150232486-0005-en-US/index.html",
+            "supports": "Conagra SmartLabel identifies ACT II Microwave Popcorn, Butter Lovers for exact UPC 076150232486."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.congra.net/076150232486-0005-en-US/index.html",
+            "supports": "The exact UPC 076150232486 product record states a net weight of 2.75 oz (78 g)."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.congra.net/076150232486-0005-en-US/index.html",
+            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+          }
+        ],
+        "reason": "The exact UPC record and inspected complete single bag agree on the unchanged ACT II Butter Lovers expression, 2.75 oz size, and individual microwave-popcorn-bag form.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "5401",
+      "expectedUpc": "041789003561",
+      "expectedNameSha256": "a730eb01f9747376d68db0f276be5a975396dc6780243d07e93a71ffbc58aeb1",
+      "expectedSourceRecordSha256": "0569f8a1cc5703a7d7101883d6e94c0fc9afbf86a6295e0e8e7a40482e4a8c20",
+      "action": "size_needs_confirmation",
+      "reason": "The original source row has no package size. Wave18 W11's exact-UPC manufacturer record and complete single-bowl packshot resolve only this currently unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "maruchan fire bowlramen spicy beef noodl soup",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "maruchan fire bowlramen spicy beef noodl soup",
+        "verifiedLabel": "3.49 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://maruchan.com/products/bowl/fire-spicy-beef-flavor-bowl",
+            "supports": "Maruchan identifies the Fire Bowl Ramen Spicy Beef Flavor expression for exact UPC 041789003561."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://maruchan.com/products/bowl/fire-spicy-beef-flavor-bowl",
+            "supports": "The official product record pairs exact UPC 041789003561 with a 3.49 oz Fire Spicy Beef flavor microwavable bowl."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://maruchan.com/products/bowl/fire-spicy-beef-flavor-bowl",
+            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+          }
+        ],
+        "reason": "The exact UPC record and inspected complete single bowl agree on the unchanged source expression, 3.49 oz size, and single microwavable-bowl form.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "5402",
+      "expectedUpc": "041789001420",
+      "expectedNameSha256": "c7eb83fb9228476cb27d8f3f87d158e09172908c1b31ea041f9265bbcbbbf545",
+      "expectedSourceRecordSha256": "3c095455cec3ed589cc693f77507aaf3fa9b2e901a927714d17cc6b89e6dd496",
+      "action": "size_needs_confirmation",
+      "reason": "The original source row has no package size. Wave18 W13's exact-UPC manufacturer record and complete single-cup packshot resolve only this currently unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "MARUCHAN INSSTANT LUNCHHOT & SPICY BEEF FLAVOR",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "MARUCHAN INSSTANT LUNCHHOT & SPICY BEEF FLAVOR",
+        "verifiedLabel": "2.25 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-beef-flavor",
+            "supports": "Maruchan identifies the Instant Lunch Hot & Spicy Beef Flavor expression for exact UPC 041789001420."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-beef-flavor",
+            "supports": "The official product record pairs exact UPC 041789001420 with a 2.25 oz Hot & Spicy Beef Flavor Instant Lunch cup."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-beef-flavor",
+            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+          }
+        ],
+        "reason": "The exact UPC record and inspected complete single cup agree on the unchanged source expression, 2.25 oz size, and single-serving Instant Lunch cup form.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "5405",
+      "expectedUpc": "041789003028",
+      "expectedNameSha256": "1a0e0a66213f6cbe8f868e29e5c1d83714326d01e8863065ae6c59537a590eb7",
+      "expectedSourceRecordSha256": "1c48042ce21f295b5565c08fbd67bbc31fa82984d52bd505515143ed05fb12c9",
+      "action": "size_needs_confirmation",
+      "reason": "The original source row has no package size. Wave18 W11's exact-UPC manufacturer record and complete single-bowl packshot resolve only this currently unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "maruchan ramen bowlhot spicy chicken noodl soup",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "maruchan ramen bowlhot spicy chicken noodl soup",
+        "verifiedLabel": "3.32 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://maruchan.com/products/bowl/hot-spicy-chicken-flavor-bowl",
+            "supports": "Maruchan identifies the Ramen Bowl Hot & Spicy Chicken Flavor expression for exact UPC 041789003028."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://maruchan.com/products/bowl/hot-spicy-chicken-flavor-bowl",
+            "supports": "The official product record pairs exact UPC 041789003028 with a 3.32 oz Hot & Spicy Chicken Flavor microwavable bowl."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://maruchan.com/products/bowl/hot-spicy-chicken-flavor-bowl",
+            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+          }
+        ],
+        "reason": "The exact UPC record and inspected complete single bowl agree on the unchanged source expression, 3.32 oz size, and single microwavable-bowl form.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "5407",
+      "expectedUpc": "041789003011",
+      "expectedNameSha256": "f789bcc2712e86c37e06b82220f881123d228b764044b6fe5791e2b6b49d1f79",
+      "expectedSourceRecordSha256": "e78f5e325a10792f464ce5bbd2488818c73ce1e431dea17512800a0f15089939",
+      "action": "size_needs_confirmation",
+      "reason": "The original source row has no package size. Wave18 W11's exact-UPC manufacturer record and complete single-bowl packshot resolve only this currently unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "maruchan ramen bowl chickennoodl soup",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "maruchan ramen bowl chickennoodl soup",
+        "verifiedLabel": "3.31 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://maruchan.com/products/bowl/chicken-flavor-bowl",
+            "supports": "Maruchan identifies the Ramen Bowl Chicken Flavor expression for exact UPC 041789003011."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://maruchan.com/products/bowl/chicken-flavor-bowl",
+            "supports": "The official product record pairs exact UPC 041789003011 with a 3.31 oz Chicken Flavor microwavable bowl."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://maruchan.com/products/bowl/chicken-flavor-bowl",
+            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+          }
+        ],
+        "reason": "The exact UPC record and inspected complete single bowl agree on the unchanged source expression, 3.31 oz size, and single microwavable-bowl form.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "5410",
+      "expectedUpc": "041789001437",
+      "expectedNameSha256": "2d03733b95e454df405856c708e254a94fb8fe48db6750c248bad110ae9f4cbe",
+      "expectedSourceRecordSha256": "850cc21cb4fe9d99c329cb7dbc0edf7ae8ab306c1fc4f44d65b34106e608dc54",
+      "action": "size_needs_confirmation",
+      "reason": "The original source row has no package size. Wave18 W13's exact-UPC manufacturer record and complete single-cup packshot resolve only this currently unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "MARUCHAN INSTANT LUNCHHOT & SPICY CHICKEN",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "MARUCHAN INSTANT LUNCHHOT & SPICY CHICKEN",
+        "verifiedLabel": "2.25 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-chicken-flavor",
+            "supports": "Maruchan identifies the Instant Lunch Hot & Spicy Chicken Flavor expression for exact UPC 041789001437."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-chicken-flavor",
+            "supports": "The official product record pairs exact UPC 041789001437 with a 2.25 oz Hot & Spicy Chicken Flavor Instant Lunch cup."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-chicken-flavor",
+            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
+          }
+        ],
+        "reason": "The exact UPC record and inspected complete single cup agree on the unchanged source expression, 2.25 oz size, and single-serving Instant Lunch cup form.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "7868",
+      "expectedUpc": "040000424314",
+      "expectedNameSha256": "02cafd3972846c3695a9eed19cee62d4e0141e14d105559a5968cab662b87e9f",
+      "expectedSourceRecordSha256": "a787bfec0879667d2c353e8f9433de6a3acfee66bac535fbf772bb8d66c9cd41",
+      "action": "size_needs_confirmation",
+      "reason": "The source row omits a consumer size. Exact UPC records and the inspected single-bar package resolve only this previously unspecified food size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "Snickers Milk Chocolate Bar",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Snickers Milk Chocolate Bar",
+        "verifiedLabel": "1.86 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.snickers.com/products/chocolate/snickers-singles-size-chocolate-candy-bars-186-oz-bars",
+            "supports": "SNICKERS identifies the Singles Size milk-chocolate candy bar as 1.86 oz and describes the individual bar expression."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.nassaucandy.com/snicker-1-86oz.html",
+            "supports": "Exact UPC 040000424314 identifies one SNICKERS 1.86 oz bar."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.snickers.com/products/chocolate/snickers-singles-size-chocolate-candy-bars-186-oz-bars",
+            "supports": "The inspected official product presentation shows one complete front SNICKERS Singles Size wrapper with 1.86 oz printed on the package."
+          }
+        ],
+        "reason": "Manufacturer, exact UPC, and inspected-package evidence agree on the unchanged Snickers expression, 1.86 oz size, and individual-bar package.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "101449",
+      "expectedUpc": "611269002249",
+      "expectedNameSha256": "5e9f4a92f73129eed1caa8dcc9f75d318a6d99a5fc4df8057eff8abe3d4219a4",
+      "expectedSourceRecordSha256": "65fe3400eedecbfac2cd16ef756372050aaceb8a598a7a86913dfe7d81859a03",
+      "action": "size_needs_confirmation",
+      "reason": "The source wording omits the exact edition identity and leaves the consumer size unconfirmed. Exact UPC records and the inspected can resolve only this SKU.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "RED BULL JUNEBERRY",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Red Bull Sea Blue Edition Sugarfree Energy Drink, Juneberry",
+        "verifiedLabel": "250 mL",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.redbull.com/us-en/energydrink/products/red-bull-sea-blue-edition-sugarfree",
+            "supports": "Red Bull identifies the Sea Blue Edition Sugarfree as Juneberry flavored and available in an 8.4 fl oz can."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.target.com/p/-/A-93521379",
+            "supports": "Exact UPC 611269002249 identifies a single Red Bull Sea Blue Edition Sugarfree Juneberry 8.4 fl oz aluminum can."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.redbull.com/us-en/energydrink/products/red-bull-sea-blue-edition-sugarfree",
+            "supports": "The inspected official product presentation shows the complete Sea Blue Edition Sugarfree Juneberry can, matching the reviewed single-can expression."
+          }
+        ],
+        "reason": "Manufacturer, exact UPC, and inspected-package evidence agree on Sea Blue Edition Sugarfree Juneberry, 8.4 fl oz, in one aluminum can."
+      }
+    },
+    {
+      "sku": "1654",
+      "expectedUpc": "051000012616",
+      "expectedNameSha256": "d85636bf7c8a6caef40635c5b6ab47af279faf31078a8a40e2ad9c71b860507a",
+      "expectedSourceRecordSha256": "f0e18e0e95704fd238503540c84e72b915fcfa8e66ef7e53c9ca29cd9aba1dbc",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Campbell's Condensed Cream of Mushroom Soup",
+      "verifiedLabel": "10.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "The source row omitted the package size and collapsed the product title. The exact UPC record and reviewed complete single can establish this 10.5 oz Campbell's Condensed Cream of Mushroom Soup SKU without changing its shopping classification.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.campbells.com/products/condensed/cream-of-mushroom-soup/",
+          "supports": "Campbell's identifies Condensed Cream of Mushroom Soup as the matching product expression and packaging family."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://groceryeshop.us/products/campbells-condensed-cream-of-mushroom-soup-10-5-oz-can-case-of-48.js",
+          "supports": "The exact UPC 051000012616 product-data record identifies Campbell's Condensed Cream of Mushroom Soup in an each 10.5 oz can."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://groceryeshop.us/products/campbells-condensed-cream-of-mushroom-soup-10-5-oz-can-case-of-48.js",
+          "supports": "The inspected private-backed complete front-can packshot agrees with the exact UPC record, product expression, and 10.5 oz single-can package."
+        }
+      ]
+    },
+    {
+      "sku": "1813",
+      "expectedUpc": "083078113131",
+      "expectedNameSha256": "449e2e9ede401bd9db0ed69dd2314d959eb55d24e52ab98f9e797c17d9d7a583",
+      "expectedSourceRecordSha256": "f65ee84f2e3795040c921d016846bbefe806d8437cd9c07052453cbab88b1c5a",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Carmex Classic Original Medicated Lip Balm Tube",
+      "verifiedLabel": "0.35 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "The source row omitted both readable product wording and package size. Exact UPC retail data, Carmex's product record, and a reviewed complete single tube establish this 0.35 oz Classic Original tube without changing its category or department.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.mycarmex.com/wp-json/wp/v2/product/209",
+          "supports": "Carmex's official product record identifies the Classic Original Tube and associates the reviewed tube presentation."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://lacacorp.com/wp-json/wp/v2/product/28677",
+          "supports": "The exact UPC 083078113131 product-data record identifies a Carmex Original Flavor squeeze tube in the 0.35 oz size."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.mycarmex.com/wp-json/wp/v2/product/209",
+          "supports": "The inspected private-backed complete Carmex tube agrees with the Classic Original medicated lip-balm expression, exact UPC record, and 0.35 oz size."
+        }
+      ]
+    },
+    {
+      "sku": "4206",
+      "expectedUpc": "037600241939",
+      "expectedNameSha256": "29c7ceeb7d1c2df5fa4384476491eafc906caa7a0970316cd54a966981d93152",
+      "expectedSourceRecordSha256": "74ad56f2e86fceff1d53acc44ebe6bc94827d769481c1535c1cce7a699133756",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Hormel Chili No Beans",
+      "verifiedLabel": "15 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "The existing guarded spelling correction resolves the source title, while the first-party product record and reviewed complete single can establish the exact 15 oz package for this same UPC. No category, department, SKU, or source-row change is proposed.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hormel.com/brands/hormel-chili/product/chili-no-beans/",
+          "supports": "Hormel identifies HORMEL Chili No Beans as the matching product expression and offers the 15 oz can among its available sizes."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/hormel-chili-with-no-beans-037600241939",
+          "supports": "The exact UPC 037600241939 listing corroborates HORMEL Chili No Beans for the guarded source identity."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.hormel.com/brands/hormel-chili/product/chili-no-beans/",
+          "supports": "The inspected private-backed complete front-can packshot agrees with the first-party HORMEL Chili No Beans 15 oz product selection and exact UPC record."
+        }
+      ]
     }
   ]
 }
