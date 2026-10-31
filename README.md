@@ -8,7 +8,9 @@ Run `python3 -m http.server 8765 --bind 127.0.0.1` in this directory, then open 
 
 ## Private inventory build
 
-Keep the original CSV, private reports, and direct-image provenance evidence **outside this repository**. Never upload the source export, raw backups, reconciliation records, or `direct-reference-evidence-v1.json`: they contain private commercial or research fields. The builder accepts explicit paths and emits a field-allowlisted public catalog. See `python3 scripts/build_catalog.py --help` for exact options.
+Keep the original CSV, private reports, direct-image provenance and review-evidence ledger **outside this repository**. Never upload the source export, raw backups, reconciliation records, `direct-reference-evidence-v1.json` or `review-evidence-v1.json`: they contain private commercial or research fields. The builder accepts explicit paths and emits a field-allowlisted public catalog. See `python3 scripts/build_catalog.py --help` for exact options.
+
+Build-only review files retain source/UPC guards and content hashes. Their original evidence arrays, including photograph URLs, are resolved from the external review-evidence ledger before the existing strict validators run. Missing or altered evidence fails the build. After preparing new reviews, use `python3 scripts/project_review_evidence.py --private-evidence /private/quickstop/review-evidence-v1.json --private-backups /private/quickstop/review-backups/RELEASE` to preserve their exact original files privately and project the evidence references. These four review files are also excluded from Pages.
 
 The original export is immutable. Its SHA-256 is `822ee8b3b623548db0f2ea531aa10c340b160a47afc0d9e88398311ed7fa6882`.
 
@@ -32,7 +34,7 @@ Names may also be checked against a captured manufacturer record that explicitly
 
 ## Validation and deployment
 
-Run the Python tests with `python3 -m unittest discover -s tests -v`, and the frontend tests with `node --test tests/catalog-ui.test.cjs`. For full-source reconciliation, set `QUICKSTOP_PRIVATE_INPUT` to the absolute CSV path and `QUICKSTOP_PRIVATE_DIRECT_IMAGE_EVIDENCE` to the external direct-image evidence manifest when running the Python tests. The production builder likewise requires `--private-direct-image-evidence PATH` whenever direct-reference images exist. Never place private inputs in CI.
+Run the Python tests with `python3 -m unittest discover -s tests -v`, and the frontend tests with `node --test tests/catalog-ui.test.cjs`. For full-source reconciliation, set `QUICKSTOP_PRIVATE_INPUT` to the absolute CSV path, `QUICKSTOP_PRIVATE_DIRECT_IMAGE_EVIDENCE` to the external direct-image evidence manifest, and `QUICKSTOP_PRIVATE_REVIEW_EVIDENCE` to the external review-evidence ledger. The production builder accepts `--private-direct-image-evidence PATH` and `--private-review-evidence PATH`; both are required for the current catalog. Never place private inputs in CI.
 
 The existing repository deploys GitHub Pages from its publishing branch. Preserve that configuration. Review and test a repair branch, push through authenticated GitHub access, and follow repository branch protections. Do not force-push or rewrite history. `_config.yml` excludes build tools, tests and maintainer reports from Pages.
 

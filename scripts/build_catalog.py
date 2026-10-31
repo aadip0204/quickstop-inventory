@@ -13,6 +13,7 @@ import csv
 import hashlib
 import io
 import json
+import os
 import re
 from collections import Counter
 from decimal import Decimal
@@ -99,6 +100,58 @@ MANUFACTURER_NAME_HOSTS = {
 }
 MANUFACTURER_NAME_SCOPE = 'manufacturer_exact_upc_name_identity'
 NAME_STRENGTH_RE = re.compile(r'\d+(?:\.\d+)?\s*(?:%\s*(?:ABV\b|A/C\b)?|ABV\b|A/C\b|PROOF\b)', re.I)
+
+PRIVATE_REVIEW_EVIDENCE_KIND = 'quickstop-private-review-evidence'
+
+
+def review_evidence_sha256(value: object) -> str:
+    return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True,
+                                    separators=(',', ':')).encode()).hexdigest()
+
+
+def expand_private_review_evidence(value: object) -> object:
+    """Restore hash-bound review evidence before applying the original validators.
+
+    Public review guards remain inspectable; origin records live outside the
+    repository. A reference never skips UPC, source, scope or image validation.
+    """
+    ledger = None
+
+    def expand(node):
+        nonlocal ledger
+        if isinstance(node, list):
+            return [expand(item) for item in node]
+        if not isinstance(node, dict):
+            return node
+        if 'privateEvidenceSha256' not in node:
+            return {key: expand(item) for key, item in node.items()}
+        digest = node.get('privateEvidenceSha256')
+        if (set(node) != {'privateEvidenceSha256'} or not isinstance(digest, str)
+                or not re.fullmatch(r'[a-f0-9]{64}', digest)):
+            raise ValueError('Invalid private review evidence reference')
+        if ledger is None:
+            filename = os.environ.get('QUICKSTOP_PRIVATE_REVIEW_EVIDENCE')
+            if not filename:
+                raise ValueError('Private review references require QUICKSTOP_PRIVATE_REVIEW_EVIDENCE')
+            path = safe_private_path(Path(filename))
+            try:
+                ledger = json.loads(path.read_text())
+            except (OSError, ValueError) as error:
+                raise ValueError('Private review evidence cannot be read') from error
+            if (not isinstance(ledger, dict) or set(ledger) != {'schemaVersion', 'kind', 'records'}
+                    or ledger.get('schemaVersion') != 1
+                    or ledger.get('kind') != PRIVATE_REVIEW_EVIDENCE_KIND
+                    or not isinstance(ledger.get('records'), dict)):
+                raise ValueError('Invalid private review evidence ledger')
+        record = ledger['records'].get(digest)
+        if not isinstance(record, list) or not record or review_evidence_sha256(record) != digest:
+            raise ValueError('Private review evidence is missing or does not match its hash')
+        # Evidence records are plain JSON, never another layer of references.
+        if 'privateEvidenceSha256' in json.dumps(record):
+            raise ValueError('Nested private review evidence references are forbidden')
+        return json.loads(json.dumps(record))
+
+    return expand(value)
 
 
 def clean_space(value: str) -> str:
@@ -626,6 +679,7 @@ def validate_manufacturer_name_correction(entry: dict) -> None:
 
 
 def validated_name_overrides(manifest: dict | None) -> tuple[dict, dict]:
+    manifest = expand_private_review_evidence(manifest)
     if not manifest:
         return {}, {}
     if manifest.get('schemaVersion') != 1:
@@ -658,6 +712,7 @@ def validated_name_overrides(manifest: dict | None) -> tuple[dict, dict]:
 
 def validated_category_reviews(manifest: dict | None) -> dict:
     """Accept explicit source- and identity-guarded shopping-category reviews."""
+    manifest = expand_private_review_evidence(manifest)
     if manifest is None:
         return {}
     if (not isinstance(manifest, dict) or set(manifest) != {'schemaVersion', 'reviews'}
@@ -896,6 +951,7 @@ def validate_reviewed_source_photo_bindings(products: list, source_reviews: dict
 
 def validated_public_name_reviews(manifest: dict | None) -> dict:
     """Accept exact-source, parsed-variant guarded title-only corrections."""
+    manifest = expand_private_review_evidence(manifest)
     if manifest is None:
         return {}
     if (not isinstance(manifest, dict) or set(manifest) != {'schemaVersion', 'reviews'}
@@ -1017,6 +1073,7 @@ def validate_direct_image_guard(entry: dict, sku: str, context: str) -> None:
 
 def validated_name_verifications(manifest: dict | None) -> dict:
     """Keep an unchanged-name review separate from an actual correction."""
+    manifest = expand_private_review_evidence(manifest)
     entries = (manifest or {}).get('nameVerifications', [])
     if not isinstance(entries, list):
         raise ValueError('Name verifications must be a list')
@@ -1069,6 +1126,7 @@ def validated_name_verifications(manifest: dict | None) -> dict:
 
 
 def validated_source_reviews(manifest: dict | None) -> dict:
+    manifest = expand_private_review_evidence(manifest)
     if not manifest:
         return {}
     if manifest.get('schemaVersion') != 1 or not isinstance(manifest.get('reviews'), list):
@@ -1870,6 +1928,8 @@ def build_argument_parser() -> argparse.ArgumentParser:
     parser.add_argument('--images', type=Path, default=ROOT / 'data/image-manifest.json')
     parser.add_argument('--private-direct-image-evidence', type=Path,
                         help='Required outside-repository provenance manifest when direct-reference images exist')
+    parser.add_argument('--private-review-evidence', type=Path,
+                        help='Outside-repository evidence ledger for hash-referenced review records')
     parser.add_argument('--names', type=Path, default=ROOT / 'data/name-corrections.json')
     parser.add_argument('--source-reviews', type=Path, default=ROOT / 'data/source-reviews.json')
     parser.add_argument('--report-additions', type=Path, default=ROOT / 'data/report-additions.json')
@@ -1881,6 +1941,8 @@ def build_argument_parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     args = build_argument_parser().parse_args()
+    if args.private_review_evidence:
+        os.environ['QUICKSTOP_PRIVATE_REVIEW_EVIDENCE'] = str(safe_private_path(args.private_review_evidence))
     source_path = safe_private_path(args.input)
     private_output = safe_private_path(args.private_output)
     private_direct_image_evidence = None

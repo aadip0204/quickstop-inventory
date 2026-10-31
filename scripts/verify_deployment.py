@@ -18,6 +18,9 @@ DIRECT_PUBLIC_MANIFEST_FIELDS = {
     'sku', 'expectedUpc', 'expectedName', 'expectedLabel', 'src', 'alt',
     'sha256', 'verifiedOn', 'verification', 'usageBasis', 'attributionRequired',
 }
+RETIRED_PATHS = ('products.js', 'products.json', 'products_grouped_filtered.js', 'image-credits.html',
+                 'data/source-reviews.json', 'data/name-corrections.json',
+                 'data/category-reviews.json', 'data/public-name-reviews.json')
 
 
 def fetch(url):
@@ -87,7 +90,7 @@ def verify(base_url, root):
         checks.extend(executor.map(check_asset, asset_names))
     finally:
         executor.shutdown(wait=True, cancel_futures=True)
-    for name in ("products.js", "products.json", "products_grouped_filtered.js", "image-credits.html"):
+    for name in RETIRED_PATHS:
         try:
             fetch(urllib.parse.urljoin(base_url, name))
         except urllib.error.HTTPError as error:

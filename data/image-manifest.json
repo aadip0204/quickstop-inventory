@@ -27860,6 +27860,706 @@
       "expectedLabel": "750 mL",
       "attributionRequired": false,
       "sha256": "9077bf5423de9ec36870ccb79fb5fc977579ee682f5382b03835f1c1b2ef90f7"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "6-pack",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "248",
+      "expectedName": "Abita Mardi Gras Bock",
+      "src": "images/products/sku-248.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "080020353331",
+      "alt": "Abita Mardi Gras Bock — 6-pack can carton",
+      "sha256": "4cde05c49d10acd3a08361413048a4e5ac6c284596d2a91a04ce20e2d9f4bb39"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "200 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "771",
+      "expectedName": "Bacardi Superior Light Rum",
+      "src": "images/products/sku-771.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "080480015701",
+      "alt": "Bacardi Superior Light Rum — 200 mL bottle",
+      "sha256": "d4e679911659f1a5d40cc62591e85e454221c07b4df407e67068df57e0452e5c"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "200 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "1569",
+      "expectedName": "BuzzBallz Cocktails Watermelon Smash",
+      "src": "images/products/sku-1569.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "855200005320",
+      "alt": "BuzzBallz Cocktails Watermelon Smash — 200 mL cocktail container",
+      "sha256": "c35898eb44f27191eb8d17a02e27d8527f68599b32daa792530b6acdfe813e70"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "1.75 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "1578",
+      "expectedName": "BuzzBallz Biggies Tequila 'Rita",
+      "src": "images/products/sku-1578.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "851091006200",
+      "alt": "BuzzBallz Biggies Tequila 'Rita — 1.75 L bottle",
+      "sha256": "9cb6abcdd8afa87a60f1d8816efe382457b39951d88b0dc76550c0c9727de899"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "1868",
+      "expectedName": "Christian Brothers Holiday Nog",
+      "src": "images/products/sku-1868.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "086036205602",
+      "alt": "Christian Brothers Holiday Nog — 750 mL bottle",
+      "sha256": "19be68c90ddaed23193e6d27c2463fc6a2f612fed7e5026fa2bd9a947f7dbdc8"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3395",
+      "expectedName": "Founders Dirty Bastard Scotch Style Ale",
+      "src": "images/products/sku-3395.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "642860200079",
+      "alt": "Founders Dirty Bastard Scotch Style Ale — 6-pack · 12 oz · bottles bottle carrier",
+      "sha256": "0937a7443b63d04b8150640eb913d5b80e7301e70155d4577b536eef354a0a8f"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5221",
+      "expectedName": "Luc Belaire Luxe Rosé",
+      "src": "images/products/sku-5221.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "813497004310",
+      "alt": "Luc Belaire Luxe Rosé — 750 mL bottle",
+      "sha256": "1e91c2c7ed5813630ecec88bd3daec607b635f06082a1c9e69437ff6bc016b47"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "375 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "6429",
+      "expectedName": "On The Rocks Tres Generaciones Jalapeño Pineapple Margarita",
+      "src": "images/products/sku-6429.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "855880008086",
+      "alt": "On The Rocks Tres Generaciones Jalapeño Pineapple Margarita — 375 mL bottle",
+      "sha256": "b08454815ee904b0b09d559f306991210af6ca13d776c4439f30444eaf02ac08"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "6863",
+      "expectedName": "Rich & Rare Reserve Canadian Whisky",
+      "src": "images/products/sku-6863.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "088004008581",
+      "alt": "Rich & Rare Reserve Canadian Whisky — 750 mL bottle",
+      "sha256": "0c8bebf9816f0ba4f70589f14e5a0d0834898e8c0581d0069ae0569b9c3abf71"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7369",
+      "expectedName": "Sauza Tres Generaciones Plata Tequila",
+      "src": "images/products/sku-7369.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "080686836018",
+      "alt": "Sauza Tres Generaciones Plata Tequila — 750 mL bottle",
+      "sha256": "97cbaf84c124d848317765bc05ab7aa128d2e15246d7e17e7a04313f42140d20"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "1.75 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7492",
+      "expectedName": "Seagram's Lime Twisted Gin",
+      "src": "images/products/sku-7492.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "080432401644",
+      "alt": "Seagram's Lime Twisted Gin — 1.75 L bottle",
+      "sha256": "6205dba46ed2b53d0e6393deea373f8f19926d43fdb322fbba889f77893ecb71"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "50-pack · 1 oz",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7580",
+      "expectedName": "Party Essentials Shot Glasses",
+      "src": "images/products/sku-7580.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "098382601212",
+      "alt": "Party Essentials Shot Glasses — 50-pack · 1 oz; displayed 50-pack with sample cup",
+      "sha256": "8ab79c04629d5c66ebc98e5e27ae6322720733d7bea1e8adffe2023c1f96c794"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "8830",
+      "expectedName": "Tres Agaves Organic Reposado Tequila",
+      "src": "images/products/sku-8830.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "854125003015",
+      "alt": "Tres Agaves Organic Reposado Tequila — 750 mL bottle",
+      "sha256": "af23087d77dd5a6c31296b693c99dac24883852a72bb118a8f7e7a604387a481"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "9723",
+      "expectedName": "XXL Blueberry Moscato",
+      "src": "images/products/sku-9723.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "763955020003",
+      "alt": "XXL Blueberry Moscato — 750 mL bottle",
+      "sha256": "bf6dbab80e80a02368c486ad1122be4ce2cda17b9c3efe4a8275665373a76a43"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "1 L · bottles",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "101366",
+      "expectedName": "Lunazul Reposado Tequila",
+      "src": "images/products/sku-101366.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "096749908011",
+      "alt": "Lunazul Reposado Tequila — 1 L · bottles bottle",
+      "sha256": "a1da7f9dfdc3e2766708fd7e12ac7a11a6ad39580f0336f5b5200ff2113a8b0d"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "1915",
+      "expectedName": "Chandon Garden Spritz",
+      "src": "images/products/sku-1915.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "085155273837",
+      "alt": "Chandon Garden Spritz — 750 mL bottle",
+      "sha256": "54c99cfe8df17dc56964341fd29fa00cc158ba3a21f887844ac90c922864035a"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "9379",
+      "expectedName": "Red Eye Louie's Vodquila Vodka and Tequila",
+      "src": "images/products/sku-9379.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "823586000017",
+      "alt": "Red Eye Louie's Vodquila Vodka and Tequila — 750 mL packaging",
+      "sha256": "fb95d3ba2ca5eaa8186be516d232e9f55440074a1f487e988ebcd114bc443765"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "1.75 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "1633",
+      "expectedName": "Familia Camarena Reposado Tequila",
+      "src": "images/products/sku-1633.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "085000017302",
+      "alt": "Familia Camarena Reposado Tequila — 1.75 L packaging",
+      "sha256": "ffcce4dd7c957a6010da660a8d7edaa3b9a44bb0cfabe66dd050887c03340c9b"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "20-pack",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2307",
+      "expectedName": "Collins Umbrella Picks",
+      "src": "images/products/sku-2307.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "031439000392",
+      "alt": "Collins Umbrella Picks — 20-pack packaging",
+      "sha256": "2115604a497f712c006e600b4d46da2fb3de79ba4bf2ae32ddbbd21d7549a61b"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3012",
+      "expectedName": "Dr. McGillicuddy's Mentholmint Liqueur",
+      "src": "images/products/sku-3012.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "088004144043",
+      "alt": "Dr. McGillicuddy's Mentholmint Liqueur — 750 mL packaging",
+      "sha256": "61ba9970a74be67d4ead19b2bf0456fda31098a799f5142a5a46ec9b66a45a19"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3248",
+      "expectedName": "Exclusiv Berry Vodka",
+      "src": "images/products/sku-3248.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "699733000625",
+      "alt": "Exclusiv Berry Vodka — 750 mL packaging",
+      "sha256": "0591599ea219fd60d88f16808fcb44010ad187222182affee0a7f0e6f17f36d9"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "6-pack",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3824",
+      "expectedName": "Goose Island IPA",
+      "src": "images/products/sku-3824.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "736920111327",
+      "alt": "Goose Island IPA — 6-pack packaging",
+      "sha256": "53f408fd7ac4e3d069daa4f937f434c7c32240e0faa0dba4d8eb9f9329a3bc69"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "375 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4207",
+      "expectedName": "Hornitos Reposado Tequila",
+      "src": "images/products/sku-4207.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "080686835035",
+      "alt": "Hornitos Reposado Tequila — 375 mL packaging",
+      "sha256": "3844083104a64751e288592294f5b1e8995fac9ffcc498079275c81491b5e30d"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "1.75 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4362",
+      "expectedName": "Inver House Green Plaid Very Rare Scotch Whisky",
+      "src": "images/products/sku-4362.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "082928236310",
+      "alt": "Inver House Green Plaid Very Rare Scotch Whisky — 1.75 L packaging",
+      "sha256": "c56cf819bdf6fa4fdd5bcec76fa48ef20d6ec8159679943e51d9efd8a639ca45"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5001",
+      "expectedName": "LandShark Lager",
+      "src": "images/products/sku-5001.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "018200129988",
+      "alt": "LandShark Lager — 12-pack · 12 oz · bottles packaging",
+      "sha256": "187a8df010728914cf547b5bf796cabb6d9dc0ca5a7c5bc182a6dbf71e90bc79"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "375 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5237",
+      "expectedName": "Luc Belaire Rare Rosé Sparkling Wine",
+      "src": "images/products/sku-5237.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "813497005980",
+      "alt": "Luc Belaire Rare Rosé Sparkling Wine — 375 mL packaging",
+      "sha256": "841fbfbecc0273d566c898e44560ac41ec16661fac22c15d2f886abb0b08a365"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "1.75 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5346",
+      "expectedName": "Margaritaville Lime Margarita Mix",
+      "src": "images/products/sku-5346.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "070655954010",
+      "alt": "Margaritaville Lime Margarita Mix — 1.75 L packaging",
+      "sha256": "47dcd70e9051863efd8d9947065829fa17e54d1fcea44da5460c8a7d3ca7edd2"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "375 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "6427",
+      "expectedName": "On The Rocks Strawberry Daiquiri with Cruzan Rum",
+      "src": "images/products/sku-6427.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "080686007241",
+      "alt": "On The Rocks Strawberry Daiquiri with Cruzan Rum — 375 mL packaging",
+      "sha256": "493ae125553e6ae729c93f2147c7d3df2f97478841d4caa0d75e314f083ae9f6"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "6577",
+      "expectedName": "Paul Masson Red Berry Brandy",
+      "src": "images/products/sku-6577.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "021296620079",
+      "alt": "Paul Masson Red Berry Brandy — 750 mL packaging",
+      "sha256": "209f0d4336a69a2ea12939a07485033f3aab3a12e5914ef52d6fd32536b7a7ef"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7368",
+      "expectedName": "Sauza Tres Generaciones Añejo Tequila",
+      "src": "images/products/sku-7368.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "080686836025",
+      "alt": "Sauza Tres Generaciones Añejo Tequila — 750 mL packaging",
+      "sha256": "0f2e880704b14e427c20fdd75ccdc67fa2823f2c6c97bf53f9c577727874537f"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7414",
+      "expectedName": "Seagram's Lime Twisted Gin",
+      "src": "images/products/sku-7414.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "080432401606",
+      "alt": "Seagram's Lime Twisted Gin — 750 mL packaging",
+      "sha256": "63eaaa541fb8d434df50fb8931ab7a4682a2383047b32799b1a2fa1825bb75ce"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7796",
+      "expectedName": "Smirnoff Whipped Cream Vodka",
+      "src": "images/products/sku-7796.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "082000757511",
+      "alt": "Smirnoff Whipped Cream Vodka — 750 mL packaging",
+      "sha256": "0915382f1ef53eb492e4801f80ef0fa8b21cfd22844555838a3e9fd82f62cf48"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "8096",
+      "expectedName": "Stella Rosa Tropical Passion Flavored Brandy",
+      "src": "images/products/sku-8096.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "087872630023",
+      "alt": "Stella Rosa Tropical Passion Flavored Brandy — 750 mL packaging",
+      "sha256": "1fb745e0a575aab494e963fd5d8bb2cdc5cacae9adc444073b0f36ac756b3b35"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "375 mL · bottles",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "8530",
+      "expectedName": "Tanqueray 94.6 Proof London Dry Gin Flask",
+      "src": "images/products/sku-8530.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "088110110604",
+      "alt": "Tanqueray 94.6 Proof London Dry Gin Flask — 375 mL · bottles packaging",
+      "sha256": "57fab0913aaa3e27e5b26eb444773d8dc911021c5bab02f6e49d166422fbb3da"
+    },
+    {
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "101353",
+      "expectedName": "San Antonio Fruit Farm Pineapple Papaya Wine",
+      "src": "images/products/sku-101353.jpg",
+      "attributionRequired": false,
+      "expectedUpc": "087872686051",
+      "alt": "San Antonio Fruit Farm Pineapple Papaya Wine — 750 mL packaging",
+      "sha256": "d181f7bd07ecb640832bd30680d78692d090773e7fe79df18f1961aa4b1647cb"
     }
   ]
 }

@@ -56,7 +56,13 @@ class DeploymentIntegrityTests(unittest.TestCase):
         checked = {row['path'] for row in result['assetChecks'] if row.get('matchesCheckout')}
         self.assertEqual(checked, set(self.assets))
         self.assertEqual(result['verifiedPhotoAssetsServed'], 1)
-        self.assertEqual(len([row for row in result['assetChecks'] if row.get('status') == 404]), 4)
+        self.assertEqual(len([row for row in result['assetChecks'] if row.get('status') == 404]), len(VERIFIER.RETIRED_PATHS))
+
+    def test_build_only_review_file_still_served_fails(self):
+        self.served['data/source-reviews.json'] = b'review evidence'
+        with patch.object(VERIFIER, 'fetch', self.fetch):
+            with self.assertRaisesRegex(AssertionError, 'Retired public artifact is still served'):
+                VERIFIER.verify(self.base, self.root)
 
     def test_wrong_photo_bytes_fail_even_when_core_assets_match(self):
         self.served['images/products/001.jpg'] = b'wrong photo'
