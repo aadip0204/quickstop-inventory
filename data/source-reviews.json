@@ -6329,6 +6329,78 @@
           }
         ]
       }
+    },
+    {
+      "sku": "176",
+      "expectedUpc": "719410700010",
+      "expectedNameSha256": "546e17fbd040a42d210ef61f7f7325af3d3924c85656367fa46910c2a27f93b6",
+      "expectedSourceRecordSha256": "d1a7ae5c967a15a92d98de957403244b73ee4471a39f674053515c22e7dd7c40",
+      "action": "resolve_verified_identity",
+      "verifiedName": "5 Hour Energy - Extra StrengthEnergy",
+      "verifiedLabel": "1.93 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC, manufacturer record and inspected package resolve the previously unspecified single-shot size as 1.93 fl oz; the separately guarded public title correction remains in force. Original source fields remain private.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://5hourenergy.com/products/col-berry-flavor-extra-strength-5-hour-energy-shots",
+          "supports": "Manufacturer identifies 5-hour ENERGY Extra Strength Berry shots in the 1.93 fl oz formulation."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-95094533",
+          "supports": "Exact UPC 719410700010 identifies 5-hour ENERGY Extra Strength Berry single shot, 1.93 fl oz."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.target.com/p/-/A-95094533",
+          "supports": "Inspected exact-UPC package front shows Berry, Extra Strength and 1.93 fl oz for one bottle."
+        }
+      ]
+    },
+    {
+      "sku": "178",
+      "expectedUpc": "719410500016",
+      "expectedNameSha256": "c72975f5c2bcd1cedfb20fa8526ce4eb4a10dabc11e675230dae10ae3122024e",
+      "expectedSourceRecordSha256": "8bcddc0ded36f489a76cbbdd340ccb46229e645187339bf16363535e32fe31a2",
+      "action": "resolve_verified_identity",
+      "verifiedName": "5 HOUR ENERGY BERRY",
+      "verifiedLabel": "1.93 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC, manufacturer record and inspected package resolve the previously unspecified single-shot size as 1.93 fl oz; the separately guarded public title correction remains in force. Original source fields remain private.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://5hourenergy.com/products/col-berry-flavor-regular-strength-5-hour-energy-shots",
+          "supports": "Manufacturer identifies 5-hour ENERGY Regular Strength Berry shots in the 1.93 fl oz formulation."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.officedepot.com/a/products/769855/5-hour-ENERGY-Shot-Regular-Strength/",
+          "supports": "Exact UPC 719410500016 identifies 5-hour ENERGY Regular Strength Berry Shot, 1.93 oz."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.cub.com/store/cub/products/210369-5-hour-energy-shot-1-93-fl-oz",
+          "supports": "Inspected exact-UPC package front shows Berry, Regular Strength and 1.93 fl oz for one bottle."
+        }
+      ]
     }
   ]
 }

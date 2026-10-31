@@ -7,16 +7,16 @@
       "expectedSourceRow": 6371,
       "expectedRawFieldsSha256": "d1a7ae5c967a15a92d98de957403244b73ee4471a39f674053515c22e7dd7c40",
       "expectedPublicName": "5 Hour Energy - Extra StrengthEnergy",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "1.93 oz",
       "expectedCategory": "drinks",
       "expectedDepartment": "MISC",
       "proposedPublicTitle": "5-hour ENERGY Extra Strength Berry Shot",
-      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "reason": "Exact UPC evidence supports the corrected public product title after the guarded size resolution; category and other variant metadata are preserved.",
       "evidence": [
         {
           "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-90851798",
-          "supports": "Exact UPC 719410700010; product listing identifies 5-hour ENERGY Extra Strength Berry."
+          "url": "https://www.target.com/p/-/A-95094533",
+          "supports": "Exact UPC 719410700010 identifies 5-hour ENERGY Extra Strength Berry single shot, 1.93 fl oz."
         }
       ]
     },
@@ -26,21 +26,21 @@
       "expectedSourceRow": 7423,
       "expectedRawFieldsSha256": "8bcddc0ded36f489a76cbbdd340ccb46229e645187339bf16363535e32fe31a2",
       "expectedPublicName": "5 HOUR ENERGY BERRY",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "1.93 oz",
       "expectedCategory": "drinks",
       "expectedDepartment": "MISC",
-      "proposedPublicTitle": "5-hour ENERGY Berry Shot",
-      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "proposedPublicTitle": "5-hour ENERGY Regular Strength Berry Shot",
+      "reason": "Exact UPC evidence identifies the omitted Regular Strength expression after the guarded size resolution; category and other variant metadata are preserved.",
       "evidence": [
         {
           "kind": "exact_upc_listing",
           "url": "https://www.officedepot.com/a/products/769855/5-hour-ENERGY-Shot-Regular-Strength/",
-          "supports": "Exact UPC 719410500016; listing identifies 5-hour ENERGY Shot, Regular Strength, Berry."
+          "supports": "Exact UPC 719410500016 identifies 5-hour ENERGY Regular Strength Berry Shot, 1.93 oz."
         },
         {
           "kind": "exact_upc_listing",
           "url": "https://www.cub.com/store/cub/products/210369-5-hour-energy-shot-1-93-fl-oz",
-          "supports": "Exact UPC 719410500016; listing identifies 5-hour ENERGY Berry."
+          "supports": "Exact UPC 719410500016 identifies the single Berry shot, 1.93 fl oz."
         }
       ]
     },
@@ -4304,6 +4304,789 @@
           "kind": "exact_upc_listing",
           "url": "https://www.winetransit.com/wine/rose-blush-wine/beringer-main-vine-white-merlot-750-ml-11193.html",
           "supports": "Exact UPC 089819090297 identifies Beringer Main & Vine White Merlot in one 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "864",
+      "expectedUpc": "018341751260",
+      "expectedSourceRow": 6553,
+      "expectedRawFieldsSha256": "f784b9b26f9d11de6f49bc35b96ad48b1305e5f7081722f61a992c264624e7ad",
+      "expectedPublicName": "BAREFOOT BUBBLY BRUT",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Barefoot Bubbly Brut Cuvée",
+      "reason": "Exact UPC evidence and the inspected front label identify the omitted Brut Cuvée expression; variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-14767728",
+          "supports": "Exact UPC 018341751260 identifies Barefoot Bubbly Brut Cuvée sparkling wine, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "1520",
+      "expectedUpc": "813497006130",
+      "expectedSourceRow": 939,
+      "expectedRawFieldsSha256": "b495033d521649d5c14a81cc274da92eb0b8b7744769f865753ee87c3874b695",
+      "expectedPublicName": "bumbu",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Rum",
+      "proposedPublicTitle": "Bumbu The Original Rum",
+      "reason": "Exact UPC and variant evidence identify the omitted The Original Rum expression; variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/products/bumbu-the-original-rum?variant=41402575945764",
+          "supports": "Exact UPC 813497006130 identifies Bumbu The Original Rum, 375 mL."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/174724",
+          "supports": "Exact UPC 813497006130 identifies Bumbu Rum in the 375 mL bottle size."
+        }
+      ]
+    },
+    {
+      "sku": "1600",
+      "expectedUpc": "079581995142",
+      "expectedSourceRow": 1003,
+      "expectedRawFieldsSha256": "36d0c52cd6b7d1a24b94374d432b87ef9d1d18fca56a400ecc5b312af613157f",
+      "expectedPublicName": "Calypso Black Cherry Lem",
+      "expectedLabel": "20 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Calypso Black Cherry Lemonade",
+      "reason": "Exact UPC evidence and the inspected front label expand the truncated Lemonade expression; variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=00079581995142",
+          "supports": "Exact UPC 079581995142 identifies Calypso Black Cherry Lemonade, 20 fl oz glass bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.holidaywholesale.com/wp-content/uploads/2018_05_May_HolidayHighlights_LR_.pdf",
+          "supports": "Exact UPC 079581995142 identifies Calypso Black Cherry Lemonade, 20 oz glass bottle."
+        }
+      ]
+    },
+    {
+      "sku": "1632",
+      "expectedUpc": "085000026915",
+      "expectedSourceRow": 1024,
+      "expectedRawFieldsSha256": "3ca98652d2c61960da29515b60f7947c4a8330430e1fa781e06375d27221bb64",
+      "expectedPublicName": "Camarena Anejo",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Familia Camarena Añejo Tequila",
+      "reason": "Exact UPC evidence and the inspected front label identify the full Familia Camarena Añejo Tequila expression; variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/19998809-familia-camarena-anejo-tequila-750-ml",
+          "supports": "Exact UPC 085000026915 identifies Familia Camarena Añejo Tequila, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "2644",
+      "expectedUpc": "816751022785",
+      "expectedSourceRow": 9453,
+      "expectedRawFieldsSha256": "6fee328904c9965171c7402270cb6ab9ce9afbd0f21dda77cee260df6ea1f76c",
+      "expectedPublicName": "CUT PINEAPPLE MARG",
+      "expectedLabel": "Single · 355 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Cutwater Pineapple Margarita",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.cutwaterspirits.com/canned-cocktails/pineapple-margarita",
+          "supports": "Cutwater identifies Pineapple Margarita as a one-can 12 oz canned cocktail."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/27124736-cutwater-pineapple-margarita-12-fl-oz",
+          "supports": "Exact UPC 816751022785; Cub identifies Cutwater Pineapple Margarita, 355 mL."
+        }
+      ]
+    },
+    {
+      "sku": "2645",
+      "expectedUpc": "816751021986",
+      "expectedSourceRow": 7762,
+      "expectedRawFieldsSha256": "e4a129c29f029067de89802ac79c3da67f439e9dd263f3292678aff9fc5ae9bd",
+      "expectedPublicName": "CUT WATER ICED TEA",
+      "expectedLabel": "Single · 355 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Cutwater Long Island Iced Tea",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.cutwaterspirits.com/canned-cocktails/long-island-iced-tea",
+          "supports": "Cutwater identifies Long Island Iced Tea as a one-can 12 oz canned cocktail."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://67wine.com/products/cutwater-long-island-iced-tea-355ml-can",
+          "supports": "Exact UPC 816751021986; 67Wine identifies Cutwater Long Island Iced Tea, 355 mL can."
+        }
+      ]
+    },
+    {
+      "sku": "2649",
+      "expectedUpc": "816751022099",
+      "expectedSourceRow": 9292,
+      "expectedRawFieldsSha256": "899c2b409d6924616b67a5b7c50ea0da30555a54d3f36747175b8dd2879efdea",
+      "expectedPublicName": "CUT WATER MANGO MARG",
+      "expectedLabel": "Single · 355 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Cutwater Mango Margarita",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.cutwaterspirits.com/canned-cocktails/mango-margarita",
+          "supports": "Cutwater identifies Mango Margarita as a one-can 12 oz canned cocktail."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/23978032-cutwater-spirits-mango-margarita-12-1-fl-oz",
+          "supports": "Exact UPC 816751022099; Cub identifies Cutwater Mango Margarita, 355 mL can."
+        }
+      ]
+    },
+    {
+      "sku": "3059",
+      "expectedUpc": "080480983192",
+      "expectedSourceRow": 9301,
+      "expectedRawFieldsSha256": "d9f30b74857a0875c5c0d1c36ee7eb99f8c7069ff1291fb9cc628d5cae259bcc",
+      "expectedPublicName": "Dusse",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "D'USSÉ VSOP Cognac",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/products/dusse-vsop-cognac",
+          "supports": "Exact UPC 080480983192; Good Pour identifies the 200 mL D’USSÉ VSOP Cognac variant."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/162190",
+          "supports": "Exact UPC 080480983192; NC ABC identifies D’USSÉ VSOP Cognac, 200 mL."
+        }
+      ]
+    },
+    {
+      "sku": "3060",
+      "expectedUpc": "080480002930",
+      "expectedSourceRow": 6662,
+      "expectedRawFieldsSha256": "8a66a849ac48f3a30983334b39d0abd150b918c5e20606a4c82dcd59e2a1c8db",
+      "expectedPublicName": "Dusse",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "D'USSÉ VSOP Cognac",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/products/dusse-vsop-cognac",
+          "supports": "Exact UPC 080480002930; Good Pour identifies the 375 mL D’USSÉ VSOP Cognac variant."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://vintagewineandspirits.com/products/dusse-vsop-375ml",
+          "supports": "Exact UPC 080480002930; Vintage Wine & Spirits identifies D’USSÉ VSOP Cognac, 375 mL."
+        }
+      ]
+    },
+    {
+      "sku": "3061",
+      "expectedUpc": "080480002923",
+      "expectedSourceRow": 6705,
+      "expectedRawFieldsSha256": "1cd39f58bf51b977435d486f77953392fd4c078c3a70c1fa62c3e7bcf33b06ca",
+      "expectedPublicName": "Dusse",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "D'USSÉ VSOP Cognac",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/products/dusse-vsop-cognac",
+          "supports": "Exact UPC 080480002923; Good Pour identifies the 750 mL D’USSÉ VSOP Cognac variant."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/16316582-d-uss-vsop-cognac-750-ml",
+          "supports": "Exact UPC 080480002923; Cub identifies D’USSÉ VSOP Cognac, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "3078",
+      "expectedUpc": "085000024027",
+      "expectedSourceRow": 1992,
+      "expectedRawFieldsSha256": "83a7cb7d5b0c5fb3700022a99c8d4be02b261801a56a99888ee66b3b4d89464e",
+      "expectedPublicName": "E & J Apple",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Brandy",
+      "proposedPublicTitle": "E&J Apple Flavored Brandy",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/collections/wine-spirits/products/ej-apple-flavored-brandy?variant=41402836123684",
+          "supports": "Exact UPC 085000024027; Good Pour identifies the 200 mL E&J Apple Flavored Brandy variant."
+        }
+      ]
+    },
+    {
+      "sku": "3079",
+      "expectedUpc": "085000024034",
+      "expectedSourceRow": 1993,
+      "expectedRawFieldsSha256": "8922670f3c5e4b7b16436567df7e020fa379202d4d5a89f8e2e0141acb87cfcc",
+      "expectedPublicName": "E & J Apple",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Brandy",
+      "proposedPublicTitle": "E&J Apple Flavored Brandy",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/collections/wine-spirits/products/ej-apple-flavored-brandy?variant=41402835828772",
+          "supports": "Exact UPC 085000024034; Good Pour identifies the 375 mL E&J Apple Flavored Brandy variant."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/168415",
+          "supports": "Exact UPC 085000024034; NC ABC identifies E&J Apple Brandy, 375 mL."
+        }
+      ]
+    },
+    {
+      "sku": "3080",
+      "expectedUpc": "085000024041",
+      "expectedSourceRow": 9364,
+      "expectedRawFieldsSha256": "a5851b333c58dbb6f8e34f84845eed03aced8bb7e059f4ee837b371010cc8bc2",
+      "expectedPublicName": "E & J Apple",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Brandy",
+      "proposedPublicTitle": "E&J Apple Flavored Brandy",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/collections/wine-spirits/products/ej-apple-flavored-brandy?variant=41402836189220",
+          "supports": "Exact UPC 085000024041; Good Pour identifies the 750 mL E&J Apple Flavored Brandy variant."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/3063449-e-j-gallo-apple-brandy-750-ml",
+          "supports": "Exact UPC 085000024041; Cub identifies E&J Apple Brandy, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "3212",
+      "expectedUpc": "096749021147",
+      "expectedSourceRow": 2086,
+      "expectedRawFieldsSha256": "b6f05e88db2dff7e8fe6adbe28fa9a0eadc901d20633c1787c39e1a8b9e0ea10",
+      "expectedPublicName": "Evan Williams",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://heavenhilldistillery.com/our-brands.php?bws=1",
+          "supports": "Heaven Hill identifies Evan Williams Black as a bourbon."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.bjs.com/product/evan-williams-black-label-kentucky-straight-bourbon-whiskey-175l/3000000000001708077/",
+          "supports": "Exact UPC 096749021147; BJ’s identifies Evan Williams Black Label Kentucky Straight Bourbon Whiskey, 1.75 L."
+        }
+      ]
+    },
+    {
+      "sku": "3213",
+      "expectedUpc": "096749021543",
+      "expectedSourceRow": 2087,
+      "expectedRawFieldsSha256": "446e15aab7790e1bd2134239dd000b6271339c528afb7a4c17928b4928142586",
+      "expectedPublicName": "Evan Williams",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://heavenhilldistillery.com/our-brands.php?bws=1",
+          "supports": "Heaven Hill identifies Evan Williams Black as a bourbon."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/155596",
+          "supports": "Exact UPC 096749021543; NC ABC identifies Evan Williams Black Label, 200 mL."
+        }
+      ]
+    },
+    {
+      "sku": "3214",
+      "expectedUpc": "096749021642",
+      "expectedSourceRow": 2088,
+      "expectedRawFieldsSha256": "bab8454e1d37dadf7f1628f4f08a833b991abe46b429019647ec589a48404d9c",
+      "expectedPublicName": "Evan Williams",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://heavenhilldistillery.com/our-brands.php?bws=1",
+          "supports": "Heaven Hill identifies Evan Williams Black as a bourbon."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-53791087",
+          "supports": "Exact UPC 096749021642; Target identifies Evan Williams Kentucky Straight Bourbon Whiskey, 375 mL."
+        }
+      ]
+    },
+    {
+      "sku": "3215",
+      "expectedUpc": "096749021345",
+      "expectedSourceRow": 2089,
+      "expectedRawFieldsSha256": "d7649a04aed3a3ace76f2063bb8dbb61e3038c189fab5c32fe1a0be11490bc6b",
+      "expectedPublicName": "Evan Williams",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://heavenhilldistillery.com/our-brands.php?bws=1",
+          "supports": "Heaven Hill identifies Evan Williams Black as a bourbon."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.anbl.com/evan-williams-black-label-bourbon-750ml-10366",
+          "supports": "Exact UPC 096749021345; ANBL identifies Evan Williams Black Label Bourbon, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "3554",
+      "expectedUpc": "732494000623",
+      "expectedSourceRow": 2304,
+      "expectedRawFieldsSha256": "afedcc4aea50bd0d2e6ebe2e734f140de8be17e729e0a5f13c6cd7bbfcb734ba",
+      "expectedPublicName": "G.H.Cretors PoppedCorn",
+      "expectedLabel": "1.5 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "G.H. Cretors The Mix Popped Corn",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.faire.com/product/p_r7zyk8d2mj",
+          "supports": "Exact UPC 732494000623; Faire identifies G.H. Cretors The Mix Popped Corn, 1.5 oz."
+        }
+      ]
+    },
+    {
+      "sku": "4717",
+      "expectedUpc": "083960726999",
+      "expectedSourceRow": 3019,
+      "expectedRawFieldsSha256": "4b8f033fe34b0fa5502b686f8aa681fce9b6176accb791ca9766df7ac426a396",
+      "expectedPublicName": "Jose Tradicional Silver",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Jose Cuervo Tradicional Silver Tequila",
+      "reason": "Exact UPC evidence supports the corrected public product title; source and variant metadata are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.thebarreltap.com/collections/new-collection/products/jose-cuervo-tradicional-silver-tequila-750ml",
+          "supports": "Exact UPC 083960726999; The Barrel Tap identifies Jose Cuervo Tradicional Silver Tequila, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "5213",
+      "expectedUpc": "813497007809",
+      "expectedSourceRow": 3364,
+      "expectedRawFieldsSha256": "8f937953147d583e5eeba763d1e08092a0bfe31afdb9b7829e3c1f7c0071cac1",
+      "expectedPublicName": "luc belaire bleu",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Luc Belaire Bleu Édition Limitée",
+      "reason": "Exact UPC evidence identifies the complete Luc Belaire Bleu Édition Limitée expression; the existing 750 mL variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/25018072-luc-belaire-bleu-dition-limit-e-750-0-ml",
+          "supports": "Exact UPC 813497007809 identifies Luc Belaire Bleu Édition Limitée, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "5406",
+      "expectedUpc": "041789003035",
+      "expectedSourceRow": 7836,
+      "expectedRawFieldsSha256": "40b1cd2e0779f2a1d63ffe6753da79bb7515e075ac9ecb5ed91eff37c051e037",
+      "expectedPublicName": "maruchan ramen bowlhot spicy shrimp noodl soup",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Maruchan Ramen Bowl Hot & Spicy Shrimp Flavor",
+      "reason": "Exact UPC evidence identifies the Ramen Bowl Hot & Spicy Shrimp Flavor expression; the current variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oag.ca.gov/prop65/60-day-notice-2021-02968",
+          "supports": "Exact UPC 041789003035 identifies Maruchan Ramen Bowl Hot & Spicy Shrimp Flavor."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/76944-maruchan-ramen-noodles-with-vegetables-hot-spicy-with-shrimp-3-32-oz",
+          "supports": "Exact UPC 041789003035 identifies Maruchan Ramen Bowl Hot & Spicy Shrimp."
+        }
+      ]
+    },
+    {
+      "sku": "5412",
+      "expectedUpc": "041789001574",
+      "expectedSourceRow": 9618,
+      "expectedRawFieldsSha256": "69b769c31e42a075154cc082ae0511f20cba223a2cee48cd39118ef359b35c86",
+      "expectedPublicName": "MARUCHAN INSTANT LUNCHCHICKEN",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Maruchan Instant Lunch Roast Chicken",
+      "reason": "Exact UPC evidence identifies the omitted Roast Chicken expression; the current variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.omniapartners.com/suppliers-files/K-N/Keefe_Supply_Company/Contract_Documents/WA000046788/Keefe_RES_2025_10_11.pdf",
+          "supports": "Exact UPC 041789001574 identifies Maruchan Instant Lunch Roast Chicken."
+        }
+      ]
+    },
+    {
+      "sku": "5413",
+      "expectedUpc": "041789001666",
+      "expectedSourceRow": 8636,
+      "expectedRawFieldsSha256": "596eaee3d0c1e437e284bc47a01aa2971c13a074d5d54b7914f7b8aa57d5057b",
+      "expectedPublicName": "Maruchan instant lunchcheese",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Maruchan Instant Lunch Cheddar Cheese Flavor Soup",
+      "reason": "Manufacturer exact-UPC evidence identifies the complete Cheddar Cheese Flavor Soup expression; the current variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.maruchanramen.com/product/maruchan-instant-lunch-cheddar-cheese-flavor-soup-2-25-ozcheddar-cheese/",
+          "supports": "Exact UPC 041789001666 identifies Maruchan Instant Lunch Cheddar Cheese Flavor Soup."
+        }
+      ]
+    },
+    {
+      "sku": "5534",
+      "expectedUpc": "717854305518",
+      "expectedSourceRow": 3594,
+      "expectedRawFieldsSha256": "f9438ae8727748f5f40bcc03ab123b8c5a5d2f43977cc32171e85d884388b2de",
+      "expectedPublicName": "Michelina'schicken fried rice",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Michelina's Chicken Fried Rice",
+      "reason": "Exact UPC evidence identifies Michelina's Chicken Fried Rice; the correction fixes the source's missing word boundary and preserves current variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/42042-michelina-s-chicken-fried-rice-8-oz",
+          "supports": "Exact UPC 717854305518 identifies Michelina's Chicken Fried Rice."
+        }
+      ]
+    },
+    {
+      "sku": "5638",
+      "expectedUpc": "078742125473",
+      "expectedSourceRow": 3642,
+      "expectedRawFieldsSha256": "ad567c695e7d13f3997a1bfb30e5c6facf37072c85df3d7334bc4e7d9d510f62",
+      "expectedPublicName": "MILK",
+      "expectedLabel": "1 gal",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Member's Mark 2% Milk",
+      "reason": "Exact UPC evidence identifies the omitted Member's Mark brand and 2% milk expression; the existing one-gallon variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://healthy.arkansas.gov/wp-content/uploads/Arkansas-WIC-APL-8-28-25.pdf",
+          "supports": "Exact UPC 078742125473 identifies Member's Mark 2% Milk, one gallon."
+        }
+      ]
+    },
+    {
+      "sku": "6065",
+      "expectedUpc": "041321783104",
+      "expectedSourceRow": 6916,
+      "expectedRawFieldsSha256": "8064691ebff36b35fd1c0a97f9a1b7cf11b3b47c14c46b6128946bdbd574b1af",
+      "expectedPublicName": "nalley chili original",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Nalley Original Chili Con Carne With Beans",
+      "reason": "Manufacturer exact-UPC evidence identifies the full Nalley Original Chili Con Carne With Beans expression; the current variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://smartlabel.conagra.com/041321783104-0004-en-US/index.html",
+          "supports": "Exact UPC 041321783104 identifies Nalley Original Chili Con Carne With Beans."
+        }
+      ]
+    },
+    {
+      "sku": "6431",
+      "expectedUpc": "855880008024",
+      "expectedSourceRow": 4079,
+      "expectedRawFieldsSha256": "839c5cffcc811b63054e31552100d92b23bf1a261c2cee19700b5ce80f784094",
+      "expectedPublicName": "on the rocks old fashioned",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "On The Rocks Knob Creek Old Fashioned",
+      "reason": "Exact UPC evidence identifies the omitted Knob Creek expression; the existing 375 mL variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/173641",
+          "supports": "Exact UPC 855880008024 identifies On The Rocks Knob Creek Old Fashioned in a 375 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "6462",
+      "expectedUpc": "039000008907",
+      "expectedSourceRow": 8228,
+      "expectedRawFieldsSha256": "3c7321feeb1f934fd5a35e74b551dd8af26d8124226cc35e8c4f2686934d250b",
+      "expectedPublicName": "Ortega mild org thick&smooth",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Ortega Original Thick and Smooth Mild Taco Sauce",
+      "reason": "Exact UPC evidence identifies the complete Ortega Original Thick and Smooth Mild Taco Sauce expression; the current variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/78401-ortega-mild-original-taco-sauce-8-oz",
+          "supports": "Exact UPC 039000008907 identifies Ortega Original Thick and Smooth Mild Taco Sauce."
+        }
+      ]
+    },
+    {
+      "sku": "6670",
+      "expectedUpc": "854379002017",
+      "expectedSourceRow": 4229,
+      "expectedRawFieldsSha256": "3f84bf6c9e8a0f3dd03c18e46740e04be591a1bfbaeee0414cbd8755be04734f",
+      "expectedPublicName": "Pineapple Upsd Down Cake",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Piece of Cake Pineapple Upside Down Cake Liqueur",
+      "reason": "Exact UPC evidence identifies the Piece of Cake brand, full Pineapple Upside Down Cake expression, and liqueur type; the existing 750 mL variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.highendliquor.com/products/piece-of-cake-pineapple-upside-down-cake-liqueur-750ml/?from=mw",
+          "supports": "Exact UPC 854379002017 identifies Piece of Cake Pineapple Upside Down Cake Liqueur, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "7302",
+      "expectedUpc": "074234991151",
+      "expectedSourceRow": 9218,
+      "expectedRawFieldsSha256": "8b1596e8772f85ee70d5ef8c29edd35969e5075947e5b1a5ce31a524fea4710f",
+      "expectedPublicName": "san marcos jalapeno peppers",
+      "expectedLabel": "198 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "San Marcos Whole Jalapeno Peppers",
+      "reason": "Exact UPC evidence identifies the omitted Whole expression; the existing 198 g variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://cdnc.heyzine.com/files/uploaded/v3/e0a52b334d429dccb38de4bfe36125db259f361f-3.pdf",
+          "supports": "Exact UPC 074234991151 identifies San Marcos Whole Jalapeno Peppers, 198 g."
+        }
+      ]
+    },
+    {
+      "sku": "7321",
+      "expectedUpc": "086891022871",
+      "expectedSourceRow": 4673,
+      "expectedRawFieldsSha256": "9b0ef3dd8d3f2c1ab0edab323b7c058928107fd73ad8b0e84ffb0d68c89f8f94",
+      "expectedPublicName": "Santa Marg Pinot Grigio",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Santa Margherita Pinot Grigio",
+      "reason": "Exact UPC evidence identifies the complete Santa Margherita brand spelling; the existing 750 mL variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/collections/italian-whites/products/santa-margherita-pinot-grigio-2022",
+          "supports": "Exact UPC 086891022871 identifies Santa Margherita Pinot Grigio, 750 mL."
+        }
+      ]
+    },
+    {
+      "sku": "7261",
+      "expectedUpc": "041508800129",
+      "expectedSourceRow": 9216,
+      "expectedRawFieldsSha256": "4f7d4f60a639bd5a0b9186ed8c144f8f7e36d0b695bc5834c28bafd17b2d6e61",
+      "expectedPublicName": "S.PELLEGRINO WATER",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Water",
+      "proposedPublicTitle": "S.Pellegrino Sparkling Natural Mineral Water",
+      "reason": "Exact UPC-backed identity evidence expands the abbreviated catalog title without changing the verified 750 mL label or singleton grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/17074096-s-pellegrino-sparkling-natural-mineral-water-25-3-oza",
+          "supports": "Exact UPC 041508800129 identifies S.Pellegrino Sparkling Natural Mineral Water in the verified 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "7960",
+      "expectedUpc": "016571910327",
+      "expectedSourceRow": 5134,
+      "expectedRawFieldsSha256": "73d05a4899aff0dac93b2c93273a966fdbed78d0373fb75c1d8b9f147dbca589",
+      "expectedPublicName": "Sparkling Ice kimi strawberry",
+      "expectedLabel": "17 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Sparkling Ice Kiwi Strawberry",
+      "reason": "Exact UPC-backed product evidence corrects the catalog spelling from kimi to Kiwi while preserving the verified 17 oz single-bottle label and singleton grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/42502-sparkling-ice-sparkling-water-zero-sugar-kiwi-strawberry-17-fl-oz",
+          "supports": "Exact UPC 016571910327 identifies Sparkling Ice Kiwi Strawberry in the verified 17 fl oz single bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9149",
+      "expectedUpc": "051000138019",
+      "expectedSourceRow": 5810,
+      "expectedRawFieldsSha256": "8416d82586ea04d44dc5c5e5c8bc4043e2947cde27b86fe6da038ade18ebd6f6",
+      "expectedPublicName": "V8 Original Spicy Hot",
+      "expectedLabel": "12 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "V8 Spicy Hot 100% Vegetable Juice",
+      "reason": "Exact UPC-backed identity evidence corrects the inaccurate Original wording while preserving the verified 12 oz single-container label and singleton grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cheersondemand.com/v8-spicy-hot-12-oz.html",
+          "supports": "Exact UPC 051000138019 identifies V8 Spicy Hot 100% Vegetable Juice in the verified 12 oz single container."
+        }
+      ]
+    },
+    {
+      "sku": "9154",
+      "expectedUpc": "097339000061",
+      "expectedSourceRow": 9447,
+      "expectedRawFieldsSha256": "c1232c43cc5b37a8fd3de98f6d3506b84ab1f446bef6104f73060c7d892b00e3",
+      "expectedPublicName": "VALENTINA SALSA",
+      "expectedLabel": "12.5 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Valentina Salsa Picante Black Label Extra Hot Sauce",
+      "reason": "Exact UPC-backed identity evidence expands the catalog shorthand to the verified Black Label Extra Hot product while preserving the 12.5 oz singleton label.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_page",
+          "url": "https://americanuncle.es/products/valentina-salsa-picante-mexican-extra-hot-sauce",
+          "supports": "Exact UPC 097339000061 identifies Valentina Salsa Picante Black Label Extra Hot Sauce in the verified 12.5 oz bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://upcfoodsearch.com/food-products/hot-sauce/097339000061/",
+          "supports": "Exact UPC 097339000061 corroborates the Valentina Black Label Extra Hot Sauce identity."
+        }
+      ]
+    },
+    {
+      "sku": "9224",
+      "expectedUpc": "038075210307",
+      "expectedSourceRow": 6783,
+      "expectedRawFieldsSha256": "e3eaad11d3563d4764e5823be59d07e50859c4be9d18a8295152a4e2036c32ae",
+      "expectedPublicName": "Verdi Strawberry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Verdi Strawberry Sparkletini",
+      "reason": "Exact UPC-backed identity evidence completes the product expression while preserving the verified 750 mL singleton label.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/verdi-strawberry-sparkletini-750ml",
+          "supports": "Exact UPC 038075210307 identifies Verdi Strawberry Sparkletini in the verified 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9265",
+      "expectedUpc": "898999040004",
+      "expectedSourceRow": 5883,
+      "expectedRawFieldsSha256": "1527e5fb8767a14705c62eb0f84d9338db8149fdf141746a3ac3e0160dcfdab3",
+      "expectedPublicName": "Vita Coco water peach & mango",
+      "expectedLabel": "16.9 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Vita Coco Coconut Water, Peach Mango",
+      "reason": "Exact UPC-backed identity evidence corrects casing and expands the product expression while preserving the verified 16.9 oz carton label and singleton grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/55008-vita-coco-coconut-water-peach-mango-16-9-fl-oz",
+          "supports": "Exact UPC 898999040004 identifies Vita Coco Coconut Water, Peach Mango in the verified 16.9 fl oz single carton."
         }
       ]
     }
