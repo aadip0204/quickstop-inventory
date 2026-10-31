@@ -25,34 +25,38 @@ def fetch(url):
         return response.read()
 
 
-def validate_direct_reference_privacy(catalog, manifest):
-    """Require direct-reference provenance to stay outside public artifacts."""
+def validate_public_image_privacy(catalog, manifest):
+    """Require every public product image to use the source-free projection."""
     if manifest.get('schemaVersion') != 1 or not isinstance(manifest.get('images'), list):
         raise AssertionError('Public image manifest is invalid')
     manifest_direct = {}
     for entry in manifest['images']:
-        if entry.get('usageBasis') != 'user_authorized_direct_reference':
-            continue
         sku = entry.get('sku')
         if set(entry) != DIRECT_PUBLIC_MANIFEST_FIELDS:
-            raise AssertionError(f'Public direct image manifest exposes provenance or unsupported fields: {sku}')
+            raise AssertionError(f'Public image manifest exposes provenance or unsupported fields: {sku}')
+        if (entry.get('usageBasis') != 'user_authorized_direct_reference'
+                or entry.get('attributionRequired') is not False):
+            raise AssertionError(f'Public image manifest has an unsupported usage policy: {sku}')
         if sku in manifest_direct:
-            raise AssertionError(f'Duplicate public direct image manifest SKU: {sku}')
+            raise AssertionError(f'Duplicate public image manifest SKU: {sku}')
         manifest_direct[sku] = entry
     catalog_direct = {}
     for product in catalog['products']:
         for variant in product['variants']:
             image = variant.get('image')
-            if not image or image.get('usageBasis') != 'user_authorized_direct_reference':
+            if not image:
                 continue
             sku = variant['sku']
             if set(image) != DIRECT_PUBLIC_IMAGE_FIELDS:
-                raise AssertionError(f'Public catalog direct image exposes provenance or unsupported fields: {sku}')
+                raise AssertionError(f'Public catalog image exposes provenance or unsupported fields: {sku}')
+            if (image.get('usageBasis') != 'user_authorized_direct_reference'
+                    or image.get('attributionRequired') is not False):
+                raise AssertionError(f'Public catalog image has an unsupported usage policy: {sku}')
             if sku in catalog_direct:
-                raise AssertionError(f'Duplicate public direct catalog image SKU: {sku}')
+                raise AssertionError(f'Duplicate public catalog image SKU: {sku}')
             catalog_direct[sku] = image
     if set(catalog_direct) != set(manifest_direct):
-        raise AssertionError('Public direct catalog and manifest assignments differ')
+        raise AssertionError('Public catalog and manifest image assignments differ')
     return len(catalog_direct)
 
 
@@ -60,18 +64,20 @@ def verify(base_url, root):
     checks = []
     catalog = json.loads((root / "catalog.json").read_text())
     manifest = json.loads((root / "data/image-manifest.json").read_text())
-    direct_count = validate_direct_reference_privacy(catalog, manifest)
+    direct_count = validate_public_image_privacy(catalog, manifest)
+    if (root / 'image-credits.html').exists():
+        raise AssertionError('Deprecated public image-credits page is still present in the checkout')
     photo_paths = sorted({variant["image"]["src"]
                           for product in catalog["products"]
                           for variant in product["variants"] if variant["image"]})
-    for name in ["index.html", "style.css", "script.js", "catalog.json", "data/image-manifest.json", "image-credits.html", "images/logo.png", *photo_paths]:
+    for name in ["index.html", "style.css", "script.js", "catalog.json", "data/image-manifest.json", "images/logo.png", *photo_paths]:
         expected = (root / name).read_bytes()
         actual = fetch(urllib.parse.urljoin(base_url, name))
         digest = hashlib.sha256(actual).hexdigest()
         if actual != expected:
             raise AssertionError(f"Live {name} does not match the tested checkout")
         checks.append({"path": name, "matchesCheckout": True, "sha256": digest})
-    for name in ("products.js", "products.json", "products_grouped_filtered.js"):
+    for name in ("products.js", "products.json", "products_grouped_filtered.js", "image-credits.html"):
         try:
             fetch(urllib.parse.urljoin(base_url, name))
         except urllib.error.HTTPError as error:
@@ -79,7 +85,7 @@ def verify(base_url, root):
                 raise
             checks.append({"path": name, "status": 404})
         else:
-            raise AssertionError(f"Legacy data is still publicly served: {name}")
+            raise AssertionError(f"Retired public artifact is still served: {name}")
     return {"url": base_url, "assetChecks": checks, "liveCatalogCounts": catalog["counts"],
             "verifiedPhotoAssetsServed": len(photo_paths),
             "directReferenceImagesWithoutPublicProvenance": direct_count,

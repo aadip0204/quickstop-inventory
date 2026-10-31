@@ -8,11 +8,6 @@
       "expectedLabel": "50 mL",
       "src": "images/products/sku-4434.jpg",
       "alt": "Jack Daniel's Gentleman Jack Tennessee Whiskey — 50 mL packaging",
-      "sourcePage": "https://world.openfoodfacts.org/product/0082184138700",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/218/413/8700/1.400.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "31c9cd26849bedc6a01c68e1ce7c5e50bf23bce8665ab98b664d5929a063f243",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -22,7 +17,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "8002",
@@ -31,11 +28,6 @@
       "expectedLabel": "2 L",
       "src": "images/products/sku-8002.jpg",
       "alt": "Sprite Lemon-Lime Soda — 2 L packaging",
-      "sourcePage": "https://world.openfoodfacts.org/product/0049000050158",
-      "sourceImageUrl": "https://images.openfoodfacts.org/images/products/004/900/005/0158/front_en.41.400.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "hiimdannyganz / Open Food Facts",
       "sha256": "fbcadeeb2160cbd8abc919994f0f374684d92bdfe203b8659bff461aec67ac70",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -45,7 +37,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7008",
@@ -74,11 +68,6 @@
       "expectedLabel": "12-pack · 12 oz",
       "src": "images/products/sku-7999.jpg",
       "alt": "Sprite Lemon-Lime — 12-pack · 12 oz packaging",
-      "sourcePage": "https://world.openfoodfacts.org/product/0049000028928",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/002/8928/6.400.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "hiimdannyganz / Open Food Facts",
       "sha256": "e358fec212d5202a829a7f135eba7b3c2bcbc6cc4e1386d3f254408db232cc4d",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -88,7 +77,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7675",
@@ -137,11 +128,6 @@
       "expectedLabel": "12-pack · 12 oz",
       "src": "images/products/sku-2263.jpg",
       "alt": "Coca-Cola Original Taste — 12-pack · 12 oz packaging",
-      "sourcePage": "https://world.openfoodfacts.org/product/0049000028904",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/002/8904/5.400.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "thaialagata / Open Food Facts",
       "sha256": "e69bef92c88c9823ce99bd4604744c07fe7224c2e38b21e5a0a068841b873e57",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -151,7 +137,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3016",
@@ -180,11 +168,6 @@
       "expectedLabel": "28 oz",
       "src": "images/products/sku-3644.jpg",
       "alt": "Gatorade Thirst Quencher Orange — 28 oz packaging",
-      "sourcePage": "https://world.openfoodfacts.org/product/0052000135145",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/013/5145/1.400.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "pmpv02 / Open Food Facts",
       "sha256": "60221dc202e6261c1b44dcaa4540d82e292fc90998a5ea5da13d7058b24c10e7",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -194,7 +177,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3648",
@@ -203,11 +188,6 @@
       "expectedLabel": "28 oz",
       "src": "images/products/sku-3648.jpg",
       "alt": "Gatorade Fierce Green Apple Thirst Quencher — 28 oz packaging",
-      "sourcePage": "https://world.openfoodfacts.org/product/0052000104110",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/010/4110/1.400.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "b55589dc267d46bc4d4466a31c780cd1b446ca3e72183952f42d3dda4f74b08b",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -217,7 +197,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "9768",
@@ -266,11 +248,6 @@
       "expectedLabel": "1 oz",
       "src": "images/products/sku-4118.jpg",
       "alt": "Herr's Ragin' Ranch Potato Chips — 1 oz packaging",
-      "sourcePage": "https://world.openfoodfacts.org/product/0072600011984",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/260/001/1984/1.400.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "5ee42ca94d59b9d64f4a6eed9110fcb0c0acece58cb27b3d515d7384cc949627",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -280,7 +257,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3206",
@@ -369,11 +348,6 @@
       "expectedLabel": "12-pack · 12 oz",
       "src": "images/products/sku-2826.jpg",
       "alt": "Diet Coke — 12-pack · 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0049000028911",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/002/8911/6.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "hiimdannyganz / Open Food Facts",
       "sha256": "fc3ed572554df2e3d41d5241b7b6ba8f327f86d4c190da8b8f9192b46dee197e",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -383,7 +357,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "101207",
@@ -432,11 +408,6 @@
       "expectedLabel": "12-pack · 12 oz",
       "src": "images/products/sku-2270.jpg",
       "alt": "Coca-Cola Zero Sugar Pack — 12-pack · 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0049000042559",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/004/2559/6.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "hiimdannyganz / Open Food Facts",
       "sha256": "4f581f3ed92c11dda26210c98d5940e3aee401367b3e2129b10e0b8abcb18ee2",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -446,7 +417,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "239",
@@ -475,11 +448,6 @@
       "expectedLabel": "22.5 oz",
       "src": "images/products/sku-8877.jpg",
       "alt": "Tropical Fantasy Pineapple — 22.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0089087157616",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/715/7616/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "d70112fd9639ebe8144d41f70b3d5a52101b768bc3110f7be2a36096bc2b9c68",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -489,7 +457,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2439",
@@ -558,11 +528,6 @@
       "expectedLabel": "16 oz",
       "src": "images/products/sku-8257.jpg",
       "alt": "SunnyD Tangy Original Orange Citrus Punch — 16 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0050200560002",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/020/056/0002/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "192b39f151dbeb1d343d9040071fbfec299fad5e37aca94c6485dc0e4066ff05",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -572,7 +537,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "5913",
@@ -581,11 +548,6 @@
       "expectedLabel": "16 oz",
       "src": "images/products/sku-5913.jpg",
       "alt": "Mr. Pure 100% Orange Juice — 16 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0072718100266",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/271/810/0266/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "6d13328ca72c5a0f7d08759f7deda6642fe8392b7a33ccfdca668ca917309cc1",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -595,7 +557,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3333",
@@ -684,11 +648,6 @@
       "expectedLabel": "64 oz",
       "src": "images/products/sku-5944.jpg",
       "alt": "MR. PURE CRANBERRY — 64 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0072718101546",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/271/810/1546/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "b98aaf0e025cccb4b9a528239921dcb7800153cd62fd4fb13b6d09aeaeb81053",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -698,7 +657,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4531",
@@ -707,11 +668,6 @@
       "expectedLabel": "2.5 oz",
       "src": "images/products/sku-4531.jpg",
       "alt": "Jays Original Potato Chips — 2.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041200104693",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/120/010/4693/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "bed5a6d8c41feffa7c4edd49661b70aa9ff86e7561a2a10aaae6ec0de9498097",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -721,7 +677,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "101291",
@@ -770,11 +728,6 @@
       "expectedLabel": "64 oz",
       "src": "images/products/sku-5972.jpg",
       "alt": "Mr. Pure 100% Orange Juice — 64 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0072718101522",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/271/810/1522/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "31cd706cc6da8c4dc1b43eb5812d7a4d5be1f83d9cfe59d7a8a0d9cc5e48f004",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -784,7 +737,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "8911",
@@ -793,11 +748,6 @@
       "expectedLabel": "52 oz",
       "src": "images/products/sku-8911.jpg",
       "alt": "Tropicana Pineapple Mango with Lime — 52 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0048500202722",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/020/2722/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "d8af33e120ac67d4585ab679f924698c9f1cba41f329acaab65b583287888c7d",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -807,7 +757,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "8907",
@@ -856,11 +808,6 @@
       "expectedLabel": "64 oz",
       "src": "images/products/sku-5979.jpg",
       "alt": "Mr. Pure Papaya punch — 64 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0072718101577",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/271/810/1577/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "40bb40a4cd869203bf2aaa347f7401555574b3383a6e41e2234e2f5c046f4f9e",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -870,7 +817,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "8013",
@@ -879,11 +828,6 @@
       "expectedLabel": "20 oz",
       "src": "images/products/sku-8013.jpg",
       "alt": "SQUIRT RUBY RED — 20 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078000018400",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/8400/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "2dc60af137bebdb1fae36c793d0383c62adbb3c4f2edd24538dfa77801aaf691",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -893,7 +837,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4479",
@@ -922,11 +868,6 @@
       "expectedLabel": "2 L",
       "src": "images/products/sku-1671.jpg",
       "alt": "Canada Dry Cranberry Ginger Ale — 2 L packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078000156461",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/015/6461/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "thaialagata / Open Food Facts",
       "sha256": "2b1a22e5f4520fa4193a41d1a0c89527fe5f30868bfed91c78a6e0850fccace9",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -936,7 +877,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6940",
@@ -965,11 +908,6 @@
       "expectedLabel": "12 oz",
       "src": "images/products/sku-4472.jpg",
       "alt": "D&G Jamaican Cream Soda — 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0089087120122",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0122/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "756d7474d5b77681928d344870c049f887e8c59df4b8a2e3d1277719fe78a68e",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -979,7 +917,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4525",
@@ -988,11 +928,6 @@
       "expectedLabel": "2.5 oz",
       "src": "images/products/sku-4525.jpg",
       "alt": "JAYS HOT STUFF POTATO CHIPS — 2.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041200104686",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/120/010/4686/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "a52a5e0bf1cbc931a1a40c7c2a1d72912a374edfb8558419751561d33ae469c7",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1002,7 +937,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4512",
@@ -1011,11 +948,6 @@
       "expectedLabel": "2.5 oz",
       "src": "images/products/sku-4512.jpg",
       "alt": "Jays Barbecue Potato Chips — 2.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041200104662",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/120/010/4662/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "cc928b606f65f3d7ab9454374700062805e6ea79841ba43b4e3cfd71fd2581ab",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1025,7 +957,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1983",
@@ -1074,11 +1008,6 @@
       "expectedLabel": "113 g",
       "src": "images/products/sku-4729.jpg",
       "alt": "Hostess Jumbo Donettes Glazed Strawberry — 113 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0888109012168",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/810/901/2168/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "312e0943a729617bb2ed50c79ff12f3bbd61dcfd6d61915786c70ff159b54464",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1088,7 +1017,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7195",
@@ -1117,11 +1048,6 @@
       "expectedLabel": "16 oz · bottles",
       "src": "images/products/sku-9406.jpg",
       "alt": "Welch's Cranberry Juice Cocktail — 16 oz · bottles packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041800429004",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/042/9004/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "26bc53ca5f87716417dfc7f4081ee6c5536fa81d64f730bf88c1b4243116433c",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1131,7 +1057,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4289",
@@ -1160,11 +1088,6 @@
       "expectedLabel": "11 oz",
       "src": "images/products/sku-840.jpg",
       "alt": "Banquet Hot & Spicy Bone-In Chicken Wings — 11 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0031000126001",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/012/6001/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "64dbc1ad872a493c78e706c03e561d9f4606e18dded04453075c24474b3399b5",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1174,7 +1097,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4120",
@@ -1183,11 +1108,6 @@
       "expectedLabel": "1 oz",
       "src": "images/products/sku-4120.jpg",
       "alt": "Herr's Red Hot Potato Chips — 1 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0072600009622",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/260/000/9622/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "13b51d48f9cb534da334be10d9dcd5b365b033bb2d3c3bc1c82377496ad72629",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1197,7 +1117,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7678",
@@ -1206,11 +1128,6 @@
       "expectedLabel": "2.25 oz",
       "src": "images/products/sku-7678.jpg",
       "alt": "Smartfood White Cheddar Popcorn — 2.25 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0028400437899",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/043/7899/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "b64ec19db801cecc8ed2df26406b8c9dc0f49a7a9a92d72ac3f33f6b0846b9cf",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1220,7 +1137,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "8265",
@@ -1229,11 +1148,6 @@
       "expectedLabel": "16 oz",
       "src": "images/products/sku-8265.jpg",
       "alt": "Sunny D Smooth orange — 16 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0050200019128",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/020/001/9128/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "6782ec34949e4d1a8ecd9f193932da650380689394fd598fb48e063f93c6fd87",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1243,7 +1157,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "524",
@@ -1252,11 +1168,6 @@
       "expectedLabel": "20 oz · bottles",
       "src": "images/products/sku-524.jpg",
       "alt": "AriZona Fruit Punch Juice Cocktail — 20 oz bottle packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0613008725754",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/5754/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "d6610dd3f3d96435c8a27b0eaab2f1f7e7f5856cdd3d7fed3f8a5289aece1b18",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1266,7 +1177,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "9148",
@@ -1275,11 +1188,6 @@
       "expectedLabel": "12 oz",
       "src": "images/products/sku-9148.jpg",
       "alt": "V8 Original 100% Vegetable Juice — 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0051000138033",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/100/013/8033/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "405f616574115a317c1763d001647327681a897015a48ee3eac4cdd1ecb0e16f",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1289,7 +1197,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1559",
@@ -1298,11 +1208,6 @@
       "expectedLabel": "24 oz",
       "src": "images/products/sku-1559.jpg",
       "alt": "butcher boy vegetable oil — 24 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0021559100027",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/155/910/0027/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "acrfb / Open Food Facts",
       "sha256": "f1d598d159124b5b4b9686bb6972819a7f973c32ca8c7cc233361aed807cd0b0",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1312,7 +1217,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4477",
@@ -1321,11 +1228,6 @@
       "expectedLabel": "12 oz · bottles",
       "src": "images/products/sku-4477.jpg",
       "alt": "D&G Jamaican Orange Soda — 12 oz · bottles packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0089087120153",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0153/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "8b17d156945724d636fb15a96b8532e0277e54ad0bc2e59d0f21f3cf34d2d681",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1335,7 +1237,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6346",
@@ -1344,11 +1248,6 @@
       "expectedLabel": "64 oz",
       "src": "images/products/sku-6346.jpg",
       "alt": "Old Orchard 100% Apple Juice — 64 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0075355112135",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/535/511/2135/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "7d99413df0147aa4644f730a377272caa4624e49126c6c8a898a1cd49ceb2e82",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1358,7 +1257,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4476",
@@ -1367,11 +1268,6 @@
       "expectedLabel": "12 oz",
       "src": "images/products/sku-4476.jpg",
       "alt": "D&G Jamaican Kola Champagne Soda — 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0089087120115",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0115/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "474486169595dbe3d4f6890b1924a65297c72bf4d60cb4b6b32d91d58523860c",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1381,7 +1277,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2600",
@@ -1390,11 +1288,6 @@
       "expectedLabel": "2 L",
       "src": "images/products/sku-2600.jpg",
       "alt": "Crush Grape — 2 L packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078000013566",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/3566/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "3dc9f7a73ed94bf1194d475347f723c0c5fa5b3765ed8b9a671f82ff3e603686",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1404,7 +1297,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6458",
@@ -1413,11 +1308,6 @@
       "expectedLabel": "3 oz",
       "src": "images/products/sku-6458.jpg",
       "alt": "El Sabroso Original Salsitas Spicy Salsa — 3 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078907450396",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/890/745/0396/8.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "57d05f10a122c8d675b036c8c7977a83672ac6cee804afbe4ec384901730dc70",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1427,7 +1317,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3179",
@@ -1436,11 +1328,6 @@
       "expectedLabel": "21 oz",
       "src": "images/products/sku-3179.jpg",
       "alt": "Electrolit Orange Mandarine Electrolyte Beverage — 21 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0887725000054",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/772/500/0054/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "e8613481f4063e4d4b5d23a6efdb8f48fa0a1c678511cf79895356db0f8b6db2",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1450,7 +1337,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3685",
@@ -1459,11 +1348,6 @@
       "expectedLabel": "20 oz",
       "src": "images/products/sku-3685.jpg",
       "alt": "Gatorade Fierce Grape Thirst Quencher — 20 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0052000324822",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/032/4822/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "a3b4aff535f0885d9ec7321d2fa02b4eef75563f58441926886f78617fdc155b",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1473,7 +1357,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "536",
@@ -1482,11 +1368,6 @@
       "expectedLabel": "20 oz · bottles",
       "src": "images/products/sku-536.jpg",
       "alt": "AriZona Green Tea with Ginseng & Honey — 20 oz · bottles packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0613008725716",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/5716/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "d49ded9d1b44f9508589b8e93859f6d845b2f17bac677eb22cf2d82bd2330420",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1496,7 +1377,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4272",
@@ -1505,11 +1388,6 @@
       "expectedLabel": "227 g",
       "src": "images/products/sku-4272.jpg",
       "alt": "Iberia Spanish Style Seasoned Yellow Rice — 227 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0075669080014",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/908/0014/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "156fe58f13b301dc07f09b54f36b9c0228801be36abae83871bf95ce4d4c3875",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1519,7 +1397,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7397",
@@ -1528,11 +1408,6 @@
       "expectedLabel": "12-pack · 12 oz",
       "src": "images/products/sku-7397.jpg",
       "alt": "Schweppes Ginger Ale Pack — 12-pack · 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078000206166",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/020/6166/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "b169ca2835ba4257408c9ba9c085f3a29dc4025506e185a9622bbe884563935c",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1542,7 +1417,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3292",
@@ -1551,11 +1428,6 @@
       "expectedLabel": "12-pack · 12 oz",
       "src": "images/products/sku-3292.jpg",
       "alt": "Fanta Orange — 12-pack · 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0049000030730",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/003/0730/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "cc8008f296720b44f37c380d530ae531cb973b4cccd656183ec79f2cb0432330",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1565,7 +1437,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4288",
@@ -1574,11 +1448,6 @@
       "expectedLabel": "425 g",
       "src": "images/products/sku-4288.jpg",
       "alt": "Iberia Sardines in Tomato Sauce — 425 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0075669111121",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/1121/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "3c8234aaea9e0df25f4a029fec2ac7dce772b9b8309123edca22959f254bd846",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1588,7 +1457,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7930",
@@ -1597,11 +1468,6 @@
       "expectedLabel": "2 oz",
       "src": "images/products/sku-7930.jpg",
       "alt": "Sour Patch Kids Original Soft & Chewy Candy — 2 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0070462098501",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/046/209/8501/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "ab5a323ecea9e9f0340a7941dd063f6d1ca1d0f49f23e95b0c769c6cc45e5f88",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1611,7 +1477,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6006",
@@ -1620,11 +1488,6 @@
       "expectedLabel": "16 oz · cans",
       "src": "images/products/sku-6006.jpg",
       "alt": "Mtn Dew Kickstart Midnight Grape — 16 oz · cans packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0012000151163",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/200/015/1163/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "84dd8e4d3b2f322a77b1db6d4a4d807ee2a714bac59a4d0d803bc8f7dd412c0e",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1634,7 +1497,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2822",
@@ -1643,11 +1508,6 @@
       "expectedLabel": "12-pack · 12 oz",
       "src": "images/products/sku-2822.jpg",
       "alt": "Diet 7 Up Pack — 12-pack · 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078000011814",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/001/1814/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "a7e3380de2abac609c90a0a632eb6961c3688191ca6f26e27c9a69d8b8f2e89c",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1657,7 +1517,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3463",
@@ -1666,11 +1528,6 @@
       "expectedLabel": "12-pack · 12 oz",
       "src": "images/products/sku-3463.jpg",
       "alt": "Fresca Black Cherry Citrus Pack — 12-pack · 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0049000043273",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/004/3273/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "4bf3c2f3615319df51136cd257b3d9450bf00a46b7164e9a297c6ae132014679",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1680,7 +1537,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3297",
@@ -1689,11 +1548,6 @@
       "expectedLabel": "12-pack · 12 oz",
       "src": "images/products/sku-3297.jpg",
       "alt": "Fanta Strawberry Pack — 12-pack · 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0049000030754",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/900/003/0754/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "cebe6c29f86c9f859616593572aaf372eb79841d33b300ef4e72f7955fdfde5f",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1703,7 +1557,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "426",
@@ -1712,11 +1568,6 @@
       "expectedLabel": "10.1 oz",
       "src": "images/products/sku-426.jpg",
       "alt": "Kellogg's Apple Jacks Cereal — 10.1 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0038000198496",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/800/019/8496/5.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "983b7cd79ad1ea9d435bcb696a0e46594f9f9aad495b2124480a1887182e16a2",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1726,7 +1577,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6115",
@@ -1735,11 +1588,6 @@
       "expectedLabel": "6 oz",
       "src": "images/products/sku-6115.jpg",
       "alt": "Nestlé Coffee-mate Original — 6 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0050000300624",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/000/030/0624/7.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "1627838305487519d06daa49a5c993823dab9ef3da222d2ce81a1e3f35b47336",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1749,7 +1597,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6116",
@@ -1758,11 +1608,6 @@
       "expectedLabel": "11 oz",
       "src": "images/products/sku-6116.jpg",
       "alt": "Nestlé Coffee-mate Original — 11 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0050000447718",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/000/044/7718/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "e0d0e2854282bfbc50903b38c193c1213df5cff2e5e3ea47f64588b42a9eac39",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1772,7 +1617,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2711",
@@ -1781,11 +1628,6 @@
       "expectedLabel": "1 L",
       "src": "images/products/sku-2711.jpg",
       "alt": "Daily's Strawberry Mix — 1 L packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0074806000519",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/480/600/0519/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "20986d7b06e49fdf7ecd24217bea635118fa91d0e95e9e83c5a032970bdb00a0",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1795,7 +1637,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "9417",
@@ -1804,11 +1648,6 @@
       "expectedLabel": "750 mL",
       "src": "images/products/sku-9417.jpg",
       "alt": "Welch's Red Grape Juice Cocktail N/A Sparkling — 750 mL packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041800716005",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/071/6005/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "be974840c3404eb9b007d1692aacb700592b8bc9fef3d7b6bd920305c80e492e",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1818,7 +1657,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "9425",
@@ -1827,11 +1668,6 @@
       "expectedLabel": "750 mL",
       "src": "images/products/sku-9425.jpg",
       "alt": "Welch's Sparkling White Grape Juice Cocktail N/A — 750 mL packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041800715008",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/071/5008/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "77309134c671adf6435cd6bcd43dbb020805c9c75c00cb3da04f4e9ed4dfbcdd",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1841,7 +1677,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2882",
@@ -1850,11 +1688,6 @@
       "expectedLabel": "32 oz",
       "src": "images/products/sku-2882.jpg",
       "alt": "Domino Pure Cane Granulated Sugar — 32 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0049200043509",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/920/004/3509/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "5d26a86e95a2e85b4f271396a54c4b4673214802e521d3aa13e2d6c70b3626de",
       "verifiedOn": "2026-10-26",
       "verification": {
@@ -1864,7 +1697,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "8912",
@@ -1873,11 +1708,6 @@
       "expectedLabel": "52 oz",
       "src": "images/products/sku-8912.jpg",
       "alt": "Tropicana Watermelon Drink — 52 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0048500202715",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/850/020/2715/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "3f96b39c22320f08b5c2352293713b97567dd581d72b1b52ce57b358b333de7e",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -1887,7 +1717,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4284",
@@ -1896,11 +1728,6 @@
       "expectedLabel": "32 oz",
       "src": "images/products/sku-4284.jpg",
       "alt": "iberia Lemon Juice — 32 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0075669113606",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/3606/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "535065cfa5238a2d3ab08037a2ffa2d779e64bc56775c515053f1444c6f82837",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -1910,7 +1737,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3888",
@@ -1919,11 +1748,6 @@
       "expectedLabel": "20 oz",
       "src": "images/products/sku-3888.jpg",
       "alt": "Great Value Yellow Mustard — 20 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078742062266",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/874/206/2266/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "ea20eab9ccdd7158c3fd0b2f183535603bfb05a30b48978d049179426a1282db",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -1933,7 +1757,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3887",
@@ -1942,11 +1768,6 @@
       "expectedLabel": "8 oz",
       "src": "images/products/sku-3887.jpg",
       "alt": "Great Value Yellow Mustard — 8 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078742091976",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/874/209/1976/5.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "9adb08fdd4f7c4a6c8d45513cbc1ce7e835afe23402163f166121192e824b315",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -1956,7 +1777,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3649",
@@ -1965,11 +1788,6 @@
       "expectedLabel": "28 oz",
       "src": "images/products/sku-3649.jpg",
       "alt": "Gatorade Thirst Quencher Cool Blue — 28 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0052000135176",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/013/5176/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "f47269b9b8d277bd5d5350403fe694332310c6db05620f1e90fb52408e4b085f",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -1979,7 +1797,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "5206",
@@ -1988,11 +1808,6 @@
       "expectedLabel": "12 oz",
       "src": "images/products/sku-5206.jpg",
       "alt": "Louisiana Original Hot Sauce — 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0190298000254",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/019/029/800/0254/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "3091b7186df170abf25c0da386363e959b28423d8e7b415372a5ceb8480f58c2",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2002,7 +1817,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1289",
@@ -2011,11 +1828,6 @@
       "expectedLabel": "1.5 qt",
       "src": "images/products/sku-1289.jpg",
       "alt": "Breyers Cookies & Cream — 1.5 qt packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0077567254504",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/756/725/4504/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "678d83a81762eec10d7f45b34f4c1219a5b771859cf7487c76a526381b28f399",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2025,7 +1837,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4478",
@@ -2034,11 +1848,6 @@
       "expectedLabel": "12 oz",
       "src": "images/products/sku-4478.jpg",
       "alt": "D&G Jamaican Pineapple Ginger Soda — 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0089087120221",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/008/908/712/0221/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "8ee0835b7ecd421e2471b4cb6ec264cb9ff7913089c1bcc06f9f36e61a71765e",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2048,7 +1857,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2942",
@@ -2057,11 +1868,6 @@
       "expectedLabel": "1 oz",
       "src": "images/products/sku-2942.jpg",
       "alt": "Doritos Nacho Cheese Flavored Tortilla Chips — 1 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0028400090896",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/009/0896/11.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "6a11f2832882377bba45d3775a8cd9d8d3c0803ea4a1c2f16a55641b30bc3ef9",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2071,7 +1877,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3860",
@@ -2080,11 +1888,6 @@
       "expectedLabel": "70.8 g",
       "src": "images/products/sku-3860.jpg",
       "alt": "Grandma's Chocolate Chip Cookies — 70.8 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0028400079167",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/007/9167/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "e6aa3fa2c2ca61d160b7ef5605ea4c43b1353226e11261b558bb6ff8ea4809ce",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2094,7 +1897,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "101484",
@@ -2103,11 +1908,6 @@
       "expectedLabel": "20 oz",
       "src": "images/products/sku-101484.jpg",
       "alt": "Big Red — 20 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0071817000378",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/181/700/0378/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "a2072dd986e91a0ba1918921e8c000cf9512baf5593499e53b6ba5983f1d5864",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2117,7 +1917,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4731",
@@ -2126,11 +1928,6 @@
       "expectedLabel": "16 oz",
       "src": "images/products/sku-4731.jpg",
       "alt": "Bar-S Turkey Jumbo Franks — 16 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0015900122714",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/590/012/2714/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "122c5ff16624d36cb3a8870b2433ca23397139f9a927607f9a76edf2e4f8d1ed",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2140,7 +1937,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "9098",
@@ -2149,11 +1948,6 @@
       "expectedLabel": "1 oz",
       "src": "images/products/sku-9098.jpg",
       "alt": "Utz Party mix — 1 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041780009227",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/178/000/9227/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "121e444f7bddaf574a6c3df2393a18b229af8774e49fe06785289ac7c5fc16a1",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2163,7 +1957,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4730",
@@ -2172,11 +1968,6 @@
       "expectedLabel": "113 g",
       "src": "images/products/sku-4730.jpg",
       "alt": "Hostess Jumbo Donettes Glazed Blueberry — 113 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0888109012182",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/810/901/2182/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "9f9d23ba579e4942cffb3baf59e4be775bf0b1d6395eb493fc140cb505587d29",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2186,7 +1977,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6961",
@@ -2195,11 +1988,6 @@
       "expectedLabel": "20 oz",
       "src": "images/products/sku-6961.jpg",
       "alt": "Red Bull Energy Drink — 20 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0611269133448",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/126/913/3448/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "a8b50b5432ad7de02de28b2a174ffc958db70a94a5fb004008e52a2c4f45f943",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2209,7 +1997,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "5708",
@@ -2218,11 +2008,6 @@
       "expectedLabel": "12 oz · cans",
       "src": "images/products/sku-5708.jpg",
       "alt": "Minute Maid Lemonade Single — 12 oz · cans packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0025000058073",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/500/005/8073/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "39c47ab90b53839a31b9b1be04be0b799347add4f115814e6369f506872be763",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2232,7 +2017,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3659",
@@ -2241,11 +2028,6 @@
       "expectedLabel": "20 oz",
       "src": "images/products/sku-3659.jpg",
       "alt": "Gatorade Thirst Quencher Cool Blue — 20 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0052000324815",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/032/4815/9.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "0db32d607e84ab4d7f2e2cb4efba3f33f4a39f8e55721bf29060229c592600ca",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2255,7 +2037,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1609",
@@ -2264,11 +2048,6 @@
       "expectedLabel": "20 oz",
       "src": "images/products/sku-1609.jpg",
       "alt": "Calypso Ocean Blue Lemonade — 20 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0079581995241",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/958/199/5241/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "6619e68364b1d14fe0a3f0349485812378b9565e9616b61ac4638c13ba9eea58",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2278,7 +2057,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7961",
@@ -2287,11 +2068,6 @@
       "expectedLabel": "17 oz",
       "src": "images/products/sku-7961.jpg",
       "alt": "Sparkling Ice Lemon Lime — 17 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0016571911256",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/657/191/1256/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "8b60365a973825639e1a237020da23c0caaae047938da286f1b1562e7d92be7c",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2301,7 +2077,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "9266",
@@ -2310,11 +2088,6 @@
       "expectedLabel": "16.9 oz",
       "src": "images/products/sku-9266.jpg",
       "alt": "Vita Coco Pure Coconut Water — 16.9 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0898999010007",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/089/899/901/0007/10.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "b023ef3320020034a749d65b8acd5e139b37032ce53a0b0fe061ec88b62e0710",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2324,7 +2097,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4757",
@@ -2333,11 +2108,6 @@
       "expectedLabel": "18 oz",
       "src": "images/products/sku-4757.jpg",
       "alt": "Karma Probiotic Water Berry Cherry — 18 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0854651003640",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/465/100/3640/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "6b8fc1b9dce5ee4c46c4a4667d7681a5cff07626698fb60233ed4c1e5b9b733f",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2347,7 +2117,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "934",
@@ -2356,11 +2128,6 @@
       "expectedLabel": "16 oz",
       "src": "images/products/sku-934.jpg",
       "alt": "Bar-S Chicken Jumbo Franks — 16 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0015900122554",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/590/012/2554/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "d2ed42de46965c1b969588fee3112c33d8a1077dc9bb2378539579f859394dc6",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2370,7 +2137,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "101284",
@@ -2379,11 +2148,6 @@
       "expectedLabel": "12 oz",
       "src": "images/products/sku-101284.jpg",
       "alt": "Celsius Peach Vibe Sparkling White Peach — 12 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0889392010190",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/939/201/0190/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "a5244c6e939b3e9259a4dab809bad15d8444304a2e0a618f1b0ed5f9c21ac68d",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2393,7 +2157,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "101505",
@@ -2402,11 +2168,6 @@
       "expectedLabel": "4.6 oz",
       "src": "images/products/sku-101505.jpg",
       "alt": "LIBBY'S VIENNA SAUSAGE — 4.6 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0039000086639",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/900/008/6639/20.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "6aa072e94d47b15a7524f53adc4792df0d3dd35e30e8b6343d39ba244335465e",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2416,7 +2177,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "5837",
@@ -2425,11 +2188,6 @@
       "expectedLabel": "16 oz",
       "src": "images/products/sku-5837.jpg",
       "alt": "Monster Energy Original Green — 16 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0070847811169",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/084/781/1169/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "b33e4f1197b9ca3650d8cd77f1d0b871ded1ef3ac5de245b22bbe269066954ee",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2439,7 +2197,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2061",
@@ -2448,11 +2208,6 @@
       "expectedLabel": "44 g",
       "src": "images/products/sku-2061.jpg",
       "alt": "Chips Ahoy! Original — 44 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0044000043148",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/400/004/3148/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "b72938816b00f7685f64e55626827517e53146e3bd06a5ed26e64be509aa6a1e",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2462,7 +2217,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7007",
@@ -2471,11 +2228,6 @@
       "expectedLabel": "2.8 oz",
       "src": "images/products/sku-7007.jpg",
       "alt": "Reese's Big Cup Milk Chocolate King Size Peanut Butter Cups — 2.8 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0034000430956",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/400/043/0956/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
       "sha256": "da7c369b774c322a920fdf87e4edf4f5a681d839a56ecbac076872a16519db7e",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2485,7 +2237,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3522",
@@ -2494,11 +2248,6 @@
       "expectedLabel": "15 oz",
       "src": "images/products/sku-3522.jpg",
       "alt": "Fruity Pebbles Cereal — 15 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0884912129741",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/088/491/212/9741/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
       "sha256": "153809346bb056abe79cdbfac5b7e2a94384d613fdd9dab600039a3f63eec051",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2508,7 +2257,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "300",
@@ -2557,11 +2308,6 @@
       "expectedLabel": "15 oz",
       "src": "images/products/sku-8815.jpg",
       "alt": "Tostitos Salsa Con Queso Medium Dip — 15 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0028400070980",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/007/0980/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
       "sha256": "66acddab2c6d53cbdc51384f958d12d842042b3e5519cf4c0cf56d83115a1ad2",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2571,7 +2317,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7931",
@@ -2580,11 +2328,6 @@
       "expectedLabel": "3.5 oz",
       "src": "images/products/sku-7931.jpg",
       "alt": "Sour Patch Kids Soft & Chewy Candy — 3.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0070462098358",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/046/209/8358/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
       "sha256": "2b83c899c050d77a353a1c01c2dd96cb7f0c5dad2e10891dc70558a682544040",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2594,7 +2337,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "830",
@@ -2603,11 +2348,6 @@
       "expectedLabel": "11.88 oz",
       "src": "images/products/sku-830.jpg",
       "alt": "Banquet Salisbury Steak Meal — 11.88 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0031000007300",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/000/7300/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
       "sha256": "c83773072ea95cdf29c4d8eed25034ed97c9b4d3ddfc97b74cc168cdf449136b",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2617,7 +2357,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7630",
@@ -2626,11 +2368,6 @@
       "expectedLabel": "2.17 oz",
       "src": "images/products/sku-7630.jpg",
       "alt": "Skittles Original — 2.17 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0040000001607",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/000/1607/2.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "618ee463a502718a628cf580d18a65aa0188bdd7f6553db04ab3d8e54363de64",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2640,7 +2377,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6854",
@@ -2649,11 +2388,6 @@
       "expectedLabel": "24 oz",
       "src": "images/products/sku-6854.jpg",
       "alt": "Quaker Quick 5-Minute Grits — 24 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0030000041703",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/000/004/1703/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
       "sha256": "eb900c3915ec9a8f6a7739f9189ca5e5f016dd568ea4a2847ba5effaf9bedd84",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2663,7 +2397,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "506",
@@ -2672,11 +2408,6 @@
       "expectedLabel": "128 oz",
       "src": "images/products/sku-506.jpg",
       "alt": "AriZona Arnold Palmer Lite Half & Half — 128 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0613008720858",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/0858/5.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
       "sha256": "afb4f40dca05ef85e642b09af4ab7083bde337ec91cf45b28d00dcfc8f70ac78",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2686,7 +2417,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7227",
@@ -2695,11 +2428,6 @@
       "expectedLabel": "28.3 g",
       "src": "images/products/sku-7227.jpg",
       "alt": "Ruffles Original — 28.3 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0028400090148",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/009/0148/5.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
       "sha256": "02a581c85b0dac99cb14bd3eb428d4c4fc968818e6855c0376aa7970923cd8e3",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2709,7 +2437,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6952",
@@ -2718,11 +2448,6 @@
       "expectedLabel": "887 mL",
       "src": "images/products/sku-6952.jpg",
       "alt": "Kraft Real Mayo — 887 mL packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0021000026326",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/100/002/6326/9.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts — CC BY-SA 3.0",
       "sha256": "7f91e3dd984bc4bf38ddc62044ec2353a8e18aeb2a7a33d8f01b257fba6c894e",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2732,7 +2457,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2556",
@@ -2741,11 +2468,6 @@
       "expectedLabel": "750 mL",
       "src": "images/products/sku-2556.jpg",
       "alt": "Crown Royal Maple Finished Whisky — 750 mL packaging",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Crown_Royal_Maple_(8372343630).jpg",
-      "sourceImageUrl": "https://live.staticflickr.com/8352/8372343630_f9872e258e_o.jpg",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "attribution": "Jason White / Wikimedia Commons — CC BY 2.0",
       "sha256": "aca3e0ffae1b302e0b81406b67b5e4016868da4e261b5163001357dbc76c3e67",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2755,7 +2477,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1292",
@@ -2764,11 +2488,6 @@
       "expectedLabel": "1.5 qt",
       "src": "images/products/sku-1292.jpg",
       "alt": "Breyers Vanilla Chocolate Strawberry — 1.5 qt packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0077567254269",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/756/725/4269/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Photo: kiliweb / Open Food Facts, CC BY-SA 3.0.",
       "sha256": "32489bd58fd54bb8ada38bcbacde28bd6b9ef472285aa2490c1dc16dd258cd2b",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2778,7 +2497,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4605",
@@ -2787,11 +2508,6 @@
       "expectedLabel": "2.06 oz",
       "src": "images/products/sku-4605.jpg",
       "alt": "Jolly Rancher Chews Original Flavors — 2.06 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0010700519528",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/070/051/9528/6.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "493052694a8660b0fcf2055cbaa26a4a3b605ceb9db881525aa84c3ec2dffbb6",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2801,7 +2517,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "7228",
@@ -2810,11 +2528,6 @@
       "expectedLabel": "74.4 g",
       "src": "images/products/sku-7228.jpg",
       "alt": "Ruffles Jalapeño Ranch Flavored Potato Chips — 74.4 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0028400634519",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/063/4519/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "633d3137a9ff2bc3d740d3fe784b850c266d5654332bb3266926c8d402f8f6b5",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2824,7 +2537,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2750",
@@ -2833,11 +2548,6 @@
       "expectedLabel": "1.75 L",
       "src": "images/products/sku-2750.jpg",
       "alt": "Deep Eddy Ruby Red Grapefruit Vodka — 1.75 L packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0856065002103",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/606/500/2103/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "pmpv02 / Open Food Facts",
       "sha256": "02074560ad8efca4865ff61e9e464d88c36d8fc6aa817dc6f8d301002cc443de",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2847,7 +2557,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3934",
@@ -2856,11 +2568,6 @@
       "expectedLabel": "28 g",
       "src": "images/products/sku-3934.jpg",
       "alt": "Halls Cereja Cherry Candy — 28 g packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/78938793",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/000/007/893/8793/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "openfoodfacts-contributors / Open Food Facts",
       "sha256": "1ffe9ea9b3af12ffc418f2fc0efba0c692faeb21d2d816dd569ac08e742e03f7",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2870,7 +2577,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4097",
@@ -2879,11 +2588,6 @@
       "expectedLabel": "1 oz",
       "src": "images/products/sku-4097.jpg",
       "alt": "Herr's Honey BBQ Ripple Potato Chips — 1 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0072600008861",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/260/000/8861/4.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "dcfb606e6d24e943383f414dd81323f7ca5d2d6065edd2aea1dbf1a40f10bf8e",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2893,7 +2597,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3655",
@@ -2902,11 +2608,6 @@
       "expectedLabel": "20 oz",
       "src": "images/products/sku-3655.jpg",
       "alt": "Gatorade Frost Glacier Freeze Thirst Quencher — 20 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0052000324860",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/200/032/4860/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "49753989fba557a0c6fef66ff2172529d1d9b83d08737afcd425864cb314a309",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2916,7 +2617,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6270",
@@ -2925,11 +2628,6 @@
       "expectedLabel": "14 oz",
       "src": "images/products/sku-6270.jpg",
       "alt": "Ocean Spray Jellied Cranberry Sauce — 14 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0031200016058",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/120/001/6058/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "fd746852a299e08efd3ef70a1484a1a12b0f95f22ef41f100a2b7e79ea41d664",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2939,7 +2637,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "3844",
@@ -2948,11 +2648,6 @@
       "expectedLabel": "15.5 oz",
       "src": "images/products/sku-3844.jpg",
       "alt": "Goya Chick Peas Garbanzos — 15.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041331124225",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/133/112/4225/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "0c640f13d01b9e09d0b99e6861f4dc9d575ddbd5af0a857b6c4c9b9f25608507",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2962,7 +2657,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "9405",
@@ -2971,11 +2668,6 @@
       "expectedLabel": "30 oz",
       "src": "images/products/sku-9405.jpg",
       "alt": "Welch's Concord Grape Jam — 30 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041800501519",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/050/1519/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "4072322b1a7f46e028e6ea73fc7cb1ed0525abaa4073f67c7cbcb537e729b429",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -2985,7 +2677,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "4205",
@@ -2994,11 +2688,6 @@
       "expectedLabel": "15 oz",
       "src": "images/products/sku-4205.jpg",
       "alt": "Hormel Chili with Beans — 15 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0037600223188",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/760/022/3188/5.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "5b91c57978631f9ce7ec1962905ec1fb6e27f37a56eac7d7d0e700b59a257364",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -3008,7 +2697,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6798",
@@ -3017,11 +2708,6 @@
       "expectedLabel": "4 oz",
       "src": "images/products/sku-6798.jpg",
       "alt": "Nabisco Premium Original Saltine Crackers — 4 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0044000003821",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/400/000/3821/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "7b720c757441a927047a583f5a860e6524c325d9c75e0d42b5d3103020f91ef6",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -3031,7 +2717,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1278",
@@ -3040,11 +2728,6 @@
       "expectedLabel": "15 oz",
       "src": "images/products/sku-1278.jpg",
       "alt": "Chef Boyardee Beef Ravioli in Tomato & Meat Sauce — 15 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0064144043156",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/006/414/404/3156/19.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "3df85019915b4a3c760857b55709b8251f9e486bce7422aa606d698611d66447",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -3054,7 +2737,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1653",
@@ -3063,11 +2748,6 @@
       "expectedLabel": "10.5 oz",
       "src": "images/products/sku-1653.jpg",
       "alt": "Campbell's Condensed Chicken with Rice Soup — 10.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0051000010513",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/100/001/0513/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "61fb2f7277088ab3b1284774a13822d2926ad16fcb7e60fc37509d51ff54df2b",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -3077,7 +2757,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "2790",
@@ -3086,11 +2768,6 @@
       "expectedLabel": "14.5 oz",
       "src": "images/products/sku-2790.jpg",
       "alt": "Del Monte Fresh Cut Blue Lake Cut Green Beans — 14.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0024000162865",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/400/016/2865/6.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "5ad090fd34e2f7a0e8b9999e3e1e7c1e582c514ab144cf4687d9ee7ff6491585",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -3100,7 +2777,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "806",
@@ -3149,11 +2828,6 @@
       "expectedLabel": "2 L",
       "src": "images/products/sku-2840.jpg",
       "alt": "Diet Vernors Ginger Soda — 2 L packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0078000182460",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/018/2460/1.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "a4b12468e2547bdb30c63757acefed59b2da0f34e444324604fdc84b1d1a4b9c",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -3163,7 +2837,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "6813",
@@ -3172,11 +2848,6 @@
       "expectedLabel": "18.5 oz",
       "src": "images/products/sku-6813.jpg",
       "alt": "Progresso Light Chicken & Dumpling Soup — 18.5 oz packaging",
-      "sourcePage": "https://world-en.openfoodfacts.org/product/0041196419337",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/119/641/9337/3.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "kiliweb / Open Food Facts",
       "sha256": "e845f5105ab0df1d76044f7b3ce2c2e7e6b9c9731ce64345deaa37351475ecb8",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -3186,7 +2857,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "1611",
@@ -3215,11 +2888,6 @@
       "expectedLabel": "18 oz",
       "src": "images/products/sku-8439.jpg",
       "alt": "Sweet Baby Ray's Hickory & Brown Sugar Barbecue Sauce — 18 oz packaging",
-      "sourcePage": "https://world.openfoodfacts.org/product/0013409351505",
-      "sourceImageUrl": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/340/935/1505/6.jpg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "openfoodfacts-contributors / Open Food Facts",
       "sha256": "422d08cc7fc7217c47e75365c36363aa9c440d6ff80fb7f95f4d3e5fe1f7c5c8",
       "verifiedOn": "2026-10-27",
       "verification": {
@@ -3229,7 +2897,9 @@
         "packaging": true,
         "visual": true,
         "professional": true
-      }
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
     },
     {
       "sku": "69",
@@ -20179,6 +19849,66 @@
       "src": "images/products/sku-3093.jpg",
       "alt": "E&J VSOP Brandy — 1.75 L glass bottle",
       "sha256": "0a283a473e8185077a30aaf0dc90a6bf868da482625c3ec3cc5a4757dc1ec450",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "7958",
+      "expectedUpc": "016571910303",
+      "expectedName": "Sparkling Ice Black Raspberry",
+      "expectedLabel": "17 oz",
+      "src": "images/products/sku-7958.jpg",
+      "alt": "Sparkling Ice Black Raspberry — 17 oz packaging",
+      "sha256": "45b0c2760ae9aa56534b1d24966b54c7b3bef6c444cfe68d8e9375a88a3acee9",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "256",
+      "expectedUpc": "835229000803",
+      "expectedName": "Absolut Orient Apple Vodka",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-256.jpg",
+      "alt": "Absolut Orient Apple Vodka — 750 mL packaging",
+      "sha256": "7eb3178ac10ce4498b0e1458e851eeb60469abf98ad9873fd3d761da7fd03a76",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "1032",
+      "expectedUpc": "087116069794",
+      "expectedName": "Belvedere Vodka",
+      "expectedLabel": "200 mL",
+      "src": "images/products/sku-1032.png",
+      "alt": "Belvedere Vodka — 200 mL packaging",
+      "sha256": "94c5a95a95be59dce741a3d3349ce9b99fb216409c19603fdcbe8f4340837f90",
       "verifiedOn": "2026-10-30",
       "verification": {
         "brand": true,

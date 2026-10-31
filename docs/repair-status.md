@@ -14,11 +14,11 @@ Catalog repairs are implemented and tested. Recent releases have been verified o
 
 ## Images
 
-Only exact SKU/UPC, expression, size and packaging matches with a completed professional presentation review may enter the public manifest. Licensed photographs retain their license records. At the owner’s explicit request, direct internet product references use a separate approval basis without asserting copyright-holder permission or a license. Each selected variant has its own image; changing size cannot inherit a sibling photo.
+Only exact SKU/UPC, expression, size and packaging matches with a completed professional presentation review may enter the public manifest. Every public photograph uses a source-free local projection, while its identity, quality and origin record stays in private evidence. At the owner’s explicit request, direct internet product references use a separate approval basis without asserting copyright-holder permission or a license. Each selected variant has its own image; changing size cannot inherit a sibling photo.
 
-Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 993 variants currently have approved professional images; 8,696 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Some licensed originals have limited resolution; none were synthetically enlarged or altered.
+Consumer snapshots were removed after the owner clarified that images must be professional. Clean studio packshots on plain backgrounds are required. No generated replacements or generic brand photos are used. 996 variants currently have approved professional images; 8,693 still lack one. `data-summary.json` tracks these counts. Missing images are deliberately absent. Private research queues cover all 9,952 reconciled source rows and distinguish candidates, actual visual reviews, rejected images and approved assignments. Limited-resolution originals are retained only when the reviewed image remains clear at card size; none were synthetically enlarged or altered.
 
-Direct-reference provenance URLs are held outside the public repository and browser-delivered catalog/manifest. The 110 remaining licensed images retain the required attribution in an unlinked generated compliance record; no card or customer-facing page exposes a photo source.
+Picture-source URLs and related photo provenance are held outside the public repository and browser-delivered catalog/manifest. The deployment verifier rejects a public image record, generated catalog object or served credit page that exposes them.
 
 The previously published staged batch added twelve independently source-reviewed and visually reviewed exact packshots. All twelve downloaded files decoded cleanly and were hash-checked privately. It also added ten guarded exact-UPC title repairs, including material brand completion and missing-word repairs, while preserving source and variant metadata. Additional raw leads were rejected or held pending during the two separate review gates rather than being substituted into the catalog.
 
@@ -31,11 +31,11 @@ This guarded batch adds eight independently reviewed exact packshots. Five food 
 ## Implementation and checks
 
 - Warm, responsive retail layout with the supplied logo, seven main categories and all 29 original departments.
-- Product cards and the customer-facing footer show no photo-source or credit links. Required attribution and licenses remain in a generated compliance record, while source audit details remain private.
+- Product cards, browser-delivered catalog data and public manifests show no photo-source, credit or license links; source audit details remain private.
 - Search covers every retained SKU/UPC, product name and size. Exact SKU matches appear first, followed by exact UPC matches, while partial results remain available; pagination limits rendering to 36 cards without limiting the catalog.
 - No prices or stock quantities are emitted by the public data builder. Current legacy price-bearing files and unverified old photographs are removed. Older Git history is unchanged.
 - Loading, retry, empty results, keyboard navigation, selected sizes and filter URL state are implemented.
-- 81 Python catalog tests pass, including original-source conservation, safe grouping, price removal, guarded restoration, private provenance and image validation. Browser checks cover categories, departments, size-specific photographs, pagination and error recovery.
+- 80 Python catalog tests pass, including original-source conservation, safe grouping, price removal, guarded restoration, private provenance and image validation. Browser checks cover categories, departments, size-specific photographs, pagination and error recovery.
 - Local HTTP asset hashes and all approved image responses are checked using `scripts/verify_deployment.py`. Browser checks remain required after publication.
 
 ## Deployment
@@ -234,7 +234,7 @@ PR #172 added 47 independently reviewed, SKU/UPC/size/package-matched direct-ref
 
 PR #173 added eight independently reviewed direct-reference product photographs and guarded title repairs. One exact Chardonnay correction safely joins its existing 750 mL and 1.5 L variants; all other additions remain SKU-specific. Pages run 41082494735 succeeded, and the actual deployed catalog, 963 approved image assets, category navigation, search, variant photo switching, source-free cards and console rendering were verified.
 
-The current local batch adds three new exact product images and replaces an older licensed Disaronno 750 mL image with a newly reviewed exact packshot. Guarded evidence corrects the Beringer Main & Vine Moscato size family and consolidates all four verified Disaronno Originale Amaretto sizes without losing any SKU or UPC; an exact Chef Boyardee identity review preserves its 15 oz listing. Public direct-reference image records no longer disclose source URLs, while the required legacy licensed credits remain unlinked. Full name and image coverage remains unfinished. These local changes require publication and live verification.
+This release adds exact, independently reviewed photos for Sparkling Ice Black Raspberry 17 oz, Absolut Orient Apple Vodka 750 mL and Belvedere Vodka 200 mL. The Belvedere photo is intentionally SKU-specific within its three-size family. A Carlo Rossi promotional composite was rejected rather than published. All 110 older photo records were moved to the same source-free public projection, with their historical origin records retained outside the repository; the deployment verifier now rejects a public credit page or any public image provenance field. Full name and image coverage remains unfinished.
 
 
 PR #174 published the preceding three-image and one replacement-image batch. Pages run 41086409988 succeeded, and the live catalog and all 966 approved image assets matched the tested release.
