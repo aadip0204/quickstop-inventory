@@ -21420,6 +21420,1046 @@
       "src": "images/products/sku-5298.jpg",
       "expectedLabel": "375 mL",
       "attributionRequired": false
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-487.png",
+      "sha256": "a6548353a8de245c368ac6b41e8e080c3b597fc7c211de4d69e5a0bc260c226e",
+      "expectedLabel": "34 oz",
+      "expectedUpc": "613008730147",
+      "alt": "ARI ZONA FRUIT PUNCH — 34 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "487",
+      "expectedName": "ARI ZONA FRUIT PUNCH"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-1010.jpg",
+      "sha256": "59ef8a4d3db40517750fcb8afad4c0820ff728266fcf71683264093b9e3c3a2d",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "085000004449",
+      "alt": "Bella Sera Pinot Grigio — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "1010",
+      "expectedName": "Bella Sera Pinot Grigio"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-1015.jpg",
+      "sha256": "cfcd72a8e003a6e0d6963c520214dc1eaeacb2dd68a72cc8220ea5021a229898",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedUpc": "740522100238",
+      "alt": "Bell's Amber Ale — 6-pack · 12 oz · bottles packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "1015",
+      "expectedName": "Bell's Amber Ale"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-1521.jpg",
+      "sha256": "32426e22a18e4df6dcf879a5fb892df7bc53447f1fb7361f3f058bb961a621cb",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "813497006109",
+      "alt": "BUMBU RUM — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "1521",
+      "expectedName": "BUMBU RUM"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-2171.jpg",
+      "sha256": "17fd1f098735e81735b5200b426c259defe0b27a2691338a9a04d3a58a5ce7df",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "086012500936",
+      "alt": "CK Mondavi Cab-Sau — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2171",
+      "expectedName": "CK Mondavi Cab-Sau"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-2176.png",
+      "sha256": "005f7c63559ccd045be38a95db56799472085954521b103a728d8cd84c608ce0",
+      "expectedLabel": "16 oz",
+      "expectedUpc": "014800511758",
+      "alt": "Clamato El Original Tomato Cocktail — 16 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2176",
+      "expectedName": "Clamato El Original Tomato Cocktail"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-2246.png",
+      "sha256": "3a2470ca312785d0a7a198356ab259153b1a83e1805dddcdd0c6b76eabbaae15",
+      "expectedLabel": "15 oz",
+      "expectedUpc": "071845098309",
+      "alt": "Coco Lopez Real Cream of Coconut — 15 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2246",
+      "expectedName": "Coco Lopez Real Cream of Coconut"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-2570.jpg",
+      "sha256": "bccd263d83a47a09545c7a693e931e5634123b212edc26cab017c64efd7341d0",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "082000771555",
+      "alt": "Crown Royal APPLE — 375 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2570",
+      "expectedName": "Crown Royal APPLE"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-2794.webp",
+      "sha256": "58863c3a6acb04047e3db2cf10b1d639e154a8c5a1e6d020e08e7ddaccb81b81",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "082000791973",
+      "alt": "deleon blanco — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2794",
+      "expectedName": "deleon blanco"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-3079.png",
+      "sha256": "b17f9af82c5fd2270992115b85f2c82357a23c712c4e0b577f4767714665d39a",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "085000024034",
+      "alt": "E&J Apple Flavored Brandy — 375 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3079",
+      "expectedName": "E&J Apple Flavored Brandy"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-3176.png",
+      "sha256": "c1091bc9f29011e3daaa62621a4e427564a9f0c3c37a570691611ce1615cde91",
+      "expectedLabel": "21 oz",
+      "expectedUpc": "887725000009",
+      "alt": "electrolit grape — 21 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3176",
+      "expectedName": "electrolit grape"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-3470.png",
+      "sha256": "def9e48bf42b5c1696c2a617dd15a3081fdf2161c44b772649edf9832c964620",
+      "expectedLabel": "5.5 oz",
+      "expectedUpc": "050000421947",
+      "alt": "friskies chicken dinner — 5.5 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3470",
+      "expectedName": "friskies chicken dinner"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-3472.png",
+      "sha256": "2355a291610146f14abd20be0a04c2350d3d1782cdf1a88b3f2ccfdb8e7eeaf5",
+      "expectedLabel": "5.5 oz",
+      "expectedUpc": "050000170180",
+      "alt": "FRISKIES CHICKEN GRAVY — 5.5 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3472",
+      "expectedName": "FRISKIES CHICKEN GRAVY"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-3480.png",
+      "sha256": "09db7afaa2038d0aa7b181bae6af7439ef407a7ff3afffefdab08027e22a11c8",
+      "expectedLabel": "5.5 oz",
+      "expectedUpc": "050000225224",
+      "alt": "friskies turkey dinner — 5.5 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3480",
+      "expectedName": "friskies turkey dinner"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-3748.jpg",
+      "sha256": "ae1284bc586cd9c92524772cd11a49146599fea0730156c181358c88b81427bf",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "082242294935",
+      "alt": "Gnarly Head Old Vine Zin — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3748",
+      "expectedName": "Gnarly Head Old Vine Zin"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-3749.jpg",
+      "sha256": "8249b8ca2f992f353a5a6e7bd91e845b10f4535f632d7640c3ef8865f086226d",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "082242293433",
+      "alt": "Gnarly Head Pinot Noir — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3749",
+      "expectedName": "Gnarly Head Pinot Noir"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-4011.jpg",
+      "sha256": "7ca0b4da4580760f3c1c8d76e22a85ba4145f7373f37b2edc1917e348b970f8f",
+      "expectedLabel": "Single · 24 oz · cans",
+      "expectedUpc": "072890001191",
+      "alt": "Heineken — Single · 24 oz · cans packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4011",
+      "expectedName": "Heineken"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-4063.jpg",
+      "sha256": "04f62cd75614c8e6cf550fba68fb79410494c9b237ee29e56b0d20ac89fe126b",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "088110151058",
+      "alt": "Hennessy vsop — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4063",
+      "expectedName": "Hennessy vsop"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-4209.jpg",
+      "sha256": "344c9ddeb3aa673bf31338e91288f0f03beff8bceb00a5fc216db32bbaae2e69",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "080686835318",
+      "alt": "HORNITOS PLATA — 375 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4209",
+      "expectedName": "HORNITOS PLATA"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-4255.jpg",
+      "sha256": "3bce05803df51d0cca0b7bc6451adb119dbfb32a999345b721d1ccfbeb9e207a",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "736040011064",
+      "alt": "Hpnotiq — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4255",
+      "expectedName": "Hpnotiq"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-4447.jpg",
+      "sha256": "4fdacb66e47680f0a207cd14d00f9949edd188154aad1d97ffa9990a616d6b18",
+      "expectedLabel": "1.2 oz",
+      "expectedUpc": "017082000392",
+      "alt": "Jack Link's Original Beef Stick & Cheese — 1.2 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4447",
+      "expectedName": "Jack Link's Original Beef Stick & Cheese"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-4449.jpg",
+      "sha256": "8ba5ac0dd5eb087872fc433cbc9d18c9e02e5a1c09c70a69d631df48ccaa3980",
+      "expectedLabel": "1 oz",
+      "expectedUpc": "017082000033",
+      "alt": "Jack Link's Original Beef Steak — 1 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4449",
+      "expectedName": "Jack Link's Original Beef Steak"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-4468.jpg",
+      "sha256": "81b38cc1bbac35ae2db91371f171298c2fb90fab71c175a385959424e431bac9",
+      "expectedLabel": "50 mL",
+      "expectedUpc": "083089660105",
+      "alt": "Jagermeister — 50 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4468",
+      "expectedName": "Jagermeister"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-4880.jpg",
+      "sha256": "065f34f139b7baf50ca2ff4ed2967b6ebc87c10f7b66a2a23301dbf859cd956d",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "811538013017",
+      "alt": "Kraken Black Spiced Rum — 1.75 L packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4880",
+      "expectedName": "Kraken Black Spiced Rum"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-4976.jpg",
+      "sha256": "370ce460cb6947f813acc75e45c8d0cbb937047f0ce625b7db68eec118bb81d4",
+      "expectedLabel": "Single · 19.2 oz",
+      "expectedUpc": "723830011922",
+      "alt": "LAGUNITAS IPA INDIA PALE ALE — Single · 19.2 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4976",
+      "expectedName": "LAGUNITAS IPA INDIA PALE ALE"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-5246.jpg",
+      "sha256": "35ef94dcf24c6ab4dbd8050477926868f6834c0d21d43cc101f2643540936d51",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "096749908035",
+      "alt": "LUNAZUL BLANCO — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5246",
+      "expectedName": "LUNAZUL BLANCO"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-5247.jpg",
+      "sha256": "c100d8f2cb806b7fe581de793e6cc503f1258c013f45d0bb3558c9a101694867",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "096749908042",
+      "alt": "LUNAZUL REPOSADO — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5247",
+      "expectedName": "LUNAZUL REPOSADO"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-5784.jpg",
+      "sha256": "ad0142b787e6781bb9c4b3ccee7d4e1fa487a6df06e089e1e46b3971ae61f631",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "088110551056",
+      "alt": "Moet Imperial White Star — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5784",
+      "expectedName": "Moet Imperial White Star"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-5835.jpg",
+      "sha256": "c42a28f910a035345ba3dcd8a5fb02ff7716e077cc6c59792fac840270272633",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "083664872541",
+      "alt": "monkey shoulder scotch — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5835",
+      "expectedName": "monkey shoulder scotch"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-6149.jpg",
+      "sha256": "c342e6c801cbadb3c279be947b2c1152b08a6e123b1a872e7b094e2cd9b2ac2a",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "085000023181",
+      "alt": "New Amsterdam mango — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "6149",
+      "expectedName": "New Amsterdam mango"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-6271.png",
+      "sha256": "5b48b237fb18abbf6273ecfeb2eb0f6d0f4c4b4eb655e5d381a0af3faa64e6fd",
+      "expectedLabel": "32 oz",
+      "expectedUpc": "031200259004",
+      "alt": "Ocean Spray Original Cranberry Juice Cocktail — 32 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "6271",
+      "expectedName": "Ocean Spray Original Cranberry Juice Cocktail"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-6722.jpg",
+      "sha256": "4c4ebd408fd55694648ce23f24f2543e15b29b06d8546b71bf6d1a3795bd7aa1",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "652080000083",
+      "alt": "Plymouth Gin — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "6722",
+      "expectedName": "Plymouth Gin"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-6732.jpg",
+      "sha256": "f2ff3feea230e27f5dd74993ad25dfb35876c2ba93197668cd70239fdb9d60b6",
+      "expectedLabel": "20 oz",
+      "expectedUpc": "071537060287",
+      "alt": "Polar Black Cherry Seltzer — 20 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "6732",
+      "expectedName": "Polar Black Cherry Seltzer"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-6893.jpg",
+      "sha256": "6fb3fce91eea443e63fe12f2eac974fd03aff351d6f054391724dacd24b61e96",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "861518002609",
+      "alt": "Rancho La Gloria Lime Margarita — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "6893",
+      "expectedName": "Rancho La Gloria Lime Margarita"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-7247.jpg",
+      "sha256": "681b6b7fa68e0050142f78c1d2c81f768997b76c53f8d64d994f9f1bbb5c79a9",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "890355001025",
+      "alt": "RUM CHATA — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7247",
+      "expectedName": "RUM CHATA"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-7357.jpg",
+      "sha256": "ce833f6adbfead720ac80b033e15d9ffb8836f349d4dad0ef4f1fbcfe4b0fcb7",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "080686831013",
+      "alt": "Sauza Gold — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7357",
+      "expectedName": "Sauza Gold"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-7366.jpg",
+      "sha256": "fe4f36f6fe11f6275ee21540a819e87dcb09561ffdccff135d71cb9259fd9535",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "080686832010",
+      "alt": "Sauza Silver — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7366",
+      "expectedName": "Sauza Silver"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-7476.jpg",
+      "sha256": "94f13c75539a13dc89e48d1d029d440e915b22983bc7d7fa60409b1b0edbfcac",
+      "expectedLabel": "2 L",
+      "expectedUpc": "072979003788",
+      "alt": "Seagrams Ginger Ale — 2 L packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7476",
+      "expectedName": "Seagrams Ginger Ale"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-7827.jpg",
+      "sha256": "df6be2508c7977481ac7fe759240f8bbe6f7c32651ceac08d18397680802ef28",
+      "expectedLabel": "16 oz",
+      "expectedUpc": "076183163726",
+      "alt": "SNAPPLE FRUIT PUNCH — 16 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7827",
+      "expectedName": "SNAPPLE FRUIT PUNCH"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-8252.png",
+      "sha256": "60a4bc3bef42f40a74cce5677c1cc56f1c0088aece6e0e571ca34a10be020eb8",
+      "expectedLabel": "16 oz",
+      "expectedUpc": "050200587009",
+      "alt": "Sunny D BlueRazz — 16 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "8252",
+      "expectedName": "Sunny D BlueRazz"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-8263.jpg",
+      "sha256": "775f73088fb339182d7ff12dd97d1e55fc24f5f60ff4ee9811e177cd9b192301",
+      "expectedLabel": "16 oz",
+      "expectedUpc": "050200561009",
+      "alt": "SunnyD Orange Strawberry Juice Drink — 16 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "8263",
+      "expectedName": "SunnyD Orange Strawberry Juice Drink"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-8664.jpg",
+      "sha256": "cd0ac5c7a930e0cc0106cbd72076aeaa0c723745a97a72c40319acd9b5b25033",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "850015640025",
+      "alt": "Teremana Blanco Tequila — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "8664",
+      "expectedName": "Teremana Blanco Tequila"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-8768.jpg",
+      "sha256": "02996dd316052f708e9151385c57f42ea88ea7805264fcfa1c7e7946debdeca5",
+      "expectedLabel": "200 mL",
+      "expectedUpc": "619947000044",
+      "alt": "Tito's vodka — 200 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "8768",
+      "expectedName": "Tito's vodka"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-8961.png",
+      "sha256": "0fea671529b7c0ed54818046c8396e9f808d704f2c0a57cffbb3db5c349bb98a",
+      "expectedLabel": "Single · 24 oz",
+      "expectedUpc": "087692752318",
+      "alt": "Twisted T Half & Half Can tea — Single · 24 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "8961",
+      "expectedName": "Twisted T Half & Half Can tea"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-8966.jpg",
+      "sha256": "ba4456a38939c7a283e873bc4a01ec71cb9110b6f8b191b4678ef575d3ccea31",
+      "expectedLabel": "Single · 24 oz · cans",
+      "expectedUpc": "087692832317",
+      "alt": "twisted tea original — Single · 24 oz · cans packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "8966",
+      "expectedName": "twisted tea original"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-9063.jpg",
+      "sha256": "558a398aab1482c51b1fdf3eab0fbded04cfcdcfbb76efb2c3d12bcbc17c3aec",
+      "expectedLabel": "2.87 oz",
+      "expectedUpc": "041780001603",
+      "alt": "UTZ Sour Cream & Onion — 2.87 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "9063",
+      "expectedName": "UTZ Sour Cream & Onion"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-9449.jpg",
+      "sha256": "7fbb25b01d59fd8e05678ab68f0acebdeb891194e0e051eb7781e63927548143",
+      "expectedLabel": "6-pack · 12 oz",
+      "expectedUpc": "635985200284",
+      "alt": "White Claw grapefruit — 6-pack · 12 oz packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "9449",
+      "expectedName": "White Claw grapefruit"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-9519.jpg",
+      "sha256": "b1ac9395758ba7f7c8d51c75ef92060772f5d81d47b66986d0166a646486b8de",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "080432555187",
+      "alt": "Wild Turkey 101 P — 1.75 L packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "9519",
+      "expectedName": "Wild Turkey 101 P"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-101248.jpeg",
+      "sha256": "4dac4791ba7b19f3979a0c92f52bc0bebe9d39ecfad492808cb45fd9bb9a5e65",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "855165005076",
+      "alt": "MEIOMI PINOT NOIR — 750 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "101248",
+      "expectedName": "MEIOMI PINOT NOIR"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "attributionRequired": false,
+      "src": "images/products/sku-101428.jpg",
+      "sha256": "918153145c1b8b8a39f6cedd09ff774907289e733f6e6e281382ca35ab3c04ff",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "856065002455",
+      "alt": "DEEP EDDY VODKA — 375 mL packaging",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "101428",
+      "expectedName": "DEEP EDDY VODKA"
+    },
+    {
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "alt": "BuzzBallz Pineapple Passion Cocktails — 200 mL packaging",
+      "expectedLabel": "200 mL",
+      "src": "images/products/sku-1566.png",
+      "sha256": "e7c1f4e582d0f57be91e52efeb139b163f4256c7feddcc1acfe7c2236a3b5d1d",
+      "sku": "1566",
+      "expectedUpc": "855200005344",
+      "expectedName": "BuzzBallz Pineapple Passion Cocktails",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-10-31",
+      "alt": "Carmex Cherry Tube — 0.35 oz packaging",
+      "expectedLabel": "0.35 oz",
+      "src": "images/products/sku-1814.png",
+      "sha256": "9348cd7c8551adccb47c81778011b9d36f0e2f0ffc7119711c0320fc25e7b7cf",
+      "sku": "1814",
+      "expectedUpc": "083078014308",
+      "expectedName": "Carmex Cherry Tube",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

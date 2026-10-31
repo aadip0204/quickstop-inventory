@@ -5089,6 +5089,135 @@
           "supports": "Exact UPC 898999040004 identifies Vita Coco Coconut Water, Peach Mango in the verified 16.9 fl oz single carton."
         }
       ]
+    },
+    {
+      "sku": "4447",
+      "expectedUpc": "017082000392",
+      "expectedSourceRow": 2833,
+      "expectedRawFieldsSha256": "db3a473bd7a4d402cbe7cbdaccf6f8afc51bb12e3223b87885dd46ca12ce3638",
+      "expectedPublicName": "Jack Links Beef Jerky Beef & Cheese",
+      "expectedLabel": "1.2 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Jack Link's Original Beef Stick & Cheese",
+      "reason": "Exact UPC evidence identifies the product expression shown by the reviewed front package; only the guarded public title changes.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/215341-jack-link-s-all-american-beef-cheese-sticks-1-2-oz",
+          "supports": "Exact UPC 017082000392 identifies Jack Link's Original Beef Stick & Cheese, 1.2 oz."
+        }
+      ]
+    },
+    {
+      "sku": "4449",
+      "expectedUpc": "017082000033",
+      "expectedSourceRow": 2835,
+      "expectedRawFieldsSha256": "19bfb1099f27a30132ffe9f25ee05f7db2bbd8e3fb1c3682450a9e14d4508a45",
+      "expectedPublicName": "Jack Links Beef Jerky Original Steak",
+      "expectedLabel": "1 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Jack Link's Original Beef Steak",
+      "reason": "Exact UPC evidence identifies the product expression shown by the reviewed front package; only the guarded public title changes.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/274962-jack-link-s-beef-steak-original-1-oz",
+          "supports": "Exact UPC 017082000033 identifies Jack Link's Original Beef Steak, 1 oz."
+        }
+      ]
+    },
+    {
+      "sku": "8263",
+      "expectedUpc": "050200561009",
+      "expectedSourceRow": 8958,
+      "expectedRawFieldsSha256": "372c4e8a5b1807bd709b4ed21acc77c333d823eddb92e83d54349d80c9ab4ed8",
+      "expectedPublicName": "Sunny D Orange Strawb",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "SunnyD Orange Strawberry Juice Drink",
+      "reason": "Exact UPC evidence identifies the full SunnyD brand spelling and Orange Strawberry Juice Drink expression. This review preserves the guarded label and source department after the paired category review.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/88442-sunny-d-citrus-punch-orange-strawberry-16-oz",
+          "supports": "Exact UPC 050200561009 identifies SunnyD Orange Strawberry Juice Drink, 16 FL OZ Bottle."
+        }
+      ]
+    },
+    {
+      "sku": "8664",
+      "expectedUpc": "850015640025",
+      "expectedSourceRow": 6536,
+      "expectedRawFieldsSha256": "09d4d16ccdf738009f480cf8ae96ae78a6a398ecf6c81221054e2178c16b459b",
+      "expectedPublicName": "teremana blanco",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Teremana Blanco Tequila",
+      "reason": "Exact UPC evidence identifies Teremana Blanco Tequila in the guarded 750 mL variant. This is one half of an atomic two-variant group title correction; category, department, and label are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-79684534",
+          "supports": "Exact UPC 850015640025 identifies Teremana Blanco Tequila, 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/148393",
+          "supports": "Exact UPC 850015640025 identifies Teremana Blanco Tequila, .75 L bottle."
+        }
+      ]
+    },
+    {
+      "sku": "8665",
+      "expectedUpc": "850015640001",
+      "expectedSourceRow": 5494,
+      "expectedRawFieldsSha256": "cf4462ca6b8e29fdd4b8848afef3e549748d5c1f241aeb9f256d697cc6e9946a",
+      "expectedPublicName": "teremana blanco",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Teremana Blanco Tequila",
+      "reason": "Exact UPC evidence identifies Teremana Blanco Tequila in the guarded 375 mL variant. It must apply atomically with SKU 8664 so the existing two-variant product group remains intact.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-92698551",
+          "supports": "Exact UPC 850015640001 identifies Teremana Blanco Tequila, 375 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/133286",
+          "supports": "Exact UPC 850015640001 identifies Teremana Blanco Tequila, .375 L bottle."
+        }
+      ]
+    },
+    {
+      "sku": "1566",
+      "expectedUpc": "855200005344",
+      "expectedSourceRow": 977,
+      "expectedRawFieldsSha256": "756023eebab2fd85264d0f8f4a3f61a13b4bd9e88730aec95cf9acaaf1daa83a",
+      "expectedPublicName": "BUZZ BALLZ PINEAPPLEBALL",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "BuzzBallz Pineapple Passion Cocktails",
+      "reason": "Exact UPC listing and inspected front label replace only the erroneous PineappleBall title; this singleton UPC, label, category, department and grouping are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://lyliquor.com/products/buzzballz-pineapple-passion",
+          "supports": "Exact UPC 855200005344 identifies BuzzBallz Pineapple Passion, 200 mL."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://lyliquor.com/cdn/shop/files/BuzzBallz_Pineapple_Passion_fab4df8b-39d6-4787-9d13-c044e2dee034.png?v=1755800523",
+          "supports": "Inspected complete front packshot reads BuzzBallz Cocktails, Pineapple Passion and 200 mL on one spherical can."
+        }
+      ]
     }
   ]
 }
