@@ -6500,6 +6500,386 @@
           "supports": "Exact UPC 011034503825 identifies Martini & Rossi Rosé Sparkling Wine, 750 mL; its directly linked package photograph was inspected for the complete expression."
         }
       ]
+    },
+    {
+      "sku": "6146",
+      "expectedUpc": "085000024317",
+      "expectedSourceRow": 3927,
+      "expectedRawFieldsSha256": "32ef0f1f8bcd9e5df93f9c1da874e9cc84f326b98c092519ca05b74c45485bb3",
+      "expectedPublicName": "New Amsterdam 100%",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "New Amsterdam 100 Proof Vodka",
+      "reason": "The exact UPC structured record and inspected bottle identify 100 Proof Vodka, correcting the misleading percent sign while preserving the singleton source and volume.",
+      "evidence": [
+        {
+          "kind": "exact_upc_batch_product_record",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products?sku=099988071911%2C080660110523%2C083664868902%2C083664874064%2C081753818029%2C852832000150%2C085000014332%2C085000014325%2C085000023174%2C085000026175%2C085000030943%2C085000034194%2C085000024317%2C085000023563%2C085000026151%2C085000020333%2C085000024881%2C085000021675%2C085000020364%2C085000021699%2C085000023204%2C085000020395%2C085000021651%2C085000022337%2C085000022306%2C012584000079%2C855880008451%2C080686008064%2C855880008390%2C085316601196%2C721059087506%2C721733000968%2C721733000036%2C721733000951%2C721733000944%2C721733000234%2C721733000883%2C021296620024%2C021296600309%2C080686929406%2C082422489335%2C088586001123%2C087236002831%2C087236109042%2C087236001209%2C087236001131%2C084279977638%2C084279988108%2C086767221063%2C080686141129&per_page=100&_fields=id%2Csku%2Cname%2Cpermalink%2Cimages%2Ctype%2Cvariations%2Cattributes",
+          "supports": "Fresh captured batch record id 49455 explicitly identifies UPC 085000024317 as New Amsterdam 100 Proof Vodka, 750 mL, with its sole linked bottle photograph."
+        }
+      ]
+    },
+    {
+      "sku": "6472",
+      "expectedUpc": "085316601196",
+      "expectedSourceRow": 4105,
+      "expectedRawFieldsSha256": "bd0d5c653903eee26c39ad211d7739cc34e4fdb77b7323cad73bce3dcd39f999",
+      "expectedPublicName": "OUTER SPACE",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Outer Space Vodka",
+      "reason": "The exact UPC structured record and inspected alien-shaped bottle tag identify Outer Space Vodka, completing the singleton title without changing the source or volume.",
+      "evidence": [
+        {
+          "kind": "exact_upc_batch_product_record",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products?sku=099988071911%2C080660110523%2C083664868902%2C083664874064%2C081753818029%2C852832000150%2C085000014332%2C085000014325%2C085000023174%2C085000026175%2C085000030943%2C085000034194%2C085000024317%2C085000023563%2C085000026151%2C085000020333%2C085000024881%2C085000021675%2C085000020364%2C085000021699%2C085000023204%2C085000020395%2C085000021651%2C085000022337%2C085000022306%2C012584000079%2C855880008451%2C080686008064%2C855880008390%2C085316601196%2C721059087506%2C721733000968%2C721733000036%2C721733000951%2C721733000944%2C721733000234%2C721733000883%2C021296620024%2C021296600309%2C080686929406%2C082422489335%2C088586001123%2C087236002831%2C087236109042%2C087236001209%2C087236001131%2C084279977638%2C084279988108%2C086767221063%2C080686141129&per_page=100&_fields=id%2Csku%2Cname%2Cpermalink%2Cimages%2Ctype%2Cvariations%2Cattributes",
+          "supports": "Fresh captured batch record id 48909 explicitly identifies UPC 085316601196 as Outer Space Vodka, 750 mL, with its sole linked bottle photograph."
+        }
+      ]
+    },
+    {
+      "sku": "7193",
+      "expectedUpc": "699013000550",
+      "expectedSourceRow": 4577,
+      "expectedRawFieldsSha256": "ca17b946200c48e25bde1f12567a835b57fa98ece630e5198f315c87e8a2f580",
+      "expectedPublicName": "RON ZACAPA",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Rum",
+      "proposedPublicTitle": "Ron Zacapa Sistema Solera 23 Rum",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/39253",
+          "supports": "Exact UPC 699013000550 identifies Ron Zacapa Sistema Solera 23 Rum, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "7221",
+      "expectedUpc": "083085904081",
+      "expectedSourceRow": 4598,
+      "expectedRawFieldsSha256": "6059afc626f4cd37a67506ffce623059a07eaedec4436210ac4d8d0d8724ca6a",
+      "expectedPublicName": "RUFFINO PROSECCO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Ruffino Prosecco Sparkling Wine",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/39507",
+          "supports": "Exact UPC 083085904081 identifies Ruffino Prosecco Sparkling Wine, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8026",
+      "expectedUpc": "087236992002",
+      "expectedSourceRow": 5170,
+      "expectedRawFieldsSha256": "d7470fad308b65423cd0d24a735452d2d5f846eb3ad2194d707592bcadf9922c",
+      "expectedPublicName": "St. Remy VSOP",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "St-Rémy VSOP French Brandy",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/38437",
+          "supports": "Exact UPC 087236992002 identifies St-Rémy VSOP French Brandy, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8081",
+      "expectedUpc": "087872630016",
+      "expectedSourceRow": 5194,
+      "expectedRawFieldsSha256": "3503916f650119dfe9adffb08a98d591f8a0844c1088aaa7d44d1210752b907b",
+      "expectedPublicName": "stella rosa honey peach brandy",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Brandy",
+      "proposedPublicTitle": "Stella Rosa Honey Peach Flavored Brandy",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/43951",
+          "supports": "Exact UPC 087872630016 identifies Stella Rosa Honey Peach Flavored Brandy, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8087",
+      "expectedUpc": "087872633406",
+      "expectedSourceRow": 6717,
+      "expectedRawFieldsSha256": "96f9e77542c068f85cbe53baec38534e54785e6b86b966f6246a264724a1ac3a",
+      "expectedPublicName": "STELLA ROSA RED",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "wine",
+      "proposedPublicTitle": "Stella Rosa Red",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/41870",
+          "supports": "Exact UPC 087872633406 identifies Stella Rosa Red, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8095",
+      "expectedUpc": "087872630009",
+      "expectedSourceRow": 5195,
+      "expectedRawFieldsSha256": "45ebe21b68774f97911a98cec8312810f572846c43fbcf1936abb6c85873603b",
+      "expectedPublicName": "stella rosa smooth black brandy berry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Brandy",
+      "proposedPublicTitle": "Stella Rosa Smooth Black Berry Flavored Brandy",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/43991",
+          "supports": "Exact UPC 087872630009 identifies Stella Rosa Smooth Black Berry Flavored Brandy, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8657",
+      "expectedUpc": "080660203010",
+      "expectedSourceRow": 5488,
+      "expectedRawFieldsSha256": "e50319d48ee7f5381a7c1137c3280b352c24aaf9b929e986ca852596a8332830",
+      "expectedPublicName": "Ten High",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Ten High Sour Mash Kentucky Bourbon Whiskey with Natural Flavors",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/47703",
+          "supports": "Exact UPC 080660203010 identifies Ten High Sour Mash Kentucky Bourbon Whiskey with Natural Flavors, 1.75 L; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8861",
+      "expectedUpc": "857852002641",
+      "expectedSourceRow": 9743,
+      "expectedRawFieldsSha256": "7977ad086cb9ceb7d7279ec721c07427919e58f2f733d8df714bdccf1ecd7bab",
+      "expectedPublicName": "TROPICAL blueberry moscato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Tropical Blueberry Moscato",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/46748",
+          "supports": "Exact UPC 857852002641 identifies Tropical Blueberry Moscato, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8900",
+      "expectedUpc": "857852002108",
+      "expectedSourceRow": 6538,
+      "expectedRawFieldsSha256": "983da70927e2bf1f31df612194c6f0f8f36fc9e4bcf8b0877f3ff3db41fed7ae",
+      "expectedPublicName": "TROPICAL mango moscato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Tropical Mango Moscato",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/49129",
+          "supports": "Exact UPC 857852002108 identifies Tropical Mango Moscato, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8901",
+      "expectedUpc": "857852002085",
+      "expectedSourceRow": 8254,
+      "expectedRawFieldsSha256": "b015ad62bedfc8244881b474456a002d6dba31f61e71d0973866d932c2ee6d07",
+      "expectedPublicName": "TROPICAL passion moscato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Tropical Passion Fruit Moscato",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/42086",
+          "supports": "Exact UPC 857852002085 identifies Tropical Passion Fruit Moscato, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8918",
+      "expectedUpc": "080686896098",
+      "expectedSourceRow": 6539,
+      "expectedRawFieldsSha256": "2e4607230127889a57aeeb7ae555ae413015e5a0519c156e7dc0c8c2c4c3c4c6",
+      "expectedPublicName": "Truly pineapple mango",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Truly Pineapple Mango Flavored Vodka",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/43172",
+          "supports": "Exact UPC 080686896098 identifies Truly Pineapple Mango Flavored Vodka, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "8921",
+      "expectedUpc": "080686896036",
+      "expectedSourceRow": 5653,
+      "expectedRawFieldsSha256": "0970e2db0a854c3e52cf1a25092fd929a726953cc30509ae04e38a9b74b28e7b",
+      "expectedPublicName": "Truly strawberry lemonade",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Truly Strawberry Lemonade Flavored Vodka",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/43626",
+          "supports": "Exact UPC 080686896036 identifies Truly Strawberry Lemonade Flavored Vodka, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "9160",
+      "expectedUpc": "633824913432",
+      "expectedSourceRow": 5820,
+      "expectedRawFieldsSha256": "b7a665171deb50eb6de4713924e546d8fb4750a2beb868b683b1d37490f36f02",
+      "expectedPublicName": "Van Gogh Acai-Blueberry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Van Gogh Açaí-Blueberry Vodka",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/38771",
+          "supports": "Exact UPC 633824913432 identifies Van Gogh Açaí-Blueberry Vodka, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "9722",
+      "expectedUpc": "763955010004",
+      "expectedSourceRow": 6187,
+      "expectedRawFieldsSha256": "9a7a6bde02fce9e83daa9347d011408812afac8a94b0c430fad472f8ef7a526a",
+      "expectedPublicName": "XXL Blackberry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "XXL Blackberry Moscato",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/47818",
+          "supports": "Exact UPC 763955010004 identifies XXL Blackberry Moscato, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "9727",
+      "expectedUpc": "763955015009",
+      "expectedSourceRow": 6190,
+      "expectedRawFieldsSha256": "c3080145f861a83eafe1f6d4e95fd6b72a8e0aff405be1abc901867c7e44a222",
+      "expectedPublicName": "XXL Peach",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "XXL Peach Moscato",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/47820",
+          "supports": "Exact UPC 763955015009 identifies XXL Peach Moscato, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "9729",
+      "expectedUpc": "763955016006",
+      "expectedSourceRow": 6191,
+      "expectedRawFieldsSha256": "45af1947f2292d8e37cb6e6c6383b75b7941d15ba7b2308c6ffd49073f2de53f",
+      "expectedPublicName": "xxl strawberry & grapes",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "XXL Strawberry & Grapes Moscato",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/47822",
+          "supports": "Exact UPC 763955016006 identifies XXL Strawberry & Grapes Moscato, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "101276",
+      "expectedUpc": "811041030013",
+      "expectedSourceRow": 8128,
+      "expectedRawFieldsSha256": "418660d8d681857ec454ee86f902b8f3ef985cb6db0aa571969bdac7f153c676",
+      "expectedPublicName": "LALO TEQUILA",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "LALO Blanco Tequila",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/46059",
+          "supports": "Exact UPC 811041030013 identifies LALO Blanco Tequila, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "101362",
+      "expectedUpc": "087872638425",
+      "expectedSourceRow": 7093,
+      "expectedRawFieldsSha256": "db919e91fc9e84acbd5501c961d4afff15e5efd4afadb8ced50961bde24fafb2",
+      "expectedPublicName": "STELLA ROSA WATERMELON",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "wine",
+      "proposedPublicTitle": "Stella Rosa Watermelon",
+      "reason": "The exact UPC retailer record and inspected package support this professional product title for a singleton; identifiers, source row, size, category and source department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/55783",
+          "supports": "Exact UPC 087872638425 identifies Stella Rosa Watermelon, 750 mL; the directly linked package was inspected for brand and complete expression."
+        }
+      ]
     }
   ]
 }
