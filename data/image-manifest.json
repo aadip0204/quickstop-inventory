@@ -22460,6 +22460,986 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "expectedLabel": "1.25 L",
+      "sku": "207",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "078000026597",
+      "attributionRequired": false,
+      "sha256": "dd7c599cdab6e48e071d2c651d3e365de54f319ab908edafaba5c706c0428629",
+      "expectedName": "7UP Lemon Lime Soda",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-207.jpg",
+      "alt": "7UP Lemon Lime Soda — 1.25 L packaging"
+    },
+    {
+      "expectedLabel": "2 L",
+      "sku": "244",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "078000052466",
+      "attributionRequired": false,
+      "sha256": "aa87be052045e9bc585e877fbf885da57461a9c0a3a6d3ff7c6857e06cc6ecef",
+      "expectedName": "A&W ROOT BEER",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-244.jpg",
+      "alt": "A&W ROOT BEER — 2 L packaging"
+    },
+    {
+      "expectedLabel": "Single · 19.2 oz · cans",
+      "sku": "1213",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "071990001148",
+      "attributionRequired": false,
+      "sha256": "4b05b26e3be8a1fd02523db5a7e2dc9fda7d04e7a54a5bd21ebe68c646bbdf26",
+      "expectedName": "BLUE MOON",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-1213.jpg",
+      "alt": "BLUE MOON — Single · 19.2 oz · cans packaging"
+    },
+    {
+      "expectedLabel": "15 oz",
+      "sku": "1277",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "064144043040",
+      "attributionRequired": false,
+      "sha256": "c6812adc180ddf0d03901b9e33a080e6997a0a2a27e281c7f1086e9e9987ad5d",
+      "expectedName": "Chef Boyardee Lasagna",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-1277.jpg",
+      "alt": "Chef Boyardee Lasagna — 15 oz packaging"
+    },
+    {
+      "expectedLabel": "14.5 oz",
+      "sku": "1279",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "064144043224",
+      "attributionRequired": false,
+      "sha256": "4b2c26e0b91e8593f5eaacc88072af49427437c47d8aeb51cac3456ac76d7f66",
+      "expectedName": "Chef Boyardee Spaghetti & Meatballs",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-1279.jpg",
+      "alt": "Chef Boyardee Spaghetti & Meatballs — 14.5 oz packaging"
+    },
+    {
+      "expectedLabel": "1 L",
+      "sku": "1669",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "078000146455",
+      "attributionRequired": false,
+      "sha256": "cd763ce9efb3eb17e7c55a67f215038cf7a8bf6b2ef4a0b51c75fc01b6f3cf75",
+      "expectedName": "CANADA DRY CLUB SODA",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-1669.jpg",
+      "alt": "CANADA DRY CLUB SODA — 1 L packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "1708",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "081128023164",
+      "attributionRequired": false,
+      "sha256": "b979ede977a01dd6ec54af84adcfb4c28e7b466d5e0cfd9e126c87b960f18885",
+      "expectedName": "Canadian Mist",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-1708.jpg",
+      "alt": "Canadian Mist — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "0.25 oz",
+      "sku": "1812",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "083078113117",
+      "attributionRequired": false,
+      "sha256": "bf62e3a56451702613ddf283ebe697580e5484221761786adca4674d53093d02",
+      "expectedName": "Carmex Classic Original Jar",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-1812.png",
+      "alt": "Carmex Classic Original Jar — 0.25 oz packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "2098",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "086036815597",
+      "attributionRequired": false,
+      "sha256": "76ce73c6a18e0c1daae785e0f4f7f35b5e5990ba7c928caf6e5e4cbb9b7c78e0",
+      "expectedName": "Christian Brothers VS",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-2098.jpg",
+      "alt": "Christian Brothers VS — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "2151",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "088076178700",
+      "attributionRequired": false,
+      "sha256": "d7968a55c6e3c43ad6643347ad6ec12e4147e479741299ea0ef3250dca2762a3",
+      "expectedName": "Ciroc Vodka Amaretto",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-2151.png",
+      "alt": "Ciroc Vodka Amaretto — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "2394",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "083804321090",
+      "attributionRequired": false,
+      "sha256": "f4c20e747d2ce166b27321b9235744572be8e15ace7b29cd44fffddc25888966",
+      "expectedName": "Cook's Sparkling Moscato",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-2394.png",
+      "alt": "Cook's Sparkling Moscato — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "20 oz",
+      "sku": "2500",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "043000952719",
+      "attributionRequired": false,
+      "sha256": "755975ce68af77a916e1b81d6753c1c45d11ce72a851c7ab2dbc69d9aba81e00",
+      "expectedName": "Country Time Lemonade",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-2500.jpg",
+      "alt": "Country Time Lemonade — 20 oz packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "2518",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "080686959014",
+      "attributionRequired": false,
+      "sha256": "718026d9a6883022571de8a846d9862a256017bf3eb1b0cff79b9cc69f481b36",
+      "expectedName": "Courvoisier C",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-2518.jpg",
+      "alt": "Courvoisier C — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "1 gal",
+      "sku": "3978",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "014800646948",
+      "attributionRequired": false,
+      "sha256": "85034fe1932580547e57b14e5631cafbb4bc391ade92b771cc8ff6ccd0a88e47",
+      "expectedName": "Hawaiian Punch Polar Blast Flavored Juice Drink",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-3978.png",
+      "alt": "Hawaiian Punch Polar Blast Flavored Juice Drink — 1 gal packaging"
+    },
+    {
+      "expectedLabel": "1.55 oz",
+      "sku": "4137",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "034000702152",
+      "attributionRequired": false,
+      "sha256": "143fe5a5b8a8851287f25cc63c6c8ba5ecb5380c11185d41003a7188a4ec2260",
+      "expectedName": "HERSHEY'S Cookies 'N' Creme Candy Bar",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-4137.webp",
+      "alt": "HERSHEY'S Cookies 'N' Creme Candy Bar — 1.55 oz packaging"
+    },
+    {
+      "expectedLabel": "8 oz",
+      "sku": "4268",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "027000390054",
+      "attributionRequired": false,
+      "sha256": "c1df226ce3226be08313ff29c3a4656920fcac61d3042db53913e9feeb196781",
+      "expectedName": "Hunt's Tomato Sauce",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-4268.png",
+      "alt": "Hunt's Tomato Sauce — 8 oz packaging"
+    },
+    {
+      "expectedLabel": "0.23 oz",
+      "sku": "4852",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "043000955697",
+      "attributionRequired": false,
+      "sha256": "5fd8932422587de47f71d8b596d2db731ec856796cbb5690a7c5700e4fc4c79c",
+      "expectedName": "Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-4852.png",
+      "alt": "Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix — 0.23 oz packaging"
+    },
+    {
+      "expectedLabel": "0.14 oz",
+      "sku": "4853",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "043000955611",
+      "attributionRequired": false,
+      "sha256": "cb11cd1f728154287a2f32651ba01a214887068972e3e5226ded859835d4bcef",
+      "expectedName": "Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-4853.png",
+      "alt": "Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix — 0.14 oz packaging"
+    },
+    {
+      "expectedLabel": "0.23 oz",
+      "sku": "4859",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "043000955703",
+      "attributionRequired": false,
+      "sha256": "2c4d5526a258a786b8c8c7cc6ff03ca73b1536e92a57a122de180053bdeeb3f0",
+      "expectedName": "Kool-Aid Unsweetened Pink Lemonade Powdered Soft Drink Mix",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-4859.png",
+      "alt": "Kool-Aid Unsweetened Pink Lemonade Powdered Soft Drink Mix — 0.23 oz packaging"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "sku": "5296",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "089540449326",
+      "attributionRequired": false,
+      "sha256": "8811dd70e3fe5e41cde76fdd8c4137874e0148d00f7fe862ce3b44f3ccc90014",
+      "expectedName": "Malibu Coconut",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-5296.jpg",
+      "alt": "Malibu Coconut — 1.75 L packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "5320",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "085976034006",
+      "attributionRequired": false,
+      "sha256": "eb975da042c37fbd4080ee63b0c73797de060c77656ff0162184ea1b4d941ee1",
+      "expectedName": "Manischewitz Blackberry",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-5320.jpg",
+      "alt": "Manischewitz Blackberry — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "5393",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "080432400814",
+      "attributionRequired": false,
+      "sha256": "45436c8f8f881c4b442b88885cef783e574d316b0d78b6334b1cd5d7829fd8c8",
+      "expectedName": "Martell VS",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-5393.jpg",
+      "alt": "Martell VS — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "3.32 oz",
+      "sku": "5406",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "041789003035",
+      "attributionRequired": false,
+      "sha256": "c8b881ecf6d7b21cd0a793a2d560fedfa0081bf987a7b7ce140d6ad8f3adcf20",
+      "expectedName": "Maruchan Ramen Bowl Hot & Spicy Shrimp Flavor",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-5406.png",
+      "alt": "Maruchan Ramen Bowl Hot & Spicy Shrimp Flavor — 3.32 oz packaging"
+    },
+    {
+      "expectedLabel": "1 L",
+      "sku": "5429",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "070491213227",
+      "attributionRequired": false,
+      "sha256": "4f165d71e4ad35813525ed440219eb29a856b9bf9865bd3b9ae6370bb4e98c8f",
+      "expectedName": "Master of Mixes Strawberry Daiquiri/Margarita Mixer",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-5429.png",
+      "alt": "Master of Mixes Strawberry Daiquiri/Margarita Mixer — 1 L packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "6127",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "085000014318",
+      "attributionRequired": false,
+      "sha256": "1f42bc5d7030bfa2e9da2ecbc204fddad17d554b3caa25bfce45563161ac0942",
+      "expectedName": "New Amsterdam Gin",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-6127.jpg",
+      "alt": "New Amsterdam Gin — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "sku": "6331",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "081128005009",
+      "attributionRequired": false,
+      "sha256": "d856c9e8dd5f01b690dfca2ef78130860d57fa89421c9c91d582d798d3a68a00",
+      "expectedName": "Old Forester",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-6331.jpg",
+      "alt": "Old Forester — 1.75 L packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "6333",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "081128005085",
+      "attributionRequired": false,
+      "sha256": "cf25014df30dd18b04efc7516bc201d39a7389086b3ba2f295a120aa21fa4833",
+      "expectedName": "Old Forester",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-6333.jpg",
+      "alt": "Old Forester — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "6336",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "080686408406",
+      "attributionRequired": false,
+      "sha256": "b374f436035e0a2ec0e52ee7e4fc72fac5b7f6c2aa4bef1b9e9a43c3ee7bb7c4",
+      "expectedName": "Old Grand Dad 100 P",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-6336.webp",
+      "alt": "Old Grand Dad 100 P — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "375 mL",
+      "sku": "6421",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "855880008116",
+      "attributionRequired": false,
+      "sha256": "83a671eac0fc8d60be2baf08046f32e1780ae53aafe0426d076e1c7eab47b946",
+      "expectedName": "On The Rocks Hornitos Margarita",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-6421.jpg",
+      "alt": "On The Rocks Hornitos Margarita — 375 mL packaging"
+    },
+    {
+      "expectedLabel": "1.3 oz",
+      "sku": "6805",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "038000845512",
+      "attributionRequired": false,
+      "sha256": "42eb2939e35a97e58f1c53da11085b71b5e03d514946885dd1c419f69678d6ec",
+      "expectedName": "Pringles Original Potato Crisps",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-6805.jpg",
+      "alt": "Pringles Original Potato Crisps — 1.3 oz packaging"
+    },
+    {
+      "expectedLabel": "24 oz",
+      "sku": "6855",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "030000031605",
+      "attributionRequired": false,
+      "sha256": "a45ac088c2bf1419c63599e817bd5a3512ce2406d7f9f41dbf6e91ea20b58069",
+      "expectedName": "Quaker Enriched & Degerminated White Corn Meal",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-6855.jpg",
+      "alt": "Quaker Enriched & Degerminated White Corn Meal — 24 oz packaging"
+    },
+    {
+      "expectedLabel": "6 oz",
+      "sku": "6972",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "072940112068",
+      "attributionRequired": false,
+      "sha256": "7292614408e152ffb135c530531339087b0434551b8da7f0830da57cfc0842e6",
+      "expectedName": "Red Gold Tomato Paste",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-6972.jpg",
+      "alt": "Red Gold Tomato Paste — 6 oz packaging"
+    },
+    {
+      "expectedLabel": "16 oz",
+      "sku": "7377",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "078000019889",
+      "attributionRequired": false,
+      "sha256": "e90355f093b986556c91d475d5c57902e39e983ae637d7a96abe16b52a6586d1",
+      "expectedName": "Schweppes ginger ale",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-7377.jpg",
+      "alt": "Schweppes ginger ale — 16 oz packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "7652",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "721059387507",
+      "attributionRequired": false,
+      "sha256": "90b3f5a9f4b6e089dfc98a96102e9086a614cf796b9c99d88da64db28f3e7907",
+      "expectedName": "SKYY 90 P Vodka",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-7652.jpg",
+      "alt": "SKYY 90 P Vodka — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "1 L",
+      "sku": "7679",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "786162338006",
+      "attributionRequired": false,
+      "sha256": "410fb0e4e0ae331bf2bc4e48ba868144a4dd323961623758f1d46d2beb28412b",
+      "expectedName": "SMARTWATER",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-7679.jpg",
+      "alt": "SMARTWATER — 1 L packaging"
+    },
+    {
+      "expectedLabel": "1.86 oz",
+      "sku": "7862",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "040000514251",
+      "attributionRequired": false,
+      "sha256": "830c0ac6d10ab1db4f8f82389aba0c5c507342a4323c854c93aed4e54f83ae1c",
+      "expectedName": "Snickers Milk Chocolate Bar",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-7862.png",
+      "alt": "Snickers Milk Chocolate Bar — 1.86 oz packaging"
+    },
+    {
+      "expectedLabel": "17 oz",
+      "sku": "7963",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "016571940355",
+      "attributionRequired": false,
+      "sha256": "b1d7ad8a6fe8939913d539255db38c81bd97c9797eb5aa2f02c7d81291b9ad4e",
+      "expectedName": "Sparkling Ice Lemonade",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-7963.jpg",
+      "alt": "Sparkling Ice Lemonade — 17 oz packaging"
+    },
+    {
+      "expectedLabel": "20 oz",
+      "sku": "8174",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "078000230406",
+      "attributionRequired": false,
+      "sha256": "72fc8b4eaa9b8ad9f17c7bd0595ad3166e6dfbd1c736661d84fa991321cbc3ef",
+      "expectedName": "SUN DROP",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-8174.jpg",
+      "alt": "SUN DROP — 20 oz packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "8396",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "088004071363",
+      "attributionRequired": false,
+      "sha256": "7696e54ed9510028b187bb831a31fae251b912caa92825034b46f00d19541f6b",
+      "expectedName": "svedka 100 proof vodka",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-8396.jpg",
+      "alt": "svedka 100 proof vodka — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "739 mL",
+      "sku": "8747",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "037000138754",
+      "attributionRequired": false,
+      "sha256": "a56385df29067cbe2a1ca5d47a001975c12bcebc336d2bb46eb9b8e612e309b0",
+      "expectedName": "Tide org",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-8747.png",
+      "alt": "Tide org — 739 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "8772",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "087110400579",
+      "attributionRequired": false,
+      "sha256": "3fa708ee255ea3ef2f343d38f7f0d8793bf00bcbd08aaded85ee82087a5f4968",
+      "expectedName": "Toasted Head Chardonnay",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-8772.jpg",
+      "alt": "Toasted Head Chardonnay — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "9122",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "087116014480",
+      "attributionRequired": false,
+      "sha256": "09f2b1be779205f03141c731972f5b37c3556c15bcdb3306f900d35e921b2dc5",
+      "expectedName": "UV Blue Raspberry Flavored Vodka",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-9122.jpg",
+      "alt": "UV Blue Raspberry Flavored Vodka — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "9223",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "038075202302",
+      "attributionRequired": false,
+      "sha256": "e1684689d791cb1ae6ad5b1c575d23b90138f7125f9f009bbd9a1d679e2bd8ad",
+      "expectedName": "Verdi Spumante",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-9223.jpg",
+      "alt": "Verdi Spumante — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "9658",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "086003000094",
+      "attributionRequired": false,
+      "sha256": "8f0ceae545a4682edce7d4ce7450b47ba900760a710a4d1a51de973dd566d7ed",
+      "expectedName": "Woodbridge by Robert Mondavi Cabernet Sauvignon",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-9658.png",
+      "alt": "Woodbridge by Robert Mondavi Cabernet Sauvignon — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "9664",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "086003000490",
+      "attributionRequired": false,
+      "sha256": "78057f8ef240bb34a5e06983ecc5ac1cb2d166f80e3904b61f289c40f562aa85",
+      "expectedName": "Woodbridge by Robert Mondavi Merlot",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-9664.png",
+      "alt": "Woodbridge by Robert Mondavi Merlot — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "sku": "9700",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "681425014010",
+      "attributionRequired": false,
+      "sha256": "93729270d1b1dc4bf596f72d1afc77bcab09a3addceb083f1602c0bd601a9d56",
+      "expectedName": "X-Rated Fusion Liqueur",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-9700.jpg",
+      "alt": "X-Rated Fusion Liqueur — 750 mL packaging"
+    },
+    {
+      "expectedLabel": "1.5 oz",
+      "sku": "101288",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "024100122615",
+      "attributionRequired": false,
+      "sha256": "442c306eed5c57c9becf21d048a1f85a2c60b7901d46a3af21ad6b25569fc53f",
+      "expectedName": "Cheez-It Original Baked Snack Crackers",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-101288.png",
+      "alt": "Cheez-It Original Baked Snack Crackers — 1.5 oz packaging"
+    },
+    {
+      "expectedLabel": "1.79 oz",
+      "sku": "101468",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "040000004356",
+      "attributionRequired": false,
+      "sha256": "99e838eebd3dbccfc855a3218c91ee12ffc6121473d302f35382cf10b994117e",
+      "expectedName": "TWIX Caramel Cookie Milk Chocolate Candy Bars Full Size",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-101468.jpg",
+      "alt": "TWIX Caramel Cookie Milk Chocolate Candy Bars Full Size — 1.79 oz packaging"
+    },
+    {
+      "expectedLabel": "1.3 oz",
+      "sku": "101507",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedUpc": "038000765414",
+      "attributionRequired": false,
+      "sha256": "0370f23398eb8e21ee70c1ca9f6173c98669c25ca9891185db451c513a1a192c",
+      "expectedName": "Kellogg's Rice Krispies Treats Original Bars",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-101507.jpg",
+      "alt": "Kellogg's Rice Krispies Treats Original Bars — 1.3 oz packaging"
     }
   ]
 }

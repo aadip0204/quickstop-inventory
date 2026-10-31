@@ -14406,7 +14406,7 @@
         "sourceSha256": "f8baac392d2dc84ec2931bb688a253248aa7c15d6d8e48adefc759b900800877",
         "retiredNotice": false
       },
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "8 oz",
       "verifiedPublicName": "Hunt's Tomato Sauce"
     },
     {
@@ -14574,7 +14574,7 @@
         "sourceSha256": "3f4f45bec4fa3f44434447f6a87f9e619a8922d25797fb86b55863cd5ffb3a7c",
         "retiredNotice": false
       },
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "0.23 oz",
       "verifiedPublicName": "Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix"
     },
     {
@@ -14602,7 +14602,7 @@
         "sourceSha256": "f61e2d749bc0389e7edf55363e1b99028934b47110630365efa21dd0c4090f46",
         "retiredNotice": false
       },
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "0.14 oz",
       "verifiedPublicName": "Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix"
     },
     {
@@ -17312,7 +17312,7 @@
       "sku": "6855",
       "expectedUpc": "030000031605",
       "expectedNameSha256": "53586566a8571e7604bf28d364f61b31ce8bec48f9b4343fb7d606cb20f9f1f9",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "24 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "PepsiCo",
@@ -18391,7 +18391,7 @@
       "sku": "4859",
       "expectedUpc": "043000955703",
       "expectedNameSha256": "169b1fdf5753c4d6837e522e60bf2e0a92ff0129d7429390c7675a9ff4293858",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "0.23 oz",
       "verifiedOn": "2026-10-27",
       "manufacturerRecord": {
         "publisher": "Kraft Heinz",

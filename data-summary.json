@@ -8,10 +8,10 @@
     "originalSourceRows": 9881,
     "reportSourceRows": 71,
     "publicVariants": 9689,
-    "products": 8007,
+    "products": 8005,
     "needsReview": 107,
     "excludedNonproducts": 156,
-    "flaggedPublicVariants": 2474
+    "flaggedPublicVariants": 2493
   },
   "sourceDispositions": {
     "needs_review": 107,
@@ -19,21 +19,21 @@
     "retained_variant": 9689
   },
   "categoryReviews": 104,
-  "publicNameCorrections": 237,
+  "publicNameCorrections": 252,
   "nameAudit": {
     "sourceRowsScanned": 9952,
-    "rowsWithIssues": 4310,
+    "rowsWithIssues": 4326,
     "evidenceBackedCorrections": 1075,
-    "publicTitleCorrections": 237,
+    "publicTitleCorrections": 252,
     "nameVerificationRecords": 84,
     "identityConflicts": 23,
-    "exactIdentitiesResolved": 98,
-    "fullyVerifiedNames": 984,
-    "manufacturerRecordVerifiedNames": 148,
+    "exactIdentitiesResolved": 115,
+    "fullyVerifiedNames": 1006,
+    "manufacturerRecordVerifiedNames": 143,
     "scopeNote": "All rows scanned for specified risks. Only listed spelling corrections, public-title corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; public-title corrections preserve source and variant metadata. Remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock."
   },
   "imageStatus": {
-    "verifiedVariants": 1123,
-    "unverifiedVariants": 8566
+    "verifiedVariants": 1172,
+    "unverifiedVariants": 8517
   }
 }
