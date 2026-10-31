@@ -24360,6 +24360,306 @@
       "src": "images/products/sku-101513.jpg",
       "attributionRequired": false,
       "expectedName": "La Marca Prosecco Rosé"
+    },
+    {
+      "src": "images/products/sku-250.png",
+      "expectedName": "Absolut 100 Proof Vodka",
+      "alt": "Absolut 100 Proof Vodka — 750 mL packaging",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "835229005426",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "250",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "682464eb565fe4af44db02507e09d0d604d516ddab08280f9ca28e4563cd018f",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-338.jpg",
+      "expectedName": "Alize Coco Liqueur",
+      "alt": "Alize Coco Liqueur — 750 mL packaging",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "084692210800",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "338",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "69be4af9692812ae6151e94ddeb8903da350aa423900e8c6bbd5b4ace1ad739c",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-1155.jpg",
+      "expectedName": "Black Velvet",
+      "alt": "Black Velvet — 1.75 L packaging",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "088100134511",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "1155",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "800f1c3b8033df41f82ddfdc31bb8b5c33f8fd7bba71f56152c9c297a6ad5a45",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-2095.jpg",
+      "expectedName": "Christian Brothers VS",
+      "alt": "Christian Brothers VS — 1.75 L packaging",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "086036815474",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "2095",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "1f69e2147d05558fce0f91768e62dc2a0bd7ea1b96b7037249ceff2e92ead22a",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-2459.jpg",
+      "expectedName": "CORONA EXTRA",
+      "alt": "CORONA EXTRA — Single · 24 oz · cans packaging",
+      "expectedLabel": "Single · 24 oz · cans",
+      "expectedUpc": "080660956435",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "2459",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "35bb4d207864085bf4ea876bce7f1f3b8dcb9315277ebfab17c1516fc74f13e2",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-2531.png",
+      "expectedName": "Courvoisier VSOP",
+      "alt": "Courvoisier VSOP — 750 mL packaging",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "080686962045",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "2531",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "8c812f90288f4704c641440c810ae1462e007e6015b2121eaca702662218c9d0",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-4142.jpg",
+      "expectedName": "High Noon Peach Vodka & Soda",
+      "alt": "High Noon Peach Vodka & Soda — Single · 12 oz packaging",
+      "expectedLabel": "Single · 12 oz",
+      "expectedUpc": "085000031377",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "4142",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "ea1e04b9983aac0222f23449f5a95fa25b86437d3994def4324242256715fe4d",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-4467.jpg",
+      "expectedName": "Jagermeister",
+      "alt": "Jagermeister — 375 mL packaging",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "083089660358",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "4467",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "4f7cd7d8f5f262f0b24c86a3699eda49a3e157cebda383eef2090ca6654f807d",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-5287.jpg",
+      "expectedName": "Maker's Mark 46 French Oaked Bourbon",
+      "alt": "Maker's Mark 46 French Oaked Bourbon — 750 mL packaging",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "085246500101",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "5287",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "4c287bd21d46c76e3311cd63fa89a3efd6ce9536a2291f6cbef69e2801012acc",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-7187.jpg",
+      "expectedName": "Ron Rico Gold",
+      "alt": "Ron Rico Gold — 1.75 L packaging",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "080686140122",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "7187",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "88db06533faa8f1a081241091af0745c73c596ecda73b131a3048dcb5aabf366",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-7249.png",
+      "expectedName": "RumChata Cream Liqueur",
+      "alt": "RumChata Cream Liqueur — 375 mL packaging",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "890355001032",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "7249",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "405a01c65dbcb4e1b27ef6ba115c0b31102de35730635c296bcb710bf81db770",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-7253.png",
+      "expectedName": "Rumple Minze",
+      "alt": "Rumple Minze — 375 mL packaging",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "086767520098",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "7253",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "4c1839920988571d7cae892e7833f6204b9fb0ebd7f53d7a7b56dd7386baf276",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-8659.png",
+      "expectedName": "Tequila Rose",
+      "alt": "Tequila Rose — 375 mL packaging",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "085592121067",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "8659",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "91269a88345df633298fe4826e30af5b3a07ea24a5f5c4d138e35b61d0450ba7",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-8663.png",
+      "expectedName": "Teremana Añejo Tequila",
+      "alt": "Teremana Añejo Tequila — 750 mL packaging",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "850015640124",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "8663",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "da9bdd598329f667b088ae7f6afc49ee0eb786766c864a4a45de806352f6db80",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "src": "images/products/sku-8665.png",
+      "expectedName": "Teremana Blanco Tequila",
+      "alt": "Teremana Blanco Tequila — 375 mL packaging",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "850015640001",
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31",
+      "sku": "8665",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "b3905df5a487e87dfbff10d48764eeba61ec2ab7710a5c95d174ff2996f69417",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
