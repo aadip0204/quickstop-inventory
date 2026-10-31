@@ -819,6 +819,39 @@ def apply_refined_fluid_ounce_label(public: dict | None, source: dict, review: d
         raise ValueError(f'Fluid-ounce identity changed guarded variant metadata: {sku}')
 
 
+def apply_verified_food_size(public: dict | None, source: dict, review: dict) -> None:
+    """Resolve one explicitly-held food size without changing any other identity.
+
+    This is deliberately narrower than the generic identity resolver.  It can
+    run only after an existing ``size_needs_confirmation`` review has withheld
+    a conflicting source size, and it preserves the final name, SKU, UPC,
+    category, department, and every variant field except the reviewed weight.
+    """
+    sku = source['SKU']
+    resolution = review['foodSizeResolution']
+    if not public:
+        raise ValueError(f'Food-size identity requires retained source merchandise: {sku}')
+    expected = (review['sku'], review['expectedUpc'], resolution['expectedSourceRow'],
+                resolution['expectedPublicName'], resolution['expectedPublicLabel'],
+                resolution['expectedCategory'], resolution['expectedDepartment'])
+    current = (sku, public['variant']['upc'], source['sourceRow'], public['name'],
+               public['variant']['label'], public['category'], public['department'])
+    if current != expected:
+        raise ValueError(f'Food-size identity current public identity mismatch: {sku}')
+    if canonical_ounce_label_value(resolution['verifiedLabel']) is None:
+        raise ValueError(f'Food-size identity requires one canonical non-fluid-ounce label: {sku}')
+    before_name = public['name']
+    before_category = public['category']
+    before_department = public['department']
+    before_variant = dict(public['variant'])
+    public['variant']['label'] = resolution['verifiedLabel']
+    if (public['name'] != before_name or public['category'] != before_category
+            or public['department'] != before_department
+            or {key: value for key, value in public['variant'].items() if key != 'label'}
+            != {key: value for key, value in before_variant.items() if key != 'label'}):
+        raise ValueError(f'Food-size identity changed guarded variant metadata: {sku}')
+
+
 def validate_reviewed_source_photo_bindings(products: list, source_reviews: dict,
                                             image_manifest: dict | None,
                                             blocked_images: set) -> dict:
@@ -836,26 +869,31 @@ def validate_reviewed_source_photo_bindings(products: list, source_reviews: dict
         entries = []
     bound_actions = {'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label'}
     for sku, review in source_reviews.items():
-        if review['action'] not in bound_actions:
+        food_resolution = review.get('foodSizeResolution')
+        if review['action'] not in bound_actions and food_resolution is None:
             continue
         product, variant = variants_by_sku.get(sku, ({}, {}))
         if not variant:
             raise ValueError(f'Reviewed variant is absent after grouping: {sku}')
-        expected_label = review['verifiedLabel']
+        scoped_review = food_resolution or review
+        expected_label = scoped_review['verifiedLabel']
         # The fluid action runs after a title review, so its expected public
         # name is already final.  The pack action uses the pre-title expected
         # name only for its application guard; its asset must bind the final
-        # grouped product title.
+        # grouped product title. Food-size resolutions forbid a title change,
+        # so their final title must still equal the guarded public title.
         final_identity = (review['expectedUpc'], product['name'], variant['label'])
         if (final_identity[0] != review['expectedUpc'] or final_identity[2] != expected_label
                 or (review['action'] == 'refine_verified_fluid_ounce_label'
-                    and product['name'] != review['expectedPublicName'])):
+                    and product['name'] != review['expectedPublicName'])
+                or (food_resolution is not None
+                    and product['name'] != food_resolution['expectedPublicName'])):
             raise ValueError(f'Reviewed photo final identity mismatch: {sku}')
         matches = [entry for entry in entries if isinstance(entry, dict) and entry.get('sku') == sku]
         if len(matches) != 1:
             raise ValueError(f'Reviewed photo requires exactly one corresponding image: {sku}')
         entry = matches[0]
-        expected_image = (*final_identity, review['expectedImageSha256'])
+        expected_image = (*final_identity, scoped_review['expectedImageSha256'])
         actual_image = (entry.get('expectedUpc'), entry.get('expectedName'),
                         entry.get('expectedLabel'), entry.get('sha256'))
         if (actual_image != expected_image
@@ -1063,6 +1101,9 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             raise ValueError(f'Source review requires a reason: {sku}')
         allowed = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
                    'action', 'reason', 'reviewedOn'}
+        if (entry['action'] == 'size_needs_confirmation'
+                and 'foodSizeResolution' in entry and 'identityResolution' in entry):
+            raise ValueError(f'Food-size resolution cannot coexist with a generic identity resolution: {sku}')
         if entry['action'] in {'size_needs_confirmation', 'restore_named_merchandise'}:
             allowed.add('identityResolution')
             if 'identityResolution' in entry:
@@ -1100,6 +1141,39 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                 check.update(action='resolve_verified_identity', **{
                     key: resolution[key] for key in ('verifiedName', 'verifiedLabel', 'verification', 'evidence')})
                 validated_source_reviews({'schemaVersion': 1, 'reviews': [check]})
+        if entry['action'] == 'size_needs_confirmation' and 'foodSizeResolution' in entry:
+            resolution = entry['foodSizeResolution']
+            allowed.add('foodSizeResolution')
+            required = {'expectedSourceRow', 'expectedPublicName', 'expectedPublicLabel',
+                        'expectedCategory', 'expectedDepartment', 'verifiedLabel',
+                        'expectedImageSha256', 'verification', 'evidence',
+                        'expectedResultingGroupSkus', 'reason'}
+            if not isinstance(resolution, dict) or set(resolution) != required:
+                raise ValueError(f'Food-size resolution contains missing or unsupported fields: {sku}')
+            if (not valid_gtin(entry['expectedUpc'])
+                    or type(resolution['expectedSourceRow']) is not int
+                    or resolution['expectedSourceRow'] < 1
+                    or not isinstance(entry.get('reviewedOn'), str)
+                    or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn'])):
+                raise ValueError(f'Food-size resolution requires exact UPC, source-row and review-date guards: {sku}')
+            if (not safe_review_text(resolution['expectedPublicName'])
+                    or resolution['expectedPublicLabel'] != 'Size needs confirmation'
+                    or resolution['expectedCategory'] != 'food'
+                    or resolution['expectedDepartment'] != 'Snacks'
+                    or not safe_review_text(resolution['reason'])):
+                raise ValueError(f'Food-size resolution requires the held food/Snacks public identity: {sku}')
+            if canonical_ounce_label_value(resolution['verifiedLabel']) is None:
+                raise ValueError(f'Food-size resolution requires one canonical non-fluid-ounce label: {sku}')
+            validate_direct_image_guard(resolution, sku, 'Food-size resolution')
+            validate_reviewed_identity_checks(resolution['verification'], sku, 'Food-size resolution')
+            validate_public_identity_evidence(resolution['evidence'], sku, entry['expectedUpc'],
+                                              'Food-size resolution')
+            expected_group = resolution['expectedResultingGroupSkus']
+            if (not isinstance(expected_group, list) or not expected_group
+                    or sku not in expected_group or len(set(expected_group)) != len(expected_group)
+                    or any(not isinstance(value, str) or not re.fullmatch(r'\d+', value)
+                           for value in expected_group)):
+                raise ValueError(f'Food-size resolution requires an exact final SKU group: {sku}')
         if entry['action'] == 'clarify_container_material':
             allowed |= {'containerMaterial', 'reportEvidence'}
             if entry.get('containerMaterial') not in {'glass', 'PET'}:
@@ -1521,6 +1595,13 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     'name': public['name'], 'label': public['variant']['label']}
                 apply_refined_fluid_ounce_label(public, source, review)
                 flags.append('Exact raw source liquid volume refined from ounces to verified fluid ounces')
+            if review and review.get('foodSizeResolution'):
+                if not public:
+                    raise ValueError(f'Food-size identity requires retained source merchandise: {sku}')
+                record['previousPublicIdentity'] = {
+                    'name': public['name'], 'label': public['variant']['label']}
+                apply_verified_food_size(public, source, review)
+                flags.append('Previously held food size resolved with guarded exact-UPC package evidence; original fields remain private')
             flags = override_flags + flags
             record.update(source=source, disposition=disposition, reason=reason, flags=flags)
             flag_reasons.update(flags)
@@ -1616,19 +1697,24 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     for product in products:
         product['variants'].sort(key=lambda v: v['sourceRow'])
     blocked_images = {sku for sku, review in source_reviews.items()
-                      if review['action'] != 'resolve_verified_identity' and not review.get('identityResolution')}
+                      if (review['action'] != 'resolve_verified_identity'
+                          and not review.get('identityResolution')
+                          and not review.get('foodSizeResolution'))}
     blocked_images.update(entry['sku'] for entry in report_additions)
     blocked_images.update(sku for sku, review in identity_reviews.items() if review.get('action') == 'retain_flagged')
     variants_by_sku = {v['sku']: (p, v) for p in products for v in p['variants']}
     for sku, review in source_reviews.items():
-        if review['action'] != 'resolve_verified_pack_identity':
+        food_resolution = review.get('foodSizeResolution')
+        if review['action'] != 'resolve_verified_pack_identity' and food_resolution is None:
             continue
         product, variant = variants_by_sku.get(sku, ({}, {}))
         if not variant:
-            raise ValueError(f'Pack identity variant is absent after grouping: {sku}')
+            raise ValueError(f'Reviewed size variant is absent after grouping: {sku}')
         actual_group = [member['sku'] for member in product['variants']]
-        if actual_group != review['expectedResultingGroupSkus']:
-            raise ValueError(f'Pack identity final SKU-group mismatch for SKU {sku}')
+        expected_group = (food_resolution or review)['expectedResultingGroupSkus']
+        if actual_group != expected_group:
+            context = 'Food-size identity' if food_resolution is not None else 'Pack identity'
+            raise ValueError(f'{context} final SKU-group mismatch for SKU {sku}')
     variants_by_sku = validate_reviewed_source_photo_bindings(
         products, source_reviews, image_manifest, blocked_images)
     records_by_sku = {record['sku']: record for record in master}

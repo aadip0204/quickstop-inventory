@@ -2736,7 +2736,11 @@
       "proposedPublicTitle": "Beringer Founders' Estate Merlot",
       "reason": "Exact UPC evidence restores the verified product-line and varietal order while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://www.buycott.com/upc/089819008728", "supports": "UPC 089819008728 identifies Beringer Founders' Estate Merlot in a 750 mL bottle."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.buycott.com/upc/089819008728",
+          "supports": "UPC 089819008728 identifies Beringer Founders' Estate Merlot in a 750 mL bottle."
+        }
       ]
     },
     {
@@ -2751,7 +2755,11 @@
       "proposedPublicTitle": "Beringer Main & Vine Pink Moscato",
       "reason": "Exact UPC evidence restores the material Main & Vine product line while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://www.kroger.com/p/beringer-main-vine-pink-moscato-california-rose-wine/0008981954255", "supports": "UPC 089819542550 identifies Beringer Main & Vine Pink Moscato in a 1.5 L bottle."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kroger.com/p/beringer-main-vine-pink-moscato-california-rose-wine/0008981954255",
+          "supports": "UPC 089819542550 identifies Beringer Main & Vine Pink Moscato in a 1.5 L bottle."
+        }
       ]
     },
     {
@@ -2766,7 +2774,11 @@
       "proposedPublicTitle": "Beringer Main & Vine Pinot Grigio",
       "reason": "Exact UPC evidence restores the material Main & Vine product line while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://www.foodbasics.ca/aisles/beer-wine/wines-cocktails-coolers/white-wine/american-white-wine/p/089819760091", "supports": "UPC 089819760091 identifies Beringer Main & Vine Pinot Grigio in a 750 mL bottle."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.foodbasics.ca/aisles/beer-wine/wines-cocktails-coolers/white-wine/american-white-wine/p/089819760091",
+          "supports": "UPC 089819760091 identifies Beringer Main & Vine Pinot Grigio in a 750 mL bottle."
+        }
       ]
     },
     {
@@ -2781,7 +2793,11 @@
       "proposedPublicTitle": "Mike's Harder Lemonade",
       "reason": "Exact UPC evidence restores the material Harder expression and apostrophe while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://shop.foodland.com/product/mikes-harder-lemonade-635985258759", "supports": "UPC 635985258759 identifies Mike's Harder Lemonade as a 16 oz single can."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.foodland.com/product/mikes-harder-lemonade-635985258759",
+          "supports": "UPC 635985258759 identifies Mike's Harder Lemonade as a 16 oz single can."
+        }
       ]
     },
     {
@@ -2796,7 +2812,11 @@
       "proposedPublicTitle": "New Amsterdam Vodka",
       "reason": "Exact UPC evidence restores the verified vodka product type while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/140524", "supports": "UPC 085000019511 identifies New Amsterdam Vodka in a 1.75 L bottle."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/140524",
+          "supports": "UPC 085000019511 identifies New Amsterdam Vodka in a 1.75 L bottle."
+        }
       ]
     },
     {
@@ -2811,7 +2831,11 @@
       "proposedPublicTitle": "New Amsterdam Red Berry Vodka",
       "reason": "Exact UPC evidence restores the material Red Berry flavor and vodka product type while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://www.target.com/p/-/A-47572797", "supports": "UPC 085000020326 identifies New Amsterdam Red Berry Flavored Vodka in a 750 mL bottle."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47572797",
+          "supports": "UPC 085000020326 identifies New Amsterdam Red Berry Flavored Vodka in a 750 mL bottle."
+        }
       ]
     },
     {
@@ -2826,7 +2850,11 @@
       "proposedPublicTitle": "New Amsterdam Pineapple Flavored Vodka",
       "reason": "Exact UPC evidence restores the full flavor and vodka identity while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://www.target.com/p/-/A-50483305", "supports": "UPC 085000022313 identifies New Amsterdam Pineapple Vodka in a 750 mL bottle."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-50483305",
+          "supports": "UPC 085000022313 identifies New Amsterdam Pineapple Vodka in a 750 mL bottle."
+        }
       ]
     },
     {
@@ -2841,7 +2869,11 @@
       "proposedPublicTitle": "Rich & Rare Canadian Whiskey",
       "reason": "Exact UPC evidence expands the abbreviated source title into the verified brand and product type while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://shopwoodmans.com/store/woodmans-food-markets/products/3053519-r-r-whisky-canadian-1-75-lt", "supports": "UPC 088004000332 identifies Rich & Rare Canadian Whiskey in a 1.75 L bottle."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shopwoodmans.com/store/woodmans-food-markets/products/3053519-r-r-whisky-canadian-1-75-lt",
+          "supports": "UPC 088004000332 identifies Rich & Rare Canadian Whiskey in a 1.75 L bottle."
+        }
       ]
     },
     {
@@ -2856,7 +2888,11 @@
       "proposedPublicTitle": "Seagram's Red Berry Flavored Vodka",
       "reason": "Exact UPC evidence restores the apostrophe and verified flavored expression while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://morewines.com/seagrams-red-berry-vodka-750ml/", "supports": "UPC 720815987234 identifies Seagram's Red Berry Flavored Vodka in a 750 mL bottle."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://morewines.com/seagrams-red-berry-vodka-750ml/",
+          "supports": "UPC 720815987234 identifies Seagram's Red Berry Flavored Vodka in a 750 mL bottle."
+        }
       ]
     },
     {
@@ -2871,7 +2907,11 @@
       "proposedPublicTitle": "Seagram's Escapes Strawberry Daiquiri",
       "reason": "Exact UPC evidence restores the complete product-line and flavor title while preserving source and variant metadata.",
       "evidence": [
-        {"kind": "exact_upc_listing", "url": "https://theliquorbarn.com/collections/flavored-malt-beverages/products/seagrams-escapes-strawberry-daiquiri-4pk", "supports": "UPC 080432802540 identifies Seagram's Escapes Strawberry Daiquiri as a four-bottle package."}
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/collections/flavored-malt-beverages/products/seagrams-escapes-strawberry-daiquiri-4pk",
+          "supports": "UPC 080432802540 identifies Seagram's Escapes Strawberry Daiquiri as a four-bottle package."
+        }
       ]
     },
     {
@@ -4226,6 +4266,44 @@
           "kind": "exact_upc_listing",
           "url": "https://www.thehutliquors.com/verdi-sparkletini-peach-750ml.html",
           "supports": "UPC 038075206300 identifies Verdi Sparkletini Peach in 750 mL packaging."
+        }
+      ]
+    },
+    {
+      "sku": "1066",
+      "expectedUpc": "089819090303",
+      "expectedSourceRow": 670,
+      "expectedRawFieldsSha256": "3b31c42d529672cfa102a1de474e26fb6ec6ac17a1a0f50a3feb932e36952f5b",
+      "expectedPublicName": "Beringer White Merlot",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine White Merlot",
+      "reason": "Exact UPC evidence identifies the Main & Vine White Merlot 1.5 L sibling. Apply with SKU 1067 so both exact size variants retain one verified product group without changing SKU, UPC, label, category, or department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winetransit.com/wine/rose-blush-wine/beringer-main-vine-white-merlot-1-5-l-11178.html",
+          "supports": "Exact UPC 089819090303 identifies Beringer Main & Vine White Merlot in one 1.5 L bottle."
+        }
+      ]
+    },
+    {
+      "sku": "1067",
+      "expectedUpc": "089819090297",
+      "expectedSourceRow": 671,
+      "expectedRawFieldsSha256": "d93ce347b629de2cb6c4fd62d592c5ac3b8e726be2124ea604dadae5307032cc",
+      "expectedPublicName": "Beringer White Merlot",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine White Merlot",
+      "reason": "Exact UPC evidence identifies the Main & Vine White Merlot 750 mL sibling. Apply with SKU 1066 so both exact size variants retain one verified product group without changing SKU, UPC, label, category, or department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winetransit.com/wine/rose-blush-wine/beringer-main-vine-white-merlot-750-ml-11193.html",
+          "supports": "Exact UPC 089819090297 identifies Beringer Main & Vine White Merlot in one 750 mL bottle."
         }
       ]
     }

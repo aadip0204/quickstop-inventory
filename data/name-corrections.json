@@ -23200,6 +23200,166 @@
           "supports": "Exact UPC identifies Monster Absolutely Zero 16 oz; the pictured package confirms the expression spelling."
         }
       ]
+    },
+    {
+      "sku": "3092",
+      "expectedUpc": "853930",
+      "scope": "exact_upc_e_family_title_review",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/45646-e-j-brandy-superior-reserve-1-75-l",
+          "supports": "Canonical GTIN-12 085000003930 identifies E&J VSOP Brandy, 1.75 L."
+        }
+      ],
+      "verifiedOn": "2026-10-30",
+      "expectedNameSha256": "4f6f13279331a131385f1bc3bb2a537ae9b38bbc67eb1fab28ba78b2cc427d21",
+      "replaceTextFrom": "E & J VSOP",
+      "replaceTextTo": "E&J VSOP Brandy"
+    },
+    {
+      "sku": "3093",
+      "expectedUpc": "085000003930",
+      "scope": "exact_upc_e_family_title_review",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/45646-e-j-brandy-superior-reserve-1-75-l",
+          "supports": "Exact GTIN-12 085000003930 identifies E&J VSOP Brandy, 1.75 L."
+        }
+      ],
+      "verifiedOn": "2026-10-30",
+      "expectedNameSha256": "fac7f965b92fce4007bd2eaebac95d28609b604ab3ddbf02d5c418ea8b68e06f",
+      "replaceTextFrom": "E & J VSOP",
+      "replaceTextTo": "E&J VSOP Brandy"
+    },
+    {
+      "sku": "3094",
+      "expectedUpc": "851080",
+      "scope": "exact_upc_e_family_title_review",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://oklahoma.gov/content/dam/ok/en/able-commission/documents/distributors-monthly-price-posting-reports/SGWS%20July%2023%20Price%20Posting.pdf",
+          "supports": "Canonical GTIN-12 085000001080 identifies E&J VSOP Brandy, 100 mL."
+        }
+      ],
+      "verifiedOn": "2026-10-30",
+      "expectedNameSha256": "8a69b5400ac1f4a08e548c15da37c2042d5ffeebbee07222dbefea6aacd8c104",
+      "replaceTextFrom": "E & J VSOP",
+      "replaceTextTo": "E&J VSOP Brandy"
+    },
+    {
+      "sku": "3095",
+      "expectedUpc": "853790",
+      "scope": "exact_upc_e_family_title_review",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/156385",
+          "supports": "Canonical GTIN-12 085000003794 identifies E&J VSOP Brandy, 200 mL."
+        }
+      ],
+      "verifiedOn": "2026-10-30",
+      "expectedNameSha256": "c8f09b4612cbcf2a16d69955d096579078881171553fd5d9fc4fce6098fe807c",
+      "replaceTextFrom": "E & J VSOP",
+      "replaceTextTo": "E&J VSOP Brandy"
+    },
+    {
+      "sku": "3098",
+      "expectedUpc": "853830",
+      "scope": "exact_upc_e_family_title_review",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/1331318-e-j-vsop-brandy-375-ml",
+          "supports": "Canonical GTIN-12 085000003831 identifies E&J VSOP Brandy, 375 mL."
+        }
+      ],
+      "verifiedOn": "2026-10-30",
+      "expectedNameSha256": "39a3cb0cd74459cc54434dd55dc9bd1c373008194fa70defff8929f64e41746e",
+      "replaceTextFrom": "E & J VSOP",
+      "replaceTextTo": "E&J VSOP Brandy"
+    },
+    {
+      "sku": "3099",
+      "expectedUpc": "085000003862",
+      "scope": "exact_upc_e_family_title_review",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/155271",
+          "supports": "Exact GTIN-12 085000003862 identifies E&J VSOP Brandy, 50 mL."
+        }
+      ],
+      "verifiedOn": "2026-10-30",
+      "expectedNameSha256": "a2891e189160c6cd1e1341677ad5fc762003a29cd29a78fdfedec5d8bf2f9ef3",
+      "replaceTextFrom": "E & J VSOP",
+      "replaceTextTo": "E&J VSOP Brandy"
+    },
+    {
+      "sku": "3097",
+      "expectedUpc": "085000003831",
+      "scope": "exact_upc_e_family_title_review",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/1331318-e-j-vsop-brandy-375-ml",
+          "supports": "Exact GTIN-12 085000003831 identifies E&J VSOP Brandy, 375 mL."
+        }
+      ],
+      "verifiedOn": "2026-10-30",
+      "expectedNameSha256": "39a3cb0cd74459cc54434dd55dc9bd1c373008194fa70defff8929f64e41746e",
+      "replaceTextFrom": "E & J VSOP",
+      "replaceTextTo": "E&J VSOP Brandy"
+    },
+    {
+      "sku": "3100",
+      "expectedUpc": "853810",
+      "scope": "exact_upc_e_family_title_review",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shop.iowaabd.com/assets/media/FV9FzF5SQi6d.pdf",
+          "supports": "Canonical GTIN-12 085000003817 identifies E&J VSOP Brandy, 750 mL."
+        }
+      ],
+      "verifiedOn": "2026-10-30",
+      "expectedNameSha256": "85bbcae634fed1a0e6ea8f0efe90f0b824997bdda86f1803ad1e84793cce46e6",
+      "replaceTextFrom": "E & J VSOP",
+      "replaceTextTo": "E&J VSOP Brandy"
+    },
+    {
+      "sku": "3096",
+      "expectedUpc": "085000003794",
+      "scope": "exact_upc_e_family_title_review",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/156385",
+          "supports": "Exact GTIN-12 085000003794 identifies E&J VSOP Brandy, 200 mL."
+        }
+      ],
+      "verifiedOn": "2026-10-30",
+      "expectedNameSha256": "c8f09b4612cbcf2a16d69955d096579078881171553fd5d9fc4fce6098fe807c",
+      "replaceTextFrom": "E & J VSOP",
+      "replaceTextTo": "E&J VSOP Brandy"
+    },
+    {
+      "sku": "9217",
+      "expectedUpc": "038075807309",
+      "expectedNameSha256": "d1f354362fe657f2b9d28256431c9cb616e940e036819d25a8a7251186727355",
+      "replaceTextFrom": "VERDI GREEN APPLE",
+      "replaceTextTo": "Verdi Green Apple Sparkletini",
+      "scope": "private_exact_upc_title_with_private_photo_provenance",
+      "verifiedOn": "2026-10-30",
+      "evidence": [
+        {
+          "kind": "manufacturer_product_context",
+          "url": "https://verdispumante.com/verdi-sparkletini/",
+          "supports": "Manufacturer product context identifies Green Apple Sparkletini in a 750 mL format; exact UPC and package-photo provenance remain in the required private evidence manifest."
+        }
+      ]
     }
   ],
   "identityReviews": [

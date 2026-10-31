@@ -15814,10 +15814,10 @@
     {
       "sku": "1066",
       "expectedUpc": "089819090303",
-      "expectedName": "Beringer White Merlot",
+      "expectedName": "Beringer Main & Vine White Merlot",
       "expectedLabel": "1.5 L",
       "src": "images/products/sku-1066.png",
-      "alt": "Beringer White Merlot — 1.5 L package",
+      "alt": "Beringer Main & Vine White Merlot — 1.5 L bottle",
       "sha256": "968a8c173bd418a85606e1eaa80d48cf28738370d455bcdb417248b0d6bede23",
       "verifiedOn": "2026-10-29",
       "usageBasis": "user_authorized_direct_reference",
@@ -20019,6 +20019,166 @@
       "src": "images/products/sku-9218.jpg",
       "alt": "Verdi Peach Sparkletini — 750 mL packaging",
       "sha256": "96cca9a42b8d8648faa9e7aaa0c1067ee5bac003e4024e68a27cc93ca20efc05",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "6020",
+      "expectedUpc": "028400025287",
+      "expectedName": "Munchies Cheese Fix Flavored Snack Mix",
+      "expectedLabel": "1.75 oz",
+      "src": "images/products/sku-6020.jpg",
+      "alt": "Munchies Cheese Fix Flavored Snack Mix — 1.75 oz bag",
+      "sha256": "8e1a73b1620c0ae454071d2fa9e9d5c6605178382198a14f4122522bfda47986",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "6595",
+      "expectedUpc": "028400260725",
+      "expectedName": "Grandma's Peanut Butter Sandwich Creme Cookies",
+      "expectedLabel": "3.245 oz",
+      "src": "images/products/sku-6595.png",
+      "alt": "Grandma's Peanut Butter Sandwich Creme Cookies — 3.245 oz pack",
+      "sha256": "5e2968a0b0bd05864f0c6ba83fa1eb98b69769f175e9ee02e7e4f2451af7f61a",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "101355",
+      "expectedUpc": "028400261531",
+      "expectedName": "Sabritas Salt & Lime Flavored Peanuts",
+      "expectedLabel": "1.625 oz",
+      "src": "images/products/sku-101355.jpg",
+      "alt": "Sabritas Salt & Lime Flavored Peanuts — 1.625 oz bag",
+      "sha256": "0b485fb28db59392a78baf68e6cbfd6ba7925c334ac74181114a3aa61239b3ca",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "3858",
+      "expectedUpc": "028400259422",
+      "expectedName": "Grandma's Chocolate Brownie Naturally & Artificially Flavored Cookies",
+      "expectedLabel": "2.875 oz",
+      "src": "images/products/sku-3858.jpg",
+      "alt": "Grandma's Chocolate Brownie Naturally & Artificially Flavored Cookies — 2.875 oz bag",
+      "sha256": "d407e2c525dfb5b9326118a2b69b34f2a5c06ef480654ac0f117134162184894",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "3863",
+      "expectedUpc": "028400259552",
+      "expectedName": "Grandma's Peanut Butter Cookies",
+      "expectedLabel": "2.875 oz",
+      "src": "images/products/sku-3863.jpg",
+      "alt": "Grandma's Peanut Butter Cookies — 2.875 oz bag",
+      "sha256": "bc178eda974a3f21af7f7ff0c58345b5d41be7dc95b982137b3a58d2ed3ee871",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "1067",
+      "expectedUpc": "089819090297",
+      "expectedName": "Beringer Main & Vine White Merlot",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-1067.jpg",
+      "alt": "Beringer Main & Vine White Merlot — 750 mL bottle",
+      "sha256": "b2aab847abbd99fd78a31df731267303bfc7f422bd84acd177aab310d672c979",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "9217",
+      "expectedUpc": "038075807309",
+      "expectedName": "Verdi Green Apple Sparkletini",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-9217.jpg",
+      "alt": "Verdi Green Apple Sparkletini — 750 mL bottle",
+      "sha256": "7947e55ff0c32c6a0422843fcd218c79e51cd4d3fe7b9846f8f2a9844fa0c71a",
+      "verifiedOn": "2026-10-30",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false
+    },
+    {
+      "sku": "3093",
+      "expectedUpc": "085000003930",
+      "expectedName": "E&J VSOP Brandy",
+      "expectedLabel": "1.75 L",
+      "src": "images/products/sku-3093.jpg",
+      "alt": "E&J VSOP Brandy — 1.75 L glass bottle",
+      "sha256": "0a283a473e8185077a30aaf0dc90a6bf868da482625c3ec3cc5a4757dc1ec450",
       "verifiedOn": "2026-10-30",
       "verification": {
         "brand": true,

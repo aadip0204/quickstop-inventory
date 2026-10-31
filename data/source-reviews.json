@@ -3947,7 +3947,41 @@
       "expectedSourceRecordSha256": "b136be7b3fbf0e41f7b4d559e36a1c3830620b9e211e056ce764e7e6a8aa5561",
       "action": "size_needs_confirmation",
       "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
-      "reviewedOn": "2026-10-28"
+      "reviewedOn": "2026-10-28",
+      "foodSizeResolution": {
+        "expectedSourceRow": 8070,
+        "expectedPublicName": "Grandma's Chocolate Brownie Naturally & Artificially Flavored Cookies",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "2.875 oz",
+        "expectedImageSha256": "d407e2c525dfb5b9326118a2b69b34f2a5c06ef480654ac0f117134162184894",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/028400259422-0012-en-US/index.html",
+            "supports": "Manufacturer SmartLabel identifies Grandma's Chocolate Brownie Naturally & Artificially Flavored Cookies and its bag package."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/028400259422-0012-en-US/index.html",
+            "supports": "Exact UPC 028400259422 identifies Net Wt 2 7/8 OZ (81.5 g), Bag."
+          }
+        ],
+        "expectedResultingGroupSkus": [
+          "3858",
+          "3859"
+        ],
+        "reason": "Resolve only the previously unconfirmed size from exact UPC/package evidence; retain the distinct 70.8 g sibling SKU."
+      }
     },
     {
       "sku": "3863",
@@ -3956,7 +3990,41 @@
       "expectedSourceRecordSha256": "1955f2a13aa29905b62e95b83c046aa5036863954a4f192f748ba23fb0c7e611",
       "action": "size_needs_confirmation",
       "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
-      "reviewedOn": "2026-10-28"
+      "reviewedOn": "2026-10-28",
+      "foodSizeResolution": {
+        "expectedSourceRow": 7438,
+        "expectedPublicName": "Grandma's Peanut Butter Cookies",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "2.875 oz",
+        "expectedImageSha256": "bc178eda974a3f21af7f7ff0c58345b5d41be7dc95b982137b3a58d2ed3ee871",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/028400259552-0012-en-US/index.html",
+            "supports": "Manufacturer SmartLabel identifies Grandma's Peanut Butter Cookies and its two-cookie bag package."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/028400259552-0012-en-US/index.html",
+            "supports": "Exact UPC 028400259552 identifies Net Wt 2 7/8 OZ (81.5 g), Bag."
+          }
+        ],
+        "expectedResultingGroupSkus": [
+          "3863",
+          "3862"
+        ],
+        "reason": "Resolve only the previously unconfirmed size from exact UPC/package evidence; retain the distinct 70.8 g sibling SKU."
+      }
     },
     {
       "sku": "6020",
@@ -3965,7 +4033,41 @@
       "expectedSourceRecordSha256": "6a6eb4dc67a95aaa32dd3aaa2d0587a75a2258d83ea9796a60c6d76bfc74d559",
       "action": "size_needs_confirmation",
       "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
-      "reviewedOn": "2026-10-28"
+      "reviewedOn": "2026-10-28",
+      "foodSizeResolution": {
+        "expectedSourceRow": 7446,
+        "expectedPublicName": "Munchies Cheese Fix Flavored Snack Mix",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "1.75 oz",
+        "expectedImageSha256": "8e1a73b1620c0ae454071d2fa9e9d5c6605178382198a14f4122522bfda47986",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/028400025287-0012-en-US/index.html",
+            "supports": "Manufacturer SmartLabel identifies Munchies Cheese Fix Flavored Snack Mix and its bag package."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/028400025287-0012-en-US/index.html",
+            "supports": "Exact UPC 028400025287 identifies Net Wt 1 3/4 OZ (49.6 g), Bag."
+          }
+        ],
+        "expectedResultingGroupSkus": [
+          "6020",
+          "6012"
+        ],
+        "reason": "Resolve only the previously unconfirmed size from exact UPC/package evidence; retain the existing title, food/Snacks classification, and distinct 8 oz sibling SKU."
+      }
     },
     {
       "sku": "3490",
@@ -4190,7 +4292,40 @@
       "expectedSourceRecordSha256": "1a9eda9de6945d92173c518fd85137e65c49ece0d6105bd4fc9e267649213b75",
       "action": "size_needs_confirmation",
       "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
-      "reviewedOn": "2026-10-28"
+      "reviewedOn": "2026-10-28",
+      "foodSizeResolution": {
+        "expectedSourceRow": 8722,
+        "expectedPublicName": "Grandma's Peanut Butter Sandwich Creme Cookies",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "3.245 oz",
+        "expectedImageSha256": "5e2968a0b0bd05864f0c6ba83fa1eb98b69769f175e9ee02e7e4f2451af7f61a",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/028400260725-0012-en-US/index.html",
+            "supports": "Manufacturer SmartLabel identifies Grandma's Peanut Butter Sandwich Creme Cookies and its single package."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/028400260725-0012-en-US/index.html",
+            "supports": "Exact UPC 028400260725 identifies Net Wt 3.245 OZ (91.9 g), Pack."
+          }
+        ],
+        "expectedResultingGroupSkus": [
+          "6595"
+        ],
+        "reason": "Resolve only the previously unconfirmed size from exact UPC/package evidence; retain the unchanged singleton product identity."
+      }
     },
     {
       "sku": "101358",
@@ -4208,7 +4343,40 @@
       "expectedSourceRecordSha256": "29b79e42749fdb53bc60cb789cddabaa32c647724315821597cdf845d6f440f7",
       "action": "size_needs_confirmation",
       "reason": "The original source size conflicts with the exact-UPC manufacturer package record; preserve original metadata and require size confirmation.",
-      "reviewedOn": "2026-10-28"
+      "reviewedOn": "2026-10-28",
+      "foodSizeResolution": {
+        "expectedSourceRow": 8236,
+        "expectedPublicName": "Sabritas Salt & Lime Flavored Peanuts",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "1.625 oz",
+        "expectedImageSha256": "0b485fb28db59392a78baf68e6cbfd6ba7925c334ac74181114a3aa61239b3ca",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/028400261531-0012-en-US/index.html",
+            "supports": "Manufacturer SmartLabel identifies Sabritas Salt & Lime Flavored Peanuts and its bag package."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/028400261531-0012-en-US/index.html",
+            "supports": "Exact UPC 028400261531 identifies Net Wt 1 5/8 OZ (46 g), Bag."
+          }
+        ],
+        "expectedResultingGroupSkus": [
+          "101355"
+        ],
+        "reason": "Resolve only the previously unconfirmed size from exact UPC/package evidence; retain the unchanged singleton product identity."
+      }
     },
     {
       "sku": "101357",
