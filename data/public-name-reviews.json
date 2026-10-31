@@ -4013,6 +4013,221 @@
           "supports": "Exact UPC 720815985735 identifies Seagram's Extra Smooth Vodka, 750 mL."
         }
       ]
+    },
+    {
+      "sku": "2639",
+      "expectedUpc": "081308001074",
+      "expectedSourceRow": 1689,
+      "expectedRawFieldsSha256": "700b83edcbba250730e4e2bb2483a30c6e6b1a744f364fb6a6a94f560d56732c",
+      "expectedPublicName": "CUPCAKE RIESLING",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Cupcake Vineyards Riesling",
+      "reason": "Exact UPC evidence and an independently inspected package confirm the fully spelled brand title. The source SKU, UPC, 750 mL label, category, and department remain unchanged.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/46142-cupcake-vineyards-riesling-white-wine-750-ml",
+          "supports": "Exact UPC 081308001074 identifies Cupcake Vineyards Riesling in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "2879",
+      "expectedUpc": "088586600241",
+      "expectedSourceRow": 1859,
+      "expectedRawFieldsSha256": "6a5680012866c2ebbe3028eb65d4e72bb7c233e17c1f3e51b3b3b8df7481cf7c",
+      "expectedPublicName": "Domaine St. Michelle Brut 750",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Domaine Ste. Michelle Brut Sparkling Wine",
+      "reason": "Exact UPC evidence and the inspected foil-topped bottle correct the producer spelling and remove the redundant size from the product title. The source SKU, UPC, 750 mL label, category, and department remain unchanged.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47128364",
+          "supports": "Exact UPC 088586600241 identifies Domaine Ste. Michelle Brut Sparkling Wine in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "4285",
+      "expectedUpc": "075669080021",
+      "expectedSourceRow": 6446,
+      "expectedRawFieldsSha256": "6355d46ffb5967a3334e34571a24cb519fb98224988167fa6caec5f70026cd6c",
+      "expectedPublicName": "iberia mexican style rice",
+      "expectedLabel": "227 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Iberia Arroz Mexicano Mexican Style Rice",
+      "reason": "The exact UPC and verified package front establish the bilingual Arroz Mexicano / Mexican Style Rice title while preserving the source SKU, UPC, metric net weight, category, and department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.shoprite.com/sm/pickup/rsid/466/product/iberia-arroz-mexicano-mexican-style-rice-8-oz-id-00075669080021",
+          "supports": "Exact UPC 00075669080021 identifies Iberia Arroz Mexicano Mexican Style Rice in an 8 oz package."
+        }
+      ]
+    },
+    {
+      "sku": "4286",
+      "expectedUpc": "075669080038",
+      "expectedSourceRow": 9612,
+      "expectedRawFieldsSha256": "cb8235faf4cc580a0ed285afa5c9ac00f8d79b355944a550178fb6d637539691",
+      "expectedPublicName": "IBERIA RICE & BLACK BEANS",
+      "expectedLabel": "227 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Iberia Rice & Black Beans",
+      "reason": "The exact UPC and verified package front confirm the title and display capitalization while preserving the source SKU, UPC, metric net weight, category, and department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.thefreshgrocer.com/sm/planning/rsid/448/product/iberia-rice-%26-black-beans-8-oz-id-00075669080038",
+          "supports": "Exact UPC 00075669080038 identifies Iberia Rice & Black Beans in an 8 oz package."
+        }
+      ]
+    },
+    {
+      "sku": "4287",
+      "expectedUpc": "075669080045",
+      "expectedSourceRow": 9411,
+      "expectedRawFieldsSha256": "a0b2e510f06acdbfbc277c05b0621278d983c9d0ffd94901dbd67783b58b1726",
+      "expectedPublicName": "IBERIA RICE & RED BEANS",
+      "expectedLabel": "227 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Iberia Rice & Red Beans",
+      "reason": "The exact UPC and verified package front confirm the title and display capitalization while preserving the source SKU, UPC, metric net weight, category, and department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.thefreshgrocer.com/sm/planning/rsid/448/product/iberia-rice-%26-red-beans-8-oz-id-00075669080045",
+          "supports": "Exact UPC 00075669080045 identifies Iberia Rice & Red Beans in an 8 oz package."
+        }
+      ]
+    },
+    {
+      "sku": "6425",
+      "expectedUpc": "855880008147",
+      "expectedSourceRow": 4076,
+      "expectedRawFieldsSha256": "ccc5a27c612798388dd5a33d1d44dbb076b19a7e7d85cc223dd13fc9edc3c844",
+      "expectedPublicName": "on the rocks rum the mai tai cruzan",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "On The Rocks The Mai Tai Cocktail, Crafted with Cruzan Rum",
+      "reason": "Exact-UPC records and the inspected bottle establish the On The Rocks Mai Tai cocktail and its Cruzan Rum expression; the source SKU, UPC, 375 mL label, and original department remain preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winedeals.com/spirits/cocktails/on-the-rocks-the-mai-tai-crafted-with-cruzan-rum-375-ml-96751.html",
+          "supports": "UPC 855880008147 identifies On The Rocks The Mai Tai Crafted with Cruzan Rum in a 375 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-80207926",
+          "supports": "UPC 855880008147 identifies the single-bottle On The Rocks Mai Tai rum cocktail."
+        }
+      ]
+    },
+    {
+      "sku": "6613",
+      "expectedUpc": "084380360947",
+      "expectedSourceRow": 4204,
+      "expectedRawFieldsSha256": "358b4aeef76fd3ce12e57303b3c5befdab4c3a63f8cb475c52c5e1ec5258d61c",
+      "expectedPublicName": "Penns Dutch Egg Nog",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Pennsylvania Dutch Egg Nog",
+      "reason": "Exact-UPC records correct the abbreviated Pennsylvania Dutch brand spelling while retaining the original source SKU, UPC, 750 mL label, spirits category, and Cordials department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://liquorama.com/pennsylvania-dutch-egg-nog-750ml.html",
+          "supports": "UPC 084380360947 identifies Pennsylvania Dutch Egg Nog in a 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/collections/liqueurs-cordials/products/pennsylvania-dutch-egg-nog-750ml",
+          "supports": "UPC 084380360947 identifies Pennsylvania Dutch Egg Nog cream liqueur in 750 mL packaging."
+        }
+      ]
+    },
+    {
+      "sku": "6678",
+      "expectedUpc": "089708450805",
+      "expectedSourceRow": 4237,
+      "expectedRawFieldsSha256": "00afe46f02bb190f88678a5bf6fac6a9f95810d1e20a06c8ea0425b18db80890",
+      "expectedPublicName": "Pinnacle Cookie Dough",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Pinnacle Cookie Dough Vodka",
+      "reason": "Exact-UPC evidence confirms the product class as Pinnacle Cookie Dough Vodka while retaining the source SKU, UPC, 750 mL label, spirits category, and Vodka department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://morewines.com/pinnacle-cookie-dough-vodka-750ml/",
+          "supports": "UPC 089708450805 identifies Pinnacle Cookie Dough Vodka in a 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://publications.iowa.gov/15985/2/0214_Price_Book_Booklet.pdf",
+          "supports": "UPC 089708450805 identifies Pinnacle Cookie Dough in a 750 mL spirits listing."
+        }
+      ]
+    },
+    {
+      "sku": "7523",
+      "expectedUpc": "087000007376",
+      "expectedSourceRow": 4829,
+      "expectedRawFieldsSha256": "669c8d8c7af710dcf2dc19a63771d1974937ae767b7903f75cefba2d97ea136d",
+      "expectedPublicName": "Seagram's VO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Seagram's VO Canadian Whisky",
+      "reason": "Exact-UPC sources identify the product as Seagram's VO Canadian Whisky while retaining its source SKU, UPC, 750 mL label, spirits category, and Whiskey department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://morewines.com/seagrams-vo-blended-canadian-whisky-750ml/",
+          "supports": "UPC 087000007376 identifies Seagram's VO Blended Canadian Whisky in a 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.whiskybase.com/whiskies/whisky/85492/seagrams-vo",
+          "supports": "UPC 087000007376 identifies Seagram's VO Canadian Whisky in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9218",
+      "expectedUpc": "038075206300",
+      "expectedSourceRow": 7046,
+      "expectedRawFieldsSha256": "7867f27541fb93f700a1c0bb27a711392ae2beb50f6f2c801973200f8c72775e",
+      "expectedPublicName": "Verdi Peach",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Verdi Peach Sparkletini",
+      "reason": "Exact-UPC records establish Peach Sparkletini as the specific Verdi expression while retaining the source SKU, UPC, 750 mL label, wine category, and Standard department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/verdi-peach-sparkletini-750ml",
+          "supports": "UPC 038075206300 identifies Verdi Peach Sparkletini in a 750 mL bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.thehutliquors.com/verdi-sparkletini-peach-750ml.html",
+          "supports": "UPC 038075206300 identifies Verdi Sparkletini Peach in 750 mL packaging."
+        }
+      ]
     }
   ]
 }

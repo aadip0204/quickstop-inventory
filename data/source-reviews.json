@@ -6038,6 +6038,129 @@
         }
       ],
       "reason": "The exact raw source row explicitly states a 67.5 fl oz liquid volume; this guarded refinement changes no other product field."
+    },
+    {
+      "sku": "2791",
+      "expectedUpc": "024000163084",
+      "expectedNameSha256": "a3237c26fd7f7155eb35837fab7990ad9636deca286330fd2268aeb313302f8d",
+      "expectedSourceRecordSha256": "03598e7ba3c3aacd774f1dae358302ab9e061ee22fff5ab3e75956553544a819",
+      "action": "size_needs_confirmation",
+      "reason": "The source title has no measurement. Exact UPC and inspected package evidence establish this consumer package size.",
+      "reviewedOn": "2026-10-30",
+      "identityResolution": {
+        "expectedName": "Del Monte Sweet Peas",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Del Monte Sweet Peas",
+        "verifiedLabel": "15 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "reason": "Use only manufacturer context, exact UPC evidence and the inspected complete package to resolve this one consumer package identity.",
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.delmonte.com/products/vegetables/peas/sweet-peas",
+            "supports": "Del Monte identifies Sweet Peas in a 15 oz can."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.cub.com/store/cub/products/16380115-del-monte-sweet-peas-15-oz",
+            "supports": "Cub identifies UPC 024000163084 as Del Monte Sweet Peas, 15 oz."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.cub.com/store/cub/products/16380115-del-monte-sweet-peas-15-oz",
+            "supports": "The listed front package image shows the complete matching consumer package and its printed size."
+          }
+        ]
+      }
+    },
+    {
+      "sku": "4240",
+      "expectedUpc": "888109010089",
+      "expectedNameSha256": "a7fd638543974c8a6cbc3a31aed3a73fe2c997fa0b7026a7d1bed889d5d0f6cf",
+      "expectedSourceRecordSha256": "8b549a12749575166c930a5f8e3f75d2e56146609dce1c1aec27e410cfeb885b",
+      "action": "size_needs_confirmation",
+      "reason": "The source title has no measurement. Exact UPC and inspected package evidence establish this consumer package size.",
+      "reviewedOn": "2026-10-30",
+      "identityResolution": {
+        "expectedName": "HOSTESS ZINGERS",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Hostess Raspberry Zingers",
+        "verifiedLabel": "4.02 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "reason": "Use only manufacturer context, exact UPC evidence and the inspected complete package to resolve this one consumer package identity.",
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.hostesscakes.com/our-story",
+            "supports": "Hostess describes raspberry Zingers as the raspberry flavor with coconut coating."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.cub.com/store/cub/products/198513-hostess-raspberry-zingers-single-serve-4-02-oz",
+            "supports": "Cub identifies UPC 888109010089 as Hostess Raspberry Zingers, a 4.02 oz sleeve of three cakes."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.cub.com/store/cub/products/198513-hostess-raspberry-zingers-single-serve-4-02-oz",
+            "supports": "The listed front package image shows the complete matching consumer package and its printed size."
+          }
+        ]
+      }
+    },
+    {
+      "sku": "7936",
+      "expectedUpc": "022000017772",
+      "expectedNameSha256": "78c72796172f93720944d242af45391da823ef197afcbb81e1c320083b8b8a02",
+      "expectedSourceRecordSha256": "861ae76244e7ab2a8df17246386ea0707b8742fe8ab88d568d327868ce0c6486",
+      "action": "size_needs_confirmation",
+      "reason": "The source title has no measurement. Exact UPC and inspected package evidence establish this consumer package size.",
+      "reviewedOn": "2026-10-30",
+      "identityResolution": {
+        "expectedName": "Skittles Sour Candy",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Skittles Sour Candy",
+        "verifiedLabel": "7.2 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "reason": "Use only manufacturer context, exact UPC evidence and the inspected complete package to resolve this one consumer package identity.",
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.skittles.com/products/skittles-sour-candy-grab-n-go-bag-72-oz-skittles-chewy",
+            "supports": "Skittles identifies Sour Candy Grab N Go Bag in a 7.2 oz size."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.nassaucandy.com/sour-skittles-7-2-oz-pouch.html",
+            "supports": "Nassau Candy identifies UPC 022000017772 as Sour Skittles 7.2 oz Pouch."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.nassaucandy.com/sour-skittles-7-2-oz-pouch.html",
+            "supports": "The listed front package image shows the complete matching consumer package and its printed size."
+          }
+        ]
+      }
     }
   ]
 }

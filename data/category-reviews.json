@@ -2365,6 +2365,31 @@
           "supports": "UPC 740235511017 maps to Carley’s Chocolate Chip Cookies (2.5 oz); category-only change, retain source department MISC."
         }
       ]
+    },
+    {
+      "sku": "6425",
+      "expectedUpc": "855880008147",
+      "expectedNameSha256": "f854915a38de1f99b6d923b6ca5c38d0d6d9b064ec3caf09562d82822086b15a",
+      "expectedSourceRecordSha256": "ccc5a27c612798388dd5a33d1d44dbb076b19a7e7d85cc223dd13fc9edc3c844",
+      "expectedDepartment": "Cognac",
+      "expectedPublicName": "on the rocks rum the mai tai cruzan",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "category": "drinks",
+      "reviewedOn": "2026-10-30",
+      "reason": "Exact-UPC sources identify a one-bottle ready-to-drink Mai Tai cocktail; original Cognac department remains preserved as source data.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-80207926",
+          "supports": "UPC 855880008147 identifies an On The Rocks Mai Tai ready-to-drink rum cocktail in a single bottle."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.winedeals.com/spirits/cocktails/on-the-rocks-the-mai-tai-crafted-with-cruzan-rum-375-ml-96751.html",
+          "supports": "UPC 855880008147 identifies On The Rocks The Mai Tai Crafted with Cruzan Rum as a 375 mL Cocktail/Mixer bottle."
+        }
+      ]
     }
   ]
 }
