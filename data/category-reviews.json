@@ -2415,6 +2415,26 @@
           "supports": "Exact UPC 050200561009 identifies SunnyD Orange Strawberry Juice Drink, 16 FL OZ Bottle."
         }
       ]
+    },
+    {
+      "sku": "4142",
+      "expectedUpc": "085000031377",
+      "expectedNameSha256": "66d884df9f4f7dbbdbbbc86b95c8aae382948065aa7d11fc4e20ed74212be2d9",
+      "expectedSourceRecordSha256": "37555e8c923d4e6ec36dbbfde255936d21890f2b9febba5f390a49ba27dabea3",
+      "expectedDepartment": "Cognac",
+      "expectedPublicName": "high noon peach vodka & soda",
+      "expectedLabel": "Single · 12 oz",
+      "expectedCategory": "spirits",
+      "category": "drinks",
+      "reviewedOn": "2026-10-31",
+      "reason": "Exact UPC evidence identifies this single High Noon Peach Vodka & Soda can as a ready-to-drink beverage. The immutable source department Cognac remains preserved; only the shopping category is corrected.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/159318",
+          "supports": "Exact UPC 085000031377 identifies High Noon Peach in a .355 L single can format and supports ready-to-drink beverage classification."
+        }
+      ]
     }
   ]
 }

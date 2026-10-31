@@ -5968,6 +5968,101 @@
           "supports": "UPC 085000032442 identifies La Marca Prosecco Rosé sparkling wine in a 750 mL bottle."
         }
       ]
+    },
+    {
+      "sku": "4142",
+      "expectedUpc": "085000031377",
+      "expectedSourceRow": 6325,
+      "expectedRawFieldsSha256": "37555e8c923d4e6ec36dbbfde255936d21890f2b9febba5f390a49ba27dabea3",
+      "expectedPublicName": "high noon peach vodka & soda",
+      "expectedLabel": "Single · 12 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "High Noon Peach Vodka & Soda",
+      "reason": "Exact UPC evidence confirms the High Noon brand, Peach expression and Vodka & Soda product title after the paired ready-to-drink category correction. The guarded label and source department remain unchanged.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/159318",
+          "supports": "Exact UPC 085000031377 identifies High Noon Peach in the .355 L single-can format."
+        }
+      ]
+    },
+    {
+      "sku": "5287",
+      "expectedUpc": "085246500101",
+      "expectedSourceRow": 3408,
+      "expectedRawFieldsSha256": "687b468c76e3fbbf5c80c5a4edae4ec9632436ee1ca017067488eb00ef05ff1c",
+      "expectedPublicName": "Makers Mark",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Maker's Mark 46 French Oaked Bourbon",
+      "reason": "The exact UPC identifies the distinct Maker's Mark 46 French Oaked Bourbon expression. Applying this title only to SKU 5287 safely separates it from the different 750 mL UPC 085246139431 without changing or losing either SKU.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/133536",
+          "supports": "Exact UPC 085246500101 identifies Maker's Mark 46 in the .75 L bottle format."
+        }
+      ]
+    },
+    {
+      "sku": "338",
+      "expectedUpc": "084692210800",
+      "expectedSourceRow": 231,
+      "expectedRawFieldsSha256": "08c87eedf672acec817a675c1d86153f1fd7fc72cc6ef4a97d960ad43fb989a2",
+      "expectedPublicName": "ALIZE COCO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Alize Coco Liqueur",
+      "reason": "The exact UPC record restores professional title casing and the Coco liqueur product type for this singleton 750 mL variant without changing its SKU, UPC, label, category, department, or source row.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://merchant.frootbat.com/api/v6/product_groups/83486?lat=-33.8688197&lng=151.2092955",
+          "supports": "The stable product record identifies UPC 084692210800 as Alize Coco Liqueur in one 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "7249",
+      "expectedUpc": "890355001032",
+      "expectedSourceRow": 4621,
+      "expectedRawFieldsSha256": "ac141047fd1cd7c8550750f8a1c7458535a13e02719f6039736f41028aecf391",
+      "expectedPublicName": "Rum Chata",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Rum",
+      "proposedPublicTitle": "RumChata Cream Liqueur",
+      "reason": "The exact UPC product record confirms the brand styling RumChata and complete Cream Liqueur expression for this singleton 375 mL bottle; no sibling or classification change is proposed.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://goodpour.com/products/rum-chata-cream-liqueur.js",
+          "supports": "The stable product record maps UPC 890355001032 only to RumChata Cream Liqueur, 375 mL."
+        }
+      ]
+    },
+    {
+      "sku": "8663",
+      "expectedUpc": "850015640124",
+      "expectedSourceRow": 5493,
+      "expectedRawFieldsSha256": "14de1fa0be654116d9b8bac317787ba522c7ec59bf84e223b0df0daae6fbf459",
+      "expectedPublicName": "teremana anejo tequila",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Teremana Añejo Tequila",
+      "reason": "The exact UPC record and reviewed package establish the title-cased Teremana Añejo Tequila expression for this singleton 750 mL variant; no family-wide Teremana change is proposed.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://winebarrel.com/products/teremana-anejo-tequila-80-proof-750-ml.js",
+          "supports": "The stable product record maps UPC 850015640124 to Teremana Anejo Tequila, 80 Proof, 750 mL."
+        }
+      ]
     }
   ]
 }
