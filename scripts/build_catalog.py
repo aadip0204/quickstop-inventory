@@ -55,6 +55,19 @@ MEASURE_RE = re.compile(
 PACK_RE = re.compile(r'(?<![\d.])(?P<number>\d+)\s*(?:packs?|pks?|count|ct)'
                      r'(?=$|\b|\d|(?-i:[A-Z]))', re.I)
 CONTAINER_RE = re.compile(r'\b(cans?|bottles?|btls?)\s*$', re.I)
+# These are intentionally separate from the source parser.  The source export
+# uses forms such as ``6pk``; a reviewed public label uses the canonical
+# human-readable form below.  Do not broaden PACK_RE just to parse a reviewed
+# label, because that would change how every source row is classified.
+INCOMPLETE_PACK_CONTAINER_LABEL_RE = re.compile(
+    r'^(?P<pack>[1-9]\d*)-pack(?: · (?P<container>cans|bottles))?$')
+VERIFIED_PACK_CONTAINER_LABEL_RE = re.compile(
+    r'^(?P<pack>[1-9]\d*)-pack · (?P<measure>.+) · (?P<container>cans|bottles)$')
+CANONICAL_OUNCE_LABEL_RE = re.compile(r'^(?P<number>(?:0|[1-9]\d*)(?:\.\d+)?) oz$')
+CANONICAL_FLUID_OUNCE_LABEL_RE = re.compile(r'^(?P<number>(?:0|[1-9]\d*)(?:\.\d+)?) fl oz$')
+FLUID_OUNCE_RE = re.compile(
+    r'(?<![\d./])(?P<number>\d+\s+\d+/\d+|\d+/\d+|\d+(?:\.\d+)?|\.\d+)\s*'
+    r'fl\.?\s*oz\.?(?![A-Za-z])', re.I)
 STALE_STATUS_RE = re.compile(r'OUT\s+OF\s+STOCK|UPC\s+NOT\s+IN\s+USE', re.I)
 PRICE_RE = re.compile(r'\$|\b\d+\s*for\s*\$?\s*\d|\b\d+(?:\.\d+)?\s*cents?\b|\b\d+\s*c\b', re.I)
 BARE_DECIMAL_RE = re.compile(r'(?<![\d.])(?:\d+\.\d+|\.\d+)(?![\d.])')
@@ -158,6 +171,59 @@ def extract_dimensions(text: str) -> dict:
         remaining = remaining[:match.start()]
     return {'text': clean_space(remaining), 'measures': measures,
             'packs': packs, 'container': container, 'containerToken': container_token}
+
+
+def canonical_ounce_label_value(label: object, fluid: bool = False) -> Decimal | None:
+    """Return one strictly canonical ounce label's positive numeric value.
+
+    This deliberately does not use ``measurement`` for fluid ounces.  The
+    catalog's source parser keeps legacy ``fl oz`` output as ``oz`` today;
+    reviewed fluid labels must therefore be validated without changing global
+    source parsing or silently reclassifying unrelated variants.
+    """
+    match = (CANONICAL_FLUID_OUNCE_LABEL_RE if fluid else CANONICAL_OUNCE_LABEL_RE).fullmatch(
+        label if isinstance(label, str) else '')
+    if not match:
+        return None
+    value = parse_number(match['number'])
+    if value <= 0 or decimal_text(match['number']) != match['number']:
+        return None
+    return value
+
+
+def parse_incomplete_pack_container_label(label: object) -> dict | None:
+    match = INCOMPLETE_PACK_CONTAINER_LABEL_RE.fullmatch(label if isinstance(label, str) else '')
+    if not match:
+        return None
+    return {'pack': int(match['pack']), 'container': match['container'] or ''}
+
+
+def parse_verified_pack_container_label(label: object) -> dict | None:
+    """Parse exactly ``N-pack · measurement · cans|bottles`` review labels."""
+    match = VERIFIED_PACK_CONTAINER_LABEL_RE.fullmatch(label if isinstance(label, str) else '')
+    if not match:
+        return None
+    measure = match['measure']
+    dimensions = extract_dimensions(measure)
+    if (dimensions['text'] or dimensions['packs'] or dimensions['container']
+            or len(dimensions['measures']) != 1
+            or measure != dimensions['measures'][0][0]):
+        return None
+    return {'pack': int(match['pack']), 'measure': dimensions['measures'][0],
+            'container': match['container']}
+
+
+def explicit_source_fluid_ounce_value(source: dict) -> Decimal | None:
+    """Return the one explicit liquid-ounce value stated in raw source fields."""
+    values = []
+    for field in ('ItemName', 'PackName'):
+        value = source.get(field, '')
+        if not isinstance(value, str):
+            return None
+        values.extend(parse_number(match['number']) for match in FLUID_OUNCE_RE.finditer(value))
+    if len(values) != 1 or values[0] <= 0:
+        return None
+    return values[0]
 
 
 def numeric_signature(parts: dict) -> set:
@@ -696,6 +762,110 @@ def apply_public_name_review(public: dict | None, source: dict, raw_fields: list
         raise ValueError(f'Public-name review changed guarded variant metadata: {sku}')
 
 
+def apply_verified_pack_identity(public: dict | None, source: dict, review: dict) -> None:
+    """Enrich only a reviewed existing pack label with size/container facts."""
+    sku = source['SKU']
+    if not public:
+        raise ValueError(f'Pack identity requires retained source merchandise: {sku}')
+    expected = (review['sku'], review['expectedUpc'], review['expectedSourceRow'],
+                review['expectedPublicName'], review['expectedLabel'],
+                review['expectedCategory'], review['expectedDepartment'])
+    current = (sku, public['variant']['upc'], source['sourceRow'], public['name'],
+               public['variant']['label'], public['category'], public['department'])
+    if current != expected:
+        raise ValueError(f'Pack identity current public identity mismatch: {sku}')
+    prior = parse_incomplete_pack_container_label(review['expectedLabel'])
+    verified = parse_verified_pack_container_label(review['verifiedLabel'])
+    if (not prior or not verified or prior['pack'] != verified['pack']
+            or (prior['container'] and prior['container'] != verified['container'])):
+        raise ValueError(f'Pack identity cannot replace stated pack/container facts: {sku}')
+    before_name = public['name']
+    before_category = public['category']
+    before_department = public['department']
+    before_variant = dict(public['variant'])
+    public['variant']['label'] = review['verifiedLabel']
+    if (public['name'] != before_name or public['category'] != before_category
+            or public['department'] != before_department
+            or {key: value for key, value in public['variant'].items() if key != 'label'}
+            != {key: value for key, value in before_variant.items() if key != 'label'}):
+        raise ValueError(f'Pack identity changed guarded variant metadata: {sku}')
+
+
+def apply_refined_fluid_ounce_label(public: dict | None, source: dict, review: dict) -> None:
+    """Refine one raw, explicit liquid-volume label without changing parsing."""
+    sku = source['SKU']
+    if not public:
+        raise ValueError(f'Fluid-ounce identity requires retained source merchandise: {sku}')
+    expected = (review['sku'], review['expectedUpc'], review['expectedSourceRow'],
+                review['expectedPublicName'], review['expectedPublicLabel'],
+                review['expectedCategory'], review['expectedDepartment'])
+    current = (sku, public['variant']['upc'], source['sourceRow'], public['name'],
+               public['variant']['label'], public['category'], public['department'])
+    if current != expected:
+        raise ValueError(f'Fluid-ounce identity current public identity mismatch: {sku}')
+    source_value = explicit_source_fluid_ounce_value(source)
+    verified_value = canonical_ounce_label_value(review['verifiedLabel'], fluid=True)
+    if source_value is None or source_value != verified_value:
+        raise ValueError(f'Fluid-ounce identity requires one matching explicit source liquid volume: {sku}')
+    before_name = public['name']
+    before_category = public['category']
+    before_department = public['department']
+    before_variant = dict(public['variant'])
+    public['variant']['label'] = review['verifiedLabel']
+    if (public['name'] != before_name or public['category'] != before_category
+            or public['department'] != before_department
+            or {key: value for key, value in public['variant'].items() if key != 'label'}
+            != {key: value for key, value in before_variant.items() if key != 'label'}):
+        raise ValueError(f'Fluid-ounce identity changed guarded variant metadata: {sku}')
+
+
+def validate_reviewed_source_photo_bindings(products: list, source_reviews: dict,
+                                            image_manifest: dict | None,
+                                            blocked_images: set) -> dict:
+    """Require scoped variant-label reviews to bind one private-backed photo.
+
+    These review actions intentionally avoid public photo source URLs.  This
+    gate couples their public hash/identity guard to exactly one direct-image
+    assignment; ``apply_verified_images`` immediately afterwards verifies the
+    corresponding private provenance record before any card receives it.
+    """
+    variants_by_sku = {variant['sku']: (product, variant)
+                       for product in products for variant in product['variants']}
+    entries = image_manifest.get('images', []) if isinstance(image_manifest, dict) else []
+    if not isinstance(entries, list):
+        entries = []
+    bound_actions = {'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label'}
+    for sku, review in source_reviews.items():
+        if review['action'] not in bound_actions:
+            continue
+        product, variant = variants_by_sku.get(sku, ({}, {}))
+        if not variant:
+            raise ValueError(f'Reviewed variant is absent after grouping: {sku}')
+        expected_label = review['verifiedLabel']
+        # The fluid action runs after a title review, so its expected public
+        # name is already final.  The pack action uses the pre-title expected
+        # name only for its application guard; its asset must bind the final
+        # grouped product title.
+        final_identity = (review['expectedUpc'], product['name'], variant['label'])
+        if (final_identity[0] != review['expectedUpc'] or final_identity[2] != expected_label
+                or (review['action'] == 'refine_verified_fluid_ounce_label'
+                    and product['name'] != review['expectedPublicName'])):
+            raise ValueError(f'Reviewed photo final identity mismatch: {sku}')
+        matches = [entry for entry in entries if isinstance(entry, dict) and entry.get('sku') == sku]
+        if len(matches) != 1:
+            raise ValueError(f'Reviewed photo requires exactly one corresponding image: {sku}')
+        entry = matches[0]
+        expected_image = (*final_identity, review['expectedImageSha256'])
+        actual_image = (entry.get('expectedUpc'), entry.get('expectedName'),
+                        entry.get('expectedLabel'), entry.get('sha256'))
+        if (actual_image != expected_image
+                or entry.get('usageBasis') != 'user_authorized_direct_reference'
+                or entry.get('attributionRequired') is not False):
+            raise ValueError(f'Reviewed photo does not match exact label/image guard: {sku}')
+        blocked_images.discard(sku)
+    return variants_by_sku
+
+
 def validated_public_name_reviews(manifest: dict | None) -> dict:
     """Accept exact-source, parsed-variant guarded title-only corrections."""
     if manifest is None:
@@ -777,6 +947,46 @@ def validated_repair_image_review(review: object, sku: str) -> None:
         raise ValueError(f'Repaired image review requires manufacturer, UPC and inspected-photo URLs: {sku}')
 
 
+def validate_reviewed_identity_checks(checks: object, sku: str, context: str) -> None:
+    required = {'brand', 'expression', 'size', 'packaging', 'upc', 'visual'}
+    if (not isinstance(checks, dict) or set(checks) != required
+            or any(value is not True for value in checks.values())):
+        raise ValueError(f'{context} requires every exact identity check: {sku}')
+
+
+def validate_public_identity_evidence(evidence: object, sku: str, expected_upc: str,
+                                      context: str) -> None:
+    """Validate non-photo public evidence for a privacy-preserving review.
+
+    Direct-image page and file URLs live only in the required private evidence
+    manifest.  The public review can still require manufacturer and exact-UPC
+    product records, while the later image binding proves the approved local
+    bytes have matching private provenance.
+    """
+    required_kinds = {'manufacturer', 'exact_upc_listing'}
+    if not isinstance(evidence, list) or not evidence:
+        raise ValueError(f'{context} requires public manufacturer and UPC evidence: {sku}')
+    seen_kinds = set()
+    exact_upc = False
+    for item in evidence:
+        if not isinstance(item, dict) or set(item) != {'kind', 'url', 'supports'}:
+            raise ValueError(f'{context} evidence contains unsupported or private fields: {sku}')
+        if (item['kind'] not in required_kinds or not review_url_host(item['url'])
+                or not safe_review_text(item['supports'])):
+            raise ValueError(f'{context} evidence requires safe public HTTPS records: {sku}')
+        seen_kinds.add(item['kind'])
+        exact_upc |= item['kind'] == 'exact_upc_listing' and (
+            expected_upc in item['url'] or expected_upc in item['supports'])
+    if seen_kinds != required_kinds or not exact_upc:
+        raise ValueError(f'{context} requires exact UPC evidence: {sku}')
+
+
+def validate_direct_image_guard(entry: dict, sku: str, context: str) -> None:
+    image_hash = entry.get('expectedImageSha256')
+    if not isinstance(image_hash, str) or not re.fullmatch(r'[a-f0-9]{64}', image_hash):
+        raise ValueError(f'{context} requires an exact approved image hash: {sku}')
+
+
 def validated_name_verifications(manifest: dict | None) -> dict:
     """Keep an unchanged-name review separate from an actual correction."""
     entries = (manifest or {}).get('nameVerifications', [])
@@ -840,7 +1050,8 @@ def validated_source_reviews(manifest: dict | None) -> dict:
         sku = entry.get('sku')
         if not isinstance(sku, str) or sku in result or entry.get('action') not in {
                 'size_needs_confirmation', 'restore_named_merchandise', 'resolve_verified_identity',
-                'repair_unquoted_name_commas', 'clarify_container_material'}:
+                'repair_unquoted_name_commas', 'clarify_container_material',
+                'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label'}:
             raise ValueError('Source review requires unique SKU and a supported action')
         if not isinstance(entry.get('expectedUpc'), str) or not all(
                 re.fullmatch(r'[a-f0-9]{64}', entry.get(key, ''))
@@ -930,6 +1141,62 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                             and isinstance(item.get('supports'), str) and item['supports'].strip()
                             for item in evidence)):
                 raise ValueError(f'Verified identity requires primary and inspected-package evidence: {sku}')
+        if entry['action'] == 'resolve_verified_pack_identity':
+            allowed |= {'expectedSourceRow', 'expectedPublicName', 'expectedLabel',
+                        'expectedCategory', 'expectedDepartment', 'verifiedLabel',
+                        'expectedImageSha256', 'verification', 'evidence',
+                        'expectedResultingGroupSkus'}
+            if (not valid_gtin(entry['expectedUpc'])
+                    or type(entry.get('expectedSourceRow')) is not int
+                    or entry['expectedSourceRow'] < 1
+                    or not isinstance(entry.get('reviewedOn'), str)
+                    or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn'])):
+                raise ValueError(f'Pack identity requires exact UPC, source-row and review-date guards: {sku}')
+            for field in ('expectedPublicName', 'expectedLabel', 'expectedCategory', 'verifiedLabel'):
+                if not safe_review_text(entry.get(field)):
+                    raise ValueError(f'Pack identity requires safe public identity fields: {sku}')
+            if (not isinstance(entry.get('expectedDepartment'), str)
+                    or (entry['expectedDepartment'] and not safe_review_text(entry['expectedDepartment']))):
+                raise ValueError(f'Pack identity requires a safe public department: {sku}')
+            prior = parse_incomplete_pack_container_label(entry['expectedLabel'])
+            verified = parse_verified_pack_container_label(entry['verifiedLabel'])
+            if (not prior or not verified or prior['pack'] != verified['pack']
+                    or (prior['container'] and prior['container'] != verified['container'])):
+                raise ValueError(f'Pack identity must only enrich the existing pack/container facts: {sku}')
+            validate_direct_image_guard(entry, sku, 'Pack identity')
+            validate_reviewed_identity_checks(entry.get('verification'), sku, 'Pack identity')
+            validate_public_identity_evidence(entry.get('evidence'), sku, entry['expectedUpc'],
+                                              'Pack identity')
+            expected_group = entry.get('expectedResultingGroupSkus')
+            if (not isinstance(expected_group, list) or not expected_group
+                    or sku not in expected_group or len(set(expected_group)) != len(expected_group)
+                    or any(not isinstance(value, str) or not re.fullmatch(r'\d+', value)
+                           for value in expected_group)):
+                raise ValueError(f'Pack identity requires an exact final SKU group: {sku}')
+        if entry['action'] == 'refine_verified_fluid_ounce_label':
+            allowed |= {'expectedSourceRow', 'expectedPublicName', 'expectedPublicLabel',
+                        'expectedCategory', 'expectedDepartment', 'verifiedLabel',
+                        'expectedImageSha256', 'verification', 'evidence'}
+            if (not valid_gtin(entry['expectedUpc'])
+                    or type(entry.get('expectedSourceRow')) is not int
+                    or entry['expectedSourceRow'] < 1
+                    or not isinstance(entry.get('reviewedOn'), str)
+                    or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn'])):
+                raise ValueError(f'Fluid-ounce identity requires exact UPC, source-row and review-date guards: {sku}')
+            for field in ('expectedPublicName', 'expectedPublicLabel', 'expectedCategory', 'verifiedLabel'):
+                if not safe_review_text(entry.get(field)):
+                    raise ValueError(f'Fluid-ounce identity requires safe public identity fields: {sku}')
+            if (not isinstance(entry.get('expectedDepartment'), str)
+                    or (entry['expectedDepartment'] and not safe_review_text(entry['expectedDepartment']))):
+                raise ValueError(f'Fluid-ounce identity requires a safe public department: {sku}')
+            prior_value = canonical_ounce_label_value(entry['expectedPublicLabel'])
+            verified_value = canonical_ounce_label_value(entry['verifiedLabel'], fluid=True)
+            if prior_value is None or verified_value is None or prior_value != verified_value:
+                raise ValueError(f'Fluid-ounce identity must preserve one canonical liquid volume: {sku}')
+            validate_direct_image_guard(entry, sku, 'Fluid-ounce identity')
+            validate_reviewed_identity_checks(entry.get('verification'), sku, 'Fluid-ounce identity')
+            validate_public_identity_evidence(entry.get('evidence'), sku, entry['expectedUpc'],
+                                              'Fluid-ounce identity')
         if set(entry) - allowed:
             raise ValueError(f'Source review contains unsupported or private fields: {sku}')
         if PRICE_RE.search(entry['reason']) or re.search(r'[$€£]', entry['reason']):
@@ -1199,6 +1466,12 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                         raise ValueError(f'Container clarification conflicts with an existing container: {sku}')
                     public['variant']['label'] = re.sub(r'(?:^| · )bottles$', '', label) + ' · ' + review['containerMaterial'] + ' bottles'
                     flags.append('Guarded report evidence clarifies container material; original source metadata preserved privately')
+                elif review['action'] in {'resolve_verified_pack_identity',
+                                           'refine_verified_fluid_ounce_label'}:
+                    # These actions deliberately run after any category/title
+                    # review so their guarded current-public identity reflects
+                    # the exact final product expression.
+                    pass
                 else:
                     flags.append('Explicit source-size review: ' + review['reason'])
                 if public and review['action'] == 'size_needs_confirmation':
@@ -1226,6 +1499,13 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 record['categoryReview'] = category_review
                 applied_category_reviews.add(sku)
                 flags.append('Guarded shopping category corrected; original department preserved')
+            if review and review['action'] == 'resolve_verified_pack_identity':
+                if not public:
+                    raise ValueError(f'Pack identity requires retained source merchandise: {sku}')
+                record['previousPublicIdentity'] = {
+                    'name': public['name'], 'label': public['variant']['label']}
+                apply_verified_pack_identity(public, source, review)
+                flags.append('Exact UPC package identity enriches only the verified pack, size and container label')
             public_name_review = public_name_reviews.get(sku)
             if public_name_review:
                 if sku in identity_reviews:
@@ -1234,6 +1514,13 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 record['publicNameCorrection'] = public_name_review
                 applied_public_name_reviews.add(sku)
                 flags.append('Guarded exact-UPC public title correction applied; original source name and variant metadata preserved')
+            if review and review['action'] == 'refine_verified_fluid_ounce_label':
+                if not public:
+                    raise ValueError(f'Fluid-ounce identity requires retained source merchandise: {sku}')
+                record['previousPublicIdentity'] = {
+                    'name': public['name'], 'label': public['variant']['label']}
+                apply_refined_fluid_ounce_label(public, source, review)
+                flags.append('Exact raw source liquid volume refined from ounces to verified fluid ounces')
             flags = override_flags + flags
             record.update(source=source, disposition=disposition, reason=reason, flags=flags)
             flag_reasons.update(flags)
@@ -1333,6 +1620,17 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     blocked_images.update(entry['sku'] for entry in report_additions)
     blocked_images.update(sku for sku, review in identity_reviews.items() if review.get('action') == 'retain_flagged')
     variants_by_sku = {v['sku']: (p, v) for p in products for v in p['variants']}
+    for sku, review in source_reviews.items():
+        if review['action'] != 'resolve_verified_pack_identity':
+            continue
+        product, variant = variants_by_sku.get(sku, ({}, {}))
+        if not variant:
+            raise ValueError(f'Pack identity variant is absent after grouping: {sku}')
+        actual_group = [member['sku'] for member in product['variants']]
+        if actual_group != review['expectedResultingGroupSkus']:
+            raise ValueError(f'Pack identity final SKU-group mismatch for SKU {sku}')
+    variants_by_sku = validate_reviewed_source_photo_bindings(
+        products, source_reviews, image_manifest, blocked_images)
     records_by_sku = {record['sku']: record for record in master}
     for sku, verification in name_verifications.items():
         product, variant = variants_by_sku.get(sku, ({}, {}))
