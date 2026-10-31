@@ -13,13 +13,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified egg noodles are groceries; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://alwayssavebrand.com/product/0007003832420/",
-          "kind": "official_manufacturer_brand_or_product",
-          "supports": "Exact manufacturer UPC070038324201 matches Always Save Extra Wide Egg Noodles. Confirms complete name spelling only; no source size is added."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "1a3644b46140f1530842538fc118cc4b4cde47dd383d8bc1e4d20a24ca69491d"
+      }
     },
     {
       "sku": "2061",
@@ -33,13 +29,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified Chips Ahoy cookies are snacks; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://smartlabel.mondelez.info/044000043148-0003-en-US/index.html",
-          "kind": "manufacturer_exact_upc_smartlabel",
-          "supports": "Manufacturer explicitly identifies UPC044000043148, Chips Ahoy! Original Real Chocolate Chip Cookies,4cookies,1.55oz(44g). Confirms the complete brand/expression for this sourceSKU; source44g measurement is preserved."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "de45e0612fa1bf04eb8c2ef589ef1c80594947b2ecb413c2af36abd283d39027"
+      }
     },
     {
       "sku": "2711",
@@ -53,28 +45,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified strawberry cocktail mix belongs in Drinks & mixers; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://dictionary.cambridge.org/us/dictionary/english/strawberry",
-          "kind": "english_dictionary_ordinary_word_spelling",
-          "supports": "Confirms only standard English spelling strawberry; source context was manually reviewed. Does not verify the full product name, brand identity, flavor availability, size, packaging or current availability."
-        },
-        {
-          "url": "https://dailyscocktails.com/ready-to-mix/strawberry/",
-          "kind": "manufacturer",
-          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
-        },
-        {
-          "url": "https://world-en.openfoodfacts.org/product/0074806000519",
-          "kind": "exact_upc_listing",
-          "supports": "Existing exact UPC listing for 074806000519; not sole evidence of the product name."
-        },
-        {
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/480/600/0519/1.jpg",
-          "kind": "inspected_package_photo",
-          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "1a1a2113b7aeadd5072cce24ee9cbe2aee7636feff34048ab2f5991d45313c09"
+      }
     },
     {
       "sku": "2882",
@@ -88,28 +61,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified granulated sugar is a grocery ingredient; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://dictionary.cambridge.org/us/dictionary/english/sugar",
-          "kind": "english_dictionary_ordinary_word_spelling",
-          "supports": "Confirms only standard spelling sugar; complete source context manually reviewed. Does not independently verify the brand, full product expression, flavor availability, size or packaging."
-        },
-        {
-          "url": "https://www.dominosugar.com/products/granulated-sugar-boxes",
-          "kind": "manufacturer",
-          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
-        },
-        {
-          "url": "https://world-en.openfoodfacts.org/product/0049200043509",
-          "kind": "exact_upc_listing",
-          "supports": "Existing exact UPC listing for 049200043509; not sole evidence of the product name."
-        },
-        {
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/920/004/3509/2.jpg",
-          "kind": "inspected_package_photo",
-          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3daf198b4152cd030b1ad58de9a8a66319d3e362d1f532a817de8c3127f7a8ab"
+      }
     },
     {
       "sku": "3934",
@@ -123,33 +77,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Exact EAN-8 identity review establishes cherry candy, rather than a medicine inferred from the Halls brand; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://dnovacampinas.com.br/wp-content/uploads/2025/06/Catalogo-Distribuidor-Q2.pdf",
-          "supports": "Mondelēz International branded distributor catalog, rendered and inspected cover and PDFpage47. HALLS BASE DSP CEREJA table lists28g and EAN8 unit78938793; display and case codes are separately stated. Manufacturer-authored document hosted by distributor."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://portfoliococacolafemsa.com.br/parana/produto/halls-cereja-28g-21",
-          "supports": "Coca-Cola FEMSA distribution portfolio explicitly identifies Halls Cereja28g, EAN78938793. Quantity21 is its display ordering quantity, not the source retail unit."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.stock.com.py/products/283954-caramelos-cherry-28gr-halls-plas.aspx",
-          "supports": "Independent retailer explicitly identifies cherry Halls28g and barcode78938793."
-        },
-        {
-          "kind": "manufacturer",
-          "url": "https://www.mondelezinternational.com/our-brands/halls/",
-          "supports": "Direct manufacturer site establishes the Halls brand and refreshing-candy product use; exact flavor and weight are supported by its distributor catalog and exact-code listings."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/000/007/893/8793/3.jpg",
-          "supports": "Actually inspected full original: complete single Halls Cereja/Cereza cherry stick pack with28g visible on pack and professional branded footer; plain white backdrop, no people, shelf, countertop, clipping, or price. The bottom branding is part of the existing studio composition and is unchanged."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "af289ab4cca3dbaace28429f289676dc494810043e1e1647bf5c2506f560c3fe"
+      }
     },
     {
       "sku": "4288",
@@ -163,23 +93,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified sardines in tomato sauce are canned food; the source Juice department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://iberiafoods.com/product/sardines/",
-          "kind": "manufacturer",
-          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
-        },
-        {
-          "url": "https://world-en.openfoodfacts.org/product/0075669111121",
-          "kind": "exact_upc_listing",
-          "supports": "Existing exact UPC listing for 075669111121; not sole evidence of the product name."
-        },
-        {
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/1121/1.jpg",
-          "kind": "inspected_package_photo",
-          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "1b90e736c08e4002a1a520b74d4b8b9de8c6d72ef43a4efe2eab64ed8f1607dd"
+      }
     },
     {
       "sku": "4289",
@@ -193,23 +109,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified sardines in tomato sauce with jalapeno are canned food; the source Juice department remains unchanged.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://iberiafoods.com/product/iberia-oval-sardines-in-tomato-w-jalapenos-slices-15-oz/",
-          "supports": "Manufacturer exact UPC 075669111565 names oval sardines in tomato with jalapeño slices, 15 oz; source 425g is preserved."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://world-en.openfoodfacts.org/product/0075669111565",
-          "supports": "Existing reviewed image-source record is keyed to source UPC 075669111565. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/566/911/1565/1.jpg",
-          "supports": "Oval can clearly reads Iberia Sardines In Tomato Sauce with Jalapeno Slices, net wt 15 oz (425g). Sauce and sliced jalapeño wording are missing from source."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "2c73ad5cf10b8bee2bb5393189aa8657f532ffbb64717ee10d2968be9369f35d"
+      }
     },
     {
       "sku": "6115",
@@ -223,13 +125,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified Coffee-mate creamer is a grocery product; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://smartlabel.nestleusa.com/050000300624-0001-en-US/index.html",
-          "kind": "manufacturer_exact_upc_smartlabel",
-          "supports": "Nestlé SmartLabel identifies UPC050000300624 as Coffee mate The Original, net6oz. Complete name clarified; existing source6oz is unchanged."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b90a443778236b8964e6c27caca87f724884b04dcdafe53408e440fda55db45f"
+      }
     },
     {
       "sku": "6116",
@@ -243,18 +141,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified Coffee-mate creamer is a grocery product; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://www.nestleprofessional.us/coffee-mate/original-powder-creamer-12-x-11-oz",
-          "kind": "manufacturer_product_identity",
-          "supports": "Nestlé Professional identifies Original powdered creamer in11oz canisters. Source11oz is unchanged; exact individual UPC is corroborated separately, and case pack is not assigned to this sourceSKU."
-        },
-        {
-          "url": "https://www.officedepot.com/a/products/919573/Nestle-Coffee-mate-Powdered-Creamer-Canister/?bvstate=pg%3A8%2Fct%3Ar",
-          "kind": "retailer_exact_upc_product_identity",
-          "supports": "Retailer specifications identify UPC050000447718, Coffee-Mate Original powdered creamer, one11oz canister."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "c6957ad6e1eed1cc3eb78615237526d8692da41039ae312ca7422963e1474a79"
+      }
     },
     {
       "sku": "6346",
@@ -268,23 +157,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified apple juice is a beverage; the source Snacks department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://oldorchard.com/products/entry/64oz-100-juice-apple",
-          "kind": "manufacturer",
-          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
-        },
-        {
-          "url": "https://world-en.openfoodfacts.org/product/0075355112135",
-          "kind": "exact_upc_listing",
-          "supports": "Existing exact UPC listing for 075355112135; not sole evidence of the product name."
-        },
-        {
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/535/511/2135/1.jpg",
-          "kind": "inspected_package_photo",
-          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "aac126443d4190813119554d8f451e309b3177e60acc640690714e4b0644dd90"
+      }
     },
     {
       "sku": "6798",
@@ -298,28 +173,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified saltine crackers are snacks and groceries; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.snackworks.com/products/premium-original-saltine-crackers-lunch-snacks-4-oz/",
-          "supports": "Mondelez Snackworks identifies Premium Original Saltine Crackers4oz in convenient individual boxes; sea-salt-topped original expression matches inspected front."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://shoptheking.us/products/477059",
-          "supports": "Distributor identifies Premium Saltine Conv4oz Single Box and explicitly lists Unit UPC044000003821. Do not treat its wholesale12-box case as the single source item."
-        },
-        {
-          "kind": "manufacturer",
-          "url": "https://smtlbl.app/upc/044000003821",
-          "supports": "Official Snackworks product page links this exact-UPC SmartLabel URL. The redirect target was inaccessible to the web tool, so no unseen SmartLabel body is claimed."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/400/000/3821/1.jpg",
-          "supports": "Complete long rectangular Nabisco Premium Original Saltine Crackers box on white, with blue side panel and both ends present. Front says Original topped with sea salt and NET WT4 OZ (113g). No visible price or household setting."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "820cfb684b40d9c13015a415a2eb0e5b937b41abbcb560571053f3923b8a2f49"
+      }
     },
     {
       "sku": "6952",
@@ -333,18 +189,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified mayonnaise is a grocery condiment; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://www.target.com/p/-/A-12946394",
-          "kind": "retailer Target",
-          "supports": "Retailer specification gives exact UPC, Kraft Real Mayonnaise, single 30 fl oz jar."
-        },
-        {
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/100/002/6326/9.jpg",
-          "kind": "inspected_exact_upc_package_photo",
-          "supports": "Complete Kraft Real Mayo jar with blue cap, Creamy & Smooth expression, 30 fl oz / 887 mL visible; clean white background, no price. Independently visually reviewed by the photo reviewer; this name clarification does not alter source size."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3d939764549a01f332599c04afc59ce355be19fed72660386a3cb6b216fa758e"
+      }
     },
     {
       "sku": "8257",
@@ -358,23 +205,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified SunnyD Tangy Original Orange Citrus Punch is a beverage; the source Snacks department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://sunnyd.com/flavors/tangy-original/",
-          "kind": "manufacturer",
-          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
-        },
-        {
-          "url": "https://world-en.openfoodfacts.org/product/0050200560002",
-          "kind": "exact_upc_listing",
-          "supports": "Existing exact UPC listing for 050200560002; not sole evidence of the product name."
-        },
-        {
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/020/056/0002/1.jpg",
-          "kind": "inspected_package_photo",
-          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "86a3231edddff5b052df960484ddb19132c1015ec063be00587bc1146380a40f"
+      }
     },
     {
       "sku": "8265",
@@ -388,23 +221,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified Sunny D Smooth Orange is a beverage; the source Snacks department remains unchanged.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://sunnyd.com/flavors/smooth-orange/",
-          "supports": "Manufacturer identifies Smooth Orange citrus punch. Current page sizes are not used to change source 16 oz."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://world-en.openfoodfacts.org/product/0050200019128",
-          "supports": "Existing reviewed image-source record is keyed to source UPC 050200019128. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/020/001/9128/1.jpg",
-          "supports": "Bottle reads SUNNYD SMOOTH ORANGE, Orange Flavored Citrus Punch, and 16 fl oz / 473 mL. Source already contains the complete named expression; not Tangy Original."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "8bcf578aaee21461bf7db18c8cf27f329c62048b5ca99315373068504fb2d65a"
+      }
     },
     {
       "sku": "9405",
@@ -418,28 +237,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Verified Concord grape jam is a grocery spread; the source MISC department remains unchanged.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://welchs.com/en-us/fruit-spreads/concord-grape-jam/",
-          "supports": "Welch's manufacturer page identifies Concord Grape Jam and30OZ JAR size, distinct from its Jelly product."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/16409391-welch-s-concord-grape-jam-32-oz",
-          "supports": "Retailer indexed product content explicitly lists UPC041800501519 and30oz Concord Grape Jam. URL slug says32oz but the current indexed title/body and inspected physical label both say30oz. Direct follow-up open timed out; this access limitation is retained in the private audit."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/050/1519/1.jpg",
-          "supports": "Complete dark grape-jam jar with purple lid on white. Welch's Concord Grape JAM and NET WT30 OZ (1.87LB)850g are clearly readable. No visible prices or unrelated objects; expression is Jam, not Jelly."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.theamericanstore.de/Welchs-Grape-Jam-850g",
-          "supports": "Independent retailer lists Welch's Grape Jam, GTIN 041800501519 and net contents 850 g, corroborating the inspected jar's printed 30 oz / 850 g identity. This corroboration does not import availability or price."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "288c6d2250961bce8bd7b714aaa154a5a1a45349e33bf25570695ae60e9ee7c1"
+      }
     },
     {
       "sku": "9417",
@@ -453,23 +253,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified sparkling red grape juice cocktail is explicitly non-alcoholic; the source Sparklin department remains unchanged.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.welchs.com/sparkling/red-grape/",
-          "supports": "Manufacturer identifies non-alcoholic Sparkling Red Grape Juice Cocktail, 25.4 oz bottle. Source 750ml N/A Sparkling tokens are retained."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://world-en.openfoodfacts.org/product/0041800716005",
-          "supports": "Existing reviewed image-source record is keyed to source UPC 041800716005. Package identity was visually reviewed again in this round; barcode is not asserted to be visible on the front."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/071/6005/1.jpg",
-          "supports": "Bottle says Welch's Sparkling NON-ALCOHOLIC RED GRAPE JUICE COCKTAIL and 750 mL. Add apostrophe and Juice Cocktail only; source N/A Sparkling already preserves alcohol-free/sparkling identity."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "db36215295e4e3c31b605a7bd42f502881b5d35f1c8478d2425904051e576844"
+      }
     },
     {
       "sku": "9425",
@@ -483,23 +269,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified sparkling white grape juice cocktail is explicitly non-alcoholic; the source Sparklin department remains unchanged.",
-      "evidence": [
-        {
-          "url": "https://www.welchs.com/sparkling/white-grape/",
-          "kind": "manufacturer",
-          "supports": "Brand and product expression corroboration; exact historical package wording checked separately against the inspected photo."
-        },
-        {
-          "url": "https://world-en.openfoodfacts.org/product/0041800715008",
-          "kind": "exact_upc_listing",
-          "supports": "Existing exact UPC listing for 041800715008; not sole evidence of the product name."
-        },
-        {
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/071/5008/2.jpg",
-          "kind": "inspected_package_photo",
-          "supports": "Actual local copy visually inspected on 2026-10-27 for the complete brand and product-expression wording."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "ac4c93677eb31d7003536546640ccec2bd99db29130539b2baee320dec4cee65"
+      }
     },
     {
       "sku": "528",
@@ -513,23 +285,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://drinkarizona.com/products/fruit-punch-20oz-tallboy",
-          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://slasti.kz/g8860971-arizona",
-          "supports": "Exact source UPC 613008722050 is listed for this product identity. Listed weight, volume, or case count is not imported."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/872/2050/1.400.jpg",
-          "supports": "AriZona Fruit Punch Fruit Juice Cocktail can. Expression is readable; original 11.5OZ source measurement retained."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "54564a66657bb7bd1256176589e0ee65382edb18a3b5fd9c176a12e8187f39e1"
+      }
     },
     {
       "sku": "540",
@@ -543,23 +301,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://drinkarizona.com/products/green-tea-20oz-tallboy",
-          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.super99.com/10100851-arizona-tea-ginseng-and-honey-340ml-lata",
-          "supports": "Exact source UPC 613008714253 is listed for this product identity. Listed weight, volume, or case count is not imported."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/871/4253/1.400.jpg",
-          "supports": "AriZona Green Tea with Ginseng and Honey can. Expression is readable despite cropped package edges; original 11.5OZ source measurement retained."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "12a25b164cb136eeb6925d689eb3d30b048c99747ae7c758f9fc31df4bef654c"
+      }
     },
     {
       "sku": "563",
@@ -573,23 +317,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://drinkarizona.com/products/lemon-tea-20oz-tallboy",
-          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.tabacariadamata.com.br/cha-arizona-lemon.html",
-          "supports": "Exact source UPC 613008735784 is listed for this product identity. Listed weight, volume, or case count is not imported."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/5784/1.400.jpg",
-          "supports": "AriZona Iced Tea with Lemon Flavor can. Lemon expression is readable; original 11.5oz source measurement retained."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "797199d585a0db925e0d11c0550afab67f49fa73aca91a5772d835ffb75e6e2e"
+      }
     },
     {
       "sku": "581",
@@ -603,23 +333,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://drinkarizona.com/products/mucho-mango-20oz-tallboy",
-          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.lacolonia.com/bebida-arizona-mucho-mango-340-ml/p",
-          "supports": "Exact source UPC 613008737580 is listed for this product identity. Listed weight, volume, or case count is not imported."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/7580/1.400.jpg",
-          "supports": "AriZona Mucho Mango Fruit Juice Cocktail can. Expression is readable; original 11.5oz source measurement retained."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "bee679dd60a028fad164cce42748d9aeedf7d2eb187016950c9cc2dd049f4df2"
+      }
     },
     {
       "sku": "603",
@@ -633,23 +349,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://drinkarizona.com/pages/faqs",
-          "supports": "Primary AriZona website confirms the beverage brand only. Sweet Apple and Juice Cocktail are read from the actual label; historical distributor exact-UPC row corroborates Sweet Apple. Generic distributor category Ice Tea is not adopted."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://premierbrandsus.com/wp-content/uploads/2022/05/Product-Catalogue.pdf#page=11",
-          "supports": "Exact source UPC 613008733261 is listed for this product identity. Listed weight, volume, or case count is not imported."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/873/3261/1.400.jpg",
-          "supports": "AriZona Sweet Apple Juice Cocktail bottle. Sweet Apple and Juice Cocktail are readable. Unknown source size remains unknown; photographed volume is not adopted."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "267440e97984dcdf967b039864e5c014591a3c9cfd4bf2c25c2d4cda214ebb43"
+      }
     },
     {
       "sku": "615",
@@ -663,23 +365,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Verified tea or juice cocktail belongs in Drinks & mixers; the original Snacks department is retained.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://drinkarizona.com/products/watermelon-20oz-tallboy",
-          "supports": "Manufacturer corroborates brand and named expression. Original source measures and package facts are preserved; manufacturer size or case count is not imported."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://americansweets.co.uk/soda-and-drinks/juices-fruit-drinks/arizona-watermelon-slim-can-11-5oz-340ml",
-          "supports": "Exact source UPC 613008740665 is listed for this product identity. Listed weight, volume, or case count is not imported."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/061/300/874/0665/3.400.jpg",
-          "supports": "AriZona Watermelon Fruit Juice Cocktail can held in hand. Expression is readable; original 11.5oz source measurement retained."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "f82934f0fe5484dc3511f5455835d00b41f596bfda70bce904d1ae16d3ca6610"
+      }
     },
     {
       "sku": "4852",
@@ -693,13 +381,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
-          "supports": "Kraft Heinz names this exact unit UPC 043000955697 as Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e5a8ecc432047ae372ca905a09f64b28f18c9b886583894a5f6e816dc0d55de0"
+      }
     },
     {
       "sku": "4853",
@@ -713,13 +397,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
-          "supports": "Kraft Heinz names this exact unit UPC 043000955611 as Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "c23d01d1b2154dc7720f53bed47bb1b7bee7210ede472e8d1f992f1daa5295c3"
+      }
     },
     {
       "sku": "4860",
@@ -733,13 +413,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955628",
-          "supports": "Kraft Heinz names this exact unit UPC 043000955628 as Kool-Aid Unsweetened Cherry Artificially Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5a9b90c43315ef6bc8dfe273da20de26191f560886f88d60edb478bb20d68550"
+      }
     },
     {
       "sku": "4861",
@@ -753,13 +429,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955635",
-          "supports": "Kraft Heinz names this exact unit UPC 043000955635 as Kool-Aid Unsweetened Grape Artificially Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "abb4c4381baa9dc413a6e964fd37b27f9a0f088bae25e281d77f42f2fac3886b"
+      }
     },
     {
       "sku": "4863",
@@ -773,13 +445,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Manufacturer exact-UPC record identifies a powdered soft drink mix. Show this beverage mix in Drinks & mixers while retaining the original Snacks department and all source size and package facts.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955437",
-          "supports": "Kraft Heinz names this exact unit UPC 043000955437 as Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix. This supports beverage-mix shopping classification only; no size, pack, photo or stock assertion is imported."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b6548ea8657059dc33634a79b2dc27a8cefe03f6c7c3e7751b0ddb70ece6e284"
+      }
     },
     {
       "sku": "2615",
@@ -793,18 +461,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Exact unit UPC is identified as a Crush soft drink by the licensed manufacturer record. Show this SKU in Drinks & mixers while preserving the original MISC department, its filter access, and every source size and package field.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Strawberry/p/1-5JGOJ-81",
-          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
-        },
-        {
-          "kind": "manufacturer_licensing_relationship",
-          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
-          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3198842cf4af0dc709ef7759a56e7bf9809cc2f3c45c54d2fff63cba539d44e7"
+      }
     },
     {
       "sku": "2613",
@@ -818,18 +477,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Exact unit UPC is identified as a Crush soft drink by the licensed manufacturer record. Show this SKU in Drinks & mixers while preserving the original MISC department, its filter access, and every source size and package field.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Pineapple/p/1-5JGOJ-80",
-          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
-        },
-        {
-          "kind": "manufacturer_licensing_relationship",
-          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
-          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e0dd35f246282f0fb143e963c0193d9413a61e704cc9ed105cebf90ddee64f2e"
+      }
     },
     {
       "sku": "2605",
@@ -843,18 +493,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Exact unit UPC is identified as a Crush soft drink by the licensed manufacturer record. Show this SKU in Drinks & mixers while preserving the original MISC department, its filter access, and every source size and package field.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Crush-Orange/p/1-5JGOJ-78",
-          "supports": "PepsiCo primary US product record visibly links the exact unit UPC to this brand and expression. The publisher is a licensed manufacturer and distributor of Crush, not claimed trademark owner. Name-only record check; no visual, package-size, stock or availability verification."
-        },
-        {
-          "kind": "manufacturer_licensing_relationship",
-          "url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
-          "supports": "PepsiCo 2025 Form 10-K printed page 3 (PDF page 5), PepsiCo Beverages North America section, explicitly states that PBNA manufactures and distributes Crush under a Keurig Dr Pepper license. Supports publisher role for US records, not ownership or an inferred inventory pack size."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "c7bd132028a11c15c5f782e4ff8a41fd04f8fadceeec7cf893516dc57c59be3d"
+      }
     },
     {
       "sku": "175",
@@ -868,13 +509,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://5hourenergy.com/",
-          "supports": "The official brand presents energy shots and drinks. Combined with the original energy-product title, this supports Drinks navigation only; the historical flavor, strength and package are not newly verified."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "90528864f0b60f37c8e321112a140e3acc99e91735d46ddf2ce3c0e43f9c7a26"
+      }
     },
     {
       "sku": "176",
@@ -888,13 +525,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://5hourenergy.com/",
-          "supports": "The official brand presents energy shots and drinks. Combined with the original energy-product title, this supports Drinks navigation only; the historical flavor, strength and package are not newly verified."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "90528864f0b60f37c8e321112a140e3acc99e91735d46ddf2ce3c0e43f9c7a26"
+      }
     },
     {
       "sku": "177",
@@ -908,13 +541,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://5hourenergy.com/",
-          "supports": "The official brand presents energy shots and drinks. Combined with the original energy-product title, this supports Drinks navigation only; the historical flavor, strength and package are not newly verified."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "90528864f0b60f37c8e321112a140e3acc99e91735d46ddf2ce3c0e43f9c7a26"
+      }
     },
     {
       "sku": "178",
@@ -928,13 +557,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://5hourenergy.com/",
-          "supports": "The official brand presents energy shots and drinks. Combined with the original energy-product title, this supports Drinks navigation only; the historical flavor, strength and package are not newly verified."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "90528864f0b60f37c8e321112a140e3acc99e91735d46ddf2ce3c0e43f9c7a26"
+      }
     },
     {
       "sku": "179",
@@ -948,13 +573,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://5hourenergy.com/",
-          "supports": "The official brand presents energy shots and drinks. Combined with the original energy-product title, this supports Drinks navigation only; the historical flavor, strength and package are not newly verified."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "90528864f0b60f37c8e321112a140e3acc99e91735d46ddf2ce3c0e43f9c7a26"
+      }
     },
     {
       "sku": "433",
@@ -968,18 +589,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://aquahydrate.com/",
-          "supports": "The official AQUAhydrate brand page identifies its hydration positioning. Used with the source title explicitly identifying water; no size or exact product identity is inferred."
-        },
-        {
-          "kind": "retailer_category_evidence",
-          "url": "https://www.instacart.com/products/3321105-aquahydrate-water-purified-with-electrolytes-50-7-oz",
-          "supports": "The retail listing identifies AQUAhydrate as drinking water. Supports water category only; its listed package is not applied to either source variant."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "2077a009cd0a430214a756b07455ac942d91361ab16b191d8d23bccec4652b90"
+      }
     },
     {
       "sku": "434",
@@ -993,18 +605,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://aquahydrate.com/",
-          "supports": "The official AQUAhydrate brand page identifies its hydration positioning. Used with the source title explicitly identifying water; no size or exact product identity is inferred."
-        },
-        {
-          "kind": "retailer_category_evidence",
-          "url": "https://www.instacart.com/products/3321105-aquahydrate-water-purified-with-electrolytes-50-7-oz",
-          "supports": "The retail listing identifies AQUAhydrate as drinking water. Supports water category only; its listed package is not applied to either source variant."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "2077a009cd0a430214a756b07455ac942d91361ab16b191d8d23bccec4652b90"
+      }
     },
     {
       "sku": "483",
@@ -1018,13 +621,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://argostarch.com/products/",
-          "supports": "The manufacturer identifies Argo corn starch as a cooking and baking ingredient. Supports pantry-food navigation only."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "87e02b332896bd96db81bf7a8e0e78c18264a4fd3bb5161e324d1998d8372f49"
+      }
     },
     {
       "sku": "1518",
@@ -1038,13 +637,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.bumblebee.com/products/cans/",
-          "supports": "The manufacturer lists canned light tuna as food. No liquid medium, exact expression or package is inferred for the source light-tuna title."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "439f68109bb3ca1a0f92657a05d83961c68c9d17df8e65d5fe1967f5d66f2f1d"
+      }
     },
     {
       "sku": "2285",
@@ -1058,18 +653,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://truebrands.com/pages/brand-collins",
-          "supports": "The Collins brand owner distinguishes edible fruit and vegetable cocktail garnishes from bar equipment and describes its cherries and olives. Supports food navigation for source edible-garnish titles only."
-        },
-        {
-          "kind": "manufacturer",
-          "url": "https://collinschicago.com/collections/margarita-collection",
-          "supports": "The brand collection includes margarita rimming salt as an edible garnish. Supports food navigation for the source salt title, without adding a flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a663be35ddeaa9517ba839cd7a00f4be36b0309f88261cd90a56ed410f32d40b"
+      }
     },
     {
       "sku": "2287",
@@ -1083,18 +669,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://truebrands.com/pages/brand-collins",
-          "supports": "The Collins brand owner distinguishes edible fruit and vegetable cocktail garnishes from bar equipment and describes its cherries and olives. Supports food navigation for source edible-garnish titles only."
-        },
-        {
-          "kind": "manufacturer",
-          "url": "https://collinschicago.com/collections/margarita-collection",
-          "supports": "The brand collection includes margarita rimming salt as an edible garnish. Supports food navigation for the source salt title, without adding a flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a663be35ddeaa9517ba839cd7a00f4be36b0309f88261cd90a56ed410f32d40b"
+      }
     },
     {
       "sku": "2294",
@@ -1108,18 +685,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://truebrands.com/pages/brand-collins",
-          "supports": "The Collins brand owner distinguishes edible fruit and vegetable cocktail garnishes from bar equipment and describes its cherries and olives. Supports food navigation for source edible-garnish titles only."
-        },
-        {
-          "kind": "manufacturer",
-          "url": "https://collinschicago.com/collections/margarita-collection",
-          "supports": "The brand collection includes margarita rimming salt as an edible garnish. Supports food navigation for the source salt title, without adding a flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a663be35ddeaa9517ba839cd7a00f4be36b0309f88261cd90a56ed410f32d40b"
+      }
     },
     {
       "sku": "2296",
@@ -1133,18 +701,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://truebrands.com/pages/brand-collins",
-          "supports": "The Collins brand owner distinguishes edible fruit and vegetable cocktail garnishes from bar equipment and describes its cherries and olives. Supports food navigation for source edible-garnish titles only."
-        },
-        {
-          "kind": "manufacturer",
-          "url": "https://collinschicago.com/collections/margarita-collection",
-          "supports": "The brand collection includes margarita rimming salt as an edible garnish. Supports food navigation for the source salt title, without adding a flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a663be35ddeaa9517ba839cd7a00f4be36b0309f88261cd90a56ed410f32d40b"
+      }
     },
     {
       "sku": "2291",
@@ -1158,18 +717,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://truebrands.com/pages/brand-collins",
-          "supports": "The Collins brand owner describes juice-based cocktail mixers. The original titles explicitly identify lemon or lime juice; only Drinks navigation is reviewed, not the exact historical expression or package."
-        },
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://truebrands.com/collections/collins",
-          "supports": "The owner catalog includes Collins sweetened lime juice among cocktail products. This corroborates juice and mixer categorization, without changing source flavor, sweetening, size or packaging."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "c1ad2203d3af14ce7a5236ad675f8b71f4a5f87beda99431a44567f6b5b042ff"
+      }
     },
     {
       "sku": "2292",
@@ -1183,18 +733,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://truebrands.com/pages/brand-collins",
-          "supports": "The Collins brand owner describes juice-based cocktail mixers. The original titles explicitly identify lemon or lime juice; only Drinks navigation is reviewed, not the exact historical expression or package."
-        },
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://truebrands.com/collections/collins",
-          "supports": "The owner catalog includes Collins sweetened lime juice among cocktail products. This corroborates juice and mixer categorization, without changing source flavor, sweetening, size or packaging."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "c1ad2203d3af14ce7a5236ad675f8b71f4a5f87beda99431a44567f6b5b042ff"
+      }
     },
     {
       "sku": "2704",
@@ -1208,13 +749,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://dailyscocktails.com/ready-to-mix/",
-          "supports": "The manufacturer identifies its ready-to-mix products as nonalcoholic cocktail mixers and lists Margarita, Peach and Sweet and Sour. Supports Drinks navigation only; existing source names and measurements remain unchanged."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5a6f2055a91ed94622ef4260072a60ff2df5be4dbd47042a28cf0b4c95102189"
+      }
     },
     {
       "sku": "2706",
@@ -1228,13 +765,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://dailyscocktails.com/ready-to-mix/",
-          "supports": "The manufacturer identifies its ready-to-mix products as nonalcoholic cocktail mixers and lists Margarita, Peach and Sweet and Sour. Supports Drinks navigation only; existing source names and measurements remain unchanged."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5a6f2055a91ed94622ef4260072a60ff2df5be4dbd47042a28cf0b4c95102189"
+      }
     },
     {
       "sku": "2713",
@@ -1248,13 +781,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://dailyscocktails.com/ready-to-mix/",
-          "supports": "The manufacturer identifies its ready-to-mix products as nonalcoholic cocktail mixers and lists Margarita, Peach and Sweet and Sour. Supports Drinks navigation only; existing source names and measurements remain unchanged."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5a6f2055a91ed94622ef4260072a60ff2df5be4dbd47042a28cf0b4c95102189"
+      }
     },
     {
       "sku": "2753",
@@ -1268,13 +797,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "distributor_category_evidence",
-          "url": "https://la.crescentcrown.com/product/deja-blue-water/",
-          "supports": "The distributor identifies Deja Blue as water supplied by Keurig Dr Pepper. Supports drinking-water categorization only, without interpreting the source unit text."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "de912d7894f0b6d09db9977d3e331231fb39bd60029f90435a377671a0ea6181"
+      }
     },
     {
       "sku": "4150",
@@ -1288,13 +813,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.hinckleysprings.com/product/water/hinckley-springs-spring-bottled-water-14040512",
-          "supports": "The official brand identifies its spring water as bottled drinking water. Supports Drinks navigation only; no listed container size is imported."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "2eb2a36948807ba13177dca93afe0a2471b76bc12d55b209117d9df0b42f0f20"
+      }
     },
     {
       "sku": "4993",
@@ -1308,13 +829,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.lance.com/product/toastchee-peanut-butter/",
-          "supports": "The manufacturer identifies Lance peanut-butter sandwich crackers as a snack. Supports food navigation for the source peanut-butter crackers, without selecting a cracker expression or replacing its measurement."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "7aaa90477a3922af3cfafa461a19a923b0c91450139a0176c6da4101310a5986"
+      }
     },
     {
       "sku": "6255",
@@ -1328,13 +845,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://nurserywater.com/products/",
-          "supports": "The official product page identifies Nursery products as purified water. Supports Drinks navigation only, without adding any package, formulation or health claim."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e1a63d74d2ff3f20e97977c196a5aa90f3154ee2cbd267ac782b4ea9a18212f7"
+      }
     },
     {
       "sku": "7068",
@@ -1348,13 +861,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.riceland.com/b2b/foodservice",
-          "supports": "The producer identifies Riceland rice as a foodservice ingredient. Supports pantry-food categorization only; the rice variety and source measurements are unchanged."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "702b94fced8203bb8dda415d16a1775dffc9115e3317360e605038846945ce4a"
+      }
     },
     {
       "sku": "7067",
@@ -1368,13 +877,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.riceland.com/b2b/foodservice",
-          "supports": "The producer identifies Riceland rice as a foodservice ingredient. Supports pantry-food categorization only; the rice variety and source measurements are unchanged."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "702b94fced8203bb8dda415d16a1775dffc9115e3317360e605038846945ce4a"
+      }
     },
     {
       "sku": "7135",
@@ -1388,13 +893,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.mondelezinternational.com/our-brands/ritz/",
-          "supports": "The brand owner identifies Ritz as crackers and a snack. Supports food navigation only, not an exact cracker expression or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "89ea2a59dcf172bc60fb007c4f6e64bc753a4a67ad227c83c6bb3c122f9d6b90"
+      }
     },
     {
       "sku": "7204",
@@ -1408,18 +909,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.keurigdrpepper.com/brands/",
-          "supports": "Keurig Dr Pepper lists Rose’s in its beverage portfolio. Together with the source juice, grenadine, sweet-sour or mojito titles, this supports beverage-mixer categorization only."
-        },
-        {
-          "kind": "retailer_category_evidence",
-          "url": "https://www.target.com/c/beverages-grocery/rose-s/-/N-5xt0rZ560et",
-          "supports": "The retailer groups Rose’s products under beverages and cocktail mixers. Supports navigation only; historical expressions and source sizes are not replaced from this listing."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "09fa73910062aabe9e2ba6fa1ae7e1840182c75d645d2750224748135c9d59b1"
+      }
     },
     {
       "sku": "7208",
@@ -1433,18 +925,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.keurigdrpepper.com/brands/",
-          "supports": "Keurig Dr Pepper lists Rose’s in its beverage portfolio. Together with the source juice, grenadine, sweet-sour or mojito titles, this supports beverage-mixer categorization only."
-        },
-        {
-          "kind": "retailer_category_evidence",
-          "url": "https://www.target.com/c/beverages-grocery/rose-s/-/N-5xt0rZ560et",
-          "supports": "The retailer groups Rose’s products under beverages and cocktail mixers. Supports navigation only; historical expressions and source sizes are not replaced from this listing."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "09fa73910062aabe9e2ba6fa1ae7e1840182c75d645d2750224748135c9d59b1"
+      }
     },
     {
       "sku": "7211",
@@ -1458,18 +941,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.keurigdrpepper.com/brands/",
-          "supports": "Keurig Dr Pepper lists Rose’s in its beverage portfolio. Together with the source juice, grenadine, sweet-sour or mojito titles, this supports beverage-mixer categorization only."
-        },
-        {
-          "kind": "retailer_category_evidence",
-          "url": "https://www.target.com/c/beverages-grocery/rose-s/-/N-5xt0rZ560et",
-          "supports": "The retailer groups Rose’s products under beverages and cocktail mixers. Supports navigation only; historical expressions and source sizes are not replaced from this listing."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "09fa73910062aabe9e2ba6fa1ae7e1840182c75d645d2750224748135c9d59b1"
+      }
     },
     {
       "sku": "7212",
@@ -1483,18 +957,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.keurigdrpepper.com/brands/",
-          "supports": "Keurig Dr Pepper lists Rose’s in its beverage portfolio. Together with the source juice, grenadine, sweet-sour or mojito titles, this supports beverage-mixer categorization only."
-        },
-        {
-          "kind": "retailer_category_evidence",
-          "url": "https://www.target.com/c/beverages-grocery/rose-s/-/N-5xt0rZ560et",
-          "supports": "The retailer groups Rose’s products under beverages and cocktail mixers. Supports navigation only; historical expressions and source sizes are not replaced from this listing."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "09fa73910062aabe9e2ba6fa1ae7e1840182c75d645d2750224748135c9d59b1"
+      }
     },
     {
       "sku": "8449",
@@ -1508,13 +973,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.masterofmixes.com/products/sweetened-lime-juice",
-          "supports": "The manufacturer identifies its sweetened lime juice as a cocktail ingredient. Supports Drinks and mixers navigation only; no package size is imported."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "1f16e6b311349cff8fc47700d82b562c01054acc8fa92b622fc32347e75c6e55"
+      }
     },
     {
       "sku": "7095",
@@ -1528,13 +989,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_store",
-          "url": "https://ripit.nbcstorefront.com/shots.html",
-          "supports": "The official Rip It store lists energy shots. Supports Drinks navigation for the original energy-shot titles only; historical flavor identity and package size are not newly verified."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "904be42632594bc1ff029261471ce0b4053e2207521f4c0edc71a4d18743575c"
+      }
     },
     {
       "sku": "7104",
@@ -1548,13 +1005,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_store",
-          "url": "https://ripit.nbcstorefront.com/shots.html",
-          "supports": "The official Rip It store lists energy shots. Supports Drinks navigation for the original energy-shot titles only; historical flavor identity and package size are not newly verified."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "904be42632594bc1ff029261471ce0b4053e2207521f4c0edc71a4d18743575c"
+      }
     },
     {
       "sku": "7105",
@@ -1568,13 +1021,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify water, an energy drink or a beverage mixer. Route it to Drinks & mixers while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_store",
-          "url": "https://ripit.nbcstorefront.com/shots.html",
-          "supports": "The official Rip It store lists energy shots. Supports Drinks navigation for the original energy-shot titles only; historical flavor identity and package size are not newly verified."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "904be42632594bc1ff029261471ce0b4053e2207521f4c0edc71a4d18743575c"
+      }
     },
     {
       "sku": "9293",
@@ -1588,13 +1037,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.utzsnacks.com/collections/vendors?q=vitner%27s",
-          "supports": "The brand owner lists Vitner’s snack foods, including cheese puffs and snack mixes. Supports food navigation for the source snack titles, without inferring an exact flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a793a9174ccc69c5106ea4cdcc04dd40feb346506b477ad57899b15d134e5d85"
+      }
     },
     {
       "sku": "9294",
@@ -1608,13 +1053,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.utzsnacks.com/collections/vendors?q=vitner%27s",
-          "supports": "The brand owner lists Vitner’s snack foods, including cheese puffs and snack mixes. Supports food navigation for the source snack titles, without inferring an exact flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a793a9174ccc69c5106ea4cdcc04dd40feb346506b477ad57899b15d134e5d85"
+      }
     },
     {
       "sku": "9295",
@@ -1628,13 +1069,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.utzsnacks.com/collections/vendors?q=vitner%27s",
-          "supports": "The brand owner lists Vitner’s snack foods, including cheese puffs and snack mixes. Supports food navigation for the source snack titles, without inferring an exact flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a793a9174ccc69c5106ea4cdcc04dd40feb346506b477ad57899b15d134e5d85"
+      }
     },
     {
       "sku": "9297",
@@ -1648,13 +1085,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.utzsnacks.com/collections/vendors?q=vitner%27s",
-          "supports": "The brand owner lists Vitner’s snack foods, including cheese puffs and snack mixes. Supports food navigation for the source snack titles, without inferring an exact flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a793a9174ccc69c5106ea4cdcc04dd40feb346506b477ad57899b15d134e5d85"
+      }
     },
     {
       "sku": "101322",
@@ -1668,13 +1101,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.utzsnacks.com/collections/vendors?q=vitner%27s",
-          "supports": "The brand owner lists Vitner’s snack foods, including cheese puffs and snack mixes. Supports food navigation for the source snack titles, without inferring an exact flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a793a9174ccc69c5106ea4cdcc04dd40feb346506b477ad57899b15d134e5d85"
+      }
     },
     {
       "sku": "9311",
@@ -1688,13 +1117,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.utzsnacks.com/collections/vendors?q=vitner%27s",
-          "supports": "The brand owner lists Vitner’s snack foods, including cheese puffs and snack mixes. Supports food navigation for the source snack titles, without inferring an exact flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a793a9174ccc69c5106ea4cdcc04dd40feb346506b477ad57899b15d134e5d85"
+      }
     },
     {
       "sku": "9316",
@@ -1708,13 +1133,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.utzsnacks.com/collections/vendors?q=vitner%27s",
-          "supports": "The brand owner lists Vitner’s snack foods, including cheese puffs and snack mixes. Supports food navigation for the source snack titles, without inferring an exact flavor or package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a793a9174ccc69c5106ea4cdcc04dd40feb346506b477ad57899b15d134e5d85"
+      }
     },
     {
       "sku": "5103",
@@ -1728,18 +1149,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.twang.com/collections/all",
-          "supports": "The manufacturer lists edible flavored snack salts, beer salts and cocktail rimming salts. Supports food navigation for the source salt products only."
-        },
-        {
-          "kind": "manufacturer_press_release",
-          "url": "https://www.prnewswire.com/news-releases/twang-announces-new-brand-refresh-along-with-exciting-new-products-now-hitting-shelves-nationwide-302214746.html",
-          "supports": "The company-issued announcement identifies the historical Twangerz product family as flavored snack salts. Supports food categorization only, without renaming historical source products."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3318ed900471a18f3defc1a2414f1a48a372144ca8626e4598e5937b59da581d"
+      }
     },
     {
       "sku": "8951",
@@ -1753,18 +1165,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.twang.com/collections/all",
-          "supports": "The manufacturer lists edible flavored snack salts, beer salts and cocktail rimming salts. Supports food navigation for the source salt products only."
-        },
-        {
-          "kind": "manufacturer_press_release",
-          "url": "https://www.prnewswire.com/news-releases/twang-announces-new-brand-refresh-along-with-exciting-new-products-now-hitting-shelves-nationwide-302214746.html",
-          "supports": "The company-issued announcement identifies the historical Twangerz product family as flavored snack salts. Supports food categorization only, without renaming historical source products."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3318ed900471a18f3defc1a2414f1a48a372144ca8626e4598e5937b59da581d"
+      }
     },
     {
       "sku": "8952",
@@ -1778,18 +1181,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.twang.com/collections/all",
-          "supports": "The manufacturer lists edible flavored snack salts, beer salts and cocktail rimming salts. Supports food navigation for the source salt products only."
-        },
-        {
-          "kind": "manufacturer_press_release",
-          "url": "https://www.prnewswire.com/news-releases/twang-announces-new-brand-refresh-along-with-exciting-new-products-now-hitting-shelves-nationwide-302214746.html",
-          "supports": "The company-issued announcement identifies the historical Twangerz product family as flavored snack salts. Supports food categorization only, without renaming historical source products."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3318ed900471a18f3defc1a2414f1a48a372144ca8626e4598e5937b59da581d"
+      }
     },
     {
       "sku": "8953",
@@ -1803,18 +1197,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.twang.com/collections/all",
-          "supports": "The manufacturer lists edible flavored snack salts, beer salts and cocktail rimming salts. Supports food navigation for the source salt products only."
-        },
-        {
-          "kind": "manufacturer_press_release",
-          "url": "https://www.prnewswire.com/news-releases/twang-announces-new-brand-refresh-along-with-exciting-new-products-now-hitting-shelves-nationwide-302214746.html",
-          "supports": "The company-issued announcement identifies the historical Twangerz product family as flavored snack salts. Supports food categorization only, without renaming historical source products."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3318ed900471a18f3defc1a2414f1a48a372144ca8626e4598e5937b59da581d"
+      }
     },
     {
       "sku": "8954",
@@ -1828,18 +1213,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.twang.com/collections/all",
-          "supports": "The manufacturer lists edible flavored snack salts, beer salts and cocktail rimming salts. Supports food navigation for the source salt products only."
-        },
-        {
-          "kind": "manufacturer_press_release",
-          "url": "https://www.prnewswire.com/news-releases/twang-announces-new-brand-refresh-along-with-exciting-new-products-now-hitting-shelves-nationwide-302214746.html",
-          "supports": "The company-issued announcement identifies the historical Twangerz product family as flavored snack salts. Supports food categorization only, without renaming historical source products."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3318ed900471a18f3defc1a2414f1a48a372144ca8626e4598e5937b59da581d"
+      }
     },
     {
       "sku": "8955",
@@ -1853,18 +1229,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.twang.com/collections/all",
-          "supports": "The manufacturer lists edible flavored snack salts, beer salts and cocktail rimming salts. Supports food navigation for the source salt products only."
-        },
-        {
-          "kind": "manufacturer_press_release",
-          "url": "https://www.prnewswire.com/news-releases/twang-announces-new-brand-refresh-along-with-exciting-new-products-now-hitting-shelves-nationwide-302214746.html",
-          "supports": "The company-issued announcement identifies the historical Twangerz product family as flavored snack salts. Supports food categorization only, without renaming historical source products."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3318ed900471a18f3defc1a2414f1a48a372144ca8626e4598e5937b59da581d"
+      }
     },
     {
       "sku": "1991",
@@ -1878,13 +1245,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.cheezit.com/en-us/products/cheez-it-pepper-jack-product.html",
-          "supports": "The manufacturer identifies Cheez-It Pepper Jack as snack crackers. Supports food navigation only; spelling, exact source identity and package are not changed in this category review."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "500f4ceedda853bb5530ff9af7d2bb8ee71ec02c02ec85e4ebce19020390f04b"
+      }
     },
     {
       "sku": "1280",
@@ -1898,13 +1261,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.hersheyland.com/breath-savers",
-          "supports": "Hershey identifies Breath Savers as mints. Supports confectionery-food navigation only; no flavor or package is inferred."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "08c317ae7db4f31bb29933094c4dbc4a15a73841ab9c66c88277997f662cc724"
+      }
     },
     {
       "sku": "9593",
@@ -1918,13 +1277,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.mars.com/our-brands/mars-snacking",
-          "supports": "Mars lists Winterfresh among its snacking brands. The source explicitly identifies gum; only confectionery-food navigation is reviewed."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "ed36b42b88cf9688089f0788b2a4f5d4e537115fe46a073818d22c5ad797d7a4"
+      }
     },
     {
       "sku": "9691",
@@ -1938,13 +1293,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "The original product description and authoritative brand evidence identify food or an edible ingredient. Route it to Food & snacks while retaining the original MISC department and all product identity and variant fields.",
-      "evidence": [
-        {
-          "kind": "manufacturer_brand_owner",
-          "url": "https://www.mars.com/our-brands/mars-snacking",
-          "supports": "Mars identifies Wrigley’s Spearmint as chewing gum in its snacking portfolio. Supports confectionery-food navigation only; source wording and package facts remain unchanged."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "ddab0ad502ad921da1e9ded4565c8d3464ba16aff0ea7fe494b063d2a010b171"
+      }
     },
     {
       "sku": "4862",
@@ -1958,13 +1309,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Exact manufacturer record identifies powdered soft drink mix. Original MISC department and every source field remain unchanged.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955314",
-          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Product brand, name and matching GTIN are bound within the same owned-site Product structured-data record."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "f9d510aa8227439404e4f7eea6783e9a53fa15f303c88da74c9602435ca85df1"
+      }
     },
     {
       "sku": "6855",
@@ -1978,13 +1325,9 @@
       "category": "food",
       "reviewedOn": "2026-10-27",
       "reason": "Exact manufacturer record identifies corn meal, a grocery ingredient. Original MISC department and every source field remain unchanged.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://smartlabel.myproduct.info/030000031605-0002-en-US/index.html",
-          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Exact delegated product URL appears in the official PepsiCo SmartLabel sitemap."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "def8427746023403abc87be66a0d29af1b6e4b2216701b1c937b7c1ed0e2e292"
+      }
     },
     {
       "sku": "4859",
@@ -1998,13 +1341,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-27",
       "reason": "Exact manufacturer record identifies powdered soft drink mix. Original MISC department and every source field remain unchanged.",
-      "evidence": [
-        {
-          "kind": "manufacturer_exact_upc_record",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
-          "supports": "Exact source UPC and manufacturer product name establish brand and full expression. Name-only text evidence: no photograph inspection, package size, container, pack count, current formulation or availability verification. Product brand, name and matching GTIN are bound within the same owned-site Product structured-data record."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5f19f2f88eebe79b1fb91722c61ed83fd9a3e12a09977a826f5bc64ce5024d25"
+      }
     },
     {
       "sku": "6430",
@@ -2018,13 +1357,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-29",
       "reason": "Verified On The Rocks Larios Aviation is a ready-to-drink cocktail; its original Cognac department is retained.",
-      "evidence": [
-        {
-          "url": "https://www.cub.com/store/cub-liquors/products/20144476-on-the-rocks-larios-aviation-cocktail-375-ml",
-          "kind": "retailer_exact_upc_product_page",
-          "supports": "Exact UPC 855880008178 and 375 mL package; product is sold as an Aviation cocktail."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "c999309f0af9a7253018f9d242d6b6c310f1c3cdb52408d3d45bba92e61f672f"
+      }
     },
     {
       "sku": "486",
@@ -2038,13 +1373,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies a beverage; route to Drinks & mixers while preserving the original source department.",
-      "evidence": [
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://kellyhost.com/prop65/BPA_Product_List.pdf",
-          "supports": "UPC 613008739485 is listed as AriZona Fruit Punch Caution in the Drink category."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "82150ef80f975bc8b9bdf2db963caf0b54bd139ea126c34f056ce17b5761921a"
+      }
     },
     {
       "sku": "1891",
@@ -2058,13 +1389,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://world.openfoodfacts.org/product/070980229210",
-          "kind": "exact_upc_product_record",
-          "supports": "Open Food Facts exact barcode record identifies Centrella Old Fashioned Oats. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "badf1abd3a575e7c894764e5e239df83e7932535abdfb7c1bf54a78e782c10e7"
+      }
     },
     {
       "sku": "1881",
@@ -2078,13 +1405,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://world.openfoodfacts.org/product/070980027663",
-          "kind": "exact_upc_product_record",
-          "supports": "Open Food Facts exact barcode record identifies Centrella Grape Jelly. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "c41bce00df3ecd97c4eb0a78c680c88354c50414d71e999de9dd1c0b88c789a0"
+      }
     },
     {
       "sku": "1944",
@@ -2098,13 +1421,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://world.openfoodfacts.org/product/079003840418",
-          "kind": "exact_upc_product_record",
-          "supports": "Open Food Facts exact barcode record identifies Outrageously Cheesy Cheddarcorn. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a20b35f3441655dd837255ab259731bf86f09bcd15aea343b523413400f50316"
+      }
     },
     {
       "sku": "3843",
@@ -2118,13 +1437,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://www.azdhs.gov/documents/prevention/azwic/vendors/arizona-wic-foods-database.pdf",
-          "kind": "exact_upc_product_record",
-          "supports": "Arizona WIC database maps UPC 041331024792 to Goya Black Beans, 16 oz. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "33e076b9941815ed2792a36b8b19cabe2b9e62a8fc6ba1695a31ea1e6d93ff3a"
+      }
     },
     {
       "sku": "3842",
@@ -2138,13 +1453,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://www.azdhs.gov/documents/prevention/azwic/vendors/arizona-wic-foods-database.pdf",
-          "kind": "exact_upc_product_record",
-          "supports": "Arizona WIC database maps UPC 041331024716 to Goya Red Kidney Beans, 16 oz. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "22b0b8f37280d1c4ae2f65b36d316c5de76daabd1a1d389e283a638ec4fd1516"
+      }
     },
     {
       "sku": "4949",
@@ -2158,13 +1469,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://www.azdhs.gov/documents/prevention/azwic/vendors/arizona-wic-foods-database.pdf",
-          "kind": "exact_upc_product_record",
-          "supports": "Arizona WIC database maps UPC 071524012152 to La Preferida Black Beans, 16 oz. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "f25e5fca3305ef895b884f456594497aab3711e24fe3f9d493094bb2b7b5516d"
+      }
     },
     {
       "sku": "4948",
@@ -2178,13 +1485,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://www.cub.com/store/cub/products/78489-la-preferida-dried-pinto-beans-frijoles-pintos-secas-1-0-lb",
-          "kind": "exact_upc_product_record",
-          "supports": "Cub exact UPC record maps UPC 071524011728 to La Preferida Dried Pinto Beans, 1 lb. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3ce3ab7da281ffed38e196ab3202395c9f109b5fa25a98759f1f8dd548ca1cde"
+      }
     },
     {
       "sku": "3744",
@@ -2198,13 +1501,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://osm-us.com/index.php?disp_order=1&main_page=products_all&page=211",
-          "kind": "exact_upc_product_record",
-          "supports": "Distributor item record maps UPC 876274001858 to Global Brands Snak Time Stack Pack Salted Crackers. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "d2ee100e5cb1c768a111d1136590e97613f0acf1dc7238ec6fd601ab29da939f"
+      }
     },
     {
       "sku": "3740",
@@ -2218,13 +1517,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://nd.hkservice.net/nd0579.html",
-          "kind": "exact_upc_product_record",
-          "supports": "FoodData Central record maps UPC 876274001940 to Global Brands Cheddar Cheese Crackers; category is flavored snack crackers. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b6ed0a7e31247669c8ce9b948fa306348ed93f142d1adf69535ebcfe20dd4255"
+      }
     },
     {
       "sku": "3741",
@@ -2238,13 +1533,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://www.glwholesale.com/product/wholesale-global-brands-salted-cracker-tub/7627400184",
-          "kind": "exact_upc_product_record",
-          "supports": "Distributor listing maps UPC 876274001841 to Global Brands Salted Cracker Tub, 8 oz. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "144fdafc19d07f06c6396cf66cb1429d93e9c3aedad7b9909b976e302a22ed3f"
+      }
     },
     {
       "sku": "3743",
@@ -2258,13 +1549,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://www.nutritiondatalist.com/product/global-brands-the-original-cracker-tub-ranch-upc-876274001872",
-          "kind": "exact_upc_product_record",
-          "supports": "Exact UPC 876274001872 identifies Global Brands Original Cracker Tub Ranch. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b4ebd4ae40ee09a4febc3a369cfbc7c28cacc8549d1b8a382905b473db1a2fab"
+      }
     },
     {
       "sku": "3742",
@@ -2278,13 +1565,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://www.buycott.com/brand/11946/sour-cream-upc",
-          "kind": "exact_upc_product_record",
-          "supports": "UPC index maps 876274001865 to Global Brands Sour Cream & Onion cracker tubs. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "62e9c9d729aaf3671da3f6e8ebf20b6c26d518f3726ed0fed1433c2905bc47b0"
+      }
     },
     {
       "sku": "3739",
@@ -2298,13 +1581,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://www.nutritiondatalist.com/product/global-brands-soup-oyster-crackers-soup-oyster-crackers-upc-876274001896",
-          "kind": "exact_upc_product_record",
-          "supports": "Exact UPC 876274001896 identifies Global Brands Soup & Oyster Crackers. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "7552c2df07c5b1c7a65e2fdd6344264ba9fbf129c5566ec2f7fa91fa0bd1f50d"
+      }
     },
     {
       "sku": "5094",
@@ -2318,13 +1597,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://getfoodfacts.com/food/lemon-creme-cookies-lemon-creme-2085906",
-          "kind": "exact_upc_product_record",
-          "supports": "USDA branded-food record maps UPC 086106011843 to Lil’ Dutch Maid Lemon Creme Cookies. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "8179f4ca89e999d439e6a2f23bfcc209db35c7e540293f45b35e6f1d9ba7e710"
+      }
     },
     {
       "sku": "8498",
@@ -2338,13 +1613,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://www.buycott.com/brand/16695/el-sabroso-upc",
-          "kind": "exact_upc_product_record",
-          "supports": "UPC index maps 078907200403 to El Sabroso Taco-Litos; product line is a corn/tortilla chip snack. Suggested change is category-only: retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "d1f2e49b49cd2af40e10b9cea84cc7493e08788af1b8a1c23d02a0e02c584a31"
+      }
     },
     {
       "sku": "7900",
@@ -2358,13 +1629,9 @@
       "category": "food",
       "reviewedOn": "2026-10-29",
       "reason": "Exact UPC product evidence identifies food; route to Snacks & groceries while retaining the original department.",
-      "evidence": [
-        {
-          "url": "https://assets-of-websites.s3.amazonaws.com/media/934593/ea9ec16005b6b01eb3e7307a44dcf275c1361fed/original/7201%20Online%20Inv%201.21.24%20%281%29%20-%207201%20Online%20Inv%201.21.24%20%281%29.csv.pdf",
-          "kind": "exact_upc_product_record",
-          "supports": "UPC 740235511017 maps to Carley’s Chocolate Chip Cookies (2.5 oz); category-only change, retain source department MISC."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "62814e480480b30aa7a5934bef3bc908c4d2bed10df5a10e1b2502df64da58aa"
+      }
     },
     {
       "sku": "6425",
@@ -2378,18 +1645,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-30",
       "reason": "Exact-UPC sources identify a one-bottle ready-to-drink Mai Tai cocktail; original Cognac department remains preserved as source data.",
-      "evidence": [
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-80207926",
-          "supports": "UPC 855880008147 identifies an On The Rocks Mai Tai ready-to-drink rum cocktail in a single bottle."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.winedeals.com/spirits/cocktails/on-the-rocks-the-mai-tai-crafted-with-cruzan-rum-375-ml-96751.html",
-          "supports": "UPC 855880008147 identifies On The Rocks The Mai Tai Crafted with Cruzan Rum as a 375 mL Cocktail/Mixer bottle."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b7529e9675e0a11ac83222111697aad5bcc30f571c81a7872d5c788ab5109701"
+      }
     },
     {
       "sku": "8263",
@@ -2403,18 +1661,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-31",
       "reason": "Exact UPC and manufacturer evidence identify this as an Orange Strawberry juice drink/citrus punch beverage. Change only the shopping category to drinks; the immutable source department remains Snacks.",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://sunnyd.com/flavors/orange-strawberry/",
-          "supports": "SunnyD identifies Orange Strawberry as an artificially flavored citrus punch and lists a 16 oz format. This supports beverage classification only."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/88442-sunny-d-citrus-punch-orange-strawberry-16-oz",
-          "supports": "Exact UPC 050200561009 identifies SunnyD Orange Strawberry Juice Drink, 16 FL OZ Bottle."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e9441bb300ad2cd518f4b1af007fa77a335267a7a56b344c3d91a564a959373c"
+      }
     },
     {
       "sku": "4142",
@@ -2428,13 +1677,9 @@
       "category": "drinks",
       "reviewedOn": "2026-10-31",
       "reason": "Exact UPC evidence identifies this single High Noon Peach Vodka & Soda can as a ready-to-drink beverage. The immutable source department Cognac remains preserved; only the shopping category is corrected.",
-      "evidence": [
-        {
-          "kind": "exact_upc_product_record",
-          "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/159318",
-          "supports": "Exact UPC 085000031377 identifies High Noon Peach in a .355 L single can format and supports ready-to-drink beverage classification."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b5a6025da56f906f8cf8549c370b053374d4fecd11986ad7689f5ecf74e5b003"
+      }
     }
   ]
 }

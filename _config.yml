@@ -5,6 +5,10 @@ exclude:
   - docs
   - README.md
   - data-summary.json
+  - data/source-reviews.json
+  - data/name-corrections.json
+  - data/category-reviews.json
+  - data/public-name-reviews.json
   - private-input
   - private-output
   - private

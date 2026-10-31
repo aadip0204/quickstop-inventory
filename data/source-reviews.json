@@ -424,28 +424,9 @@
           "visual": true
         },
         "reason": "Exact manufacturer UPC and independently corroborated single-box weight resolve the omitted source measurement unit. Original source description and prior review remain preserved privately.",
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.hersheys.com/010700519528-0050-en-US/index.html?cname=00010700519528-0050",
-            "supports": "Hershey SmartLabel explicitly identifies Jolly Rancher Fruit Chews Candy, net weight 2.06 oz, UPC010700519528."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.nassaucandy.com/jolly-rancher-fruit-chews-2-06oz.html",
-            "supports": "Distributor identifies UPC010700519528, 2.06 oz fruit chews with the four original flavors. Its distinct inner UPC is not assigned to this unit."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://allcitycandy.com/collections/fruity-candy/products/jolly-rancher-chews-original-3",
-            "supports": "Retailer identifies SKU010700519528 as Original Flavors, one 2.06 oz box; distinguishes single box from case of twelve."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/070/051/9528/6.jpg",
-            "supports": "Actually inspected the unchanged full original: complete clean blue Jolly Rancher Chews Original Flavors box; visible 2.06 OZ (58 g), green apple/watermelon/cherry/blue raspberry; no prices, hands, shelves, countertop, or clipped package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "d8059798c61fa18b0bf3e59b8f72063560d97f915d2d2fd86dbb5a440afeef05"
+        },
         "expectedName": "Jolly Rancher Fruit Chews",
         "expectedLabel": "Size needs confirmation"
       }
@@ -868,23 +849,9 @@
           "visual": true
         },
         "reason": "Exact source UPC, source gram amount, independently verified retail size and inspected package agree. Resolve the previously unparsed joined measurement for this SKU without altering flavor or assigning another package.",
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.pepsicoproductfacts.com/Home/product?gtin=00028400634502",
-            "supports": "PepsiCo confirms the Ruffles Jalapeño Ranch Flavored Potato Chips expression. This page is a different 8.5 oz GTIN and is used only for expression, never as size/UPC proof."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.dollargeneral.com/p/ruffles-potato-chips-jalapeno-ranch-2-63-oz/28400634519",
-            "supports": "Retailer title and specifications identify Jalapeno Ranch, 2.625 oz. Saved page source explicitly carries salsifyUpc028400634519. Independently corroborates the inspected 74.4 g package."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/840/063/4519/1.jpg",
-            "supports": "Actually inspected full original: complete sealed Ruffles Jalapeño Ranch potato-chip bag, visible net weight 2 5/8 OZ (74.4 g); plain white background with no price imprint or obstruction."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "28843422066c8feab1c500291cfa68da4a6b0c44c3166941445069b80e9bb91a"
+        },
         "expectedName": "Ruffles Jalapeno Ranch",
         "expectedLabel": "Size needs confirmation"
       }
@@ -1252,23 +1219,9 @@
           "visual": true
         },
         "reason": "Manufacturer exact UPC, independent retailer and inspected manufacturer package confirm Original Aloe Vera Drink in a single bottle. Resolve the joined source liter notation and equivalent fluid-ounce pack metadata for this SKU only; licensed candidate image remains unapproved.",
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://iberiafoods.com/product/iberia-aloe-vera-original-1-5-lt/",
-            "supports": "Manufacturer lists Original Aloe Vera Drink,1.5 lt, and SKU0-75669-11550-1, exactly the source UPC."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.target.com/p/-/A-80835720",
-            "supports": "Retailer explicitly lists UPC075669115501, Original Aloe Vera Drink,50.8 fl oz, package quantity1, plastic bottle."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://iberiafoods.com/wp-content/uploads/2024/12/IB-Front-Aloe-Original-1.5-Lt.png",
-            "supports": "Actually inspected manufacturer image with Original Aloe Vera Drink and legible50.8 fl oz(1.5 Lts). Evidence only: this image is not authorized for public reuse."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "5dc140c5e1d6c608ababa9778793ead5e2c7dd67843ed538f1f49e1197c550da"
+        },
         "expectedName": "IBERIA ALOE VERA DRINK ORIGINAL",
         "expectedLabel": "Size needs confirmation"
       }
@@ -1329,23 +1282,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://iberiafoods.com/product/iberia-canola-oil-48-oz/",
-            "supports": "Iberia Foods' product record names Iberia Canola Oil 48 oz and provides SKU 0-75669-17632-8, the same 12-digit UPC 075669176328."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://food.saltie.app/food/ddf5a663-e42e-4920-9a9a-f156a3919825",
-            "supports": "The USDA-derived product record identifies 100% Pure Canola Oil, brand Iberia, UPC Code 075669176328, and package weight 48 fl oz/1.5 quart."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://i5.walmartimages.com/asr/5facee98-27e1-47c7-8b8b-be52184c56b2.5a6c166c5a35ad9c34647bc25de363e2.jpeg",
-            "supports": "Inspected full isolated photo shows the complete single Iberia Canola Oil bottle with 100% PURE and 48 FL. OZ. (1.5 QUARTS) printed on the front; no price text or other products."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "367aea80887d4e873fb6cc030b1a1eafdb8ba2c9734599b73724605ef7aafb85"
+        },
         "reason": "Manufacturer, exact-UPC, and inspected package evidence agree on the brand, 100% Pure Canola Oil expression, 48-fluid-ounce single bottle, and source UPC. The catalog serializer canonically renders fl oz as oz."
       }
     },
@@ -1862,23 +1801,9 @@
       },
       "reason": "Exact source UPC, manufacturer single-bag product listing and visually inspected complete package corroborate this one SKU. Original unspecified source identity is retained privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://marsfoodservices.com/product/skittles-original-fruit-bite-size-candies",
-          "supports": "Mars identifies SKITTLES ORIGINAL SINGLE 2.17 OZ, ZREP108226. Confirms expression, size and single-bag format; the UPC is corroborated separately."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.officedepot.com/a/products/401600/Skittles-Original-Fruit-Candy-217-Oz/",
-          "supports": "Retailer specifications identify UPC040000001607, Original Fruit Candy, 2.17 oz and one bag."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/000/000/1607/2.jpg",
-          "supports": "Inspected complete red Original Skittles pillow bag has 2.17 oz (61.5 g) label. Photo asset is exact-UPC mapped; no substitution or sibling assignment."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e5cad87f2ce2df21996fd88b3364330308be2d6d54ee28b83007460b2d32c0cc"
+      }
     },
     {
       "sku": "830",
@@ -1898,23 +1823,9 @@
       },
       "reason": "Exact source UPC, manufacturer product specification and inspected complete single meal box corroborate this one SKU. The unspecified original size and source wording remain private and unchanged.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.conagrafoodservice.com/products/banquet-classic-salisbury-steak-meal",
-          "supports": "Conagra identifies Banquet Classic Salisbury Steak Meal, product3100000730, individual unit11.88oz337g. Twelve is the shipping case count, not the consumer package."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/16789920-banquet-classic-salisbury-steak-meal-11-88-oz",
-          "supports": "Cub identifies complete UPC031000007300 as Banquet Salisbury Steak frozen meal11.88oz."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/100/000/7300/1.jpg",
-          "supports": "Inspected complete Banquet Salisbury Steak Meal box on white shows11.88oz337g at lower right. Single consumer box, no visible prices, exact-UPC raw image1; packaging agrees with both primary sources."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5ff0401dc2fd29cd13024c6a5a30cb065615e8e1a31df1489f7ccc678344e21c"
+      }
     },
     {
       "sku": "4823",
@@ -2119,23 +2030,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.breyers.com/us/en/p/vanilla-chocolate-strawberry.html/00077567254269",
-            "supports": "Exact GTIN identifies the Vanilla Chocolate Strawberry expression and the 1.5 QT tub."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://world-en.openfoodfacts.org/product/0077567254269",
-            "supports": "Exact normalized UPC record supplies the inspected original image and actual uploader credit."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/756/725/4269/1.jpg",
-            "supports": "Inspected original depicts the Breyers three-flavor black tub; label explicitly reads 1.5 QUART (1.41 L)."
-          }
-        ]
+        "evidence": {
+          "privateEvidenceSha256": "d78c16167b15e5d501debf79406df5401ad293977b8f1df1669e04de7f28238c"
+        }
       }
     },
     {
@@ -2199,28 +2096,9 @@
           "visual": true
         },
         "reason": "Resolve the contradictory source measurement and omitted expression only for the exact UPC corroborated by manufacturer, independent retailer and inspected bottle. Preserve both original source measurements privately; no general unit substitution is authorized.",
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://deepeddyvodka.com/deep-eddy-ruby-red-vodka",
-            "supports": "Manufacturer identifies Ruby Red Grapefruit Vodka and specifies 35 percent alcohol and 70 proof."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.winetransit.com/spirits/vodka/flavored/deep-eddy-ruby-red-grapefruit-flavored-vodka-1-75-l-44241.html",
-            "supports": "Independent retailer specifications identify exact UPC856065002103, Ruby Red, 1.75 L, 70 proof, one bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.universalfws.com/product/p-14073-deep-eddy-ruby-red-grapefruit-vodka-175l/",
-            "supports": "Second independent retailer identifies SKU856065002103 as Deep Eddy Ruby Red Grapefruit Vodka 1.75 L."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/606/500/2103/1.jpg",
-            "supports": "Actually inspected full original: complete clean studio Deep Eddy Ruby Red grapefruit-flavored vodka bottle on white; label clearly reads 35% ALC/VOL (70 PROOF) 1.75 L. No price, cropping, hand, shelf, or household setting."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "f2c9990f30b20d7a0021094f3a143e0898e7864533a9055c6238e7340121aeef"
+        },
         "expectedName": "deep eddy",
         "expectedLabel": "Size needs confirmation"
       }
@@ -2243,33 +2121,9 @@
       },
       "reason": "Resolve the source brand-only entry using the exact EAN-8 unit code in a manufacturer-branded catalog, independent distributors and retailers, and the inspected single-pack image. Do not infer an outer display or multipack from distributor case quantities.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://dnovacampinas.com.br/wp-content/uploads/2025/06/Catalogo-Distribuidor-Q2.pdf",
-          "supports": "Mondelēz International branded distributor catalog, rendered and inspected cover and PDFpage47. HALLS BASE DSP CEREJA table lists28g and EAN8 unit78938793; display and case codes are separately stated. Manufacturer-authored document hosted by distributor."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://portfoliococacolafemsa.com.br/parana/produto/halls-cereja-28g-21",
-          "supports": "Coca-Cola FEMSA distribution portfolio explicitly identifies Halls Cereja28g, EAN78938793. Quantity21 is its display ordering quantity, not the source retail unit."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.stock.com.py/products/283954-caramelos-cherry-28gr-halls-plas.aspx",
-          "supports": "Independent retailer explicitly identifies cherry Halls28g and barcode78938793."
-        },
-        {
-          "kind": "manufacturer",
-          "url": "https://www.mondelezinternational.com/our-brands/halls/",
-          "supports": "Direct manufacturer site establishes the Halls brand and refreshing-candy product use; exact flavor and weight are supported by its distributor catalog and exact-code listings."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/000/007/893/8793/3.jpg",
-          "supports": "Actually inspected full original: complete single Halls Cereja/Cereza cherry stick pack with28g visible on pack and professional branded footer; plain white backdrop, no people, shelf, countertop, clipping, or price. The bottom branding is part of the existing studio composition and is unchanged."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "af289ab4cca3dbaace28429f289676dc494810043e1e1647bf5c2506f560c3fe"
+      }
     },
     {
       "sku": "4097",
@@ -2289,23 +2143,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the visually inspected complete individual package corroborate this one SKU. Original source fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://shop.herrs.com/products/honey-bbq",
-          "supports": "Herr Foods identifies Honey BBQ Ripple Potato Chips and offers 1 OZ individual bags in wholesale cartons. This establishes the expression and individual-bag size, not a retail carton assignment."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.creveleurope.com/products/snack-herrs-28-gr-honey-bbq-chips?_fid=af7bad4b3&_pos=1&_ss=c",
-          "supports": "Distributor identifies HERRS Honey BBQ chips, unit EAN 072600008861, separate case EAN 30072600008862 and a 42-unit case. The inspected individual-bag label gives the exact 1 oz measurement."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/260/000/8861/4.jpg",
-          "supports": "Complete brown-and-red Herr's Honey BBQ Potato Chips bag on white; label NET WT. 1 OZ. (28.4g) is clearly readable. Top white circle is blank, with no visible price. Entire sealed bag is shown; no carton, hand or household objects."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "d58d28ee5881c54c4d2dae090d41ece336afe962c8866ea93dd86dac8081a812"
+      }
     },
     {
       "sku": "6270",
@@ -2325,28 +2165,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the visually inspected complete individual package corroborate this one SKU. Original source fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.oceanspray.com/products/jellied-cranberry-sauce-14-oz",
-          "supports": "Manufacturer indexed product page identifies Jellied Cranberry Sauce, 14 oz, canned format. Full web open exceeded the tool content limit; the indexed primary-source product content was inspected."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://zallandsons.com/catalog/groceries/",
-          "supports": "Distributor grocery catalog identifies Ocean Spray Jellied Cranberry Sauce 14oz - 1ct, item97098, UPC031200016058. It corroborates source UPC, jellied expression, size and single-can package."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.national-azabu.net/products/detail/174554",
-          "supports": "Retailer explicitly identifies Ocean Spray Jellied Cranberry Sauce, 397g and item code031200016058, corroborating the 14oz/397g inspected can."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/120/001/6058/3.jpg",
-          "supports": "Complete single silver-rimmed Ocean Spray Jellied Cranberry Sauce can on white. Label clearly reads Jellied Cranberry Sauce and NET WT 14 OZ (397g). Can rims and body are intact, without visible price, hands or household setting."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e24442701022550901044f513bad334eab49ab027d7351aa9ab70a0df7d99f8d"
+      }
     },
     {
       "sku": "3844",
@@ -2366,23 +2187,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://shop.goya.com/products/goya-chick-peas",
-          "supports": "Goya identifies Chick Peas15.5oz can; its single-can variant explicitly has barcode041331124225."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://shop.goya.com/products/goya-chick-peas",
-          "supports": "The primary shop single-can variant GOYA-124225-1 is15.5oz, barcode041331124225. The same page also offers bulk cases; this proposal assigns only the inspected individual can."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/133/112/4225/3.jpg",
-          "supports": "Complete clean blue Goya Chick Peas Garbanzos can with top ring-pull and bottom rim visible on white. The angled lower-left label reads15.5 OZ (439g). No price, hand, shelf, household setting or multipack."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3f71118e38e811eba2b94f8d725dff613a4da667baad779a3fde8f49d1cb3dc5"
+      }
     },
     {
       "sku": "9405",
@@ -2402,28 +2209,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://welchs.com/en-us/fruit-spreads/concord-grape-jam/",
-          "supports": "Welch's manufacturer page identifies Concord Grape Jam and30OZ JAR size, distinct from its Jelly product."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/16409391-welch-s-concord-grape-jam-32-oz",
-          "supports": "Retailer indexed product content explicitly lists UPC041800501519 and30oz Concord Grape Jam. URL slug says32oz but the current indexed title/body and inspected physical label both say30oz. Direct follow-up open timed out; this access limitation is retained in the private audit."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/180/050/1519/1.jpg",
-          "supports": "Complete dark grape-jam jar with purple lid on white. Welch's Concord Grape JAM and NET WT30 OZ (1.87LB)850g are clearly readable. No visible prices or unrelated objects; expression is Jam, not Jelly."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.theamericanstore.de/Welchs-Grape-Jam-850g",
-          "supports": "Independent retailer lists Welch's Grape Jam, GTIN 041800501519 and net contents 850 g, corroborating the inspected jar's printed 30 oz / 850 g identity. This corroboration does not import availability or price."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "288c6d2250961bce8bd7b714aaa154a5a1a45349e33bf25570695ae60e9ee7c1"
+      }
     },
     {
       "sku": "4205",
@@ -2443,23 +2231,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.hormel.com/brands/hormel-chili/product/chili-with-beans/",
-          "supports": "Hormel identifies the Chili with Beans expression, distinct from no-beans, hot and turkey variants."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-13285438",
-          "supports": "Target identifies UPC037600223188, one15oz can, Hormel Chili with Beans; retrieved product highlights, package quantity and UPC specifications were read."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/003/760/022/3188/5.jpg",
-          "supports": "Complete red Hormel Chili with Beans can on white, with top pull-tab and bottom rim. Printed NET WT15 OZ (425g) is legible at lower left. No price or household objects. Mild photo grain does not obscure product identity."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "133f206c758db9bf4afbc9f8e5c6319e19700da16b672b6a1a34e57264a1209c"
+      }
     },
     {
       "sku": "6798",
@@ -2479,28 +2253,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.snackworks.com/products/premium-original-saltine-crackers-lunch-snacks-4-oz/",
-          "supports": "Mondelez Snackworks identifies Premium Original Saltine Crackers4oz in convenient individual boxes; sea-salt-topped original expression matches inspected front."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://shoptheking.us/products/477059",
-          "supports": "Distributor identifies Premium Saltine Conv4oz Single Box and explicitly lists Unit UPC044000003821. Do not treat its wholesale12-box case as the single source item."
-        },
-        {
-          "kind": "manufacturer",
-          "url": "https://smtlbl.app/upc/044000003821",
-          "supports": "Official Snackworks product page links this exact-UPC SmartLabel URL. The redirect target was inaccessible to the web tool, so no unseen SmartLabel body is claimed."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/400/000/3821/1.jpg",
-          "supports": "Complete long rectangular Nabisco Premium Original Saltine Crackers box on white, with blue side panel and both ends present. Front says Original topped with sea salt and NET WT4 OZ (113g). No visible price or household setting."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "820cfb684b40d9c13015a415a2eb0e5b937b41abbcb560571053f3923b8a2f49"
+      }
     },
     {
       "sku": "1278",
@@ -2520,23 +2275,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://chefboyardee.com/products/classics/beef-ravioli-can/",
-          "supports": "Manufacturer identifies Beef Ravioli Can in tomato and meat sauce with15oz among available sizes."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-13130178",
-          "supports": "Target lists one15oz Chef Boyardee Beef Ravioli can and UPC064144043156; package quantity1 and exact UPC were read from retrieved specifications."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/006/414/404/3156/19.jpg",
-          "supports": "Complete single Chef Boyardee Beef Ravioli can on white, metal lid and bottom rim visible. Front says Beef Ravioli in Tomato & Meat Sauce; lower-left NET WT15 OZ (425g) readable. No prices or household objects."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "907a12ce1172a46f48cce420d03a2a0695bdf91d161bca702d2d8af401c19cd7"
+      }
     },
     {
       "sku": "1653",
@@ -2556,23 +2297,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.campbells.com/products/condensed/chicken-with-rice-soup/",
-          "supports": "Campbell's identifies its Condensed Chicken With Rice Soup expression, distinct from Healthy Request and cream soups."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-14770380",
-          "supports": "Target identifies Campbell's Condensed Chicken with Rice Soup,10.5oz, UPC051000010513. Exact UPC and unit measurement were read in retrieved specifications."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/005/100/001/0513/1.jpg",
-          "supports": "Complete red-and-white Campbell's Condensed Soup Chicken with Rice can on white. Front clearly prints NET WT10 1/2 OZ (298g), equivalent to canonical10.5oz. Both metallic rim boundaries visible; no prices or household objects."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "bc63e6e4f401e1318fb34eea1ccb30b1198883e70ae5d1dd91be29252209b553"
+      }
     },
     {
       "sku": "2790",
@@ -2592,23 +2319,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.delmonte.com/products/vegetables/beans/blue-lake-cut-green-beans",
-          "supports": "Del Monte identifies Fresh Cut Blue Lake Cut Green Beans, with a 14.5 oz can and salt-containing ingredients. This is the regular expression, not the separately listed no-salt-added or reduced-sodium variants."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/36870-del-monte-green-beans-cut-14-5-oz",
-          "supports": "Primary retailer explicitly lists UPC 024000162865, Del Monte Fresh Cut Green Beans Canned Vegetables, 14.5 oz. The single inspected can matches; no wholesale case is assigned."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/002/400/016/2865/6.jpg",
-          "supports": "Complete single Del Monte can on white with top and bottom metal rims visible. Front identifies Fresh Cut Blue Lake Cut Green Beans with Natural Sea Salt, and NET WT 14.5 OZ (411g) is readable. No visible prices or household objects."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "67da8cb4ee481b5b99ecc13f32c1ee1dc48476fd42441c43691e1701c68a2779"
+      }
     },
     {
       "sku": "806",
@@ -2628,23 +2341,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.drinkbai.com/products/brasilia-blueberry",
-          "supports": "Bai identifies the Brasilia Blueberry expression. This corroborates brand and flavor only; current nutrition/formula details are not substituted for the inspected older Antioxidant Infusion packaging."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/87028-bai-brasilia-blueberry-antioxidant-infused-beverage-18-fl-oz",
-          "supports": "Primary retailer explicitly lists UPC 852311004013, Bai Brasilia Blueberry Antioxidant Infused Beverage, 18 fl oz. The proposal is for the pictured individual bottle, not the other multipack options on the page."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/085/231/100/4013/1.jpg",
-          "supports": "Complete professional Bai bottle on plain white, with full red cap and base visible. Label identifies Antioxidant Infusion Brasilia Blueberry and clearly prints 18 oz. No visible price or unrelated objects. Historical label is retained without importing current WonderWater formulation claims."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "9dffd2dcc627bc6ba2412739924d7cf0714412fcfe88c9b98145b4df05980481"
+      }
     },
     {
       "sku": "804",
@@ -2664,23 +2363,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.drinkbai.com/cocofusions/puna-coconut-pineapple",
-          "supports": "Bai identifies Puna Coconut Pineapple. This supports brand and flavor only; current formula claims are not imported into the older photographed package identity."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.lundsandbyerlys.com/product/bai-antioxidant-cocofusions-puna-coconut-pineapple-beverage-id-00813694023466",
-          "supports": "Primary retailer explicitly lists Bai Antioxidant Cocofusions Puna Coconut Pineapple Beverage, 18 Ounce, product number 00813694023466. Its GTIN14 is the zero-padded source UPC 813694023466; no UPC change is proposed."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/081/369/402/3466/4.jpg",
-          "supports": "Complete professional Bai bottle on white, full brown cap and base present. Front identifies Antioxidant Cocofusion Puna Coconut Pineapple; printed 18 fl oz (530 mL) is readable. No visible prices or household setting. Exact UPC corroborates the expression despite the source shorthand Puna Colada."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "f955eeb193e12914fec6773412f65655633467d432da7761a64f9a0df3d2cb5f"
+      }
     },
     {
       "sku": "2840",
@@ -2700,23 +2385,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.keurigdrpepper.com/brands/",
-          "supports": "Manufacturer owner Keurig Dr Pepper lists Vernors among its brands; this corroborates brand ownership only."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://sundropbottling.com/pdf/Product-list.pdf",
-          "supports": "Official Sun Drop Bottling distributor catalog, PDF page 12, pairs item 48650 Vernors Diet Ale 2 LT with 2 LITER (PET) and UPC 0-78000-18246-0. Extracted text and rendered page were both inspected; this equals source UPC 078000182460."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/018/2460/1.jpg",
-          "supports": "Complete professional 2 L plastic bottle on white, full white cap and base visible. Front says Diet Vernors Zero Calorie Soda and Ginger Soda, with clearly printed 2 LITERS (2.1 QT). No visible prices or household objects. Legacy Diet naming is retained rather than silently replacing it with current Zero Sugar branding."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "2a84dc1911743da98b9c6c1fd3550d3d02548524b2ef1754b129eb585cd51894"
+      }
     },
     {
       "sku": "6813",
@@ -2736,28 +2407,9 @@
       },
       "reason": "Exact source UPC, primary product evidence and the individually inspected complete package corroborate this one previously unspecified-size SKU. Original inventory fields remain preserved privately.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.progresso.com/products/light-chicken-dumpling",
-          "supports": "Manufacturer identifies Light Chicken & Dumpling and explicitly describes one 18.5 oz can. No claim that this manufacturer page displays the UPC."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.shoprite.com/product/00041196419337",
-          "supports": "Primary grocery retailer explicitly pairs GTIN14 00041196419337 with Progresso Light Chicken & Dumpling Soup and 18.5 oz. This zero-padded code equals source UPC041196419337."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://shop.foodtown.com/store/foodtown-food-circus/products/37364-progresso-light-chicken-and-dumpling-soup-18-500-oz",
-          "supports": "Second primary grocery storefront explicitly lists Progresso Light Canned Chicken and Dumpling Soup, UPC00041196419337 and18.5oz."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/004/119/641/9337/3.jpg",
-          "supports": "Complete Progresso Light Chicken & Dumpling can on white, full pull-top lid and lower rim visible. NET WT 18.5 OZ (1 LB 2.5 OZ) 524g is clearly readable. No visible prices, hands, household setting or multipack."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a3e15998a92de513c9ba7a6c5d3dcae94309d6bda3f9511a890b891c1659ac2a"
+      }
     },
     {
       "sku": "2178",
@@ -2780,23 +2432,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.clamato.com/en/products/clamato-picante",
-            "supports": "Clamato manufacturer identifies Picante and explicitly lists 32 oz and 64 oz multiserve sizes. This supports the 32 oz expression, not the erroneous source 32 mL token."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.starimporters.com/product-details/clamato-32-oz-12-ct?id=7784",
-            "supports": "Primary distributor product page names its 32 oz Clamato offering and explicitly maps the Picante variant to UPC 014800512755. The separate regular variant has a different UPC; a wholesale case quantity is not assigned to this single source item."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://dnfbqhh6e48qy.cloudfront.net/product-images/OIP-8-removebg-preview17667785659922025-12-26-19-49-28P5GLQ.png",
-            "supports": "Individually inspected the exact Picante variant image linked by that distributor: complete Picante tomato cocktail bottle clearly prints 32 FL OZ (1 QT) 946 mL on the lower label. This private identity reference is not approved for public image reuse."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "cbfaafd93430a4a0e312601476dadc88e8ff7d40dbbd9877f5b07ecf38680488"
+        },
         "reason": "Manufacturer 32 oz Picante, exact source UPC distributor listing, and inspected package print 32 FL OZ / 946 mL establish a source unit typo. Original raw fields are retained; no builder size rule is broadened."
       }
     },
@@ -2821,23 +2459,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.pepsicopartners.com/pepsico/en/USD/BEVERAGES/Soft-Drinks/Dr-Pepper/p/1-DLFK8-18",
-            "supports": "PepsiCo distributor identifies exact UPC 078000082395 as Dr Pepper 1.25 L plastic bottle. Case quantity is not imported."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.cub.com/store/cub/products/141817-dr-pepper-soda-1-25-l",
-            "supports": "Cub independently lists exact UPC 078000082395 as Dr Pepper 1.25 L."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/007/800/008/2395/1.400.jpg",
-            "supports": "Actual bottle front individually inspected: Dr Pepper, 23 flavors, 1.25 Liter and 42.2 FL OZ are printed. Consumer photo is private evidence only and is not approved for public use."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "83c7b879a6e5e588b968218ffd28dd2e8d5a46c6554c71ae2d1a3b3b217d9017"
+        },
         "reason": "The exact UPC distributor and retailer identify a 1.25 L single plastic bottle. The actual front explicitly prints 42.2 FL OZ, corroborating the original title measurement rather than the conflicting pack description. No raw field is overwritten."
       }
     },
@@ -2859,33 +2483,9 @@
       },
       "reason": "Exact source UPC, manufacturer product and package image, exact-UPC primary retailer listings, and the individually inspected complete OFF package corroborate this one previously unspecified-size SKU. Source title and raw fields remain preserved privately; no known-size resolver broadening.",
       "reviewedOn": "2026-10-27",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.sweetbabyrays.com/sauces/barbecue-sauces/hickory-brown-sugar-barbecue-sauce",
-          "supports": "Sweet Baby Ray's identifies Hickory & Brown Sugar Barbecue Sauce. Its linked official bottle image was individually inspected and prints NET WT18 OZ (1 LB2 OZ)510g. The manufacturer page is not claimed to print the UPC; retailer corroboration supplies that link."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-14779732",
-          "supports": "Primary retailer lists Sweet Baby Ray's Hickory & Brown Sugar Barbecue Sauce18oz, UPC013409351505 and Package Quantity1. This is one bottle, not a wholesale case or a retailer-created multipack."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.smartandfinal.com/sm/pickup/rsid/315/product/sweet-baby-rays-hickory-%26-brown-sugar-barbecue-sauce-id-00013409351505",
-          "supports": "Primary retailer identifies Hickory & Brown Sugar Barbecue Sauce18 Ounce and product number00013409351505, the zero-padded source UPC. Its separate Case Size12 is not assigned to this single-bottle SKU."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.delitea.se/sweet-baby-rays-bbq-sas-hickory-510g",
-          "supports": "Primary retailer historical listing identifies Hickory barbecue sauce510g and EAN013409351505. Listing availability is not asserted."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://openfoodfacts-images.s3.eu-west-3.amazonaws.com/data/001/340/935/1505/6.jpg",
-          "supports": "Full original individually inspected: complete single Sweet Baby Ray's Hickory & Brown Sugar Barbecue Sauce bottle on white. Full cap with margin and base visible; NET WT18 OZ (1 LB2 OZ)510g readable. No visible prices or household objects. Best of three studio alternatives, conditional on exact-source guarded identity resolution and parent review; not a public assignment."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "21ec680201121c9065d66965c60995344551e4c729c5ff5b837caa1d7fce7742"
+      }
     },
     {
       "sku": "1377",
@@ -2938,18 +2538,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.kellanovaawayfromhome.com/en-us/products/cheez-it-original-crackers-product.00024100122349.html",
-            "supports": "Kellanova identifies Cheez-It Original Snack Crackers in an individually wrapped 1.5 oz pouch."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.kellanovaawayfromhome.com/en-us/products/cheez-it-original-crackers-product.00024100122349.html",
-            "supports": "Pouch UPC EACH:024100122615 identifies the reviewed Cheez-It Original 1.5 oz pouch."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "4033c52acf2b63e513c675716a99e9e3770ac45f122c0b937bff9cbeaf01728d"
+        },
         "expectedResultingGroupSkus": [
           "101288"
         ],
@@ -2983,23 +2574,9 @@
       },
       "reason": "Exact source UPC, manufacturer single-can details, retailer evidence and inspected package establish this formerly unspecified variant.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.kellanovaawayfromhome.com/en-us/products/pringles-grab-go-cheddar-cheese-product.00038000845567.html",
-          "supports": "Manufacturer identifies the exact individual UPC and the 40 g can for this flavor; case quantity is not adopted."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://weinersltd.com/products/whole-pringles-cheddar-cheese-potato-chips",
-          "supports": "Independent listing identifies the source UPC, flavor and individual can size."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.instacart.com/assets/domains/product-image/file/large_abf2be95-9560-4437-af6a-4097bbd0f8d0.jpg",
-          "supports": "Complete product can is visually inspected for the exact flavor. The manufacturer package image independently shows the UPC and 40 g size."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b9ef1c9e903749cbba4a004325ec8995894d98e65c3028987bd3cdc657465315"
+      }
     },
     {
       "sku": "6806",
@@ -3019,23 +2596,9 @@
       },
       "reason": "Exact source UPC, manufacturer single-can details, retailer evidence and inspected package establish this formerly unspecified variant.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.kellanovaawayfromhome.com/en-us/products/pringles-grab-go-sour-cream-onion-product.00038000845550.html",
-          "supports": "Manufacturer identifies the exact individual UPC and the 40 g can for this flavor; case quantity is not adopted."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://redstonefoods.com/products/84555--pringles-sour-cream-onion?product_code=H",
-          "supports": "Independent listing identifies the source UPC, flavor and individual can size."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.kroger.com/product/images/xlarge/front/0003800084552",
-          "supports": "Complete product can is visually inspected for the exact flavor. The manufacturer package image independently shows the UPC and 40 g size."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "df4c6806a271a4d3e89827fe94efc1ab6436ae1eebfe5d1a2dd2a28cc2207a03"
+      }
     },
     {
       "sku": "1952",
@@ -3055,23 +2618,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400624442-0011-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://brickseek.com/walmart-inventory-checker?sku=178365859",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400624442-0011-en-US/images/63c77808-237c-4755-a134-14cd18384298.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "87b06bfc6cbcc582ccfd5f79b32d380d60c82a033dffcf5354432b1a58107c52"
+      }
     },
     {
       "sku": "1949",
@@ -3091,23 +2640,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400047913-0015-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.upcitemdb.com/upc/28400047913",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400047913-0015-en-US/images/c9231d51-95c9-4697-bfe1-99cd2cd11d9e.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b874837ecdb82fc5d81c59f2cb2a74e239a49c97750fd72f85e30e03d3216811"
+      }
     },
     {
       "sku": "1947",
@@ -3127,23 +2662,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400674164-0012-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://menu.pepsico.info/45373434-65ec-4992-8d78-34be7ba6ddf0/index.html",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400674164-0012-en-US/images/51c663c8-f3f0-4dab-a4cd-5808c7ac4211.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "fb91e45931fb16aed98dae688abe075ececbfed6d161edc77aa642825fc6adef"
+      }
     },
     {
       "sku": "1948",
@@ -3163,23 +2684,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400305907-0013-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400305907-0013-en-US/index.html",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400305907-0013-en-US/images/410d68e2-ce98-46fc-aa07-cd948260fa1d.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "f974268d9af71ad11094440d35b00a16f60d0b07f7a01e239ba745b1d6754a2e"
+      }
     },
     {
       "sku": "1975",
@@ -3199,23 +2706,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400211772-0011-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400211772-0011-en-US/index.html",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400211772-0011-en-US/images/bcab25d7-0fdd-4254-94c0-16aaa2478799.JPEG",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "061d3b2d8f00e9bb1d6be29f5aac6ee1a93961011040c106caba4c093941d76b"
+      }
     },
     {
       "sku": "2915",
@@ -3235,23 +2728,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400070546-0012-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.upcitemdb.com/upc/28400070546",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400070546-0012-en-US/images/505f1278-aab2-4382-a33a-1208577e48eb.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3c86a09f9632f8e0773ad39a093c57a12105470bc07c6acde000f67ab994eb44"
+      }
     },
     {
       "sku": "2936",
@@ -3271,23 +2750,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400516464-0012-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/23587497-doritos-nacho-cheese-tortilla-chips-9-25-oz",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400516464-0012-en-US/images/a0ede8be-1b82-4cb7-b168-88df844302cf.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b0c746abe1ab2f963b5ec7ee2275808443f778a08a987a8f24791e8a30b7d766"
+      }
     },
     {
       "sku": "5026",
@@ -3307,23 +2772,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400091565-0013-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.webstaurantstore.com/documents/nutrition/lay_s_15_oz_regular_potato_chips.pdf",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400091565-0013-en-US/images/dde3dac2-aa49-461f-9a47-434e36c9bac6.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "01e4af9fe553c610528b8ebabf0e1503c53b55c48cee405bd303d9b1312725aa"
+      }
     },
     {
       "sku": "7226",
@@ -3343,23 +2794,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400002912-0012-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://laymandistributing.com/moto3/mt-content/uploads/2021/05/product-guide.pdf",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400002912-0012-en-US/images/719d7a9e-049d-4975-8721-f8d5ed05b5c4.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e818872b9f4df82f5afa463fd5b01f99ce97d4e8c461cd2481be352c3df87051"
+      }
     },
     {
       "sku": "8820",
@@ -3379,23 +2816,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400090582-0011-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.upcitemdb.com/upc/28400090582",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400090582-0011-en-US/images/399f2eac-a0bf-41d2-8d7f-4905f57939c5.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "53cd5f4f3700f195bcbe510ec4ff8e54f727d8954a9168ebd474e63ecefde04e"
+      }
     },
     {
       "sku": "8812",
@@ -3415,23 +2838,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400589253-0012-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.upcitemdb.com/upc/28400589253",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400589253-0012-en-US/images/8d2501da-127a-4a1e-be69-d48c48d068fc.png",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "ccc455d4d42028a69b1c7d6033a6b1a0585eb7ae43e2fb259d6cda6bc55a9eab"
+      }
     },
     {
       "sku": "7305",
@@ -3451,23 +2860,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400005784-0012-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/517149-munchies-cheddar-cheese-flavored-sandwich-crackers-1-38-fl-oz",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400005784-0012-en-US/images/44ec9254-ef48-46e2-9f0e-6507765be1de.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "24221299b4d31224920e34abfaf86be246eb66c9c3c8e51bba185bf9203fdb27"
+      }
     },
     {
       "sku": "7306",
@@ -3487,23 +2882,9 @@
       },
       "reason": "Exact UPC manufacturer record and inspected product package establish this formerly unspecified size; original source metadata is retained.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400006200-0012-en-US/index.html",
-          "supports": "Manufacturer identifies the exact UPC, product expression and package weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.upcitemdb.com/info-munchies",
-          "supports": "The exact UPC listing corroborates the product and its package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400006200-0012-en-US/images/e2fe0879-979a-47d6-b800-d9c67ecccfc5.jpg",
-          "supports": "Inspected manufacturer photograph shows the matching brand, flavor and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "9131145138e23f0ba8d5eb94e0f9adecaec77979768e379f3edc7f1461d61073"
+      }
     },
     {
       "sku": "1997",
@@ -3523,23 +2904,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400242936-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400242936-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400242936-0012-en-US/images/e4eb941b-b928-4074-9e60-2e25765c83aa.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "ffbf40451bd5a8b85eac9b82a21db92410d08495361e16edbf9e1c4cb7ff8a42"
+      }
     },
     {
       "sku": "2014",
@@ -3559,23 +2926,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400041560-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400041560-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400041560-0012-en-US/images/8ee03a3e-e39b-4954-891b-1e16f49a7c1f.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5a1365446b1a4b0d3871d259badf312781f8297c9bd7fce64ffb6a46f6cb98b3"
+      }
     },
     {
       "sku": "1996",
@@ -3595,23 +2948,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400041898-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400041898-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400041898-0012-en-US/images/2e557872-9bac-4c03-ad8f-b5b953f08339.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "63abd299ccb61db166f66174d27887b0ce841eb6d747d59594e188e547699bde"
+      }
     },
     {
       "sku": "3495",
@@ -3631,23 +2970,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400327299-0013-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400327299-0013-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400327299-0013-en-US/images/a6aa3322-eaed-4b7b-b820-d35740b5c9a9.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "daff0d05705210495ba7b30838c778579afa19088190d86fe2ec6b1ee54fadb6"
+      }
     },
     {
       "sku": "3498",
@@ -3667,23 +2992,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400327312-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400327312-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400327312-0012-en-US/images/cd381c53-5d27-4063-bbbe-4bba60015c59.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "f6e235a8cdea9d83e4764213e07eb1ec81365075cfc7f23ec8df6c9f4044a6be"
+      }
     },
     {
       "sku": "3546",
@@ -3703,23 +3014,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400331609-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400331609-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400331609-0012-en-US/images/09bf0f5c-121c-4562-bcc3-aafe5272868b.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "bd158936a8667eff7d72c0decfb5844c83b1b7e241b2ed525319c54f5b08e490"
+      }
     },
     {
       "sku": "3857",
@@ -3739,23 +3036,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400259613-0011-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400259613-0011-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400259613-0011-en-US/images/6f5d31be-62c1-4437-8d45-a3ad7b499d8a.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "7283a73690a0998db724f2ae62349663e0d267bfd9efa0b1de71abd5011095e0"
+      }
     },
     {
       "sku": "3861",
@@ -3775,23 +3058,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400004473-0011-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400004473-0011-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400004473-0011-en-US/images/5f9c847c-2a01-4d57-af30-6ccc9a3e32f1.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "9e5eab3132ae62eeff19815590f4035870a584653425a7f7020e9409a4320f89"
+      }
     },
     {
       "sku": "6023",
@@ -3811,23 +3080,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400436182-0013-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400436182-0013-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400436182-0013-en-US/images/a0f10050-1cda-452c-955d-a5b72ad91751.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "292af454dc7bbc65ca7ef88cb4b4f4810bb87971fdba687b951d056dbb0b8e27"
+      }
     },
     {
       "sku": "6024",
@@ -3847,23 +3102,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400436236-0013-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400436236-0013-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400436236-0013-en-US/images/6af967d7-3b07-4191-bb23-efa99d14d5f0.JPEG",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "94423cfbeb675993671e29e6a155289b145e6129b402716196262ed7cf485384"
+      }
     },
     {
       "sku": "7307",
@@ -3883,23 +3124,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400026864-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400026864-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400026864-0012-en-US/images/61a103dd-1b51-4bab-93dc-8a50ddc49952.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "1a5f2cc6db19ca234621f5f470a400e89142078d249928a4b5ba9a61e36f7ffe"
+      }
     },
     {
       "sku": "7308",
@@ -3919,23 +3146,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400026734-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400026734-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400026734-0012-en-US/images/ff32d8ca-2e7f-450e-99fd-13506c3335e6.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "90cc0c5b00155e99ee54248a4633543e54a04ca71a3b3895b8b6d5b1e225f5d7"
+      }
     },
     {
       "sku": "7676",
@@ -3955,23 +3168,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400020008-0011-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400020008-0011-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400020008-0011-en-US/images/0cda0124-1570-439c-8ade-f703f5c20e2d.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "59804d94261f58897f5b8ec8875405097cb64c51cc1e5bbc1f5c313fada84977"
+      }
     },
     {
       "sku": "3858",
@@ -3997,18 +3196,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/028400259422-0012-en-US/index.html",
-            "supports": "Manufacturer SmartLabel identifies Grandma's Chocolate Brownie Naturally & Artificially Flavored Cookies and its bag package."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/028400259422-0012-en-US/index.html",
-            "supports": "Exact UPC 028400259422 identifies Net Wt 2 7/8 OZ (81.5 g), Bag."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "5962e4e1651ebead3642ea5ba286e6df5fc78fe3dc7421b54b25b88681b7bc1e"
+        },
         "expectedResultingGroupSkus": [
           "3858",
           "3859"
@@ -4040,18 +3230,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/028400259552-0012-en-US/index.html",
-            "supports": "Manufacturer SmartLabel identifies Grandma's Peanut Butter Cookies and its two-cookie bag package."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/028400259552-0012-en-US/index.html",
-            "supports": "Exact UPC 028400259552 identifies Net Wt 2 7/8 OZ (81.5 g), Bag."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "73381d73b4a946f20abe6192fddf617fea3eaef6bb3e75a5deeaf7cab2721353"
+        },
         "expectedResultingGroupSkus": [
           "3863",
           "3862"
@@ -4083,18 +3264,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/028400025287-0012-en-US/index.html",
-            "supports": "Manufacturer SmartLabel identifies Munchies Cheese Fix Flavored Snack Mix and its bag package."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/028400025287-0012-en-US/index.html",
-            "supports": "Exact UPC 028400025287 identifies Net Wt 1 3/4 OZ (49.6 g), Bag."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "20ed9eee4845b630958a28af690e9d12924ad8e414babb9f031b23ccfd57fd49"
+        },
         "expectedResultingGroupSkus": [
           "6020",
           "6012"
@@ -4120,23 +3292,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400000246-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400000246-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400000246-0012-en-US/images/09f5dbac-c528-42bf-ab2d-671da2fc5eaf.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "1c320da401dbd216ecc1ca0971bea3a083e5fa09d57055d7058e9a6e07b69c41"
+      }
     },
     {
       "sku": "3491",
@@ -4156,23 +3314,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400000222-0011-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400000222-0011-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400000222-0011-en-US/images/8be400ac-1bea-4e58-bf6c-2aaf7eaceeea.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e29bd1d020b9a9a3a102213dc77059803f6e07c78934dd3b129c79d8f67f5494"
+      }
     },
     {
       "sku": "5051",
@@ -4192,23 +3336,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400070942-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400070942-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400070942-0012-en-US/images/25c20f22-e982-42c2-97b5-1208fb449ac7.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "0275bf587810416db4fc8ea9a11f2a12d918854363b26e12c7530150b3e553a0"
+      }
     },
     {
       "sku": "7270",
@@ -4228,23 +3358,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400041546-0012-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400041546-0012-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400041546-0012-en-US/images/bfc42ea6-c3ad-40b5-adab-4305ca808ad0.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "2384ae38e617f675b9a66c6ec3edd1dcd9b0aebd99249cd8f62aeedece1c2f8a"
+      }
     },
     {
       "sku": "2926",
@@ -4264,23 +3380,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400162128-0011-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400162128-0011-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400162128-0011-en-US/images/4b1023d4-9fde-4a03-b69c-3bee3ab72fd1.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e4abfba6199b4dae44a866742860f6cac55afb01a23562c14337896e5393a8cc"
+      }
     },
     {
       "sku": "7269",
@@ -4300,23 +3402,9 @@
       },
       "reason": "Manufacturer exact UPC product record and inspected package establish this previously unspecified size; retain source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400133142-0013-en-US/index.html",
-          "supports": "Manufacturer record identifies the exact UPC, product and package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.pepsico.info/028400133142-0013-en-US/index.html",
-          "supports": "Exact UPC manufacturer listing states the matching package weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.pepsico.info/028400133142-0013-en-US/images/c2dcd9eb-ad04-4e15-930f-5b6ed55e0618.jpg",
-          "supports": "Inspected manufacturer image shows the matching product and package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "1fb5432097c4f57a978d983c9f80af80ab04bb7a61470cd580ab6a976326998f"
+      }
     },
     {
       "sku": "6595",
@@ -4342,18 +3430,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/028400260725-0012-en-US/index.html",
-            "supports": "Manufacturer SmartLabel identifies Grandma's Peanut Butter Sandwich Creme Cookies and its single package."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/028400260725-0012-en-US/index.html",
-            "supports": "Exact UPC 028400260725 identifies Net Wt 3.245 OZ (91.9 g), Pack."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "8528c7838b67c274cf096897c4edc5f89bd577c1d6468e66b327399aa028d001"
+        },
         "expectedResultingGroupSkus": [
           "6595"
         ],
@@ -4393,18 +3472,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/028400261531-0012-en-US/index.html",
-            "supports": "Manufacturer SmartLabel identifies Sabritas Salt & Lime Flavored Peanuts and its bag package."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/028400261531-0012-en-US/index.html",
-            "supports": "Exact UPC 028400261531 identifies Net Wt 1 5/8 OZ (46 g), Bag."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "00f6928c4911b84941f541801fa75dea462b8083a0d31517f1f62be7d4d2b304"
+        },
         "expectedResultingGroupSkus": [
           "101355"
         ],
@@ -4447,23 +3517,9 @@
       },
       "reason": "Exact UPC listing and inspected package establish the previously unspecified variant; retain original source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.hersheys.com/010700807229-0055-en-US/index.html",
-          "supports": "Manufacturer confirms the brand, expression, and corresponding package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/16609045-payday-bar-peanut-caramel-1-85-oz",
-          "supports": "Exact UPC listing identifies the product and package size."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://smartlabel.hersheys.com/010700807229-0055-en-US/images/8da1c90c-1d29-4950-b676-b18de0803707.png",
-          "supports": "Inspected product photo shows the matching expression and package weight."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3accd25280035f327fa565e4fb807cb0da9320887baf9fe97740c57f7d783c41"
+      }
     },
     {
       "sku": "4138",
@@ -4483,23 +3539,9 @@
       },
       "reason": "Exact UPC listing and inspected package establish the previously unspecified variant; retain original source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.hersheyland.com/products/hersheys-milk-chocolate-candy-bar-1-55-oz.html",
-          "supports": "Manufacturer confirms the brand, expression, and corresponding package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.theamericanstore.de/Hersheys-Milk-Chocolate-Bar-43g",
-          "supports": "Exact UPC listing identifies the product and package size."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://cdn11.bigcommerce.com/s-mivyx18b6b/products/55785/images/1495782/034000002405_4__93534.1760646590.1280.1280.jpg?c=1",
-          "supports": "Inspected product photo shows the matching expression and package weight."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "36cb10453cd1bea6c70fc66804919556b9b0df513dfec66a7fa173d8408ed6fd"
+      }
     },
     {
       "sku": "4139",
@@ -4519,23 +3561,9 @@
       },
       "reason": "Exact UPC listing and inspected package establish the previously unspecified variant; retain original source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.hersheyland.com/products/hersheys-milk-chocolate-with-almonds-candy-bar-1-45-oz.html",
-          "supports": "Manufacturer confirms the brand, expression, and corresponding package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.aallyandsons.com/hershey-s-milk-chocolate-with-whole-almonds-bar-41g/",
-          "supports": "Exact UPC listing identifies the product and package size."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://cdn11.bigcommerce.com/s-mivyx18b6b/products/55786/images/1495785/034000702343_0_big__77870.1760646863.1280.1280.png?c=1",
-          "supports": "Inspected product photo shows the matching expression and package weight."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "98856dcdd86344030f751fe92bdc7ba3f86aa18892604ed7eedf0ef3d80f84c3"
+      }
     },
     {
       "sku": "7004",
@@ -4555,23 +3583,9 @@
       },
       "reason": "Exact UPC listing and inspected package establish the previously unspecified variant; retain original source metadata.",
       "reviewedOn": "2026-10-28",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.hersheyland.com/products/reeses-milk-chocolate-peanut-butter-cups-1-5-oz-6-pack.html/1000",
-          "supports": "Manufacturer confirms the brand, expression, and corresponding package size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://getzh.de/reeses-peanut-butter-cups-42g",
-          "supports": "Exact UPC listing identifies the product and package size."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.myamericanmarket.com/2841-thickbox_default/reeses-cup-2cups.jpg",
-          "supports": "Inspected product photo shows the matching expression and package weight."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "0b42003594ccf0c709dc9ce8c3917a24c770d360294b62425322b2d8ed80aa32"
+      }
     },
     {
       "sku": "1338",
@@ -4594,23 +3608,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/012000567490-0012-en-US/index.html",
-            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/012000567490-0012-en-US/index.html",
-            "supports": "Exact UPC record corroborates the single bottle size."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/012000567490-0012-en-US/images/f40f3f55-21f3-42af-9bf3-b8183ff6d4ff.jpg",
-            "supports": "Inspected product image shows the matching flavor and package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "deb46c0a40bbb918d9b6fefd5a8dbcf46eadac01f4c5e144a5b96e58bcd8c973"
+        },
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -4636,23 +3636,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/012000140211-0011-en-US/index.html",
-            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/012000140211-0011-en-US/index.html",
-            "supports": "Exact UPC record corroborates the single bottle size."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/012000140211-0011-en-US/images/c9e25b38-e9b2-4d80-8c61-91d2e1b08ba8.jpg",
-            "supports": "Inspected product image shows the matching flavor and package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "d8048cba4f97716f4010db79f8a14aa553a2bedd474878507e1f5b2f1f928baa"
+        },
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -4678,23 +3664,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/012000034015-0012-en-US/index.html",
-            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/012000034015-0012-en-US/index.html",
-            "supports": "Exact UPC record corroborates the single bottle size."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/012000034015-0012-en-US/images/19a6a6da-9ee1-4993-9f47-6535b00681f6.jpg",
-            "supports": "Inspected product image shows the matching flavor and package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "c4596720abc59570e7b466dd14486408a8cb0752f28bb81f83aebb0e06914a1a"
+        },
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -4720,23 +3692,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/012000161476-0011-en-US/index.html",
-            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/012000161476-0011-en-US/index.html",
-            "supports": "Exact UPC record corroborates the single bottle size."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/012000161476-0011-en-US/images/44ee8a35-33d4-4180-891c-6b9f030f33f1.jpg",
-            "supports": "Inspected product image shows the matching flavor and package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "35adf0996abc314663e63bac3bc73d11c3978755f3211bddb84747aa0de1a29c"
+        },
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -4762,23 +3720,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/012000101908-0011-en-US/index.html",
-            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/012000101908-0011-en-US/index.html",
-            "supports": "Exact UPC record corroborates the single bottle size."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/012000101908-0011-en-US/images/2dfddf5a-71fc-4b39-95d3-213713ad79fc.jpg",
-            "supports": "Inspected product image shows the matching flavor and package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "ec27a76a28c0a437d508544f03dc2b9021859d5e6e0addcfe3599c1d57d75907"
+        },
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -4804,23 +3748,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/012000384196-0012-en-US/index.html",
-            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/012000384196-0012-en-US/index.html",
-            "supports": "Exact UPC record corroborates the single bottle size."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/012000384196-0012-en-US/images/27eff74e-ae74-4a99-95d1-a187a3fd4fcf.jpg",
-            "supports": "Inspected product image shows the matching flavor and package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "0fc969a80047015813e4fa335e8515016bc34161fc1069ec902c514827397e0d"
+        },
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -4846,23 +3776,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/012000024528-0012-en-US/index.html",
-            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/012000024528-0012-en-US/index.html",
-            "supports": "Exact UPC record corroborates the single bottle size."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/012000024528-0012-en-US/images/4de131ef-e15f-43a5-8508-05edf25496ef.jpg",
-            "supports": "Inspected product image shows the matching flavor and package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "8d29551f7af343afdaa53f16ff44fd88f7317ba9fedc8325c310eaa69f619f77"
+        },
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -4888,23 +3804,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/012000161230-0011-en-US/index.html",
-            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/012000161230-0011-en-US/index.html",
-            "supports": "Exact UPC record corroborates the single bottle size."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/012000161230-0011-en-US/images/0cbe395a-c89c-4d63-9a46-8dae7b22a266.jpg",
-            "supports": "Inspected product image shows the matching flavor and package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "1b9caaed15b218b03ed026dddf95b2bd80f00176c32d58068a2a5af122ccea7b"
+        },
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -4930,23 +3832,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/012000031878-0012-en-US/index.html",
-            "supports": "Manufacturer identifies the exact UPC, flavor, and one-liter bottle."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/012000031878-0012-en-US/index.html",
-            "supports": "Exact UPC record corroborates the single bottle size."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/012000031878-0012-en-US/images/744d3f86-d992-489c-8640-04a269bdb311.jpg",
-            "supports": "Inspected product image shows the matching flavor and package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "ccb237a42b9818dd453773c4045ba99429264172273345fb4883206ca0a41b41"
+        },
         "reason": "The source size and exact UPC manufacturer record agree on a one-liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -4969,23 +3857,9 @@
       },
       "reason": "Exact UPC, manufacturer product description and visually inspected package corroborate this single bar. Original source identity remains private.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.marsfoodservices.com/product/snickers-ice-cream-bar",
-          "supports": "Manufacturer identifies the flavor and single ice cream bar size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://cooperstruevalue.com/p/snickers-ice-cream-bar-king-size-047677482487",
-          "supports": "Exact UPC listing corroborates the single bar and size."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://storage.googleapis.com/ezimage-cache/noscale/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3Byb2R1Y3RzLmV6YWR0di5jb20vZWNvbS1pbWFnZS12Mi8wMDA2NWNlZGJjNjY0OTZhY2FkNDU3ZWUuanBlZw.webp",
-          "supports": "Inspected package matches the product and single-bar format."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "1e8c9ae48dc7ba6b401af6db006e8705ce9ea9c3338a856006d7677f2ff55fc4"
+      }
     },
     {
       "sku": "8988",
@@ -5005,28 +3879,9 @@
       },
       "reason": "Exact UPC, manufacturer product description and visually inspected package corroborate this single bar. Original source identity remains private.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.marsfoodservices.com/product/twix-ice-cream-bar",
-          "supports": "Manufacturer identifies the flavor and single ice cream bar size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/242251-twix-ice-cream-bar-3-oz",
-          "supports": "Exact UPC listing corroborates the single bar and size."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.instacart.com/assets/domains/product-image/file/large_a49a017d-4ea3-424b-9d29-3594ea04d7f1.jpg",
-          "supports": "Inspected package matches the product and single-bar format."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.colmadowikonline.com/web/image/product.template/50815/image_1920",
-          "supports": "Additional package image displays the 3 fl oz size."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5fd6dcc7b7483a4e8b7e4587cf37b1d81504041cb7f0c1271062618d30a18bdb"
+      }
     },
     {
       "sku": "6629",
@@ -5253,23 +4108,9 @@
       },
       "reason": "Manufacturer product details, exact UPC listing and inspected package corroborate this single 2 oz bag; original unspecified source size is retained privately.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.labelinsight.com/product/4961190/image?return=%2Fingredients%2Fbeeswax",
-          "supports": "Manufacturer identifies the product and 2 oz bag."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/2915508-airheads-bites-fruit-2-0-oz",
-          "supports": "The exact unit UPC identifies this expression and 2 oz bag."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.instacart.com/assets/domains/product-image/file/large_275f680f-89ae-4a4e-88d4-b425d4e17c20.png",
-          "supports": "Inspected image shows the named flavor in an individual 2 oz bag."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "932f8097fbd6d710c654e1650ed9a876fb10fad53717ff36f30d263a46bd284e"
+      }
     },
     {
       "sku": "305",
@@ -5289,23 +4130,9 @@
       },
       "reason": "Manufacturer product details, exact UPC listing and inspected package corroborate this single 2 oz bag; original unspecified source size is retained privately.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://perfettivanmelleus.com/airheads-paradise-blends-2/",
-          "supports": "Manufacturer identifies the product and 2 oz bag."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://americansweets.co.uk/sweets-and-candy/soft-candy/airheads-bites-paradise-blend-2oz-57g-html",
-          "supports": "The exact unit UPC identifies this expression and 2 oz bag."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://cdn.shopify.com/s/files/1/0148/3295/9574/files/Headbitestropical.jpg?v=1782319089",
-          "supports": "Inspected image shows the named flavor in an individual 2 oz bag."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "0a59bee36e4dffc537bae5d0bdc516f6ef40341f03d96a0f7fd6ae96244013b9"
+      }
     },
     {
       "sku": "7902",
@@ -5325,23 +4152,9 @@
       },
       "reason": "Manufacturer, exact UPC listing and inspected package corroborate this 5.34 oz tray; original unspecified source size is retained privately.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.carleys.com/6-pack-iced-lemon",
-          "supports": "Manufacturer identifies the six-cookie iced lemon package as 5.34 oz."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://snack4less.com/collections/carleys/products/carleys-iced-lemon-soft-baked-cookies-5-34oz-6pk",
-          "supports": "Exact unit UPC identifies the iced lemon 5.34 oz package."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://snack4less.com/cdn/shop/files/SNACK-CARLEY_S-SB-6CT-5.34OZ-IL.webp?crop=center&height=1200&v=1787741125&width=1200",
-          "supports": "Inspected front package reads iced lemon and 5.34 oz."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "b0984c07717c0fc0e42af205d4b2329e8952c402174255d423df7dd5af0fa90c"
+      }
     },
     {
       "sku": "8043",
@@ -5373,23 +4186,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://sunkistsummer.com/products.pdf",
-            "supports": "Sunkist promotion identifies strawberry lemonade in a single 2 liter package using the UPC prefix."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.cub.com/store/cub/products/19425777-sunkist-strawberry-lemonade-soda-2-l",
-            "supports": "Exact UPC identifies strawberry lemonade in a 2 liter bottle."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.kroger.com/product/images/large/front/0007800003180",
-            "supports": "Inspected bottle label shows strawberry lemonade and 2 liters."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "acb40310f9fca9defbbe9f384f9076b5d22baecf90f86298b33d86822465d5db"
+        },
         "reason": "Exact UPC and inspected package establish this single two liter bottle.",
         "groupWithPriorExpression": true
       }
@@ -5415,23 +4214,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://sunkistsummer.com/products.pdf",
-            "supports": "Manufacturer product list identifies Sunkist Strawberry Lemonade in a single 2 L package; listed UPC prefix matches source."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://go-upc.com/search?q=078000027723",
-            "supports": "Exact UPC is listed as Sunkist Strawberry Lemonade soda."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.kroger.com/product/images/large/front/0007800002772",
-            "supports": "Inspected exact-UPC package front identifies Sunkist Strawberry Lemonade and 2 liters."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "8b8b74251023eacb7415866547c513b90df02dba1141873369d959c1dc5ab556"
+        },
         "reason": "Exact UPC and inspected package establish one 2 L bottle matching the existing expression.",
         "groupWithPriorExpression": true
       }
@@ -5517,23 +4302,9 @@
       },
       "reason": "Exact UPC manufacturer product record and the individually inspected 7.75 oz bag corroborate this SKU; the original unspecified size is retained privately.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.pepsico.info/028400575317-0004-en-US/index.html",
-          "supports": "PepsiCo exact UPC record identifies the BLT Sandwich expression and 7.75 oz package."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.harristeeter.com/p/lay-s-blt-sandwich-flavored-potato-chips/0002840057531",
-          "supports": "Retailer identifies the matching UPC product expression."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.kroger.com/product/images/xlarge/front/0002840057531?banner=harristeeter",
-          "supports": "Inspected complete Lay’s BLT Sandwich bag visibly states 7.75 oz."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "a8a4bad5ea0d416292939ac1506a4ddf08447bfd1c02644ddccb61f4b287eada"
+      }
     },
     {
       "sku": "6962",
@@ -5643,23 +4414,9 @@
       },
       "reason": "Exact source UPC, manufacturer single-bar listing and inspected complete wrapper corroborate this SKU; original unspecified source identity remains private.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.marsfoodservices.com/product/snickers-peanut-butter-squared",
-          "supports": "Mars lists Snickers Peanut Butter Squared singles at 1.78 oz."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.officedepot.com/a/products/928102/Snickers-Peanut-Butter-Squared-178-Oz/",
-          "supports": "UPC 040000394129 identifies the 1.78 oz Peanut Butter Squared bar."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/DW52270-18.jpg?v=1752164772",
-          "supports": "The complete inspected wrapper is Peanut Butter Squared with two squares."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "bc42fd37e49850e4683818993162bd724b0f789fb0dd575f432730c2c3914cfe"
+      }
     },
     {
       "sku": "7932",
@@ -5679,23 +4436,9 @@
       },
       "reason": "Manufacturer multipack record, exact unit UPC listings and inspected single bag corroborate this SKU; original unspecified source identity remains private.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.mondelez.info/070462012323-0001-en-US/index.html",
-          "supports": "Mondelez identifies a 24 count pack of 2 oz Watermelon bags."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.nassaucandy.com/sour-patch-watermelon-2oz.html",
-          "supports": "UPC 070462098525 identifies Sour Patch Watermelon 2 oz."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.smartandfinal.com/product/sour-patch-kids-candy-soft-%26-chewy-watermelon-id-00070462098525",
-          "supports": "The exact-UPC product page provides a complete 2 oz watermelon bag photo."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5af245d0f49d9622bd6867f60bc208813c76a3a6475c78957fee950cd89ce534"
+      }
     },
     {
       "sku": "7872",
@@ -5715,23 +4458,9 @@
       },
       "reason": "Mars product guide, exact UPC product record and inspected pint corroborate this SKU; original unspecified source identity remains private.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://brownsicecream.com/wp-content/uploads/2024/01/mars-products.pdf",
-          "supports": "Mars UPC/UCC guide identifies UPC 047677388062 as a 16 fl oz pint."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cloud9liquor.com/snickers-ice-cream-pints-9",
-          "supports": "UPC 047677388062 is listed for the specific 16 oz ice cream pint."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://futurisoft.azureedge.net/alchub/047677388062.jpeg",
-          "supports": "The inspected full pint displays the product brand and 16 fl oz volume."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "1d18bc7086b6e8da10697a9337a1ef20133b4ca3e44295502fa99031cb4742a4"
+      }
     },
     {
       "sku": "8987",
@@ -5751,23 +4480,9 @@
       },
       "reason": "Mars product guide, exact UPC product record and inspected pint corroborate this SKU; original unspecified source identity remains private.",
       "reviewedOn": "2026-10-29",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://brownsicecream.com/wp-content/uploads/2024/01/mars-products.pdf",
-          "supports": "Mars UPC/UCC guide identifies UPC 047677388079 as a 16 fl oz pint."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.holidaywholesale.com/wp-content/uploads/2018_05_May_HolidayHighlights_LR_.pdf",
-          "supports": "UPC 047677388079 is listed for the specific 16 oz ice cream pint."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.twix.com/sites/g/files/fnmzdf236/files/2023-10/l9dmcmluctbbrkmgekfi.png",
-          "supports": "The inspected full pint displays the product brand and 16 fl oz volume."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "bbd247ec3fa1f8f7c0562e45cc2da4d5226b7d919bff9d69494eaff4ed7446a7"
+      }
     },
     {
       "sku": "191",
@@ -5805,23 +4520,9 @@
       },
       "reason": "Manufacturer flavor evidence, an exact UPC listing and an inspected complete package corroborate this single 16 oz bottle; the original source fields remain private.",
       "reviewedOn": "2026-10-30",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://snapple.com/products/snapple-kiwi-strawberry-juice",
-          "supports": "Snapple identifies Kiwi Strawberry and lists a 16 oz consumer format."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-14993485",
-          "supports": "Target identifies UPC 076183003107 as Snapple Kiwi Strawberry Juice Drink, one 16 fl oz plastic bottle."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://images.heb.com/is/image/HEBGrocery/002147821-1?fit=constrain&hei=1400&jpegSize=150&qlt=75&v=1",
-          "supports": "The inspected complete Snapple Kiwi Strawberry Juice Drink bottle displays 16 FL OZ; exact UPC and single-bottle evidence are corroborated by the Target record."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "49b2e29a295d7132610c1ff6c4f71fc93de2d0d8afc8567ba1d19283e15e1c39"
+      }
     },
     {
       "sku": "94",
@@ -5844,23 +4545,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/166735",
-            "supports": "The control-state product record names Proximo Spirits as distiller and maps UPC 811538018951 to 1800 Ultimate RTD Blood Orange Margarita in a 1.75 L bottle, corroborating producer, expression and size."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.cub.com/store/cub-liquors/products/21110070-1800-tequila-1-75-l",
-            "supports": "The exact UPC 811538018951 listing identifies 1800 The Ultimate Margarita Blood Orange Cocktail and its 1.75 L retail unit, corroborating the canonical public title."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://i5.walmartimages.com/seo/1800-The-Ultimate-Margarita-Blood-Orange-1-75-L-Bottle-9-95-ABV_4a7751b9-e1ea-4b79-a6e4-d8526ee46b5f.024b7aebc0c30ef6cfeb314a10b127ab.jpeg",
-            "supports": "The inspected 2200x2200 package image visibly shows one complete 1800 The Ultimate Margarita Blood Orange bottle and its 1.75 L marking."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "bfeb676da0d1533fae33e34e637bc1d1293d3ae8a2a93ddc0ee4a4199c3c267f"
+        },
         "reason": "Producer-linked control-state data, an independent exact-UPC listing, and an inspected complete package agree on brand, The Ultimate Margarita product line, Blood Orange expression, 1.75 L size, and single-bottle packaging."
       }
     },
@@ -5885,23 +4572,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.universalfws.com/product/p-14352-chi-chis-mexican-mudslide-rtd-175l/",
-            "supports": "The distributor record identifies UPC 089000547814 as Chi Chis Mexican Mudslide RTD, 1.75 L; it corroborates the expression, ready-to-drink type and bottle size."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.cub.com/store/cub-liquors/products/317952-chi-chis-mexican-mudslide-1-75-l",
-            "supports": "The exact UPC 089000547814 listing identifies Chi-Chi's Mexican Mudslide, 1.75 L, with a single bottle product page."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.kroger.com/product/images/xlarge/front/0008900054781",
-            "supports": "The inspected 1000x1000 package image visibly shows one complete Chi-Chi's Mexican Mudslide bottle with its 1.75 L neck marking."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "a8d7269d3234ab76522e44c4e0822de5673443aa537eb2ae67f3e5ed7e8b3bde"
+        },
         "reason": "Distributor and independent exact-UPC records, plus an inspected complete package, agree on Chi-Chi's brand punctuation, Mexican Mudslide expression, 1.75 L size, and single-bottle packaging."
       }
     },
@@ -5926,23 +4599,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.1800tequila.com/products/margaritas-1800-mango/",
-            "supports": "The official 1800 brand page identifies Ultimate Mango Margarita as a ready-to-serve mango margarita and identifies The Ultimate Margarita as a ready-to-serve cocktail, corroborating the brand, product line and mango expression."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://abc2.nc.gov/Pricing/ViewItemDetails/171221",
-            "supports": "The current control-state record names Proximo Spirits as distiller and maps UPC 818844023174 to 1800 Ultimate RTD Mango Margarita in a 1.75 L bottle."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://cdn11.bigcommerce.com/s-0ddlsmhg83/images/stencil/640w/products/9352/9606/1800-the-ultimate-ready-to-drink-mango-margarita__07562.1752496225.1280.1280__63584.1.jpg",
-            "supports": "The inspected 600x600 WebP package image visibly shows one complete 1800 The Ultimate Margarita Mango ready-to-serve bottle and its 1.75 L marking."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "2ce8762ab2d7647bcb83c11b5a301e315ef0f642db9cd6f503c6b79a6e03c1fe"
+        },
         "reason": "The official 1800 product page, a current exact-UPC control-state listing, and an inspected complete package agree on the 1800 brand, Mango expression, ready-to-drink identity, 1.75 L size, and single-bottle packaging."
       }
     },
@@ -5964,23 +4623,9 @@
       },
       "reason": "Exact source UPC, a live Rap Snacks product record, an independent exact-UPC listing, and a freshly hash-matched inspected individual wrapper corroborate the brand, Big Back Iced expression, 4.75 oz size, and single wrapped-pastry format. Original source wording remains private.",
       "reviewedOn": "2026-10-30",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.rapsnacks.net/products/rap-snacks-big-back-iced-honey-bun",
-          "supports": "The live official Rap Snacks record identifies barcode 781231003786 as Rap Snacks Big Back Iced Honey Buns, 4.75 oz, and describes the Iced Honey Bun product."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.faire.com/product/p_7qyrpenme8",
-          "supports": "The wholesale listing identifies UPC 781231003786 as Rap Snacks Big Back Iced Honey Buns in the 4.75 oz expression."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.rapsnacks.net/cdn/shop/files/honeybun-BB-iced-noprice_1200x1200.png?v=1763869032",
-          "supports": "The inspected complete official wrapper visibly shows Rap Snacks Big Back Iced Honey Bun and 4.75 oz in a single wrapped-pastry presentation."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "473f9fbeb04b73d0445a4bfad3af59661c6f09e27d76eac7c2076cfcf35602dd"
+      }
     },
     {
       "sku": "6881",
@@ -6000,23 +4645,9 @@
       },
       "reason": "Exact source UPC, Maruchan's live GTIN product record, an independent exact-UPC listing, and a freshly hash-matched inspected complete packet corroborate the brand, Chili Flavor expression, 3 oz size, and single-packet format. Original source wording remains private.",
       "reviewedOn": "2026-10-30",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://maruchan.com/products/ramen/chili-flavor",
-          "supports": "Maruchan's product record identifies Chili Flavor under the Maruchan brand with GTIN 041789002168 and a 3 oz size."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/153573-maruchan-chili-flavor-ramen-noodle-soup-3-oz",
-          "supports": "The listing identifies UPC 041789002168 as Maruchan Ramen Noodle Soup, Chili, 3 oz."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://cdn.sanity.io/images/5hhe19bn/production/d29102b74320bec93af36c4a7edb5c0078ae023a-760x760.webp",
-          "supports": "The inspected complete packet visibly shows Maruchan, Chili Flavor, and 3 oz in a single-packet presentation."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "6f359b5cc95607af857c1b6f5468c09dd0a73a54dfab59e9bfbadc067b2ace81"
+      }
     },
     {
       "sku": "2875",
@@ -6036,23 +4667,9 @@
         "upc": true,
         "visual": true
       },
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://smartlabel.labelinsight.com/product/4494682/other/certifications",
-          "supports": "Dole Packaged Foods LLC's SmartLabel record identifies Pineapple Slices in Heavy Syrup, 20 oz (567 g), and UPC 038900001025."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://shop.foodland.com/product/dole-pineapple-slices-in-heavy-syrup-id-038900001025",
-          "supports": "Foodland identifies Dole Pineapple Slices in Heavy Syrup, 20 Ounce, with Product Number 038900001025."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://images.heb.com/is/image/HEBGrocery/000119372-4?fit=constrain&hei=1400&jpegSize=150&qlt=75&v=1",
-          "supports": "Inspected full isolated packshot shows the Dole Pineapple Slices in Heavy Syrup can and printed NET WT 20 OZ (567 g); one complete can, no price text, and no other products."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "7383b3b142c00b3aa794309124f1abccccccbf66a83d6fa883a8267722055303"
+      }
     },
     {
       "sku": "8185",
@@ -6072,23 +4689,9 @@
         "upc": true,
         "visual": true
       },
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://info.nsf.org/USDA/Listings.asp?Company=1Q110",
-          "supports": "NSF's current official listing names Champion Packaging & Distribution, Inc. as manufacturer and lists SunBrite Ultra Bleach as its registered product."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.glwholesale.com/product/wholesale-sunbrite-ultra-6-bleach-1-gallon/sb110020",
-          "supports": "Distributor product record identifies Sunbrite Ultra 6% Bleach, Product Code SB110020, UPC Code 022609000793, and a net 128 fl oz bottle / 1 gallon. Its 6/128 oz field describes the case configuration; only the one-gallon consumer jug is resolved."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.farmandhomesupply.com/media/catalog/product/1/5/15850151.jpg?canvas=658%3A658&fit=bounds&height=658&quality=100&width=658",
-          "supports": "Inspected full isolated asset shows one SunBrite Ultra Bleach jug with printed NET CONTENTS: 1 GALLON (128 FL OZ); no price text and no other products."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "81716b73ce60e4a22f3e26d60bea6e7b308c59223b972639e47c5b6cbf51c7af"
+      }
     },
     {
       "sku": "1992",
@@ -6108,23 +4711,9 @@
       },
       "reason": "The exact source UPC, manufacturer product record, independent UPC listing, and inspected one-can package resolve the source's missing consumer size and duplicate ravioli wording for this SKU only.",
       "reviewedOn": "2026-10-30",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://chefboyardee.com/products/mini/mini-ravioli-can/",
-          "supports": "Chef Boyardee identifies its Mini Ravioli Can as mini beef ravioli and lists a 15 oz consumer size; the source UPC is corroborated separately."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://shop.foodland.com/product/chef-boyardee-mini-ravioli-id-064144043064",
-          "supports": "Exact UPC 064144043064 identifies Chef Boyardee Mini Ravioli in a 15 oz can."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.instacart.com/assets/domains/product-image/file/large_fafa62a4-e07b-4293-af30-e309531d87ae.jpg",
-          "supports": "Inspected package photo shows one complete Chef Boyardee Mini Beef Ravioli in Pasta Sauce can with 15 oz printed on the label."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3b9d59b1ca1b22427581e3701072afed31cffef3f68ed72c5858b097bd87d205"
+      }
     },
     {
       "sku": "2868",
@@ -6148,18 +4737,9 @@
         "upc": true,
         "visual": true
       },
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://dogfishalehouse.com/beers/raison-detre/",
-          "supports": "Dogfish Head identifies the Raison D’Être Belgian-style brown-ale expression."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www2.myfloridalicense.com/abt/auditing/malt_prices/jj_taylor/documents/2013-22_001.pdf",
-          "supports": "Exact UPC 638489000275 maps to Dogfish Head Raison D'Etre in six 12 oz bottles."
-        }
-      ],
+      "evidence": {
+        "privateEvidenceSha256": "c382d4d8bf3d76a6b80f204196430bb1a678aa0955d4325a440f56888ef2cc6c"
+      },
       "expectedResultingGroupSkus": [
         "2868"
       ],
@@ -6187,18 +4767,9 @@
         "upc": true,
         "visual": true
       },
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.whiteclaw.com/products/raspberry",
-          "supports": "White Claw identifies Raspberry as a single-flavor six-pack in 12 oz cans."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub-liquors/products/18785697-white-claw-raspberry-can-12-fl-oz",
-          "supports": "Exact UPC 635985260660 identifies White Claw Raspberry Hard Seltzer as six 12 fl oz cans."
-        }
-      ],
+      "evidence": {
+        "privateEvidenceSha256": "819fee6f82ca14d5324778fdaedbabd54aa94663466f872596edcce7cb3f0f53"
+      },
       "expectedResultingGroupSkus": [
         "9440"
       ],
@@ -6226,18 +4797,9 @@
         "upc": true,
         "visual": true
       },
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.xtralaundry.com/liquid-detergents/xtra-tropical-passion-liquid-detergent",
-          "supports": "XTRA identifies Tropical Passion liquid laundry detergent."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.dollargeneral.com/p/xtra-tropical-passion-laundry-detergent-67-5-fl-oz/094514000908",
-          "supports": "Exact UPC 094514000908 identifies XTRA Tropical Passion Laundry Detergent, 67.5 fl oz."
-        }
-      ],
+      "evidence": {
+        "privateEvidenceSha256": "a89487423480b13b8a655411fae69849c1a637aa2cafefa2cbb64a6e23e8ad10"
+      },
       "reason": "The exact raw source row explicitly states a 67.5 fl oz liquid volume; this guarded refinement changes no other product field."
     },
     {
@@ -6262,23 +4824,9 @@
           "visual": true
         },
         "reason": "Use only manufacturer context, exact UPC evidence and the inspected complete package to resolve this one consumer package identity.",
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.delmonte.com/products/vegetables/peas/sweet-peas",
-            "supports": "Del Monte identifies Sweet Peas in a 15 oz can."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.cub.com/store/cub/products/16380115-del-monte-sweet-peas-15-oz",
-            "supports": "Cub identifies UPC 024000163084 as Del Monte Sweet Peas, 15 oz."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.cub.com/store/cub/products/16380115-del-monte-sweet-peas-15-oz",
-            "supports": "The listed front package image shows the complete matching consumer package and its printed size."
-          }
-        ]
+        "evidence": {
+          "privateEvidenceSha256": "6604bbf03d7e54fed82ff6c679acbfc8ee6ac46c2bb004126686bb7203ff7896"
+        }
       }
     },
     {
@@ -6303,23 +4851,9 @@
           "visual": true
         },
         "reason": "Use only manufacturer context, exact UPC evidence and the inspected complete package to resolve this one consumer package identity.",
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.hostesscakes.com/our-story",
-            "supports": "Hostess describes raspberry Zingers as the raspberry flavor with coconut coating."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.cub.com/store/cub/products/198513-hostess-raspberry-zingers-single-serve-4-02-oz",
-            "supports": "Cub identifies UPC 888109010089 as Hostess Raspberry Zingers, a 4.02 oz sleeve of three cakes."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.cub.com/store/cub/products/198513-hostess-raspberry-zingers-single-serve-4-02-oz",
-            "supports": "The listed front package image shows the complete matching consumer package and its printed size."
-          }
-        ]
+        "evidence": {
+          "privateEvidenceSha256": "b785e1a28eade9fd32d4cf140ee8612c8d2178b13be5be789d30c0f2e145a281"
+        }
       }
     },
     {
@@ -6344,23 +4878,9 @@
           "visual": true
         },
         "reason": "Use only manufacturer context, exact UPC evidence and the inspected complete package to resolve this one consumer package identity.",
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.skittles.com/products/skittles-sour-candy-grab-n-go-bag-72-oz-skittles-chewy",
-            "supports": "Skittles identifies Sour Candy Grab N Go Bag in a 7.2 oz size."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.nassaucandy.com/sour-skittles-7-2-oz-pouch.html",
-            "supports": "Nassau Candy identifies UPC 022000017772 as Sour Skittles 7.2 oz Pouch."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.nassaucandy.com/sour-skittles-7-2-oz-pouch.html",
-            "supports": "The listed front package image shows the complete matching consumer package and its printed size."
-          }
-        ]
+        "evidence": {
+          "privateEvidenceSha256": "c7f0ee1ad610e57ed9658fed3239c88884bfe3cff357c645ad90a2cb4efe6010"
+        }
       }
     },
     {
@@ -6381,23 +4901,9 @@
       },
       "reason": "Exact UPC, manufacturer record and inspected package resolve the previously unspecified single-shot size as 1.93 fl oz; the separately guarded public title correction remains in force. Original source fields remain private.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://5hourenergy.com/products/col-berry-flavor-extra-strength-5-hour-energy-shots",
-          "supports": "Manufacturer identifies 5-hour ENERGY Extra Strength Berry shots in the 1.93 fl oz formulation."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-95094533",
-          "supports": "Exact UPC 719410700010 identifies 5-hour ENERGY Extra Strength Berry single shot, 1.93 fl oz."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.target.com/p/-/A-95094533",
-          "supports": "Inspected exact-UPC package front shows Berry, Extra Strength and 1.93 fl oz for one bottle."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "e571f923fb4ea9ad6379dad529956e6c04dbe52a479d80283e39bd1af0af36bb"
+      }
     },
     {
       "sku": "178",
@@ -6417,23 +4923,9 @@
       },
       "reason": "Exact UPC, manufacturer record and inspected package resolve the previously unspecified single-shot size as 1.93 fl oz; the separately guarded public title correction remains in force. Original source fields remain private.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://5hourenergy.com/products/col-berry-flavor-regular-strength-5-hour-energy-shots",
-          "supports": "Manufacturer identifies 5-hour ENERGY Regular Strength Berry shots in the 1.93 fl oz formulation."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.officedepot.com/a/products/769855/5-hour-ENERGY-Shot-Regular-Strength/",
-          "supports": "Exact UPC 719410500016 identifies 5-hour ENERGY Regular Strength Berry Shot, 1.93 oz."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.cub.com/store/cub/products/210369-5-hour-energy-shot-1-93-fl-oz",
-          "supports": "Inspected exact-UPC package front shows Berry, Regular Strength and 1.93 fl oz for one bottle."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "2a8571ed1e512169d201366b2eb2f18b5961c15aeb8ef2f093fcfae1b1080fce"
+      }
     },
     {
       "sku": "1814",
@@ -6456,23 +4948,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.mycarmex.com/product/fresh-cherry-tube/",
-            "supports": "Carmex identifies Daily Care Fresh Cherry Tube with SPF 15 as a squeeze-tube product."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://brickseek.com/walmart-inventory-checker?sku=10324096",
-            "supports": "Exact UPC 083078014308 identifies Carmex Daily Care Fresh Cherry SPF 15 tube, 0.35 oz."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.mycarmex.com/wp-content/uploads/2022/06/Daily_Care_Tube_FreshCherry.png",
-            "supports": "Inspected complete official front packshot shows Carmex Daily Care Fresh Cherry SPF 15 in one squeeze tube; its printed net content is 10 g, corresponding to 0.35 oz."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "a5fd2670b2153ecb5c4c989a864af76308d44060a8a473ae073464cc5f78c37d"
+        },
         "reason": "Exact UPC listing, official manufacturer record and inspected front package resolve this previously unspecified singleton tube size to 0.35 oz while preserving its existing public expression.",
         "groupWithPriorExpression": true
       }
@@ -6498,23 +4976,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.7up.com/en/products/7up",
-            "supports": "Official 7UP page identifies Original 7UP as lemon-lime soda. Exact UPC and package size are separately guarded by the exact-UPC record."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.cub.com/store/cub/products/17594286-7up-lemon-lime-soda-1-25-l",
-            "supports": "Cub identifies UPC 078000026597 as 7UP Lemon Lime Soda, 42.2 fl oz / 1.25 L, in one bottle."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.cub.com/store/cub/products/17594286-7up-lemon-lime-soda-1-25-l",
-            "supports": "The exact-UPC product page's front-package view was inspected: it shows one complete 1.25 L 7UP bottle. The direct image URL remains private."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "aed6bf9bb60e2b8e5ca0fe8c7d96b75ab4c3cd9fb09dbd55c19669d7ff02526c"
+        },
         "reason": "The source 42.2-ounce notation, exact UPC record, and inspected front package agree on one 1.25 L bottle. No raw source field is overwritten.",
         "groupWithPriorExpression": true
       }
@@ -6540,23 +5004,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.rootbeer.com/",
-            "supports": "Official A&W Root Beer page identifies the A&W Root Beer expression. Exact UPC and package size are separately guarded by the exact-UPC record."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.cub.com/store/cub/products/2822002-a-w-root-beer-2-l",
-            "supports": "Cub identifies UPC 078000052466 as A&W Root Beer, 2 L, one bottle."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.cub.com/store/cub/products/2822002-a-w-root-beer-2-l",
-            "supports": "The exact-UPC product page's front-package view was inspected: it shows one complete 2 L A&W Root Beer bottle. The direct image URL remains private."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "05a0a8c6520bddf7ed701fdf03121df68b2de4224d309feec62c4e4fbbdd4f25"
+        },
         "reason": "The source 2 L notation, exact UPC record, and inspected front package agree on one 2 L bottle. No raw source field is overwritten.",
         "groupWithPriorExpression": true
       }
@@ -6579,23 +5029,9 @@
         "upc": true,
         "visual": true
       },
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://chefboyardee.com/products/classics/lasagna-can/",
-          "supports": "Chef Boyardee identifies its Lasagna Can as pasta with chunky tomato and meat sauce."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.cub.com/store/cub/products/2682730-chef-boyardee-lasagna-15-oz",
-          "supports": "Exact UPC 064144043040 identifies Chef Boyardee Lasagna, one 15 oz can."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.cub.com/store/cub/products/2682730-chef-boyardee-lasagna-15-oz",
-          "supports": "The inspected complete product-page package image shows Chef Boyardee Lasagna in a single can with 15 oz printed on the front."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3b69e436d28a286ac220af834bcbb45de0d54175e671fc41471aaf564135f41c"
+      }
     },
     {
       "sku": "1279",
@@ -6615,23 +5051,9 @@
         "upc": true,
         "visual": true
       },
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://chefboyardee.com/products/classics/spaghetti-meatballs-can/",
-          "supports": "Chef Boyardee identifies its Spaghetti & Meatballs Can as the branded pasta-and-meatballs expression."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-13130177",
-          "supports": "Exact UPC 064144043224 identifies Chef Boyardee Spaghetti & Meatballs, one 14.5 oz can."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.target.com/p/-/A-13130177",
-          "supports": "The inspected complete product-page package image shows Chef Boyardee Spaghetti & Meatballs in one 14.5 oz can."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "603c8ba918b146bc8749c3486f0bb50cddc70ee9b52c36c1b5a9e6a7d543c785"
+      }
     },
     {
       "sku": "1669",
@@ -6654,23 +5076,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.canadadry.com/products/club-soda",
-            "supports": "Canada Dry's official product page identifies the Club Soda expression."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.target.com/p/canada-dry-club-soda-33-8-fl-oz-bottle/-/A-47100043",
-            "supports": "Target identifies UPC 078000146455 as Canada Dry Club Soda in a 33.8 fl oz bottle with package quantity one."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.target.com/p/canada-dry-club-soda-33-8-fl-oz-bottle/-/A-47100043",
-            "supports": "The inspected full front package on the exact UPC listing shows one complete Canada Dry Club Soda bottle, with no price treatment or other product."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "614dcc9a8328fe1ba990540704e69eaf3e25694941f577a541a0a9efb9a85287"
+        },
         "reason": "The source title remains the verified public expression, so the reviewed 1 L bottle can join the matching Canada Dry Club Soda size variant without inferring identity for any unresolved sibling.",
         "groupWithPriorExpression": true
       }
@@ -6696,23 +5104,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.mycarmex.com/product/original-lip-balm-jar/",
-            "supports": "Carmex identifies the Classic Original Jar as its medicated lip balm jar expression."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://pasteurpharmacy.com/products/carmex-in-jar-classic-lip-balm-medicated-1",
-            "supports": "The product listing identifies SKU and UPC 083078113117 as Carmex Classic Medicated Lip Balm Jar, Original, 0.25 oz."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.mycarmex.com/product/original-lip-balm-jar/",
-            "supports": "The inspected official product presentation shows the complete single yellow Classic Original Jar, not a display tray or multipack, with no price treatment or obstruction."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "711982c71094647ca0999d114f2a24c2a50c7510aaa403caff86f3cc4a65f7f0"
+        },
         "reason": "Exact UPC evidence identifies the previously generic source record as the Classic Original Jar and supplies its consumer net weight. The SKU has no matching sibling, so this resolution cannot alter another variant's identity."
       }
     },
@@ -6734,23 +5128,9 @@
       },
       "reason": "Exact UPC records, the Hawaiian Punch first-party front-pack asset, and an inspected complete one-gallon handled jug corroborate this one SKU. The 16 oz Polar Blast has a different UPC and department, so it remains a separate product variant.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.hawaiianpunch.com/",
-          "supports": "Hawaiian Punch is the manufacturer brand page that supplies the first-party Polar Blast 1G PET front-pack asset used for the inspected package."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://go-upc.com/search?q=014800646948",
-          "supports": "Exact UPC 014800646948 is listed for Hawaiian Punch Polar Blast one-gallon juice drink."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://go-upc.com/search?q=014800646948",
-          "supports": "The exact UPC record provides the public product identity used alongside the privately retained inspected packshot evidence; it is one closed, handled 1-gallon Polar Blast PET jug, not the distinct 16 oz SKU."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "65d25894e0260e0b0abf72e8e9fa8716bc5bce024d5ea002b214ff13159f70cf"
+      }
     },
     {
       "sku": "4137",
@@ -6770,28 +5150,9 @@
       },
       "reason": "The first-party HERSHEY'S product record, exact UPC listing, and inspected complete single-bar wrapper corroborate this one 1.55 oz SKU. The separate six-digit source row is not an equivalent verified UPC and remains outside this correction.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.hersheyland.com/products/hersheys-cookies-n-creme-candy-bar-1-55-oz.html",
-          "supports": "HERSHEY'S identifies Cookies 'N' Creme Candy Bar in the 1.55 oz single-bar format and provides the inspected front-wrapper asset."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.aallyandsons.com/hershey-s-cookies-n-creme-bar-43g/",
-          "supports": "Exact catalog UPC 034000702152 is associated with the 43 g, 1.55 oz HERSHEY'S Cookies 'N' Creme single bar."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://go-upc.com/search?q=00034000702152",
-          "supports": "GTIN-normalized UPC lookup corroborates the catalog UPC for the Cookies 'N' Creme single bar."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.aallyandsons.com/hershey-s-cookies-n-creme-bar-43g/",
-          "supports": "The exact UPC listing provides the public product identity used alongside the privately retained inspected complete single-bar wrapper evidence."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "5a5fda9b4ccb284f1e1877697304f526d9002f09c5e33915e2c73fdb944b8cac"
+      }
     },
     {
       "sku": "4268",
@@ -6811,23 +5172,9 @@
       },
       "reason": "The Hunt's first-party product record, Conagra exact UPC record, and inspected complete 8 oz pull-tab can corroborate this one SKU. The correction changes only its previously unspecified consumer size.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.hunts.com/tomato-sauce-and-paste/tomato-sauce",
-          "supports": "Hunt's identifies Tomato Sauce and supplies the inspected first-party front-can asset."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://smartlabel.conagra.com/027000390054-0004-en-US/index.html",
-          "supports": "Conagra SmartLabel identifies GTIN 027000390054 as Hunt's Tomato Sauce in an 8 oz single can."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.cub.com/store/cub/products/38863-hunt-s-tomato-sauce-8-oz",
-          "supports": "The exact UPC listing provides the public product identity used alongside the privately retained inspected complete 8 oz single-can packshot evidence."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "ddcf0f83e5c2754f52034fd3722a05756c46867b9ae2b051ab7d619e089f7520"
+      }
     },
     {
       "sku": "4852",
@@ -6847,23 +5194,9 @@
       },
       "reason": "Exact UPC, official product record and inspected single front packet resolve only the previously unspecified packet size; the existing safe public title, category and department are retained.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
-          "supports": "Kraft Heinz identifies the Kool-Aid Unsweetened Lemonade naturally flavored powdered drink mix packet and its 0.23 oz net weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
-          "supports": "Exact UPC 043000955697 identifies one Unsweetened Lemonade powdered drink-mix packet with a 0.23 oz net weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
-          "supports": "The inspected official product presentation shows the complete single front packet, matching the verified Kool-Aid Lemonade expression and 0.23 oz packet format."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "d59b8a69f27fb0b6ae7cfd020bb9c804548ae9e3426ce387ede0ef1c8c85b498"
+      }
     },
     {
       "sku": "4853",
@@ -6883,23 +5216,9 @@
       },
       "reason": "Exact UPC, official product record and inspected single front packet resolve only the previously unspecified packet size; the existing safe public title, category and department are retained.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
-          "supports": "Kraft Heinz identifies the Kool-Aid Unsweetened Strawberry artificially flavored powdered drink mix packet and its 0.14 oz net weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
-          "supports": "Exact UPC 043000955611 identifies one Unsweetened Strawberry powdered drink-mix packet with a 0.14 oz net weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
-          "supports": "The inspected official product presentation shows the complete single front packet, matching the verified Kool-Aid Strawberry expression and 0.14 oz packet format."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "12208dda1872ee5eccdaebb9226452b7fa7064997cc6e7ceed89b93759b075cc"
+      }
     },
     {
       "sku": "4859",
@@ -6919,23 +5238,9 @@
       },
       "reason": "Exact UPC, official product record and inspected single front packet resolve only the previously unspecified packet size; the existing safe public title, category and department are retained.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
-          "supports": "Kraft Heinz identifies the Kool-Aid Unsweetened Pink Lemonade powdered drink mix packet and its 0.23 oz net weight."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
-          "supports": "Exact UPC 043000955703 identifies one Unsweetened Pink Lemonade powdered drink-mix packet with a 0.23 oz net weight."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
-          "supports": "The inspected official product presentation shows the complete single front packet, matching the verified Kool-Aid Pink Lemonade expression and 0.23 oz packet format."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "8fec4fa18654b5dde58547822b0ef5add88fbc73f485b943615ad2ff3e166573"
+      }
     },
     {
       "sku": "6855",
@@ -6958,23 +5263,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.pepsico.info/030000031605-0002-en-US/index.html",
-            "supports": "PepsiCo SmartLabel identifies exact UPC 030000031605 as Quaker Enriched & Degerminated White Corn Meal in a 24 oz canister."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.pepsico.info/030000031605-0002-en-US/index.html",
-            "supports": "The manufacturer product record is keyed to exact UPC 030000031605 and states the matching Quaker corn meal identity."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.pepsico.info/030000031605-0002-en-US/index.html",
-            "supports": "The manufacturer product presentation was inspected as a complete front canister and visibly matches the Quaker product expression and 24 oz package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "34a6b9b1d775462ce2edd36b25dd8770c0076e2fdce5900d809774b9a8ff0d4b"
+        },
         "reason": "A private-backed direct product image and manufacturer UPC record agree on the complete single 24 oz canister; only the withheld size is resolved."
       }
     },
@@ -7002,18 +5293,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.redgoldtomatoes.com/redgoldtomatoes/product/canned-tomato-paste-6-oz/",
-            "supports": "Red Gold's manufacturer product record identifies Tomato Paste in a 6 oz can."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.redgoldtomatoes.com/redgoldtomatoes/product/canned-tomato-paste-6-oz/",
-            "supports": "The manufacturer primary asset is keyed to GTIN-14 00072940112068, which normalizes to guarded UPC 072940112068 for the 6 oz Red Gold Tomato Paste can."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "4f41f591e25ef48ec1aaed36c1fe34770f436c12bd54a151a2f30f60c13ebab3"
+        },
         "expectedResultingGroupSkus": [
           "6972"
         ],
@@ -7041,23 +5323,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.snickers.com/products/chocolate/snickers-singles-size-chocolate-candy-bars-186-oz-bars",
-            "supports": "SNICKERS identifies its Singles Size chocolate candy bar as a 1.86 oz product."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://business.officedepot.com/a/products/6911480/Mars-Snickers-Chocolate-186-Oz/",
-            "supports": "Exact UPC 040000514251 identifies one Mars Snickers Chocolate bar with 1.86 oz contents."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.snickers.com/products/chocolate/snickers-singles-size-chocolate-candy-bars-186-oz-bars",
-            "supports": "The inspected product-page package view shows one complete SNICKERS wrapper with 1.86 oz printed on the front."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "e3f633f655f4429d71fb2ba27c2ff9620cf89ecbd4b29321acf398de2594ad9b"
+        },
         "reason": "Manufacturer, exact-UPC listing, and the inspected complete single wrapper agree on the unchanged Snickers expression, 1.86 oz size, and individual-bar packaging.",
         "groupWithPriorExpression": true
       }
@@ -7083,23 +5351,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://maruchan.com/products/bowl/hot-spicy-with-shrimp",
-            "supports": "Maruchan identifies the Hot & Spicy Shrimp Flavor bowl and its 3.32 oz single-bowl package."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.cub.com/store/cub/products/76944-maruchan-ramen-noodles-with-vegetables-hot-spicy-with-shrimp-3-32-oz",
-            "supports": "Exact UPC 041789003035 identifies Maruchan Ramen Bowl Hot & Spicy Shrimp in a 3.32 oz consumer package."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://maruchan.com/products/bowl/hot-spicy-with-shrimp",
-            "supports": "The inspected product-page package view shows one complete Maruchan Hot & Spicy Shrimp bowl with the 3.32 oz net weight."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "e88d903ad63a413b5cbbfc0ec8c20a6f7e0bca6ed1e00da7bbe6ab9b3c94ec91"
+        },
         "reason": "Manufacturer, exact-UPC listing, and the inspected complete bowl agree on the unchanged source expression, 3.32 oz size, and single-bowl packaging.",
         "groupWithPriorExpression": true
       }
@@ -7128,18 +5382,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.pringles.com/en-us/products/pringles-grab-go-the-original-product.html",
-            "supports": "Manufacturer page identifies Pringles Original potato crisps in a 1.3 oz Grab & Go can."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.upcitemdb.com/upc/38000845512",
-            "supports": "Exact UPC 038000845512 identifies Pringles Original Potato Crisps, 1.3 oz."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "c5dc63a07d2ef38fc709ebaa00fb666b11e89a4989c1869001bdf265c50df3c0"
+        },
         "expectedResultingGroupSkus": [
           "6805"
         ],
@@ -7164,23 +5409,9 @@
       },
       "reason": "Exact UPC records and the inspected complete single wrapper resolve the source title and previously unspecified consumer size without inferring any other Twix variant.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.twix.com/",
-          "supports": "TWIX is the Mars Wrigley caramel, cookie and milk-chocolate candy-bar brand; exact UPC, size, and single-package evidence are separately guarded."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://www.target.com/p/-/A-13055569",
-          "supports": "UPC 040000004356 identifies TWIX Caramel Full Size caramel cookie chocolate candy bar, one package, 1.79 oz."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.target.com/p/-/A-13055569",
-          "supports": "The exact-UPC product-page front package view was inspected: it shows one complete TWIX full-size caramel cookie milk-chocolate wrapper with 1.79 oz printed on the package. The direct image URL remains private."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "26521eab6008be3201b9d592f3175f935e633c3b35cd9be7cb3738ac82506a44"
+      }
     },
     {
       "sku": "101507",
@@ -7203,23 +5434,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.kellanovaawayfromhome.com/en-us/products/kellogg-s-rice-krispies-treats-original-bars-product.00038000265471.html",
-            "supports": "Kellanova identifies Kellogg's Rice Krispies Treats Original Bars as individually wrapped 1.3 oz crispy marshmallow squares."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.kellanovaawayfromhome.com/en-us/products/kellogg-s-rice-krispies-treats-original-bars-product.00038000265471.html",
-            "supports": "Pouch UPC EACH:038000765414 identifies the reviewed individual Kellogg's Rice Krispies Treats Original 1.3 oz bar."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.kelloggs.com/Product/Index/038000765414",
-            "supports": "The exact-UPC package view was inspected: it shows one complete Rice Krispies Treats Original wrapper. The approved direct image URL remains private."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "be1fb22922771bca9d43c2bdbad46fda3e413ee1e841a31152ad8186398536ad"
+        },
         "reason": "Manufacturer, exact pouch UPC, and the inspected complete package agree on the Original Rice Krispies Treats expression, 1.3 oz size, and individual wrapper. No original raw field is overwritten."
       }
     },
@@ -7244,23 +5461,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.congra.net/076150232233-0005-en-US/index.html",
-            "supports": "Conagra SmartLabel identifies ACT II Microwave Popcorn, Butter for exact UPC 076150232233."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.congra.net/076150232233-0005-en-US/index.html",
-            "supports": "The exact UPC 076150232233 product record states a net weight of 2.75 oz (78 g)."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.congra.net/076150232233-0005-en-US/index.html",
-            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "e763f4bdad6a1760a24ed6e8747847130880c76c7da73dc2196c5025ef127fd2"
+        },
         "reason": "The exact UPC record and inspected complete single bag agree on the unchanged ACT II Butter expression, 2.75 oz size, and individual microwave-popcorn-bag form.",
         "groupWithPriorExpression": true
       }
@@ -7286,23 +5489,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://smartlabel.congra.net/076150232486-0005-en-US/index.html",
-            "supports": "Conagra SmartLabel identifies ACT II Microwave Popcorn, Butter Lovers for exact UPC 076150232486."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://smartlabel.congra.net/076150232486-0005-en-US/index.html",
-            "supports": "The exact UPC 076150232486 product record states a net weight of 2.75 oz (78 g)."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://smartlabel.congra.net/076150232486-0005-en-US/index.html",
-            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "cff9d9d8a68d66dc77f3266f5dc28b543b3a4bac63096851e898db8e65837f7d"
+        },
         "reason": "The exact UPC record and inspected complete single bag agree on the unchanged ACT II Butter Lovers expression, 2.75 oz size, and individual microwave-popcorn-bag form.",
         "groupWithPriorExpression": true
       }
@@ -7328,23 +5517,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://maruchan.com/products/bowl/fire-spicy-beef-flavor-bowl",
-            "supports": "Maruchan identifies the Fire Bowl Ramen Spicy Beef Flavor expression for exact UPC 041789003561."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://maruchan.com/products/bowl/fire-spicy-beef-flavor-bowl",
-            "supports": "The official product record pairs exact UPC 041789003561 with a 3.49 oz Fire Spicy Beef flavor microwavable bowl."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://maruchan.com/products/bowl/fire-spicy-beef-flavor-bowl",
-            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "52a9e15bdd0dbbb6978f12e9c14edf23912b595065e16ebb6fb9f1d7ff99654a"
+        },
         "reason": "The exact UPC record and inspected complete single bowl agree on the unchanged source expression, 3.49 oz size, and single microwavable-bowl form.",
         "groupWithPriorExpression": true
       }
@@ -7370,23 +5545,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-beef-flavor",
-            "supports": "Maruchan identifies the Instant Lunch Hot & Spicy Beef Flavor expression for exact UPC 041789001420."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-beef-flavor",
-            "supports": "The official product record pairs exact UPC 041789001420 with a 2.25 oz Hot & Spicy Beef Flavor Instant Lunch cup."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-beef-flavor",
-            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "ebc63d6c82cfb3df3cfd7a1b72e2901412e03bc9902ef5dcb7e63aa6e6e5a118"
+        },
         "reason": "The exact UPC record and inspected complete single cup agree on the unchanged source expression, 2.25 oz size, and single-serving Instant Lunch cup form.",
         "groupWithPriorExpression": true
       }
@@ -7412,23 +5573,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://maruchan.com/products/bowl/hot-spicy-chicken-flavor-bowl",
-            "supports": "Maruchan identifies the Ramen Bowl Hot & Spicy Chicken Flavor expression for exact UPC 041789003028."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://maruchan.com/products/bowl/hot-spicy-chicken-flavor-bowl",
-            "supports": "The official product record pairs exact UPC 041789003028 with a 3.32 oz Hot & Spicy Chicken Flavor microwavable bowl."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://maruchan.com/products/bowl/hot-spicy-chicken-flavor-bowl",
-            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "9f6fd0fcc7c7194e9d9cc7b4a7a97db68de6258fabe02ac28c74e2f8bd266c3a"
+        },
         "reason": "The exact UPC record and inspected complete single bowl agree on the unchanged source expression, 3.32 oz size, and single microwavable-bowl form.",
         "groupWithPriorExpression": true
       }
@@ -7454,23 +5601,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://maruchan.com/products/bowl/chicken-flavor-bowl",
-            "supports": "Maruchan identifies the Ramen Bowl Chicken Flavor expression for exact UPC 041789003011."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://maruchan.com/products/bowl/chicken-flavor-bowl",
-            "supports": "The official product record pairs exact UPC 041789003011 with a 3.31 oz Chicken Flavor microwavable bowl."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://maruchan.com/products/bowl/chicken-flavor-bowl",
-            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "85cfed35cab7d1f8f4ce244f78afcec617681f322d4a90a04c9bb79106151e25"
+        },
         "reason": "The exact UPC record and inspected complete single bowl agree on the unchanged source expression, 3.31 oz size, and single microwavable-bowl form.",
         "groupWithPriorExpression": true
       }
@@ -7496,23 +5629,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-chicken-flavor",
-            "supports": "Maruchan identifies the Instant Lunch Hot & Spicy Chicken Flavor expression for exact UPC 041789001437."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-chicken-flavor",
-            "supports": "The official product record pairs exact UPC 041789001437 with a 2.25 oz Hot & Spicy Chicken Flavor Instant Lunch cup."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://maruchan.com/products/instant-lunch/hot-spicy-chicken-flavor",
-            "supports": "The private direct-image ledger retains the exact packshot URL; this reviewed product record documents the matching inspected package presentation."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "f8d2f1c3aef3f9095d17aed13740131fe3912d164f12acb349166fcf45743426"
+        },
         "reason": "The exact UPC record and inspected complete single cup agree on the unchanged source expression, 2.25 oz size, and single-serving Instant Lunch cup form.",
         "groupWithPriorExpression": true
       }
@@ -7538,23 +5657,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.snickers.com/products/chocolate/snickers-singles-size-chocolate-candy-bars-186-oz-bars",
-            "supports": "SNICKERS identifies the Singles Size milk-chocolate candy bar as 1.86 oz and describes the individual bar expression."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.nassaucandy.com/snicker-1-86oz.html",
-            "supports": "Exact UPC 040000424314 identifies one SNICKERS 1.86 oz bar."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.snickers.com/products/chocolate/snickers-singles-size-chocolate-candy-bars-186-oz-bars",
-            "supports": "The inspected official product presentation shows one complete front SNICKERS Singles Size wrapper with 1.86 oz printed on the package."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "786940a3ae8ac0774c9860ffc0597cb07f7a6ac172901135358db6da307b4d32"
+        },
         "reason": "Manufacturer, exact UPC, and inspected-package evidence agree on the unchanged Snickers expression, 1.86 oz size, and individual-bar package.",
         "groupWithPriorExpression": true
       }
@@ -7580,23 +5685,9 @@
           "upc": true,
           "visual": true
         },
-        "evidence": [
-          {
-            "kind": "manufacturer",
-            "url": "https://www.redbull.com/us-en/energydrink/products/red-bull-sea-blue-edition-sugarfree",
-            "supports": "Red Bull identifies the Sea Blue Edition Sugarfree as Juneberry flavored and available in an 8.4 fl oz can."
-          },
-          {
-            "kind": "exact_upc_listing",
-            "url": "https://www.target.com/p/-/A-93521379",
-            "supports": "Exact UPC 611269002249 identifies a single Red Bull Sea Blue Edition Sugarfree Juneberry 8.4 fl oz aluminum can."
-          },
-          {
-            "kind": "inspected_package_photo",
-            "url": "https://www.redbull.com/us-en/energydrink/products/red-bull-sea-blue-edition-sugarfree",
-            "supports": "The inspected official product presentation shows the complete Sea Blue Edition Sugarfree Juneberry can, matching the reviewed single-can expression."
-          }
-        ],
+        "evidence": {
+          "privateEvidenceSha256": "9aecf845aa37492ea4e78aea24114776e0b6de707c5c9ac7b7dfcaa5de40d7e7"
+        },
         "reason": "Manufacturer, exact UPC, and inspected-package evidence agree on Sea Blue Edition Sugarfree Juneberry, 8.4 fl oz, in one aluminum can."
       }
     },
@@ -7618,23 +5709,9 @@
       },
       "reason": "The source row omitted the package size and collapsed the product title. The exact UPC record and reviewed complete single can establish this 10.5 oz Campbell's Condensed Cream of Mushroom Soup SKU without changing its shopping classification.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.campbells.com/products/condensed/cream-of-mushroom-soup/",
-          "supports": "Campbell's identifies Condensed Cream of Mushroom Soup as the matching product expression and packaging family."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://groceryeshop.us/products/campbells-condensed-cream-of-mushroom-soup-10-5-oz-can-case-of-48.js",
-          "supports": "The exact UPC 051000012616 product-data record identifies Campbell's Condensed Cream of Mushroom Soup in an each 10.5 oz can."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://groceryeshop.us/products/campbells-condensed-cream-of-mushroom-soup-10-5-oz-can-case-of-48.js",
-          "supports": "The inspected private-backed complete front-can packshot agrees with the exact UPC record, product expression, and 10.5 oz single-can package."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "3d33796496b9179b75c615b05782f21ab726793c32c77d137c7403680af40db3"
+      }
     },
     {
       "sku": "1813",
@@ -7654,23 +5731,9 @@
       },
       "reason": "The source row omitted both readable product wording and package size. Exact UPC retail data, Carmex's product record, and a reviewed complete single tube establish this 0.35 oz Classic Original tube without changing its category or department.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.mycarmex.com/wp-json/wp/v2/product/209",
-          "supports": "Carmex's official product record identifies the Classic Original Tube and associates the reviewed tube presentation."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://lacacorp.com/wp-json/wp/v2/product/28677",
-          "supports": "The exact UPC 083078113131 product-data record identifies a Carmex Original Flavor squeeze tube in the 0.35 oz size."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.mycarmex.com/wp-json/wp/v2/product/209",
-          "supports": "The inspected private-backed complete Carmex tube agrees with the Classic Original medicated lip-balm expression, exact UPC record, and 0.35 oz size."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "f52de92b4e1a5be00af9d057f8c58a9605bb848177ac40ffb47c7abb3bf78a67"
+      }
     },
     {
       "sku": "4206",
@@ -7690,23 +5753,9 @@
       },
       "reason": "The existing guarded spelling correction resolves the source title, while the first-party product record and reviewed complete single can establish the exact 15 oz package for this same UPC. No category, department, SKU, or source-row change is proposed.",
       "reviewedOn": "2026-10-31",
-      "evidence": [
-        {
-          "kind": "manufacturer",
-          "url": "https://www.hormel.com/brands/hormel-chili/product/chili-no-beans/",
-          "supports": "Hormel identifies HORMEL Chili No Beans as the matching product expression and offers the 15 oz can among its available sizes."
-        },
-        {
-          "kind": "exact_upc_listing",
-          "url": "https://shop.foodland.com/product/hormel-chili-with-no-beans-037600241939",
-          "supports": "The exact UPC 037600241939 listing corroborates HORMEL Chili No Beans for the guarded source identity."
-        },
-        {
-          "kind": "inspected_package_photo",
-          "url": "https://www.hormel.com/brands/hormel-chili/product/chili-no-beans/",
-          "supports": "The inspected private-backed complete front-can packshot agrees with the first-party HORMEL Chili No Beans 15 oz product selection and exact UPC record."
-        }
-      ]
+      "evidence": {
+        "privateEvidenceSha256": "f9872cd9d156ad538fa08bb83b2a75ca5de3505655318b2758a02509c7d07c18"
+      }
     }
   ]
 }

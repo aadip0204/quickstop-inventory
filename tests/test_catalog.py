@@ -1519,6 +1519,12 @@ class ImportTests(unittest.TestCase):
                         {'SKU': '2', 'MAINUPC': '040000001607', 'ItemName': 'SKITTLES'})
         actual = json.loads((ROOT / 'data/source-reviews.json').read_text())
         entry = dict(next(r for r in actual['reviews'] if r['sku'] == '7630'))
+        # This behavior fixture does not depend on private production provenance.
+        # The full-source test separately validates the actual hash-bound ledger.
+        entry['evidence'] = [
+            {'kind': kind, 'url': 'https://evidence.example.test/' + kind,
+             'supports': 'Synthetic evidence fixture for guarded identity behavior'}
+            for kind in ('manufacturer', 'exact_upc_listing', 'inspected_package_photo')]
         raw = list(csv.reader(io.StringIO(source.decode())))[1]
         entry['expectedSourceRecordSha256'] = hashlib.sha256(json.dumps(raw, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
         review = {'schemaVersion': 1, 'reviews': [entry]}
