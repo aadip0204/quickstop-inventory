@@ -4,6 +4,7 @@
 This supplements (does not replace) browser interaction and responsive checks.
 """
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 import hashlib
 import json
 from pathlib import Path
@@ -70,13 +71,22 @@ def verify(base_url, root):
     photo_paths = sorted({variant["image"]["src"]
                           for product in catalog["products"]
                           for variant in product["variants"] if variant["image"]})
-    for name in ["index.html", "style.css", "script.js", "catalog.json", "data/image-manifest.json", "images/logo.png", *photo_paths]:
+    def check_asset(name):
         expected = (root / name).read_bytes()
         actual = fetch(urllib.parse.urljoin(base_url, name))
         digest = hashlib.sha256(actual).hexdigest()
         if actual != expected:
             raise AssertionError(f"Live {name} does not match the tested checkout")
-        checks.append({"path": name, "matchesCheckout": True, "sha256": digest})
+        return {"path": name, "matchesCheckout": True, "sha256": digest}
+
+    # Keep every byte check while bounding both network and memory use. Results
+    # retain their original order so release audits remain easy to compare.
+    asset_names = ["index.html", "style.css", "script.js", "catalog.json", "data/image-manifest.json", "images/logo.png", *photo_paths]
+    executor = ThreadPoolExecutor(max_workers=4)
+    try:
+        checks.extend(executor.map(check_asset, asset_names))
+    finally:
+        executor.shutdown(wait=True, cancel_futures=True)
     for name in ("products.js", "products.json", "products_grouped_filtered.js", "image-credits.html"):
         try:
             fetch(urllib.parse.urljoin(base_url, name))

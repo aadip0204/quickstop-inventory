@@ -6063,6 +6063,443 @@
           "supports": "The stable product record maps UPC 850015640124 to Teremana Anejo Tequila, 80 Proof, 750 mL."
         }
       ]
+    },
+    {
+      "sku": "5428",
+      "expectedUpc": "070491212923",
+      "expectedSourceRow": 3509,
+      "expectedRawFieldsSha256": "e69f2f2da558f6a5085673be37ca6a063f6e75d8c918225977e1790dc91b23bc",
+      "expectedPublicName": "Master of Mixes Whiskey Sour",
+      "expectedLabel": "1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "N/A Mix",
+      "proposedPublicTitle": "Master Of Mixes Handcrafted Whiskey Sour Mixer",
+      "reason": "The exact UPC product record restores the Handcrafted Whiskey Sour Mixer expression for this singleton 1 L bottle. The existing drinks category and N/A Mix department are retained without a category or source-row change.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/49376",
+          "supports": "Exact UPC 070491212923 identifies Master Of Mixes Handcrafted Whiskey Sour Mixer in one 1 L bottle."
+        }
+      ]
+    },
+    {
+      "sku": "3166",
+      "expectedUpc": "088352124810",
+      "expectedSourceRow": 2058,
+      "expectedRawFieldsSha256": "9e8310baf4b7f02288871a9ff80509aa3134919fabdccde2c6e405d5e640732f",
+      "expectedPublicName": "EL Mayor",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "El Mayor Blanco Tequila",
+      "reason": "The exact UPC source record and inspected complete bottle identify the Blanco expression omitted from this singleton title. Existing SKU, UPC, volume, department and category are retained.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/63801",
+          "supports": "Exact UPC 088352124810 identifies El Mayor Blanco Tequila in one 750ml bottle."
+        }
+      ]
+    },
+    {
+      "sku": "3712",
+      "expectedUpc": "088076006232",
+      "expectedSourceRow": 2400,
+      "expectedRawFieldsSha256": "6831bfaabeb9c448b964d3285edf564a4eba3a0f73bf6251bd8fc2b5c38b4fed",
+      "expectedPublicName": "GEORGE",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "George Dickel Signature Recipe Tennessee Whisky",
+      "reason": "The exact UPC source record and inspected complete bottle restore the specific George Dickel Signature Recipe Tennessee Whisky expression for this singleton. Existing SKU, UPC, volume, department and category are retained.",
+      "evidence": [
+        {
+          "kind": "exact_upc_product_record",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/38849",
+          "supports": "Exact UPC 088076006232 identifies George Dickel Signature Recipe Tennessee Whisky in one 750ml bottle."
+        }
+      ]
+    },
+    {
+      "sku": "4487",
+      "expectedUpc": "080432117330",
+      "expectedSourceRow": 2861,
+      "expectedRawFieldsSha256": "1cdfa9b0ab58a21d66ec1ad3a20408684c26798f5bf638d9fe38d6dc6465c327",
+      "expectedPublicName": "JAMESON ORANGE WHISKEY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Jameson Orange Irish Whiskey",
+      "reason": "The exact UPC retail product record and inspected package support the complete professional product title for this singleton variant; size, category, source department, identifiers and source row are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/42853",
+          "supports": "Exact UPC 080432117330 identifies Jameson Orange Irish Whiskey, 750 mL; the retailer record directly associates the inspected package photograph with this exact product."
+        }
+      ]
+    },
+    {
+      "sku": "4734",
+      "expectedUpc": "088110070052",
+      "expectedSourceRow": 3029,
+      "expectedRawFieldsSha256": "6393744570ac54590d3b818343967e90f54c5184ec6de9eb6ba2156a65ad470b",
+      "expectedPublicName": "JW Blue Label",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Johnnie Walker Blue Label Blended Scotch Whisky",
+      "reason": "The exact UPC retail product record and inspected package support the complete professional product title for this singleton variant; size, category, source department, identifiers and source row are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/38897",
+          "supports": "Exact UPC 088110070052 identifies Johnnie Walker Blue Label Blended Scotch Whisky, 750 mL; the retailer record directly associates the inspected package photograph with this exact product."
+        }
+      ]
+    },
+    {
+      "sku": "6554",
+      "expectedUpc": "721733000913",
+      "expectedSourceRow": 4166,
+      "expectedRawFieldsSha256": "c66eb5513a578cf61b8acc6bd69343f6d3ec30869a03128faa47a72468d8d9e6",
+      "expectedPublicName": "PATRON PLATINUM",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Gran Patrón Platinum Silver Tequila",
+      "reason": "The exact UPC retail product record and inspected package support the complete professional product title for this singleton variant; size, category, source department, identifiers and source row are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/38665",
+          "supports": "Exact UPC 721733000913 identifies Gran Patrón Platinum Silver Tequila, 750 mL; the retailer record directly associates the inspected package photograph with this exact product."
+        }
+      ]
+    },
+    {
+      "sku": "7358",
+      "expectedUpc": "080686835424",
+      "expectedSourceRow": 2696,
+      "expectedRawFieldsSha256": "cecc129caccf0fbb576198c693e61b8162b3588e00ad39362ceae3b0670e3d70",
+      "expectedPublicName": "HORNITOS ANEJO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Hornitos Añejo Tequila",
+      "reason": "The exact UPC retail product record and inspected package support the complete professional product title for this singleton variant; size, category, source department, identifiers and source row are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/38601",
+          "supports": "Exact UPC 080686835424 identifies Hornitos Añejo Tequila, 750 mL; the retailer record directly associates the inspected package photograph with this exact product."
+        }
+      ]
+    },
+    {
+      "sku": "101301",
+      "expectedUpc": "818844028155",
+      "expectedSourceRow": 6707,
+      "expectedRawFieldsSha256": "61fd831ba204f619c0b35c041ac320c735982dc55101ce5f6518ee99c9df12f3",
+      "expectedPublicName": "GRAN CORAMINO REPOSADO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Gran Coramino Reposado Tequila",
+      "reason": "The exact UPC retail product record and inspected package support the complete professional product title for this singleton variant; size, category, source department, identifiers and source row are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/48687",
+          "supports": "Exact UPC 818844028155 identifies Gran Coramino Reposado Tequila, 750 mL; the retailer record directly associates the inspected package photograph with this exact product."
+        }
+      ]
+    },
+    {
+      "sku": "101387",
+      "expectedUpc": "080244002039",
+      "expectedSourceRow": 9723,
+      "expectedRawFieldsSha256": "0c5e374746c4093666b7726eac6a3b70a8d66f74d68816d99f7b1cb7c7bcdff2",
+      "expectedPublicName": "BLANTON'S ORIGINAL",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Blanton's Original Single Barrel Bourbon Whiskey",
+      "reason": "The exact UPC retail product record and inspected package support the complete professional product title for this singleton variant; size, category, source department, identifiers and source row are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/45439",
+          "supports": "Exact UPC 080244002039 identifies Blanton's Original Single Barrel Bourbon Whiskey, 750 mL; the retailer record directly associates the inspected package photograph with this exact product."
+        }
+      ]
+    },
+    {
+      "sku": "101453",
+      "expectedUpc": "649188900476",
+      "expectedSourceRow": 6851,
+      "expectedRawFieldsSha256": "e84caed0505727803f14c1c3c472ad840d7d3b215500f9c9ae4f94f17be87d99",
+      "expectedPublicName": "GRAND MARNIER ORANGE LIQ",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Grand Marnier Cordon Rouge Orange and Cognac Liqueur",
+      "reason": "The exact UPC retail product record and inspected package support the complete professional product title for this singleton variant; size, category, source department, identifiers and source row are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/48733",
+          "supports": "Exact UPC 649188900476 identifies Grand Marnier Cordon Rouge Orange and Cognac Liqueur, 750 mL; the retailer record directly associates the inspected package photograph with this exact product."
+        }
+      ]
+    },
+    {
+      "sku": "2627",
+      "expectedUpc": "080660487014",
+      "expectedSourceRow": 1675,
+      "expectedRawFieldsSha256": "054fb2c10d7e42433636e2c1f885035ca9c367d89f6bf96e1a6d115aff3d257e",
+      "expectedPublicName": "Crystal Palace Vodka",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Crystal Palace Deluxe Vodka with Natural Flavors",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/47133",
+          "supports": "Exact UPC 080660487014 identifies Crystal Palace Deluxe Vodka with Natural Flavors, 1.75 L; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "2772",
+      "expectedUpc": "080686353409",
+      "expectedSourceRow": 1777,
+      "expectedRawFieldsSha256": "f9f69ff954f638cd029fc77aac1570b53ba52711bbc063738861785f11d50e0c",
+      "expectedPublicName": "DeKuyper Peppermint",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "DeKuyper Peppermint Schnapps Liqueur",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/45178",
+          "supports": "Exact UPC 080686353409 identifies DeKuyper Peppermint Schnapps Liqueur, 750 mL; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "2907",
+      "expectedUpc": "082301175014",
+      "expectedSourceRow": 1874,
+      "expectedRawFieldsSha256": "b837e8bfb5e49786d50718798d75cf27c42c4904da661a1da01115483f42f68a",
+      "expectedPublicName": "Don Q Gold Rum",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Rum",
+      "proposedPublicTitle": "Don Q Gold Puerto Rican Rum",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/47914",
+          "supports": "Exact UPC 082301175014 identifies Don Q Gold Puerto Rican Rum, 1.75 L; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "3250",
+      "expectedUpc": "699733000946",
+      "expectedSourceRow": 2108,
+      "expectedRawFieldsSha256": "0c948fe04a2dd928e1b83801016a6f41d88cb9b80572817df928767806941006",
+      "expectedPublicName": "Exclusiv Peach",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Exclusiv Peach Vodka",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/49537",
+          "supports": "Exact UPC 699733000946 identifies Exclusiv Peach Vodka, 750 mL; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "3376",
+      "expectedUpc": "082928210211",
+      "expectedSourceRow": 2186,
+      "expectedRawFieldsSha256": "2e39c79bfbcb051c6ff7d34cc1ef1000255384a03a4cbf0be08012861bcd16aa",
+      "expectedPublicName": "Fleischmanns Gin",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Gin",
+      "proposedPublicTitle": "Fleischmann's Extra Dry Gin",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/48369",
+          "supports": "Exact UPC 082928210211 identifies Fleischmann's Extra Dry Gin, 1.75 L; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "3377",
+      "expectedUpc": "082928214318",
+      "expectedSourceRow": 2187,
+      "expectedRawFieldsSha256": "5af02f8ca2d7a686c0d396b311348e3826517fc5ea209e123ca2a832cccf4619",
+      "expectedPublicName": "Fleischmanns Vodka",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Fleischmann's Royal Vodka",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/47281",
+          "supports": "Exact UPC 082928214318 identifies Fleischmann's Royal Vodka, 1.75 L; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "3460",
+      "expectedUpc": "033293003007",
+      "expectedSourceRow": 2239,
+      "expectedRawFieldsSha256": "156ea531a7da74ddb146b0d383936d037e785caa546cd0389e743b1f7885248c",
+      "expectedPublicName": "Freixenet Cordon Brut",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Freixenet Cordon Negro Brut Cava",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/44710",
+          "supports": "Exact UPC 033293003007 identifies Freixenet Cordon Negro Brut Cava, 750 mL; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "4865",
+      "expectedUpc": "084704000078",
+      "expectedSourceRow": 3122,
+      "expectedRawFieldsSha256": "220697c91188a6c8eeaaf22426f0bbb6243ef31777924945df6eaa4c7713e5e8",
+      "expectedPublicName": "KORBEL BRANDY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Brandy",
+      "proposedPublicTitle": "Korbel California Brandy",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/44512",
+          "supports": "Exact UPC 084704000078 identifies Korbel California Brandy, 750 mL; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "4876",
+      "expectedUpc": "084704000535",
+      "expectedSourceRow": 3131,
+      "expectedRawFieldsSha256": "2d82170531b900a7c14af362b43c044c13f1b6193ccbe4198fff9c918ccbd6d9",
+      "expectedPublicName": "Korbel XS Brandy",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Brandy",
+      "proposedPublicTitle": "Korbel XS Extra Smooth Brandy",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/44510",
+          "supports": "Exact UPC 084704000535 identifies Korbel XS Extra Smooth Brandy, 750 mL; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "5214",
+      "expectedUpc": "813497007038",
+      "expectedSourceRow": 8545,
+      "expectedRawFieldsSha256": "1c784504885554d9db57e7aa5bd50a65ee00f9d1e0fc9bb02b20710ac6afe1d8",
+      "expectedPublicName": "LUC BELAIRE BRUT GOLD",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Luc Belaire Brut Gold Sparkling Wine",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/44480",
+          "supports": "Exact UPC 813497007038 identifies Luc Belaire Brut Gold Sparkling Wine, 750 mL; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "5259",
+      "expectedUpc": "812066020553",
+      "expectedSourceRow": 3386,
+      "expectedRawFieldsSha256": "552c021f858425e167f11b3095ad05863f92830713062bf5a7a24bf23cf9bd03",
+      "expectedPublicName": "macallan scotch",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "The Macallan 12 Year Sherry Oak Cask Single Malt Scotch Whisky",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/38971",
+          "supports": "Exact UPC 812066020553 identifies The Macallan 12 Year Sherry Oak Cask Single Malt Scotch Whisky, 750 mL; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "5289",
+      "expectedUpc": "085246139431",
+      "expectedSourceRow": 3409,
+      "expectedRawFieldsSha256": "9f9e30655fbfca4a2cd6331da7a0308a576ffd9242fd54836a5f0d2d6fecfdbd",
+      "expectedPublicName": "MAKERS MARK",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Maker's Mark 90 Proof Kentucky Straight Bourbon Whisky",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/38843",
+          "supports": "Exact UPC 085246139431 identifies Maker's Mark 90 Proof Kentucky Straight Bourbon Whisky, 750 mL; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
+    },
+    {
+      "sku": "5398",
+      "expectedUpc": "011034503825",
+      "expectedSourceRow": 6476,
+      "expectedRawFieldsSha256": "36325acadb56a8d0aa2e50e8a437fd6e9d2eb6c9e45c9d2bd4a266528701b1d4",
+      "expectedPublicName": "Martini & Rossi Rose",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Martini & Rossi Rosé Sparkling Wine",
+      "reason": "The exact UPC retailer product record and inspected package support the complete professional title for this singleton; identifiers, source row, size, category and department are preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.universalfws.com/wp-json/wc/store/v1/products/39097",
+          "supports": "Exact UPC 011034503825 identifies Martini & Rossi Rosé Sparkling Wine, 750 mL; its directly linked package photograph was inspected for the complete expression."
+        }
+      ]
     }
   ]
 }

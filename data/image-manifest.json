@@ -24660,6 +24660,1786 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "expectedLabel": "1 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5428.jpg",
+      "expectedUpc": "070491212923",
+      "attributionRequired": false,
+      "alt": "Master Of Mixes Handcrafted Whiskey Sour Mixer — 1 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Master Of Mixes Handcrafted Whiskey Sour Mixer",
+      "sku": "5428",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "9f7847f2e96e4db3560aff98f2548462a0c8175e536aec8db6a8c4f0b8253414"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1918.jpg",
+      "expectedUpc": "085155000013",
+      "attributionRequired": false,
+      "alt": "Chandon Brut Sparkling Wine — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CHANDON BRUT CLASSIC",
+      "sku": "1918",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "e23698f36bd95fa1eaabd182bff98788f8dc2bc5d19c690aea83a1f36a4a61df"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1371.jpg",
+      "expectedUpc": "088110955342",
+      "attributionRequired": false,
+      "alt": "Buchanan's Special Reserve 18 Year Old Blended Scotch Whisky — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Buchanans 18 Year",
+      "sku": "1371",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "d6b625adceb17aa9cd6dc6b77db0d5de801d41f8201fa26b2cd6c96e8148c51a"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2070.jpg",
+      "expectedUpc": "080432400487",
+      "attributionRequired": false,
+      "alt": "Chivas Regal Gold Signature 18 Year Old Blended Scotch Whisky — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Chivas Regal 18 Year",
+      "sku": "2070",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "e9fac838fbf62237287b48df3f91dc7b015f350d828c532c0bcfa5fe4a601845"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2483.jpg",
+      "expectedUpc": "720815930636",
+      "attributionRequired": false,
+      "alt": "Corralejo Blanco Tequila — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Corralejo Blanco",
+      "sku": "2483",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "307734724d1ff51969a6b62a072544b7faaaaad4540483972f3ac1e3036da23a"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2484.jpg",
+      "expectedUpc": "720815930131",
+      "attributionRequired": false,
+      "alt": "Corralejo Reposado Tequila — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CORRALEJO Repo",
+      "sku": "2484",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "ef6a49061950879a2108af1acb01f8d1a07956ddfcf09afe4cfe57e69ea74df5"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3059.jpg",
+      "expectedUpc": "080480983192",
+      "attributionRequired": false,
+      "alt": "D'USSÉ VSOP Cognac — 200 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "D'USSÉ VSOP Cognac",
+      "sku": "3059",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "81a2c7ab6e98221093589508b4143771950c3c62a7a1b7f069aced18deb7d07f"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2799.jpg",
+      "expectedUpc": "082000791980",
+      "attributionRequired": false,
+      "alt": "DeLeón Reposado Tequila — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Deleon Reposado",
+      "sku": "2799",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "968d0241c9104fe082ebca7e174c484ffae1d3e387426b782177d7b6eddcb7ae"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3212.jpg",
+      "expectedUpc": "096749021147",
+      "attributionRequired": false,
+      "alt": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey",
+      "sku": "3212",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "4c7461ffefd9c5878b9b4173135ebfdeb751b1add8a9148d3cac731ebecc1c46"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3735.jpg",
+      "expectedUpc": "088004033248",
+      "attributionRequired": false,
+      "alt": "Glenfarclas 12 Year Old Highland Single Malt Scotch Whisky — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Glenfarclas 12 Year",
+      "sku": "3735",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "ab88e0830d97d133a1fba50608f3a978d0448fa2e2a8b7f410cfcdd56f7a8e3e"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3166.jpg",
+      "expectedUpc": "088352124810",
+      "attributionRequired": false,
+      "alt": "El Mayor Blanco Tequila — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "El Mayor Blanco Tequila",
+      "sku": "3166",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "6d0e2cea05363ea43796ad9eb2491b83defb64f78757de89a19b6ef7e35e5de0"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3712.jpg",
+      "expectedUpc": "088076006232",
+      "attributionRequired": false,
+      "alt": "George Dickel Signature Recipe Tennessee Whisky — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "George Dickel Signature Recipe Tennessee Whisky",
+      "sku": "3712",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "d5b90def0e4b3018b9f7a1c4ce4415121c5b045b4f76f9a5cbf864a767df8070"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4252.png",
+      "expectedUpc": "080660358512",
+      "attributionRequired": false,
+      "alt": "House of Stuart — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "House of Stuart",
+      "sku": "4252",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "42bfc2a114e85282ddb7b9aa0256517b43d0bddf15bbab34d32fa6017ef6168c"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4481.jpg",
+      "expectedUpc": "080432500187",
+      "attributionRequired": false,
+      "alt": "Jameson — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Jameson",
+      "sku": "4481",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "707f98b9a202c5101c5eabc93668c3d71fcaf4e8aad61526d3b8912f0839ee2c"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4483.jpg",
+      "expectedUpc": "080432500125",
+      "attributionRequired": false,
+      "alt": "Jameson — 200 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Jameson",
+      "sku": "4483",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "e70a4589b8e1eb3c35724139cb12e2d95f9e2f579278cd939b8344b8689d2873"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4487.jpg",
+      "expectedUpc": "080432117330",
+      "attributionRequired": false,
+      "alt": "Jameson Orange Irish Whiskey — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Jameson Orange Irish Whiskey",
+      "sku": "4487",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "509ac41095b39ca3363e464d4a36ba16285264c501dc64548594931c988bfa75"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4734.jpg",
+      "expectedUpc": "088110070052",
+      "attributionRequired": false,
+      "alt": "Johnnie Walker Blue Label Blended Scotch Whisky — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Johnnie Walker Blue Label Blended Scotch Whisky",
+      "sku": "4734",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "a1761874ae9dce33ebdd9020693ffd0bdad82862f46ee5cedf018104f1687f4e"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4737.jpg",
+      "expectedUpc": "088076163164",
+      "attributionRequired": false,
+      "alt": "JW Red Label — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "JW Red Label",
+      "sku": "4737",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "110414daff6cf5c0f7810b3340bab84abb5d7521303828bc4d259ac7fa56e629"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4738.jpg",
+      "expectedUpc": "088110021306",
+      "attributionRequired": false,
+      "alt": "JW Red Label — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "JW Red Label",
+      "sku": "4738",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "1c000b59eaced2d356c52e5d30202cef5a91ef3c000c69504f6b331a49c9e7c8"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-6554.jpg",
+      "expectedUpc": "721733000913",
+      "attributionRequired": false,
+      "alt": "Gran Patrón Platinum Silver Tequila — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Gran Patrón Platinum Silver Tequila",
+      "sku": "6554",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "7c8bbc6454fede3cdcc5d3de8fed0c5aa7fa37d9de382dda3352b39c8276db1c"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-7358.jpg",
+      "expectedUpc": "080686835424",
+      "attributionRequired": false,
+      "alt": "Hornitos Añejo Tequila — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Hornitos Añejo Tequila",
+      "sku": "7358",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "72b9351d75c7075a4b92dfde4354d294a9e080fff726642fcc51171118b96fb1"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-101255.jpg",
+      "expectedUpc": "083664873463",
+      "attributionRequired": false,
+      "alt": "GLENFIDDICH 14YR — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "GLENFIDDICH 14YR",
+      "sku": "101255",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "b1c3f38a1e60f0f1505550defd7d47043dee9fd19421efe5d56327978b6bf974"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-101301.jpg",
+      "expectedUpc": "818844028155",
+      "attributionRequired": false,
+      "alt": "Gran Coramino Reposado Tequila — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Gran Coramino Reposado Tequila",
+      "sku": "101301",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "5d6aa847253fa62deb8e3997c3699adf2bb21d58b6195bacb230f24b741ecda2"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-101387.jpg",
+      "expectedUpc": "080244002039",
+      "attributionRequired": false,
+      "alt": "Blanton's Original Single Barrel Bourbon Whiskey — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Blanton's Original Single Barrel Bourbon Whiskey",
+      "sku": "101387",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "4e11d73e73c708817d7a487878693bc38c8f1831ae34c671bec0607aecc8efc7"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-101409.jpg",
+      "expectedUpc": "082000791966",
+      "attributionRequired": false,
+      "alt": "DELEON ANEJO — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "DELEON ANEJO",
+      "sku": "101409",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "b12ae3105a63874c620eff5d088bfbb9c0f858c088baa6faa3408a0e49bdcb80"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-101453.jpg",
+      "expectedUpc": "649188900476",
+      "attributionRequired": false,
+      "alt": "Grand Marnier Cordon Rouge Orange and Cognac Liqueur — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Grand Marnier Cordon Rouge Orange and Cognac Liqueur",
+      "sku": "101453",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "f724fb1d5ee483a224b7085b690f6e4d2d0fecf9d8d4ccc69d5d138dc57f60b4"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-635.jpg",
+      "expectedUpc": "857853002596",
+      "attributionRequired": false,
+      "alt": "Atto primo blackberry — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Atto primo blackberry",
+      "sku": "635",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "074d4f23e3df0db3b9d21918cfe548b09e562ada1d08a064e5cbddbdd77b15ee"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-714.jpg",
+      "expectedUpc": "080480025205",
+      "attributionRequired": false,
+      "alt": "Bacardi Gold — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Bacardi Gold",
+      "sku": "714",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "5523d38ef9b22669dfbbbc7ae67e233f7eb282c437c91851c4ae03938311098a"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-716.jpg",
+      "expectedUpc": "080480025700",
+      "attributionRequired": false,
+      "alt": "Bacardi Gold — 200 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Bacardi Gold",
+      "sku": "716",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "5295c6e8c1c58dd69cae30480cd8eca2825806689dfec09c9cd36ce8266887b3"
+    },
+    {
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-717.jpg",
+      "expectedUpc": "080480025601",
+      "attributionRequired": false,
+      "alt": "Bacardi Gold — 375 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Bacardi Gold",
+      "sku": "717",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "1a11d608f0844c3ede37cd0a79349f1944d2ced84c09a4ca3e66cd700aeeda94"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-726.jpg",
+      "expectedUpc": "080480355203",
+      "attributionRequired": false,
+      "alt": "Bacardi Limon — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Bacardi Limon",
+      "sku": "726",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "ea805c0ec17caaa443e46238cf25c751f45b61d15640ea637286b1633d8d45f4"
+    },
+    {
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-728.jpg",
+      "expectedUpc": "080480355609",
+      "attributionRequired": false,
+      "alt": "Bacardi Limon — 375 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Bacardi Limon",
+      "sku": "728",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "05ae410a2979a385bb668fe47f4cb85ff296fb7fb36aba5a85060adf8fbd5b04"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-770.jpg",
+      "expectedUpc": "080480015206",
+      "attributionRequired": false,
+      "alt": "Bacardi Superior — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Bacardi Superior",
+      "sku": "770",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "5a6d61c6dbb27c552069ac88422547bb9543f3c644fd989bb3f684483f914dcf"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1540.jpg",
+      "expectedUpc": "096749201051",
+      "attributionRequired": false,
+      "alt": "Burnetts Watermelon — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Burnetts Watermelon",
+      "sku": "1540",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "2155eb17cc404ee56ebaf495eeced1c522b163e4522cf1256074ac5653c9781b"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1580.jpg",
+      "expectedUpc": "857641002258",
+      "attributionRequired": false,
+      "alt": "BuzzBallz Colada — 200 mL container",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "BuzzBallz Colada",
+      "sku": "1580",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "baa4e25c254b5e524483d7d6b394c9c5ce64705191c1ef5bb809123dced49a4a"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1594.jpg",
+      "expectedUpc": "720815910737",
+      "attributionRequired": false,
+      "alt": "Cabo Wabo Blanco — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Cabo Wabo Blanco",
+      "sku": "1594",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "73db84518246d375b94adaad8952de83316e300bfcb3d41ed10c549bf3e1a41c"
+    },
+    {
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1635.jpg",
+      "expectedUpc": "085000017333",
+      "attributionRequired": false,
+      "alt": "CAMARENA REPOSADO — 375 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CAMARENA REPOSADO",
+      "sku": "1635",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "077889a9ea68a4d3044995d4efca1f1567f64dcb0b12239bfd584671631deb25"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1641.jpg",
+      "expectedUpc": "085000016800",
+      "attributionRequired": false,
+      "alt": "Camarena Silver — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Camarena Silver",
+      "sku": "1641",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "ea30a5be5aa9ddf7e9c4e20f3e84c332af3554b689e511d96c1056e466ce8817"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1689.jpg",
+      "expectedUpc": "082928223372",
+      "attributionRequired": false,
+      "alt": "CANADIAN ltd — 200 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CANADIAN ltd",
+      "sku": "1689",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "73ac6da80fb7f6b5c240ffd10e720a0ad27a5697e762b6152c29735915e664ff"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1692.jpg",
+      "expectedUpc": "080686821700",
+      "attributionRequired": false,
+      "alt": "Canadian Club — 200 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Canadian Club",
+      "sku": "1692",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "5aacbbf5df7e09bd3a9d3fbf866788f9390be1871dff3b282c925df3d70b4b75"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1701.jpg",
+      "expectedUpc": "082928223310",
+      "attributionRequired": false,
+      "alt": "CANADIAN ltd — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CANADIAN ltd",
+      "sku": "1701",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "d9e14151bfe4dc3e30cd22ac79f8da0cf364279fc485d35d85edf5d3978c09a0"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1704.jpg",
+      "expectedUpc": "081128023300",
+      "attributionRequired": false,
+      "alt": "Canadian Mist — 200 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Canadian Mist",
+      "sku": "1704",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "a9cc538187de100fa6145c7bcb6f0e2d36d7cda123711536f9b77a5eaa06ca4e"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1749.jpg",
+      "expectedUpc": "087000201156",
+      "attributionRequired": false,
+      "alt": "Captain Morgan Spiced — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Captain Morgan Spiced",
+      "sku": "1749",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "85c7124b0f877fb9e13751794dca427813745055f106ad1350d5d7198e41d949"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1826.jpg",
+      "expectedUpc": "088076186880",
+      "attributionRequired": false,
+      "alt": "casamigos blanco jalapeño — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "casamigos blanco jalapeño",
+      "sku": "1826",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "03f110854ef84dd84d7011ad5e6a19319aafc3d38033b520ddbc6daa877a784e"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1827.jpg",
+      "expectedUpc": "088076189041",
+      "attributionRequired": false,
+      "alt": "Casamigos cristalino reposado — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Casamigos cristalino reposado",
+      "sku": "1827",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "07c88bd7878ff7ed529fddfee54b6e12935e28c808bb21e41221822371131ac6"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1862.jpg",
+      "expectedUpc": "080480172008",
+      "attributionRequired": false,
+      "alt": "Cazadores blanco — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Cazadores blanco",
+      "sku": "1862",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "072130728e5a7d9cd136c145042754805b50eb53ebd5bb91e82c9ac7e934ab70"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-1916.jpg",
+      "expectedUpc": "085155000402",
+      "attributionRequired": false,
+      "alt": "chandon rose — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "chandon rose",
+      "sku": "1916",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "879d5a0fa5065f10d264171d604caa13a3a3245f8430ae67ee74a3097e040277"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2065.jpg",
+      "expectedUpc": "080432400364",
+      "attributionRequired": false,
+      "alt": "Chivas Regal 12 Year — 200 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Chivas Regal 12 Year",
+      "sku": "2065",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "de28fd1b4bb26ed1c9fe34622db6f872dea3806b489822c36f7c3623cfbe1372"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2089.jpg",
+      "expectedUpc": "859775001305",
+      "attributionRequired": false,
+      "alt": "ChocoVine Whipped Cream — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "ChocoVine Whipped Cream",
+      "sku": "2089",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "e98359072db5032e18629e621cf7e4d8ae639d0b7b2bfb23a24b35014e3bc484"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2096.jpg",
+      "expectedUpc": "086036815702",
+      "attributionRequired": false,
+      "alt": "Christian Brothers VS — 200 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Christian Brothers VS",
+      "sku": "2096",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "49bb5fefbd32033e3600b73a0bf33ed75403cffad4937fc0edcb97d39ad48cdc"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2100.jpg",
+      "expectedUpc": "086036860627",
+      "attributionRequired": false,
+      "alt": "Christian Brothers White — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Christian Brothers White",
+      "sku": "2100",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "34a405e38fa1e680ab46a76f31e2f01db444eec893c1cfc02d01cc3d34e16834"
+    },
+    {
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2117.jpg",
+      "expectedUpc": "088076180444",
+      "attributionRequired": false,
+      "alt": "Ciroc Apple — 375 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Ciroc Apple",
+      "sku": "2117",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "43cc7c7b989d13476dfc75e0e5b16a75ae9b91d16076f5f9d18b06e6e92bafcd"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2123.jpg",
+      "expectedUpc": "088076174979",
+      "attributionRequired": false,
+      "alt": "Ciroc Coconut — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Ciroc Coconut",
+      "sku": "2123",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "b617f8581ce33d2fba985c4afe68788b2697f18f210b1a4c26d362176f6592b9"
+    },
+    {
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2125.jpg",
+      "expectedUpc": "088076174948",
+      "attributionRequired": false,
+      "alt": "Ciroc Coconut — 375 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Ciroc Coconut",
+      "sku": "2125",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "085925f120d879dfb2321d459aabbd1c73398d7e14e266b63752e2f5b11e2325"
+    },
+    {
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2140.jpg",
+      "expectedUpc": "088076175044",
+      "attributionRequired": false,
+      "alt": "Ciroc Red Berry — 375 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Ciroc Red Berry",
+      "sku": "2140",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "6c942ca6c104fb98423473086ca86bcb383e20c706b4a6883e47b380192b4e3e"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2144.jpg",
+      "expectedUpc": "088076162648",
+      "attributionRequired": false,
+      "alt": "Ciroc Vodka — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Ciroc Vodka",
+      "sku": "2144",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "9b18c055bcc19614b5b5f9d5710e1a69ed19668b706705b7d3484ae75c229a50"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2179.jpg",
+      "expectedUpc": "083664120260",
+      "attributionRequired": false,
+      "alt": "Clan MacGregor — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Clan MacGregor",
+      "sku": "2179",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "ff0bb00ae1ff191c0f9bbc94ccec9f66b2726bd9f1db4a9da407eac5949cccae"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2326.jpg",
+      "expectedUpc": "081380701015",
+      "attributionRequired": false,
+      "alt": "Conjure Cognac — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Conjure Cognac",
+      "sku": "2326",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "3b5afdc6f38fbf05093a758f4d5be54b443c7995ba57d112b9d94e04b80cb03b"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2522.jpg",
+      "expectedUpc": "080686961024",
+      "attributionRequired": false,
+      "alt": "Courvoisier VS — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Courvoisier VS",
+      "sku": "2522",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "6b4fa56c85441388e0b4c142597ecfb6f8195c88dd7c551ac5b5f660948c6470"
+    },
+    {
+      "expectedLabel": "200 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2569.jpg",
+      "expectedUpc": "082000771548",
+      "attributionRequired": false,
+      "alt": "Crown Royal APPLE — 200 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Crown Royal APPLE",
+      "sku": "2569",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "573d2f9b9e8294bb193ad5e2829591f333b9c01b89a1a3d61ba7ae7d18496ec1"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2627.jpg",
+      "expectedUpc": "080660487014",
+      "attributionRequired": false,
+      "alt": "Crystal Palace Deluxe Vodka with Natural Flavors — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Crystal Palace Deluxe Vodka with Natural Flavors",
+      "sku": "2627",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "4b3ed918a7e85405b774a3497db3b8a72a596131fd6a744d327795b144b46a81"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2760.jpg",
+      "expectedUpc": "080686316022",
+      "attributionRequired": false,
+      "alt": "DeKuyper blue curacao — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "DeKuyper blue curacao",
+      "sku": "2760",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "97b7fdf7f74339eb95ca67a28d671f523e979270ad4501e4f747869c9f1c63f5"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2772.jpg",
+      "expectedUpc": "080686353409",
+      "attributionRequired": false,
+      "alt": "DeKuyper Peppermint Schnapps Liqueur — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "DeKuyper Peppermint Schnapps Liqueur",
+      "sku": "2772",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "ead0e6670e44bf55a0e51a5a1fbfa120811390b2f4e399de00e0854cce5ce145"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-2907.jpg",
+      "expectedUpc": "082301175014",
+      "attributionRequired": false,
+      "alt": "Don Q Gold Puerto Rican Rum — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Don Q Gold Puerto Rican Rum",
+      "sku": "2907",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "6562cd3fe7eccac7a7f659c643054dc4bc62d2862beb0044513ab9cf4995bff6"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3112.jpg",
+      "expectedUpc": "081128010621",
+      "attributionRequired": false,
+      "alt": "Early Times — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Early Times",
+      "sku": "3112",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "f96b5241619730c755e73cd6c37ae5d58f356922f717061f4cb92b7388be1e08"
+    },
+    {
+      "expectedLabel": "750 mL · bottles",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3137.jpg",
+      "expectedUpc": "080686938125",
+      "attributionRequired": false,
+      "alt": "Effen Black Cherry — 750 mL · bottles bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Effen Black Cherry",
+      "sku": "3137",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "8ae5a6343cccd9aed144d69799be77acbc7b57334d529ee5220d58c5a73b8899"
+    },
+    {
+      "expectedLabel": "750 mL · bottles",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3140.jpg",
+      "expectedUpc": "080686938248",
+      "attributionRequired": false,
+      "alt": "Effen cucumber — 750 mL · bottles bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Effen cucumber",
+      "sku": "3140",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "b2a10595f7b4f8fc6e42447627c7387bcc657323285a3f2d05f1614c654fd747"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3163.jpg",
+      "expectedUpc": "744607049801",
+      "attributionRequired": false,
+      "alt": "el Jimador Reposado — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "el Jimador Reposado",
+      "sku": "3163",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "65120be7bcbe11d1318fb26448ea7e48bd8c7e56f42258831821d63354fa6f74"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3250.jpg",
+      "expectedUpc": "699733000946",
+      "attributionRequired": false,
+      "alt": "Exclusiv Peach Vodka — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Exclusiv Peach Vodka",
+      "sku": "3250",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "094e1626ef84e83e584cf4788d123563ea93a5a52dfb42ce39bdffe553a18de7"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3356.jpg",
+      "expectedUpc": "081128074050",
+      "attributionRequired": false,
+      "alt": "Finlandia Vodka — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Finlandia Vodka",
+      "sku": "3356",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "cb79efb46703747167c185a075d59f3e91e55aeae017e8b322ec1bbe95ecb7dc"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3376.jpg",
+      "expectedUpc": "082928210211",
+      "attributionRequired": false,
+      "alt": "Fleischmann's Extra Dry Gin — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Fleischmann's Extra Dry Gin",
+      "sku": "3376",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "c2b161f6390f1cc5390b80bc27d08843bb189a629082fa3490ade7badad7e1b8"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3377.jpg",
+      "expectedUpc": "082928214318",
+      "attributionRequired": false,
+      "alt": "Fleischmann's Royal Vodka — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Fleischmann's Royal Vodka",
+      "sku": "3377",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "f687f6d9e97af9b4e6a7fdb2350e9b5796e9d26e14a6f1570edc5567db636c7b"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3460.jpg",
+      "expectedUpc": "033293003007",
+      "attributionRequired": false,
+      "alt": "Freixenet Cordon Negro Brut Cava — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Freixenet Cordon Negro Brut Cava",
+      "sku": "3460",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "d3c2b71675575762baa5e2d0caf1ddb4f85fe10234a1fe624dd76668276828bc"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-3871.jpg",
+      "expectedUpc": "083664100507",
+      "attributionRequired": false,
+      "alt": "Grants Scotch — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Grants Scotch",
+      "sku": "3871",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "b9ee0030bbe584346e6862f9b5f493fa50ceff7c1f9e9a5573dea5db34e1b394"
+    },
+    {
+      "expectedLabel": "50 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4591.jpg",
+      "expectedUpc": "080686001010",
+      "attributionRequired": false,
+      "alt": "Jim Beam Red Stag — 50 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Jim Beam Red Stag",
+      "sku": "4591",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "3db5edbb165d40287deadd05fa5c6a6fa79ac77ee89d8efa24e0fb23ce8d2e72"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4592.jpg",
+      "expectedUpc": "080686001027",
+      "attributionRequired": false,
+      "alt": "Jim Beam Red Stag — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Jim Beam Red Stag",
+      "sku": "4592",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "996a9d46642bc9cbfa4768c3bc6d3ad63f48638ef79c56cd012e43393b5a673d"
+    },
+    {
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4602.jpg",
+      "expectedUpc": "088110011192",
+      "attributionRequired": false,
+      "alt": "Johnnie Walker Black Label — 375 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Johnnie Walker Black Label",
+      "sku": "4602",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "d5469ca0db3ef99a9e2b31ffd208bff5138f7871bb6d9f114ada41a8cea69a5f"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4865.jpg",
+      "expectedUpc": "084704000078",
+      "attributionRequired": false,
+      "alt": "Korbel California Brandy — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Korbel California Brandy",
+      "sku": "4865",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "f0e75ff8e822e20021e9ef8c0f91ced14ac0e26945c8b04b4caad120b813b2af"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-4876.jpg",
+      "expectedUpc": "084704000535",
+      "attributionRequired": false,
+      "alt": "Korbel XS Extra Smooth Brandy — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Korbel XS Extra Smooth Brandy",
+      "sku": "4876",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "adc466033bdb83bdc1901d5ade88eadc7194c1c4d763ef770b171e8c5b0583b2"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5214.jpg",
+      "expectedUpc": "813497007038",
+      "attributionRequired": false,
+      "alt": "Luc Belaire Brut Gold Sparkling Wine — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Luc Belaire Brut Gold Sparkling Wine",
+      "sku": "5214",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "07b8e5a1b56f653db0c8b30f78b44eb3746a3a9f93596f8ded4dcd983fb7aba2"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5259.jpg",
+      "expectedUpc": "812066020553",
+      "attributionRequired": false,
+      "alt": "The Macallan 12 Year Sherry Oak Cask Single Malt Scotch Whisky — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "The Macallan 12 Year Sherry Oak Cask Single Malt Scotch Whisky",
+      "sku": "5259",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "27a47f00caacd344eb58e39de1de153b3ee6fefd61b7678939d49be9b6925a08"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5289.jpg",
+      "expectedUpc": "085246139431",
+      "attributionRequired": false,
+      "alt": "Maker's Mark 90 Proof Kentucky Straight Bourbon Whisky — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Maker's Mark 90 Proof Kentucky Straight Bourbon Whisky",
+      "sku": "5289",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "db082b69cefa3f57456892e78f6c22cee9ab42ec06391eb9ac201a974a6a30fb"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5305.jpg",
+      "expectedUpc": "089540472393",
+      "attributionRequired": false,
+      "alt": "Malibu Passion Fruit — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Malibu Passion Fruit",
+      "sku": "5305",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "b1a9bc9a8b1be23d6f6bf6c93df48920c920e063e6986033951fe2d9251bbe82"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5306.jpg",
+      "expectedUpc": "089540463117",
+      "attributionRequired": false,
+      "alt": "Malibu Pineapple — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Malibu Pineapple",
+      "sku": "5306",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "94d83f5cf8e67e3ee332974529cb521f4d260484e9f563a03de7259c69d4b5cc"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5341.jpg",
+      "expectedUpc": "086024007928",
+      "attributionRequired": false,
+      "alt": "Margaritaville Gold — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Margaritaville Gold",
+      "sku": "5341",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "6858a1c36ba5182524f6769b5f461aa0f193fc4fe125934b578b270c639a4680"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5342.jpg",
+      "expectedUpc": "086024007966",
+      "attributionRequired": false,
+      "alt": "Margaritaville Gold — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Margaritaville Gold",
+      "sku": "5342",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "6863c7c33176feb0722d05d04767db88cdbbed8d76d1c1f6ffb8d99e6d0f447d"
+    },
+    {
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5359.jpg",
+      "expectedUpc": "086024007812",
+      "attributionRequired": false,
+      "alt": "Margaritaville Silver — 1.75 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Margaritaville Silver",
+      "sku": "5359",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "d03d7a5e68a0054d4625a1fbc5cc87283e8457eebc5a0cca6476e1d5b4ebddc4"
+    },
+    {
+      "expectedLabel": "1.5 L",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5395.jpg",
+      "expectedUpc": "011034500039",
+      "attributionRequired": false,
+      "alt": "Martini & Rossi Asti — 1.5 L bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Martini & Rossi Asti",
+      "sku": "5395",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "7e6d8fab7be6de9a6f71802e20b6ce3ff6be0d98dba98afadd6ea46c63a989e5"
+    },
+    {
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-10-31",
+      "src": "images/products/sku-5398.jpg",
+      "expectedUpc": "011034503825",
+      "attributionRequired": false,
+      "alt": "Martini & Rossi Rosé Sparkling Wine — 750 mL bottle",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Martini & Rossi Rosé Sparkling Wine",
+      "sku": "5398",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "74dc01c8db36901b5fad009cdbe8acccd46dfe15046bc13eea409a27262625a4"
     }
   ]
 }
