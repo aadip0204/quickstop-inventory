@@ -2921,7 +2921,40 @@
       "expectedSourceRecordSha256": "cb395d99e4fcbe04fd64700b9a44a7fd8faff9e5f8bb36836f9125841318e962",
       "action": "size_needs_confirmation",
       "reason": "Original source size conflicts with exact-UPC manufacturer and retailer evidence; retain original fields and request size confirmation.",
-      "reviewedOn": "2026-10-28"
+      "reviewedOn": "2026-10-28",
+      "foodSizeResolution": {
+        "expectedSourceRow": 8992,
+        "expectedPublicName": "Cheez-It Original Baked Snack Crackers",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "1.5 oz",
+        "expectedImageSha256": "442c306eed5c57c9becf21d048a1f85a2c60b7901d46a3af21ad6b25569fc53f",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.kellanovaawayfromhome.com/en-us/products/cheez-it-original-crackers-product.00024100122349.html",
+            "supports": "Kellanova identifies Cheez-It Original Snack Crackers in an individually wrapped 1.5 oz pouch."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.kellanovaawayfromhome.com/en-us/products/cheez-it-original-crackers-product.00024100122349.html",
+            "supports": "Pouch UPC EACH:024100122615 identifies the reviewed Cheez-It Original 1.5 oz pouch."
+          }
+        ],
+        "expectedResultingGroupSkus": [
+          "101288"
+        ],
+        "reason": "Resolve only the previously held food size from the exact pouch UPC and manufacturer package record; retain the existing title, food/Snacks classification, and singleton grouping."
+      }
     },
     {
       "sku": "4769",
@@ -6442,6 +6475,752 @@
         ],
         "reason": "Exact UPC listing, official manufacturer record and inspected front package resolve this previously unspecified singleton tube size to 0.35 oz while preserving its existing public expression.",
         "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "207",
+      "expectedUpc": "078000026597",
+      "expectedNameSha256": "d53e0c94ae2d2931e62ae2ad59ec209af79b835e4dab7df3cb88b5b60d0cccb2",
+      "expectedSourceRecordSha256": "314ed1e2875d2763efd82e78fea2e4d3d1d66a1ada83892732fa2c2a9609df9a",
+      "action": "size_needs_confirmation",
+      "reason": "The source title and pack text use equivalent but differently formatted ounce values, with a tax annotation in the pack text. Preserve the original raw fields and resolve this exact UPC only through reviewed product identity evidence.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "7UP",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "7UP",
+        "verifiedLabel": "1.25 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.7up.com/en/products/7up",
+            "supports": "Official 7UP page identifies Original 7UP as lemon-lime soda. Exact UPC and package size are separately guarded by the exact-UPC record."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.cub.com/store/cub/products/17594286-7up-lemon-lime-soda-1-25-l",
+            "supports": "Cub identifies UPC 078000026597 as 7UP Lemon Lime Soda, 42.2 fl oz / 1.25 L, in one bottle."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.cub.com/store/cub/products/17594286-7up-lemon-lime-soda-1-25-l",
+            "supports": "The exact-UPC product page's front-package view was inspected: it shows one complete 1.25 L 7UP bottle. The direct image URL remains private."
+          }
+        ],
+        "reason": "The source 42.2-ounce notation, exact UPC record, and inspected front package agree on one 1.25 L bottle. No raw source field is overwritten.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "244",
+      "expectedUpc": "078000052466",
+      "expectedNameSha256": "c1c99fa319c6ae6f3e12c60c2581037c78b96e8c1cfaf38fbb91891ebb604b12",
+      "expectedSourceRecordSha256": "0f70912a922ff9cd60a0e0ab9e16e7a0855c3be5fa1f9df89ec0aa5290ad5ea4",
+      "action": "size_needs_confirmation",
+      "reason": "The source title and pack text use metric and ounce expressions with a tax annotation. Preserve the original raw fields and resolve this exact UPC only through reviewed product identity evidence.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "A&W ROOT BEER",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "A&W ROOT BEER",
+        "verifiedLabel": "2 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.rootbeer.com/",
+            "supports": "Official A&W Root Beer page identifies the A&W Root Beer expression. Exact UPC and package size are separately guarded by the exact-UPC record."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.cub.com/store/cub/products/2822002-a-w-root-beer-2-l",
+            "supports": "Cub identifies UPC 078000052466 as A&W Root Beer, 2 L, one bottle."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.cub.com/store/cub/products/2822002-a-w-root-beer-2-l",
+            "supports": "The exact-UPC product page's front-package view was inspected: it shows one complete 2 L A&W Root Beer bottle. The direct image URL remains private."
+          }
+        ],
+        "reason": "The source 2 L notation, exact UPC record, and inspected front package agree on one 2 L bottle. No raw source field is overwritten.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1277",
+      "expectedUpc": "064144043040",
+      "expectedNameSha256": "4edc662e12267b131764bf2e777dda6461cb96e5cd69934d8dc4a92aa0881ef7",
+      "expectedSourceRecordSha256": "277680164d404e8950d31fa5ca3ec4eb0221e69372d8712b057e63f64a725e14",
+      "action": "resolve_verified_identity",
+      "reason": "The original row omits both the Chef Boyardee brand and the package size. Exact UPC, manufacturer product and inspected package evidence resolve this one retained SKU without inferring another variant.",
+      "reviewedOn": "2026-10-31",
+      "verifiedName": "Chef Boyardee Lasagna",
+      "verifiedLabel": "15 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://chefboyardee.com/products/classics/lasagna-can/",
+          "supports": "Chef Boyardee identifies its Lasagna Can as pasta with chunky tomato and meat sauce."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/2682730-chef-boyardee-lasagna-15-oz",
+          "supports": "Exact UPC 064144043040 identifies Chef Boyardee Lasagna, one 15 oz can."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.cub.com/store/cub/products/2682730-chef-boyardee-lasagna-15-oz",
+          "supports": "The inspected complete product-page package image shows Chef Boyardee Lasagna in a single can with 15 oz printed on the front."
+        }
+      ]
+    },
+    {
+      "sku": "1279",
+      "expectedUpc": "064144043224",
+      "expectedNameSha256": "6c0a43861695f1af3e48a5d7c5545119b2a7f7f71a2745e15a88ab8385776d8c",
+      "expectedSourceRecordSha256": "145c6324d128b6fc5ad6226b8d605a9bb487b53e4867991246a9f07aabc2d94b",
+      "action": "resolve_verified_identity",
+      "reason": "The original row omits the Chef Boyardee brand, word spacing and package size. Exact UPC, manufacturer product and inspected package evidence resolve this one retained SKU without inferring another variant.",
+      "reviewedOn": "2026-10-31",
+      "verifiedName": "Chef Boyardee Spaghetti & Meatballs",
+      "verifiedLabel": "14.5 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://chefboyardee.com/products/classics/spaghetti-meatballs-can/",
+          "supports": "Chef Boyardee identifies its Spaghetti & Meatballs Can as the branded pasta-and-meatballs expression."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13130177",
+          "supports": "Exact UPC 064144043224 identifies Chef Boyardee Spaghetti & Meatballs, one 14.5 oz can."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.target.com/p/-/A-13130177",
+          "supports": "The inspected complete product-page package image shows Chef Boyardee Spaghetti & Meatballs in one 14.5 oz can."
+        }
+      ]
+    },
+    {
+      "sku": "1669",
+      "expectedUpc": "078000146455",
+      "expectedNameSha256": "6301fee266f7366e56154841a584fd2c56c370dd054a9ee24827e9f9dd4757f6",
+      "expectedSourceRecordSha256": "76b8f0a6a4b314e1df61b565af1998810be4c5fc49e8feb6389074ff6e4c0c8c",
+      "action": "size_needs_confirmation",
+      "reason": "The immutable source record names Canada Dry Club Soda but contains no consumer volume. Exact UPC, manufacturer, retailer, and inspected-package evidence resolve only this SKU as one 1 L bottle.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "CANADA DRY CLUB SODA",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "CANADA DRY CLUB SODA",
+        "verifiedLabel": "1 L",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.canadadry.com/products/club-soda",
+            "supports": "Canada Dry's official product page identifies the Club Soda expression."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.target.com/p/canada-dry-club-soda-33-8-fl-oz-bottle/-/A-47100043",
+            "supports": "Target identifies UPC 078000146455 as Canada Dry Club Soda in a 33.8 fl oz bottle with package quantity one."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.target.com/p/canada-dry-club-soda-33-8-fl-oz-bottle/-/A-47100043",
+            "supports": "The inspected full front package on the exact UPC listing shows one complete Canada Dry Club Soda bottle, with no price treatment or other product."
+          }
+        ],
+        "reason": "The source title remains the verified public expression, so the reviewed 1 L bottle can join the matching Canada Dry Club Soda size variant without inferring identity for any unresolved sibling.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "1812",
+      "expectedUpc": "083078113117",
+      "expectedNameSha256": "9786491ba2647dc35c598d5acdc16b4988f1ed30631e91bf46b219d40c86dbd0",
+      "expectedSourceRecordSha256": "11789b53ca6769c2af3fc601e367029d030feeca36dc5e5d08f143faca027b9a",
+      "action": "size_needs_confirmation",
+      "reason": "The immutable source record contains only the Carmex brand name and no consumer size. Exact UPC, manufacturer, retailer, and inspected-package evidence resolve this singleton as the Classic Original Jar in a 0.25 oz consumer jar.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "carmex",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Carmex Classic Original Jar",
+        "verifiedLabel": "0.25 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.mycarmex.com/product/original-lip-balm-jar/",
+            "supports": "Carmex identifies the Classic Original Jar as its medicated lip balm jar expression."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://pasteurpharmacy.com/products/carmex-in-jar-classic-lip-balm-medicated-1",
+            "supports": "The product listing identifies SKU and UPC 083078113117 as Carmex Classic Medicated Lip Balm Jar, Original, 0.25 oz."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.mycarmex.com/product/original-lip-balm-jar/",
+            "supports": "The inspected official product presentation shows the complete single yellow Classic Original Jar, not a display tray or multipack, with no price treatment or obstruction."
+          }
+        ],
+        "reason": "Exact UPC evidence identifies the previously generic source record as the Classic Original Jar and supplies its consumer net weight. The SKU has no matching sibling, so this resolution cannot alter another variant's identity."
+      }
+    },
+    {
+      "sku": "3978",
+      "expectedUpc": "014800646948",
+      "expectedNameSha256": "f4ba3922017d21655318e1d7b4558cedd123e00d67a20d8533c1bc6aa6a4980c",
+      "expectedSourceRecordSha256": "fbc17b3ccf703788dc56938d1eec5b3e345f53cc6db5d56ec706937c4def48af",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Hawaiian Punch Polar Blast Flavored Juice Drink",
+      "verifiedLabel": "1 gal",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC records, the Hawaiian Punch first-party front-pack asset, and an inspected complete one-gallon handled jug corroborate this one SKU. The 16 oz Polar Blast has a different UPC and department, so it remains a separate product variant.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hawaiianpunch.com/",
+          "supports": "Hawaiian Punch is the manufacturer brand page that supplies the first-party Polar Blast 1G PET front-pack asset used for the inspected package."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=014800646948",
+          "supports": "Exact UPC 014800646948 is listed for Hawaiian Punch Polar Blast one-gallon juice drink."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://go-upc.com/search?q=014800646948",
+          "supports": "The exact UPC record provides the public product identity used alongside the privately retained inspected packshot evidence; it is one closed, handled 1-gallon Polar Blast PET jug, not the distinct 16 oz SKU."
+        }
+      ]
+    },
+    {
+      "sku": "4137",
+      "expectedUpc": "034000702152",
+      "expectedNameSha256": "96d38ab9078e84e9c3e0fe94ae59d7ff264cd6e72998029354ce9cdd567896f6",
+      "expectedSourceRecordSha256": "86fb4226f2bb91e7ade0b10a588b889ebaa013d6c2bec2f5252144e03d4a3202",
+      "action": "resolve_verified_identity",
+      "verifiedName": "HERSHEY'S Cookies 'N' Creme Candy Bar",
+      "verifiedLabel": "1.55 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "The first-party HERSHEY'S product record, exact UPC listing, and inspected complete single-bar wrapper corroborate this one 1.55 oz SKU. The separate six-digit source row is not an equivalent verified UPC and remains outside this correction.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hersheyland.com/products/hersheys-cookies-n-creme-candy-bar-1-55-oz.html",
+          "supports": "HERSHEY'S identifies Cookies 'N' Creme Candy Bar in the 1.55 oz single-bar format and provides the inspected front-wrapper asset."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.aallyandsons.com/hershey-s-cookies-n-creme-bar-43g/",
+          "supports": "Exact catalog UPC 034000702152 is associated with the 43 g, 1.55 oz HERSHEY'S Cookies 'N' Creme single bar."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://go-upc.com/search?q=00034000702152",
+          "supports": "GTIN-normalized UPC lookup corroborates the catalog UPC for the Cookies 'N' Creme single bar."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.aallyandsons.com/hershey-s-cookies-n-creme-bar-43g/",
+          "supports": "The exact UPC listing provides the public product identity used alongside the privately retained inspected complete single-bar wrapper evidence."
+        }
+      ]
+    },
+    {
+      "sku": "4268",
+      "expectedUpc": "027000390054",
+      "expectedNameSha256": "9dd380db4d2263ec3b3402ce1c722b255576478adf8a8d05ba113c60577f2ec2",
+      "expectedSourceRecordSha256": "ff8b6a1dff0915a8e649f79c18042ced79030aa45562d8474eb764e39bb9326e",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Hunt's Tomato Sauce",
+      "verifiedLabel": "8 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "The Hunt's first-party product record, Conagra exact UPC record, and inspected complete 8 oz pull-tab can corroborate this one SKU. The correction changes only its previously unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.hunts.com/tomato-sauce-and-paste/tomato-sauce",
+          "supports": "Hunt's identifies Tomato Sauce and supplies the inspected first-party front-can asset."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://smartlabel.conagra.com/027000390054-0004-en-US/index.html",
+          "supports": "Conagra SmartLabel identifies GTIN 027000390054 as Hunt's Tomato Sauce in an 8 oz single can."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.cub.com/store/cub/products/38863-hunt-s-tomato-sauce-8-oz",
+          "supports": "The exact UPC listing provides the public product identity used alongside the privately retained inspected complete 8 oz single-can packshot evidence."
+        }
+      ]
+    },
+    {
+      "sku": "4852",
+      "expectedUpc": "043000955697",
+      "expectedNameSha256": "72c37c50cdcddffa9e98eab90046dff789412522d5c6c97a3049ef15b6582dc6",
+      "expectedSourceRecordSha256": "a43c747f99f4886eccbf41199e9c996cd59c336d3e82dc5c6c0b80645e7c0508",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Kool-Aid Unsweetened Lemonade Naturally Flavored Powdered Soft Drink Mix",
+      "verifiedLabel": "0.23 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC, official product record and inspected single front packet resolve only the previously unspecified packet size; the existing safe public title, category and department are retained.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
+          "supports": "Kraft Heinz identifies the Kool-Aid Unsweetened Lemonade naturally flavored powdered drink mix packet and its 0.23 oz net weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
+          "supports": "Exact UPC 043000955697 identifies one Unsweetened Lemonade powdered drink-mix packet with a 0.23 oz net weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955697",
+          "supports": "The inspected official product presentation shows the complete single front packet, matching the verified Kool-Aid Lemonade expression and 0.23 oz packet format."
+        }
+      ]
+    },
+    {
+      "sku": "4853",
+      "expectedUpc": "043000955611",
+      "expectedNameSha256": "5e937c2a2d033748ca5e2c7d62ca42970c16339dd7a53350890774320817083a",
+      "expectedSourceRecordSha256": "a05816ab2dac0e1d55deed4e020fe1665312fbe655fbc8b22040a8f4c5976d47",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Kool-Aid Unsweetened Strawberry Artificially Flavored Powdered Soft Drink Mix",
+      "verifiedLabel": "0.14 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC, official product record and inspected single front packet resolve only the previously unspecified packet size; the existing safe public title, category and department are retained.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
+          "supports": "Kraft Heinz identifies the Kool-Aid Unsweetened Strawberry artificially flavored powdered drink mix packet and its 0.14 oz net weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
+          "supports": "Exact UPC 043000955611 identifies one Unsweetened Strawberry powdered drink-mix packet with a 0.14 oz net weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955611",
+          "supports": "The inspected official product presentation shows the complete single front packet, matching the verified Kool-Aid Strawberry expression and 0.14 oz packet format."
+        }
+      ]
+    },
+    {
+      "sku": "4859",
+      "expectedUpc": "043000955703",
+      "expectedNameSha256": "169b1fdf5753c4d6837e522e60bf2e0a92ff0129d7429390c7675a9ff4293858",
+      "expectedSourceRecordSha256": "2382e005460926472f9a607b79b6ffa0245372584b5d243a77a35b70f7cf8386",
+      "action": "resolve_verified_identity",
+      "verifiedName": "Kool-Aid Unsweetened Pink Lemonade Powdered Soft Drink Mix",
+      "verifiedLabel": "0.23 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC, official product record and inspected single front packet resolve only the previously unspecified packet size; the existing safe public title, category and department are retained.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
+          "supports": "Kraft Heinz identifies the Kool-Aid Unsweetened Pink Lemonade powdered drink mix packet and its 0.23 oz net weight."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
+          "supports": "Exact UPC 043000955703 identifies one Unsweetened Pink Lemonade powdered drink-mix packet with a 0.23 oz net weight."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.kraftheinz.com/kool-aid/products/00043000955703",
+          "supports": "The inspected official product presentation shows the complete single front packet, matching the verified Kool-Aid Pink Lemonade expression and 0.23 oz packet format."
+        }
+      ]
+    },
+    {
+      "sku": "6855",
+      "expectedUpc": "030000031605",
+      "expectedNameSha256": "53586566a8571e7604bf28d364f61b31ce8bec48f9b4343fb7d606cb20f9f1f9",
+      "expectedSourceRecordSha256": "b7e05fa0eeb4b2557aa50bc6b7e089c1468fd2e4538af3a2554e02c3071b2f61",
+      "action": "size_needs_confirmation",
+      "reason": "The source row omits a size; an exact UPC manufacturer record and inspected package establish the single 24 oz canister without changing the product expression.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "Quaker Enriched & Degerminated White Corn Meal",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Quaker Enriched & Degerminated White Corn Meal",
+        "verifiedLabel": "24 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://smartlabel.pepsico.info/030000031605-0002-en-US/index.html",
+            "supports": "PepsiCo SmartLabel identifies exact UPC 030000031605 as Quaker Enriched & Degerminated White Corn Meal in a 24 oz canister."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://smartlabel.pepsico.info/030000031605-0002-en-US/index.html",
+            "supports": "The manufacturer product record is keyed to exact UPC 030000031605 and states the matching Quaker corn meal identity."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.pepsico.info/030000031605-0002-en-US/index.html",
+            "supports": "The manufacturer product presentation was inspected as a complete front canister and visibly matches the Quaker product expression and 24 oz package."
+          }
+        ],
+        "reason": "A private-backed direct product image and manufacturer UPC record agree on the complete single 24 oz canister; only the withheld size is resolved."
+      }
+    },
+    {
+      "sku": "6972",
+      "expectedUpc": "072940112068",
+      "expectedNameSha256": "e144bfe1d21981823feda9fb9e2048e6d3c90d8837dcd0e17fa0f9fb5cd27653",
+      "expectedSourceRecordSha256": "eb0b05a2e84ef518f343ab2b4b73fc8dad0afd6e1f814f95afc68dc503e47fd1",
+      "action": "size_needs_confirmation",
+      "reason": "The source row omits a size; a scoped exact-UPC package review resolves only the one food variant's verified net weight.",
+      "reviewedOn": "2026-10-31",
+      "foodSizeResolution": {
+        "expectedSourceRow": 9795,
+        "expectedPublicName": "Red Gold Tomato Paste",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "6 oz",
+        "expectedImageSha256": "7292614408e152ffb135c530531339087b0434551b8da7f0830da57cfc0842e6",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.redgoldtomatoes.com/redgoldtomatoes/product/canned-tomato-paste-6-oz/",
+            "supports": "Red Gold's manufacturer product record identifies Tomato Paste in a 6 oz can."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.redgoldtomatoes.com/redgoldtomatoes/product/canned-tomato-paste-6-oz/",
+            "supports": "The manufacturer primary asset is keyed to GTIN-14 00072940112068, which normalizes to guarded UPC 072940112068 for the 6 oz Red Gold Tomato Paste can."
+          }
+        ],
+        "expectedResultingGroupSkus": [
+          "6972"
+        ],
+        "reason": "Exact UPC and manufacturer package evidence establish a single 6 oz can; title, SKU, UPC, category, department and singleton grouping remain guarded."
+      }
+    },
+    {
+      "sku": "7862",
+      "expectedUpc": "040000514251",
+      "expectedNameSha256": "62708057fa8cb45202db7af23362156934cbc08237057fcfac8d4cad610f5c8e",
+      "expectedSourceRecordSha256": "bd5fdbfd6bac1e559387799ed7685a0d82c328fd5a2808a89b1790bdb6242108",
+      "action": "size_needs_confirmation",
+      "reason": "The source row has no size. Exact UPC records and the inspected single-bar package resolve only this previously unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "Snickers Milk Chocolate Bar",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Snickers Milk Chocolate Bar",
+        "verifiedLabel": "1.86 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.snickers.com/products/chocolate/snickers-singles-size-chocolate-candy-bars-186-oz-bars",
+            "supports": "SNICKERS identifies its Singles Size chocolate candy bar as a 1.86 oz product."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://business.officedepot.com/a/products/6911480/Mars-Snickers-Chocolate-186-Oz/",
+            "supports": "Exact UPC 040000514251 identifies one Mars Snickers Chocolate bar with 1.86 oz contents."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.snickers.com/products/chocolate/snickers-singles-size-chocolate-candy-bars-186-oz-bars",
+            "supports": "The inspected product-page package view shows one complete SNICKERS wrapper with 1.86 oz printed on the front."
+          }
+        ],
+        "reason": "Manufacturer, exact-UPC listing, and the inspected complete single wrapper agree on the unchanged Snickers expression, 1.86 oz size, and individual-bar packaging.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "5406",
+      "expectedUpc": "041789003035",
+      "expectedNameSha256": "0479e632d3cbfdde4d0a7077b0a576af91a2a6fe229ab14fdf5f208f93a6f499",
+      "expectedSourceRecordSha256": "40b1cd2e0779f2a1d63ffe6753da79bb7515e075ac9ecb5ed91eff37c051e037",
+      "action": "size_needs_confirmation",
+      "reason": "The source row has no size. Exact UPC records and the inspected single-bowl package resolve only this previously unspecified consumer size.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "maruchan ramen bowlhot spicy shrimp noodl soup",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "maruchan ramen bowlhot spicy shrimp noodl soup",
+        "verifiedLabel": "3.32 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://maruchan.com/products/bowl/hot-spicy-with-shrimp",
+            "supports": "Maruchan identifies the Hot & Spicy Shrimp Flavor bowl and its 3.32 oz single-bowl package."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.cub.com/store/cub/products/76944-maruchan-ramen-noodles-with-vegetables-hot-spicy-with-shrimp-3-32-oz",
+            "supports": "Exact UPC 041789003035 identifies Maruchan Ramen Bowl Hot & Spicy Shrimp in a 3.32 oz consumer package."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://maruchan.com/products/bowl/hot-spicy-with-shrimp",
+            "supports": "The inspected product-page package view shows one complete Maruchan Hot & Spicy Shrimp bowl with the 3.32 oz net weight."
+          }
+        ],
+        "reason": "Manufacturer, exact-UPC listing, and the inspected complete bowl agree on the unchanged source expression, 3.32 oz size, and single-bowl packaging.",
+        "groupWithPriorExpression": true
+      }
+    },
+    {
+      "sku": "6805",
+      "expectedUpc": "038000845512",
+      "expectedNameSha256": "f18044e3eb1174117014763429f42e8ad3721c762001ba8db14e5ac083af5c63",
+      "expectedSourceRecordSha256": "bf64fe2be09bd0ad03116f6858aa17da72a2e1900f49d6179b3095dbe6cdd1af",
+      "action": "size_needs_confirmation",
+      "reason": "The source row omits a package measurement; retain the source record and resolve only the exact UPC-backed food size.",
+      "reviewedOn": "2026-10-31",
+      "foodSizeResolution": {
+        "expectedSourceRow": 4339,
+        "expectedPublicName": "Pringles Original Potato Crisps",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "1.3 oz",
+        "expectedImageSha256": "42eb2939e35a97e58f1c53da11085b71b5e03d514946885dd1c419f69678d6ec",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.pringles.com/en-us/products/pringles-grab-go-the-original-product.html",
+            "supports": "Manufacturer page identifies Pringles Original potato crisps in a 1.3 oz Grab & Go can."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.upcitemdb.com/upc/38000845512",
+            "supports": "Exact UPC 038000845512 identifies Pringles Original Potato Crisps, 1.3 oz."
+          }
+        ],
+        "expectedResultingGroupSkus": [
+          "6805"
+        ],
+        "reason": "Resolve only the previously unspecified 1.3 oz food size for the exact UPC; retain the singleton product identity and all other metadata."
+      }
+    },
+    {
+      "sku": "101468",
+      "expectedUpc": "040000004356",
+      "expectedNameSha256": "de12684f947b83f17e498ec15e6c83136688488445e0a8a70baf5a0b76ec00dc",
+      "expectedSourceRecordSha256": "4349e3d2d6355bfcc5b0fda54677c4b20f49e2f5a13b58128136eb6609c68b9f",
+      "action": "resolve_verified_identity",
+      "verifiedName": "TWIX Caramel Cookie Milk Chocolate Candy Bars Full Size",
+      "verifiedLabel": "1.79 oz",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "reason": "Exact UPC records and the inspected complete single wrapper resolve the source title and previously unspecified consumer size without inferring any other Twix variant.",
+      "reviewedOn": "2026-10-31",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://www.twix.com/",
+          "supports": "TWIX is the Mars Wrigley caramel, cookie and milk-chocolate candy-bar brand; exact UPC, size, and single-package evidence are separately guarded."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13055569",
+          "supports": "UPC 040000004356 identifies TWIX Caramel Full Size caramel cookie chocolate candy bar, one package, 1.79 oz."
+        },
+        {
+          "kind": "inspected_package_photo",
+          "url": "https://www.target.com/p/-/A-13055569",
+          "supports": "The exact-UPC product-page front package view was inspected: it shows one complete TWIX full-size caramel cookie milk-chocolate wrapper with 1.79 oz printed on the package. The direct image URL remains private."
+        }
+      ]
+    },
+    {
+      "sku": "101507",
+      "expectedUpc": "038000765414",
+      "expectedNameSha256": "452dc78d3c6d6621bcd65760058a303e3508ee1becf3b7d92804cfab2cede745",
+      "expectedSourceRecordSha256": "e6efb2e335bef309fcdc3389cc6b1ea81e569cf5c34c162cdf250473caeeef79",
+      "action": "size_needs_confirmation",
+      "reason": "The source row states 1.03 oz, which conflicts with the exact UPC unit record. Preserve original source fields and resolve this exact individual pouch only through reviewed identity evidence.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "KELLOGGS RICE KRISP",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Kellogg's Rice Krispies Treats Original Bars",
+        "verifiedLabel": "1.3 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.kellanovaawayfromhome.com/en-us/products/kellogg-s-rice-krispies-treats-original-bars-product.00038000265471.html",
+            "supports": "Kellanova identifies Kellogg's Rice Krispies Treats Original Bars as individually wrapped 1.3 oz crispy marshmallow squares."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://www.kellanovaawayfromhome.com/en-us/products/kellogg-s-rice-krispies-treats-original-bars-product.00038000265471.html",
+            "supports": "Pouch UPC EACH:038000765414 identifies the reviewed individual Kellogg's Rice Krispies Treats Original 1.3 oz bar."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://smartlabel.kelloggs.com/Product/Index/038000765414",
+            "supports": "The exact-UPC package view was inspected: it shows one complete Rice Krispies Treats Original wrapper. The approved direct image URL remains private."
+          }
+        ],
+        "reason": "Manufacturer, exact pouch UPC, and the inspected complete package agree on the Original Rice Krispies Treats expression, 1.3 oz size, and individual wrapper. No original raw field is overwritten."
       }
     }
   ]

@@ -2145,16 +2145,16 @@
       "expectedSourceRow": 150,
       "expectedRawFieldsSha256": "314ed1e2875d2763efd82e78fea2e4d3d1d66a1ada83892732fa2c2a9609df9a",
       "expectedPublicName": "7UP",
-      "expectedLabel": "Size needs confirmation",
+      "expectedLabel": "1.25 L",
       "expectedCategory": "drinks",
       "expectedDepartment": "Soda",
       "proposedPublicTitle": "7UP Lemon Lime Soda",
-      "reason": "Exact UPC evidence supports the corrected public title; source and variant metadata are preserved.",
+      "reason": "Exact UPC evidence supports the corrected public title after the reviewed size resolution; source and variant metadata remain preserved.",
       "evidence": [
         {
           "kind": "exact_upc_listing",
           "url": "https://www.cub.com/store/cub/products/17594286-7up-lemon-lime-soda-1-25-l",
-          "supports": "UPC 078000026597: reviewed product expression."
+          "supports": "UPC 078000026597 identifies the reviewed 7UP Lemon Lime Soda expression in one 1.25 L bottle."
         }
       ]
     },
@@ -4763,11 +4763,11 @@
       "expectedSourceRow": 7836,
       "expectedRawFieldsSha256": "40b1cd2e0779f2a1d63ffe6753da79bb7515e075ac9ecb5ed91eff37c051e037",
       "expectedPublicName": "maruchan ramen bowlhot spicy shrimp noodl soup",
-      "expectedLabel": "Size not specified",
+      "expectedLabel": "3.32 oz",
       "expectedCategory": "food",
       "expectedDepartment": "Snacks",
       "proposedPublicTitle": "Maruchan Ramen Bowl Hot & Spicy Shrimp Flavor",
-      "reason": "Exact UPC evidence identifies the Ramen Bowl Hot & Spicy Shrimp Flavor expression; the current variant metadata is preserved.",
+      "reason": "Exact UPC evidence identifies the Ramen Bowl Hot & Spicy Shrimp Flavor expression after the guarded size resolution; category and other variant metadata are preserved.",
       "evidence": [
         {
           "kind": "exact_upc_listing",
@@ -4777,7 +4777,7 @@
         {
           "kind": "exact_upc_listing",
           "url": "https://www.cub.com/store/cub/products/76944-maruchan-ramen-noodles-with-vegetables-hot-spicy-with-shrimp-3-32-oz",
-          "supports": "Exact UPC 041789003035 identifies Maruchan Ramen Bowl Hot & Spicy Shrimp."
+          "supports": "Exact UPC 041789003035 identifies Maruchan Ramen Bowl Hot & Spicy Shrimp in a 3.32 oz package."
         }
       ]
     },
@@ -5216,6 +5216,311 @@
           "kind": "inspected_package_photo",
           "url": "https://lyliquor.com/cdn/shop/files/BuzzBallz_Pineapple_Passion_fab4df8b-39d6-4787-9d13-c044e2dee034.png?v=1755800523",
           "supports": "Inspected complete front packshot reads BuzzBallz Cocktails, Pineapple Passion and 200 mL on one spherical can."
+        }
+      ]
+    },
+    {
+      "sku": "2394",
+      "expectedUpc": "083804321090",
+      "expectedSourceRow": 7101,
+      "expectedRawFieldsSha256": "9ff3d2f3da890d204b4881424813ebbfafc212dec678b31b64ef60e84b459924",
+      "expectedPublicName": "Cooks Mascato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Cook's Sparkling Moscato",
+      "reason": "Exact UPC evidence and Cook's product terminology correct the source spelling and identify the Sparkling Moscato expression. This singleton title-only repair preserves the UPC, 750 mL label, category and department.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/products/cooks-sparkling-moscato-750ml",
+          "supports": "Exact UPC 083804321090 identifies Cook's Sparkling Moscato, 750 mL."
+        },
+        {
+          "kind": "manufacturer_product_line",
+          "url": "https://cookschampagne.com/pages/pop-glossary",
+          "supports": "Cook's official glossary identifies Sparkling Moscato as a Cook's product expression."
+        }
+      ]
+    },
+    {
+      "sku": "6947",
+      "expectedUpc": "014800582215",
+      "expectedSourceRow": 4411,
+      "expectedRawFieldsSha256": "e62d9c564a5bab87fc4201c6c3d100142970bdc0183087c73161281a053ee8db",
+      "expectedPublicName": "Real Lemon Juice",
+      "expectedLabel": "8 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "ReaLemon 100% Lemon Juice",
+      "reason": "Exact UPC evidence restores the registered ReaLemon brand styling and the complete 100% Lemon Juice expression without changing any variant metadata.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.webstaurantstore.com/realemon-8-fl-oz-100-lemon-juice-case/103JUCRLEM08.html",
+          "supports": "The retailer record explicitly identifies UPC 014800582215 as ReaLemon 100% Lemon Juice, 8 fl oz unit bottles."
+        }
+      ]
+    },
+    {
+      "sku": "6972",
+      "expectedUpc": "072940112068",
+      "expectedSourceRow": 9795,
+      "expectedRawFieldsSha256": "eb0b05a2e84ef518f343ab2b4b73fc8dad0afd6e1f814f95afc68dc503e47fd1",
+      "expectedPublicName": "red gold tomato paste",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Red Gold Tomato Paste",
+      "reason": "The exact UPC manufacturer record supports corrected brand capitalization while preserving the one SKU's food category, department and reviewed size workflow.",
+      "evidence": [
+        {
+          "kind": "manufacturer_exact_upc_record",
+          "url": "https://www.redgoldtomatoes.com/redgoldtomatoes/product/canned-tomato-paste-6-oz/",
+          "supports": "Red Gold's product record and GTIN-14 00072940112068 identify the exact guarded UPC 072940112068 as Red Gold Tomato Paste, 6 oz."
+        }
+      ]
+    },
+    {
+      "sku": "6421",
+      "expectedUpc": "855880008116",
+      "expectedSourceRow": 7519,
+      "expectedRawFieldsSha256": "49194d38405c53d5654912102176f79ccd1d941ad332447b935f0b9fe04139de",
+      "expectedPublicName": "on the rocks hornitos tequila",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "On The Rocks Hornitos Margarita",
+      "reason": "Exact UPC evidence identifies the ready-to-drink Hornitos Margarita expression; the existing 375 mL variant metadata is preserved.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-80207928",
+          "supports": "Exact UPC 855880008116 identifies one 375 mL On The Rocks OTR Margarita Ready to Drink Cocktail with Hornitos Plata Tequila."
+        }
+      ]
+    },
+    {
+      "sku": "6805",
+      "expectedUpc": "038000845512",
+      "expectedSourceRow": 4339,
+      "expectedRawFieldsSha256": "bf64fe2be09bd0ad03116f6858aa17da72a2e1900f49d6179b3095dbe6cdd1af",
+      "expectedPublicName": "Pringles org",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Pringles Original Potato Crisps",
+      "reason": "Exact UPC evidence expands the truncated source title while preserving the guarded source row, food category, Snacks department, and later exact size resolution.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.upcitemdb.com/upc/38000845512",
+          "supports": "Exact UPC 038000845512 identifies Pringles Original Potato Crisps, 1.3 oz."
+        }
+      ]
+    },
+    {
+      "sku": "9120",
+      "expectedUpc": "087116014527",
+      "expectedSourceRow": 5783,
+      "expectedRawFieldsSha256": "4d7a53f74b4be4926e0061b485958197e232ffa0deed67c1b0940389771968f0",
+      "expectedPublicName": "UV Blue Rasp Vodka",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "UV Blue Raspberry Flavored Vodka",
+      "reason": "Exact UPC evidence verifies the full Blue Raspberry flavored-vodka expression for this 1.75 L sibling. The three existing size variants receive the same title so their conservative product grouping stays intact.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://uvvodka.com/recipes/blue-lemonade-slushie/",
+          "supports": "UV Vodka's official recipe identifies the product expression as UV Blue Raspberry Vodka."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub-liquors/products/317909-uv-blue-vodka-1-75-l",
+          "supports": "Exact UPC 087116014527 identifies UV Blue Raspberry Flavored Vodka, 1.75 L, as one bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9121",
+      "expectedUpc": "087116014756",
+      "expectedSourceRow": 5784,
+      "expectedRawFieldsSha256": "dbfb382af670b13237efd9382a068970fa61813e9409fdc03d8e630aa97750f3",
+      "expectedPublicName": "UV Blue Rasp Vodka",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "UV Blue Raspberry Flavored Vodka",
+      "reason": "Exact UPC evidence verifies the full Blue Raspberry flavored-vodka expression for this 200 mL sibling. The three existing size variants receive the same title so their conservative product grouping stays intact.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://uvvodka.com/recipes/blue-lemonade-slushie/",
+          "supports": "UV Vodka's official recipe identifies the product expression as UV Blue Raspberry Vodka."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://shopwoodmans.com/store/woodmans-food-markets/products/18499668-uv-blue-vodka-200-0-ml",
+          "supports": "Exact UPC 087116014756, shown as GTIN 00087116014756, identifies UV Blue Raspberry Flavored Vodka, 200 mL, as one bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9122",
+      "expectedUpc": "087116014480",
+      "expectedSourceRow": 5785,
+      "expectedRawFieldsSha256": "e723b0a0ca6d73dc4fa45a74a5d5f206e29ccb1826c4681cb3fe9594f7ae9111",
+      "expectedPublicName": "UV Blue Rasp Vodka",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "UV Blue Raspberry Flavored Vodka",
+      "reason": "Exact UPC evidence verifies the full Blue Raspberry flavored-vodka expression for this 750 mL sibling. The three existing size variants receive the same title so their conservative product grouping stays intact.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://uvvodka.com/recipes/blue-lemonade-slushie/",
+          "supports": "UV Vodka's official recipe identifies the product expression as UV Blue Raspberry Vodka."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-14904162",
+          "supports": "Exact UPC 087116014480 identifies UV Blue Raspberry Flavored Vodka, 750 mL, as one bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9657",
+      "expectedUpc": "086003813854",
+      "expectedSourceRow": 6146,
+      "expectedRawFieldsSha256": "9fc1ded75c5189a94afbac9fc72e076e62c81863b5a580a4437051c92e280d06",
+      "expectedPublicName": "Woodbridge Cab-Sau",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Woodbridge by Robert Mondavi Cabernet Sauvignon",
+      "reason": "Exact UPC evidence verifies the complete Woodbridge by Robert Mondavi Cabernet Sauvignon title for this 1.5 L sibling; the guarded group-wide correction preserves the existing size variants and grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13359259",
+          "supports": "Exact UPC 086003813854 identifies Woodbridge by Robert Mondavi Cabernet Sauvignon red wine in a 1.5 L single bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9658",
+      "expectedUpc": "086003000094",
+      "expectedSourceRow": 6147,
+      "expectedRawFieldsSha256": "440a0f8c1a76c8393b8d64d75758fd0e70bfe7b8a6f1bf52e93c39e02360894f",
+      "expectedPublicName": "Woodbridge Cab-Sau",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Woodbridge by Robert Mondavi Cabernet Sauvignon",
+      "reason": "Exact UPC evidence verifies the complete Woodbridge by Robert Mondavi Cabernet Sauvignon title for this 750 mL sibling; the guarded group-wide correction preserves the existing size variants and grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-47135947",
+          "supports": "Exact UPC 086003000094 identifies Woodbridge by Robert Mondavi Cabernet Sauvignon red wine in a 750 mL single bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9662",
+      "expectedUpc": "086003000506",
+      "expectedSourceRow": 6151,
+      "expectedRawFieldsSha256": "3c7a3788d132b58a790d1fa60e1a7998b939d8560b4b5eeb3bcafaf3f0dbdaba",
+      "expectedPublicName": "Woodbridge Merlot",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Woodbridge by Robert Mondavi Merlot",
+      "reason": "Exact UPC evidence verifies the complete Woodbridge by Robert Mondavi Merlot title for this 1.5 L sibling; the guarded group-wide correction preserves the existing size variants and grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.target.com/p/-/A-13359274",
+          "supports": "Exact UPC 086003000506 identifies Woodbridge by Robert Mondavi Merlot red wine in a 1.5 L single bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9663",
+      "expectedUpc": "086003002579",
+      "expectedSourceRow": 6152,
+      "expectedRawFieldsSha256": "2cc9752d659587f1e98f7142c7a4967615cbf19c2d5426aeaef4054160decd30",
+      "expectedPublicName": "WOODBRIDGE MERLOT",
+      "expectedLabel": "4-pack · 750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Woodbridge by Robert Mondavi Merlot",
+      "reason": "Exact UPC evidence verifies the Woodbridge by Robert Mondavi Merlot expression for this four-bottle sibling; this title-only correction preserves its existing pack label and the group with the other Merlot sizes.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/collections/woodbridge/products/woodbridge-merlot-4pk",
+          "supports": "Exact UPC 086003002579 identifies Woodbridge Merlot four-pack, produced by Woodbridge by Robert Mondavi Winery, with four 187 mL bottles."
+        }
+      ]
+    },
+    {
+      "sku": "9664",
+      "expectedUpc": "086003000490",
+      "expectedSourceRow": 6153,
+      "expectedRawFieldsSha256": "b12efb2d7200c6ad3512df00322e364fb0eb0e907c264131f894480464db0b17",
+      "expectedPublicName": "Woodbridge Merlot",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Woodbridge by Robert Mondavi Merlot",
+      "reason": "Exact UPC evidence verifies the complete Woodbridge by Robert Mondavi Merlot title for this 750 mL sibling; the guarded group-wide correction preserves the existing size variants and grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.hiproof.com/products/woodbridge-by-robert-mondavi-merlot-750ml",
+          "supports": "Exact UPC 086003000490 identifies Woodbridge by Robert Mondavi Merlot in a 750 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9699",
+      "expectedUpc": "681425014027",
+      "expectedSourceRow": 6179,
+      "expectedRawFieldsSha256": "452ebd5b6a45a5513b5fd91be75e1f610292d9c60aaaa237b4587e52230733a9",
+      "expectedPublicName": "X Rated Liqueur",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "X-Rated Fusion Liqueur",
+      "reason": "Exact UPC evidence verifies the branded X-Rated Fusion Liqueur title for this 375 mL sibling; the guarded group-wide correction preserves the existing size variants and grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://theliquorbarn.com/collections/x-rated/products/x-rated-fusion-liqueur-375ml",
+          "supports": "Exact UPC 681425014027 identifies X-Rated Fusion Liqueur in a 375 mL bottle."
+        }
+      ]
+    },
+    {
+      "sku": "9700",
+      "expectedUpc": "681425014010",
+      "expectedSourceRow": 6180,
+      "expectedRawFieldsSha256": "1be1ecee1cc6edceb301550c9a3bef7249fa631987a49c1095109d24d590fd85",
+      "expectedPublicName": "X Rated Liqueur",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "X-Rated Fusion Liqueur",
+      "reason": "Exact UPC evidence verifies the branded X-Rated Fusion Liqueur title for this 750 mL sibling; the guarded group-wide correction preserves the existing size variants and grouping.",
+      "evidence": [
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://thebottleuniverse.com/store/heritage-plaza-liquors/p/x-rated-fusion-liqueur/Tigcf1nwxVOsmu24B5o8miIQBhg1_681425014010",
+          "supports": "Exact UPC 681425014010 identifies X-Rated Fusion Liqueur in a 750 mL bottle."
         }
       ]
     }
