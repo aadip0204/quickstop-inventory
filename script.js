@@ -87,9 +87,7 @@
     if (!image || typeof image !== 'object' || typeof image.src !== 'string' || typeof image.alt !== 'string') return null;
     if (!/^(?:images|assets)\/[a-zA-Z0-9_./-]+\.(?:png|jpe?g|webp|avif)$/i.test(image.src) || image.src.includes('..')) return null;
     if (!image.alt.trim()) return null;
-    const safeLink = value => typeof value === 'string' && /^https:\/\//.test(value) ? value : null;
-    return { src: image.src, alt: image.alt, attribution: image.attribution || '',
-      sourcePage: safeLink(image.sourcePage), license: image.license || '', licenseUrl: safeLink(image.licenseUrl) };
+    return { src: image.src, alt: image.alt };
   }
 
   const helpers = { PAGE_SIZE, normalize, productSearchText, shoppingCategoryLabel, filterProducts, sortProducts, paginate, matchingVariant, getVariantImage };

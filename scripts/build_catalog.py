@@ -11,7 +11,6 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
-from html import escape
 import io
 import json
 import re
@@ -387,17 +386,13 @@ def classify_record(record: dict) -> tuple[str, str, dict | None, list[str]]:
 
 
 def is_direct_reference_image(image: dict, sku: str) -> bool:
-    """Distinguish a user-authorized reference use from a claimed image license."""
-    if 'usageBasis' not in image:
-        if 'attributionRequired' in image:
-            raise ValueError(f'Image attribution policy requires an explicit usage basis: {sku}')
-        return False
+    """Require the one public photo policy: private-backed direct reference."""
     if image['usageBasis'] != 'user_authorized_direct_reference':
         raise ValueError(f'Unsupported image usage basis: {sku}')
     if image.get('attributionRequired') is not False:
         raise ValueError(f'Direct reference image requires explicit attribution policy: {sku}')
-    if any(field in image for field in ('license', 'licenseUrl', 'attribution')):
-        raise ValueError(f'Direct reference image must not invent license or attribution metadata: {sku}')
+    if any(field in image for field in ('sourcePage', 'sourceImageUrl', 'license', 'licenseUrl', 'attribution')):
+        raise ValueError(f'Public image record must not contain provenance or attribution metadata: {sku}')
     return True
 
 
@@ -427,13 +422,12 @@ def validate_private_direct_image_evidence(image_manifest: dict | None,
     for entry in entries:
         if not isinstance(entry, dict):
             raise ValueError('Image manifest entries must be objects')
-        if entry.get('usageBasis') == 'user_authorized_direct_reference':
-            sku = entry.get('sku')
-            if set(entry) != DIRECT_REFERENCE_PUBLIC_FIELDS:
-                raise ValueError(
-                    'Direct-reference public manifest must not contain provenance URLs or extra fields: '
-                    + str(sku))
-            direct_entries.append(entry)
+        sku = entry.get('sku')
+        if set(entry) != DIRECT_REFERENCE_PUBLIC_FIELDS:
+            raise ValueError(
+                'Public image manifest must not contain provenance URLs or unsupported fields: '
+                + str(sku))
+        direct_entries.append(entry)
     if not direct_entries:
         if evidence_manifest is not None:
             if (not isinstance(evidence_manifest, dict)
@@ -477,9 +471,15 @@ def apply_verified_images(products: list, image_manifest: dict | None, blocked_s
         return 0
     if image_manifest.get('schemaVersion') != 1 or not isinstance(image_manifest.get('images'), list):
         raise ValueError('Invalid image manifest schema')
+    variants = {v['sku']: (p, v) for p in products for v in p['variants']}
+    # A source-review block takes precedence over every later image-field
+    # validation. This makes a held SKU impossible to publish even if a
+    # malformed or stale image record is supplied for it.
+    for entry in image_manifest['images']:
+        if isinstance(entry, dict) and entry.get('sku') in (blocked_skus or set()):
+            raise ValueError(f'Image blocked while source size is under explicit review: {entry["sku"]}')
     direct_evidence = validate_private_direct_image_evidence(
         image_manifest, private_direct_image_evidence)
-    variants = {v['sku']: (p, v) for p in products for v in p['variants']}
     seen = set()
     image_root = (ROOT / 'images/products').resolve()
     verified_fields = {'brand', 'expression', 'size', 'packaging', 'visual', 'professional'}
@@ -507,30 +507,20 @@ def apply_verified_images(products: list, image_manifest: dict | None, blocked_s
         data = image_path.read_bytes()
         if not data or hashlib.sha256(data).hexdigest() != entry.get('sha256'):
             raise ValueError(f'Product image is empty or hash does not match: {sku}')
-        direct_reference = is_direct_reference_image(entry, sku)
-        if direct_reference:
-            if sku not in direct_evidence:
-                raise ValueError(f'Direct reference image lacks private provenance evidence: {sku}')
-            if (not re.fullmatch(r'\d{6,14}', variant['upc'])
-                    or variant['label'] in {'Size not specified', 'Size needs confirmation'}):
-                raise ValueError(f'Direct reference image requires a known exact UPC and size: {sku}')
-        required_text = ('alt', 'verifiedOn')
-        if not direct_reference:
-            required_text += ('sourcePage', 'sourceImageUrl', 'license', 'licenseUrl', 'attribution')
-        for field in required_text:
+        is_direct_reference_image(entry, sku)
+        if sku not in direct_evidence:
+            raise ValueError(f'Direct reference image lacks private provenance evidence: {sku}')
+        if (not re.fullmatch(r'\d{6,14}', variant['upc'])
+                or variant['label'] in {'Size not specified', 'Size needs confirmation'}):
+            raise ValueError(f'Direct reference image requires a known exact UPC and size: {sku}')
+        for field in ('alt', 'verifiedOn'):
             if not isinstance(entry.get(field), str) or not entry[field].strip():
                 raise ValueError(f'Image manifest requires {field}: {sku}')
-        for field in (() if direct_reference else ('sourcePage', 'sourceImageUrl', 'licenseUrl')):
-            if not re.fullmatch(r'https?://[^\s]+', entry[field]):
-                raise ValueError(f'Invalid image evidence/license URL: {sku}')
         if PRICE_RE.search(entry['alt']):
             raise ValueError(f'Image alt text must not contain prices: {sku}')
-        if direct_reference:
-            if not safe_review_text(entry['alt']) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['verifiedOn']):
-                raise ValueError(f'Direct reference image requires safe alt text and review date: {sku}')
-            public_fields = ('src', 'alt', 'usageBasis', 'attributionRequired')
-        else:
-            public_fields = ('src', 'alt', 'sourcePage', 'license', 'licenseUrl', 'attribution')
+        if not safe_review_text(entry['alt']) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['verifiedOn']):
+            raise ValueError(f'Direct reference image requires safe alt text and review date: {sku}')
+        public_fields = ('src', 'alt', 'usageBasis', 'attributionRequired')
         variant['image'] = {field: entry[field] for field in public_fields}
     return len(seen)
 
@@ -1864,64 +1854,6 @@ def name_audit(catalog: dict, audit: dict) -> dict:
             'records': rows}
 
 
-def render_image_credits(catalog: dict) -> str:
-    """Keep required per-photo attribution on a separate public page."""
-    items = []
-    for product in catalog['products']:
-        for variant in product['variants']:
-            image = variant.get('image')
-            if not image:
-                continue
-            direct_reference = is_direct_reference_image(image, variant['sku'])
-            # Direct-reference provenance is private and never appears in a
-            # browser-delivered catalog or compliance page. Licensed images
-            # retain their required attribution and source links.
-            if direct_reference:
-                continue
-            for key in ('sourcePage', 'licenseUrl'):
-                if not re.fullmatch(r'https?://[^\s]+', image[key]):
-                    raise ValueError(f'Invalid image credit link for SKU {variant["sku"]}')
-            if not re.fullmatch(r'images/products/[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp)', image['src']):
-                raise ValueError(f'Invalid credited image path for SKU {variant["sku"]}')
-            title = escape(product['name'] + ' — ' + variant['label'])
-            items.append(
-                f'<li id="sku-{escape(variant["sku"])}" data-sku="{escape(variant["sku"])}">'
-                f'<h2>{title}</h2><p>{escape(image["attribution"])}</p>'
-                f'<p><a href="{escape(image["src"])}">Photograph</a> · '
-                f'<a href="{escape(image["sourcePage"])}" rel="noopener noreferrer">Source</a> · '
-                f'<a href="{escape(image["licenseUrl"])}" rel="noopener noreferrer">{escape(image["license"])}</a>'
-                '</p></li>')
-    return '''<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#181b19">
-  <title>Image credits — Quick Stop Food &amp; Liquor</title>
-  <link rel="icon" href="images/logo.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <a class="skip-link" href="#credits">Skip to image credits</a>
-  <header class="site-header"><div class="header-inner shell">
-    <a class="brand" href="./" aria-label="Quick Stop Food &amp; Liquor home">
-      <img id="logo" src="images/logo.png" alt="Quick Stop Food &amp; Liquor" width="108" height="108">
-      <span class="brand-copy"><strong>QUICK STOP</strong><span>FOOD &amp; LIQUOR</span></span>
-    </a><a class="header-link" href="./">Browse the catalog <span aria-hidden="true">↗</span></a>
-  </div></header>
-  <main id="credits" class="credits-page shell" tabindex="-1">
-    <h1>Image credits</h1>
-    <p class="credits-intro">Credits and license details for the product photographs used in this catalog.</p>
-    <ul class="credits-list">
-''' + '\n'.join(items) + '''
-    </ul>
-    <a href="./">Back to catalog</a>
-  </main>
-</body>
-</html>
-'''
-
-
 def safe_private_path(path: Path) -> Path:
     path = path.expanduser().resolve()
     if path == ROOT or ROOT in path.parents:
@@ -1974,7 +1906,6 @@ def main() -> None:
     (private_output / 'all-names-audit.json').write_text(json.dumps(names, indent=2) + '\n')
     (private_output / 'name-audit-summary.json').write_text(json.dumps(names['summary'], indent=2) + '\n')
     args.output.write_text(json.dumps(catalog, ensure_ascii=False, separators=(',', ':')) + '\n')
-    (args.output.parent / 'image-credits.html').write_text(render_image_credits(catalog))
     summary = {'schemaVersion': 1, 'sourceDate': args.source_date,
                'sourceSha256': audit['sourceSha256'], 'counts': catalog['counts'],
                'sourceDispositions': audit['sourceDispositions'],
