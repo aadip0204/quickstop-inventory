@@ -6401,6 +6401,48 @@
           "supports": "Inspected exact-UPC package front shows Berry, Regular Strength and 1.93 fl oz for one bottle."
         }
       ]
+    },
+    {
+      "sku": "1814",
+      "expectedUpc": "083078014308",
+      "expectedNameSha256": "c07c71cf29884f78febfbe7234d0252f02c83da6c4f768016e644ae2f3c9a349",
+      "expectedSourceRecordSha256": "ab72f74ca00dc16adfa9e6455c6e03575c5204cb98ed15902d7acbfe4de04919",
+      "action": "size_needs_confirmation",
+      "reason": "Original source title and pack fields do not state a consumer size; retain that fact privately and resolve only this exact UPC using inspected package evidence.",
+      "reviewedOn": "2026-10-31",
+      "identityResolution": {
+        "expectedName": "Carmex Cherry Tube",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Carmex Cherry Tube",
+        "verifiedLabel": "0.35 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": [
+          {
+            "kind": "manufacturer",
+            "url": "https://www.mycarmex.com/product/fresh-cherry-tube/",
+            "supports": "Carmex identifies Daily Care Fresh Cherry Tube with SPF 15 as a squeeze-tube product."
+          },
+          {
+            "kind": "exact_upc_listing",
+            "url": "https://brickseek.com/walmart-inventory-checker?sku=10324096",
+            "supports": "Exact UPC 083078014308 identifies Carmex Daily Care Fresh Cherry SPF 15 tube, 0.35 oz."
+          },
+          {
+            "kind": "inspected_package_photo",
+            "url": "https://www.mycarmex.com/wp-content/uploads/2022/06/Daily_Care_Tube_FreshCherry.png",
+            "supports": "Inspected complete official front packshot shows Carmex Daily Care Fresh Cherry SPF 15 in one squeeze tube; its printed net content is 10 g, corresponding to 0.35 oz."
+          }
+        ],
+        "reason": "Exact UPC listing, official manufacturer record and inspected front package resolve this previously unspecified singleton tube size to 0.35 oz while preserving its existing public expression.",
+        "groupWithPriorExpression": true
+      }
     }
   ]
 }

@@ -2390,6 +2390,31 @@
           "supports": "UPC 855880008147 identifies On The Rocks The Mai Tai Crafted with Cruzan Rum as a 375 mL Cocktail/Mixer bottle."
         }
       ]
+    },
+    {
+      "sku": "8263",
+      "expectedUpc": "050200561009",
+      "expectedNameSha256": "2a8ed5a68adb132440c929683c7babf687668e7548c2918df0e314e8e2da27ac",
+      "expectedSourceRecordSha256": "372c4e8a5b1807bd709b4ed21acc77c333d823eddb92e83d54349d80c9ab4ed8",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "Sunny D Orange Strawb",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "food",
+      "category": "drinks",
+      "reviewedOn": "2026-10-31",
+      "reason": "Exact UPC and manufacturer evidence identify this as an Orange Strawberry juice drink/citrus punch beverage. Change only the shopping category to drinks; the immutable source department remains Snacks.",
+      "evidence": [
+        {
+          "kind": "manufacturer",
+          "url": "https://sunnyd.com/flavors/orange-strawberry/",
+          "supports": "SunnyD identifies Orange Strawberry as an artificially flavored citrus punch and lists a 16 oz format. This supports beverage classification only."
+        },
+        {
+          "kind": "exact_upc_listing",
+          "url": "https://www.cub.com/store/cub/products/88442-sunny-d-citrus-punch-orange-strawberry-16-oz",
+          "supports": "Exact UPC 050200561009 identifies SunnyD Orange Strawberry Juice Drink, 16 FL OZ Bottle."
+        }
+      ]
     }
   ]
 }
