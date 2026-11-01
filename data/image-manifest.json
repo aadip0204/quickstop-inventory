@@ -29560,6 +29560,146 @@
       "expectedLabel": "750 mL",
       "alt": "The Balvenie DoubleWood 12 Year Old Single Malt Scotch Whisky — 750 mL bottle",
       "sku": "101258"
+    },
+    {
+      "sku": "1925",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Chateau Ste. Michelle Columbia Valley Cabernet Sauvignon — 750 mL bottle",
+      "expectedUpc": "088586601835",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "expectedName": "Chateau Ste. Michelle Columbia Valley Cabernet Sauvignon",
+      "sha256": "8bfc31ec0dad6130900a719725bb82d276d49b831b1ccf0dce3b157c34ceaad9",
+      "src": "images/products/sku-1925.jpg",
+      "verifiedOn": "2026-11-01"
+    },
+    {
+      "sku": "1926",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Chateau Ste. Michelle Columbia Valley Chardonnay — 750 mL bottle",
+      "expectedUpc": "088586603846",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "expectedName": "Chateau Ste. Michelle Columbia Valley Chardonnay",
+      "sha256": "b95961f85ad5e9818c96db8bf5f90125e255c9604f6b4879b9f72bb79c3c2d06",
+      "src": "images/products/sku-1926.jpg",
+      "verifiedOn": "2026-11-01"
+    },
+    {
+      "sku": "1928",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Chateau Ste. Michelle Columbia Valley Harvest Select Sweet Riesling — 750 mL bottle",
+      "expectedUpc": "088586004162",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "expectedName": "Chateau Ste. Michelle Columbia Valley Harvest Select Sweet Riesling",
+      "sha256": "3882409f74c64e0642d2fa17ede4c4ada1620dd948175180a79c5f16ee923007",
+      "src": "images/products/sku-1928.jpg",
+      "verifiedOn": "2026-11-01"
+    },
+    {
+      "sku": "1929",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Chateau Ste. Michelle Columbia Valley Riesling — 750 mL bottle",
+      "expectedUpc": "088586621840",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "expectedName": "Chateau Ste. Michelle Columbia Valley Riesling",
+      "sha256": "67c6dba4024dad38d6c8e1fad98e76281be7cb036d5edaebb9951dd181fed2cb",
+      "src": "images/products/sku-1929.png",
+      "verifiedOn": "2026-11-01"
+    },
+    {
+      "sku": "3555",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Gabbiano Chianti DOCG — 750 mL bottle",
+      "expectedUpc": "089819501458",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "expectedName": "Gabbiano Chianti DOCG",
+      "sha256": "3535ba441babb0f299d81394076934fe085dfa8cb00f3b8f2888c297e31fc6c4",
+      "src": "images/products/sku-3555.jpg",
+      "verifiedOn": "2026-11-01"
+    },
+    {
+      "sku": "4775",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Kendall-Jackson Vintner's Reserve Pinot Noir — 750 mL bottle",
+      "expectedUpc": "081584131519",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "expectedName": "Kendall-Jackson Vintner's Reserve Pinot Noir",
+      "sha256": "3ff58bf03d4b6de5014350d8dd9bfc2b1fbe7c0e3535a5eb81f4655bb91b379a",
+      "src": "images/products/sku-4775.jpg",
+      "verifiedOn": "2026-11-01"
+    },
+    {
+      "sku": "7223",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Ruffino 1877 Chianti DOCG — 750 mL bottle",
+      "expectedUpc": "083085903022",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedLabel": "750 mL",
+      "expectedName": "Ruffino 1877 Chianti DOCG",
+      "sha256": "db934231a4682d162d6de1430293d9b0b129681e158910c021197f1778daf589",
+      "src": "images/products/sku-7223.jpg",
+      "verifiedOn": "2026-11-01"
     }
   ]
 }
