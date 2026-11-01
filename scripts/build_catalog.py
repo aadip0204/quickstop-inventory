@@ -1071,6 +1071,148 @@ def validate_direct_image_guard(entry: dict, sku: str, context: str) -> None:
         raise ValueError(f'{context} requires an exact approved image hash: {sku}')
 
 
+def validate_missing_measurement_evidence(review: dict) -> None:
+    """Bind a missing unit measurement to primary/unit records and inspected bytes."""
+    sku = review['sku']
+    evidence = review.get('evidence')
+    kinds = {'manufacturer', 'exact_upc_listing', 'inspected_package_photo'}
+    if (not isinstance(evidence, list) or len(evidence) != 3
+            or any(not isinstance(item, dict) for item in evidence)
+            or {item.get('kind') for item in evidence} != kinds):
+        raise ValueError(f'Missing measurement requires primary, retail-unit and inspected-photo evidence: {sku}')
+    unit_fields = {'kind', 'url', 'supports', 'observedUpc', 'retailUnitLabel',
+                   'quantityBasis', 'retailUnitsPerPackage', 'sourceSha256', 'retrievedOn'}
+    for item in evidence:
+        fields = ({'kind', 'url', 'supports', 'sha256', 'inspectedOn', 'inspectionReceiptSha256'}
+                  if item['kind'] == 'inspected_package_photo' else unit_fields)
+        if item['kind'] == 'manufacturer':
+            fields = fields | {'publisher', 'publisherEvidenceUrl', 'observedName', 'retiredNotice'}
+        if (set(item) != fields or not review_url_host(item['url'])
+                or not safe_review_text(item['supports'])):
+            raise ValueError(f'Missing measurement evidence contains unsupported or unsafe fields: {sku}')
+        if item['kind'] == 'inspected_package_photo':
+            # The receipt digest identifies manual review; its contents are not
+            # loaded here. The image hash binds inspection to the assigned bytes.
+            if (item['sha256'] != review['expectedImageSha256']
+                    or not isinstance(item['inspectedOn'], str)
+                    or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', item['inspectedOn'])
+                    or not isinstance(item['inspectionReceiptSha256'], str)
+                    or not re.fullmatch(r'[a-f0-9]{64}', item['inspectionReceiptSha256'])):
+                raise ValueError(f'Missing measurement requires inspected-photo identity and a manual receipt identifier: {sku}')
+            continue
+        if (item['observedUpc'] != review['expectedUpc']
+                or item['retailUnitLabel'] != review['verifiedLabel']
+                or item['quantityBasis'] != 'retail_net_content'
+                or type(item['retailUnitsPerPackage']) is not int or item['retailUnitsPerPackage'] != 1
+                or not isinstance(item['sourceSha256'], str)
+                or not re.fullmatch(r'[a-f0-9]{64}', item['sourceSha256'])
+                or not isinstance(item['retrievedOn'], str)
+                or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', item['retrievedOn'])):
+            raise ValueError(f'Missing measurement requires the literal UPC and single retail-unit quantity: {sku}')
+        if item['kind'] == 'manufacturer':
+            if item['retiredNotice'] is not False:
+                raise ValueError(f'Missing measurement cannot use a retired manufacturer package: {sku}')
+            validate_manufacturer_name_record({
+                'sku': sku, 'expectedUpc': review['expectedUpc'],
+                'manufacturerRecord': {key: item[key] for key in (
+                    'publisher', 'publisherEvidenceUrl', 'observedUpc', 'observedName',
+                    'sourceSha256', 'retrievedOn', 'retiredNotice')} | {'productUrl': item['url']},
+                'evidence': [{'kind': 'manufacturer_exact_upc_record', 'url': item['url'],
+                              'supports': item['supports']}],
+            })
+    primary = next(item for item in evidence if item['kind'] == 'manufacturer')
+    retailer = next(item for item in evidence if item['kind'] == 'exact_upc_listing')
+    primary_hosts = MANUFACTURER_NAME_HOSTS[primary['publisher']] | {
+        review_url_host(primary['url']), review_url_host(primary['publisherEvidenceUrl'])}
+    try:
+        retailer_host = review_url_host(retailer['url']).encode('idna').decode('ascii').rstrip('.').lower()
+    except UnicodeError as error:
+        raise ValueError(f'Missing measurement requires an independent retailer DNS host: {sku}') from error
+    if not re.fullmatch(r'[a-z0-9-]+(?:\.[a-z0-9-]+)+', retailer_host):
+        raise ValueError(f'Missing measurement requires an independent retailer DNS host: {sku}')
+    retailer_host = retailer_host.removeprefix('www.')
+    if any(retailer_host == host.rstrip('.').removeprefix('www.')
+           or retailer_host.endswith('.' + host.rstrip('.').removeprefix('www.')) for host in primary_hosts):
+        raise ValueError(f'Missing measurement requires an independent retailer source: {sku}')
+
+
+def apply_missing_measurements(products: list, records_by_sku: dict, source_reviews: dict,
+                               image_manifest: dict | None, private_image_evidence: dict | None,
+                               blocked_images: set, identity_reviews: dict) -> None:
+    """Fill only absent measurements after original name guards and isolation.
+
+    Legacy source/photo gates keep their existing order. This separate late
+    action never rebuilds grouping or promotes a source/report review record.
+    """
+    variants = {v['sku']: (p, v) for p in products for v in p['variants']}
+    for sku, review in source_reviews.items():
+        if review['action'] != 'resolve_verified_missing_measurement':
+            continue
+        product, variant = variants.get(sku, ({}, {}))
+        record = records_by_sku.get(sku, {})
+        source = record.get('source', {})
+        raw_public = classify_record(source)[2] if source else None
+        raw_parts = [extract_dimensions(source.get(field, '')) for field in ('ItemName', 'PackName')]
+        # Fail closed on explicit pack counts the legacy dimension parser does
+        # not recognize. This applies only to this single-unit late action;
+        # neither source text nor global parsing/brand numbers are changed.
+        pack_hint = re.search(
+            r'\b(?:cases?|packs?|cartons?|boxes?|bundles?)\s*'
+            r'(?:(?:of|qty|count)\s*[:=]?\s*)?\d+\b|'
+            r'(?<![\d.])\d+\s*(?:[-/]\s*|per\s+)?'
+            r'(?:doz(?:en)?s?|dz|cases?|cs|packs?|pks?|counts?|ct|units?|pcs?|pieces?|cartons?|boxes?|bundles?)\b|'
+            r'\b(?:dozens?|multi[-\s]*packs?)\b|\b\d+\s*[x×]\s*\d+\b',
+            source.get('ItemName', ''), re.I)
+        if (record.get('disposition') != 'retained_variant' or record.get('sourceOrigin') == 'report'
+                or sku in identity_reviews or not raw_public
+                or pack_hint
+                or clean_space(source.get('PackName', ''))
+                or raw_public['variant']['label'] != 'Size not specified'
+                or any(part['measures'] or part['packs'] or part['container'] for part in raw_parts)):
+            raise ValueError(f'Missing measurement requires genuinely absent original size/pack metadata: {sku}')
+        current = (source.get('SKU'), source.get('MAINUPC'), record.get('sourceRow'),
+                   variant.get('upc'), product.get('name'), variant.get('label'),
+                   product.get('category'), product.get('department'), product.get('id'))
+        expected = (sku, review['expectedUpc'], review['expectedSourceRow'], review['expectedUpc'],
+                    review['expectedPublicName'], review['expectedLabel'], review['expectedCategory'],
+                    review['expectedDepartment'], review['expectedProductId'])
+        if current != expected:
+            raise ValueError(f'Missing measurement current source/public identity mismatch: {sku}')
+        if [v['sku'] for v in product['variants']] != review['expectedResultingGroupSkus']:
+            raise ValueError(f'Missing measurement final SKU-group mismatch: {sku}')
+        entries = image_manifest.get('images', []) if isinstance(image_manifest, dict) else []
+        if not isinstance(entries, list):
+            entries = []
+        matches = [entry for entry in entries if isinstance(entry, dict) and entry.get('sku') == sku]
+        if len(matches) != 1:
+            raise ValueError(f'Missing measurement requires exactly one corresponding image: {sku}')
+        image = matches[0]
+        checks = image.get('verification', {})
+        if ((image.get('expectedUpc'), image.get('expectedName'), image.get('expectedLabel'), image.get('sha256'))
+                != (review['expectedUpc'], product['name'], review['verifiedLabel'], review['expectedImageSha256'])
+                or not isinstance(checks, dict)
+                or set(checks) != {'brand', 'expression', 'size', 'packaging', 'visual', 'professional'}
+                or any(value is not True for value in checks.values())):
+            raise ValueError(f'Missing measurement requires its exact professional image binding: {sku}')
+        private_entries = (private_image_evidence.get('entries', [])
+                           if isinstance(private_image_evidence, dict) else [])
+        if not isinstance(private_entries, list):
+            private_entries = []
+        private_matches = [entry for entry in private_entries
+                           if isinstance(entry, dict) and entry.get('sku') == sku]
+        inspection = next(item for item in review['evidence'] if item['kind'] == 'inspected_package_photo')
+        if len(private_matches) != 1 or private_matches[0].get('sourceImageUrl') != inspection['url']:
+            raise ValueError(f'Missing measurement inspected photo must match its private provenance: {sku}')
+        # Every earlier guard has now seen its original label. Only this field
+        # changes; final image assignment still verifies private coverage/bytes.
+        record['lateMeasurementResolution'] = {
+            'previousPublicIdentity': {'name': product['name'], 'label': variant['label']},
+            'verifiedLabel': review['verifiedLabel'], 'expectedImageSha256': review['expectedImageSha256'],
+        }
+        variant['label'] = review['verifiedLabel']
+        blocked_images.discard(sku)
+
+
 def validated_name_verifications(manifest: dict | None) -> dict:
     """Keep an unchanged-name review separate from an actual correction."""
     manifest = expand_private_review_evidence(manifest)
@@ -1137,7 +1279,8 @@ def validated_source_reviews(manifest: dict | None) -> dict:
         if not isinstance(sku, str) or sku in result or entry.get('action') not in {
                 'size_needs_confirmation', 'restore_named_merchandise', 'resolve_verified_identity',
                 'repair_unquoted_name_commas', 'clarify_container_material',
-                'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label'}:
+                'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label',
+                'resolve_verified_missing_measurement'}:
             raise ValueError('Source review requires unique SKU and a supported action')
         if not isinstance(entry.get('expectedUpc'), str) or not all(
                 re.fullmatch(r'[a-f0-9]{64}', entry.get(key, ''))
@@ -1149,6 +1292,36 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             raise ValueError(f'Source review requires a reason: {sku}')
         allowed = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
                    'action', 'reason', 'reviewedOn'}
+        if entry['action'] == 'resolve_verified_missing_measurement':
+            allowed |= {'expectedSourceRow', 'expectedPublicName', 'expectedLabel',
+                        'expectedCategory', 'expectedDepartment', 'expectedProductId',
+                        'expectedResultingGroupSkus', 'verifiedLabel', 'expectedImageSha256',
+                        'verification', 'evidence'}
+            if (set(entry) != allowed or not valid_gtin(entry['expectedUpc'])
+                    or type(entry['expectedSourceRow']) is not int or entry['expectedSourceRow'] < 1
+                    or entry['expectedLabel'] != 'Size not specified'
+                    or not isinstance(entry['reviewedOn'], str)
+                    or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn'])
+                    or not re.fullmatch(r'p-[a-f0-9]{16}', str(entry['expectedProductId']))
+                    or any(not safe_review_text(entry[key]) for key in (
+                        'expectedPublicName', 'expectedCategory', 'expectedDepartment', 'verifiedLabel'))):
+                raise ValueError(f'Missing measurement requires exact original/current identity guards: {sku}')
+            label = entry['verifiedLabel']
+            dimensions = extract_dimensions(label)
+            fluid = canonical_ounce_label_value(label, fluid=True)
+            if (fluid is None and (dimensions['text'] or dimensions['packs'] or dimensions['container']
+                    or len(dimensions['measures']) != 1
+                    or label != dimensions['measures'][0][0] or dimensions['measures'][0][2] <= 0
+                    or dimensions['measures'][0][1] not in {'volume-mL', 'mass-g', 'ounce', 'pound', 'quart', 'gallon'})):
+                raise ValueError(f'Missing measurement requires one positive canonical retail measurement: {sku}')
+            group = entry['expectedResultingGroupSkus']
+            if (not isinstance(group, list) or not group or sku not in group
+                    or any(not isinstance(value, str) or not re.fullmatch(r'\d+', value) for value in group)
+                    or len(set(group)) != len(group)):
+                raise ValueError(f'Missing measurement requires its unchanged exact SKU group: {sku}')
+            validate_direct_image_guard(entry, sku, 'Missing measurement')
+            validate_reviewed_identity_checks(entry['verification'], sku, 'Missing measurement')
+            validate_missing_measurement_evidence(entry)
         if (entry['action'] == 'size_needs_confirmation'
                 and 'foodSizeResolution' in entry and 'identityResolution' in entry):
             raise ValueError(f'Food-size resolution cannot coexist with a generic identity resolution: {sku}')
@@ -1589,7 +1762,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     public['variant']['label'] = re.sub(r'(?:^| · )bottles$', '', label) + ' · ' + review['containerMaterial'] + ' bottles'
                     flags.append('Guarded report evidence clarifies container material; original source metadata preserved privately')
                 elif review['action'] in {'resolve_verified_pack_identity',
-                                           'refine_verified_fluid_ounce_label'}:
+                                           'refine_verified_fluid_ounce_label',
+                                           'resolve_verified_missing_measurement'}:
                     # These actions deliberately run after any category/title
                     # review so their guarded current-public identity reflects
                     # the exact final product expression.
@@ -1774,6 +1948,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 != (variant.get('upc'), product.get('name'), variant.get('label'))):
             raise ValueError(f'Name verification does not match a current original-source variant: {sku}')
         record['nameVerification'] = verification
+    apply_missing_measurements(products, records_by_sku, source_reviews, image_manifest,
+                               private_direct_image_evidence_manifest, blocked_images, identity_reviews)
     for sku, source_review in source_reviews.items():
         image_review = source_review.get('imageIdentityReview')
         if image_review is None:
