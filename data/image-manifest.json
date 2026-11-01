@@ -624,10 +624,10 @@
     {
       "sku": "6468",
       "expectedUpc": "071871546676",
-      "expectedName": "Oscar Mayer turkey cotto salami",
+      "expectedName": "Oscar Mayer Turkey Cotto Salami",
       "expectedLabel": "16 oz",
       "src": "images/products/sku-6468.jpg",
-      "alt": "Oscar Mayer turkey cotto salami — 16 oz package",
+      "alt": "Oscar Mayer Turkey Cotto Salami — 16 oz package",
       "sha256": "b3385dae040902ce407fdf1ffc635feb2db466d74fb219983d131d4b0957a4f3",
       "verifiedOn": "2026-10-29",
       "usageBasis": "user_authorized_direct_reference",
@@ -30444,10 +30444,10 @@
     {
       "sku": "6467",
       "src": "images/products/sku-6467.jpg",
-      "alt": "Oscar Mayer turkey Bologna — 16 oz packaging",
+      "alt": "Oscar Mayer Turkey Bologna — 16 oz packaging",
       "verifiedOn": "2026-11-01",
       "expectedUpc": "071871546683",
-      "expectedName": "Oscar Mayer turkey Bologna",
+      "expectedName": "Oscar Mayer Turkey Bologna",
       "expectedLabel": "16 oz",
       "sha256": "53c773ab3c726cc2c5a8f43371be26176d17851006872794308123c2c5d551a1",
       "usageBasis": "user_authorized_direct_reference",
@@ -30490,6 +30490,186 @@
       "expectedName": "Snickers Ice Cream Cone",
       "expectedLabel": "4 fl oz",
       "sha256": "88bca1cbfcde3ab553384aa136e0c54117a2d1e8e7bed5362bb8bb56a3e6b119",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2716",
+      "src": "images/products/sku-2716.png",
+      "alt": "Dakota Growers Wide Egg Noodles — 12 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "767387095127",
+      "expectedName": "Dakota Growers Wide Egg Noodles",
+      "expectedLabel": "12 oz",
+      "sha256": "8b50781002fc2510f173fa3ee1b319fe97521e1b3425476a236ebd366a5c4945",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3744",
+      "src": "images/products/sku-3744.jpg",
+      "alt": "Global Brands Snak Time Stack Pack Salted Crackers — 340 g packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "876274001858",
+      "expectedName": "Global Brands Snak Time Stack Pack Salted Crackers",
+      "expectedLabel": "340 g",
+      "sha256": "2dadd90f7b2efb1af8699470ace3d244d7802421e0ed181a24c4d5c72ba51f36",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3739",
+      "src": "images/products/sku-3739.png",
+      "alt": "Global Brands Select Soup & Oyster Crackers — 340 g packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "876274001896",
+      "expectedName": "Global Brands Select Soup & Oyster Crackers",
+      "expectedLabel": "340 g",
+      "sha256": "68a9fda35c33ffe345b370d55dad1ff08ee6688d3efbbb94bc7594270f1646a8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6523",
+      "src": "images/products/sku-6523.png",
+      "alt": "Parade Granulated Sugar — 4 lb packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "050700302355",
+      "expectedName": "Parade Granulated Sugar",
+      "expectedLabel": "4 lb",
+      "sha256": "9d9e4fb95963d2a1b736b0a145378b8f91d2d55b9e372877238cad8591cda1a9",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6598",
+      "src": "images/products/sku-6598.jpg",
+      "alt": "Lil' Dutch Maid Peanut Butter Creme Cookies — 11.8 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "086106152560",
+      "expectedName": "Lil' Dutch Maid Peanut Butter Creme Cookies",
+      "expectedLabel": "11.8 oz",
+      "sha256": "dfa8f8f5827a026accf2a1601100c2389770d45c2b041a5c876158bf45860324",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6599",
+      "src": "images/products/sku-6599.jpg",
+      "alt": "Lil' Dutch Maid Peanut Butter Creme Cookies — 13 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "086106011874",
+      "expectedName": "Lil' Dutch Maid Peanut Butter Creme Cookies",
+      "expectedLabel": "13 oz",
+      "sha256": "2b74d2d24346a57dc10188adb504ee2dc2fbfb237e8811826217ad5ad33c2a80",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101423",
+      "src": "images/products/sku-101423.jpg",
+      "alt": "Ritz Bits Cheese Cracker Sandwiches — 1.5 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "044000009298",
+      "expectedName": "Ritz Bits Cheese Cracker Sandwiches",
+      "expectedLabel": "1.5 oz",
+      "sha256": "f7cf5fa94fd01e7b0fe575304a211d43aa7cc3f04da319eace468762e86ffb47",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2880",
+      "src": "images/products/sku-2880.webp",
+      "alt": "Domino Premium Pure Cane Granulated Sugar — 4 lb packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "049200045503",
+      "expectedName": "Domino Premium Pure Cane Granulated Sugar",
+      "expectedLabel": "4 lb",
+      "sha256": "d810d639b8f4f2c76ad960a432fd32524ba01c2a61448041cb89ebe29f3a36a4",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2881",
+      "src": "images/products/sku-2881.webp",
+      "alt": "Domino Premium Pure Cane Granulated Sugar — 1 lb packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "049200042014",
+      "expectedName": "Domino Premium Pure Cane Granulated Sugar",
+      "expectedLabel": "1 lb",
+      "sha256": "bd5639b6e1b672410bc7f8196c2e59c6384ec5dbe4d63b7011251f3e41d29ebc",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {
