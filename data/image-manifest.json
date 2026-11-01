@@ -28640,6 +28640,146 @@
       "src": "images/products/sku-318.jpg",
       "sku": "318",
       "alt": "Ajax Ultra Triple Action Orange Dish Liquid — 14 oz bottle"
+    },
+    {
+      "alt": "Bacardi Dragonberry — 1.75 L bottle",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "080480000257",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "src": "images/products/sku-710.jpg",
+      "sku": "710",
+      "sha256": "4d856ca14c6eff292577d1e30ffc9ec9dfea4caaa44eef9d844e709853d6ce0c",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Bacardi Dragonberry"
+    },
+    {
+      "alt": "Buzzball strawberry ritA — 1.75 L container",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "851091006217",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "src": "images/products/sku-1577.jpg",
+      "sku": "1577",
+      "sha256": "acd2aeda9da65ad2a4f12f471dd5752fdb19e63a2c59e0f4719f64fe414f5480",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Buzzball strawberry ritA"
+    },
+    {
+      "alt": "Hartley — 750 mL bottle",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "080660582573",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "src": "images/products/sku-3962.jpg",
+      "sku": "3962",
+      "sha256": "d8d30f3e3e90dadd9291cd60cf95dc27b3e249763a1b4d53d9ac81042f01dc9a",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Hartley"
+    },
+    {
+      "alt": "Jagermeister — 1.75 L bottle",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "083089660174",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "src": "images/products/sku-4464.jpg",
+      "sku": "4464",
+      "sha256": "d17d90496658d1cda8c7f3ad4bad8981dfaccc0c25b7858f24224b81eef131af",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Jagermeister"
+    },
+    {
+      "alt": "lobos 1707 joven blanco — 750 mL bottle",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "816136027893",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "src": "images/products/sku-5193.jpg",
+      "sku": "5193",
+      "sha256": "c338adfee23dc957a1302bbd2b599216aedcdfdd71e3377d08a68dfbef8e2d1d",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "lobos 1707 joven blanco"
+    },
+    {
+      "alt": "Makers Mark 90 P — 1.75 L bottle",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "085246139417",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "src": "images/products/sku-5290.jpg",
+      "sku": "5290",
+      "sha256": "b096ce4e806b7163df6056d7f8aba2bef7107b81e800a7b78899896cc76ac4c6",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Makers Mark 90 P"
+    },
+    {
+      "alt": "Pama — 750 mL bottle",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "096749940035",
+      "verifiedOn": "2026-10-31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "src": "images/products/sku-6507.jpg",
+      "sku": "6507",
+      "sha256": "f44025eff03ad09b26fe19ac8b7c86b832d83cc16813eb0e0a4fef123e94131d",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Pama"
     }
   ]
 }
