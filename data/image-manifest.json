@@ -30340,6 +30340,86 @@
       "src": "images/products/sku-101415.png",
       "expectedLabel": "4-pack · 250 mL · cartons",
       "expectedUpc": "850016415325"
+    },
+    {
+      "alt": "CUTWATER WHITE RUSSIAN — 4-pack · 12 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedName": "CUTWATER WHITE RUSSIAN",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "7237580f40de626f0feed626600ab2a77b7d7eb65927b912f500edb331eb4789",
+      "sku": "101378",
+      "src": "images/products/sku-101378.webp",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "816751022068",
+      "attributionRequired": false,
+      "expectedLabel": "4-pack · 12 oz"
+    },
+    {
+      "alt": "J & B — 750 mL packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedName": "J & B",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "aef28ccea45bed23ef89775d414754f2dd046dbac76d7281e5ca8fb94c09f7c9",
+      "sku": "4402",
+      "src": "images/products/sku-4402.webp",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "088110985042",
+      "attributionRequired": false,
+      "expectedLabel": "750 mL"
+    },
+    {
+      "alt": "Colonel E.H. Taylor Jr. Small Batch Bourbon 100 Proof — 750 mL packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedName": "Colonel E.H. Taylor Jr. Small Batch Bourbon 100 Proof",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "8166d3c264b8409834aa14b06039cb2ad8e69f56f973e9308a6fe7e3be2cdc99",
+      "sku": "101363",
+      "src": "images/products/sku-101363.webp",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "088004005498",
+      "attributionRequired": false,
+      "expectedLabel": "750 mL"
+    },
+    {
+      "alt": "Ketel One Oranje — 750 mL packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedName": "Ketel One Oranje",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "ff6ab9a2c178d763703b74a3e6f20ece0ccd17bef51f0814d40eaa2a436bf7a1",
+      "sku": "4782",
+      "src": "images/products/sku-4782.png",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "085156475001",
+      "attributionRequired": false,
+      "expectedLabel": "750 mL"
     }
   ]
 }
