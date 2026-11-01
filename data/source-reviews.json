@@ -6314,6 +6314,37 @@
       "evidence": {
         "privateEvidenceSha256": "f973c4d1082a8f0fc61292c8cd304b01f507d37909fe0aecc04624a731c98733"
       }
+    },
+    {
+      "sku": "101415",
+      "expectedUpc": "850016415325",
+      "expectedNameSha256": "c82aa03bca088a1c8682a8930c411adf9628b5582c4265a3ff45234544e92e0b",
+      "expectedSourceRecordSha256": "48d78e8ec0fac76b7aaeb2014bb3858556882533b8a6f9d6045f5df6d96580ba",
+      "action": "resolve_verified_pack_total_volume",
+      "reason": "Clarify the original four-pack total of 1 L as four 250 mL cartons, preserving the original quantity, count, name, source cells and identifiers. The inspected package supplies the retail count; the primary authority record supplies the per-carton quantity.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 9095,
+      "expectedPublicName": "BUZZBOX TEQUILA MARGARITA",
+      "expectedLabel": "4-pack · 1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "expectedProductId": "p-dbc977121bc0ef5e",
+      "expectedResultingGroupSkus": [
+        "101415"
+      ],
+      "verifiedLabel": "4-pack · 250 mL · cartons",
+      "expectedImageSha256": "6fefd31f717c9e095215239a32a733440944254237abcdcb24c4d946828eaf21",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "d20d27e27877a72de79e7457c540dfde84ecab38d629513dfd67a8ecf48f7ef2"
+      }
     }
   ]
 }

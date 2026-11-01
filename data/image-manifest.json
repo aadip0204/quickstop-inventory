@@ -30080,6 +30080,266 @@
       "usageBasis": "user_authorized_direct_reference",
       "verifiedOn": "2026-11-01",
       "sha256": "311b9d9d59b3c77444ec5b9a5917a04185e14c84b9e36fb42397d3c776282090"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Agavero Orange Tequila Liqueur",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "286",
+      "sha256": "dc476f964abebfd53db17504bb15de353687054b523110a1e0ab11030cad54ea",
+      "alt": "Agavero Orange Tequila Liqueur — 750 mL packaging",
+      "src": "images/products/sku-286.jpg",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "811538012010"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "HORNITOS PLATA",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "7359",
+      "sha256": "d3f1c51d2867b40922248d3b08479906f650e642ac417f8b201ff8d175c518f9",
+      "alt": "HORNITOS PLATA — 750 mL packaging",
+      "src": "images/products/sku-7359.jpg",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "080686835325"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Fireball Whisky",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3364",
+      "sha256": "1d44ef878c43bd2de3350e393415e0c971192224d9d7922c4d36c26cd0047247",
+      "alt": "Fireball Whisky — 1 L packaging",
+      "src": "images/products/sku-3364.jpg",
+      "expectedLabel": "1 L",
+      "expectedUpc": "088004144678"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Herradura Blanco",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "4073",
+      "sha256": "5d53784812dbe0a687e11ed962958eefafe69ee17e27c253f440301215a8de6d",
+      "alt": "Herradura Blanco — 750 mL packaging",
+      "src": "images/products/sku-4073.png",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "744607111317"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CASANOBLE Silver",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "1833",
+      "sha256": "f9b6f33b817d96bb3fc9a28620a1f296b715c3544ca12bf408d4bd963f899401",
+      "alt": "CASANOBLE Silver — 750 mL packaging",
+      "src": "images/products/sku-1833.jpg",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "081240050376"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CUTWATER PIÑA COLADA",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2661",
+      "sha256": "cdf7544e4c02a93bc355d817f6f5d5ff9dfa7dcb1668888d15da0ab17456067f",
+      "alt": "CUTWATER PIÑA COLADA — 4-pack · 12 oz packaging",
+      "src": "images/products/sku-2661.jpg",
+      "expectedLabel": "4-pack · 12 oz",
+      "expectedUpc": "816751022488"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CUTWATER LIME MARGARITA",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2655",
+      "sha256": "729a85c75f13407f92c92fc4fb9c26f2b637a06dc9bec3476c921f528812b824",
+      "alt": "CUTWATER LIME MARGARITA — 4-pack · 12 oz packaging",
+      "src": "images/products/sku-2655.jpg",
+      "expectedLabel": "4-pack · 12 oz",
+      "expectedUpc": "816751021238"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CUTWATER MANGO",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2659",
+      "sha256": "0c1f91c84636826801a25afb7ac6e844c53869ad28e57555cb812b033a707211",
+      "alt": "CUTWATER MANGO — 4-pack · 12 oz packaging",
+      "src": "images/products/sku-2659.jpg",
+      "expectedLabel": "4-pack · 12 oz",
+      "expectedUpc": "816751022105"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CUTWATER LEMON DROP",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "2657",
+      "sha256": "7d80625f989c6afc7becb9f7237cf1a2cd51956b90e69ab5534ffddc5743cb62",
+      "alt": "CUTWATER LEMON DROP — 4-pack · 12 oz packaging",
+      "src": "images/products/sku-2657.png",
+      "expectedLabel": "4-pack · 12 oz",
+      "expectedUpc": "816751023799"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "LUNAZUL REPOSADO",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5244",
+      "sha256": "7a7ce303c2c57ae13e49ab076d7bce9d3891919485cfa36884406637fc757544",
+      "alt": "LUNAZUL REPOSADO — 375 mL packaging",
+      "src": "images/products/sku-5244.jpg",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "096749001378"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Montecillo Crianza Rioja",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "5849",
+      "sha256": "1f263c19833f999746f737236a5583c47777b520cca9d33fa237896c8fadd022",
+      "alt": "Montecillo Crianza Rioja — 750 mL packaging",
+      "src": "images/products/sku-5849.jpg",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "022851202013"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Glendalough Wild Botanical Gin",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "3733",
+      "sha256": "b7411fde59e10de8263712b6ce9e746904c2ae7c679ba769d91b218a4ea363ec",
+      "alt": "Glendalough Wild Botanical Gin — 750 mL packaging",
+      "src": "images/products/sku-3733.png",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "5391537390050"
+    },
+    {
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "BUZZBOX TEQUILA MARGARITA",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "101415",
+      "sha256": "6fefd31f717c9e095215239a32a733440944254237abcdcb24c4d946828eaf21",
+      "alt": "BUZZBOX TEQUILA MARGARITA — 4-pack · 250 mL · cartons packaging",
+      "src": "images/products/sku-101415.png",
+      "expectedLabel": "4-pack · 250 mL · cartons",
+      "expectedUpc": "850016415325"
     }
   ]
 }

@@ -6225,6 +6225,66 @@
       "evidence": {
         "privateEvidenceSha256": "b2e3352402b3636ded40ac62c5406085080affb16c063aaeaba06495dac7938a"
       }
+    },
+    {
+      "sku": "2661",
+      "expectedUpc": "816751022488",
+      "expectedSourceRow": 7465,
+      "expectedRawFieldsSha256": "f21e7a8e9bf10731aa253273cce82693f486368e2c24b3b837cfb87394f3c0d4",
+      "expectedPublicName": "CUTWATER PINA COLADA",
+      "expectedLabel": "4-pack · 12 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "CUTWATER PIÑA COLADA",
+      "reason": "Restore the printed Piña diacritic without changing the existing capitalization, flavor, pack, source fields or identifiers.",
+      "evidence": {
+        "privateEvidenceSha256": "fb56dd0d29198bb0ef6f5686379888ee5f5a2a6ba4d4c5fc059cc245528db215"
+      }
+    },
+    {
+      "sku": "5849",
+      "expectedUpc": "022851202013",
+      "expectedSourceRow": 3752,
+      "expectedRawFieldsSha256": "72c5cb5ea01cda257ed85a559a908f6b133c4564b3fe1d676f301bbf75ceac0d",
+      "expectedPublicName": "Montecillo Red",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Montecillo Crianza Rioja",
+      "reason": "Clarify the exact-unit Montecillo Crianza Rioja expression. Keep the public title year-free and make no current inventory vintage or numerical strength claim.",
+      "evidence": {
+        "privateEvidenceSha256": "74915f615011a47b219bea6c7edd4e8ec3409814bebf0789ba9f93e0853df5ed"
+      }
+    },
+    {
+      "sku": "3733",
+      "expectedUpc": "5391537390050",
+      "expectedSourceRow": 7502,
+      "expectedRawFieldsSha256": "1f07632b8adc3bfc945cf9da1ad759d947127f213f1de0f8dc099250a84e354b",
+      "expectedPublicName": "glendalough gin wild botanical",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Gin",
+      "proposedPublicTitle": "Glendalough Wild Botanical Gin",
+      "reason": "Use the exact-unit Glendalough Wild Botanical Gin name and word order. Preserve the listed volume and all identifiers without adding numerical strength.",
+      "evidence": {
+        "privateEvidenceSha256": "5258dd5ee769a38764d0aff5ab59b7c3979d414726bd2dd1d880efe35d584245"
+      }
+    },
+    {
+      "sku": "2901",
+      "expectedUpc": "081753811020",
+      "expectedSourceRow": 1868,
+      "expectedRawFieldsSha256": "af275ed019a4498fa75dde53378df87e0a42de93542944629014b3541f7ba005",
+      "expectedPublicName": "DON PERIGNON Champagne",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Dom Pérignon Champagne",
+      "reason": "Correct DON to the independently supported Dom Pérignon brand spelling and accent. This is a name-only repair; the conflicting-vintage photograph remains held and no year is inferred.",
+      "evidence": {
+        "privateEvidenceSha256": "3029ed883f72d011f5739a7b17444531f72827d4b81847098db3fbfec31a1a68"
+      }
     }
   ]
 }
