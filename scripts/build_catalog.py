@@ -16,7 +16,8 @@ import json
 import os
 import re
 from collections import Counter
-from decimal import Decimal
+from datetime import date
+from decimal import Decimal, localcontext
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -102,6 +103,12 @@ MANUFACTURER_NAME_SCOPE = 'manufacturer_exact_upc_name_identity'
 NAME_STRENGTH_RE = re.compile(r'\d+(?:\.\d+)?\s*(?:%\s*(?:ABV\b|A/C\b)?|ABV\b|A/C\b|PROOF\b)', re.I)
 
 PRIVATE_REVIEW_EVIDENCE_KIND = 'quickstop-private-review-evidence'
+
+# This authority's .com host is explicit evidence, not a domain-role guess.
+# Additional authorities require their own reviewed publisher/host binding.
+PACK_TOTAL_VOLUME_AUTHORITIES = {
+    'Maine Spirits': {'mainespirits.com', 'www.mainespirits.com'},
+}
 
 
 def review_evidence_sha256(value: object) -> str:
@@ -263,6 +270,39 @@ def parse_verified_pack_container_label(label: object) -> dict | None:
         return None
     return {'pack': int(match['pack']), 'measure': dimensions['measures'][0],
             'container': match['container']}
+
+
+def parse_reviewed_pack_volume(label: object, require_container: bool = False) -> dict | None:
+    """Parse this review's L/mL labels without broadening source parsing."""
+    match = re.fullmatch(
+        r'(?P<pack>[1-9]\d*)-pack · (?P<number>(?:0|[1-9]\d*)(?:\.\d+)?) '
+        r'(?P<unit>mL|L)(?: · (?P<container>cans|bottles|cartons))?',
+        label if isinstance(label, str) else '')
+    if not match or (require_container and not match['container']):
+        return None
+    value = Decimal(match['number'])
+    if value <= 0 or decimal_text(match['number']) != match['number']:
+        return None
+    with localcontext() as context:
+        context.prec = max(28, len(value.as_tuple().digits) + 4)
+        milliliters = value * (1000 if match['unit'] == 'L' else 1)
+    return {'pack': int(match['pack']), 'mL': milliliters,
+            'measure': match['number'] + ' ' + match['unit'],
+            'container': match['container'] or ''}
+
+
+def reviewed_volume_milliliters(text: object) -> Decimal | None:
+    """Preserve a source/printed L or mL spelling, comparing only its volume."""
+    match = re.fullmatch(r'(?P<number>(?:0|[1-9]\d*)(?:\.\d+)?)\s*(?P<unit>mL|L)',
+                         text if isinstance(text, str) else '', re.I)
+    if not match:
+        return None
+    value = Decimal(match['number'])
+    if value <= 0:
+        return None
+    with localcontext() as context:
+        context.prec = max(28, len(value.as_tuple().digits) + 4)
+        return value * (1000 if match['unit'].lower() == 'l' else 1)
 
 
 def explicit_source_fluid_ounce_value(source: dict) -> Decimal | None:
@@ -912,7 +952,8 @@ def validate_reviewed_source_photo_bindings(products: list, source_reviews: dict
     entries = image_manifest.get('images', []) if isinstance(image_manifest, dict) else []
     if not isinstance(entries, list):
         entries = []
-    bound_actions = {'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label'}
+    bound_actions = {'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label',
+                     'resolve_verified_pack_total_volume'}
     for sku, review in source_reviews.items():
         food_resolution = review.get('foodSizeResolution')
         if review['action'] not in bound_actions and food_resolution is None:
@@ -929,7 +970,8 @@ def validate_reviewed_source_photo_bindings(products: list, source_reviews: dict
         # so their final title must still equal the guarded public title.
         final_identity = (review['expectedUpc'], product['name'], variant['label'])
         if (final_identity[0] != review['expectedUpc'] or final_identity[2] != expected_label
-                or (review['action'] == 'refine_verified_fluid_ounce_label'
+                or (review['action'] in {'refine_verified_fluid_ounce_label',
+                                         'resolve_verified_pack_total_volume'}
                     and product['name'] != review['expectedPublicName'])
                 or (food_resolution is not None
                     and product['name'] != food_resolution['expectedPublicName'])):
@@ -1069,6 +1111,166 @@ def validate_direct_image_guard(entry: dict, sku: str, context: str) -> None:
     image_hash = entry.get('expectedImageSha256')
     if not isinstance(image_hash, str) or not re.fullmatch(r'[a-f0-9]{64}', image_hash):
         raise ValueError(f'{context} requires an exact approved image hash: {sku}')
+
+
+def validate_pack_total_volume_evidence(review: dict) -> None:
+    """Keep authority per-container facts separate from printed retail count."""
+    sku = review['sku']
+    prior = parse_reviewed_pack_volume(review['expectedLabel'])
+    verified = parse_reviewed_pack_volume(review['verifiedLabel'], require_container=True)
+    evidence = review.get('evidence')
+    kinds = {'authority_exact_upc_per_container_volume', 'inspected_package_photo'}
+    if (not isinstance(evidence, list) or len(evidence) != 2
+            or any(not isinstance(item, dict) or not isinstance(item.get('kind'), str)
+                   for item in evidence)
+            or {item['kind'] for item in evidence} != kinds):
+        raise ValueError(f'Pack-total volume requires authority unit and inspected retail-pack evidence: {sku}')
+    authority = next(item for item in evidence if item['kind'] != 'inspected_package_photo')
+    photo = next(item for item in evidence if item['kind'] == 'inspected_package_photo')
+
+    def parsed_date(value):
+        if not isinstance(value, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+            return None
+        try:
+            return date.fromisoformat(value)
+        except ValueError:
+            return None
+
+    review_date = parsed_date(review['reviewedOn'])
+    retrieved = parsed_date(authority.get('retrievedOn'))
+    issued = parsed_date(authority.get('documentDate'))
+    inspected = parsed_date(photo.get('inspectedOn'))
+    fields = {'kind', 'url', 'supports', 'publisher', 'publisherRole', 'observedUpc',
+              'observedNetContent', 'perContainerLabel', 'quantityBasis', 'retailPackCount',
+              'sourceSha256', 'documentDate', 'page', 'retrievedOn'}
+    if (set(authority) != fields or not review_url_host(authority.get('url'))
+            or not safe_review_text(authority.get('supports'))
+            or not safe_review_text(authority.get('publisher'))
+            or authority['publisherRole'] != 'government_authority'
+            or review_url_host(authority['url']) not in PACK_TOTAL_VOLUME_AUTHORITIES.get(
+                authority['publisher'], set())
+            or authority['observedUpc'] != review['expectedUpc']
+            or authority['perContainerLabel'] != verified['measure']
+            or reviewed_volume_milliliters(authority['observedNetContent']) != verified['mL']
+            or authority['quantityBasis'] != 'per_container_volume'
+            # This record supplies no retail count: never manufacture four
+            # from a price-book row, commercial case field or shipping unit.
+            or authority['retailPackCount'] is not None
+            or not isinstance(authority['sourceSha256'], str)
+            or not re.fullmatch(r'[a-f0-9]{64}', authority['sourceSha256'])
+            or type(authority['page']) is not int or authority['page'] < 1
+            or not all((issued, retrieved, inspected, review_date))
+            or not issued <= retrieved <= review_date or inspected > review_date):
+        raise ValueError(f'Pack-total volume requires an honest exact-UPC authority per-container record: {sku}')
+    fields = {'kind', 'url', 'supports', 'sha256', 'inspectedOn',
+              'inspectionReceipt', 'inspectionReceiptSha256'}
+    if (set(photo) != fields or not review_url_host(photo.get('url'))
+            or not safe_review_text(photo.get('supports'))
+            or photo['sha256'] != review['expectedImageSha256']):
+        raise ValueError(f'Pack-total volume requires the exact inspected original photo: {sku}')
+    receipt = photo['inspectionReceipt']
+    fields = {'sku', 'upc', 'publicName', 'expectedLabel', 'verifiedLabel', 'productId',
+              'groupSkus', 'sourceRow', 'rawFieldsSha256', 'src', 'sha256', 'originalSha256',
+              'publicImageSha256', 'sourceImageUrl', 'visiblePackText', 'container',
+              'quantityBasis', 'authoritySourceSha256', 'verification', 'inspectedOn'}
+    if not isinstance(receipt, dict) or set(receipt) != fields:
+        raise ValueError(f'Pack-total volume requires a complete printed-pack inspection receipt: {sku}')
+    expected = (sku, review['expectedUpc'], review['expectedPublicName'], review['expectedLabel'],
+                review['verifiedLabel'], review['expectedProductId'], review['expectedResultingGroupSkus'],
+                review['expectedSourceRow'], review['expectedSourceRecordSha256'],
+                review['expectedImageSha256'], review['expectedImageSha256'], photo['url'],
+                verified['container'], 'printed_retail_pack_per_container',
+                authority['sourceSha256'], photo['inspectedOn'])
+    actual = tuple(receipt[key] for key in (
+        'sku', 'upc', 'publicName', 'expectedLabel', 'verifiedLabel', 'productId', 'groupSkus',
+        'sourceRow', 'rawFieldsSha256', 'sha256', 'originalSha256', 'sourceImageUrl',
+        'container', 'quantityBasis', 'authoritySourceSha256', 'inspectedOn'))
+    printed = re.fullmatch(r'(?P<pack>[1-9]\d*)\s*[x×]\s*(?P<volume>(?:0|[1-9]\d*)'
+                           r'(?:\.\d+)?\s*(?:mL|L))',
+                           receipt['visiblePackText'] if isinstance(receipt['visiblePackText'], str) else '', re.I)
+    checks = receipt['verification']
+    if (actual != expected or type(receipt['sourceRow']) is not int
+            or not printed or int(printed['pack']) != prior['pack']
+            or reviewed_volume_milliliters(printed['volume']) != verified['mL']
+            or not isinstance(receipt['src'], str)
+            or not re.fullmatch(r'images/products/[A-Za-z0-9_./-]+', receipt['src'])
+            or not isinstance(receipt['publicImageSha256'], str)
+            or not re.fullmatch(r'[a-f0-9]{64}', receipt['publicImageSha256'])
+            or not isinstance(checks, dict)
+            or set(checks) != {'brand', 'expression', 'size', 'packaging', 'visual', 'professional'}
+            or any(value is not True for value in checks.values())
+            or photo['inspectionReceiptSha256'] != review_evidence_sha256(receipt)):
+        raise ValueError(f'Pack-total volume requires hash-bound printed retail count and per-container volume: {sku}')
+
+
+def apply_verified_pack_total_volumes(products: list, records_by_sku: dict, source_reviews: dict,
+                                      image_manifest: dict | None, private_image_evidence: dict | None,
+                                      identity_reviews: dict) -> None:
+    """Clarify only a reviewed total-volume label, after final name/group guards."""
+    variants = {v['sku']: (p, v) for p in products for v in p['variants']}
+    for sku, review in source_reviews.items():
+        if review['action'] != 'resolve_verified_pack_total_volume':
+            continue
+        product, variant = variants.get(sku, ({}, {}))
+        record = records_by_sku.get(sku, {})
+        source = record.get('source', {})
+        raw_public = classify_record(source)[2] if source else None
+        prior = parse_reviewed_pack_volume(review['expectedLabel'])
+        parts = [extract_dimensions(source.get(field, '')) for field in ('ItemName', 'PackName')]
+        counts = {count for part in parts for count in part['packs']}
+        measures = {(dimension, value) for part in parts for _, dimension, value in part['measures']}
+        containers = {part['container'] for part in parts if part['container']}
+        verified = parse_reviewed_pack_volume(review['verifiedLabel'], require_container=True)
+        case_hint = re.search(
+            r'\b(?:cases?|shipping|wholesale|pallets?|displays?|trays?|cs)\b|'
+            r'(?<!\w)(?:cs|cases?|dz|doz(?:en)?s?)\s*[:#-]?\s*\d+(?![\w.])|'
+            r'(?<![\w.])\d+\s*(?:[-/]\s*|per\s+)?(?:cs|cases?|dz|doz(?:en)?s?)(?!\w)|'
+            r'(?<![\w.])\d+\s*[x×]\s*\d+(?![\w.])|(?<!\w)[x×]\s*\d+(?![\w.])',
+            source.get('ItemName', '') + ' ' + source.get('PackName', ''), re.I)
+        if (record.get('disposition') != 'retained_variant' or record.get('sourceOrigin') == 'report'
+                or sku in identity_reviews or not raw_public or case_hint
+                or raw_public['variant']['label'] != review['expectedLabel']
+                or counts != {prior['pack']} or measures != {('volume-mL', prior['mL'])}
+                or (containers and containers != {verified['container']})):
+            raise ValueError(f'Pack-total volume requires one matching original retail pack and total volume: {sku}')
+        raw_hash = hashlib.sha256(json.dumps(record['rawFields'], ensure_ascii=False,
+                                            separators=(',', ':')).encode()).hexdigest()
+        current = (source.get('SKU'), source.get('MAINUPC'), record.get('sourceRow'),
+                   hashlib.sha256(source.get('ItemName', '').encode()).hexdigest(), raw_hash,
+                   variant.get('upc'), product.get('name'), variant.get('label'),
+                   product.get('category'), product.get('department'), product.get('id'))
+        expected = (sku, review['expectedUpc'], review['expectedSourceRow'],
+                    review['expectedNameSha256'], review['expectedSourceRecordSha256'],
+                    review['expectedUpc'], review['expectedPublicName'], review['expectedLabel'],
+                    review['expectedCategory'], review['expectedDepartment'], review['expectedProductId'])
+        if current != expected or source.get('DEPNAME') != review['expectedDepartment']:
+            raise ValueError(f'Pack-total volume current source/public identity mismatch: {sku}')
+        if [v['sku'] for v in product['variants']] != review['expectedResultingGroupSkus']:
+            raise ValueError(f'Pack-total volume final SKU-group mismatch: {sku}')
+        entries = image_manifest.get('images', []) if isinstance(image_manifest, dict) else []
+        matches = [e for e in entries if isinstance(e, dict) and e.get('sku') == sku] if isinstance(entries, list) else []
+        inspection = next(e for e in review['evidence'] if e['kind'] == 'inspected_package_photo')
+        receipt = inspection['inspectionReceipt']
+        if (len(matches) != 1
+                or (matches[0].get('expectedUpc'), matches[0].get('expectedName'), matches[0].get('expectedLabel'),
+                    matches[0].get('sha256'), matches[0].get('src'), matches[0].get('verification'))
+                != (review['expectedUpc'], product['name'], review['verifiedLabel'],
+                    review['expectedImageSha256'], receipt['src'], receipt['verification'])
+                or review_evidence_sha256(matches[0]) != receipt['publicImageSha256']):
+            raise ValueError(f'Pack-total volume requires its exact professional direct-image binding: {sku}')
+        private = private_image_evidence.get('entries', []) if isinstance(private_image_evidence, dict) else []
+        private_matches = [e for e in private if isinstance(e, dict) and e.get('sku') == sku] if isinstance(private, list) else []
+        if len(private_matches) != 1 or private_matches[0].get('sourceImageUrl') != inspection['url']:
+            raise ValueError(f'Pack-total volume inspected photo must match private provenance: {sku}')
+        record['packTotalVolumeResolution'] = {
+            'previousPublicIdentity': {'name': product['name'], 'label': variant['label']},
+            'verifiedLabel': review['verifiedLabel'], 'expectedImageSha256': review['expectedImageSha256'],
+            'authoritySourceSha256': receipt['authoritySourceSha256'],
+            'inspectionReceiptSha256': inspection['inspectionReceiptSha256'],
+            'retailCountBasis': 'original_source_and_inspected_package',
+            'authorityRetailPackCount': None,
+        }
+        variant['label'] = review['verifiedLabel']
 
 
 def validate_ambiguous_liquid_ounce_evidence(review: dict) -> None:
@@ -1502,7 +1704,8 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                 'size_needs_confirmation', 'restore_named_merchandise', 'resolve_verified_identity',
                 'repair_unquoted_name_commas', 'clarify_container_material',
                 'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label',
-                'resolve_verified_missing_measurement', 'resolve_verified_ambiguous_ounce_volume'}:
+                'resolve_verified_missing_measurement', 'resolve_verified_ambiguous_ounce_volume',
+                'resolve_verified_pack_total_volume'}:
             raise ValueError('Source review requires unique SKU and a supported action')
         if not isinstance(entry.get('expectedUpc'), str) or not all(
                 re.fullmatch(r'[a-f0-9]{64}', entry.get(key, ''))
@@ -1514,6 +1717,40 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             raise ValueError(f'Source review requires a reason: {sku}')
         allowed = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
                    'action', 'reason', 'reviewedOn'}
+        if entry['action'] == 'resolve_verified_pack_total_volume':
+            allowed |= {'expectedSourceRow', 'expectedPublicName', 'expectedLabel',
+                        'expectedCategory', 'expectedDepartment', 'expectedProductId',
+                        'expectedResultingGroupSkus', 'verifiedLabel', 'expectedImageSha256',
+                        'verification', 'evidence'}
+            prior = parse_reviewed_pack_volume(entry.get('expectedLabel'))
+            verified = parse_reviewed_pack_volume(entry.get('verifiedLabel'), require_container=True)
+            if (set(entry) != allowed or not re.fullmatch(r'[1-9]\d*', sku)
+                    or not re.fullmatch(r'(?:\d{8}|\d{12}|\d{13}|\d{14})', entry['expectedUpc'])
+                    or not valid_gtin(entry['expectedUpc'])
+                    or not prior or not verified or prior['pack'] != verified['pack']
+                    or (prior['container'] and prior['container'] != verified['container'])
+                    or type(entry.get('expectedSourceRow')) is not int or entry['expectedSourceRow'] < 1
+                    or not re.fullmatch(r'p-[a-f0-9]{16}', str(entry.get('expectedProductId')))
+                    or not all(safe_review_text(entry.get(key)) for key in (
+                        'expectedPublicName', 'expectedCategory', 'verifiedLabel', 'reason'))
+                    or not isinstance(entry.get('expectedDepartment'), str)
+                    or (entry['expectedDepartment'] and not safe_review_text(entry['expectedDepartment']))
+                    or not isinstance(entry.get('reviewedOn'), str)
+                    or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn'])):
+                raise ValueError(f'Pack-total volume requires exact current identity and canonical retail-pack labels: {sku}')
+            with localcontext() as context:
+                context.prec = max(28, len(verified['mL'].as_tuple().digits) + len(str(prior['pack'])) + 4,
+                                   len(prior['mL'].as_tuple().digits) + 4)
+                if prior['mL'] != Decimal(prior['pack']) * verified['mL']:
+                    raise ValueError(f'Pack-total volume must equal retail count times per-container volume: {sku}')
+            group = entry.get('expectedResultingGroupSkus')
+            if (not isinstance(group, list) or not group or sku not in group
+                    or any(not isinstance(value, str) or not re.fullmatch(r'\d+', value) for value in group)
+                    or len(set(group)) != len(group)):
+                raise ValueError(f'Pack-total volume requires an exact final SKU group: {sku}')
+            validate_direct_image_guard(entry, sku, 'Pack-total volume')
+            validate_reviewed_identity_checks(entry.get('verification'), sku, 'Pack-total volume')
+            validate_pack_total_volume_evidence(entry)
         if entry['action'] == 'resolve_verified_ambiguous_ounce_volume':
             allowed |= {'expectedSourceRow', 'expectedPublicName', 'expectedLabel',
                         'expectedCategory', 'expectedDepartment', 'expectedProductId',
@@ -2006,6 +2243,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     public['variant']['label'] = re.sub(r'(?:^| · )bottles$', '', label) + ' · ' + review['containerMaterial'] + ' bottles'
                     flags.append('Guarded report evidence clarifies container material; original source metadata preserved privately')
                 elif review['action'] in {'resolve_verified_pack_identity',
+                                           'resolve_verified_pack_total_volume',
                                            'refine_verified_fluid_ounce_label',
                                            'resolve_verified_missing_measurement',
                                            'resolve_verified_ambiguous_ounce_volume'}:
@@ -2182,8 +2420,14 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
         if actual_group != expected_group:
             context = 'Food-size identity' if food_resolution is not None else 'Pack identity'
             raise ValueError(f'{context} final SKU-group mismatch for SKU {sku}')
+    # Keep every legacy photo/name gate on its original label. Only the new
+    # total-volume action binds its photo after its separate late label repair.
+    pack_total_reviews = {sku: review for sku, review in source_reviews.items()
+                          if review['action'] == 'resolve_verified_pack_total_volume'}
+    legacy_photo_reviews = {sku: review for sku, review in source_reviews.items()
+                            if review['action'] != 'resolve_verified_pack_total_volume'}
     variants_by_sku = validate_reviewed_source_photo_bindings(
-        products, source_reviews, image_manifest, blocked_images)
+        products, legacy_photo_reviews, image_manifest, blocked_images)
     records_by_sku = {record['sku']: record for record in master}
     for sku, verification in name_verifications.items():
         product, variant = variants_by_sku.get(sku, ({}, {}))
@@ -2193,6 +2437,9 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 != (variant.get('upc'), product.get('name'), variant.get('label'))):
             raise ValueError(f'Name verification does not match a current original-source variant: {sku}')
         record['nameVerification'] = verification
+    apply_verified_pack_total_volumes(products, records_by_sku, pack_total_reviews, image_manifest,
+                                      private_direct_image_evidence_manifest, identity_reviews)
+    validate_reviewed_source_photo_bindings(products, pack_total_reviews, image_manifest, blocked_images)
     apply_missing_measurements(products, records_by_sku, source_reviews, image_manifest,
                                private_direct_image_evidence_manifest, blocked_images, identity_reviews)
     apply_ambiguous_liquid_ounces(products, records_by_sku, source_reviews, image_manifest,
