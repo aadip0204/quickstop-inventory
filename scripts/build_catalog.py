@@ -1259,6 +1259,8 @@ def validate_missing_measurement_evidence(review: dict) -> None:
             fields = (fields - {'observedUpc'}) | {'observedUnitGtin14', 'unitCodeSourceField'}
         if item['kind'] == 'manufacturer':
             fields = fields | {'publisher', 'publisherEvidenceUrl', 'observedName', 'retiredNotice'}
+            if item.get('retiredNotice') is True:
+                fields = fields | {'historicalPackageReview'}
         if (set(item) != fields or not review_url_host(item['url'])
                 or not safe_review_text(item['supports'])):
             raise ValueError(f'Missing measurement evidence contains unsupported or unsafe fields: {sku}')
@@ -1293,8 +1295,45 @@ def validate_missing_measurement_evidence(review: dict) -> None:
                 or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', item['retrievedOn'])):
             raise ValueError(f'Missing measurement requires the literal UPC and single retail-unit quantity: {sku}')
         if item['kind'] == 'manufacturer':
-            if item['retiredNotice'] is not False:
-                raise ValueError(f'Missing measurement cannot use a retired manufacturer package: {sku}')
+            if item['retiredNotice'] is True:
+                # Historical unit evidence is not a current-stock or package-
+                # generation claim. Retain the explicit retirement notice and
+                # bind this additional manual proof to the exact primary
+                # capture, visible net content and inspected original bytes.
+                photo = next(e for e in evidence if e['kind'] == 'inspected_package_photo')
+                historical = item['historicalPackageReview']
+                historical_fields = {'scope', 'producerProductPageUrl', 'producerResponseSha256',
+                                     'sourceImageUrl', 'sourceImageSha256', 'visibleNetContent',
+                                     'retailUnitsPerPackage', 'manufacturerPrimaryImageConfirmed',
+                                     'inspectedOn', 'inspectionReceiptSha256'}
+                expected = {'scope': 'original_inventory_unit',
+                            'producerProductPageUrl': item['url'],
+                            'producerResponseSha256': item['sourceSha256'],
+                            'sourceImageUrl': photo.get('url'),
+                            'sourceImageSha256': review['expectedImageSha256'],
+                            'visibleNetContent': review['verifiedLabel'],
+                            'inspectedOn': photo.get('inspectedOn'),
+                            'inspectionReceiptSha256': photo.get('inspectionReceiptSha256')}
+                if (not isinstance(historical, dict) or set(historical) != historical_fields
+                        or any(not isinstance(historical[key], str) or historical[key] != value
+                               for key, value in expected.items())
+                        or type(historical['retailUnitsPerPackage']) is not int
+                        or historical['retailUnitsPerPackage'] != 1
+                        or historical['manufacturerPrimaryImageConfirmed'] is not True):
+                    raise ValueError(f'Missing measurement requires exact historical original-package proof: {sku}')
+                # Scope real calendar checks to this historical route. Active
+                # evidence retains its existing shape-only date behavior.
+                from datetime import date
+                retailer = next(e for e in evidence if e['kind'] in retailer_kinds)
+                try:
+                    for value in (historical['inspectedOn'], item['retrievedOn'], retailer.get('retrievedOn')):
+                        if not isinstance(value, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+                            raise ValueError('Expected a YYYY-MM-DD historical evidence date')
+                        date.fromisoformat(value)
+                except ValueError as error:
+                    raise ValueError(f'Missing measurement historical evidence requires valid calendar dates: {sku}') from error
+            elif item['retiredNotice'] is not False:
+                raise ValueError(f'Missing measurement requires a boolean manufacturer retirement notice: {sku}')
             validate_manufacturer_name_record({
                 'sku': sku, 'expectedUpc': review['expectedUpc'],
                 'manufacturerRecord': {key: item[key] for key in (

@@ -6283,6 +6283,37 @@
       },
       "reviewedOn": "2026-11-01",
       "reason": "Clarify the physically printed fluid-ounce unit for the same numeric33.8bareounce source hint. Two independent literal unit-code bottle listings remain correctly typed as ambiguous ounces. No mass-to-volume conversion, source-cell rewrite, stock claim or sibling grouping change."
+    },
+    {
+      "sku": "2930",
+      "expectedUpc": "028400421157",
+      "expectedNameSha256": "acfb1aa7216f057e7f99569cac8e5e08d630f5c9b161b68d5a6054eba77082c3",
+      "expectedSourceRecordSha256": "9022907ce2b2c9f7ed3945c89402a5f454a26b518442f363b34620e9d6bbf8c6",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill the genuinely absent original retail measurement from exact historical manufacturer/unit records and inspected primary packaging; preserve original cells, identifiers, prior name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 1887,
+      "expectedPublicName": "Doritos Flamas Flavored Tortilla Chips",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-18ff4bdbe26daa7d",
+      "expectedResultingGroupSkus": [
+        "2930"
+      ],
+      "verifiedLabel": "3.125 oz",
+      "expectedImageSha256": "ec683b1953fc639749f27624c5ef5deac42c4ece330179520e4ebd571e8480f5",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "f973c4d1082a8f0fc61292c8cd304b01f507d37909fe0aecc04624a731c98733"
+      }
     }
   ]
 }
