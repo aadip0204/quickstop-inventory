@@ -6165,6 +6165,21 @@
       "evidence": {
         "privateEvidenceSha256": "6db548a6d74b1c81df68e017893e159624b15aa76369d20cf84dda052e347c58"
       }
+    },
+    {
+      "sku": "1557",
+      "expectedUpc": "811538016216",
+      "expectedSourceRow": 8164,
+      "expectedRawFieldsSha256": "7508d11de0d350ced6ade638585e462731486cc5f60b9c1d68de3de132b22713",
+      "expectedPublicName": "Bushmills Black",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Bushmills Black Bush Sherry Cask Reserve Irish Whiskey",
+      "reason": "Complete the physically printed Black Bush expression, Sherry Cask Reserve and Irish Whiskey class. Preserve all literal source cells, quantities and related product memberships; no numerical strength, component-age, wine year or stock inference.",
+      "evidence": {
+        "privateEvidenceSha256": "a32612e6acba58efc891440bb1e260956c48e84dca576af8aa4b13f13a85b8ee"
+      }
     }
   ]
 }
