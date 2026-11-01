@@ -1076,15 +1076,20 @@ def validate_missing_measurement_evidence(review: dict) -> None:
     sku = review['sku']
     evidence = review.get('evidence')
     kinds = {'manufacturer', 'exact_upc_listing', 'inspected_package_photo'}
+    typed_kinds = {'manufacturer', 'exact_unit_gtin14_listing', 'inspected_package_photo'}
+    retailer_kinds = {'exact_upc_listing', 'exact_unit_gtin14_listing'}
     if (not isinstance(evidence, list) or len(evidence) != 3
-            or any(not isinstance(item, dict) for item in evidence)
-            or {item.get('kind') for item in evidence} != kinds):
+            or any(not isinstance(item, dict) or not isinstance(item.get('kind'), str) for item in evidence)
+            or {item.get('kind') for item in evidence} not in (kinds, typed_kinds)):
         raise ValueError(f'Missing measurement requires primary, retail-unit and inspected-photo evidence: {sku}')
     unit_fields = {'kind', 'url', 'supports', 'observedUpc', 'retailUnitLabel',
                    'quantityBasis', 'retailUnitsPerPackage', 'sourceSha256', 'retrievedOn'}
     for item in evidence:
         fields = ({'kind', 'url', 'supports', 'sha256', 'inspectedOn', 'inspectionReceiptSha256'}
                   if item['kind'] == 'inspected_package_photo' else unit_fields)
+        typed_unit = item['kind'] == 'exact_unit_gtin14_listing'
+        if typed_unit:
+            fields = (fields - {'observedUpc'}) | {'observedUnitGtin14', 'unitCodeSourceField'}
         if item['kind'] == 'manufacturer':
             fields = fields | {'publisher', 'publisherEvidenceUrl', 'observedName', 'retiredNotice'}
         if (set(item) != fields or not review_url_host(item['url'])
@@ -1100,7 +1105,18 @@ def validate_missing_measurement_evidence(review: dict) -> None:
                     or not re.fullmatch(r'[a-f0-9]{64}', item['inspectionReceiptSha256'])):
                 raise ValueError(f'Missing measurement requires inspected-photo identity and a manual receipt identifier: {sku}')
             continue
-        if (item['observedUpc'] != review['expectedUpc']
+        if typed_unit:
+            # GS1 filler zeroes represent the same shorter unit code. This is
+            # evidence-only: never strip/recalculate a code or change any UPC.
+            expected_upc = review['expectedUpc']
+            observed = item['observedUnitGtin14']
+            if (not re.fullmatch(r'(?:[0-9]{8}|[0-9]{12}|[0-9]{13})', expected_upc)
+                    or not valid_gtin(expected_upc)
+                    or not isinstance(observed, str) or not re.fullmatch(r'[0-9]{14}', observed)
+                    or not valid_gtin(observed) or observed != expected_upc.zfill(14)
+                    or item['unitCodeSourceField'] != 'Product.gtin14'):
+                raise ValueError(f'Missing measurement requires exact typed Product.gtin14 unit evidence: {sku}')
+        if ((not typed_unit and item['observedUpc'] != review['expectedUpc'])
                 or item['retailUnitLabel'] != review['verifiedLabel']
                 or item['quantityBasis'] != 'retail_net_content'
                 or type(item['retailUnitsPerPackage']) is not int or item['retailUnitsPerPackage'] != 1
@@ -1121,7 +1137,7 @@ def validate_missing_measurement_evidence(review: dict) -> None:
                               'supports': item['supports']}],
             })
     primary = next(item for item in evidence if item['kind'] == 'manufacturer')
-    retailer = next(item for item in evidence if item['kind'] == 'exact_upc_listing')
+    retailer = next(item for item in evidence if item['kind'] in retailer_kinds)
     primary_hosts = MANUFACTURER_NAME_HOSTS[primary['publisher']] | {
         review_url_host(primary['url']), review_url_host(primary['publisherEvidenceUrl'])}
     try:
