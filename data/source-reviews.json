@@ -5756,6 +5756,161 @@
       "evidence": {
         "privateEvidenceSha256": "f9872cd9d156ad538fa08bb83b2a75ca5de3505655318b2758a02509c7d07c18"
       }
+    },
+    {
+      "sku": "1195",
+      "expectedUpc": "070640002474",
+      "expectedNameSha256": "d746a791ca2b2dfe97a499bf6defeda9b1bc1327464ed00361cbd60d7d92bc39",
+      "expectedSourceRecordSha256": "dcd6234273ee63a2ff3d80e92884f775f0151396d335cc77d0d230cd04668d38",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill a genuinely absent original measurement using the exact retail-unit UPC, independently corroborated unit quantity and inspected per-SKU professional photo. Preserve every original field, name-only check and isolated product group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 760,
+      "expectedPublicName": "Blue Bunny Chocolate Éclair Bar",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-ca5eeb981d505ca2",
+      "expectedResultingGroupSkus": [
+        "1195"
+      ],
+      "verifiedLabel": "4 fl oz",
+      "expectedImageSha256": "1ff2ad8225ca832c66fedad1c4e360a77846c1baa835b96d25720687d4d5871b",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "a6e3e92b86010b6316b803f4defc72e812e46a1c165443029a53581634f1f4b3"
+      }
+    },
+    {
+      "sku": "1196",
+      "expectedUpc": "070640310852",
+      "expectedNameSha256": "49ff2c182e82ec0af4d8299bcf8b19553d65423af5aae42288da3f644e096ab6",
+      "expectedSourceRecordSha256": "a4c87f4defaddb12771d8907d16cfe844d234961655884798ce7bf6773314e68",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill a genuinely absent original measurement using the exact retail-unit UPC, independently corroborated unit quantity and inspected per-SKU professional photo. Preserve every original field, name-only check and isolated product group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 761,
+      "expectedPublicName": "Blue Bunny Cookies 'N Cream Sandwich",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-0f8ff6010b7e1dd5",
+      "expectedResultingGroupSkus": [
+        "1196"
+      ],
+      "verifiedLabel": "4.5 fl oz",
+      "expectedImageSha256": "2ef9ff4aa82bda305d86dfe43b4e301900b4b19def0afe0e24dcf17b719de3da",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "5272c3e7cc7706a14d0455f850a38e5c72556026b447142c0b62e0f1610eb5a9"
+      }
+    },
+    {
+      "sku": "2536",
+      "expectedUpc": "028400172516",
+      "expectedNameSha256": "2cc987f5aac5710b3675220da6e11ac4145ccf9478cb67ba6f9cf3dc06bc91d5",
+      "expectedSourceRecordSha256": "a678c91620d44c831ee0bad5b07c3bc1b8dc93e47a828578afda1c3c2a39c5dc",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill a genuinely absent original measurement from exact unit UPC sources and inspected per-SKU professional packaging. Preserve original source cells, existing name-only verification, department and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 1622,
+      "expectedPublicName": "Cracker Jack The Original Caramel Coated Popcorn & Peanuts",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-6aca5db5969050a8",
+      "expectedResultingGroupSkus": [
+        "2536"
+      ],
+      "verifiedLabel": "4.125 oz",
+      "expectedImageSha256": "5a0be6540808936963b0dddd8e0ce1a2d60b65d94f5395f63521af294720b04b",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "64e8148f916138e95c240409606c61e9f66bf69b9f5d3719f2b5de5688c939d7"
+      }
+    },
+    {
+      "sku": "2605",
+      "expectedUpc": "078000013368",
+      "expectedNameSha256": "3dfc19b345b5428e1c6f9cbddf2f236f8e9b56f1eddbde9069c37fdff2b5a9ff",
+      "expectedSourceRecordSha256": "1fd1aaab62286654328ee0b58d2018250e1432b9f2be9f602170c399ced9cb89",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill a genuinely absent original measurement from exact unit UPC sources and inspected per-SKU professional packaging. Preserve original source cells, existing name-only verification, department and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 9399,
+      "expectedPublicName": "CRUSH orange",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "MISC",
+      "expectedProductId": "p-6fb31f26bec9ca70",
+      "expectedResultingGroupSkus": [
+        "2605"
+      ],
+      "verifiedLabel": "2 L",
+      "expectedImageSha256": "121c624744fa3ca185ea6c12d9fbfc98829320bed134a4d662c4c0c450cfdd8c",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "3378e91e3b99caacef668c4f86fdcd93a9fdbb6a1e0a71efb5dad65f452a75e8"
+      }
+    },
+    {
+      "sku": "2613",
+      "expectedUpc": "078000014167",
+      "expectedNameSha256": "5f463743792cbf1a7ac908bf8e5c99f6e820eaa5efec4c8e4e6963968400be4b",
+      "expectedSourceRecordSha256": "d6587f06504594c16b44bbb2a42fba7789979ce857d87b213cb0ce8374caf195",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill a genuinely absent original measurement from exact unit UPC sources and inspected per-SKU professional packaging. Preserve original source cells, existing name-only verification, department and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 8599,
+      "expectedPublicName": "CRUSH PINEAPPLE",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "MISC",
+      "expectedProductId": "p-dbbdebc667245203",
+      "expectedResultingGroupSkus": [
+        "2613"
+      ],
+      "verifiedLabel": "2 L",
+      "expectedImageSha256": "bce6d90466a42f7e02908fcb3f2127d900de97c03a0558ac98b2ebaccef2b49b",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "be1ef52b22ac9bfd069a9d21856cd3cc75c9b8690d6ab4d4ac351d9f938a5032"
+      }
     }
   ]
 }

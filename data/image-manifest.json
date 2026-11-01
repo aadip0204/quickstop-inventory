@@ -28980,6 +28980,106 @@
       },
       "attributionRequired": false,
       "verifiedOn": "2026-10-31"
+    },
+    {
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "4 fl oz",
+      "src": "images/products/sku-1195.png",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Blue Bunny Chocolate Éclair Bar",
+      "expectedUpc": "070640002474",
+      "verifiedOn": "2026-11-01",
+      "sha256": "1ff2ad8225ca832c66fedad1c4e360a77846c1baa835b96d25720687d4d5871b",
+      "sku": "1195",
+      "alt": "Blue Bunny Chocolate Éclair Bar — 4 fl oz individually wrapped unit"
+    },
+    {
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "4.5 fl oz",
+      "src": "images/products/sku-1196.jpg",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Blue Bunny Cookies 'N Cream Sandwich",
+      "expectedUpc": "070640310852",
+      "verifiedOn": "2026-11-01",
+      "sha256": "2ef9ff4aa82bda305d86dfe43b4e301900b4b19def0afe0e24dcf17b719de3da",
+      "sku": "1196",
+      "alt": "Blue Bunny Cookies 'N Cream Sandwich — 4.5 fl oz individually wrapped unit"
+    },
+    {
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "4.125 oz",
+      "src": "images/products/sku-2536.webp",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Cracker Jack The Original Caramel Coated Popcorn & Peanuts",
+      "expectedUpc": "028400172516",
+      "verifiedOn": "2026-11-01",
+      "sha256": "5a0be6540808936963b0dddd8e0ce1a2d60b65d94f5395f63521af294720b04b",
+      "sku": "2536",
+      "alt": "Cracker Jack The Original Caramel Coated Popcorn & Peanuts — 4.125 oz bag"
+    },
+    {
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-2605.png",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CRUSH orange",
+      "expectedUpc": "078000013368",
+      "verifiedOn": "2026-11-01",
+      "sha256": "121c624744fa3ca185ea6c12d9fbfc98829320bed134a4d662c4c0c450cfdd8c",
+      "sku": "2605",
+      "alt": "CRUSH orange — 2 L bottle"
+    },
+    {
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "2 L",
+      "src": "images/products/sku-2613.png",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "CRUSH PINEAPPLE",
+      "expectedUpc": "078000014167",
+      "verifiedOn": "2026-11-01",
+      "sha256": "bce6d90466a42f7e02908fcb3f2127d900de97c03a0558ac98b2ebaccef2b49b",
+      "sku": "2613",
+      "alt": "CRUSH PINEAPPLE — 2 L bottle"
     }
   ]
 }
