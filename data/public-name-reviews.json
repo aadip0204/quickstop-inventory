@@ -6345,6 +6345,201 @@
       "evidence": {
         "privateEvidenceSha256": "79de908c588780e6d3f4947b9b3bf7d572d6161e3044461daffea8c1c1455643"
       }
+    },
+    {
+      "sku": "1894",
+      "expectedUpc": "070980221559",
+      "expectedSourceRow": 1155,
+      "expectedRawFieldsSha256": "c66be9b853352082135ca4d5de0d954d15ea2fe09f65f6516e570e91c39397b6",
+      "expectedPublicName": "Centrella SaltinesOriginal Crackers",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Centrella Original Saltine Crackers",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "5a9b2615d1f94a7a4565dcbc00992530626034a7a78202f63a01f62da69ea3f5"
+      }
+    },
+    {
+      "sku": "1895",
+      "expectedUpc": "070980221566",
+      "expectedSourceRow": 1156,
+      "expectedRawFieldsSha256": "ea45ea53993cbd6cc4100bf780caa1fae6c8f4e095e3d8ba880ae64b4f477b3d",
+      "expectedPublicName": "Centrella SaltinesUnsalted Crackers",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Centrella Unsalted Tops Saltine Crackers",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "3a6ce394734f532227979ee06fc5deadd2adb6797724bb00649fffba0c1f6e96"
+      }
+    },
+    {
+      "sku": "2716",
+      "expectedUpc": "767387095127",
+      "expectedSourceRow": 1731,
+      "expectedRawFieldsSha256": "03b35a2a99e9808ab37bffb18f81c714caf583de94a8122f2486b1f6035f3ddc",
+      "expectedPublicName": "Dakota Egg Noodles",
+      "expectedLabel": "12 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Dakota Growers Wide Egg Noodles",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "3a0f17b5635954ce383ad5ea03da01a62565c8d17ebc44827a226ff64f8a5f59"
+      }
+    },
+    {
+      "sku": "3744",
+      "expectedUpc": "876274001858",
+      "expectedSourceRow": 6603,
+      "expectedRawFieldsSha256": "7bb036818037709da291e761f2a6c9f259bf5c9fde3906c225ff1a3b3c423941",
+      "expectedPublicName": "global brands crackers",
+      "expectedLabel": "340 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Global Brands Snak Time Stack Pack Salted Crackers",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "3395b8d3d0e51bab44cdd42e3ecab78502fd4e2fcf4011fda6bb89d8028ec85e"
+      }
+    },
+    {
+      "sku": "3739",
+      "expectedUpc": "876274001896",
+      "expectedSourceRow": 9177,
+      "expectedRawFieldsSha256": "dc7bfa9fb924e7ecfb18744bdc20133aeec2ea9cf5071c32d94d4db000a56ac0",
+      "expectedPublicName": "global brands select cracker",
+      "expectedLabel": "340 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Global Brands Select Soup & Oyster Crackers",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "bd1311d3a5f7d213a96a70bea24dba2c1a984817cba56c15f3b9075ace591f49"
+      }
+    },
+    {
+      "sku": "6523",
+      "expectedUpc": "050700302355",
+      "expectedSourceRow": 7617,
+      "expectedRawFieldsSha256": "54b585b7c8d35b8257cfd11077f6bb6f6120842dfd8317d2f361e772d351436b",
+      "expectedPublicName": "parade Sugar",
+      "expectedLabel": "4 lb",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Parade Granulated Sugar",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "9c881ae55cb70663d7e506b9810078a5f208b4079137cc5309d2d52c66f9e5d5"
+      }
+    },
+    {
+      "sku": "6598",
+      "expectedUpc": "086106152560",
+      "expectedSourceRow": 8651,
+      "expectedRawFieldsSha256": "ddc1a6751266b80d84f55e5d5c864939510a333c6650376579a8e95c9fba1fd2",
+      "expectedPublicName": "PEANUT BUTTER CREME COOKIES",
+      "expectedLabel": "11.8 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Lil' Dutch Maid Peanut Butter Creme Cookies",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "437d3c9953d33c9d54a764aefc3cc3f7930acf1c41d0552abeee5b743e1e9069"
+      }
+    },
+    {
+      "sku": "6599",
+      "expectedUpc": "086106011874",
+      "expectedSourceRow": 4193,
+      "expectedRawFieldsSha256": "78607d684218a88e97ce306bb32dd84f09ef82e5343369217eeac6b8fe5a1ab2",
+      "expectedPublicName": "Peanuts Butter Creme cookies",
+      "expectedLabel": "13 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Lil' Dutch Maid Peanut Butter Creme Cookies",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "0c8e672147ea2ea13a879815b066df9a6aa27b73d71ce087e4c1c8695d2dc9ad"
+      }
+    },
+    {
+      "sku": "101423",
+      "expectedUpc": "044000009298",
+      "expectedSourceRow": 6925,
+      "expectedRawFieldsSha256": "f6104f87b69b586dddc162cd780f6580add3db1c8ba3b496b53d6f6cfdf841da",
+      "expectedPublicName": "RITZ BITS CHEESE CRACKER",
+      "expectedLabel": "1.5 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Ritz Bits Cheese Cracker Sandwiches",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "bc950b28c822534d89828e49bcc767c23561fc78b5002bcc73fb1777b9e352e6"
+      }
+    },
+    {
+      "sku": "2880",
+      "expectedUpc": "049200045503",
+      "expectedSourceRow": 7309,
+      "expectedRawFieldsSha256": "3acda3bcc28cfebd265cd61761d28d5b510845b3edc8b70cadfa3418656d3848",
+      "expectedPublicName": "DOMINO SUGAR",
+      "expectedLabel": "4 lb",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Domino Premium Pure Cane Granulated Sugar",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "5b7421501f73f19badd46386e5f4bdc1cf4a6a3e80ca2f924d196d49d04c7741"
+      }
+    },
+    {
+      "sku": "2881",
+      "expectedUpc": "049200042014",
+      "expectedSourceRow": 7433,
+      "expectedRawFieldsSha256": "19f198f899dc7ebf5786e1e79f1d506d227ed1133f0f25b7eb87ef23804ae985",
+      "expectedPublicName": "DOMINO SUGAR",
+      "expectedLabel": "1 lb",
+      "expectedCategory": "food",
+      "expectedDepartment": "GROCERY",
+      "proposedPublicTitle": "Domino Premium Pure Cane Granulated Sugar",
+      "reason": "Exact literal-code source identity and separately reviewed original package support this title; preserve original quantity, department and all source cells.",
+      "evidence": {
+        "privateEvidenceSha256": "be728c6f1013bee4988e74c6023ef7af40d395bd0d27669e5068359c94f2d27e"
+      }
+    },
+    {
+      "sku": "6467",
+      "expectedUpc": "071871546683",
+      "expectedSourceRow": 4103,
+      "expectedRawFieldsSha256": "768d6bbea64a5d88020ff67ece92319701ae9a5acd495c791ed687e270356f19",
+      "expectedPublicName": "Oscar Mayer turkey Bologna",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Oscar Mayer Turkey Bologna",
+      "reason": "Capitalize the already verified turkey expression consistently with the actual package; spelling, product identity, unit and source fields remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "bb59c09ba36ba12f40c42034eec559753ebc0d9727e8eb691ea0f7d77c7fa40e"
+      }
+    },
+    {
+      "sku": "6468",
+      "expectedUpc": "071871546676",
+      "expectedSourceRow": 4104,
+      "expectedRawFieldsSha256": "153dda46a1de6073f597a40c03a8ce724c4aaa8212081f0bca6ba00091edf700",
+      "expectedPublicName": "Oscar Mayer turkey cotto salami",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Oscar Mayer Turkey Cotto Salami",
+      "reason": "Capitalize the already verified turkey expression consistently with the actual package; spelling, product identity, unit and source fields remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "f98b55b7a9a35634d4a91d8701033abab9e3baebc67234dd9c72aa75da9870ad"
+      }
     }
   ]
 }
