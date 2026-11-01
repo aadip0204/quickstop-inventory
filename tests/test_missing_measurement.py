@@ -54,7 +54,125 @@ def missing_fixture(source=None, label='4.5 fl oz', names=None):
     return source, baseline, kwargs
 
 
+def typed_gtin14_fixture(source=None):
+    source, baseline, kwargs = missing_fixture(source, label='16.9 fl oz')
+    retailer = kwargs['source_reviews_manifest']['reviews'][0]['evidence'][1]
+    unit_upc = retailer.pop('observedUpc')
+    retailer.update(kind='exact_unit_gtin14_listing', observedUnitGtin14=unit_upc.zfill(14),
+                    unitCodeSourceField='Product.gtin14')
+    return source, baseline, kwargs
+
+
 class MissingMeasurementTests(unittest.TestCase):
+    def test_typed_gtin14_preserves_original_unit_codes_and_isolated_identity(self):
+        for unit_upc in ('012345678905', '12345670', '1234567890128'):
+            self.assertTrue(builder.valid_gtin(unit_upc))
+            source = export(
+                {'ItemName': 'Example G2 Soda', 'MAINUPC': unit_upc, 'DEPNAME': 'MISC',
+                 'ItemPrice': '', 'TotalQty_Multi': ''},
+                {'ItemName': 'Example G2 Soda 12oz', 'MAINUPC': '012345678912', 'DEPNAME': 'MISC',
+                 'ItemPrice': '', 'TotalQty_Multi': ''})
+            source, baseline, kwargs = typed_gtin14_fixture(source)
+            original_kwargs = copy.deepcopy(kwargs)
+            catalog, audit = builder.build(source, **kwargs)
+            target = next(v for p in catalog['products'] for v in p['variants'] if v['sku'] == '1')
+            expected = copy.deepcopy(baseline)
+            before = next(v for p in expected['products'] for v in p['variants'] if v['sku'] == '1')
+            before.update(label='16.9 fl oz', image=target['image'])
+            self.assertEqual(catalog, expected)
+            self.assertEqual(kwargs, original_kwargs)
+            self.assertEqual(target['upc'], unit_upc)
+            self.assertEqual(audit['records'][0]['rawFields'], list(csv.reader(io.StringIO(source.decode())))[1])
+            self.assertEqual(audit['records'][0]['source']['MAINUPC'], unit_upc)
+            evidence = kwargs['source_reviews_manifest']['reviews'][0]['evidence']
+            self.assertEqual(evidence[0]['observedUpc'], unit_upc)
+            self.assertEqual(evidence[1]['observedUnitGtin14'], unit_upc.zfill(14))
+            self.assertNotIn('observedUpc', evidence[1])
+
+    def test_typed_gtin14_rejects_case_codes_bad_checksums_and_formats(self):
+        source, _, kwargs = typed_gtin14_fixture()
+        case_gtin = '10012345678902'
+        self.assertTrue(builder.valid_gtin(case_gtin))
+        self.assertTrue(builder.valid_gtin('00012345678912'))
+        bad_codes = [case_gtin, '00012345678912', '00012345678906', '0012345678905',
+                     '000012345678905', ' 00012345678905', '00012345678905 ',
+                     '000-12345678905', int('00012345678905'), None,
+                     '０００１２３４５６７８９０５', '٠٠٠١٢٣٤٥٦٧٨٩٠٥']
+        for value in bad_codes:
+            changed = copy.deepcopy(kwargs)
+            changed['source_reviews_manifest']['reviews'][0]['evidence'][1]['observedUnitGtin14'] = value
+            with self.subTest(value=value), self.assertRaisesRegex(ValueError, 'typed Product.gtin14'):
+                builder.build(source, **changed)
+        # An existing 14-digit source identity is outside this filler-only path.
+        source14 = export({'ItemName': 'Example Soda', 'MAINUPC': '00012345678905',
+                           'DEPNAME': 'MISC', 'ItemPrice': '', 'TotalQty_Multi': ''})
+        source14, _, kwargs14 = typed_gtin14_fixture(source14)
+        with self.assertRaisesRegex(ValueError, 'typed Product.gtin14'):
+            builder.build(source14, **kwargs14)
+
+    def test_typed_gtin14_requires_the_exact_retailer_schema_and_literal_manufacturer(self):
+        source, _, kwargs = typed_gtin14_fixture()
+        mutations = [
+            lambda e: e[1].update(unitCodeSourceField='Product.gtin'),
+            lambda e: e[1].update(unitCodeSourceField='Offer.gtin14'),
+            lambda e: e[1].update(unitCodeSourceField=None),
+            lambda e: e[1].update(kind='exact_upc_listing'),
+            lambda e: e[1].update(kind='manufacturer'),
+            lambda e: e[1].update(kind='other_unit_listing'),
+            lambda e: e[1].update(observedUpc='012345678905'),
+            lambda e: e[1].pop('observedUnitGtin14'),
+            lambda e: e[0].update(observedUpc='00012345678905'),
+            lambda e: e[0].update(observedUnitGtin14='00012345678905', unitCodeSourceField='Product.gtin14'),
+            lambda e: e[0].update(kind='exact_unit_gtin14_listing'),
+            lambda e: e.append(dict(e[1], kind='exact_upc_listing', observedUpc='012345678905')),
+        ]
+        for index, mutation in enumerate(mutations):
+            changed = copy.deepcopy(kwargs)
+            mutation(changed['source_reviews_manifest']['reviews'][0]['evidence'])
+            with self.subTest(index=index), self.assertRaises(ValueError):
+                builder.build(source, **changed)
+        # Existing untyped aliases must still fail, even though the typed path succeeds.
+        source, _, legacy = missing_fixture(label='16.9 fl oz')
+        legacy['source_reviews_manifest']['reviews'][0]['evidence'][1]['observedUpc'] = '00012345678905'
+        with self.assertRaisesRegex(ValueError, 'literal UPC'):
+            builder.build(source, **legacy)
+
+    def test_typed_gtin14_keeps_unit_independence_and_exact_photo_guards(self):
+        source, _, kwargs = typed_gtin14_fixture()
+        for key, value in [('retailUnitsPerPackage', 24), ('retailUnitsPerPackage', True),
+                           ('quantityBasis', 'case_content'), ('retailUnitLabel', '24 fl oz'),
+                           ('url', 'https://www.wellsfoodservice.com./synthetic-unit')]:
+            changed = copy.deepcopy(kwargs)
+            changed['source_reviews_manifest']['reviews'][0]['evidence'][1][key] = value
+            with self.subTest(key=key, value=value), self.assertRaises(ValueError):
+                builder.build(source, **changed)
+        for key, value in [('expectedLabel', '24 fl oz'), ('sha256', '0' * 64)]:
+            changed = copy.deepcopy(kwargs)
+            changed['image_manifest']['images'][0][key] = value
+            with self.subTest(image_key=key), self.assertRaisesRegex(ValueError, 'professional image binding'):
+                builder.build(source, **changed)
+        changed = copy.deepcopy(kwargs)
+        changed['image_manifest']['images'][0]['verification']['professional'] = False
+        with self.assertRaisesRegex(ValueError, 'professional image binding'):
+            builder.build(source, **changed)
+
+    def test_typed_gtin14_works_through_private_evidence_projection(self):
+        source, _, kwargs = typed_gtin14_fixture()
+        expected, _ = builder.build(source, **kwargs)
+        entry = kwargs['source_reviews_manifest']['reviews'][0]
+        evidence = entry['evidence']
+        digest = builder.review_evidence_sha256(evidence)
+        entry['evidence'] = {'privateEvidenceSha256': digest}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'evidence.json'
+            path.write_text(json.dumps({'schemaVersion': 1, 'kind': builder.PRIVATE_REVIEW_EVIDENCE_KIND,
+                                        'records': {digest: evidence}}))
+            with patch.dict(os.environ, {'QUICKSTOP_PRIVATE_REVIEW_EVIDENCE': str(path)}):
+                actual, _ = builder.build(source, **kwargs)
+        self.assertEqual(actual, expected)
+        self.assertNotIn('observedUnitGtin14', json.dumps(actual))
+        self.assertNotIn('https:', json.dumps(kwargs['source_reviews_manifest']))
+
     def test_late_fill_preserves_manufacturer_guard_and_all_other_metadata(self):
         source = export({'ItemName': 'Example Ice Cook', 'DEPNAME': 'Snacks', 'MAINUPC': '012345678905',
                          'ItemPrice': '', 'TotalQty_Multi': ''})

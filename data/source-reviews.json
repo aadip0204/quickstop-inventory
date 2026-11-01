@@ -5911,6 +5911,347 @@
       "evidence": {
         "privateEvidenceSha256": "be1ef52b22ac9bfd069a9d21856cd3cc75c9b8690d6ab4d4ac351d9f938a5032"
       }
+    },
+    {
+      "sku": "2615",
+      "expectedUpc": "078000013719",
+      "expectedNameSha256": "8a454263302e655d324e43d58c61b9c9357e9458e5fe641ed245488e123877f9",
+      "expectedSourceRecordSha256": "e28faf082ea199de8d9479325d59328ac13f5880dcbb1e83b02eb2e38109a767",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 6411,
+      "expectedPublicName": "CRUSH STRAWBERRY",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "MISC",
+      "expectedProductId": "p-afaf6fe7aedf61e4",
+      "expectedResultingGroupSkus": [
+        "2615"
+      ],
+      "verifiedLabel": "2 L",
+      "expectedImageSha256": "2c1dab4c2fee4723b0c79f0f1b27ed604c55452f58551e2c64e1092bf3494687",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "c064650b7fa4a9d2c1385b7fe60e2fcffb71f0fd51f24575e1ad267784a439a7"
+      }
+    },
+    {
+      "sku": "2917",
+      "expectedUpc": "028400470339",
+      "expectedNameSha256": "a0dc38acbffd196524f37baa6309e71df850af13010b70d30322f62eeeef4360",
+      "expectedSourceRecordSha256": "a9e08910c4b406f82ac7d9602b778d7a2415135ed70adb049d5f30831e5faf70",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 7672,
+      "expectedPublicName": "Doritos Tangy Pickle Artificially Flavored Tortilla Chips",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-920d7614f935a75e",
+      "expectedResultingGroupSkus": [
+        "2917"
+      ],
+      "verifiedLabel": "2.75 oz",
+      "expectedImageSha256": "b654bc60a075414dd389da2f188477ad62db73991453772a987a0a5cbd937e58",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "143a5c0282e82f0d5c4cb1061a897ecde5c6a18f4f5f1d6362f8b09291b4b42f"
+      }
+    },
+    {
+      "sku": "4860",
+      "expectedUpc": "043000955628",
+      "expectedNameSha256": "50853d2d0ddd0375a6222f1be53d0debf85dc10c55ede182cf6d28a8c0713f82",
+      "expectedSourceRecordSha256": "09c94f6a9517759ff3fd1f9dc496293e34663c3f46d5b1048d75eed6228bc866",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 7947,
+      "expectedPublicName": "Kool-Aid Unsweetened Cherry Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-07777d7641536395",
+      "expectedResultingGroupSkus": [
+        "4860"
+      ],
+      "verifiedLabel": "0.13 oz",
+      "expectedImageSha256": "90463487518ac8941587a44d01153cd391fe58932c757067e987f72317380d31",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "8a76777fcb09079e8d253ddf9c8bfd0da34a788513070a1fea9183afacd54ff6"
+      }
+    },
+    {
+      "sku": "4861",
+      "expectedUpc": "043000955635",
+      "expectedNameSha256": "5569e0b9e3de0cd85a4bfd94b05b94ab6c947aad5211355416703f89b1c095f9",
+      "expectedSourceRecordSha256": "88a3bc6b2e47f6dd4909488c35d728e86f66ad87c17022ddeb0325d9af481f1c",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 8336,
+      "expectedPublicName": "Kool-Aid Unsweetened Grape Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-a1c1eacf5a59c18d",
+      "expectedResultingGroupSkus": [
+        "4861"
+      ],
+      "verifiedLabel": "0.14 oz",
+      "expectedImageSha256": "02926bb0db87186c553b2bb55079b36b00fe9486b3fbbe3c139affff56491f96",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "f4a618e9677aa6986e0b344f8f7f7d8a495e81ca8736f3353dbe202274e2d35b"
+      }
+    },
+    {
+      "sku": "4862",
+      "expectedUpc": "043000955314",
+      "expectedNameSha256": "f0f8806bbfc1189edd105ffedc39b6428a39935e8b9149599f8bd87796dd301b",
+      "expectedSourceRecordSha256": "5d59182ba554572f79b95c87321800e464cef93d7539402f60c96aaff6394466",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 3120,
+      "expectedPublicName": "Kool-Aid Unsweetened Orange Powdered Soft Drink Mix",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "MISC",
+      "expectedProductId": "p-cb1ce9398b3c91de",
+      "expectedResultingGroupSkus": [
+        "4862"
+      ],
+      "verifiedLabel": "0.15 oz",
+      "expectedImageSha256": "a5229f46e7f08a86ada8f62d64f42e81af4c7a5fdb4ae050d0e920d19c392f4b",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "4e09810d19120be7dd5c631d32cd5809bc44fce7f9120c9bd36d7a4c9ff5340c"
+      }
+    },
+    {
+      "sku": "4863",
+      "expectedUpc": "043000955437",
+      "expectedNameSha256": "10e38dacdb73f131558b8ea61f237100771622b79d7c9ef1aafb01a05aaff153",
+      "expectedSourceRecordSha256": "de3c43840717868325c9f2fdfc483c654f71614d14b4b8cbfee4538ada4aa5a0",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 7731,
+      "expectedPublicName": "Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-d4cb9d0bc2b7f06b",
+      "expectedResultingGroupSkus": [
+        "4863"
+      ],
+      "verifiedLabel": "0.16 oz",
+      "expectedImageSha256": "51572a98531a7a1d56aaefce3e2b96ff9d1f69f8e01299960363a14154020943",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "abe6fa91dc153f867a13b883ecee041fec2f2812e5288c2c8276e6ac3ee9f4ed"
+      }
+    },
+    {
+      "sku": "4879",
+      "expectedUpc": "021000658930",
+      "expectedNameSha256": "8bfc43fc01582613d3896d928faf707ef734c7338168e366cef9f1ab96a68166",
+      "expectedSourceRecordSha256": "9ad81f8a11af4f2fb6a110205f0ab000c6264cdc1418cfd63fe58349244e3fea",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 6457,
+      "expectedPublicName": "Velveeta Shells & Cheese Original Shell Pasta & Cheese Sauce Meal",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-8a3cc7f10be44d93",
+      "expectedResultingGroupSkus": [
+        "4879"
+      ],
+      "verifiedLabel": "12 oz",
+      "expectedImageSha256": "707025d88733b6a8dd06a6752f1fad3e2744789881cce0a5a596eb48a3ce6f38",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "c9ecccd3b2ce1e7e1c861dcdc147a896c057a130c33b67fc6313fa45a9a53381"
+      }
+    },
+    {
+      "sku": "5024",
+      "expectedUpc": "028400515016",
+      "expectedNameSha256": "3446e8e37fcc0b46a1be16b66b54c17c44771eff427263dfd4c5e75ae6fc341d",
+      "expectedSourceRecordSha256": "1827ae6ce8d5a06f4ff6afb25f432c816b9f45d092272a1890235c111ba02241",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 7598,
+      "expectedPublicName": "Lay's Chile Mango Flavored Potato Chips",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-c89ee9601890fc26",
+      "expectedResultingGroupSkus": [
+        "5024"
+      ],
+      "verifiedLabel": "7.75 oz",
+      "expectedImageSha256": "8c901994440730fa78ea166ac5f8bb87c225d17c82a558d1581286f71e44ef45",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "d497796a3bbc55f3b3e6448389a6f39028a091bb52c9e34c7fd38242c75506cd"
+      }
+    },
+    {
+      "sku": "6033",
+      "expectedUpc": "028400041768",
+      "expectedNameSha256": "95e9b21a52dd6990c9b86e2d61ebbd3176fd5f95dac0ea476a26b98196be481f",
+      "expectedSourceRecordSha256": "23836445a9079b13bce4f9883e890b173ac6de1832a3934b6f990d1289ea891c",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 3848,
+      "expectedPublicName": "Munchies Salted Peanuts",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-5ccbf4832f5fa52e",
+      "expectedResultingGroupSkus": [
+        "6033"
+      ],
+      "verifiedLabel": "1.625 oz",
+      "expectedImageSha256": "35b847af89e9fbce45105a4809e13ea7ae4d0e0a2d014787c80e062ff9857e8a",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "af0868e68becedd58a1c01d6f25ad4d9b526ef9f8da4dff319c465f100e57d55"
+      }
+    },
+    {
+      "sku": "7304",
+      "expectedUpc": "028400005753",
+      "expectedNameSha256": "b92e44af579efb3a54d2dd24c3e75cdfd34d9e535d58cae4f84b73b3638a95fd",
+      "expectedSourceRecordSha256": "193bb932608ab4bc5922d2cb136dfbd9a80c2d3a020f02326c093ddd58af5202",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 9798,
+      "expectedPublicName": "Munchies Doritos Nacho Cheese Flavored on Baked Golden Toast Sandwich Crackers",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-7c00e887dd909ef0",
+      "expectedResultingGroupSkus": [
+        "7304"
+      ],
+      "verifiedLabel": "1.38 oz",
+      "expectedImageSha256": "c5f5ea8994682a91b216d35cccd7effd2752ab356eb55a574fd5459870d6db57",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "a650a7ae7c479e0286bc087eb729383b5467be5f7b163a860ce99baf84c35109"
+      }
+    },
+    {
+      "sku": "8983",
+      "expectedUpc": "012000193194",
+      "expectedNameSha256": "e2efd1dd8f70e2e7009394b2d85f16cfee642c2171961f5d6edd93b8ab853400",
+      "expectedSourceRecordSha256": "52b153eef155b13d68dcf428b8c0576c8279785b08e7116359345c5814b69c0d",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Fill genuinely absent retail measurement from exact unit records and inspected per-SKU packaging; preserve all original cells, identifiers, names, old name-only guards and isolated group.",
+      "reviewedOn": "2026-11-01",
+      "expectedSourceRow": 9651,
+      "expectedPublicName": "Tropicana Twister Strawberry Kiwi Cyclone Flavored Beverage",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "expectedProductId": "p-e31b931abadcb7f6",
+      "expectedResultingGroupSkus": [
+        "8983"
+      ],
+      "verifiedLabel": "16.9 fl oz",
+      "expectedImageSha256": "ef59512fdc630711eba8fe6b2043e880499fecd5a1f54e3851eab2ebffa81281",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "8795c5137c3b4596bfdbc3c70a5ccfc93d9f114231ab7560dc7c84d3fdadefb6"
+      }
     }
   ]
 }

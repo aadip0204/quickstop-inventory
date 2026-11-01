@@ -29080,6 +29080,246 @@
       "sha256": "bce6d90466a42f7e02908fcb3f2127d900de97c03a0558ac98b2ebaccef2b49b",
       "sku": "2613",
       "alt": "CRUSH PINEAPPLE — 2 L bottle"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "2615",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "078000013719",
+      "expectedName": "CRUSH STRAWBERRY",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-11-01",
+      "sha256": "2c1dab4c2fee4723b0c79f0f1b27ed604c55452f58551e2c64e1092bf3494687",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "CRUSH STRAWBERRY — 2 L bottle",
+      "src": "images/products/sku-2615.jpg"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "2917",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "028400470339",
+      "expectedName": "Doritos Tangy Pickle Artificially Flavored Tortilla Chips",
+      "expectedLabel": "2.75 oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "b654bc60a075414dd389da2f188477ad62db73991453772a987a0a5cbd937e58",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Doritos Tangy Pickle Artificially Flavored Tortilla Chips — 2.75 oz bag",
+      "src": "images/products/sku-2917.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "4860",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "043000955628",
+      "expectedName": "Kool-Aid Unsweetened Cherry Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "0.13 oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "90463487518ac8941587a44d01153cd391fe58932c757067e987f72317380d31",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Kool-Aid Unsweetened Cherry Artificially Flavored Powdered Soft Drink Mix — 0.13 oz packet",
+      "src": "images/products/sku-4860.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "4861",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "043000955635",
+      "expectedName": "Kool-Aid Unsweetened Grape Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "0.14 oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "02926bb0db87186c553b2bb55079b36b00fe9486b3fbbe3c139affff56491f96",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Kool-Aid Unsweetened Grape Artificially Flavored Powdered Soft Drink Mix — 0.14 oz packet",
+      "src": "images/products/sku-4861.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "4862",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "043000955314",
+      "expectedName": "Kool-Aid Unsweetened Orange Powdered Soft Drink Mix",
+      "expectedLabel": "0.15 oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "a5229f46e7f08a86ada8f62d64f42e81af4c7a5fdb4ae050d0e920d19c392f4b",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Kool-Aid Unsweetened Orange Powdered Soft Drink Mix — 0.15 oz packet",
+      "src": "images/products/sku-4862.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "4863",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "043000955437",
+      "expectedName": "Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix",
+      "expectedLabel": "0.16 oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "51572a98531a7a1d56aaefce3e2b96ff9d1f69f8e01299960363a14154020943",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Kool-Aid Unsweetened Tropical Punch Artificially Flavored Powdered Soft Drink Mix — 0.16 oz packet",
+      "src": "images/products/sku-4863.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "4879",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "021000658930",
+      "expectedName": "Velveeta Shells & Cheese Original Shell Pasta & Cheese Sauce Meal",
+      "expectedLabel": "12 oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "707025d88733b6a8dd06a6752f1fad3e2744789881cce0a5a596eb48a3ce6f38",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Velveeta Shells & Cheese Original Shell Pasta & Cheese Sauce Meal — 12 oz box",
+      "src": "images/products/sku-4879.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "5024",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "028400515016",
+      "expectedName": "Lay's Chile Mango Flavored Potato Chips",
+      "expectedLabel": "7.75 oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "8c901994440730fa78ea166ac5f8bb87c225d17c82a558d1581286f71e44ef45",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Lay's Chile Mango Flavored Potato Chips — 7.75 oz bag",
+      "src": "images/products/sku-5024.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "6033",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "028400041768",
+      "expectedName": "Munchies Salted Peanuts",
+      "expectedLabel": "1.625 oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "35b847af89e9fbce45105a4809e13ea7ae4d0e0a2d014787c80e062ff9857e8a",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Munchies Salted Peanuts — 1.625 oz bag",
+      "src": "images/products/sku-6033.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "7304",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "028400005753",
+      "expectedName": "Munchies Doritos Nacho Cheese Flavored on Baked Golden Toast Sandwich Crackers",
+      "expectedLabel": "1.38 oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "c5f5ea8994682a91b216d35cccd7effd2752ab356eb55a574fd5459870d6db57",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Munchies Doritos Nacho Cheese Flavored on Baked Golden Toast Sandwich Crackers — 1.38 oz pack",
+      "src": "images/products/sku-7304.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "8983",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "012000193194",
+      "expectedName": "Tropicana Twister Strawberry Kiwi Cyclone Flavored Beverage",
+      "expectedLabel": "16.9 fl oz",
+      "verifiedOn": "2026-11-01",
+      "sha256": "ef59512fdc630711eba8fe6b2043e880499fecd5a1f54e3851eab2ebffa81281",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Tropicana Twister Strawberry Kiwi Cyclone Flavored Beverage — 16.9 fl oz bottle",
+      "src": "images/products/sku-8983.webp"
+    },
+    {
+      "attributionRequired": false,
+      "sku": "5633",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "083664868933",
+      "expectedName": "Milagro Repo",
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-11-01",
+      "sha256": "1b60cbe002145a7f954649c572af4ef2eac8a10eebd4ef434b37f82a7b1c298b",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Milagro Repo — 1.75 L bottle",
+      "src": "images/products/sku-5633.jpg"
     }
   ]
 }
