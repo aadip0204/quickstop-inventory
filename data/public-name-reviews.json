@@ -6285,6 +6285,21 @@
       "evidence": {
         "privateEvidenceSha256": "3029ed883f72d011f5739a7b17444531f72827d4b81847098db3fbfec31a1a68"
       }
+    },
+    {
+      "sku": "101363",
+      "expectedUpc": "088004005498",
+      "expectedSourceRow": 8350,
+      "expectedRawFieldsSha256": "04f8c6cbb8b044d89c5a9839c1fbebef9c1e3e43e3470906ac9cf1cf5d714a0c",
+      "expectedPublicName": "EH TAYLOR SMALL BATCH 100PF",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Colonel E.H. Taylor Jr. Small Batch Bourbon 100 Proof",
+      "reason": "Expand the printed Colonel E.H. Taylor Jr. Small Batch Bourbon name while retaining the original100PF strength as100 Proof. Preserve all source cells, identifiers, volume and singleton membership. No age is inferred from retailer ancillary metadata.",
+      "evidence": {
+        "privateEvidenceSha256": "69255d873dc9a1b45179d2b0b59951660bf9dbe349c877f91c397afff99e68b8"
+      }
     }
   ]
 }
