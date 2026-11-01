@@ -11424,7 +11424,7 @@
     {
       "sku": "3359",
       "expectedUpc": "088004144692",
-      "expectedName": "fireball whisky",
+      "expectedName": "Fireball Whisky",
       "expectedLabel": "750 mL",
       "src": "images/products/sku-3359.jpg",
       "alt": "Fireball Cinnamon Whisky — 750 mL plastic bottle",
@@ -29960,6 +29960,126 @@
       "src": "images/products/sku-1557.jpg",
       "sku": "1557",
       "sha256": "de9938aea3f51469ba32f3685d6e4e41804076bfe7ab6fcc49a227847c7f788d"
+    },
+    {
+      "src": "images/products/sku-2533.jpg",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "750 mL",
+      "expectedName": "Courvoisier XO",
+      "alt": "Courvoisier XO — 750 mL bottle",
+      "expectedUpc": "080686965022",
+      "sku": "2533",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-11-01",
+      "sha256": "62b46f03436ab0cd1d912f29078468e629b9b62b6afdd4029b601f4171e661fa"
+    },
+    {
+      "src": "images/products/sku-4064.jpg",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "750 mL",
+      "expectedName": "Hennessy XO",
+      "alt": "Hennessy XO — 750 mL bottle",
+      "expectedUpc": "088110153052",
+      "sku": "4064",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-11-01",
+      "sha256": "e8d99a4aef2a26e629449fb5f9f8ad24dd4454a75c1d49edb9fff5c61f4622ce"
+    },
+    {
+      "src": "images/products/sku-3363.jpg",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "750 mL",
+      "expectedName": "Fireball Whisky",
+      "alt": "Fireball Whisky — 750 mL bottle",
+      "expectedUpc": "088004146689",
+      "sku": "3363",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-11-01",
+      "sha256": "799dc5e2c7b823d34a1d0016c36412f607b06d9433474f13c7d8d589954ea96f"
+    },
+    {
+      "src": "images/products/sku-3216.png",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "750 mL",
+      "expectedName": "Evan Williams Egg Nog",
+      "alt": "Evan Williams Egg Nog — 750 mL bottle",
+      "expectedUpc": "096749025336",
+      "sku": "3216",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-11-01",
+      "sha256": "45ed1e002e31c868100f7bf0ac09c7fb634f2bf74bd82283a178138c47e5e8b7"
+    },
+    {
+      "src": "images/products/sku-3713.jpg",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "750 mL",
+      "expectedName": "George Dickel Tabasco Barrel Finish",
+      "alt": "George Dickel Tabasco Barrel Finish — 750 mL bottle",
+      "expectedUpc": "082000786474",
+      "sku": "3713",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-11-01",
+      "sha256": "25deb3f013feb18a62949f7ce43863b8d3fa2b908bff330779bd62aa29760285"
+    },
+    {
+      "src": "images/products/sku-1035.png",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedLabel": "750 mL",
+      "expectedName": "Belvedere Heritage 176 Spirit Drink",
+      "alt": "Belvedere Heritage 176 Spirit Drink — 750 mL bottle",
+      "expectedUpc": "081753832544",
+      "sku": "1035",
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-11-01",
+      "sha256": "311b9d9d59b3c77444ec5b9a5917a04185e14c84b9e36fb42397d3c776282090"
     }
   ]
 }
