@@ -142,6 +142,29 @@ test('brand searches work with and without apostrophes', () => {
   }
 });
 
+test('verified initialism names remain searchable with ordinary or dotted spelling', () => {
+  const expected = ['4058', '4059', '4062', '4063', '4060', '4061'];
+  for (const query of ['Hennessy VSOP', 'Hennessy V.S.O.P', 'Hennessy V.S.O.P.']) {
+    const matches = ui.filterProducts(catalog.products, {query}, catalog.categories);
+    const product = matches.find(item => item.variants.some(variant => variant.sku === '4058'));
+    assert.ok(product, query);
+    assert.deepEqual(product.variants.map(variant => variant.sku), expected);
+    assert.equal(ui.matchingVariant(product, `${query} 750 mL`).sku, '4063');
+  }
+});
+
+test('Deluxe spelling variants find the verified unit without collapsing decimal sizes', () => {
+  for (const wording of ['Deluxe', 'De Luxe']) {
+    const query = `Crown Royal ${wording} 1.75 L`;
+    const matches = ui.filterProducts(catalog.products, {query}, catalog.categories);
+    const product = matches.find(item => item.variants.some(variant => variant.sku === '2559'));
+    assert.ok(product, query);
+    assert.deepEqual(product.variants.map(variant => variant.sku), ['2559']);
+    assert.equal(ui.matchingVariant(product, query).label, '1.75 L');
+    assert.equal(ui.filterProducts([product], {query: `Crown Royal ${wording} 175 L`}).length, 0);
+  }
+});
+
 test('brand/flavor and normalized size search remains distinct', () => {
   const coconut = ui.filterProducts(catalog.products, {query: '1800 coconut 1 L'});
   assert.ok(coconut.length);
