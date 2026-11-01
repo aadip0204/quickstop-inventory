@@ -28560,6 +28560,86 @@
       "expectedUpc": "087872686051",
       "alt": "San Antonio Fruit Farm Pineapple Papaya Wine — 750 mL packaging",
       "sha256": "d181f7bd07ecb640832bd30680d78692d090773e7fe79df18f1961aa4b1647cb"
+    },
+    {
+      "attributionRequired": false,
+      "expectedUpc": "701530512505",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "290c8ed40e259c2257967b9a09ce28896628ea537542ac59506be6c9fdc06f47",
+      "expectedName": "Partida Añejo Tequila",
+      "src": "images/products/sku-6541.png",
+      "sku": "6541",
+      "alt": "Partida Añejo Tequila — 750 mL bottle"
+    },
+    {
+      "attributionRequired": false,
+      "expectedUpc": "079100505647",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "50.4 oz · 1.43 kg",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "9106a0270738e7e7fe3d32b5c660c464aff6135ae2cb37603bc0eb53fe1db3b3",
+      "expectedName": "9Lives Indoor Complete Dry Cat Food",
+      "src": "images/products/sku-233.jpg",
+      "sku": "233",
+      "alt": "9Lives Indoor Complete Dry Cat Food — 50.4 oz · 1.43 kg bag"
+    },
+    {
+      "attributionRequired": false,
+      "expectedUpc": "079100514175",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "50.4 oz · 1.43 kg",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "ac2839578b6abf238969ade1cd884f342f9a949ffed3b784926e814aab32ba3b",
+      "expectedName": "9Lives Plus Care Dry Cat Food",
+      "src": "images/products/sku-234.jpg",
+      "sku": "234",
+      "alt": "9Lives Plus Care Dry Cat Food — 50.4 oz · 1.43 kg bag"
+    },
+    {
+      "attributionRequired": false,
+      "expectedUpc": "035000498755",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "verifiedOn": "2026-10-31",
+      "expectedLabel": "14 oz",
+      "usageBasis": "user_authorized_direct_reference",
+      "sha256": "eb9b644b2e04cb94538f7ab6357e944670e624203e4552f68d4d35becf7edb60",
+      "expectedName": "Ajax Ultra Triple Action Orange Dish Liquid",
+      "src": "images/products/sku-318.jpg",
+      "sku": "318",
+      "alt": "Ajax Ultra Triple Action Orange Dish Liquid — 14 oz bottle"
     }
   ]
 }
