@@ -63,7 +63,210 @@ def typed_gtin14_fixture(source=None):
     return source, baseline, kwargs
 
 
+def historical_fixture(source=None, names=None):
+    source, baseline, kwargs = missing_fixture(source, label='3.125 oz', names=names)
+    review = kwargs['source_reviews_manifest']['reviews'][0]
+    primary, _, photo = review['evidence']
+    primary['retiredNotice'] = True
+    primary['historicalPackageReview'] = {
+        'scope': 'original_inventory_unit', 'producerProductPageUrl': primary['url'],
+        'producerResponseSha256': primary['sourceSha256'], 'sourceImageUrl': photo['url'],
+        'sourceImageSha256': review['expectedImageSha256'], 'visibleNetContent': review['verifiedLabel'],
+        'retailUnitsPerPackage': 1, 'manufacturerPrimaryImageConfirmed': True,
+        'inspectedOn': photo['inspectedOn'], 'inspectionReceiptSha256': photo['inspectionReceiptSha256'],
+    }
+    return source, baseline, kwargs
+
+
 class MissingMeasurementTests(unittest.TestCase):
+    def test_historical_exact_package_preserves_entire_catalog_except_target_label_photo(self):
+        source = export({'ItemName': 'Example Cookie', 'DEPNAME': 'Snacks', 'MAINUPC': '012345678905',
+                         'ItemPrice': '', 'TotalQty_Multi': ''},
+                        {'ItemName': 'Example Cookie 8oz', 'DEPNAME': 'Snacks', 'MAINUPC': '012345678912',
+                         'ItemPrice': '', 'TotalQty_Multi': ''})
+        for typed in [False, True]:
+            source, baseline, kwargs = historical_fixture(source)
+            if typed:
+                retailer = kwargs['source_reviews_manifest']['reviews'][0]['evidence'][1]
+                code = retailer.pop('observedUpc')
+                retailer.update(kind='exact_unit_gtin14_listing', observedUnitGtin14=code.zfill(14),
+                                unitCodeSourceField='Product.gtin14')
+            original = copy.deepcopy(kwargs)
+            with self.subTest(typed=typed):
+                catalog, audit = builder.build(source, **kwargs)
+                expected = copy.deepcopy(baseline)
+                variant = next(v for p in expected['products'] for v in p['variants'] if v['sku'] == '1')
+                actual = next(v for p in catalog['products'] for v in p['variants'] if v['sku'] == '1')
+                variant.update(label='3.125 oz', image=actual['image'])
+                self.assertEqual(catalog, expected)
+                self.assertEqual(kwargs, original)
+                self.assertEqual(audit['records'][0]['rawFields'], list(csv.reader(io.StringIO(source.decode())))[1])
+                self.assertEqual(audit['records'][0]['source']['MAINUPC'], '012345678905')
+                self.assertIs(audit['records'][0]['sourceReview']['evidence'][0]['retiredNotice'], True)
+
+    def test_historical_review_has_exact_schema_no_current_stock_or_generation_scope(self):
+        source, _, kwargs = historical_fixture()
+        historical = kwargs['source_reviews_manifest']['reviews'][0]['evidence'][0]['historicalPackageReview']
+        for missing in historical:
+            changed = copy.deepcopy(kwargs)
+            changed['source_reviews_manifest']['reviews'][0]['evidence'][0]['historicalPackageReview'].pop(missing)
+            with self.subTest(missing=missing), self.assertRaises(ValueError): builder.build(source, **changed)
+        for value in [None, [], 'original_inventory_unit']:
+            changed = copy.deepcopy(kwargs)
+            changed['source_reviews_manifest']['reviews'][0]['evidence'][0]['historicalPackageReview'] = value
+            with self.subTest(value=value), self.assertRaises(ValueError): builder.build(source, **changed)
+        for scope in ['current_stock', 'current_package_generation', 'retired_product', True]:
+            changed = copy.deepcopy(kwargs)
+            changed['source_reviews_manifest']['reviews'][0]['evidence'][0]['historicalPackageReview']['scope'] = scope
+            with self.subTest(scope=scope), self.assertRaises(ValueError): builder.build(source, **changed)
+        changed = copy.deepcopy(kwargs)
+        changed['source_reviews_manifest']['reviews'][0]['evidence'][0]['historicalPackageReview']['stockConfirmed'] = True
+        with self.assertRaises(ValueError): builder.build(source, **changed)
+
+    def test_historical_capture_image_unit_receipt_and_strict_types_must_all_match(self):
+        source, _, kwargs = historical_fixture()
+        changes = [('producerProductPageUrl', 'https://wellsfoodservice.com/different'),
+                   ('producerResponseSha256', '0' * 64), ('sourceImageUrl', 'https://other.test/photo.jpg'),
+                   ('sourceImageSha256', '0' * 64), ('visibleNetContent', '4 oz'),
+                   ('retailUnitsPerPackage', True), ('retailUnitsPerPackage', 1.0),
+                   ('retailUnitsPerPackage', '1'), ('retailUnitsPerPackage', 24),
+                   ('manufacturerPrimaryImageConfirmed', 1), ('manufacturerPrimaryImageConfirmed', 'true'),
+                   ('manufacturerPrimaryImageConfirmed', False), ('inspectedOn', '2026-10-30'),
+                   ('inspectionReceiptSha256', '0' * 64), ('producerResponseSha256', None)]
+        for key, value in changes:
+            changed = copy.deepcopy(kwargs)
+            changed['source_reviews_manifest']['reviews'][0]['evidence'][0]['historicalPackageReview'][key] = value
+            with self.subTest(key=key, value=value), self.assertRaises(ValueError): builder.build(source, **changed)
+
+    def test_historical_field_is_not_allowed_on_active_missing_or_boolean_alias_notices(self):
+        source, _, kwargs = historical_fixture()
+        for notice in [False, None, 0, 1, 'True', 'False']:
+            changed = copy.deepcopy(kwargs)
+            changed['source_reviews_manifest']['reviews'][0]['evidence'][0]['retiredNotice'] = notice
+            with self.subTest(notice=notice), self.assertRaises(ValueError): builder.build(source, **changed)
+        changed = copy.deepcopy(kwargs)
+        changed['source_reviews_manifest']['reviews'][0]['evidence'][0].pop('retiredNotice')
+        with self.assertRaises(ValueError): builder.build(source, **changed)
+        source, _, active = missing_fixture(label='3.125 oz')
+        expected, _ = builder.build(source, **active)
+        changed = copy.deepcopy(kwargs)
+        primary = changed['source_reviews_manifest']['reviews'][0]['evidence'][0]
+        primary['retiredNotice'] = False
+        primary.pop('historicalPackageReview')
+        actual, _ = builder.build(source, **changed)
+        self.assertEqual(actual, expected)
+        changed = copy.deepcopy(active)
+        changed['source_reviews_manifest']['reviews'][0]['evidence'][0]['retiredNotice'] = True
+        with self.assertRaises(ValueError): builder.build(source, **changed)
+
+    def test_historical_units_still_follow_original_name_and_final_unchanged_name_guards(self):
+        source = export({'ItemName': 'Example Cook', 'DEPNAME': 'Snacks', 'MAINUPC': '012345678905'})
+        correction = manufacturer_correction(source, 'Example Cookie', 'Example Cookie', 'Size not specified')
+        verification = {key: correction[key] for key in ('sku', 'expectedUpc', 'expectedNameSha256',
+                        'expectedLabel', 'verifiedOn', 'evidence', 'manufacturerRecord')}
+        verification.update(expectedPublicName='Example Cookie', verificationMethod='manufacturer_exact_upc_record',
+                            verification={'brand': True, 'expression': True, 'upc': True, 'visual': False})
+        names = {'schemaVersion': 1, 'corrections': [correction], 'nameVerifications': [verification]}
+        source, _, kwargs = historical_fixture(source, names)
+        catalog, audit = builder.build(source, **kwargs)
+        self.assertEqual(catalog['products'][0]['variants'][0]['label'], '3.125 oz')
+        self.assertEqual(audit['records'][0]['nameCorrection']['expectedLabel'], 'Size not specified')
+        self.assertEqual(audit['records'][0]['nameVerification']['expectedLabel'], 'Size not specified')
+        for field, message in [('corrections', 'Manufacturer name correction changed a guarded'),
+                               ('nameVerifications', 'Name verification does not match')]:
+            changed = copy.deepcopy(kwargs); changed['name_manifest'][field][0]['expectedLabel'] = '3.125 oz'
+            with self.subTest(field=field), self.assertRaisesRegex(ValueError, message): builder.build(source, **changed)
+
+    def test_historical_evidence_accepts_real_leap_days_in_all_three_dates(self):
+        source, _, kwargs = historical_fixture()
+        expected, _ = builder.build(source, **kwargs)
+        for value, reverse in [('2024-02-29', False), ('2000-02-29', True)]:
+            changed = copy.deepcopy(kwargs)
+            primary, retailer, photo = changed['source_reviews_manifest']['reviews'][0]['evidence']
+            primary['retrievedOn'] = retailer['retrievedOn'] = photo['inspectedOn'] = value
+            primary['historicalPackageReview']['inspectedOn'] = value
+            if reverse:
+                changed['source_reviews_manifest']['reviews'][0]['evidence'].reverse()
+            with self.subTest(value=value, reverse=reverse):
+                actual, _ = builder.build(source, **changed)
+                self.assertEqual(actual, expected)
+
+    def test_historical_evidence_rejects_impossible_dates_and_type_shape_aliases(self):
+        source, _, kwargs = historical_fixture()
+        impossible = ['2026-02-30', '2026-13-01', '0000-00-00',
+                      '2025-02-29', '2100-02-29', '2026-04-31']
+        aliases = [None, True, 20240229, '20240229', '2024-W09-4', '2024-2-29', '2024-02-29T00:00:00Z']
+        for role in ['inspection', 'primary', 'retailer']:
+            for value in impossible + aliases:
+                changed = copy.deepcopy(kwargs)
+                primary, retailer, photo = changed['source_reviews_manifest']['reviews'][0]['evidence']
+                if role == 'inspection':
+                    # Synchronize both declarations so equality alone cannot
+                    # hide an impossible manual-inspection calendar date.
+                    primary['historicalPackageReview']['inspectedOn'] = photo['inspectedOn'] = value
+                elif role == 'primary':
+                    primary['retrievedOn'] = value
+                else:
+                    retailer['retrievedOn'] = value
+                with self.subTest(role=role, value=value), self.assertRaises(ValueError):
+                    builder.build(source, **changed)
+
+    def test_historical_calendar_rule_does_not_change_the_existing_active_date_path(self):
+        source, _, kwargs = missing_fixture(label='3.125 oz')
+        expected, _ = builder.build(source, **kwargs)
+        primary, retailer, photo = kwargs['source_reviews_manifest']['reviews'][0]['evidence']
+        self.assertIs(primary['retiredNotice'], False)
+        # This is the pre-existing shape-only behavior, deliberately scoped out
+        # of this historical-package fix rather than silently changing it.
+        primary['retrievedOn'] = retailer['retrievedOn'] = photo['inspectedOn'] = '2026-02-30'
+        actual, _ = builder.build(source, **kwargs)
+        self.assertEqual(actual, expected)
+
+    def test_historical_proof_does_not_skip_independent_unit_original_or_photo_guards(self):
+        source, _, kwargs = historical_fixture()
+        mutations = [lambda k: k['source_reviews_manifest']['reviews'][0]['evidence'][0].update(observedUpc='00012345678905'),
+                     lambda k: k['source_reviews_manifest']['reviews'][0]['evidence'][1].update(observedUpc='012345678912'),
+                     lambda k: k['source_reviews_manifest']['reviews'][0]['evidence'][1].update(url='https://www.wellsfoodservice.com./unit'),
+                     lambda k: k['source_reviews_manifest']['reviews'][0]['evidence'][1].update(retailUnitsPerPackage=24),
+                     lambda k: k.update(image_manifest=None),
+                     lambda k: k.update(private_direct_image_evidence_manifest=None),
+                     lambda k: k['image_manifest']['images'][0]['verification'].update(professional=False),
+                     lambda k: k['source_reviews_manifest']['reviews'][0].update(expectedProductId='p-' + '0' * 16)]
+        for index, mutation in enumerate(mutations):
+            changed = copy.deepcopy(kwargs); mutation(changed)
+            with self.subTest(index=index), self.assertRaises(ValueError): builder.build(source, **changed)
+        changed = copy.deepcopy(kwargs); review = changed['source_reviews_manifest']['reviews'][0]
+        review['expectedImageSha256'] = review['evidence'][2]['sha256'] = '0' * 64
+        review['evidence'][0]['historicalPackageReview']['sourceImageSha256'] = '0' * 64
+        changed['image_manifest']['images'][0]['sha256'] = '0' * 64
+        changed['private_direct_image_evidence_manifest']['entries'][0]['sha256'] = '0' * 64
+        with self.assertRaisesRegex(ValueError, 'Product image is empty or hash does not match'):
+            builder.build(source, **changed)
+        rows = list(csv.reader(io.StringIO(source.decode()))); rows[1][6] = '42'
+        stream = io.StringIO(); csv.writer(stream).writerows(rows)
+        with self.assertRaisesRegex(ValueError, 'Source metadata review identity mismatch'):
+            builder.build(stream.getvalue().encode(), **kwargs)
+
+    def test_historical_package_proof_stays_in_hash_bound_private_evidence(self):
+        source, _, kwargs = historical_fixture()
+        expected, _ = builder.build(source, **kwargs)
+        projected = copy.deepcopy(kwargs); review = projected['source_reviews_manifest']['reviews'][0]
+        evidence = review['evidence']; digest = builder.review_evidence_sha256(evidence)
+        review['evidence'] = {'privateEvidenceSha256': digest}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'evidence.json'
+            ledger = {'schemaVersion': 1, 'kind': builder.PRIVATE_REVIEW_EVIDENCE_KIND, 'records': {digest: evidence}}
+            path.write_text(json.dumps(ledger))
+            with patch.dict(os.environ, {'QUICKSTOP_PRIVATE_REVIEW_EVIDENCE': str(path)}):
+                actual, _ = builder.build(source, **projected)
+                self.assertEqual(actual, expected)
+                self.assertNotIn('historicalPackageReview', json.dumps(actual))
+                self.assertNotIn('historicalPackageReview', json.dumps(projected['source_reviews_manifest']))
+                self.assertNotIn('https:', json.dumps(actual))
+                ledger['records'][digest][0]['historicalPackageReview']['visibleNetContent'] = '4 oz'
+                path.write_text(json.dumps(ledger))
+                with self.assertRaisesRegex(ValueError, 'does not match its hash'): builder.build(source, **projected)
+
     def test_typed_gtin14_preserves_original_unit_codes_and_isolated_identity(self):
         for unit_upc in ('012345678905', '12345670', '1234567890128'):
             self.assertTrue(builder.valid_gtin(unit_upc))

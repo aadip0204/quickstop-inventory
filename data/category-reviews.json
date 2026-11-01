@@ -1680,6 +1680,22 @@
       "evidence": {
         "privateEvidenceSha256": "b5a6025da56f906f8cf8549c370b053374d4fecd11986ad7689f5ecf74e5b003"
       }
+    },
+    {
+      "sku": "2783",
+      "expectedUpc": "080686184409",
+      "expectedNameSha256": "f3e9f5196a5954286394ea36e3e6ffd7a66aea7e373a24fa1255093cb45a852e",
+      "expectedSourceRecordSha256": "d8e74ae1005fd34f862181c0adb91fe52e546fd294e20527703924d486349bf9",
+      "expectedDepartment": "Ready To Drink",
+      "expectedPublicName": "DEKUYPER STRW PUCKER",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "drinks",
+      "category": "spirits",
+      "reviewedOn": "2026-11-01",
+      "reason": "Exact unit UPC and the retailer Cordials - Liqueurs product type, corroborated by the inspected strawberry schnapps bottle, place this liqueur in Spirits. The original Ready To Drink department and every source cell remain preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "808d995b0c1bde462c77203da0765b788c21575493911a82ee526a80a0d044e7"
+      }
     }
   ]
 }

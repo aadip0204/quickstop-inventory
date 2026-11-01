@@ -29460,6 +29460,106 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "expectedUpc": "012000034022",
+      "src": "images/products/sku-1350.jpg",
+      "verifiedOn": "2026-11-01",
+      "sha256": "758cfcf8eb5cc8f0d864f326aabe86ec49364d98db2c0f86357e74eaa5076d57",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Brisk Peach Iced Green Tea",
+      "expectedLabel": "1 L",
+      "alt": "Brisk Peach Iced Green Tea — 1 L bottle",
+      "sku": "1350"
+    },
+    {
+      "expectedUpc": "080686184409",
+      "src": "images/products/sku-2783.jpg",
+      "verifiedOn": "2026-11-01",
+      "sha256": "d0312b8ba11b5b8f95cda49fa9771a634bb28d65665abd87cf93435a090b481b",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "DeKuyper Pucker Strawberry Schnapps Liqueur",
+      "expectedLabel": "750 mL",
+      "alt": "DeKuyper Pucker Strawberry Schnapps Liqueur — 750 mL bottle",
+      "sku": "2783"
+    },
+    {
+      "expectedUpc": "028400421157",
+      "src": "images/products/sku-2930.jpg",
+      "verifiedOn": "2026-11-01",
+      "sha256": "ec683b1953fc639749f27624c5ef5deac42c4ece330179520e4ebd571e8480f5",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Doritos Flamas Flavored Tortilla Chips",
+      "expectedLabel": "3.125 oz",
+      "alt": "Doritos Flamas Flavored Tortilla Chips — 3.125 oz bag",
+      "sku": "2930"
+    },
+    {
+      "expectedUpc": "088110110109",
+      "src": "images/products/sku-8529.jpg",
+      "verifiedOn": "2026-11-01",
+      "sha256": "1a377a0a50c46cf6ca0c708d8c244eff0338e6e18d71fc43f9aa257130cb3d1f",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Tanqueray Gin",
+      "expectedLabel": "200 mL",
+      "alt": "Tanqueray Gin — 200 mL bottle",
+      "sku": "8529"
+    },
+    {
+      "expectedUpc": "083664112210",
+      "src": "images/products/sku-101258.jpg",
+      "verifiedOn": "2026-11-01",
+      "sha256": "3847631dcfbf49d32faa56e0a3e9845dd9176bb82850f9bff36623111b752fe8",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "The Balvenie DoubleWood 12 Year Old Single Malt Scotch Whisky",
+      "expectedLabel": "750 mL",
+      "alt": "The Balvenie DoubleWood 12 Year Old Single Malt Scotch Whisky — 750 mL bottle",
+      "sku": "101258"
     }
   ]
 }

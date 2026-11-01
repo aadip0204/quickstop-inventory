@@ -5348,7 +5348,7 @@
       "expectedRawFieldsSha256": "d8e74ae1005fd34f862181c0adb91fe52e546fd294e20527703924d486349bf9",
       "expectedPublicName": "DEKUYPER STRW PUCKER",
       "expectedLabel": "750 mL",
-      "expectedCategory": "drinks",
+      "expectedCategory": "spirits",
       "expectedDepartment": "Ready To Drink",
       "proposedPublicTitle": "DeKuyper Pucker Strawberry Schnapps Liqueur",
       "reason": "The source and readable package explicitly identify DeKuyper Pucker Strawberry schnapps, expanding Strw without changing flavor or type. This is a public-title-only review; the photograph remains held and no size, pack, source or image approval is added.",
@@ -5849,6 +5849,21 @@
       "reason": "Exact literal unit-code and inspected identity evidence corrects this public title while preserving original source cells, identifiers, quantity, category and department.",
       "evidence": {
         "privateEvidenceSha256": "56f97894c87ac6d153087bdf9176567c8852616b92a33a26442c29c26d41e345"
+      }
+    },
+    {
+      "sku": "1350",
+      "expectedUpc": "012000034022",
+      "expectedSourceRow": 848,
+      "expectedRawFieldsSha256": "7712c5c18213a05c99ab9214e1619b904685f36023333542ebba064443c255f6",
+      "expectedPublicName": "Brisk Peach IceGreen T",
+      "expectedLabel": "1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Brisk Peach Iced Green Tea",
+      "reason": "Expand the original peach green tea abbreviation and correct iced spelling using the exact producer identity, its product-linked ingredients and inspected packaging; preserve every source cell, identifier, quantity and group.",
+      "evidence": {
+        "privateEvidenceSha256": "4aaa317f43ba2cc9eef1c79dcf64bee8c298e34afda321e2b50db4bf82ff42a8"
       }
     }
   ]
