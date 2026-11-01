@@ -5865,6 +5865,111 @@
       "evidence": {
         "privateEvidenceSha256": "4aaa317f43ba2cc9eef1c79dcf64bee8c298e34afda321e2b50db4bf82ff42a8"
       }
+    },
+    {
+      "sku": "1925",
+      "expectedUpc": "088586601835",
+      "expectedSourceRow": 1185,
+      "expectedRawFieldsSha256": "d6bf58531c847d0f899a508e034b81a357c8a772e68d2aad20525aa62ed777fc",
+      "expectedPublicName": "Chateau Michelle Cab-Sau",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Chateau Ste. Michelle Columbia Valley Cabernet Sauvignon",
+      "reason": "Complete the exact wine brand, grape and printed expression using literal unit-code records and independently inspected packaging, without changing original cells, identifiers, size, department or group membership. No unspecified wine vintage or ABV is introduced.",
+      "evidence": {
+        "privateEvidenceSha256": "1fe8855769588b7c2cdeb7833cd6c233b502a140be4b570da2918d83387daddb"
+      }
+    },
+    {
+      "sku": "1926",
+      "expectedUpc": "088586603846",
+      "expectedSourceRow": 1186,
+      "expectedRawFieldsSha256": "b90fd97edf0abb4a6ff181b5b1e614cb1897979a8e0d4e7b321c9fae30fe6a8d",
+      "expectedPublicName": "Chateau Michelle Chard",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Chateau Ste. Michelle Columbia Valley Chardonnay",
+      "reason": "Complete the exact wine brand, grape and printed expression using literal unit-code records and independently inspected packaging, without changing original cells, identifiers, size, department or group membership. No unspecified wine vintage or ABV is introduced.",
+      "evidence": {
+        "privateEvidenceSha256": "0e1ea337f276a836abd0b119709d074e515a0af1c130e370d86406c4fd830723"
+      }
+    },
+    {
+      "sku": "1928",
+      "expectedUpc": "088586004162",
+      "expectedSourceRow": 1189,
+      "expectedRawFieldsSha256": "3c4188b73541a1ca30155b189ff58b8f2ce4d49149485f403de9e3bee6f065b2",
+      "expectedPublicName": "Chateau Michelle Riesling 750Harvest",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Chateau Ste. Michelle Columbia Valley Harvest Select Sweet Riesling",
+      "reason": "Complete the exact wine brand, grape and printed expression using literal unit-code records and independently inspected packaging, without changing original cells, identifiers, size, department or group membership. No unspecified wine vintage or ABV is introduced.",
+      "evidence": {
+        "privateEvidenceSha256": "1bf499e5a93863930d70cd7fcd76594ab21eb82e136187d1a7eb4a4456accf28"
+      }
+    },
+    {
+      "sku": "1929",
+      "expectedUpc": "088586621840",
+      "expectedSourceRow": 1188,
+      "expectedRawFieldsSha256": "6edaa61e6d3413788a61e73588ba5cba78436d9d98452a8a5fb06d1757ccce6a",
+      "expectedPublicName": "Chateau Michelle Riesling 750",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Chateau Ste. Michelle Columbia Valley Riesling",
+      "reason": "Complete the exact wine brand, grape and printed expression using literal unit-code records and independently inspected packaging, without changing original cells, identifiers, size, department or group membership. No unspecified wine vintage or ABV is introduced.",
+      "evidence": {
+        "privateEvidenceSha256": "4f02efd15d533d2044000b91fcc9ca7842dbd73ceff3c8fa158ac2e12c95e9c1"
+      }
+    },
+    {
+      "sku": "3555",
+      "expectedUpc": "089819501458",
+      "expectedSourceRow": 2305,
+      "expectedRawFieldsSha256": "a0c5b7c6b74c2d0b13e9c6800f3761b1ac117a497eff88d68f342aadb42b2ffb",
+      "expectedPublicName": "Gabbiano Chianti",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Gabbiano Chianti DOCG",
+      "reason": "Complete the exact wine brand, grape and printed expression using literal unit-code records and independently inspected packaging, without changing original cells, identifiers, size, department or group membership. No unspecified wine vintage or ABV is introduced.",
+      "evidence": {
+        "privateEvidenceSha256": "fe104cc0bc48fa16fbce822771a7d653ddc27798af78984902756c55581a26f1"
+      }
+    },
+    {
+      "sku": "4775",
+      "expectedUpc": "081584131519",
+      "expectedSourceRow": 3057,
+      "expectedRawFieldsSha256": "0b008da95651ab7dd058f174810d3416a2f6f5b7e4deae4fae558c1707ed7549",
+      "expectedPublicName": "Kendall Jackson Pinot Noir 750",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Kendall-Jackson Vintner's Reserve Pinot Noir",
+      "reason": "Complete the exact wine brand, grape and printed expression using literal unit-code records and independently inspected packaging, without changing original cells, identifiers, size, department or group membership. No unspecified wine vintage or ABV is introduced.",
+      "evidence": {
+        "privateEvidenceSha256": "5049d77411f05f826aec203d5254127037aef949d8af48e715a113f1de8a710a"
+      }
+    },
+    {
+      "sku": "7223",
+      "expectedUpc": "083085903022",
+      "expectedSourceRow": 4599,
+      "expectedRawFieldsSha256": "7a72e3d1c471d1cbd7530619d2969f21bd2f1310cb592b0fe8c1ac92764d969c",
+      "expectedPublicName": "Ruffino Chianti",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Ruffino 1877 Chianti DOCG",
+      "reason": "Complete the exact wine brand, grape and printed expression using literal unit-code records and independently inspected packaging, without changing original cells, identifiers, size, department or group membership. No unspecified wine vintage or ABV is introduced.",
+      "evidence": {
+        "privateEvidenceSha256": "37734db79f47d2679410f128ba569ad5f5a3214ebff126d82cca4e66c14e0e72"
+      }
     }
   ]
 }
