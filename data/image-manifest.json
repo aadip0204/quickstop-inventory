@@ -22022,14 +22022,14 @@
       "expectedName": "New Amsterdam mango"
     },
     {
-      "usageBasis": "user_authorized_direct_reference",
-      "verifiedOn": "2026-10-31",
-      "attributionRequired": false,
-      "src": "images/products/sku-6271.png",
-      "sha256": "5b48b237fb18abbf6273ecfeb2eb0f6d0f4c4b4eb655e5d381a0af3faa64e6fd",
-      "expectedLabel": "32 oz",
-      "expectedUpc": "031200259004",
+      "sha256": "e0133f71cdcea3852e11d3e257098c8134b4edc8682d4ef60102b37747aecd74",
       "alt": "Ocean Spray Original Cranberry Juice Cocktail — 32 oz packaging",
+      "usageBasis": "user_authorized_direct_reference",
+      "verifiedOn": "2026-11-01",
+      "expectedLabel": "32 oz",
+      "attributionRequired": false,
+      "src": "images/products/sku-6271-clean.png",
+      "sku": "6271",
       "verification": {
         "brand": true,
         "expression": true,
@@ -22038,7 +22038,7 @@
         "visual": true,
         "professional": true
       },
-      "sku": "6271",
+      "expectedUpc": "031200259004",
       "expectedName": "Ocean Spray Original Cranberry Juice Cocktail"
     },
     {
@@ -28780,6 +28780,86 @@
       "attributionRequired": false,
       "usageBasis": "user_authorized_direct_reference",
       "expectedName": "Pama"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "AriZona Watermelon",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "AriZona Watermelon — 20 oz · bottles",
+      "expectedUpc": "613008725778",
+      "attributionRequired": false,
+      "expectedLabel": "20 oz · bottles",
+      "verifiedOn": "2026-11-01",
+      "sku": "508",
+      "sha256": "a17ecf7cc8c278154019733b56d25c6e43c1aeab09c2e10ff4c568e99f3a1357",
+      "src": "images/products/sku-508.jpg"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Aunt Jemima Yellow Corn Meal",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Aunt Jemima Yellow Corn Meal — 32 oz bag",
+      "expectedUpc": "030000030905",
+      "attributionRequired": false,
+      "expectedLabel": "32 oz",
+      "verifiedOn": "2026-10-31",
+      "sku": "642",
+      "sha256": "a224fd63c9bd93d824961fd33fcc8a81877f3ef2b3c1927552c2f41818a60d81",
+      "src": "images/products/sku-642.jpg"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Purina ONE Tender Cuts in Gravy Beef & Barley Entrée Wet Dog Food",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Purina ONE Tender Cuts in Gravy Beef & Barley Entrée Wet Dog Food — 368 g can",
+      "expectedUpc": "017800143097",
+      "attributionRequired": false,
+      "expectedLabel": "368 g",
+      "verifiedOn": "2026-10-31",
+      "sku": "986",
+      "sha256": "a5b1ffdeafc93acd6e4de24ec3b51dfc69463f785e4981082a8947ebea46e7ba",
+      "src": "images/products/sku-986.jpg"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "AXE Musk Body Spray",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "AXE Musk Body Spray — 150 mL single aerosol can",
+      "expectedUpc": "6001087364669",
+      "attributionRequired": false,
+      "expectedLabel": "150 mL",
+      "verifiedOn": "2026-10-31",
+      "sku": "663",
+      "sha256": "7b9099f13bb80ddfb4e41e3481c266b6fcec4de969aa481f362ab4ff8a4a4f71",
+      "src": "images/products/sku-663.webp"
     }
   ]
 }

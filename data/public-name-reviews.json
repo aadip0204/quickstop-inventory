@@ -5655,6 +5655,111 @@
       "evidence": {
         "privateEvidenceSha256": "b9dbd006481a20a45e28728793fe070230dce64e7b77699a97fedfd3012ced14"
       }
+    },
+    {
+      "sku": "508",
+      "expectedUpc": "613008725778",
+      "expectedSourceRow": 9151,
+      "expectedRawFieldsSha256": "58ad7d1fa2b96d3ee73a95a696b1f0c312a92e21875f53229a80fdf91acc4a26",
+      "expectedPublicName": "ARIZONA WATERMELON",
+      "expectedLabel": "20 oz · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Watermelon",
+      "reason": "Narrow casing and brand-style repair preserves the exact existing words and product identity. Product type is not expanded because that full title would collide with another family; labels, source fields, categories and group memberships stay unchanged. This is not a complete name or size verification record.",
+      "evidence": {
+        "privateEvidenceSha256": "d63993472d3617f0da2071aa9a095ab88ba9976a8826a0b844634e6d085a4fce"
+      }
+    },
+    {
+      "sku": "642",
+      "expectedUpc": "030000030905",
+      "expectedSourceRow": 409,
+      "expectedRawFieldsSha256": "1681efe0ff763966120d32a0f5e5b571edfed7af82e17d0b333211300d799843",
+      "expectedPublicName": "Aunt CornMeal",
+      "expectedLabel": "32 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Aunt Jemima Yellow Corn Meal",
+      "reason": "Complete the current Aunt CornMeal shorthand using the exact UPC primary PepsiCo record and actually inspected Aunt Jemima Yellow Corn Meal 32 oz bag. The retired primary record establishes the pictured legacy brand. Preserve the 32 oz label, raw UPC, unit, pack/container, source row, category and department. No raw-source,size/pack label,category ordepartment changes are proposed.",
+      "evidence": {
+        "privateEvidenceSha256": "b50bb02fe22621264ac3ba8846b7b4774b4eee8eb82d9a0d0d50a940f1ea0b76"
+      }
+    },
+    {
+      "sku": "986",
+      "expectedUpc": "017800143097",
+      "expectedSourceRow": 8581,
+      "expectedRawFieldsSha256": "89d5addc233df0470d7c499860dbde5c6bb4fc4f18049859fe5a3ab98a9f94c5",
+      "expectedPublicName": "beef barley entree dog food",
+      "expectedLabel": "368 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Purina ONE Tender Cuts in Gravy Beef & Barley Entrée Wet Dog Food",
+      "reason": "Complete the current beef barley entree dog food shorthand using the exact literal UPC retail record and actually readable Purina ONE, Tender Cuts in Gravy, Beef & Barley Entrée, Adult Dog Food and 368 g can package. Preserve the current 368 g label, literal UPC, single-can unit, source row, category and department. No raw-source,size/pack label,category ordepartment changes are proposed.",
+      "evidence": {
+        "privateEvidenceSha256": "0b5f6c89cf23e134e9dd6fd6f1c5789f56136772e2a469014098fd4ce4530543"
+      }
+    },
+    {
+      "sku": "663",
+      "expectedUpc": "6001087364669",
+      "expectedSourceRow": 6272,
+      "expectedRawFieldsSha256": "52b296e4a4ae95aca1c721fa83ff4947183fb6637b06815a346447fd4bdd51b9",
+      "expectedPublicName": "AXE BODY SPRAY MUSK",
+      "expectedLabel": "150 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "AXE Musk Body Spray",
+      "reason": "Singleton casing and word-order repair from original AXE BODY SPRAY MUSK to AXE Musk Body Spray, using literal EAN primary sources and actually inspected package pixels. Preserve label, original UPC string, source fields, category, department and grouping. Exact 150 mL unit is independently established by two primary exact-EAN product records that each associate the inspected matching Musk 48H can art; 150 mL is not visually legible on its front. No proposed-title collision at the checked baseline. Photo and title remain proposals pending root independent source/pixel QA.",
+      "evidence": {
+        "privateEvidenceSha256": "ac72fb82bd3a839414948ccf96476d6484e202cc05e1d984ce73e1b970d232a8"
+      }
+    },
+    {
+      "sku": "583",
+      "expectedUpc": "613008741013",
+      "expectedSourceRow": 369,
+      "expectedRawFieldsSha256": "389fb0cdef8c040d9ebc9dc80c25e0e1e91c46af403a6a5e2b1de0b99fd9f62f",
+      "expectedPublicName": "Arizona Muncho mango Glass bot",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "AriZona Mucho Mango Glass Bottle",
+      "reason": "Narrow spelling and casing repair: Muncho becomes Mucho and the existing Glass bot wording expands to Glass Bottle. Raw inventory identity, label and grouping stay unchanged. This does not verify the retained quantity, photograph or complete product identity.",
+      "evidence": {
+        "privateEvidenceSha256": "2e0947828a1d1e68f46702e70b71595d294fdbba88f40bea8620c1c30b090554"
+      }
+    },
+    {
+      "sku": "658",
+      "expectedUpc": "6001087364614",
+      "expectedSourceRow": 9152,
+      "expectedRawFieldsSha256": "0ef8884f22b6b213a8c96fd5ad0ef9cbcc373365ad17b6e0822d3f01a2785552",
+      "expectedPublicName": "AXE BODY SPRAY BLACK",
+      "expectedLabel": "150 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "AXE Black Body Spray",
+      "reason": "Name-only singleton casing and word-order repair using literal EAN primary source and actually inspected brand/expression/BODYSPRAY pixels. No size, packaging, category, department, grouping, original UPC or raw source edit. Photo remains absent because strict image criteria are incomplete. Proposed title has no case-insensitive collision in baseline catalog. Root independent source/pixel QA is required before acceptance.",
+      "evidence": {
+        "privateEvidenceSha256": "f48268494f623774235b013ebe21b8cf1490494b5b3341f751a81bf5de5ef089"
+      }
+    },
+    {
+      "sku": "664",
+      "expectedUpc": "6001087364690",
+      "expectedSourceRow": 8890,
+      "expectedRawFieldsSha256": "7f2570e3dd06be898213e0f37ecdcfb17750fdeec260dad78e875647898bb126",
+      "expectedPublicName": "AXE BODY SPRAY wild spice",
+      "expectedLabel": "150 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "AXE Wild Spice Body Spray",
+      "reason": "Name-only singleton casing and word-order repair using literal EAN primary source and actually inspected brand/expression/BODYSPRAY pixels. No size, packaging, category, department, grouping, original UPC or raw source edit. Photo remains absent because strict image criteria are incomplete. Proposed title has no case-insensitive collision in baseline catalog. Root independent source/pixel QA is required before acceptance.",
+      "evidence": {
+        "privateEvidenceSha256": "3b52e18ab16a32a3622519b2c7315a09e5e342d9bf2e045b5f3c6f3f9534cc08"
+      }
     }
   ]
 }
