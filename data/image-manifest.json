@@ -28860,6 +28860,126 @@
       "sku": "663",
       "sha256": "7b9099f13bb80ddfb4e41e3481c266b6fcec4de969aa481f362ab4ff8a4a4f71",
       "src": "images/products/sku-663.webp"
+    },
+    {
+      "src": "images/products/sku-2601.jpg",
+      "sha256": "9292a99b05a5415ea3f384fea8a3b9c5d942f2eceaa7ecb816e24b654364bc23",
+      "alt": "Crush Grape — 16 oz can",
+      "expectedName": "Crush Grape",
+      "expectedLabel": "16 oz",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedUpc": "078000019353",
+      "sku": "2601",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31"
+    },
+    {
+      "src": "images/products/sku-2607.jpg",
+      "sha256": "5af111bcf145d3e710bfd8cf47f94938db441cbbc2b8dae8b934737e0c3487d4",
+      "alt": "CRUSH ORANGE — 16 oz can",
+      "expectedName": "CRUSH ORANGE",
+      "expectedLabel": "16 oz",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedUpc": "078000019339",
+      "sku": "2607",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31"
+    },
+    {
+      "src": "images/products/sku-2606.jpg",
+      "sha256": "75d303ebb32e096d0398af931bec6594222b664ec0ac65c07007dd30f31fae16",
+      "alt": "CRUSH ORANGE — 1.25 L bottle",
+      "expectedName": "CRUSH ORANGE",
+      "expectedLabel": "1.25 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedUpc": "078000013153",
+      "sku": "2606",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31"
+    },
+    {
+      "src": "images/products/sku-2602.jpg",
+      "sha256": "8fe052371a79bd8e269fb13b9c70c02601cea3cfbbf79d55e5b849aac5c701d7",
+      "alt": "Crush Grape — 20 oz bottle",
+      "expectedName": "Crush Grape",
+      "expectedLabel": "20 oz",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedUpc": "078000013528",
+      "sku": "2602",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31"
+    },
+    {
+      "src": "images/products/sku-2608.jpg",
+      "sha256": "5c2936ed8174b3ba56ea56fd3daf56f9ef70353411cc02479c849ec9cebe9f25",
+      "alt": "CRUSH ORANGE — 20 oz bottle",
+      "expectedName": "CRUSH ORANGE",
+      "expectedLabel": "20 oz",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedUpc": "078000013283",
+      "sku": "2608",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31"
+    },
+    {
+      "src": "images/products/sku-2612.jpg",
+      "sha256": "b95cb5535afaa53882ddf336023177cf5f6dcd369fff48c6724b6c4640847572",
+      "alt": "crush peach — 2 L bottle",
+      "expectedName": "crush peach",
+      "expectedLabel": "2 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedUpc": "078000014075",
+      "sku": "2612",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "attributionRequired": false,
+      "verifiedOn": "2026-10-31"
     }
   ]
 }
