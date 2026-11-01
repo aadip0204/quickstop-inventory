@@ -6300,6 +6300,51 @@
       "evidence": {
         "privateEvidenceSha256": "69255d873dc9a1b45179d2b0b59951660bf9dbe349c877f91c397afff99e68b8"
       }
+    },
+    {
+      "sku": "308",
+      "expectedUpc": "035000446893",
+      "expectedSourceRow": 212,
+      "expectedRawFieldsSha256": "c62ddb406187971ea10d88492b64dd7d11538a6b553b0d4aa64479a973898a13",
+      "expectedPublicName": "Ajax Citrus",
+      "expectedLabel": "12.6 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Ajax Winter Citrus Burst Dishwashing Liquid",
+      "reason": "The literal-code source and separately recorded original pixels support this singleton title; original size and source cells remain preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "f4eba7caaacecd3960f93fda5dd3cce48da0e39d967533e61d3cf414e7eece0e"
+      }
+    },
+    {
+      "sku": "6842",
+      "expectedUpc": "017800410274",
+      "expectedSourceRow": 9434,
+      "expectedRawFieldsSha256": "e18bd42ae4225120c22d890afd8183caf0c6de1be919a21ee2cebcfe2aeb0276",
+      "expectedPublicName": "PURINA DOG CHOW COMPLETE",
+      "expectedLabel": "4.4 lb",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Purina Dog Chow Complete Adult Chicken Flavor",
+      "reason": "The literal-code source and separately recorded original pixels support this singleton title; original size and source cells remain preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "77b5817e039df0ca9a4f939c38136981b187cbac1552b5464fa543214e7ab6e8"
+      }
+    },
+    {
+      "sku": "7870",
+      "expectedUpc": "047677071155",
+      "expectedSourceRow": 7392,
+      "expectedRawFieldsSha256": "bc458bbd1df196ff4c1fac86d91312851f4dbde55dc5cfa95f724e21ced41140",
+      "expectedPublicName": "Snickers coneice cream",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Snickers Ice Cream Cone",
+      "reason": "The literal-code source and separately recorded original pixels support this singleton title; original size and source cells remain preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "79de908c588780e6d3f4947b9b3bf7d572d6161e3044461daffea8c1c1455643"
+      }
     }
   ]
 }
