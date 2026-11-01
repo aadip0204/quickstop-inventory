@@ -5444,10 +5444,10 @@
     {
       "sku": "4060",
       "expectedUpc": "088110151102",
-      "expectedName": "Hennessy vsop",
+      "expectedName": "Hennessy V.S.O.P Cognac",
       "expectedLabel": "200 mL",
       "src": "images/products/sku-4060.png",
-      "alt": "Hennessy vsop — 200 mL packaging",
+      "alt": "Hennessy V.S.O.P Cognac — 200 mL packaging",
       "sha256": "98f684179f28b038dd110313c7478a96e034c3aa72f8cbb9f1aa4536e3fa7306",
       "verifiedOn": "2026-10-28",
       "usageBasis": "user_authorized_direct_reference",
@@ -21182,7 +21182,7 @@
       "src": "images/products/sku-101250.jpg"
     },
     {
-      "expectedName": "BUFFALO TRACE BOURBON",
+      "expectedName": "Buffalo Trace Kentucky Straight Bourbon Whiskey",
       "sku": "101254",
       "expectedUpc": "080244009236",
       "attributionRequired": false,
@@ -21197,7 +21197,7 @@
         "professional": true
       },
       "sha256": "a0aa0cbeaca622f92dfc53e7f73e3740fdbc87c96232e6aa6da24a57ef83dc0d",
-      "alt": "BUFFALO TRACE BOURBON — 750 mL packaging",
+      "alt": "Buffalo Trace Kentucky Straight Bourbon Whiskey — 750 mL packaging",
       "verifiedOn": "2026-10-31",
       "src": "images/products/sku-101254.jpg"
     },
@@ -21769,7 +21769,7 @@
       "sha256": "04f62cd75614c8e6cf550fba68fb79410494c9b237ee29e56b0d20ac89fe126b",
       "expectedLabel": "750 mL",
       "expectedUpc": "088110151058",
-      "alt": "Hennessy vsop — 750 mL packaging",
+      "alt": "Hennessy V.S.O.P Cognac — 750 mL packaging",
       "verification": {
         "brand": true,
         "expression": true,
@@ -21779,7 +21779,7 @@
         "professional": true
       },
       "sku": "4063",
-      "expectedName": "Hennessy vsop"
+      "expectedName": "Hennessy V.S.O.P Cognac"
     },
     {
       "usageBasis": "user_authorized_direct_reference",
@@ -29740,6 +29740,126 @@
       "attributionRequired": false,
       "expectedLabel": "750 mL",
       "usageBasis": "user_authorized_direct_reference"
+    },
+    {
+      "src": "images/products/sku-2559.png",
+      "expectedUpc": "087000700604",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "e6f047ab2ef78b043d97746186c0188a7dad708b39e286d4d68fdfcf34a00b5d",
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "expectedName": "Crown Royal Fine De Luxe Blended Canadian Whisky",
+      "expectedLabel": "1.75 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Crown Royal Fine De Luxe Blended Canadian Whisky — 1.75 L bottle",
+      "sku": "2559"
+    },
+    {
+      "src": "images/products/sku-2755.jpg",
+      "expectedUpc": "080686310013",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "5e0599d1cbd410b0ca880341d158675a3b048410623f209bca5ce8f0550e29aa",
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "expectedName": "DeKuyper Amaretto Liqueur",
+      "expectedLabel": "1 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "DeKuyper Amaretto Liqueur — 1 L bottle",
+      "sku": "2755"
+    },
+    {
+      "src": "images/products/sku-2771.jpg",
+      "expectedUpc": "080686365204",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "633af468c31c32712959501cd445199fcc9cc76e6242ca1d240a0702894e7bda",
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "expectedName": "DeKuyper Peachtree Schnapps Liqueur",
+      "expectedLabel": "1 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "DeKuyper Peachtree Schnapps Liqueur — 1 L bottle",
+      "sku": "2771"
+    },
+    {
+      "src": "images/products/sku-4058.png",
+      "expectedUpc": "088076161283",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "9c6d35a8d29f06dda27003de097945f903f82cc9587e3b614b7c7b79b2536639",
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "expectedName": "Hennessy V.S.O.P Cognac",
+      "expectedLabel": "1.75 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Hennessy V.S.O.P Cognac — 1.75 L bottle",
+      "sku": "4058"
+    },
+    {
+      "src": "images/products/sku-101514.jpg",
+      "expectedUpc": "818844028162",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "75c378a0dbe213b621c92af5bd9ef2b58ea888c124fd1e46fc259cab376d805f",
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "expectedName": "Gran Coramino Reposado Tequila",
+      "expectedLabel": "375 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Gran Coramino Reposado Tequila — 375 mL bottle",
+      "sku": "101514"
+    },
+    {
+      "src": "images/products/sku-101520.jpg",
+      "expectedUpc": "080244009212",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sha256": "890767f8430bbdc9b5ec00509d2e1d1f66c4e974eee393f37cc3b1f37dbb6eb7",
+      "attributionRequired": false,
+      "verifiedOn": "2026-11-01",
+      "expectedName": "Buffalo Trace Kentucky Straight Bourbon Whiskey",
+      "expectedLabel": "1.75 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "alt": "Buffalo Trace Kentucky Straight Bourbon Whiskey — 1.75 L bottle",
+      "sku": "101520"
     }
   ]
 }

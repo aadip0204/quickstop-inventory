@@ -5985,6 +5985,186 @@
       "evidence": {
         "privateEvidenceSha256": "41ccdff06286ecb9a6103b5578b3a4e1af1a6bdad02a52fa467bcb8cd869f87f"
       }
+    },
+    {
+      "sku": "2559",
+      "expectedUpc": "087000700604",
+      "expectedSourceRow": 9117,
+      "expectedRawFieldsSha256": "be405b36328b19e539b88aa8247904ff0fb44fe0c2894838327789c198114650",
+      "expectedPublicName": "Crown Royal",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal Fine De Luxe Blended Canadian Whisky",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Exact independently inspected brand/expression/class spelling; numerical fields and packaging remain separately scoped, and only the explicitly reviewed group changes are allowed.",
+      "evidence": {
+        "privateEvidenceSha256": "0a6ad6ed4b3de3dceddaea7ae482304eb7cd3eb9b3dfdda984db0f33590e66d7"
+      }
+    },
+    {
+      "sku": "2755",
+      "expectedUpc": "080686310013",
+      "expectedSourceRow": 1760,
+      "expectedRawFieldsSha256": "11d8c86cbe9a748f1fd3c56aeffd9d57fac066be339b5e70ae53dfc5aef2db22",
+      "expectedPublicName": "Dekuyper Amaretto",
+      "expectedLabel": "1 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "DeKuyper Amaretto Liqueur",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Exact independently inspected brand/expression/class spelling; numerical fields and packaging remain separately scoped, and only the explicitly reviewed group changes are allowed.",
+      "evidence": {
+        "privateEvidenceSha256": "f70c0ea73a0f96a6a740686f2fd433bd28b616b1c91011651556dfe5485af61b"
+      }
+    },
+    {
+      "sku": "2771",
+      "expectedUpc": "080686365204",
+      "expectedSourceRow": 1776,
+      "expectedRawFieldsSha256": "b1d2879aa4be2c354edd3d593114cad8a4d4df733ff94f71ccaaa8e3bde96cb6",
+      "expectedPublicName": "DeKuyper Peachtree",
+      "expectedLabel": "1 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "DeKuyper Peachtree Schnapps Liqueur",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Exact independently inspected brand/expression/class spelling; numerical fields and packaging remain separately scoped, and only the explicitly reviewed group changes are allowed.",
+      "evidence": {
+        "privateEvidenceSha256": "cdd641e80f542e2ea7cd4fdb2d4caaa602ca29b8a8e67c4f20e503e598c1d97b"
+      }
+    },
+    {
+      "sku": "101514",
+      "expectedUpc": "818844028162",
+      "expectedSourceRow": 9559,
+      "expectedRawFieldsSha256": "1b96bcaf864b68fc222553f4892c78597181e43cd8715bfe9d839e5fb8d36562",
+      "expectedPublicName": "GRAN CORAMINO REPO",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Gran Coramino Reposado Tequila",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Exact independently inspected brand/expression/class spelling; numerical fields and packaging remain separately scoped, and only the explicitly reviewed group changes are allowed.",
+      "evidence": {
+        "privateEvidenceSha256": "0b02b6dc604f6a6f6f63e61f995f6f0f742e07ddf0c56b4c71fb0c2803755184"
+      }
+    },
+    {
+      "sku": "101520",
+      "expectedUpc": "080244009212",
+      "expectedSourceRow": 6297,
+      "expectedRawFieldsSha256": "59a00d915082591009c183fdf30c0cef62cb0e22d0f520853cad2df0f061abaa",
+      "expectedPublicName": "BUFFALO TRACE BOURBON",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Buffalo Trace Kentucky Straight Bourbon Whiskey",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Exact independently inspected brand/expression/class spelling; numerical fields and packaging remain separately scoped, and only the explicitly reviewed group changes are allowed.",
+      "evidence": {
+        "privateEvidenceSha256": "479ae0d39c01a705655abd46940328827c93a19f2691e93eac9e3a69618b8b2e"
+      }
+    },
+    {
+      "sku": "101254",
+      "expectedUpc": "080244009236",
+      "expectedSourceRow": 8267,
+      "expectedRawFieldsSha256": "0822ef29adba0066599a5b7f3d62ec518898c17b0889256011b99dbbd0e3e38e",
+      "expectedPublicName": "BUFFALO TRACE BOURBON",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Buffalo Trace Kentucky Straight Bourbon Whiskey",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Exact independently inspected brand/expression/class spelling; numerical fields and packaging remain separately scoped, and only the explicitly reviewed group changes are allowed.",
+      "evidence": {
+        "privateEvidenceSha256": "838e3b00d5bcda234c4d3467cc3a8bb3e07839617c54b8bbab6d5569e9fb3151"
+      }
+    },
+    {
+      "sku": "4058",
+      "expectedUpc": "088076161283",
+      "expectedSourceRow": 2614,
+      "expectedRawFieldsSha256": "c823d043c8d6ad76f5efdac79cff61cd57d5087ea5b3976c29fbd291b5b316e3",
+      "expectedPublicName": "Hennessy vsop",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Hennessy V.S.O.P Cognac",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Literal raw VSOP brand/class clarification with the producer generic ABOUT wording; no Privilege/edition, numerical strength, size or packaging inference for other variants.",
+      "evidence": {
+        "privateEvidenceSha256": "4b9091d04a5db6ffc60edde1cee452d1c4f19265d90892fc3865574a8d74cd31"
+      }
+    },
+    {
+      "sku": "4059",
+      "expectedUpc": "088110151065",
+      "expectedSourceRow": 2615,
+      "expectedRawFieldsSha256": "52935a049e808041e726b5360438265f4930396219e424a330372dae9df006ef",
+      "expectedPublicName": "Hennessy VSOP",
+      "expectedLabel": "1 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Hennessy V.S.O.P Cognac",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Literal raw VSOP brand/class clarification with the producer generic ABOUT wording; no Privilege/edition, numerical strength, size or packaging inference for other variants.",
+      "evidence": {
+        "privateEvidenceSha256": "0c41186c178451ea501cd979bc33d8dac0f3387fce2881f00c25eba7f4231658"
+      }
+    },
+    {
+      "sku": "4062",
+      "expectedUpc": "088110151010",
+      "expectedSourceRow": 2616,
+      "expectedRawFieldsSha256": "32a66db4cbe79fa2c8ce145d8ea68b7f02af40734563170b094a611a7028683a",
+      "expectedPublicName": "Hennessy VSOP",
+      "expectedLabel": "50 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Hennessy V.S.O.P Cognac",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Literal raw VSOP brand/class clarification with the producer generic ABOUT wording; no Privilege/edition, numerical strength, size or packaging inference for other variants.",
+      "evidence": {
+        "privateEvidenceSha256": "0e212d05840d2c2ce47b01043b5fc4a8fe429866d5142fdaf082a13302f10346"
+      }
+    },
+    {
+      "sku": "4063",
+      "expectedUpc": "088110151058",
+      "expectedSourceRow": 7587,
+      "expectedRawFieldsSha256": "ccb08f3cc2b184b7354111d1670aff785dbb42660a2c36245d40c6b30a5077e3",
+      "expectedPublicName": "Hennessy VSOP",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Hennessy V.S.O.P Cognac",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Literal raw VSOP brand/class clarification with the producer generic ABOUT wording; no Privilege/edition, numerical strength, size or packaging inference for other variants.",
+      "evidence": {
+        "privateEvidenceSha256": "229687ad7c88d914bb64a85e7c6ffe574df59c6166fe09908dace54bb583a3ff"
+      }
+    },
+    {
+      "sku": "4060",
+      "expectedUpc": "088110151102",
+      "expectedSourceRow": 9608,
+      "expectedRawFieldsSha256": "582476f0460a4d128fc391f95d3a688bce53acca9871abeb8b0c7d5aff1ed892",
+      "expectedPublicName": "Hennessy VSOP",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Hennessy V.S.O.P Cognac",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Literal raw VSOP brand/class clarification with the producer generic ABOUT wording; no Privilege/edition, numerical strength, size or packaging inference for other variants.",
+      "evidence": {
+        "privateEvidenceSha256": "4d12775d8d51b816ca970229c3700e1133c9d7ea7a8f27013f595efd5fc6468b"
+      }
+    },
+    {
+      "sku": "4061",
+      "expectedUpc": "088110151034",
+      "expectedSourceRow": 9609,
+      "expectedRawFieldsSha256": "bfcd211ee33406c13f88b1d0a4fcc86e27bbe8f1eb80594636ab7ff8ad7b34e5",
+      "expectedPublicName": "Hennessy VSOP",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Hennessy V.S.O.P Cognac",
+      "reason": "Complete the evidenced brand, expression and class wording while preserving original source cells, identifiers and unit measurements. Literal raw VSOP brand/class clarification with the producer generic ABOUT wording; no Privilege/edition, numerical strength, size or packaging inference for other variants.",
+      "evidence": {
+        "privateEvidenceSha256": "6db548a6d74b1c81df68e017893e159624b15aa76369d20cf84dda052e347c58"
+      }
     }
   ]
 }
