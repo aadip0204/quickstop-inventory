@@ -6252,6 +6252,37 @@
       "evidence": {
         "privateEvidenceSha256": "8795c5137c3b4596bfdbc3c70a5ccfc93d9f114231ab7560dc7c84d3fdadefb6"
       }
+    },
+    {
+      "sku": "3280",
+      "expectedUpc": "035000530967",
+      "expectedNameSha256": "8da74d4ddf4fb8b51e0f98152f2140be38dc7a35f8775d84c1a0f8fd1e1f2d42",
+      "expectedSourceRecordSha256": "69656d7ef213d779a811a3d65747ed6bc7cfa7d3669b5ac04a87fd15bc350a52",
+      "action": "resolve_verified_ambiguous_ounce_volume",
+      "expectedSourceRow": 8275,
+      "expectedPublicName": "Fabuloso Lavender Multi-Purpose Cleaner",
+      "expectedLabel": "33.8 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "expectedProductId": "p-9c9a451596f5dabd",
+      "expectedResultingGroupSkus": [
+        "3280"
+      ],
+      "verifiedLabel": "33.8 fl oz",
+      "expectedImageSha256": "933e0263720cab07b7a8676437f2cb229e71eeecb67c683c3216985fcd4d739c",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "b0ee5e6f524532e61e91f1e1500f3fb6bc4e87dc890f4f77e7bbac063eacf7ea"
+      },
+      "reviewedOn": "2026-11-01",
+      "reason": "Clarify the physically printed fluid-ounce unit for the same numeric33.8bareounce source hint. Two independent literal unit-code bottle listings remain correctly typed as ambiguous ounces. No mass-to-volume conversion, source-cell rewrite, stock claim or sibling grouping change."
     }
   ]
 }

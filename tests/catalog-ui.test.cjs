@@ -5,6 +5,25 @@ const path = require('node:path');
 const ui = require('../script.js');
 const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, '../catalog.json'), 'utf8'));
 
+test('same-size Friskies flavors are independently searchable products', () => {
+  const cases = [
+    {sku: '3475', upc: '050000424948', query: 'friskies ocean whitefish tuna'},
+    {sku: '3479', upc: '050000425044', query: 'friskies mariners catch'}
+  ];
+  const products = cases.map(({sku, upc, query}) => {
+    const matches = ui.filterProducts(catalog.products, {query}, catalog.categories);
+    const product = matches.find(item => item.variants.some(variant => variant.sku === sku));
+    assert.ok(product, `${sku} must be found by its own flavor`);
+    assert.deepEqual(product.variants.map(variant => variant.sku), [sku],
+      'different flavors must not be presented as sizes of one product');
+    assert.equal(ui.matchingVariant(product, upc).sku, sku);
+    assert.equal(product.variants[0].upc, upc);
+    assert.equal(product.variants[0].label, '5.5 oz');
+    return product;
+  });
+  assert.notEqual(products[0].id, products[1].id);
+});
+
 test('every retained SKU and UPC participates in search and selects its own variant', () => {
   let variants = 0;
   for (const product of catalog.products) {

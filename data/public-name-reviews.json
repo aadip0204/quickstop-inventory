@@ -5760,6 +5760,96 @@
       "evidence": {
         "privateEvidenceSha256": "3b52e18ab16a32a3622519b2c7315a09e5e342d9bf2e045b5f3c6f3f9534cc08"
       }
+    },
+    {
+      "sku": "2867",
+      "expectedUpc": "017800183406",
+      "expectedSourceRow": 7165,
+      "expectedRawFieldsSha256": "4bbbd09806e20d95777d65950f0a9cbbcf5c382c047376ba8a4731302e6d86b5",
+      "expectedPublicName": "dog chowbeef",
+      "expectedLabel": "13 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Purina Dog Chow High Protein With Real Beef in Savory Gravy Wet Dog Food",
+      "reason": "Exact literal unit-code and inspected identity evidence corrects this public title while preserving original source cells, identifiers, quantity, category and department.",
+      "evidence": {
+        "privateEvidenceSha256": "3de5bf8e3086ee38cf43917026bb8ece57ac1341b6acf711790b2aac3f881316"
+      }
+    },
+    {
+      "sku": "3280",
+      "expectedUpc": "035000530967",
+      "expectedSourceRow": 8275,
+      "expectedRawFieldsSha256": "69656d7ef213d779a811a3d65747ed6bc7cfa7d3669b5ac04a87fd15bc350a52",
+      "expectedPublicName": "Fabuloso cleaner",
+      "expectedLabel": "33.8 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Fabuloso Lavender Multi-Purpose Cleaner",
+      "reason": "Exact literal unit-code and inspected identity evidence corrects this public title while preserving original source cells, identifiers, quantity, category and department.",
+      "evidence": {
+        "privateEvidenceSha256": "b4ceaa0dcce6e7f221d4962ca38c5e2a9ae2105a2581d17bf03ec9de4027601c"
+      }
+    },
+    {
+      "sku": "3475",
+      "expectedUpc": "050000424948",
+      "expectedSourceRow": 9773,
+      "expectedRawFieldsSha256": "d2636a62a9c3629418440ebd1d70d7a9a3228c3370b78c70c24bd7d4a6dcfc76",
+      "expectedPublicName": "friskies pate cat",
+      "expectedLabel": "5.5 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Purina Friskies Paté Ocean Whitefish & Tuna Dinner Wet Cat Food",
+      "reason": "Exact literal unit-code and inspected identity evidence corrects this public title while preserving original source cells, identifiers, quantity, category and department.",
+      "evidence": {
+        "privateEvidenceSha256": "b7d7452afdab3390bcb43b4b64d8106923851ee6a19d7192f89498e51a4a55bb"
+      }
+    },
+    {
+      "sku": "3479",
+      "expectedUpc": "050000425044",
+      "expectedSourceRow": 6426,
+      "expectedRawFieldsSha256": "3005db9b031838245ca636334a3bfb7337b48f8207db8a664c985598aa5ee426",
+      "expectedPublicName": "friskies pate cat",
+      "expectedLabel": "5.5 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Purina Friskies Paté Mariner's Catch Wet Cat Food",
+      "reason": "Exact literal unit-code and inspected identity evidence corrects this public title while preserving original source cells, identifiers, quantity, category and department.",
+      "evidence": {
+        "privateEvidenceSha256": "bb426e0e16cd8d9020c2893e50b34af8dd1e7b9379c2942df2873eacbac41ab2"
+      }
+    },
+    {
+      "sku": "8746",
+      "expectedUpc": "037000137849",
+      "expectedSourceRow": 5558,
+      "expectedRawFieldsSha256": "86e4ec8767879afa89a154ba30600a960cfc169e6fe62f1a84be4af8bca8f922",
+      "expectedPublicName": "Tide bleach",
+      "expectedLabel": "739 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Tide Plus Bleach Alternative Original Liquid Laundry Detergent",
+      "reason": "Exact literal unit-code and inspected identity evidence corrects this public title while preserving original source cells, identifiers, quantity, category and department.",
+      "evidence": {
+        "privateEvidenceSha256": "c089fb72c50adfa44c500fc45b7d995174ab4dd801dcba5d059e66b170c3da05"
+      }
+    },
+    {
+      "sku": "9183",
+      "expectedUpc": "6151100139511",
+      "expectedSourceRow": 9238,
+      "expectedRawFieldsSha256": "6968119eb1072e2288d0c29a39ac4fb5cca69a0a651485decb15a7996372c261",
+      "expectedPublicName": "VASELINE BLUE SEAL ORG",
+      "expectedLabel": "50 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Vaseline Blue Seal Original Petroleum Jelly",
+      "reason": "Exact literal unit-code and inspected identity evidence corrects this public title while preserving original source cells, identifiers, quantity, category and department.",
+      "evidence": {
+        "privateEvidenceSha256": "56f97894c87ac6d153087bdf9176567c8852616b92a33a26442c29c26d41e345"
+      }
     }
   ]
 }
