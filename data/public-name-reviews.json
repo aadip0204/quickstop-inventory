@@ -5580,6 +5580,81 @@
       "evidence": {
         "privateEvidenceSha256": "138e2addbe125051f1f9b78caf08cbb252494ce0e1d1423be0c6eeceff067fd4"
       }
+    },
+    {
+      "sku": "6541",
+      "expectedUpc": "701530512505",
+      "expectedSourceRow": 4155,
+      "expectedRawFieldsSha256": "0087bd7f70daee5ba204c4f6f7a1c192c5ca27430c49125689a12f78b7657a11",
+      "expectedPublicName": "Partida Anejo",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Partida Añejo Tequila",
+      "reason": "The exact-UPC retailer record and readable front restore the Tequila type and accented Anejo expression; no age, flavor, strength, size, pack or source field changes.",
+      "evidence": {
+        "privateEvidenceSha256": "8de754d29aae833e987cc2c85bb07188df284f642d77b1750d267713793eeaa5"
+      }
+    },
+    {
+      "sku": "233",
+      "expectedUpc": "079100505647",
+      "expectedSourceRow": 9148,
+      "expectedRawFieldsSha256": "4112fddbc012a8804969a5366f26e1b5747ef1e00a62cef2b638fb7b3f667bcb",
+      "expectedPublicName": "9Lives indoor complete",
+      "expectedLabel": "50.4 oz · 1.43 kg",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "9Lives Indoor Complete Dry Cat Food",
+      "reason": "Complete the current brand/expression shorthand using the exact-UPC metadata and actually readable product type. Preserve current label, flavor/expression, source UPC, pack/container, category and department. No label/unit or raw-source changes are proposed.",
+      "evidence": {
+        "privateEvidenceSha256": "203bf2772f88e5fbe21f051c074f9a1f51d36be56f8476139843bf5202246aec"
+      }
+    },
+    {
+      "sku": "234",
+      "expectedUpc": "079100514175",
+      "expectedSourceRow": 9149,
+      "expectedRawFieldsSha256": "6f5d86145d3f841770e0886857631751e9e731fec12e56227077e16fadd3085f",
+      "expectedPublicName": "9Lives plus care",
+      "expectedLabel": "50.4 oz · 1.43 kg",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "9Lives Plus Care Dry Cat Food",
+      "reason": "Complete the current brand/expression shorthand using the exact-UPC metadata and actually readable product type. Preserve current label, flavor/expression, source UPC, pack/container, category and department. No label/unit or raw-source changes are proposed.",
+      "evidence": {
+        "privateEvidenceSha256": "9bf1c0ee2a6b62b8865f4ddd12d159bb5b9a6ffe166db6f3d0f2f27ff0f7853d"
+      }
+    },
+    {
+      "sku": "318",
+      "expectedUpc": "035000498755",
+      "expectedSourceRow": 6996,
+      "expectedRawFieldsSha256": "5c49ad0bbdcd29709875126aacfc66c596646ae295d2b35a9929bcd43972559a",
+      "expectedPublicName": "Ajax ultra orange",
+      "expectedLabel": "14 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Ajax Ultra Triple Action Orange Dish Liquid",
+      "reason": "Complete the current brand/expression shorthand using the exact-UPC metadata and actually readable product type. Preserve current label, flavor/expression, source UPC, pack/container, category and department. No label/unit or raw-source changes are proposed.",
+      "evidence": {
+        "privateEvidenceSha256": "86dcbf2e2209a7665e4bff556e32e8a2b56ed89bc57f230a73808979a7fc738c"
+      }
+    },
+    {
+      "sku": "5285",
+      "expectedUpc": "789764121038",
+      "expectedSourceRow": 3407,
+      "expectedRawFieldsSha256": "fb196dd22eefe2a5732fefa6b9289d2091f6e60bf8cdf7ba8430077e6e5ad528",
+      "expectedPublicName": "MAISON ROUGE VSOP",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Maison Rouge VSOP Cognac",
+      "reason": "The exact-UPC retailer record and readable label identify Maison Rouge VSOP Cognac, expanding the current brand/expression shorthand without adding the unsupported Grande Champagne wording from the URL. Photo remains held for presentation.",
+      "evidence": {
+        "privateEvidenceSha256": "b9dbd006481a20a45e28728793fe070230dce64e7b77699a97fedfd3012ced14"
+      }
     }
   ]
 }
