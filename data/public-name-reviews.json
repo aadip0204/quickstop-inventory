@@ -5970,6 +5970,21 @@
       "evidence": {
         "privateEvidenceSha256": "37734db79f47d2679410f128ba569ad5f5a3214ebff126d82cca4e66c14e0e72"
       }
+    },
+    {
+      "sku": "1927",
+      "expectedUpc": "088586602832",
+      "expectedSourceRow": 1187,
+      "expectedRawFieldsSha256": "345d743e51ffeafe9132a1bc79761aede7705f3fe4f70e79ef58dc88d61168fa",
+      "expectedPublicName": "Chateau Michelle Merlot",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Chateau Ste. Michelle Columbia Valley Merlot",
+      "reason": "Complete the exact producer brand and Columbia Valley Merlot expression from captured literal unit-code records and independently inspected packaging; preserve original identity,size,department and group membership. No unspecified vintage or ABV is introduced.",
+      "evidence": {
+        "privateEvidenceSha256": "41ccdff06286ecb9a6103b5578b3a4e1af1a6bdad02a52fa467bcb8cd869f87f"
+      }
     }
   ]
 }

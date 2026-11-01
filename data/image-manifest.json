@@ -29700,6 +29700,46 @@
       "sha256": "db934231a4682d162d6de1430293d9b0b129681e158910c021197f1778daf589",
       "src": "images/products/sku-7223.jpg",
       "verifiedOn": "2026-11-01"
+    },
+    {
+      "verifiedOn": "2026-11-01",
+      "sku": "1927",
+      "expectedName": "Chateau Ste. Michelle Columbia Valley Merlot",
+      "sha256": "7ee353ac87d40da04925e10f321dcca7633729dabc87a54e474bf3981b31e1ed",
+      "src": "images/products/sku-1927.png",
+      "alt": "Chateau Ste. Michelle Columbia Valley Merlot — 750 mL bottle",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "088586602832",
+      "attributionRequired": false,
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference"
+    },
+    {
+      "verifiedOn": "2026-11-01",
+      "sku": "6968",
+      "expectedName": "Red Diamond Shiraz",
+      "sha256": "b1ece71a8a9da92ef5527739fc41c9d50ba50e8ef6e559704e8200e3245c3806",
+      "src": "images/products/sku-6968.png",
+      "alt": "Red Diamond Shiraz — 750 mL bottle",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "expectedUpc": "088586001888",
+      "attributionRequired": false,
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference"
     }
   ]
 }
