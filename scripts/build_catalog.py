@@ -1071,6 +1071,173 @@ def validate_direct_image_guard(entry: dict, sku: str, context: str) -> None:
         raise ValueError(f'{context} requires an exact approved image hash: {sku}')
 
 
+def validate_ambiguous_liquid_ounce_evidence(review: dict) -> None:
+    """Require two literal unit records and a content-hashed manual receipt.
+
+    This separate action does not interpret bare ounces globally. Its receipt
+    is structured private evidence, not an unchecked digest of an absent file.
+    The first version accepts only unchanged original single-bottle photos.
+    """
+    sku = review['sku']
+    evidence = review.get('evidence')
+    listing_kinds = {'exact_upc_liquid_unit_listing', 'exact_upc_ambiguous_ounce_listing'}
+    if (not isinstance(evidence, list) or len(evidence) != 3
+            or any(not isinstance(item, dict) or not isinstance(item.get('kind'), str) for item in evidence)):
+        raise ValueError(f'Ambiguous liquid ounces require two unit listings and inspected-photo evidence: {sku}')
+    listings = [item for item in evidence if item.get('kind') in listing_kinds]
+    photos = [item for item in evidence if item.get('kind') == 'inspected_package_photo']
+    if len(listings) != 2 or len(photos) != 1:
+        raise ValueError(f'Ambiguous liquid ounces require two unit listings and inspected-photo evidence: {sku}')
+    fields = {'kind', 'url', 'supports', 'observedUpc', 'observedNetContent',
+              'retailUnitLabel', 'quantityBasis', 'retailUnitsPerPackage',
+              'container', 'sourceSha256', 'retrievedOn'}
+    hosts = []
+    for item in listings:
+        # An ambiguous listing preserves its literal canonical bare-ounce fact;
+        # only the inspected package establishes the physical fluid unit.
+        observed_label = (review['expectedLabel'] if item['kind'] == 'exact_upc_ambiguous_ounce_listing'
+                          else review['verifiedLabel'])
+        if (set(item) != fields or not safe_review_text(item['supports'])
+                or item['observedUpc'] != review['expectedUpc']
+                or item['observedNetContent'] != observed_label
+                or item['retailUnitLabel'] != observed_label
+                or item['quantityBasis'] != 'retail_net_content'
+                or type(item['retailUnitsPerPackage']) is not int
+                or item['retailUnitsPerPackage'] != 1 or item['container'] != 'bottle'
+                or not isinstance(item['sourceSha256'], str)
+                or not re.fullmatch(r'[a-f0-9]{64}', item['sourceSha256'])
+                or not isinstance(item['retrievedOn'], str)
+                or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', item['retrievedOn'])):
+            raise ValueError(f'Ambiguous liquid ounces require literal UPC and honest typed single-bottle net content: {sku}')
+        try:
+            host = review_url_host(item['url']).encode('idna').decode('ascii').rstrip('.').lower()
+        except UnicodeError as error:
+            raise ValueError(f'Ambiguous liquid ounces require independent DNS sources: {sku}') from error
+        if not re.fullmatch(r'[a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,}', host):
+            raise ValueError(f'Ambiguous liquid ounces require independent DNS sources: {sku}')
+        hosts.append(host.removeprefix('www.'))
+    # Conservatively reject shared two-label DNS suffixes, including sibling
+    # subdomains. Some distinct public-suffix domains may need a later review;
+    # this bounded path must not treat aliases as independent corroboration.
+    if (hosts[0].split('.')[-2:] == hosts[1].split('.')[-2:]
+            or listings[0]['sourceSha256'] == listings[1]['sourceSha256']):
+        raise ValueError(f'Ambiguous liquid ounces require independent unit sources: {sku}')
+    photo = photos[0]
+    required = {'kind', 'url', 'supports', 'sha256', 'inspectedOn',
+                'inspectionReceipt', 'inspectionReceiptSha256'}
+    if (set(photo) != required or not review_url_host(photo['url'])
+            or not safe_review_text(photo['supports'])
+            or photo['sha256'] != review['expectedImageSha256']
+            or not isinstance(photo['inspectedOn'], str)
+            or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', photo['inspectedOn'])):
+        raise ValueError(f'Ambiguous liquid ounces require inspected original-photo evidence: {sku}')
+    receipt = photo['inspectionReceipt']
+    receipt_fields = {'sku', 'upc', 'publicName', 'label', 'src', 'sha256', 'publicImageSha256',
+                      'originalSha256', 'sourceImageUrl', 'visibleNetContent',
+                      'container', 'verification', 'inspectedOn'}
+    if (not isinstance(receipt, dict) or set(receipt) != receipt_fields
+            or (receipt['sku'], receipt['upc'], receipt['publicName'], receipt['label'],
+                receipt['sha256'], receipt['originalSha256'], receipt['sourceImageUrl'],
+                receipt['visibleNetContent'], receipt['container'], receipt['inspectedOn'])
+            != (sku, review['expectedUpc'], review['expectedPublicName'], review['verifiedLabel'],
+                review['expectedImageSha256'], review['expectedImageSha256'], photo['url'],
+                review['verifiedLabel'], 'bottle', photo['inspectedOn'])
+            or not isinstance(receipt['src'], str)
+            or not re.fullmatch(r'images/products/[A-Za-z0-9_./-]+', receipt['src'])
+            or not isinstance(receipt['publicImageSha256'], str)
+            or not re.fullmatch(r'[a-f0-9]{64}', receipt['publicImageSha256'])
+            or not isinstance(receipt['verification'], dict)
+            or set(receipt['verification']) != {'brand', 'expression', 'size', 'packaging', 'visual', 'professional'}
+            or any(value is not True for value in receipt['verification'].values())
+            or photo['inspectionReceiptSha256'] != review_evidence_sha256(receipt)):
+        raise ValueError(f'Ambiguous liquid ounces require a hash-bound readable-unit inspection receipt: {sku}')
+
+
+def apply_ambiguous_liquid_ounces(products: list, records_by_sku: dict, source_reviews: dict,
+                                 image_manifest: dict | None, private_image_evidence: dict | None,
+                                 blocked_images: set, identity_reviews: dict) -> None:
+    """Clarify only a single original essentials SKU's ambiguous ounce unit."""
+    variants = {v['sku']: (p, v) for p in products for v in p['variants']}
+    for sku, review in source_reviews.items():
+        if review['action'] != 'resolve_verified_ambiguous_ounce_volume':
+            continue
+        product, variant = variants.get(sku, ({}, {}))
+        record = records_by_sku.get(sku, {})
+        source = record.get('source', {})
+        raw_public = classify_record(source)[2] if source else None
+        raw_name = source.get('ItemName', '')
+        measures = list(MEASURE_RE.finditer(raw_name))
+        # Count nouns may precede/follow a count, with customary punctuation.
+        # Multiplicity markers require token/count context, so X24Cleaner,
+        # CSPro and incidental brand numbers are not treated as package facts.
+        count = r'[0-9]+(?:\.[0-9]+)?'
+        count_noun = (r'(?:cases?|cs|packs?|pkgs?|pks?|counts?|ct|units?|pcs?|pieces?|'
+                      r'bottles?|btls?|cans?|cartons?|boxes?|bundles?|sets?|pairs?|doz(?:en)?s?|dz)')
+        punctuation = r'(?:[:=#/-]|\[|\()'
+        count_hint = re.search(
+            rf'(?<!\w){count_noun}\s*(?:(?:of|qty|count)\s*)?{punctuation}?\s*{count}(?![\w.])|'
+            rf'(?<![\w.]){count}\s*(?:{punctuation}\s*|per\s+)?{count_noun}(?!\w)|'
+            rf'(?<!\w)[x×]\s*{punctuation}?\s*{count}(?![\w.])|'
+            rf'×\s*{count}(?![\w.])|'
+            rf'(?<![\w.]){count}\s*[x×](?!\w)|'
+            rf'(?<![\w.]){count}\s*[x×]\s*(?=[0-9])', raw_name, re.I)
+        conflicts = re.search(
+            r'(?<![a-z])(?:net[\s.-]*(?:wt|weight)|by\s*weight|mass|weight|wt|dry|powder|solid|negative|fluid|fl\.?)(?![a-z])|'
+            r'(?<![a-z])(?:weight|wt|w)\s*/\s*(?:weight|wt|w)(?![a-z])|'
+            r'\b(?:cases?|packs?|pkgs?|pks?|multi[-\s]*packs?|counts?|ct|cans?|bottles?|btls?|'
+            r'boxes?|cartons?|bundles?|sets?|pairs?|doz(?:en)?s?|dz|units?|pcs?|pieces?)\b|'
+            r'\b\d+\s*[x×]\s*\d+\b', raw_name, re.I)
+        if (record.get('disposition') != 'retained_variant' or record.get('sourceOrigin') == 'report'
+                or sku in identity_reviews or not raw_public or raw_public['category'] != 'essentials'
+                or source.get('PackName') != '' or conflicts or count_hint or len(measures) != 1
+                or measures[0]['unit'].lower().rstrip('.') != 'oz'
+                # The legacy parser accepts oz prefixes. This action requires
+                # a complete bare unit, never joined ozweight/ozfl text.
+                or re.match(r'\w', raw_name[measures[0].end():])
+                or not re.fullmatch(r'[0-9]+(?:\.[0-9]+)?', measures[0]['number'])
+                or re.search(r'[-+−＋]\s*$', raw_name[:measures[0].start()])
+                or parse_number(measures[0]['number']) != canonical_ounce_label_value(review['expectedLabel'])
+                or raw_public['variant']['label'] != review['expectedLabel']):
+            raise ValueError(f'Ambiguous liquid ounces require one bare original ounce hint without conflicting metadata: {sku}')
+        raw_hash = hashlib.sha256(json.dumps(record['rawFields'], ensure_ascii=False,
+                                            separators=(',', ':')).encode()).hexdigest()
+        current = (source.get('SKU'), source.get('MAINUPC'), record.get('sourceRow'),
+                   hashlib.sha256(raw_name.encode()).hexdigest(), raw_hash,
+                   variant.get('upc'), product.get('name'), variant.get('label'),
+                   product.get('category'), product.get('department'), product.get('id'))
+        expected = (sku, review['expectedUpc'], review['expectedSourceRow'],
+                    review['expectedNameSha256'], review['expectedSourceRecordSha256'],
+                    review['expectedUpc'], review['expectedPublicName'], review['expectedLabel'],
+                    'essentials', review['expectedDepartment'], review['expectedProductId'])
+        if current != expected or source.get('DEPNAME') != review['expectedDepartment']:
+            raise ValueError(f'Ambiguous liquid ounces current source/public identity mismatch: {sku}')
+        if [v['sku'] for v in product['variants']] != review['expectedResultingGroupSkus']:
+            raise ValueError(f'Ambiguous liquid ounces require the unchanged singleton SKU group: {sku}')
+        entries = image_manifest.get('images', []) if isinstance(image_manifest, dict) else []
+        matches = [e for e in entries if isinstance(e, dict) and e.get('sku') == sku] if isinstance(entries, list) else []
+        if len(matches) != 1:
+            raise ValueError(f'Ambiguous liquid ounces require exactly one inspected original image: {sku}')
+        image = matches[0]
+        inspection = next(e for e in review['evidence'] if e['kind'] == 'inspected_package_photo')
+        receipt = inspection['inspectionReceipt']
+        if ((image.get('expectedUpc'), image.get('expectedName'), image.get('expectedLabel'),
+             image.get('sha256'), image.get('src'), image.get('verification'))
+                != (review['expectedUpc'], product['name'], review['verifiedLabel'],
+                    review['expectedImageSha256'], receipt['src'], receipt['verification'])
+                or review_evidence_sha256(image) != receipt['publicImageSha256']):
+            raise ValueError(f'Ambiguous liquid ounces require their exact professional image binding: {sku}')
+        private_entries = private_image_evidence.get('entries', []) if isinstance(private_image_evidence, dict) else []
+        private_matches = [e for e in private_entries if isinstance(e, dict) and e.get('sku') == sku] if isinstance(private_entries, list) else []
+        if len(private_matches) != 1 or private_matches[0].get('sourceImageUrl') != inspection['url']:
+            raise ValueError(f'Ambiguous liquid ounces inspected photo must match private provenance: {sku}')
+        record['ambiguousLiquidOunceResolution'] = {
+            'previousPublicIdentity': {'name': product['name'], 'label': variant['label']},
+            'verifiedLabel': review['verifiedLabel'], 'expectedImageSha256': review['expectedImageSha256'],
+        }
+        variant['label'] = review['verifiedLabel']
+        blocked_images.discard(sku)
+
+
 def validate_missing_measurement_evidence(review: dict) -> None:
     """Bind a missing unit measurement to primary/unit records and inspected bytes."""
     sku = review['sku']
@@ -1296,7 +1463,7 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                 'size_needs_confirmation', 'restore_named_merchandise', 'resolve_verified_identity',
                 'repair_unquoted_name_commas', 'clarify_container_material',
                 'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label',
-                'resolve_verified_missing_measurement'}:
+                'resolve_verified_missing_measurement', 'resolve_verified_ambiguous_ounce_volume'}:
             raise ValueError('Source review requires unique SKU and a supported action')
         if not isinstance(entry.get('expectedUpc'), str) or not all(
                 re.fullmatch(r'[a-f0-9]{64}', entry.get(key, ''))
@@ -1308,6 +1475,28 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             raise ValueError(f'Source review requires a reason: {sku}')
         allowed = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
                    'action', 'reason', 'reviewedOn'}
+        if entry['action'] == 'resolve_verified_ambiguous_ounce_volume':
+            allowed |= {'expectedSourceRow', 'expectedPublicName', 'expectedLabel',
+                        'expectedCategory', 'expectedDepartment', 'expectedProductId',
+                        'expectedResultingGroupSkus', 'verifiedLabel', 'expectedImageSha256',
+                        'verification', 'evidence'}
+            prior = canonical_ounce_label_value(entry.get('expectedLabel'))
+            verified = canonical_ounce_label_value(entry.get('verifiedLabel'), fluid=True)
+            if (set(entry) != allowed or not re.fullmatch(r'[1-9][0-9]*', sku)
+                    or not re.fullmatch(r'(?:[0-9]{8}|[0-9]{12}|[0-9]{13}|[0-9]{14})', entry['expectedUpc'])
+                    or not valid_gtin(entry['expectedUpc']) or prior is None or verified != prior
+                    or entry.get('verifiedLabel') != entry.get('expectedLabel', '')[:-3] + ' fl oz'
+                    or entry.get('expectedCategory') != 'essentials'
+                    or type(entry.get('expectedSourceRow')) is not int or entry['expectedSourceRow'] < 1
+                    or not re.fullmatch(r'p-[a-f0-9]{16}', str(entry.get('expectedProductId')))
+                    or entry.get('expectedResultingGroupSkus') != [sku]
+                    or not all(safe_review_text(entry.get(key)) for key in ('expectedPublicName', 'expectedDepartment'))
+                    or not isinstance(entry.get('reviewedOn'), str)
+                    or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn'])):
+                raise ValueError(f'Ambiguous liquid ounces require exact singleton essentials identity and unchanged numeric quantity: {sku}')
+            validate_direct_image_guard(entry, sku, 'Ambiguous liquid ounces')
+            validate_reviewed_identity_checks(entry.get('verification'), sku, 'Ambiguous liquid ounces')
+            validate_ambiguous_liquid_ounce_evidence(entry)
         if entry['action'] == 'resolve_verified_missing_measurement':
             allowed |= {'expectedSourceRow', 'expectedPublicName', 'expectedLabel',
                         'expectedCategory', 'expectedDepartment', 'expectedProductId',
@@ -1779,7 +1968,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     flags.append('Guarded report evidence clarifies container material; original source metadata preserved privately')
                 elif review['action'] in {'resolve_verified_pack_identity',
                                            'refine_verified_fluid_ounce_label',
-                                           'resolve_verified_missing_measurement'}:
+                                           'resolve_verified_missing_measurement',
+                                           'resolve_verified_ambiguous_ounce_volume'}:
                     # These actions deliberately run after any category/title
                     # review so their guarded current-public identity reflects
                     # the exact final product expression.
@@ -1966,6 +2156,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
         record['nameVerification'] = verification
     apply_missing_measurements(products, records_by_sku, source_reviews, image_manifest,
                                private_direct_image_evidence_manifest, blocked_images, identity_reviews)
+    apply_ambiguous_liquid_ounces(products, records_by_sku, source_reviews, image_manifest,
+                                 private_direct_image_evidence_manifest, blocked_images, identity_reviews)
     for sku, source_review in source_reviews.items():
         image_review = source_review.get('imageIdentityReview')
         if image_review is None:

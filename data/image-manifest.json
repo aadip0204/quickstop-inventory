@@ -29320,6 +29320,146 @@
       "usageBasis": "user_authorized_direct_reference",
       "alt": "Milagro Repo — 1.75 L bottle",
       "src": "images/products/sku-5633.jpg"
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-5634.png",
+      "verifiedOn": "2026-11-01",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "083664868940",
+      "sha256": "9e57a8bdc2f583fee012fd848c7361b6f4f39d6fba1c9372b39af02c7f6045ef",
+      "attributionRequired": false,
+      "alt": "Milagro Repo — 750 mL bottle",
+      "sku": "5634",
+      "expectedName": "Milagro Repo",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-253.jpg",
+      "verifiedOn": "2026-11-01",
+      "expectedLabel": "750 mL",
+      "expectedUpc": "835229000865",
+      "sha256": "208202f4405fc6ba34e826974d3ec981e362181d85fe22cbd7573c80528c242f",
+      "attributionRequired": false,
+      "alt": "Absolut Grapevine — 750 mL bottle",
+      "sku": "253",
+      "expectedName": "Absolut Grapevine",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-276.jpg",
+      "verifiedOn": "2026-11-01",
+      "expectedLabel": "1.75 L",
+      "expectedUpc": "088352115269",
+      "sha256": "6915b36b3e5550aa8a4b29c8ae8d7513abe13bf4d5c450d9b542522c1cea49c5",
+      "attributionRequired": false,
+      "alt": "Adm Nelsons Spiced — 1.75 L bottle",
+      "sku": "276",
+      "expectedName": "Adm Nelsons Spiced",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-2867.webp",
+      "verifiedOn": "2026-11-01",
+      "expectedLabel": "13 oz",
+      "expectedUpc": "017800183406",
+      "sha256": "044c07e041fd002f6bf0bdc05bd827d55fbac13911296acfe9ca3b52617a7d05",
+      "attributionRequired": false,
+      "alt": "Purina Dog Chow High Protein With Real Beef in Savory Gravy Wet Dog Food — 13 oz can",
+      "sku": "2867",
+      "expectedName": "Purina Dog Chow High Protein With Real Beef in Savory Gravy Wet Dog Food",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-3280.jpg",
+      "verifiedOn": "2026-11-01",
+      "expectedLabel": "33.8 fl oz",
+      "expectedUpc": "035000530967",
+      "sha256": "933e0263720cab07b7a8676437f2cb229e71eeecb67c683c3216985fcd4d739c",
+      "attributionRequired": false,
+      "alt": "Fabuloso Lavender Multi-Purpose Cleaner — 33.8 fl oz bottle",
+      "sku": "3280",
+      "expectedName": "Fabuloso Lavender Multi-Purpose Cleaner",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-3475.jpg",
+      "verifiedOn": "2026-11-01",
+      "expectedLabel": "5.5 oz",
+      "expectedUpc": "050000424948",
+      "sha256": "39e0b05de8b22fb4a20e7b61d05cd896cb46da54c4b595fde6e9bfe160866014",
+      "attributionRequired": false,
+      "alt": "Purina Friskies Paté Ocean Whitefish & Tuna Dinner Wet Cat Food — 5.5 oz can",
+      "sku": "3475",
+      "expectedName": "Purina Friskies Paté Ocean Whitefish & Tuna Dinner Wet Cat Food",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-3479.jpg",
+      "verifiedOn": "2026-11-01",
+      "expectedLabel": "5.5 oz",
+      "expectedUpc": "050000425044",
+      "sha256": "60817368996973c504c7c9d04d25617f2721bc7ced8c0d4d2ebfd8a40ffb0158",
+      "attributionRequired": false,
+      "alt": "Purina Friskies Paté Mariner's Catch Wet Cat Food — 5.5 oz can",
+      "sku": "3479",
+      "expectedName": "Purina Friskies Paté Mariner's Catch Wet Cat Food",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
