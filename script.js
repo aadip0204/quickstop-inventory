@@ -8,6 +8,9 @@
   function normalize(value) {
     return String(value ?? '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
       .toLowerCase().replace(/([a-z])['’]([a-z])/g, '$1$2')
+      // Fold word/initialism punctuation without touching decimal quantities.
+      .replace(/([a-z])\.(?!\d)/g, '$1')
+      .replace(/\bde\s+luxe\b/g, 'deluxe')
       .replace(/(\d)\s+(ml|l|oz|pk|pack|ct)\b/g, '$1$2')
       .replace(/[^a-z0-9.]+/g, ' ').replace(/\s+/g, ' ').trim();
   }
