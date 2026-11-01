@@ -2023,7 +2023,7 @@
       "proposedPublicTitle": "Lil' Dutch Maid Vanilla Creme Cookies",
       "reason": "Exact UPC records and the reviewed package establish the missing Lil' Dutch Maid brand and Vanilla Creme Cookies product identity.",
       "evidence": {
-        "privateEvidenceSha256": "da0c3bb933163bfa79a55ecfda2d58e164be9daf4239e9862c591a83af092ef7"
+        "privateEvidenceSha256": "25eb8fa3d9084ae9fe85fa86b4562c1bfec1b399973911adc62061506543a636"
       }
     },
     {
@@ -6539,6 +6539,96 @@
       "reason": "Capitalize the already verified turkey expression consistently with the actual package; spelling, product identity, unit and source fields remain unchanged.",
       "evidence": {
         "privateEvidenceSha256": "f98b55b7a9a35634d4a91d8701033abab9e3baebc67234dd9c72aa75da9870ad"
+      }
+    },
+    {
+      "sku": "3057",
+      "expectedUpc": "086106152102",
+      "expectedSourceRow": 1977,
+      "expectedRawFieldsSha256": "2c320f038ce0c9a544c50ebb0ad4e5ae487cb38733caac7861a0619779640c49",
+      "expectedPublicName": "DUPLEX CREME COOKIES",
+      "expectedLabel": "11.8 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Lil' Dutch Maid Duplex Creme Cookies",
+      "reason": "Exact consumer-code source and reviewed original package establish this product title; original quantity, literal source fields and other product expressions are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "782c6337c2fcd854fd684e43a84ba587cbdd7b2125312452bd7b249d986adc93"
+      }
+    },
+    {
+      "sku": "5090",
+      "expectedUpc": "086106152522",
+      "expectedSourceRow": 9196,
+      "expectedRawFieldsSha256": "dde8ee5f2cf90682fa7bd6d01212b1d304be922478098b8fb641bb1172999810",
+      "expectedPublicName": "LEMON CREME COOKIES",
+      "expectedLabel": "11.8 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Lil' Dutch Maid Lemon Creme Cookies",
+      "reason": "Exact consumer-code source and reviewed original package establish this product title; original quantity, literal source fields and other product expressions are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "11aaaa5895f3b7dee97be922c4d7769f54787ac5aede94cf68064737c9bfdec8"
+      }
+    },
+    {
+      "sku": "8141",
+      "expectedUpc": "086106152553",
+      "expectedSourceRow": 5234,
+      "expectedRawFieldsSha256": "e4be15d3a52888c578d2ffe2e220e513bf3f053f72c45ef705316fc662fd3422",
+      "expectedPublicName": "STRAWBERRY CREME COOKIES",
+      "expectedLabel": "11.8 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Lil' Dutch Maid Strawberry Creme Cookies",
+      "reason": "Exact consumer-code source and reviewed original package establish this product title; original quantity, literal source fields and other product expressions are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "aba1454d9d5c327d3cf5ee9c4c5df0b4eee8852bf76f8aa866c3bf1a7ace8edd"
+      }
+    },
+    {
+      "sku": "9177",
+      "expectedUpc": "086106011805",
+      "expectedSourceRow": 9297,
+      "expectedRawFieldsSha256": "4fdd1310cee2a734ffd977cd65df78acbd294bbeb2d383d9d07ccaf77c04c49b",
+      "expectedPublicName": "Vanilla Creme cookies",
+      "expectedLabel": "13 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Lil' Dutch Maid Vanilla Creme Cookies",
+      "reason": "Exact consumer-code source and reviewed original package establish this product title; original quantity, literal source fields and other product expressions are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "784a2662c848dfa39f22c4b82d804040cae6af1a339031d797d2357439b0173e"
+      }
+    },
+    {
+      "sku": "4294",
+      "expectedUpc": "075669101702",
+      "expectedSourceRow": 9412,
+      "expectedRawFieldsSha256": "421f22349f5d10e8c0c52d070d44473d7af2dd07e46cf812c47a786b68324ee2",
+      "expectedPublicName": "iberla red beans",
+      "expectedLabel": "15.5 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Iberia Red Kidney Beans",
+      "reason": "Exact consumer-code source and reviewed original package establish this product title; original quantity, literal source fields and other product expressions are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "4e0268069f69aa43b793b10f5a2eba97a2c8be184bd6452ec2412a1224d6e939"
+      }
+    },
+    {
+      "sku": "7568",
+      "expectedUpc": "031146250103",
+      "expectedSourceRow": 7614,
+      "expectedRawFieldsSha256": "5b86dbeccc56fd308fc4af8d3203f4d44245ba989645baf8e6346901d46bd341",
+      "expectedPublicName": "NS HS BOWL NOODLES",
+      "expectedLabel": "3.03 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Nongshim Hot & Spicy Bowl Noodle Soup",
+      "reason": "Exact consumer-code source and reviewed original package establish this product title; original quantity, literal source fields and other product expressions are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "50ec9bcd2536be5933c6285e293c8057f1b445b7e48977fa2fa7fb00eebc5223"
       }
     }
   ]

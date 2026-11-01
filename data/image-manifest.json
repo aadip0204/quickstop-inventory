@@ -30680,6 +30680,126 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3057",
+      "src": "images/products/sku-3057.webp",
+      "alt": "Lil' Dutch Maid Duplex Creme Cookies — 11.8 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "086106152102",
+      "expectedName": "Lil' Dutch Maid Duplex Creme Cookies",
+      "expectedLabel": "11.8 oz",
+      "sha256": "901a39e1920c68e31b3914ee27bad9b4a90b27b933e16e1f91ff99212e709342",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5090",
+      "src": "images/products/sku-5090.jpg",
+      "alt": "Lil' Dutch Maid Lemon Creme Cookies — 11.8 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "086106152522",
+      "expectedName": "Lil' Dutch Maid Lemon Creme Cookies",
+      "expectedLabel": "11.8 oz",
+      "sha256": "16ba12990e11c4f2229f225db4201acb277b58150791f1ac26ada8c2a91f1dff",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8141",
+      "src": "images/products/sku-8141.webp",
+      "alt": "Lil' Dutch Maid Strawberry Creme Cookies — 11.8 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "086106152553",
+      "expectedName": "Lil' Dutch Maid Strawberry Creme Cookies",
+      "expectedLabel": "11.8 oz",
+      "sha256": "26a5ed3e720cfa2cf738b598a904624aaf4e39683cf38f87772ee6c6f9afcfc1",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9177",
+      "src": "images/products/sku-9177.jpg",
+      "alt": "Lil' Dutch Maid Vanilla Creme Cookies — 13 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "086106011805",
+      "expectedName": "Lil' Dutch Maid Vanilla Creme Cookies",
+      "expectedLabel": "13 oz",
+      "sha256": "95e56ec8fb2595c8dd8b0b851a3e2a0509014b18e815ac18e35b77bcf1cbaaac",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4294",
+      "src": "images/products/sku-4294.webp",
+      "alt": "Iberia Red Kidney Beans — 15.5 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "075669101702",
+      "expectedName": "Iberia Red Kidney Beans",
+      "expectedLabel": "15.5 oz",
+      "sha256": "b97287995b5ec1a2114f236f9efc41be721e93977cf5af994fc504806d4bfbd8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7568",
+      "src": "images/products/sku-7568.webp",
+      "alt": "Nongshim Hot & Spicy Bowl Noodle Soup — 3.03 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "031146250103",
+      "expectedName": "Nongshim Hot & Spicy Bowl Noodle Soup",
+      "expectedLabel": "3.03 oz",
+      "sha256": "e6537c4a4dcec014bfbfa99f13ec986d2f47f8713c3888bdc8fcd66bc3976ddd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
