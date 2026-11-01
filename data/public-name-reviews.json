@@ -6180,6 +6180,51 @@
       "evidence": {
         "privateEvidenceSha256": "a32612e6acba58efc891440bb1e260956c48e84dca576af8aa4b13f13a85b8ee"
       }
+    },
+    {
+      "sku": "3713",
+      "expectedUpc": "082000786474",
+      "expectedSourceRow": 7898,
+      "expectedRawFieldsSha256": "96f58cf25638a6dbd8357b29fb66558068db3d516745a400e1017709ce11e4f4",
+      "expectedPublicName": "george dickel tabasco whiskeygeorge 1870",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "George Dickel Tabasco Barrel Finish",
+      "reason": "Use the printed George Dickel Tabasco Barrel Finish brand and expression. Preserve all raw source cells, identifiers, quantities and singleton membership. The printed founding year remains distinct from an age or edition claim.",
+      "evidence": {
+        "privateEvidenceSha256": "8c37707c87caa0d2c8d37b2f542bd33ba25d514bb817e56cafc332440b6dcaa5"
+      }
+    },
+    {
+      "sku": "1035",
+      "expectedUpc": "081753832544",
+      "expectedSourceRow": 639,
+      "expectedRawFieldsSha256": "3fed7368e44f54221d75f891f203623b44e53aff32ebf7430a812c793dc8d029",
+      "expectedPublicName": "Belvedere Vodka heritage 176",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Belvedere Heritage 176 Spirit Drink",
+      "reason": "Use the printed Belvedere Heritage 176 expression and Spirit Drink wording. Preserve the brand number 176, all raw source cells, identifiers, quantities and singleton membership.",
+      "evidence": {
+        "privateEvidenceSha256": "027778323507a0718fb48c1dc37aec37f04d6ce3816e17ef99a34a947e15c056"
+      }
+    },
+    {
+      "sku": "3359",
+      "expectedUpc": "088004144692",
+      "expectedSourceRow": 2175,
+      "expectedRawFieldsSha256": "746e277564a3934455501f17a5e2e4b362c026141772cc3583f9d077bebdd9c3",
+      "expectedPublicName": "fireball whisky",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Fireball Whisky",
+      "reason": "Case-only capitalization of the unchanged existing family display title; no expression, class, unit or membership change.",
+      "evidence": {
+        "privateEvidenceSha256": "b2e3352402b3636ded40ac62c5406085080affb16c063aaeaba06495dac7938a"
+      }
     }
   ]
 }
