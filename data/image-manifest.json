@@ -29860,6 +29860,106 @@
       "usageBasis": "user_authorized_direct_reference",
       "alt": "Buffalo Trace Kentucky Straight Bourbon Whiskey — 1.75 L bottle",
       "sku": "101520"
+    },
+    {
+      "verifiedOn": "2026-11-01",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Bacardi Gold — 1 L bottle",
+      "expectedName": "Bacardi Gold",
+      "expectedUpc": "080480025304",
+      "expectedLabel": "1 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-715.png",
+      "sku": "715",
+      "sha256": "d368d79b709bfb3744d3a18fe853e634b22e3f70a0b3c7dadc21d7fb76438420"
+    },
+    {
+      "verifiedOn": "2026-11-01",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Barton Vodka — 1 L bottle",
+      "expectedName": "Barton Vodka",
+      "expectedUpc": "080660472638",
+      "expectedLabel": "1 L",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-938.jpg",
+      "sku": "938",
+      "sha256": "abad887f5719c61a2412aea7f3cfadfbccb12f46d1bda95b4244849576151448"
+    },
+    {
+      "verifiedOn": "2026-11-01",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Finlandia Vodka — 750 mL bottle",
+      "expectedName": "Finlandia Vodka",
+      "expectedUpc": "081128074111",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-3357.png",
+      "sku": "3357",
+      "sha256": "46172653354e90caf617f6066c52d6f7e789819dc734073616ac14812be38abd"
+    },
+    {
+      "verifiedOn": "2026-11-01",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Centenario Reposado — 750 mL bottle",
+      "expectedName": "Centenario Reposado",
+      "expectedUpc": "811538014236",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-1873.jpg",
+      "sku": "1873",
+      "sha256": "b1f7c6d4f8722eefe55f0f142f568dadd86266ea559ba5ac79c367282a4eb09c"
+    },
+    {
+      "verifiedOn": "2026-11-01",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Bushmills Black Bush Sherry Cask Reserve Irish Whiskey — 750 mL bottle",
+      "expectedName": "Bushmills Black Bush Sherry Cask Reserve Irish Whiskey",
+      "expectedUpc": "811538016216",
+      "expectedLabel": "750 mL",
+      "usageBasis": "user_authorized_direct_reference",
+      "src": "images/products/sku-1557.jpg",
+      "sku": "1557",
+      "sha256": "de9938aea3f51469ba32f3685d6e4e41804076bfe7ab6fcc49a227847c7f788d"
     }
   ]
 }
