@@ -30420,6 +30420,86 @@
       "expectedUpc": "085156475001",
       "attributionRequired": false,
       "expectedLabel": "750 mL"
+    },
+    {
+      "sku": "6466",
+      "src": "images/products/sku-6466.jpg",
+      "alt": "Oscar Mayer Cotto Salami — 12 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "044700009888",
+      "expectedName": "Oscar Mayer Cotto Salami",
+      "expectedLabel": "12 oz",
+      "sha256": "116b8473e36ee2247b0c04fa8bf484aec243598f4b7d2243648825cc0c3ad61a",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6467",
+      "src": "images/products/sku-6467.jpg",
+      "alt": "Oscar Mayer turkey Bologna — 16 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "071871546683",
+      "expectedName": "Oscar Mayer turkey Bologna",
+      "expectedLabel": "16 oz",
+      "sha256": "53c773ab3c726cc2c5a8f43371be26176d17851006872794308123c2c5d551a1",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "308",
+      "src": "images/products/sku-308.jpg",
+      "alt": "Ajax Winter Citrus Burst Dishwashing Liquid — 12.6 oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "035000446893",
+      "expectedName": "Ajax Winter Citrus Burst Dishwashing Liquid",
+      "expectedLabel": "12.6 oz",
+      "sha256": "fdb6ff2f76cd54d77e3add8fedd199f9676e49e8e1438cb9e5138b0c6848749c",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7870",
+      "src": "images/products/sku-7870.jpg",
+      "alt": "Snickers Ice Cream Cone — 4 fl oz packaging",
+      "verifiedOn": "2026-11-01",
+      "expectedUpc": "047677071155",
+      "expectedName": "Snickers Ice Cream Cone",
+      "expectedLabel": "4 fl oz",
+      "sha256": "88bca1cbfcde3ab553384aa136e0c54117a2d1e8e7bed5362bb8bb56a3e6b119",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

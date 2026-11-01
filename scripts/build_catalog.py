@@ -1440,8 +1440,260 @@ def apply_ambiguous_liquid_ounces(products: list, records_by_sku: dict, source_r
         blocked_images.discard(sku)
 
 
+def missing_measurement_capture(item: dict, content_type: str, sku: str) -> str:
+    """Read only a retained, complete body; a digest alone is not a capture."""
+    capture = item.get('capture')
+    if (not isinstance(capture, dict)
+            or set(capture) != {'status', 'complete', 'contentType', 'responseBody'}
+            or type(capture['status']) is not int or capture['status'] != 200
+            or capture['complete'] is not True or capture['contentType'] != content_type
+            or not isinstance(capture['responseBody'], str) or not capture['responseBody']
+            or not isinstance(item.get('sourceSha256'), str)
+            or hashlib.sha256(capture['responseBody'].encode('utf-8')).hexdigest() != item['sourceSha256']):
+        raise ValueError(f'USDA missing measurement requires a complete hash-bound source capture: {sku}')
+    return capture['responseBody']
+
+
+def go_upc_package_capture_fields(body: str, sku: str) -> tuple[list, list, list]:
+    """Read live fields from the one retained Go-UPC product container only."""
+    from html.parser import HTMLParser
+
+    class ProductCaptureParser(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.root = {'tag': '', 'attrs': {}, 'children': [], 'ignored': False}
+            self.stack = [self.root]
+            self.malformed = False
+
+        def handle_starttag(self, tag, attrs):
+            attributes = dict(attrs)
+            if len(attributes) != len(attrs):
+                self.malformed = True
+            hidden = ('hidden' in attributes or attributes.get('aria-hidden') == 'true'
+                      or re.search(r'(?:display\s*:\s*none|visibility\s*:\s*hidden)', attributes.get('style') or '', re.I))
+            node = {'tag': tag, 'attrs': attributes, 'children': [],
+                    'ignored': bool(self.stack[-1]['ignored'] or hidden
+                                    or tag in {'script', 'style', 'template', 'noscript'})}
+            self.stack[-1]['children'].append(node)
+            if tag not in {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+                           'link', 'meta', 'param', 'source', 'track', 'wbr'}:
+                self.stack.append(node)
+
+        def handle_endtag(self, tag):
+            if len(self.stack) > 1 and self.stack[-1]['tag'] == tag:
+                self.stack.pop()
+            else:
+                self.malformed = True
+
+        def handle_startendtag(self, tag, attrs):
+            self.handle_starttag(tag, attrs)
+            if self.stack[-1]['tag'] == tag:
+                self.stack.pop()
+
+        def handle_data(self, data):
+            self.stack[-1]['children'].append(data)
+
+    def walk(node):
+        if node['ignored']:
+            return
+        yield node
+        for child in node['children']:
+            if isinstance(child, dict):
+                yield from walk(child)
+
+    def text(node):
+        return clean_space(' '.join(child if isinstance(child, str) else text(child)
+                                   for child in node['children']
+                                   if isinstance(child, str) or not child['ignored']))
+
+    def has_class(node, name):
+        return name in (node['attrs'].get('class') or '').split()
+
+    parser = ProductCaptureParser()
+    parser.feed(body)
+    parser.close()
+    containers = [node for node in walk(parser.root)
+                  if node['tag'] == 'div' and node['attrs'].get('id') == 'resultPageContainer']
+    if parser.malformed or len(parser.stack) != 1 or len(containers) != 1:
+        raise ValueError(f'USDA missing measurement requires one live Go-UPC product container: {sku}')
+    columns = [node for node in containers[0]['children']
+               if isinstance(node, dict) and not node['ignored'] and node['tag'] == 'div'
+               and has_class(node, 'two-column-container')]
+    left = [node for column in columns for node in column['children']
+            if isinstance(node, dict) and not node['ignored'] and node['tag'] == 'div'
+            and has_class(node, 'left-column')]
+    titles = [node for node in walk(containers[0]) if node['tag'] == 'h1' and has_class(node, 'product-name')]
+    if (len(columns) != 1 or len(left) != 1 or len(titles) != 1 or not safe_review_text(text(titles[0]))
+            or not any(node is titles[0] for node in walk(left[0]))):
+        raise ValueError(f'USDA missing measurement requires one scoped Go-UPC product listing: {sku}')
+    upcs, sizes, images = [], [], []
+    for node in walk(left[0]):
+        if node['tag'] == 'table' and has_class(node, 'table'):
+            for row in walk(node):
+                cells = [child for child in row['children'] if isinstance(child, dict)
+                         and not child['ignored'] and child['tag'] == 'td'] if row['tag'] == 'tr' else []
+                if len(cells) == 2 and has_class(cells[0], 'metadata-label') and text(cells[0]) == 'UPC':
+                    upcs.append(text(cells[1]))
+        if node['tag'] == 'li':
+            labels = [child for child in node['children'] if isinstance(child, dict)
+                      and not child['ignored'] and child['tag'] == 'span' and has_class(child, 'metadata-label')]
+            if len(labels) == 1 and text(labels[0]) == 'Package Size, FL OZ:':
+                if any(isinstance(child, dict) and not child['ignored'] and child is not labels[0]
+                       for child in node['children']):
+                    raise ValueError(f'USDA missing measurement rejects unsupported live package-size content: {sku}')
+                sizes.append(clean_space(' '.join(child for child in node['children'] if isinstance(child, str))))
+        if node['tag'] == 'figure' and has_class(node, 'product-image'):
+            images.extend(child['attrs'].get('src') for child in node['children']
+                          if isinstance(child, dict) and not child['ignored'] and child['tag'] == 'img')
+    return upcs, sizes, images
+
+
+def validate_usda_missing_measurement_evidence(review: dict) -> None:
+    """Accept one historical USDA branded fluid-unit record, not a producer claim.
+
+    This intentionally narrow path uses packageWeight only. Nutrition servings,
+    case quantities, availability and the identity of the data submitter cannot
+    establish retail quantity or manufacturer ownership here.
+    """
+    sku = review['sku']
+    evidence = review.get('evidence')
+    kinds = {'usda_branded_food_record', 'secondary_exact_upc_package_listing', 'inspected_package_photo'}
+    if (not isinstance(evidence, list) or len(evidence) != 3
+            or any(not isinstance(item, dict) or not isinstance(item.get('kind'), str) for item in evidence)
+            or {item['kind'] for item in evidence} != kinds):
+        raise ValueError(f'USDA missing measurement requires government, secondary and inspected-photo evidence: {sku}')
+    primary = next(item for item in evidence if item['kind'] == 'usda_branded_food_record')
+    secondary = next(item for item in evidence if item['kind'] == 'secondary_exact_upc_package_listing')
+    photo = next(item for item in evidence if item['kind'] == 'inspected_package_photo')
+    common = {'kind', 'url', 'supports', 'sourceSha256', 'retrievedOn', 'capture'}
+    if (set(primary) != common | {'publisher', 'quantitySourceField', 'quantityBasis', 'retailUnitLabel'}
+            or primary.get('publisher') != 'USDA FoodData Central'
+            or primary.get('quantitySourceField') != 'packageWeight'
+            or primary.get('quantityBasis') != 'branded_record_package_net_content'
+            or primary.get('retailUnitLabel') != review['verifiedLabel']
+            or not safe_review_text(primary.get('supports'))):
+        raise ValueError(f'USDA missing measurement requires honest typed packageWeight evidence: {sku}')
+    body = missing_measurement_capture(primary, 'application/json', sku)
+
+    def unique_object(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError('Duplicate captured record field')
+            result[key] = value
+        return result
+
+    try:
+        record = json.loads(body, object_pairs_hook=unique_object,
+                            parse_constant=lambda value: (_ for _ in ()).throw(ValueError(value)))
+    except (ValueError, TypeError) as error:
+        raise ValueError(f'USDA missing measurement requires an unambiguous captured JSON record: {sku}') from error
+    if not isinstance(record, dict):
+        raise ValueError(f'USDA missing measurement requires one captured Branded record: {sku}')
+    fdc_id = record.get('fdcId')
+    parsed = urlparse(primary['url']) if isinstance(primary.get('url'), str) else None
+    if (not parsed or review_url_host(primary['url']) != 'api.nal.usda.gov'
+            or type(fdc_id) is not int or fdc_id < 1
+            or parsed.path != f'/fdc/v1/food/{fdc_id}'
+            or parsed.query not in {'', 'api_key=DEMO_KEY'} or parsed.params or parsed.fragment
+            or record.get('dataType') != 'Branded' or record.get('foodClass') != 'Branded'
+            or not isinstance(record.get('gtinUpc'), str)
+            or not re.fullmatch(r'(?:[0-9]{8}|[0-9]{12}|[0-9]{13}|[0-9]{14})', record['gtinUpc'])
+            or not valid_gtin(record['gtinUpc']) or record['gtinUpc'] != review['expectedUpc']
+            or record.get('dataSource') != 'LI' or record.get('marketCountry') != 'United States'
+            or any(not safe_review_text(record.get(key)) for key in ('description', 'brandName', 'brandOwner'))
+            or record.get('discontinuedDate') != ''):
+        raise ValueError(f'USDA missing measurement requires the exact literal GTIN and official Branded record URL: {sku}')
+    # Preserve all historical fields in the private body, without treating an
+    # empty discontinuedDate as an assertion about current inventory.
+    try:
+        for key in ('publicationDate', 'modifiedDate', 'availableDate'):
+            value = record.get(key)
+            if not isinstance(value, str) or not re.fullmatch(r'\d{1,2}/\d{1,2}/\d{4}', value):
+                raise ValueError('Missing branded record date')
+            month, day, year = map(int, value.split('/'))
+            date(year, month, day)
+        for value in (review.get('reviewedOn'), primary.get('retrievedOn'), secondary.get('retrievedOn'), photo.get('inspectedOn')):
+            if not isinstance(value, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+                raise ValueError('Missing evidence date')
+            date.fromisoformat(value)
+    except ValueError as error:
+        raise ValueError(f'USDA missing measurement requires valid retained historical and review dates: {sku}') from error
+    number = r'(?:0|[1-9]\d*)(?:\.\d+)?'
+    package = re.fullmatch(rf'(?P<oz>{number}) fl oz/(?P<ml>{number}) mL',
+                           record.get('packageWeight') if isinstance(record.get('packageWeight'), str) else '')
+    verified = canonical_ounce_label_value(review['verifiedLabel'], fluid=True)
+    if not package or verified is None or Decimal(package['oz']) != verified:
+        raise ValueError(f'USDA missing measurement requires explicit packageWeight fluid net content: {sku}')
+    with localcontext() as context:
+        context.prec = max(28, len(package['oz']) + len(package['ml']) + 20)
+        expected_ml = (verified * Decimal('29.5735295625')).quantize(Decimal('1'))
+    if Decimal(package['ml']) <= 0 or Decimal(package['ml']) != expected_ml:
+        raise ValueError(f'USDA missing measurement rejects contradictory packageWeight units: {sku}')
+
+    secondary_fields = common | {'publisher', 'sourceRole', 'observedUpc', 'quantitySourceField',
+                                  'packageSize', 'packageSizeUnit', 'sourceImageUrl'}
+    if (set(secondary) != secondary_fields or secondary.get('publisher') != 'Go-UPC'
+            or secondary.get('sourceRole') != 'secondary_barcode_aggregator'
+            or secondary.get('observedUpc') != review['expectedUpc']
+            or secondary.get('quantitySourceField') != 'Package Size, FL OZ'
+            or secondary.get('packageSizeUnit') != 'FL OZ'
+            or not isinstance(secondary.get('packageSize'), str)
+            or not re.fullmatch(number, secondary['packageSize'])
+            or Decimal(secondary['packageSize']) != verified
+            or not safe_review_text(secondary.get('supports'))
+            or secondary.get('url') != 'https://go-upc.com/search?q=' + review['expectedUpc']
+            or not review_url_host(secondary.get('sourceImageUrl'))):
+        raise ValueError(f'USDA missing measurement requires independent literal Go-UPC package-size evidence: {sku}')
+    secondary_body = missing_measurement_capture(secondary, 'text/html', sku)
+    # These are the literal retained Go-UPC fields. Do not normalize its EAN,
+    # substitute Weight LB, or invent an absent UnitsInPackage declaration.
+    captured_upcs, captured_sizes, captured_images = go_upc_package_capture_fields(secondary_body, sku)
+    if (captured_upcs != [review['expectedUpc']] or captured_sizes != [secondary['packageSize']]
+            or secondary['sourceImageUrl'] not in captured_images):
+        raise ValueError(f'USDA missing measurement secondary capture lacks exact code, package size or image association: {sku}')
+
+    photo_fields = {'kind', 'url', 'supports', 'sha256', 'inspectedOn', 'inspectionReceipt', 'inspectionReceiptSha256'}
+    if (set(photo) != photo_fields or photo.get('url') != secondary['sourceImageUrl']
+            or photo.get('sha256') != review['expectedImageSha256']
+            or not safe_review_text(photo.get('supports'))):
+        raise ValueError(f'USDA missing measurement requires the original inspected package photo: {sku}')
+    receipt = photo.get('inspectionReceipt')
+    fields = {'scope', 'sku', 'upc', 'publicName', 'expectedLabel', 'verifiedLabel', 'productId',
+              'groupSkus', 'sourceRow', 'rawFieldsSha256', 'rawNameSha256', 'src', 'sha256',
+              'originalSha256', 'sourceImageUrl', 'publicImageSha256', 'visibleContainerCount',
+              'countBasis', 'netContentBasis', 'visibleNetContent', 'authoritySourceSha256',
+              'secondarySourceSha256', 'verification', 'inspectedOn'}
+    expected = {'scope': 'original_inventory_unit', 'sku': sku, 'upc': review['expectedUpc'],
+                'publicName': review['expectedPublicName'], 'expectedLabel': review['expectedLabel'],
+                'verifiedLabel': review['verifiedLabel'], 'productId': review['expectedProductId'],
+                'groupSkus': review['expectedResultingGroupSkus'], 'sourceRow': review['expectedSourceRow'],
+                'rawFieldsSha256': review['expectedSourceRecordSha256'], 'rawNameSha256': review['expectedNameSha256'],
+                'sha256': review['expectedImageSha256'], 'originalSha256': review['expectedImageSha256'],
+                'sourceImageUrl': photo['url'], 'countBasis': 'manual_visible_packaging',
+                'netContentBasis': 'usda_packageWeight_and_independent_secondary', 'visibleNetContent': None,
+                'authoritySourceSha256': primary['sourceSha256'], 'secondarySourceSha256': secondary['sourceSha256'],
+                'inspectedOn': photo['inspectedOn']}
+    if (not isinstance(receipt, dict) or set(receipt) != fields
+            or any(receipt.get(key) != value for key, value in expected.items())
+            or type(receipt.get('sourceRow')) is not int
+            or type(receipt.get('visibleContainerCount')) is not int or receipt['visibleContainerCount'] != 1
+            or not isinstance(receipt.get('src'), str)
+            or not re.fullmatch(r'images/products/[A-Za-z0-9_./-]+', receipt['src'])
+            or not isinstance(receipt.get('publicImageSha256'), str)
+            or not re.fullmatch(r'[a-f0-9]{64}', receipt['publicImageSha256'])
+            or not isinstance(receipt.get('verification'), dict)
+            or set(receipt['verification']) != {'brand', 'expression', 'size', 'packaging', 'visual', 'professional'}
+            or any(value is not True for value in receipt['verification'].values())
+            or photo.get('inspectionReceiptSha256') != review_evidence_sha256(receipt)):
+        raise ValueError(f'USDA missing measurement requires a hash-bound professional manual packaging receipt: {sku}')
+
+
 def validate_missing_measurement_evidence(review: dict) -> None:
     """Bind a missing unit measurement to primary/unit records and inspected bytes."""
+    if review.get('verificationMethod') == 'usda_branded_food_package_weight':
+        validate_usda_missing_measurement_evidence(review)
+        return
     sku = review['sku']
     evidence = review.get('evidence')
     kinds = {'manufacturer', 'exact_upc_listing', 'inspected_package_photo'}
@@ -1577,6 +1829,7 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
         source = record.get('source', {})
         raw_public = classify_record(source)[2] if source else None
         raw_parts = [extract_dimensions(source.get(field, '')) for field in ('ItemName', 'PackName')]
+        usda_method = review.get('verificationMethod') == 'usda_branded_food_package_weight'
         # Fail closed on explicit pack counts the legacy dimension parser does
         # not recognize. This applies only to this single-unit late action;
         # neither source text nor global parsing/brand numbers are changed.
@@ -1592,7 +1845,11 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
                 or pack_hint
                 or clean_space(source.get('PackName', ''))
                 or raw_public['variant']['label'] != 'Size not specified'
-                or any(part['measures'] or part['packs'] or part['container'] for part in raw_parts)):
+                or any(part['measures'] or part['packs'] or part['container'] for part in raw_parts)
+                or (usda_method and re.search(
+                    r'\b(?:cases?|cs|shipping|wholesale|pallets?|displays?|trays?|packs?|pkgs?|pks?|'
+                    r'cartons?|boxes?|bundles?|counts?|ct|units?|pcs?|pieces?|doz(?:en)?s?|dz)\b|'
+                    r'(?<!\w)[x×]\s*\d|\d\s*[x×](?!\w)', source.get('ItemName', ''), re.I))):
             raise ValueError(f'Missing measurement requires genuinely absent original size/pack metadata: {sku}')
         current = (source.get('SKU'), source.get('MAINUPC'), record.get('sourceRow'),
                    variant.get('upc'), product.get('name'), variant.get('label'),
@@ -1627,6 +1884,11 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
         inspection = next(item for item in review['evidence'] if item['kind'] == 'inspected_package_photo')
         if len(private_matches) != 1 or private_matches[0].get('sourceImageUrl') != inspection['url']:
             raise ValueError(f'Missing measurement inspected photo must match its private provenance: {sku}')
+        if usda_method:
+            receipt = inspection['inspectionReceipt']
+            if (image.get('src') != receipt['src'] or checks != receipt['verification']
+                    or review_evidence_sha256(image) != receipt['publicImageSha256']):
+                raise ValueError(f'USDA missing measurement requires its complete inspected public-image binding: {sku}')
         # Every earlier guard has now seen its original label. Only this field
         # changes; final image assignment still verifies private coverage/bytes.
         record['lateMeasurementResolution'] = {
@@ -1778,6 +2040,9 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                         'expectedCategory', 'expectedDepartment', 'expectedProductId',
                         'expectedResultingGroupSkus', 'verifiedLabel', 'expectedImageSha256',
                         'verification', 'evidence'}
+            usda_method = entry.get('verificationMethod') == 'usda_branded_food_package_weight'
+            if usda_method:
+                allowed.add('verificationMethod')
             if (set(entry) != allowed or not valid_gtin(entry['expectedUpc'])
                     or type(entry['expectedSourceRow']) is not int or entry['expectedSourceRow'] < 1
                     or entry['expectedLabel'] != 'Size not specified'
@@ -1800,6 +2065,8 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                     or any(not isinstance(value, str) or not re.fullmatch(r'\d+', value) for value in group)
                     or len(set(group)) != len(group)):
                 raise ValueError(f'Missing measurement requires its unchanged exact SKU group: {sku}')
+            if usda_method and (entry['expectedCategory'] != 'food' or group != [sku]):
+                raise ValueError(f'USDA missing measurement requires one unchanged original food SKU: {sku}')
             validate_direct_image_guard(entry, sku, 'Missing measurement')
             validate_reviewed_identity_checks(entry['verification'], sku, 'Missing measurement')
             validate_missing_measurement_evidence(entry)

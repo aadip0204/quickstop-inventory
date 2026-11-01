@@ -6345,6 +6345,38 @@
       "evidence": {
         "privateEvidenceSha256": "d20d27e27877a72de79e7457c540dfde84ecab38d629513dfd67a8ecf48f7ef2"
       }
+    },
+    {
+      "sku": "7870",
+      "expectedUpc": "047677071155",
+      "expectedNameSha256": "aa89ca88ee68d2ac7462d1566c5c079785073e7df70ecff1f5a3a67c898d8f09",
+      "expectedSourceRecordSha256": "bc458bbd1df196ff4c1fac86d91312851f4dbde55dc5cfa95f724e21ced41140",
+      "action": "resolve_verified_missing_measurement",
+      "verificationMethod": "usda_branded_food_package_weight",
+      "expectedSourceRow": 7392,
+      "expectedPublicName": "Snickers Ice Cream Cone",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-130fc10e21813fe6",
+      "expectedResultingGroupSkus": [
+        "7870"
+      ],
+      "verifiedLabel": "4 fl oz",
+      "expectedImageSha256": "88bca1cbfcde3ab553384aa136e0c54117a2d1e8e7bed5362bb8bb56a3e6b119",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "b8ca3d779b11b0b10416c6b17a5d204b407611670f0dc7f138aa9645582398cb"
+      },
+      "reason": "Fill only the originally absent unit volume from captured historical USDA packageWeight, exact-code independent secondary quantity/image association, and manual single-wrapper inspection; raw cells and identifiers remain unchanged.",
+      "reviewedOn": "2026-11-01"
     }
   ]
 }
