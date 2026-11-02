@@ -176,6 +176,44 @@ test('hyphen folding preserves decimal quantities, numeric brands and measure or
   assert.deepEqual(ui.filterProducts([product], {query:'Example Drink 175 L'}), []);
 });
 
+test('Alka-Seltzer retains all five spaced and hyphenated catalog products', () => {
+  for (const query of ['Alka-Seltzer', 'Alka Seltzer']) {
+    const matches = ui.filterProducts(catalog.products, {query}, catalog.categories);
+    assert.deepEqual(matches.flatMap(product => product.variants.map(variant => variant.sku)).sort(),
+      ['350', '351', '352', '353', '354'], query);
+  }
+});
+
+test('joined product-name words support spaced brands and select the exact queried size', () => {
+  for (const name of ['Ac Me Drink', 'Ac-Me Drink']) {
+    const product = {id:name, name, category:'drinks', department:'Soda', variants:[
+      {sku:'small', upc:'000000000001', label:'12 oz', image:{src:'images/small.jpg', alt:'Small'}},
+      {sku:'large', upc:'000000000002', label:'20 oz', image:null},
+      {sku:'decimal', upc:'000000000003', label:'1.75 L', image:null},
+      {sku:'integer', upc:'000000000004', label:'175 L', image:null}
+    ]};
+    for (const [query, sku] of [['Ac-Me 20 oz', 'large'], ['Acme 20 oz', 'large'],
+      ['Ac-Me 1.75 L', 'decimal'], ['Acme 175 L', 'integer']]) {
+      assert.deepEqual(ui.filterProducts([product], {query}), [product], `${name}: ${query}`);
+      assert.equal(ui.matchingVariant(product, query).sku, sku, `${name}: ${query}`);
+    }
+    assert.equal(ui.matchingVariant(product, '000000000003').sku, 'decimal');
+  }
+});
+
+test('joined-name matching starts at word boundaries and never crosses category or department fields', () => {
+  const product = (name, category, department) => ({id:name, name, category, department,
+    variants:[{sku:'example', upc:'000000000001', label:'20 oz', image:null}]});
+  const wine = product('Wine Moscato', 'wine', 'Wine');
+  const fields = product('Other', 'ac', 'Me');
+  const midword = product('Mac Meadow', 'food', 'Snacks');
+  const categories = [{id:'wine', label:'Ne', departments:[{id:'Wine', label:'Mo'}]}];
+  assert.deepEqual(ui.filterProducts([wine], {query:'Ne-Mo'}, categories), []);
+  assert.deepEqual(ui.filterProducts([fields, midword], {query:'Ac-Me'}), []);
+  const boundary = product('Regular Ac Me Drink', 'drinks', 'Soda');
+  assert.deepEqual(ui.filterProducts([boundary], {query:'Ac-Me 20 oz'}), [boundary]);
+});
+
 test('verified initialism names remain searchable with ordinary or dotted spelling', () => {
   const expected = ['4058', '4059', '4062', '4063', '4060', '4061'];
   for (const query of ['Hennessy VSOP', 'Hennessy V.S.O.P', 'Hennessy V.S.O.P.']) {
