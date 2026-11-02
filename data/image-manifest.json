@@ -15024,10 +15024,10 @@
     {
       "sku": "421",
       "expectedUpc": "096749499304",
-      "expectedName": "Ansac VS",
+      "expectedName": "Ansac VS Cognac",
       "expectedLabel": "750 mL",
       "src": "images/products/sku-421.jpg",
-      "alt": "Ansac VS Cognac — 750 mL bottle",
+      "alt": "Ansac VS Cognac — 750 mL packaging",
       "sha256": "779b76970c2ae301144b6103b5aecae70a0b37b8fa6886fd0955a27c5cf1aca2",
       "verifiedOn": "2026-10-29",
       "usageBasis": "user_authorized_direct_reference",
@@ -31290,6 +31290,486 @@
       "expectedName": "Drano Liquid Clog Remover",
       "expectedLabel": "946 mL",
       "sha256": "b93ffe2752e1a7a3680b48c1da03de2bf7f80137e91741dadd055d698e4e2a48",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "419",
+      "src": "images/products/sku-419.jpg",
+      "alt": "Ansac VS Cognac — 200 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749499502",
+      "expectedName": "Ansac VS Cognac",
+      "expectedLabel": "200 mL",
+      "sha256": "bbf47a6786c12b649416b80687c5d2425bc86f472de4dcd4143fb197bd4250bb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1146",
+      "src": "images/products/sku-1146.png",
+      "alt": "Blackheart Spiced Rum 93 Proof — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749011681",
+      "expectedName": "Blackheart Spiced Rum 93 Proof",
+      "expectedLabel": "750 mL",
+      "sha256": "0c234c573709f1895d00fe8e9d0d9848bbb76342d7e12d5dfa35b062bbe28742",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3213",
+      "src": "images/products/sku-3213.jpg",
+      "alt": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey — 200 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749021543",
+      "expectedName": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey",
+      "expectedLabel": "200 mL",
+      "sha256": "f4c8d4d76b09fc9c759e1e75a3ebc9967e70dd7219de2659eb1ac736f2ffc42e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "420",
+      "src": "images/products/sku-420.jpg",
+      "alt": "Ansac VS Cognac — 375 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749499601",
+      "expectedName": "Ansac VS Cognac",
+      "expectedLabel": "375 mL",
+      "sha256": "6966a22bdbbe9fbf60a23606bb90b8562effb59526310568a2309a6eb2dcf892",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3214",
+      "src": "images/products/sku-3214.png",
+      "alt": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey — 375 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749021642",
+      "expectedName": "Evan Williams Black Label Kentucky Straight Bourbon Whiskey",
+      "expectedLabel": "375 mL",
+      "sha256": "b16f150dfa27131d2bf0a485ccd8d5610d64ea94303b41c289adb3d65f85db9d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1145",
+      "src": "images/products/sku-1145.webp",
+      "alt": "Blackheart Spiced Rum 93 Proof — 1.75 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749011650",
+      "expectedName": "Blackheart Spiced Rum 93 Proof",
+      "expectedLabel": "1.75 L",
+      "sha256": "51483fbad37846bd6a829793b8d3b0db56b3eefa52467d55430dc2a24da9e20f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4253",
+      "src": "images/products/sku-4253.jpg",
+      "alt": "Hpnotiq — 1.75 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "736040012863",
+      "expectedName": "Hpnotiq",
+      "expectedLabel": "1.75 L",
+      "sha256": "2ffcb744ba3ebacb79c365e9f92bd978b8977462f351fb529755fc56633fdd17",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5707",
+      "src": "images/products/sku-5707.jpg",
+      "alt": "Minute Maid Fruit Punch — 2 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "025000053924",
+      "expectedName": "Minute Maid Fruit Punch",
+      "expectedLabel": "2 L",
+      "sha256": "c962d4134d80d2732be396a631f4f2a812b9f7f0bc5def336b4696601641fa42",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5711",
+      "src": "images/products/sku-5711.jpg",
+      "alt": "Minute Maid Lemonade — 2 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "025000053818",
+      "expectedName": "Minute Maid Lemonade",
+      "expectedLabel": "2 L",
+      "sha256": "16502c335fb05376ac499c4591f766d7b9852c1ea7447649917b3813d863bfae",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1603",
+      "src": "images/products/sku-1603.webp",
+      "alt": "Calypso Grapeberry Lemonade — 16 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "079581184102",
+      "expectedName": "Calypso Grapeberry Lemonade",
+      "expectedLabel": "16 oz",
+      "sha256": "9170fe18d208f4a3b7717beb211af12530766f77eb63ee7c2aab66ade8ff910a",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1604",
+      "src": "images/products/sku-1604.webp",
+      "alt": "CALYPSO ISLAND WAVE LEMONADE — 16 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "079581184058",
+      "expectedName": "CALYPSO ISLAND WAVE LEMONADE",
+      "expectedLabel": "16 oz",
+      "sha256": "003ddbdf87c6392ffc55a91756a2be5fd723151da03e03e4c45c306be3715e67",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1606",
+      "src": "images/products/sku-1606.webp",
+      "alt": "Calypso Kiwi Lemonade — 16 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "079581184096",
+      "expectedName": "Calypso Kiwi Lemonade",
+      "expectedLabel": "16 oz",
+      "sha256": "86c13954f51a10bc0e44bf97290f75d29c15f12361ba08d2b684453512b10fd7",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1612",
+      "src": "images/products/sku-1612.webp",
+      "alt": "Calypso Original Lemonade — 16 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "079581184003",
+      "expectedName": "Calypso Original Lemonade",
+      "expectedLabel": "16 oz",
+      "sha256": "88ca2325e29fbcbb9a005be430c13ba3c89876685c76e8dbe0c1861ce75b5e0d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1613",
+      "src": "images/products/sku-1613.webp",
+      "alt": "Calypso Paradise Punch Lemonade — 16 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "079581184041",
+      "expectedName": "Calypso Paradise Punch Lemonade",
+      "expectedLabel": "16 oz",
+      "sha256": "606b941cc0e83608c9d73245da1321351ebb66c1aa6a3d7c74d55986ddd1cb77",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1621",
+      "src": "images/products/sku-1621.webp",
+      "alt": "CALYPSO SOUTHRN PEACH LEMONADE — 16 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "079581184034",
+      "expectedName": "CALYPSO SOUTHRN PEACH LEMONADE",
+      "expectedLabel": "16 oz",
+      "sha256": "8e5af7f931e4232ebeab7733f007c08f455b5a4d941a674115a97e2994cdfbe8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101531",
+      "src": "images/products/sku-101531.webp",
+      "alt": "Canada Dry Fruit Splash Strawberry Ginger Ale — 12-pack · cans packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "078000394641",
+      "expectedName": "Canada Dry Fruit Splash Strawberry Ginger Ale",
+      "expectedLabel": "12-pack · cans",
+      "sha256": "35c2c01dc46a81461a9e09455ba0f885dc4076538de22d95e84ab5b9548de40d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101532",
+      "src": "images/products/sku-101532.webp",
+      "alt": "CANADA DRY CHERRY GA — 12-pack · cans packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "078000038835",
+      "expectedName": "CANADA DRY CHERRY GA",
+      "expectedLabel": "12-pack · cans",
+      "sha256": "fb5bf51a34744d4df879b63e63644c02ebbc66cd7671291fc6345a0eee410b07",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "661",
+      "src": "images/products/sku-661.jpg",
+      "alt": "AXE BODY SPRAY GOLD — 150 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "6001087375115",
+      "expectedName": "AXE BODY SPRAY GOLD",
+      "expectedLabel": "150 mL",
+      "sha256": "43dfd183c9c201b8312135ac9d4487d38e9ddd30960680f05834e80a3361abd3",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "664",
+      "src": "images/products/sku-664.jpg",
+      "alt": "AXE Wild Spice Body Spray — 150 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "6001087364690",
+      "expectedName": "AXE Wild Spice Body Spray",
+      "expectedLabel": "150 mL",
+      "sha256": "1995a46fd173aa362f2b642c0906a63e8beb42a3b0426b134d36945fe70da814",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "665",
+      "src": "images/products/sku-665.jpg",
+      "alt": "AXE Dark Temptation Body Spray — 150 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "8720181114496",
+      "expectedName": "AXE Dark Temptation Body Spray",
+      "expectedLabel": "150 mL",
+      "sha256": "680d45782c51b1d438ee51c80915430bc4175de5366ef6274fd346a2a5b767e8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5706",
+      "src": "images/products/sku-5706.jpg",
+      "alt": "Minute Maid Fruit Punch — 12-pack packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "025000058196",
+      "expectedName": "Minute Maid Fruit Punch",
+      "expectedLabel": "12-pack",
+      "sha256": "d737877516c7cd3fdee7eae471c0cadaddc9f1bde06adc471d2dce54b424fa3f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5709",
+      "src": "images/products/sku-5709.jpg",
+      "alt": "Minute Maid Lemonade Pack — 12-pack · 12 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "025000058387",
+      "expectedName": "Minute Maid Lemonade Pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "sha256": "22f4faf4f7d5c6402db1b0ad939f398b4c35af7d7d8ed2a6046959e3d6b17efa",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5712",
+      "src": "images/products/sku-5712.jpg",
+      "alt": "Minute Maid Pink Lem Pack — 12-pack · 12 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "025000058240",
+      "expectedName": "Minute Maid Pink Lem Pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "sha256": "befcb1ddadc8f5e3bec2cf43c580cea1ec1d80a07d0099283d2dab60dca24cd6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3295",
+      "src": "images/products/sku-3295.jpg",
+      "alt": "Fanta Pineapple Pack — 12-pack · 12 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "049000030761",
+      "expectedName": "Fanta Pineapple Pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "sha256": "fd31c5e7c9583484b4135b53b41a6113e364bd5153bbca6e8e3c7e620007ade8",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {

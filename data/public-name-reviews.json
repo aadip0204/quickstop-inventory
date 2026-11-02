@@ -6833,7 +6833,7 @@
       "expectedRawFieldsSha256": "e057b380952806e616056623f8e1d2033410cb973eddcc6ae545aff3f5d9c8d0",
       "expectedPublicName": "FOLGERS CLASSIC ROAST",
       "expectedLabel": "9.6 oz",
-      "expectedCategory": "essentials",
+      "expectedCategory": "food",
       "expectedDepartment": "MISC",
       "proposedPublicTitle": "Folgers Classic Roast Medium Ground Coffee",
       "reason": "Exact product record and inspected packaging support this complete product title; original identifiers and selling unit remain unchanged.",
@@ -6884,6 +6884,171 @@
       "reason": "Exact product record and inspected packaging support this complete product title; original identifiers and selling unit remain unchanged.",
       "evidence": {
         "privateEvidenceSha256": "1b48d40cc2cbe942f619f9b9944b30eda2270634af2c9b28cd840a41077a7e84"
+      }
+    },
+    {
+      "sku": "420",
+      "expectedUpc": "096749499601",
+      "expectedSourceRow": 6550,
+      "expectedRawFieldsSha256": "46e427cd81523efa68714e3f8d7db80c174973995e7f117f80a498ff03b70665",
+      "expectedPublicName": "Ansac VS",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Ansac VS Cognac",
+      "reason": "Exact manufacturer unit-UPC records support this full product-family name; original identifiers, sizes and ordered family membership remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "2f31c0a7c514e3aa69eb68a6c1b5a74b3a2ef81d498f7ebb57663b3aa8096f7e"
+      }
+    },
+    {
+      "sku": "419",
+      "expectedUpc": "096749499502",
+      "expectedSourceRow": 7291,
+      "expectedRawFieldsSha256": "d1647dc2605b550bbe3bc0dc135c53282a485c39960d17c71dda459806df5407",
+      "expectedPublicName": "Ansac VS",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Ansac VS Cognac",
+      "reason": "Exact manufacturer unit-UPC records support this full product-family name; original identifiers, sizes and ordered family membership remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "c557620e04d87d0319e81a70a014cb909b0befb5b7fb4c59915a1b83574ecdf5"
+      }
+    },
+    {
+      "sku": "421",
+      "expectedUpc": "096749499304",
+      "expectedSourceRow": 8839,
+      "expectedRawFieldsSha256": "ae2cd41842c7849023fa5f41e9517ffba4045512f33b80a5728a8922786c8fad",
+      "expectedPublicName": "Ansac VS",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Ansac VS Cognac",
+      "reason": "Exact manufacturer unit-UPC records support this full product-family name; original identifiers, sizes and ordered family membership remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "30605007ceb7fcb06c2a8dbc0d17527c95f4e946795f013978cf6598e12832a1"
+      }
+    },
+    {
+      "sku": "1145",
+      "expectedUpc": "096749011650",
+      "expectedSourceRow": 716,
+      "expectedRawFieldsSha256": "e6bd02a74472d7524c589cb9d2082425590e7534377043e38af4c459616fb253",
+      "expectedPublicName": "Black Heart Rum 93 P",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Rum",
+      "proposedPublicTitle": "Blackheart Spiced Rum 93 Proof",
+      "reason": "Exact manufacturer unit-UPC records support this full product-family name; original identifiers, sizes and ordered family membership remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "98a242bfd7d8a070650fa447e9173ee1b3b735a887efb19e9360eb96237dd325"
+      }
+    },
+    {
+      "sku": "1146",
+      "expectedUpc": "096749011681",
+      "expectedSourceRow": 717,
+      "expectedRawFieldsSha256": "251e36c43a2069b7a8a5385ed65132366c7f699546ec27e7988313f1c635335f",
+      "expectedPublicName": "Black Heart Rum 93 P",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Rum",
+      "proposedPublicTitle": "Blackheart Spiced Rum 93 Proof",
+      "reason": "Exact manufacturer unit-UPC records support this full product-family name; original identifiers, sizes and ordered family membership remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "12d4c7237160e41ba57b66c1f51ccd052153ac6af02fa7ee3ad41e69081c938c"
+      }
+    },
+    {
+      "sku": "1603",
+      "expectedUpc": "079581184102",
+      "expectedSourceRow": 7307,
+      "expectedRawFieldsSha256": "3b18164222d1ac64611a878c76d37437e0ca2fbc5b504a19c9b50539b55592be",
+      "expectedPublicName": "calypso grapeberry lemonade",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Calypso Grapeberry Lemonade",
+      "reason": "Exact consumer UPC, source product description and inspected packaging support the corrected brand and expression. Preserve source identifiers, selling unit and ordered family membership.",
+      "evidence": {
+        "privateEvidenceSha256": "2c177fc3f92beca62f014d720ee841f849d9f14d49d27e45b1f162273aa07f7a"
+      }
+    },
+    {
+      "sku": "1606",
+      "expectedUpc": "079581184096",
+      "expectedSourceRow": 9397,
+      "expectedRawFieldsSha256": "51b3de02b1a65429bbe1c6cc3f200ac810b3aba7be29b48e8f332ed8b873435f",
+      "expectedPublicName": "CALYPSO KIWI LEMONADE LEMONADE",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Calypso Kiwi Lemonade",
+      "reason": "Exact consumer UPC, source product description and inspected packaging support the corrected brand and expression. Preserve source identifiers, selling unit and ordered family membership.",
+      "evidence": {
+        "privateEvidenceSha256": "0358cf7ec23f7dfab41d34833a292403991ed9a3de293ac6051d50abcf13644c"
+      }
+    },
+    {
+      "sku": "1612",
+      "expectedUpc": "079581184003",
+      "expectedSourceRow": 8029,
+      "expectedRawFieldsSha256": "8025e2b3d3f87f5d5bab12bc01b1e356253a6bef96ba00a77250dfc9ccbe417b",
+      "expectedPublicName": "calypso original lemonade lemonade",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Calypso Original Lemonade",
+      "reason": "Exact consumer UPC, source product description and inspected packaging support the corrected brand and expression. Preserve source identifiers, selling unit and ordered family membership.",
+      "evidence": {
+        "privateEvidenceSha256": "5c7eec43f31b01fd5cf1d051a8738737eba3bb19ec0e2b821e0c29e123831afd"
+      }
+    },
+    {
+      "sku": "1613",
+      "expectedUpc": "079581184041",
+      "expectedSourceRow": 8588,
+      "expectedRawFieldsSha256": "dd24ba3c5863a9e28e3938ef80e11317a8136d1291e83eddefab54b623b0c944",
+      "expectedPublicName": "CALYPSO PARADISE PUNCHLEMONADE",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Calypso Paradise Punch Lemonade",
+      "reason": "Exact consumer UPC, source product description and inspected packaging support the corrected brand and expression. Preserve source identifiers, selling unit and ordered family membership.",
+      "evidence": {
+        "privateEvidenceSha256": "a3bcc877c94a2b308c782cf5e79b1bbe513c05dd71466c0384e6a7b5a613c8a3"
+      }
+    },
+    {
+      "sku": "101531",
+      "expectedUpc": "078000394641",
+      "expectedSourceRow": 6555,
+      "expectedRawFieldsSha256": "a9fea7716748be0dcabb52ea3a75b4338345ead8e283ddb4725134796e244ec7",
+      "expectedPublicName": "CANADA DRY STRAW GA",
+      "expectedLabel": "12-pack · cans",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Canada Dry Fruit Splash Strawberry Ginger Ale",
+      "reason": "Exact consumer UPC, source product description and inspected packaging support the corrected brand and expression. Preserve source identifiers, selling unit and ordered family membership.",
+      "evidence": {
+        "privateEvidenceSha256": "37568a1bf0f3fbc25a3bfaea47ddba9a55495d1831abdeacce4ff0fbdd9b51fc"
+      }
+    },
+    {
+      "sku": "665",
+      "expectedUpc": "8720181114496",
+      "expectedSourceRow": 7555,
+      "expectedRawFieldsSha256": "b56d44eac14343bff12b85b086ee0f351b9ec47e3030acff62456139caabc201",
+      "expectedPublicName": "AXE BODY SPRAY DARK TEMPTATI",
+      "expectedLabel": "150 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "AXE Dark Temptation Body Spray",
+      "reason": "Exact product GTIN, source title and independently inspected packaging identify the complete brand and expression. Expand the truncated display name while preserving the source, selling unit and ordered group.",
+      "evidence": {
+        "privateEvidenceSha256": "19a888f97e776201d06a97330fa2259d00b9202f6734a3f48fa548c6d3314db3"
       }
     }
   ]

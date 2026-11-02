@@ -1760,6 +1760,22 @@
       "evidence": {
         "privateEvidenceSha256": "53b1ba28d21c0ee25d0e3529b393b5c36b62d2301638e4400eb2ad4636d5ff76"
       }
+    },
+    {
+      "sku": "3387",
+      "expectedUpc": "025500304014",
+      "expectedNameSha256": "cc84a5f469de704501e03917cc7988834544a44d299f4f9f9bc87d41fd3f9f47",
+      "expectedSourceRecordSha256": "e057b380952806e616056623f8e1d2033410cb973eddcc6ae545aff3f5d9c8d0",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "FOLGERS CLASSIC ROAST",
+      "expectedLabel": "9.6 oz",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-11-02",
+      "reason": "Exact retailer UPC identifies ground coffee for brewing, a grocery product. Place this item in Snacks & groceries while preserving its original MISC department and all other product data.",
+      "evidence": {
+        "privateEvidenceSha256": "bf6750ae656e0315ffd47093cd10c97afbb2b4b00af81fbaa1feafe3b90751c7"
+      }
     }
   ]
 }
