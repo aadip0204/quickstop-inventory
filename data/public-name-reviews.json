@@ -7530,6 +7530,66 @@
       "evidence": {
         "privateEvidenceSha256": "944ca0bea2d218feb7dda70e3b55642a10d38d7b1392cc7fdec12ef76f7a3aa4"
       }
+    },
+    {
+      "sku": "1875",
+      "expectedUpc": "853278007062",
+      "expectedSourceRow": 7488,
+      "expectedRawFieldsSha256": "d324fbe267d249f10b7a2c41aca0d497efbb22892390cd900085df5c2cc4b815",
+      "expectedPublicName": "centera negra anejo",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Cantera Negra Añejo Tequila",
+      "reason": "Complete only the exact literal-code-supported brand and expression using the matching full original package.",
+      "evidence": {
+        "privateEvidenceSha256": "70539bd952b961fe7ca60cdd30efb468749e16629a3bec943dc4d8167a86cda5"
+      }
+    },
+    {
+      "sku": "1877",
+      "expectedUpc": "853278007086",
+      "expectedSourceRow": 1144,
+      "expectedRawFieldsSha256": "c3aab67b6edeef25dc145c567f023fecf26d035df272d0da63b15c518fccb267",
+      "expectedPublicName": "centera negra silver",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Cantera Negra Silver Tequila",
+      "reason": "Complete only the exact literal-code-supported brand and expression using the matching full original package.",
+      "evidence": {
+        "privateEvidenceSha256": "c65f409fd942fafa67d1b9516c81b60eeeb026f456d4108bfa642cbf576dacea"
+      }
+    },
+    {
+      "sku": "7705",
+      "expectedUpc": "082000755623",
+      "expectedSourceRow": 4967,
+      "expectedRawFieldsSha256": "62adb683c5018d7adc70516c03b5ff727e5a987432ffd3a48e37dbe6e67c7bac",
+      "expectedPublicName": "SMIRNOFF COCO 750",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Smirnoff Coconut Vodka",
+      "reason": "Complete only the exact literal-code-supported brand and expression using the matching full original package.",
+      "evidence": {
+        "privateEvidenceSha256": "c1c7345fabe31fd240b3662d0573229e7089b6e51131942ca62f550da59d42a3"
+      }
+    },
+    {
+      "sku": "7804",
+      "expectedUpc": "082000761440",
+      "expectedSourceRow": 5031,
+      "expectedRawFieldsSha256": "82409bca7975781bf3d9ee39b0b25382a992043fcb0e8c835d324a2fc3fd8012",
+      "expectedPublicName": "SMIRNOFF MANGO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Smirnoff Sorbet Light Mango Passion Fruit",
+      "reason": "Complete only the exact literal-code-supported brand and expression using the matching full original package.",
+      "evidence": {
+        "privateEvidenceSha256": "0647a5920ff9e8eff462fc5bcaca0c22fae5bdf382edaec4f7bb506ef7c44e9d"
+      }
     }
   ]
 }
