@@ -6377,6 +6377,72 @@
       },
       "reason": "Fill only the originally absent unit volume from captured historical USDA packageWeight, exact-code independent secondary quantity/image association, and manual single-wrapper inspection; raw cells and identifiers remain unchanged.",
       "reviewedOn": "2026-11-01"
+    },
+    {
+      "sku": "7569",
+      "expectedUpc": "031146262441",
+      "expectedNameSha256": "74e9b08e7571e4384147f4eb6dba2bb10e555d59d44b0b0bacfa3521d8e4ffdb",
+      "expectedSourceRecordSha256": "06da83f10c3bafef06a0a7719db98f76eefe0ae241e6db327208a12a0d260cde",
+      "action": "size_needs_confirmation",
+      "reason": "Original literal3oz source conflicts with exact consumer-code package and physically printed3.03oz. Preserve raw cells and withhold the conflicting public size before this separately guarded food resolution.",
+      "reviewedOn": "2026-11-02",
+      "foodSizeResolution": {
+        "expectedSourceRow": 4862,
+        "expectedPublicName": "Nongshim Shin Ramyun Original Bowl Noodle Soup",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "3.03 oz",
+        "expectedImageSha256": "a6b844552ac9804d537e626a0f428a77d22b05f32e837f331a5496d8fb1771db",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": {
+          "privateEvidenceSha256": "7a819111ce2a7dabdcd99a235a441807b693d986359eea353c0cf259de04cb0f"
+        },
+        "expectedResultingGroupSkus": [
+          "7569"
+        ],
+        "reason": "Actual whole retail package and exact consumer UPC listing resolve3.03oz only; manufacturer expression remains honestly scoped, all raw source cells and every other variant field are preserved."
+      }
+    },
+    {
+      "sku": "7570",
+      "expectedUpc": "031146262571",
+      "expectedNameSha256": "2f1efa15288781108b86b78d1b936de411de8b0e42198f2c952f5f957b827be2",
+      "expectedSourceRecordSha256": "302dfa530be8b33964f84cc868651a86cad4187387f823901479d8051e0dcbe2",
+      "action": "size_needs_confirmation",
+      "reason": "Original literal3oz source conflicts with exact consumer-code package and physically printed3.03oz. Preserve raw cells and withhold the conflicting public size before this separately guarded food resolution.",
+      "reviewedOn": "2026-11-02",
+      "foodSizeResolution": {
+        "expectedSourceRow": 4863,
+        "expectedPublicName": "Nongshim Bowl Noodles Spicy Chicken Flavor",
+        "expectedPublicLabel": "Size needs confirmation",
+        "expectedCategory": "food",
+        "expectedDepartment": "Snacks",
+        "verifiedLabel": "3.03 oz",
+        "expectedImageSha256": "ccfbb10c4272dfc487a4deab9976b93d8dcda68eecdf1417385be1048fcaff51",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "evidence": {
+          "privateEvidenceSha256": "5609961d4179a81e029a5890079289ff2561ac332c02e6da0d9b9d787256689a"
+        },
+        "expectedResultingGroupSkus": [
+          "7570"
+        ],
+        "reason": "Actual whole retail package and exact consumer UPC listing resolve3.03oz only; manufacturer expression remains honestly scoped, all raw source cells and every other variant field are preserved."
+      }
     }
   ]
 }
