@@ -33520,6 +33520,186 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2614",
+      "src": "images/products/sku-2614.png",
+      "alt": "Crush Pineapple — 20 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "078000014143",
+      "expectedName": "Crush Pineapple",
+      "expectedLabel": "20 oz",
+      "sha256": "ecf28914de7d001985e575acc3ed3a93a270bd3354d1b4b55ccff12c6dcfc76e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4993",
+      "src": "images/products/sku-4993.png",
+      "alt": "lance peanut butter crackers — 36 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "076410901626",
+      "expectedName": "lance peanut butter crackers",
+      "expectedLabel": "36 g",
+      "sha256": "7274cce9de00eaba8d656e8e5c05191c1a967944c5b2ce327d0f2737578376cb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4217",
+      "src": "images/products/sku-4217.png",
+      "alt": "HOSTESS CUP CAKES STRAWBERRY — 90 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "888109256647",
+      "expectedName": "HOSTESS CUP CAKES STRAWBERRY",
+      "expectedLabel": "90 g",
+      "sha256": "5df3f46fb80415d3d3b314912a4c7cd7a73ef6c66ff434728d2d04755cc0e76a",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3478",
+      "src": "images/products/sku-3478.webp",
+      "alt": "Purina Friskies Paté Turkey & Giblets Dinner — 156 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "050000421848",
+      "expectedName": "Purina Friskies Paté Turkey & Giblets Dinner",
+      "expectedLabel": "156 g",
+      "sha256": "5309ccde19e1306bf61a6bfbe946ee92e26c30f24be4f19b6d88d803f241e3a6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3476",
+      "src": "images/products/sku-3476.webp",
+      "alt": "Purina Friskies Paté Liver & Chicken Dinner — 156 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "050000420445",
+      "expectedName": "Purina Friskies Paté Liver & Chicken Dinner",
+      "expectedLabel": "156 g",
+      "sha256": "32501e7902040832a51c0145aa305302c4dae6d96a30c0203108113f7b06b3d0",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7391",
+      "src": "images/products/sku-7391.jpg",
+      "alt": "Schweppes — 20 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "078000206401",
+      "expectedName": "Schweppes",
+      "expectedLabel": "20 oz",
+      "sha256": "7a8e970b27893e0166a622962e72ebebc43b36922807d692bc9e93ea3ca06947",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7394",
+      "src": "images/products/sku-7394.jpg",
+      "alt": "schweppes ginger — 1.25 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "078000026399",
+      "expectedName": "schweppes ginger",
+      "expectedLabel": "1.25 L",
+      "sha256": "e9a22f1d4a54ceb0b5d72c3752ed1505ab1914e58a552ca565a1af0844ffca0a",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7395",
+      "src": "images/products/sku-7395.jpg",
+      "alt": "Schweppes ginger ale — 1 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "078000206456",
+      "expectedName": "Schweppes ginger ale",
+      "expectedLabel": "1 L",
+      "sha256": "a5a0270b2735879270e4b1e8aa297c0faacf95ba5d7355111402bb3c2226882e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7415",
+      "src": "images/products/sku-7415.webp",
+      "alt": "SEAGRAM GIN PEACH 750 — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "080432107805",
+      "expectedName": "SEAGRAM GIN PEACH 750",
+      "expectedLabel": "750 mL",
+      "sha256": "1f7267cc3e1a8994837802e43edc6948ff39cec5822d89233d0bb13661252dbe",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

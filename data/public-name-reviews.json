@@ -7590,6 +7590,36 @@
       "evidence": {
         "privateEvidenceSha256": "0647a5920ff9e8eff462fc5bcaca0c22fae5bdf382edaec4f7bb506ef7c44e9d"
       }
+    },
+    {
+      "sku": "3478",
+      "expectedUpc": "050000421848",
+      "expectedSourceRow": 8477,
+      "expectedRawFieldsSha256": "179357fe62beae53f42d9ef733c01a90676b63b064de942216c470d8e933079a",
+      "expectedPublicName": "friskies pate turkey giblets",
+      "expectedLabel": "156 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Purina Friskies Paté Turkey & Giblets Dinner",
+      "reason": "Exact literal UPC 050000421848 in its own Target flavor child and the inspected original package support the complete Purina Friskies Paté Turkey & Giblets Dinner name. Correct only this guarded public title; preserve raw fields,156 g,category,department and singleton membership.",
+      "evidence": {
+        "privateEvidenceSha256": "559b655b0fbe5d4d14233b82c44f31878b9ef1aa4c6614e45c9a7607ab9eb851"
+      }
+    },
+    {
+      "sku": "3476",
+      "expectedUpc": "050000420445",
+      "expectedSourceRow": 8305,
+      "expectedRawFieldsSha256": "b7f2df0fa398249dc8ee0e954e5eb6e4d1386394688c02ea1338c6a8d28fde75",
+      "expectedPublicName": "friskies pate chicken",
+      "expectedLabel": "156 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Purina Friskies Paté Liver & Chicken Dinner",
+      "reason": "Exact literal UPC 050000420445 in its own Target flavor child and the inspected original package support the complete Purina Friskies Paté Liver & Chicken Dinner name. Correct only this guarded public title; preserve raw fields,156 g,category,department and singleton membership.",
+      "evidence": {
+        "privateEvidenceSha256": "7f78cca0a6787422ede24d5c6154fb9abca668f986382728dc3724e1dba1f021"
+      }
     }
   ]
 }
