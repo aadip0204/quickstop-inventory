@@ -33124,10 +33124,10 @@
     {
       "sku": "7714",
       "src": "images/products/sku-7714.webp",
-      "alt": "Smirnoff Ice CanScrewdriver — Single · 23.5 oz packaging",
+      "alt": "Smirnoff Ice Smash Screwdriver — Single · 23.5 oz packaging",
       "verifiedOn": "2026-11-02",
       "expectedUpc": "082000776925",
-      "expectedName": "Smirnoff Ice CanScrewdriver",
+      "expectedName": "Smirnoff Ice Smash Screwdriver",
       "expectedLabel": "Single · 23.5 oz",
       "sha256": "4d96dc8ac93c43c0d2c644ff4b57e7185ff6112a2157768385fd610c1f66b44d",
       "usageBasis": "user_authorized_direct_reference",
@@ -33184,12 +33184,332 @@
     {
       "sku": "5544",
       "src": "images/products/sku-5544.webp",
-      "alt": "Michelob Ultra Lime — 6-pack · 12 oz · bottles packaging",
+      "alt": "Michelob ULTRA Lime Cactus Light Beer — 6-pack · 12 oz · bottles packaging",
       "verifiedOn": "2026-11-02",
       "expectedUpc": "018200129896",
-      "expectedName": "Michelob Ultra Lime",
+      "expectedName": "Michelob ULTRA Lime Cactus Light Beer",
       "expectedLabel": "6-pack · 12 oz · bottles",
       "sha256": "1e332e5557968e01c66f3b5bd27d8e697498831c799594f70a9ca0fdc3acfbf6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5286",
+      "src": "images/products/sku-5286.webp",
+      "alt": "Majestic Regular Bleach — 1 gal packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "022609000649",
+      "expectedName": "Majestic Regular Bleach",
+      "expectedLabel": "1 gal",
+      "sha256": "a748a882fe75edef0bd6c9ecc8a9bf1de30681dd3a66a8e9fdcc8b14f83c491e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7062",
+      "src": "images/products/sku-7062.png",
+      "alt": "Reynolds Wrap Aluminum Foil — 25 ft packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "010900000406",
+      "expectedName": "Reynolds Wrap Aluminum Foil",
+      "expectedLabel": "25 ft",
+      "sha256": "103227d902922c141409363b3a2083df26734f336ec7aa2844ab660f25a68b44",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2299",
+      "src": "images/products/sku-2299.webp",
+      "alt": "True Sip Stix Stir Straws — 110-pack packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "031439000125",
+      "expectedName": "True Sip Stix Stir Straws",
+      "expectedLabel": "110-pack",
+      "sha256": "e74ac36c5809fef13b85846d81ec34570b2fbbe88afb0a5b77b9b23cebf57514",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5293",
+      "src": "images/products/sku-5293.jpg",
+      "alt": "Malibu Banana — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "089540493343",
+      "expectedName": "Malibu Banana",
+      "expectedLabel": "750 mL",
+      "sha256": "02f09dc653ea6f2ba3b7640dcd609f8612e2ef2598e4e4f35e1dde70e2375d97",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3831",
+      "src": "images/products/sku-3831.webp",
+      "alt": "Gordons Dry Gin — 1.75 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "088600000002",
+      "expectedName": "Gordons Dry Gin",
+      "expectedLabel": "1.75 L",
+      "sha256": "46d27fbe1e8621313c699f88ed5f39ae0abb4354b61b975201afc0c82d995c83",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8537",
+      "src": "images/products/sku-8537.jpg",
+      "alt": "Tanqueray Ten Gin — 1.75 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "088076163386",
+      "expectedName": "Tanqueray Ten Gin",
+      "expectedLabel": "1.75 L",
+      "sha256": "315d1afd06659ed81b03994dbc3de8817c575f1510541487832cfdea03e5219b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2143",
+      "src": "images/products/sku-2143.jpg",
+      "alt": "Ciroc Vanilla — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "088076181540",
+      "expectedName": "Ciroc Vanilla",
+      "expectedLabel": "750 mL",
+      "sha256": "792f78298e33e4264ffdbc64d8f70c8a6027dbc64fb9c43a1c7af27792272367",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1593",
+      "src": "images/products/sku-1593.webp",
+      "alt": "Cabo Wabo Anejo — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "720815910539",
+      "expectedName": "Cabo Wabo Anejo",
+      "expectedLabel": "750 mL",
+      "sha256": "caac6d527f006289b2346503f87feb5cec039c02b7ce502d669d21b980beef13",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1875",
+      "src": "images/products/sku-1875.png",
+      "alt": "centera negra anejo — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "853278007062",
+      "expectedName": "centera negra anejo",
+      "expectedLabel": "750 mL",
+      "sha256": "e75b5715efb671cf2c5862b6805cc663f7b77661f1f06fd9f504f50f95b9ba87",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1877",
+      "src": "images/products/sku-1877.webp",
+      "alt": "centera negra silver — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "853278007086",
+      "expectedName": "centera negra silver",
+      "expectedLabel": "750 mL",
+      "sha256": "e4d083de0eeffe4ed5325affa60ee78badb490fde7c2e0ca1c8e432c8b1ae0a4",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3203",
+      "src": "images/products/sku-3203.jpg",
+      "alt": "ESPOLON REPOSADO — 375 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "664804000385",
+      "expectedName": "ESPOLON REPOSADO",
+      "expectedLabel": "375 mL",
+      "sha256": "36959ef4a451907b152aacedf4d48fb82b28a8ce216e0f4cc9c08eac2dede80f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4649",
+      "src": "images/products/sku-4649.webp",
+      "alt": "Jose Cuervo Gold — 1.75 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "082000192985",
+      "expectedName": "Jose Cuervo Gold",
+      "expectedLabel": "1.75 L",
+      "sha256": "cba770a375f842137d68bd3e5d899eabe884026266133c1f98a092cee2ce8185",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2829",
+      "src": "images/products/sku-2829.jpg",
+      "alt": "DIET DR PEPPER — 20 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "078000083408",
+      "expectedName": "DIET DR PEPPER",
+      "expectedLabel": "20 oz",
+      "sha256": "2c2825c7ea67ed7fe05f9bf6177b5e4bcb9d42860c1f244eeaf100b2255edf80",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3153",
+      "src": "images/products/sku-3153.png",
+      "alt": "EL CHARRO REP — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "759380117586",
+      "expectedName": "EL CHARRO REP",
+      "expectedLabel": "750 mL",
+      "sha256": "4c5faaaf89b9a0db77c7f1b99564ca1665b992a9716e108c6154afeb07def343",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7705",
+      "src": "images/products/sku-7705.jpg",
+      "alt": "SMIRNOFF COCO 750 — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "082000755623",
+      "expectedName": "SMIRNOFF COCO 750",
+      "expectedLabel": "750 mL",
+      "sha256": "c6cc7e89f59d70280d60a3309b1dfb62b234791a191df15d156898cdf7ef91d3",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7804",
+      "src": "images/products/sku-7804.jpg",
+      "alt": "SMIRNOFF MANGO — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "082000761440",
+      "expectedName": "SMIRNOFF MANGO",
+      "expectedLabel": "750 mL",
+      "sha256": "bd28852afd7fc05dcd63bf517c16b538b0caab5d80c2663bbd5fda8855e1221b",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {

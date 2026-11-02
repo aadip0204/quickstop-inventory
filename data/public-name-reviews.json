@@ -7455,6 +7455,81 @@
       "evidence": {
         "privateEvidenceSha256": "7f2e68a00dda4ab915ec77847ed1a58a91cc46089f1f61fc3ce295a616446615"
       }
+    },
+    {
+      "sku": "5286",
+      "expectedUpc": "022609000649",
+      "expectedSourceRow": 8321,
+      "expectedRawFieldsSha256": "ffa2893b3c93630d2e566113466d277118c05296c76e6d05ca99887a80014122",
+      "expectedPublicName": "majestic",
+      "expectedLabel": "1 gal",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Majestic Regular Bleach",
+      "reason": "Exact UPC records and the inspected selected package support Majestic Regular Bleach; preserve the source quantity and all variant metadata.",
+      "evidence": {
+        "privateEvidenceSha256": "345b49018910a5254a6db3ec5cbb03f634955ee8a286dbf9260c23e5e57a1668"
+      }
+    },
+    {
+      "sku": "7062",
+      "expectedUpc": "010900000406",
+      "expectedSourceRow": 6626,
+      "expectedRawFieldsSha256": "923826984b8b0a3bcf3f86d0fd9c5eee176d23644f1542f2dc94c1b28128bd2c",
+      "expectedPublicName": "Reynolds wrap",
+      "expectedLabel": "25 ft",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Reynolds Wrap Aluminum Foil",
+      "reason": "Exact UPC records and the inspected selected package support Reynolds Wrap Aluminum Foil; preserve the source length and all variant metadata.",
+      "evidence": {
+        "privateEvidenceSha256": "3fc7ce02cd88e1610122d43bd1b6342808c734e7f1908ad46a920a4336a81685"
+      }
+    },
+    {
+      "sku": "2299",
+      "expectedUpc": "031439000125",
+      "expectedSourceRow": 1443,
+      "expectedRawFieldsSha256": "9eacf0f72a22862d8bf059423c3f19d20f53e7734051f0fdc1d15aadb4eeda86",
+      "expectedPublicName": "Collins Sip Stix",
+      "expectedLabel": "110-pack",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "True Sip Stix Stir Straws",
+      "reason": "The own retailer product record for exact UPC 031439000125 and its inspected retail package identify TRUE Sip Stix Stir Straws. Correct only this source SKU title from Collins to True, preserve the original Collins text, and infer no brand equivalence or ownership relationship.",
+      "evidence": {
+        "privateEvidenceSha256": "7a44dbade0cfe9430b0a5a95e093970604202bb302bdb6294b528e8bd7609397"
+      }
+    },
+    {
+      "sku": "7714",
+      "expectedUpc": "082000776925",
+      "expectedSourceRow": 6955,
+      "expectedRawFieldsSha256": "4f1999cd71de7055ec02d2aa56f19e4aad9c3b58648644579fbcbe09823574ce",
+      "expectedPublicName": "Smirnoff Ice CanScrewdriver",
+      "expectedLabel": "Single · 23.5 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Smirnoff Ice Smash Screwdriver",
+      "reason": "Complete only the exact UPC-supported brand and expression spelling using the matching original package image.",
+      "evidence": {
+        "privateEvidenceSha256": "a06790e9d0d415d8775ca612dcb7b62a67c0deaa1527e6fb9bd9b152667c0cf7"
+      }
+    },
+    {
+      "sku": "5544",
+      "expectedUpc": "018200129896",
+      "expectedSourceRow": 3600,
+      "expectedRawFieldsSha256": "3512b06476534b1a5922eda2ce347a80418503231c8010f7d00bcd5f861320bb",
+      "expectedPublicName": "Michelob Ultra Lime",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Michelob ULTRA Lime Cactus Light Beer",
+      "reason": "Complete only the exact UPC-supported brand and expression spelling using the matching original package image.",
+      "evidence": {
+        "privateEvidenceSha256": "944ca0bea2d218feb7dda70e3b55642a10d38d7b1392cc7fdec12ef76f7a3aa4"
+      }
     }
   ]
 }
