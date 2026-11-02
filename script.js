@@ -10,6 +10,9 @@
       .toLowerCase().replace(/([a-z])['’]([a-z])/g, '$1$2')
       // Fold word/initialism punctuation without touching decimal quantities.
       .replace(/([a-z])\.(?!\d)/g, '$1')
+      // Join alphabetic hyphenated words; keep numeric labels and fluid units separate.
+      .replace(/(^|[^a-z0-9-])([a-z]+(?:-[a-z]+)+)(?![a-z0-9-])/g,
+        (_, prefix, word) => prefix + (word === 'fl-oz' ? word : word.replace(/-/g, '')))
       .replace(/\bde\s+luxe\b/g, 'deluxe')
       .replace(/(\d)\s+(ml|l|oz|pk|pack|ct)\b/g, '$1$2')
       .replace(/[^a-z0-9.]+/g, ' ').replace(/\s+/g, ' ').trim();

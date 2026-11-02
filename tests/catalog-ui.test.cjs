@@ -142,6 +142,40 @@ test('brand searches work with and without apostrophes', () => {
   }
 });
 
+test('Ne-Mo spellings find the verified breads on the first page and preserve the ambiguous family', () => {
+  for (const query of ['Ne-Mo', "Ne-Mo's", 'Nemos']) {
+    for (const sort of ['az', 'za']) {
+      const filters = {query, sort};
+      const matches = ui.filterProducts(catalog.products, filters, catalog.categories);
+      const firstPage = ui.paginate(ui.sortProducts(matches, filters)).items;
+      const skus = new Set(firstPage.flatMap(product => product.variants.map(variant => variant.sku)));
+      for (const sku of ['6101', '6102', '6103', '6104', '6105', '101228']) assert.ok(skus.has(sku), `${query}: ${sku}`);
+      assert.ok(!matches.some(product => /moscato/i.test(product.name)), query);
+    }
+  }
+});
+
+test('alphabetic hyphens fold generally alongside apostrophes and initialisms', () => {
+  const product = {id:'hyphen', name:"Ac-Me's A-B-C Snack", category:'food', department:'Snacks',
+    variants:[{sku:'hyphen-1', upc:'001234567890', label:'4 oz', image:null}]};
+  const unrelated = {id:'unrelated', name:'Moscato Wine', category:'wine', department:'Wine', variants:[]};
+  for (const query of ['Ac-Me', "Ac-Me's", 'Acmes', 'A-B-C', 'ABC', 'A.B.C.']) {
+    assert.deepEqual(ui.filterProducts([unrelated, product], {query}), [product], query);
+  }
+});
+
+test('hyphen folding preserves decimal quantities, numeric brands and measure or pack separators', () => {
+  for (const [input, expected] of [
+    ['1.75 L', '1.75l'], ['175 L', '175l'], ['1.75-L', '1.75 l'],
+    ['20-oz', '20 oz'], ['6-pack', '6 pack'], ['12oz-can', '12oz can'],
+    ['20 fl-oz', '20 fl oz'], ['20-fl-oz', '20 fl oz'], ['7-UP', '7 up'], ['WD-40', 'wd 40']
+  ]) assert.equal(ui.normalize(input), expected, input);
+  const product = {id:'decimal', name:'Example Drink', category:'drinks', department:'Soda',
+    variants:[{sku:'decimal-1', upc:'001234567890', label:'1.75 L', image:null}]};
+  assert.deepEqual(ui.filterProducts([product], {query:'Example Drink 1.75 L'}), [product]);
+  assert.deepEqual(ui.filterProducts([product], {query:'Example Drink 175 L'}), []);
+});
+
 test('verified initialism names remain searchable with ordinary or dotted spelling', () => {
   const expected = ['4058', '4059', '4062', '4063', '4060', '4061'];
   for (const query of ['Hennessy VSOP', 'Hennessy V.S.O.P', 'Hennessy V.S.O.P.']) {
