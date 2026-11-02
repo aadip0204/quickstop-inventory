@@ -103,6 +103,9 @@ MANUFACTURER_NAME_SCOPE = 'manufacturer_exact_upc_name_identity'
 NAME_STRENGTH_RE = re.compile(r'\d+(?:\.\d+)?\s*(?:%\s*(?:ABV\b|A/C\b)?|ABV\b|A/C\b|PROOF\b)', re.I)
 
 PRIVATE_REVIEW_EVIDENCE_KIND = 'quickstop-private-review-evidence'
+FOOD_FLUID_OUNCE_METHOD = 'food_single_bottle_fluid_ounce'
+PRINTED_FOOD_UNIT_METHOD = 'printed_barcode_food_net_content'
+NAME_ONLY_RESTORATION_METHOD = 'exact_upc_guarded_name_restoration'
 
 # This authority's .com host is explicit evidence, not a domain-role guess.
 # Additional authorities require their own reviewed publisher/host binding.
@@ -374,7 +377,7 @@ def category_for(department: str) -> str:
     return 'other'
 
 
-def classify_record(record: dict) -> tuple[str, str, dict | None, list[str]]:
+def classify_record(record: dict, *, defer_specific_name: bool = False) -> tuple[str, str, dict | None, list[str]]:
     title = clean_space(record['ItemName'])
     pack = clean_space(record['PackName'])
     department = clean_space(record['DEPNAME'])
@@ -430,7 +433,10 @@ def classify_record(record: dict) -> tuple[str, str, dict | None, list[str]]:
         return 'needs_review', 'Unresolved price/promotion text after unit parsing', None, flags
     if has_ambiguous_decimal(name):
         return 'needs_review', 'Unlabelled decimal may be a price or unconfirmed measure', None, flags
-    if not identifiable_name(name):
+    # The build may defer only this check for a separately validated, coupled
+    # name-only restoration/title review. Its generic intermediate is never
+    # published; all other classification checks retain their normal order.
+    if not identifiable_name(name) and not defer_specific_name:
         return 'needs_review', 'Needs a specific product name; source record retained', None, flags
     if re.search(r'what\s*(?:size|kind)', name, re.I):
         return 'needs_review', 'Explicitly unidentified product/size prompt in source name', None, flags
@@ -1290,6 +1296,9 @@ def validate_ambiguous_liquid_ounce_evidence(review: dict) -> None:
     photos = [item for item in evidence if item.get('kind') == 'inspected_package_photo']
     if len(listings) != 2 or len(photos) != 1:
         raise ValueError(f'Ambiguous liquid ounces require two unit listings and inspected-photo evidence: {sku}')
+    if (review.get('verificationMethod') == FOOD_FLUID_OUNCE_METHOD
+            and not any(item['kind'] == 'exact_upc_liquid_unit_listing' for item in listings)):
+        raise ValueError(f'Food fluid ounces require at least one explicit-fluid unit listing: {sku}')
     fields = {'kind', 'url', 'supports', 'observedUpc', 'observedNetContent',
               'retailUnitLabel', 'quantityBasis', 'retailUnitsPerPackage',
               'container', 'sourceSha256', 'retrievedOn'}
@@ -1358,7 +1367,7 @@ def validate_ambiguous_liquid_ounce_evidence(review: dict) -> None:
 def apply_ambiguous_liquid_ounces(products: list, records_by_sku: dict, source_reviews: dict,
                                  image_manifest: dict | None, private_image_evidence: dict | None,
                                  blocked_images: set, identity_reviews: dict) -> None:
-    """Clarify only a single original essentials SKU's ambiguous ounce unit."""
+    """Clarify one original bottle's unit; food requires its explicit opt-in."""
     variants = {v['sku']: (p, v) for p in products for v in p['variants']}
     for sku, review in source_reviews.items():
         if review['action'] != 'resolve_verified_ambiguous_ounce_volume':
@@ -1366,6 +1375,8 @@ def apply_ambiguous_liquid_ounces(products: list, records_by_sku: dict, source_r
         product, variant = variants.get(sku, ({}, {}))
         record = records_by_sku.get(sku, {})
         source = record.get('source', {})
+        food_method = review.get('verificationMethod') == FOOD_FLUID_OUNCE_METHOD
+        category = 'food' if food_method else 'essentials'
         raw_public = classify_record(source)[2] if source else None
         raw_name = source.get('ItemName', '')
         measures = list(MEASURE_RE.finditer(raw_name))
@@ -1390,7 +1401,10 @@ def apply_ambiguous_liquid_ounces(products: list, records_by_sku: dict, source_r
             r'boxes?|cartons?|bundles?|sets?|pairs?|doz(?:en)?s?|dz|units?|pcs?|pieces?)\b|'
             r'\b\d+\s*[x×]\s*\d+\b', raw_name, re.I)
         if (record.get('disposition') != 'retained_variant' or record.get('sourceOrigin') == 'report'
-                or sku in identity_reviews or not raw_public or raw_public['category'] != 'essentials'
+                or sku in identity_reviews or not raw_public or raw_public['category'] != category
+                or review.get('expectedCategory') != category
+                or ('verificationMethod' in review and not food_method)
+                or (food_method and record.get('categoryReview') is not None)
                 or source.get('PackName') != '' or conflicts or count_hint or len(measures) != 1
                 or measures[0]['unit'].lower().rstrip('.') != 'oz'
                 # The legacy parser accepts oz prefixes. This action requires
@@ -1410,7 +1424,7 @@ def apply_ambiguous_liquid_ounces(products: list, records_by_sku: dict, source_r
         expected = (sku, review['expectedUpc'], review['expectedSourceRow'],
                     review['expectedNameSha256'], review['expectedSourceRecordSha256'],
                     review['expectedUpc'], review['expectedPublicName'], review['expectedLabel'],
-                    'essentials', review['expectedDepartment'], review['expectedProductId'])
+                    category, review['expectedDepartment'], review['expectedProductId'])
         if current != expected or source.get('DEPNAME') != review['expectedDepartment']:
             raise ValueError(f'Ambiguous liquid ounces current source/public identity mismatch: {sku}')
         if [v['sku'] for v in product['variants']] != review['expectedResultingGroupSkus']:
@@ -1689,10 +1703,168 @@ def validate_usda_missing_measurement_evidence(review: dict) -> None:
         raise ValueError(f'USDA missing measurement requires a hash-bound professional manual packaging receipt: {sku}')
 
 
+def captured_mercaso_food_product(body: str, sku: str) -> dict:
+    """Parse only the live own-product Next data, never recommendations."""
+    from html.parser import HTMLParser
+
+    class NextDataParser(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=False)
+            self.stack, self.scripts, self.current = [], [], None
+            self.invalid = False
+
+        def handle_starttag(self, tag, attrs):
+            attributes = dict(attrs)
+            ignored = (any(item[1] for item in self.stack) or tag in {'template', 'noscript', 'style'}
+                       or 'hidden' in attributes or attributes.get('aria-hidden') == 'true')
+            if tag == 'script' and attributes.get('id') == '__NEXT_DATA__' and not ignored:
+                if (len(attributes) != len(attrs) or attributes.get('type') != 'application/json'
+                        or 'src' in attributes or self.current is not None
+                        or not any(item[0] == 'html' for item in self.stack)
+                        or not any(item[0] in {'body', 'head'} for item in self.stack)):
+                    self.invalid = True
+                self.current = []
+            if tag not in {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link',
+                           'meta', 'param', 'source', 'track', 'wbr'}:
+                self.stack.append((tag, bool(ignored)))
+
+        def handle_endtag(self, tag):
+            if tag == 'script' and self.current is not None:
+                self.scripts.append(''.join(self.current))
+                self.current = None
+            if self.stack and self.stack[-1][0] == tag:
+                self.stack.pop()
+            else:
+                self.invalid = True
+
+        def handle_startendtag(self, tag, attrs):
+            self.handle_starttag(tag, attrs)
+            if self.stack and self.stack[-1][0] == tag:
+                self.handle_endtag(tag)
+
+        def handle_data(self, value):
+            if self.current is not None:
+                self.current.append(value)
+
+    def unique_object(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError('Duplicate own-product JSON field')
+            result[key] = value
+        return result
+
+    parser = NextDataParser()
+    parser.feed(body)
+    parser.close()
+    try:
+        if parser.invalid or parser.stack or parser.current is not None or len(parser.scripts) != 1:
+            raise ValueError('Expected one live own-product Next data script')
+        data = json.loads(parser.scripts[0], object_pairs_hook=unique_object, parse_float=Decimal,
+                          parse_constant=lambda value: (_ for _ in ()).throw(ValueError(value)))
+        product = data['props']['pageProps']['product']
+        if not isinstance(product, dict):
+            raise ValueError('Expected one own product object')
+        return product
+    except (ValueError, KeyError, TypeError) as error:
+        raise ValueError(f'Printed food unit requires one unambiguous props.pageProps.product capture: {sku}') from error
+
+
+def validate_printed_food_unit_evidence(review: dict) -> None:
+    """Use an actual printed barcode/net label, with honest distributor context."""
+    sku = review['sku']
+    evidence = review.get('evidence')
+    kinds = {'distributor_exact_food_unit_record', 'inspected_package_photo'}
+    if (not isinstance(evidence, list) or len(evidence) != 2
+            or any(not isinstance(item, dict) or not isinstance(item.get('kind'), str) for item in evidence)
+            or {item['kind'] for item in evidence} != kinds):
+        raise ValueError(f'Printed food unit requires distributor and printed-package evidence: {sku}')
+    source = next(item for item in evidence if item['kind'] == 'distributor_exact_food_unit_record')
+    photo = next(item for item in evidence if item['kind'] == 'inspected_package_photo')
+    fields = {'kind', 'url', 'supports', 'publisher', 'sourceRole', 'sourceSha256', 'retrievedOn', 'capture'}
+    capture = source.get('capture')
+    if (set(source) != fields or source.get('publisher') != 'Mercaso'
+            or source.get('sourceRole') != 'direct_seller_wholesaler'
+            or not safe_review_text(source.get('supports')) or not isinstance(capture, dict)
+            or set(capture) != {'status', 'complete', 'contentType', 'responseUrl', 'responseBody'}
+            or type(capture['status']) is not int or capture['status'] != 200 or capture['complete'] is not True
+            or not isinstance(capture['contentType'], str) or capture['contentType'].split(';')[0].strip().lower() != 'text/html'
+            or capture['responseUrl'] != source.get('url')
+            or not isinstance(capture['responseBody'], str) or not capture['responseBody']
+            or not isinstance(source.get('sourceSha256'), str)
+            or hashlib.sha256(capture['responseBody'].encode()).hexdigest() != source['sourceSha256']):
+        raise ValueError(f'Printed food unit requires a complete hash-bound distributor HTML capture: {sku}')
+    product = captured_mercaso_food_product(capture['responseBody'], sku)
+    parsed = urlparse(source['url']) if isinstance(source.get('url'), str) else None
+    slug = product.get('slug')
+    tags, variants = product.get('tags'), product.get('variants')
+    size, unit = product.get('itemSize'), product.get('unitOfMeasure')
+    individuals = [v for v in variants if isinstance(v, dict) and v.get('name') == 'Individual'] if isinstance(variants, list) else []
+    images = product.get('images')
+    image_url = images[0].get('url') if isinstance(images, list) and images and isinstance(images[0], dict) else None
+    if (not parsed or review_url_host(source['url']) != 'shop.mercaso.com'
+            or parsed.netloc != 'shop.mercaso.com' or parsed.params or parsed.query or parsed.fragment
+            or not isinstance(slug, str) or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug)
+            or not re.fullmatch(r'(?:/collections/[a-z0-9]+(?:-[a-z0-9]+)*)?/products/' + re.escape(slug), parsed.path)
+            or product.get('path') != '/' + slug
+            or not isinstance(product.get('id'), str) or not re.fullmatch(r'gid://shopify/Product/[1-9][0-9]*', product['id'])
+            or not safe_review_text(product.get('name'))
+            or not isinstance(tags, list) or any(not isinstance(tag, str) for tag in tags)
+            or tags.count('UPC-Each: ' + review['expectedUpc']) != 1
+            or type(size) not in (int, Decimal) or size <= 0
+            or not isinstance(unit, str) or unit not in {'oz', 'g', 'kg', 'lb', 'mL', 'L', 'fl oz'}
+            or decimal_text(str(size)) + ' ' + unit != review['verifiedLabel']
+            or len(individuals) != 1 or 'barcode' not in individuals[0] or individuals[0]['barcode'] is not None
+            or not isinstance(individuals[0].get('options'), list)
+            or not any(isinstance(option, dict) and option.get('displayName') == 'title'
+                       and option.get('values') == [{'label': 'Individual'}] for option in individuals[0]['options'])
+            or not review_url_host(image_url) or photo.get('url') != image_url):
+        raise ValueError(f'Printed food unit requires literal own UPC-Each, size, Individual option and feature image: {sku}')
+    photo_fields = {'kind', 'url', 'supports', 'sha256', 'inspectedOn', 'inspectionReceipt', 'inspectionReceiptSha256'}
+    if (set(photo) != photo_fields or not safe_review_text(photo.get('supports'))
+            or photo.get('sha256') != review['expectedImageSha256']):
+        raise ValueError(f'Printed food unit requires the unchanged inspected package original: {sku}')
+    receipt = photo.get('inspectionReceipt')
+    expected = {'scope': 'original_inventory_unit', 'sku': sku, 'upc': review['expectedUpc'],
+        'publicName': review['expectedPublicName'], 'expectedLabel': review['expectedLabel'], 'verifiedLabel': review['verifiedLabel'],
+        'productId': review['expectedProductId'], 'groupSkus': review['expectedResultingGroupSkus'], 'sourceRow': review['expectedSourceRow'],
+        'rawFieldsSha256': review['expectedSourceRecordSha256'], 'rawNameSha256': review['expectedNameSha256'],
+        'sha256': review['expectedImageSha256'], 'originalSha256': review['expectedImageSha256'], 'sourceImageUrl': image_url,
+        'visibleUpc': review['expectedUpc'], 'visibleNetContent': review['verifiedLabel'],
+        'countBasis': 'manual_visible_packaging', 'codeBasis': 'printed_package_barcode',
+        'netContentBasis': 'printed_package_net_content', 'distributorSourceSha256': source['sourceSha256'],
+        'inspectedOn': photo['inspectedOn']}
+    receipt_fields = set(expected) | {'src', 'publicImageSha256', 'visibleContainerCount', 'verification',
+                                     'rootInspectionReceiptSha256', 'independentInspectionReceiptSha256'}
+    if (not isinstance(receipt, dict) or set(receipt) != receipt_fields
+            or any(receipt.get(key) != value for key, value in expected.items())
+            or type(receipt.get('sourceRow')) is not int
+            or type(receipt.get('visibleContainerCount')) is not int or receipt['visibleContainerCount'] != 1
+            or not isinstance(receipt.get('src'), str) or not re.fullmatch(r'images/products/[A-Za-z0-9_./-]+', receipt['src'])
+            or any(not isinstance(receipt.get(key), str) or not re.fullmatch(r'[a-f0-9]{64}', receipt[key])
+                   for key in ['publicImageSha256', 'rootInspectionReceiptSha256', 'independentInspectionReceiptSha256'])
+            or receipt['rootInspectionReceiptSha256'] == receipt['independentInspectionReceiptSha256']
+            or not isinstance(receipt.get('verification'), dict)
+            or set(receipt['verification']) != {'brand', 'expression', 'size', 'packaging', 'visual', 'professional'}
+            or any(value is not True for value in receipt['verification'].values())
+            or photo.get('inspectionReceiptSha256') != review_evidence_sha256(receipt)):
+        raise ValueError(f'Printed food unit requires hash-bound visible barcode/net and independent manual receipt identifiers: {sku}')
+    try:
+        for value in [review.get('reviewedOn'), source['retrievedOn'], photo['inspectedOn']]:
+            if not isinstance(value, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+                raise ValueError('Invalid inspection date')
+            date.fromisoformat(value)
+    except ValueError as error:
+        raise ValueError(f'Printed food unit requires real capture and inspection dates: {sku}') from error
+
+
 def validate_missing_measurement_evidence(review: dict) -> None:
     """Bind a missing unit measurement to primary/unit records and inspected bytes."""
     if review.get('verificationMethod') == 'usda_branded_food_package_weight':
         validate_usda_missing_measurement_evidence(review)
+        return
+    if review.get('verificationMethod') == PRINTED_FOOD_UNIT_METHOD:
+        validate_printed_food_unit_evidence(review)
         return
     sku = review['sku']
     evidence = review.get('evidence')
@@ -1812,6 +1984,41 @@ def validate_missing_measurement_evidence(review: dict) -> None:
         raise ValueError(f'Missing measurement requires an independent retailer source: {sku}')
 
 
+def printed_food_count_hint(text: str) -> re.Match | None:
+    """Require no original packaging/container context in printed-food mode.
+
+    Any standalone container word remains held for a separate pack review,
+    regardless of intervening words or whether a count can be parsed.
+    """
+    numeric = r'[0-9]+(?:\.[0-9]+)?'
+    separator = r'[\s\-\u2010-\u2015\u2212]'
+    # Retain cardinal/scale recognition for joined forms. This never assigns
+    # a quantity or promotes a description of several containers as one unit.
+    word = (r'(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|'
+            r'thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|'
+            r'twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|'
+            r'hundreds?|thousands?|millions?|billions?|trillions?|dozens?|'
+            r'single|pair|couple|twin|double|triple|multi(?:ple)?|half|quarter|several|few)')
+    written = rf'{word}(?:{separator}*(?:(?:and|a|of){separator}*)?{word})*'
+    count = rf'(?:{numeric}|{written})'
+    noun = (r'(?:cases?|cs|packs?|packages?|pkgs?|pks?|counts?|ct|units?|pcs?|pieces?|'
+            r'bottles?|btls?|cans?|cartons?|box(?:es)?|bundles?|sets?|pairs?|doz(?:en)?s?|dz|'
+            r'jars?|tubs?|pouch(?:es)?|packets?|bars?|rolls?|bags?|trays?|tins?|cups?|containers?|'
+            r'tubes?|sachets?|sleeves?|sticks?)')
+    punctuation = r'(?:[:=#/]|\[|\()'
+    gap = rf'{separator}*'
+    return re.search(
+        rf'\b{noun}\b|'
+        r'\b(?:cases?|cs|shipping|wholesale|pallets?|displays?|trays?|packs?|pkgs?|pks?|'
+        r'cartons?|boxes?|bundles?|counts?|ct|units?|pcs?|pieces?|doz(?:en)?s?|dz)\b|'
+        rf'(?<!\w){noun}{gap}(?:(?:of|qty|count){gap})?{punctuation}?{gap}{count}(?![\w.])|'
+        rf'(?<![\w.]){count}{gap}(?:{punctuation}{gap}|(?:of|per){gap})?{noun}(?!\w)|'
+        rf'(?<!\w)[x×]{gap}{punctuation}?{gap}{numeric}(?![\w.])|'
+        rf'×{gap}{numeric}(?![\w.])|(?<![\w.]){numeric}{gap}[x×](?!\w)|'
+        rf'(?<![\w.]){numeric}{gap}[x×]{gap}(?=[0-9])|'
+        rf'(?<![\w.]){count}{gap}[x×]{gap}{noun}(?!\w)', text, re.I)
+
+
 def apply_missing_measurements(products: list, records_by_sku: dict, source_reviews: dict,
                                image_manifest: dict | None, private_image_evidence: dict | None,
                                blocked_images: set, identity_reviews: dict) -> None:
@@ -1830,6 +2037,7 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
         raw_public = classify_record(source)[2] if source else None
         raw_parts = [extract_dimensions(source.get(field, '')) for field in ('ItemName', 'PackName')]
         usda_method = review.get('verificationMethod') == 'usda_branded_food_package_weight'
+        printed_method = review.get('verificationMethod') == PRINTED_FOOD_UNIT_METHOD
         # Fail closed on explicit pack counts the legacy dimension parser does
         # not recognize. This applies only to this single-unit late action;
         # neither source text nor global parsing/brand numbers are changed.
@@ -1846,6 +2054,9 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
                 or clean_space(source.get('PackName', ''))
                 or raw_public['variant']['label'] != 'Size not specified'
                 or any(part['measures'] or part['packs'] or part['container'] for part in raw_parts)
+                or (printed_method and (raw_public['category'] != 'food' or review.get('expectedCategory') != 'food'
+                                        or source.get('PackName') != '' or record.get('categoryReview') is not None
+                                        or printed_food_count_hint(source.get('ItemName', ''))))
                 or (usda_method and re.search(
                     r'\b(?:cases?|cs|shipping|wholesale|pallets?|displays?|trays?|packs?|pkgs?|pks?|'
                     r'cartons?|boxes?|bundles?|counts?|ct|units?|pcs?|pieces?|doz(?:en)?s?|dz)\b|'
@@ -1884,11 +2095,12 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
         inspection = next(item for item in review['evidence'] if item['kind'] == 'inspected_package_photo')
         if len(private_matches) != 1 or private_matches[0].get('sourceImageUrl') != inspection['url']:
             raise ValueError(f'Missing measurement inspected photo must match its private provenance: {sku}')
-        if usda_method:
+        if usda_method or printed_method:
             receipt = inspection['inspectionReceipt']
             if (image.get('src') != receipt['src'] or checks != receipt['verification']
                     or review_evidence_sha256(image) != receipt['publicImageSha256']):
-                raise ValueError(f'USDA missing measurement requires its complete inspected public-image binding: {sku}')
+                context = 'Printed food unit' if printed_method else 'USDA missing measurement'
+                raise ValueError(f'{context} requires its complete inspected public-image binding: {sku}')
         # Every earlier guard has now seen its original label. Only this field
         # changes; final image assignment still verifies private coverage/bytes.
         record['lateMeasurementResolution'] = {
@@ -2018,20 +2230,24 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                         'expectedCategory', 'expectedDepartment', 'expectedProductId',
                         'expectedResultingGroupSkus', 'verifiedLabel', 'expectedImageSha256',
                         'verification', 'evidence'}
+            food_method = entry.get('verificationMethod') == FOOD_FLUID_OUNCE_METHOD
+            if food_method:
+                allowed.add('verificationMethod')
+            category = 'food' if food_method else 'essentials'
             prior = canonical_ounce_label_value(entry.get('expectedLabel'))
             verified = canonical_ounce_label_value(entry.get('verifiedLabel'), fluid=True)
             if (set(entry) != allowed or not re.fullmatch(r'[1-9][0-9]*', sku)
                     or not re.fullmatch(r'(?:[0-9]{8}|[0-9]{12}|[0-9]{13}|[0-9]{14})', entry['expectedUpc'])
                     or not valid_gtin(entry['expectedUpc']) or prior is None or verified != prior
                     or entry.get('verifiedLabel') != entry.get('expectedLabel', '')[:-3] + ' fl oz'
-                    or entry.get('expectedCategory') != 'essentials'
+                    or entry.get('expectedCategory') != category
                     or type(entry.get('expectedSourceRow')) is not int or entry['expectedSourceRow'] < 1
                     or not re.fullmatch(r'p-[a-f0-9]{16}', str(entry.get('expectedProductId')))
                     or entry.get('expectedResultingGroupSkus') != [sku]
                     or not all(safe_review_text(entry.get(key)) for key in ('expectedPublicName', 'expectedDepartment'))
                     or not isinstance(entry.get('reviewedOn'), str)
                     or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn'])):
-                raise ValueError(f'Ambiguous liquid ounces require exact singleton essentials identity and unchanged numeric quantity: {sku}')
+                raise ValueError(f'Ambiguous liquid ounces require exact singleton {category} identity and unchanged numeric quantity: {sku}')
             validate_direct_image_guard(entry, sku, 'Ambiguous liquid ounces')
             validate_reviewed_identity_checks(entry.get('verification'), sku, 'Ambiguous liquid ounces')
             validate_ambiguous_liquid_ounce_evidence(entry)
@@ -2041,7 +2257,8 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                         'expectedResultingGroupSkus', 'verifiedLabel', 'expectedImageSha256',
                         'verification', 'evidence'}
             usda_method = entry.get('verificationMethod') == 'usda_branded_food_package_weight'
-            if usda_method:
+            printed_method = entry.get('verificationMethod') == PRINTED_FOOD_UNIT_METHOD
+            if usda_method or printed_method:
                 allowed.add('verificationMethod')
             if (set(entry) != allowed or not valid_gtin(entry['expectedUpc'])
                     or type(entry['expectedSourceRow']) is not int or entry['expectedSourceRow'] < 1
@@ -2067,6 +2284,9 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                 raise ValueError(f'Missing measurement requires its unchanged exact SKU group: {sku}')
             if usda_method and (entry['expectedCategory'] != 'food' or group != [sku]):
                 raise ValueError(f'USDA missing measurement requires one unchanged original food SKU: {sku}')
+            if printed_method and (entry['expectedCategory'] != 'food' or group != [sku]
+                    or not re.fullmatch(r'(?:[0-9]{8}|[0-9]{12}|[0-9]{13}|[0-9]{14})', entry['expectedUpc'])):
+                raise ValueError(f'Printed food unit requires one unchanged original food SKU and literal GTIN: {sku}')
             validate_direct_image_guard(entry, sku, 'Missing measurement')
             validate_reviewed_identity_checks(entry['verification'], sku, 'Missing measurement')
             validate_missing_measurement_evidence(entry)
@@ -2162,6 +2382,21 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                     or re.search(r'[$€£]', name)
                     or not isinstance(entry.get('forceSizeNeedsConfirmation'), bool)):
                 raise ValueError(f'Restoration requires a price-free reviewed description: {sku}')
+            if 'verificationMethod' in entry:
+                allowed.add('verificationMethod')
+                if (entry['verificationMethod'] != NAME_ONLY_RESTORATION_METHOD
+                        or entry['forceSizeNeedsConfirmation'] is not True
+                        or 'identityResolution' in entry
+                        or not re.fullmatch(r'[1-9][0-9]*', sku)
+                        or not re.fullmatch(r'(?:[0-9]{8}|[0-9]{12}|[0-9]{13}|[0-9]{14})', entry['expectedUpc'])
+                        or not valid_gtin(entry['expectedUpc'])):
+                    raise ValueError(f'Name-only restoration requires its explicit method, literal GTIN and unresolved unit: {sku}')
+                try:
+                    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry.get('reviewedOn', '')):
+                        raise ValueError('Missing review date')
+                    date.fromisoformat(entry['reviewedOn'])
+                except (ValueError, TypeError) as error:
+                    raise ValueError(f'Name-only restoration requires a real review date: {sku}') from error
         if entry['action'] == 'resolve_verified_identity':
             allowed |= {'verifiedName', 'verifiedLabel', 'verification', 'evidence'}
             name, label = entry.get('verifiedName'), entry.get('verifiedLabel')
@@ -2330,6 +2565,8 @@ def restored_description(source: dict, review: dict) -> str:
     eligible = {'Unlabelled decimal may be a price or unconfirmed measure',
                 'Unresolved price/promotion text in title',
                 'Unresolved price/promotion text after unit parsing'}
+    if review.get('verificationMethod') == NAME_ONLY_RESTORATION_METHOD:
+        eligible.add('Needs a specific product name; source record retained')
     if disposition != 'needs_review' or reason not in eligible:
         raise ValueError(f'Restoration is not eligible for the original source: {source["SKU"]}')
     original = iter(re.sub(r'\s', '', source['ItemName']))
@@ -2338,6 +2575,48 @@ def restored_description(source: dict, review: dict) -> str:
                for character in re.sub(r'\s', '', sanitized)):
         raise ValueError(f'Restoration must only remove source text: {source["SKU"]}')
     return sanitized
+
+
+def validate_guarded_name_restoration(source: dict, raw_fields: list, review: dict,
+                                      title_review: dict | None) -> None:
+    """Couple generic source cleanup to exact name proof, never unit proof."""
+    sku, descriptor = source['SKU'], review['sanitizedSourceName']
+    # This bounded route cannot delete a brand/flavor or interpret a source
+    # pack. Only an edge ambiguous decimal/currency annotation may leave a plain,
+    # generic merchandise noun; the entire descriptor is kept in its guard.
+    generic = {'candy', 'juice', 'soda', 'snack', 'snacks', 'beer', 'cigar', 'cigars', 'pop'}
+    amount = r'(?:[0-9]+(?:\.[0-9]+)?|\.[0-9]+)'
+    annotation = rf'(?:[0-9]+\.[0-9]+|\.[0-9]+|[$€£]\s*{amount}|{amount}\s*[$€£])'
+    cleanup = rf'(?:{annotation}\s*)?{re.escape(descriptor)}(?:\s*{annotation})?'
+    if (descriptor != clean_space(descriptor) or descriptor.casefold() not in generic
+            or source['PackName'] != '' or category_for(clean_space(source['DEPNAME'])) == 'other'
+            or not re.fullmatch(cleanup, clean_space(source['ItemName']))
+            or clean_space(source['ItemName']) == descriptor):
+        raise ValueError(f'Name-only restoration requires generic descriptor and edge-annotation cleanup only: {sku}')
+    expected = (sku, source['MAINUPC'], source['sourceRow'], review_evidence_sha256(raw_fields),
+                descriptor, 'Size needs confirmation', category_for(clean_space(source['DEPNAME'])),
+                clean_space(source['DEPNAME']))
+    if (not title_review or tuple(title_review[key] for key in (
+            'sku', 'expectedUpc', 'expectedSourceRow', 'expectedRawFieldsSha256',
+            'expectedPublicName', 'expectedLabel', 'expectedCategory', 'expectedDepartment')) != expected):
+        raise ValueError(f'Name-only restoration requires its matching guarded public-name review: {sku}')
+    title = title_review['proposedPublicTitle']
+    parts = extract_dimensions(title)
+    unit_or_container = re.search(
+        r'\b(?:cases?|packs?|packages?|pkgs?|pks?|counts?|ct|units?|pcs?|pieces?|'
+        r'bottles?|btls?|cans?|cartons?|box(?:es)?|bundles?|jars?|tubs?|pouch(?:es)?|'
+        r'packets?|bars?|rolls?|bags?|trays?|tins?|cups?|containers?|tubes?|sachets?|'
+        r'sleeves?|sticks?|sets?|pairs?|couples?|single|double|triple|twin|multi|multiple|zero|one|two|three|'
+        r'four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|'
+        r'sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|'
+        r'eighty|ninety|dozens?|hundreds?|thousands?|'
+        r'ounces?|oz|(?:kilo|milli|micro)?grams?|kg|mg|mcg|g|pounds?|lbs?|'
+        r'(?:milli|centi|deci|kilo)?lit(?:er|re)s?|ml|cl|dl|l|lit|ltr?s?|fl(?:uid)?|'
+        r'pints?|pts?|quarts?|qts?|gallons?|gals?|feet|foot|ft|met(?:er|re)s?|m|'
+        r'servings?|size|net|wt)\b', title, re.I)
+    if (re.search(r'\d', title) or unit_or_container
+            or parts['measures'] or parts['packs'] or parts['container']):
+        raise ValueError(f'Name-only restoration cannot establish a quantity, container or selling unit: {sku}')
 
 
 def uncertain_size_label(source: dict) -> str:
@@ -2399,6 +2678,10 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     report_additions = validated_report_additions(report_additions_manifest)
     category_reviews = validated_category_reviews(category_reviews_manifest)
     public_name_reviews = validated_public_name_reviews(public_name_reviews_manifest)
+    guarded_restorations = {sku for sku, review in source_reviews.items()
+                            if review.get('verificationMethod') == NAME_ONLY_RESTORATION_METHOD}
+    if guarded_restorations & (set(corrections) | set(identity_reviews) | set(name_verifications) | set(category_reviews)):
+        raise ValueError('Name-only restoration cannot coexist with name, identity or category overrides')
     applied_category_reviews = set()
     applied_public_name_reviews = set()
     master = []
@@ -2430,6 +2713,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
             adjusted_source = dict(source)
             override_flags = []
             restoring = bool(review and review['action'] == 'restore_named_merchandise')
+            guarded_restoring = sku in guarded_restorations
             resolving = bool(review and review['action'] == 'resolve_verified_identity')
             if review:
                 raw_hash = hashlib.sha256(json.dumps(fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
@@ -2439,6 +2723,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 record['sourceReview'] = review
                 if restoring:
                     adjusted_source['ItemName'] = restored_description(source, review)
+                    if guarded_restoring:
+                        validate_guarded_name_restoration(source, fields, review, public_name_reviews.get(sku))
             for overrides in (corrections, identity_reviews, name_verifications):
                 override = overrides.get(sku)
                 if override and (override['expectedNameSha256'], override['expectedUpc']) != (
@@ -2471,7 +2757,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 else:
                     disposition, reason, public, flags = 'needs_review', identity_review['reason'], None, []
             else:
-                disposition, reason, public, flags = classify_record(adjusted_source)
+                disposition, reason, public, flags = classify_record(adjusted_source, defer_specific_name=guarded_restoring)
             if manufacturer_baseline and (not public or public['variant'] != manufacturer_baseline['variant']):
                 raise ValueError(f'Manufacturer name-only review changed the original variant metadata: {sku}')
             if review:
@@ -2560,6 +2846,14 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 record['publicNameCorrection'] = public_name_review
                 applied_public_name_reviews.add(sku)
                 flags.append('Guarded exact-UPC public title correction applied; original source name and variant metadata preserved')
+            if guarded_restoring:
+                if (not public or sku not in applied_public_name_reviews
+                        or public['name'] != public_name_review['proposedPublicTitle']
+                        or public['variant']['label'] != 'Size needs confirmation'
+                        or public['variant']['image'] is not None):
+                    raise ValueError(f'Name-only restoration must finish its guarded name with unit and photo unresolved: {sku}')
+                record['nameOnlyRestoration'] = {'sanitizedDescriptor': review['sanitizedSourceName'],
+                    'sellingUnitVerified': False, 'photoApproved': False}
             if review and review['action'] == 'refine_verified_fluid_ounce_label':
                 if not public:
                     raise ValueError(f'Fluid-ounce identity requires retained source merchandise: {sku}')
