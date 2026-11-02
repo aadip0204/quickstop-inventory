@@ -7380,6 +7380,81 @@
       "evidence": {
         "privateEvidenceSha256": "d8a5eba8dce7e6ee4abf640fcc36ee5501f3882e0200f511364ab750a1290965"
       }
+    },
+    {
+      "sku": "3392",
+      "expectedUpc": "070897013315",
+      "expectedSourceRow": 9176,
+      "expectedRawFieldsSha256": "a0fb866ada26fb4fde12808df1839c489189ff6af05028dc6bda5663c6cc4c2b",
+      "expectedPublicName": "Fosters Oil Can",
+      "expectedLabel": "Single · 25.4 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Foster's Australian Lager Beer",
+      "reason": "Independent exact consumer barcode and matching original package review establish the complete singleton product name. Preserve original source fields, unit, category, department and every other ordered family.",
+      "evidence": {
+        "privateEvidenceSha256": "a6d078b7a9851917616430ca0d90605813818c84105034f7834c05109066716d"
+      }
+    },
+    {
+      "sku": "7995",
+      "expectedUpc": "010228104244",
+      "expectedSourceRow": 8055,
+      "expectedRawFieldsSha256": "33f8edea2d55fca6b07a290e424397263d7e18ebcad0afcd47f1de5005b0818f",
+      "expectedPublicName": "spray disinfectant kills cold & flu viruses",
+      "expectedLabel": "6 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Chase's Home Value Country Rain Disinfectant Spray",
+      "reason": "Independent exact consumer barcode and matching original package review establish the complete singleton product name. Preserve original source fields, unit, category, department and every other ordered family.",
+      "evidence": {
+        "privateEvidenceSha256": "8b039cfba3020dac68d8b592629d96fcecfa3f4061b6b8b235f962754cd91264"
+      }
+    },
+    {
+      "sku": "5091",
+      "expectedUpc": "058847028107",
+      "expectedSourceRow": 9416,
+      "expectedRawFieldsSha256": "acb7931365f01a3858167d563fe42db0056199a40e489f7d31e122f3b5b665f7",
+      "expectedPublicName": "lemon cleaner nettoyant aucitr",
+      "expectedLabel": "28 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "First Force All Purpose Lemon Cleaner",
+      "reason": "Independent exact consumer barcode and matching original package review establish the complete singleton product name. Preserve original source fields, unit, category, department and every other ordered family.",
+      "evidence": {
+        "privateEvidenceSha256": "89f8ee534864bdd48892f8be5cea196f386e50dcf0941e569020d84bfdbb6cf9"
+      }
+    },
+    {
+      "sku": "6058",
+      "expectedUpc": "8901802001023",
+      "expectedSourceRow": 3872,
+      "expectedRawFieldsSha256": "ab6d5a6c618445f447b85d085f6e6656119563380287858f4afee79b82c4f6d2",
+      "expectedPublicName": "Nag Champa",
+      "expectedLabel": "15 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Satya Sai Baba Nag Champa Incense",
+      "reason": "Independent exact consumer barcode and matching original package review establish the complete singleton product name. Preserve original source fields, unit, category, department and every other ordered family.",
+      "evidence": {
+        "privateEvidenceSha256": "ddfecf510db7a91f82e043d593ba4fe645718d0efa127bc7b735e19e8343fa6e"
+      }
+    },
+    {
+      "sku": "101370",
+      "expectedUpc": "7791293048864",
+      "expectedSourceRow": 9392,
+      "expectedRawFieldsSha256": "34e207d7758358592be8cf51c8782997674e6be084420f8fbff080cd0963cb7f",
+      "expectedPublicName": "AXE BODY SPRAY APPOLLO",
+      "expectedLabel": "150 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "AXE Apollo Body Spray",
+      "reason": "Independent exact consumer barcode and matching original package review establish the complete singleton product name. Preserve original source fields, unit, category, department and every other ordered family.",
+      "evidence": {
+        "privateEvidenceSha256": "7f2e68a00dda4ab915ec77847ed1a58a91cc46089f1f61fc3ce295a616446615"
+      }
     }
   ]
 }
