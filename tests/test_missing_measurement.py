@@ -79,6 +79,51 @@ def historical_fixture(source=None, names=None):
 
 
 class MissingMeasurementTests(unittest.TestCase):
+    def coca_fixture(self):
+        source, baseline, kwargs = missing_fixture(label='20 fl oz')
+        primary = kwargs['source_reviews_manifest']['reviews'][0]['evidence'][0]
+        primary.update(publisher='The Coca-Cola Company',
+                       url='https://smartlabel.coca-colaproductfacts.com/nutrition/index.html?upc=012345678905',
+                       publisherEvidenceUrl='https://smartlabel.coca-colaproductfacts.com/products/index.html')
+        return source, baseline, kwargs
+
+    def test_coca_owned_record_resolves_only_reviewed_missing_unit_and_photo(self):
+        source, baseline, kwargs = self.coca_fixture()
+        catalog, audit = builder.build(source, **kwargs)
+        actual, prior = catalog['products'][0], baseline['products'][0]
+        self.assertEqual((actual['id'], actual['name'], actual['category'], actual['department']),
+                         (prior['id'], prior['name'], prior['category'], prior['department']))
+        variant = actual['variants'][0]
+        self.assertEqual(variant['label'], '20 fl oz')
+        self.assertIsNotNone(variant['image'])
+        self.assertEqual({k: v for k, v in variant.items() if k not in ('label', 'image')},
+                         {k: v for k, v in prior['variants'][0].items() if k not in ('label', 'image')})
+        self.assertEqual(audit['records'][0]['rawFields'], list(csv.reader(io.StringIO(source.decode())))[1])
+
+    def test_coca_record_does_not_trust_related_or_lookalike_hosts(self):
+        for field in ('url', 'publisherEvidenceUrl'):
+            for url in ('https://smartlabel.coca-colaproductfacts.com.evil.test/record',
+                        'https://other.coca-colaproductfacts.com/record',
+                        'https://assets.coke.com/record',
+                        'https://user@smartlabel.coca-colaproductfacts.com/record',
+                        'https://smartlabel.coca-colaproductfacts.com:443/record'):
+                source, _, kwargs = self.coca_fixture()
+                kwargs['source_reviews_manifest']['reviews'][0]['evidence'][0][field] = url
+                with self.subTest(field=field, url=url), self.assertRaises(ValueError):
+                    builder.build(source, **kwargs)
+
+    def test_coca_unit_still_requires_exact_code_and_independent_retailer(self):
+        for kind, value in (('primary_upc', '012345678912'), ('retailer_upc', '012345678912'),
+                            ('retailer_host', 'https://smartlabel.coca-colaproductfacts.com/unit'),
+                            ('retailer_host', 'https://mirror.smartlabel.coca-colaproductfacts.com/unit')):
+            source, _, kwargs = self.coca_fixture()
+            primary, retailer, _ = kwargs['source_reviews_manifest']['reviews'][0]['evidence']
+            if kind == 'primary_upc': primary['observedUpc'] = value
+            elif kind == 'retailer_upc': retailer['observedUpc'] = value
+            else: retailer['url'] = value
+            with self.subTest(kind=kind, value=value), self.assertRaises(ValueError):
+                builder.build(source, **kwargs)
+
     def test_historical_exact_package_preserves_entire_catalog_except_target_label_photo(self):
         source = export({'ItemName': 'Example Cookie', 'DEPNAME': 'Snacks', 'MAINUPC': '012345678905',
                          'ItemPrice': '', 'TotalQty_Multi': ''},
