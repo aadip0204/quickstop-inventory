@@ -22,6 +22,12 @@
     return normalize(query).split(' ').filter(Boolean);
   }
 
+  function matchesQuery(product, text, tokens) {
+    const words = normalize(product.name).split(' ');
+    return tokens.every(token => text.includes(token) || (/^[a-z]+$/.test(token) &&
+      words.some((_, start) => words.slice(start).join('').startsWith(token))));
+  }
+
   function productSearchText(product, categoryLabel = '', departmentLabel = '') {
     return normalize([product.name, product.department, product.category, categoryLabel, departmentLabel,
       ...product.variants.flatMap(variant => [variant.sku, variant.upc, variant.label])].join(' '));
@@ -39,7 +45,7 @@
       if (filters.category && filters.category !== 'all' && product.category !== filters.category) return false;
       if (filters.department !== undefined && filters.department !== 'all' && product.department !== filters.department) return false;
       const haystack = productSearchText(product, labels.get(product.category) || '', departments.get(product.department) || '');
-      return tokens.every(token => haystack.includes(token));
+      return matchesQuery(product, haystack, tokens);
     });
   }
 
@@ -80,7 +86,7 @@
     const matches = product.variants.filter(variant => {
       const text = normalize([product.name, product.department, product.category,
         variant.sku, variant.upc, variant.label].join(' '));
-      return tokens.every(token => text.includes(token));
+      return matchesQuery(product, text, tokens);
     });
     // Default to a photographed matching size, while keeping its exact size/SKU
     // selected. A size-specific query or explicit user choice always takes priority.
