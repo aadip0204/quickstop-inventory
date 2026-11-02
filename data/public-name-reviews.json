@@ -6630,6 +6630,81 @@
       "evidence": {
         "privateEvidenceSha256": "50ec9bcd2536be5933c6285e293c8057f1b445b7e48977fa2fa7fb00eebc5223"
       }
+    },
+    {
+      "sku": "3366",
+      "expectedUpc": "020100000212",
+      "expectedSourceRow": 2177,
+      "expectedRawFieldsSha256": "a926b3af6c86f03f52b4e22a9c9baefdf745c1ad5c6ba838a1293a9b6898092e",
+      "expectedPublicName": "Fish Steaks soybean oil",
+      "expectedLabel": "3.75 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Beach Cliff Fish Steaks in Soybean Oil",
+      "reason": "Narrow exact consumer-code product title correction; original raw fields preserved and photo/size decisions separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "09fd096cb4049b432f263b61e0b4e40206516f4062e341d0946073035011a4ed"
+      }
+    },
+    {
+      "sku": "4985",
+      "expectedUpc": "076410901312",
+      "expectedSourceRow": 9614,
+      "expectedRawFieldsSha256": "7169b2da8e8d83a946a2e13a7963acc757d628787d4039f494726cfaf001a56d",
+      "expectedPublicName": "lance nekot sandwich cookies",
+      "expectedLabel": "49 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Lance Nekot Peanut Butter Sandwich Cookies",
+      "reason": "Narrow exact consumer-code product title correction; original raw fields preserved and photo/size decisions separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "eff592a354cbbb197165670261758387ec38104d0e95d396b81e37de74224dff"
+      }
+    },
+    {
+      "sku": "6455",
+      "expectedUpc": "044000007492",
+      "expectedSourceRow": 4096,
+      "expectedRawFieldsSha256": "de2deaf4b7cfba7495d16863f9ef87cb3447c494a9164a4288b648a7b81b1b9d",
+      "expectedPublicName": "Oreo cookies",
+      "expectedLabel": "5.2 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Oreo Chocolate Sandwich Cookies",
+      "reason": "Narrow exact consumer-code product title correction; original raw fields preserved and photo/size decisions separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "ec6cad43de8dcb2965aac83f534e20b03ba78e32432344fe2dc0f9e583358b01"
+      }
+    },
+    {
+      "sku": "7569",
+      "expectedUpc": "031146262441",
+      "expectedSourceRow": 4862,
+      "expectedRawFieldsSha256": "06da83f10c3bafef06a0a7719db98f76eefe0ae241e6db327208a12a0d260cde",
+      "expectedPublicName": "Shin Bowl noodle soup",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Nongshim Shin Ramyun Original Bowl Noodle Soup",
+      "reason": "Narrow exact consumer-code product title correction; original raw fields preserved and photo/size decisions separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "1964a99f0bbb8efef85a6bfcaa0c1cbe5bbf3e2841381493266e92a9f1faa88c"
+      }
+    },
+    {
+      "sku": "7570",
+      "expectedUpc": "031146262571",
+      "expectedSourceRow": 4863,
+      "expectedRawFieldsSha256": "302dfa530be8b33964f84cc868651a86cad4187387f823901479d8051e0dcbe2",
+      "expectedPublicName": "Shin Bowl noodle soup spicy chicken",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Nongshim Bowl Noodles Spicy Chicken Flavor",
+      "reason": "Narrow exact consumer-code product title correction; original raw fields preserved and photo/size decisions separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "9255727bb2b083513c07aceb890d436a1696b527eec713b1ac723149af87c718"
+      }
     }
   ]
 }

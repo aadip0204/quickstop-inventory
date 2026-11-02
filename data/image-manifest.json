@@ -30800,6 +30800,66 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "6455",
+      "src": "images/products/sku-6455.jpg",
+      "alt": "Oreo Chocolate Sandwich Cookies — 5.2 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "044000007492",
+      "expectedName": "Oreo Chocolate Sandwich Cookies",
+      "expectedLabel": "5.2 oz",
+      "sha256": "7a39660e2b143e2e07e081bb993ef35cb6f41ffd3fc8f0afbecd3224c9bfd2d9",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7569",
+      "src": "images/products/sku-7569.webp",
+      "alt": "Nongshim Shin Ramyun Original Bowl Noodle Soup — 3.03 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "031146262441",
+      "expectedName": "Nongshim Shin Ramyun Original Bowl Noodle Soup",
+      "expectedLabel": "3.03 oz",
+      "sha256": "a6b844552ac9804d537e626a0f428a77d22b05f32e837f331a5496d8fb1771db",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7570",
+      "src": "images/products/sku-7570.jpg",
+      "alt": "Nongshim Bowl Noodles Spicy Chicken Flavor — 3.03 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "031146262571",
+      "expectedName": "Nongshim Bowl Noodles Spicy Chicken Flavor",
+      "expectedLabel": "3.03 oz",
+      "sha256": "ccfbb10c4272dfc487a4deab9976b93d8dcda68eecdf1417385be1048fcaff51",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
