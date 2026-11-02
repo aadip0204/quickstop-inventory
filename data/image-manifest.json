@@ -33080,6 +33080,126 @@
       },
       "sku": "57",
       "sha256": "3ac28243673d663ce4a5f3233e81ddc528572360d493fe6ab36f71aea046af75"
+    },
+    {
+      "sku": "3821",
+      "src": "images/products/sku-3821.webp",
+      "alt": "Goose Island 312 — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "736920111822",
+      "expectedName": "Goose Island 312",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "311fa60f756b9153cc29ba3db769c185767ef70739a24ef430f6fac137a6a2b8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1857",
+      "src": "images/products/sku-1857.webp",
+      "alt": "CAYMAN JACK MARG — Single · 24 oz · cans packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "815829010853",
+      "expectedName": "CAYMAN JACK MARG",
+      "expectedLabel": "Single · 24 oz · cans",
+      "sha256": "c748bbb0197e4bffb79c17c6579dd3eedaeae0d33697ebc8955630fe5dd3174b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7714",
+      "src": "images/products/sku-7714.webp",
+      "alt": "Smirnoff Ice CanScrewdriver — Single · 23.5 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "082000776925",
+      "expectedName": "Smirnoff Ice CanScrewdriver",
+      "expectedLabel": "Single · 23.5 oz",
+      "sha256": "4d96dc8ac93c43c0d2c644ff4b57e7185ff6112a2157768385fd610c1f66b44d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "971",
+      "src": "images/products/sku-971.jpg",
+      "alt": "Becks — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "082488123457",
+      "expectedName": "Becks",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "0f8c983f182a1e1274a4d004bc43a36b09efe258d195ab92504911bc427998cd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "970",
+      "src": "images/products/sku-970.webp",
+      "alt": "Becks Cans — 4-pack · 16 oz · cans packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "082488123778",
+      "expectedName": "Becks Cans",
+      "expectedLabel": "4-pack · 16 oz · cans",
+      "sha256": "f720ac8893d35360ea7c24322a99feb40e19e272d52f0d4245eb36dd395f0b33",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5544",
+      "src": "images/products/sku-5544.webp",
+      "alt": "Michelob Ultra Lime — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "018200129896",
+      "expectedName": "Michelob Ultra Lime",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "1e332e5557968e01c66f3b5bd27d8e697498831c799594f70a9ca0fdc3acfbf6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
