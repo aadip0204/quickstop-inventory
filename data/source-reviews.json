@@ -6519,6 +6519,35 @@
       "forceSizeNeedsConfirmation": true,
       "reviewedOn": "2026-11-02",
       "reason": "Remove only the ambiguous edge annotation and apply the separately guarded exact-code product name; preserve all raw source fields and keep selling unit unresolved."
+    },
+    {
+      "sku": "2386",
+      "expectedUpc": "086106022580",
+      "expectedNameSha256": "1dc521ccea80a8248208fa230c04bd615e4fdb46e726300cd6ba93a2e70fb8c9",
+      "expectedSourceRecordSha256": "8aafef3566648049c3710ebedbfe42930b4497e29b4bc1078e2b551b7402fabe",
+      "action": "restore_named_merchandise",
+      "sanitizedSourceName": "COOKIES",
+      "forceSizeNeedsConfirmation": true,
+      "reviewedOn": "2026-11-02",
+      "reason": "Remove only the ambiguous source annotation and explicitly reconcile this exact original merchandise using separately scoped manufacturer,retailer and package evidence; all raw cells remain preserved.",
+      "identityResolution": {
+        "expectedName": "COOKIES",
+        "expectedLabel": "Size needs confirmation",
+        "verifiedName": "Lil' Dutch Maid Iced Oatmeal Cookies",
+        "verifiedLabel": "5 oz",
+        "verification": {
+          "brand": true,
+          "expression": true,
+          "size": true,
+          "packaging": true,
+          "upc": true,
+          "visual": true
+        },
+        "reason": "Aggregate brand/expression evidence plus own exact consumer UPC and unchanged pictured5oz wrapper resolve only this isolated original SKU. Manufacturer letter is not5oz orUPC proof.",
+        "evidence": {
+          "privateEvidenceSha256": "3c07bebd0149a259ee559b8ddeaac804c7ef64e1f419e38a4c11dde7de82a7b7"
+        }
+      }
     }
   ]
 }

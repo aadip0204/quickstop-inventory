@@ -6780,6 +6780,36 @@
       "evidence": {
         "privateEvidenceSha256": "13904105d354d4857fcf24dff1de0c85cd56f3a9850441d2ebb5a66d414dc776"
       }
+    },
+    {
+      "sku": "101218",
+      "expectedUpc": "037100038176",
+      "expectedSourceRow": 3310,
+      "expectedRawFieldsSha256": "79e3ed2bd9bd3e8d58bee4af5fb9bfbb7a6b1f5ded138f16169926d1c4243f20",
+      "expectedPublicName": "LIBBYS MIX VEG",
+      "expectedLabel": "15 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Libby's Mixed Vegetables",
+      "reason": "Own exact retailer UPC and complete matching15oz can support this name; all raw identity,unit and singleton metadata preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "82a0662758f54178827d091fd46c9d678f1bef23b3a9e0cd716153fff217216a"
+      }
+    },
+    {
+      "sku": "1658",
+      "expectedUpc": "051000180346",
+      "expectedSourceRow": 9246,
+      "expectedRawFieldsSha256": "24c7b9ebf1381b75f2e200b0666b131a5587efd9aa9e7dfe3011698aa20f8941",
+      "expectedPublicName": "Campbell's Chunky",
+      "expectedLabel": "18 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Campbell's Chunky Healthy Request Sirloin Burger with Country Vegetables Soup",
+      "reason": "Own exact retailer barcode and inspected label support this product name only. Source/photo18.8oz remains unresolved against raw/current18oz; no photo,unit or generation approval.",
+      "evidence": {
+        "privateEvidenceSha256": "a882bd69e0823c225a96c14ade07b9c5e51f411f2ca7bfca60abbdda6c6f80d7"
+      }
     }
   ]
 }
