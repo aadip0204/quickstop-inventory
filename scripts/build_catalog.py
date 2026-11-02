@@ -107,6 +107,7 @@ PRIVATE_REVIEW_EVIDENCE_KIND = 'quickstop-private-review-evidence'
 FOOD_FLUID_OUNCE_METHOD = 'food_single_bottle_fluid_ounce'
 PRINTED_FOOD_UNIT_METHOD = 'printed_barcode_food_net_content'
 NAME_ONLY_RESTORATION_METHOD = 'exact_upc_guarded_name_restoration'
+NUMERIC_NAME_RESTORATION_METHOD = 'exact_literal_gtin_numeric_name_only'
 
 # This authority's .com host is explicit evidence, not a domain-role guess.
 # Additional authorities require their own reviewed publisher/host binding.
@@ -435,7 +436,7 @@ def classify_record(record: dict, *, defer_specific_name: bool = False) -> tuple
     if has_ambiguous_decimal(name):
         return 'needs_review', 'Unlabelled decimal may be a price or unconfirmed measure', None, flags
     # The build may defer only this check for a separately validated, coupled
-    # name-only restoration/title review. Its generic intermediate is never
+    # name-only restoration/title review. Its guarded intermediate is never
     # published; all other classification checks retain their normal order.
     if not identifiable_name(name) and not defer_specific_name:
         return 'needs_review', 'Needs a specific product name; source record retained', None, flags
@@ -2180,7 +2181,7 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                 'repair_unquoted_name_commas', 'clarify_container_material',
                 'resolve_verified_pack_identity', 'refine_verified_fluid_ounce_label',
                 'resolve_verified_missing_measurement', 'resolve_verified_ambiguous_ounce_volume',
-                'resolve_verified_pack_total_volume'}:
+                'resolve_verified_pack_total_volume', 'restore_verified_numeric_name'}:
             raise ValueError('Source review requires unique SKU and a supported action')
         if not isinstance(entry.get('expectedUpc'), str) or not all(
                 re.fullmatch(r'[a-f0-9]{64}', entry.get(key, ''))
@@ -2192,6 +2193,21 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             raise ValueError(f'Source review requires a reason: {sku}')
         allowed = {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
                    'action', 'reason', 'reviewedOn'}
+        if entry['action'] == 'restore_verified_numeric_name':
+            allowed |= {'verificationMethod', 'expectedSourceRow'}
+            if (set(entry) != allowed or not re.fullmatch(r'[1-9][0-9]*', sku)
+                    or entry.get('verificationMethod') != NUMERIC_NAME_RESTORATION_METHOD
+                    or not re.fullmatch(r'(?:[0-9]{8}|[0-9]{12}|[0-9]{13}|[0-9]{14})', entry['expectedUpc'])
+                    or not valid_gtin(entry['expectedUpc']) or not entry['expectedUpc'].strip('0')
+                    or type(entry.get('expectedSourceRow')) is not int or entry['expectedSourceRow'] < 1
+                    or not safe_review_text(entry['reason'])):
+                raise ValueError(f'Numeric name restoration requires literal GTIN, exact row and name-only method: {sku}')
+            try:
+                if not isinstance(entry.get('reviewedOn'), str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', entry['reviewedOn']):
+                    raise ValueError('Missing review date')
+                date.fromisoformat(entry['reviewedOn'])
+            except (TypeError, ValueError) as error:
+                raise ValueError(f'Numeric name restoration requires a real review date: {sku}') from error
         if entry['action'] == 'resolve_verified_pack_total_volume':
             allowed |= {'expectedSourceRow', 'expectedPublicName', 'expectedLabel',
                         'expectedCategory', 'expectedDepartment', 'expectedProductId',
@@ -2601,7 +2617,57 @@ def validate_guarded_name_restoration(source: dict, raw_fields: list, review: di
             'sku', 'expectedUpc', 'expectedSourceRow', 'expectedRawFieldsSha256',
             'expectedPublicName', 'expectedLabel', 'expectedCategory', 'expectedDepartment')) != expected):
         raise ValueError(f'Name-only restoration requires its matching guarded public-name review: {sku}')
+    validate_name_only_restored_title(title_review['proposedPublicTitle'], sku)
+
+
+def validate_numeric_name_restoration(source: dict, raw_fields: list, review: dict,
+                                      title_review: dict | None) -> None:
+    """Restore only an exact original numeric GTIN, leaving every unit unresolved."""
+    sku, code = source['SKU'], source['MAINUPC']
+    disposition, reason, _, _ = classify_record(source)
+    if (disposition != 'needs_review'
+            or reason != 'Needs a specific product name; source record retained'
+            or source['ItemName'] != code or code != review['expectedUpc']
+            or source['PackName'] != '' or len(raw_fields) != len(EXPECTED_HEADERS)
+            or source['sourceRow'] != review['expectedSourceRow']
+            or category_for(clean_space(source['DEPNAME'])) == 'other'):
+        raise ValueError(f'Numeric name restoration requires an original matching numeric GTIN and empty pack: {sku}')
+    expected = (sku, code, source['sourceRow'], review_evidence_sha256(raw_fields),
+                code, 'Size needs confirmation', category_for(clean_space(source['DEPNAME'])),
+                clean_space(source['DEPNAME']))
+    if (not title_review or tuple(title_review[key] for key in (
+            'sku', 'expectedUpc', 'expectedSourceRow', 'expectedRawFieldsSha256',
+            'expectedPublicName', 'expectedLabel', 'expectedCategory', 'expectedDepartment')) != expected):
+        raise ValueError(f'Numeric name restoration requires its matching guarded public-name review: {sku}')
     title = title_review['proposedPublicTitle']
+    literal_code = re.compile(r'(?<![0-9])' + re.escape(code) + r'(?![0-9])')
+    if not any(item['kind'] == 'retailer_exact_upc_name'
+               and (literal_code.search(item['supports']) or literal_code.search(item['url']))
+               and title in item['supports'] for item in title_review['evidence']):
+        raise ValueError(f'Numeric name restoration requires explicit exact-UPC retailer name proof: {sku}')
+    # A finite combination of known quantity/selling-unit words is still a
+    # quantity when written as TwelvePack, singleserve or quartbottle. Match
+    # whole compounds, not arbitrary brand substrings such as Quartet.
+    counts = (r'(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|'
+              r'thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|'
+              r'thirty|forty|fifty|sixty|seventy|eighty|ninety|dozens?|hundreds?|thousands?|'
+              r'single|double|triple|twin|multi|multiple|variety)')
+    measures = (r'(?:ounces?|oz|(?:kilo|milli|micro)?grams?|kg|mg|mcg|g|pounds?|lbs?|'
+                r'(?:milli|centi|deci|kilo)?lit(?:er|re)s?|ml|cl|dl|l|lit|ltr?s?|'
+                r'pints?|pts?|quarts?|qts?|gallons?|gals?|feet|foot|ft|met(?:er|re)s?|m)')
+    containers = (r'(?:cases?|packs?|packages?|pkgs?|pks?|counts?|ct|units?|pcs?|pieces?|'
+                  r'bottles?|btls?|cans?|cartons?|box(?:es)?|bundles?|jars?|jugs?|tubs?|'
+                  r'pouch(?:es)?|packets?|bars?|rolls?|bags?|trays?|tins?|cups?|containers?|'
+                  r'tubes?|sachets?|sleeves?|sticks?|sets?|pairs?|couples?)')
+    joined = (rf'\b(?:{counts}[-_\s]*(?:{measures}|{containers}|serv(?:e|ing)s?|size)|'
+              rf'{measures}[-_\s]*{containers}|family[-_\s]*size)\b')
+    if re.search(r'\b(?:proof|abv)\b', title, re.I) or re.search(joined, title, re.I):
+        raise ValueError(f'Numeric name restoration cannot establish a quantity, container or strength: {sku}')
+    validate_name_only_restored_title(title, sku)
+
+
+def validate_name_only_restored_title(title: str, sku: str) -> None:
+    """An exact name-only review cannot establish any quantity or selling unit."""
     parts = extract_dimensions(title)
     unit_or_container = re.search(
         r'\b(?:cases?|packs?|packages?|pkgs?|pks?|counts?|ct|units?|pcs?|pieces?|'
@@ -2681,7 +2747,9 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     public_name_reviews = validated_public_name_reviews(public_name_reviews_manifest)
     guarded_restorations = {sku for sku, review in source_reviews.items()
                             if review.get('verificationMethod') == NAME_ONLY_RESTORATION_METHOD}
-    if guarded_restorations & (set(corrections) | set(identity_reviews) | set(name_verifications) | set(category_reviews)):
+    numeric_restorations = {sku for sku, review in source_reviews.items()
+                            if review['action'] == 'restore_verified_numeric_name'}
+    if (guarded_restorations | numeric_restorations) & (set(corrections) | set(identity_reviews) | set(name_verifications) | set(category_reviews)):
         raise ValueError('Name-only restoration cannot coexist with name, identity or category overrides')
     applied_category_reviews = set()
     applied_public_name_reviews = set()
@@ -2715,6 +2783,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
             override_flags = []
             restoring = bool(review and review['action'] == 'restore_named_merchandise')
             guarded_restoring = sku in guarded_restorations
+            numeric_restoring = sku in numeric_restorations
             resolving = bool(review and review['action'] == 'resolve_verified_identity')
             if review:
                 raw_hash = hashlib.sha256(json.dumps(fields, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
@@ -2722,6 +2791,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                         review['expectedUpc'], review['expectedNameSha256'], review['expectedSourceRecordSha256']):
                     raise ValueError(f'Source metadata review identity mismatch for SKU {sku}')
                 record['sourceReview'] = review
+                if numeric_restoring:
+                    validate_numeric_name_restoration(source, fields, review, public_name_reviews.get(sku))
                 if restoring:
                     adjusted_source['ItemName'] = restored_description(source, review)
                     if guarded_restoring:
@@ -2758,11 +2829,18 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 else:
                     disposition, reason, public, flags = 'needs_review', identity_review['reason'], None, []
             else:
-                disposition, reason, public, flags = classify_record(adjusted_source, defer_specific_name=guarded_restoring)
+                disposition, reason, public, flags = classify_record(
+                    adjusted_source, defer_specific_name=guarded_restoring or numeric_restoring)
             if manufacturer_baseline and (not public or public['variant'] != manufacturer_baseline['variant']):
                 raise ValueError(f'Manufacturer name-only review changed the original variant metadata: {sku}')
             if review:
-                if restoring:
+                if numeric_restoring:
+                    if not public or public['name'] != source['MAINUPC']:
+                        raise ValueError(f'Numeric name restoration changed its guarded numeric intermediate: {sku}')
+                    public['variant']['label'] = 'Size needs confirmation'
+                    flags.append('Guarded numeric merchandise name restored; source code and unknown unit preserved privately')
+                    flags.append('Restored SKU grouping isolated; image requires its own exact identity review')
+                elif restoring:
                     if not public:
                         raise ValueError(f'Reviewed restoration did not produce safe merchandise: {sku}')
                     record['sanitizedSourceName'] = adjusted_source['ItemName']
@@ -2847,14 +2925,20 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 record['publicNameCorrection'] = public_name_review
                 applied_public_name_reviews.add(sku)
                 flags.append('Guarded exact-UPC public title correction applied; original source name and variant metadata preserved')
-            if guarded_restoring:
+            if guarded_restoring or numeric_restoring:
                 if (not public or sku not in applied_public_name_reviews
                         or public['name'] != public_name_review['proposedPublicTitle']
                         or public['variant']['label'] != 'Size needs confirmation'
                         or public['variant']['image'] is not None):
                     raise ValueError(f'Name-only restoration must finish its guarded name with unit and photo unresolved: {sku}')
-                record['nameOnlyRestoration'] = {'sanitizedDescriptor': review['sanitizedSourceName'],
-                    'sellingUnitVerified': False, 'photoApproved': False}
+                if numeric_restoring:
+                    record['numericNameRestoration'] = {
+                        'originalNumericName': source['ItemName'],
+                        'verificationMethod': review['verificationMethod'],
+                        'sellingUnitVerified': False, 'photoApproved': False}
+                else:
+                    record['nameOnlyRestoration'] = {'sanitizedDescriptor': review['sanitizedSourceName'],
+                        'sellingUnitVerified': False, 'photoApproved': False}
             if review and review['action'] == 'refine_verified_fluid_ounce_label':
                 if not public:
                     raise ValueError(f'Fluid-ounce identity requires retained source merchandise: {sku}')
@@ -2877,7 +2961,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 # matching, synonym mapping, or deletion of brand/age/proof.
                 key = (public['category'], public['department'], public['name'].casefold())
                 identity_resolution = review.get('identityResolution') if review else None
-                if restoring or resolving or repairing or (sku in identity_reviews) or (identity_resolution and not identity_resolution.get('groupWithPriorExpression')):
+                if restoring or numeric_restoring or resolving or repairing or (sku in identity_reviews) or (identity_resolution and not identity_resolution.get('groupWithPriorExpression')):
                     key += ('restored-source-sku', sku)
                 # Exact source title says regular Silver, but the first-100 image
                 # audit found UPC-specific evidence of an Artist Series package.
