@@ -98,6 +98,7 @@ MANUFACTURER_NAME_HOSTS = {
     'Wells Enterprises': {'wellsfoodservice.com', 'www.wellsfoodservice.com'},
     'Conagra Brands': {'smartlabel.conagra.com'},
     'Kraft Heinz': {'www.kraftheinz.com', 'kraftheinz.com'},
+    'The Coca-Cola Company': {'smartlabel.coca-colaproductfacts.com'},
 }
 MANUFACTURER_NAME_SCOPE = 'manufacturer_exact_upc_name_identity'
 NAME_STRENGTH_RE = re.compile(r'\d+(?:\.\d+)?\s*(?:%\s*(?:ABV\b|A/C\b)?|ABV\b|A/C\b|PROOF\b)', re.I)

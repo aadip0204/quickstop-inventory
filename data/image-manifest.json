@@ -31624,10 +31624,10 @@
     {
       "sku": "101532",
       "src": "images/products/sku-101532.webp",
-      "alt": "CANADA DRY CHERRY GA — 12-pack · cans packaging",
+      "alt": "Canada Dry Fruit Splash Cherry Ginger Ale — 12-pack · cans packaging",
       "verifiedOn": "2026-11-02",
       "expectedUpc": "078000038835",
-      "expectedName": "CANADA DRY CHERRY GA",
+      "expectedName": "Canada Dry Fruit Splash Cherry Ginger Ale",
       "expectedLabel": "12-pack · cans",
       "sha256": "fb5bf51a34744d4df879b63e63644c02ebbc66cd7671291fc6345a0eee410b07",
       "usageBasis": "user_authorized_direct_reference",
@@ -31744,10 +31744,10 @@
     {
       "sku": "5712",
       "src": "images/products/sku-5712.jpg",
-      "alt": "Minute Maid Pink Lem Pack — 12-pack · 12 oz packaging",
+      "alt": "Minute Maid Pink Lemonade — 12-pack · 12 oz packaging",
       "verifiedOn": "2026-11-02",
       "expectedUpc": "025000058240",
-      "expectedName": "Minute Maid Pink Lem Pack",
+      "expectedName": "Minute Maid Pink Lemonade",
       "expectedLabel": "12-pack · 12 oz",
       "sha256": "befcb1ddadc8f5e3bec2cf43c580cea1ec1d80a07d0099283d2dab60dca24cd6",
       "usageBasis": "user_authorized_direct_reference",
@@ -31770,6 +31770,446 @@
       "expectedName": "Fanta Pineapple Pack",
       "expectedLabel": "12-pack · 12 oz",
       "sha256": "fd31c5e7c9583484b4135b53b41a6113e364bd5153bbca6e8e3c7e620007ade8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2827",
+      "src": "images/products/sku-2827.jpg",
+      "alt": "Diet Coke — 16 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "049000051162",
+      "expectedName": "Diet Coke",
+      "expectedLabel": "16 oz",
+      "sha256": "2670bfde2de88c2fb994a4311e3f5aabe2e1d050bb5dcc7b70d4538450338bd5",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3291",
+      "src": "images/products/sku-3291.jpg",
+      "alt": "FANTA ORANGESingle — cans packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "049000014235",
+      "expectedName": "FANTA ORANGESingle",
+      "expectedLabel": "cans",
+      "sha256": "a0cab441da2f42b5d32b63a37039b2dd0ad1e0f7f1c71a44c81fad561385af91",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6784",
+      "src": "images/products/sku-6784.jpg",
+      "alt": "Powerade Fruit Punch — 20 fl oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "049000003710",
+      "expectedName": "Powerade Fruit Punch",
+      "expectedLabel": "20 fl oz",
+      "sha256": "5eafafeb06d701c98b821abdc7232018bfb08904be4d9e0b512559cfe22e2f05",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6789",
+      "src": "images/products/sku-6789.jpg",
+      "alt": "POWERADE ORANGE — 20 fl oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "049000032789",
+      "expectedName": "POWERADE ORANGE",
+      "expectedLabel": "20 fl oz",
+      "sha256": "f5cd67fdd2a3b151f7174094b3a189ec8686f0bab98a3bd8512a19008c92d218",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "860",
+      "src": "images/products/sku-860.jpg",
+      "alt": "BAREFOOT FRUIT BLUEBERRY — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000031780",
+      "expectedName": "BAREFOOT FRUIT BLUEBERRY",
+      "expectedLabel": "750 mL",
+      "sha256": "0cb696f33204ca28669bed6e2c3d179011ffbc2830fd9732667ad85370fbeafc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "861",
+      "src": "images/products/sku-861.jpg",
+      "alt": "BAREFOOT FRUIT MANGO — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000032176",
+      "expectedName": "BAREFOOT FRUIT MANGO",
+      "expectedLabel": "750 mL",
+      "sha256": "b3762a05b302724868488bdd390257b52f3dc498f74d0daab81e2d7010fa60cc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "862",
+      "src": "images/products/sku-862.jpg",
+      "alt": "BAREFOOT FRUIT PEACH — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000029008",
+      "expectedName": "BAREFOOT FRUIT PEACH",
+      "expectedLabel": "750 mL",
+      "sha256": "80081b7e072636623f9a866626076082ac31d548cb712005d9db1ef62988825b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "894",
+      "src": "images/products/sku-894.jpg",
+      "alt": "BAREFOOT BUBBLY PINK MOS — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000019658",
+      "expectedName": "BAREFOOT BUBBLY PINK MOS",
+      "expectedLabel": "750 mL",
+      "sha256": "8182b017a1903f3b3fe490a6bd92a1557f4b5f55dcdaf36992bf392fdca59a92",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "908",
+      "src": "images/products/sku-908.jpg",
+      "alt": "BAREFOOT RED MOSCATO — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000019894",
+      "expectedName": "BAREFOOT RED MOSCATO",
+      "expectedLabel": "750 mL",
+      "sha256": "6c76b7aebc5c7e2a113f69f7d91e275c27800e1cdc620447e22aae699bd64d08",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "851",
+      "src": "images/products/sku-851.jpg",
+      "alt": "Barefoot Fruitscato Strawberry — 1.5 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000029909",
+      "expectedName": "Barefoot Fruitscato Strawberry",
+      "expectedLabel": "1.5 L",
+      "sha256": "82c845a1f3f0a21dc60ba63ee7d7913f2e7ad1468fe23d6326c2ffe7762ceeb1",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "887",
+      "src": "images/products/sku-887.jpg",
+      "alt": "BAREFOOT MOSCATO — 1.5 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000016671",
+      "expectedName": "BAREFOOT MOSCATO",
+      "expectedLabel": "1.5 L",
+      "sha256": "8a50b1da6e6c202856c7bd7e4577e782c6dcca7cf5f66366b63b6f3c63f9f1b0",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "895",
+      "src": "images/products/sku-895.jpg",
+      "alt": "BAREFOOT PINK MOSCATO — 1.5 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000020609",
+      "expectedName": "BAREFOOT PINK MOSCATO",
+      "expectedLabel": "1.5 L",
+      "sha256": "5e3e31eb5bdb2d180b7821736dca86cfb453b59bf82749281a9abe30576cdc5f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "898",
+      "src": "images/products/sku-898.jpg",
+      "alt": "BAREFOOT PINOT GRIGIO — 1.5 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000014431",
+      "expectedName": "BAREFOOT PINOT GRIGIO",
+      "expectedLabel": "1.5 L",
+      "sha256": "6f2cc6d466e4c1320dce034695f8db1f9064e645a71d34a2cf205251e5560f4d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "907",
+      "src": "images/products/sku-907.jpg",
+      "alt": "BAREFOOT RED MOSCATO — 1.5 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000020289",
+      "expectedName": "BAREFOOT RED MOSCATO",
+      "expectedLabel": "1.5 L",
+      "sha256": "9c72ea0d31c257221ab2178ed34fa23da364298536c114ebc2c3dbd87205c0f3",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2634",
+      "src": "images/products/sku-2634.jpg",
+      "alt": "Cupcake Merlot — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "081308000282",
+      "expectedName": "Cupcake Merlot",
+      "expectedLabel": "750 mL",
+      "sha256": "ed974e32d8f41d7419ab32fbff65eb1a3d96d7bdb2ddb015255fde32b16bc8fd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4773",
+      "src": "images/products/sku-4773.jpg",
+      "alt": "Kendall Jackson Cab-Sau — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "081584013174",
+      "expectedName": "Kendall Jackson Cab-Sau",
+      "expectedLabel": "750 mL",
+      "sha256": "e70955e3b8bc865bae7f19e941fb5bc3ff5783a5710b0198defd339efd757e54",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4774",
+      "src": "images/products/sku-4774.jpg",
+      "alt": "KENDALL JACKSON CHARDO — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "081584013105",
+      "expectedName": "KENDALL JACKSON CHARDO",
+      "expectedLabel": "750 mL",
+      "sha256": "da446db313393dc2bc1199e73cdbb06bc2ba8e64d2e43b3c6112f768e98eb53f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2114",
+      "src": "images/products/sku-2114.webp",
+      "alt": "cinnamon toast crunch — 12 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "016000122543",
+      "expectedName": "cinnamon toast crunch",
+      "expectedLabel": "12 oz",
+      "sha256": "78fd555a18e45652acfd72037f57de5f50a49fa31accc872a85ceb794ac1bc55",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4346",
+      "src": "images/products/sku-4346.webp",
+      "alt": "Imperial Vegetable Oil Spread — 16 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "011115871324",
+      "expectedName": "Imperial Vegetable Oil Spread",
+      "expectedLabel": "16 oz",
+      "sha256": "24afcf8f55adc6c2fce44f4e1d1e08358b5a47e725ab7da21b7278bcfc58e86e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101504",
+      "src": "images/products/sku-101504.webp",
+      "alt": "Kinder Bueno Hazelnut Chocolate Bars — 2-pack packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "009800000555",
+      "expectedName": "Kinder Bueno Hazelnut Chocolate Bars",
+      "expectedLabel": "2-pack",
+      "sha256": "d0c47bb698e949da18e66b7b8c7c229deb980b5df12e5834c21a8bce21c71622",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9736",
+      "src": "images/products/sku-9736.jpg",
+      "alt": "Yellow Tail Cab-Sau — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "031259009452",
+      "expectedName": "Yellow Tail Cab-Sau",
+      "expectedLabel": "750 mL",
+      "sha256": "d904afff474ab6c1303889444d935c6a72f24cdc655485b35cea0df94d6c2a1d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9756",
+      "src": "images/products/sku-9756.jpg",
+      "alt": "Yellow Tail Shiraz — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "031259008943",
+      "expectedName": "Yellow Tail Shiraz",
+      "expectedLabel": "750 mL",
+      "sha256": "04f8680d9ddfb697e956448c0400fe62ec036063b1d60f34373efc2d5864c61e",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {

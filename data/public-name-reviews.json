@@ -7050,6 +7050,96 @@
       "evidence": {
         "privateEvidenceSha256": "19a888f97e776201d06a97330fa2259d00b9202f6734a3f48fa548c6d3314db3"
       }
+    },
+    {
+      "sku": "101532",
+      "expectedUpc": "078000038835",
+      "expectedSourceRow": 9097,
+      "expectedRawFieldsSha256": "b7c9191282ce235ae2ad6f44183e317bae62b01965d159d030dfcc820f0118c4",
+      "expectedPublicName": "CANADA DRY CHERRY GA",
+      "expectedLabel": "12-pack · cans",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Canada Dry Fruit Splash Cherry Ginger Ale",
+      "reason": "Exact consumer code, independently reviewed product records and current whole-family guards support the complete display name. Preserve original identifiers and source fields; any unit or family change requires its separate approved action.",
+      "evidence": {
+        "privateEvidenceSha256": "611adf968c9c70b3b1111d7dab52525e2c80c3a77ee2d0f26b060f2182c5edd7"
+      }
+    },
+    {
+      "sku": "5712",
+      "expectedUpc": "025000058240",
+      "expectedSourceRow": 3689,
+      "expectedRawFieldsSha256": "1f364c5507f470d8ece2de5f5048d3b2a4dd39067809b69de0264c1a25e71ce7",
+      "expectedPublicName": "Minute Maid Pink Lem Pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Minute Maid Pink Lemonade",
+      "reason": "Exact consumer code, independently reviewed product records and current whole-family guards support the complete display name. Preserve original identifiers and source fields; any unit or family change requires its separate approved action.",
+      "evidence": {
+        "privateEvidenceSha256": "91770f368d6c0ffab8e7d73c7057b253e5b895124b0c9909ffbda13fd556d824"
+      }
+    },
+    {
+      "sku": "851",
+      "expectedUpc": "085000029909",
+      "expectedSourceRow": 6275,
+      "expectedRawFieldsSha256": "b021527c9900860a142631aad6e5ca3a17b26f7758edd954ce784e6733aea8ed",
+      "expectedPublicName": "Barefoot trawberry",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Fruitscato Strawberry",
+      "reason": "Exact consumer code, independently reviewed product records and current whole-family guards support the complete display name. Preserve original identifiers and source fields; any unit or family change requires its separate approved action.",
+      "evidence": {
+        "privateEvidenceSha256": "8e1089c772ca31dd8feaadcaa3b030015e05338c55aa78cd4c8d7984cfc380db"
+      }
+    },
+    {
+      "sku": "2806",
+      "expectedUpc": "021000658862",
+      "expectedSourceRow": 8602,
+      "expectedRawFieldsSha256": "d314183cb2b07b68bfaa86a6ae6b6ed2673b97f89599fa2439c75e27d26ed5ae",
+      "expectedPublicName": "DELUXE 397 GMACARONI CHEESE",
+      "expectedLabel": "14 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Kraft Deluxe Original Cheddar Mac and Cheese Dinner",
+      "reason": "Exact consumer code, independently reviewed product records and current whole-family guards support the complete display name. Preserve original identifiers and source fields; any unit or family change requires its separate approved action.",
+      "evidence": {
+        "privateEvidenceSha256": "f953cd894e2de173fb7e0740f2b1aada311b5809750bc47eeeb1692cfb9ed711"
+      }
+    },
+    {
+      "sku": "101504",
+      "expectedUpc": "009800000555",
+      "expectedSourceRow": 7594,
+      "expectedRawFieldsSha256": "10ee61c42578885a09c31d6750638ddad804c1e6f41d41fab01559a50da8d0bd",
+      "expectedPublicName": "KINDER BUENO CHO BAR",
+      "expectedLabel": "2-pack",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Kinder Bueno Hazelnut Chocolate Bars",
+      "reason": "Exact consumer code, independently reviewed product records and current whole-family guards support the complete display name. Preserve original identifiers and source fields; any unit or family change requires its separate approved action.",
+      "evidence": {
+        "privateEvidenceSha256": "bee5e5d554af3db8bf77f953cfc2d00afc7dbe12559cac5f8a2c452281c3c8bc"
+      }
+    },
+    {
+      "sku": "6784",
+      "expectedUpc": "049000003710",
+      "expectedSourceRow": 4317,
+      "expectedRawFieldsSha256": "fb0f500aae0554f30225d10248ceeaf060ee5b3b143731bcdb3bd3ce95dc2dae",
+      "expectedPublicName": "Powerade",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Powerade Fruit Punch",
+      "reason": "Exact consumer code, independently reviewed product records and current whole-family guards support the complete display name. Preserve original identifiers and source fields; any unit or family change requires its separate approved action.",
+      "evidence": {
+        "privateEvidenceSha256": "c389eaf9fb3e2d041edb8e53580c7a13d86181ec75f33a7cb9ab50a646df830b"
+      }
     }
   ]
 }
