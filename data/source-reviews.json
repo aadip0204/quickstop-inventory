@@ -6621,6 +6621,37 @@
       "verificationMethod": "exact_literal_gtin_numeric_name_only",
       "reviewedOn": "2026-11-02",
       "reason": "Restore the exact UPC-identified merchandise name only; selling unit and photo remain unresolved."
+    },
+    {
+      "sku": "57",
+      "expectedUpc": "096749006953",
+      "expectedNameSha256": "5f1d4d0019dbe516bb627fe9596368840f33e5897bcfbac95df780c434c58473",
+      "expectedSourceRecordSha256": "6bc2da276b7b1ad56e4e36a0817676eb537a19d66733fa6e34e4bfc17e8d9396",
+      "expectedSourceRow": 46,
+      "action": "resolve_verified_identity",
+      "verificationMethod": "main_gtin_declared_pack_numeric_conflict",
+      "expectedDepartment": "Vodka",
+      "selectionBasis": "original_main_upc_and_declared_pack",
+      "conflictDisposition": "different_unit_same_expression_not_alias",
+      "expectedResultingGroupSkus": [
+        "57"
+      ],
+      "expectedImageSha256": "3ac28243673d663ce4a5f3233e81ddc528572360d493fe6ab36f71aea046af75",
+      "verifiedName": "Burnett's Vodka 80 Proof",
+      "verifiedLabel": "375 mL",
+      "reviewedOn": "2026-11-02",
+      "reason": "Restore only the MAINUPC-identified merchandise with its unchanged original declared volume; the different numeric source name remains a separately documented unit conflict.",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "47b3ce3b6e3ab6423dd8f4f0f2c8984951822b0b26ee24ea09ad685f61d5b523"
+      }
     }
   ]
 }

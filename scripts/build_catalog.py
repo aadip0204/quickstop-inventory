@@ -108,6 +108,7 @@ FOOD_FLUID_OUNCE_METHOD = 'food_single_bottle_fluid_ounce'
 PRINTED_FOOD_UNIT_METHOD = 'printed_barcode_food_net_content'
 NAME_ONLY_RESTORATION_METHOD = 'exact_upc_guarded_name_restoration'
 NUMERIC_NAME_RESTORATION_METHOD = 'exact_literal_gtin_numeric_name_only'
+NUMERIC_CONFLICT_IDENTITY_METHOD = 'main_gtin_declared_pack_numeric_conflict'
 
 # This authority's .com host is explicit evidence, not a domain-role guess.
 # Additional authorities require their own reviewed publisher/host binding.
@@ -2416,6 +2417,11 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                     raise ValueError(f'Name-only restoration requires a real review date: {sku}') from error
         if entry['action'] == 'resolve_verified_identity':
             allowed |= {'verifiedName', 'verifiedLabel', 'verification', 'evidence'}
+            if entry.get('verificationMethod') == NUMERIC_CONFLICT_IDENTITY_METHOD:
+                allowed |= {'verificationMethod', 'expectedSourceRow', 'expectedDepartment', 'selectionBasis',
+                            'conflictDisposition', 'expectedImageSha256',
+                            'expectedResultingGroupSkus'}
+                validate_numeric_conflict_identity_review(entry)
             name, label = entry.get('verifiedName'), entry.get('verifiedLabel')
             if (not isinstance(name, str) or not identifiable_name(name) or PRICE_RE.search(name)
                     or has_ambiguous_decimal(name) or not isinstance(label, str)):
@@ -2620,6 +2626,191 @@ def validate_guarded_name_restoration(source: dict, raw_fields: list, review: di
     validate_name_only_restored_title(title_review['proposedPublicTitle'], sku)
 
 
+def numeric_conflict_details(review: dict) -> dict:
+    """Keep the contradictory raw name/pack and alternate label private."""
+    evidence = review.get('evidence')
+    matches = [item for item in evidence if isinstance(item, dict) and item.get('kind') == 'numeric_source_conflict'] if isinstance(evidence, list) else []
+    return matches[0] if len(matches) == 1 else {}
+
+
+def validate_numeric_conflict_descriptor(text: str, sku: str) -> None:
+    """This opt-in may not turn residual words into pack/container claims."""
+    # Reuse the unchanged word/unit guard, also at camel-case boundaries.
+    separated = re.sub(r'(?<=[a-z])(?=[A-Z])', ' ', text)
+    if re.search(r'\b(?:cs|dz|jugs?|serves?)\b', separated, re.I):
+        raise ValueError(f'Numeric conflict identity cannot add count, container or unit wording: {sku}')
+    try:
+        validate_name_only_restored_title(separated, sku)
+    except ValueError as error:
+        raise ValueError(f'Numeric conflict identity cannot add count, container or unit wording: {sku}') from error
+    # Solid lower/upper-case compounds have no word boundary. A finite count
+    # or measure prefix plus a container/serving suffix remains a claim even
+    # when descriptive modifiers intervene (twolargebottles). Do not split
+    # incidental brand words such as Quartet, Singlehanded or Bottlebrush.
+    counts = (r'(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|'
+              r'thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|'
+              r'thirty|forty|fifty|sixty|seventy|eighty|ninety|dozens?|hundreds?|thousands?|'
+              r'single|double|triple|twin|multi|multiple|variety)')
+    measures = (r'(?:ounces?|pounds?|(?:kilo|milli|micro)?grams?|'
+                r'(?:milli|centi|deci|kilo)?lit(?:er|re)s?|pints?|quarts?|gallons?)')
+    containers = (r'(?:cases?|packs?|packages?|pkgs?|pks?|counts?|units?|pieces?|'
+                  r'bottles?|btls?|cans?|cartons?|box(?:es)?|bundles?|jars?|jugs?|tubs?|'
+                  r'pouch(?:es)?|packets?|bars?|rolls?|bags?|trays?|tins?|cups?|containers?|'
+                  r'tubes?|sachets?|sleeves?|sticks?|sets?|pairs?|couples?|serv(?:e|ing)s?|size)')
+    if re.search(rf'\b(?:(?:{counts}|{measures})[a-z]*{containers}|family[a-z]*(?:size|packs?))\b', text, re.I):
+        raise ValueError(f'Numeric conflict identity cannot add joined count, container or unit wording: {sku}')
+
+
+def validate_numeric_conflict_identity_review(review: dict) -> None:
+    """Opt in only to a declared-volume selection between distinct literal units.
+
+    Typed source facts and inspection receipt identifiers are manually reviewed
+    evidence. This validator does not fetch source bodies or open receipt files.
+    """
+    sku = review['sku']
+    def literal_gtin(value):
+        return (isinstance(value, str) and re.fullmatch(r'(?:[0-9]{8}|[0-9]{12}|[0-9]{13}|[0-9]{14})', value)
+                and valid_gtin(value) and bool(value.strip('0')))
+    def checked_date(value):
+        try:
+            return date.fromisoformat(value) if isinstance(value, str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}', value) else None
+        except ValueError:
+            return None
+    def hash_value(value):
+        return isinstance(value, str) and re.fullmatch(r'[a-f0-9]{64}', value)
+    def host(url):
+        value = review_url_host(url)
+        try:
+            return value.encode('idna').decode('ascii').lower().rstrip('.').removeprefix('www.')
+        except UnicodeError:
+            return ''
+    conflict = numeric_conflict_details(review)
+    main, alternate = review.get('expectedUpc'), conflict.get('expectedNumericItemName')
+    selected_volume = reviewed_volume_milliliters(review.get('verifiedLabel'))
+    alternate_volume = reviewed_volume_milliliters(conflict.get('alternateLabel'))
+    reviewed = checked_date(review.get('reviewedOn'))
+    name = review.get('verifiedName', '')
+    proof = re.search(r'\b([1-9][0-9]*(?:\.[0-9]+)?) Proof$', name) if isinstance(name, str) else None
+    if (not re.fullmatch(r'[1-9][0-9]*', sku) or not literal_gtin(main) or not literal_gtin(alternate)
+            or main.zfill(14) == alternate.zfill(14)
+            or type(review.get('expectedSourceRow')) is not int or review['expectedSourceRow'] < 1
+            or not reviewed or not safe_review_text(conflict.get('expectedPackName'))
+            or not safe_review_text(review.get('expectedDepartment'))
+            or category_for(review['expectedDepartment']) != 'spirits'
+            or review.get('selectionBasis') != 'original_main_upc_and_declared_pack'
+            or review.get('conflictDisposition') != 'different_unit_same_expression_not_alias'
+            or review.get('expectedResultingGroupSkus') != [sku]
+            or selected_volume is None or alternate_volume is None or selected_volume == alternate_volume
+            or not proof or re.findall(r'[0-9]+(?:\.[0-9]+)?', name) != [proof[1]]):
+        raise ValueError(f'Numeric conflict identity requires distinct literal units and explicit original-pack selection: {sku}')
+    validate_direct_image_guard(review, sku, 'Numeric conflict identity')
+    pack = conflict['expectedPackName']
+    parts = extract_dimensions(pack)
+    residual = MEASURE_RE.sub(' ', pack)
+    validate_numeric_conflict_descriptor(residual, sku)
+    if (len(list(MEASURE_RE.finditer(pack))) != 1 or len(parts['measures']) != 1
+            or parts['measures'][0][1] != 'volume-mL' or parts['packs'] or parts['container']
+            or parts['measures'][0][0] != review['verifiedLabel']):
+        raise ValueError(f'Numeric conflict identity must preserve one original volume without a pack/count/container: {sku}')
+    # The strength is an identity fact, never a second package measurement.
+    title_parts = extract_dimensions(name)
+    if title_parts['measures'] or title_parts['packs'] or title_parts['container']:
+        raise ValueError(f'Numeric conflict identity title cannot add package facts: {sku}')
+    validate_numeric_conflict_descriptor(name[:proof.start()].strip(), sku)
+    evidence = review.get('evidence')
+    kinds = {'numeric_source_conflict', 'manufacturer', 'exact_upc_listing', 'conflicting_numeric_unit_record',
+             'inspected_package_photo', 'inspected_rear_package_photo'}
+    if (not isinstance(evidence, list) or len(evidence) != len(kinds)
+            or any(not isinstance(item, dict) for item in evidence)
+            or {item.get('kind') for item in evidence} != kinds):
+        raise ValueError(f'Numeric conflict identity requires selected, alternate, front and rear proof: {sku}')
+    by_kind = {item['kind']: item for item in evidence}
+    if (set(conflict) != {'kind', 'url', 'supports', 'expectedNumericItemName', 'expectedPackName', 'alternateLabel'}
+            or conflict['url'] != by_kind['manufacturer'].get('url')
+            or not safe_review_text(conflict.get('supports'))):
+        raise ValueError(f'Numeric conflict identity requires its exact private raw conflict declaration: {sku}')
+    unit_fields = {'kind', 'url', 'supports', 'observedUpc', 'observedName', 'observedNetContent',
+                   'observedProof', 'quantityBasis', 'codeSourceField', 'unitImageUrl', 'sourceSha256', 'retrievedOn'}
+    for kind in ('manufacturer', 'exact_upc_listing', 'conflicting_numeric_unit_record'):
+        item = by_kind[kind]
+        code = alternate if kind == 'conflicting_numeric_unit_record' else main
+        volume = alternate_volume if kind == 'conflicting_numeric_unit_record' else selected_volume
+        retrieved = checked_date(item.get('retrievedOn'))
+        if (set(item) != unit_fields or not host(item.get('url')) or not safe_review_text(item.get('supports'))
+                or not safe_review_text(item.get('observedName')) or not safe_review_text(item.get('codeSourceField'))
+                or not host(item.get('unitImageUrl'))
+                or item['observedUpc'] != code
+                or reviewed_volume_milliliters('0' + item['observedNetContent'] if isinstance(item['observedNetContent'], str)
+                                              and item['observedNetContent'].startswith('.') else item['observedNetContent']) != volume
+                or item['observedProof'] != proof[1] or item['quantityBasis'] != 'per_retail_unit'
+                or not hash_value(item['sourceSha256']) or not retrieved or retrieved > reviewed
+                or (kind != 'exact_upc_listing' and item['observedName'] != name)
+                or name not in item['supports']
+                or not re.search(r'(?<![0-9])' + re.escape(code) + r'(?![0-9])', item['supports'])):
+            raise ValueError(f'Numeric conflict identity unit record does not match its literal code/expression/volume/proof: {sku}')
+    producer, listing, other = (by_kind[k] for k in ('manufacturer', 'exact_upc_listing', 'conflicting_numeric_unit_record'))
+    producer_host, listing_host = host(producer['url']), host(listing['url'])
+    if (producer_host == listing_host or producer_host.endswith('.' + listing_host)
+            or listing_host.endswith('.' + producer_host) or host(other['url']) != producer_host
+            or producer['url'] == other['url'] or producer['sourceSha256'] == other['sourceSha256']):
+        raise ValueError(f'Numeric conflict identity requires independent selected-unit corroboration and a distinct producer alternate record: {sku}')
+    front, rear = by_kind['inspected_package_photo'], by_kind['inspected_rear_package_photo']
+    front_fields = {'kind', 'url', 'supports', 'imageSha256', 'productUrl', 'associatedUpc', 'associatedLabel',
+                    'associationBasis', 'inspectionReceiptSha256', 'inspectedOn', 'wholePackage', 'professional'}
+    rear_fields = {'kind', 'url', 'supports', 'imageSha256', 'productUrl', 'printedUpc', 'printedNetContent',
+                   'inspectionReceiptSha256', 'inspectedOn', 'wholePackage'}
+    if (set(front) != front_fields or set(rear) != rear_fields
+            or front.get('imageSha256') != review['expectedImageSha256']
+            or front.get('associatedUpc') != main or front.get('associatedLabel') != review['verifiedLabel']
+            or front.get('associationBasis') != 'exact_selected_unit_source_record'
+            or front.get('productUrl') != listing['url'] or front.get('professional') is not True
+            or front.get('url') != listing['unitImageUrl']
+            or rear.get('productUrl') != producer['url'] or rear.get('printedUpc') != main
+            or rear.get('url') != producer['unitImageUrl']
+            or reviewed_volume_milliliters(rear.get('printedNetContent')) != selected_volume
+            or not hash_value(rear.get('imageSha256')) or rear['imageSha256'] == front['imageSha256']
+            or other['unitImageUrl'] in {front.get('url'), rear.get('url')}):
+        raise ValueError(f'Numeric conflict identity requires the exact selected front and separate printed-code rear: {sku}')
+    for photo in (front, rear):
+        inspected = checked_date(photo.get('inspectedOn'))
+        if (not host(photo.get('url')) or not safe_review_text(photo.get('supports'))
+                or not hash_value(photo.get('inspectionReceiptSha256')) or not inspected or inspected > reviewed
+                or photo.get('wholePackage') is not True):
+            raise ValueError(f'Numeric conflict identity requires dated manual whole-package inspection receipts: {sku}')
+
+
+def validate_numeric_conflict_source(source: dict, raw_fields: list, review: dict) -> None:
+    conflict = numeric_conflict_details(review)
+    disposition, reason, _, _ = classify_record(source)
+    if (disposition != 'needs_review' or reason != 'Needs a specific product name; source record retained'
+            or len(raw_fields) != len(EXPECTED_HEADERS)
+            or (source['MAINUPC'], source['ItemName'], source['PackName'], source['DEPNAME'], source['sourceRow'])
+            != (review['expectedUpc'], conflict['expectedNumericItemName'], conflict['expectedPackName'],
+                review['expectedDepartment'], review['expectedSourceRow'])):
+        raise ValueError(f'Numeric conflict identity requires the exact original quarantined row and declared pack: {source["SKU"]}')
+
+
+def validate_numeric_conflict_photos(products: list, source_reviews: dict, image_manifest: dict | None,
+                                     private_evidence: dict | None, blocked_images: set) -> None:
+    scoped = {sku: review for sku, review in source_reviews.items()
+              if review.get('verificationMethod') == NUMERIC_CONFLICT_IDENTITY_METHOD}
+    if not scoped:
+        return
+    private = validate_private_direct_image_evidence(image_manifest, private_evidence)
+    for sku, review in scoped.items():
+        matches = [p for p in products if any(v['sku'] == sku for v in p['variants'])]
+        if (len(matches) != 1 or [v['sku'] for v in matches[0]['variants']] != [sku]
+                or matches[0]['name'] != review['verifiedName']):
+            raise ValueError(f'Numeric conflict identity must remain its exact isolated singleton: {sku}')
+        front = next(e for e in review['evidence'] if e['kind'] == 'inspected_package_photo')
+        if (sku not in private or private[sku]['sourcePage'] != front['productUrl']
+                or private[sku]['sourceImageUrl'] != front['url']):
+            raise ValueError(f'Numeric conflict photo requires its exact selected-unit private source association: {sku}')
+    validate_reviewed_source_photo_bindings(products,
+        {sku: dict(review, action='resolve_verified_pack_identity') for sku, review in scoped.items()},
+        image_manifest, blocked_images)
+
+
 def validate_numeric_name_restoration(source: dict, raw_fields: list, review: dict,
                                       title_review: dict | None) -> None:
     """Restore only an exact original numeric GTIN, leaving every unit unresolved."""
@@ -2749,8 +2940,12 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                             if review.get('verificationMethod') == NAME_ONLY_RESTORATION_METHOD}
     numeric_restorations = {sku for sku, review in source_reviews.items()
                             if review['action'] == 'restore_verified_numeric_name'}
-    if (guarded_restorations | numeric_restorations) & (set(corrections) | set(identity_reviews) | set(name_verifications) | set(category_reviews)):
+    numeric_conflicts = {sku for sku, review in source_reviews.items()
+                         if review.get('verificationMethod') == NUMERIC_CONFLICT_IDENTITY_METHOD}
+    if (guarded_restorations | numeric_restorations | numeric_conflicts) & (set(corrections) | set(identity_reviews) | set(name_verifications) | set(category_reviews)):
         raise ValueError('Name-only restoration cannot coexist with name, identity or category overrides')
+    if numeric_conflicts & set(public_name_reviews):
+        raise ValueError('Numeric conflict identity cannot coexist with a public-title override')
     applied_category_reviews = set()
     applied_public_name_reviews = set()
     master = []
@@ -2793,6 +2988,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 record['sourceReview'] = review
                 if numeric_restoring:
                     validate_numeric_name_restoration(source, fields, review, public_name_reviews.get(sku))
+                if sku in numeric_conflicts:
+                    validate_numeric_conflict_source(source, fields, review)
                 if restoring:
                     adjusted_source['ItemName'] = restored_description(source, review)
                     if guarded_restoring:
@@ -2830,7 +3027,7 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     disposition, reason, public, flags = 'needs_review', identity_review['reason'], None, []
             else:
                 disposition, reason, public, flags = classify_record(
-                    adjusted_source, defer_specific_name=guarded_restoring or numeric_restoring)
+                    adjusted_source, defer_specific_name=guarded_restoring or numeric_restoring or sku in numeric_conflicts)
             if manufacturer_baseline and (not public or public['variant'] != manufacturer_baseline['variant']):
                 raise ValueError(f'Manufacturer name-only review changed the original variant metadata: {sku}')
             if review:
@@ -2849,7 +3046,15 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                     if review['forceSizeNeedsConfirmation']:
                         public['variant']['label'] = uncertain_size_label(adjusted_source)
                 elif resolving:
-                    if not public or public['variant']['label'] != 'Size not specified':
+                    if sku in numeric_conflicts:
+                        if (not public or public['name'] != source['ItemName']
+                                or public['variant']['label'] != review['verifiedLabel']):
+                            raise ValueError(f'Numeric conflict identity must preserve its numeric intermediate and declared volume: {sku}')
+                        record['numericIdentityConflict'] = {
+                            'originalMainUpc': source['MAINUPC'], 'originalNumericItemName': source['ItemName'],
+                            'originalPackName': source['PackName'], 'alternateLabel': numeric_conflict_details(review)['alternateLabel'],
+                            'selectionBasis': review['selectionBasis'], 'conflictDisposition': review['conflictDisposition']}
+                    elif not public or public['variant']['label'] != 'Size not specified':
                         raise ValueError(f'Verified identity cannot silently replace a stated source size: {sku}')
                     if not public['variant']['upc'] or public['variant']['upc'] != review['expectedUpc']:
                         raise ValueError(f'Verified identity requires a retained public UPC matching the source guard: {sku}')
@@ -3074,6 +3279,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                             if review['action'] != 'resolve_verified_pack_total_volume'}
     variants_by_sku = validate_reviewed_source_photo_bindings(
         products, legacy_photo_reviews, image_manifest, blocked_images)
+    validate_numeric_conflict_photos(products, source_reviews, image_manifest,
+                                     private_direct_image_evidence_manifest, blocked_images)
     records_by_sku = {record['sku']: record for record in master}
     for sku, verification in name_verifications.items():
         product, variant = variants_by_sku.get(sku, ({}, {}))

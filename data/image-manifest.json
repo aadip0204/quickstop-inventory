@@ -32660,6 +32660,426 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "2418",
+      "src": "images/products/sku-2418.webp",
+      "alt": "Coors Light — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "071990300050",
+      "expectedName": "Coors Light",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "c1e177acbf06cd1a0aebe631a9decb0acbb5e0ce6ceecf80a8539389fc9c589f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5540",
+      "src": "images/products/sku-5540.webp",
+      "alt": "MICHELOB ULTRA — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "018200059896",
+      "expectedName": "MICHELOB ULTRA",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "c2d38fdebef17fd2a0a03d77d5cfb9a04f057eb2dc7b8a318dc21e039f118c9d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2474",
+      "src": "images/products/sku-2474.webp",
+      "alt": "Corona premier — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "033544950418",
+      "expectedName": "Corona premier",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "7e1defb08a54af086b8414393e47aa3317115cad1c9ca9c0d612376457e49751",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5661",
+      "src": "images/products/sku-5661.webp",
+      "alt": "MILLER HIGH LIFE — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "034100015053",
+      "expectedName": "MILLER HIGH LIFE",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "728f4addf7b711b622aba10297614c2ba2b64290769cc4aa50bd424258854efd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7287",
+      "src": "images/products/sku-7287.webp",
+      "alt": "SAM ADAMS BOSTON — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "087692100126",
+      "expectedName": "SAM ADAMS BOSTON",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "da619d0352406f710e701998914a1d98f46018e288b64d7cf6d585736c65fe38",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1487",
+      "src": "images/products/sku-1487.webp",
+      "alt": "Budweiser CanCan — Single · 25 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "018200250002",
+      "expectedName": "Budweiser CanCan",
+      "expectedLabel": "Single · 25 oz",
+      "sha256": "65e0a5ba095288e681da0d09be03fa6675aee5b29115fa223fd57dc0d6b17b35",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1545",
+      "src": "images/products/sku-1545.webp",
+      "alt": "Busch — Single · 25 oz · cans packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "018200250033",
+      "expectedName": "Busch",
+      "expectedLabel": "Single · 25 oz · cans",
+      "sha256": "e8afe56ae93f1477dda09c93d1ffecfb8135ef2d1d9dd308aed167f87e8dfb52",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2414",
+      "src": "images/products/sku-2414.webp",
+      "alt": "Coors Light — Single · 24 oz · cans packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "071990300654",
+      "expectedName": "Coors Light",
+      "expectedLabel": "Single · 24 oz · cans",
+      "sha256": "cce567b16de12272fb1421af647c8cf94c6c4bf4fd94af27d84f01036c10a62f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3392",
+      "src": "images/products/sku-3392.webp",
+      "alt": "Foster's Australian Lager Beer — Single · 25.4 oz · cans packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "070897013315",
+      "expectedName": "Foster's Australian Lager Beer",
+      "expectedLabel": "Single · 25.4 oz · cans",
+      "sha256": "49943c4bda5689c6a21fbf431ea410f780281ffb918cdabbd93d6183f7609e3a",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1431",
+      "src": "images/products/sku-1431.webp",
+      "alt": "Bud light lime CanCAN — Single · 25 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "018200250095",
+      "expectedName": "Bud light lime CanCAN",
+      "expectedLabel": "Single · 25 oz",
+      "sha256": "01e841051bbf9b064096c0a3617185d2f9ffe6db3fb82ae92a46aa38ea92da22",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7978",
+      "src": "images/products/sku-7978.jpg",
+      "alt": "Spice IT black pepper — 2 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "718343310037",
+      "expectedName": "Spice IT black pepper",
+      "expectedLabel": "2 oz",
+      "sha256": "d971f5f6ebc93857db3e719c132ceba2ddb3bd5844321515580c3f52bcc71f73",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7980",
+      "src": "images/products/sku-7980.jpg",
+      "alt": "Spice IT seasoned salt — 9.5 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "718343518181",
+      "expectedName": "Spice IT seasoned salt",
+      "expectedLabel": "9.5 oz",
+      "sha256": "19f6fdc93ccc650eb01c91847aa9a94b9065b1a5c0e1e8a89a86cdc19faf2622",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7977",
+      "src": "images/products/sku-7977.webp",
+      "alt": "spice it steak seasoning — 156 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "718343111481",
+      "expectedName": "spice it steak seasoning",
+      "expectedLabel": "156 g",
+      "sha256": "317ee66adf16770d2652d7171644f68592047dd945e98482af827caed69df274",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7995",
+      "src": "images/products/sku-7995.png",
+      "alt": "Chase's Home Value Country Rain Disinfectant Spray — 6 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "010228104244",
+      "expectedName": "Chase's Home Value Country Rain Disinfectant Spray",
+      "expectedLabel": "6 oz",
+      "sha256": "d6a7359d5dea98c2ec81c111345d48e5c40d4e1f4e378ca08941462b9911ad4f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9641",
+      "src": "images/products/sku-9641.jpg",
+      "alt": "wizard air freshener — 283 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "854152008434",
+      "expectedName": "wizard air freshener",
+      "expectedLabel": "283 g",
+      "sha256": "baae14e8d74b7eea1eac6b65c8d279fd45b44e61caaaf068ca68df7023811e46",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9642",
+      "src": "images/products/sku-9642.jpg",
+      "alt": "wizard air freshener — 283 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "854152008441",
+      "expectedName": "wizard air freshener",
+      "expectedLabel": "283 g",
+      "sha256": "7acebf7cebb299313138b8cb256b021a075958e8a607ee791d61ebde494357cd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "660",
+      "src": "images/products/sku-660.webp",
+      "alt": "AXE BODY SPRAY excite — 150 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "6001087364638",
+      "expectedName": "AXE BODY SPRAY excite",
+      "expectedLabel": "150 mL",
+      "sha256": "e0fc980eaeae577a4d87b9342e0b50ffc46b86f1219e4cab44fb0753ee6d1b7e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5091",
+      "src": "images/products/sku-5091.jpg",
+      "alt": "First Force All Purpose Lemon Cleaner — 28 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "058847028107",
+      "expectedName": "First Force All Purpose Lemon Cleaner",
+      "expectedLabel": "28 oz",
+      "sha256": "ba7db2830c54e0b8e8ca68ec770cf1cf7c28368b0d422ab5e4216284a38e6375",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6058",
+      "src": "images/products/sku-6058.jpg",
+      "alt": "Satya Sai Baba Nag Champa Incense — 15 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "8901802001023",
+      "expectedName": "Satya Sai Baba Nag Champa Incense",
+      "expectedLabel": "15 g",
+      "sha256": "182d6e516ad40abebbee036c1104c264ef36f6fa697360d4a6c11e8b32743729",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101370",
+      "src": "images/products/sku-101370.png",
+      "alt": "AXE Apollo Body Spray — 150 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "7791293048864",
+      "expectedName": "AXE Apollo Body Spray",
+      "expectedLabel": "150 mL",
+      "sha256": "6937cbd71d6a9f7f32818f32156f3ee548eb06393c70a5fd83b2b241acf4950c",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "usageBasis": "user_authorized_direct_reference",
+      "expectedName": "Burnett's Vodka 80 Proof",
+      "verifiedOn": "2026-11-02",
+      "src": "images/products/sku-57-direct.jpg",
+      "expectedLabel": "375 mL",
+      "expectedUpc": "096749006953",
+      "attributionRequired": false,
+      "alt": "Burnett's Vodka 80 Proof — 375 mL",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "sku": "57",
+      "sha256": "3ac28243673d663ce4a5f3233e81ddc528572360d493fe6ab36f71aea046af75"
     }
   ]
 }

@@ -1776,6 +1776,22 @@
       "evidence": {
         "privateEvidenceSha256": "bf6750ae656e0315ffd47093cd10c97afbb2b4b00af81fbaa1feafe3b90751c7"
       }
+    },
+    {
+      "sku": "7977",
+      "expectedUpc": "718343111481",
+      "expectedNameSha256": "4a2ab57bc3c4badf769d7f31e9bdb976cefc9e686eb8bc6693d42211504caaeb",
+      "expectedSourceRecordSha256": "12da93c4f25bd13e5aa645381ad2a89d1d5eae1cc69c52a0e23099e15499c556",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "spice it steak seasoning",
+      "expectedLabel": "156 g",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-11-02",
+      "reason": "Exact consumer barcode and the own retailer product description identify culinary steak seasoning with nutrition facts and named food ingredients. Route this singleton to food while preserving its original MISC department, name, quantity and all raw source fields.",
+      "evidence": {
+        "privateEvidenceSha256": "8d5effbf1c39631e86408a954ab2e5c62d85eb59d6d07c118451997e69045a43"
+      }
     }
   ]
 }
