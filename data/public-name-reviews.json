@@ -6705,6 +6705,81 @@
       "evidence": {
         "privateEvidenceSha256": "9255727bb2b083513c07aceb890d436a1696b527eec713b1ac723149af87c718"
       }
+    },
+    {
+      "sku": "3365",
+      "expectedUpc": "020100000250",
+      "expectedSourceRow": 6744,
+      "expectedRawFieldsSha256": "32e51c7d6301d777a3da4020189085c3b06eb3313f32cb8ef7d2f26c5b1e9290",
+      "expectedPublicName": "Fish Steaks Hot Sauce",
+      "expectedLabel": "3.75 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Beach Cliff Fish Steaks in Louisiana Hot Sauce",
+      "reason": "Exact consumer-code and inspected package support only this observed public name; raw identity and variant metadata are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "827c784950316ebd2187ad54d7370a82f5540e762b2f94f0284c2e17335a4c54"
+      }
+    },
+    {
+      "sku": "3878",
+      "expectedUpc": "079100518579",
+      "expectedSourceRow": 9179,
+      "expectedRawFieldsSha256": "5ff7bcb38fb885ee4f60f53d3d9b915d4da7acbe8ef5dbde474734d4c54999bf",
+      "expectedPublicName": "GRAVY TRAIN BEEFY CLASSIC",
+      "expectedLabel": "3.5 lb",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Gravy Train Beef Flavor Dry Dog Food",
+      "reason": "Exact consumer-code and inspected package support only this observed public name; raw identity and variant metadata are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "c30f54c01442949ed80692511d25a48d5a81ec08f11af8f95703154b74ba5b8d"
+      }
+    },
+    {
+      "sku": "101461",
+      "expectedUpc": "017082873514",
+      "expectedSourceRow": 9189,
+      "expectedRawFieldsSha256": "79c8cdc30807309b940f14ffe17e9e8c985129fe18c85f15c904eca061ef67b6",
+      "expectedPublicName": "JACK LINKS BEEF STEAK",
+      "expectedLabel": "0.8 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Jack Link's Original Tender Style Beef Steak",
+      "reason": "Exact consumer-code and inspected package support only this observed public name; raw identity and variant metadata are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "876783b7c8daa167c2ffc968452821a5b8324f25eff7f8b5b53f28263f157464"
+      }
+    },
+    {
+      "sku": "5207",
+      "expectedUpc": "190298000209",
+      "expectedSourceRow": 7986,
+      "expectedRawFieldsSha256": "c26517d8fff0bc7da6d60968f69b14f5fd0dbb104bdcf489a5f054d3d956f74d",
+      "expectedPublicName": "LOUISIANA HOT SAUCE",
+      "expectedLabel": "6 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Louisiana Brand Original Hot Sauce",
+      "reason": "Exact consumer-code and inspected package support only this observed public name; raw identity and variant metadata are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "5f767d3edccf4cb2194d7d866b8facb57cb7845b6f993958d9a7bb4b19d1711e"
+      }
+    },
+    {
+      "sku": "45",
+      "expectedUpc": "059642006352",
+      "expectedSourceRow": 38,
+      "expectedRawFieldsSha256": "339599509bffec724938d96004f406c5fb7d8a77d38e7612f903171ebacf0158",
+      "expectedPublicName": "candy",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Cry Baby Extra Sour Bubble Gum",
+      "reason": "Exact original code supports this product name only; selling unit remains unresolved and the restored SKU stays isolated without a photo.",
+      "evidence": {
+        "privateEvidenceSha256": "13904105d354d4857fcf24dff1de0c85cd56f3a9850441d2ebb5a66d414dc776"
+      }
     }
   ]
 }

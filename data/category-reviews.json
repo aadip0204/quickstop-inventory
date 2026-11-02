@@ -1696,6 +1696,38 @@
       "evidence": {
         "privateEvidenceSha256": "808d995b0c1bde462c77203da0765b788c21575493911a82ee526a80a0d044e7"
       }
+    },
+    {
+      "sku": "3878",
+      "expectedUpc": "079100518579",
+      "expectedNameSha256": "a477f63a599873c43f23ef95668387504f305cfa6429ee1f47fbe32d8110994b",
+      "expectedSourceRecordSha256": "5ff7bcb38fb885ee4f60f53d3d9b915d4da7acbe8ef5dbde474734d4c54999bf",
+      "expectedDepartment": "Snacks",
+      "expectedPublicName": "GRAVY TRAIN BEEFY CLASSIC",
+      "expectedLabel": "3.5 lb",
+      "expectedCategory": "food",
+      "category": "essentials",
+      "reviewedOn": "2026-11-02",
+      "reason": "This named product is pet food; preserve original department, source identity and variant size.",
+      "evidence": {
+        "privateEvidenceSha256": "a0e4544bdbe7b7c5603d5f34278eb326d967b8ee69cf50f0719e3de7ac3782f3"
+      }
+    },
+    {
+      "sku": "101425",
+      "expectedUpc": "079100761586",
+      "expectedNameSha256": "110f60f8cd3df425fc1444a73e9b2a9756c0d80e2f657c9cbe6c406a9091ff60",
+      "expectedSourceRecordSha256": "69d6a0faf52ec353c04e4f1795bc1bc18ac6321f47c06c5e635df5bdbf0ff5bc",
+      "expectedDepartment": "GROCERY",
+      "expectedPublicName": "GRAVY TRAIN BEEF CHUNKS",
+      "expectedLabel": "13.2 oz",
+      "expectedCategory": "food",
+      "category": "essentials",
+      "reviewedOn": "2026-11-02",
+      "reason": "This named product is pet food; preserve original department, source identity and variant size.",
+      "evidence": {
+        "privateEvidenceSha256": "1c5f4ab54dbf9bba7b3861b2a5cb0454214a1e5a40d40bb7203e43361dacda78"
+      }
     }
   ]
 }

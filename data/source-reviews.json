@@ -6443,6 +6443,82 @@
         ],
         "reason": "Actual whole retail package and exact consumer UPC listing resolve3.03oz only; manufacturer expression remains honestly scoped, all raw source cells and every other variant field are preserved."
       }
+    },
+    {
+      "sku": "5207",
+      "expectedUpc": "190298000209",
+      "expectedNameSha256": "2d6f8f1cac0eb909617290f7b7ec2ab959088e63faecb2ba38a112f78383630b",
+      "expectedSourceRecordSha256": "c26517d8fff0bc7da6d60968f69b14f5fd0dbb104bdcf489a5f054d3d956f74d",
+      "action": "resolve_verified_ambiguous_ounce_volume",
+      "verificationMethod": "food_single_bottle_fluid_ounce",
+      "reason": "Exact original consumer identity and whole inspected package resolve only this unit label; raw cells and all other variants remain unchanged.",
+      "reviewedOn": "2026-11-02",
+      "expectedSourceRow": 7986,
+      "expectedPublicName": "Louisiana Brand Original Hot Sauce",
+      "expectedLabel": "6 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-1704da60e54d89f3",
+      "expectedResultingGroupSkus": [
+        "5207"
+      ],
+      "verifiedLabel": "6 fl oz",
+      "expectedImageSha256": "b9b11012c501a9e96a92669adfd047a0847296640c31c6b661681702655b1f82",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "74d0694454c032325c6c57e22469e67319217188dec599ee53ce3861d8139fcd"
+      }
+    },
+    {
+      "sku": "947",
+      "expectedUpc": "020100000069",
+      "expectedNameSha256": "6023355599815290e8c381d2b527289c270bf145368eed3c168433741a027459",
+      "expectedSourceRecordSha256": "9dbc040b303cbe6461476f1f9cdd3d6a481348ada58b459af5b660a2ee533025",
+      "action": "resolve_verified_missing_measurement",
+      "verificationMethod": "printed_barcode_food_net_content",
+      "reason": "Exact original consumer identity and whole inspected package resolve only this unit label; raw cells and all other variants remain unchanged.",
+      "reviewedOn": "2026-11-02",
+      "expectedSourceRow": 8037,
+      "expectedPublicName": "Beach Cliff Sardines in Soybean Oil Can",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-8a8c05b88c79a3c1",
+      "expectedResultingGroupSkus": [
+        "947"
+      ],
+      "verifiedLabel": "3.75 oz",
+      "expectedImageSha256": "f17839ebb50b12ce69a5049aa5f6d399b04cbd11fb2d0b96061260f29198c28a",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "08fad83d2669b833a6c063924197a151e4484fbbe034c3f35f5b5c540fa58e46"
+      }
+    },
+    {
+      "sku": "45",
+      "expectedUpc": "059642006352",
+      "expectedNameSha256": "2c935c4551667d2fb5a3c9efa1736993d7cc7b0ee609610cb25213f7a4e34f64",
+      "expectedSourceRecordSha256": "339599509bffec724938d96004f406c5fb7d8a77d38e7612f903171ebacf0158",
+      "action": "restore_named_merchandise",
+      "verificationMethod": "exact_upc_guarded_name_restoration",
+      "sanitizedSourceName": "candy",
+      "forceSizeNeedsConfirmation": true,
+      "reviewedOn": "2026-11-02",
+      "reason": "Remove only the ambiguous edge annotation and apply the separately guarded exact-code product name; preserve all raw source fields and keep selling unit unresolved."
     }
   ]
 }

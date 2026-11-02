@@ -30860,6 +30860,106 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3365",
+      "src": "images/products/sku-3365.webp",
+      "alt": "Beach Cliff Fish Steaks in Louisiana Hot Sauce — 3.75 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "020100000250",
+      "expectedName": "Beach Cliff Fish Steaks in Louisiana Hot Sauce",
+      "expectedLabel": "3.75 oz",
+      "sha256": "bfedaec6cbb804b96b0a481c295e5d88fb8c6e71689f11f2e23d2e2764846205",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3878",
+      "src": "images/products/sku-3878.jpg",
+      "alt": "Gravy Train Beef Flavor Dry Dog Food — 3.5 lb packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "079100518579",
+      "expectedName": "Gravy Train Beef Flavor Dry Dog Food",
+      "expectedLabel": "3.5 lb",
+      "sha256": "e00ddabade19d83539b715fa87cd791b149f46da3cb8a26bf0279bf608b9f212",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101461",
+      "src": "images/products/sku-101461.webp",
+      "alt": "Jack Link's Original Tender Style Beef Steak — 0.8 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "017082873514",
+      "expectedName": "Jack Link's Original Tender Style Beef Steak",
+      "expectedLabel": "0.8 oz",
+      "sha256": "e7c35963e2ee02c246eeeacf71e602f7951127b1cc9c518e571da656e7141976",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5207",
+      "src": "images/products/sku-5207.jpg",
+      "alt": "Louisiana Brand Original Hot Sauce — 6 fl oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "190298000209",
+      "expectedName": "Louisiana Brand Original Hot Sauce",
+      "expectedLabel": "6 fl oz",
+      "sha256": "b9b11012c501a9e96a92669adfd047a0847296640c31c6b661681702655b1f82",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "947",
+      "src": "images/products/sku-947.png",
+      "alt": "Beach Cliff Sardines in Soybean Oil Can — 3.75 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "020100000069",
+      "expectedName": "Beach Cliff Sardines in Soybean Oil Can",
+      "expectedLabel": "3.75 oz",
+      "sha256": "f17839ebb50b12ce69a5049aa5f6d399b04cbd11fb2d0b96061260f29198c28a",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
