@@ -1728,6 +1728,38 @@
       "evidence": {
         "privateEvidenceSha256": "1c5f4ab54dbf9bba7b3861b2a5cb0454214a1e5a40d40bb7203e43361dacda78"
       }
+    },
+    {
+      "sku": "101426",
+      "expectedUpc": "079100761616",
+      "expectedNameSha256": "38bbde18800e588ecc2d243120407fbb33133c8bc5acf584b2aca5f7a69fc18e",
+      "expectedSourceRecordSha256": "883f4b891e2563269931bd640f316536e8138f521ac7d8c5dfe4da11285386b7",
+      "expectedDepartment": "GROCERY",
+      "expectedPublicName": "GRAVY TRAIN CHIK CHUNKS",
+      "expectedLabel": "13.2 oz",
+      "expectedCategory": "food",
+      "category": "essentials",
+      "reviewedOn": "2026-11-02",
+      "reason": "Guard only this named product shopping category; original source department and raw metadata are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "0231fb57569e2068c57ffd5984b227a345f7807c2bbe25d706a3ddd0bd3565b4"
+      }
+    },
+    {
+      "sku": "2386",
+      "expectedUpc": "086106022580",
+      "expectedNameSha256": "1dc521ccea80a8248208fa230c04bd615e4fdb46e726300cd6ba93a2e70fb8c9",
+      "expectedSourceRecordSha256": "8aafef3566648049c3710ebedbfe42930b4497e29b4bc1078e2b551b7402fabe",
+      "expectedDepartment": "MISC",
+      "expectedPublicName": "Lil' Dutch Maid Iced Oatmeal Cookies",
+      "expectedLabel": "5 oz",
+      "expectedCategory": "essentials",
+      "category": "food",
+      "reviewedOn": "2026-11-02",
+      "reason": "Guard only this named product shopping category; original source department and raw metadata are preserved.",
+      "evidence": {
+        "privateEvidenceSha256": "53b1ba28d21c0ee25d0e3529b393b5c36b62d2301638e4400eb2ad4636d5ff76"
+      }
     }
   ]
 }

@@ -30960,6 +30960,46 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "101218",
+      "src": "images/products/sku-101218.png",
+      "alt": "Libby's Mixed Vegetables — 15 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "037100038176",
+      "expectedName": "Libby's Mixed Vegetables",
+      "expectedLabel": "15 oz",
+      "sha256": "d4ab5cbd87f9c54f5f8b23c9aa1351ff9b7fadbaebc073f433e5d5a2075db7a7",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2386",
+      "src": "images/products/sku-2386.png",
+      "alt": "Lil' Dutch Maid Iced Oatmeal Cookies — 5 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "086106022580",
+      "expectedName": "Lil' Dutch Maid Iced Oatmeal Cookies",
+      "expectedLabel": "5 oz",
+      "sha256": "5a9984a086c1887fc346c83bf185a9a7debb3406a657aacc26491f37cf70fd85",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
