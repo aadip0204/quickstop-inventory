@@ -31000,6 +31000,306 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "101217",
+      "src": "images/products/sku-101217.png",
+      "alt": "Iberia Mixed Vegetables — 15 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "075669101672",
+      "expectedName": "Iberia Mixed Vegetables",
+      "expectedLabel": "15 oz",
+      "sha256": "e7c330062a56ebacbb194501e0a5492cce664f81759d162fae2d0805d7091a6c",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3387",
+      "src": "images/products/sku-3387.webp",
+      "alt": "Folgers Classic Roast Medium Ground Coffee — 9.6 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "025500304014",
+      "expectedName": "Folgers Classic Roast Medium Ground Coffee",
+      "expectedLabel": "9.6 oz",
+      "sha256": "2a61d68cb872bcc024d29ccc8e5be6d6ed28a88e88a1f2d089030d29fff05b57",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6870",
+      "src": "images/products/sku-6870.webp",
+      "alt": "raid ant & roach — 17.5 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "046500117176",
+      "expectedName": "raid ant & roach",
+      "expectedLabel": "17.5 oz",
+      "sha256": "289e4330d7c5ca36f492bc03cde02b62ba0e6b4917cd9e3df9ce83fe5eed591b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "657",
+      "src": "images/products/sku-657.jpg",
+      "alt": "AXE BODY SPRAY adrenalin — 150 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "6001087364652",
+      "expectedName": "AXE BODY SPRAY adrenalin",
+      "expectedLabel": "150 mL",
+      "sha256": "649415e0b3a4df27e484632bfbedceb42d098a67ad5358c8c0c9dd8f1fc69172",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "658",
+      "src": "images/products/sku-658.jpg",
+      "alt": "AXE Black Body Spray — 150 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "6001087364614",
+      "expectedName": "AXE Black Body Spray",
+      "expectedLabel": "150 mL",
+      "sha256": "bcf2ed5c433ac51c1b934150c6975a50ad98737460cd287bb83e4887dc976ddf",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7061",
+      "src": "images/products/sku-7061.png",
+      "alt": "Reynolds Wrap Heavy Duty Aluminum Foil — 37.5 sq ft packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "010900200509",
+      "expectedName": "Reynolds Wrap Heavy Duty Aluminum Foil",
+      "expectedLabel": "37.5 sq ft",
+      "sha256": "168d0473a734385b5dc3e477664f0cea554fed3b9039aea2f489ce02053c4618",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3051",
+      "src": "images/products/sku-3051.jpg",
+      "alt": "Du Bouchett Triple Sec — 1 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749938407",
+      "expectedName": "Du Bouchett Triple Sec",
+      "expectedLabel": "1 L",
+      "sha256": "8f2eefc1d10c986f34781d4c4483ee247eaac80712043eb56661225d1c3b61ef",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3714",
+      "src": "images/products/sku-3714.png",
+      "alt": "Georgia Moon Corn Whiskey — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749011551",
+      "expectedName": "Georgia Moon Corn Whiskey",
+      "expectedLabel": "750 mL",
+      "sha256": "6beaf20daf0c5f9315112a282b9c0eb643ee0bbb8f8783df07e1e41a0d478a7d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5248",
+      "src": "images/products/sku-5248.jpg",
+      "alt": "Lunazul Blanco Tequila — 1.75 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749908547",
+      "expectedName": "Lunazul Blanco Tequila",
+      "expectedLabel": "1.75 L",
+      "sha256": "b966df457aa77954998d040abe590271f70fb1e080045e6f5232d6ddbc066ca9",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5802",
+      "src": "images/products/sku-5802.jpg",
+      "alt": "MOHAWK VODKA — 375 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085916016857",
+      "expectedName": "MOHAWK VODKA",
+      "expectedLabel": "375 mL",
+      "sha256": "8c2ba38367a305e720f8080c5dbf217ca7031c7c880211a0479f9167b69255b5",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8990",
+      "src": "images/products/sku-8990.jpg",
+      "alt": "Two Fingers Gold Tequila — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "089540135328",
+      "expectedName": "Two Fingers Gold Tequila",
+      "expectedLabel": "750 mL",
+      "sha256": "ea050d1e1b99fc1e0a05d7ff2c45f765d00b45f5ce3f1b84be8cf77e984a02bc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5799",
+      "src": "images/products/sku-5799.jpg",
+      "alt": "MOHAWK 750 — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085916022049",
+      "expectedName": "MOHAWK 750",
+      "expectedLabel": "750 mL",
+      "sha256": "8411eed48ec3149867c1aa1bb78066034a82ae99ed5e404f6940da8572116c1d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "433",
+      "src": "images/products/sku-433.jpg",
+      "alt": "AQUA HYDRATE WATER — 1 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "182136000021",
+      "expectedName": "AQUA HYDRATE WATER",
+      "expectedLabel": "1 L",
+      "sha256": "e8070a7f51af8a8ca4f81e74f7f974fe2bd4285e718d76e913d4187587ed92da",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "712",
+      "src": "images/products/sku-712.jpg",
+      "alt": "Bacardi Dragon Berry — 375 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "080480000288",
+      "expectedName": "Bacardi Dragon Berry",
+      "expectedLabel": "375 mL",
+      "sha256": "78ec133845c041cd518d83fd413529882b13e2a4d82aec042707c970b8c4706f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3026",
+      "src": "images/products/sku-3026.webp",
+      "alt": "Drano Liquid Clog Remover — 946 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "019800001162",
+      "expectedName": "Drano Liquid Clog Remover",
+      "expectedLabel": "946 mL",
+      "sha256": "b93ffe2752e1a7a3680b48c1da03de2bf7f80137e91741dadd055d698e4e2a48",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
