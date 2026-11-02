@@ -32220,6 +32220,446 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "6101",
+      "src": "images/products/sku-6101.webp",
+      "alt": "Ne-Mo's Strawberry Cream Cheese Bread — 113 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "076064081163",
+      "expectedName": "Ne-Mo's Strawberry Cream Cheese Bread",
+      "expectedLabel": "113 g",
+      "sha256": "f04bfe0a97d69985fe178563bade99504cfc44889b4cbdbc2169e55140de0055",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6103",
+      "src": "images/products/sku-6103.jpg",
+      "alt": "Ne-Mo's Carrot Bread — 113 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "076064082122",
+      "expectedName": "Ne-Mo's Carrot Bread",
+      "expectedLabel": "113 g",
+      "sha256": "d7260b92c27c3ceb3499d3e93525a3a5698a1e6f0b9b00c3403cb81f0810e6cc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6104",
+      "src": "images/products/sku-6104.webp",
+      "alt": "Ne-Mo's Banana Bread — 113 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "076064083129",
+      "expectedName": "Ne-Mo's Banana Bread",
+      "expectedLabel": "113 g",
+      "sha256": "79442075e2cce0780c8b3ad96f4ce8210231327634aa5ccc67da7e36781195aa",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6107",
+      "src": "images/products/sku-6107.webp",
+      "alt": "Ne-Mo's Wild Blueberry Bread — 113 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "076064088124",
+      "expectedName": "Ne-Mo's Wild Blueberry Bread",
+      "expectedLabel": "113 g",
+      "sha256": "5ea57b9f87fc7b8696b9ec28111d11b3081bd8676dac21f5e4921538db63584d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5016",
+      "src": "images/products/sku-5016.webp",
+      "alt": "La Preferida Zesty Nacho Cheese Sauce — 15 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "071524302550",
+      "expectedName": "La Preferida Zesty Nacho Cheese Sauce",
+      "expectedLabel": "15 oz",
+      "sha256": "bba179129f1cc91ea2471330061854401a92cff7c31230d3b45b77caa4c5039f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6432",
+      "src": "images/products/sku-6432.webp",
+      "alt": "Open Pit Original Barbecue Sauce — 510 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "054100977656",
+      "expectedName": "Open Pit Original Barbecue Sauce",
+      "expectedLabel": "510 g",
+      "sha256": "4f340e71a0070c8980bca0e65aaa15a3561e4315d22c9645868d8c9af390f488",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4214",
+      "src": "images/products/sku-4214.webp",
+      "alt": "Hostess Baby Bundts Lemon Drizzle Mini Cakes — 2.5 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "888109250171",
+      "expectedName": "Hostess Baby Bundts Lemon Drizzle Mini Cakes",
+      "expectedLabel": "2.5 oz",
+      "sha256": "8b451409d3d7a6e2671b714714c7a49f83db8ba155965e6b4c45a7a7d7610ad6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6102",
+      "src": "images/products/sku-6102.jpg",
+      "alt": "Ne-Mo's Double Chocolate Bread — 113 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "076064081170",
+      "expectedName": "Ne-Mo's Double Chocolate Bread",
+      "expectedLabel": "113 g",
+      "sha256": "4bcfef3cf99bda05caee2908752f9c158cedc393376582faa86e9f96c879b422",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1536",
+      "src": "images/products/sku-1536.jpg",
+      "alt": "Burnetts Vodka — 1.75 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749200313",
+      "expectedName": "Burnetts Vodka",
+      "expectedLabel": "1.75 L",
+      "sha256": "c89628693b4101ddb42489282c78096023acbbdf46f975199e1f262b5cfd06dc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101344",
+      "src": "images/products/sku-101344.png",
+      "alt": "LUNAZUL BLANCO — 375 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "096749001361",
+      "expectedName": "LUNAZUL BLANCO",
+      "expectedLabel": "375 mL",
+      "sha256": "1ce4452bb8552727daeb2ac946b43dc37132a60a03937b010a2b4e616491238e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6474",
+      "src": "images/products/sku-6474.jpg",
+      "alt": "Chase's Home Value Heavy-Duty Oven Cleaner — 340 g packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "010228104206",
+      "expectedName": "Chase's Home Value Heavy-Duty Oven Cleaner",
+      "expectedLabel": "340 g",
+      "sha256": "83edfccc434f48895dd5c01a4d5dd3ee5b4100ec3224761b4a9861eba04357f9",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6667",
+      "src": "images/products/sku-6667.jpg",
+      "alt": "Pine-Sol Original Multi-Surface Cleaner — 828 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "055500402946",
+      "expectedName": "Pine-Sol Original Multi-Surface Cleaner",
+      "expectedLabel": "828 mL",
+      "sha256": "167e967302eb0520f5d5fbca8d723d5fd83825051cd81bb465eeadd22cf14a17",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6664",
+      "src": "images/products/sku-6664.jpg",
+      "alt": "Pine-Sol Lavender Clean Multi-Surface Cleaner — 828 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "055500402892",
+      "expectedName": "Pine-Sol Lavender Clean Multi-Surface Cleaner",
+      "expectedLabel": "828 mL",
+      "sha256": "a86a22df90dce748f36634398b79f9f3d54fff59006ebbe4a261144851094379",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6871",
+      "src": "images/products/sku-6871.jpg",
+      "alt": "Raid Flying Insect Killer Outdoor Fresh Scent — 18 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "046500816666",
+      "expectedName": "Raid Flying Insect Killer Outdoor Fresh Scent",
+      "expectedLabel": "18 oz",
+      "sha256": "aa7a202a60ad450bc78537c799f5a23f1d3e857fb75f84ab64e09972c7d0f572",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3025",
+      "src": "images/products/sku-3025.png",
+      "alt": "First Force Drain Opener — 946 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "058847950019",
+      "expectedName": "First Force Drain Opener",
+      "expectedLabel": "946 mL",
+      "sha256": "3030dd25889fa00c37c72a2f0bcd3b9bf9c3ba4555ba039b705dee38bbe8643c",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6441",
+      "src": "images/products/sku-6441.jpg",
+      "alt": "First Force Orange Cleaner — 32 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "058847950804",
+      "expectedName": "First Force Orange Cleaner",
+      "expectedLabel": "32 oz",
+      "sha256": "addd21f5b7991b8533523b958e42e28860df707c35ac5531afdc5c9a2b31146e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6662",
+      "src": "images/products/sku-6662.webp",
+      "alt": "PowerHouse Pine Cleaner — 28 oz packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "048155900202",
+      "expectedName": "PowerHouse Pine Cleaner",
+      "expectedLabel": "28 oz",
+      "sha256": "9ac63192aa270b538c9262872e13a814e3ff6a9094b8eab7bca89959b5993738",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "818",
+      "src": "images/products/sku-818.jpg",
+      "alt": "Ballatore Gran Spumante Sparkling Wine — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085000007570",
+      "expectedName": "Ballatore Gran Spumante Sparkling Wine",
+      "expectedLabel": "750 mL",
+      "sha256": "8817d322e9a2fbbff6ee3865195fef4ac64806d3b97b3feba4915e4b016ac1bf",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9669",
+      "src": "images/products/sku-9669.jpg",
+      "alt": "Woodbridge Pinot Grigio — 1.5 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "086003001657",
+      "expectedName": "Woodbridge Pinot Grigio",
+      "expectedLabel": "1.5 L",
+      "sha256": "b249138376862c4455ade7936bb9cc015b13684b9fdb257a51fb2168c77d7dfd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9672",
+      "src": "images/products/sku-9672.jpg",
+      "alt": "Woodbridge Pinot Noir — 1.5 L packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "086003003408",
+      "expectedName": "Woodbridge Pinot Noir",
+      "expectedLabel": "1.5 L",
+      "sha256": "950cb6dad815e6c76d9308668ed17c0112923062fc416663c51db97384189269",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5324",
+      "src": "images/products/sku-5324.jpg",
+      "alt": "Manischewitz Conc Grape — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "085976033931",
+      "expectedName": "Manischewitz Conc Grape",
+      "expectedLabel": "750 mL",
+      "sha256": "41dcb3f01452e2e7ddf854553105f79e067ae5befadba71bf6c6b7e4f426bc79",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7144",
+      "src": "images/products/sku-7144.jpg",
+      "alt": "Riunite Lambrusco — 750 mL packaging",
+      "verifiedOn": "2026-11-02",
+      "expectedUpc": "080516135144",
+      "expectedName": "Riunite Lambrusco",
+      "expectedLabel": "750 mL",
+      "sha256": "ead05b7f6cc525a898ac5cc9736187e7a81cb2c3d2498328f7e8d0b26cbd9897",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }

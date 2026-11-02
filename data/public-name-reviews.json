@@ -7140,6 +7140,246 @@
       "evidence": {
         "privateEvidenceSha256": "c389eaf9fb3e2d041edb8e53580c7a13d86181ec75f33a7cb9ab50a646df830b"
       }
+    },
+    {
+      "sku": "6101",
+      "expectedUpc": "076064081163",
+      "expectedSourceRow": 7683,
+      "expectedRawFieldsSha256": "47af7e3b2df2206729b0ce213118702b0b4cb50fc31f79cf633040d427b12cbc",
+      "expectedPublicName": "nemos",
+      "expectedLabel": "113 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Ne-Mo's Strawberry Cream Cheese Bread",
+      "reason": "Own exact consumer barcode and independently inspected matching package establish the complete product expression. Original source fields and quantities remain unchanged; any family partition is separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "7c8e97b3ed680eeae6ba8f6aa51c16e1e0fa42011bef3fc6953ef0dea1df152c"
+      }
+    },
+    {
+      "sku": "6103",
+      "expectedUpc": "076064082122",
+      "expectedSourceRow": 9623,
+      "expectedRawFieldsSha256": "72f6c84212801ab3669fabf9d74c5b195c8fac7bad6bb61f73c767af8d6603db",
+      "expectedPublicName": "NEMOS",
+      "expectedLabel": "113 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Ne-Mo's Carrot Bread",
+      "reason": "Own exact consumer barcode and independently inspected matching package establish the complete product expression. Original source fields and quantities remain unchanged; any family partition is separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "b9c3cab06a7fea3238900dceb247d6c8bb4ec33d38c6757b96b2bfee4df3108d"
+      }
+    },
+    {
+      "sku": "6104",
+      "expectedUpc": "076064083129",
+      "expectedSourceRow": 8223,
+      "expectedRawFieldsSha256": "dd94fae9ec6a3b144e938dee08a793e73c6186ff38963f61501e800acf795d70",
+      "expectedPublicName": "NEMOS",
+      "expectedLabel": "113 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Ne-Mo's Banana Bread",
+      "reason": "Own exact consumer barcode and independently inspected matching package establish the complete product expression. Original source fields and quantities remain unchanged; any family partition is separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "7ff3d8d2f202938b1052011e625c883c47647267fe4880e5498a58e441736fb8"
+      }
+    },
+    {
+      "sku": "5016",
+      "expectedUpc": "071524302550",
+      "expectedSourceRow": 7317,
+      "expectedRawFieldsSha256": "98efcb67c2473cd1f23869ca4a0b92412b7087417e21f8c9eeb7374311a11b5b",
+      "expectedPublicName": "LaPreferida nacho cheese",
+      "expectedLabel": "15 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "La Preferida Zesty Nacho Cheese Sauce",
+      "reason": "Own exact consumer barcode and independently inspected matching package establish the complete product expression. Original source fields and quantities remain unchanged; any family partition is separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "25484227e6a4e2c0ed15ed6120d390e91510cb7caa7cc339c6dc631d488ed433"
+      }
+    },
+    {
+      "sku": "6432",
+      "expectedUpc": "054100977656",
+      "expectedSourceRow": 8053,
+      "expectedRawFieldsSha256": "d449b605084c974318ae834862f6dad6ebd833ae1323849a7454eceb9f09f048",
+      "expectedPublicName": "Open Pitorg",
+      "expectedLabel": "510 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Open Pit Original Barbecue Sauce",
+      "reason": "Own exact consumer barcode and independently inspected matching package establish the complete product expression. Original source fields and quantities remain unchanged; any family partition is separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "d710cbc8c49143c17afca6a38076fd4716458a454a2d76f8a3b2c2a4cc984e82"
+      }
+    },
+    {
+      "sku": "4214",
+      "expectedUpc": "888109250171",
+      "expectedSourceRow": 9677,
+      "expectedRawFieldsSha256": "ac3a114c16e3169ac56473fe46972879db36a955ed95ea184332f5e9d8147fb1",
+      "expectedPublicName": "hostess baby bundtslemon drizzle",
+      "expectedLabel": "2.5 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Hostess Baby Bundts Lemon Drizzle Mini Cakes",
+      "reason": "Own exact consumer barcode and independently inspected matching package establish the complete product expression. Original source fields and quantities remain unchanged; any family partition is separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "fe4f1ee90cd2da15c02d7400eece68b73bda7b1631949a9f5cc60ae52951ce77"
+      }
+    },
+    {
+      "sku": "6102",
+      "expectedUpc": "076064081170",
+      "expectedSourceRow": 9428,
+      "expectedRawFieldsSha256": "31f100042fe27e573b3e7906e76a1c7816d8e5fbacfb0feafc9c4544a4fc4c8b",
+      "expectedPublicName": "NEMOS",
+      "expectedLabel": "113 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Ne-Mo's Double Chocolate Bread",
+      "reason": "Own exact consumer barcode and independently inspected matching package establish the complete product expression. Original source fields and quantities remain unchanged; any family partition is separately guarded.",
+      "evidence": {
+        "privateEvidenceSha256": "289abf18200ac7ef3d9a19b392767ef0de32f1275bf47346335af14adb9986d6"
+      }
+    },
+    {
+      "sku": "6474",
+      "expectedUpc": "010228104206",
+      "expectedSourceRow": 8648,
+      "expectedRawFieldsSha256": "f6a0c1cbe110fc811c11e666e1a883625a8e7f74249b9c74a619347c1ff26e10",
+      "expectedPublicName": "Oven cleaner heavy duty",
+      "expectedLabel": "340 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Chase's Home Value Heavy-Duty Oven Cleaner",
+      "reason": "Exact own consumer barcode and independently inspected matching package establish the correctly spelled brand and product expression. Original source metadata and quantities remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "95833f6ebaad5c0684d0e9c207cc723cc23fd181eea76338a79ad4107ef58f35"
+      }
+    },
+    {
+      "sku": "6667",
+      "expectedUpc": "055500402946",
+      "expectedSourceRow": 7028,
+      "expectedRawFieldsSha256": "773e5818a21b1e0fcfcbf4202db3511bfbd305a66f279be7bf484badb48be052",
+      "expectedPublicName": "Pine Sol originalcleaning action",
+      "expectedLabel": "828 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Pine-Sol Original Multi-Surface Cleaner",
+      "reason": "Exact own consumer barcode and independently inspected matching package establish the correctly spelled brand and product expression. Original source metadata and quantities remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "0f80719a7c7565d6f37e41b35e0f7b5ed2f89347714892b907692b06cbdaa1e7"
+      }
+    },
+    {
+      "sku": "6664",
+      "expectedUpc": "055500402892",
+      "expectedSourceRow": 8939,
+      "expectedRawFieldsSha256": "1eaa9e4a5a351dd9ea56e4f50685a07786d6744bd16a4ee5b92d9d05e655e4ed",
+      "expectedPublicName": "Pine Solcleaning action",
+      "expectedLabel": "828 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Pine-Sol Lavender Clean Multi-Surface Cleaner",
+      "reason": "Exact own consumer barcode and independently inspected matching package establish the correctly spelled brand and product expression. Original source metadata and quantities remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "84f2ab74bb3ace3d474411654f90627cd61c5042dd884321341bd55e274be279"
+      }
+    },
+    {
+      "sku": "6871",
+      "expectedUpc": "046500816666",
+      "expectedSourceRow": 6506,
+      "expectedRawFieldsSha256": "dfc5948d7d0e61095608fa92519120b183ab2d5c0d7a20bb64f0166e69a965f4",
+      "expectedPublicName": "RAID outdoor fresh",
+      "expectedLabel": "18 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Raid Flying Insect Killer Outdoor Fresh Scent",
+      "reason": "Exact own consumer barcode and independently inspected matching package establish the correctly spelled brand and product expression. Original source metadata and quantities remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "1e048e5881b0aff4976eab9b36cc914bb1f9dfcad36047e1310da0b6f5e4bd9c"
+      }
+    },
+    {
+      "sku": "3025",
+      "expectedUpc": "058847950019",
+      "expectedSourceRow": 6419,
+      "expectedRawFieldsSha256": "51cfe5e46c0eea78688fc9d37a01f02478d495daa993d18ac5fbc27a3650369a",
+      "expectedPublicName": "drain opener",
+      "expectedLabel": "946 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "First Force Drain Opener",
+      "reason": "Exact own consumer barcode and independently inspected matching package establish the correctly spelled brand and product expression. Original source metadata and quantities remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "5471fcbb37ed5dbccd797629008761194aba48f207b1bf962c0a5a63129a1f60"
+      }
+    },
+    {
+      "sku": "6441",
+      "expectedUpc": "058847950804",
+      "expectedSourceRow": 4085,
+      "expectedRawFieldsSha256": "9fb23a33751bf8c6395ee64d45d12373f764719f69bfcfbe12d125be78767755",
+      "expectedPublicName": "Orange Cleaner",
+      "expectedLabel": "32 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "First Force Orange Cleaner",
+      "reason": "Exact own consumer barcode and independently inspected matching package establish the correctly spelled brand and product expression. Original source metadata and quantities remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "a23069eec8be9b33e6174db92915b605ea4ddbd9005bdfcc8f98c675a37ab21d"
+      }
+    },
+    {
+      "sku": "6662",
+      "expectedUpc": "048155900202",
+      "expectedSourceRow": 6922,
+      "expectedRawFieldsSha256": "8e18a41430dc0a81fb2fee8f3b36832f58f7dc6543feec73004b83daed026000",
+      "expectedPublicName": "Pine Cleaner",
+      "expectedLabel": "28 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "PowerHouse Pine Cleaner",
+      "reason": "Exact own consumer barcode and independently inspected matching package establish the correctly spelled brand and product expression. Original source metadata and quantities remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "acc6e1bd7e9593e51fcd485f16ee48e8e26206d021ec7e592ba2e80f6106f6c6"
+      }
+    },
+    {
+      "sku": "818",
+      "expectedUpc": "085000007570",
+      "expectedSourceRow": 539,
+      "expectedRawFieldsSha256": "7326aee33c476f2df9e2b1d01cb3f301ac43f63bc9386214757dda4a5b40cf49",
+      "expectedPublicName": "Ballatore Spumante",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Ballatore Gran Spumante Sparkling Wine",
+      "reason": "Own exact consumer barcode and independently inspected Gran Spumante package support this complete singleton product title; original source, unit and group remain unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "a4899579ea14eb27102eea625c9d149d99d8010d679d6f0830e5ea2e2841f853"
+      }
+    },
+    {
+      "sku": "101264",
+      "expectedUpc": "072600064478",
+      "expectedSourceRow": 9145,
+      "expectedRawFieldsSha256": "4944ddc651f394d973a0415f5b13d2cae6d703d4a2ee8a4314543ab321d97937",
+      "expectedPublicName": "072600064478",
+      "expectedLabel": "Size needs confirmation",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Herr's Barbecue Potato Chips",
+      "reason": "Exact retailer UPC and independently reviewed brand/expression establish the name only; unit and photo remain unresolved.",
+      "evidence": {
+        "privateEvidenceSha256": "d8a5eba8dce7e6ee4abf640fcc36ee5501f3882e0200f511364ab750a1290965"
+      }
     }
   ]
 }

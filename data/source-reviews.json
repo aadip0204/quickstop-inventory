@@ -6610,6 +6610,17 @@
       "evidence": {
         "privateEvidenceSha256": "b42eedcccc769f2ea9d469f57504aa9e3a77eb0df6685f8b1e7c4af12e542e6e"
       }
+    },
+    {
+      "sku": "101264",
+      "expectedUpc": "072600064478",
+      "expectedNameSha256": "abfe4bf80e910157f77011c6f6ed95e211cfddbca3751a364a853f549ea73bb3",
+      "expectedSourceRecordSha256": "4944ddc651f394d973a0415f5b13d2cae6d703d4a2ee8a4314543ab321d97937",
+      "expectedSourceRow": 9145,
+      "action": "restore_verified_numeric_name",
+      "verificationMethod": "exact_literal_gtin_numeric_name_only",
+      "reviewedOn": "2026-11-02",
+      "reason": "Restore the exact UPC-identified merchandise name only; selling unit and photo remain unresolved."
     }
   ]
 }
