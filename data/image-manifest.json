@@ -33820,6 +33820,186 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "196",
+      "src": "images/products/sku-196.jpg",
+      "alt": "7UP Mixed Berry Antioxidant Soda — 2 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "078000010626",
+      "expectedName": "7UP Mixed Berry Antioxidant Soda",
+      "expectedLabel": "2 L",
+      "sha256": "905419b6549d9760021daa0a22d4e0840ee94b2dce9c2d033c826e03c1a94f0e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5301",
+      "src": "images/products/sku-5301.jpg",
+      "alt": "Malibu Island Melon — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "089540510262",
+      "expectedName": "Malibu Island Melon",
+      "expectedLabel": "750 mL",
+      "sha256": "24f2ab04658931d702d21e3b8476854b9b14f217eb57855c3c433dd2bd12b82a",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7668",
+      "src": "images/products/sku-7668.jpg",
+      "alt": "SKYY Infusions Wild Strawberry Vodka — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "721059000321",
+      "expectedName": "SKYY Infusions Wild Strawberry Vodka",
+      "expectedLabel": "750 mL",
+      "sha256": "388f305387842490e357f9e23aa35b2d570bbe2d1c243f2906cc9a5f7332c366",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7232",
+      "src": "images/products/sku-7232.jpg",
+      "alt": "Ruffles Cheddar Sour — 2.875 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "028400028158",
+      "expectedName": "Ruffles Cheddar Sour",
+      "expectedLabel": "2.875 oz",
+      "sha256": "3153024d8ea30f9aa08ea97ea77c5cb402a26d2f8f6ea6013f914a6075119e86",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7234",
+      "src": "images/products/sku-7234.jpg",
+      "alt": "RUFFLES CHEDDAR&SOUR CRM — 1 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "028400087643",
+      "expectedName": "RUFFLES CHEDDAR&SOUR CRM",
+      "expectedLabel": "1 oz",
+      "sha256": "e31f75080498af1dd5c302a64b5522843849834d4c0cce8a130d8a34ea953824",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7853",
+      "src": "images/products/sku-7853.jpg",
+      "alt": "Snapple Peach tea — 64 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "076183643563",
+      "expectedName": "Snapple Peach tea",
+      "expectedLabel": "64 oz",
+      "sha256": "c570ca5c8fac52674feb19c30cdb304fdbc405d622d32493c19fc69f6d6f8dd8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7846",
+      "src": "images/products/sku-7846.jpg",
+      "alt": "SNAPPLE MANGO — 16 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "076183163641",
+      "expectedName": "SNAPPLE MANGO",
+      "expectedLabel": "16 oz",
+      "sha256": "1934e24cd95f84824dad9d5dd16a37655d12cfa6382e9181f4b06d0ee8407ebd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3474",
+      "src": "images/products/sku-3474.jpg",
+      "alt": "Friskies Prime Filets With Beef in Gravy — 156 g packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "050000215201",
+      "expectedName": "Friskies Prime Filets With Beef in Gravy",
+      "expectedLabel": "156 g",
+      "sha256": "a5de90c24c08661d638dae469f6340e197185dc619419e6175ad78ae77094ade",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5394",
+      "src": "images/products/sku-5394.png",
+      "alt": "Martell VSOP Cognac — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "080432400913",
+      "expectedName": "Martell VSOP Cognac",
+      "expectedLabel": "750 mL",
+      "sha256": "f558481abfcbc801dd3a85a6319f91c2a5de18285e1ff008d96ffda145ee88cb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
