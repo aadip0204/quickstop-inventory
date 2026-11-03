@@ -35060,6 +35060,80 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "5924",
+      "src": "images/products/sku-5924.jpg",
+      "alt": "Mr & Mrs T Piña Colada Mix — 1.75 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "070655910115",
+      "expectedName": "Mr & Mrs T Piña Colada Mix",
+      "expectedLabel": "1.75 L",
+      "sha256": "5d3d9ece74fca166eb73b0f25878c9599fa8d1bcbcbf9532bb8441d023ff2132",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5926",
+      "src": "images/products/sku-5926.jpg",
+      "alt": "Mr & Mrs T Sweet & Sour Mix — 1.75 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "070655910054",
+      "expectedName": "Mr & Mrs T Sweet & Sour Mix",
+      "expectedLabel": "1.75 L",
+      "sha256": "3239b027ce9c4686be5778711062c1015fa63c41b2753277f41c7a52c91e4701",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5936",
+      "src": "images/products/sku-5936.png",
+      "alt": "MR. PURE APPLE CRANBERRY — 16 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "072718601411",
+      "expectedName": "MR. PURE APPLE CRANBERRY",
+      "expectedLabel": "16 oz",
+      "sha256": "57ffa5ee4fbd4e5e41b67981244ec0c17992d33d5e633b55a608e9ead936755b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    }
+  ],
+  "restoredPhotoReleases": [
+    {
+      "sku": "5924",
+      "evidence": {
+        "privateEvidenceSha256": "e7c8aa9d04fe87d4a24213dd7a0dfc7fe3cbfc0432fff4c5cc752a247adb8871"
+      }
+    },
+    {
+      "sku": "5926",
+      "evidence": {
+        "privateEvidenceSha256": "5d1b2324dadfcebb79d094863428f65db44e10d52dd92dfdced8b914f3f46e53"
+      }
     }
   ]
 }

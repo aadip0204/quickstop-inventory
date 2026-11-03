@@ -568,6 +568,204 @@ def validate_private_direct_image_evidence(image_manifest: dict | None,
     return evidence_by_sku
 
 
+RESTORED_PHOTO_RELEASE_METHOD = 'exact_restored_source_native_photo_only'
+RESTORED_PHOTO_RELEASE_VERDICT = 'APPROVED_EXACT_RESTORED_SOURCE_PHOTO_ONLY'
+
+
+def validated_restored_photo_release_proof(proof: object, sku: str) -> dict:
+    """Validate the private, approval-bound proof; never infer identity from prose."""
+    required = {'kind', 'sku', 'expectedUpc', 'expectedSourceRow', 'expectedRawFieldsSha256',
+                'expectedNameSha256', 'expectedSourceReviewSha256', 'expectedNameCorrectionSha256',
+                'expectedPublicName', 'expectedLabel', 'expectedCategory', 'expectedDepartment',
+                'expectedProductId', 'expectedGroupSkus', 'expectedImageSrc', 'expectedImageSha256',
+                'expectedPrivateImageEvidenceSha256', 'codeUnitEvidence', 'selectedImageEvidence',
+                'nativeQa', 'approval'}
+    if not isinstance(proof, dict) or set(proof) != required:
+        raise ValueError(f'Restored photo release requires exact private proof fields: {sku}')
+    hashes = ('expectedRawFieldsSha256', 'expectedNameSha256', 'expectedSourceReviewSha256',
+              'expectedNameCorrectionSha256', 'expectedImageSha256', 'expectedPrivateImageEvidenceSha256')
+    if (proof['kind'] != RESTORED_PHOTO_RELEASE_METHOD or proof['sku'] != sku
+            or not isinstance(sku, str) or not re.fullmatch(r'[1-9][0-9]*', sku)
+            or not isinstance(proof['expectedUpc'], str) or not valid_gtin(proof['expectedUpc'])
+            or type(proof['expectedSourceRow']) is not int or proof['expectedSourceRow'] < 1
+            or any(not isinstance(proof[key], str) or not re.fullmatch(r'[a-f0-9]{64}', proof[key]) for key in hashes)
+            or any(not safe_review_text(proof[key]) for key in
+                   ('expectedPublicName', 'expectedLabel', 'expectedCategory', 'expectedDepartment'))
+            or not isinstance(proof['expectedProductId'], str)
+            or not re.fullmatch(r'p-[a-f0-9]{16}', proof['expectedProductId'])
+            or proof['expectedGroupSkus'] != [sku]
+            or not isinstance(proof['expectedImageSrc'], str)
+            or not re.fullmatch(r'images/products/sku-' + re.escape(sku) + r'\.(?:jpg|png|webp|avif)', proof['expectedImageSrc'])):
+        raise ValueError(f'Restored photo release has invalid exact identity guards: {sku}')
+    dimensions = extract_dimensions(proof['expectedLabel'])
+    if (dimensions['text'] or dimensions['packs'] or dimensions['container']
+            or len(dimensions['measures']) != 1 or dimensions['measures'][0][2] <= 0
+            or dimensions['measures'][0][0] != proof['expectedLabel']):
+        raise ValueError(f'Restored photo release requires one unchanged known measurement: {sku}')
+    code = proof['codeUnitEvidence']
+    image = proof['selectedImageEvidence']
+    code_fields = {'url', 'sourceRole', 'recordSha256', 'recordPointer', 'sourceName',
+                   'sourceUnit', 'printedCode', 'codeNormalization', 'literalConsumerCode',
+                   'matchedPublicName', 'matchedLabel'}
+    image_fields = {'url', 'sourceRole', 'recordSha256', 'recordPointer', 'sourceName',
+                    'sourceUnit', 'sourceImageUrl', 'publishedConsumerCode',
+                    'matchedPublicName', 'matchedLabel'}
+    for value, fields in ((code, code_fields), (image, image_fields)):
+        if (not isinstance(value, dict) or set(value) != fields
+                or not review_url_host(value.get('url'))
+                or any(not safe_review_text(value.get(key)) for key in
+                       ('sourceRole', 'recordPointer', 'sourceName', 'sourceUnit'))
+                or not isinstance(value.get('recordSha256'), str)
+                or not re.fullmatch(r'[a-f0-9]{64}', value['recordSha256'])
+                or value['matchedPublicName'] != proof['expectedPublicName']
+                or value['matchedLabel'] != proof['expectedLabel']):
+            raise ValueError(f'Restored photo release requires exact own source records: {sku}')
+        source_unit = extract_dimensions(value['sourceUnit'])
+        # Legacy measurement() collapses fluid/plain ounces; this photo-only
+        # route cannot resolve that semantic ambiguity or alter a label.
+        if (any(re.sub(r'[\s.]', '', match['unit']).casefold() == 'floz'
+                for match in MEASURE_RE.finditer(value['sourceUnit']))
+                or source_unit['text'] or source_unit['packs'] or source_unit['container']
+                or source_unit['measures'] != dimensions['measures']):
+            raise ValueError(f'Restored photo source unit differs from the unchanged label: {sku}')
+    printed = code['printedCode']
+    if (not isinstance(printed, str) or code['codeNormalization'] not in ('literal', 'ascii_spaces_only')
+            or not re.fullmatch(r'[0-9]+(?: [0-9]+)*', printed)
+            or (printed if code['codeNormalization'] == 'literal' else printed.replace(' ', '')) != proof['expectedUpc']
+            or code['literalConsumerCode'] != proof['expectedUpc']
+            or not review_url_host(image['sourceImageUrl'])
+            or image['publishedConsumerCode'] not in (None, proof['expectedUpc'])):
+        raise ValueError(f'Restored photo evidence cannot invent or replace a consumer code: {sku}')
+    qa = proof['nativeQa']
+    qa_checks = {'brand', 'expression', 'size', 'packaging', 'professional',
+                 'actualFullOriginalViewedIndependently', 'strictDecodePassed', 'nativeBytesUnchanged'}
+    if (not isinstance(qa, dict)
+            or set(qa) != qa_checks | {'photoQaSha256', 'imageSha256', 'format', 'width', 'height'}
+            or any(qa[key] is not True for key in qa_checks)
+            or qa['imageSha256'] != proof['expectedImageSha256']
+            or not isinstance(qa['photoQaSha256'], str) or not re.fullmatch(r'[a-f0-9]{64}', qa['photoQaSha256'])
+            or qa['format'] not in ('JPEG', 'PNG', 'WEBP', 'AVIF')
+            or any(type(qa[key]) is not int or qa[key] < 1 for key in ('width', 'height'))
+            or Path(proof['expectedImageSrc']).suffix != {'JPEG': '.jpg', 'PNG': '.png', 'WEBP': '.webp', 'AVIF': '.avif'}[qa['format']]):
+        raise ValueError(f'Restored photo release requires exact independent native-image QA: {sku}')
+    approval = proof['approval']
+    core = {key: value for key, value in proof.items() if key != 'approval'}
+    if (not isinstance(approval, dict)
+            or set(approval) != {'verdict', 'reviewedReleaseSha256', 'reviewer', 'reviewedOn'}
+            or approval['verdict'] != RESTORED_PHOTO_RELEASE_VERDICT
+            or approval['reviewedReleaseSha256'] != review_evidence_sha256(core)
+            or not safe_review_text(approval['reviewer'])
+            or not isinstance(approval['reviewedOn'], str)):
+        raise ValueError(f'Restored photo release lacks exact scoped approval: {sku}')
+    try:
+        if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', approval['reviewedOn']):
+            raise ValueError('Invalid date')
+        date.fromisoformat(approval['reviewedOn'])
+    except ValueError as error:
+        raise ValueError(f'Restored photo release requires a real approval date: {sku}') from error
+    return proof
+
+
+def validate_restored_photo_context(proof: dict, record: dict, product: dict) -> None:
+    """Keep the original restoration/correction and its isolated singleton exact."""
+    sku = proof['sku']
+    raw, source, review = record.get('rawFields'), record.get('source'), record.get('sourceReview')
+    if (record.get('sourceOrigin') not in (None, 'original') or record.get('disposition') != 'retained_variant'
+            or not isinstance(raw, list) or len(raw) != 8 or not all(isinstance(x, str) for x in raw)
+            or not isinstance(source, dict) or [source.get(key) for key in EXPECTED_HEADERS] != raw
+            or type(source.get('sourceRow')) is not int or type(record.get('sourceRow')) is not int
+            or source['sourceRow'] != record['sourceRow']
+            or not isinstance(review, dict) or review.get('action') != 'restore_named_merchandise'
+            or review.get('forceSizeNeedsConfirmation') is not False
+            or set(review) - {'sku', 'expectedUpc', 'expectedNameSha256', 'expectedSourceRecordSha256',
+                              'action', 'reason', 'reviewedOn', 'sanitizedSourceName', 'forceSizeNeedsConfirmation'}
+            or any(key in record for key in ('identityReview', 'nameVerification', 'publicNameCorrection',
+                                             'categoryReview', 'nameOnlyRestoration', 'numericNameRestoration'))):
+        raise ValueError(f'Restored photo release is not an eligible unchanged original restoration: {sku}')
+    if (review.get('sku'), review.get('expectedUpc'), review.get('expectedNameSha256'),
+            review.get('expectedSourceRecordSha256')) != (sku, source['MAINUPC'],
+                hashlib.sha256(raw[2].encode()).hexdigest(), review_evidence_sha256(raw)):
+        raise ValueError(f'Restored photo release must preserve its exact restoration guards: {sku}')
+    # This check is local to the release route: the global source parser is unchanged.
+    # Joined duplicate units are separated only for proving the same measurement twice.
+    original = re.sub(r'(?<=[A-Za-z])(?=\d)', ' ', source['ItemName'])
+    sanitized = review['sanitizedSourceName']
+    original_matches = list(MEASURE_RE.finditer(original))
+    sanitized_matches = list(MEASURE_RE.finditer(sanitized))
+    original_measures = [measurement(match['number'], match['unit']) for match in original_matches]
+    sanitized_measures = [measurement(match['number'], match['unit']) for match in sanitized_matches]
+    # Inspect the same parsed units: MEASURE_RE also accepts joined expression text.
+    if (any(re.sub(r'[\s.]', '', match['unit']).casefold() == 'floz'
+            for match in original_matches + sanitized_matches)
+            or source['PackName'] != '' or len(original_measures) != 2 or len(sanitized_measures) != 1
+            or original_measures != sanitized_measures * 2
+            or original_measures[0][0] != proof['expectedLabel'] or original_measures[0][2] <= 0
+            or clean_space(MEASURE_RE.sub(' ', original)) != clean_space(MEASURE_RE.sub(' ', sanitized))):
+        raise ValueError(f'Restored photo release requires only duplicated equal source measurements: {sku}')
+    if not isinstance(product.get('variants'), list) or len(product['variants']) != 1:
+        raise ValueError(f'Restored photo release requires its complete isolated singleton: {sku}')
+    variant = product['variants'][0]
+    actual = (record.get('sku'), source['MAINUPC'], record['sourceRow'], review_evidence_sha256(raw),
+              hashlib.sha256(raw[2].encode()).hexdigest(), review_evidence_sha256(review),
+              review_evidence_sha256(record.get('nameCorrection')), product.get('name'), variant.get('label'),
+              product.get('category'), product.get('department'), product.get('id'), [variant.get('sku')])
+    expected = tuple(proof[key] for key in ('sku', 'expectedUpc', 'expectedSourceRow', 'expectedRawFieldsSha256',
+        'expectedNameSha256', 'expectedSourceReviewSha256', 'expectedNameCorrectionSha256', 'expectedPublicName',
+        'expectedLabel', 'expectedCategory', 'expectedDepartment', 'expectedProductId', 'expectedGroupSkus'))
+    isolated_id = 'p-' + hashlib.sha256('\0'.join((proof['expectedCategory'], proof['expectedDepartment'],
+        proof['expectedPublicName'].casefold(), 'restored-source-sku', sku)).encode()).hexdigest()[:16]
+    if (actual != expected or variant.get('upc') != source['MAINUPC']
+            or type(variant.get('sourceRow')) is not int or variant['sourceRow'] != record['sourceRow']
+            or variant.get('image') is not None
+            or product['id'] != isolated_id or record.get('productId') != product['id']):
+        raise ValueError(f'Restored photo release source/current/isolation guard mismatch: {sku}')
+
+
+def validate_restored_photo_image(proof: dict, image: dict) -> None:
+    sku = proof['sku']
+    if ((image['expectedUpc'], image['expectedName'], image['expectedLabel'], image['src'], image['sha256'])
+            != tuple(proof[key] for key in ('expectedUpc', 'expectedPublicName', 'expectedLabel',
+                                            'expectedImageSrc', 'expectedImageSha256'))
+            or review_evidence_sha256(image) != proof['expectedPrivateImageEvidenceSha256']
+            or (image['sourcePage'], image['sourceImageUrl'])
+            != (proof['selectedImageEvidence']['url'], proof['selectedImageEvidence']['sourceImageUrl'])):
+        raise ValueError(f'Restored photo release does not bind the exact private image assignment: {sku}')
+
+
+def apply_restored_photo_releases(products: list, records: dict, image_manifest: dict | None,
+                                  private_images: dict | None, blocked_images: set) -> None:
+    """Release only exact reviewed photos; URLs and raw proof never enter public JSON."""
+    if not isinstance(image_manifest, dict) or 'restoredPhotoReleases' not in image_manifest:
+        return
+    releases = image_manifest['restoredPhotoReleases']
+    if not isinstance(releases, list):
+        raise ValueError('Restored photo release list must be an array')
+    if not releases:
+        return
+    images = validate_private_direct_image_evidence(image_manifest, private_images)
+    by_sku = {variant['sku']: product for product in products for variant in product['variants']}
+    validated = {}
+    for release in releases:
+        if (not isinstance(release, dict) or set(release) != {'sku', 'evidence'}
+                or not isinstance(release['sku'], str) or release['sku'] in validated
+                or not isinstance(release['evidence'], dict)
+                or set(release['evidence']) != {'privateEvidenceSha256'}):
+            raise ValueError('Restored photo releases require unique SKUs and private hash projections only')
+        sku = release['sku']
+        evidence = expand_private_review_evidence(release['evidence'])
+        if not isinstance(evidence, list) or len(evidence) != 1:
+            raise ValueError(f'Restored photo release requires one private scoped proof: {sku}')
+        proof = validated_restored_photo_release_proof(evidence[0], sku)
+        if sku not in records or sku not in by_sku or sku not in blocked_images or sku not in images:
+            raise ValueError(f'Restored photo release is stale or lacks a blocked source/image: {sku}')
+        validate_restored_photo_context(proof, records[sku], by_sku[sku])
+        validate_restored_photo_image(proof, images[sku])
+        validated[sku] = proof
+    for sku, proof in validated.items():
+        blocked_images.remove(sku)
+        records[sku]['restoredPhotoRelease'] = proof
+
+
 def apply_verified_images(products: list, image_manifest: dict | None, blocked_skus: set | None = None,
                           private_direct_image_evidence: dict | None = None) -> int:
     if not image_manifest:
@@ -3376,6 +3574,8 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 *expected, image_review['expectedImageSha256']):
             raise ValueError(f'Repaired image manifest does not match exact review: {sku}')
         blocked_images.remove(sku)
+    apply_restored_photo_releases(products, records_by_sku, image_manifest,
+                                  private_direct_image_evidence_manifest, blocked_images)
     verified_images = apply_verified_images(
         products, image_manifest, blocked_images, private_direct_image_evidence_manifest)
     categories = []
