@@ -8358,6 +8358,96 @@
       "evidence": {
         "privateEvidenceSha256": "a9e6c3701e915872bf21e53b2ac3eaa8bc895f5a89c56307a9960452013b05b6"
       }
+    },
+    {
+      "sku": "3230",
+      "expectedUpc": "076737340818",
+      "expectedSourceRow": 7295,
+      "expectedRawFieldsSha256": "e4196cd2c896e7dfb3e5a32519f6fe3062ae27e1b5c80f74e6feeb2099476d91",
+      "expectedPublicName": "EVERFRESH GREENAPPLE",
+      "expectedLabel": "24 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Everfresh Green Apple",
+      "reason": "Use the visible Everfresh brand and Green Apple word spacing/case from the own selected 24 oz Product and its exact native bottle photo; complete singleton only, with no quantity or class added.",
+      "evidence": {
+        "privateEvidenceSha256": "6a0e132596b942c800509a71f7e2a011a783d95d5e41b68763d2e828a3ff80f7"
+      }
+    },
+    {
+      "sku": "2713",
+      "expectedUpc": "074806000595",
+      "expectedSourceRow": 1730,
+      "expectedRawFieldsSha256": "3feba5c1fcddfac63af9fc8c8d395ee19e842d3c8758bd94b5b0aa7923bb68d7",
+      "expectedPublicName": "DAILYS SWEET SOUR",
+      "expectedLabel": "1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Daily's Sweet & Sour Cocktail Mix",
+      "reason": "Complete only the source- and package-supported Daily’s brand, Sweet & Sour expression and Cocktail Mix product wording. Preserve existing1L label, originalMISC department, currentDrinks category, literal identifiers and singleton; related2712 remains separate.",
+      "evidence": {
+        "privateEvidenceSha256": "c938ee9066300207aa4a351dba82e47fc4f5e3d2ec79826f94c144b43177a7a9"
+      }
+    },
+    {
+      "sku": "3235",
+      "expectedUpc": "076737341136",
+      "expectedSourceRow": 7674,
+      "expectedRawFieldsSha256": "9c1feca1a8e84d15cb1d6922d32a19a02ed5e9499cfdede1cfaa6d385469761b",
+      "expectedPublicName": "EverFresh Strawberry banana",
+      "expectedLabel": "24 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Everfresh Strawberry Banana",
+      "reason": "Normalize only the brand/expression case to the actual Everfresh Strawberry Banana label and selected producer h1 for the complete current singleton; no quantity or class is added.",
+      "evidence": {
+        "privateEvidenceSha256": "b22c2b58363ea506f23e635967652fe1520f451442c216ce5b620aa4fe6a5b5c"
+      }
+    },
+    {
+      "sku": "5928",
+      "expectedUpc": "070655930304",
+      "expectedSourceRow": 3805,
+      "expectedRawFieldsSha256": "b727ada46bc16ddaf33e6c9e0a4b41dd0186e35cea45921e90f40a32158a1a43",
+      "expectedPublicName": "Mr. and Mrs Mai Tai Mix",
+      "expectedLabel": "1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "N/A Mix",
+      "proposedPublicTitle": "Mr & Mrs T Mai Tai Mix",
+      "reason": "Complete only the retained Mr & Mrs T brand and Mai Tai Mix expression. Preserve the original1L label, literal identifiers, source row, category/department and singleton. The separate typedGTIN14 discrepancy remains private and unresolved; no photo or unit approval.",
+      "evidence": {
+        "privateEvidenceSha256": "6af72248009fb24fb63d5fef5531718c0a0899e8e8f8a20c9e8bf005249baab4"
+      }
+    },
+    {
+      "sku": "7211",
+      "expectedUpc": "016600307227",
+      "expectedSourceRow": 4591,
+      "expectedRawFieldsSha256": "f3309060dd0302dcdcb33fe5dfb5181a867fb90be5b3d5f431220ebc987118b6",
+      "expectedPublicName": "Roses Sweet Sour",
+      "expectedLabel": "1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Rose's Sweet & Sour Drink Mix",
+      "reason": "Complete only the exact Rose's Sweet & Sour Drink Mix brand, expression and type wording from the own literal-code product and the inspected package. Preserve existing1L/MISC/currentDrinks category, raw identifiers and singleton. The marked photograph remains held.",
+      "evidence": {
+        "privateEvidenceSha256": "1b74be5277c6b9e05bbfb98c683b05116cdd6c282b332a6369d9c6287f92e56d"
+      }
+    },
+    {
+      "sku": "4506",
+      "expectedUpc": "041200104624",
+      "expectedSourceRow": 7902,
+      "expectedRawFieldsSha256": "e195f254f6d39241d8366ab02b4eb4721bc5f221d301ac5639a745cc7e85dd52",
+      "expectedPublicName": "Jay's krunchers BBQ",
+      "expectedLabel": "2.5 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Jays Krunchers! Kettle Cooked Mesquite BBQ Potato Chips",
+      "reason": "Use the full brand, exact evidenced flavor and product type printed on the same exact-code package and named by its own selected retailer record. Complete current singleton only; preserve all raw/source identifiers, size label, category/department and membership.",
+      "evidence": {
+        "privateEvidenceSha256": "a395a55b8d4321e3370727309d0d9e190a0de91345dc63f820b3b72d9db04bf4"
+      }
     }
   ]
 }
