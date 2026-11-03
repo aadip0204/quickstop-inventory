@@ -34240,6 +34240,206 @@
       "sha256": "0688b8ec03591e8f3b09485dfbbcb77757f9a64e11a42365582f80699b62d384",
       "expectedLabel": "Single · 12 oz",
       "src": "images/products/sku-5828.png"
+    },
+    {
+      "sku": "1485",
+      "src": "images/products/sku-1485.webp",
+      "alt": "Budweiser — 24-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "018200113499",
+      "expectedName": "Budweiser",
+      "expectedLabel": "24-pack · 12 oz · bottles",
+      "sha256": "746221fca63f36ec988c158cdf2c40f820446fcab82807421a79ec161e23cded",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1550",
+      "src": "images/products/sku-1550.webp",
+      "alt": "Busch Light — 12-pack · 12 oz · cans packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "018200008016",
+      "expectedName": "Busch Light",
+      "expectedLabel": "12-pack · 12 oz · cans",
+      "sha256": "469190ea160feb8d769881c8e355697d3e020bba36892f4a6151080f2325b23b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1551",
+      "src": "images/products/sku-1551.webp",
+      "alt": "Busch Light — 12-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "018200009891",
+      "expectedName": "Busch Light",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "sha256": "88b1b1971b875a3ce3f2c8d77da2f014021a0fb58a3d2022cb7000fd9d3ac1b9",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1553",
+      "src": "images/products/sku-1553.webp",
+      "alt": "Busch Light — 30-pack · 12 oz · cans packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "018200860317",
+      "expectedName": "Busch Light",
+      "expectedLabel": "30-pack · 12 oz · cans",
+      "sha256": "1af257faf814b20067701f6614318b8d1ab3429c30f6f985e3ce96c6deed4b3b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1482",
+      "src": "images/products/sku-1482.webp",
+      "alt": "Budweiser — 18-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "018200113086",
+      "expectedName": "Budweiser",
+      "expectedLabel": "18-pack · 12 oz · bottles",
+      "sha256": "6c99bb158ccde942b118fa7152fe2416ed3c8220b42a14c9d2e3728818f1fbcd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1500",
+      "src": "images/products/sku-1500.webp",
+      "alt": "Budweiser zero — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "018200200397",
+      "expectedName": "Budweiser zero",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "e6bfe51dc30aafe7f38b2bec705d8050241b0254206f195a346537d2a07f9598",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7339",
+      "src": "images/products/sku-7339.webp",
+      "alt": "SAPPORO — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "087975013501",
+      "expectedName": "SAPPORO",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "817df3797a298ed1de3793fbb2bb9dacdc5707684d0e09a589a46462edc30a12",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1549",
+      "src": "images/products/sku-1549.webp",
+      "alt": "busch beer — 18-pack · 12 oz · cans packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "018200612183",
+      "expectedName": "busch beer",
+      "expectedLabel": "18-pack · 12 oz · cans",
+      "sha256": "92e33461e8e51be772c9836563d04fca053e58100c187db1a9798b9b91d147bc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9050",
+      "src": "images/products/sku-9050.webp",
+      "alt": "ultra michelob — Single · 25 oz · cans packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "018200250101",
+      "expectedName": "ultra michelob",
+      "expectedLabel": "Single · 25 oz · cans",
+      "sha256": "f739d8354cfe63d71101c7256925361a0024950378903855a128eeefc7156325",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6979",
+      "src": "images/products/sku-6979.png",
+      "alt": "RED STRIPE — 12-pack · 11.2 oz · bottles packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "083820138948",
+      "expectedName": "RED STRIPE",
+      "expectedLabel": "12-pack · 11.2 oz · bottles",
+      "sha256": "f82bb5aa46473cd7ac2d346729035c3a953158d2de3c8628a6a400eaf5f53343",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
