@@ -34740,6 +34740,186 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3227",
+      "src": "images/products/sku-3227.jpg",
+      "alt": "EVERFRESH GRAPE CRANBERRY — 24 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "076737340719",
+      "expectedName": "EVERFRESH GRAPE CRANBERRY",
+      "expectedLabel": "24 oz",
+      "sha256": "f6217cd868a2727f239bd2fdb2ce2ca88788cafd820c83622108579215fa6ad7",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3230",
+      "src": "images/products/sku-3230.jpg",
+      "alt": "Everfresh Green Apple — 24 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "076737340818",
+      "expectedName": "Everfresh Green Apple",
+      "expectedLabel": "24 oz",
+      "sha256": "f825eccf5517d365cc38e8b5c4ffc9bb5b7d321f2ad8de628823aeda0546ee33",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3232",
+      "src": "images/products/sku-3232.jpg",
+      "alt": "Everfresh Peach Mango — 24 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "076737341105",
+      "expectedName": "Everfresh Peach Mango",
+      "expectedLabel": "24 oz",
+      "sha256": "a245d2c7ce47b7c795187d545e5d0389be43ca51627244762d495af7be915039",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2713",
+      "src": "images/products/sku-2713.png",
+      "alt": "Daily's Sweet & Sour Cocktail Mix — 1 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "074806000595",
+      "expectedName": "Daily's Sweet & Sour Cocktail Mix",
+      "expectedLabel": "1 L",
+      "sha256": "72e7bc784d52ca36ee9064b84d0a8236341ba23b21890a3d187bd607862fed18",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3235",
+      "src": "images/products/sku-3235.png",
+      "alt": "Everfresh Strawberry Banana — 24 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "076737341136",
+      "expectedName": "Everfresh Strawberry Banana",
+      "expectedLabel": "24 oz",
+      "sha256": "5ec9820efffd8eab64c6dda5e934e70355b129c8d162c591668f19c4f6cf54a8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6949",
+      "src": "images/products/sku-6949.jpg",
+      "alt": "REAL LIME — 4.5 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "014800582024",
+      "expectedName": "REAL LIME",
+      "expectedLabel": "4.5 oz",
+      "sha256": "3111a20b79f6d639b55f6560fc534e196d8e7a48ec6db1f0bf08ddaba5c313a3",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6948",
+      "src": "images/products/sku-6948.png",
+      "alt": "REAL LIME — 2.5 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "014800582000",
+      "expectedName": "REAL LIME",
+      "expectedLabel": "2.5 oz",
+      "sha256": "a3d415775b82943366a04452f82a2fd94bfb9b306d0507516e15894e8e519e7e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4506",
+      "src": "images/products/sku-4506.avif",
+      "alt": "Jays Krunchers! Kettle Cooked Mesquite BBQ Potato Chips — 2.5 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "041200104624",
+      "expectedName": "Jays Krunchers! Kettle Cooked Mesquite BBQ Potato Chips",
+      "expectedLabel": "2.5 oz",
+      "sha256": "2935c5393fcada4b98e809fd92fb1e5424b615042f3320d411e43e6bddc2e687",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4085",
+      "src": "images/products/sku-4085.jpg",
+      "alt": "Herr's BBQ — 3.5 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "072600001626",
+      "expectedName": "Herr's BBQ",
+      "expectedLabel": "3.5 oz",
+      "sha256": "0ed1b9cf60151d858ddab5ad982aeba8eb713f0f2cca179f5cb6e24200a1d626",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
