@@ -34920,6 +34920,146 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3499",
+      "src": "images/products/sku-3499.png",
+      "alt": "Fritos Flamin Hot — 2.875 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "028400097505",
+      "expectedName": "Fritos Flamin Hot",
+      "expectedLabel": "2.875 oz",
+      "sha256": "c3157c70c38e489498f3d1a767be44eb47d395d3bcd66df6ce8cc507710d496f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5703",
+      "src": "images/products/sku-5703.png",
+      "alt": "mini oreo ORIGINAL — 61.3 g packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "7622300761349",
+      "expectedName": "mini oreo ORIGINAL",
+      "expectedLabel": "61.3 g",
+      "sha256": "1a545bcbd5a61d10e433c91d50fa91134ae5226b44fd7d0006aa80c339a3689b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5702",
+      "src": "images/products/sku-5702.png",
+      "alt": "mini oreo chocolate — 61.3 g packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "7622300761363",
+      "expectedName": "mini oreo chocolate",
+      "expectedLabel": "61.3 g",
+      "sha256": "006b730ae83a179ff333fa18b4432170453bdeab25ee409f7b90222a7f9c9dc7",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5951",
+      "src": "images/products/sku-5951.png",
+      "alt": "Mr. Pure Grape — 16 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "072718600308",
+      "expectedName": "Mr. Pure Grape",
+      "expectedLabel": "16 oz",
+      "sha256": "595049c8b764db8bb7ce8217f29bc7a4c4a3c0fa65faaa40f132e6cbe9210e44",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5967",
+      "src": "images/products/sku-5967.png",
+      "alt": "Mr. Pure Mango — 16 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "072718600360",
+      "expectedName": "Mr. Pure Mango",
+      "expectedLabel": "16 oz",
+      "sha256": "42b15a029fc7b6e1593bfedc0adfd2248788f91e143de244b99323cb2a336b1d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5997",
+      "src": "images/products/sku-5997.png",
+      "alt": "Mr. Pure Pineapple Watermelon — 16 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "072718600384",
+      "expectedName": "Mr. Pure Pineapple Watermelon",
+      "expectedLabel": "16 oz",
+      "sha256": "a98be13457435d4bbd25dd89a918bcbf9733fdf3a10cb5768bf54f1d712ca0b1",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5981",
+      "src": "images/products/sku-5981.png",
+      "alt": "Mr. Pure Peach Watermelon — 16 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "072718101812",
+      "expectedName": "Mr. Pure Peach Watermelon",
+      "expectedLabel": "16 oz",
+      "sha256": "76904f530bbb4e7546203fb5993f57d3839c3e6433b2de61e44969250d96cfb8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ]
 }
