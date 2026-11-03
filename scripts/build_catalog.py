@@ -23,6 +23,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PUBLIC_NAME_REVIEWS = ROOT / 'data/public-name-reviews.json'
+SOURCE_RECORD_NAME_IDENTITY = 'original_source_record_name_only'
 EXPECTED_HEADERS = ['SKU', 'MAINUPC', 'ItemName', 'PackName', 'DEPNAME',
                     'ItemPrice', 'TotalQty_Multi', 'ItemTypeDesc']
 BASELINE_HASH = '822ee8b3b623548db0f2ea531aa10c340b160a47afc0d9e88398311ed7fa6882'
@@ -832,6 +833,28 @@ def apply_category_review(public: dict | None, source: dict, raw_fields: list,
     public['category'] = review['category']
 
 
+def original_source_record_public_identity(source: dict, raw_fields: list) -> dict:
+    """Recompute a retained non-GTIN record without interpreting its store code."""
+    if (not isinstance(raw_fields, list) or len(raw_fields) != len(EXPECTED_HEADERS)
+            or any(not isinstance(value, str) for value in raw_fields)
+            or not isinstance(source, dict)
+            or any(source.get(key) != value for key, value in zip(EXPECTED_HEADERS, raw_fields))
+            or type(source.get('sourceRow')) is not int or source['sourceRow'] < 1):
+        raise ValueError('Source-record name review requires consistent original source fields')
+    identifier = source['MAINUPC']
+    numeric = bool(re.fullmatch(r'[0-9]{6,14}', identifier))
+    if (not identifier or identifier != identifier.strip() or valid_gtin(identifier)
+            or (numeric and not identifier.strip('0'))
+            or (not numeric and (not re.search(r'[A-Za-z]', identifier)
+                                 or not safe_review_text(identifier)))):
+        raise ValueError('Source-record name review requires a literal non-GTIN inventory identifier')
+    disposition, _, public, _ = classify_record(source)
+    if (disposition != 'retained_variant' or not public
+            or public['variant']['upc'] != (identifier if numeric else '')):
+        raise ValueError('Source-record name review requires unchanged retained source merchandise')
+    return public
+
+
 def apply_public_name_review(public: dict | None, source: dict, raw_fields: list,
                              review: dict) -> None:
     """Replace only the parsed product title after exact source/public guards."""
@@ -847,6 +870,10 @@ def apply_public_name_review(public: dict | None, source: dict, raw_fields: list
                public['name'], public['variant']['label'], public['category'], public['department'])
     if current != expected:
         raise ValueError(f'Public-name review current identity mismatch: {sku}')
+    if review.get('identityBasis') == SOURCE_RECORD_NAME_IDENTITY:
+        original = original_source_record_public_identity(source, raw_fields)
+        if public != original:
+            raise ValueError(f'Source-record name review requires the original public projection: {sku}')
     before_variant = dict(public['variant'])
     before_category = public['category']
     before_department = public['department']
@@ -1013,12 +1040,20 @@ def validated_public_name_reviews(manifest: dict | None) -> dict:
                 'expectedPublicName', 'expectedLabel', 'expectedCategory', 'expectedDepartment',
                 'proposedPublicTitle', 'reason', 'evidence'}
     for entry in manifest['reviews']:
-        if not isinstance(entry, dict) or set(entry) != required:
+        if (not isinstance(entry, dict)
+                or set(entry) not in (required, required | {'identityBasis'})):
             raise ValueError('Public-name review contains unsupported or private fields')
+        source_record = 'identityBasis' in entry
+        if source_record and entry['identityBasis'] != SOURCE_RECORD_NAME_IDENTITY:
+            raise ValueError('Public-name review contains an unsupported identity basis')
         sku = entry.get('sku')
         if not isinstance(sku, str) or not re.fullmatch(r'\d+', sku) or sku in reviews:
             raise ValueError('Public-name reviews require unique string SKUs')
-        if (not isinstance(entry['expectedUpc'], str) or not valid_gtin(entry['expectedUpc'])
+        code = entry['expectedUpc']
+        valid_code = (isinstance(code, str) and not valid_gtin(code)
+                      and (code == '' or bool(re.fullmatch(r'[0-9]{6,14}', code))
+                           and bool(code.strip('0')))) if source_record else valid_gtin(code)
+        if (not isinstance(code, str) or not valid_code
                 or type(entry['expectedSourceRow']) is not int or entry['expectedSourceRow'] < 1
                 or not isinstance(entry['expectedRawFieldsSha256'], str)
                 or not re.fullmatch(r'[a-f0-9]{64}', entry['expectedRawFieldsSha256'])):
@@ -1039,13 +1074,28 @@ def validated_public_name_reviews(manifest: dict | None) -> dict:
             raise ValueError(f'Public-name review requires inspectable evidence: {sku}')
         exact_upc_evidence = False
         for item in evidence:
-            if not isinstance(item, dict) or set(item) != {'kind', 'url', 'supports'}:
+            evidence_fields = {'kind', 'url', 'supports'} | ({'sourceRecord'} if source_record else set())
+            if not isinstance(item, dict) or set(item) != evidence_fields:
                 raise ValueError(f'Public-name evidence contains unsupported or missing fields: {sku}')
             if (not safe_review_text(item['kind']) or not review_url_host(item['url'])
                     or not safe_review_text(item['supports'])):
                 raise ValueError(f'Public-name evidence must use a safe, inspectable HTTPS source: {sku}')
-            exact_upc_evidence |= entry['expectedUpc'] in item['supports'] or entry['expectedUpc'] in item['url']
-        if not exact_upc_evidence:
+            if source_record:
+                identity = {'identifierNamespace': 'original_inventory_MAINUPC',
+                            'barcodeMatchClaimed': False, 'sku': sku,
+                            'sourceRow': entry['expectedSourceRow'],
+                            'rawFieldsSha256': entry['expectedRawFieldsSha256'],
+                            'publicUpc': code, 'expectedPublicName': entry['expectedPublicName'],
+                            'proposedPublicTitle': title}
+                if (item['kind'] != SOURCE_RECORD_NAME_IDENTITY
+                        or not isinstance(item['sourceRecord'], dict)
+                        or item['sourceRecord'] != identity
+                        or type(item['sourceRecord'].get('barcodeMatchClaimed')) is not bool
+                        or type(item['sourceRecord'].get('sourceRow')) is not int):
+                    raise ValueError(f'Source-record name evidence must bind the exact reviewed identity: {sku}')
+            else:
+                exact_upc_evidence |= entry['expectedUpc'] in item['supports'] or entry['expectedUpc'] in item['url']
+        if not source_record and not exact_upc_evidence:
             raise ValueError(f'Public-name evidence must explicitly identify the guarded UPC: {sku}')
         reviews[sku] = entry
     return reviews
@@ -2936,6 +2986,11 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     report_additions = validated_report_additions(report_additions_manifest)
     category_reviews = validated_category_reviews(category_reviews_manifest)
     public_name_reviews = validated_public_name_reviews(public_name_reviews_manifest)
+    source_record_names = {sku for sku, review in public_name_reviews.items()
+                           if review.get('identityBasis') == SOURCE_RECORD_NAME_IDENTITY}
+    if source_record_names & (set(source_reviews) | set(corrections) | set(identity_reviews)
+                              | set(name_verifications) | set(category_reviews)):
+        raise ValueError('Source-record name-only review cannot coexist with source, name, identity or category overrides')
     guarded_restorations = {sku for sku, review in source_reviews.items()
                             if review.get('verificationMethod') == NAME_ONLY_RESTORATION_METHOD}
     numeric_restorations = {sku for sku, review in source_reviews.items()
@@ -3129,7 +3184,9 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                 apply_public_name_review(public, source, fields, public_name_review)
                 record['publicNameCorrection'] = public_name_review
                 applied_public_name_reviews.add(sku)
-                flags.append('Guarded exact-UPC public title correction applied; original source name and variant metadata preserved')
+                flags.append(('Guarded source-record public title correction applied; inventory identifier is not a verified barcode'
+                              if public_name_review.get('identityBasis') == SOURCE_RECORD_NAME_IDENTITY else
+                              'Guarded exact-UPC public title correction applied; original source name and variant metadata preserved'))
             if guarded_restoring or numeric_restoring:
                 if (not public or sku not in applied_public_name_reviews
                         or public['name'] != public_name_review['proposedPublicTitle']
@@ -3458,7 +3515,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
     parser.add_argument('--report-additions', type=Path, default=ROOT / 'data/report-additions.json')
     parser.add_argument('--category-reviews', type=Path, default=ROOT / 'data/category-reviews.json')
     parser.add_argument('--public-name-reviews', type=Path, default=DEFAULT_PUBLIC_NAME_REVIEWS,
-                        help='Privacy-safe exact-UPC title review manifest (default: data/public-name-reviews.json)')
+                        help='Privacy-safe guarded title review manifest (default: data/public-name-reviews.json)')
     return parser
 
 
