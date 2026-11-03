@@ -7755,6 +7755,51 @@
       "evidence": {
         "privateEvidenceSha256": "7b126b7cb4ee6e20766e6757290003d975954f4b0501c23d485d8628f21e6b9f"
       }
+    },
+    {
+      "sku": "196",
+      "expectedUpc": "078000010626",
+      "expectedSourceRow": 143,
+      "expectedRawFieldsSha256": "febc1211fb90724ef1650102e92a49d2345efe2f68d60893a5a4acc9536a0ac3",
+      "expectedPublicName": "7 UP MIXED BERRY",
+      "expectedLabel": "2 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "7UP Mixed Berry Antioxidant Soda",
+      "reason": "Enrich only the guarded known7UP MixedBerry2L title with the Antioxidant Soda wording directly printed on the matching package and named by its own retailer product; preserve original inventoryUPC and all variant metadata.",
+      "evidence": {
+        "privateEvidenceSha256": "70f037313a0c20cef41ade8811672d57d98d495170364d3cc29a96d78a9f6707"
+      }
+    },
+    {
+      "sku": "7668",
+      "expectedUpc": "721059000321",
+      "expectedSourceRow": 4936,
+      "expectedRawFieldsSha256": "30bdd1ed358a7a8a3721c4962a0922add8c30f0efb5933fef23b2a4e7a638a20",
+      "expectedPublicName": "SKYY Wild Strawberry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "SKYY Infusions Wild Strawberry Vodka",
+      "reason": "Complete only this guarded SKYY WildStrawberry title using its own Virginia product name,image and exactUPCNCABC corroboration; preserve750mL and all variant metadata.",
+      "evidence": {
+        "privateEvidenceSha256": "491d016e75ccb14c01d97edb1a353920d4e20035d59a0298d384ec7b1c72d7cb"
+      }
+    },
+    {
+      "sku": "5394",
+      "expectedUpc": "080432400913",
+      "expectedSourceRow": 3496,
+      "expectedRawFieldsSha256": "27d687ad0ad2056265254f07c5704f2c20996e55884fb3758e32b8cbfe497cdf",
+      "expectedPublicName": "Martell VSOP",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cognac",
+      "proposedPublicTitle": "Martell VSOP Cognac",
+      "reason": "Physical MARTELL/VSOP/COGNAC and same exact typed-code own product type/name support adding Cognac to the current Martell VSOP singleton. No Medallion,RedBarrels,age,unit,strength,formulation or origin qualifier is added.",
+      "evidence": {
+        "privateEvidenceSha256": "ee989531e02487b157883213ef459926afc984b9915e20b948ab92e0be06cf0f"
+      }
     }
   ]
 }
