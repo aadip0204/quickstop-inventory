@@ -7935,6 +7935,156 @@
       "evidence": {
         "privateEvidenceSha256": "9711d23fad6b3d06f8b4685f282f17a9ae3e8bfa95c1aac42c6da1efb2a64d61"
       }
+    },
+    {
+      "sku": "3239",
+      "expectedUpc": "076737122322",
+      "expectedSourceRow": 9599,
+      "expectedRawFieldsSha256": "8d0f2bb6d4cb25e935b8f2482365b6cc3f97fae05345bd3f383b163d56330195",
+      "expectedPublicName": "EVERFRESH APPLE JUICE",
+      "expectedLabel": "16 oz · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Everfresh Pure 100% Apple Juice",
+      "reason": "Use the supported complete brand, flavor and product-expression spelling; preserve the guarded raw source, literal identifiers, size, container, category, department and current family membership.",
+      "evidence": {
+        "privateEvidenceSha256": "486daffeafcac9440e8302972829b856ce7129bc3cf8cc896f844c931b48d4c0"
+      }
+    },
+    {
+      "sku": "3240",
+      "expectedUpc": "076737122568",
+      "expectedSourceRow": 9366,
+      "expectedRawFieldsSha256": "1a23ecefab962724540fb7bcf992154618cfdfb9da046d2348466d0c5d011a0c",
+      "expectedPublicName": "EVERFRESH CRANBERRY",
+      "expectedLabel": "16 oz · bottles",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Everfresh Cranberry Juice Cocktail",
+      "reason": "Use the supported complete brand, flavor and product-expression spelling; preserve the guarded raw source, literal identifiers, size, container, category, department and current family membership.",
+      "evidence": {
+        "privateEvidenceSha256": "906c5cc65d06bb6caa2e6770e0b4ebc2090155822c5718fa6a364373bd386936"
+      }
+    },
+    {
+      "sku": "101315",
+      "expectedUpc": "613008774707",
+      "expectedSourceRow": 9732,
+      "expectedRawFieldsSha256": "eb2033c92d8db988eb5811c2b00ff711a0f68c83c77602e99f385922d2d15f3d",
+      "expectedPublicName": "JUMEX STRAW ENERGY",
+      "expectedLabel": "15 oz · cans",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Jumex Strawberry Nectar Energy Drink",
+      "reason": "Use the supported complete brand, flavor and product-expression spelling; preserve the guarded raw source, literal identifiers, size, container, category, department and current family membership.",
+      "evidence": {
+        "privateEvidenceSha256": "6868b786375ec0f869444766535821a88ac651a7b079ba6e105468904c81dc87"
+      }
+    },
+    {
+      "sku": "1549",
+      "expectedUpc": "018200612183",
+      "expectedSourceRow": 8761,
+      "expectedRawFieldsSha256": "aa253b43b9641dd9bc9f13af61afc49eb3661306526e0f04bd5857cba5fb57dc",
+      "expectedPublicName": "busch beer",
+      "expectedLabel": "18-pack · 12 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Busch Beer",
+      "reason": "Retain the complete existing Busch Beer expression and change display case only. Preserve every original source cell, identifier, current quantity, category, department and ordered family member. No Premium, strength, age, type or package claim is added.",
+      "evidence": {
+        "privateEvidenceSha256": "c814e299eb4bf394063039d47535bf839f5f3dc91b299846dc516dcaf0f7146b"
+      }
+    },
+    {
+      "sku": "1473",
+      "expectedUpc": "018200258619",
+      "expectedSourceRow": 6291,
+      "expectedRawFieldsSha256": "f8b632cd12d0d19b326d13303fe1f3bab036384722df8d653b4734286eef0854",
+      "expectedPublicName": "Budweiser zero",
+      "expectedLabel": "6-pack · 12 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Budweiser Zero",
+      "reason": "Retain the complete existing Budweiser Zero expression and change display case only for both guarded family members. Preserve every original source cell, identifier, current quantity, category, department and ordered family member. No Premium, strength, age, type or package claim is added.",
+      "evidence": {
+        "privateEvidenceSha256": "e59a30d22d2f5c5b1e7caeac5284fe456e4e009b408c307afb68acb28af146f6"
+      }
+    },
+    {
+      "sku": "1500",
+      "expectedUpc": "018200200397",
+      "expectedSourceRow": 8100,
+      "expectedRawFieldsSha256": "4ce0181b38a20d11a67d3a3cf03675d00d7c10364ca8ac7029e4429c79d6045e",
+      "expectedPublicName": "Budweiser zero",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Budweiser Zero",
+      "reason": "Retain the complete existing Budweiser Zero expression and change display case only for both guarded family members. Preserve every original source cell, identifier, current quantity, category, department and ordered family member. No Premium, strength, age, type or package claim is added.",
+      "evidence": {
+        "privateEvidenceSha256": "8a86043053897119b72f3ae2df63f2bda269d7f3ac3cbf1a8bf6f50666fc3c42"
+      }
+    },
+    {
+      "sku": "7337",
+      "expectedUpc": "087975053507",
+      "expectedSourceRow": 4688,
+      "expectedRawFieldsSha256": "6b50dcc503601f00b3c2c64a256b50a7ad12662e3231d7ccebfdd02e730cd8f6",
+      "expectedPublicName": "SAPPORO",
+      "expectedLabel": "12-pack",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Sapporo",
+      "reason": "Retain the complete Sapporo brand base established by the unchanged guarded SAPORRO-to-SAPPORO correction, and change display case only for the complete family. Preserve every original source cell, identifier, current quantity, category, department and ordered family member. No Premium, strength, age, type or package claim is added.",
+      "evidence": {
+        "privateEvidenceSha256": "7ff61aa14c1867de32cd9e9fe083e9abff909e16d81b23de168fd92593203249"
+      }
+    },
+    {
+      "sku": "7339",
+      "expectedUpc": "087975013501",
+      "expectedSourceRow": 4689,
+      "expectedRawFieldsSha256": "16fb9bcc1a5ebb4584ec1f408a3857653fb9fdbf87bca3ccc3b6a767a4d08fb3",
+      "expectedPublicName": "Sapporo",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Sapporo",
+      "reason": "Retain the complete existing Sapporo brand base and change display case only for the complete family. Preserve every original source cell, identifier, current quantity, category, department and ordered family member. No Premium, strength, age, type or package claim is added.",
+      "evidence": {
+        "privateEvidenceSha256": "10e7df98ac35d6bc0a8dbf31a666a06d405ed2505f407521d77129dc176f174d"
+      }
+    },
+    {
+      "sku": "7340",
+      "expectedUpc": "087975006305",
+      "expectedSourceRow": 4690,
+      "expectedRawFieldsSha256": "574905aad7427fbeb9f23d046221bb984c5f37a2882e2145c97a235a7e9644ea",
+      "expectedPublicName": "SAPPORO",
+      "expectedLabel": "Single · 22 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Sapporo",
+      "reason": "Retain the complete existing Sapporo brand base and change display case only for the complete family. Preserve every original source cell, identifier, current quantity, category, department and ordered family member. No Premium, strength, age, type or package claim is added.",
+      "evidence": {
+        "privateEvidenceSha256": "45e49fecbb7cae075bca9dc9b3ea5bc88fa06de3c7bf24ebe4804d6a5e3d2d5c"
+      }
+    },
+    {
+      "sku": "7338",
+      "expectedUpc": "087975026501",
+      "expectedSourceRow": 9736,
+      "expectedRawFieldsSha256": "bb4dc63f64fe8445e23d72b385c49729306eab1c470331cf1fada0543ac22a0b",
+      "expectedPublicName": "SAPPORO",
+      "expectedLabel": "Single · 24 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Sapporo",
+      "reason": "Retain the complete existing Sapporo brand base and change display case only for the complete family. Preserve every original source cell, identifier, current quantity, category, department and ordered family member. No Premium, strength, age, type or package claim is added.",
+      "evidence": {
+        "privateEvidenceSha256": "2e3accb20a254d5ad2e36dbc9c69d6a4da31c94c25babcbebbbec243c8f85fef"
+      }
     }
   ]
 }
