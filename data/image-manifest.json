@@ -34444,10 +34444,10 @@
     {
       "sku": "9084",
       "src": "images/products/sku-9084.jpg",
-      "alt": "Utz Chips Sour cream Onion — 1.5 oz packaging",
+      "alt": "Utz Sour Cream & Onion Potato Chips — 1.5 oz packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "041780000637",
-      "expectedName": "Utz Chips Sour cream Onion",
+      "expectedName": "Utz Sour Cream & Onion Potato Chips",
       "expectedLabel": "1.5 oz",
       "sha256": "b1393e05b30d049b4d23d7b26b62947872b2b37299de854c966669a5b4030f70",
       "usageBasis": "user_authorized_direct_reference",
@@ -34464,10 +34464,10 @@
     {
       "sku": "6034",
       "src": "images/products/sku-6034.jpg",
-      "alt": "MUNCHIES SWEET&SPICY PEANUTS — 2.5 oz packaging",
+      "alt": "MUNCHIES Sweet & Spicy Crunchy Coated Peanuts — 2.5 oz packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "028400036566",
-      "expectedName": "MUNCHIES SWEET&SPICY PEANUTS",
+      "expectedName": "MUNCHIES Sweet & Spicy Crunchy Coated Peanuts",
       "expectedLabel": "2.5 oz",
       "sha256": "7c53834543022caa521d9c4dd636845b1a52aa228f6e53f415c4866f5fc37eea",
       "usageBasis": "user_authorized_direct_reference",
@@ -34530,6 +34530,106 @@
       "expectedName": "Jumex Strawberry Nectar Energy Drink",
       "expectedLabel": "15 oz · cans",
       "sha256": "0fb9dc8318f5dd990c9d2a0c626a58755dfaaf040458d6546951db2825d2093f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6094",
+      "src": "images/products/sku-6094.png",
+      "alt": "Nehi Grape Soda — 20 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "029500217626",
+      "expectedName": "Nehi Grape Soda",
+      "expectedLabel": "20 oz",
+      "sha256": "ce2f9a97480ee3422787b32e08f660c7c4585f46dcf4cb53289be03e7248b3f1",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6098",
+      "src": "images/products/sku-6098.png",
+      "alt": "Nehi Peach Soda — 20 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "029500267621",
+      "expectedName": "Nehi Peach Soda",
+      "expectedLabel": "20 oz",
+      "sha256": "543c9ba8b35029bec110c9dcc1856d92b79b3bcc6d8dc156aa04f12cc1d31075",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6099",
+      "src": "images/products/sku-6099.png",
+      "alt": "Nehi Strawberry Soda — 20 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "029500237624",
+      "expectedName": "Nehi Strawberry Soda",
+      "expectedLabel": "20 oz",
+      "sha256": "5906b311fb9a74995daacd7186bfaf58f836ec856acfa6607b5bc925907ddee4",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5733",
+      "src": "images/products/sku-5733.jpg",
+      "alt": "Mistic Kiwi Strawberry — 16 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "089396156157",
+      "expectedName": "Mistic Kiwi Strawberry",
+      "expectedLabel": "16 oz",
+      "sha256": "5faea4e48f07e457ec90b7a3ef2f6e2eb706815263a27435d6f39ce09e3fff7e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5923",
+      "src": "images/products/sku-5923.jpg",
+      "alt": "Mr & Mrs T Original Piña Colada Mix — 1 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "070655960301",
+      "expectedName": "Mr & Mrs T Original Piña Colada Mix",
+      "expectedLabel": "1 L",
+      "sha256": "8073de31020c948766ebe7a41b1d449d217f28eb365e594e95057d57deb7c2cb",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {

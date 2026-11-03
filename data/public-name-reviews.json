@@ -8085,6 +8085,126 @@
       "evidence": {
         "privateEvidenceSha256": "2e3accb20a254d5ad2e36dbc9c69d6a4da31c94c25babcbebbbec243c8f85fef"
       }
+    },
+    {
+      "sku": "9084",
+      "expectedUpc": "041780000637",
+      "expectedSourceRow": 5754,
+      "expectedRawFieldsSha256": "8e07c9a92c3faec53d9e4932f734c1d4b1bb6e63876811dd393a294caaa99888",
+      "expectedPublicName": "Utz Chips Sour cream Onion",
+      "expectedLabel": "1.5 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Utz Sour Cream & Onion Potato Chips",
+      "reason": "Complete only the source- and package-supported Utz Sour Cream & Onion Potato Chips wording and display format. Preserve the original SKU, UPC, source row, quantity, category, department and singleton membership.",
+      "evidence": {
+        "privateEvidenceSha256": "a50fb1236128240003b7322f6010059833e14719d27b66bc933e53a1ace2e570"
+      }
+    },
+    {
+      "sku": "6034",
+      "expectedUpc": "028400036566",
+      "expectedSourceRow": 3849,
+      "expectedRawFieldsSha256": "f3d33ea2b860fb3a4db138e01e17c92a817b4ee95ba05e89cd3aa0e629ac6a4b",
+      "expectedPublicName": "MUNCHIES SWEET&SPICY PEANUTS",
+      "expectedLabel": "2.5 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "MUNCHIES Sweet & Spicy Crunchy Coated Peanuts",
+      "reason": "Complete only the source- and package-supported MUNCHIES Sweet & Spicy Crunchy Coated Peanuts wording and display format. Preserve the original SKU, UPC, source row, quantity, category, department and singleton membership.",
+      "evidence": {
+        "privateEvidenceSha256": "a9b668ffb055e295e6528a43543dc523f7fa0ea6e7147462b2460258563cd098"
+      }
+    },
+    {
+      "sku": "6094",
+      "expectedUpc": "029500217626",
+      "expectedSourceRow": 3902,
+      "expectedRawFieldsSha256": "76b4068e6faeadee64b5cf59f823f11af13e334c19dfe22a0dd89ccd96d4212b",
+      "expectedPublicName": "NEHI GRAPE",
+      "expectedLabel": "20 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Nehi Grape Soda",
+      "reason": "Full existingNehiGrape family display-name refinement only: correct brand casing and add Soda from actual ownProduct name/inspected matching flavorpackage. Preserve all memberUPC/raw/unit/category/department/order; no siblingphoto or genericunit transfer.",
+      "evidence": {
+        "privateEvidenceSha256": "e1bca0e2190fad6c98d70973dd1d7b41c4838c805aff3b8c9ce392af6e81280c"
+      }
+    },
+    {
+      "sku": "6095",
+      "expectedUpc": "029500219330",
+      "expectedSourceRow": 3903,
+      "expectedRawFieldsSha256": "9a200d5b7efb77be3c0e571147ea59a7371d02bdcac1afed9fff27795e303027",
+      "expectedPublicName": "NEHI GRAPE",
+      "expectedLabel": "2 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Nehi Grape Soda",
+      "reason": "Full existingNehiGrape family display-name refinement only: correct brand casing and add Soda from actual ownProduct name/inspected matching flavorpackage. Preserve all memberUPC/raw/unit/category/department/order; no siblingphoto or genericunit transfer.",
+      "evidence": {
+        "privateEvidenceSha256": "19fe77cda8debad8345f9c3b465931ce2c2836c288da4b9e4bea7bf18f19f547"
+      }
+    },
+    {
+      "sku": "6098",
+      "expectedUpc": "029500267621",
+      "expectedSourceRow": 3906,
+      "expectedRawFieldsSha256": "0f1fff7fbf176d92b7baea26c423bdde9c70e2578cb96a1db24fc50ab2e9e8ea",
+      "expectedPublicName": "NEHI PEACH",
+      "expectedLabel": "20 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Nehi Peach Soda",
+      "reason": "Full existingNehiPeach family display-name refinement only: correct brand casing and add Soda from actual ownProduct name/inspected matching flavorpackage. Preserve all memberUPC/raw/unit/category/department/order; no siblingphoto or genericunit transfer.",
+      "evidence": {
+        "privateEvidenceSha256": "aea27c748cd8dea3b9ef4142ccc4198bba97d45d5423c7fd0823caf3851906be"
+      }
+    },
+    {
+      "sku": "6099",
+      "expectedUpc": "029500237624",
+      "expectedSourceRow": 3907,
+      "expectedRawFieldsSha256": "fb82cd99f6d735647778aab09ce320dc138ad4c03d7c19362eaeea409cf23b8d",
+      "expectedPublicName": "NEHI STRAWBERRY",
+      "expectedLabel": "20 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Nehi Strawberry Soda",
+      "reason": "Whole6099/6100NehiStrawberryfamily genericname refinement toNehiStrawberrySoda; exactownretailerProduct names and immutable rawbrand/flavor agree. Preserve allidentifiers/units/raw/category/department/membership; no2Lphotoapproval.",
+      "evidence": {
+        "privateEvidenceSha256": "d1c5b2c4a6b78cd3dc72a5686f9a1e0d62037a2f070cd261fd81e174d16ca206"
+      }
+    },
+    {
+      "sku": "6100",
+      "expectedUpc": "029500239338",
+      "expectedSourceRow": 3908,
+      "expectedRawFieldsSha256": "a2d6dbe259fe30cf2182e8b7286edd13f3b536bca7331b914b62846523830463",
+      "expectedPublicName": "NEHI STRAWBERRY",
+      "expectedLabel": "2 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Nehi Strawberry Soda",
+      "reason": "Whole6099/6100NehiStrawberryfamily genericname refinement toNehiStrawberrySoda; exactownretailerProduct names and immutable rawbrand/flavor agree. Preserve allidentifiers/units/raw/category/department/membership; no2Lphotoapproval.",
+      "evidence": {
+        "privateEvidenceSha256": "a9cac1dee0c63c418c1a5584c0d924acbe6b5b4a5e6428e88efbc79adbece407"
+      }
+    },
+    {
+      "sku": "5923",
+      "expectedUpc": "070655960301",
+      "expectedSourceRow": 3800,
+      "expectedRawFieldsSha256": "2a00dbceca27b578c9071c88240fe7f64e28f7b10d4b4981ee604fd3d2442a25",
+      "expectedPublicName": "MR&MRS PINA COLADA MIX 1 Ltr",
+      "expectedLabel": "1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "N/A Mix",
+      "proposedPublicTitle": "Mr & Mrs T Original Piña Colada Mix",
+      "reason": "Restore the exact Mr & Mrs T Original Piña Colada Mix brand and expression and remove the duplicated unit fragment from the display title. Preserve the original raw identity, 1 L label, category, department and singleton membership.",
+      "evidence": {
+        "privateEvidenceSha256": "eea6881d6ce95345f481ef2cdcd1c4544025cf619736eeba508e3ea5ca25e543"
+      }
     }
   ]
 }
