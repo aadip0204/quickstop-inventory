@@ -8448,6 +8448,66 @@
       "evidence": {
         "privateEvidenceSha256": "a395a55b8d4321e3370727309d0d9e190a0de91345dc63f820b3b72d9db04bf4"
       }
+    },
+    {
+      "sku": "5951",
+      "expectedUpc": "072718600308",
+      "expectedSourceRow": 6915,
+      "expectedRawFieldsSha256": "270d51e2305b7fa5ea7235f5f9d408df0daf821f73735d905c38f8668731db18",
+      "expectedPublicName": "MR. PURE GRAPE",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Mr. Pure Grape",
+      "reason": "Complete only the supported Mr. Pure brand punctuation/case and exact flavor wording. Preserve raw identifiers, existing16oz label, source row, Juice department, drinks category and full singleton.",
+      "evidence": {
+        "privateEvidenceSha256": "fe74379c717af82ed6d7ee16fbf69cf1accd5bfc210f1586841e38bd40b2e98a"
+      }
+    },
+    {
+      "sku": "5967",
+      "expectedUpc": "072718600360",
+      "expectedSourceRow": 3815,
+      "expectedRawFieldsSha256": "9e86842ab2341d9fd54d66f01dd02e5cab08fcaf9195332acf242a10804351f2",
+      "expectedPublicName": "MR. PURE MANGO",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Mr. Pure Mango",
+      "reason": "Complete only the supported Mr. Pure brand punctuation/case and exact flavor wording. Preserve raw identifiers, existing16oz label, source row, Juice department, drinks category and full singleton.",
+      "evidence": {
+        "privateEvidenceSha256": "29fe2fb04a13657de42914c5524ded40ea595927de600ad036ca7087d704ed8c"
+      }
+    },
+    {
+      "sku": "5997",
+      "expectedUpc": "072718600384",
+      "expectedSourceRow": 3824,
+      "expectedRawFieldsSha256": "789c96f3d4a60283f8113b05b2f37bf93d0271f6a865985f1e18aba736b55e58",
+      "expectedPublicName": "MrPure pineapple watermelon",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Mr. Pure Pineapple Watermelon",
+      "reason": "Complete only the supported Mr. Pure brand punctuation/case and exact flavor wording. Preserve raw identifiers, existing16oz label, source row, Juice department, drinks category and full singleton.",
+      "evidence": {
+        "privateEvidenceSha256": "b165f4fa296406cb4a07c61800a7f1564238b920451fefc406312caeb5e38ed3"
+      }
+    },
+    {
+      "sku": "5981",
+      "expectedUpc": "072718101812",
+      "expectedSourceRow": 7387,
+      "expectedRawFieldsSha256": "6e35aa73ed723082f0dd80187a2ec5bde1c5b821b120fe2801d5d5650a41f424",
+      "expectedPublicName": "MR. PURE PEACH WATERM",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Mr. Pure Peach Watermelon",
+      "reason": "Complete only the supported Mr. Pure brand punctuation/case and exact flavor wording. Preserve raw identifiers, existing16oz label, source row, Juice department, drinks category and full singleton.",
+      "evidence": {
+        "privateEvidenceSha256": "7178ab3ab75ace4daacc3f83a330a11752d8d32aab4a7e791237f5501e3ec7f1"
+      }
     }
   ]
 }
