@@ -8508,6 +8508,186 @@
       "evidence": {
         "privateEvidenceSha256": "7178ab3ab75ace4daacc3f83a330a11752d8d32aab4a7e791237f5501e3ec7f1"
       }
+    },
+    {
+      "sku": "2759",
+      "expectedUpc": "080686316015",
+      "expectedSourceRow": 1764,
+      "expectedRawFieldsSha256": "3b9bc6290da10fd127803433a4620c15836cb8f385935fcf5dca9c6963e94c9c",
+      "expectedPublicName": "Dekuyper Blue Curacao",
+      "expectedLabel": "1 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "DeKuyper Blue Curaçao Liqueur",
+      "reason": "Correct brand casing and full Blue Curaçao Liqueur expression using the exact-code own retailer record and matching complete native package. Preserve original UPC,1Llabel,rawsource,category,department and singleton membership; no numerical ABV or origin claim.",
+      "evidence": {
+        "privateEvidenceSha256": "de8dc6da003070b6251c4ad5334b0b120d5a11e4301e8b85f6a6d90883b6c665"
+      }
+    },
+    {
+      "sku": "2143",
+      "expectedUpc": "088076181540",
+      "expectedSourceRow": 1339,
+      "expectedRawFieldsSha256": "2560ea3bacbc7bcef8d8c08fa849db5a984691ca587a11013fa1b001b9b85872",
+      "expectedPublicName": "Ciroc Vanilla",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Cîroc French Vanilla",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "0c46f55fe47df49044e094f666ec1549f99ccfb4b48007dda8269b849f5d542e"
+      }
+    },
+    {
+      "sku": "3153",
+      "expectedUpc": "759380117586",
+      "expectedSourceRow": 2046,
+      "expectedRawFieldsSha256": "ff87a855efc94e03f7d083c8b21a53d3eb33aa2614c83df2ea90d7fd3ed1adf2",
+      "expectedPublicName": "EL CHARRO REP",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "El Charro Reposado",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "42afed110f58af58c7b6600d36160479892dbdababe610c6e9dd650c5ca98ca7"
+      }
+    },
+    {
+      "sku": "3831",
+      "expectedUpc": "088600000002",
+      "expectedSourceRow": 2474,
+      "expectedRawFieldsSha256": "07c4897fac366a5b9b8ffd78b7b85dec1a75c311c5eeb144a1803f191864d690",
+      "expectedPublicName": "Gordons Dry Gin",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Gin",
+      "proposedPublicTitle": "Gordon's London Dry Gin",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "6540d7829a2b14bb8bb8edd4898ec6f04e10482ceee148deaafe19011a9b09ce"
+      }
+    },
+    {
+      "sku": "7415",
+      "expectedUpc": "080432107805",
+      "expectedSourceRow": 4748,
+      "expectedRawFieldsSha256": "ff8f8045fecbb50b720a31849c2120e2b481f539e584976d8142dc793a566f13",
+      "expectedPublicName": "SEAGRAM GIN PEACH 750",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Gin",
+      "proposedPublicTitle": "Seagram's Peach Twisted Gin",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "756a53fad000ceb24523b5f54564080ef475a33653dcca4b72e924cdc24e72f5"
+      }
+    },
+    {
+      "sku": "1593",
+      "expectedUpc": "720815910539",
+      "expectedSourceRow": 996,
+      "expectedRawFieldsSha256": "0e537041359c8f823692e4905f297c97d3910eb89fcc0fff305cbba26506367f",
+      "expectedPublicName": "Cabo Wabo Anejo",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Cabo Wabo Añejo",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "c5f0cbb6921dfdb96ee0c09c2a1988729de432d27194dc4c1a1535fef1561885"
+      }
+    },
+    {
+      "sku": "3203",
+      "expectedUpc": "664804000385",
+      "expectedSourceRow": 7770,
+      "expectedRawFieldsSha256": "5efc011f69b7fa199c7187044c3aec707cd7e4f713d5256d113285daa2c597c2",
+      "expectedPublicName": "ESPOLON REPOSADO",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Espolòn Reposado",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "c27d462ef31ccd895bbbc2e0037504ce3cac847099a4ba66e213fbfa63243250"
+      }
+    },
+    {
+      "sku": "5702",
+      "expectedUpc": "7622300761363",
+      "expectedSourceRow": 9202,
+      "expectedRawFieldsSha256": "cd8883901737b1eaa45a75243bfdc0cf779435c45b2dba1cfa4d8d3ddcb08041",
+      "expectedPublicName": "mini oreo chocolate",
+      "expectedLabel": "61.3 g",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Mini Oreo Chocolate",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "10a71bd1d688376a9dbfd88e134e1ae8b8eb59e5f2eddc48cbd68ab78125e3c8"
+      }
+    },
+    {
+      "sku": "5816",
+      "expectedUpc": "850055337299",
+      "expectedSourceRow": 8505,
+      "expectedRawFieldsSha256": "dd95744f0f3e6408cc2246627ee32471b1fdf309c3aeca22586c5ce2c0219b3f",
+      "expectedPublicName": "MONACO GRAPEFRUIT CRUSH",
+      "expectedLabel": "Single · 12 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Monaco Grapefruit Crush",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "ade2dd886e162eac054247c3a77387f79b4651462aee2c75c8564da8bffb624c"
+      }
+    },
+    {
+      "sku": "101364",
+      "expectedUpc": "850064265323",
+      "expectedSourceRow": 6989,
+      "expectedRawFieldsSha256": "e203910f3767f4c4a3ae2c5c11b9b5d60a950a594302355922b3e26af551d7d7",
+      "expectedPublicName": "MONACO PORNSTAR CRUSH",
+      "expectedLabel": "Single · 12 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Monaco Pornstar Crush",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "f7c6a497c9f8dc8ea923b334f8e8538b29382db9be14731540adffa94a9fdbb8"
+      }
+    },
+    {
+      "sku": "6948",
+      "expectedUpc": "014800582000",
+      "expectedSourceRow": 9335,
+      "expectedRawFieldsSha256": "91091827ca5457c4b9b202e0d5bfe6fcc419cd22edcd97bfa1e882c5790f791c",
+      "expectedPublicName": "REAL LIME",
+      "expectedLabel": "2.5 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "ReaLime 100% Lime Juice",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "d461a86fe8f30346a6b3e9fcac94e557ca36d468caa77de35c8af58b94c949d6"
+      }
+    },
+    {
+      "sku": "6949",
+      "expectedUpc": "014800582024",
+      "expectedSourceRow": 9652,
+      "expectedRawFieldsSha256": "eb30caa6b2a9d1344d2b064330afe02068f295248e293c1c1b4871c041c84acb",
+      "expectedPublicName": "Real Lime",
+      "expectedLabel": "4.5 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "ReaLime 100% Lime Juice",
+      "reason": "Complete only independently supported brand spelling/case and exact expression. Preserve raw identifiers, source row, label, category, department, whole ordered family and photograph bytes; image metadata may change only with this approved title.",
+      "evidence": {
+        "privateEvidenceSha256": "e0acf98319517a211718484261eb5916b14af0cacbc2c82c5440926d3024e95f"
+      }
     }
   ]
 }
