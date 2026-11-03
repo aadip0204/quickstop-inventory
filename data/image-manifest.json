@@ -33624,10 +33624,10 @@
     {
       "sku": "7391",
       "src": "images/products/sku-7391.jpg",
-      "alt": "Schweppes — 20 oz packaging",
+      "alt": "Schweppes ginger ale — 20 oz packaging",
       "verifiedOn": "2026-11-02",
       "expectedUpc": "078000206401",
-      "expectedName": "Schweppes",
+      "expectedName": "Schweppes ginger ale",
       "expectedLabel": "20 oz",
       "sha256": "7a8e970b27893e0166a622962e72ebebc43b36922807d692bc9e93ea3ca06947",
       "usageBasis": "user_authorized_direct_reference",
@@ -33644,10 +33644,10 @@
     {
       "sku": "7394",
       "src": "images/products/sku-7394.jpg",
-      "alt": "schweppes ginger — 1.25 L packaging",
+      "alt": "Schweppes ginger ale — 1.25 L packaging",
       "verifiedOn": "2026-11-02",
       "expectedUpc": "078000026399",
-      "expectedName": "schweppes ginger",
+      "expectedName": "Schweppes ginger ale",
       "expectedLabel": "1.25 L",
       "sha256": "e9a22f1d4a54ceb0b5d72c3752ed1505ab1914e58a552ca565a1af0844ffca0a",
       "usageBasis": "user_authorized_direct_reference",
@@ -33690,6 +33690,126 @@
       "expectedName": "SEAGRAM GIN PEACH 750",
       "expectedLabel": "750 mL",
       "sha256": "1f7267cc3e1a8994837802e43edc6948ff39cec5822d89233d0bb13661252dbe",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6615",
+      "src": "images/products/sku-6615.webp",
+      "alt": "Pennzoil SAE 5W-30 Motor Oil — 946 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "071611936095",
+      "expectedName": "Pennzoil SAE 5W-30 Motor Oil",
+      "expectedLabel": "946 mL",
+      "sha256": "bb4f904f417f29e5712307b902153cbdbe76844f15e98b7b2930747ce397dec0",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6616",
+      "src": "images/products/sku-6616.png",
+      "alt": "Pennzoil Active Cleansing Agents SAE 10W-40 Motor Oil — 946 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "071611936538",
+      "expectedName": "Pennzoil Active Cleansing Agents SAE 10W-40 Motor Oil",
+      "expectedLabel": "946 mL",
+      "sha256": "1ea009c604ce138c8a3777ae77827418db55e216a10b3f0074065399d9161dd6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6617",
+      "src": "images/products/sku-6617.png",
+      "alt": "Pennzoil Automatic Transmission Fluid — 946 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "071611019514",
+      "expectedName": "Pennzoil Automatic Transmission Fluid",
+      "expectedLabel": "946 mL",
+      "sha256": "362b9a17f0567c3bd2aad25bde303a769bbde5d79cf31763247981a86c33e9fd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101312",
+      "src": "images/products/sku-101312.webp",
+      "alt": "Purina Friskies Extra Gravy Chunky with Salmon in Savory Gravy Wet Cat Food — 5.5 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "050000293339",
+      "expectedName": "Purina Friskies Extra Gravy Chunky with Salmon in Savory Gravy Wet Cat Food",
+      "expectedLabel": "5.5 oz",
+      "sha256": "3e2be31e1053d3fd5ee1e5bbd509bea3c479b6f5bb277b59f6f2562d76a6ea61",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3898",
+      "src": "images/products/sku-3898.jpg",
+      "alt": "Grey Goose Cherry Noir Vodka — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "080480002831",
+      "expectedName": "Grey Goose Cherry Noir Vodka",
+      "expectedLabel": "750 mL",
+      "sha256": "f8ede95782044c569072f63976b294c6a4aea74bda3982ec73395cfdef3d0206",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3991",
+      "src": "images/products/sku-3991.jpg",
+      "alt": "9Lives Meaty Pate With Real Ocean Whitefish — 5.5 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "079100004201",
+      "expectedName": "9Lives Meaty Pate With Real Ocean Whitefish",
+      "expectedLabel": "5.5 oz",
+      "sha256": "a00f556be7b5ae822bb776b98f1320ee98a958bbd0c9dc049f1d473985cc1a35",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {
