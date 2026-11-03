@@ -7620,6 +7620,141 @@
       "evidence": {
         "privateEvidenceSha256": "7f78cca0a6787422ede24d5c6154fb9abca668f986382728dc3724e1dba1f021"
       }
+    },
+    {
+      "sku": "6615",
+      "expectedUpc": "071611936095",
+      "expectedSourceRow": 8652,
+      "expectedRawFieldsSha256": "2141b87c115de4de46bf9f997e918d2dced00226c237cc8ce166b613ab11cae4",
+      "expectedPublicName": "PENNZOIL 5W-30",
+      "expectedLabel": "946 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Pennzoil SAE 5W-30 Motor Oil",
+      "reason": "Add the printed SAE grade and product type to the generic current brand/grade name. Proposed name follows readable package wording and exact own-code product identity. Retailer Conventional remains in private evidence; it is not promoted as a formulation/current-generation assertion. No API/performance/vehicle compatibility claim.",
+      "evidence": {
+        "privateEvidenceSha256": "f60b8838800d24418e4fdac16c1444be735c54906e2d6d5bf83fd006b410bf66"
+      }
+    },
+    {
+      "sku": "6616",
+      "expectedUpc": "071611936538",
+      "expectedSourceRow": 7619,
+      "expectedRawFieldsSha256": "daa86b838f8b311a50ef6f406535ca791df1f6b946e89ddb24d149c1646e096e",
+      "expectedPublicName": "PENNZOIL 10W-40",
+      "expectedLabel": "946 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Pennzoil Active Cleansing Agents SAE 10W-40 Motor Oil",
+      "reason": "Use the exact printed series expression,SAE grade and product type rather than only brand/grade. Active Cleansing Agents is recorded as printed product/series wording, not an independently tested efficacy or engine-performance claim. No standards/compatibility/formulation inference.",
+      "evidence": {
+        "privateEvidenceSha256": "2eece70bd080ab6793c6e0f99fd2d9225c4a41277fa9a9e236c7024326466914"
+      }
+    },
+    {
+      "sku": "6617",
+      "expectedUpc": "071611019514",
+      "expectedSourceRow": 8230,
+      "expectedRawFieldsSha256": "d8a5bdbe7304318b8b68900b014be1cc6326014af5567a0e472f068f0f90a3ef",
+      "expectedPublicName": "PENNZOIL ATF",
+      "expectedLabel": "946 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Pennzoil Automatic Transmission Fluid",
+      "reason": "Expand the printed ATF product type to its full readable name while retaining exact brand identity. No unproven DEX/MERC designation,specific vehicle compatibility,formulation or technical suitability claim.",
+      "evidence": {
+        "privateEvidenceSha256": "8fb51d4e263868ef595a5fe43da4a851ab4c3831fc651f6a22de3c757e43e7f6"
+      }
+    },
+    {
+      "sku": "101312",
+      "expectedUpc": "050000293339",
+      "expectedSourceRow": 6745,
+      "expectedRawFieldsSha256": "9155770630df0a576a2c2bb7ef7d99e40f819129691aa01fd31373e88fac81b4",
+      "expectedPublicName": "FRISKIES CAT FOOD",
+      "expectedLabel": "5.5 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Purina Friskies Extra Gravy Chunky with Salmon in Savory Gravy Wet Cat Food",
+      "reason": "Replace the generic Friskies Cat Food display with the actual branded Extra Gravy Chunky salmon expression and supported wet-cat-food type. With Salmon does not imply a single-ingredient/salmon-only diet. No life-stage,nutrition/health,facility/ownership,current-generation or stock claim.",
+      "evidence": {
+        "privateEvidenceSha256": "7b183a101051ab22d5e49acd4ae3c79a92a4dd2f43eff05dea791e72fc01bff5"
+      }
+    },
+    {
+      "sku": "3898",
+      "expectedUpc": "080480002831",
+      "expectedSourceRow": 2519,
+      "expectedRawFieldsSha256": "9eec2133aef81ff19e66bb05b92328edd642284326467d3da3d8700229684ea7",
+      "expectedPublicName": "Grey Goose cherry Vodka",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Grey Goose Cherry Noir Vodka",
+      "reason": "Complete the exact Cherry Noir expression and Vodka class from the same explicit consumer-code750ML selected record and independently inspected75cL whole bottle; preserve raw cells, UPC,750mL label, category, department and singleton.",
+      "evidence": {
+        "privateEvidenceSha256": "40cce9dc503680e65bd0be61415aa872c0c118a246741ed9b9062c98ea4f9187"
+      }
+    },
+    {
+      "sku": "3991",
+      "expectedUpc": "079100004201",
+      "expectedSourceRow": 8046,
+      "expectedRawFieldsSha256": "37c3bdc19d9d4a13a005674c1b4705929db97dbe3239451e631bfb3ba66e60b5",
+      "expectedPublicName": "hearty pate9 lives",
+      "expectedLabel": "5.5 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "9Lives Meaty Pate With Real Ocean Whitefish",
+      "reason": "Correct only this exact original SKU title from hearty pate9 lives to the own-UPC/source-associated and physically printed 9Lives Meaty Pate With Real Ocean Whitefish identity; preserve raw text,5.5 oz,category,department and singleton membership.",
+      "evidence": {
+        "privateEvidenceSha256": "daa82358073615a52b0f8942a85a4916705681f1915200275b5a40b496c87c46"
+      }
+    },
+    {
+      "sku": "3474",
+      "expectedUpc": "050000215201",
+      "expectedSourceRow": 8916,
+      "expectedRawFieldsSha256": "17ec6683a7d2189ed508f2c6e35ec3be14066ff753ecba36e7390e5c78b44bf7",
+      "expectedPublicName": "friskies pate beef",
+      "expectedLabel": "156 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Friskies Prime Filets With Beef in Gravy",
+      "reason": "CorrectwrongPate descriptorusingexactownconsumerUPC/nativePrimeFiletsWithBeefinGravypackage. Preserve156gdisplay/raw/group; no unitconversion orphotoapproval.",
+      "evidence": {
+        "privateEvidenceSha256": "9e1686d7e25e697e57e21f82c6ade683d35721b7a5fc3a87856d5a4f04a1fe87"
+      }
+    },
+    {
+      "sku": "7391",
+      "expectedUpc": "078000206401",
+      "expectedSourceRow": 4731,
+      "expectedRawFieldsSha256": "ddc20d05a4761bcd62092c70c92e9f4b6997efa2e9bf2cf853c5fa4886d5f55f",
+      "expectedPublicName": "Schweppes",
+      "expectedLabel": "20 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Schweppes ginger ale",
+      "reason": "Actual same own main-product record binds unchanged literalconsumerUPC toSchweppes Ginger Ale and unchanged bottle unit; full native existing photo visibly readsSchweppes GINGER ALE. Complete expression supplied without unit,category,UPC,pack or photo inference.",
+      "evidence": {
+        "privateEvidenceSha256": "d9846862a4ee592a10b75ece4ff14df06222d66d2e4c90b423f846569649579a"
+      }
+    },
+    {
+      "sku": "7394",
+      "expectedUpc": "078000026399",
+      "expectedSourceRow": 6773,
+      "expectedRawFieldsSha256": "9db1306ff83028033e87f450c5e382e46cc8a14068762778b0df6d1668d79ecf",
+      "expectedPublicName": "schweppes ginger",
+      "expectedLabel": "1.25 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Schweppes ginger ale",
+      "reason": "Actual same own main-product record binds unchanged literalconsumerUPC toSchweppes Ginger Ale and unchanged bottle unit; full native existing photo visibly readsSchweppes GINGER ALE. Complete expression supplied without unit,category,UPC,pack or photo inference.",
+      "evidence": {
+        "privateEvidenceSha256": "7b126b7cb4ee6e20766e6757290003d975954f4b0501c23d485d8628f21e6b9f"
+      }
     }
   ]
 }
