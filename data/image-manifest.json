@@ -32684,10 +32684,10 @@
     {
       "sku": "5540",
       "src": "images/products/sku-5540.webp",
-      "alt": "MICHELOB ULTRA — 6-pack · 12 oz · bottles packaging",
+      "alt": "Michelob Ultra — 6-pack · 12 oz · bottles packaging",
       "verifiedOn": "2026-11-02",
       "expectedUpc": "018200059896",
-      "expectedName": "MICHELOB ULTRA",
+      "expectedName": "Michelob Ultra",
       "expectedLabel": "6-pack · 12 oz · bottles",
       "sha256": "c2d38fdebef17fd2a0a03d77d5cfb9a04f057eb2dc7b8a318dc21e039f118c9d",
       "usageBasis": "user_authorized_direct_reference",
@@ -34404,10 +34404,10 @@
     {
       "sku": "9050",
       "src": "images/products/sku-9050.webp",
-      "alt": "ultra michelob — Single · 25 oz · cans packaging",
+      "alt": "Michelob Ultra — Single · 25 oz · cans packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "018200250101",
-      "expectedName": "ultra michelob",
+      "expectedName": "Michelob Ultra",
       "expectedLabel": "Single · 25 oz · cans",
       "sha256": "f739d8354cfe63d71101c7256925361a0024950378903855a128eeefc7156325",
       "usageBasis": "user_authorized_direct_reference",
@@ -34630,6 +34630,106 @@
       "expectedName": "Mr & Mrs T Original Piña Colada Mix",
       "expectedLabel": "1 L",
       "sha256": "8073de31020c948766ebe7a41b1d449d217f28eb365e594e95057d57deb7c2cb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5925",
+      "src": "images/products/sku-5925.jpg",
+      "alt": "Mr & Mrs T Classic Sweet & Sour Mix — 1 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "070655912300",
+      "expectedName": "Mr & Mrs T Classic Sweet & Sour Mix",
+      "expectedLabel": "1 L",
+      "sha256": "28cdae7bbc67bdf5fb2df16ae7410b3c3c8f3ed8846cdd24d51e4eae51e64c29",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5896",
+      "src": "images/products/sku-5896.jpg",
+      "alt": "Mr & Mrs Straw Daiq 1 Ltr — 1 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "070655947302",
+      "expectedName": "Mr & Mrs Straw Daiq 1 Ltr",
+      "expectedLabel": "1 L",
+      "sha256": "94c3aa1f3679171e344611d0ec4b17a74ea23040045bc310163e149d4852d903",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5921",
+      "src": "images/products/sku-5921.jpg",
+      "alt": "Mr & Mrs T Original Margarita Mix — 1 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "070655935309",
+      "expectedName": "Mr & Mrs T Original Margarita Mix",
+      "expectedLabel": "1 L",
+      "sha256": "b8a98e206b8bf1c20f3e9f6eeee567889a4cd984e2eacd0a9bc041f2b2467f4f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6950",
+      "src": "images/products/sku-6950.jpg",
+      "alt": "ReaLime 100% Lime Juice from Concentrate — 8 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "014800582048",
+      "expectedName": "ReaLime 100% Lime Juice from Concentrate",
+      "expectedLabel": "8 oz",
+      "sha256": "57cc41fff7ded4ae95528515b1c5d1ff6d3e2a3fa7fce2a4fef673f50cb1f34b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7207",
+      "src": "images/products/sku-7207.jpg",
+      "alt": "Roses Lime — 33.8 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "016600000739",
+      "expectedName": "Roses Lime",
+      "expectedLabel": "33.8 oz",
+      "sha256": "9d47f22ca3edf6581dfe3864df20085cd533d57f5f3948b205afc2dc589ee112",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {

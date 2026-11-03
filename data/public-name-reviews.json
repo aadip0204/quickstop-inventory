@@ -8205,6 +8205,159 @@
       "evidence": {
         "privateEvidenceSha256": "eea6881d6ce95345f481ef2cdcd1c4544025cf619736eeba508e3ea5ca25e543"
       }
+    },
+    {
+      "sku": "5925",
+      "expectedUpc": "070655912300",
+      "expectedSourceRow": 3802,
+      "expectedRawFieldsSha256": "a7ec0ae990bfd894b37532894d3028a31d22e00e8c8787bbb48afdaf0744e108",
+      "expectedPublicName": "MR&MRS SWEET &SOUR 1 Ltr",
+      "expectedLabel": "1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "N/A Mix",
+      "proposedPublicTitle": "Mr & Mrs T Classic Sweet & Sour Mix",
+      "reason": "Restore only the exact Mr & Mrs T Classic Sweet & Sour Mix brand, expression and type wording from the literal-code own product and inspected package. Preserve original raw identity,1L label,category,department and singleton membership.",
+      "evidence": {
+        "privateEvidenceSha256": "dc0c32a9cdc2f2b8b6a53c59c5faba2948ade5edc274b55c32ec809d090cf09d"
+      }
+    },
+    {
+      "sku": "5427",
+      "expectedUpc": "070491212329",
+      "expectedSourceRow": 3508,
+      "expectedRawFieldsSha256": "3b3e53fc5e34263fea6225402c477d21e315ab49a0f7b219341f19ea9ef92a53",
+      "expectedPublicName": "Master of Mixes sweet n sour",
+      "expectedLabel": "1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "N/A Mix",
+      "proposedPublicTitle": "Master of Mixes Sweet 'N Sour Mixer",
+      "reason": "Restore only the exact Master of Mixes Sweet 'N Sour Mixer brand, expression and type wording from the literal-code own product and inspected package. Preserve original raw identity,1L label,category,department and singleton membership.",
+      "evidence": {
+        "privateEvidenceSha256": "bb50594ae21da3a127e9a5a40ec53a05780c8725e071f214ef1dea60087f403f"
+      }
+    },
+    {
+      "sku": "5921",
+      "expectedUpc": "070655935309",
+      "expectedSourceRow": 3798,
+      "expectedRawFieldsSha256": "c7cf7001afad5155b47ca35911c7792a7461698ba392ec579a890eb29730069f",
+      "expectedPublicName": "MR&MRS MARGARITA MIX 1 Ltr",
+      "expectedLabel": "1 L",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "N/A Mix",
+      "proposedPublicTitle": "Mr & Mrs T Original Margarita Mix",
+      "reason": "Correct the full Mr & Mrs T brand and Original Margarita Mix expression from the exactselected1Lretailerrecord and historicalexactUPC1LPDF; remove duplicatedsizefragment fromdisplayname whilepreserving rawsource and1Lvariantlabel. Singletononly.",
+      "evidence": {
+        "privateEvidenceSha256": "3d44929dd4df721a169cb718454bec9d56388f8081fbed0f54cdf5348413cfeb"
+      }
+    },
+    {
+      "sku": "6950",
+      "expectedUpc": "014800582048",
+      "expectedSourceRow": 4412,
+      "expectedRawFieldsSha256": "7e7b58fac5c7394a55a65d644871e8b8f6a1a3c06348b5b3a213ec003590b716",
+      "expectedPublicName": "Real Lime Juice",
+      "expectedLabel": "8 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "ReaLime 100% Lime Juice from Concentrate",
+      "reason": "Correct the guarded singletonbrand toReaLime and useactual100%LimeJuicefromConcentrate expression fromownproduct andmatchinglabel; AddedIngredients caveat retained, no pure/no-additives or metadata/unit change.",
+      "evidence": {
+        "privateEvidenceSha256": "e656f29b4e56d433d6a9903ea6964612f273ca464be993b8df6de3809533d929"
+      }
+    },
+    {
+      "sku": "5537",
+      "expectedUpc": "",
+      "expectedSourceRow": 6858,
+      "expectedRawFieldsSha256": "62b6be8a565d3bf2d2d07d9ccb490da08d8449c53afae77f1a17c8d9f74e6377",
+      "expectedPublicName": "MICHELOB ULTRA",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Michelob Ultra",
+      "reason": "Normalize only the plain Michelob Ultra display word order and case in the complete reviewed six-member Domestic family. Preserve all original identifiers, source records, selling-unit labels, category, department and per-SKU image assignments.",
+      "evidence": {
+        "privateEvidenceSha256": "5997e2f169dea36a5f290c0a29ca8938b137ef3cc736b7dad6f94a9d65dcf345"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "9049",
+      "expectedUpc": "185242",
+      "expectedSourceRow": 7200,
+      "expectedRawFieldsSha256": "c429d9c36b54c6371ef872ff5c52be59e89bd4fcf23cd4917f92bea46f2331d6",
+      "expectedPublicName": "ultra michelob",
+      "expectedLabel": "4-pack · 16 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Michelob Ultra",
+      "reason": "Normalize only the plain Michelob Ultra display word order and case in the complete reviewed six-member Domestic family. Preserve all original identifiers, source records, selling-unit labels, category, department and per-SKU image assignments.",
+      "evidence": {
+        "privateEvidenceSha256": "a81599176224f4c60e2f5b837d160fed0c4578e7985a43024e62bf1def07df4d"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "5540",
+      "expectedUpc": "018200059896",
+      "expectedSourceRow": 8133,
+      "expectedRawFieldsSha256": "d65565187a4a0817eb53ae133329865609abe9e4985740de2c3d19a0468f9dc7",
+      "expectedPublicName": "Michelob Ultra",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Michelob Ultra",
+      "reason": "Normalize only the plain Michelob Ultra display word order and case in the complete reviewed six-member Domestic family. Preserve all original identifiers, source records, selling-unit labels, category, department and per-SKU image assignments.",
+      "evidence": {
+        "privateEvidenceSha256": "74ccbce66c96b829b10c91c3e8ba6ddc494dab4d5a392c392cf7d8983965e85e"
+      }
+    },
+    {
+      "sku": "9050",
+      "expectedUpc": "018200250101",
+      "expectedSourceRow": 8257,
+      "expectedRawFieldsSha256": "de5980feb95dcc8af3ef9dfa80fa4861fd93859864aa09f4f46a1f2304657347",
+      "expectedPublicName": "ultra michelob",
+      "expectedLabel": "Single · 25 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Michelob Ultra",
+      "reason": "Normalize only the plain Michelob Ultra display word order and case in the complete reviewed six-member Domestic family. Preserve all original identifiers, source records, selling-unit labels, category, department and per-SKU image assignments.",
+      "evidence": {
+        "privateEvidenceSha256": "fe6f8abebae00080177fcf6755edb8bfbdb71598eb92e61bae0a953e605869a0"
+      }
+    },
+    {
+      "sku": "5543",
+      "expectedUpc": "183342",
+      "expectedSourceRow": 9200,
+      "expectedRawFieldsSha256": "440322cd4226f82cd5600e4b4ec37e517614348858765a7ad64d88845ee05df5",
+      "expectedPublicName": "Michelob Ultra",
+      "expectedLabel": "6-pack · 12 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Michelob Ultra",
+      "reason": "Normalize only the plain Michelob Ultra display word order and case in the complete reviewed six-member Domestic family. Preserve all original identifiers, source records, selling-unit labels, category, department and per-SKU image assignments.",
+      "evidence": {
+        "privateEvidenceSha256": "5d335b73f362beef723e7a6b6c37b91791accc2134fae0f4644becf6d1eb78b8"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "5538",
+      "expectedUpc": "018200069918",
+      "expectedSourceRow": 9566,
+      "expectedRawFieldsSha256": "dc33822bca5c1c1fd9eaa7677481e200e7139a03e41bbc86c0dbc91bba44ded0",
+      "expectedPublicName": "MICHELOB ULTRA",
+      "expectedLabel": "12-pack · 12 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Michelob Ultra",
+      "reason": "Normalize only the plain Michelob Ultra display word order and case in the complete reviewed six-member Domestic family. Preserve all original identifiers, source records, selling-unit labels, category, department and per-SKU image assignments.",
+      "evidence": {
+        "privateEvidenceSha256": "a9e6c3701e915872bf21e53b2ac3eaa8bc895f5a89c56307a9960452013b05b6"
+      }
     }
   ]
 }
