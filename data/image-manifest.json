@@ -33944,10 +33944,10 @@
     {
       "sku": "7846",
       "src": "images/products/sku-7846.jpg",
-      "alt": "SNAPPLE MANGO — 16 oz packaging",
+      "alt": "SNAPPLE MANGO MADNESS — 16 oz packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "076183163641",
-      "expectedName": "SNAPPLE MANGO",
+      "expectedName": "SNAPPLE MANGO MADNESS",
       "expectedLabel": "16 oz",
       "sha256": "1934e24cd95f84824dad9d5dd16a37655d12cfa6382e9181f4b06d0ee8407ebd",
       "usageBasis": "user_authorized_direct_reference",
@@ -34000,6 +34000,246 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "SNAPPLE MANGO MADNESS — 64 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "SNAPPLE MANGO MADNESS",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7849",
+      "expectedUpc": "076183000496",
+      "attributionRequired": false,
+      "sha256": "e6752252a1daedf19e858da425b77c22abfb66ff0966d31029fee87b9f046218",
+      "expectedLabel": "64 oz",
+      "src": "images/products/sku-7849.jpg"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "SNAPPLE RASPBERRY TEA — 64 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "SNAPPLE RASPBERRY TEA",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7854",
+      "expectedUpc": "076183001646",
+      "attributionRequired": false,
+      "sha256": "6d3e5449add8026e88917a1527af4fea7eb9dd8df5ed53fa56e196165d645cb0",
+      "expectedLabel": "64 oz",
+      "src": "images/products/sku-7854.png"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "White Claw Surge Grape Hard Seltzer — Single · 19.2 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "White Claw Surge Grape Hard Seltzer",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "101511",
+      "expectedUpc": "635985000624",
+      "attributionRequired": false,
+      "sha256": "5aaf911ecfe0c34f5ab89087248da8fb51eccaba02b73efcdc577ab88f829ee1",
+      "expectedLabel": "Single · 19.2 oz",
+      "src": "images/products/sku-101511.png"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Modelo Chelada Suprema Mangonada — Single · 24 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "Modelo Chelada Suprema Mangonada",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "101526",
+      "expectedUpc": "033544002681",
+      "attributionRequired": false,
+      "sha256": "25564b837589682531c9e1279e495bdef95298479e158193a875e3247849dd3a",
+      "expectedLabel": "Single · 24 oz",
+      "src": "images/products/sku-101526.png"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Corona Sunbrew Citrus Cerveza — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "Corona Sunbrew Citrus Cerveza",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "2478",
+      "expectedUpc": "033544002384",
+      "attributionRequired": false,
+      "sha256": "97ee561798ca6420519ee96781f996ef7830416fd6e5c7c9416ab32727c164d2",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "src": "images/products/sku-2478.webp"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Modelo Chelada Suprema Tropical — Single · 24 oz · cans packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "Modelo Chelada Suprema Tropical",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "101534",
+      "expectedUpc": "033544002704",
+      "attributionRequired": false,
+      "sha256": "a339dbd61d16fe67bf3e7a3db788e7b2c13d10dac3b5c1a46e335b5ef752cc87",
+      "expectedLabel": "Single · 24 oz · cans",
+      "src": "images/products/sku-101534.webp"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "New Amsterdam Citron — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "New Amsterdam Citron",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "6166",
+      "expectedUpc": "085000021323",
+      "attributionRequired": false,
+      "sha256": "895db98778ae2852390ff6c3b4b429520064f29ecde44ca21f6b225aba635cb7",
+      "expectedLabel": "750 mL",
+      "src": "images/products/sku-6166.webp"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Monaco Twisted Lime Classic Margarita — Single · 12 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "Monaco Twisted Lime Classic Margarita",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "5820",
+      "expectedUpc": "891278003882",
+      "attributionRequired": false,
+      "sha256": "ffa6877366f8501626e429cda3f1addbeb522de31386e96c5f58ed18aff57764",
+      "expectedLabel": "Single · 12 oz",
+      "src": "images/products/sku-5820.png"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Seagram’s Escapes Spiked Blue Razberry — Single · 23.5 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "Seagram’s Escapes Spiked Blue Razberry",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "7426",
+      "expectedUpc": "070310016411",
+      "attributionRequired": false,
+      "sha256": "14b0d8925edb8dd3da6ca2c535942d32f48dcda13460bdc2235593c07137367b",
+      "expectedLabel": "Single · 23.5 oz",
+      "src": "images/products/sku-7426.webp"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "MONACO GRAPEFRUIT CRUSH — Single · 12 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "MONACO GRAPEFRUIT CRUSH",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "5816",
+      "expectedUpc": "850055337299",
+      "attributionRequired": false,
+      "sha256": "3c5129ca928dc71b38134ec65629d8e30b0611f55e565f70efb6213fd6016f63",
+      "expectedLabel": "Single · 12 oz",
+      "src": "images/products/sku-5816.png"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "MONACO PORNSTAR CRUSH — Single · 12 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "MONACO PORNSTAR CRUSH",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "101364",
+      "expectedUpc": "850064265323",
+      "attributionRequired": false,
+      "sha256": "4ad3eb7984c7e8a65970983d35cef5f4343b4a192e504162e18dd19993805258",
+      "expectedLabel": "Single · 12 oz",
+      "src": "images/products/sku-101364.png"
+    },
+    {
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      },
+      "alt": "Monaco Vanilla Cream Crush — Single · 12 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedName": "Monaco Vanilla Cream Crush",
+      "usageBasis": "user_authorized_direct_reference",
+      "sku": "5828",
+      "expectedUpc": "891278003806",
+      "attributionRequired": false,
+      "sha256": "0688b8ec03591e8f3b09485dfbbcb77757f9a64e11a42365582f80699b62d384",
+      "expectedLabel": "Single · 12 oz",
+      "src": "images/products/sku-5828.png"
     }
   ]
 }

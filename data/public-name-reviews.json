@@ -7800,6 +7800,141 @@
       "evidence": {
         "privateEvidenceSha256": "ee989531e02487b157883213ef459926afc984b9915e20b948ab92e0be06cf0f"
       }
+    },
+    {
+      "sku": "101511",
+      "expectedUpc": "635985000624",
+      "expectedSourceRow": 8569,
+      "expectedRawFieldsSha256": "6b5f976f5c31abed6b5dd83ac60701d5f805fda4253822cc1db82ad087098eae",
+      "expectedPublicName": "WHITE CLAW GRAPE",
+      "expectedLabel": "Single · 19.2 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "White Claw Surge Grape Hard Seltzer",
+      "reason": "Complete only the guarded brand and exact expression using the selected own product record and actual package wording; keep original identifiers and all unit/group/category fields.",
+      "evidence": {
+        "privateEvidenceSha256": "36adf7c4c913894dc1e6b62beef0af405519f4572abe86cfe340c76f850be4b7"
+      }
+    },
+    {
+      "sku": "101526",
+      "expectedUpc": "033544002681",
+      "expectedSourceRow": 7090,
+      "expectedRawFieldsSha256": "f996af343d8af1fa3148e46283fe72cf0649d65a1d23d6c2e627c83f6093aa4f",
+      "expectedPublicName": "MODELO CHELADA MANGONA C",
+      "expectedLabel": "Single · 24 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Modelo Chelada Suprema Mangonada",
+      "reason": "Complete only the guarded brand and exact expression using the selected own product record and actual package wording; keep original identifiers and all unit/group/category fields.",
+      "evidence": {
+        "privateEvidenceSha256": "fe2ce8b346d545765e7d22ccf313c99369e6307d45d5b25ae26a91db275638f9"
+      }
+    },
+    {
+      "sku": "2478",
+      "expectedUpc": "033544002384",
+      "expectedSourceRow": 8904,
+      "expectedRawFieldsSha256": "44e4fe09f2c714faf092c84dbd5327608ae5cadf35fdbb96eed8dc301db470ae",
+      "expectedPublicName": "Corona sunbrew",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Corona Sunbrew Citrus Cerveza",
+      "reason": "Complete only the guarded brand and exact expression using the selected own product record and actual package wording; keep original identifiers and all unit/group/category fields.",
+      "evidence": {
+        "privateEvidenceSha256": "caba58f26f946b862b524b1b20c8aa1c4591a94854ff6ff2949496c2ecd9d295"
+      }
+    },
+    {
+      "sku": "101534",
+      "expectedUpc": "033544002704",
+      "expectedSourceRow": 6861,
+      "expectedRawFieldsSha256": "978812567d28eacf48dff6059da3f05e2aa2ec1f0d1a8ec94edd2b5f715ba8fd",
+      "expectedPublicName": "MODELO SUPREMA CHELADA",
+      "expectedLabel": "Single · 24 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Modelo Chelada Suprema Tropical",
+      "reason": "Complete only the guarded brand and exact expression using the selected own product record and actual package wording; keep original identifiers and all unit/group/category fields.",
+      "evidence": {
+        "privateEvidenceSha256": "60c844c77af346b2280dafe2c616b681b8dd99d7d5b5ba2d0ed0a7e39bc0ead6"
+      }
+    },
+    {
+      "sku": "7846",
+      "expectedUpc": "076183163641",
+      "expectedSourceRow": 5056,
+      "expectedRawFieldsSha256": "34f6f4d07d822435df6c9082636dbca185df224e9d3890c4d29c07af4eca12b6",
+      "expectedPublicName": "SNAPPLE MANGO",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "SNAPPLE MANGO MADNESS",
+      "reason": "CompleteMadnessexpressionfromsameownDGtypedconsumerUPC076183163641/name/imageandreadablelive16FLOZpackage; exactexisting64ozdisplayfamilynameisretainedwithoutlongclassificationtitle.",
+      "evidence": {
+        "privateEvidenceSha256": "377e7b360bd248aea224248f02003ea55620cff155ec33c898e26219528f00c7"
+      }
+    },
+    {
+      "sku": "5820",
+      "expectedUpc": "891278003882",
+      "expectedSourceRow": 3735,
+      "expectedRawFieldsSha256": "11443492b6dd5c151b5a8b2d2f735babee296bcf53a83bad086e06b34fe9a138",
+      "expectedPublicName": "MONACO LIME MARGARITA",
+      "expectedLabel": "Single · 12 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Monaco Twisted Lime Classic Margarita",
+      "reason": "Complete the printed Twisted Lime Classic Margarita expression for guarded inventory UPC891278003882 using its known Monaco Lime Margarita single12oz identity, own producer Lime Margarita main-image association and actual9%Tequila12FL.OZ.can. This does not establish a barcode-published source, formulation continuity or unreviewed generation.",
+      "evidence": {
+        "privateEvidenceSha256": "84e02e56c96fff4cca0e81d62ede2fee41ce3b42c768f6533366b36cf5d20d8b"
+      }
+    },
+    {
+      "sku": "7426",
+      "expectedUpc": "070310016411",
+      "expectedSourceRow": 7854,
+      "expectedRawFieldsSha256": "da2e8301033a82999de9840c4a73891bdb17972116b6a6b3a7cdace15e32bbab",
+      "expectedPublicName": "Seagram Spiked blue razberry",
+      "expectedLabel": "Single · 23.5 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Seagram’s Escapes Spiked Blue Razberry",
+      "reason": "Complete only this guarded inventory UPC070310016411 name to Seagram’s Escapes Spiked Blue Razberry from the own distributor item and the actual Spiked8%BlueRazberry can. Preserve Single23.5oz/raw/category/department/group; no sourceconsumerUPC,standardEscapesmultipack or generation-equivalence claim.",
+      "evidence": {
+        "privateEvidenceSha256": "d5f6239ac2e36c7bf9336e60edaecd0d8f49bf472bd49817ad6cd77ee6fcdba8"
+      }
+    },
+    {
+      "sku": "5828",
+      "expectedUpc": "891278003806",
+      "expectedSourceRow": 6487,
+      "expectedRawFieldsSha256": "602f59ca1894b7346f1d4f05a1ef847e451022319f45bd439cd1c6d52d6d5cff",
+      "expectedPublicName": "MONACO VANILLA CRUSH",
+      "expectedLabel": "Single · 12 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Ready To Drink",
+      "proposedPublicTitle": "Monaco Vanilla Cream Crush",
+      "reason": "Complete the guarded rawVanillaCrush expression with Cream using own manufacturerh1/nativeVANILLACREAMCRUSH and exact rawUPC891278003806 secondary collector corroboration. Preserve rawSKU/UPC/sourceRow/Single12oz/category/department; singleton only.",
+      "evidence": {
+        "privateEvidenceSha256": "dfcd155b7d8f607fd55af7f8e03717d9b574df5b126163d80ed02b614a404730"
+      }
+    },
+    {
+      "sku": "7346",
+      "expectedUpc": "080686833758",
+      "expectedSourceRow": 4695,
+      "expectedRawFieldsSha256": "37e053ff2e256bc6f83fb0d92591687aa3434daf364b25590f02e2786bd06556",
+      "expectedPublicName": "Sauza 100 Anos Blanco",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Sauza 100 Años Blanco Tequila",
+      "reason": "Complete only the existing explicit Sauza 100 Anos Blanco identity with the accent and Tequila wording present in its own selected retailer record and actual label. Photo and unit holds remain; no Plata synonym or size inference.",
+      "evidence": {
+        "privateEvidenceSha256": "9711d23fad6b3d06f8b4685f282f17a9ae3e8bfa95c1aac42c6da1efb2a64d61"
+      }
     }
   ]
 }
