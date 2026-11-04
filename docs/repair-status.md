@@ -591,3 +591,9 @@ Added 10 individually reviewed product photos and 4 public title corrections. Ad
 Persisted retailer name checks now allow an independently approved photo to be added to another size in the same group. The checked variant’s own image and all product, size and source identity fields remain exact.
 
 Photo candidates with unresolved source, packaging or alcohol-strength conflicts remain excluded. Detailed evidence and original inventory remain private.
+
+## R74 captured image URL profile and unchanged-name checks
+
+Verified three unchanged product names against their exact retained product records and inspected existing photographs. The image evidence validator now accepts both observed publisher image URL formats while requiring the exact captured URL, selected product identifier, original inventory and current image guards. It does not construct or substitute image URLs.
+
+All catalog bytes, 9,952 source records, 9,693 public variants, 8,006 groups and 1,812 photographs are preserved. Fully verified names total 1,373; public title corrections remain 583. This pass adds no photographs. Full photo and name coverage remains incomplete; 7,881 variants still lack verified photos. Detailed evidence and original inputs remain private.

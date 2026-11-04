@@ -2619,8 +2619,14 @@ def validate_retailer_name_evidence(entry: dict) -> None:
         require(safe_review_text(native['title']) and safe_review_text(native['subtitle']))
         require(isinstance(native['sku_id'], str) and re.fullmatch(r'[A-Za-z0-9-]+', native['sku_id']))
         require(url.path.rsplit('/', 1)[-1] == native['sku_id'])
-        require(photo['url'] == native['image_large'] == (
-            'https://cdn.saucey.com/staging/products/' + native['sku_id'] + '/image_large.jpg'))
+        require(photo['url'] == native['image_large'])
+        # Both observed publisher profiles bind the asset to the selected SKU;
+        # the UUID asset URL must still equal the full captured image_large.
+        asset_uuid = r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
+        require(native['image_large'] == (
+            'https://cdn.saucey.com/staging/products/' + native['sku_id'] + '/image_large.jpg')
+            or re.fullmatch(r'https://images\.saucey\.com/' + asset_uuid + r'\.tfss-'
+                            + asset_uuid + '-' + re.escape(native['sku_id']) + r'\.jpg', native['image_large']))
         inspection = photo['inspection']
         require(set(inspection) == {'factsSha256', 'factsBody', 'reviewSha256', 'reviewBody'})
         documents = []
