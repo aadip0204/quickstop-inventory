@@ -8823,6 +8823,51 @@
       "evidence": {
         "privateEvidenceSha256": "b5c07066411d5adcd1ad51922d6eb29dca7407c8711a0ce1822d4f1b27568ad2"
       }
+    },
+    {
+      "sku": "1022",
+      "expectedUpc": "081753821975",
+      "expectedSourceRow": 627,
+      "expectedRawFieldsSha256": "edddda96c42ba2b3032183ccf3171677a2c79d7d88539b9c629691eaa6de0a29",
+      "expectedPublicName": "Belvedere LemonTeaVodka",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Belvedere Lemon Tea Vodka",
+      "reason": "Repair joinedwords LemonTeaVodka to Lemon Tea Vodka, preserving exactprinted Belvedere Lemon Tea expression and Vodka productidentity.",
+      "evidence": {
+        "privateEvidenceSha256": "975e2a14c796cba29cd48a1badeb9ba9afe0edf63cb76f5d06f6716212a4d7da"
+      }
+    },
+    {
+      "sku": "8747",
+      "expectedUpc": "037000138754",
+      "expectedSourceRow": 5559,
+      "expectedRawFieldsSha256": "29eb5450b85afccc7e2dd7b8e6e274a019d487f96faedecb79b866caec2a8365",
+      "expectedPublicName": "Tide org",
+      "expectedLabel": "739 mL",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Tide Original",
+      "reason": "Expand org abbreviation to actualprinted Original while retaining Tide brand and allvariantmetadata; no loadcount/model/formulation enrichment.",
+      "evidence": {
+        "privateEvidenceSha256": "4de94eada24619658995ac1d92eaae52e7486151a8d43f5f9ba77e2edf2a0269"
+      }
+    },
+    {
+      "sku": "9184",
+      "expectedUpc": "021559100089",
+      "expectedSourceRow": 8964,
+      "expectedRawFieldsSha256": "4690254177fb3fb6f888cef3772d814e431db4f29eb9b8b7581523302f177d52",
+      "expectedPublicName": "Vegetable oilbutcher boy",
+      "expectedLabel": "48 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "butcher boy vegetable oil",
+      "reason": "Repair9184 joinedbrand/productwording and order to exactly the retained existingfamilytitle.1559 targetdisplay/terminalverification unchanged. Positiveonly with exactunion.",
+      "evidence": {
+        "privateEvidenceSha256": "6e18d038e5e96a009c2efa5e6eac02f959fa2cfd225e765588ca8ac63991d090"
+      }
     }
   ]
 }

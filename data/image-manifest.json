@@ -3564,10 +3564,10 @@
     {
       "sku": "1022",
       "expectedUpc": "081753821975",
-      "expectedName": "Belvedere LemonTeaVodka",
+      "expectedName": "Belvedere Lemon Tea Vodka",
       "expectedLabel": "750 mL",
       "src": "images/products/sku-1022.webp",
-      "alt": "Belvedere LemonTeaVodka — 750 mL packaging",
+      "alt": "Belvedere Lemon Tea Vodka — 750 mL packaging",
       "sha256": "4be14a3ce0bd5685aad9d629b94d451e1a0796b6a3eeb27a77357ff8410d18e9",
       "verifiedOn": "2026-10-28",
       "usageBasis": "user_authorized_direct_reference",
@@ -23256,10 +23256,10 @@
       "expectedUpc": "037000138754",
       "attributionRequired": false,
       "sha256": "a56385df29067cbe2a1ca5d47a001975c12bcebc336d2bb46eb9b8e612e309b0",
-      "expectedName": "Tide org",
+      "expectedName": "Tide Original",
       "usageBasis": "user_authorized_direct_reference",
       "src": "images/products/sku-8747.png",
-      "alt": "Tide org — 739 mL packaging"
+      "alt": "Tide Original — 739 mL packaging"
     },
     {
       "expectedLabel": "750 mL",
@@ -36344,10 +36344,10 @@
     {
       "sku": "9184",
       "src": "images/products/sku-9184.jpg",
-      "alt": "Vegetable oilbutcher boy — 48 oz packaging",
+      "alt": "butcher boy vegetable oil — 48 oz packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "021559100089",
-      "expectedName": "Vegetable oilbutcher boy",
+      "expectedName": "butcher boy vegetable oil",
       "expectedLabel": "48 oz",
       "sha256": "a1773ada06f4109e392a8652e141555c7fc2b6fbf9acdd27567b58e53a3de9f2",
       "usageBasis": "user_authorized_direct_reference",
@@ -36370,6 +36370,206 @@
       "expectedName": "Bacardi Hurricane",
       "expectedLabel": "1.75 L",
       "sha256": "9e7f4adfdd14abf3388a6edcb9d2fb475aa9389c2a0eebfc659c512fb5f0e235",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2099",
+      "src": "images/products/sku-2099.png",
+      "alt": "Christian Brothers VSOP — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "086036710946",
+      "expectedName": "Christian Brothers VSOP",
+      "expectedLabel": "750 mL",
+      "sha256": "14504c0aba4c57a23ad59beef5c354bee625cc0d75691f58bd6b66e1c2720c19",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8120",
+      "src": "images/products/sku-8120.jpg",
+      "alt": "Stock '84 VSOP Brandy — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "086024004392",
+      "expectedName": "Stock '84 VSOP Brandy",
+      "expectedLabel": "750 mL",
+      "sha256": "d1f0b63d49c64faf50deacf47e81051a5347a46d602ca0daa7b22301b4db5b40",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5495",
+      "src": "images/products/sku-5495.jpg",
+      "alt": "Metaxa 7 Star Brandy — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "087236210229",
+      "expectedName": "Metaxa 7 Star Brandy",
+      "expectedLabel": "750 mL",
+      "sha256": "af5ed40766875a01d0dd89e1e2b336426d02f20c482d464d613fe6e01ca360a9",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3965",
+      "src": "images/products/sku-3965.jpg",
+      "alt": "Hartley peach brandy — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "080660010298",
+      "expectedName": "Hartley peach brandy",
+      "expectedLabel": "750 mL",
+      "sha256": "08602eeed4f03006bc21a434b6bb0b5a4c487b917d4c0a1c2571941c0d6cecbc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1695",
+      "src": "images/products/sku-1695.png",
+      "alt": "Canadian Club — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "080686821052",
+      "expectedName": "Canadian Club",
+      "expectedLabel": "750 mL",
+      "sha256": "a06db31d778aa88641401e5d17d266ef37a1654cd121853b0144e1a65fca7c80",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8709",
+      "src": "images/products/sku-8709.jpg",
+      "alt": "The Famous Grouse — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "087236400033",
+      "expectedName": "The Famous Grouse",
+      "expectedLabel": "750 mL",
+      "sha256": "89260503ddea88c8429db7aceb7da8ecc00d49efca54ec207f97b0c3026c0693",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6403",
+      "src": "images/products/sku-6403.jpg",
+      "alt": "O'MY SNACK ORIGINALPORK RINDS — 1.75 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "860365000240",
+      "expectedName": "O'MY SNACK ORIGINALPORK RINDS",
+      "expectedLabel": "1.75 oz",
+      "sha256": "7c0e1d9875c75ecbdcad3bb657b1f99d4b229bd9e47616107a295bc50adb0500",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6420",
+      "src": "images/products/sku-6420.jpg",
+      "alt": "omy snack salt& vinegar pork rinds — 3.75 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "869505000362",
+      "expectedName": "omy snack salt& vinegar pork rinds",
+      "expectedLabel": "3.75 oz",
+      "sha256": "8f306e533659812f2ff3eef3748066a22ad9d8cec202b6c07862dee7c298ea0f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6414",
+      "src": "images/products/sku-6414.jpg",
+      "alt": "omy snack hot & spicy pork rinds — 3.75 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "869505000379",
+      "expectedName": "omy snack hot & spicy pork rinds",
+      "expectedLabel": "3.75 oz",
+      "sha256": "659a51b484f9b0b7aa201166a433eee59161b1b87b4d48b805f2d855f9b79b6f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6413",
+      "src": "images/products/sku-6413.jpg",
+      "alt": "omy snack barbeque pork rinds — 3.75 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "869505000355",
+      "expectedName": "omy snack barbeque pork rinds",
+      "expectedLabel": "3.75 oz",
+      "sha256": "dc8de92145bc14933bb056936aa4180a5d22eecee78438663f6255701b90a0f1",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {
