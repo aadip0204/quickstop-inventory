@@ -163,6 +163,20 @@ def manufacturer_correction(source, replacement, public_name, label):
                           'supports': 'Synthetic test fixture; no real product claim.'}]}
 
 
+def mondelez_name_verification(source):
+    # Synthetic delegation fixture; not an approval of any real product.
+    correction = manufacturer_correction(source, 'Example Fruits 2oz', 'Example Fruits', '2 oz')
+    entry = {key: correction[key] for key in ('sku', 'expectedUpc', 'expectedNameSha256',
+             'expectedLabel', 'verifiedOn', 'evidence', 'manufacturerRecord')}
+    entry.update(expectedPublicName='Example Fruits', verificationMethod='manufacturer_exact_upc_record',
+                 verification={'brand': True, 'expression': True, 'upc': True, 'visual': False})
+    url = 'https://smartlabel.mondelez.info/00012345678905-0001-en-US/index.html'
+    entry['manufacturerRecord'].update(publisher='Mondelez International', productUrl=url,
+        publisherEvidenceUrl='https://smartlabel.org/product-search/')
+    entry['evidence'][0]['url'] = url
+    return entry
+
+
 class ImportTests(unittest.TestCase):
     def test_guarded_public_name_correction_changes_only_the_reviewed_title(self):
         source = export(
@@ -373,6 +387,91 @@ class ImportTests(unittest.TestCase):
             mutate(wrong['nameVerifications'][0])
             with self.assertRaises(ValueError):
                 builder.build(source, name_manifest=wrong)
+
+    def test_mondelez_unchanged_name_preserves_catalog_with_equivalent_unit_gtins(self):
+        for original, observed, path_gtin, revision in [
+            ('012345678905', '00012345678905', '00012345678905', '0001'),
+            ('00012345678905', '012345678905', '012345678905', '0002'),
+            ('012345678905', '012345678905', '00012345678905', '0003'),
+        ]:
+            with self.subTest(original=original, observed=observed, revision=revision):
+                source = export({'ItemName': 'Example Fruits 2oz', 'MAINUPC': original},
+                                {'ItemName': 'Other Product 4oz', 'MAINUPC': '012345678912'})
+                entry = mondelez_name_verification(source)
+                url = f'https://smartlabel.mondelez.info/{path_gtin}-{revision}-en-US/index.html'
+                entry['manufacturerRecord'].update(observedUpc=observed, productUrl=url)
+                entry['evidence'][0]['url'] = url
+                baseline, before = builder.build(source)
+                catalog, audit = builder.build(source, name_manifest={
+                    'schemaVersion': 1, 'nameVerifications': [entry]})
+                self.assertEqual(catalog, baseline)
+                self.assertEqual([r['source'] for r in audit['records']],
+                                 [r['source'] for r in before['records']])
+                summary = builder.name_audit(catalog, audit)['summary']
+                self.assertEqual(summary['evidenceBackedCorrections'], 0)
+                self.assertEqual(summary['manufacturerRecordVerifiedNames'], 1)
+                self.assertEqual(summary['fullyVerifiedNames'], 1)
+
+    def test_mondelez_name_source_rejects_unreviewed_urls_or_publisher(self):
+        source = export({'ItemName': 'Example Fruits 2oz', 'MAINUPC': '012345678905'})
+        entry = mondelez_name_verification(source)
+        product = entry['manufacturerRecord']['productUrl']
+        directory = 'https://smartlabel.org/product-search/'
+        for field, value in [
+            ('publisher', 'PepsiCo'), ('publisher', 'mondelez International'),
+            ('productUrl', directory),
+            ('productUrl', product.replace('mondelez.info/', 'mondelez.info.evil.test/')),
+            ('productUrl', product.replace('https://', 'http://')),
+            ('productUrl', product.replace('https://', 'https://user@')),
+            ('productUrl', product.replace('mondelez.info/', 'mondelez.info:443/')),
+            ('productUrl', product + '?other=1'), ('productUrl', product + '#other'),
+            ('productUrl', product.replace('/000123', '/unrelated/000123')),
+            ('productUrl', product.replace('en-US', 'fr-CA')),
+            ('publisherEvidenceUrl', 'https://smartlabel.org/brand/mondelez-international/'),
+            ('publisherEvidenceUrl', directory + '?product=Sour+Patch+Fruits'),
+            ('publisherEvidenceUrl', directory + '#other'),
+            ('publisherEvidenceUrl', directory.replace('smartlabel.org', 'smartlabel.org.evil.test')),
+            ('publisherEvidenceUrl', directory.replace('https://', 'http://')),
+            ('publisherEvidenceUrl', product),
+        ]:
+            bad = copy.deepcopy(entry)
+            bad['manufacturerRecord'][field] = value
+            bad['evidence'][0]['url'] = bad['manufacturerRecord']['productUrl']
+            with self.subTest(field=field, value=value), self.assertRaises(ValueError):
+                builder.build(source, name_manifest={'schemaVersion': 1, 'nameVerifications': [bad]})
+
+    def test_mondelez_name_source_rejects_different_or_invalid_unit_gtins(self):
+        source = export({'ItemName': 'Example Fruits 2oz', 'MAINUPC': '012345678905'})
+        entry = mondelez_name_verification(source)
+        for observed, path_gtin in [('012345678912', '00012345678912'),
+                                    ('00012345678912', '012345678912'),
+                                    ('012345678905', '00012345678912'),
+                                    ('012345678906', '00012345678906')]:
+            bad = copy.deepcopy(entry)
+            url = f'https://smartlabel.mondelez.info/{path_gtin}-0001-en-US/index.html'
+            bad['manufacturerRecord'].update(observedUpc=observed, productUrl=url)
+            bad['evidence'][0]['url'] = url
+            with self.subTest(observed=observed, path_gtin=path_gtin), self.assertRaises(ValueError):
+                builder.build(source, name_manifest={'schemaVersion': 1, 'nameVerifications': [bad]})
+
+    def test_program_directory_does_not_authorize_other_manufacturers(self):
+        source = export({'ItemName': 'Example Lem 16oz', 'MAINUPC': '012345678905'})
+        entry = manufacturer_correction(source, 'Example Lemon 16oz', 'Example Lemon', '16 oz')
+        entry['manufacturerRecord']['publisherEvidenceUrl'] = 'https://smartlabel.org/product-search/'
+        with self.assertRaisesRegex(ValueError, 'ownership is not established'):
+            builder.build(source, name_manifest={'schemaVersion': 1, 'corrections': [entry]})
+
+    def test_mondelez_unchanged_name_keeps_original_guards_and_nonvisual_scope(self):
+        source = export({'ItemName': 'Example Fruits 2oz', 'MAINUPC': '012345678905'})
+        entry = mondelez_name_verification(source)
+        for mutate in [lambda x: x.update(expectedNameSha256='0' * 64),
+                       lambda x: x.update(expectedPublicName='Other Fruits'),
+                       lambda x: x.update(expectedLabel='4 oz'),
+                       lambda x: x['verification'].update(visual=True)]:
+            bad = copy.deepcopy(entry)
+            mutate(bad)
+            with self.subTest(entry=bad), self.assertRaises(ValueError):
+                builder.build(source, name_manifest={'schemaVersion': 1, 'nameVerifications': [bad]})
 
     def test_manufacturer_name_review_rejects_extra_private_or_visual_fields(self):
         source = export({'ItemName': 'Example Lem 16oz', 'MAINUPC': '012345678905'})

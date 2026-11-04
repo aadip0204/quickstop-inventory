@@ -557,3 +557,12 @@ All 9,952 raw source records, 9,693 variants, 8,006 ordered product groups and 1
 ## Wave 68 exact product photo and names — 2026-11-03
 
 This batch adds 1 independently reviewed native professional photographs and 12 guarded public-title corrections. All 9,952 source records, 9,693 variants, 8,006 ordered groups, literal identifiers, units, categories and prior photo bytes remain preserved. There are now 1,757 approved photographs, 7,936 variants awaiting exact photographs and 579 guarded public-title reviews. Full photo coverage and external verification of every name remain unfinished.
+
+
+## Exact Tampax photos, retail counts and unchanged names — November 3, 2026 (Wave 69)
+
+Two independently reviewed professional photos show the exact Tampax Regular and Super retail boxes. Each label now states 10 count, supported by its rendered manufacturer record and inspected package. The guarded count method requires matching original and current product expressions, source codes, retained page evidence and the approved native photo; it cannot treat a wholesale case quantity as retail contents.
+
+Three existing names are verified without renaming them: both Tampax listings and Sour Patch Fruits. The manufacturer-name check now accepts narrowly validated Mondelez SmartLabel records. It does not approve photos or alter package sizes; the Sour Patch photo remains unresolved.
+
+All 9,952 source records, 9,693 variants, 8,006 ordered groups, original identifiers and all 1,757 prior photo records and files are preserved. The catalog has 1,759 approved photographs, 7,934 variants awaiting exact photographs, 579 public-title corrections and 1,340 fully verified names. Complete photo coverage and external verification of every name remain unfinished.

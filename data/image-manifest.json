@@ -35140,6 +35140,46 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8525",
+      "src": "images/products/sku-8525.jpg",
+      "alt": "TAMPAX regular — 10 count packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "073010214095",
+      "expectedName": "TAMPAX regular",
+      "expectedLabel": "10 count",
+      "sha256": "22bbfd3b8319d29013383b4596c7473215aa839b6f9f9a850ad99f064c1da37d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8526",
+      "src": "images/products/sku-8526.jpg",
+      "alt": "TAMPAX SUPER — 10 count packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "073010314092",
+      "expectedName": "TAMPAX SUPER",
+      "expectedLabel": "10 count",
+      "sha256": "ee4470a0002c3f3cd82e1c929f449c4e65124197c1c614340d39e37201b32aeb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [
