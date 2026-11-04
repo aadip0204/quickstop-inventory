@@ -8973,6 +8973,36 @@
       "evidence": {
         "privateEvidenceSha256": "7599d5502d4a3840afba2ab0973647bab49145b635d576bb488c67b01db787b1"
       }
+    },
+    {
+      "sku": "1816",
+      "expectedUpc": "721059517508",
+      "expectedSourceRow": 1109,
+      "expectedRawFieldsSha256": "de3f059d0583c739faf71c44a24867ecbedc3ffce97a9531651a6d0cc6e96caa",
+      "expectedPublicName": "Carolans",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Carolans Irish Cream",
+      "reason": "Own selected product and native label agree on exact brand/expression. Add Irish Cream to existing Carolans title only.",
+      "evidence": {
+        "privateEvidenceSha256": "0227f5c12aa0bd06e8d520230b9e0cf96887e18adf9dff7767b8bc83c89c89c5"
+      }
+    },
+    {
+      "sku": "1158",
+      "expectedUpc": "089708619509",
+      "expectedSourceRow": 726,
+      "expectedRawFieldsSha256": "b7b723d04db51bb3ed3764e3fea7d405b0c9b77e54f1ef71c7be96eb8759c520",
+      "expectedPublicName": "Blackmaker Root Beer",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Blackmaker Root Beer Liqueur",
+      "reason": "Own selected product and native label explicitly identify Blackmaker Root Beer Liqueur. Add Liqueur only.",
+      "evidence": {
+        "privateEvidenceSha256": "fd4d070f54a6c606af0ce2738da708446843dc31ac418d2e123f2e1f40a8e0bb"
+      }
     }
   ]
 }

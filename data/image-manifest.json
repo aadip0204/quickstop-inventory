@@ -36724,10 +36724,10 @@
     {
       "sku": "1816",
       "src": "images/products/sku-1816.png",
-      "alt": "Carolans — 750 mL packaging",
+      "alt": "Carolans Irish Cream — 750 mL packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "721059517508",
-      "expectedName": "Carolans",
+      "expectedName": "Carolans Irish Cream",
       "expectedLabel": "750 mL",
       "sha256": "5e1fcb694c7ec8cbc2c3fd229c04ad226f5e9bd9d42ff03dea7205db08c3a68b",
       "usageBasis": "user_authorized_direct_reference",
@@ -36764,10 +36764,10 @@
     {
       "sku": "1158",
       "src": "images/products/sku-1158.jpg",
-      "alt": "Blackmaker Root Beer — 750 mL packaging",
+      "alt": "Blackmaker Root Beer Liqueur — 750 mL packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "089708619509",
-      "expectedName": "Blackmaker Root Beer",
+      "expectedName": "Blackmaker Root Beer Liqueur",
       "expectedLabel": "750 mL",
       "sha256": "25c2e549d789bd4b2f794438c3fb30d5d0cf9e5f590e6931b2386191383c6cde",
       "usageBasis": "user_authorized_direct_reference",
@@ -37130,6 +37130,186 @@
       "expectedName": "Heineken silver",
       "expectedLabel": "6-pack · 12 oz · bottles",
       "sha256": "08fbecc4c45794e8a62972a8bcca7fcc64571ec1c80389f6f0c25d4907447c52",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6733",
+      "src": "images/products/sku-6733.jpg",
+      "alt": "Polar Raspberry Lime Seltzer — 20 oz packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "071537060300",
+      "expectedName": "Polar Raspberry Lime Seltzer",
+      "expectedLabel": "20 oz",
+      "sha256": "4500a265a216ce70ef8f50c35c1aa88ae3778e0406b9af508efb465c4067e5cb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6734",
+      "src": "images/products/sku-6734.jpg",
+      "alt": "Polar Cranberry Lime Seltzer — 20 oz packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "071537060324",
+      "expectedName": "Polar Cranberry Lime Seltzer",
+      "expectedLabel": "20 oz",
+      "sha256": "fa4e72387f085112eac8b733d720a23d6bf04f95c0cb2bb19f534fc52f6ea3ef",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3433",
+      "src": "images/products/sku-3433.jpg",
+      "alt": "Frangelico — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "083664371341",
+      "expectedName": "Frangelico",
+      "expectedLabel": "750 mL",
+      "sha256": "b07d3f11ce9cb58a815c0cae703bf7070ff1e61d05b9047a667d0beb9b67f16f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3855",
+      "src": "images/products/sku-3855.jpg",
+      "alt": "Grand Marnier — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "088110931032",
+      "expectedName": "Grand Marnier",
+      "expectedLabel": "750 mL",
+      "sha256": "1fc917dc36f6c1cc8d4ecc406649d92daf812f12d4ab236136bf00c94724d760",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6473",
+      "src": "images/products/sku-6473.jpg",
+      "alt": "Ouzo 12 — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "721059087506",
+      "expectedName": "Ouzo 12",
+      "expectedLabel": "750 mL",
+      "sha256": "1bfaf3be07438004db8e5b4ec541cdb61d0a4993c4bf7d8d5e5a6c0e15e48096",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6508",
+      "src": "images/products/sku-6508.jpg",
+      "alt": "Pama — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "096749940332",
+      "expectedName": "Pama",
+      "expectedLabel": "750 mL",
+      "sha256": "0628294d313bd6ec627689810806aa318d8c96fc5aed0b746b3d7edcab08675c",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7185",
+      "src": "images/products/sku-7185.jpg",
+      "alt": "Romana Sambuca — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "086767220066",
+      "expectedName": "Romana Sambuca",
+      "expectedLabel": "750 mL",
+      "sha256": "6abb35ea4cd6d0041e5c20473edc92b0d6c62d009a3b88bb468122009815684e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8023",
+      "src": "images/products/sku-8023.jpg",
+      "alt": "St. Germain — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "898804001008",
+      "expectedName": "St. Germain",
+      "expectedLabel": "750 mL",
+      "sha256": "24baf28962ab8c844ba82b9d6e6d159d1346692f1cac2f660c14c89644e60443",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8667",
+      "src": "images/products/sku-8667.jpg",
+      "alt": "TEREMANA REPO — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "850015640209",
+      "expectedName": "TEREMANA REPO",
+      "expectedLabel": "750 mL",
+      "sha256": "c9764f89f0de7183aa2fc2cb854c841399e5d3ae3e177aaa83166eacdffe2957",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {
