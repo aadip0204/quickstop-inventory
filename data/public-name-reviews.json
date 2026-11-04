@@ -9048,6 +9048,306 @@
       "evidence": {
         "privateEvidenceSha256": "014cafc3875b4546257040ae47a99bad5613f99fa7559c6e75face32b12cc638"
       }
+    },
+    {
+      "sku": "636",
+      "expectedUpc": "857853002565",
+      "expectedSourceRow": 405,
+      "expectedRawFieldsSha256": "fd4ed39c53fd81d2b5d72591a5c86aa5413410cd5a903d6db258f2246a69f2e0",
+      "expectedPublicName": "Atto primo lychee",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Atto Primo Lychee",
+      "reason": "Exactprintedbrand/expression/flavor and actualretainedownselectedsource support proposedtitle.",
+      "evidence": {
+        "privateEvidenceSha256": "0b25b7100ff2412e9fed510ef49be1acbd3a709298ea4b123e401d94d734ec9d"
+      }
+    },
+    {
+      "sku": "638",
+      "expectedUpc": "857853002558",
+      "expectedSourceRow": 6727,
+      "expectedRawFieldsSha256": "3f2fd3dfc00850d03964d7c9981388b3a65354bac7da915b37919b743d1f137f",
+      "expectedPublicName": "Atto primo peach",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Atto Primo Peach",
+      "reason": "Exactprintedbrand/expression/flavor and actualretainedownselectedsource support proposedtitle.",
+      "evidence": {
+        "privateEvidenceSha256": "2b9ee4418004f4dc9f55f1a4eeeb5c2ab2eb52fc869317c1def36decdfe4d677"
+      }
+    },
+    {
+      "sku": "8879",
+      "expectedUpc": "089087157494",
+      "expectedSourceRow": 9231,
+      "expectedRawFieldsSha256": "5128a7a823c0b4d1298b1e86db999b94ff8bf2edec0ea7af71584db7e09de3b1",
+      "expectedPublicName": "TROPICAL FANTASY STRAWBERRY LEMONADE",
+      "expectedLabel": "22.5 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Tropical Fantasy Strawberry Lemonade",
+      "reason": "Exactprintedbrand/expression/flavor and actualretainedownselectedsource support proposedtitle.",
+      "evidence": {
+        "privateEvidenceSha256": "1774ebdedceefb340fca6683fa2ace8806912df3b859b4b2b433ea21f32675a7"
+      }
+    },
+    {
+      "sku": "101527",
+      "expectedUpc": "089826231232",
+      "expectedSourceRow": 6844,
+      "expectedRawFieldsSha256": "2e3677db34c5572718e88ef65827b3eadd69672a9bc97c91467394493bf2a575",
+      "expectedPublicName": "DOS EQUIS LAGER",
+      "expectedLabel": "Single · 32 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Dos Equis Lager",
+      "reason": "Exactprintedbrand/expression/flavor and actualretainedownselectedsource support proposedtitle.",
+      "evidence": {
+        "privateEvidenceSha256": "a9691634007855ef0ed2265be43a719959db2665f7601bae40e052583fe7bfe0"
+      }
+    },
+    {
+      "sku": "4000",
+      "expectedUpc": "072890006660",
+      "expectedSourceRow": 2582,
+      "expectedRawFieldsSha256": "a0f6e3f15858dd80c4e48b9b8410d938b7357130335b21a609aaf14bb7af3ab1",
+      "expectedPublicName": "Heineken silver",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Heineken Silver",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "9ead89817c288f149a6608a2d5ac1d53a70dbe130312d15a94750eac10386731"
+      }
+    },
+    {
+      "sku": "3999",
+      "expectedUpc": "072890006684",
+      "expectedSourceRow": 8616,
+      "expectedRawFieldsSha256": "be8d73ca94c531bea9a4a9ca38632aa0c35a442e4d7e8a768c78f7218a04b7c6",
+      "expectedPublicName": "Heineken silver",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Heineken Silver",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "207991a395dcc3a798626f27c84dbdcfd0df5af5f151f587f274621a2277ca0d"
+      }
+    },
+    {
+      "sku": "4001",
+      "expectedUpc": "072890006769",
+      "expectedSourceRow": 8617,
+      "expectedRawFieldsSha256": "a9b0ccf648cb824ad7cb48bf39927fed5eaa32022574119a61f3e155744d7e7f",
+      "expectedPublicName": "Heineken silver",
+      "expectedLabel": "6-pack · 12 oz",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Heineken Silver",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "9f4fcc45adf34954516f90547ff5031fbb569fd52b73406c26eaf504fb1066c3"
+      }
+    },
+    {
+      "sku": "3998",
+      "expectedUpc": "072890006691",
+      "expectedSourceRow": 9607,
+      "expectedRawFieldsSha256": "18b0e5150755cebd0b4e6d80b5b0ab12b23b435a77d25cef963bdc3cad3dd56b",
+      "expectedPublicName": "Heineken silver",
+      "expectedLabel": "Single · 24 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Imports",
+      "proposedPublicTitle": "Heineken Silver",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "5b72bc558861131941288626c25910c3a1e3ac76e1bf96c16db68ef41f9313bb"
+      }
+    },
+    {
+      "sku": "7175",
+      "expectedUpc": "071439006017",
+      "expectedSourceRow": 4561,
+      "expectedRawFieldsSha256": "6860792b105538305669457dab294c65327c20976b2f0159758bede70b4ed7d1",
+      "expectedPublicName": "rolling rock",
+      "expectedLabel": "Single · 25 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Rolling Rock",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "1e60b636d88de1891c9f9f41ee21c9d8b650d6897245220a3b33b5455d93d599"
+      }
+    },
+    {
+      "sku": "7176",
+      "expectedUpc": "071439340302",
+      "expectedSourceRow": 4562,
+      "expectedRawFieldsSha256": "33521765e9720481e879b9d540d999fde4ba0a74da1de6b84dda1d4c1f887bdc",
+      "expectedPublicName": "ROLLING ROCK",
+      "expectedLabel": "30-pack",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Rolling Rock",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "8abd5d50ba626383b48555951c7afccb21f573069f134b36237e3df8edd385f7"
+      }
+    },
+    {
+      "sku": "7178",
+      "expectedUpc": "071439400167",
+      "expectedSourceRow": 4563,
+      "expectedRawFieldsSha256": "1b670dc099fa711a7f73b9932872f4093968dab1b6d08963a8d306bb83d7a0e5",
+      "expectedPublicName": "ROLLING ROCK",
+      "expectedLabel": "6-pack · 16 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Rolling Rock",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "cf6935336439307a9f21992d25b969372c911aeaf7255bf5f8e9c7eb8c667f6e"
+      }
+    },
+    {
+      "sku": "7179",
+      "expectedUpc": "071439348063",
+      "expectedSourceRow": 4564,
+      "expectedRawFieldsSha256": "14320f75e00b8c4413430545c2ac4070c04b59bae747b514a91ec60392bbb0cd",
+      "expectedPublicName": "Rolling Rock",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Rolling Rock",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "2960b82439261b3cd5d7d441dc4f63a70fd83ac2b635314ce2e0ce0c3350ee68"
+      }
+    },
+    {
+      "sku": "7177",
+      "expectedUpc": "071439000060",
+      "expectedSourceRow": 7773,
+      "expectedRawFieldsSha256": "b93f9432b37322aeba723b0ccc8c263e0b671c8403c911d59331d75086700fa0",
+      "expectedPublicName": "ROLLING ROCK",
+      "expectedLabel": "6-pack · 12 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Rolling Rock",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "d03b1674f4e93973feefb882018ca5e4c844312e493d379bb1ed0c324ca79c1c"
+      }
+    },
+    {
+      "sku": "7174",
+      "expectedUpc": "071439457123",
+      "expectedSourceRow": 9135,
+      "expectedRawFieldsSha256": "e95daa780eed1b1bc383e2b787a964f4caf2e257575908ae954feb5cb6f7c63d",
+      "expectedPublicName": "ROLLING ROCK",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Rolling Rock",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "a4eefe8bba4e23452939a26829a42ed1af1d4ee4dfdd9c1f2e9e498cfc56001e"
+      }
+    },
+    {
+      "sku": "6129",
+      "expectedUpc": "085000034170",
+      "expectedSourceRow": 3919,
+      "expectedRawFieldsSha256": "73a48e81214c253fa476eac7cb91bf1e1db4347c2c178d373dbdb83dba60003e",
+      "expectedPublicName": "New Amsterdam passionfruit",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "New Amsterdam Passionfruit",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "e316e5203376f86cb82390ca506d5078b64c51de21e8f60d8e11fcee12349914"
+      }
+    },
+    {
+      "sku": "6144",
+      "expectedUpc": "085000034194",
+      "expectedSourceRow": 3931,
+      "expectedRawFieldsSha256": "09b66992f31bbfeb37afb204743cea33416e6e3e8d66422d332f0cfe7df6f942",
+      "expectedPublicName": "New Amsterdam passionfruit",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "New Amsterdam Passionfruit",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "43254be1bc699df2e166c87429916832bff888cbe522f58c049ef585963c2981"
+      }
+    },
+    {
+      "sku": "6174",
+      "expectedUpc": "085000034187",
+      "expectedSourceRow": 7611,
+      "expectedRawFieldsSha256": "5c76701472039d5036fda9d3b68019f71a7d08e43eb1e20c7548110afb2cb710",
+      "expectedPublicName": "New Amsterdam passionfruit",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "New Amsterdam Passionfruit",
+      "reason": "Completeexistingfamily current/rawnames allsamebrand/expression; proposedchange capitalizes existingexpression only,not flavor/unit/container/strength or membership.",
+      "evidence": {
+        "privateEvidenceSha256": "ffdc0595fb3a5b8c06c0f7e6584d82d86e6c830decc3ee63247b5cde348e8579"
+      }
+    },
+    {
+      "sku": "4577",
+      "expectedUpc": "080686010425",
+      "expectedSourceRow": 6854,
+      "expectedRawFieldsSha256": "2680160a56b2289838107720bcaaa670e47f69c9d786be0a90ff085c45578d64",
+      "expectedPublicName": "JIM BEAM BOURBON",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Jim Beam Bourbon",
+      "reason": "Exactprintedbrand/expression/flavor and actualretainedownselectedsource support proposedtitle.",
+      "evidence": {
+        "privateEvidenceSha256": "246e567fe881a6922f1601623c6e9b48e209fc764396a343c2f0a65219f28ed3"
+      }
+    },
+    {
+      "sku": "8929",
+      "expectedUpc": "083664872466",
+      "expectedSourceRow": 5660,
+      "expectedRawFieldsSha256": "0cb051600f0a48ca812a77414f93e25fb8a0e770ff5bae6149d604712ac08a60",
+      "expectedPublicName": "Tullamore Dew",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Tullamore D.E.W. Irish Whiskey",
+      "reason": "Exactprintedbrand/expression/flavor and actualretainedownselectedsource support proposedtitle.",
+      "evidence": {
+        "privateEvidenceSha256": "a745bc1aa789b5efa7101d4c0ba465c66ae915d9914d69b861a41c8ff9535b70"
+      }
+    },
+    {
+      "sku": "6978",
+      "expectedUpc": "080686001713",
+      "expectedSourceRow": 4431,
+      "expectedRawFieldsSha256": "f6880409df2325dc4b58594dd761546fe906526b3484f6b31c79297e77c9fce9",
+      "expectedPublicName": "RED STAG WHISKEY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Jim Beam Red Stag Black Cherry",
+      "reason": "Exactprintedbrand/expression/flavor and actualretainedownselectedsource support proposedtitle.",
+      "evidence": {
+        "privateEvidenceSha256": "91d3e74bf8fe6e1e6510cd2eb799938a487eb12102645e9e8d57d48802e72cae"
+      }
     }
   ]
 }
