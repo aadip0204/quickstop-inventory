@@ -19,7 +19,7 @@ def digest(text):
     return hashlib.sha256(text.encode()).hexdigest()
 
 
-def fixture(grouped=False):
+def fixture(grouped=False, image_url=None):
     # All names, codes, source documents and URLs are synthetic. A checked
     # local asset supplies integrity-test bytes, not real product approval.
     rows = [{'ItemName': 'Example Vodka 750ml', 'DEPNAME': 'Vodka', 'MAINUPC': '012345678905'},
@@ -29,7 +29,7 @@ def fixture(grouped=False):
     image = direct_reference_image_fixture(source)
     private = direct_reference_evidence_fixture(image)
     url = 'https://saucey.com/spirits/vodka/example/VO-EXAMPLE-750ML'
-    image_url = 'https://cdn.saucey.com/staging/products/VO-EXAMPLE-750ML/image_large.jpg'
+    image_url = image_url or 'https://cdn.saucey.com/staging/products/VO-EXAMPLE-750ML/image_large.jpg'
     private['entries'][0].update(sourcePage=url, sourceImageUrl=image_url)
     kwargs = {'image_manifest': {'schemaVersion': 1, 'images': [image]},
               'private_direct_image_evidence_manifest': private}
@@ -238,6 +238,43 @@ class RetailerNameVerificationTests(unittest.TestCase):
             facts, _ = documents(e); selected = facts['candidates'][0]['actualSource']['selectedFields']
             selected[field] = value; seal(e, selected=selected)
             with self.subTest(field=field), self.assertRaises(ValueError): builder.build(source, **kwargs)
+
+    def test_captured_uuid_asset_profile_preserves_name_and_exact_evidence(self):
+        # The observed images.saucey.com profile is UUID.tfss-UUID-selectedSKU.jpg.
+        image_url = ('https://images.saucey.com/11111111-2222-4333-8444-555555555555.tfss-'
+                     '66666666-7777-4888-8999-aaaaaaaaaaaa-VO-EXAMPLE-750ML.jpg')
+        source, baseline, kwargs = fixture(image_url=image_url)
+        before = copy.deepcopy(kwargs)
+        catalog, audit = builder.build(source, **kwargs)
+        self.assertEqual(catalog, baseline)
+        self.assertEqual(audit['records'][0]['nameVerification'], before['name_manifest']['nameVerifications'][0])
+        self.assertEqual(builder.name_audit(catalog, audit)['summary']['fullyVerifiedNames'], 1)
+        self.assertEqual(kwargs, before)
+        # A different, well-formed publisher asset cannot replace the captured one.
+        kwargs['name_manifest']['nameVerifications'][0]['evidence'][1]['url'] = image_url.replace(
+            '66666666', 'bbbbbbbb')
+        with self.assertRaises(ValueError): builder.build(source, **kwargs)
+
+    def test_even_consistently_captured_assets_require_exact_publisher_sku_profile(self):
+        image_url = ('https://images.saucey.com/11111111-2222-4333-8444-555555555555.tfss-'
+                     '66666666-7777-4888-8999-aaaaaaaaaaaa-VO-EXAMPLE-750ML.jpg')
+        invalid = [image_url.replace('https:', 'http:'),
+                   image_url.replace('images.saucey.com', 'images.saucey.com.evil.test'),
+                   image_url.replace('images.saucey.com', 'unknown.saucey.com'),
+                   image_url.replace('images.saucey.com', 'user@images.saucey.com'),
+                   image_url.replace('images.saucey.com', 'images.saucey.com:443'),
+                   image_url.replace('VO-EXAMPLE-750ML', 'VO-OTHER-750ML'),
+                   image_url.replace('/11111111', '/other/11111111'),
+                   image_url.replace('.tfss-', '.other-'),
+                   image_url.replace('11111111-2222', '11111111-222'),
+                   image_url.replace('-VO-EXAMPLE', '-%56O-EXAMPLE'),
+                   image_url + '?product=VO-OTHER-750ML', image_url + '#other', image_url + ';other',
+                   'https://cdn.saucey.com/staging/products/VO-EXAMPLE-750ML/image_large.jpg?other']
+        for candidate in invalid:
+            # Keep capture, photo, source proof and current image consistent, so
+            # rejection exercises the profile guard rather than an earlier mismatch.
+            source, _, kwargs = fixture(image_url=candidate)
+            with self.subTest(url=candidate), self.assertRaises(ValueError): builder.build(source, **kwargs)
 
     def test_inspection_review_and_facts_body_hashes_are_required(self):
         for field in ('factsBody', 'factsSha256', 'reviewBody', 'reviewSha256'):

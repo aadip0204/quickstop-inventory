@@ -17317,6 +17317,60 @@
       "evidence": {
         "privateEvidenceSha256": "6b147af813ae3ac6179ab7b2d2ffe67f361b53a06a0e7ee2d46206e9b7ac42ee"
       }
+    },
+    {
+      "sku": "8737",
+      "expectedUpc": "089708776424",
+      "expectedNameSha256": "54f8bdce8f9723b8786e1117a57e81bb7f55c410d9a3720e0c6da6677b1e32ad",
+      "expectedPublicName": "Three Olives Vodka",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "b3321884119f6fdfe896d2578f68c99011750e521692e15c54e3d674d6e7381b"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "8728",
+      "expectedUpc": "811538015400",
+      "expectedNameSha256": "478dbbeeac154e37863700067bdf655346258113537e320a0b6fe22d9e8adbcf",
+      "expectedPublicName": "Three Olives Bubble",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "75efca2368433638a2cf633edea3aec286a2313cab545c7ea55143bb8ca22dbd"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "6679",
+      "expectedUpc": "089708450706",
+      "expectedNameSha256": "9c748073d694e1ee65a01738ef0f7997d4fe531f8ef074477c14b7ad3f843101",
+      "expectedPublicName": "Pinnacle Cotton Candy",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "4ed751486a40d0b0896d38b9f80ef5dd4bfddc62c2f4ed9ded0d50317efe609e"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
     }
   ]
 }
