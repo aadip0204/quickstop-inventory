@@ -37080,6 +37080,66 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "101527",
+      "src": "images/products/sku-101527.jpg",
+      "alt": "DOS EQUIS LAGER — Single · 32 oz · bottles packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "089826231232",
+      "expectedName": "DOS EQUIS LAGER",
+      "expectedLabel": "Single · 32 oz · bottles",
+      "sha256": "7987cf8959445f19896070a9424528f5ef9c72ef80bff6931091d3312a6a79dc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2410",
+      "src": "images/products/sku-2410.jpg",
+      "alt": "Coors Light — 12-pack · 12 oz · cans packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "071990000486",
+      "expectedName": "Coors Light",
+      "expectedLabel": "12-pack · 12 oz · cans",
+      "sha256": "496e83ad285a4f91eebd50ae813388b4473bbbfea35a0d9497e4e0392dc9e886",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3999",
+      "src": "images/products/sku-3999.jpg",
+      "alt": "Heineken silver — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "072890006684",
+      "expectedName": "Heineken silver",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "08fbecc4c45794e8a62972a8bcca7fcc64571ec1c80389f6f0c25d4907447c52",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [
