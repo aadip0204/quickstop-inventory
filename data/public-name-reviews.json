@@ -9003,6 +9003,51 @@
       "evidence": {
         "privateEvidenceSha256": "fd4d070f54a6c606af0ce2738da708446843dc31ac418d2e123f2e1f40a8e0bb"
       }
+    },
+    {
+      "sku": "1872",
+      "expectedUpc": "721059247511",
+      "expectedSourceRow": 1142,
+      "expectedRawFieldsSha256": "3626ae2da2f03ad31708441ca9dea3d79e6cb0cc699c45e6cbf84d820bc8943e",
+      "expectedPublicName": "Centenario Reposado",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "GRAN CENTENARIO REPOSADO",
+      "reason": "Actual own selected750mL source+native supportfullGranCentenarioReposado brand/expression; uppercase matchesunchanged375mLtarget underexacttitlecontract.",
+      "evidence": {
+        "privateEvidenceSha256": "fdb90b3038ce98d2d22a642cf9a5ffb8084faab0964e574289b7003f3e90de33"
+      }
+    },
+    {
+      "sku": "1873",
+      "expectedUpc": "811538014236",
+      "expectedSourceRow": 8167,
+      "expectedRawFieldsSha256": "4689ae074cd51a1c26459b3d3cfd63eab34aac8279503fc8c83c394a61a23064",
+      "expectedPublicName": "Centenario Reposado",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "GRAN CENTENARIO REPOSADO",
+      "reason": "Actual own selected750mL source+native supportfullGranCentenarioReposado brand/expression; uppercase matchesunchanged375mLtarget underexacttitlecontract.",
+      "evidence": {
+        "privateEvidenceSha256": "c725e40846af89fb9bd5e414120cccecd5c18c40bcc34e1998a90708fba26424"
+      }
+    },
+    {
+      "sku": "8667",
+      "expectedUpc": "850015640209",
+      "expectedSourceRow": 9139,
+      "expectedRawFieldsSha256": "dda434d3582821bc967f5d0fac62e744d80661f8b09b3029c4a1b16b5433ebec",
+      "expectedPublicName": "TEREMANA REPO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "TEREMANA REPOSADO",
+      "reason": "Actual own750mLselected source+native resolveREPO toREPOSADO; exactuppercase matchesunchanged375mLtarget.",
+      "evidence": {
+        "privateEvidenceSha256": "014cafc3875b4546257040ae47a99bad5613f99fa7559c6e75face32b12cc638"
+      }
     }
   ]
 }

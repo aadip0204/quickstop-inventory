@@ -29932,8 +29932,8 @@
         "visual": true,
         "professional": true
       },
-      "alt": "Centenario Reposado — 750 mL bottle",
-      "expectedName": "Centenario Reposado",
+      "alt": "GRAN CENTENARIO REPOSADO — 750 mL bottle",
+      "expectedName": "GRAN CENTENARIO REPOSADO",
       "expectedUpc": "811538014236",
       "expectedLabel": "750 mL",
       "usageBasis": "user_authorized_direct_reference",
@@ -36744,10 +36744,10 @@
     {
       "sku": "1872",
       "src": "images/products/sku-1872.jpg",
-      "alt": "Centenario Reposado — 750 mL packaging",
+      "alt": "GRAN CENTENARIO REPOSADO — 750 mL packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "721059247511",
-      "expectedName": "Centenario Reposado",
+      "expectedName": "GRAN CENTENARIO REPOSADO",
       "expectedLabel": "750 mL",
       "sha256": "496ccd8daf4c2a3f58e79ecf2ec99f7ce3951b421d3fef9d1285e2aad92e5bd4",
       "usageBasis": "user_authorized_direct_reference",
@@ -37202,26 +37202,6 @@
       }
     },
     {
-      "sku": "3855",
-      "src": "images/products/sku-3855.jpg",
-      "alt": "Grand Marnier — 750 mL packaging",
-      "verifiedOn": "2026-11-04",
-      "expectedUpc": "088110931032",
-      "expectedName": "Grand Marnier",
-      "expectedLabel": "750 mL",
-      "sha256": "1fc917dc36f6c1cc8d4ecc406649d92daf812f12d4ab236136bf00c94724d760",
-      "usageBasis": "user_authorized_direct_reference",
-      "attributionRequired": false,
-      "verification": {
-        "brand": true,
-        "expression": true,
-        "size": true,
-        "packaging": true,
-        "visual": true,
-        "professional": true
-      }
-    },
-    {
       "sku": "6473",
       "src": "images/products/sku-6473.jpg",
       "alt": "Ouzo 12 — 750 mL packaging",
@@ -37304,12 +37284,492 @@
     {
       "sku": "8667",
       "src": "images/products/sku-8667.jpg",
-      "alt": "TEREMANA REPO — 750 mL packaging",
+      "alt": "TEREMANA REPOSADO — 750 mL packaging",
       "verifiedOn": "2026-11-04",
       "expectedUpc": "850015640209",
-      "expectedName": "TEREMANA REPO",
+      "expectedName": "TEREMANA REPOSADO",
       "expectedLabel": "750 mL",
       "sha256": "c9764f89f0de7183aa2fc2cb854c841399e5d3ae3e177aaa83166eacdffe2957",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2419",
+      "src": "images/products/sku-2419.jpg",
+      "alt": "Coors Light — 6-pack · 12 oz · cans packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "719984",
+      "expectedName": "Coors Light",
+      "expectedLabel": "6-pack · 12 oz · cans",
+      "sha256": "cfb84d0d04e4b07a83e2729fcdbe3661f9e6ccf3ca344a1bddea515324e4c54b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7890",
+      "src": "images/products/sku-7890.jpg",
+      "alt": "Sobieski Vodka — 1.75 L packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "089016008491",
+      "expectedName": "Sobieski Vodka",
+      "expectedLabel": "1.75 L",
+      "sha256": "a31dbef2d354aaf4224c287391dc1d22e2c7dd83d701492a3597cc7c3fa0bde4",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4577",
+      "src": "images/products/sku-4577.jpg",
+      "alt": "JIM BEAM BOURBON — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080686010425",
+      "expectedName": "JIM BEAM BOURBON",
+      "expectedLabel": "750 mL",
+      "sha256": "2d2961eb407e60a09abacf4bfdcf6cd4beb32e4f27bc9a5d69e14b0fc4852461",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4668",
+      "src": "images/products/sku-4668.jpg",
+      "alt": "Jose Cuervo Silver — 1.75 L packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "082000743750",
+      "expectedName": "Jose Cuervo Silver",
+      "expectedLabel": "1.75 L",
+      "sha256": "ada5aeb49aeae50276a92a16478846496a01c5f44e82b418f0d2696e9ee5dfdb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8929",
+      "src": "images/products/sku-8929.jpg",
+      "alt": "Tullamore Dew — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "083664872466",
+      "expectedName": "Tullamore Dew",
+      "expectedLabel": "750 mL",
+      "sha256": "bb58039ff10e79ba35e37615831d2cf3222bc3f97def6d7ebb1b8eec260c4f52",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5285",
+      "src": "images/products/sku-5285.jpg",
+      "alt": "Maison Rouge VSOP Cognac — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "789764121038",
+      "expectedName": "Maison Rouge VSOP Cognac",
+      "expectedLabel": "750 mL",
+      "sha256": "291fc3c154a99378cee682ec3f649a320dd4049800f4614efdc079846490e48d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2064",
+      "src": "images/products/sku-2064.jpg",
+      "alt": "Chivas Regal 12 Year — 1.75 L packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080432104033",
+      "expectedName": "Chivas Regal 12 Year",
+      "expectedLabel": "1.75 L",
+      "sha256": "7d54e1379c7c60e48878744787d2167cc12a4937e4cd216a3e880318873449fb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7053",
+      "src": "images/products/sku-7053.jpg",
+      "alt": "Remy VSOP — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "087236004354",
+      "expectedName": "Remy VSOP",
+      "expectedLabel": "750 mL",
+      "sha256": "227d84beac40fd5b83ce7d78fcc5b8193ea12d080ef78eaf7d0d455667b51106",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8710",
+      "src": "images/products/sku-8710.jpg",
+      "alt": "The Glenlivet 12 Year Old Single Malt Scotch Whisky — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080432400630",
+      "expectedName": "The Glenlivet 12 Year Old Single Malt Scotch Whisky",
+      "expectedLabel": "750 mL",
+      "sha256": "d0c13532f709bc972b1d33cc3653688f526737c61cd8bbb9f350e9823cd70e35",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8711",
+      "src": "images/products/sku-8711.jpg",
+      "alt": "The Glenlivet 15 Year French Oak Reserve Single Malt Scotch Whisky — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080432100783",
+      "expectedName": "The Glenlivet 15 Year French Oak Reserve Single Malt Scotch Whisky",
+      "expectedLabel": "750 mL",
+      "sha256": "c6b47267edcc46d04ac2df177bce3d7deb1c4ffe90c762adec5dfb6ec45d7186",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6168",
+      "src": "images/products/sku-6168.jpg",
+      "alt": "New Amsterdam Gin — 1.75 L packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "085000014301",
+      "expectedName": "New Amsterdam Gin",
+      "expectedLabel": "1.75 L",
+      "sha256": "662bef3c27184f9bac70a927d63c3135a115ce87da3d08722b7785ce6bff97af",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6978",
+      "src": "images/products/sku-6978.jpg",
+      "alt": "RED STAG WHISKEY — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080686001713",
+      "expectedName": "RED STAG WHISKEY",
+      "expectedLabel": "750 mL",
+      "sha256": "88918fa85bb763566a0610b6715beb788702be9b8139eeaaf8f28f1fd31b89ab",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7893",
+      "src": "images/products/sku-7893.jpg",
+      "alt": "Sobieski Vodka — 50 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "089016008255",
+      "expectedName": "Sobieski Vodka",
+      "expectedLabel": "50 mL",
+      "sha256": "d203244eb6a1e46e48994551dfea9558e03dd2e8941b6a86c11eea8300b9e661",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4669",
+      "src": "images/products/sku-4669.jpg",
+      "alt": "Jose Cuervo Silver — 200 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080432000762",
+      "expectedName": "Jose Cuervo Silver",
+      "expectedLabel": "200 mL",
+      "sha256": "eae188e0ade8b12d99162a5c4ab7ac08c34f3029a61010ffad51e5bac99b8b61",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2066",
+      "src": "images/products/sku-2066.jpg",
+      "alt": "Chivas Regal 12 Year — 375 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080432400371",
+      "expectedName": "Chivas Regal 12 Year",
+      "expectedLabel": "375 mL",
+      "sha256": "66f939ea285f008c17c4e6e5a0aac90f341b1994f2b032200f3180619ff249d6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2067",
+      "src": "images/products/sku-2067.jpg",
+      "alt": "Chivas Regal 12 Year — 375 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080432400388",
+      "expectedName": "Chivas Regal 12 Year",
+      "expectedLabel": "375 mL",
+      "sha256": "66f939ea285f008c17c4e6e5a0aac90f341b1994f2b032200f3180619ff249d6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2097",
+      "src": "images/products/sku-2097.jpg",
+      "alt": "Christian Brothers VS — 375 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "086036815672",
+      "expectedName": "Christian Brothers VS",
+      "expectedLabel": "375 mL",
+      "sha256": "6b7a39d8d1704f2e3acc92832dd3a9578b10e2bf8e61bff1540a75314bf6187f",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4046",
+      "src": "images/products/sku-4046.jpg",
+      "alt": "Hennessy — 1 L packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "088110150563",
+      "expectedName": "Hennessy",
+      "expectedLabel": "1 L",
+      "sha256": "b6db0a6920efba312a6f55d4676e258300343af3d43f9dc3abe78a4eb9a43811",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4047",
+      "src": "images/products/sku-4047.jpg",
+      "alt": "Hennessy — 200 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "081753842710",
+      "expectedName": "Hennessy",
+      "expectedLabel": "200 mL",
+      "sha256": "6d0a825d114568db93c594bbede446e4d27adb1ebdbdc168efec75732750e7dc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "729",
+      "src": "images/products/sku-729.jpg",
+      "alt": "Bacardi Limon — 50 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080480356200",
+      "expectedName": "Bacardi Limon",
+      "expectedLabel": "50 mL",
+      "sha256": "fdf78c371a53f92f6758e33f1bd5566cc80312463b50a5d76ce6569d1e2ee61c",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2763",
+      "src": "images/products/sku-2763.jpg",
+      "alt": "DeKuyper Buttershots — 1 L packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080686319207",
+      "expectedName": "DeKuyper Buttershots",
+      "expectedLabel": "1 L",
+      "sha256": "a4ce23d6440a578b175fe356767e0485ec48aa3fa03b68d098a293336e97cc93",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5291",
+      "src": "images/products/sku-5291.jpg",
+      "alt": "Makers Mark 90 P — 375 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "085246185001",
+      "expectedName": "Makers Mark 90 P",
+      "expectedLabel": "375 mL",
+      "sha256": "24750b94f4061d900ea1b05e8326fe2dc42c836b355c48a81986a3ef8e1378c7",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3896",
+      "src": "images/products/sku-3896.jpg",
+      "alt": "Grey Goose — 200 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080480280048",
+      "expectedName": "Grey Goose",
+      "expectedLabel": "200 mL",
+      "sha256": "6691c3a603ceec4c8da2ddaf62ccc61aa9aee4cf6c4c84f086df6fd4e2a03ab2",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3897",
+      "src": "images/products/sku-3897.jpg",
+      "alt": "Grey Goose — 375 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080480280031",
+      "expectedName": "Grey Goose",
+      "expectedLabel": "375 mL",
+      "sha256": "5628244a2e69cc0675bdfa9d0e0bf38a79398c51cc6325c4cf69a4ff94029366",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {
