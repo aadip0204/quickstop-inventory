@@ -575,3 +575,11 @@ This batch adds 23 independently reviewed professional photographs for exact Sve
 Three proposed UV Cherry photos are withheld after comparison exposed 30% and 35% package strengths, with the third unreadable. The inventory and selected source records do not establish a common strength. Earlier photo approvals are superseded by the private correction; these candidates are not published.
 
 All 9,952 source records, 9,693 public variants, 8,006 ordered product groups, original identifiers and all 1,759 prior image files and assignments are preserved. The catalog now has 1,782 approved photographs, 7,911 variants awaiting exact photographs, 579 public-title corrections and 1,350 fully verified names. Full photo coverage and verification of every name remain unfinished.
+
+## R71–R72 exact photos and unchanged-name verification
+
+Added 20 individually reviewed product photographs and 16 checks of unchanged names. All 9,952 source records, 9,693 public variants, 8,006 groups and 1,782 prior photos are preserved. The catalog now has 1,802 pictured variants and 7,891 without verified photos. Full coverage remains incomplete.
+
+The explicit retailer name-check method requires a captured own-product record with the exact UPC, its existing inspected photo, independent name review and unchanged raw/current product guards. It preserves the existing manufacturer and three-source review methods, and grants no size, grouping or photo approval. All detailed evidence stays private. Fully verified names total 1,366; title corrections remain 579.
+
+Three Olives Cherry 375 mL and Burnett’s Watermelon 750 mL candidates remain excluded for unresolved identity or strength conflicts. No alias or alcohol-strength equivalence is inferred.

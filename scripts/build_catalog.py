@@ -104,6 +104,7 @@ MANUFACTURER_NAME_HOSTS = {
     'Mondelez International': {'smartlabel.mondelez.info'},
 }
 MANUFACTURER_NAME_SCOPE = 'manufacturer_exact_upc_name_identity'
+RETAILER_NAME_METHOD = 'retailer_exact_upc_inspected_name'
 NAME_STRENGTH_RE = re.compile(r'\d+(?:\.\d+)?\s*(?:%\s*(?:ABV\b|A/C\b)?|ABV\b|A/C\b|PROOF\b)', re.I)
 
 PRIVATE_REVIEW_EVIDENCE_KIND = 'quickstop-private-review-evidence'
@@ -2515,6 +2516,192 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
         blocked_images.discard(sku)
 
 
+def retailer_name_json(body: str) -> object:
+    def unique_object(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError('Duplicate retailer name evidence field')
+            result[key] = value
+        return result
+
+    return json.loads(body, object_pairs_hook=unique_object,
+                      parse_constant=lambda value: (_ for _ in ()).throw(ValueError(value)))
+
+
+def captured_saucey_name_product(body: str) -> dict:
+    """Read Saucey's selected own product, never a recommendation or URL code."""
+    from html.parser import HTMLParser
+
+    class StateParser(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=False)
+            self.stack, self.scripts, self.current = [], [], None
+
+        def handle_starttag(self, tag, attrs):
+            attributes = dict(attrs)
+            if tag == 'script' and len(attributes) != len(attrs):
+                raise ValueError('Ambiguous Saucey script attributes')
+            ignored = (any(item[1] for item in self.stack) or tag in {'template', 'noscript'}
+                       or 'hidden' in attributes or attributes.get('aria-hidden') == 'true')
+            if tag == 'script' and not ignored and 'src' not in attributes:
+                if attributes.get('type', '').lower() in ('', 'text/javascript', 'application/javascript'):
+                    self.current = []
+            if tag not in {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+                           'link', 'meta', 'param', 'source', 'track', 'wbr'}:
+                self.stack.append((tag, bool(ignored)))
+
+        def handle_endtag(self, tag):
+            if tag == 'script' and self.current is not None:
+                self.scripts.append(''.join(self.current))
+                self.current = None
+            if self.stack and self.stack[-1][0] == tag:
+                self.stack.pop()
+
+        def handle_data(self, value):
+            if self.current is not None:
+                self.current.append(value)
+
+    parser = StateParser()
+    parser.feed(body)
+    parser.close()
+    scripts = [value for value in parser.scripts if re.search(r'window\.__PRELOADED_STATE__\s*=', value)]
+    if len(scripts) != 1:
+        raise ValueError('Expected one live Saucey state assignment')
+    match = re.fullmatch(r'\s*window\.__PRELOADED_STATE__\s*=\s*(\{.*\})\s*;?\s*', scripts[0], re.S)
+    if not match:
+        raise ValueError('Expected one complete JSON Saucey state assignment')
+    state = retailer_name_json(match[1])
+    product = state['product']['product']
+    if not isinstance(product, dict):
+        raise ValueError('Expected the selected Saucey own product')
+    return product
+
+
+def validate_retailer_name_evidence(entry: dict) -> None:
+    """A retailer/code/package name check is separate from manufacturer proof."""
+    sku = entry['sku']
+
+    def require(condition):
+        if not condition:
+            raise ValueError('Incomplete or mismatched retailer name evidence')
+
+    try:
+        evidence = entry['evidence']
+        require(isinstance(evidence, list) and len(evidence) == 2)
+        require({item['kind'] for item in evidence} == {'exact_upc_listing', 'inspected_package_photo'})
+        listing = next(item for item in evidence if item['kind'] == 'exact_upc_listing')
+        photo = next(item for item in evidence if item['kind'] == 'inspected_package_photo')
+        require(set(listing) == {'kind', 'url', 'supports', 'publisher', 'sourceRole',
+                                'sourceSha256', 'retrievedOn', 'capture'})
+        require(set(photo) == {'kind', 'url', 'supports', 'sha256', 'inspection'})
+        require(listing['publisher'] == 'Saucey' and listing['sourceRole'] == 'retailer')
+        require(all(safe_review_text(item['supports']) for item in evidence))
+        require(valid_gtin(entry['expectedUpc']) and entry['expectedUpc'].strip('0'))
+        for value in (entry['verifiedOn'], listing['retrievedOn']):
+            require(isinstance(value, str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}', value))
+            date.fromisoformat(value)
+        capture = listing['capture']
+        require(set(capture) == {'status', 'complete', 'contentType', 'responseUrl', 'responseBody'})
+        require(type(capture['status']) is int and capture['status'] == 200 and capture['complete'] is True)
+        require(capture['contentType'].split(';', 1)[0].strip().lower() == 'text/html')
+        require(capture['responseUrl'] == listing['url'])
+        require(isinstance(capture['responseBody'], str) and capture['responseBody'])
+        require(hashlib.sha256(capture['responseBody'].encode()).hexdigest() == listing['sourceSha256'])
+        url = urlparse(listing['url'])
+        require(url.scheme == 'https' and url.netloc == 'saucey.com' and url.path.startswith('/spirits/')
+                and not any((url.params, url.query, url.fragment)))
+        native = captured_saucey_name_product(capture['responseBody'])
+        fields = {'sku_id', 'title', 'subtitle', 'upc_code', 'volume', 'volume_label',
+                  'image_large', 'image', 'url', 'additional_upcs'}
+        selected = {key: native[key] for key in fields}
+        require(native['upc_code'] == entry['expectedUpc'] and native['url'] == url.path)
+        require(safe_review_text(native['title']) and safe_review_text(native['subtitle']))
+        require(isinstance(native['sku_id'], str) and re.fullmatch(r'[A-Za-z0-9-]+', native['sku_id']))
+        require(url.path.rsplit('/', 1)[-1] == native['sku_id'])
+        require(photo['url'] == native['image_large'] == (
+            'https://cdn.saucey.com/staging/products/' + native['sku_id'] + '/image_large.jpg'))
+        inspection = photo['inspection']
+        require(set(inspection) == {'factsSha256', 'factsBody', 'reviewSha256', 'reviewBody'})
+        documents = []
+        for prefix in ('facts', 'review'):
+            body = inspection[prefix + 'Body']
+            require(isinstance(body, str) and hashlib.sha256(body.encode()).hexdigest() == inspection[prefix + 'Sha256'])
+            documents.append(retailer_name_json(body))
+        facts, review = documents
+        require(facts['privateOnly'] is True and facts['frozen'] is True and review['privateOnly'] is True)
+        require(safe_review_text(review['reviewer']))
+        require(re.fullmatch(r'\d{4}-\d{2}-\d{2}', review['reviewedOn']))
+        date.fromisoformat(review['reviewedOn'])
+        require(review['packet']['sha256'] == inspection['factsSha256'])
+        candidates = [item for item in facts['candidates'] if item['sku'] == sku]
+        decisions = [item for item in review['records'] if item['sku'] == sku]
+        require(len(candidates) == len(decisions) == 1)
+        fact, decision = candidates[0], decisions[0]
+        guard, source = fact['currentGuard'], fact['actualSource']
+        require(isinstance(guard, dict) and {
+            'sku', 'sourceRow', 'rawFields', 'rawFieldsSha256', 'rawNameSha256', 'disposition',
+            'upc', 'name', 'label', 'category', 'department', 'productId', 'groupSkus',
+            'orderedProduct', 'currentImage', 'beforeNameVerificationStage'}.issubset(guard))
+        require(type(guard['sourceRow']) is int and guard['sourceRow'] > 0)
+        require(isinstance(guard['rawFields'], list) and len(guard['rawFields']) == 8
+                and all(isinstance(value, str) for value in guard['rawFields']))
+        require(guard['rawFields'][:2] == [sku, entry['expectedUpc']]
+                and review_evidence_sha256(guard['rawFields']) == guard['rawFieldsSha256']
+                and hashlib.sha256(guard['rawFields'][2].encode()).hexdigest() == entry['expectedNameSha256'])
+        require(guard['disposition'] == 'retained_variant')
+        require(guard['beforeNameVerificationStage'] == {
+            'name': entry['expectedPublicName'], 'label': entry['expectedLabel'], 'noLateIdentityOrLabelReview': True})
+        require((guard['sku'], guard['upc'], guard['name'], guard['label'], guard['rawNameSha256']) == (
+            sku, entry['expectedUpc'], entry['expectedPublicName'], entry['expectedLabel'], entry['expectedNameSha256']))
+        require(source['publisher'] == 'Saucey' and source['role'] == 'retailer')
+        require(source['pointer'] == 'window.__PRELOADED_STATE__/product/product')
+        require(source['sourcePage'] == listing['url'] and source['decodedBodySha256'] == listing['sourceSha256'])
+        require(source['selectedFields'] == selected)
+        original = fact['sourceToImageBinding']['original']
+        require(fact['sourceToImageBinding']['nativeOriginalEqualsCurrentImage'] is True)
+        require(fact['sourceToImageBinding']['selectedImageLargeMatchesCanonicalUrl'] is True)
+        require(original['sha256'] == photo['sha256'])
+        require(decision['verdict'] == 'PASS')
+        require((decision['currentName'], decision['currentLabel'], decision['literalOriginalUpc']) == (
+            entry['expectedPublicName'], entry['expectedLabel'], entry['expectedUpc']))
+        require(decision['orderedGroupSkus'] == guard['groupSkus'])
+        proof = decision['actualSourceProof']
+        require((proof['pointer'], proof['actualSelectedFields'], proof['decodedBodySha256'], proof['role']) == (
+            source['pointer'], selected, listing['sourceSha256'], 'retailer'))
+        require(proof['literalConsumerUpcNotMerchantId'] is True and proof['fullStateReadAndFieldsMatched'] is True)
+        viewed = decision['nativeImage']
+        require(viewed['path'] == original['path'] and viewed['sha256'] == photo['sha256'])
+        require(viewed['actualWholeNativeViewedIndependentlyThisPass'] is True)
+        require(viewed['currentCanonicalBytesMatch'] is True and safe_review_text(viewed['observations']))
+    except (AssertionError, KeyError, TypeError, ValueError, AttributeError) as error:
+        raise ValueError(f'Retailer unchanged-name verification requires its exact own capture and independent inspection: {sku}') from error
+
+
+def validate_retailer_name_context(entry: dict, record: dict, product: dict,
+                                   image_manifest: dict | None, private_images: dict | None) -> None:
+    """Bind the unchanged original/current identity after all existing photo gates."""
+    sku = entry['sku']
+    photo = next(item for item in entry['evidence'] if item['kind'] == 'inspected_package_photo')
+    fact = next(item for item in json.loads(photo['inspection']['factsBody'])['candidates'] if item['sku'] == sku)
+    guard = fact['currentGuard']
+    public = [item for item in (image_manifest or {}).get('images', []) if item.get('sku') == sku]
+    private = [item for item in (private_images or {}).get('entries', []) if item.get('sku') == sku]
+    if (record.get('disposition') != 'retained_variant' or record.get('sourceOrigin') == 'report'
+            or len(record.get('rawFields', [])) != 8 or record['rawFields'] != guard['rawFields']
+            or review_evidence_sha256(record['rawFields']) != guard['rawFieldsSha256']
+            or record['sourceRow'] != guard['sourceRow'] or product != guard['orderedProduct']
+            or product['id'] != guard['productId']
+            or (product['name'], product['category'], product['department']) != (
+                guard['name'], guard['category'], guard['department'])
+            or [item['sku'] for item in product['variants']] != guard['groupSkus']
+            or len(public) != 1 or len(private) != 1 or private[0] != guard['currentImage']
+            or {key: private[0][key] for key in DIRECT_REFERENCE_PUBLIC_FIELDS} != public[0]
+            or private[0]['sha256'] != photo['sha256'] or private[0]['sourceImageUrl'] != photo['url']
+            or private[0]['sourcePage'] != next(item['url'] for item in entry['evidence'] if item['kind'] == 'exact_upc_listing')):
+        raise ValueError(f'Retailer unchanged-name verification requires unchanged raw/current product and existing image: {sku}')
+
+
 def validated_name_verifications(manifest: dict | None) -> dict:
     """Keep an unchanged-name review separate from an actual correction."""
     manifest = expand_private_review_evidence(manifest)
@@ -2528,7 +2715,9 @@ def validated_name_verifications(manifest: dict | None) -> dict:
     for entry in entries:
         manufacturer_method = (isinstance(entry, dict)
                                and entry.get('verificationMethod') == 'manufacturer_exact_upc_record')
-        entry_fields = required | {'verificationMethod', 'manufacturerRecord'} if manufacturer_method else required
+        retailer_method = isinstance(entry, dict) and entry.get('verificationMethod') == RETAILER_NAME_METHOD
+        entry_fields = (required | {'verificationMethod', 'manufacturerRecord'} if manufacturer_method else
+                        required | {'verificationMethod'} if retailer_method else required)
         if not isinstance(entry, dict) or set(entry) != entry_fields:
             raise ValueError('Name verification contains missing, unsupported or private fields')
         sku = entry['sku']
@@ -2552,6 +2741,10 @@ def validated_name_verifications(manifest: dict | None) -> dict:
             raise ValueError(f'Name verification requires every name identity check: {sku}')
         if manufacturer_method:
             validate_manufacturer_name_record(entry)
+            result[sku] = entry
+            continue
+        if retailer_method:
+            validate_retailer_name_evidence(entry)
             result[sku] = entry
             continue
         evidence = entry['evidence']
@@ -3348,6 +3541,11 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
     report_additions = validated_report_additions(report_additions_manifest)
     category_reviews = validated_category_reviews(category_reviews_manifest)
     public_name_reviews = validated_public_name_reviews(public_name_reviews_manifest)
+    retailer_names = {sku for sku, entry in name_verifications.items()
+                      if entry.get('verificationMethod') == RETAILER_NAME_METHOD}
+    if retailer_names & (set(corrections) | set(identity_reviews) | set(source_reviews)
+                         | set(category_reviews) | set(public_name_reviews)):
+        raise ValueError('Retailer unchanged-name verification cannot coexist with source, title, identity or category changes')
     source_record_names = {sku for sku, review in public_name_reviews.items()
                            if review.get('identityBasis') == SOURCE_RECORD_NAME_IDENTITY}
     if source_record_names & (set(source_reviews) | set(corrections) | set(identity_reviews)
@@ -3742,6 +3940,11 @@ def build(source_bytes: bytes, source_date: str = '2026-02', image_manifest: dic
                                   private_direct_image_evidence_manifest, blocked_images)
     verified_images = apply_verified_images(
         products, image_manifest, blocked_images, private_direct_image_evidence_manifest)
+    for sku, verification in name_verifications.items():
+        if verification.get('verificationMethod') == RETAILER_NAME_METHOD:
+            product, _ = variants_by_sku.get(sku, ({}, {}))
+            validate_retailer_name_context(verification, records_by_sku[sku], product,
+                                          image_manifest, private_direct_image_evidence_manifest)
     categories = []
     for category_id, (label, departments) in CATEGORY_DEPARTMENTS.items():
         # A reviewed item can shop in a different category while retaining its

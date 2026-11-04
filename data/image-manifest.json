@@ -35640,6 +35640,406 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "8729",
+      "src": "images/products/sku-8729.jpg",
+      "alt": "Three Olives Cake — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "811538015653",
+      "expectedName": "Three Olives Cake",
+      "expectedLabel": "750 mL",
+      "sha256": "950326e3f5c4ed319fefeba96e1ba728598cc85abf1845d35c9da5a7ffad8863",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8737",
+      "src": "images/products/sku-8737.jpg",
+      "alt": "Three Olives Vodka — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "089708776424",
+      "expectedName": "Three Olives Vodka",
+      "expectedLabel": "750 mL",
+      "sha256": "c6d23150af72bcf030204460b13615c3c80caf09ef7e1e109c8aa2d5c2eaf61b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8728",
+      "src": "images/products/sku-8728.jpg",
+      "alt": "Three Olives Bubble — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "811538015400",
+      "expectedName": "Three Olives Bubble",
+      "expectedLabel": "750 mL",
+      "sha256": "105cf741f332db927618fd853b30dbda9579c1aa1b1a414a40dc385152bd24e1",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8727",
+      "src": "images/products/sku-8727.jpg",
+      "alt": "three olives rose — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "811538017534",
+      "expectedName": "three olives rose",
+      "expectedLabel": "750 mL",
+      "sha256": "0471ed71cf6efa8aee2e215de29064b2ccef0fbbcc77693182b22067edaf3f53",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8736",
+      "src": "images/products/sku-8736.jpg",
+      "alt": "Three Olives Vodka — 375 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "089708776615",
+      "expectedName": "Three Olives Vodka",
+      "expectedLabel": "375 mL",
+      "sha256": "5d2448c5168748b3536d97771e9ecf0559acaf8c49c59e2b57f761e38da82879",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6673",
+      "src": "images/products/sku-6673.jpg",
+      "alt": "Pinnacle CHERRY LEMONADE — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "089708461702",
+      "expectedName": "Pinnacle CHERRY LEMONADE",
+      "expectedLabel": "750 mL",
+      "sha256": "a585e4acad56ec7399fcc890f4694b2bb622dcf1a465fd77b11cbb8950322a95",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1529",
+      "src": "images/products/sku-1529.jpg",
+      "alt": "Burnetts Pink Lem — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "096749201112",
+      "expectedName": "Burnetts Pink Lem",
+      "expectedLabel": "750 mL",
+      "sha256": "9b49f7d5d2c0479fe9dbbb95031e5a6bcebb947e3c97a736118024c56b10adbb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1533",
+      "src": "images/products/sku-1533.jpg",
+      "alt": "Burnetts Raspberry — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "096749200375",
+      "expectedName": "Burnetts Raspberry",
+      "expectedLabel": "750 mL",
+      "sha256": "c32eb7c576ba3ab44861634d4007c4edf0bb9de0705d9b36d73795ea3cbed9f7",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1528",
+      "src": "images/products/sku-1528.jpg",
+      "alt": "Burnetts Pink Lem — 1.75 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "096749201099",
+      "expectedName": "Burnetts Pink Lem",
+      "expectedLabel": "1.75 L",
+      "sha256": "45b1b771534d859759e78e9cdd56f829003bbbfaca1a51ae1bd503be8ec94e1e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1532",
+      "src": "images/products/sku-1532.jpg",
+      "alt": "Burnetts Raspberry — 1.75 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "096749200382",
+      "expectedName": "Burnetts Raspberry",
+      "expectedLabel": "1.75 L",
+      "sha256": "97fd6d77d145982bfd01d7246827eef100321db80c8b1aca4e4095b9db6b38b9",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1534",
+      "src": "images/products/sku-1534.jpg",
+      "alt": "Burnetts Sour Apple — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "096749200450",
+      "expectedName": "Burnetts Sour Apple",
+      "expectedLabel": "750 mL",
+      "sha256": "c7da95861f4287ff61b262e7188bf50a53963569c28564e7d7d41ec19c0de148",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1527",
+      "src": "images/products/sku-1527.jpg",
+      "alt": "Burnetts Lime — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "096749200825",
+      "expectedName": "Burnetts Lime",
+      "expectedLabel": "750 mL",
+      "sha256": "c9563573223c96e450b52b468ad4c34e73bef79409b63a52599c6ef867e3aa10",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1525",
+      "src": "images/products/sku-1525.jpg",
+      "alt": "Burnetts Dry Gin — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "096749002016",
+      "expectedName": "Burnetts Dry Gin",
+      "expectedLabel": "750 mL",
+      "sha256": "5fc6e6dfbe8be18ffa2a68e41379ba96a33f9c3d7ec5a3893c267b00d1339b68",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1524",
+      "src": "images/products/sku-1524.jpg",
+      "alt": "Burnetts Dry Gin — 1.75 L packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "096749200306",
+      "expectedName": "Burnetts Dry Gin",
+      "expectedLabel": "1.75 L",
+      "sha256": "3ba57f1c82b1fddfcea9d533e56548f871d973fd0dc7802adc6dc3bee0a8e9b8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6677",
+      "src": "images/products/sku-6677.jpg",
+      "alt": "Pinnacle Coconut — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "089708451000",
+      "expectedName": "Pinnacle Coconut",
+      "expectedLabel": "750 mL",
+      "sha256": "678ec6024eb28b4d3cf18d7f6ea9093fdf0b0c56c106d608c2ea89af18da6cc2",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6679",
+      "src": "images/products/sku-6679.jpg",
+      "alt": "Pinnacle Cotton Candy — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "089708450706",
+      "expectedName": "Pinnacle Cotton Candy",
+      "expectedLabel": "750 mL",
+      "sha256": "b5900163c20bf4337d1c65e27743096d155a0bcb9d9da2aa864120f4c3ff6a32",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6684",
+      "src": "images/products/sku-6684.jpg",
+      "alt": "Pinnacle RAspberry — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "089708466424",
+      "expectedName": "Pinnacle RAspberry",
+      "expectedLabel": "750 mL",
+      "sha256": "3c1a83c5c94820b091ae0e8deb4cc365d5a5b788d4829a9d25dcd3d6ee1f9875",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6692",
+      "src": "images/products/sku-6692.jpg",
+      "alt": "PINNACLE WHIPP — 375 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "080686926542",
+      "expectedName": "PINNACLE WHIPP",
+      "expectedLabel": "375 mL",
+      "sha256": "97d05b33b3fbc474094f6a947691d875bed3f1a6cdece32da9297f4e13aa8f2b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6682",
+      "src": "images/products/sku-6682.jpg",
+      "alt": "Pinnacle Kiwi Strawberry Vodka — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "080686926429",
+      "expectedName": "Pinnacle Kiwi Strawberry Vodka",
+      "expectedLabel": "750 mL",
+      "sha256": "61d31ee960eecfc174f0dfe3178808d3d4bda05a641c3251cfb389909d24d415",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1538",
+      "src": "images/products/sku-1538.jpg",
+      "alt": "Burnetts Vodka — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "096749002047",
+      "expectedName": "Burnetts Vodka",
+      "expectedLabel": "750 mL",
+      "sha256": "1f6bf326b446a61fadc92c5f3ccd9e7edfd50ec70b598ccae1e0a643d471ed53",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [
