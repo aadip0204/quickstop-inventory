@@ -9348,6 +9348,186 @@
       "evidence": {
         "privateEvidenceSha256": "91d3e74bf8fe6e1e6510cd2eb799938a487eb12102645e9e8d57d48802e72cae"
       }
+    },
+    {
+      "sku": "5636",
+      "expectedUpc": "083664874064",
+      "expectedSourceRow": 6910,
+      "expectedRawFieldsSha256": "e3c460c5649274fcb40132a7baeb8ef792a1a93039d204a31c547f7e7231e46f",
+      "expectedPublicName": "Milagro silver tequila",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Milagro Silver Tequila",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "be63c7ddd0cdeae6cd3dc48952f9e1a2bcbc555425b9d0b2d02c83c068a56e25"
+      }
+    },
+    {
+      "sku": "2578",
+      "expectedUpc": "082000771586",
+      "expectedSourceRow": 1648,
+      "expectedRawFieldsSha256": "3a2a739e96b7bef9f3342f85cf9809ecc2001924444e2ccdf93623d163e37b2f",
+      "expectedPublicName": "Crown Royal APPLE",
+      "expectedLabel": "1 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal Apple",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "acf86a2cc04c9542960153a9c33f91c3e3d8adda757de71dd9ae5280e311be0c"
+      }
+    },
+    {
+      "sku": "2570",
+      "expectedUpc": "082000771555",
+      "expectedSourceRow": 7088,
+      "expectedRawFieldsSha256": "5c3b22d0219a723ed5ac1be181ed95940ee0f0d72f7f3ebff5dd39f768bf6096",
+      "expectedPublicName": "Crown Royal Apple",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal Apple",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "4aaf04c6dd49db52322ef04c94fe8129224827fcf2e65343a6ed265d7cee9856"
+      }
+    },
+    {
+      "sku": "2553",
+      "expectedUpc": "082000771562",
+      "expectedSourceRow": 7429,
+      "expectedRawFieldsSha256": "530e8a6ef2ac5ce023b305a961cfbbc05e6a0eeab6f6d2eeff20fa7fdd3a3f12",
+      "expectedPublicName": "Crown Royal Apple",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal Apple",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "27c5b96ffeaa7a997bcc5aaccfc4db92d3f18564fc318f779d6da2c049e12be0"
+      }
+    },
+    {
+      "sku": "2569",
+      "expectedUpc": "082000771548",
+      "expectedSourceRow": 7892,
+      "expectedRawFieldsSha256": "8226dfef7f466ca5d5bcb2160ce195062fc912042efc44fd6cf31e6b94896455",
+      "expectedPublicName": "Crown Royal Apple",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal Apple",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "3b7d03265bafd18128df056f4f3e29b604dc2befbb6332403a69b60a41a8e164"
+      }
+    },
+    {
+      "sku": "6545",
+      "expectedUpc": "721733001088",
+      "expectedSourceRow": 4159,
+      "expectedRawFieldsSha256": "c63585e26f29af5f13bd20e1d551eddf721f6ea1b0810f34556274a5db489381",
+      "expectedPublicName": "Patron Anejo",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Patrón Añejo",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "d6c5a09557987509b6ad42edb00e106292e3608ed3fb2c747b5597dced25295d"
+      }
+    },
+    {
+      "sku": "6546",
+      "expectedUpc": "721733000968",
+      "expectedSourceRow": 7324,
+      "expectedRawFieldsSha256": "b105c56fe1764773957249c652a2c7a72843b9b6fcac30684656224094f5b9ac",
+      "expectedPublicName": "Patron Anejo",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Patrón Añejo",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "4504c49571c25ca94fc2fa0c8a364da67aa9fe2ad6b693f8c46c7fd5e9460eb4"
+      }
+    },
+    {
+      "sku": "6547",
+      "expectedUpc": "721733000012",
+      "expectedSourceRow": 9207,
+      "expectedRawFieldsSha256": "93a0bad5be5b5145e3bf3a44296d8e2cc7ba14db48b9b3c9cb40245d7078a5c1",
+      "expectedPublicName": "Patron Anejo",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Patrón Añejo",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "44d1253b61f056031cd0bc38c07cfd54c63cd6ece1d4eedd4ef3a3d80db11b8a"
+      }
+    },
+    {
+      "sku": "6557",
+      "expectedUpc": "721733000159",
+      "expectedSourceRow": 8444,
+      "expectedRawFieldsSha256": "beba45c8510dd32762c3580f806388ef6a377589c621adc9f363172de48a831e",
+      "expectedPublicName": "Patron Reposado",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Patrón Reposado",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "41588bab41e5553b3b824483a8356b23860d5ba812a28d5523bf824ae262682c"
+      }
+    },
+    {
+      "sku": "6555",
+      "expectedUpc": "721733001095",
+      "expectedSourceRow": 8721,
+      "expectedRawFieldsSha256": "2762dafae186507747e2972d4d990dde7bc694319cfa1e574a6df847c8dd9408",
+      "expectedPublicName": "Patron Reposado",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Patrón Reposado",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "9dd5ac68b664e22c0157be28a4987e31b848483462d1ebbe5db08741cd00a1ce"
+      }
+    },
+    {
+      "sku": "6556",
+      "expectedUpc": "721733000951",
+      "expectedSourceRow": 9839,
+      "expectedRawFieldsSha256": "657da9d53df3c0da5686915c0e8add9cb9f025bb3a12897bd9ae91d6882fda85",
+      "expectedPublicName": "Patron Reposado",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "Patrón Reposado",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "cb2e0de2a98308b73adcfe71f1aa8f13478fd85b9d8f1a7a2a89317798ec8477"
+      }
+    },
+    {
+      "sku": "3556",
+      "expectedUpc": "083664870141",
+      "expectedSourceRow": 2306,
+      "expectedRawFieldsSha256": "b0654b69cf838c88ff68aa3988150e2f6290749aa8a00532a43e54c6e3637fbe",
+      "expectedPublicName": "Galliano",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Galliano L'Autentico",
+      "reason": "Actual complete selected source and independently viewed native support exact proposed brand/expression spelling; no external UPC inference.",
+      "evidence": {
+        "privateEvidenceSha256": "7100fc2e53bca7f997e6fbdb7128a699a2d8d649350f6072cd40c5783c9e1b13"
+      }
     }
   ]
 }
