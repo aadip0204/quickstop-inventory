@@ -37780,6 +37780,206 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "4847",
+      "src": "images/products/sku-4847.jpg",
+      "alt": "Knob Creek — 375 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "080686016601",
+      "expectedName": "Knob Creek",
+      "expectedLabel": "375 mL",
+      "sha256": "882ddd6d90f0a103e9bc34226587c37b6f60e38132ab727797a6b722f40616fd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5636",
+      "src": "images/products/sku-5636.jpg",
+      "alt": "Milagro silver tequila — 375 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "083664874064",
+      "expectedName": "Milagro silver tequila",
+      "expectedLabel": "375 mL",
+      "sha256": "b2fa6f77165b7ac81cd615d4068cf897ac1f6d5eb25554d220a60383a7269854",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4651",
+      "src": "images/products/sku-4651.jpg",
+      "alt": "Jose Cuervo Gold — 200 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "082000192954",
+      "expectedName": "Jose Cuervo Gold",
+      "expectedLabel": "200 mL",
+      "sha256": "05a252b4d12bc4ece921ec35a49bd516b13bfdc4a2dcd72895f999da6431ad1b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2577",
+      "src": "images/products/sku-2577.jpg",
+      "alt": "CROWN ROYAL — 1 L packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "087000007246",
+      "expectedName": "CROWN ROYAL",
+      "expectedLabel": "1 L",
+      "sha256": "87f1c516019617a77817fa17e41c0d577606345ba258204793e85b2c51ab73ee",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2578",
+      "src": "images/products/sku-2578.jpg",
+      "alt": "Crown Royal APPLE — 1 L packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "082000771586",
+      "expectedName": "Crown Royal APPLE",
+      "expectedLabel": "1 L",
+      "sha256": "fa61ada304d62419b26535e6d9f7a7037efac4e40a659e9b68933a269d20aefd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6545",
+      "src": "images/products/sku-6545.jpg",
+      "alt": "Patron Anejo — 200 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "721733001088",
+      "expectedName": "Patron Anejo",
+      "expectedLabel": "200 mL",
+      "sha256": "acc4fb061ca2074cb98dce6d0c18b4f459230c52036fcbcd0999e5d29a426055",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6555",
+      "src": "images/products/sku-6555.jpg",
+      "alt": "Patron Reposado — 200 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "721733001095",
+      "expectedName": "Patron Reposado",
+      "expectedLabel": "200 mL",
+      "sha256": "983315388b83962f9c7d8d63d62305ece5c38f03eea105952eb572875e3492d5",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "6558",
+      "src": "images/products/sku-6558.jpg",
+      "alt": "Patron Silver — 200 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "721733001101",
+      "expectedName": "Patron Silver",
+      "expectedLabel": "200 mL",
+      "sha256": "e6afcd08e6ad24263e873d3e9e51bd726a9f113ffecd7b48a3c2f002d0b2be13",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3556",
+      "src": "images/products/sku-3556.jpg",
+      "alt": "Galliano — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "083664870141",
+      "expectedName": "Galliano",
+      "expectedLabel": "750 mL",
+      "sha256": "07a8fa7b9f22fd7ba4907b30d328613549ea2e148ae0907daa6c269a12efd085",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7670",
+      "src": "images/products/sku-7670.jpg",
+      "alt": "Slim Jim Original Smoked Snack Stick — 0.28 oz packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "026200101927",
+      "expectedName": "Slim Jim Original Smoked Snack Stick",
+      "expectedLabel": "0.28 oz",
+      "sha256": "da237ed901e8b9d7b5767a715fd2f3b42ace6d2f5a3e52f300b973b85d687a41",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [
