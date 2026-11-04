@@ -11,7 +11,7 @@
     "products": 8004,
     "needsReview": 103,
     "excludedNonproducts": 156,
-    "flaggedPublicVariants": 2829
+    "flaggedPublicVariants": 2831
   },
   "sourceDispositions": {
     "needs_review": 103,
@@ -19,21 +19,21 @@
     "retained_variant": 9693
   },
   "categoryReviews": 112,
-  "publicNameCorrections": 598,
+  "publicNameCorrections": 600,
   "nameAudit": {
     "sourceRowsScanned": 9952,
-    "rowsWithIssues": 4598,
+    "rowsWithIssues": 4600,
     "evidenceBackedCorrections": 1075,
-    "publicTitleCorrections": 598,
+    "publicTitleCorrections": 600,
     "nameVerificationRecords": 116,
     "identityConflicts": 23,
     "exactIdentitiesResolved": 129,
-    "fullyVerifiedNames": 1388,
+    "fullyVerifiedNames": 1390,
     "manufacturerRecordVerifiedNames": 144,
     "scopeNote": "All rows scanned for specified risks. Only listed spelling corrections, public-title corrections, unchanged-name verifications and exact identity resolutions were externally checked within their stated scopes; public-title corrections preserve source and variant metadata. Remaining names are not verified. Manufacturer-record name checks are counted separately and do not verify photographs, package sizes or current stock."
   },
   "imageStatus": {
-    "verifiedVariants": 1857,
-    "unverifiedVariants": 7836
+    "verifiedVariants": 1866,
+    "unverifiedVariants": 7827
   }
 }
