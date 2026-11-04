@@ -8868,6 +8868,111 @@
       "evidence": {
         "privateEvidenceSha256": "6e18d038e5e96a009c2efa5e6eac02f959fa2cfd225e765588ca8ac63991d090"
       }
+    },
+    {
+      "sku": "6403",
+      "expectedUpc": "860365000240",
+      "expectedSourceRow": 8996,
+      "expectedRawFieldsSha256": "c88561bae1c8ff66ddf5e48d54c629fcaca97eadebf397085ebd38cdf9afc859",
+      "expectedPublicName": "O'MY SNACK ORIGINALPORK RINDS",
+      "expectedLabel": "1.75 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "O'My Snack Original Pork Rinds",
+      "reason": "Separate joined ORIGINALPORK and restore printed O'My Snack brand/expression casing.",
+      "evidence": {
+        "privateEvidenceSha256": "88fac9771d635290eea3a1b97ae5f4c5b21a858af3361610213e590d1206ed63"
+      }
+    },
+    {
+      "sku": "6420",
+      "expectedUpc": "869505000362",
+      "expectedSourceRow": 7323,
+      "expectedRawFieldsSha256": "43c7af03821eddd6930022f388f5e18f5d8d9cc60830d3971bfc539780cf1374",
+      "expectedPublicName": "omy snack salt& vinegar pork rinds",
+      "expectedLabel": "3.75 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "O'My Snack Salt & Vinegar Pork Rinds",
+      "reason": "Restore printed O'My Snack brand apostrophe/casing and professional flavor/product spacing; preserve exact Salt & Vinegar expression.",
+      "evidence": {
+        "privateEvidenceSha256": "d6323b9c84ef8f72a97b86dc2acda6dd5185e13235384d719150182a2977c422"
+      }
+    },
+    {
+      "sku": "6414",
+      "expectedUpc": "869505000379",
+      "expectedSourceRow": 8748,
+      "expectedRawFieldsSha256": "cbd16a61cab0a153f0fa6917e2afb40df0766cd21c2e00d4c0a3c8c80e5f3fc9",
+      "expectedPublicName": "omy snack hot & spicy pork rinds",
+      "expectedLabel": "3.75 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "O'My Snack Hot & Spicy Pork Rinds",
+      "reason": "Restore printed O'My Snack brand apostrophe/casing and professional flavor/product spacing; preserve exact Hot & Spicy expression.",
+      "evidence": {
+        "privateEvidenceSha256": "0758e62bdbd3bac5937733eef48e2b1ccce767b16bec787f08e0ce180a562e61"
+      }
+    },
+    {
+      "sku": "6413",
+      "expectedUpc": "869505000355",
+      "expectedSourceRow": 8682,
+      "expectedRawFieldsSha256": "85fe35d8a22415525c774d736734eaa5bd491445d9bba7264b8f31cbd9079773",
+      "expectedPublicName": "omy snack barbeque pork rinds",
+      "expectedLabel": "3.75 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "O'My Snack Barbeque Pork Rinds",
+      "reason": "Restore printed O'My Snack brand apostrophe/casing and professional flavor/product spacing; preserve exact Barbeque expression.",
+      "evidence": {
+        "privateEvidenceSha256": "4e8d0edb5d9b61c1034695fd4ec453df749d77432e049c9b49f15acb5224578b"
+      }
+    },
+    {
+      "sku": "8864",
+      "expectedUpc": "089087157562",
+      "expectedSourceRow": 6641,
+      "expectedRawFieldsSha256": "1f2110eb003d05c8c49d20f5912ed76f29a6bfe9aa3f074211614fd5188dcf7c",
+      "expectedPublicName": "TROPICAL FANTASYGRAPE",
+      "expectedLabel": "22.5 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Tropical Fantasy Grape",
+      "reason": "Correct the public title to match the independently reviewed exact brand and expression wording; preserve all variant metadata.",
+      "evidence": {
+        "privateEvidenceSha256": "50d6e15adb88ab0c5738b48a9d836a6dee950efc7bb6ea8f4feacecb1f61f86b"
+      }
+    },
+    {
+      "sku": "1990",
+      "expectedUpc": "025022450138",
+      "expectedSourceRow": 1232,
+      "expectedRawFieldsSha256": "a010f14eb52f464882c7499a9c2bcccb5cb1cd6e841bc5aaff909c8681d42d7c",
+      "expectedPublicName": "CheeWees bbq",
+      "expectedLabel": "2 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Elmer's Chee Wees Bar-B-Que Cheese Curls",
+      "reason": "Correct the public title to match the independently reviewed exact brand and expression wording; preserve all variant metadata.",
+      "evidence": {
+        "privateEvidenceSha256": "9fcd11eebaaa70d6a62ab77b38a2fbc18da1db3f52b8cbfa28f442008cd33b78"
+      }
+    },
+    {
+      "sku": "639",
+      "expectedUpc": "852242001549",
+      "expectedSourceRow": 406,
+      "expectedRawFieldsSha256": "271330621d9bb1c6fbbf392fb004f1ee6e011599af9bf6fd4071a1901b105bc3",
+      "expectedPublicName": "August Hill Almond",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "August Hill Almond Infusion",
+      "reason": "Complete the exact expression from the independently reviewed selected manufacturer record and actual package wording.",
+      "evidence": {
+        "privateEvidenceSha256": "7599d5502d4a3840afba2ab0973647bab49145b635d576bb488c67b01db787b1"
+      }
     }
   ]
 }

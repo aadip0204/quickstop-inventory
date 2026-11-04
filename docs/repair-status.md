@@ -609,3 +609,7 @@ Added 3 individually reviewed photographs and corrected 5 evidence-backed public
 ## R77 individually verified product photographs
 
 Added 10 individually reviewed photographs and corrected 3 evidence-backed public titles, with 1 reviewed exact group unions. All 9,952 source records, 9,693 public variants and 1,819 prior photograph bytes are preserved. The catalog has 8,004 groups, 1,829 pictured variants and 7,864 without verified photographs. Fully verified names total 1,381; public title corrections total 591. Full coverage remains incomplete. Detailed evidence and original inputs remain private.
+
+## R78 individually verified product photographs
+
+Added 25 individually reviewed photographs and corrected 7 evidence-backed public titles, with 0 reviewed exact group unions. All 9,952 source records, 9,693 public variants and 1,829 prior photograph bytes are preserved. The catalog has 8,004 groups, 1,854 pictured variants and 7,839 without verified photographs. Fully verified names total 1,388; public title corrections total 598. Full coverage remains incomplete. Detailed evidence and original inputs remain private.
