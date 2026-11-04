@@ -16798,6 +16798,68 @@
         "upc": true,
         "visual": false
       }
+    },
+    {
+      "sku": "8525",
+      "expectedUpc": "073010214095",
+      "expectedNameSha256": "2e8180a32fe9ceab20cd393bae3d4c1aac02a5e2d16cdb16bc02e848516f7180",
+      "expectedPublicName": "TAMPAX regular",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "b35baaf8935a0135ada45d26b090731807878b7c78d0d252f27d7cb2bc624a9f"
+      }
+    },
+    {
+      "sku": "8526",
+      "expectedUpc": "073010314092",
+      "expectedNameSha256": "a4a88fab1be085930136ecddd7b3bd5aa1916fa4cdc9037a5745f4b77fabc2a3",
+      "expectedPublicName": "TAMPAX SUPER",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "fe8f0f50d1d170f85a36bc7bcf8a23902774ca96a16d7304e34615b6ea3eef79"
+      }
+    },
+    {
+      "sku": "7928",
+      "expectedUpc": "070462098563",
+      "expectedNameSha256": "c411473543caf7905623fbf1173e3f074fcb457c6c4ed8474ae28d2f100b206f",
+      "expectedPublicName": "Sour Patch Fruits",
+      "expectedLabel": "2 oz",
+      "verifiedOn": "2026-11-03",
+      "verificationMethod": "manufacturer_exact_upc_record",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": false
+      },
+      "manufacturerRecord": {
+        "publisher": "Mondelez International",
+        "productUrl": "https://smartlabel.mondelez.info/00070462098563-0001-en-US/index.html",
+        "publisherEvidenceUrl": "https://smartlabel.org/product-search/",
+        "observedUpc": "00070462098563",
+        "observedName": "Sour Patch Fruits Candy 2 oz. Bag",
+        "retrievedOn": "2026-11-03",
+        "sourceSha256": "b6066d1eeaba02a9a1b2afea9273b721e54ce913625ce9f24195b0a4bd4ee0dc",
+        "retiredNotice": false
+      },
+      "evidence": {
+        "privateEvidenceSha256": "03166885a0b12aa9e746f1d09b5a82b3d4bd654950dd656e99d708537e26d21a"
+      }
     }
   ]
 }

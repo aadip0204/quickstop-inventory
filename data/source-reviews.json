@@ -6652,6 +6652,72 @@
       "evidence": {
         "privateEvidenceSha256": "47b3ce3b6e3ab6423dd8f4f0f2c8984951822b0b26ee24ea09ad685f61d5b523"
       }
+    },
+    {
+      "sku": "8525",
+      "expectedUpc": "073010214095",
+      "expectedNameSha256": "2e8180a32fe9ceab20cd393bae3d4c1aac02a5e2d16cdb16bc02e848516f7180",
+      "expectedSourceRecordSha256": "ba364b73346a318cd1feeb94ab287304566b3d09d90c2ef3a70130a2cad71f18",
+      "action": "resolve_verified_missing_measurement",
+      "expectedSourceRow": 7640,
+      "expectedPublicName": "TAMPAX regular",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "expectedProductId": "p-5288d5e4d72d000b",
+      "expectedResultingGroupSkus": [
+        "8525"
+      ],
+      "verifiedLabel": "10 count",
+      "expectedImageSha256": "22bbfd3b8319d29013383b4596c7473215aa839b6f9f9a850ad99f064c1da37d",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "f4187ae3f159a4e957174b95e0db24f174115f398df7b2d5c7777742a0a037cc"
+      },
+      "reason": "Fill only the genuinely absent contents count with ten tampons in one exact reviewed retail box. Keep original source cells, name, literal UPC, group, product ID, category and department unchanged.",
+      "reviewedOn": "2026-11-03",
+      "verificationMethod": "pg_rendered_single_box_contents_count",
+      "expectedProductSha256": "b327f912a54a3272f6bdd615b91dd38bbe001409a9a1f4c7a81d8dea2acff50d"
+    },
+    {
+      "sku": "8526",
+      "expectedUpc": "073010314092",
+      "expectedNameSha256": "a4a88fab1be085930136ecddd7b3bd5aa1916fa4cdc9037a5745f4b77fabc2a3",
+      "expectedSourceRecordSha256": "a181245a2b416eb85c2f48d6f73475146aef5516410254cb78aca2b53d86d3a1",
+      "action": "resolve_verified_missing_measurement",
+      "expectedSourceRow": 8959,
+      "expectedPublicName": "TAMPAX SUPER",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "expectedProductId": "p-0d33e2dcf23c3260",
+      "expectedResultingGroupSkus": [
+        "8526"
+      ],
+      "verifiedLabel": "10 count",
+      "expectedImageSha256": "ee4470a0002c3f3cd82e1c929f449c4e65124197c1c614340d39e37201b32aeb",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "d5944ea11f75ca71839de9ae612e77f676fd69d6bc70b8c0809d050803c3b9d2"
+      },
+      "reason": "Fill only the genuinely absent contents count with ten tampons in one exact reviewed retail box. Keep original source cells, name, literal UPC, group, product ID, category and department unchanged.",
+      "reviewedOn": "2026-11-03",
+      "verificationMethod": "pg_rendered_single_box_contents_count",
+      "expectedProductSha256": "5a8927b5c0299b420db2f87bd18dcf89918b9212054306dbeae680d490d24685"
     }
   ]
 }

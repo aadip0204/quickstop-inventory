@@ -91,8 +91,9 @@ EXPLICIT_UTILITIES = {
 REPORT_POS_CONTROLS = {'-2000': 'Card Void Adjustment', '-3000': 'COUPON',
                        '0': 'Scan Group', '-1000': 'Store Credit'}
 
-# Reviewed publisher-owned record hosts. PepsiCo's own sitemap also delegates
-# individual records to Scanbuy; that host requires a PepsiCo ownership URL.
+# Reviewed publisher record hosts. PepsiCo's own sitemap also delegates
+# individual records to Scanbuy. Mondelez requires separate program-directory
+# delegation evidence; the directory is never a manufacturer product host.
 MANUFACTURER_NAME_HOSTS = {
     'PepsiCo': {'smartlabel.pepsico.info', 'www.pepsicoproductfacts.com',
                 'pepsicoproductfacts.com', 'www.pepsicopartners.com', 'pepsicopartners.com'},
@@ -100,6 +101,7 @@ MANUFACTURER_NAME_HOSTS = {
     'Conagra Brands': {'smartlabel.conagra.com'},
     'Kraft Heinz': {'www.kraftheinz.com', 'kraftheinz.com'},
     'The Coca-Cola Company': {'smartlabel.coca-colaproductfacts.com'},
+    'Mondelez International': {'smartlabel.mondelez.info'},
 }
 MANUFACTURER_NAME_SCOPE = 'manufacturer_exact_upc_name_identity'
 NAME_STRENGTH_RE = re.compile(r'\d+(?:\.\d+)?\s*(?:%\s*(?:ABV\b|A/C\b)?|ABV\b|A/C\b|PROOF\b)', re.I)
@@ -107,6 +109,7 @@ NAME_STRENGTH_RE = re.compile(r'\d+(?:\.\d+)?\s*(?:%\s*(?:ABV\b|A/C\b)?|ABV\b|A/
 PRIVATE_REVIEW_EVIDENCE_KIND = 'quickstop-private-review-evidence'
 FOOD_FLUID_OUNCE_METHOD = 'food_single_bottle_fluid_ounce'
 PRINTED_FOOD_UNIT_METHOD = 'printed_barcode_food_net_content'
+PG_CONTENTS_COUNT_METHOD = 'pg_rendered_single_box_contents_count'
 NAME_ONLY_RESTORATION_METHOD = 'exact_upc_guarded_name_restoration'
 NUMERIC_NAME_RESTORATION_METHOD = 'exact_literal_gtin_numeric_name_only'
 NUMERIC_CONFLICT_IDENTITY_METHOD = 'main_gtin_declared_pack_numeric_conflict'
@@ -866,7 +869,15 @@ def validate_manufacturer_name_record(entry: dict) -> None:
     product_host = review_url_host(record['productUrl'])
     ownership_host = review_url_host(record['publisherEvidenceUrl'])
     delegated = publisher == 'PepsiCo' and product_host == 'smartlabel.myproduct.info'
-    if ownership_host not in owned_hosts or (product_host not in owned_hosts and not delegated):
+    if publisher == 'Mondelez International':
+        product_match = (re.fullmatch(
+            r'https://smartlabel\.mondelez\.info/([0-9]{12}|[0-9]{14})-[0-9]{4}-en-US/index\.html',
+            record['productUrl']) if isinstance(record['productUrl'], str) else None)
+        if (record['publisherEvidenceUrl'] != 'https://smartlabel.org/product-search/'
+                or not product_match
+                or product_match[1].zfill(14) != str(record['observedUpc']).zfill(14)):
+            raise ValueError(f'Mondelez record requires its exact program directory and unit GTIN URL: {sku}')
+    elif ownership_host not in owned_hosts or (product_host not in owned_hosts and not delegated):
         raise ValueError(f'Manufacturer name source ownership is not established: {sku}')
     if delegated:
         path_gtins = re.findall(r'(?<!\d)\d{12}(?!\d)', urlparse(record['productUrl']).path)
@@ -2109,6 +2120,129 @@ def validate_printed_food_unit_evidence(review: dict) -> None:
         raise ValueError(f'Printed food unit requires real capture and inspection dates: {sku}') from error
 
 
+def validate_pg_contents_count_evidence(review: dict) -> None:
+    """Bind retail contents to rendered P&G evidence, never a wholesale pack.
+
+    The displayed eleven digits remain literal evidence, not a valid UPC.
+    Only the explicit omitted-leading-zero relation is compared; source codes
+    and the separately published route/image GTINs are never rewritten.
+    """
+    sku = review['sku']
+    evidence = review.get('evidence')
+    kinds = {'manufacturer_rendered_contents_count', 'inspected_package_photo'}
+    if (not isinstance(evidence, list) or len(evidence) != 2
+            or any(not isinstance(item, dict) or not isinstance(item.get('kind'), str) for item in evidence)
+            or {item['kind'] for item in evidence} != kinds):
+        raise ValueError(f'P&G contents count requires rendered own-record and inspected-photo evidence: {sku}')
+    source = next(item for item in evidence if item['kind'] == 'manufacturer_rendered_contents_count')
+    photo = next(item for item in evidence if item['kind'] == 'inspected_package_photo')
+    fields = {'kind', 'url', 'supports', 'publisher', 'publisherEvidenceUrl', 'retrievedOn',
+              'renderedCapture', 'renderedCaptureSha256', 'observedName', 'displayedCodeLiteral',
+              'codeBasis', 'contentsCount', 'countText', 'quantityBasis', 'retailUnitsPerPackage',
+              'sourceImageUrl', 'publisherRoleLiteral'}
+    code = source.get('displayedCodeLiteral')
+    route = (re.fullmatch(r'https://smartlabel\.pg\.com/en-us/([0-9]{14})\.html', source['url'])
+             if isinstance(source.get('url'), str) else None)
+    image_url = source.get('sourceImageUrl')
+    image_route = (re.fullmatch(r'https://images\.ctfassets\.net/p9x6nkt33m4y/'
+                               r'[A-Za-z0-9]+/[a-f0-9]{32}/([0-9]{14})', image_url)
+                   if isinstance(image_url, str) else None)
+    count = int(review['verifiedLabel'].split()[0])
+    if (set(source) != fields or source['publisher'] != 'Procter & Gamble'
+            or source['publisherEvidenceUrl'] != 'https://smartlabel.org/product-search/'
+            or not route or not image_route or not valid_gtin(route[1])
+            or route[1] != review['expectedUpc'].zfill(14) or image_route[1] != route[1]
+            or not isinstance(code, str) or not re.fullmatch(r'[1-9][0-9]{10}', code)
+            or '000' + code != route[1]
+            or source['codeBasis'] != 'displayed_11_digits_omitting_gtin12_leading_zero'
+            or type(source['contentsCount']) is not int or source['contentsCount'] != count
+            or source['countText'] != f'{count} CT'
+            or source['quantityBasis'] != 'single_retail_box_contents'
+            or type(source['retailUnitsPerPackage']) is not int or source['retailUnitsPerPackage'] != 1
+            or not safe_review_text(source['supports']) or not safe_review_text(source['observedName'])
+            or not source['observedName'].endswith(f', {count} Count')
+            or re.findall(r'[0-9]+', source['observedName']) != [str(count)]
+            or source['publisherRoleLiteral'] != 'DISTR. BY PROCTER & GAMBLE, CINCINNATI, OHIO 45202'):
+        raise ValueError(f'P&G contents count requires exact published route/image codes and one retail box: {sku}')
+    # Only this reviewed Tampax family is supported. A valid identifier must
+    # not conceal a contrary brand, absorbency or package-family declaration.
+    current_expression = re.fullmatch(r'TAMPAX (REGULAR|SUPER)', review['expectedPublicName'], re.I | re.ASCII)
+    own_expression = re.fullmatch(
+        r'Tampax Cardboard Tampons (Regular|Super) Absorbency, Anti-Slip Grip, '
+        rf'LeakGuard Skirt, Unscented, {count} Count', source['observedName'])
+    if (not current_expression or not own_expression
+            or current_expression[1].upper() != own_expression[1].upper()):
+        raise ValueError(f'P&G contents count requires the same supported Tampax brand and expression: {sku}')
+    capture = source['renderedCapture']
+    if (not isinstance(capture, dict) or set(capture) != {'url', 'title', 'text', 'images', 'links'}
+            or capture['url'] != source['url']
+            or capture['title'] != source['observedName'] + ' - SmartLabel™'
+            or not isinstance(capture['text'], str) or not isinstance(capture['images'], list)
+            or not isinstance(capture['links'], list)
+            or source['renderedCaptureSha256'] != review_evidence_sha256(capture)):
+        raise ValueError(f'P&G contents count requires its complete hash-bound rendered record: {sku}')
+    lines = [clean_space(line) for line in capture['text'].splitlines()]
+    emitted = [item for item in capture['images'] if isinstance(item, dict) and item.get('currentSrc') == image_url]
+    if (lines[:1] != ['Tampax']
+            or any(lines.count(value) != 1 for value in (source['observedName'], source['countText'], code,
+                                                 source['publisherRoleLiteral']))
+            or [line for line in lines if re.fullmatch(r'[0-9]{11,14}', line)] != [code]
+            or [line for line in lines if re.fullmatch(
+                r'[0-9]+\s+(?:CT|COUNT|PACKS?|BOX(?:ES)?|CASES?)', line, re.I)] != [source['countText']]
+            or not emitted or any(item.get('complete') is not True
+                or item.get('src') not in (image_url, image_url.removeprefix('https:'))
+                or type(item.get('naturalWidth')) is not int or item['naturalWidth'] <= 0
+                or type(item.get('naturalHeight')) is not int or item['naturalHeight'] <= 0 for item in emitted)):
+        raise ValueError(f'P&G contents count requires literal rendered name/count/code and emitted own image: {sku}')
+    photo_fields = {'kind', 'url', 'supports', 'sha256', 'inspectedOn', 'inspectionReceipt', 'inspectionReceiptSha256'}
+    if (set(photo) != photo_fields or photo['url'] != image_url
+            or photo['sha256'] != review['expectedImageSha256'] or not safe_review_text(photo['supports'])):
+        raise ValueError(f'P&G contents count requires the exact inspected native photo: {sku}')
+    receipt = photo['inspectionReceipt']
+    expected = {'scope': 'original_inventory_unit', 'sku': sku, 'upc': review['expectedUpc'],
+        'publicName': review['expectedPublicName'], 'expectedLabel': review['expectedLabel'],
+        'verifiedLabel': review['verifiedLabel'], 'productId': review['expectedProductId'],
+        'productSha256': review['expectedProductSha256'], 'groupSkus': review['expectedResultingGroupSkus'],
+        'sourceRow': review['expectedSourceRow'], 'rawFieldsSha256': review['expectedSourceRecordSha256'],
+        'rawNameSha256': review['expectedNameSha256'], 'sha256': review['expectedImageSha256'],
+        'originalSha256': review['expectedImageSha256'], 'sourceImageUrl': image_url,
+        'producerProductPageUrl': source['url'], 'renderedCaptureSha256': source['renderedCaptureSha256'],
+        'observedName': source['observedName'], 'displayedCodeLiteral': code,
+        'visibleContentsCount': count, 'retailUnitsPerPackage': 1, 'retailContainer': 'box',
+        'countBasis': 'printed_retail_contents_count', 'manufacturerPrimaryImageConfirmed': True,
+        'inspectedOn': photo['inspectedOn']}
+    receipt_fields = set(expected) | {'src', 'publicImageSha256', 'visibleCountText', 'nativeImage', 'verification',
+                                     'rootInspectionReceiptSha256', 'independentInspectionReceiptSha256'}
+    if (not isinstance(receipt, dict) or set(receipt) != receipt_fields
+            or any(receipt.get(key) != value for key, value in expected.items())
+            or any(type(receipt[key]) is not int for key in ('sourceRow', 'visibleContentsCount', 'retailUnitsPerPackage'))
+            or receipt['manufacturerPrimaryImageConfirmed'] is not True
+            or not isinstance(receipt['visibleCountText'], str)
+            or receipt['visibleCountText'] != f'{count} {current_expression[1].upper()}'
+            or not isinstance(receipt['src'], str) or not re.fullmatch(r'images/products/[A-Za-z0-9_./-]+', receipt['src'])
+            or any(not isinstance(receipt[key], str) or not re.fullmatch(r'[a-f0-9]{64}', receipt[key])
+                   for key in ('publicImageSha256', 'rootInspectionReceiptSha256', 'independentInspectionReceiptSha256'))
+            or receipt['rootInspectionReceiptSha256'] == receipt['independentInspectionReceiptSha256']
+            or not isinstance(receipt['verification'], dict)
+            or set(receipt['verification']) != {'brand', 'expression', 'size', 'packaging', 'visual', 'professional'}
+            or any(value is not True for value in receipt['verification'].values())
+            or photo['inspectionReceiptSha256'] != review_evidence_sha256(receipt)):
+        raise ValueError(f'P&G contents count requires exact visible contents and independent inspection bindings: {sku}')
+    native = receipt['nativeImage']
+    if (not isinstance(native, dict) or set(native) != {'format', 'width', 'height', 'strictVerifyAndFreshDecode'}
+            or native['format'] != 'JPEG' or native['strictVerifyAndFreshDecode'] is not True
+            or type(native['width']) is not int or type(native['height']) is not int
+            or any((item['naturalWidth'], item['naturalHeight']) != (native['width'], native['height']) for item in emitted)):
+        raise ValueError(f'P&G contents count requires the inspected native decode dimensions: {sku}')
+    try:
+        for value in (review['reviewedOn'], source['retrievedOn'], photo['inspectedOn']):
+            if not isinstance(value, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+                raise ValueError('Invalid date')
+            date.fromisoformat(value)
+    except ValueError as error:
+        raise ValueError(f'P&G contents count requires real source and inspection dates: {sku}') from error
+
+
 def validate_missing_measurement_evidence(review: dict) -> None:
     """Bind a missing unit measurement to primary/unit records and inspected bytes."""
     if review.get('verificationMethod') == 'usda_branded_food_package_weight':
@@ -2116,6 +2250,9 @@ def validate_missing_measurement_evidence(review: dict) -> None:
         return
     if review.get('verificationMethod') == PRINTED_FOOD_UNIT_METHOD:
         validate_printed_food_unit_evidence(review)
+        return
+    if review.get('verificationMethod') == PG_CONTENTS_COUNT_METHOD:
+        validate_pg_contents_count_evidence(review)
         return
     sku = review['sku']
     evidence = review.get('evidence')
@@ -2289,6 +2426,7 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
         raw_parts = [extract_dimensions(source.get(field, '')) for field in ('ItemName', 'PackName')]
         usda_method = review.get('verificationMethod') == 'usda_branded_food_package_weight'
         printed_method = review.get('verificationMethod') == PRINTED_FOOD_UNIT_METHOD
+        count_method = review.get('verificationMethod') == PG_CONTENTS_COUNT_METHOD
         # Fail closed on explicit pack counts the legacy dimension parser does
         # not recognize. This applies only to this single-unit late action;
         # neither source text nor global parsing/brand numbers are changed.
@@ -2305,6 +2443,11 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
                 or clean_space(source.get('PackName', ''))
                 or raw_public['variant']['label'] != 'Size not specified'
                 or any(part['measures'] or part['packs'] or part['container'] for part in raw_parts)
+                or (count_method and (source.get('PackName') != '' or source.get('ItemTypeDesc') != ''
+                        or re.search(r'[0-9]', source.get('ItemName', ''))
+                        or printed_food_count_hint(source.get('ItemName', ''))
+                        or record.get('categoryReview') is not None
+                        or raw_public['category'] != 'essentials'))
                 or (printed_method and (raw_public['category'] != 'food' or review.get('expectedCategory') != 'food'
                                         or source.get('PackName') != '' or record.get('categoryReview') is not None
                                         or printed_food_count_hint(source.get('ItemName', ''))))
@@ -2321,8 +2464,13 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
                     review['expectedDepartment'], review['expectedProductId'])
         if current != expected:
             raise ValueError(f'Missing measurement current source/public identity mismatch: {sku}')
+        if count_method and (not re.fullmatch(r'TAMPAX (REGULAR|SUPER)', source['ItemName'], re.I | re.ASCII)
+                or source['ItemName'].upper() != review['expectedPublicName'].upper()):
+            raise ValueError(f'P&G contents count requires the original Tampax expression unchanged: {sku}')
         if [v['sku'] for v in product['variants']] != review['expectedResultingGroupSkus']:
             raise ValueError(f'Missing measurement final SKU-group mismatch: {sku}')
+        if count_method and review_evidence_sha256(product) != review['expectedProductSha256']:
+            raise ValueError(f'P&G contents count current full product mismatch: {sku}')
         entries = image_manifest.get('images', []) if isinstance(image_manifest, dict) else []
         if not isinstance(entries, list):
             entries = []
@@ -2346,11 +2494,16 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
         inspection = next(item for item in review['evidence'] if item['kind'] == 'inspected_package_photo')
         if len(private_matches) != 1 or private_matches[0].get('sourceImageUrl') != inspection['url']:
             raise ValueError(f'Missing measurement inspected photo must match its private provenance: {sku}')
-        if usda_method or printed_method:
+        if count_method:
+            primary = next(item for item in review['evidence'] if item['kind'] == 'manufacturer_rendered_contents_count')
+            if private_matches[0].get('sourcePage') != primary['url']:
+                raise ValueError(f'P&G contents count private provenance must match its own rendered product: {sku}')
+        if usda_method or printed_method or count_method:
             receipt = inspection['inspectionReceipt']
             if (image.get('src') != receipt['src'] or checks != receipt['verification']
                     or review_evidence_sha256(image) != receipt['publicImageSha256']):
-                context = 'Printed food unit' if printed_method else 'USDA missing measurement'
+                context = ('P&G contents count' if count_method else
+                           'Printed food unit' if printed_method else 'USDA missing measurement')
                 raise ValueError(f'{context} requires its complete inspected public-image binding: {sku}')
         # Every earlier guard has now seen its original label. Only this field
         # changes; final image assignment still verifies private coverage/bytes.
@@ -2524,8 +2677,11 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                         'verification', 'evidence'}
             usda_method = entry.get('verificationMethod') == 'usda_branded_food_package_weight'
             printed_method = entry.get('verificationMethod') == PRINTED_FOOD_UNIT_METHOD
-            if usda_method or printed_method:
+            count_method = entry.get('verificationMethod') == PG_CONTENTS_COUNT_METHOD
+            if usda_method or printed_method or count_method:
                 allowed.add('verificationMethod')
+            if count_method:
+                allowed.add('expectedProductSha256')
             if (set(entry) != allowed or not valid_gtin(entry['expectedUpc'])
                     or type(entry['expectedSourceRow']) is not int or entry['expectedSourceRow'] < 1
                     or entry['expectedLabel'] != 'Size not specified'
@@ -2538,7 +2694,15 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             label = entry['verifiedLabel']
             dimensions = extract_dimensions(label)
             fluid = canonical_ounce_label_value(label, fluid=True)
-            if (fluid is None and (dimensions['text'] or dimensions['packs'] or dimensions['container']
+            if count_method:
+                if (not re.fullmatch(r'[1-9][0-9]* count', label)
+                        or not re.fullmatch(r'(?:[0-9]{12}|[0-9]{14})', entry['expectedUpc'])
+                        or entry['expectedCategory'] != 'essentials'
+                        or entry['expectedResultingGroupSkus'] != [sku]
+                        or not isinstance(entry['expectedProductSha256'], str)
+                        or not re.fullmatch(r'[a-f0-9]{64}', entry['expectedProductSha256'])):
+                    raise ValueError(f'P&G contents count requires one original singleton and positive canonical contents count: {sku}')
+            elif (fluid is None and (dimensions['text'] or dimensions['packs'] or dimensions['container']
                     or len(dimensions['measures']) != 1
                     or label != dimensions['measures'][0][0] or dimensions['measures'][0][2] <= 0
                     or dimensions['measures'][0][1] not in {'volume-mL', 'mass-g', 'ounce', 'pound', 'quart', 'gallon'})):
