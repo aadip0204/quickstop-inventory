@@ -8688,6 +8688,66 @@
       "evidence": {
         "privateEvidenceSha256": "e0acf98319517a211718484261eb5916b14af0cacbc2c82c5440926d3024e95f"
       }
+    },
+    {
+      "sku": "1534",
+      "expectedUpc": "096749200450",
+      "expectedSourceRow": 953,
+      "expectedRawFieldsSha256": "ec2923986f339b0ceff64770b3d10751fee746658f95711cee7a4d34bfa6ae7f",
+      "expectedPublicName": "Burnetts Sour Apple",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Burnett's Sour Apple",
+      "reason": "Correct the missing apostrophe in the Burnett's brand using the exact source product and visible package; preserve the complete Sour Apple expression.",
+      "evidence": {
+        "privateEvidenceSha256": "2aedced716430bd6cdbab279f54aad1d9d78d291f81bd90e6a1931666735517d"
+      }
+    },
+    {
+      "sku": "6684",
+      "expectedUpc": "089708466424",
+      "expectedSourceRow": 4243,
+      "expectedRawFieldsSha256": "cf7b59783f1a418616b9502334fa6ace779c8dfbb11e29a499c8d2840e4aa31b",
+      "expectedPublicName": "Pinnacle RAspberry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Pinnacle Raspberry",
+      "reason": "Correct irregular Raspberry capitalization to the exact readable product expression; no flavor or generic wording expansion.",
+      "evidence": {
+        "privateEvidenceSha256": "a6b5a78dab4d7770d318020bc59330c97c1abd1f53decbb6b1374ce2bee413ec"
+      }
+    },
+    {
+      "sku": "6692",
+      "expectedUpc": "080686926542",
+      "expectedSourceRow": 4251,
+      "expectedRawFieldsSha256": "d46148e9aedb0dbdaf0e5c59fa6c797fa986ffb63a74b884f7e5d6f9605b3e58",
+      "expectedPublicName": "PINNACLE WHIPP",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Pinnacle Whipped",
+      "reason": "Complete the truncated WHIPP expression as Whipped and normalize brand casing from the exact375mL product and readable primary label. Preserve the separate750mL product group and make no merge or strength/generation claim.",
+      "evidence": {
+        "privateEvidenceSha256": "d0bb79e3f6a037bcbd85623b0cd519ccb86cb4b6ee41e79d65fafdfb686b7a32"
+      }
+    },
+    {
+      "sku": "8727",
+      "expectedUpc": "811538017534",
+      "expectedSourceRow": 6365,
+      "expectedRawFieldsSha256": "d30a566493bba69332f9ce3c9b07007973bf00dd2c7f966ea0a2d86a0a189765",
+      "expectedPublicName": "three olives rose",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Three Olives Rosé",
+      "reason": "Correct product casing and the Rosé accent using the actual source spelling and readable package expression; no unsupported product expansion.",
+      "evidence": {
+        "privateEvidenceSha256": "ab104c07a02280b47af886cf1372b49fc03a577d5bd7efc64413a2e36bbfa4e7"
+      }
     }
   ]
 }

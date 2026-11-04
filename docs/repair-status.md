@@ -583,3 +583,11 @@ Added 20 individually reviewed product photographs and 16 checks of unchanged na
 The explicit retailer name-check method requires a captured own-product record with the exact UPC, its existing inspected photo, independent name review and unchanged raw/current product guards. It preserves the existing manufacturer and three-source review methods, and grants no size, grouping or photo approval. All detailed evidence stays private. Fully verified names total 1,366; title corrections remain 579.
 
 Three Olives Cherry 375 mL and Burnett’s Watermelon 750 mL candidates remain excluded for unresolved identity or strength conflicts. No alias or alcohol-strength equivalence is inferred.
+
+## R73 exact photos and public name corrections
+
+Added 10 individually reviewed product photos and 4 public title corrections. Added 0 unchanged-name checks. All 9,952 source records, 9,693 public variants and 8,006 product groups are preserved. Existing photo bytes are unchanged; approved title repairs also update their image descriptions. The catalog now has 1,812 pictured variants and 7,881 without verified photos. Full photo and name coverage remains incomplete.
+
+Persisted retailer name checks now allow an independently approved photo to be added to another size in the same group. The checked variant’s own image and all product, size and source identity fields remain exact.
+
+Photo candidates with unresolved source, packaging or alcohol-strength conflicts remain excluded. Detailed evidence and original inventory remain private.

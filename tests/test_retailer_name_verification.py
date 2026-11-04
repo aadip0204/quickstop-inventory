@@ -131,6 +131,25 @@ class RetailerNameVerificationTests(unittest.TestCase):
         self.assertEqual([v['sku'] for v in baseline['products'][0]['variants']], ['1', '2'])
         self.assertEqual(builder.build(source, **kwargs)[0], baseline)
 
+    def test_persisted_name_allows_only_independently_validated_sibling_photo_delta(self):
+        source, baseline, kwargs = fixture(grouped=True)
+        name_proof = copy.deepcopy(kwargs['name_manifest'])
+        sibling = direct_reference_image_fixture(source, sku='2')
+        kwargs['image_manifest']['images'].append(sibling)
+        kwargs['private_direct_image_evidence_manifest']['entries'].extend(
+            direct_reference_evidence_fixture(sibling)['entries'])
+        catalog, audit = builder.build(source, **kwargs)
+        expected = copy.deepcopy(baseline)
+        expected['products'][0]['variants'][1]['image'] = {
+            key: sibling[key] for key in ('src', 'alt', 'usageBasis', 'attributionRequired')}
+        self.assertEqual(catalog, expected)
+        self.assertEqual(kwargs['name_manifest'], name_proof)
+        self.assertEqual(audit['records'][0]['nameVerification'], name_proof['nameVerifications'][0])
+        self.assertEqual(builder.name_audit(catalog, audit)['summary']['fullyVerifiedNames'], 1)
+        # Masking the sibling cell does not bypass its independent image gates.
+        kwargs['private_direct_image_evidence_manifest']['entries'][-1]['sha256'] = 'a' * 64
+        with self.assertRaises(ValueError): builder.build(source, **kwargs)
+
     def test_requires_explicit_supported_method_and_closed_entry_schema(self):
         for mutate in (lambda e: e.pop('verificationMethod'),
                        lambda e: e.update(verificationMethod='other'),
@@ -247,7 +266,13 @@ class RetailerNameVerificationTests(unittest.TestCase):
                        lambda g: g.pop('orderedProduct'),
                        lambda g: g['rawFields'].__setitem__(3, 'Different private pack'),
                        lambda g: g.update(productId='p-' + 'a' * 16),
+                       lambda g: g['orderedProduct'].update(id='p-' + 'a' * 16),
                        lambda g: g['orderedProduct'].update(department='Tequila'),
+                       lambda g: g['orderedProduct']['variants'][0].update(image=None),
+                       lambda g: g['orderedProduct']['variants'][1].update(label='1 L'),
+                       lambda g: g['orderedProduct']['variants'][1].update(upc='012345678929'),
+                       lambda g: g['orderedProduct']['variants'][1].update(sourceRow=99),
+                       lambda g: g['orderedProduct']['variants'][1].pop('image'),
                        lambda g: g['orderedProduct']['variants'].reverse()):
             source, _, kwargs = fixture(grouped=True); e = kwargs['name_manifest']['nameVerifications'][0]
             facts, review = documents(e); mutate(facts['candidates'][0]['currentGuard']); seal(e, facts=facts, review=review)
