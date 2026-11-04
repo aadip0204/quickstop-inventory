@@ -633,3 +633,7 @@ Corrected 20 evidence-backed public titles across complete existing product fami
 ## R83 individually verified product photographs
 
 Added 10 individually reviewed photographs with exact brand, expression, unit and packaging evidence. All 9,952 source records, 9,693 public variants and 1,889 prior photograph bytes are preserved. The catalog has 8,002 groups, 1,899 pictured variants and 7,794 without verified photographs. Fully verified names total 1,413; public title corrections total 623. Full coverage remains incomplete. Detailed evidence and original inputs remain private.
+
+## R84 individually verified product photographs
+
+Added 2 individually reviewed photographs and corrected 12 evidence-backed public titles. Existing verified package descriptions retain their exact suffixes. All 9,952 source records, 9,693 public variants and 1,899 prior photograph bytes are preserved. The catalog has 8,002 groups, 1,901 pictured variants and 7,792 without verified photographs. Fully verified names total 1,425; public title corrections total 635. Full coverage remains incomplete. Detailed evidence and original inputs remain private.
