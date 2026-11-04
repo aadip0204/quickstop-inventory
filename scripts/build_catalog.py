@@ -2687,10 +2687,19 @@ def validate_retailer_name_context(entry: dict, record: dict, product: dict,
     guard = fact['currentGuard']
     public = [item for item in (image_manifest or {}).get('images', []) if item.get('sku') == sku]
     private = [item for item in (private_images or {}).get('entries', []) if item.get('sku') == sku]
+
+    def ordered_identity(value):
+        # Sibling photos pass their own image gates; this persisted name proof
+        # keeps the selected photo exact without freezing unrelated photos.
+        return {**value, 'variants': [
+            {key: None if key == 'image' and member['sku'] != sku else item
+             for key, item in member.items()} for member in value['variants']]}
+
     if (record.get('disposition') != 'retained_variant' or record.get('sourceOrigin') == 'report'
             or len(record.get('rawFields', [])) != 8 or record['rawFields'] != guard['rawFields']
             or review_evidence_sha256(record['rawFields']) != guard['rawFieldsSha256']
-            or record['sourceRow'] != guard['sourceRow'] or product != guard['orderedProduct']
+            or record['sourceRow'] != guard['sourceRow']
+            or ordered_identity(product) != ordered_identity(guard['orderedProduct'])
             or product['id'] != guard['productId']
             or (product['name'], product['category'], product['department']) != (
                 guard['name'], guard['category'], guard['department'])
