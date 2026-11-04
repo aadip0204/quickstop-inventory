@@ -17030,6 +17030,293 @@
       "evidence": {
         "privateEvidenceSha256": "ef8e7644340239715b07e3165c741315b898fa69e3ddce4498f24a295cf3f28c"
       }
+    },
+    {
+      "sku": "9123",
+      "expectedUpc": "087116015395",
+      "expectedNameSha256": "fc31e2719a741315085c859194dc995757c9667d7c8a51cc2ccd8bf70bfa9b89",
+      "expectedPublicName": "UV Cake Vodka Glass",
+      "expectedLabel": "750 mL · bottles",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "6e53df21ef8e9ef8a1e45e25ac330a0d9c3f8e7d6f3a302b4a4bd2aa44b452a9"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "9129",
+      "expectedUpc": "087116015289",
+      "expectedNameSha256": "c72ebc1f8f361b820453aef20989c389a25a8a7d8f5f4e9dcad1dbe1862a85da",
+      "expectedPublicName": "UV Coconut Vodka",
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "3821fe041b09a01948006869a2f62e53bd4808cf339300984aab8b98bf70ea3c"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "9140",
+      "expectedUpc": "087116014664",
+      "expectedNameSha256": "02a4431d6cef67fc2e9ccb2f287506f729c9f645b4fe25e173301ff156da15d6",
+      "expectedPublicName": "UV Vodka",
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "de8830677b7448425229e50801cdc260fec5837b500c69207fa4b3950a3c8123"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "9138",
+      "expectedUpc": "087116014985",
+      "expectedNameSha256": "376f77c69594e926486a24bff640f8ab5dfce2dec8e2876b1652722504736d48",
+      "expectedPublicName": "UV Pink",
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "96056149be8d9626e5d3e645cc3a1ec0ce38beaa765ea62fdb0aeefd45426b4b"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "9139",
+      "expectedUpc": "087116000469",
+      "expectedNameSha256": "06fc20be45c31982108a1684560295db9d851bd52b102ccf410adbee2b426c85",
+      "expectedPublicName": "UV sangria Vodka",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "0dde01906c1ad24f0a066ec77fd9e48271eefe572e26a5a21142722c08f8a24a"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "9119",
+      "expectedUpc": "087116014541",
+      "expectedNameSha256": "7317c2d02d7119e6155b3207861ab0516d772d165c335e940db78dd482592ed5",
+      "expectedPublicName": "UV Blue",
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "74d250947d10670b96f678b61be0413bf567fe0074993ec6eb958c51775c20a2"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "9133",
+      "expectedUpc": "087116014879",
+      "expectedNameSha256": "47a45b9f7d35dc2c1e314b50500f643590e998cbee03697edb6106a34b92ffa4",
+      "expectedPublicName": "UV Lemonade Vodka",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "a320453631bf1cffdd0b395c3fce7f367bbd2ee5f430b52be76ffc9dd9cffd4c"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "8411",
+      "expectedUpc": "617768128756",
+      "expectedNameSha256": "5c8596af306ef8b69204c3170e83814d3c33220d9056e87e3629c536aa9995e3",
+      "expectedPublicName": "Svedka COLADA Vodka",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "c74b937d89886e0bcf33c6a5d62fc311f429a10549bcd98cf1c5241e72bda9ac"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "8408",
+      "expectedUpc": "617768125755",
+      "expectedNameSha256": "ef262b01ea6a5507300cb85c05e946f8c0d036fa48a8313c6f1f030b7b5f5b8e",
+      "expectedPublicName": "Svedka Citron Vodka",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "3dd64c2add12052329a741f62a51ce56eec34a06c94513508952e6f5d3e1b332"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "8420",
+      "expectedUpc": "617768124758",
+      "expectedNameSha256": "66bdb8b194dcd85d5872e6849fdc44c39fe508038bc3a64a0e12c914aa6f4b76",
+      "expectedPublicName": "Svedka RASPBERRY Vodka",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "a707adf5bd3a3e7dd5d9e3f921f195d83acfe7a1ab07103b43a0697548c1ef1f"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "8406",
+      "expectedUpc": "617768126752",
+      "expectedNameSha256": "f52fd4014e6b0e30618751ec94d8ac44d9df46ae413dcc4233101c1232e51684",
+      "expectedPublicName": "Svedka Cherry Vodka",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "49b2ca74e8925f59de399a90ef1e3908d5bb9288ff4f42b62f43910f1d3625c8"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "8409",
+      "expectedUpc": "617768122754",
+      "expectedNameSha256": "4a447a5442ae1292c4387b9e48c2ebaebe722f3b3f4429966ec8dddef945dcac",
+      "expectedPublicName": "Svedka Clementine Vodka",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "1e84c4a71c484cb6f342cd30b5e5ac1d8067ea1733e84781020fa1b481f66306"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "8419",
+      "expectedUpc": "617768171752",
+      "expectedNameSha256": "3bad90bc7c8b66d5ee82d653a3a5c6c238ba6acd17fa0807edd48bd55e3fe238",
+      "expectedPublicName": "Svedka Peach",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "08292f856008c6ab2d02ebb77a25b63ed331efb8bf855635f8a0f0fff525986e"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "8418",
+      "expectedUpc": "617768171370",
+      "expectedNameSha256": "017b8a1d345c59a7f98c5e9c2c90c2515078d2f931c4e6222ab607b56124a2c8",
+      "expectedPublicName": "Svedka Peach",
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "5e56e9b8f4dea0b3205f2503eaa1a6ed98b3b976ba15697a3abbeafb29a84cb1"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "8403",
+      "expectedUpc": "617768141373",
+      "expectedNameSha256": "153bad1cbb028f1e14bbcc6c89699e968ae562261baf94dbed61ba2178fec0c7",
+      "expectedPublicName": "Svedka Strawberry Lemonade",
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "22a5d124266aa97c5e5d731574289c9880ca746338554afbd45809cdafd53681"
+      },
+      "verificationMethod": "retailer_exact_upc_inspected_name"
+    },
+    {
+      "sku": "7679",
+      "expectedUpc": "786162338006",
+      "expectedNameSha256": "72d516ef89de3cff93e6ffdc55790173ecb4ae3a1a9c48371125e02202899b1d",
+      "expectedPublicName": "SMARTWATER",
+      "expectedLabel": "1 L",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "6b147af813ae3ac6179ab7b2d2ffe67f361b53a06a0e7ee2d46206e9b7ac42ee"
+      }
     }
   ]
 }
