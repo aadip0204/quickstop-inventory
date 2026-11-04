@@ -597,3 +597,7 @@ Photo candidates with unresolved source, packaging or alcohol-strength conflicts
 Verified three unchanged product names against their exact retained product records and inspected existing photographs. The image evidence validator now accepts both observed publisher image URL formats while requiring the exact captured URL, selected product identifier, original inventory and current image guards. It does not construct or substitute image URLs.
 
 All catalog bytes, 9,952 source records, 9,693 public variants, 8,006 groups and 1,812 photographs are preserved. Fully verified names total 1,373; public title corrections remain 583. This pass adds no photographs. Full photo and name coverage remains incomplete; 7,881 variants still lack verified photos. Detailed evidence and original inputs remain private.
+
+## R75 individually verified product photographs
+
+Added 4 individually reviewed product photographs. All 9,952 source records, 9,693 public variants, 8,006 groups and 1,812 prior photographs are preserved. The catalog now has 1,816 pictured variants and 7,877 without verified photographs. Fully verified names remain 1,373 and public title corrections remain 583. Full coverage remains incomplete. Detailed evidence and original inputs remain private.

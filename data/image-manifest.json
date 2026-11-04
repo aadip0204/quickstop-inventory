@@ -36240,6 +36240,86 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "6277",
+      "src": "images/products/sku-6277.jpg",
+      "alt": "OceanSpray Pineapple 100% — 5.5 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "031200204547",
+      "expectedName": "OceanSpray Pineapple 100%",
+      "expectedLabel": "5.5 oz",
+      "sha256": "b71d54d3a606b20f8fef7fe35c31c66b4811bd66c9bb150e6322047d94cccb18",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7829",
+      "src": "images/products/sku-7829.jpg",
+      "alt": "Snapple Raspberry — 16 oz packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "076183163788",
+      "expectedName": "Snapple Raspberry",
+      "expectedLabel": "16 oz",
+      "sha256": "d0ffb4183056e4d568e05cb6cd07225df59debfbe05229909990743c7ec750a9",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "930",
+      "src": "images/products/sku-930.webp",
+      "alt": "Barenjager — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "083089500005",
+      "expectedName": "Barenjager",
+      "expectedLabel": "750 mL",
+      "sha256": "27a18b07bb76c1a5ea0768d200c6799cf8ccb4e8825304d1aae443397928aa8a",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1235",
+      "src": "images/products/sku-1235.jpg",
+      "alt": "Bols Sour Apple — 750 mL packaging",
+      "verifiedOn": "2026-11-03",
+      "expectedUpc": "080915035960",
+      "expectedName": "Bols Sour Apple",
+      "expectedLabel": "750 mL",
+      "sha256": "f71e19a40fde09d983af4ad0da75f6f2501b8d084f9a91eb4c07cb347679551c",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [
