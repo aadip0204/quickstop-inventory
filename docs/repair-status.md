@@ -566,3 +566,12 @@ Two independently reviewed professional photos show the exact Tampax Regular and
 Three existing names are verified without renaming them: both Tampax listings and Sour Patch Fruits. The manufacturer-name check now accepts narrowly validated Mondelez SmartLabel records. It does not approve photos or alter package sizes; the Sour Patch photo remains unresolved.
 
 All 9,952 source records, 9,693 variants, 8,006 ordered groups, original identifiers and all 1,757 prior photo records and files are preserved. The catalog has 1,759 approved photographs, 7,934 variants awaiting exact photographs, 579 public-title corrections and 1,340 fully verified names. Complete photo coverage and external verification of every name remain unfinished.
+
+
+## Twenty-three exact photographs and ten unchanged names — November 3, 2026 (Wave 70)
+
+This batch adds 23 independently reviewed professional photographs for exact Svedka, UV and Sobieski variants. Each selected size has its own source-bound image. Ten already pictured product names are verified against retained exact product records and actual package images without changing their names or sizes.
+
+Three proposed UV Cherry photos are withheld after comparison exposed 30% and 35% package strengths, with the third unreadable. The inventory and selected source records do not establish a common strength. Earlier photo approvals are superseded by the private correction; these candidates are not published.
+
+All 9,952 source records, 9,693 public variants, 8,006 ordered product groups, original identifiers and all 1,759 prior image files and assignments are preserved. The catalog now has 1,782 approved photographs, 7,911 variants awaiting exact photographs, 579 public-title corrections and 1,350 fully verified names. Full photo coverage and verification of every name remain unfinished.
