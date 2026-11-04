@@ -16860,6 +16860,176 @@
       "evidence": {
         "privateEvidenceSha256": "03166885a0b12aa9e746f1d09b5a82b3d4bd654950dd656e99d708537e26d21a"
       }
+    },
+    {
+      "sku": "2827",
+      "expectedUpc": "049000051162",
+      "expectedNameSha256": "6eb15ce766e07834a1b51753a748def73755a0c79c086930a34f2b2810a4dfda",
+      "expectedPublicName": "Diet Coke",
+      "expectedLabel": "16 oz",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "640087ebbee7ebacf443dd64786f9d0a6fa3aa1253cb6a6f5d8929304bfb010e"
+      }
+    },
+    {
+      "sku": "5711",
+      "expectedUpc": "025000053818",
+      "expectedNameSha256": "32b436edceaa03ca60a5fb0a276582c92eaa18fd01c404914d61d4204bc1f6be",
+      "expectedPublicName": "Minute Maid Lemonade",
+      "expectedLabel": "2 L",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "54c6872d5f8b4c37ccadea84a028a7421217aef4f383f7d2885fb4474ef21f91"
+      }
+    },
+    {
+      "sku": "6789",
+      "expectedUpc": "049000032789",
+      "expectedNameSha256": "1d1c642799c761826061934feba13ea1ad8d46d00cb913003bd436fa76d62c5a",
+      "expectedPublicName": "POWERADE ORANGE",
+      "expectedLabel": "Size not specified",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "6b8790d8930e33a9067198022535ee0b3748f440bd9d93e9bacecb6a1719fd57"
+      }
+    },
+    {
+      "sku": "7395",
+      "expectedUpc": "078000206456",
+      "expectedNameSha256": "f253fd26d54bfcbb1de554ed3d6edc67674c4a57f5d0e432708e78833e59dbba",
+      "expectedPublicName": "Schweppes ginger ale",
+      "expectedLabel": "1 L",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "7555fe8b79b77b4b5f2c5447cc582dcfa2352c606c4b4efc536250bf6d2f0ded"
+      }
+    },
+    {
+      "sku": "3051",
+      "expectedUpc": "096749938407",
+      "expectedNameSha256": "4a3c0bb50c06060e845584407f1219e396b219ccb113ed4759d6e215dd702586",
+      "expectedPublicName": "Du Bouchett Triple Sec",
+      "expectedLabel": "1 L",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "fc8334099babb05c776844df096239239dc764b1c6c426f68d54e89185d8a49f"
+      }
+    },
+    {
+      "sku": "3714",
+      "expectedUpc": "096749011551",
+      "expectedNameSha256": "ae5cc324d537c4a22977aaef6e26be8af37ff33513473ccea36b25dc185d8d0a",
+      "expectedPublicName": "Georgia Moon Corn Whiskey",
+      "expectedLabel": "750 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "2c06e6dc7cd5c2dca8d9c104843f94c763498f36d5f9ce2c8bcf78e745eecf1a"
+      }
+    },
+    {
+      "sku": "5802",
+      "expectedUpc": "085916016857",
+      "expectedNameSha256": "329fdb86f25f127fd43d647ccfc6661e8f26b3b3fffd953fec054f01add1c5e7",
+      "expectedPublicName": "MOHAWK VODKA",
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "4de2ca7da753ed9354f14461e1122657e9595bee8b84d475775f6c80cfe43037"
+      }
+    },
+    {
+      "sku": "4253",
+      "expectedUpc": "736040012863",
+      "expectedNameSha256": "2a8ca4ec9afe37d0fd1e54186f9941b25f1f8867325198ca9c3ff71d41a46655",
+      "expectedPublicName": "Hpnotiq",
+      "expectedLabel": "1.75 L",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "2ad0fbd830be6ae32b64741ff6172bb40f4f6b790ac4f2e3e7b3125fae93ff96"
+      }
+    },
+    {
+      "sku": "5709",
+      "expectedUpc": "025000058387",
+      "expectedNameSha256": "fbf8a14438e96d7741b88e4e5682b950b0f3eec31c875cc068995ec92b139c7e",
+      "expectedPublicName": "Minute Maid Lemonade Pack",
+      "expectedLabel": "12-pack · 12 oz",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "6e4a61f7913ea604e3e830d8758c9f1596c5e49410cb01a1e7c49b5c9b316056"
+      }
+    },
+    {
+      "sku": "101344",
+      "expectedUpc": "096749001361",
+      "expectedNameSha256": "3868ec3fcdfa065d134fabfe4ebeedb6a0492043ea77ccec91fa665cf848a69d",
+      "expectedPublicName": "LUNAZUL BLANCO",
+      "expectedLabel": "375 mL",
+      "verifiedOn": "2026-11-03",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "ef8e7644340239715b07e3165c741315b898fa69e3ddce4498f24a295cf3f28c"
+      }
     }
   ]
 }
