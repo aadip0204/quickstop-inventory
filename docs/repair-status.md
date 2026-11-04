@@ -601,3 +601,7 @@ All catalog bytes, 9,952 source records, 9,693 public variants, 8,006 groups and
 ## R75 individually verified product photographs
 
 Added 4 individually reviewed product photographs. All 9,952 source records, 9,693 public variants, 8,006 groups and 1,812 prior photographs are preserved. The catalog now has 1,816 pictured variants and 7,877 without verified photographs. Fully verified names remain 1,373 and public title corrections remain 583. Full coverage remains incomplete. Detailed evidence and original inputs remain private.
+
+## R76 individually verified product photographs
+
+Added 3 individually reviewed photographs and corrected 5 evidence-backed public titles. The three exact Snapple listings now share the reviewed group in their approved order. All 9,952 source records, 9,693 public variants and 1,816 prior photograph bytes are preserved. The catalog has 8,005 groups, 1,819 pictured variants and 7,874 without verified photographs. Fully verified names total 1,378; public title corrections total 588. Full coverage remains incomplete. Detailed evidence and original inputs remain private.

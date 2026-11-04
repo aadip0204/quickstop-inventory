@@ -8748,6 +8748,81 @@
       "evidence": {
         "privateEvidenceSha256": "ab104c07a02280b47af886cf1372b49fc03a577d5bd7efc64413a2e36bbfa4e7"
       }
+    },
+    {
+      "sku": "6277",
+      "expectedUpc": "031200204547",
+      "expectedSourceRow": 3996,
+      "expectedRawFieldsSha256": "7f28c1a7a3e5ed844fa09a20a38029f7b61a191e7de27d54c11351218aa6bcd8",
+      "expectedPublicName": "OceanSpray Pineapple 100%",
+      "expectedLabel": "5.5 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Ocean Spray 100% Pineapple Juice",
+      "reason": "Own actual PDP name/brand/expression and native printed label support precisely the proposed name. No normalized grouping collision. Approve only title wording under unchanged raw/variant metadata and documented external UPC gap.",
+      "evidence": {
+        "privateEvidenceSha256": "e05f3d3c1c708eb24f82f3d35dff5160fc8a520cef40ff8ac7be7632574d1fde"
+      }
+    },
+    {
+      "sku": "930",
+      "expectedUpc": "083089500005",
+      "expectedSourceRow": 569,
+      "expectedRawFieldsSha256": "95d999e3bf4fb91a9987405e94c2d0572727addae7ea09619cc78f61c6bca1df",
+      "expectedPublicName": "Barenjager",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "Bärenjäger Honey Liqueur",
+      "reason": "Own actual PDP name/brand/expression and native printed label support precisely the proposed name. No normalized grouping collision. Approve only title wording under unchanged raw/variant metadata and documented external UPC gap.",
+      "evidence": {
+        "privateEvidenceSha256": "a151ecffa6c64151618688e5ec34b220306dee05c428bf2df31bb515676f2b60"
+      }
+    },
+    {
+      "sku": "7829",
+      "expectedUpc": "076183163788",
+      "expectedSourceRow": 5047,
+      "expectedRawFieldsSha256": "1b2df395342b3a0e6ae1cd7eadf165d2927bdacbcc6538d3b48014473e2cc1e7",
+      "expectedPublicName": "Snapple Raspberry",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Snapple Raspberry Tea",
+      "reason": "7829 adds the explicitly printed Tea expression;7854/101384 change display case only. Pass is conditional on the separately reviewed exacttwo-group union retaining all3 variants. No code equivalence, material merge or variant deduplication.",
+      "evidence": {
+        "privateEvidenceSha256": "19f6c21ecae47a561a9a67dbf89aff8f741d159971a995fa54a5db2774b9c2f3"
+      }
+    },
+    {
+      "sku": "7854",
+      "expectedUpc": "076183001646",
+      "expectedSourceRow": 6520,
+      "expectedRawFieldsSha256": "283db8d439074b31f67a118435a8fd661ebc55b58221924883f59563f25c20ec",
+      "expectedPublicName": "SNAPPLE RASPBERRY TEA",
+      "expectedLabel": "64 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Snapple Raspberry Tea",
+      "reason": "7829 adds the explicitly printed Tea expression;7854/101384 change display case only. Pass is conditional on the separately reviewed exacttwo-group union retaining all3 variants. No code equivalence, material merge or variant deduplication.",
+      "evidence": {
+        "privateEvidenceSha256": "bb70d608beefcaa4d48b9ea71a9e78ed7239052859c94b22580105d819fcdf43"
+      }
+    },
+    {
+      "sku": "101384",
+      "expectedUpc": "076183003190",
+      "expectedSourceRow": 8244,
+      "expectedRawFieldsSha256": "7914e222bf2a29f5953d3e144783f5bfa09be8eedff9f34c332664dc71b76801",
+      "expectedPublicName": "SNAPPLE RASPBERRY TEA",
+      "expectedLabel": "16 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Juice",
+      "proposedPublicTitle": "Snapple Raspberry Tea",
+      "reason": "7829 adds the explicitly printed Tea expression;7854/101384 change display case only. Pass is conditional on the separately reviewed exacttwo-group union retaining all3 variants. No code equivalence, material merge or variant deduplication.",
+      "evidence": {
+        "privateEvidenceSha256": "b5c07066411d5adcd1ad51922d6eb29dca7407c8711a0ce1822d4f1b27568ad2"
+      }
     }
   ]
 }
