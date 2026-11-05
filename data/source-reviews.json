@@ -6718,6 +6718,39 @@
       "reviewedOn": "2026-11-03",
       "verificationMethod": "pg_rendered_single_box_contents_count",
       "expectedProductSha256": "5a8927b5c0299b420db2f87bd18dcf89918b9212054306dbeae680d490d24685"
+    },
+    {
+      "sku": "2800",
+      "expectedUpc": "024000162995",
+      "expectedNameSha256": "ecc09e2701b839e4953f6b8921130fd980e8e1b43360652257aeb94c0a29ee12",
+      "expectedSourceRecordSha256": "4d314400d0efc5aa72c0aed45e0fdf33f5340f876e9d5f13de60cbac37da8207",
+      "action": "resolve_verified_missing_measurement",
+      "reason": "Missing retail net mass only: exact unchanged Mercaso consumer metadata/Individual/net plus inspected printed14.5oz single can. General producer name/net corroboration supplies no matching manufacturer UPC or generation identity. Actual root/independent qualified factual receipts are bound; exact R85 guard continuation is frozen for independent current admission review.",
+      "reviewedOn": "2026-11-04",
+      "verificationMethod": "metadata_each_printed_food_net_content",
+      "expectedSourceRow": 1800,
+      "expectedPublicName": "Del Monte Sliced Carrots",
+      "expectedLabel": "Size not specified",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "expectedProductId": "p-62c9dd2dc01f08ca",
+      "expectedResultingGroupSkus": [
+        "2800"
+      ],
+      "expectedProductSha256": "cccce10895621418a575b6c66e753b96770a421b109dcc84bdbeae856e85c6ac",
+      "verifiedLabel": "14.5 oz",
+      "expectedImageSha256": "a83b6325b5456c1d6bd29cc2626ff5c09c03f45086427113b93c33a2a75818ff",
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "upc": true,
+        "visual": true
+      },
+      "evidence": {
+        "privateEvidenceSha256": "3a2e4827a5dec9915269ab9d6663658ad384a097cc932bfba26acf239f675524"
+      }
     }
   ]
 }

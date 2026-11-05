@@ -9558,6 +9558,192 @@
       "evidence": {
         "privateEvidenceSha256": "506333dd84334ba74a1d454b77d2718f1929a19c0e6252b90ec27f9def3280bd"
       }
+    },
+    {
+      "sku": "2563",
+      "expectedUpc": "08776004",
+      "expectedSourceRow": 1637,
+      "expectedRawFieldsSha256": "5bd18d836f471809eb0aaa638f247c1cfab570adc1429105945005815342bea5",
+      "expectedPublicName": "CROWN ROYAL",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "ac466438fc86cbd53ffe7c1317510126ed1a2c6363d29a90a1b723fbacffb9e2"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "2564",
+      "expectedUpc": "873560",
+      "expectedSourceRow": 1638,
+      "expectedRawFieldsSha256": "d6667dce6184dc474cf4c08273a49ed4675f34eaa5a885c8b798c930b7638a0d",
+      "expectedPublicName": "Crown Royal",
+      "expectedLabel": "50 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "ac85942064650e953e31b30fb81967f84535584504e922129cc9ef04ed1964a2"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "2565",
+      "expectedUpc": "871990",
+      "expectedSourceRow": 1639,
+      "expectedRawFieldsSha256": "a772c6b6384843f68dc79a149507042d910a2ef78aa3161108c6752fa8b6195b",
+      "expectedPublicName": "Crown Royal",
+      "expectedLabel": "50 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "ebd08c3f0f678002e3a2743933f959bad2fba125bf84e9cef68604113948b5ed"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "2566",
+      "expectedUpc": "877250",
+      "expectedSourceRow": 1640,
+      "expectedRawFieldsSha256": "a5690a58e5a236635dcd4b834ac37f8e4f3e6dcf839602ce4a47a2cbeb942907",
+      "expectedPublicName": "Crown Royal",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "dd21c7a1de1b8db9686f7449449e7dd7a2ae9572c82e13f8a6bc5639e5fe95fa"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "2567",
+      "expectedUpc": "082000807247",
+      "expectedSourceRow": 1641,
+      "expectedRawFieldsSha256": "465068c4667b252bb40dd07ebc3e7c854cdd08c1680152b9b223ae774167ec25",
+      "expectedPublicName": "Crown Royal",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "f977e4cf510c6dbb2e032fae9fb56624b611685538119e3a6f26301feb5d808f"
+      }
+    },
+    {
+      "sku": "2568",
+      "expectedUpc": "082000741633",
+      "expectedSourceRow": 1642,
+      "expectedRawFieldsSha256": "a561e96a05b80e331a339cb357ce0250a0a1772068e2e8480e9e980f6bc8bf01",
+      "expectedPublicName": "CROWN ROYAL",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "a554eae15ddfccd2cd4d85bff7181f57212934ad6c69f1bda69f2aa6ebad2d45"
+      }
+    },
+    {
+      "sku": "2577",
+      "expectedUpc": "087000007246",
+      "expectedSourceRow": 1647,
+      "expectedRawFieldsSha256": "d8bf55d9c664abd2fd8cabfcc00c43db9e25e5a8ca5960ee056e9d18c29e895f",
+      "expectedPublicName": "Crown Royal",
+      "expectedLabel": "1 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "afd42f60a8c9ece0254a9e2c347c8bcd272e09a3b676d34b5d00516c804cc2fc"
+      }
+    },
+    {
+      "sku": "2561",
+      "expectedUpc": "877270",
+      "expectedSourceRow": 6558,
+      "expectedRawFieldsSha256": "075ee3ee3f5f71e3463d3d2fcea76e992646e28938f01dbead5b27e15b35ceff",
+      "expectedPublicName": "Crown Royal",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "3c53d0df6d9b7a23adec513a94468255cf7c0365b70538d175b7339a905c92a3"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "101350",
+      "expectedUpc": "082000808527",
+      "expectedSourceRow": 6704,
+      "expectedRawFieldsSha256": "2412ed33b07c2d1ea1149bff6883532c27664258764018cf29ecf5db324065ca",
+      "expectedPublicName": "CROWN ROYAL",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "16a65e055959b92153d8258a0d08a8c4ebf9e0ef3ebbe46ae70294489d992b79"
+      }
+    },
+    {
+      "sku": "2562",
+      "expectedUpc": "877600",
+      "expectedSourceRow": 8824,
+      "expectedRawFieldsSha256": "e240a6fb9f91676c64279921206ae25063d9cde17f82347268b4a1d35e84e7b2",
+      "expectedPublicName": "Crown Royal",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Whiskey",
+      "proposedPublicTitle": "Crown Royal",
+      "reason": "Normalize case of the existing Crown Royal title only; preserve complete ten-member order, distinct original identifiers and units, and 2577 prior brand-spelling correction.",
+      "evidence": {
+        "privateEvidenceSha256": "54f7a8c2767e35531db65caa155dcad6e4b18803a1e077c65011347c677c03bb"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "8023",
+      "expectedUpc": "898804001008",
+      "expectedSourceRow": 5167,
+      "expectedRawFieldsSha256": "2667ed364b0ec99c63eb380394cc956f1fe78e7cfb84c557bfe878a8458edf72",
+      "expectedPublicName": "St. Germain",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Cordials",
+      "proposedPublicTitle": "St-Germain",
+      "reason": "Repair package brand separator only; no expression/class/strength expansion.",
+      "evidence": {
+        "privateEvidenceSha256": "74de79c4a4e869a9190d2e30b402c904ee58d4409ea641d2c063144cb1a6ef1f"
+      }
+    },
+    {
+      "sku": "9219",
+      "expectedUpc": "038075205303",
+      "expectedSourceRow": 7649,
+      "expectedRawFieldsSha256": "ba42e0618da623e340ba46ee414b504eed4c7fed7db6d7f8b42e8da2639adf49",
+      "expectedPublicName": "Verdi Raspberry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Verdi Raspberry Sparkletini",
+      "reason": "Restore explicit Raspberry Sparkletini product expression from own record and inspected native; no Wine/legal-class addition.",
+      "evidence": {
+        "privateEvidenceSha256": "49a48a3ae9529499c4f4923d6e389de5e3df73d10f9bddfddad3d89f84b38dc4"
+      }
     }
   ]
 }
