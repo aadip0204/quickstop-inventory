@@ -28662,7 +28662,7 @@
       "expectedName": "Bacardi Dragonberry"
     },
     {
-      "alt": "Buzzball strawberry ritA — 1.75 L container",
+      "alt": "BuzzBallz Biggies Strawberry 'Rita — 1.75 L container",
       "expectedLabel": "1.75 L",
       "expectedUpc": "851091006217",
       "verifiedOn": "2026-10-31",
@@ -28679,7 +28679,7 @@
       "sha256": "acd2aeda9da65ad2a4f12f471dd5752fdb19e63a2c59e0f4719f64fe414f5480",
       "attributionRequired": false,
       "usageBasis": "user_authorized_direct_reference",
-      "expectedName": "Buzzball strawberry ritA"
+      "expectedName": "BuzzBallz Biggies Strawberry 'Rita"
     },
     {
       "alt": "Hartley — 750 mL bottle",
@@ -38004,12 +38004,72 @@
     {
       "sku": "1576",
       "src": "images/products/sku-1576.jpg",
-      "alt": "Buzzball strawberry ritA — 1.75 L packaging",
+      "alt": "BuzzBallz Biggies Strawberry 'Rita — 1.75 L packaging",
       "verifiedOn": "2026-11-04",
       "expectedUpc": "851091006682",
-      "expectedName": "Buzzball strawberry ritA",
+      "expectedName": "BuzzBallz Biggies Strawberry 'Rita",
       "expectedLabel": "1.75 L",
       "sha256": "18f12a5ab1b4741661e848ddb8c2cdc15c9cd0bb1ba0171a62182626d1d105e8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "936",
+      "src": "images/products/sku-936.jpg",
+      "alt": "Bartenura Moscato — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "087752005644",
+      "expectedName": "Bartenura Moscato",
+      "expectedLabel": "750 mL",
+      "sha256": "40ee61c26533f114028a6fbac571c20997f7bf45a56e19a8bf7aa782c8c452e7",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7155",
+      "src": "images/products/sku-7155.jpg",
+      "alt": "Robert Mondavi Merlot Private Selection — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "086003000421",
+      "expectedName": "Robert Mondavi Merlot Private Selection",
+      "expectedLabel": "750 mL",
+      "sha256": "5e0e1898d74e76edab1bc34c1d5b34e23b70c27df36b989f8e80177d0450da41",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5718",
+      "src": "images/products/sku-5718.jpg",
+      "alt": "Mirassou Pinot Noir — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "085000012277",
+      "expectedName": "Mirassou Pinot Noir",
+      "expectedLabel": "750 mL",
+      "sha256": "2afef41394d169462d6b83fcdb38a92852d5c75460206193b46c8035b30cb2a5",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {

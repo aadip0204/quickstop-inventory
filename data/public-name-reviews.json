@@ -9528,6 +9528,36 @@
       "evidence": {
         "privateEvidenceSha256": "7100fc2e53bca7f997e6fbdb7128a699a2d8d649350f6072cd40c5783c9e1b13"
       }
+    },
+    {
+      "sku": "1577",
+      "expectedUpc": "851091006217",
+      "expectedSourceRow": 984,
+      "expectedRawFieldsSha256": "526fff3126b61339a713908a44cab061fcb887b0e630fe05ea4b09afb20d8256",
+      "expectedPublicName": "Buzzball strawberry ritA",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "BuzzBallz Biggies Strawberry 'Rita",
+      "reason": "Own complete retailer product record and exact native independently support BuzzBallz Biggies Strawberry ’Rita. Correct brand spelling, restore Biggies, normalize case and retain the apostrophe before Rita.",
+      "evidence": {
+        "privateEvidenceSha256": "83c1ff4e2528df57bae7514c4825406ac2b75ddf775af0b97dbdc0436fc98d66"
+      }
+    },
+    {
+      "sku": "1576",
+      "expectedUpc": "851091006682",
+      "expectedSourceRow": 7484,
+      "expectedRawFieldsSha256": "64fa7abcbd7faf5c5124860e94563f485cc447f2b45be9ae4bae7c6cd238224b",
+      "expectedPublicName": "Buzzball strawberry ritA",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Tequila",
+      "proposedPublicTitle": "BuzzBallz Biggies Strawberry 'Rita",
+      "reason": "Own complete retailer product record and exact native independently support BuzzBallz Biggies Strawberry ’Rita. Correct brand spelling, restore Biggies, normalize case and retain the apostrophe before Rita.",
+      "evidence": {
+        "privateEvidenceSha256": "506333dd84334ba74a1d454b77d2718f1929a19c0e6252b90ec27f9def3280bd"
+      }
     }
   ]
 }
