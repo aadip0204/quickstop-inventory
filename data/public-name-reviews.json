@@ -10121,6 +10121,111 @@
       "evidence": {
         "privateEvidenceSha256": "5b65aaa2aa64ddf97fb32dc23e0e183a63ebaf18be2f15b354833b54e6f573fe"
       }
+    },
+    {
+      "sku": "9187",
+      "expectedUpc": "085000001202",
+      "expectedSourceRow": 5839,
+      "expectedRawFieldsSha256": "18fdd917748229d717873a1a7f6d8f5e4e79560d7a7ce3e9a830da4b85d01f6f",
+      "expectedPublicName": "VELLA CHABLIS",
+      "expectedLabel": "5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Peter Vella Chablis",
+      "reason": "Restore the explicitly published and package-visible Peter Vella brand while retaining Chablis, without adding region, legal class or strength.",
+      "evidence": {
+        "privateEvidenceSha256": "197bd595a98f71b5f6a3194834ff6af4564972576f3316439a6d7c1a8fa8994f"
+      }
+    },
+    {
+      "sku": "9191",
+      "expectedUpc": "085000006924",
+      "expectedSourceRow": 8873,
+      "expectedRawFieldsSha256": "9f0eea337011e97acf46d0f55a83acde716ce56548e9bb64eb8bd4894d75e6b5",
+      "expectedPublicName": "PETER VELLA WHITE ZIN BOX",
+      "expectedLabel": "5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Peter Vella White Zinfandel Box",
+      "reason": "Expand the original White Zin abbreviation to the actual source and package expression White Zinfandel; restore capitalization and retain the existing Box descriptor. No region, legal class or strength added.",
+      "evidence": {
+        "privateEvidenceSha256": "db77a222410a53a4f55aa35da0f2751d2ae70e4ccf3a858bafbbf35001f9d370"
+      }
+    },
+    {
+      "sku": "5135",
+      "expectedUpc": "012354000148",
+      "expectedSourceRow": 3329,
+      "expectedRawFieldsSha256": "542ed744da53822b11c83bb5d93ec207b43f528b8da4c02aa3583fc66a2f43ce",
+      "expectedPublicName": "Lindemans Moscato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Lindeman's Bin 90 Moscato",
+      "reason": "Restore the package-visible Lindeman's brand punctuation and exact source/package Bin and expression. Keep this generic inventory title yearless; no NV, vintage, numeric strength, formulation, packaging generation or current-stock claim.",
+      "evidence": {
+        "privateEvidenceSha256": "3bcefbfe89f416bb6c3761e89acb8435cc04d7a8a1c4ed73fb91b14d04a0243e"
+      }
+    },
+    {
+      "sku": "5132",
+      "expectedUpc": "012354199262",
+      "expectedSourceRow": 3326,
+      "expectedRawFieldsSha256": "cffe04774cd93b454239fff2d436252ad35f7f4aae680858b8d9b9729a986cdd",
+      "expectedPublicName": "Lindemans Cab Merlot",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Lindeman's Bin 80 Cabernet Merlot",
+      "reason": "Restore the package-visible Lindeman's brand punctuation and exact source/package Bin and expression. Expand Cab to Cabernet only; Merlot remains a distinct blend component. Keep this generic inventory title yearless; no NV, vintage, numeric strength, formulation, packaging generation or current-stock claim.",
+      "evidence": {
+        "privateEvidenceSha256": "c2f0d5f8f1de046f82ae3cbef087a9e24b15edc904b8f31a52de8b3d24c00ef8"
+      }
+    },
+    {
+      "sku": "5133",
+      "expectedUpc": "012354081840",
+      "expectedSourceRow": 3327,
+      "expectedRawFieldsSha256": "7e749b356a6164c4287b27ac825297cadbc309078ad2e5caf67aa182f1ecee3c",
+      "expectedPublicName": "Lindemans Chardonnay",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Lindeman's Bin 65 Chardonnay",
+      "reason": "Restore the package-visible Lindeman's brand punctuation and exact source/package Bin and expression. Keep this generic inventory title yearless; no NV, vintage, numeric strength, formulation, packaging generation or current-stock claim.",
+      "evidence": {
+        "privateEvidenceSha256": "8b23722d94b36eae2a6a3bc1ed92b538db5023e9c0aa388a5343ff1aea65a1e9"
+      }
+    },
+    {
+      "sku": "5134",
+      "expectedUpc": "012354089990",
+      "expectedSourceRow": 3328,
+      "expectedRawFieldsSha256": "8490e57d568b3ea92066fb432424901fbd5c737bea07ba4ff510cd8ca633ef10",
+      "expectedPublicName": "Lindemans Merlot",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Lindeman's Bin 40 Merlot",
+      "reason": "Restore the package-visible Lindeman's brand punctuation and exact source/package Bin and expression. Keep this generic inventory title yearless; no NV, vintage, numeric strength, formulation, packaging generation or current-stock claim.",
+      "evidence": {
+        "privateEvidenceSha256": "5aff09b31e6e12d0aba437002af29a4b1ce8a45781cfcb6a026df9b7663c8672"
+      }
+    },
+    {
+      "sku": "5136",
+      "expectedUpc": "012354081864",
+      "expectedSourceRow": 3330,
+      "expectedRawFieldsSha256": "69655912ca4ff166b7575083f38d8cc01fa63ff5a812a81bf1a2b58ba248a804",
+      "expectedPublicName": "Lindemans Pinot Noir",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Lindeman's Bin 99 Pinot Noir",
+      "reason": "Restore the package-visible Lindeman's brand punctuation and exact source/package Bin and expression. Keep this generic inventory title yearless; no NV, vintage, numeric strength, formulation, packaging generation or current-stock claim.",
+      "evidence": {
+        "privateEvidenceSha256": "82aa0dac3b65ad1f531f118d6ff516d609e283715e49bd1c9a1d1a27280794e8"
+      }
     }
   ]
 }
