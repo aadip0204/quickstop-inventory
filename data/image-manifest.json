@@ -26482,26 +26482,6 @@
       "sha256": "4ed35c589cc93233ea69b616b51497fa09d16204d88e7bc411892c9d28a7f70d"
     },
     {
-      "expectedUpc": "852832000150",
-      "expectedName": "MUMM NAPA BRUT PRESTIGE",
-      "alt": "MUMM NAPA BRUT PRESTIGE — 750 mL bottle",
-      "src": "images/products/sku-6015.jpg",
-      "sku": "6015",
-      "verifiedOn": "2026-10-31",
-      "verification": {
-        "brand": true,
-        "expression": true,
-        "size": true,
-        "packaging": true,
-        "visual": true,
-        "professional": true
-      },
-      "usageBasis": "user_authorized_direct_reference",
-      "expectedLabel": "750 mL",
-      "attributionRequired": false,
-      "sha256": "10c3163550012d4d0516406fee8df622d55faea26ecc4ceacb800fdc1cd5dd03"
-    },
-    {
       "expectedUpc": "085000014332",
       "expectedName": "New Amsterdam Gin",
       "alt": "New Amsterdam Gin — 200 mL bottle",
@@ -36904,10 +36884,10 @@
     {
       "sku": "9219",
       "src": "images/products/sku-9219.jpg",
-      "alt": "Verdi Raspberry — 750 mL packaging",
+      "alt": "Verdi Raspberry Sparkletini — 750 mL packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "038075205303",
-      "expectedName": "Verdi Raspberry",
+      "expectedName": "Verdi Raspberry Sparkletini",
       "expectedLabel": "750 mL",
       "sha256": "07207b272417c216948e54f8b914bc41df03514e72bfbc2bea362811b1a93817",
       "usageBasis": "user_authorized_direct_reference",
@@ -37264,10 +37244,10 @@
     {
       "sku": "8023",
       "src": "images/products/sku-8023.jpg",
-      "alt": "St. Germain — 750 mL packaging",
+      "alt": "St-Germain — 750 mL packaging",
       "verifiedOn": "2026-11-04",
       "expectedUpc": "898804001008",
-      "expectedName": "St. Germain",
+      "expectedName": "St-Germain",
       "expectedLabel": "750 mL",
       "sha256": "24baf28962ab8c844ba82b9d6e6d159d1346692f1cac2f660c14c89644e60443",
       "usageBasis": "user_authorized_direct_reference",
@@ -37844,10 +37824,10 @@
     {
       "sku": "2577",
       "src": "images/products/sku-2577.jpg",
-      "alt": "CROWN ROYAL — 1 L packaging",
+      "alt": "Crown Royal — 1 L packaging",
       "verifiedOn": "2026-11-04",
       "expectedUpc": "087000007246",
-      "expectedName": "CROWN ROYAL",
+      "expectedName": "Crown Royal",
       "expectedLabel": "1 L",
       "sha256": "87f1c516019617a77817fa17e41c0d577606345ba258204793e85b2c51ab73ee",
       "usageBasis": "user_authorized_direct_reference",
@@ -38070,6 +38050,206 @@
       "expectedName": "Mirassou Pinot Noir",
       "expectedLabel": "750 mL",
       "sha256": "2afef41394d169462d6b83fcdb38a92852d5c75460206193b46c8035b30cb2a5",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "629",
+      "src": "images/products/sku-629.jpg",
+      "alt": "ASTI CINZANO SWEET — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "086785900124",
+      "expectedName": "ASTI CINZANO SWEET",
+      "expectedLabel": "750 mL",
+      "sha256": "53cb4a3187a0c7f3c2f03a1fb45dfc8781415d38e66cdaf8dd8e811e05e8853b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4873",
+      "src": "images/products/sku-4873.jpg",
+      "alt": "Korbel sweet cuvee — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "084704098044",
+      "expectedName": "Korbel sweet cuvee",
+      "expectedLabel": "750 mL",
+      "sha256": "21146f9a391ff22446329de1ba100f27c0cd90638d83dff011761e47026bc7ac",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4870",
+      "src": "images/products/sku-4870.jpg",
+      "alt": "Korbel Extra Dry — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "084704091472",
+      "expectedName": "Korbel Extra Dry",
+      "expectedLabel": "750 mL",
+      "sha256": "302700b379496b88408139244f7387ef67f6711fdd55b2a227050e3a260e270b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "4875",
+      "src": "images/products/sku-4875.jpg",
+      "alt": "Korbel Sweet Rose — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "084704097979",
+      "expectedName": "Korbel Sweet Rose",
+      "expectedLabel": "750 mL",
+      "sha256": "d63d5129292db7df30a532411b1ee2ad415bdd51cf5ec7d1483e956619b9c39d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2800",
+      "src": "images/products/sku-2800.png",
+      "alt": "Del Monte Sliced Carrots — 14.5 oz packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "024000162995",
+      "expectedName": "Del Monte Sliced Carrots",
+      "expectedLabel": "14.5 oz",
+      "sha256": "a83b6325b5456c1d6bd29cc2626ff5c09c03f45086427113b93c33a2a75818ff",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7332",
+      "src": "images/products/sku-7332.jpg",
+      "alt": "SANTERO PINEAPPLE MOSCATO — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "713757780513",
+      "expectedName": "SANTERO PINEAPPLE MOSCATO",
+      "expectedLabel": "750 mL",
+      "sha256": "894d4dac54ea33f1b934054ddcc3b9aec64babaee35e229c30649822c42d05de",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7330",
+      "src": "images/products/sku-7330.jpg",
+      "alt": "SANTERO MOSCATO PEACH — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "713757780315",
+      "expectedName": "SANTERO MOSCATO PEACH",
+      "expectedLabel": "750 mL",
+      "sha256": "b0a453aa149162a110d7b35a8fbb868276825feb44d8aeee3d29d356f04ae1b2",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9215",
+      "src": "images/products/sku-9215.jpg",
+      "alt": "VERDI BOSCA — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "038075802304",
+      "expectedName": "VERDI BOSCA",
+      "expectedLabel": "750 mL",
+      "sha256": "618142d3e44ee122fb6d66f142cfd2bbaa036e269d1a08f320761d7a0b608abe",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "399",
+      "src": "images/products/sku-399.jpg",
+      "alt": "Andre Cold Duck — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "085000007471",
+      "expectedName": "Andre Cold Duck",
+      "expectedLabel": "750 mL",
+      "sha256": "e475364a0c9e79108e701956696a9fe0a046f7f4770fcef377e5f6899687acbc",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "400",
+      "src": "images/products/sku-400.jpg",
+      "alt": "Andre Extra Dry — 750 mL packaging",
+      "verifiedOn": "2026-11-04",
+      "expectedUpc": "085000007488",
+      "expectedName": "Andre Extra Dry",
+      "expectedLabel": "750 mL",
+      "sha256": "41bdf5340dcc76bde25b212ea68cf09d8292b24a44e8417d01e015675277326c",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {

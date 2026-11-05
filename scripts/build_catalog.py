@@ -110,6 +110,7 @@ NAME_STRENGTH_RE = re.compile(r'\d+(?:\.\d+)?\s*(?:%\s*(?:ABV\b|A/C\b)?|ABV\b|A/
 PRIVATE_REVIEW_EVIDENCE_KIND = 'quickstop-private-review-evidence'
 FOOD_FLUID_OUNCE_METHOD = 'food_single_bottle_fluid_ounce'
 PRINTED_FOOD_UNIT_METHOD = 'printed_barcode_food_net_content'
+METADATA_FOOD_UNIT_METHOD = 'metadata_each_printed_food_net_content'
 PG_CONTENTS_COUNT_METHOD = 'pg_rendered_single_box_contents_count'
 NAME_ONLY_RESTORATION_METHOD = 'exact_upc_guarded_name_restoration'
 NUMERIC_NAME_RESTORATION_METHOD = 'exact_literal_gtin_numeric_name_only'
@@ -2121,6 +2122,261 @@ def validate_printed_food_unit_evidence(review: dict) -> None:
         raise ValueError(f'Printed food unit requires real capture and inspection dates: {sku}') from error
 
 
+def metadata_food_product_sha256(product: dict) -> str:
+    """Bind every selected field; the full capture separately binds JSON types."""
+    return hashlib.sha256(json.dumps(product, ensure_ascii=False, sort_keys=True,
+        separators=(',', ':'), default=lambda value: decimal_text(str(value))
+        if isinstance(value, Decimal) else (_ for _ in ()).throw(TypeError())).encode()).hexdigest()
+
+
+def captured_delmonte_mass_corroboration(body: str, url: str, sku: str) -> dict:
+    """Read only the own main product/net panel and retain both own code fields."""
+    from html.parser import HTMLParser
+
+    class ProductParser(HTMLParser):
+        CDATA_CONTENT_ELEMENTS = ('script', 'style', 'textarea', 'title', 'xmp',
+                                  'iframe', 'noembed', 'noframes')
+
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.root = {'tag': '', 'attrs': {}, 'children': [], 'ignored': False}
+            self.stack, self.invalid = [self.root], False
+
+        def handle_starttag(self, tag, attrs):
+            if tag == 'plaintext':
+                raise ValueError('Plaintext consumes the remaining document; unsupported producer capture')
+            attributes = dict(attrs)
+            hidden = ('hidden' in attributes or attributes.get('aria-hidden') == 'true'
+                      or re.search(r'(?:display\s*:\s*none|visibility\s*:\s*hidden)', attributes.get('style') or '', re.I))
+            node = {'tag': tag, 'attrs': attributes, 'children': [], 'ambiguous': len(attributes) != len(attrs), 'ignored': bool(
+                self.stack[-1]['ignored'] or hidden or tag in {'style', 'template', 'noscript', 'svg', 'textarea',
+                                                        'title', 'xmp', 'iframe', 'noembed', 'noframes'})}
+            self.stack[-1]['children'].append(node)
+            if tag not in {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+                           'link', 'meta', 'param', 'source', 'track', 'wbr'}:
+                self.stack.append(node)
+
+        def handle_endtag(self, tag):
+            if (any(node['attrs'].get('id') == 'block-delmonte-dm-system-main' for node in self.stack)
+                    and not self.stack[-1]['ignored'] and self.stack[-1]['tag'] != tag):
+                self.invalid = True
+            for index in range(len(self.stack) - 1, 0, -1):
+                if self.stack[index]['tag'] == tag:
+                    self.stack = self.stack[:index]
+                    break
+
+        def handle_startendtag(self, tag, attrs):
+            if tag in self.CDATA_CONTENT_ELEMENTS:
+                raise ValueError('Self-closing raw-text elements are unsupported producer capture syntax')
+            self.handle_starttag(tag, attrs)
+            if self.stack[-1]['tag'] == tag:
+                self.stack.pop()
+
+        def handle_data(self, value):
+            self.stack[-1]['children'].append(value)
+
+    def walk(node):
+        if not node['ignored']:
+            yield node
+            for child in node['children']:
+                if isinstance(child, dict):
+                    yield from walk(child)
+
+    def text(node):
+        return clean_space(' '.join(child if isinstance(child, str) else text(child)
+            for child in node['children'] if isinstance(child, str)
+            or not child['ignored'] and child['tag'] != 'script'))
+
+    def raw_script(node):
+        return ''.join(child for child in node['children'] if isinstance(child, str))
+
+    def css(node, name):
+        return name in (node['attrs'].get('class') or '').split()
+
+    try:
+        parser = ProductParser(); parser.feed(body); parser.close()
+        nodes = list(walk(parser.root))
+        main = [node for node in nodes if node['attrs'].get('id') == 'block-delmonte-dm-system-main']
+        if parser.invalid or len(main) != 1 or any(node.get('ambiguous') for node in walk(main[0])):
+            raise ValueError('Expected one own product main block')
+        banners = [node for node in walk(main[0]) if node['tag'] == 'section' and css(node, 'product-page')]
+        ingredients = [node for node in walk(main[0]) if node['tag'] == 'section' and css(node, 'product_ingredients')]
+        if len(banners) != 1 or len(ingredients) != 1:
+            raise ValueError('Expected own product banner and nutrition section')
+        titles = [text(node) for node in walk(banners[0]) if node['tag'] == 'h1']
+        sizes = [text(node) for node in walk(banners[0]) if node['tag'] == 'h4' and text(node).startswith('Sizes Available:')]
+        options = [node for node in walk(ingredients[0]) if css(node, 'nutrition-option')]
+        headings = [text(node) for option in options for node in walk(option) if node['tag'] == 'h4']
+        ids = [node['attrs'].get('data-node-id') for node in walk(banners[0]) if node['attrs'].get('id') == 'node-id']
+        settings = [node for node in nodes if node['tag'] == 'script'
+                    and node['attrs'].get('type') == 'application/json'
+                    and node['attrs'].get('data-drupal-selector') == 'drupal-settings-json'
+                    and 'src' not in node['attrs']]
+        scripts = [node for node in nodes if node['tag'] == 'script' and 'src' not in node['attrs']
+                   and node['attrs'].get('type', '').lower() in ('', 'text/javascript', 'application/javascript')
+                   and re.search(r'window\.bvDCC\s*=', raw_script(node))]
+        if any(len(values) != 1 for values in (titles, sizes, options, headings, ids, settings, scripts)):
+            raise ValueError('Ambiguous own product title/net/native records')
+        if settings[0]['ambiguous'] or scripts[0]['ambiguous']:
+            raise ValueError('Ambiguous native own-product script attributes')
+        script = raw_script(scripts[0])
+        power = retailer_name_json(raw_script(settings[0]))['delmonte']['powerReviews']
+        # The retained source has one active assignment and optionally this
+        # exact known callback. Never search inside JS comments or strings.
+        callback = (r'\s*window\.bvCallback\s*=\s*function\s*\(\s*BV\s*\)\s*\{\s*'
+                    r'BV\.pixel\.trackEvent\s*\(\s*"CatalogUpdate"\s*,\s*\{\s*'
+                    r"type\s*:\s*'Product'\s*,\s*locale\s*:\s*window\.bvDCC\.catalogData\.locale\s*,\s*"
+                    r'catalogProducts\s*:\s*window\.bvDCC\.catalogData\.catalogProducts\s*\}\s*\)\s*;\s*\}\s*;')
+        match = re.fullmatch(r'\s*window\.bvDCC\s*=\s*\{\s*catalogData\s*:\s*\{\s*locale\s*:\s*"en_US"\s*,\s*'
+                             r'catalogProducts\s*:\s*\[\s*(\{.*?\})\s*\]\s*\}\s*\}\s*;'
+                             + '(?:' + callback + r')?\s*', script, re.S)
+        if not match:
+            raise ValueError('Unsupported own catalog-data shape')
+        catalog = retailer_name_json(re.sub(r',\s*\}$', '}', match[1]))
+        if (power['nodeTitle'] != titles[0] or catalog['productName'] != titles[0]
+                or power['pageUrl'] != url or catalog['productPageURL'] != url
+                or str(power['node']) != ids[0] or str(catalog['productId']) != ids[0]
+                or power['imageUrl'] != catalog['productImageURL']):
+            raise ValueError('Own native product identity does not match its main content')
+        codes = {'drupalSettings:/delmonte/powerReviews/upc': power['upc'],
+                 'window.bvDCC:/catalogData/catalogProducts/0/upcs': catalog['upcs']}
+        if any(not isinstance(values, list) or not values
+               or any(not isinstance(value, str) or not value for value in values) for values in codes.values()):
+            raise ValueError('Own publisher code fields must be retained literally')
+        return {'title': titles[0], 'sizes': sizes[0], 'nutritionHeading': headings[0], 'publisherCodeFields': codes}
+    except (KeyError, TypeError, ValueError, AttributeError) as error:
+        raise ValueError(f'Metadata food unit requires unambiguous own Del Monte name/net content: {sku}') from error
+
+
+def validate_metadata_food_unit_evidence(review: dict) -> None:
+    """Assign from exact consumer metadata plus printed net, not a producer UPC."""
+    sku = review['sku']
+
+    def require(value):
+        if not value:
+            raise ValueError('Incomplete or contradictory metadata food-unit evidence')
+
+    def capture(item):
+        value = item['capture']
+        require(set(value) == {'status', 'complete', 'contentType', 'responseUrl', 'responseBody'})
+        require(type(value['status']) is int and value['status'] == 200 and value['complete'] is True)
+        require(isinstance(value['contentType'], str) and value['contentType'].split(';')[0].strip().lower() == 'text/html')
+        require(value['responseUrl'] == item['url'] and isinstance(value['responseBody'], str) and value['responseBody'])
+        require(hashlib.sha256(value['responseBody'].encode()).hexdigest() == item['sourceSha256'])
+        return value['responseBody']
+
+    def name(value):
+        return clean_space(value.replace(',', ' ')).casefold()
+
+    def mass(value):
+        match = re.fullmatch(r'([0-9]+(?:\.[0-9]+)?)\s*(oz|g|kg|lb)\.?', value, re.I)
+        return decimal_text(match[1]) + ' ' + match[2].lower() if match and Decimal(match[1]) > 0 else None
+
+    try:
+        evidence = review['evidence']
+        kinds = {'distributor_exact_consumer_metadata_record', 'manufacturer_named_net_content_corroboration', 'inspected_package_photo'}
+        require(isinstance(evidence, list) and len(evidence) == 3 and {item['kind'] for item in evidence} == kinds)
+        source = next(item for item in evidence if item['kind'] == 'distributor_exact_consumer_metadata_record')
+        producer = next(item for item in evidence if item['kind'] == 'manufacturer_named_net_content_corroboration')
+        photo = next(item for item in evidence if item['kind'] == 'inspected_package_photo')
+        base = {'kind', 'url', 'supports', 'publisher', 'sourceRole', 'sourceSha256', 'retrievedOn', 'capture'}
+        require(set(source) == base | {'consumerCodeBasis', 'observedConsumerCode', 'consumerTagIndex',
+                'selectedProductSha256', 'retailUnitsPerPackage', 'retailUnitCountBasis'})
+        require(set(producer) == base | {'corroborationScope', 'manufacturerConsumerCodeMatchClaimed',
+                'publisherCodeFields', 'codeAdjudication'})
+        require(set(photo) == {'kind', 'url', 'supports', 'sha256', 'inspectedOn', 'inspectionReceipt', 'inspectionReceiptSha256'})
+        require(all(safe_review_text(item['supports']) for item in evidence))
+        require(source['publisher'] == 'Mercaso' and source['sourceRole'] == 'direct_seller_wholesaler')
+        require(producer['publisher'] == 'Del Monte' and producer['sourceRole'] == 'manufacturer_name_and_net_content_corroboration_only')
+        require(producer['corroborationScope'] == 'general_named_product_net_content_only'
+                and producer['manufacturerConsumerCodeMatchClaimed'] is False)
+        for value in (review['reviewedOn'], source['retrievedOn'], producer['retrievedOn'], photo['inspectedOn']):
+            require(isinstance(value, str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}', value)); date.fromisoformat(value)
+        product = captured_mercaso_food_product(capture(source), sku)
+        parsed = urlparse(source['url']); slug = product['slug']
+        require(parsed.scheme == 'https' and parsed.netloc == 'shop.mercaso.com'
+                and not any((parsed.params, parsed.query, parsed.fragment)))
+        require(isinstance(slug, str) and re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug)
+                and re.fullmatch(r'(?:/collections/[a-z0-9]+(?:-[a-z0-9]+)*)?/products/' + re.escape(slug), parsed.path)
+                and product['path'] == '/' + slug)
+        require(re.fullmatch(r'gid://shopify/Product/[1-9][0-9]*', product['id']))
+        require(name(product['name']) == name(review['expectedPublicName'])
+                and ('productTitle' not in product or name(product['productTitle']) == name(product['name'])))
+        tags, variants = product['tags'], product['variants']
+        require(isinstance(tags, list) and all(isinstance(tag, str) for tag in tags))
+        literal = 'UPC-Each: ' + review['expectedUpc']
+        require(tags.count(literal) == 1 and source['observedConsumerCode'] == review['expectedUpc']
+                and source['consumerCodeBasis'] == 'own_product_typed_UPC_Each_tag'
+                and type(source['consumerTagIndex']) is int and source['consumerTagIndex'] == tags.index(literal))
+        require(source['selectedProductSha256'] == metadata_food_product_sha256(product))
+        require(type(product['itemSize']) in (int, Decimal) and product['itemSize'] > 0
+                and product['unitOfMeasure'] in {'oz', 'g', 'kg', 'lb'}
+                and decimal_text(str(product['itemSize'])) + ' ' + product['unitOfMeasure'] == review['verifiedLabel'])
+        for title in [product.get('oldTitle', '')] + [tag[5:] for tag in tags if tag.startswith('Size_')]:
+            measures = extract_dimensions(title)['measures']
+            require(not measures or measures == extract_dimensions(review['verifiedLabel'])['measures'])
+        individuals = [item for item in variants if clean_space(item['name']).casefold() == 'individual']
+        require(len(individuals) == 1 and individuals[0]['name'] == 'Individual' and individuals[0]['barcode'] is None)
+        options = [item for item in individuals[0]['options'] if item.get('displayName') == 'title']
+        require(len(options) == 1 and options[0]['values'] == [{'label': 'Individual'}])
+        require(type(source['retailUnitsPerPackage']) is int and source['retailUnitsPerPackage'] == 1
+                and source['retailUnitCountBasis'] == 'individual_option_and_manual_single_container')
+        image_url = product['images'][0]['url']
+        require(review_url_host(image_url) and photo['url'] == image_url and photo['sha256'] == review['expectedImageSha256'])
+        parsed = urlparse(producer['url'])
+        require(parsed.scheme == 'https' and parsed.netloc in {'www.delmonte.com', 'delmonte.com'}
+                and not any((parsed.params, parsed.query, parsed.fragment))
+                and re.fullmatch(r'/products/vegetables/[a-z0-9-]+/[a-z0-9-]+', parsed.path))
+        own = captured_delmonte_mass_corroboration(capture(producer), producer['url'], sku)
+        require(name('Del Monte ' + own['title']) == name(review['expectedPublicName']))
+        require(mass(own['sizes'].removeprefix('Sizes Available:').strip()) == review['verifiedLabel'])
+        descriptor = re.fullmatch(r'Fresh Cut(?:®)?\s+([^,]+),\s*([0-9.]+\s*(?:oz|g|kg|lb)\.?)\s+Can', own['nutritionHeading'])
+        require(descriptor and name('Del Monte ' + descriptor[1]) == name(review['expectedPublicName'])
+                and mass(descriptor[2]) == review['verifiedLabel'])
+        require(producer['publisherCodeFields'] == own['publisherCodeFields'])
+        adjudication = producer['codeAdjudication']
+        require(set(adjudication) == {'scope', 'consumerCodeAssociation', 'assessment',
+                                      'rootReceiptSha256', 'independentReceiptSha256'})
+        require(adjudication['scope'] == 'own_node_codes_retained_without_cross_source_equivalence'
+                and adjudication['consumerCodeAssociation'] == 'unestablished_not_used_for_assignment'
+                and safe_review_text(adjudication['assessment']))
+        receipt = photo['inspectionReceipt']
+        expected = {'scope': 'original_inventory_unit', 'sku': sku, 'upc': review['expectedUpc'],
+            'publicName': review['expectedPublicName'], 'expectedLabel': review['expectedLabel'], 'verifiedLabel': review['verifiedLabel'],
+            'productId': review['expectedProductId'], 'productSha256': review['expectedProductSha256'],
+            'groupSkus': [sku], 'sourceRow': review['expectedSourceRow'], 'rawFieldsSha256': review['expectedSourceRecordSha256'],
+            'rawNameSha256': review['expectedNameSha256'], 'sha256': review['expectedImageSha256'],
+            'originalSha256': review['expectedImageSha256'], 'sourceImageUrl': image_url,
+            'visibleNetContent': review['verifiedLabel'], 'countBasis': 'manual_visible_packaging',
+            'codeBasis': 'own_product_typed_consumer_metadata', 'netContentBasis': 'printed_package_net_content',
+            'physicalBarcodeReadable': False, 'manufacturerConsumerCodeMatchClaimed': False,
+            'exactConsumerMetadataCodeMatch': True, 'retailerIdentityConflictObserved': False,
+            'rawIdentityConflictObserved': False, 'retailUnitConflictObserved': False,
+            'distributorSourceSha256': source['sourceSha256'], 'producerSourceSha256': producer['sourceSha256'],
+            'selectedProductSha256': source['selectedProductSha256'],
+            'producerCodeAdjudicationSha256': review_evidence_sha256(adjudication), 'inspectedOn': photo['inspectedOn']}
+        extra = {'src', 'publicImageSha256', 'visibleContainerCount', 'verification', 'visibleNetContentLiteral',
+                 'nameCorrectionSha256', 'rootInspectionReceiptSha256', 'independentInspectionReceiptSha256'}
+        require(isinstance(receipt, dict) and set(receipt) == set(expected) | extra
+                and all((receipt[key] is value if isinstance(value, bool) else receipt[key] == value)
+                        for key, value in expected.items()))
+        require(type(receipt['sourceRow']) is int and type(receipt['visibleContainerCount']) is int and receipt['visibleContainerCount'] == 1)
+        literal_net = re.fullmatch(r'NET\s*WT\.?\s*([0-9.]+\s*(?:OZ|G|KG|LB)\.?)\s*(?:\([^()]+\))?', receipt['visibleNetContentLiteral'], re.I)
+        require(literal_net and mass(literal_net[1]) == review['verifiedLabel'])
+        require(re.fullmatch(r'images/products/[A-Za-z0-9_./-]+', receipt['src']))
+        hashes = [receipt[key] for key in ('publicImageSha256', 'nameCorrectionSha256', 'rootInspectionReceiptSha256', 'independentInspectionReceiptSha256')]
+        hashes += [adjudication[key] for key in ('rootReceiptSha256', 'independentReceiptSha256')]
+        require(all(isinstance(value, str) and re.fullmatch(r'[a-f0-9]{64}', value) for value in hashes))
+        require(receipt['rootInspectionReceiptSha256'] != receipt['independentInspectionReceiptSha256']
+                and adjudication['rootReceiptSha256'] != adjudication['independentReceiptSha256'])
+        require(isinstance(receipt['verification'], dict)
+                and set(receipt['verification']) == {'brand', 'expression', 'size', 'packaging', 'visual', 'professional'}
+                and all(value is True for value in receipt['verification'].values()))
+        require(photo['inspectionReceiptSha256'] == review_evidence_sha256(receipt))
+    except (KeyError, TypeError, ValueError, AttributeError, IndexError) as error:
+        raise ValueError(f'Metadata food unit requires exact consumer metadata, printed mass and scoped independent corroboration: {sku}') from error
+
+
 def validate_pg_contents_count_evidence(review: dict) -> None:
     """Bind retail contents to rendered P&G evidence, never a wholesale pack.
 
@@ -2251,6 +2507,9 @@ def validate_missing_measurement_evidence(review: dict) -> None:
         return
     if review.get('verificationMethod') == PRINTED_FOOD_UNIT_METHOD:
         validate_printed_food_unit_evidence(review)
+        return
+    if review.get('verificationMethod') == METADATA_FOOD_UNIT_METHOD:
+        validate_metadata_food_unit_evidence(review)
         return
     if review.get('verificationMethod') == PG_CONTENTS_COUNT_METHOD:
         validate_pg_contents_count_evidence(review)
@@ -2428,6 +2687,7 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
         usda_method = review.get('verificationMethod') == 'usda_branded_food_package_weight'
         printed_method = review.get('verificationMethod') == PRINTED_FOOD_UNIT_METHOD
         count_method = review.get('verificationMethod') == PG_CONTENTS_COUNT_METHOD
+        metadata_method = review.get('verificationMethod') == METADATA_FOOD_UNIT_METHOD
         # Fail closed on explicit pack counts the legacy dimension parser does
         # not recognize. This applies only to this single-unit late action;
         # neither source text nor global parsing/brand numbers are changed.
@@ -2449,7 +2709,7 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
                         or printed_food_count_hint(source.get('ItemName', ''))
                         or record.get('categoryReview') is not None
                         or raw_public['category'] != 'essentials'))
-                or (printed_method and (raw_public['category'] != 'food' or review.get('expectedCategory') != 'food'
+                or ((printed_method or metadata_method) and (raw_public['category'] != 'food' or review.get('expectedCategory') != 'food'
                                         or source.get('PackName') != '' or record.get('categoryReview') is not None
                                         or printed_food_count_hint(source.get('ItemName', ''))))
                 or (usda_method and re.search(
@@ -2457,6 +2717,9 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
                     r'cartons?|boxes?|bundles?|counts?|ct|units?|pcs?|pieces?|doz(?:en)?s?|dz)\b|'
                     r'(?<!\w)[x×]\s*\d|\d\s*[x×](?!\w)', source.get('ItemName', ''), re.I))):
             raise ValueError(f'Missing measurement requires genuinely absent original size/pack metadata: {sku}')
+        if metadata_method and (source.get('ItemTypeDesc') != '' or record.get('publicNameCorrection') is not None
+                or variant.get('image') is not None):
+            raise ValueError(f'Metadata food unit requires unchanged original missing-unit merchandise: {sku}')
         current = (source.get('SKU'), source.get('MAINUPC'), record.get('sourceRow'),
                    variant.get('upc'), product.get('name'), variant.get('label'),
                    product.get('category'), product.get('department'), product.get('id'))
@@ -2470,8 +2733,8 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
             raise ValueError(f'P&G contents count requires the original Tampax expression unchanged: {sku}')
         if [v['sku'] for v in product['variants']] != review['expectedResultingGroupSkus']:
             raise ValueError(f'Missing measurement final SKU-group mismatch: {sku}')
-        if count_method and review_evidence_sha256(product) != review['expectedProductSha256']:
-            raise ValueError(f'P&G contents count current full product mismatch: {sku}')
+        if (count_method or metadata_method) and review_evidence_sha256(product) != review['expectedProductSha256']:
+            raise ValueError(f'{"Metadata food unit" if metadata_method else "P&G contents count"} current full product mismatch: {sku}')
         entries = image_manifest.get('images', []) if isinstance(image_manifest, dict) else []
         if not isinstance(entries, list):
             entries = []
@@ -2499,11 +2762,16 @@ def apply_missing_measurements(products: list, records_by_sku: dict, source_revi
             primary = next(item for item in review['evidence'] if item['kind'] == 'manufacturer_rendered_contents_count')
             if private_matches[0].get('sourcePage') != primary['url']:
                 raise ValueError(f'P&G contents count private provenance must match its own rendered product: {sku}')
-        if usda_method or printed_method or count_method:
+        if metadata_method:
+            distributor = next(item for item in review['evidence'] if item['kind'] == 'distributor_exact_consumer_metadata_record')
+            if (private_matches[0].get('sourcePage') != distributor['url']
+                    or inspection['inspectionReceipt']['nameCorrectionSha256'] != review_evidence_sha256(record.get('nameCorrection'))):
+                raise ValueError(f'Metadata food unit requires exact own provenance and preserved prior name correction: {sku}')
+        if usda_method or printed_method or count_method or metadata_method:
             receipt = inspection['inspectionReceipt']
             if (image.get('src') != receipt['src'] or checks != receipt['verification']
                     or review_evidence_sha256(image) != receipt['publicImageSha256']):
-                context = ('P&G contents count' if count_method else
+                context = ('Metadata food unit' if metadata_method else 'P&G contents count' if count_method else
                            'Printed food unit' if printed_method else 'USDA missing measurement')
                 raise ValueError(f'{context} requires its complete inspected public-image binding: {sku}')
         # Every earlier guard has now seen its original label. Only this field
@@ -2886,9 +3154,10 @@ def validated_source_reviews(manifest: dict | None) -> dict:
             usda_method = entry.get('verificationMethod') == 'usda_branded_food_package_weight'
             printed_method = entry.get('verificationMethod') == PRINTED_FOOD_UNIT_METHOD
             count_method = entry.get('verificationMethod') == PG_CONTENTS_COUNT_METHOD
-            if usda_method or printed_method or count_method:
+            metadata_method = entry.get('verificationMethod') == METADATA_FOOD_UNIT_METHOD
+            if usda_method or printed_method or count_method or metadata_method:
                 allowed.add('verificationMethod')
-            if count_method:
+            if count_method or metadata_method:
                 allowed.add('expectedProductSha256')
             if (set(entry) != allowed or not valid_gtin(entry['expectedUpc'])
                     or type(entry['expectedSourceRow']) is not int or entry['expectedSourceRow'] < 1
@@ -2920,6 +3189,14 @@ def validated_source_reviews(manifest: dict | None) -> dict:
                     or any(not isinstance(value, str) or not re.fullmatch(r'\d+', value) for value in group)
                     or len(set(group)) != len(group)):
                 raise ValueError(f'Missing measurement requires its unchanged exact SKU group: {sku}')
+            if metadata_method and (entry['expectedCategory'] != 'food' or group != [sku]
+                    or not entry['expectedUpc'].strip('0')
+                    or not re.fullmatch(r'(?:[0-9]{8}|[0-9]{12}|[0-9]{13}|[0-9]{14})', entry['expectedUpc'])
+                    or not re.fullmatch(r'(?:0|[1-9][0-9]*)(?:\.[0-9]+)? (?:oz|g|kg|lb)', label)
+                    or Decimal(label.split()[0]) <= 0 or decimal_text(label.split()[0]) != label.split()[0]
+                    or not isinstance(entry['expectedProductSha256'], str)
+                    or not re.fullmatch(r'[a-f0-9]{64}', entry['expectedProductSha256'])):
+                raise ValueError(f'Metadata food unit requires one unchanged original food singleton and positive net mass: {sku}')
             if usda_method and (entry['expectedCategory'] != 'food' or group != [sku]):
                 raise ValueError(f'USDA missing measurement requires one unchanged original food SKU: {sku}')
             if printed_method and (entry['expectedCategory'] != 'food' or group != [sku]

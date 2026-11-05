@@ -641,3 +641,7 @@ Added 2 individually reviewed photographs and corrected 12 evidence-backed publi
 ## R85 individually verified product photographs
 
 Added 3 individually reviewed photographs and corrected 2 evidence-backed public titles. Existing verified package descriptions retain their exact suffixes. All 9,952 source records, 9,693 public variants and 1,901 prior photograph bytes are preserved. The catalog has 8,002 groups, 1,904 pictured variants and 7,789 without verified photographs. Fully verified names total 1,427; public title corrections total 637. Full coverage remains incomplete. Detailed evidence and original inputs remain private.
+
+## R86 individually verified product photographs
+
+Added 10 individually reviewed photographs and corrected 12 evidence-backed public titles. Resolved 1 independently reviewed missing unit labels paired with their own new photographs. Withdrew one existing photograph because its exact brand qualification is not established; its package size and original asset bytes remain unchanged. Existing verified package descriptions retain their exact suffixes. All 9,952 source records, 9,693 public variants and 1,904 prior photograph bytes are preserved. The catalog has 8,002 groups, 1,913 pictured variants and 7,780 without verified photographs. The name-audit metric is 1,439, including scoped capitalization reviews; full name verification remains incomplete. Public title corrections total 649. Full coverage remains incomplete. Detailed evidence and original inputs remain private.
