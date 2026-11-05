@@ -38760,6 +38760,66 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1841",
+      "src": "images/products/sku-1841.png",
+      "alt": "Cavit Oak Zero Chardonnay — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "086785221038",
+      "expectedName": "Cavit Oak Zero Chardonnay",
+      "expectedLabel": "750 mL",
+      "sha256": "e7bbdaf0fb4f8a103495a7b1ee94912b538f6a3f972ddb48e80ef9c5b4468ad5",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1843",
+      "src": "images/products/sku-1843.png",
+      "alt": "Cavit Merlot — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "086785211398",
+      "expectedName": "Cavit Merlot",
+      "expectedLabel": "750 mL",
+      "sha256": "9713ed18191d3e51478e189035f62f887bda003334d914c4655ec9d06f3d7d46",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1844",
+      "src": "images/products/sku-1844.png",
+      "alt": "Cavit Moscato — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "086785212364",
+      "expectedName": "Cavit Moscato",
+      "expectedLabel": "750 mL",
+      "sha256": "02bb3e95507413141dee0c9c77857e50673658bcfe9f9238282e55b53f354b17",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [

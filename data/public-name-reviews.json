@@ -10226,6 +10226,36 @@
       "evidence": {
         "privateEvidenceSha256": "82aa0dac3b65ad1f531f118d6ff516d609e283715e49bd1c9a1d1a27280794e8"
       }
+    },
+    {
+      "sku": "1841",
+      "expectedUpc": "086785221038",
+      "expectedSourceRow": 1127,
+      "expectedRawFieldsSha256": "68b1d5bf53ffff868ae8459f6eec34c0c7931d9a009c52feca9822a78b2eb590",
+      "expectedPublicName": "Cavit CHARDONNAY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Cavit Oak Zero Chardonnay",
+      "reason": "Use the literal Oak Zero expression independently present in the exact consumer-UPC own product name and package, with corrected capitalization. No equivalence to an older generic Chardonnay style, origin, formulation or packaging generation is asserted.",
+      "evidence": {
+        "privateEvidenceSha256": "587916927d683fb2d9a980751f511cc5e1cb019cbcb8e7ddb1be1e7ea0c77335"
+      }
+    },
+    {
+      "sku": "1844",
+      "expectedUpc": "086785212364",
+      "expectedSourceRow": 1130,
+      "expectedRawFieldsSha256": "346f4a5c5fdf48cc108c79743bd9df6879472f12ef73eb1f6232b647aa0ea2cb",
+      "expectedPublicName": "CAVIT MOSCATO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Cavit Moscato",
+      "reason": "Restore capitalization only to Cavit Moscato. Preserve the generic yearless source identity and do not add the pictured or listed wine year, strength or region.",
+      "evidence": {
+        "privateEvidenceSha256": "fbcc6e557293b6986de8e4714c9f032b44c97301c22bef53a98d60af91ff16a3"
+      }
     }
   ]
 }
