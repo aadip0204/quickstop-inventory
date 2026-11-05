@@ -38620,6 +38620,146 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "9187",
+      "src": "images/products/sku-9187.jpg",
+      "alt": "Peter Vella Chablis — 5 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000001202",
+      "expectedName": "Peter Vella Chablis",
+      "expectedLabel": "5 L",
+      "sha256": "73bd8e0f42181a362066756a5675df28ce57f0a430b017d1d791a58d6fbe448b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9191",
+      "src": "images/products/sku-9191.jpg",
+      "alt": "Peter Vella White Zinfandel Box — 5 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000006924",
+      "expectedName": "Peter Vella White Zinfandel Box",
+      "expectedLabel": "5 L",
+      "sha256": "b0fae6df95425df52c4cda54718d8c8dabbd5187c354beff5a9d0791ece230ce",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5135",
+      "src": "images/products/sku-5135.png",
+      "alt": "Lindeman's Bin 90 Moscato — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "012354000148",
+      "expectedName": "Lindeman's Bin 90 Moscato",
+      "expectedLabel": "750 mL",
+      "sha256": "535b276e0525ac9e2e06456d555f160dea8383051e6333bb51d70f64b6a5fa2e",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5132",
+      "src": "images/products/sku-5132.png",
+      "alt": "Lindeman's Bin 80 Cabernet Merlot — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "012354199262",
+      "expectedName": "Lindeman's Bin 80 Cabernet Merlot",
+      "expectedLabel": "750 mL",
+      "sha256": "7f90dc665132b5903336816dfc377f96840da92a4ff7d6204d66068a745458d6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5133",
+      "src": "images/products/sku-5133.png",
+      "alt": "Lindeman's Bin 65 Chardonnay — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "012354081840",
+      "expectedName": "Lindeman's Bin 65 Chardonnay",
+      "expectedLabel": "750 mL",
+      "sha256": "950930a45d75bea513182ee39c4bb59e23456690304c585e65f45538a792efd0",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5134",
+      "src": "images/products/sku-5134.png",
+      "alt": "Lindeman's Bin 40 Merlot — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "012354089990",
+      "expectedName": "Lindeman's Bin 40 Merlot",
+      "expectedLabel": "750 mL",
+      "sha256": "c779ddfc9afd24539c69c0b4c92ab214c5c43dbf1848d4d9acd9acf36eef70b9",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5136",
+      "src": "images/products/sku-5136.png",
+      "alt": "Lindeman's Bin 99 Pinot Noir — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "012354081864",
+      "expectedName": "Lindeman's Bin 99 Pinot Noir",
+      "expectedLabel": "750 mL",
+      "sha256": "540e85373d5ae93709d8e967becd2ce1308f3a481f5ffa31a4b4033ca0766946",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [
