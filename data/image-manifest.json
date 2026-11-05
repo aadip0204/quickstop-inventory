@@ -38920,6 +38920,186 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "1071",
+      "src": "images/products/sku-1071.png",
+      "alt": "Beringer White Zinf — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "089819006526",
+      "expectedName": "Beringer White Zinf",
+      "expectedLabel": "750 mL",
+      "sha256": "98e6764dc896ef4f09c6afa46b23209fcebaca11c8be40769abe99fd279b00e0",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1045",
+      "src": "images/products/sku-1045.png",
+      "alt": "Beringer Founders' Estate Cabernet Sauvignon — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "089819001705",
+      "expectedName": "Beringer Founders' Estate Cabernet Sauvignon",
+      "expectedLabel": "750 mL",
+      "sha256": "2136d2be8c5cbdece87121e4f0da17ba188472ba0325315cbb56907d4c8568f3",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1052",
+      "src": "images/products/sku-1052.png",
+      "alt": "Beringer Merlot — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "089819068241",
+      "expectedName": "Beringer Merlot",
+      "expectedLabel": "750 mL",
+      "sha256": "fc38ef419a907d00334e0fdddb7edbd1e855f8fff09e4e73f2fe5581fc202a68",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1159",
+      "src": "images/products/sku-1159.png",
+      "alt": "Blackstone Cabernet Sauvignon — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "081434500090",
+      "expectedName": "Blackstone Cabernet Sauvignon",
+      "expectedLabel": "750 mL",
+      "sha256": "9ed02db7abef025d7163466b68e2174041d2b06e4c25352606ae8745a09214e6",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1160",
+      "src": "images/products/sku-1160.png",
+      "alt": "Blackstone Chardonnay — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "081434000590",
+      "expectedName": "Blackstone Chardonnay",
+      "expectedLabel": "750 mL",
+      "sha256": "6db381d29ec661becca7f42403369449a09ef995826efb6f29480e4a41dc08fb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "1161",
+      "src": "images/products/sku-1161.png",
+      "alt": "Blackstone Merlot — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "081434500151",
+      "expectedName": "Blackstone Merlot",
+      "expectedLabel": "750 mL",
+      "sha256": "f857edf869a30767e6adf707ad82cced5ada854b604b2080bdf5aa602d99ef31",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "863",
+      "src": "images/products/sku-863.png",
+      "alt": "Barefoot Fruitscato Apple — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000029022",
+      "expectedName": "Barefoot Fruitscato Apple",
+      "expectedLabel": "750 mL",
+      "sha256": "c132034fdbc5d7873d61672db4535c833bb431bdf822f73eba440a07e2375f63",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101279",
+      "src": "images/products/sku-101279.png",
+      "alt": "Barefoot Fruitscato Lemonade — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000034927",
+      "expectedName": "Barefoot Fruitscato Lemonade",
+      "expectedLabel": "750 mL",
+      "sha256": "58ac03794da4449bd9975576008a7120b03ce6e30922fb86e1152e29d81ff23b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101280",
+      "src": "images/products/sku-101280.png",
+      "alt": "Barefoot Fruitscato Pineapple — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000033319",
+      "expectedName": "Barefoot Fruitscato Pineapple",
+      "expectedLabel": "750 mL",
+      "sha256": "a6984c1f8655fc1e5861d185076a4833a20089083d975c58ab9ad86b872d1323",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [

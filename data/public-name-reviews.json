@@ -10303,6 +10303,96 @@
         "privateEvidenceSha256": "4538b0e727b75462ad34a91f7268a37e0a499488543dad71f122facfc97371d7"
       },
       "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "1045",
+      "expectedUpc": "089819001705",
+      "expectedSourceRow": 651,
+      "expectedRawFieldsSha256": "2b7ff77dd17281c56c6fd1a82837865a6c9bf09c0ee664eaa1169d04c3ea97db",
+      "expectedPublicName": "Beringer Cab-Sau Founders Estate",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Founders' Estate Cabernet Sauvignon",
+      "reason": "Expand Cab-Sau to Cabernet Sauvignon and restore the exact Founders' Estate name and word order supported by own source and native expression; no year or strength added.",
+      "evidence": {
+        "privateEvidenceSha256": "83da17c92d8e2641e4e5854176d7356cc1a3670f1d9e44227371618ee478985d"
+      }
+    },
+    {
+      "sku": "1159",
+      "expectedUpc": "081434500090",
+      "expectedSourceRow": 727,
+      "expectedRawFieldsSha256": "83c97a9d0492019a8ae7a75757ce9a16bd723da58f8c6a6a605c93612cd98591",
+      "expectedPublicName": "Blackstone Cab-Sau",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Blackstone Cabernet Sauvignon",
+      "reason": "Expand only the existing Cab-Sau abbreviation to Cabernet Sauvignon, the grape expression shared by own source and native. Do not add source Winemaker's Select because that wording is not independently visible on the exact native; no line or generation equivalence asserted.",
+      "evidence": {
+        "privateEvidenceSha256": "993f8b09ec57b72772dec59f33fd86f50a655af604af367d10ab83bf44ba74c3"
+      }
+    },
+    {
+      "sku": "863",
+      "expectedUpc": "085000029022",
+      "expectedSourceRow": 9720,
+      "expectedRawFieldsSha256": "d3aa8feb7eb4768a1d1171adaa140d74f9d07628b28cfaa90e739cfb6633fb21",
+      "expectedPublicName": "BAREFOOT FRUIT APPLE",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Fruitscato Apple",
+      "reason": "Restore the actual Fruitscato product name and exact individual fruit flavor shown by own record and package. Use brand/product-line/flavor word order consistent with existing Barefoot Fruitscato Strawberry; do not combine flavors or infer a recipe.",
+      "evidence": {
+        "privateEvidenceSha256": "7eb8b2dc35c92fe40fbe206d61d90929f681e70a027116bcf55ee303cc18de1c"
+      }
+    },
+    {
+      "sku": "101279",
+      "expectedUpc": "085000034927",
+      "expectedSourceRow": 6832,
+      "expectedRawFieldsSha256": "5d5d93f854483992f2e0cc13d531d9b13df0617b64befc2553cfc7656be995cc",
+      "expectedPublicName": "BAREFOOT FRUIT LEMONADE",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Fruitscato Lemonade",
+      "reason": "Restore the actual Fruitscato product name and exact individual fruit flavor shown by own record and package. Use brand/product-line/flavor word order consistent with existing Barefoot Fruitscato Strawberry; do not combine flavors or infer a recipe.",
+      "evidence": {
+        "privateEvidenceSha256": "354290ab19b07bbecde3f4a340d10bb62aa2046633d38d2b73e2e3d29f981b57"
+      }
+    },
+    {
+      "sku": "101280",
+      "expectedUpc": "085000033319",
+      "expectedSourceRow": 6700,
+      "expectedRawFieldsSha256": "81f27584db0494c1047c83cc66f30cf600138ad22c63d5c1bf8375a803ab3e53",
+      "expectedPublicName": "BAREFOOT FRUIT PINEAPPLE",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Fruitscato Pineapple",
+      "reason": "Restore the actual Fruitscato product name and exact individual fruit flavor shown by own record and package. Use brand/product-line/flavor word order consistent with existing Barefoot Fruitscato Strawberry; do not combine flavors or infer a recipe.",
+      "evidence": {
+        "privateEvidenceSha256": "716cba0934dd89e709ef186df5f6c57633893fc1da82d156681da1009f53f0ff"
+      }
+    },
+    {
+      "sku": "4667",
+      "expectedUpc": "076381123454",
+      "expectedSourceRow": 2986,
+      "expectedRawFieldsSha256": "790e5aab5cd06ccc360994e6e586a39334015f711f87b58e0ab0d29c48a92112",
+      "expectedPublicName": "Jose Cuervo Salt Salt",
+      "expectedLabel": "6.25 oz",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Jose Cuervo Margarita Salt",
+      "reason": "Replace repeated Salt with exact supported Margarita Salt expression; preserve original source quantity and singleton identity. Clipped package photo remains held.",
+      "evidence": {
+        "privateEvidenceSha256": "f93dcdf73bdd1fb5fc87c020711a57d7f9a20a8355ea3b03033d3e4fe1ee68c0"
+      }
     }
   ]
 }
