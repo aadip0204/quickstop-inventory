@@ -10483,6 +10483,36 @@
       "evidence": {
         "privateEvidenceSha256": "dd6f7f33757e67bf10167503be676f8696111d158a746f0b97333da818493513"
       }
+    },
+    {
+      "sku": "8979",
+      "expectedUpc": "087692004905",
+      "expectedSourceRow": 6937,
+      "expectedRawFieldsSha256": "890ddb516e4dd04e02c0ab1a82085d8f1661d69a72b3e4dd0956eca9aa4c7a29",
+      "expectedPublicName": "twisted tea peach",
+      "expectedLabel": "Single · 24 oz · cans",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Domestic",
+      "proposedPublicTitle": "Twisted Tea Peach",
+      "reason": "Change only ASCIIletter casing of the existing full title; preserve complete singleton target, ordinary ID/casefold key and all pre-existing crossdepartment aliases untouched. No group equivalence, unit, strength, code or photo assignment change.",
+      "evidence": {
+        "privateEvidenceSha256": "f260a8a4b09208a1819a9714690188e7a4186029d34e0f2e39329f8e561472c9"
+      }
+    },
+    {
+      "sku": "1729",
+      "expectedUpc": "089016017264",
+      "expectedSourceRow": 6556,
+      "expectedRawFieldsSha256": "db5181e8131ded8bec4c0b4d374cc3532872a0b7143a898169a778a0257322b5",
+      "expectedPublicName": "CAPRICCIO SANGRIA",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Capriccio Sangria",
+      "reason": "Change only ASCIIletter casing of the existing full title; preserve complete singleton target, ordinary ID/casefold key and all pre-existing crossdepartment aliases untouched. No group equivalence, unit, strength, code or photo assignment change.",
+      "evidence": {
+        "privateEvidenceSha256": "7d9860af8414eface39b6afb396f7718c24c650a2dd96b1917dc4876a58f4447"
+      }
     }
   ]
 }
