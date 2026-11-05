@@ -10256,6 +10256,53 @@
       "evidence": {
         "privateEvidenceSha256": "fbcc6e557293b6986de8e4714c9f032b44c97301c22bef53a98d60af91ff16a3"
       }
+    },
+    {
+      "sku": "7782",
+      "expectedUpc": "082000105749",
+      "expectedSourceRow": 5019,
+      "expectedRawFieldsSha256": "88eb330da4d29492535d156e17e3c51e1ae1bb1f89bc85e05bfebfb137a1c2a9",
+      "expectedPublicName": "Smirnoff Vodka 100P",
+      "expectedLabel": "1.75 L",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Smirnoff Vodka 100 Proof",
+      "reason": "Expand only the literal100P already present in all three original source/current names to100 Proof. Retain Smirnoff Vodka wording, all units and codes, and existing ordered membership. Do not add No.57, a new ABV field, origin, packaging generation or formula claim.",
+      "evidence": {
+        "privateEvidenceSha256": "8574781203629aa09b787ee895dacb154dd01152c01a39cf83370158a04cf6bd"
+      }
+    },
+    {
+      "sku": "7783",
+      "expectedUpc": "825620",
+      "expectedSourceRow": 5020,
+      "expectedRawFieldsSha256": "839c954850bd0c1587295cab5f134233901f85d56407eb57c324ae1fe7f6a3ff",
+      "expectedPublicName": "Smirnoff Vodka 100P",
+      "expectedLabel": "375 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Smirnoff Vodka 100 Proof",
+      "reason": "Expand only the literal100P already present in all three original source/current names to100 Proof. Retain Smirnoff Vodka wording, all units and codes, and existing ordered membership. Do not add No.57, a new ABV field, origin, packaging generation or formula claim.",
+      "evidence": {
+        "privateEvidenceSha256": "c2235960c9082a5035279cdd4fe2ca1455aecce1b4b98e991032edf35729f22f"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "7784",
+      "expectedUpc": "820100",
+      "expectedSourceRow": 5021,
+      "expectedRawFieldsSha256": "a375f387571f2398fe11886a507778db8ed3d480477c16c368df028894eca620",
+      "expectedPublicName": "Smirnoff Vodka 100P",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Smirnoff Vodka 100 Proof",
+      "reason": "Expand only the literal100P already present in all three original source/current names to100 Proof. Retain Smirnoff Vodka wording, all units and codes, and existing ordered membership. Do not add No.57, a new ABV field, origin, packaging generation or formula claim.",
+      "evidence": {
+        "privateEvidenceSha256": "4538b0e727b75462ad34a91f7268a37e0a499488543dad71f122facfc97371d7"
+      },
+      "identityBasis": "original_source_record_name_only"
     }
   ]
 }
