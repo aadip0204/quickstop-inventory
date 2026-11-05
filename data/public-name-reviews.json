@@ -9896,6 +9896,171 @@
       "evidence": {
         "privateEvidenceSha256": "43a47b2252db8c96ef35a9e77ca708baf61e78258404936e2de0a8b43de8aae3"
       }
+    },
+    {
+      "sku": "1783",
+      "expectedUpc": "085000032343",
+      "expectedSourceRow": 6702,
+      "expectedRawFieldsSha256": "61700a991661226806c5fef172d3d87e94177fcca658a85617dec809343f1117",
+      "expectedPublicName": "Carlo Rossi blueberry sangria",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Carlo Rossi Blueberry Sangria",
+      "reason": "Restore capitalization only; preserve existing brand and expression words, categories, labels, and ordered group membership.",
+      "evidence": {
+        "privateEvidenceSha256": "6f104c2974e2158041d3b4c558c660535be2daf380aea4b7f47bb0595d322b7d"
+      }
+    },
+    {
+      "sku": "1784",
+      "expectedUpc": "085000032350",
+      "expectedSourceRow": 9724,
+      "expectedRawFieldsSha256": "35d84dc5e6013cdd390ce003cef3d95764878774b9a28f1f3af0ec19735d34c9",
+      "expectedPublicName": "Carlo Rossi peach sangria",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Carlo Rossi Peach Sangria",
+      "reason": "Restore capitalization only; preserve existing brand and expression words, categories, labels, and ordered group membership.",
+      "evidence": {
+        "privateEvidenceSha256": "80a7dbbc302934c996c93c931a85e466d72f912c54fb163824afe64b1e2f30e3"
+      }
+    },
+    {
+      "sku": "1785",
+      "expectedUpc": "085000032459",
+      "expectedSourceRow": 9361,
+      "expectedRawFieldsSha256": "c0adb3ead22495ee5b5008ba3eabe634f22585996f3143fcea5cc3a4c88b7f00",
+      "expectedPublicName": "Carlo Rossi cherry sangria",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Carlo Rossi Cherry Sangria",
+      "reason": "Restore capitalization only; preserve existing brand and expression words, categories, labels, and ordered group membership.",
+      "evidence": {
+        "privateEvidenceSha256": "ecb3aba998bbe395c3af0a9fff05a6040a6d70286d105a26082c40c4f6772df9"
+      }
+    },
+    {
+      "sku": "5329",
+      "expectedUpc": "085976049598",
+      "expectedSourceRow": 3447,
+      "expectedRawFieldsSha256": "f8aacf017d1175afcd761bc7524a82f551dedc292dba51ab814c6f868d3aefab",
+      "expectedPublicName": "MANISCHEWITZ CREAM PEACH",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Manischewitz Cream Peach",
+      "reason": "Restore capitalization only; preserve existing brand and expression words, categories, labels, and ordered group membership.",
+      "evidence": {
+        "privateEvidenceSha256": "32a554593d8dc93cbb304ac518e32ffdc6118a5f594a0bbbb271aaa6a3c96757"
+      }
+    },
+    {
+      "sku": "5792",
+      "expectedUpc": "085904195502",
+      "expectedSourceRow": 7517,
+      "expectedRawFieldsSha256": "06997dd0cbb6dd0de085478b38813bd652d74793158b0d2f27f93f0baf778d2d",
+      "expectedPublicName": "MOGEN DAVID BLACKBERRY",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Mogen David Blackberry",
+      "reason": "Restore capitalization only; preserve existing brand and expression words, categories, labels, and ordered group membership. Apply the same case-only title to both members of the pre-existing full group. The retained photo/source is the 750 mL record 5793 only; no photo, package, barcode, strength, generation or new size proof is propagated to 1.5 L member 5792.",
+      "evidence": {
+        "privateEvidenceSha256": "27fd13c075746945fe6c56e010aab830f271784893ae84afcd3a77462ac06516"
+      }
+    },
+    {
+      "sku": "5793",
+      "expectedUpc": "085904194406",
+      "expectedSourceRow": 8867,
+      "expectedRawFieldsSha256": "5eaa151a480b25948ad258b4cd5b2288f70b243032ef1a995ce126ec3026ff95",
+      "expectedPublicName": "MOGEN DAVID BLACKBERRY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Mogen David Blackberry",
+      "reason": "Restore capitalization only; preserve existing brand and expression words, categories, labels, and ordered group membership. Apply the same case-only title to both members of the pre-existing full group. The retained photo/source is the 750 mL record 5793 only; no photo, package, barcode, strength, generation or new size proof is propagated to 1.5 L member 5792.",
+      "evidence": {
+        "privateEvidenceSha256": "f54d43d7188360bc23bf8be254dee5343168dd07938e4185973f790901381ebe"
+      }
+    },
+    {
+      "sku": "3181",
+      "expectedUpc": "887725000252",
+      "expectedSourceRow": 8825,
+      "expectedRawFieldsSha256": "cc187b914af1dde9f48086837dd220495be6a630e2fd86feaccf93cefd86fa3f",
+      "expectedPublicName": "electrolit strawberry kiwi",
+      "expectedLabel": "21 oz",
+      "expectedCategory": "drinks",
+      "expectedDepartment": "Soda",
+      "proposedPublicTitle": "Electrolit Strawberry Kiwi",
+      "reason": "Restore capitalization only; preserve existing brand and expression words, categories, labels, and ordered group membership. Retain the literal public 21 oz label; no fl oz conversion or health/nutrition/formula/caffeine claims.",
+      "evidence": {
+        "privateEvidenceSha256": "14fe643be27da0916a087075bc309c83198624acc019ff73800dd80ba6ffa650"
+      }
+    },
+    {
+      "sku": "5325",
+      "expectedUpc": "085976034280",
+      "expectedSourceRow": 3443,
+      "expectedRawFieldsSha256": "2cccc75ecfa935c23b6432a6499a18ab37ae68df878b67571a72511b4f2da952",
+      "expectedPublicName": "Manischewitz Cr Rd Conc",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Manischewitz Cream Red Concord",
+      "reason": "Expand original Cr Rd Conc / Cr Wh Conc abbreviations to the exact own-source and visibly printed Cream Red Concord / Cream White Concord expression, preserving the original 1.5 L label and separate 750 mL records.",
+      "evidence": {
+        "privateEvidenceSha256": "f56b700f03bfd26d30fdec07defb093587675733b3ecdfc1c4605d4cb011c691"
+      }
+    },
+    {
+      "sku": "5327",
+      "expectedUpc": "085976034297",
+      "expectedSourceRow": 3445,
+      "expectedRawFieldsSha256": "7f2f85ba9fff7e9aaa2b4277fe34bb13d3154eee01f2c673fad3084b63ec0b6d",
+      "expectedPublicName": "Manischewitz Cr Wh Conc",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Manischewitz Cream White Concord",
+      "reason": "Expand original Cr Rd Conc / Cr Wh Conc abbreviations to the exact own-source and visibly printed Cream Red Concord / Cream White Concord expression, preserving the original 1.5 L label and separate 750 mL records.",
+      "evidence": {
+        "privateEvidenceSha256": "e8a82972b51b460cd67306707473b7646073ae3d6b1576d0a0e905c8344747c5"
+      }
+    },
+    {
+      "sku": "1774",
+      "expectedUpc": "085000021040",
+      "expectedSourceRow": 9103,
+      "expectedRawFieldsSha256": "24231e29c495a86e54c27953189d06d4163d3770c426d7893eaaa664da290ab5",
+      "expectedPublicName": "Carlo Rossi 4LMoscato Sangria",
+      "expectedLabel": "4 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Carlo Rossi Moscato Sangria",
+      "reason": "Remove the embedded 4L unit from the display title; retain the established 4 L variant label and merge only the exact reviewed two current groups into the existing Carlo Rossi Moscato Sangria target.",
+      "evidence": {
+        "privateEvidenceSha256": "c7f554bf5b996e00e03124ae0c444ad15ca00eb68e7cf7d8967f704031b5cfa0"
+      }
+    },
+    {
+      "sku": "9246",
+      "expectedUpc": "085000007686",
+      "expectedSourceRow": 8555,
+      "expectedRawFieldsSha256": "f916d05f2e172f056232084bed06411e96be965720347f2128a38bc7f596c9b2",
+      "expectedPublicName": "PETER VELLA DELICIOUS RED",
+      "expectedLabel": "5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Peter Vella Delicious Red",
+      "reason": "Restore capitalization only to the exact retained own-product title and package brand and expression; do not add Sweet and Fruity, Vineyards, strength or any other claim.",
+      "evidence": {
+        "privateEvidenceSha256": "584feae42cab38d08949c03f3179c9b17834999e7d999c85a964f6aee6adacfa"
+      }
     }
   ]
 }
