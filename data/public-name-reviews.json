@@ -10513,6 +10513,171 @@
       "evidence": {
         "privateEvidenceSha256": "7d9860af8414eface39b6afb396f7718c24c650a2dd96b1917dc4876a58f4447"
       }
+    },
+    {
+      "sku": "4772",
+      "expectedUpc": "081584131526",
+      "expectedSourceRow": 3054,
+      "expectedRawFieldsSha256": "432ef02a12637f9bfa29eca59cd95f9c09272b9dd4a7589a940ef07ed159fbc2",
+      "expectedPublicName": "Kendal Jackson Merlot",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Kendall-Jackson Merlot",
+      "reason": "Correct Kendal Jackson to Kendall-Jackson from exact own source brand and native lettering. Preserve generic Merlot expression; no Vintner's Reserve line, vintage or other qualifier added.",
+      "evidence": {
+        "privateEvidenceSha256": "17894810103165378b7377a5fdfd3d8384f11b3e081b8ef97de216f7a23971e7"
+      }
+    },
+    {
+      "sku": "7156",
+      "expectedUpc": "086003091931",
+      "expectedSourceRow": 4543,
+      "expectedRawFieldsSha256": "05ab1c84dcd28b57f7d932287661e7a53e4f4564ddc120553242f451b2ab534b",
+      "expectedPublicName": "Robert Mondavi Pin Noir Private Selection",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Robert Mondavi Pinot Noir Private Selection",
+      "reason": "Expand Pin Noir to Pinot Noir while preserving Robert Mondavi, existing Private Selection words and their current order. Exact own record and native support these words.",
+      "evidence": {
+        "privateEvidenceSha256": "7d6c42ce1b9764549444563252bef9fbe8dbd04a0adeebbc0f3d43bb87634b4d"
+      }
+    },
+    {
+      "sku": "7158",
+      "expectedUpc": "086003461925",
+      "expectedSourceRow": 4545,
+      "expectedRawFieldsSha256": "1b3ccc34c9a3434efad7f0929e6e13532dc988c7a83cfb906a87cd6d22fdc089",
+      "expectedPublicName": "RobertMondavi Chardonnay Private Selection",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Robert Mondavi Chardonnay Private Selection",
+      "reason": "Separate joined RobertMondavi into Robert Mondavi, preserving Chardonnay and existing Private Selection words/order.",
+      "evidence": {
+        "privateEvidenceSha256": "52866a03e98123e06cf672bf4cede30fa5092a3f436bf32d3f32a235fe09521d"
+      }
+    },
+    {
+      "sku": "8105",
+      "expectedUpc": "088692864056",
+      "expectedSourceRow": 5202,
+      "expectedRawFieldsSha256": "707d8d6c0f4fb379ffa8013a186c6b8c3b553fe9de45ea26ecfbd26152684ebe",
+      "expectedPublicName": "Sterling Vintners Meritage750",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Sterling Vintners Meritage",
+      "reason": "Remove embedded750 from the display title because exact raw pack field, current variant label and own selected record already bind 750 mL. Preserve original Sterling Vintners Meritage wording; no unit change or Collection/California enrichment.",
+      "evidence": {
+        "privateEvidenceSha256": "a66146e2d9e8c0402d8e75bc3c099baad408b458cc5a680d891558c7cb2b3874"
+      }
+    },
+    {
+      "sku": "8107",
+      "expectedUpc": "088692862823",
+      "expectedSourceRow": 5204,
+      "expectedRawFieldsSha256": "a3ca6cb55f9550750436dc7fff81dab91945749e8ea9dac86bc40853a64bf511",
+      "expectedPublicName": "Sterling Vintners Pint Gr750",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Sterling Vintners Pinot Grigio",
+      "reason": "Correct Pint Gr to Pinot Grigio and remove embedded750 from the display title; exact raw pack field/current variant label/own record already bind 750 mL. Preserve original Sterling Vintners wording; no unit change or Collection/California enrichment.",
+      "evidence": {
+        "privateEvidenceSha256": "1a4de19fcd55403b75b4d57c9a747e0667d27443ac106cc9d2d2c4776d470673"
+      }
+    },
+    {
+      "sku": "4461",
+      "expectedUpc": "080432104118",
+      "expectedSourceRow": 2847,
+      "expectedRawFieldsSha256": "dcaead541b025d261d6721d70901c4821f4053fb7369857899f839e73e050f7c",
+      "expectedPublicName": "Jacobs Creek Pinot Grig",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Jacob's Creek Pinot Grigio",
+      "reason": "Restore Jacob's Creek brand punctuation and expand Pinot Grig to Pinot Grigio; retain generic original expression without adding Classic.",
+      "evidence": {
+        "privateEvidenceSha256": "822fb5acee9ac3319ed99bdd59010dcabe7be6cc0d4b1baebedeb7c27b14a606"
+      }
+    },
+    {
+      "sku": "4454",
+      "expectedUpc": "080432341070",
+      "expectedSourceRow": 2840,
+      "expectedRawFieldsSha256": "56d16abc44a964874392428a0bb5eb80b1867a435c61d97cfce80675a3e8910b",
+      "expectedPublicName": "Jacobs Creek Cab-Sau",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Jacob's Creek Cabernet Sauvignon",
+      "reason": "Restore Jacob's Creek brand punctuation and expand Cab-Sau to Cabernet Sauvignon; retain generic original expression without adding Classic.",
+      "evidence": {
+        "privateEvidenceSha256": "1ccd3158fc687ab5511ba9d69e26de85057f3600db62e50745edcb8e70b21dc4"
+      }
+    },
+    {
+      "sku": "4455",
+      "expectedUpc": "080432340073",
+      "expectedSourceRow": 2841,
+      "expectedRawFieldsSha256": "27b30c2118ef778b660fe266b6377427f2d9e5192400f0cafbe1d105edc92fc0",
+      "expectedPublicName": "JACOB'S CREEK chardonnay",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Jacob's Creek Chardonnay",
+      "reason": "Restore ordinary capitalization to Jacob's Creek Chardonnay; no Classic or other new line qualifier.",
+      "evidence": {
+        "privateEvidenceSha256": "52a3aa1b210b2526c36d2d903c48b2b5f625177ee10ed8ea50ec94a91648f51d"
+      }
+    },
+    {
+      "sku": "4457",
+      "expectedUpc": "080432343074",
+      "expectedSourceRow": 2843,
+      "expectedRawFieldsSha256": "94f39d7f6de388ba68322574bee420df52f99abb7a1202714accbbcc772b5282",
+      "expectedPublicName": "JACOB'S CREEK MERLOT",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Jacob's Creek Merlot",
+      "reason": "Restore ordinary capitalization to Jacob's Creek Merlot; no Classic or other new line qualifier.",
+      "evidence": {
+        "privateEvidenceSha256": "e5fae253f08e2fd148f213bdf3a295b5d7e6e9347412ae5d52e7b6c546986d7b"
+      }
+    },
+    {
+      "sku": "4458",
+      "expectedUpc": "852832000464",
+      "expectedSourceRow": 2844,
+      "expectedRawFieldsSha256": "19bc7fba88621e5692e55ca0204a528b360e00a967f639bfa04a00a139148ad0",
+      "expectedPublicName": "Jacobs Creek Moscato",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Jacob's Creek Moscato",
+      "reason": "Add the exact brand apostrophe only; no year or other source qualifier added.",
+      "evidence": {
+        "privateEvidenceSha256": "82c7eb5162106bcd0fba62ec6fa463fd44cdf0714ec15da1533da0de058ad242"
+      }
+    },
+    {
+      "sku": "4462",
+      "expectedUpc": "080432354070",
+      "expectedSourceRow": 2848,
+      "expectedRawFieldsSha256": "d71e95b6b2f782adf6f37a54c1a0af36a640d8ce7afbbe1c252b77f1cf0c9994",
+      "expectedPublicName": "Jacobs Creek Shiraz",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Jacob's Creek Shiraz",
+      "reason": "Add the exact brand apostrophe only; no Classic or year added.",
+      "evidence": {
+        "privateEvidenceSha256": "d0ee216513fe7bd2968fa49cf6773054ddf9bcaabdd3711fdc1d78dc4d81aa80"
+      }
     }
   ]
 }
