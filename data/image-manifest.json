@@ -39100,6 +39100,246 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3558",
+      "src": "images/products/sku-3558.png",
+      "alt": "Gallo Cabernet Sauvignon — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000005002",
+      "expectedName": "Gallo Cabernet Sauvignon",
+      "expectedLabel": "750 mL",
+      "sha256": "99938b527eb675f1c5fb155b52450703160283a5cc64a6010b1eb11e4ea69cfd",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3590",
+      "src": "images/products/sku-3590.png",
+      "alt": "Gallo Sweet Apple — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000025574",
+      "expectedName": "Gallo Sweet Apple",
+      "expectedLabel": "750 mL",
+      "sha256": "4d0183e44383a56ef2ff49cd65d8657295062f83353fdbe17c094a1e422227fb",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3591",
+      "src": "images/products/sku-3591.png",
+      "alt": "Gallo Sweet Berry — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000022986",
+      "expectedName": "Gallo Sweet Berry",
+      "expectedLabel": "750 mL",
+      "sha256": "564465879567e60bfccb80b63ba350678f163a2354e19be309cdd77a3b8795ce",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "3602",
+      "src": "images/products/sku-3602.png",
+      "alt": "Gallo Sweet Pineapple — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000022566",
+      "expectedName": "Gallo Sweet Pineapple",
+      "expectedLabel": "750 mL",
+      "sha256": "8868f4ad4739d0279a41c8c23bdc41241782217543963c4d267e26b67a2ba9b5",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2172",
+      "src": "images/products/sku-2172.png",
+      "alt": "CK Mondavi Merlot — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "086012500837",
+      "expectedName": "CK Mondavi Merlot",
+      "expectedLabel": "750 mL",
+      "sha256": "41da58df9f1ba8f13a281ef077ff108697a5139f6749c34861c6ab1b327d5dea",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2173",
+      "src": "images/products/sku-2173.png",
+      "alt": "CK Mondavi Pinot Grigio — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "086012400830",
+      "expectedName": "CK Mondavi Pinot Grigio",
+      "expectedLabel": "750 mL",
+      "sha256": "9b3506ad108550bbe4024a9f1b93fb77f65cdddfc136b663c406edb4b94c95c1",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8088",
+      "src": "images/products/sku-8088.png",
+      "alt": "Stella Rosa Black Cherry — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "087872630955",
+      "expectedName": "Stella Rosa Black Cherry",
+      "expectedLabel": "750 mL",
+      "sha256": "f2595e443203c15ae5c9df60506178e26471273a9886da0b0829c093fa294f70",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "5487",
+      "src": "images/products/sku-5487.png",
+      "alt": "Ménage à Trois Red Blend — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "099988071096",
+      "expectedName": "Ménage à Trois Red Blend",
+      "expectedLabel": "750 mL",
+      "sha256": "e4557f4e6a949d2c0c689c8769a88441d24366da203bd776660060b671095f0d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8991",
+      "src": "images/products/sku-8991.jpg",
+      "alt": "Bell's Two Hearted IPA — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "740522100832",
+      "expectedName": "Bell's Two Hearted IPA",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "95537854486565e4ca815d3dc13e7979e6bd3ea599f4b6702843a93333ba69c7",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9241",
+      "src": "images/products/sku-9241.jpg",
+      "alt": "Victoria — 12-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "080660958835",
+      "expectedName": "Victoria",
+      "expectedLabel": "12-pack · 12 oz · bottles",
+      "sha256": "0775059e116440a4dda7ee136d8c18c86d3c9edb06df429092dfdfd2b86e1d9b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9244",
+      "src": "images/products/sku-9244.jpg",
+      "alt": "Victoria — 6-pack · 12 oz · bottles packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "080660958811",
+      "expectedName": "Victoria",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "sha256": "fba5eaf1a09db936eb5589920753154aada5a6db29dcc99ba8c5464884a07aa7",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "8979",
+      "src": "images/products/sku-8979.png",
+      "alt": "twisted tea peach — Single · 24 oz · cans packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "087692004905",
+      "expectedName": "twisted tea peach",
+      "expectedLabel": "Single · 24 oz · cans",
+      "sha256": "2423f42e929c67061a62704192be2a44f710c86d915d27ad26aebcb64ef0a3df",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [
