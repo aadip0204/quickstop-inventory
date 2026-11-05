@@ -9744,6 +9744,158 @@
       "evidence": {
         "privateEvidenceSha256": "49a48a3ae9529499c4f4923d6e389de5e3df73d10f9bddfddad3d89f84b38dc4"
       }
+    },
+    {
+      "sku": "629",
+      "expectedUpc": "086785900124",
+      "expectedSourceRow": 398,
+      "expectedRawFieldsSha256": "82cd58db9edd0fd7df4a08aad5061eb27a40088d8a9a3631212e9e7c22fecfd7",
+      "expectedPublicName": "ASTI CINZANO SWEET",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Cinzano Asti",
+      "reason": "Use exact own H1/product-name wording Cinzano Asti. Current SWEET is a descriptor supported in the source description, not a separate observed expression; omit from display name without changing the raw name. Do not add DOCG/Cuvée Storica, founding1757, wine vintage or strength.",
+      "evidence": {
+        "privateEvidenceSha256": "a00a8594c35184b934e9cbf51b21a8d6b7264afd2bdafc22189114f9011b0d96"
+      }
+    },
+    {
+      "sku": "4873",
+      "expectedUpc": "084704098044",
+      "expectedSourceRow": 3128,
+      "expectedRawFieldsSha256": "18ccba0ce09acb8199e374f13311d8f65a2352a6a0dfd11c24024e5d4b3a2ea8",
+      "expectedPublicName": "Korbel sweet cuvee",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Korbel Sweet Cuvée",
+      "reason": "Own H1 and actual package both spell Sweet Cuvée with the accent. No California Champagne/legal-class addition, numerical strength or vintage.",
+      "evidence": {
+        "privateEvidenceSha256": "fc621c3a8890195a655b220ba0ff329a325d9d12a6db97e3e98e79d11e9de3ff"
+      }
+    },
+    {
+      "sku": "4874",
+      "expectedUpc": "084704098006",
+      "expectedSourceRow": 3129,
+      "expectedRawFieldsSha256": "aae9c370255a802a361529cdb940d424177660f62a53698090451bd7d77ffcce",
+      "expectedPublicName": "Korbel Sweet Rose",
+      "expectedLabel": "4-pack · 750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Korbel Sweet Rosé",
+      "reason": "Accent-only repair of the existing shared Sweet Rose expression. Include4874 to avoid a partial-family title split; its original4pk and current label remain literal. The inspected750mL bottle supplies no new photo/unit/pack fact for4874.",
+      "evidence": {
+        "privateEvidenceSha256": "c5bf24a7d51850d1ac3125158cda7ce1955f626711784b92b47043a47b0ed397"
+      }
+    },
+    {
+      "sku": "4875",
+      "expectedUpc": "084704097979",
+      "expectedSourceRow": 3130,
+      "expectedRawFieldsSha256": "52c45febe06bbba9fdb268b8967840771d7f588680d2eab0c5eeead5a4353622",
+      "expectedPublicName": "Korbel Sweet Rose",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Korbel Sweet Rosé",
+      "reason": "Accent-only repair of the existing shared Sweet Rose expression. Include4874 to avoid a partial-family title split; its original4pk and current label remain literal. The inspected750mL bottle supplies no new photo/unit/pack fact for4874.",
+      "evidence": {
+        "privateEvidenceSha256": "27cd94db0e2fa7ec2a38e5e17bdc40f579baf966bbe518a66a01adf3fe233f13"
+      }
+    },
+    {
+      "sku": "7332",
+      "expectedUpc": "713757780513",
+      "expectedSourceRow": 4684,
+      "expectedRawFieldsSha256": "d8bc649f3abce51164bc711f20301758e7b07cdba2b6bf4f5517e84bcb3b8719",
+      "expectedPublicName": "SANTERO PINEAPPLE MOSCATO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Santero Moscato & Pineapple",
+      "reason": "Own H1 and actual front label agree on Moscato & Pineapple order. No wine type, producer founding1958 as vintage, strength or size change.",
+      "evidence": {
+        "privateEvidenceSha256": "c1251a729790dd5d9d668e859636e4585043bc595e77e25e66714f3677cf43b0"
+      }
+    },
+    {
+      "sku": "7330",
+      "expectedUpc": "713757780315",
+      "expectedSourceRow": 4681,
+      "expectedRawFieldsSha256": "379d84218c53042a1b05430fcceed594a00d34276bb6cb3ea9cf80c560e74691",
+      "expectedPublicName": "SANTERO MOSCATO PEACH",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Santero Moscato & Peach",
+      "reason": "Own H1 and front label explicitly include ampersand. No wine type, vintage, strength or size change.",
+      "evidence": {
+        "privateEvidenceSha256": "6cd0bf33da2a144c506ed3c68626c23ff6316e7f0a2f099d98ece9c6342b4290"
+      }
+    },
+    {
+      "sku": "405",
+      "expectedUpc": "857470",
+      "expectedSourceRow": 283,
+      "expectedRawFieldsSha256": "3a054e02f945402d8d0c63b63fba19aa8c0ca9491725f3ace63066242a3f1c58",
+      "expectedPublicName": "Andre Cold Duck",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "André Cold Duck",
+      "reason": "Restore the actual André brand accent only. Include current sibling405 with its literal store code857470; no code equivalence, single-photo reuse or packaging/strength approval for sibling. Do not append Sweet Sparkling Red or infer vintage.",
+      "evidence": {
+        "privateEvidenceSha256": "84ffaed490eb571da70fa828db8d50da0ab978fdd61924a79b82643e84c73885"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "399",
+      "expectedUpc": "085000007471",
+      "expectedSourceRow": 6375,
+      "expectedRawFieldsSha256": "1aead796ca0e09f90ff15be8382697dc416d8825731542c4b2464d4be9a1eeef",
+      "expectedPublicName": "Andre Cold Duck",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "André Cold Duck",
+      "reason": "Restore the actual André brand accent only. Include current sibling405 with its literal store code857470; no code equivalence, single-photo reuse or packaging/strength approval for sibling. Do not append Sweet Sparkling Red or infer vintage.",
+      "evidence": {
+        "privateEvidenceSha256": "6af05d0baac8440c7d1918284b8a0fe92bc83f413b87431dfab98fe27113b933"
+      }
+    },
+    {
+      "sku": "406",
+      "expectedUpc": "857480",
+      "expectedSourceRow": 284,
+      "expectedRawFieldsSha256": "fa44baa77f64db8931b9d1e71df5da97cce61274d49198de912902af7edee596",
+      "expectedPublicName": "Andre Extra Dry",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "André Extra Dry",
+      "reason": "Restore the actual André brand accent only. Include sibling406 with literal store code857480; no code or generation equivalence. Prior Target9.5% versus10.5% conflict remains unresolved and scoped to that source; this name repair adds no strength/legal-class fields.",
+      "evidence": {
+        "privateEvidenceSha256": "2119a6fad7ee41824e40ac3e1fb4c2c9624e2509d2df9372747eebe3a2f368f7"
+      },
+      "identityBasis": "original_source_record_name_only"
+    },
+    {
+      "sku": "400",
+      "expectedUpc": "085000007488",
+      "expectedSourceRow": 8516,
+      "expectedRawFieldsSha256": "ca4fc9f63dad098760c06e99ef60592426b2f1ec44abac01425aee4db092632e",
+      "expectedPublicName": "ANDRE EXTRA DRY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "André Extra Dry",
+      "reason": "Restore the actual André brand accent only. Include sibling406 with literal store code857480; no code or generation equivalence. Prior Target9.5% versus10.5% conflict remains unresolved and scoped to that source; this name repair adds no strength/legal-class fields.",
+      "evidence": {
+        "privateEvidenceSha256": "43a47b2252db8c96ef35a9e77ca708baf61e78258404936e2de0a8b43de8aae3"
+      }
     }
   ]
 }
