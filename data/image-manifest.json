@@ -38820,6 +38820,106 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "7895",
+      "src": "images/products/sku-7895.png",
+      "alt": "Sobieski Vodka — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "089016008224",
+      "expectedName": "Sobieski Vodka",
+      "expectedLabel": "750 mL",
+      "sha256": "b3768cbf3870bc04a5fc454124ebe53a306aa0ff869e28eb931b79b127e15b0b",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9141",
+      "src": "images/products/sku-9141.png",
+      "alt": "UV Vodka — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "087116014671",
+      "expectedName": "UV Vodka",
+      "expectedLabel": "750 mL",
+      "sha256": "c0d08ca1658d9aba3ec7bae124cd86dce371b88fec43291df1065db3fee09938",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "7782",
+      "src": "images/products/sku-7782.png",
+      "alt": "Smirnoff Vodka 100 Proof — 1.75 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "082000105749",
+      "expectedName": "Smirnoff Vodka 100 Proof",
+      "expectedLabel": "1.75 L",
+      "sha256": "ad5d0bb2805cc300dbd067b23c9d4b4e80ff100c44878ef1bd2fdb6e005439d8",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "939",
+      "src": "images/products/sku-939.png",
+      "alt": "Barton Vodka — 1.75 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "080660472614",
+      "expectedName": "Barton Vodka",
+      "expectedLabel": "1.75 L",
+      "sha256": "4bd9b8c574b635588551fcc126f30d1218aa8f465e4dbca8150ca30142c960d4",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9120",
+      "src": "images/products/sku-9120.png",
+      "alt": "UV Blue Raspberry Flavored Vodka — 1.75 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "087116014527",
+      "expectedName": "UV Blue Raspberry Flavored Vodka",
+      "expectedLabel": "1.75 L",
+      "sha256": "ea4ed22dcb3894d6b7eab74b107286c0f8e907bc296cc9f90dd5bb4a5e3fe826",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [
