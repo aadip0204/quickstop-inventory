@@ -10393,6 +10393,96 @@
       "evidence": {
         "privateEvidenceSha256": "f93dcdf73bdd1fb5fc87c020711a57d7f9a20a8355ea3b03033d3e4fe1ee68c0"
       }
+    },
+    {
+      "sku": "3558",
+      "expectedUpc": "085000005002",
+      "expectedSourceRow": 2308,
+      "expectedRawFieldsSha256": "b1e74f019b54c06750b0f0aa64a7d02bfd28a859447a9bc5832ab97d0eda8647",
+      "expectedPublicName": "Gallo CAB SAUV",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Gallo Cabernet Sauvignon",
+      "reason": "Expand CAB SAUV to Cabernet Sauvignon and restore ordinary capitalization. Exact own UPC and native grape expression support this minimal repair. Do not add Family Vineyards, year, strength or merge any similarly named Gallo group.",
+      "evidence": {
+        "privateEvidenceSha256": "f27083c6b9e3a9cc92a0607b68a4b80e653f52e90155555e9ccf5f4f6eab9437"
+      }
+    },
+    {
+      "sku": "3601",
+      "expectedUpc": "085000025604",
+      "expectedSourceRow": 6321,
+      "expectedRawFieldsSha256": "a9ae2cc208c4c7ee86d70dfdb1d6866fe2c5b5e764767eaeaccc29570fe71dc6",
+      "expectedPublicName": "GALLO SWEET PINEAPPLE",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Gallo Sweet Pineapple",
+      "reason": "Restore ordinary capitalization across both existing GALLO SWEET PINEAPPLE members, preserving the exact brand/flavor words already present in each original source record. No Family Vineyards qualifier, sibling photo/unit facts, strength, vintage or generation is inferred.",
+      "evidence": {
+        "privateEvidenceSha256": "21ac1a55935f3d444d2cf36ee3ddd28c47992701516b75018c315d9951c5f8ba"
+      }
+    },
+    {
+      "sku": "3602",
+      "expectedUpc": "085000022566",
+      "expectedSourceRow": 8186,
+      "expectedRawFieldsSha256": "f040bddffbcedb4861963dc9c6a3e5800803effa02555bbd45f8ef7778fd24ba",
+      "expectedPublicName": "GALLO SWEET PINEAPPLE",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Gallo Sweet Pineapple",
+      "reason": "Restore ordinary capitalization across both existing GALLO SWEET PINEAPPLE members, preserving the exact brand/flavor words already present in each original source record. No Family Vineyards qualifier, sibling photo/unit facts, strength, vintage or generation is inferred.",
+      "evidence": {
+        "privateEvidenceSha256": "1a30b64b6b3af9171bad5349e5c56678c52e205039ff46f0e356153135131ed2"
+      }
+    },
+    {
+      "sku": "8088",
+      "expectedUpc": "087872630955",
+      "expectedSourceRow": 9741,
+      "expectedRawFieldsSha256": "7f7222384f3e824e7de3adb5d298942fd412c3b1d92d62eaced037b048c80e9c",
+      "expectedPublicName": "STELLA ROSA BLACK CHERRY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "wine",
+      "proposedPublicTitle": "Stella Rosa Black Cherry",
+      "reason": "Restore ordinary capitalization of the exact Stella Rosa Black Cherry brand/flavor already present in raw inventory, selected own record and inspected native. No other expression, strength, vintage or producer-history number is added.",
+      "evidence": {
+        "privateEvidenceSha256": "0abf3b21e9f41c6df6c29418a6fe401dae79c844d87cb615c5eefd90fec9ef88"
+      }
+    },
+    {
+      "sku": "5487",
+      "expectedUpc": "099988071096",
+      "expectedSourceRow": 3559,
+      "expectedRawFieldsSha256": "d90c053284234b073d0b11123b5b89429f8a7fc71560883083471237cee2be63",
+      "expectedPublicName": "Menage a Trois",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Ménage à Trois Red Blend",
+      "reason": "Restore Ménage à Trois accents and the exact Red Blend expression published in the UPC-matched own product title and readable native. Folie à Deux remains separately attributed winery metadata in the retained publisher body; it is not a corporate synonym or a current-producer assertion.",
+      "evidence": {
+        "privateEvidenceSha256": "16905f3435b6ea31c7adcf699a0e5b32d3ee7273458725ed291824b0f7c41701"
+      }
+    },
+    {
+      "sku": "8991",
+      "expectedUpc": "740522100832",
+      "expectedSourceRow": 5698,
+      "expectedRawFieldsSha256": "0e434c2a068d971cba16a75ee210581b122150b661df2e40904762622d854154",
+      "expectedPublicName": "Two Hearted Ale",
+      "expectedLabel": "6-pack · 12 oz · bottles",
+      "expectedCategory": "beer",
+      "expectedDepartment": "Micro",
+      "proposedPublicTitle": "Bell's Two Hearted IPA",
+      "reason": "Actual retained own Target primary_barcode740522100832 and exact6pk12floz bottles title explicitly name Bell’s Two Hearted IPA; prior independent native QA corroborates same words. Brand and IPA are explicit, not inferred from strength. RawAle remains unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "dd6f7f33757e67bf10167503be676f8696111d158a746f0b97333da818493513"
+      }
     }
   ]
 }
