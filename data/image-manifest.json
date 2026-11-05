@@ -38520,6 +38520,106 @@
         "visual": true,
         "professional": true
       }
+    },
+    {
+      "sku": "3454",
+      "src": "images/products/sku-3454.jpg",
+      "alt": "Franzia White Merlot — 5 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "083120103998",
+      "expectedName": "Franzia White Merlot",
+      "expectedLabel": "5 L",
+      "sha256": "7cd8f9935081be07b22af74392cae1960cba15ff6e77c4ab0c915a2a47fc9a95",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101338",
+      "src": "images/products/sku-101338.jpg",
+      "alt": "Peter Vella Burgundy Box — 5 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000001233",
+      "expectedName": "Peter Vella Burgundy Box",
+      "expectedLabel": "5 L",
+      "sha256": "e2e398873a6080f5dd52ea4f22526aeb8efe9880197c17afcff60c1b91984571",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9188",
+      "src": "images/products/sku-9188.jpg",
+      "alt": "Peter Vella Chardonnay Box — 5 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000006795",
+      "expectedName": "Peter Vella Chardonnay Box",
+      "expectedLabel": "5 L",
+      "sha256": "ae5fbd38d3f4352ef6a54c2a22e7b552f7b25b2e4900c1c2bd2ea5b21ba6ce35",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101337",
+      "src": "images/products/sku-101337.jpg",
+      "alt": "Peter Vella Merlot Box — 5 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000003015",
+      "expectedName": "Peter Vella Merlot Box",
+      "expectedLabel": "5 L",
+      "sha256": "75bb8d4cbb52ec5ef5b270cde17c8d26cc5618f0a4655b02567ee1d9ca45c06a",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9189",
+      "src": "images/products/sku-9189.png",
+      "alt": "Peter Vella Delicious Blush — 5 L packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000001257",
+      "expectedName": "Peter Vella Delicious Blush",
+      "expectedLabel": "5 L",
+      "sha256": "ea0a6bbda4507699df2d4ffa1e7a42113eb19cec2bef34b8f3e135c9da363738",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
     }
   ],
   "restoredPhotoReleases": [

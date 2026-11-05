@@ -10061,6 +10061,66 @@
       "evidence": {
         "privateEvidenceSha256": "584feae42cab38d08949c03f3179c9b17834999e7d999c85a964f6aee6adacfa"
       }
+    },
+    {
+      "sku": "101338",
+      "expectedUpc": "085000001233",
+      "expectedSourceRow": 6343,
+      "expectedRawFieldsSha256": "e9bbb226d23cf8402f969b9b23ddf4f54b0077342ac4796e46a608856632ad1a",
+      "expectedPublicName": "PETER VELLA BURGUNDY BOX",
+      "expectedLabel": "5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Peter Vella Burgundy Box",
+      "reason": "Restore capitalization only; preserve the existing Box packaging descriptor, supported by the own page and retained carton. No product words, units or strength added.",
+      "evidence": {
+        "privateEvidenceSha256": "f54d180c6ad29de37a11ff51f59daaf8192467caf856c5bb9d74b178aef5c560"
+      }
+    },
+    {
+      "sku": "9188",
+      "expectedUpc": "085000006795",
+      "expectedSourceRow": 8554,
+      "expectedRawFieldsSha256": "6aa3705978bd18bea0d9ea47db18c9ab65ae82328a031fa0066e219d49ea8674",
+      "expectedPublicName": "PETER VELLA CHARDONNAY BOX",
+      "expectedLabel": "5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Peter Vella Chardonnay Box",
+      "reason": "Restore capitalization only; preserve the existing Box packaging descriptor, supported by the own page and retained carton. No product words, units or strength added.",
+      "evidence": {
+        "privateEvidenceSha256": "d71e0bb720e3a588c4715dd95ce6c73f7550b26119a20220ab0b82df84630f89"
+      }
+    },
+    {
+      "sku": "101337",
+      "expectedUpc": "085000003015",
+      "expectedSourceRow": 7522,
+      "expectedRawFieldsSha256": "801b280f76a2eb89be0ff936e686ab5f7a1b9c835e6348a439384d19dc4a8ffe",
+      "expectedPublicName": "PETER VELLA MERLOT BOX",
+      "expectedLabel": "5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Peter Vella Merlot Box",
+      "reason": "Restore capitalization only; preserve the existing Box packaging descriptor, supported by the own page and retained carton. No product words, units or strength added.",
+      "evidence": {
+        "privateEvidenceSha256": "2223c870014ca7cd4f6018a6698dcff2e4c591bb31d902f3a17927b63fa01103"
+      }
+    },
+    {
+      "sku": "9189",
+      "expectedUpc": "085000001257",
+      "expectedSourceRow": 5840,
+      "expectedRawFieldsSha256": "049e606ebd96291a8790e6a379d21cdf02e6706a12abc1ff65fcc11735d09ebc",
+      "expectedPublicName": "VELLA DELICIOUS BLUSH",
+      "expectedLabel": "5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Peter Vella Delicious Blush",
+      "reason": "Restore the explicit Peter Vella brand shown in the own producer page and exact retained package; preserve the Delicious Blush expression without additional taste, strength, generation or legal-class claims.",
+      "evidence": {
+        "privateEvidenceSha256": "5b65aaa2aa64ddf97fb32dc23e0e183a63ebaf18be2f15b354833b54e6f573fe"
+      }
     }
   ]
 }
