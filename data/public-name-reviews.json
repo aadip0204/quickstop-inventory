@@ -10678,6 +10678,66 @@
       "evidence": {
         "privateEvidenceSha256": "d0ee216513fe7bd2968fa49cf6773054ddf9bcaabdd3711fdc1d78dc4d81aa80"
       }
+    },
+    {
+      "sku": "9642",
+      "expectedUpc": "854152008441",
+      "expectedSourceRow": 7339,
+      "expectedRawFieldsSha256": "24f20ea6d310cd273dbc6c6b80519b88d947d23477baf5a3a0286933d41bc229",
+      "expectedPublicName": "wizard air freshener",
+      "expectedLabel": "283 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Wizard Freshly Folded Linen Air Freshener",
+      "reason": "Separate distinct, exact-code verified fragrances currently merged under a generic name; retain the original source record and measurement.",
+      "evidence": {
+        "privateEvidenceSha256": "affa01096c7f4249eb83cccf36fa641ad01f8ddcde1a59daa87e531de939d93a"
+      }
+    },
+    {
+      "sku": "9645",
+      "expectedUpc": "850007395551",
+      "expectedSourceRow": 8969,
+      "expectedRawFieldsSha256": "32bf41b483775db9e727356f7cbfc44083b938a6b48055adf0bc45243a4e5904",
+      "expectedPublicName": "wizard air freshener",
+      "expectedLabel": "283 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Wizard Hawaiian Retreat Air Freshener",
+      "reason": "Separate distinct, exact-code verified fragrances currently merged under a generic name; retain the original source record and measurement.",
+      "evidence": {
+        "privateEvidenceSha256": "a2076f5d545a9bbc90236e990641fe4ff31e608c3e54352139a3300b6c077a2e"
+      }
+    },
+    {
+      "sku": "9644",
+      "expectedUpc": "854152008458",
+      "expectedSourceRow": 9640,
+      "expectedRawFieldsSha256": "d16ded967cb6dcee20cfb3ad0d8e0c01632dad99212d4c2bda7c58fa4d5606aa",
+      "expectedPublicName": "wizard air freshener",
+      "expectedLabel": "283 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Wizard Freshly Picked Lavender Air Freshener",
+      "reason": "Separate distinct, exact-code verified fragrances currently merged under a generic name; retain the original source record and measurement.",
+      "evidence": {
+        "privateEvidenceSha256": "5d3e9372cec77cc618bd9c4e7a584541f712b004c1f8b97edae2a851e169e61d"
+      }
+    },
+    {
+      "sku": "9641",
+      "expectedUpc": "854152008434",
+      "expectedSourceRow": 9814,
+      "expectedRawFieldsSha256": "0f5cb896eb81af812cdab874357f81185ad0208143ce6353a9e01a6ea48a1108",
+      "expectedPublicName": "wizard air freshener",
+      "expectedLabel": "283 g",
+      "expectedCategory": "essentials",
+      "expectedDepartment": "MISC",
+      "proposedPublicTitle": "Wizard Morning Mist Air Freshener",
+      "reason": "Separate distinct, exact-code verified fragrances currently merged under a generic name; retain the original source record and measurement.",
+      "evidence": {
+        "privateEvidenceSha256": "ae81bf5a1765a29c725a7610448d85029647e38d6487d7e17ad0c5a3ab7e94a7"
+      }
     }
   ]
 }

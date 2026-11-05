@@ -32924,10 +32924,10 @@
     {
       "sku": "9641",
       "src": "images/products/sku-9641.jpg",
-      "alt": "wizard air freshener — 283 g packaging",
+      "alt": "Wizard Morning Mist Air Freshener — 283 g packaging",
       "verifiedOn": "2026-11-02",
       "expectedUpc": "854152008434",
-      "expectedName": "wizard air freshener",
+      "expectedName": "Wizard Morning Mist Air Freshener",
       "expectedLabel": "283 g",
       "sha256": "baae14e8d74b7eea1eac6b65c8d279fd45b44e61caaaf068ca68df7023811e46",
       "usageBasis": "user_authorized_direct_reference",
@@ -32944,10 +32944,10 @@
     {
       "sku": "9642",
       "src": "images/products/sku-9642.jpg",
-      "alt": "wizard air freshener — 283 g packaging",
+      "alt": "Wizard Freshly Folded Linen Air Freshener — 283 g packaging",
       "verifiedOn": "2026-11-02",
       "expectedUpc": "854152008441",
-      "expectedName": "wizard air freshener",
+      "expectedName": "Wizard Freshly Folded Linen Air Freshener",
       "expectedLabel": "283 g",
       "sha256": "7acebf7cebb299313138b8cb256b021a075958e8a607ee791d61ebde494357cd",
       "usageBasis": "user_authorized_direct_reference",
@@ -39590,6 +39590,86 @@
       "expectedName": "Jacob's Creek Moscato",
       "expectedLabel": "750 mL",
       "sha256": "c4a42951925186ff9887fe5df3d653866e844621ed25676e5ae7e6e5a304763d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9715",
+      "src": "images/products/sku-9715.webp",
+      "alt": "XTRA DETERGENTSPLUS OXI CLEAN — 56 oz packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "094514000939",
+      "expectedName": "XTRA DETERGENTSPLUS OXI CLEAN",
+      "expectedLabel": "56 oz",
+      "sha256": "009e98d13ffaf5275fd58e06f68bff3fd38646249afb3aa28ef82d5ee145e6db",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "9716",
+      "src": "images/products/sku-9716.webp",
+      "alt": "Xtra detergentssparkling fresh — 56 oz packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "094514000960",
+      "expectedName": "Xtra detergentssparkling fresh",
+      "expectedLabel": "56 oz",
+      "sha256": "0bc741d06edc75e667b0e1205a0e226ea4abe26b2efbad6ae0d5dba41fc7056d",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "101398",
+      "src": "images/products/sku-101398.jpg",
+      "alt": "ANDRE PINEAPPLE MIMOSA — 750 mL packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "085000034330",
+      "expectedName": "ANDRE PINEAPPLE MIMOSA",
+      "expectedLabel": "750 mL",
+      "sha256": "e3f4dd7366cd3f38b3f5667135ccaa91445f3dc55ae5b4b576b19337046fe0b1",
+      "usageBasis": "user_authorized_direct_reference",
+      "attributionRequired": false,
+      "verification": {
+        "brand": true,
+        "expression": true,
+        "size": true,
+        "packaging": true,
+        "visual": true,
+        "professional": true
+      }
+    },
+    {
+      "sku": "2806",
+      "src": "images/products/sku-2806.webp",
+      "alt": "Kraft Deluxe Original Cheddar Mac and Cheese Dinner — 14 oz packaging",
+      "verifiedOn": "2026-11-05",
+      "expectedUpc": "021000658862",
+      "expectedName": "Kraft Deluxe Original Cheddar Mac and Cheese Dinner",
+      "expectedLabel": "14 oz",
+      "sha256": "f01cba9372648539151171c579cf25c0993ac7a2b27475d65e8d5786140c00e4",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {
