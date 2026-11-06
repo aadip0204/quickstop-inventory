@@ -10948,6 +10948,66 @@
       "evidence": {
         "privateEvidenceSha256": "20684be5774aa4368c27eed8736430b14f5bb9a5b7a4491f309faa1bd96621a7"
       }
+    },
+    {
+      "sku": "6250",
+      "expectedUpc": "720825783840",
+      "expectedSourceRow": 3976,
+      "expectedRawFieldsSha256": "f507753f65fe0990bf89f9deb45d3f20cbf1eb551e5ed10cc73dab724792fed9",
+      "expectedPublicName": "NUE peach",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Nue Peach",
+      "reason": "Correct the brand capitalization and punctuation while retaining the existing peach expression.",
+      "evidence": {
+        "privateEvidenceSha256": "5adbb624435bc3dc538dd4bed2470a115b05d098669db2804cc50da11e5af634"
+      }
+    },
+    {
+      "sku": "7496",
+      "expectedUpc": "720815988675",
+      "expectedSourceRow": 4808,
+      "expectedRawFieldsSha256": "db2c067c1d61527229a26e99098ae02023be95cb74a634340e35e1bd2e16af00",
+      "expectedPublicName": "Seagrams peach",
+      "expectedLabel": "200 mL",
+      "expectedCategory": "spirits",
+      "expectedDepartment": "Vodka",
+      "proposedPublicTitle": "Seagram's Peach",
+      "reason": "Correct the brand capitalization and punctuation while retaining the existing peach expression.",
+      "evidence": {
+        "privateEvidenceSha256": "032c38bf65060193ad728c58384f89281b86dd3cfecef85646349eaa43013fda"
+      }
+    },
+    {
+      "sku": "1046",
+      "expectedUpc": "089819068227",
+      "expectedSourceRow": 650,
+      "expectedRawFieldsSha256": "1a56c8935e23eb33d765116a1c42709fa7afaf506675ffe829d687e125718448",
+      "expectedPublicName": "Beringer Cab-Sau",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Beringer Main & Vine Cabernet Sauvignon",
+      "reason": "Expand the existing abbreviated wine name and identify the Main & Vine line shown in the selected exact-UPC record and current package; keep it separate from the Founders Estate Cabernet family.",
+      "evidence": {
+        "privateEvidenceSha256": "4db10684dbbf3018d105d5bb3c8e7eb3f0aa3285e9915c9a9ba00cd58654fc00"
+      }
+    },
+    {
+      "sku": "101250",
+      "expectedUpc": "689352009611",
+      "expectedSourceRow": 7511,
+      "expectedRawFieldsSha256": "20177a0bf82458e042a512c9a93c332e95c23c53d4566682c6cbcfb72679bd83",
+      "expectedPublicName": "KIM CRAWFORD SAUV BLANC",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "wine",
+      "proposedPublicTitle": "Kim Crawford Sauvignon Blanc",
+      "reason": "Expand the existing Sauvignon Blanc abbreviation to match the brand and wine variety in the selected exact-UPC product record.",
+      "evidence": {
+        "privateEvidenceSha256": "692330d8caf3491f15000578ab008f49cccf20e933c2576b6da48a449c76cd02"
+      }
     }
   ]
 }
