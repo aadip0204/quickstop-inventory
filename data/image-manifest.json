@@ -20102,7 +20102,7 @@
       "src": "images/products/sku-864.jpg"
     },
     {
-      "expectedName": "Beringer Cab-Sau",
+      "expectedName": "Beringer Main & Vine Cabernet Sauvignon",
       "sku": "1046",
       "expectedUpc": "089819068227",
       "attributionRequired": false,
@@ -20117,7 +20117,7 @@
         "professional": true
       },
       "sha256": "280999e761d917a002d0fda142947df6a6d79d1c40507344558c3b068db29c70",
-      "alt": "Beringer Cab-Sau — 750 mL packaging",
+      "alt": "Beringer Main & Vine Cabernet Sauvignon — 750 mL packaging",
       "verifiedOn": "2026-10-31",
       "src": "images/products/sku-1046.jpg"
     },
@@ -21162,7 +21162,7 @@
       "src": "images/products/sku-101225.jpg"
     },
     {
-      "expectedName": "KIM CRAWFORD SAUV BLANC",
+      "expectedName": "Kim Crawford Sauvignon Blanc",
       "sku": "101250",
       "expectedUpc": "689352009611",
       "attributionRequired": false,
@@ -21177,7 +21177,7 @@
         "professional": true
       },
       "sha256": "205782a61ac1a0adfe8e0f25f1e07ea27dfa44bf9b2a4e32a1e56500dce321f7",
-      "alt": "KIM CRAWFORD SAUV BLANC — 750 mL packaging",
+      "alt": "Kim Crawford Sauvignon Blanc — 750 mL packaging",
       "verifiedOn": "2026-10-31",
       "src": "images/products/sku-101250.jpg"
     },
@@ -32923,13 +32923,13 @@
     },
     {
       "sku": "9641",
-      "src": "images/products/sku-9641.jpg",
+      "src": "images/products/sku-9641-769cbc46e65d5c835c468b7c870e98d81b5ae9945d1f9f425ef4b0a05d744b17.webp",
       "alt": "Wizard Morning Mist Air Freshener — 283 g packaging",
-      "verifiedOn": "2026-11-02",
+      "verifiedOn": "2026-11-06",
       "expectedUpc": "854152008434",
       "expectedName": "Wizard Morning Mist Air Freshener",
       "expectedLabel": "283 g",
-      "sha256": "baae14e8d74b7eea1eac6b65c8d279fd45b44e61caaaf068ca68df7023811e46",
+      "sha256": "769cbc46e65d5c835c468b7c870e98d81b5ae9945d1f9f425ef4b0a05d744b17",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {
@@ -32943,13 +32943,13 @@
     },
     {
       "sku": "9642",
-      "src": "images/products/sku-9642.jpg",
+      "src": "images/products/sku-9642-e1d94557cb8900ab6f9d714e169d893ae826de4751e7831b8ad885fc3f18d0e3.jpg",
       "alt": "Wizard Freshly Folded Linen Air Freshener — 283 g packaging",
-      "verifiedOn": "2026-11-02",
+      "verifiedOn": "2026-11-06",
       "expectedUpc": "854152008441",
       "expectedName": "Wizard Freshly Folded Linen Air Freshener",
       "expectedLabel": "283 g",
-      "sha256": "7acebf7cebb299313138b8cb256b021a075958e8a607ee791d61ebde494357cd",
+      "sha256": "e1d94557cb8900ab6f9d714e169d893ae826de4751e7831b8ad885fc3f18d0e3",
       "usageBasis": "user_authorized_direct_reference",
       "attributionRequired": false,
       "verification": {
@@ -36084,10 +36084,10 @@
     {
       "sku": "6250",
       "src": "images/products/sku-6250.jpg",
-      "alt": "NUE peach — 750 mL packaging",
+      "alt": "Nue Peach — 750 mL packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "720825783840",
-      "expectedName": "NUE peach",
+      "expectedName": "Nue Peach",
       "expectedLabel": "750 mL",
       "sha256": "887793ad7dc36c3dd98f621fc4b40e4181d12b8a17e04f5f0b7e3d2b2f0d5c2f",
       "usageBasis": "user_authorized_direct_reference",
@@ -36124,10 +36124,10 @@
     {
       "sku": "7496",
       "src": "images/products/sku-7496.jpg",
-      "alt": "Seagrams peach — 200 mL packaging",
+      "alt": "Seagram's Peach — 200 mL packaging",
       "verifiedOn": "2026-11-03",
       "expectedUpc": "720815988675",
-      "expectedName": "Seagrams peach",
+      "expectedName": "Seagram's Peach",
       "expectedLabel": "200 mL",
       "sha256": "9cda8e8ac61fe8ebce791fbbe63b76dd36180b2cffbc83e637d444ffb8e0b5cd",
       "usageBasis": "user_authorized_direct_reference",
