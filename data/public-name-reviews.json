@@ -10738,6 +10738,216 @@
       "evidence": {
         "privateEvidenceSha256": "ae81bf5a1765a29c725a7610448d85029647e38d6487d7e17ad0c5a3ab7e94a7"
       }
+    },
+    {
+      "sku": "860",
+      "expectedUpc": "085000031780",
+      "expectedSourceRow": 6831,
+      "expectedRawFieldsSha256": "b2216807e7b065d8809dc82631b770d2a0a862e742f3c1e83ea6573e2882030b",
+      "expectedPublicName": "BAREFOOT FRUIT BLUEBERRY",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Fruit Blueberry",
+      "reason": "Case-only; full existing ordered group must receive the identical title. Existing images/UPCs/labels unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "97a9dab40f6d8da35ac8c735a93c611187a23a09da6f9297158a221fffc3531c"
+      }
+    },
+    {
+      "sku": "861",
+      "expectedUpc": "085000032176",
+      "expectedSourceRow": 9354,
+      "expectedRawFieldsSha256": "bc45dd0526b4b65df55068bfad0ff378591b97ef14ff2fe2f8390daba3258804",
+      "expectedPublicName": "BAREFOOT FRUIT MANGO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Fruit Mango",
+      "reason": "Case-only; full existing ordered group must receive the identical title. Existing images/UPCs/labels unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "78f05514e516872eb264faed160d4ea5e169caf23fb26eeaa3d8368575e73d39"
+      }
+    },
+    {
+      "sku": "862",
+      "expectedUpc": "085000029008",
+      "expectedSourceRow": 9086,
+      "expectedRawFieldsSha256": "2061cf11b5bce0a05b7deea6f7b59a41580581e7a3eeaf1e69f4a6401d0882d7",
+      "expectedPublicName": "BAREFOOT FRUIT PEACH",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Fruit Peach",
+      "reason": "Case-only; full existing ordered group must receive the identical title. Existing images/UPCs/labels unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "4bb06688ac1fdb130e4bce03e17a33fa6b513f395a6922d037a9b50d97402477"
+      }
+    },
+    {
+      "sku": "894",
+      "expectedUpc": "085000019658",
+      "expectedSourceRow": 9085,
+      "expectedRawFieldsSha256": "f589ea41a421192f2a50ef6e1925c30ed7d73491875ae39a7c71f5a91d289d4e",
+      "expectedPublicName": "BAREFOOT BUBBLY PINK MOS",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Sparklin",
+      "proposedPublicTitle": "Barefoot Bubbly Pink Moscato",
+      "reason": "Expand MOS to Moscato from this SKU own exact UPC product; preserve Bubbly and Pink without source-only year, region or recipe.",
+      "evidence": {
+        "privateEvidenceSha256": "851c8d969532eaf971f731b56814bc6fc7652a6dfe3f8f463d640a8774d8bd49"
+      }
+    },
+    {
+      "sku": "907",
+      "expectedUpc": "085000020289",
+      "expectedSourceRow": 568,
+      "expectedRawFieldsSha256": "56b87a0a4a8ff3f0202a4796bc6bff38319f73e0eb8e0968ca5eb0e27ca624b5",
+      "expectedPublicName": "BAREFOOT RED MOSCATO",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Red Moscato",
+      "reason": "Case-only; full existing ordered group must receive the identical title. Existing images/UPCs/labels unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "4131b8b357db83402d9e547b5a0b7b6f1fb17ecca549575c781b67411762869d"
+      }
+    },
+    {
+      "sku": "908",
+      "expectedUpc": "085000019894",
+      "expectedSourceRow": 7479,
+      "expectedRawFieldsSha256": "cb06a8bf1f54600b0de778bd212edcb9badf7a3d33add2d8ba5a6991b8b39d66",
+      "expectedPublicName": "BAREFOOT RED MOSCATO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Red Moscato",
+      "reason": "Case-only; full existing ordered group must receive the identical title. Existing images/UPCs/labels unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "4ff4e073a657b80f8aede91c7086d0e556581af3d67de874fa36f98a8c9b174e"
+      }
+    },
+    {
+      "sku": "4773",
+      "expectedUpc": "081584013174",
+      "expectedSourceRow": 3055,
+      "expectedRawFieldsSha256": "4282f0caea0d144244941198af8a8a4375b9ac3ea73e8676ca561b27469538e2",
+      "expectedPublicName": "Kendall Jackson Cab-Sau",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Kendall-Jackson Cabernet Sauvignon",
+      "reason": "Correct brand punctuation to Kendall-Jackson and expand Cab-Sau to Cabernet Sauvignon as printed in selected own literal consumer UPC title and independently viewed existing package. Preserve original generic identity; no Vintner’s Reserve line, year, origin, strength, formula or claim added.",
+      "evidence": {
+        "privateEvidenceSha256": "1ca83992c19f7fa604cfc3a56f683290eded998a1c4b0932391b846697a69cd6"
+      }
+    },
+    {
+      "sku": "4774",
+      "expectedUpc": "081584013105",
+      "expectedSourceRow": 3056,
+      "expectedRawFieldsSha256": "bf0041c1b0a912de83523690a6fcb4fc39d17e3482774f0e049e20cbdfd557db",
+      "expectedPublicName": "KENDALL JACKSON CHARDO",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Kendall-Jackson Chardonnay",
+      "reason": "Correct brand punctuation to Kendall-Jackson and expand CHARDO to Chardonnay as printed in selected own literal consumer UPC title and independently viewed existing package. Preserve original generic identity; no Vintner’s Reserve line, year, origin, strength, formula or claim added.",
+      "evidence": {
+        "privateEvidenceSha256": "a0eac857bcca9049cebb18aa909e1975926a5a9ad7fbd843334bff8156ae6e7d"
+      }
+    },
+    {
+      "sku": "915",
+      "expectedUpc": "085000025055",
+      "expectedSourceRow": 6834,
+      "expectedRawFieldsSha256": "926de213cc05f45ea6f89def9d2b396d8f12e780b39dad415c43f2918b4175ef",
+      "expectedPublicName": "BAREFOOT SANGRIA",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Sangria",
+      "reason": "ASCII case only; keep existing Sangria and the entire 750 mL / 1.5 L family unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "db676833ec00604dee925e42c861b5f51402897b1c8c936c77089f23089c3e40"
+      }
+    },
+    {
+      "sku": "914",
+      "expectedUpc": "085000025062",
+      "expectedSourceRow": 9542,
+      "expectedRawFieldsSha256": "3d804c05a2596d88922ded9008144836cd72383f201ce9ad97355497f7c079e5",
+      "expectedPublicName": "BAREFOOT SANGRIA",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Sangria",
+      "reason": "ASCII case only; keep existing Sangria and the entire 750 mL / 1.5 L family unchanged.",
+      "evidence": {
+        "privateEvidenceSha256": "daa38087f294514742f2ace4483f2a82efd01a7e243899e3fa0a1289cb89be15"
+      }
+    },
+    {
+      "sku": "922",
+      "expectedUpc": "085000018682",
+      "expectedSourceRow": 7480,
+      "expectedRawFieldsSha256": "adf3b10fcb835f227952a3a822b49f595b48925125f370dd7895ea3d774faf21",
+      "expectedPublicName": "BAREFOOT SWEET RED",
+      "expectedLabel": "1.5 L",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Sweet Red",
+      "reason": "ASCII case only; keep existing Sweet Red and the entire 1.5 L / 750 mL family unchanged; no Blend qualifier added.",
+      "evidence": {
+        "privateEvidenceSha256": "472dd6b5aba6a534ca31417b544fee33ecacdd5df5ce4a2002161fd7b1d2c653"
+      }
+    },
+    {
+      "sku": "924",
+      "expectedUpc": "085000018491",
+      "expectedSourceRow": 9090,
+      "expectedRawFieldsSha256": "d975c574ec23b075dd8d947dd7a50185338e0fdef9bec1904ea71f6369728293",
+      "expectedPublicName": "BAREFOOT SWEET RED",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Standard",
+      "proposedPublicTitle": "Barefoot Sweet Red",
+      "reason": "ASCII case only; keep existing Sweet Red and the entire 1.5 L / 750 mL family unchanged; no Blend qualifier added.",
+      "evidence": {
+        "privateEvidenceSha256": "4d60087591115f9ea992a7bbb8f26f129432b457c1018681dcf44a8771242ae6"
+      }
+    },
+    {
+      "sku": "3388",
+      "expectedUpc": "025500200835",
+      "expectedSourceRow": 9603,
+      "expectedRawFieldsSha256": "20e7975f3fb6cf1c2d881d3ba53d7d53861550995eeab73a09f136879e8f2df3",
+      "expectedPublicName": "FOLGERS CLASIC ROAST INSTA",
+      "expectedLabel": "3 oz",
+      "expectedCategory": "food",
+      "expectedDepartment": "Snacks",
+      "proposedPublicTitle": "Folgers Classic Roast Instant Coffee",
+      "reason": "Correct CLASIC to Classic and expand INSTA to Instant Coffee using the selected product record and its inspected package.",
+      "evidence": {
+        "privateEvidenceSha256": "59ec938f4ee86c038ababa0daedae4b156dac70f6f574f3d3be4b480020ff38d"
+      }
+    },
+    {
+      "sku": "8106",
+      "expectedUpc": "088692862106",
+      "expectedSourceRow": 5203,
+      "expectedRawFieldsSha256": "bf6ea0353f181d1eb5e32960882e82367926190bcf65a5a7802c2c6514740f9a",
+      "expectedPublicName": "Sterling Vintners Pinot N 750",
+      "expectedLabel": "750 mL",
+      "expectedCategory": "wine",
+      "expectedDepartment": "Vintage",
+      "proposedPublicTitle": "Sterling Vintners Pinot Noir",
+      "reason": "Expand the truncated Pinot N to Pinot Noir and remove redundant 750 from the title; retain original Vintners wording and 750 mL variant label.",
+      "evidence": {
+        "privateEvidenceSha256": "20684be5774aa4368c27eed8736430b14f5bb9a5b7a4491f309faa1bd96621a7"
+      }
     }
   ]
 }
